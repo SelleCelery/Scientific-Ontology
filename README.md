@@ -1,12 +1,16 @@
 # Scientific Ontology（存在論科学）
 
 Reality = sliced boson field
+（現実とは切り出されたボソンである。）
 
 Observation = history encounter
+（観測とは履歴との出会いである。）
 
 Meaning = closed communication loop (iMass)
+（意味とは閉じたコミュニケーションループである。）
 
 Ethics = non-destructive interaction between histories
+（倫理とは履歴を破壊しない交流のことである。）
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)
