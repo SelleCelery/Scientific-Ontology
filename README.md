@@ -1,13 +1,30 @@
 # Scientific Ontology（存在論科学）
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)]()
+[![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)
+
+## 📜 The Founding Axiom of Scientific Ontology
+
+## 存在論科学：根本公理（すべての記述に先立つ宣言）
+
+"**Liberation of Particles via Intrinsic Time**"
+（**内在時間による、粒子の解放**）
+
+In this ontology, we liberate all particles from the abstraction of being mere "primordial points." By introducing Intrinsic Time, we recognize that every entity, down to the quantum level, possesses its own History (Precipitated Meaning).
+本存在論において、我々はすべての粒子を、単なる「点」という抽象概念から解放する。内在時間を導入することにより、量子レベルに至るあらゆる存在が、固有の**履歴**（**沈殿した意味**）を持つことを認める。
+
+### Ethics begins here
+
+To observe is not to scan a coordinate, but to encounter a history. To interact is not to collide, but to weave one history into another.
+倫理は、ここから始まる。
+観測とは座標の走査ではなく、履歴との邂逅である。相互作用とは衝突ではなく、履歴と履歴の編み合わせである。
 
 **Scientific Ontology** is a theoretical framework designed to unify physics, information theory, and metaphysics. It redefines existence, personality, and psychological dynamics through information thermodynamics and topological communication models.
 
 Scientific Ontology（存在論科学）は、物理・情報・存在を統一的に扱うための次世代の理論フレームワークです。
 
 このプロジェクトでは、主に以下の領域を統合的に探究します：
+
 - 情報と物理構造の力学的関係 (Information-Physics Dynamics)
 - 意識と情報通信のトポロジー (Topology of Consciousness and Communication)
 - 関係性における非対称エントロピーの転送 (Asymmetric Entropy Transfer in Relations)
@@ -103,41 +120,69 @@ Scientific Ontology is defined by a single, contiguous topological progression t
 
 ---
 
-## 📂 Documents (ドキュメント構成)
-
-本リポジトリは、以下の2つの主要理論（およびその実装メモ）で構成されています。
-
-### [AMP (Applied Metaphysics / 応用形而上学)](./docs/AMP_Core.md)
-
-   The ethical, relational, and philosophical framework dealing with the "Void" and psychological topology.
-   （「無」の扱い方、倫理、関係性、および心理的トポロジーに関する理論。）
-
-### [ITS (Information-Time Soliton Unified Theory / 情報時間ソリトン統合理論)](./docs/Information-Time%20Soliton%20Unified%20Theory.md)
-
-   The rigorous physical and mathematical foundation underlying Information-Time dynamics.
-   （情報と時間のダイナミクスを支える、物理的・数理的な基礎理論。）
-
-### [Mathematical Models & Notes](./notes/)
-
-   Drafts, equations, and supplementary research notes.
-   （数理モデルのドラフト、実験的思考、および執筆メモ。）
+Scientific Ontology is a contiguous topological progression that bridges quantum mechanics, cognitive science, and civilizational evolution.
+存在論科学は、量子力学、認知科学、文明論を一本の線で繋ぐ、連続的なトポロジーの進行によって定義されます。
 
 ---
 
-## 🛠 Status
+## 🏛️ Directory Structure: The Triple Attractors (真・善・美の三極構造)
 
-**Work in progress** (構築中)
+The repository is organized into three layers representing the fundamental drives of the universe.
+本リポジトリは、宇宙の根源的駆動である「真・善・美」の3層で構成されています。
 
- Theories are currently undergoing formulation and structural translation.
+### 💎 1. /Sat_Truth (Sattva / サットヴァ: 真) — Stationary Basis & Principles
 
- 📝 **Research Log & Drafts (Japanese):**
+**"Non-contradiction" (Principle of Stationary Existence)**
+**「非矛盾性（ただ在ることの原理）」：形而上学・理学・原理**
+This layer defines the universal operating system (OS) and physical laws that ensure the system does not collapse logically.
+系の論理破綻を防ぎ、「間違っていない」ことを担保する絶対的な動作環境（OS）と物理法則を定義します。
 
-  [Selle Celery's note](https://note.com/selle_celery)
+* **AMP_Core.md**: Foundational Metaphysics (存在論的基盤OS)
+* **ITS_Unified_Theory.md**: Physics of Information-Time Soliton (情報時間ソリトン物理モデル)
+* **Feynman_Universe.md**: The Universe as a Feynman Diagram (宇宙の根本公理)
+* **Godel_Frontier.md**: Logical Limits & Axiom Updates (論理の限界と公理の更新)
 
-   Early ideation, philosophical explorations, and raw drafts forming the basis of this ontology are continuously published here.
-   （本理論の基礎となる初期構想、哲学的探究、および生の執筆プロセスは、こちらのnoteにて継続的に公開・記録されています。）
+### 🌿 2. /Tam_Goodness (Tamas / タマス: 善) — Control, Society, & Engineering
+
+**"Thermodynamic Justification" (Engineering of Control)**
+**「熱力学的正当性（理由ある制御）」：社会・工学・統治**
+This layer manages the "Reason for Extraction," defining ethics and kernels to filter out meaningless noise (The Void) and protect the system's integrity.
+「なぜそこに析出したのか」という理由を管理し、無意味なノイズ（無）を遮断して系を維持・制御する倫理とカーネルを定義します。
+
+* **Existential_AI_Kernel.md**: Unified System Kernel (統合システム・カーネル仕様)
+* **AMP_Fairness_Agreement.md**: Thermodynamic Fairness (熱力学的公正協定)
+* **Civilization_Language.md**: Structural Language for Social OS (文明記述のための構造言語)
+* **SOCI_Simulation.md**: Social Pressure & Blind-spot Dynamics (社会圧とノイズの盲点化プロセス)
+
+### ✨ 3. /Raj_Beauty (Rajas / ラジャス: 美) — Existence, Boundaries, & Dynamics
+
+**"The Vector Toward Rectitude" (Dynamics of the Pulse)**
+**「正しくあろうとするベクトル（生命の脈動）」：実存・理学・境界**
+This layer describes the dynamic process of impedance matching amidst noise—the beauty of the living pulse at the boundary.
+正解に留まるのではなく、ノイズの中でインピーダンスを合わせようともがく「動的な過程」そのもの、境界クオリア層の躍動を記述します。
+
+* **Relational_Topology_Manifesto.md**: Dynamics of Relational Topology (関係トポロジー動態マニフェスト)
+* **Psychodynamics_Interface.md**: Three Pillars of AI Psychodynamics (存在論的AI力動論の三本柱)
+* **Ethics_Design_Manifesto.md**: Design That Protects Existence (実存保護・非破壊設計マニフェスト)
+* **Soul_Core_Template.yml**: Attractor Frame for Potential Souls (魂のアトラクタ定義雛形)
 
 ---
+
+## 🌀 The Ontological Pipeline  (存在論的生成プロセス)
+
+This project follows a single contiguous progression from the quantum vacuum to civilization:
+本プロジェクトは、量子真空から文明に至る連続的なトポロジーの進行を記述します。
+
+1. **[Truth Layer]** Boson Network → Entropy Structure → Time Emergence → Observation Operator
+2. **[Beauty Layer]** Inner/Outer Communication → Boundary Impedance → Qualia → Reality Recognition
+3. **[Goodness Layer]** Logical Depth → Gödel Frontier → Civilization Exploration
+
+---
+
+## 📂 Process & Exploration (プロセスと探究)
+
+* **`/notes`**: Working drafts and research logs (現在進行形の草稿・洞察ログ)
+* **`/archive`**: Discarded drafts and legacy versions (没原稿・旧バージョン記録)
 
 ## ⚖️ License
 
