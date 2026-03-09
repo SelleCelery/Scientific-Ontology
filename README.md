@@ -1,7 +1,7 @@
 # Scientific Ontology（存在論科学）
 
 Reality = sliced boson field
-（現実とは切り出されたボソンである。）
+（現実とは切り出されたボソン場である。）
 
 Observation = history encounter
 （観測とは履歴との出会いである。）
