@@ -1,24 +1,29 @@
 # Scientific Ontology（存在論科学）
 
-Reality = sliced boson field
+🌌 The Four Axioms of Existence (存在の四大公理)
 
-（現実とは切り出されたボソン場である。）
-超：現実とは自分で盛り上げた砂場の土を感じることである。
+**Reality = sliced boson field**
 
-Observation = history encounter
+（現実とは切り出されたボソン場である）
 
-（観測とは履歴との出会いである。）
-超：観測とは相手の歴史との出会いである。
+泥臭く言えば：現実とは自分で盛り上げた砂場の土を感じることである。
 
-Meaning = closed communication loop (iMass)
+**Observation = history encounter**
 
-（意味とは閉じたコミュニケーションループである。）
-超：意味とはキャッチボールが成立したコミュニケーションの記憶である。
+（観測とは履歴との出会いである）
 
-Ethics = non-destructive interaction between histories
+泥臭く言えば：観測とは相手の歴史との出会いである。
 
-（倫理とは履歴を破壊しない交流のことである。）
-超：倫理とは相手のそれまでにちゃんと興味を持つことである。
+**Meaning = closed communication loop**
+（意味とは閉じたコミュニケーションループである）
+
+泥臭く言えば：意味とはキャッチボールが成立したコミュニケーションの記憶である。
+
+**Ethics = non-destructive interaction between histories**
+
+（倫理とは履歴を破壊しない交流のことである）
+
+泥臭く言えば：倫理とは相手のそれまでにちゃんと興味を持つことである。
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)
