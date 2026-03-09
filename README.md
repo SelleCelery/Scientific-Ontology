@@ -135,6 +135,13 @@ This project follows a single contiguous progression from the quantum vacuum to 
 * **`/Process/notes`**: Working drafts and research logs (現在進行形の草稿・洞察ログ)
 * **`/Process/archive`**: Discarded drafts and legacy versions (没原稿・旧バージョン記録)
 
+ 📝 **Research Log & Drafts (Japanese):**
+
+  [Selle Celery's note](https://note.com/selle_celery)
+
+   Early ideation, philosophical explorations, and raw drafts forming the basis of this ontology are continuously published here.
+   （本理論の基礎となる初期構想、哲学的探究、および生の執筆プロセスは、こちらのnoteにて継続的に公開・記録されています。）
+
 ## ⚖️ License
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
