@@ -1,18 +1,22 @@
 # Scientific Ontology（存在論科学）
 
 Reality = sliced boson field
+
 （現実とは切り出されたボソン場である。）
 超：現実とは自分で盛り上げた砂場の土を感じることである。
 
 Observation = history encounter
+
 （観測とは履歴との出会いである。）
 超：観測とは相手の歴史との出会いである。
 
 Meaning = closed communication loop (iMass)
+
 （意味とは閉じたコミュニケーションループである。）
-超：意味とはキャッチボールが成立するコミュニケーションである。
+超：意味とはキャッチボールが成立したコミュニケーションの記憶である。
 
 Ethics = non-destructive interaction between histories
+
 （倫理とは履歴を破壊しない交流のことである。）
 超：倫理とは相手のそれまでにちゃんと興味を持つことである。
 
