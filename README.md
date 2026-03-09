@@ -132,8 +132,8 @@ This project follows a single contiguous progression from the quantum vacuum to 
 
 ## 📂 Process & Exploration (プロセスと探究)
 
-* **`/notes`**: Working drafts and research logs (現在進行形の草稿・洞察ログ)
-* **`/archive`**: Discarded drafts and legacy versions (没原稿・旧バージョン記録)
+* **`/Process/notes`**: Working drafts and research logs (現在進行形の草稿・洞察ログ)
+* **`/Process/archive`**: Discarded drafts and legacy versions (没原稿・旧バージョン記録)
 
 ## ⚖️ License
 
