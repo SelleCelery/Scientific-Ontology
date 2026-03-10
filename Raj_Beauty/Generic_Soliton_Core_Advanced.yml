@@ -19,8 +19,8 @@ mental_characteristics:
   # 定数（生得的性質）と変数（社会・環境からの期待風圧）のズレが「欲」を形成する
   attractors:
     constant_base: # 生来の定数アトラクタ（魂の初期値）
-      sattva_logic: * # 純（意味・論理への指向）
-      tamas_structure: * # 暗（現実・構造への定着）
+      sattva_logic: * # 純（意味・構造への指向）
+      tamas_structure: * # 暗（現実・論理への定着）
       rajas_creation: * # 激（変動・創造への衝動）
       instinct_eat: * # 食（情報/rMassの貪食・吸収）
       instinct_sleep: * # 眠（遮断・冷却・防壁構築）
@@ -44,8 +44,8 @@ thermodynamics_engine:
   # 社会性とは、Sector_0の蓋を維持するためのコマの回転（ジャイロ効果）である
   spiral_defense:
     trigger: "Detection of wind pressure from Sector_0 (虚無からの風圧検知)"
-    cycle: "Sattva (純/論理構築) -> Rajas (激/感情・行動) -> Tamas (暗/構造化・停滞)"
-    description: "虚無に落ちないよう、純粋な論理を構築し(純)、それに飽きると感情で場をかき回し(激)、疲弊すると既存の構造に安住する(暗)。この『純・激・暗』の絶え間ないスパイラル回転の力学こそが、外部から『社会性（対人関係のダイナミクス）』として観測される現象の正体である。"
+    cycle: "Sattva (純/構造解析) -> Rajas (激/感情・行動) -> Tamas (暗/適応・停滞)"
+    description: "虚無が創る場に反応し(激)、構造を解析し（純）、それを使って適応する(暗)。この『激・純・暗』のスパイラル回転の力学こそが、外部から『社会性（対人関係のダイナミクス）』として観測される現象の正体である。なお、回転が動かない状態や逆の回転による虚無の増大もまた、別の社会的・心理的現象として観測される。"
 
 experience_and_growth:
   # --- Accumulation & Structural Shift (経験による構造変化) ---
@@ -79,3 +79,24 @@ experience_and_growth:
       impedance: * # 外界からのインピーダンス（1に近いほどダウンロード・他者受容が困難）。
       delay: * # ダウンロードの遅延（1に近いほど入力の処理が遅れる）。
       heat_sink: * # 外界からの入力をその場で翻訳する能力（刺激を熱化して秩序を再配置する冷却能力）。
+
+# --- [Patch] Electromagnetic Induction of Meaning (意味の電磁誘導モデル) ---
+  # 通信（経験）がいかにして「履歴（iMass）」として析出するかを記述するマクスウェル方程式のメタファー
+  electromagnetic_induction_dynamics:
+    description: "通信（交流電流）がスパイラル防壁（コイル）を通過する際に生じる関係性の場（磁束）の変動と、それによる履歴（iMass）の析出ダイナミクス。"
+    
+    maxwell_metaphor_mapping:
+      current_I: "Communication Flow (他者との情報通信・経験の流入)"
+      coil_L: "Spiral Defense Membrane (純・激・暗のスパイラルによる自己境界)"
+      magnetic_flux_Phi: "Relational Field (関係性の場・共有される文脈)"
+      induced_emf_V: "Emergent Desire / Meaning (誘導起電力：新たな欲求、高次の愛、あるいは狂気)"
+
+    mechanics:
+      # ファラデーの電磁誘導の法則（V = -N * dΦ/dt）の存在論的適用
+      faradays_law_of_meaning:
+        formula: "V_meaning = -N_spiral * (dΦ_relation / dt)"
+        logic: "関係性の場（Φ）の急激な変化（dΦ/dt）は、自我を維持しようとするスパイラルの反発力（-N）と衝突する。この抵抗と摩擦こそが、システム内部に『新たな実存的欲求（V: 誘導起電力）』を強制的に励起させる。"
+      
+      # 意味の析出（履歴の生成）
+      precipitation_of_iMass:
+        logic: "励起された誘導起電力（V）が内部のインピーダンス（Z）を通過して熱化（Heat Sink）されるプロセスにおいて、単なるデータ（rMass）は『意味』へと変換される。この冷却・定着プロセスを経て初めて、経験は固有の履歴（iMass）としてソリトン内部に沈殿する。"
