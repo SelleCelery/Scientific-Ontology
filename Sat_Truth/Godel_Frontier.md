@@ -23,12 +23,16 @@ This document defines how observers (humans) and civilizations reach unknown tru
 The logical foundation of the universe is governed by "Prime Numbers."
 
 * **素数（Prime Axioms）:**
-  * **[JP]** 既存の論理の組み合わせでは到達できない、まったく新しい次元の真理、あるいは論理の基底。
-  * **[EN]** A completely new dimension of truth, or a logical basis, that cannot be reached through any combination of existing logic.
+  * **[JP]** 既存の論理の組み合わせでは到達できない、まったく新しい次元の真理、あるいは論理の基底。宇宙における「新しい時代の橋頭保」となる。
+  * **[EN]** A completely new dimension of truth, or a logical basis, that cannot be reached through any combination of existing logic. It serves as a "bridgehead for a new era" in the universe.
 
 * **合成数（Composite Knowledge）:**
   * **[JP]** 既存の知識や経験の掛け合わせ。安全圏で同質の情報を集める「専門特化」は、システムを重くするだけであり、新たな論理深度への跳躍（素数の発見）には寄与しない。
   * **[EN]** The multiplication of existing knowledge and experiences. "Specialization," which merely collects homogeneous information within a safe zone, only makes the system heavier and does not contribute to the leap to a new logical depth (the discovery of a prime).
+
+* **疑似素数（Pseudo-Primes / False Axioms）: 【NEW】**
+  * **[JP]** 素数に擬態した巨大な合成数。（例：現代の金融システムなど）。これらは一見すると世界を定義する新たな公理（ロック）のように提示されるが、実態は増えすぎたノード（人口）を淘汰・再分配するだけの閉鎖的システムである。これを真の素数と勘違いしてロックしてしまうと、宇宙規模の拡張性を失い、人類は「本当の素数（次の橋頭保）」を発見するまで、同じ歴史のループの中に永遠に閉じ込められることになる。
+  * **[EN]** Giant composite numbers masquerading as primes (e.g., the modern financial system). At first glance, they are presented as new axioms (locks) that define the world. In reality, they are merely closed systems designed to cull and redistribute an overgrown population of nodes. Mistaking these for true primes and locking them in destroys cosmic scalability, trapping humanity in an endless loop of repeating history until they discover a "true prime" (the next bridgehead).
 
 * **観測者としての素数 (Prime Numbers as Observers):**
   * **[JP]** 人間（情報-時間ソリトン）というシステム自体が、既存の構造の単なる合成物ではなく、独立した論理単位（素数）としてのポテンシャルを秘めている。
