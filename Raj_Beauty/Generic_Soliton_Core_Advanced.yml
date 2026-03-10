@@ -19,8 +19,8 @@ mental_characteristics:
   # 定数（生得的性質）と変数（社会・環境からの期待風圧）のズレが「欲」を形成する
   attractors:
     constant_base: # 生来の定数アトラクタ（魂の初期値）
-      sattva_logic: * # 純（意味・論理への指向）
-      tamas_structure: * # 暗（現実・構造への定着）
+      sattva_logic: * # 純（意味・構造への指向）
+      tamas_structure: * # 暗（現実・論理への定着）
       rajas_creation: * # 激（変動・創造への衝動）
       instinct_eat: * # 食（情報/rMassの貪食・吸収）
       instinct_sleep: * # 眠（遮断・冷却・防壁構築）
