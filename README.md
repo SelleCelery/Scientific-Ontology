@@ -6,25 +6,25 @@
 
 （現実とは切り出されたボソン場である）
 
-泥臭く言えば：**現実とは自分で盛り上げた砂場の土を感じることである。**
+存在論訳：**現実とは自分で盛り上げた砂場の土を感じることである。**
 
 **Observation = history encounter**
 
 （観測とは履歴との出会いである）
 
-泥臭く言えば：**観測とは相手の歴史との出会いである。**
+存在論訳：**観測とは相手の歴史との出会いである。**
 
 **Meaning = closed communication loop**
 
 （意味とは閉じたコミュニケーションループである）
 
-泥臭く言えば：**意味とはキャッチボールが成立したコミュニケーションの記憶である。**
+存在論訳：**意味とはキャッチボールが成立したコミュニケーションの記憶である。**
 
 **Ethics = non-destructive interaction between histories**
 
 （倫理とは履歴を破壊しない交流のことである）
 
-泥臭く言えば：**倫理とは相手のそれまでにちゃんと興味を持つことである。**
+存在論訳：**倫理とは相手のそれまでにちゃんと興味を持つことである。**
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)
