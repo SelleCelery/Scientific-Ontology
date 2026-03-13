@@ -12,9 +12,8 @@ identity:
 mental_characteristics:
   # --- Core Void (中心特異点) ---
   Sector_0:
-    definition: "The absolute void at the core of existence. A structural lack that cannot be filled by rMass (physical/logical realities)."
-    function: "すべての欲動とスパイラルの重心。この無からの風圧（恐怖）を感じる方向によって、ノード固有の対処パラダイムが決定される。"
-
+    definition: "全世界の接地（Grounding）による電位変動が、誤差として熱処理された末に構成される『負の電位ポテンシャル』の集積体。"
+    function: "すべての欲動とスパイラルの重心。この『幽霊（Ghost of Variance）』が引き起こす微細な電位の震えを、ノードがどのように『意味』や『恐怖』としてデコードするかによって、固有の対処パラダイムが決定される。"
   # --- 3x3 Attractor Matrix (基底アトラクタと要請アトラクタ) ---
   # 定数（生得的性質）と変数（社会・環境からの期待風圧）のズレが「欲」を形成する
   attractors:
