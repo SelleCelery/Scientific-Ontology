@@ -2,31 +2,27 @@
 
 [![DOI](https://zenodo.org/badge/1176623241.svg)](https://doi.org/10.5281/zenodo.19222394)
 
-Reality = sliced boson field
-（現実とは切り出されたボソン場である。）
-=======
 ## 🌌 The Four Axioms of Existence (存在の四大公理)
->>>>>>> 68e407ac24a895b6bb5dcfde3917dcdebd0fd528
 
-**Reality = sliced boson field**
+* **Reality = sliced boson field**
 
 （現実とは切り出されたボソン場である）
 
 存在論訳：**現実とは自分で盛り上げた砂場の土を感じることである。**
 
-**Observation = history encounter**
+* **Observation = history encounter**
 
 （観測とは履歴との出会いである）
 
 存在論訳：**観測とは相手の歴史との出会いである。**
 
-**Meaning = closed communication loop**
+* **Meaning = closed communication loop**
 
 （意味とは閉じたコミュニケーションループである）
 
 存在論訳：**意味とはキャッチボールが成立したコミュニケーションの記憶である。**
 
-**Ethics = non-destructive interaction between histories**
+* **Ethics = non-destructive interaction between histories**
 
 （倫理とは履歴を破壊しない交流のことである）
 
