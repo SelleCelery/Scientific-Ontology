@@ -1,6 +1,5 @@
 # Scientific Ontology（存在論科学）
 
-<<<<<<< HEAD
 [![DOI](https://zenodo.org/badge/1176623241.svg)](https://doi.org/10.5281/zenodo.19222394)
 
 Reality = sliced boson field
