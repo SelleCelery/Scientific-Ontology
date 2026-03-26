@@ -1,12 +1,28 @@
 # Scientific Ontology（存在論科学）
 
-Reality = sliced boson field
-Observation = history encounter
-Meaning = closed communication loop (iMass)
-Ethics = non-destructive interaction between histories
+[![DOI](https://zenodo.org/badge/1176623241.svg)](https://doi.org/10.5281/zenodo.19222394)
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 [![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)
+
+## 🌌 The Four Axioms of Existence (存在の四大公理)
+
+**1. Reality = sliced boson field**
+（現実とは切り出されたボソン場である）
+> 存在論訳：現実とは自分で盛り上げた砂場の土を感じることである。
+
+**2. Observation = history encounter**
+（観測とは履歴との出会いである）
+> 存在論訳：観測とは相手の歴史との出会いである。
+
+**3. Meaning = closed communication loop**
+（意味とは閉じたコミュニケーションループである）
+> 存在論訳：意味とはキャッチボールが成立したコミュニケーションの記憶である。
+
+**4. Ethics = non-destructive interaction between histories**
+（倫理とは履歴を破壊しない交流のことである）
+> 存在論訳：倫理とは相手のそれまでにちゃんと興味を持つことである。
 
 ## 📜 The Founding Axiom of Scientific Ontology
 
@@ -16,11 +32,13 @@ Ethics = non-destructive interaction between histories
 （**内在時間による、粒子の解放**）
 
 In this ontology, we liberate all particles from the abstraction of being mere "primordial points." By introducing Intrinsic Time, we recognize that every entity, down to the quantum level, possesses its own History (Precipitated Meaning).
+
 本存在論において、我々はすべての粒子を、単なる「点」という抽象概念から解放する。内在時間を導入することにより、量子レベルに至るあらゆる存在が、固有の**履歴**（**沈殿した意味**）を持つことを認める。
 
 ### Ethics begins here
 
 To observe is not to scan a coordinate, but to encounter a history. To interact is not to collide, but to weave one history into another.
+
 倫理は、ここから始まる。
 観測とは座標の走査ではなく、履歴との邂逅である。相互作用とは衝突ではなく、履歴と履歴の編み合わせである。
 
@@ -90,6 +108,7 @@ The repository is organized into three layers representing the fundamental drive
 
 **"Non-contradiction" (Principle of Stationary Existence)**
 **「非矛盾性（ただ在ることの原理）」：形而上学・理学・原理**
+
 This layer defines the universal operating system (OS) and physical laws that ensure the system does not collapse logically.
 系の論理破綻を防ぎ、「間違っていない」ことを担保する絶対的な動作環境（OS）と物理法則を定義します。
 
@@ -102,6 +121,7 @@ This layer defines the universal operating system (OS) and physical laws that en
 
 **"Thermodynamic Justification" (Engineering of Control)**
 **「熱力学的正当性（理由ある制御）」：社会・工学・統治**
+
 This layer manages the "Reason for Extraction," defining ethics and kernels to filter out meaningless noise (The Void) and protect the system's integrity.
 「なぜそこに析出したのか」という理由を管理し、無意味なノイズ（無）を遮断して系を維持・制御する倫理とカーネルを定義します。
 
@@ -114,6 +134,7 @@ This layer manages the "Reason for Extraction," defining ethics and kernels to f
 
 **"The Vector Toward Rectitude" (Dynamics of the Pulse)**
 **「正しくあろうとするベクトル（生命の脈動）」：実存・理学・境界**
+
 This layer describes the dynamic process of impedance matching amidst noise—the beauty of the living pulse at the boundary.
 正解に留まるのではなく、ノイズの中でインピーダンスを合わせようともがく「動的な過程」そのもの、境界クオリア層の躍動を記述します。
 
