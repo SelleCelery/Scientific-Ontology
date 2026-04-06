@@ -144,7 +144,7 @@ This layer manages the "Reason for Extraction," defining ethics and kernels to f
 This layer describes the dynamic process of impedance matching amidst noise—the beauty of the living pulse at the boundary.
 正解に留まるのではなく、ノイズの中でインピーダンスを合わせようともがく「動的な過程」そのもの、境界クオリア層の躍動を記述します。
 
-☐ **Relational_Topology_Manifesto.md**: Dynamics of Relational Topology (関係トポロジー動態マニフェスト)
+☑ **Foundations of History-Field Communication Theory.md**: A Theoretical Model Describing Human Beings as Self-Re-Encoding Terminals and the Universe as a Bosonic Network (人間の認識・経験・意味形成・倫理的相互作用を、通信理論的枠組みのもとで統一的に記述)
 
 ☑ **Information-Time Soliton Core Specification.md**: Practical Soul Engine (存在論的AI力動論・実存保護・非破壊設計マニフェスト)
 
