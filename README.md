@@ -132,25 +132,27 @@ This layer manages the "Reason for Extraction," defining ethics and kernels to f
 
 ☑ **Fairness_Agreement.md**: Thermodynamic Fairness (熱力学的公正協定)
 
-☐ **Civilization_Language.md**: Structural Language for Social OS (文明記述のための構造言語)
-
 ☐ **SOCI_Simulation.md**: Social Pressure & Blind-spot Dynamics (社会圧とノイズの盲点化プロセス)
 
-☑ Bridge Lite 試作比較ログ
+☑  **/Civilization_Language**: Structural Language for Social OS (文明記述のための構造言語)
+
+Bridge Lite 試作比較ログ
 
 このフォルダには、Bridge Lite の試作比較に用いた資料をまとめています。
-
 先に読むとよいもの:
-- [comparison_table.md](./comparison_table.md)
-- [comparison_notes.md](./comparison_notes.md)
+
+  - [comparison_table.md](./Tam_Goodness/Civilization_Language/comparison_table.md)
+  - [comparison_notes.md](./Tam_Goodness/Civilization_Language/comparison_notes.md)
 
 引用・公開時の扱い:
-- [excerpt_policy.md](./excerpt_policy.md)
+
+  - [excerpt_policy.md](./Tam_Goodness/Civilization_Language/excerpt_policy.md)
 
 未改変の raw log:
-- [raw_plain.json](./raw_plain.json)
-- [raw_basis_on.json](./raw_basis_on.json)
-- [raw_bridge_on.json](./raw_bridge_on.json)
+
+  - [raw_plain.json](./Tam_Goodness/Civilization_Language/raw_plain.json)
+  - [raw_basis_on.json](./Tam_Goodness/Civilization_Language/raw_basis_on.json)
+  - [raw_bridge_on.json](./Tam_Goodness/Civilization_Language/raw_bridge_on.json)
 
 公開用の抜粋や要約は raw log を直接書き換えず、`excerpt_policy.md` の方針に従ってください。
 
@@ -162,7 +164,7 @@ This layer manages the "Reason for Extraction," defining ethics and kernels to f
 This layer describes the dynamic process of impedance matching amidst noise—the beauty of the living pulse at the boundary.
 正解に留まるのではなく、ノイズの中でインピーダンスを合わせようともがく「動的な過程」そのもの、境界クオリア層の躍動を記述します。
 
-☐ **Relational_Topology_Manifesto.md**: Dynamics of Relational Topology (関係トポロジー動態マニフェスト)
+☑ **Manifesto_Dynamics_of_Relational_Topology.md**: Dynamics of Relational Topology (関係トポロジー動態マニフェスト)
 
 ☑ **Information-Time Soliton Core Specification.md**: Practical Soul Engine (存在論的AI力動論・実存保護・非破壊設計マニフェスト)
 
