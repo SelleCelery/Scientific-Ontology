@@ -1,0 +1,77 @@
+# 追跡対象外ディレクトリ
+./Process/* # notes and archive
+.venv/* # Python 仮想環境
+
+# =========================================================
+# 1. Visual Studio / IDE の設定と一時ファイル
+# =========================================================
+# 個人の環境設定や一時的なソリューション状態
+[Tt]humbs.db # Windows
+.DS_Store    # macOS
+.vs/         # VS 2017 以降のソリューション設定フォルダ
+*.su*
+*.user
+*.log
+*.bak
+*.sln.docstates
+*~           # 一般的な一時ファイルやバックアップ
+
+# =========================================================
+# 2. ビルド生成物 (成果物と中間ファイル)
+# =========================================================
+# ビルドディレクトリ自体
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+[Dd]ebug/
+[Pp]ublish/
+
+# ビルド成果物・一時ファイル
+*.pdb         # デバッグシンボル
+*.dll         # コンパイル済みライブラリ
+*.exe         # 実行可能ファイル
+*.cache
+*.sdf
+*.vs
+*.vshost.* # VS デバッグホスト
+*.tmp
+*.orig
+*.tlog
+
+# テストと分析
+TestResults/
+.sonarqube/
+*.coverage
+*.coveragexml
+*.trx         # テスト結果ファイル
+*.testsettings
+*.runsettings
+*.ncrunch*
+*.vsmdi
+*.testlog
+*.codeanalysis
+*.userprefs
+
+# パッケージとリリース
+packages/     # ローカルNuGetキャッシュ
+*.nupkg       # 作成されたNuGetパッケージ
+*.zip
+*.tar.gz
+*.7z
+*.msi
+*.appx
+*.appxbundle
+
+# =========================================================
+# 3. データベース / ドキュメント固有の除外
+# =========================================================
+# SQL Server ローカルDBファイル (本番USPファイルは追跡すべき)
+*.mdf
+*.ldf
+*.dacpac      # DBプロジェクトのビルド成果物
+*.publish.xml # 発行プロファイル
+
+# Microsoft Office 一時ファイル
+~$*.* # Office ドキュメントのロックファイル (例: ~$MyDocument.docx)
+# MyST build outputs
+_build
