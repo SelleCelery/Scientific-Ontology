@@ -136,6 +136,24 @@ This layer manages the "Reason for Extraction," defining ethics and kernels to f
 
 ☐ **SOCI_Simulation.md**: Social Pressure & Blind-spot Dynamics (社会圧とノイズの盲点化プロセス)
 
+☑ Bridge Lite 試作比較ログ
+
+このフォルダには、Bridge Lite の試作比較に用いた資料をまとめています。
+
+先に読むとよいもの:
+- [comparison_table.md](./comparison_table.md)
+- [comparison_notes.md](./comparison_notes.md)
+
+引用・公開時の扱い:
+- [excerpt_policy.md](./excerpt_policy.md)
+
+未改変の raw log:
+- [raw_plain.json](./raw_plain.json)
+- [raw_basis_on.json](./raw_basis_on.json)
+- [raw_bridge_on.json](./raw_bridge_on.json)
+
+公開用の抜粋や要約は raw log を直接書き換えず、`excerpt_policy.md` の方針に従ってください。
+
 ### ✨ 3. /Raj_Beauty (Rajas / ラジャス: 美) — Existence, Boundaries, & Dynamics
 
 **"The Vector Toward Rectitude" (Dynamics of the Pulse)**
