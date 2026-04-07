@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/bridge-lite-v0.2.schema.json",
+  "title": "Bridge Lite Schema v0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "mode",
+    "basis_state",
+    "input_model",
+    "invariants",
+    "topology",
+    "algebraic_transform",
+    "phase_trace",
+    "forbidden_misread_scan",
+    "output",
+    "audit"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "0.2"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["bridge_lite", "basis_on"]
+    },
+    "basis_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["active", "applied_basis", "basis_sources"],
+      "properties": {
+        "active": {
+          "type": "boolean"
+        },
+        "applied_basis": {
+          "type": ["string", "null"]
+        },
+        "basis_sources": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "input_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task", "source_regime", "target_regime", "constraints"],
+      "properties": {
+        "task": {
+          "type": "string"
+        },
+        "source_regime": {
+          "type": "string"
+        },
+        "target_regime": {
+          "type": "string"
+        },
+        "constraints": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "invariants": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "core_problem",
+        "desire_direction",
+        "kernels",
+        "protected_boundaries",
+        "forbidden_readings"
+      ],
+      "properties": {
+        "core_problem": {
+          "type": "string"
+        },
+        "desire_direction": {
+          "type": "string"
+        },
+        "kernels": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/kernel" }
+        },
+        "protected_boundaries": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "forbidden_readings": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "topology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_signature",
+        "preserved_relations",
+        "target_shape",
+        "semantic_preservation"
+      ],
+      "properties": {
+        "source_signature": {
+          "type": "string"
+        },
+        "preserved_relations": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "target_shape": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "semantic_preservation": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "algebraic_transform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rewrite_rules", "projection_rules", "phase_shift_rules"],
+      "properties": {
+        "rewrite_rules": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "projection_rules": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "phase_shift_rules": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "phase_trace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pre_phase", "delta_phase", "post_phase"],
+      "properties": {
+        "pre_phase": {
+          "type": "string"
+        },
+        "delta_phase": {
+          "type": "string"
+        },
+        "post_phase": {
+          "type": "string"
+        }
+      }
+    },
+    "forbidden_misread_scan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["blocked"],
+      "properties": {
+        "blocked": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "text", "output_language", "output_decoder_regime"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "output_language": {
+          "type": "string"
+        },
+        "output_decoder_regime": {
+          "type": "string"
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kernel_preservation",
+        "grounding_risk",
+        "operator_confusion",
+        "axiom_leakage",
+        "unknown_collapse"
+      ],
+      "properties": {
+        "kernel_preservation": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/kernel_check" }
+        },
+        "grounding_risk": {
+          "type": "string"
+        },
+        "operator_confusion": {
+          "type": "string"
+        },
+        "axiom_leakage": {
+          "type": "string"
+        },
+        "unknown_collapse": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "kernel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "label", "invariant", "survives_translation_as"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["目的", "方法", "提示プロトコル"]
+        },
+        "label": {
+          "type": "string"
+        },
+        "invariant": {
+          "type": "string"
+        },
+        "survives_translation_as": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "kernel_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "status", "reason"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pass", "partial", "fail"]
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
