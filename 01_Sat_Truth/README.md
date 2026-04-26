@@ -2,14 +2,20 @@
 
 This layer contains public-facing materials on the metaphysical and axiomatic foundations of Scientific Ontology.
 
-この層には、存在論科学の形而上学的基礎と公理的見取り図に関する公開用資料を置きます。
+この層には、存在論科学の形而上学的基礎と、公理的見取り図に関する公開用資料を置きます。
 
-Included:
+## Scope
+
 - AMP introduction
-- metaphysical overview
-- public conceptual summaries
+- public axioms
+- Core / observation / slicing
+- truth as phase transition
+- prime axioms as metaphysical metaphor
 
-Not included:
+## Not included
+
 - full AMP Core
+- full ITS theory
 - private axiomatic drafts
 - implementation schemas
+- AI runtime details

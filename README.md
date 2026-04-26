@@ -11,3 +11,12 @@ Core files and implementation-adjacent materials are maintained separately.
 このリポジトリは、プロジェクトの公開用インターフェースです。  
 体系マップ、入門、用語集、応用ノートを置きます。  
 中核ファイルおよび実装近接資料は別管理とします。
+
+Sat / Truth:
+  根本公理、AMP入門、Coreと観測、真理、素数公理
+
+Raj / Beauty:
+  構築理論、境界動態、宇宙論的トポロジー、HFC応用論考
+
+Tam / Goodness:
+  実装、制御、プロトコル、安全境界、AI応用
