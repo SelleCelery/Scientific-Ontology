@@ -18,3 +18,30 @@
 !02_Tam_Goodness/**
 !03_Raj_Beauty/**
 !99_Private_Core_Not_Included/**
+
+# Python / local environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE local files
+.vscode/
+.vs/
+
+# Temporary / backup files
+*.log
+*.tmp
+*.bak
+*.orig
+*~
+
+# Office temporary files
+~$*.*
+
+# Build outputs for docs
+_build/
