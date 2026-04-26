@@ -13,3 +13,8 @@ Included:
 Not included:
 - full private HFC drafts
 - unpublished theoretical cores
+
+## Documents
+
+- `Cosmological_Topological_Dynamics.md`  宇宙論的トポロジー動態命題：ダークエネルギーの張力と境界における実験の行方
+  A public conceptual essay describing the relation between cosmological expansion, boundary tension, purge/internalization, and observer-side phase transition.

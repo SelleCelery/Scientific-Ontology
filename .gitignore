@@ -1,0 +1,20 @@
+# .gitignore for VScode and Visual Studio projects
+# Ignore everything by default
+*
+
+# Allow directories to be traversed
+!*/
+
+# Allow repository control files
+!.gitignore
+!README.md
+!LICENSE.md
+!ROADMAP.md
+!GLOSSARY.md
+
+# Allow public folders and selected public files
+!00_Overview/**
+!01_Sat_Truth/**
+!02_Tam_Goodness/**
+!03_Raj_Beauty/**
+!99_Private_Core_Not_Included/**
