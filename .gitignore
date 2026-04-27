@@ -15,8 +15,8 @@
 # Allow public folders and selected public files
 !00_Overview/**
 !01_Sat_Truth/**
-!02_Tam_Goodness/**
-!03_Raj_Beauty/**
+!02_Raj_Beauty/**
+!03_Tam_Goodness/**
 !99_Private_Core_Not_Included/**
 
 # Python / local environment
