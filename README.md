@@ -126,6 +126,7 @@ Topological anomalies in communication that absorb negentropy and emit entropy, 
 ## 🚀 実装と応用 / Applications
 
 > **Public Scope / 公開範囲**
+>
 > The following application areas are presented as public-facing conceptual directions.
 > Detailed implementation schemas, personality runtime files, and private simulation specifications are not included in this repository.
 >
