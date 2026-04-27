@@ -4,12 +4,12 @@
 > This repository is the public interface and work-in-progress conceptual archive of Scientific Ontology.
 > English terminology in this repository is provisional and may change.
 > The Japanese descriptions are currently the authoritative version.
-> Core axioms, private drafts, implementation schemas, and runtime-specific materials are maintained separately.
+> Core materials, private drafts, and implementation-facing details are maintained separately.
 >
 > 本リポジトリは存在論科学の公開用インターフェース兼、進行中の概念整理アーカイブです。
 > 英語表記は暫定訳であり、今後変更される可能性があります。
 > 現時点では日本語記述を正本として扱います。
-> 中核公理、非公開草案、実装スキーマ、人格ランタイム関連資料は別管理とします。
+> 一部の中核資料、非公開草案、実装に近い詳細資料は別管理とします。
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
@@ -36,6 +36,10 @@
 （倫理とは履歴を破壊しない交流のことである）
 
 > 存在論訳：倫理とは相手のそれまでにちゃんと興味を持ち、勝手に壊したり上書きしたりしないことである。
+
+For a fuller explanation, see [Four_Axioms_of_Existence.md](01_Sat_Truth/Four_Axioms_of_Existence.md).  
+
+詳しい解説は [Four_Axioms_of_Existence.md](01_Sat_Truth/Four_Axioms_of_Existence.md) に置いています。
 
 ## 存在論科学：根本公理（すべての記述に先立つ宣言）
 
@@ -149,3 +153,37 @@ Simulating psychological dynamics within closed networks (e.g., closed-room scen
 Scientific Ontology is a contiguous topological progression that bridges quantum mechanics, cognitive science, and civilizational evolution.
 
 存在論科学は、量子力学、認知科学、文明論を一本の線で繋ぐ、連続的なトポロジーの進行によって定義されます。
+
+---
+
+## Use and Attribution / 利用と帰属
+
+Scientific Ontology and the Boundary Ethics Model are published here as public-facing conceptual materials.
+
+You may reference, quote, discuss, critique, and use them as a basis for education, creative work, alignment-related discussion, and non-commercial public exploration, provided that the original authorship and context are preserved.
+
+This repository is intended as a public interface, not as a full internal specification.
+Some core materials, private drafts, and implementation-facing details are maintained separately.
+
+Use of these materials should not imply that derivative systems, implementations, summaries, or reinterpretations are endorsed by the author.
+
+存在論科学および境界倫理モデルは、公開用の概念資料として提示します。
+
+批評、引用、議論、教育、創作、AIアライメントに関する非商用の公開的探究の基盤として参照・利用することは歓迎します。ただし、元の著者性と文脈を保持してください。
+
+本リポジトリは、存在論科学の公開用インターフェースであり、内部仕様の完全な公開を目的とするものではありません。
+一部の中核資料、非公開草案、実装に近い詳細資料は別管理とします。
+
+本資料を用いた派生システム、実装、要約、再解釈が、著者によって承認・保証されたものであるとは限りません。
+
+---
+
+## License / ライセンス
+
+This repository is licensed under Creative Commons Attribution-NonCommercial 4.0 International unless otherwise stated.
+
+本リポジトリの内容は、特に明記がない限り、Creative Commons Attribution-NonCommercial 4.0 International のもとで公開します。
+
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+[![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)
