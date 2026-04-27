@@ -11,10 +11,6 @@
 > 現時点では日本語記述を正本として扱います。
 > 一部の中核資料、非公開草案、実装に近い詳細資料は別管理とします。
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-
-[![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)
-
 ## 🌌 存在の四大公理 / The Four Axioms of Existence
 
 **1. Reality = sliced boson field**  

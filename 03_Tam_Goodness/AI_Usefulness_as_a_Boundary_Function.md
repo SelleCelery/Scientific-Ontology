@@ -2,7 +2,7 @@
 # 有用性とは境界機能である
 
 > Directory: `03_Tam_Goodness`
->  
+>
 > This document defines AI usefulness as a boundary function.
 > It is not a full implementation specification, but a public-facing conceptual interface for discussing useful AI systems.
 >
