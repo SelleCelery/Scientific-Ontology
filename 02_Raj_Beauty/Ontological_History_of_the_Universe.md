@@ -1,5 +1,5 @@
 # Ontological History of the Universe  
-# 宇宙の存在論的履歴
+# 存在論的宇宙史
 
 ## Overcoming the Subject-Object Fallacy and the Emergence of Physical Laws via Boson Routing  
 ## 主客の誤認の超克とボソン経路による物理法則の創発モデル
@@ -13,9 +13,9 @@
 >
 > 主客分離、観測、ボソン経路、履歴、論理深度という概念を用いて、宇宙史を存在論的に読み替える試みです。
 >
-> The Japanese text is treated as the authoritative version at this stage.
+> At this stage, the Japanese text should be treated as the primary reference.
 >
-> 現時点では日本語記述を正本として扱います。
+> 現時点では、日本語記述を主要な参照本文として扱います。
 
 ---
 
@@ -217,14 +217,10 @@ Only when Mind and Nature are understood as entangled aspects of the same histor
 
 ## Public Scope / 公開範囲
 
-This document is a public conceptual essay in the Raj / Beauty layer of Scientific Ontology.
+This document belongs to the Raj / Beauty layer of Scientific Ontology and should be read as a public conceptual essay.
 
 本文書は、存在論科学における Raj / Beauty 層の公開用概念論考である。
 
-It presents an ontological reinterpretation of cosmic history through subject-object separation, observation, boson routing, history, and logical depth.
+It is part of the public interface of the repository and does not disclose internal specifications, operational parameters, or system-specific implementation materials.
 
-主客分離、観測、ボソン経路、履歴、論理深度を用いて、宇宙史を存在論的に読み替える試みである。
-
-This repository is intended as a public interface, not as a full internal specification. Detailed internal designs, operational parameters, and system-specific connection materials are maintained separately.
-
-本リポジトリは、存在論科学の公開用インターフェースであり、内部仕様の完全な公開を目的とするものではない。詳細な内部設計、運用上の具体仕様、個別システムへの接続に関わる資料は別管理とする。
+本リポジトリにおける公開用インターフェースの一部であり、内部仕様、運用パラメータ、個別システムへの実装資料を開示するものではない。
