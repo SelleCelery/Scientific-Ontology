@@ -11,6 +11,27 @@
 > 現時点では日本語記述を正本として扱います。
 > 一部の中核資料、非公開草案、実装に近い詳細資料は別管理とします。
 
+## Pre-Ontological Ground / 存在論以前の根拠
+
+> Scientific Ontology is not the ultimate root of this project.  
+> Prior to it lies a theological intuition: facts are not inert data, and existence is not a collection of abstract points.  
+> Every entity bears history, and to observe is to encounter that history.  
+> In this sense, Scientific Ontology is a public conceptual interface for translating this theological ground into ontology, information theory, ethics, and implementation-facing models.
+> 
+> 存在論科学は、このプロジェクトの最上流ではありません。  
+> その前には、ひとつの神学的直観があります。  
+> 事実は死んだデータではなく、存在は抽象的な点の集合ではない。  
+> あらゆる存在は履歴を持ち、観測とはその履歴との邂逅である。  
+> この意味で、存在論科学は、その神学的根拠を、存在論・情報理論・倫理・実装モデルへ翻訳するための公開用インターフェースです。
+
+I view systems, the human mind and spirit, AI, creativity, and social structures as issues of history, boundaries, and meaning-connections.
+Here, “God” does not mean a personal deity or an external judge, but the ultimate guarantor of meaning, order, and value.
+The fundamental question is: “In a world without God, how can we redesign a world that is more resilient?”
+
+私は、制度・精神・AI・創作・社会構造を、履歴と境界と意味接続の問題として考えています。
+ここでいう「神」とは、人格神や外部の審判者ではなく、意味・秩序・価値を最終的に保証する根拠のことです。
+根にある問いは、「神なき世界で、どう壊れにくい世界を再設計するか」です。
+
 ## 🌌 存在の四大公理 / The Four Axioms of Existence
 
 **1. Reality = sliced boson field**  
