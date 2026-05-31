@@ -344,6 +344,27 @@ Use of these materials should not imply that derivative systems, implementations
 本資料を用いた派生システム、実装、要約、再解釈が、著者によって承認・保証されたものであるとは限りません。
 
 ---
+# Scientific Ontology (SO)
+
+Public Edition of the SO framework repository.
+
+This repository corresponds to the public-facing Zenodo release of the project.
+For stable citation, please refer to the DOI records below.
+
+## Citation / DOI
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20475944.svg)](https://doi.org/10.5281/zenodo.20475944)
+
+
+
+Latest public record (all versions):  
+[10.5281/zenodo.19222394](https://doi.org/10.5281/zenodo.19222394)
+
+Current public edition (v2.0.0):  
+[10.5281/zenodo.20475944](https://doi.org/10.5281/zenodo.20475944)
+
+Use the version-specific DOI when citing this release.  
+この版を引用する場合は、版固有 DOI を使用してください。
 
 ## License / ライセンス
 
