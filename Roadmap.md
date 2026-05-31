@@ -2,28 +2,40 @@
 
 ## Phase 0: Public Interface
 - README
-- Four Axioms
 - Glossary
-- System Map
+- Layer map
+- Public scope and license
 
-## Phase 1: Conceptual Foundations
+## Phase 1: Sat / Truth Foundations
 - AMP Introduction
+- Four Axioms of Existence
+- Meaning Generation Model
+
+## Phase 2: Raj / Beauty Constructive Frameworks
 - HFC Introduction
-- Boundary Dynamics
+- History-Field Topology
+- Boundary dynamics
+- Meaning / experience / event-flow models
 
-## Phase 2: Public Applications
-- Translation and language ecology
-- AI assistance
-- Creative workflows
-- Communication ethics
+## Phase 3: Tam / Goodness Public Safety Interface
+- Boundary Ethics Model
+- AI Usefulness as a Boundary Function
+- Public AI safety and boundary concepts
 
-## Phase 3: Implementation-facing Notes
-- Public AI persona interface
-- Safety and boundary protocols
-- Non-private examples
+## Phase 4: Research Notes
+- Internal Time Standard Model Correspondence
+- Ontological History of the Universe
+- Cosmological Topological Dynamics
+- High-claim-strength conceptual applications
+- Physical / cosmological correspondence notes
 
 ## Not included
 - Full AMP Core
-- private runtime schemas
-- personality core files
-- detailed implementation parameters
+- Full ITS theory
+- Private axiomatic drafts
+- Persona Runtime Core
+- Soul Core details
+- Role-AP module parameters
+- Boundary Heat Log taxonomy
+- Detailed implementation parameters
+- Private runtime schemas

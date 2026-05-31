@@ -1,14 +1,24 @@
-## Internal Time Standard Model Correspondence
+# Research Notes / 研究ノート
 
-`Internal_Time_Standard_Model_Correspondence_v0.1.md` is a research note that explores how concepts in the Standard Model may be reinterpreted through the vocabulary of History-Field Topology by introducing a single additional assumption: **intrinsic time**.
+This directory contains high-claim-strength research notes, speculative correspondences, and conceptual applications of Scientific Ontology.
 
-This note does not replace the Standard Model.  
-It does not claim new physical predictions.  
-It does not derive the Standard Model Lagrangian.  
-It does not solve the black hole information problem, holographic principle, or wormhole physics.
+このディレクトリには、主張強度の高い研究ノート、試論的対応表、存在論科学の概念応用を置きます。
 
-Its purpose is to provide a correspondence table: spin, charge, generation, bosons, fermions, exclusion, gauge symmetry, and boundary information are tentatively mapped to intrinsic time, history synchronization, solitonic stability, and readable/unreadable histories.
+Documents in this directory may connect Scientific Ontology with physics, cosmology, the Standard Model, black holes, holographic principles, or large-scale universe models.
 
-Status: Research note / Proposal  
-Claim strength: S4-S5 candidate  
-Public scope: conceptual correspondence, not proof
+このディレクトリの文書は、存在論科学を、物理、宇宙論、標準模型、ブラックホール、ホログラム原理、大規模宇宙モデルなどへ接続する場合があります。
+
+They are not presented as empirical proofs, peer-reviewed physical theories, or replacements for modern science.
+
+これらは、経験的証明、査読済み物理理論、現代科学の代替として提示するものではありません。
+
+## Documents / 文書
+
+- `Internal_Time_Standard_Model_Correspondence_v0.1.md`  
+  A correspondence table that reinterprets Standard Model concepts through intrinsic time and history synchronization.
+
+- `Ontological_History_of_the_Universe.md`  
+  A conceptual essay reinterpreting cosmic history through subject-object separation, observation, boson routing, history, and logical depth.
+
+- `Cosmological_Topological_Dynamics.md`  
+  A conceptual application discussing cosmological expansion, boundary tension, purge/internalization, and observer-side phase transition.

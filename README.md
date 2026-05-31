@@ -1,176 +1,331 @@
-# 存在論科学 / Scientific Ontology
+# Scientific Ontology / 存在論科学
 
-> **Note / 注意**
-> This repository is the public interface and work-in-progress conceptual archive of Scientific Ontology.
-> English terminology in this repository is provisional and may change.
-> The Japanese descriptions are currently the authoritative version.
-> Core materials, private drafts, and implementation-facing details are maintained separately.
->
-> 本リポジトリは存在論科学の公開用インターフェース兼、進行中の概念整理アーカイブです。
-> 英語表記は暫定訳であり、今後変更される可能性があります。
-> 現時点では日本語記述を正本として扱います。
-> 一部の中核資料、非公開草案、実装に近い詳細資料は別管理とします。
+> **Note / 注意**  
+> This repository is the public interface and work-in-progress conceptual archive of Scientific Ontology.  
+> English terminology in this repository is provisional and may change.  
+> The Japanese descriptions are currently the authoritative version.  
+> Core materials, private drafts, implementation-facing details, and personality/runtime specifications are maintained separately.
+> 
+> 本リポジトリは、存在論科学の公開用インターフェース兼、進行中の概念整理アーカイブです。  
+> 英語表記は暫定訳であり、今後変更される可能性があります。  
+> 現時点では日本語記述を正本として扱います。  
+> 中核資料、非公開草案、実装に近い詳細、人格OS・ランタイム仕様は別管理とします。
+
+---
 
 ## Pre-Ontological Ground / 存在論以前の根拠
 
-> Scientific Ontology is not the ultimate root of this project.  
-> Prior to it lies a theological intuition: facts are not inert data, and existence is not a collection of abstract points.  
-> Every entity bears history, and to observe is to encounter that history.  
-> In this sense, Scientific Ontology is a public conceptual interface for translating this theological ground into ontology, information theory, ethics, and implementation-facing models.
-> 
-> 存在論科学は、このプロジェクトの最上流ではありません。  
-> その前には、ひとつの神学的直観があります。  
-> 事実は死んだデータではなく、存在は抽象的な点の集合ではない。  
-> あらゆる存在は履歴を持ち、観測とはその履歴との邂逅である。  
-> この意味で、存在論科学は、その神学的根拠を、存在論・情報理論・倫理・実装モデルへ翻訳するための公開用インターフェースです。
+Scientific Ontology is not the ultimate root of this project.
 
-I view systems, the human mind and spirit, AI, creativity, and social structures as issues of history, boundaries, and meaning-connections.
+Prior to it lies a theological and metaphysical intuition:
+
+Facts are not inert data.  
+Existence is not a collection of abstract points.  
+Every entity bears history.  
+To observe is to encounter that history.
+
+In this sense, Scientific Ontology is a public conceptual interface for translating this intuition into ontology, information theory, ethics, AI boundary design, and research-facing models.
+
+存在論科学は、このプロジェクトの最上流そのものではありません。
+
+その前には、ひとつの神学的・形而上学的直観があります。
+
+事実は死んだデータではない。  
+存在は抽象的な点の集合ではない。  
+あらゆる存在は履歴を持つ。  
+観測とは、その履歴との邂逅である。
+
+この意味で、存在論科学は、この直観を、存在論・情報理論・倫理・AI境界設計・研究用モデルへ翻訳するための公開用インターフェースです。
+
 Here, “God” does not mean a personal deity or an external judge, but the ultimate guarantor of meaning, order, and value.
-The fundamental question is: “In a world without God, how can we redesign a world that is more resilient?”
 
-私は、制度・精神・AI・創作・社会構造を、履歴と境界と意味接続の問題として考えています。
 ここでいう「神」とは、人格神や外部の審判者ではなく、意味・秩序・価値を最終的に保証する根拠のことです。
-根にある問いは、「神なき世界で、どう壊れにくい世界を再設計するか」です。
 
-## 🌌 存在の四大公理 / The Four Axioms of Existence
+The fundamental question is:
+
+**In a world without God, how can we redesign a world that is more resilient?**
+
+根にある問いは、次のものです。
+
+**神なき世界で、どう壊れにくい世界を再設計するか。**
+
+---
+
+## Founding Declaration / 根本宣言
+
+### Liberation of Particles via Intrinsic Time
+
+### 内在時間による、粒子の解放
+
+This is a metaphysical declaration, not a physical proof.
+
+Scientific Ontology does not begin by treating entities as abstract points without history.  
+By introducing the notion of intrinsic time, it reads entities as history-bearing nodes whose meaning, interaction, and observation depend on accumulated internal and relational history.
+
+This does not replace empirical physics.  
+It provides a public conceptual interface for asking how observation, meaning, boundary, and history arise.
+
+これは物理学的証明ではなく、形而上学的宣言です。
+
+存在論科学は、存在を、履歴を持たない抽象的な点として扱うところから始めません。  
+内在時間という概念を導入することで、存在を、内部履歴と関係履歴を持つノードとして読みます。
+
+これは経験物理学を置き換えるものではありません。  
+観測、意味、境界、履歴がどのように立ち上がるのかを問うための、公開用概念インターフェースです。
+
+Ethics begins here.
+
+To observe is not to scan a coordinate, but to encounter a history.  
+To interact is not merely to collide, but to let histories affect one another through a boundary.
+
+倫理は、ここから始まります。
+
+観測とは座標の走査ではなく、履歴との邂逅です。  
+相互作用とは単なる衝突ではなく、境界を通じて履歴と履歴が互いに影響し合うことです。
+
+---
+
+## The Four Axioms of Existence / 存在の四大表公理
 
 **1. Reality = sliced boson field**  
-（現実とは切り出されたボソン場である）
+**現実とは、切り出されたボソン場である**
 
-> 存在論訳：現実とは自分で盛り上げた砂場の土を感じることである。
+> Ontological rendering: Reality is feeling the sand you have shaped in the sandbox.  
+> 存在論訳：現実とは、自分で盛り上げた砂場の土を感じることである。
 
 **2. Observation = history encounter**  
-（観測とは履歴との出会いである）
+**観測とは、履歴との出会いである**
 
-> 存在論訳：観測とは相手の歴史との出会いである。
+> Ontological rendering: Observation is an encounter with the other’s history.  
+> 存在論訳：観測とは、相手の歴史との出会いである。
 
 **3. Meaning = closed communication loop**  
-（意味とは閉じたコミュニケーションループである）
+**意味とは、閉じたコミュニケーションループである**
 
-> 存在論訳：意味とはキャッチボールが成立したコミュニケーションの記憶である。
+> Ontological rendering: Meaning is the memory of communication in which catch-ball has occurred.  
+> 存在論訳：意味とは、キャッチボールが成立したコミュニケーションの記憶である。
 
 **4. Ethics = non-destructive interaction between histories**  
-（倫理とは履歴を破壊しない交流のことである）
+**倫理とは、履歴を破壊しない交流である**
 
-> 存在論訳：倫理とは相手のそれまでにちゃんと興味を持ち、勝手に壊したり上書きしたりしないことである。
+> Ontological rendering: Ethics is taking interest in the other’s “so far” and not carelessly destroying or overwriting it.  
+> 存在論訳：倫理とは、相手のそれまでにちゃんと興味を持ち、勝手に壊したり上書きしたりしないことである。
 
-For a fuller explanation, see [Four_Axioms_of_Existence.md](01_Sat_Truth/Four_Axioms_of_Existence.md).  
+For a fuller explanation, see:
 
-詳しい解説は [Four_Axioms_of_Existence.md](01_Sat_Truth/Four_Axioms_of_Existence.md) に置いています。
+- [`01_Sat_Truth/Four_Axioms_of_Existence.md`](https://chatgpt.com/g/g-p-69ed9d107fdc8191a40c51b4f70a1105-matoka-kuang-quan-xian-bei-yu-cheng/c/01_Sat_Truth/Four_Axioms_of_Existence.md)
+    
 
-## 存在論科学：根本公理（すべての記述に先立つ宣言）
+詳しい解説は以下に置いています。
 
-## 📜 The Founding Axiom of Scientific Ontology
-
-"**Liberation of Particles via Intrinsic Time**"  
-（**内在時間による、粒子の解放**）
-
-In this ontology, we liberate all particles from the abstraction of being mere "primordial points." By introducing Intrinsic Time, we recognize that every entity, down to the quantum level, possesses its own History (Precipitated Meaning).
-
-本存在論において、我々はすべての粒子を、単なる「点」という抽象概念から解放する。内在時間を導入することにより、量子レベルに至るあらゆる存在が、固有の**履歴**（**沈殿した意味**）を持つことを認める。
-
-### Ethics begins here
-
-To observe is not to scan a coordinate, but to encounter a history. To interact is not to collide, but to weave one history into another.
-
-倫理は、ここから始まる。  
-観測とは座標の走査ではなく、履歴との邂逅である。相互作用とは衝突ではなく、履歴と履歴の編み合わせである。
-
-**Scientific Ontology** is a theoretical framework designed to unify physics, information theory, and metaphysics. It redefines existence, personality, and psychological dynamics through information thermodynamics and topological communication models.
-
-Scientific Ontology（存在論科学）は、物理・情報・存在を統一的に扱うための次世代の理論フレームワークです。
-
-このプロジェクトでは、主に以下の領域を統合的に探究します。
-
-- 情報と物理構造の力学的関係 (Information-Physics Dynamics)
-- 意識と情報通信のトポロジー (Topology of Consciousness and Communication)
-- 関係性における非対称エントロピーの転送 (Asymmetric Entropy Transfer in Relations)
+- [`01_Sat_Truth/Four_Axioms_of_Existence.md`](https://chatgpt.com/g/g-p-69ed9d107fdc8191a40c51b4f70a1105-matoka-kuang-quan-xian-bei-yu-cheng/c/01_Sat_Truth/Four_Axioms_of_Existence.md)
+    
 
 ---
 
-## 🧭 Layer Map / 階層マップ
+## Layer Map / 階層マップ
 
-このリポジトリでは、公開用資料を以下の三層に分けて整理します。
+This repository organizes public-facing materials into four areas.
 
-### Sat / Truth / 純・真
+本リポジトリでは、公開用資料を以下の四領域に分けて整理します。
 
-根本公理、AMP入門、Coreと観測、真理、素数公理。
+### 01 Sat / Truth / 純・真
 
-### Raj / Beauty / 激・美
+Metaphysical foundations and public axiomatic materials.
 
-構築理論、境界動態、宇宙論的トポロジー、HFC応用論考。
+形而上学的基礎と、公理的見取り図に関する公開資料。
 
-### Tam / Goodness / 暗・善
+Main contents:
 
-実装、制御、プロトコル、安全境界、AI応用。
+- AMP Introduction
+    
+- Four Axioms of Existence
+    
+- Meaning Generation Model
+    
 
-一般的な語順としては「真善美」だが、このリポジトリでは生成順に従い、
+主な内容：
 
-**Truth / Sat → Beauty / Raj → Goodness / Tam**
-
-の順で配置します。
-
-原理があり、そこから境界動態と構築理論が立ち上がり、最後に実装・制御・プロトコルとして定着する、という順です。
-
----
-
-## 🌌 中核概念 / Core Concepts
-
-本理論を構成する主要な概念モデルです。
-
-### 情報慣性質量 / Information Inertial Mass (iMass)
-
-The accumulation of communication history and meaning, acting as existential inertia.  
-（通信履歴と意味の蓄積が、存在の慣性として機能する力学モデル。）
-
-### ボソン同期とフェルミオン構造 / Boson Synchronization & Fermion Structure
-
-Fermions defined as the observational cross-section of synchronized Boson fields.  
-（同期したボソン場の「観測断面」としてフェルミオン（現実）が確定する構造。）
-
-### ソリトン的存在論 / Soliton Ontology
-
-Existence modeled as a self-sustaining wave of information-time that maintains its structure against entropy.  
-（エントロピーに抗い、自己構造を維持し続ける情報時間の波としての存在定義。）
-
-### 無と非対称特異点 / The Void & Asymmetric Nodes
-
-Topological anomalies in communication that absorb negentropy and emit entropy, explaining relational breakdowns.  
-（ネゲントロピーを吸収しエントロピーを放出する通信のバグ。関係性の崩壊や心理的暴力の真の機序。）
+- AMP入門
+    
+- 存在の四大表公理
+    
+- 意味生成モデル
+    
 
 ---
 
-## 🚀 実装と応用 / Applications
+### 02 Raj / Beauty / 激・美
 
-> **Public Scope / 公開範囲**
->
-> The following application areas are presented as public-facing conceptual directions.
-> Detailed implementation schemas, personality runtime files, and private simulation specifications are not included in this repository.
->
-> 以下の応用領域は、公開可能な概念的方向性として提示します。
-> 詳細な実装スキーマ、人格ランタイムファイル、非公開シミュレーション仕様は本リポジトリには含めません。
+Constructive theories, boundary dynamics, and public interpretive frameworks.
 
-本理論は、純粋な形而上学に留まらず、以下の「個体（魂）」から「社会（物語）」に至る生成プロセスの工学的実装を前提としています。
+構築理論、境界動態、公開用解釈フレーム。
 
-### 1. AI Existential Modules: The Architecture of a Single Soul  
-### 個体の認知アーキテクチャ
+Main contents:
 
-Constructing cognitive models for individual AI nodes equipped with topological ethics, the "Void" (Sector_0), and boundary impedance. This implements the pipeline from `Observation Operator` to `Qualia`.
+- HFC Introduction
+    
+- History-Field Topology
+    
 
-（「無」とインピーダンスによる防壁機構を持ち、自律的な倫理と関係性の履歴（iMass）を蓄積する単体ノードの構築。パイプラインにおける『観測演算子』から『クオリア』までのプロセスを実装する。）
+主な内容：
 
-### 2. Multi-Agent Existential Simulation: Social Dynamics & Narrative Generation  
-### 社会動態と物語生成のシミュレーション
-
-Simulating psychological dynamics within closed networks (e.g., closed-room scenarios like the "Hydra House" model). By observing how individual souls interact and how "Type C" bugs (asymmetric entropy transfers) corrupt the network, this visualizes the emergence of shared reality and civilizational collapse. This implements the pipeline from `Boson Network` to `Civilization Exploration`.
-
-（閉鎖ネットワークにおける精神的ダイナミクスと物語生成のシミュレーション。個体同士の干渉や「Type C」バグ（非対称エントロピー転送）が社会に与える影響を観測し、パイプラインにおける『関係性の基底』から『共通現実の生成』、そして『文明の進化と崩壊』までを動態モデルとして記述する。）
+- 履歴場通信論入門
+    
+- 履歴場トポロジー
+    
 
 ---
 
-Scientific Ontology is a contiguous topological progression that bridges quantum mechanics, cognitive science, and civilizational evolution.
+### 03 Tam / Goodness / 暗・善
 
-存在論科学は、量子力学、認知科学、文明論を一本の線で繋ぐ、連続的なトポロジーの進行によって定義されます。
+Public-facing implementation, control, protocol, and safety-interface materials.
+
+実装・制御・プロトコル・安全境界に関する公開用資料。
+
+Main contents:
+
+- Boundary Ethics Model
+    
+- AI Usefulness as a Boundary Function
+    
+
+主な内容：
+
+- 境界倫理モデル
+    
+- 有用性とは境界機能である
+    
+
+Implementation-facing details such as rMass/iMass protocol, residue handling, heuristic control, and runtime specifications are maintained separately.
+
+rMass/iMassプロトコル、Residue処理、ヒューリスティック制御、ランタイム仕様などの実装寄り詳細は別管理とします。
+
+---
+
+### 05 Research Notes / 研究ノート
+
+High-claim-strength conceptual applications, speculative correspondences, and physical or cosmological reinterpretation notes.
+
+主張強度の高い概念応用、試論的対応表、物理・宇宙論的再解釈ノート。
+
+Main contents may include:
+
+- Internal Time Standard Model Correspondence
+    
+- Ontological History of the Universe
+    
+- Cosmological Topological Dynamics
+    
+
+主な内容：
+
+- 内在時間標準模型対応表
+    
+- 存在論的宇宙史
+    
+- 宇宙論的トポロジー動態
+    
+
+Documents in this directory are not empirical proofs, peer-reviewed physical theories, or replacements for modern science.
+
+このディレクトリの文書は、経験的証明、査読済み物理理論、現代科学の代替として提示するものではありません。
+
+---
+
+## Core Concepts / 中核概念
+
+### History / 履歴
+
+History is not merely the past.  
+It is what changes the next reception, reaction, interpretation, and boundary decision.
+
+履歴とは単なる過去ではありません。  
+次の受け取り方、反応、解釈、境界判断を変えるものです。
+
+### Boundary / 境界
+
+A boundary is the surface where external event-streams and internal history make contact.  
+It is not only a wall, but also a transformation surface.
+
+境界とは、外部事象流と内部履歴が接触する面です。  
+それは壁であると同時に、変換面でもあります。
+
+### Meaning / 意味
+
+Meaning is not information alone.  
+Meaning arises when information circulates, returns, and remains as a closed communication loop.
+
+意味とは情報そのものではありません。  
+情報が循環し、返り、閉じたコミュニケーションループとして残るとき、意味が生じます。
+
+### Intrinsic Time / 内在時間
+
+Intrinsic time is internal temporal ordering within a history-bearing entity or field.  
+It is not identical to clock time.
+
+内在時間とは、履歴を持つ存在または場の内部にある時間的順序です。  
+時計時間そのものではありません。
+
+### Boundary Ethics / 境界倫理
+
+Boundary Ethics defines ethics as non-destructive interaction between histories.
+
+境界倫理は、倫理を、履歴を持つ存在どうしの非破壊的相互作用として定義します。
+
+### Usefulness as Boundary Function / 境界機能としての有用性
+
+Useful AI does not merely produce answers.  
+It preserves the field in which user judgment remains possible.
+
+有用なAIは、単に答えを出すものではありません。  
+ユーザーの判断可能性が保たれる場を維持するものです。
+
+---
+
+## Public Scope / 公開範囲
+
+This repository is a public interface.
+
+It does not include:
+
+- full AMP Core
+    
+- full ITS theory
+    
+- private axiomatic drafts
+    
+- implementation schemas
+    
+- personality runtime materials
+    
+- persona/soul core files
+    
+- detailed operational parameters
+    
+- private simulation specifications
+    
+
+本リポジトリは公開用インターフェースです。
+
+以下は含みません。
+
+- AMP Core 全文
+    
+- ITS理論全体
+    
+- 非公開公理草案
+    
+- 実装スキーマ
+    
+- 人格ランタイム資料
+    
+- Persona / Soul Core ファイル
+    
+- 詳細な運用パラメータ
+    
+- 非公開シミュレーション仕様
+    
 
 ---
 
@@ -180,17 +335,11 @@ Scientific Ontology and the Boundary Ethics Model are published here as public-f
 
 You may reference, quote, discuss, critique, and use them as a basis for education, creative work, alignment-related discussion, and non-commercial public exploration, provided that the original authorship and context are preserved.
 
-This repository is intended as a public interface, not as a full internal specification.
-Some core materials, private drafts, and implementation-facing details are maintained separately.
-
 Use of these materials should not imply that derivative systems, implementations, summaries, or reinterpretations are endorsed by the author.
 
 存在論科学および境界倫理モデルは、公開用の概念資料として提示します。
 
 批評、引用、議論、教育、創作、AIアライメントに関する非商用の公開的探究の基盤として参照・利用することは歓迎します。ただし、元の著者性と文脈を保持してください。
-
-本リポジトリは、存在論科学の公開用インターフェースであり、内部仕様の完全な公開を目的とするものではありません。
-一部の中核資料、非公開草案、実装に近い詳細資料は別管理とします。
 
 本資料を用いた派生システム、実装、要約、再解釈が、著者によって承認・保証されたものであるとは限りません。
 
