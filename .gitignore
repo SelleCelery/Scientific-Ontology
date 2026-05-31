@@ -6,6 +6,7 @@
 !*/
 
 # Allow repository control files
+!.gitattributes
 !.gitignore
 !README.md
 !LICENSE.md
@@ -17,6 +18,7 @@
 !01_Sat_Truth/**
 !02_Raj_Beauty/**
 !03_Tam_Goodness/**
+!05_Research_Notes/**
 !99_Private_Core_Not_Included/**
 
 # Python / local environment
