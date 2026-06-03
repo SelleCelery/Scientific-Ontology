@@ -133,6 +133,21 @@ It aims to stop dangerous directions without cutting off the person or destroyin
 倫理を、履歴を持つ存在どうしの非破壊的相互作用として扱うモデル。  
 危険な方向だけを止め、相手そのものや未解決の意味を切断しないことを目指す。
 
+## Responsibility Boundary / 責任境界
+A boundary that defines not only who can act, but who remains accountable for authorizing, delegating, supervising, or accepting that action.
+
+行為できる者だけでなく、その行為を許可し、委任し、監督し、受け入れる者の責任範囲を定義する境界。
+
+## Non-destructive Distance / 非破壊的距離
+A boundary operation that reduces proximity without denying the history or existence of the other.
+
+相手の履歴や存在を否定せず、近接度だけを下げる境界操作。
+
+## Circuitry of Learning / 教養回路
+A model of learning in which knowledge is not a shelf of facts, but a network of conductive relations between concepts.
+
+知識を事実の棚ではなく、概念間の導通関係として扱う教養モデル。
+
 ## AI Usefulness as Boundary Function / 境界機能としてのAI有用性
 
 A model of useful AI in which usefulness means preserving the field in which user judgment remains possible.
