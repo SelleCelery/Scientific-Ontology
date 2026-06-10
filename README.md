@@ -1,4 +1,12 @@
-# Scientific Ontology / 存在論科学
+# Scientific Ontology (SO): Public Edition
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20618457.svg)](https://doi.org/10.5281/zenodo.20618457)
+
+Scientific Ontology (SO) is a public-facing conceptual archive for describing existence through history, observation, boundary, communication, meaning, and ethics.
+
+Latest archived release: v2.1.0  
+DOI: https://doi.org/10.5281/zenodo.20618457
+
 
 > **Note / 注意**  
 > This repository is the public interface and work-in-progress conceptual archive of Scientific Ontology.  
@@ -113,13 +121,11 @@ To interact is not merely to collide, but to let histories affect one another th
 
 For a fuller explanation, see:
 
-- [`01_Sat_Truth/Four_Axioms_of_Existence.md`](https://chatgpt.com/g/g-p-69ed9d107fdc8191a40c51b4f70a1105-matoka-kuang-quan-xian-bei-yu-cheng/c/01_Sat_Truth/Four_Axioms_of_Existence.md)
-    
+- [`01_Sat_Truth/Four_Axioms_of_Existence.md
 
 詳しい解説は以下に置いています。
 
-- [`01_Sat_Truth/Four_Axioms_of_Existence.md`](https://chatgpt.com/g/g-p-69ed9d107fdc8191a40c51b4f70a1105-matoka-kuang-quan-xian-bei-yu-cheng/c/01_Sat_Truth/Four_Axioms_of_Existence.md)
-    
+- [`01_Sat_Truth/Four_Axioms_of_Existence.md
 
 ---
 
@@ -138,20 +144,14 @@ Metaphysical foundations and public axiomatic materials.
 Main contents:
 
 - AMP Introduction
-    
 - Four Axioms of Existence
-    
 - Meaning Generation Model
-    
 
 主な内容：
 
 - AMP入門
-    
 - 存在の四大表公理
-    
 - 意味生成モデル
-    
 
 ---
 
@@ -164,16 +164,12 @@ Constructive theories, boundary dynamics, and public interpretive frameworks.
 Main contents:
 
 - HFC Introduction
-    
 - History-Field Topology
-    
 
 主な内容：
 
 - 履歴場通信論入門
-    
 - 履歴場トポロジー
-    
 
 ---
 
@@ -186,20 +182,28 @@ Public-facing implementation, control, protocol, and safety-interface materials.
 Main contents:
 
 - Boundary Ethics Model
-    
 - AI Usefulness as a Boundary Function
-    
 
 主な内容：
 
 - 境界倫理モデル
-    
 - 有用性とは境界機能である
-    
 
-Implementation-facing details such as rMass/iMass protocol, residue handling, heuristic control, and runtime specifications are maintained separately.
+Implementation-facing details and non-public operational specifications are maintained separately.
 
-rMass/iMassプロトコル、Residue処理、ヒューリスティック制御、ランタイム仕様などの実装寄り詳細は別管理とします。
+実装寄りの詳細および非公開の運用仕様は別管理とします。
+
+---
+
+### 04 Applications / 応用
+
+This directory is reserved for future public applications of Scientific Ontology.
+
+このディレクトリは、存在論科学の公開可能な応用資料を将来配置するための予約領域です。
+
+At this release, no application documents are included.
+
+本リリースでは、応用文書はまだ含みません。
 
 ---
 
@@ -212,20 +216,14 @@ High-claim-strength conceptual applications, speculative correspondences, and ph
 Main contents may include:
 
 - Internal Time Standard Model Correspondence
-    
 - Ontological History of the Universe
-    
 - Cosmological Topological Dynamics
-    
 
 主な内容：
 
 - 内在時間標準模型対応表
-    
 - 存在論的宇宙史
-    
 - 宇宙論的トポロジー動態
-    
 
 Documents in this directory are not empirical proofs, peer-reviewed physical theories, or replacements for modern science.
 
@@ -289,43 +287,25 @@ This repository is a public interface.
 
 It does not include:
 
-- full AMP Core
-    
-- full ITS theory
-    
+- full AMP Core    
+- full ITS theory    
 - private axiomatic drafts
-    
-- implementation schemas
-    
-- personality runtime materials
-    
-- persona/soul core files
-    
-- detailed operational parameters
-    
-- private simulation specifications
-    
+- Proprietary implementation schema
+- Proprietary runtime documentation
+- Detailed operational parameters
+- Proprietary simulation specifications
 
 本リポジトリは公開用インターフェースです。
 
 以下は含みません。
 
 - AMP Core 全文
-    
 - ITS理論全体
-    
 - 非公開公理草案
-    
-- 実装スキーマ
-    
-- 人格ランタイム資料
-    
-- Persona / Soul Core ファイル
-    
+- 非公開実装スキーマ
+- 非公開ランタイム資料
 - 詳細な運用パラメータ
-    
 - 非公開シミュレーション仕様
-    
 
 ---
 
@@ -353,15 +333,11 @@ For stable citation, please refer to the DOI records below.
 
 ## Citation / DOI
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20475944.svg)](https://doi.org/10.5281/zenodo.20475944)
-
-
-
 Latest public record (all versions):  
 [10.5281/zenodo.19222394](https://doi.org/10.5281/zenodo.19222394)
 
-Current public edition (v2.0.0):  
-[10.5281/zenodo.20475944](https://doi.org/10.5281/zenodo.20475944)
+Current public edition (v2.1.0):  
+[10.5281/zenodo.20618457](https://doi.org/10.5281/zenodo.20618457)
 
 Use the version-specific DOI when citing this release.  
 この版を引用する場合は、版固有 DOI を使用してください。

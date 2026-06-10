@@ -10,10 +10,10 @@ Included:
 - implementation-facing summaries
 
 Not included:
-- Persona Runtime Core
-- Soul Core details
-- Role-AP module parameters
-- Boundary Heat Log taxonomy
+- private runtime materials
+- non-public implementation schemas
+- detailed operational parameters
+- internal evaluation taxonomies
 
 ## Documents / 文書
 
@@ -30,11 +30,9 @@ Not included:
 #### Implementation-facing notes / 実装側ノート
 
 Boundary Ethics and AI Usefulness define the public conceptual interface.
-Internally, these ideas are extended into History-Boundary Alignment Design, including rMass/iMass separation, provisional closure, residue handling, heuristic control, and recovery-oriented evaluation.
-
-These implementation-facing details are not fully published in this repository.
+Internally, these ideas may be extended into non-public implementation and evaluation designs.  
+Those details are not included in this public repository.
 
 境界倫理モデルと「有用性とは境界機能である」は、公開用の概念インターフェースである。
-内部ではこれらを、履歴境界設計によるAIアライメント基礎設計へ展開し、rMass/iMass分離、仮閉鎖、Residue処理、ヒューリスティック制御、破綻時復旧評価などを扱う。
-
-ただし、これらの実装寄り詳細は、本リポジトリでは全文公開しない。
+内部では、これらの概念を非公開の実装設計・評価設計へ展開する場合があります。  
+それらの詳細は、この公開リポジトリには含めません。

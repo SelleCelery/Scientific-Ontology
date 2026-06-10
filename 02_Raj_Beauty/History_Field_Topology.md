@@ -195,7 +195,7 @@ History-Field Topology may be used as a comparative frame across several domains
     Difficult theories such as IUT can be used as examples for thinking about explanation as encoding: what can be preserved, what must be transformed, and what cannot yet be transmitted.
     
 - **Safety Engineering**  
-    High-risk systems such as nuclear facilities may be read as systems in which design history, operational history, regulatory history, local experience, and interface history can become dangerously desynchronized.
+    High-risk systems may be read as systems in which design history, operational history, regulatory history, local experience, and interface history can become dangerously desynchronized.
     
 
 ### 日本語
@@ -230,7 +230,7 @@ History-Field Topology may be used as a comparative frame across several domains
     IUTのような難解な理論は、説明を「何を保存し、何を変換し、何をまだ送信できないか」というエンコード問題として考える例になる。
     
 - **安全工学**  
-    原子力施設のような高リスクシステムでは、設計履歴、運用履歴、規制履歴、現場経験、UI履歴が非同期化することで危険経路が開くと読める。
+    高リスクシステムでは、設計履歴、運用履歴、規制履歴、現場経験、UI履歴が非同期化することで危険経路が開くと読める。
     
 
 ---

@@ -112,7 +112,7 @@ It opens a path to reading the self not as an object, but as a flickering histor
 
 ### Reading the self as a circuit
 
-Kenji describes the self as something like an “organic alternating-current lamp.” English translations differ, but the phrase has become one of the most striking images in the preface. English translations of the preface render this electric, organic, flickering self in related ways, and the preface is widely treated as a representative entrance into _Spring and Asura_. ([明治学院大学](https://www.meijigakuin.ac.jp/gengobunka/bulletins/archive/pdf/2018/26Tomiyama_p72.pdf?utm_source=chatgpt.com "Miyazawa Kenji’s “Preface” and Other Poems - 明治学院大学"))
+Kenji describes the self as something like an “organic alternating-current lamp.” English translations differ, but the phrase has become one of the most striking images in the preface. English translations of the preface render this electric, organic, flickering self in related ways, and the preface is widely treated as a representative entrance into _Spring and Asura_. ([明治学院大学](https://www.meijigakuin.ac.jp/gengobunka/bulletins/archive/pdf/2018/26Tomiyama_p72.pdf))
 
 The force of this image is that the self is not only something that shines.  
 It is something through which current passes.
@@ -156,7 +156,7 @@ The organic alternating-current lamp can therefore be read as an apparatus of me
 
 ### Qualia and the observational surface
 
-In the preface to _Spring and Asura_, the “blue illumination” appears as a charged image. The Japanese text is available through Aozora Bunko, which preserves the public-domain text of Kenji’s work. ([青空文庫](https://www.aozora.gr.jp/cards/000081/files/1058_15403.html?utm_source=chatgpt.com "宮沢賢治 『春と修羅』"))
+In the preface to _Spring and Asura_, the “blue illumination” appears as a charged image. The Japanese text is available through Aozora Bunko, which preserves the public-domain text of Kenji’s work. ([青空文庫](https://www.aozora.gr.jp/cards/000081/files/1058_15403.html))
 
 Blue is cool.  
 It has distance.  
@@ -230,7 +230,7 @@ This distinction becomes an ethics of connection.
 
 ### Not fixed substance, but relational arising
 
-It is difficult to think about Kenji without Buddhism, especially the Lotus Sutra. Kenji’s relation to the Lotus Sutra has long been treated as a major axis for interpreting his work. ([J-STAGE](https://www.jstage.jst.go.jp/article/ibk1952/44/2/44_2_772/_article?utm_source=chatgpt.com "The Lotus Sutra and Miyazawa Kenji - J-STAGE"))
+It is difficult to think about Kenji without Buddhism, especially the Lotus Sutra. Kenji’s relation to the Lotus Sutra has long been treated as a major axis for interpreting his work. ([J-STAGE](https://www.jstage.jst.go.jp/article/ibk1952/44/2/44_2_772/_article))
 
 Still, I do not borrow Kenji’s faith as an answer.  
 Nor do I reduce Buddhism to History-Field Topology.
@@ -312,7 +312,7 @@ A statement is deleted, but history remains.
 A persona is performed, but the body performing it is exhausted.  
 A luminous self exists by being seen, but can be damaged by being seen too much.
 
-A very accessible global example is _Star Wars_. The “dark side” is often framed through fear, anger, hatred, and suffering, as in Yoda’s warning to Anakin. The official _Star Wars_ site summarizes the scene as one where Yoda senses great fear in the boy. ([StarWars.com](https://www.starwars.com/video/fear-is-the-path-to-the-dark-side?utm_source=chatgpt.com "Fear is the Path to the Dark Side - StarWars.com"))
+A very accessible global example is _Star Wars_. The “dark side” is often framed through fear, anger, hatred, and suffering, as in Yoda’s warning to Anakin. The official _Star Wars_ site summarizes the scene as one where Yoda senses great fear in the boy. ([StarWars.com](https://www.starwars.com/video/fear-is-the-path-to-the-dark-side))
 
 Read through the present frame, the dark side is not merely “evil power.” It can be read as a boundary failure.
 
@@ -434,6 +434,3 @@ It is not science.
 But it is a non-scientific study for reading self, light, ghosts, emptiness, and connection.
 
 And I will probably continue this kind of study.
-
----
-([StarWars.com](https://www.starwars.com/video/fear-is-the-path-to-the-dark-side?utm_source=chatgpt.com "Fear is the Path to the Dark Side - StarWars.com"))

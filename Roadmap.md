@@ -30,12 +30,9 @@
 - Physical / cosmological correspondence notes
 
 ## Not included
-- Full AMP Core
-- Full ITS theory
-- Private axiomatic drafts
-- Persona Runtime Core
-- Soul Core details
-- Role-AP module parameters
-- Boundary Heat Log taxonomy
-- Detailed implementation parameters
-- Private runtime schemas
+- full private core materials
+- unpublished axiomatic drafts
+- non-public runtime materials
+- detailed implementation schemas
+- internal evaluation taxonomies
+- detailed operational parameters

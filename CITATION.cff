@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use or refer to this public edition, please cite it as below."
+title: "Scientific Ontology (SO): Public Edition"
+version: "2.1.0"
+type: generic
+authors:
+  - family-names: "万度"
+    given-names: "華凜"
+date-released: 2026-06-10
+license: "CC-BY-NC-4.0"
+doi: "10.5281/zenodo.20618457"
+url: "[https://github.com/SelleCelery/Scientific-Ontology](https://github.com/SelleCelery/Scientific-Ontology)"
+abstract: 
+　- Scientific Ontology (SO): Public Edition v2.1.0 is a public-facing conceptual archive and research release for describing existence through history, observation, boundary, communication, meaning, and ethics.
+  This release reorganizes the public structure of the project into overview materials, Sat / Truth foundations, Raj / Beauty constructive frameworks, Tam / Goodness public safety-interface materials, and bounded Research Notes. It does not include private core materials, non-public runtime materials, detailed implementation schemas, detailed operational parameters, or internal evaluation taxonomies.
+keywords:
+  - scientific ontology
+  - applied metaphysics
+  - history-field topology
+  - boundary ethics
+  - intrinsic time
+  - meaning generation
+  - AI boundary function

@@ -10,15 +10,19 @@
 !.gitignore
 !README.md
 !LICENSE.md
+!CITATION.cff
+!CITATION.md
+!RELEASE_NOTES.md
 !Roadmap.md
 !GLOSSARY.md
 
 # Allow public folders and selected public files
+!00_Overview/**
 !01_Sat_Truth/**
 !02_Raj_Beauty/**
 !03_Tam_Goodness/**
 !05_Research_Notes/**
-!05_Research_Notes/Literary_Ontological_Notes/*.* 
+!99_Private_Core_Not_Included/**
 
 # Python / local environment
 .venv/
