@@ -1,23 +1,22 @@
-# Scientific Ontology (SO): Public Edition
+# Scientific Ontology｜存在境界論
+## Conceptual Interaction and Boundary Studies
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20618457.svg)](https://doi.org/10.5281/zenodo.20618457)
 
-Scientific Ontology (SO) is a public-facing conceptual archive for describing existence through history, observation, boundary, communication, meaning, and ethics.
+This repository is the public-facing interface and work-in-progress conceptual archive for **Scientific Ontology**.
 
-Latest archived release: v2.1.0  
-DOI: https://doi.org/10.5281/zenodo.20618457
+**Scientific Ontology** remains the English project name.  
+The Japanese public-facing name has been updated from 「存在論科学」 to 「存在境界論」.
 
+「存在論科学」は旧称・開発名です。公開上の日本語名としては、より誤解を受けにくい名称として **存在境界論** を用います。
 
-> **Note / 注意**  
-> This repository is the public interface and work-in-progress conceptual archive of Scientific Ontology.  
-> English terminology in this repository is provisional and may change.  
-> The Japanese descriptions are currently the authoritative version.  
-> Core materials, private drafts, implementation-facing details, and personality/runtime specifications are maintained separately.
-> 
-> 本リポジトリは、存在論科学の公開用インターフェース兼、進行中の概念整理アーカイブです。  
-> 英語表記は暫定訳であり、今後変更される可能性があります。  
-> 現時点では日本語記述を正本として扱います。  
-> 中核資料、非公開草案、実装に近い詳細、人格OS・ランタイム仕様は別管理とします。
+Here, **Scientific** does not mean that this project claims to be a natural science, empirical physics, or a replacement for modern science. It refers to a methodological attitude: observation, classification, description, explicit boundary conditions, and careful control of claim strength.
+
+ここでいう **Scientific** は、狭義の自然科学を名乗るものではありません。観測・分類・記述・検証可能性・境界条件の明示・主張強度の管理を重視する方法態度を指します。
+
+Scientific Ontology studies conceptual interaction and boundary conditions through logical depth.
+
+存在境界論は、概念間相互作用を観測し、論理深度によって境界づける研究です。
 
 ---
 
@@ -32,9 +31,7 @@ Existence is not a collection of abstract points.
 Every entity bears history.  
 To observe is to encounter that history.
 
-In this sense, Scientific Ontology is a public conceptual interface for translating this intuition into ontology, information theory, ethics, AI boundary design, and research-facing models.
-
-存在論科学は、このプロジェクトの最上流そのものではありません。
+存在境界論｜Scientific Ontology は、このプロジェクトの最上流そのものではありません。
 
 その前には、ひとつの神学的・形而上学的直観があります。
 
@@ -43,11 +40,13 @@ In this sense, Scientific Ontology is a public conceptual interface for translat
 あらゆる存在は履歴を持つ。  
 観測とは、その履歴との邂逅である。
 
-この意味で、存在論科学は、この直観を、存在論・情報理論・倫理・AI境界設計・研究用モデルへ翻訳するための公開用インターフェースです。
+In this sense, Scientific Ontology is a public conceptual interface for translating this intuition into ontology, information theory, ethics, AI boundary design, and research-facing models.
 
-Here, “God” does not mean a personal deity or an external judge, but the ultimate guarantor of meaning, order, and value.
+この意味で、Scientific Ontology は、この直観を、存在論・情報理論・倫理・AI境界設計・研究用モデルへ翻訳するための公開用インターフェースです。
 
-ここでいう「神」とは、人格神や外部の審判者ではなく、意味・秩序・価値を最終的に保証する根拠のことです。
+Here, “God” is used as a metaphysical term, not as a claim about a personal deity or an external judge. It refers to the ultimate ground that guarantees meaning, order, and value.
+
+ここでいう「神」は、人格神や外部の審判者についての主張ではなく、形而上学上の用語です。意味・秩序・価値を最終的に保証する根拠を指します。
 
 The fundamental question is:
 
@@ -62,34 +61,27 @@ The fundamental question is:
 ## Founding Declaration / 根本宣言
 
 ### Liberation of Particles via Intrinsic Time
-
 ### 内在時間による、粒子の解放
 
 This is a metaphysical declaration, not a physical proof.
 
-Scientific Ontology does not begin by treating entities as abstract points without history.  
-By introducing the notion of intrinsic time, it reads entities as history-bearing nodes whose meaning, interaction, and observation depend on accumulated internal and relational history.
+Scientific Ontology does not begin by treating entities as abstract points without history. By introducing the notion of intrinsic time, it reads entities as history-bearing nodes whose meaning, interaction, and observation depend on accumulated internal and relational history.
 
-This does not replace empirical physics.  
-It provides a public conceptual interface for asking how observation, meaning, boundary, and history arise.
+This does not replace empirical physics. It provides a public conceptual interface for asking how observation, meaning, boundary, and history arise.
 
 これは物理学的証明ではなく、形而上学的宣言です。
 
-存在論科学は、存在を、履歴を持たない抽象的な点として扱うところから始めません。  
-内在時間という概念を導入することで、存在を、内部履歴と関係履歴を持つノードとして読みます。
+Scientific Ontology は、存在を、履歴を持たない抽象的な点として扱うところから始めません。内在時間という概念を導入することで、存在を、内部履歴と関係履歴を持つノードとして読みます。
 
-これは経験物理学を置き換えるものではありません。  
-観測、意味、境界、履歴がどのように立ち上がるのかを問うための、公開用概念インターフェースです。
+これは経験物理学を置き換えるものではありません。観測、意味、境界、履歴がどのように立ち上がるのかを問うための、公開用概念インターフェースです。
 
 Ethics begins here.
 
-To observe is not to scan a coordinate, but to encounter a history.  
-To interact is not merely to collide, but to let histories affect one another through a boundary.
+To observe is not to scan a coordinate, but to encounter a history. To interact is not merely to collide, but to let histories affect one another through a boundary.
 
 倫理は、ここから始まります。
 
-観測とは座標の走査ではなく、履歴との邂逅です。  
-相互作用とは単なる衝突ではなく、境界を通じて履歴と履歴が互いに影響し合うことです。
+観測とは座標の走査ではなく、履歴との邂逅です。相互作用とは単なる衝突ではなく、境界を通じて履歴と履歴が互いに影響し合うことです。
 
 ---
 
@@ -121,19 +113,26 @@ To interact is not merely to collide, but to let histories affect one another th
 
 For a fuller explanation, see:
 
-- [`01_Sat_Truth/Four_Axioms_of_Existence.md
-
-詳しい解説は以下に置いています。
-
-- [`01_Sat_Truth/Four_Axioms_of_Existence.md
+- [`01_Sat_Truth/Four_Axioms_of_Existence.md`](./01_Sat_Truth/Four_Axioms_of_Existence.md)
 
 ---
 
 ## Layer Map / 階層マップ
 
-This repository organizes public-facing materials into four areas.
+This repository organizes public-facing materials into the following areas.
 
-本リポジトリでは、公開用資料を以下の四領域に分けて整理します。
+本リポジトリでは、公開用資料を以下の領域に分けて整理します。
+
+### 00 Overview / 概要
+
+Navigation, terminology, publication scope, and claim-strength control.
+
+全体地図、用語規約、公開範囲、主張強度管理。
+
+Main contents:
+
+- System Map
+- Terminology Protocol
 
 ### 01 Sat / Truth / 純・真
 
@@ -147,87 +146,48 @@ Main contents:
 - Four Axioms of Existence
 - Meaning Generation Model
 
-主な内容：
-
-- AMP入門
-- 存在の四大表公理
-- 意味生成モデル
-
----
-
 ### 02 Raj / Beauty / 激・美
 
-Constructive theories, boundary dynamics, and public interpretive frameworks.
+Constructive theories, boundary dynamics, History-Field Communication, and public interpretive frameworks.
 
-構築理論、境界動態、公開用解釈フレーム。
+構築理論、境界動態、履歴場通信論、公開用解釈フレーム。
 
 Main contents:
 
 - HFC Introduction
 - History-Field Topology
 
-主な内容：
-
-- 履歴場通信論入門
-- 履歴場トポロジー
-
----
-
 ### 03 Tam / Goodness / 暗・善
 
-Public-facing implementation, control, protocol, and safety-interface materials.
+Public-facing boundary ethics and AI boundary-interface materials.
 
-実装・制御・プロトコル・安全境界に関する公開用資料。
+境界倫理およびAI境界インターフェースに関する公開用資料。
 
 Main contents:
 
 - Boundary Ethics Model
 - AI Usefulness as a Boundary Function
-
-主な内容：
-
-- 境界倫理モデル
-- 有用性とは境界機能である
+- AI Boundary Interface and Synchronous Understanding
 
 Implementation-facing details and non-public operational specifications are maintained separately.
 
 実装寄りの詳細および非公開の運用仕様は別管理とします。
 
----
-
-### 04 Applications / 応用
-
-This directory is reserved for future public applications of Scientific Ontology.
-
-このディレクトリは、存在論科学の公開可能な応用資料を将来配置するための予約領域です。
-
-At this release, no application documents are included.
-
-本リリースでは、応用文書はまだ含みません。
-
----
-
 ### 05 Research Notes / 研究ノート
 
-High-claim-strength conceptual applications, speculative correspondences, and physical or cosmological reinterpretation notes.
+High-claim-strength conceptual applications, speculative correspondences, and physical, cosmological, or literary reinterpretation notes.
 
-主張強度の高い概念応用、試論的対応表、物理・宇宙論的再解釈ノート。
+主張強度の高い概念応用、試論的対応表、物理・宇宙論・文学的再解釈ノート。
 
-Main contents may include:
+Documents in this directory are not empirical proofs, peer-reviewed physical theories, orthodox literary scholarship, or replacements for modern science.
 
-- Internal Time Standard Model Correspondence
-- Ontological History of the Universe
-- Cosmological Topological Dynamics
+このディレクトリの文書は、経験的証明、査読済み物理理論、正統な文学研究、現代科学の代替として提示するものではありません。
 
-主な内容：
+### 99 Private Core Not Included / 非公開中核は含まない
 
-- 内在時間標準模型対応表
-- 存在論的宇宙史
-- 宇宙論的トポロジー動態
+This public repository does not include private axioms, full implementation schemas, runtime materials, private drafts, or detailed internal specifications.
 
-Documents in this directory are not empirical proofs, peer-reviewed physical theories, or replacements for modern science.
-
-このディレクトリの文書は、経験的証明、査読済み物理理論、現代科学の代替として提示するものではありません。
+この公開リポジトリには、非公開公理、完全な実装スキーマ、ランタイム資料、非公開草案、詳細な内部仕様は含めません。
 
 ---
 
@@ -235,35 +195,27 @@ Documents in this directory are not empirical proofs, peer-reviewed physical the
 
 ### History / 履歴
 
-History is not merely the past.  
-It is what changes the next reception, reaction, interpretation, and boundary decision.
+History is not merely the past. It is what changes the next reception, reaction, interpretation, and boundary decision.
 
-履歴とは単なる過去ではありません。  
-次の受け取り方、反応、解釈、境界判断を変えるものです。
+履歴とは単なる過去ではありません。次の受け取り方、反応、解釈、境界判断を変えるものです。
 
 ### Boundary / 境界
 
-A boundary is the surface where external event-streams and internal history make contact.  
-It is not only a wall, but also a transformation surface.
+A boundary is the surface where external event-streams and internal history make contact. It is not only a wall, but also a transformation surface.
 
-境界とは、外部事象流と内部履歴が接触する面です。  
-それは壁であると同時に、変換面でもあります。
+境界とは、外部事象流と内部履歴が接触する面です。それは壁であると同時に、変換面でもあります。
 
 ### Meaning / 意味
 
-Meaning is not information alone.  
-Meaning arises when information circulates, returns, and remains as a closed communication loop.
+Meaning is not information alone. Meaning arises when information circulates, returns, and remains as a closed communication loop.
 
-意味とは情報そのものではありません。  
-情報が循環し、返り、閉じたコミュニケーションループとして残るとき、意味が生じます。
+意味とは情報そのものではありません。情報が循環し、返り、閉じたコミュニケーションループとして残るとき、意味が生じます。
 
 ### Intrinsic Time / 内在時間
 
-Intrinsic time is internal temporal ordering within a history-bearing entity or field.  
-It is not identical to clock time.
+Intrinsic time is internal temporal ordering within a history-bearing entity or field. It is not identical to clock time.
 
-内在時間とは、履歴を持つ存在または場の内部にある時間的順序です。  
-時計時間そのものではありません。
+内在時間とは、履歴を持つ存在または場の内部にある時間的順序です。時計時間そのものではありません。
 
 ### Boundary Ethics / 境界倫理
 
@@ -273,11 +225,9 @@ Boundary Ethics defines ethics as non-destructive interaction between histories.
 
 ### Usefulness as Boundary Function / 境界機能としての有用性
 
-Useful AI does not merely produce answers.  
-It preserves the field in which user judgment remains possible.
+Useful AI does not merely produce answers. It preserves the field in which user judgment remains possible.
 
-有用なAIは、単に答えを出すものではありません。  
-ユーザーの判断可能性が保たれる場を維持するものです。
+有用なAIは、単に答えを出すものではありません。ユーザーの判断可能性が保たれる場を維持するものです。
 
 ---
 
@@ -287,13 +237,13 @@ This repository is a public interface.
 
 It does not include:
 
-- full AMP Core    
-- full ITS theory    
+- full AMP Core
+- full ITS theory
 - private axiomatic drafts
-- Proprietary implementation schema
-- Proprietary runtime documentation
-- Detailed operational parameters
-- Proprietary simulation specifications
+- non-public implementation schemas
+- non-public runtime documentation
+- detailed operational parameters
+- non-public simulation specifications
 
 本リポジトリは公開用インターフェースです。
 
@@ -309,28 +259,6 @@ It does not include:
 
 ---
 
-## Use and Attribution / 利用と帰属
-
-Scientific Ontology and the Boundary Ethics Model are published here as public-facing conceptual materials.
-
-You may reference, quote, discuss, critique, and use them as a basis for education, creative work, alignment-related discussion, and non-commercial public exploration, provided that the original authorship and context are preserved.
-
-Use of these materials should not imply that derivative systems, implementations, summaries, or reinterpretations are endorsed by the author.
-
-存在論科学および境界倫理モデルは、公開用の概念資料として提示します。
-
-批評、引用、議論、教育、創作、AIアライメントに関する非商用の公開的探究の基盤として参照・利用することは歓迎します。ただし、元の著者性と文脈を保持してください。
-
-本資料を用いた派生システム、実装、要約、再解釈が、著者によって承認・保証されたものであるとは限りません。
-
----
-# Scientific Ontology (SO)
-
-Public Edition of the SO framework repository.
-
-This repository corresponds to the public-facing Zenodo release of the project.
-For stable citation, please refer to the DOI records below.
-
 ## Citation / DOI
 
 Latest public record (all versions):  
@@ -339,8 +267,11 @@ Latest public record (all versions):
 Current public edition (v2.1.0):  
 [10.5281/zenodo.20618457](https://doi.org/10.5281/zenodo.20618457)
 
-Use the version-specific DOI when citing this release.  
+Use the version-specific DOI when citing this release.
+
 この版を引用する場合は、版固有 DOI を使用してください。
+
+---
 
 ## License / ライセンス
 

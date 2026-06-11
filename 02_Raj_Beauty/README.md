@@ -1,26 +1,38 @@
 # Raj / Beauty / 激・美
 
-This layer contains constructive theories, boundary-dynamic models, and public interpretive frameworks built on the metaphysical foundations of Sat / Truth.
+This layer contains constructive theories, boundary dynamics, History-Field Communication, and public interpretive frameworks built on the metaphysical foundations of Sat / Truth.
 
-この層には、Sat / Truth の形而上学的基礎の上に立つ、構築理論・境界動態モデル・公開用解釈フレームを置きます。
+この層には、Sat / Truth の形而上学的基礎の上に立つ、構築理論・境界動態・履歴場通信論・公開用解釈フレームを置きます。
+
+Raj / Beauty is the layer of movement. It asks how history-bearing entities communicate, synchronize, desynchronize, cut off, reconnect, and generate or lose meaning through boundaries.
+
+Raj / Beauty は、運動の層です。履歴を持つ存在が、境界を通じてどのように通信し、同期し、非同期し、切断され、再接続され、意味を生成または喪失するかを扱います。
 
 ## Scope / 範囲
 
 Raj / Beauty includes:
 
 - History-Field Communication theory
+- History-Field Topology
 - boundary dynamics
+- synchronization and desynchronization
+- historical cutoff and reconnection
 - communication, meaning, and experience models
-- interpretive frameworks connecting history, boundary, topology, and scientific intuition
-- public conceptual essays that do not claim physical proof
+- public interpretive frameworks that do not claim physical proof
 
 Raj / Beauty には、以下を含めます。
 
 - 履歴場通信論
+- 履歴場トポロジー
 - 境界動態
+- 同期と非同期
+- 履歴切断と再接続
 - 通信・意味・経験モデル
-- 履歴・境界・トポロジー・科学的直観を接続する解釈フレーム
-- 物理証明を主張しない公開用概念論考
+- 物理証明を主張しない公開用解釈フレーム
+
+This layer does not primarily contain social criticism, monetary analysis, world-history modeling, or application essays. Those may appear later as Research Notes or separate applications, but they are not the central role of Raj / Beauty.
+
+この層は、社会批判、貨幣分析、世界史モデル、応用エッセイを主目的とはしません。それらは必要に応じて Research Notes または別の応用層に置きますが、Raj / Beauty の中心ではありません。
 
 ## Documents / 文書
 
@@ -36,11 +48,12 @@ Raj / Beauty には、以下を含めます。
 
 The following documents are conceptually related to Raj / Beauty, but are better treated as research notes because they make stronger cosmological or physical reinterpretive moves.
 
-以下の文書はRaj / Beautyと接続しますが、宇宙論的・物理的な再解釈の主張強度が高いため、研究ノートとして扱います。
+以下の文書は Raj / Beauty と接続しますが、宇宙論的・物理的な再解釈の主張強度が高いため、研究ノートとして扱います。
 
 - `Ontological_History_of_the_Universe.md`
 - `Cosmological_Topological_Dynamics.md`
+- `Internal_Time_Standard_Model_Correspondence_v0.1.md`
 
 These documents should be read as conceptual applications and research notes, not as empirical cosmology, physical proof, or replacements for modern scientific theories.
 
-これらは、経験的宇宙論、物理学的証明、現代科学の代替理論ではなく、存在論科学の概念応用・研究ノートとして読むものです。
+これらは、経験的宇宙論、物理学的証明、現代科学の代替理論ではなく、存在境界論の概念応用・研究ノートとして読むものです。
