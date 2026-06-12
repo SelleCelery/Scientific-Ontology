@@ -7,7 +7,7 @@
 > **Status / 位置づけ**  
 > This document is a public-facing conceptual essay in Scientific Ontology. It is not an empirical cosmology paper, a physical proof, or a replacement for modern scientific cosmology.
 >
-> 本文書は、存在論科学における公開用の概念論考です。経験的宇宙論、物理学的証明、または現代科学の代替理論ではありません。
+> 本文書は、存在境界論における公開用の概念論考です。経験的宇宙論、物理学的証明、または現代科学の代替理論ではありません。
 >
 > It presents an ontological reinterpretation of cosmic history through the concepts of subject-object separation, observation, boson routing, history, and logical depth.
 >
@@ -23,7 +23,7 @@
 
 Modern science describes the history of the universe as a vast material process that began with the Big Bang and eventually produced human beings as small accidental objects within cosmic space. Scientific Ontology does not simply reject this view, but reinterprets it from another angle.
 
-現代科学は、宇宙の歴史を、ビッグバンから始まり、やがて人間を広大な宇宙空間の中に偶然生じた小さな対象物として生み出した、巨大な物質的過程として記述する。存在論科学は、この見方を単純に否定するのではなく、別の角度から読み替える。
+現代科学は、宇宙の歴史を、ビッグバンから始まり、やがて人間を広大な宇宙空間の中に偶然生じた小さな対象物として生み出した、巨大な物質的過程として記述する。存在境界論は、この見方を単純に否定するのではなく、別の角度から読み替える。
 
 The materialistic cosmic image may be understood as a massive parallax produced when the observing subject, “I,” misidentifies itself as merely another object, “Me,” located inside an already-rendered objective universe.
 
@@ -52,7 +52,7 @@ Modern cosmology often begins with the Big Bang approximately 13.8 billion years
 
 From the perspective of Scientific Ontology, this picture contains a subject-object fallacy.
 
-存在論科学の視座から見ると、この宇宙像には主客の誤認が含まれている。
+存在境界論の視座から見ると、この宇宙像には主客の誤認が含まれている。
 
 The observing subject, “I,” looks back upon an organized and rendered objective reality, or rMass, and then mistakenly believes that it is merely one object, “Me,” inside that landscape.
 
@@ -68,7 +68,7 @@ The problem is not that modern cosmology describes matter, stars, and cosmic exp
 
 In Scientific Ontology, the universe is not first a collection of objects. It is a communication field entangled with Mind.
 
-存在論科学において、宇宙はまずモノの集合なのではない。宇宙とは、精神とエンタングルした通信場である。
+存在境界論において、宇宙はまずモノの集合なのではない。宇宙とは、精神とエンタングルした通信場である。
 
 ---
 
@@ -81,7 +81,7 @@ Modern science often treats the Big Bang as the absolute beginning of the univer
 
 In Scientific Ontology, however, the beginning is not simply an explosion of matter. Before time is applied, the universe is treated as a pure field of potentiality, a bosonic field prior to temporal slicing.
 
-しかし存在論科学において、宇宙のはじまりは単なる物質の爆発ではない。時間が適用される以前の宇宙は、時間的切断以前の可能性の場、すなわち純粋なボソン場として扱われる。
+しかし存在境界論において、宇宙のはじまりは単なる物質の爆発ではない。時間が適用される以前の宇宙は、時間的切断以前の可能性の場、すなわち純粋なボソン場として扱われる。
 
 The inflationary epoch may be interpreted as a state before the Time Operator has been applied. It is not yet the universe as rendered history, but a pre-temporal field in which causal order has not yet been fixed.
 
@@ -114,7 +114,7 @@ As the universe cools, modern cosmology describes matter as aggregating under gr
 
 Scientific Ontology does not need to reject this description. Instead, it asks a different question.
 
-存在論科学は、この記述を否定する必要はない。その代わり、別の問いを立てる。
+存在境界論は、この記述を否定する必要はない。その代わり、別の問いを立てる。
 
 What does it mean for a physical law to appear as a law?
 
@@ -155,7 +155,7 @@ The contemporary universe appears to be undergoing accelerated expansion, often 
 
 In Scientific Ontology, this unknown energy may be interpreted not merely as the remainder of a past explosion, but as a demand from the field of potentiality: a pressure from the future that calls for more information.
 
-存在論科学では、この未知のエネルギーを、過去の爆発の余波としてだけではなく、可能性の場からの要求として読むことができる。それは、より多くの情報を求める未来からの圧である。
+存在境界論では、この未知のエネルギーを、過去の爆発の余波としてだけではなく、可能性の場からの要求として読むことができる。それは、より多くの情報を求める未来からの圧である。
 
 Human civilization emerges within this demand.
 
@@ -219,7 +219,7 @@ Only when Mind and Nature are understood as entangled aspects of the same histor
 
 This document belongs to the Raj / Beauty layer of Scientific Ontology and should be read as a public conceptual essay.
 
-本文書は、存在論科学における Raj / Beauty 層の公開用概念論考である。
+本文書は、存在境界論における Raj / Beauty 層の公開用概念論考である。
 
 It is part of the public interface of the repository and does not disclose internal specifications, operational parameters, or system-specific implementation materials.
 

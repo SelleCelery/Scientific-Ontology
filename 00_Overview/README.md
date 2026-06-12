@@ -12,13 +12,17 @@ Here, **Scientific** does not mean that this project claims to be a natural scie
 
 ## Documents / 文書
 
+- `Scientific_Ontology_and_Science.md`
+	Public position statement that Scientific Ontology and the Heuristic Status of Science
+	科学をヒューリスティックとして扱うことについての公開用立場表明
+
 - `Scientific_Ontology_System_Map.md`  
-  A high-level public map of the repository structure, Sat/Raj/Tam placement, Research Notes, and the public boundary of the project.  
-  リポジトリ構造、Sat/Raj/Tam、Research Notes、公開境界を整理する公開用体系マップ。
+	A high-level public map of the repository structure, Sat/Raj/Tam placement, Research Notes, and the public boundary of the project.  
+	リポジトリ構造、Sat/Raj/Tam、Research Notes、公開境界を整理する公開用体系マップ。
 
 - `Scientific_Terminology_Protocol.md`  
-  A terminology and publication-risk protocol for using scientific vocabulary without overwriting standard scientific definitions.  
-  標準科学の定義を上書きせずに科学語彙を扱うための用語運用規約。
+	A terminology and publication-risk protocol for using scientific vocabulary without overwriting standard scientific definitions.  
+	標準科学の定義を上書きせずに科学語彙を扱うための用語運用規約。
 
 ## Directory Role / この層の役割
 

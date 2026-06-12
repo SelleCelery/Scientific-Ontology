@@ -70,6 +70,12 @@ At the root, this project concerns:
   Boundary_Ethics_Model.md
   AI_Usefulness_as_a_Boundary_Function.md
   [candidate] AI_Boundary_Interface_and_Synchronous_Understanding.md
+  
+04_Applications/
+  README.md
+  Personality_AI/
+    README.md
+    Meaning_As_Return_Orbit.md
 
 05_Research_Notes/
   README.md
@@ -131,6 +137,18 @@ Tam is not the place for implementation manuals. It is the public layer where no
 
 Tam は実装手順書の置き場ではない。非破壊的相互作用、ユーザーの判断権、判断可能性を保つAI、安全を境界維持として扱う考えを公開可能な形で説明する層である。
 
+### 04 Applications / 応用
+
+Public-facing conceptual applications of Scientific Ontology.
+
+存在境界論｜Scientific Ontology の概念を、AI、人格、社会、創作、実践などの具体領域へ接続する公開応用層である。
+
+This layer is not a private implementation layer.  
+It presents applied conceptual reports and public-facing explanatory models.
+
+この層は非公開実装層ではない。  
+公開可能な応用レポート、概念説明、評価用の見取り図を置く。
+
 ### 05 Research Notes / 研究ノート
 
 High-claim-strength conceptual applications, speculative correspondences, and physical, cosmological, or literary reinterpretation notes.
@@ -169,6 +187,10 @@ Raj / Beauty
 Tam / Goodness
   Boundary ethics, AI boundary interface, non-destructive interaction
   境界倫理・AI境界インターフェース・非破壊的相互作用
+  ↓
+Applications
+  Public conceptual applications
+  公開応用
   ↓
 Research Notes
   High-claim applications and speculative correspondences

@@ -5,7 +5,7 @@
 Applied Metaphysics.  
 The metaphysical foundation OS of Scientific Ontology.
 
-存在論科学の形而上学的基礎OS。
+存在境界論の形而上学的基礎OS。
 
 ## Scientific Ontology
 
@@ -96,6 +96,29 @@ A constructive theory that treats language, AI, society, ethics, and experience 
 
 履歴場通信論。  
 言語、AI、社会、倫理、経験を、履歴を持つ場どうしの通信として扱う構築理論。
+
+## Entangle / エンタングル
+
+A state in which interaction history persists within a field-like structure and constrains later behavior, interpretation, or response.
+
+In Scientific Ontology, **entangle** is retained as a physical-ontological term intentionally continuous with the vocabulary of entanglement, interaction, and diagrammatic relation.  
+It does not mean a casual metaphor for social connection.
+
+This framework does not replace empirical physics or standard quantum theory.  
+Rather, it uses entangle to describe how interaction history becomes persistent and constraining within an ontological field model.
+
+相互作用の履歴が場の構造内に保存され、以後の挙動、解釈、応答を拘束する状態。
+
+Scientific Ontology において、**エンタングル** は、エンタングルメント、相互作用、図式的関係性という語彙圏と意図的に連続する物理存在論語彙として保持される。  
+これは、単なる社会的つながりの比喩ではない。
+
+本体系は、経験物理学や標準的な量子論を置き換えるものではない。  
+ただし、エンタングルという語は、相互作用履歴が場の中で恒久化し、以後の挙動を拘束する構造を記述するために用いる。
+
+A connection becomes entangled when it stops being merely temporary and begins to remain as history.
+
+接続は、一過性のままなら単なる接続である。  
+それが履歴として残り、以後の挙動を拘束し始めたとき、エンタングルになる。
 
 ## History-Field Topology / 履歴場トポロジー
 

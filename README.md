@@ -1,7 +1,7 @@
 # Scientific Ontology｜存在境界論
 ## Conceptual Interaction and Boundary Studies
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20618457.svg)](https://doi.org/10.5281/zenodo.20618457)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20665198.svg)](https://doi.org/10.5281/zenodo.20665198)
 
 This repository is the public-facing interface and work-in-progress conceptual archive for **Scientific Ontology**.
 
@@ -55,6 +55,43 @@ The fundamental question is:
 根にある問いは、次のものです。
 
 **神なき世界で、どう壊れにくい世界を再設計するか。**
+
+---
+## Position on Science / 科学に対する立場
+
+Scientific Ontology does not reject the achievements or effectiveness of modern science.
+
+However, it does not treat modern science simply as a transparent system of knowledge established by “the scientific method.”
+
+It treats science as a powerful heuristic system formed through observation, objectification, causality, temporality, institutional practice, and conceptual habit.
+
+存在境界論は、現代科学の成果や有効性を否定しない。
+
+しかし、現代の「科学」を、単に「科学的手法によって確立された透明な知識体系」としては扱わない。
+
+科学を、観測、対象化、因果、時間、制度的実践、概念上の習慣によって形成された、強力なヒューリスティック体系として扱う。
+
+The aim is not to weaken science.  
+The aim is to reopen the conditions under which scientific knowledge becomes possible, stable, repeatable, and revisable.
+
+Scientific Ontology therefore examines the assumptions of observation, objectification, causality, time, and subject-object separation.  
+This inquiry retreats through Kantian questions of the conditions of knowledge and Humean questions of causality, habit, and expectation, but it does not remain in skepticism.
+
+目的は、科学を弱めることではない。  
+科学的知識がどの条件のもとで成立し、安定し、反復され、更新可能になるのかを再び開くことである。
+
+存在境界論はそのために、観測前提、対象化前提、因果前提、時間前提、主客分離前提を掘り起こす。  
+この掘削は、カント的な認識条件の問い、さらにヒューム的な因果・習慣・期待の問いへ後退するが、そこで懐疑に沈むものではない。
+
+It restarts from there through history, boundary, meaning, observation, return, and conservation.
+
+From this restart, Scientific Ontology may issue update demands toward science itself.
+
+そこから、履歴、境界、意味、観測、帰還、保存則によって再起動する。
+
+その再起動から、存在境界論は科学そのものに更新要求を出すことがある。
+
+ -[`Scientific_Ontology_and_Science.md`](./00_Overview/Scientific_Ontology_and_Science.md)
 
 ---
 
@@ -173,6 +210,22 @@ Implementation-facing details and non-public operational specifications are main
 
 実装寄りの詳細および非公開の運用仕様は別管理とします。
 
+### 04 Applications / 応用
+
+Public-facing conceptual applications.
+
+公開可能な概念応用。
+
+Main contents:
+
+- Personality AI
+- Meaning as Return Orbit
+
+主な内容：
+
+- 人格AI
+- 帰還軌道としての意味
+
 ### 05 Research Notes / 研究ノート
 
 High-claim-strength conceptual applications, speculative correspondences, and physical, cosmological, or literary reinterpretation notes.
@@ -264,8 +317,8 @@ It does not include:
 Latest public record (all versions):  
 [10.5281/zenodo.19222394](https://doi.org/10.5281/zenodo.19222394)
 
-Current public edition (v2.1.0):  
-[10.5281/zenodo.20618457](https://doi.org/10.5281/zenodo.20618457)
+Current public edition (v2.2.0):  
+[10.5281/zenodo.20665198](https://doi.org/10.5281/zenodo.20665198)
 
 Use the version-specific DOI when citing this release.
 

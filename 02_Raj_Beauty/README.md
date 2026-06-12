@@ -36,13 +36,13 @@ This layer does not primarily contain social criticism, monetary analysis, world
 
 ## Documents / 文書
 
-- `HFC_Introduction.md`  
-  History-Field Communication theory.  
-  履歴・境界・通信・切断・倫理を扱う、履歴場通信論の公開用入門。
+- [`HFC_Introduction.md`](./HFC_Introduction.md)  
+	History-Field Communication theory.  
+	履歴・境界・通信・切断・倫理を扱う、履歴場通信論の公開用入門。
 
-- `History_Field_Topology.md`  
-  A public conceptual frame for reading physics, information, life, society, AI, and views of life and death through history, boundary, synchronization, entropy communication, and historical cutoff.  
-  履歴・境界・同期／非同期・エントロピー通信・履歴切断を通じて、物理・情報・生命・社会・AI・死生観を読むための公開用概念フレーム。
+- [`History_Field_Topology.md`](./History_Field_Topology.md)  
+	A public conceptual frame for reading physics, information, life, society, AI, and views of life and death through history, boundary, synchronization, entropy communication, and historical cutoff.  
+	履歴・境界・同期／非同期・エントロピー通信・履歴切断を通じて、物理・情報・生命・社会・AI・死生観を読むための公開用概念フレーム。
 
 ## Moved to Research Notes / 研究ノートへ移動
 
@@ -50,9 +50,9 @@ The following documents are conceptually related to Raj / Beauty, but are better
 
 以下の文書は Raj / Beauty と接続しますが、宇宙論的・物理的な再解釈の主張強度が高いため、研究ノートとして扱います。
 
-- `Ontological_History_of_the_Universe.md`
-- `Cosmological_Topological_Dynamics.md`
-- `Internal_Time_Standard_Model_Correspondence_v0.1.md`
+- [`Ontological_History_of_the_Universe.md`](../05_Research_Notes/Physical_Cosmological_Notes/Cosmological_Topological_Dynamics)
+- [`Cosmological_Topological_Dynamics.md`](../05_Research_Notes/Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.md)
+- [`Internal_Time_Standard_Model_Correspondence_v0.1.md`](../05_Research_Notes/Physical_Cosmological_Notes/Internal_Time_Standard_Model_Correspondence_v0.1.md)
 
 These documents should be read as conceptual applications and research notes, not as empirical cosmology, physical proof, or replacements for modern scientific theories.
 

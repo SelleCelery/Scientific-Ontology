@@ -60,99 +60,62 @@ Documents in this directory do not claim that:
 
 ---
 
-## Documents / 文書
+## Research Note Groups / 研究ノート群
 
-### Claim-Strength Control / 主張強度管理
+### Integration and Claim-Strength Control / 統合索引・主張強度管理
 
-#### `Claim_Strength_Table_History_Field_Topology_v0.1.md`
-
-A detailed claim-strength table for History-Field Topology.
-
-履歴場トポロジーの主張強度を整理するための詳細対応表。
-
-Status: Claim-strength protocol / Research note  
-Claim: Classification and boundary control
-
-位置づけ：主張強度管理／研究ノート  
-主張範囲：分類と境界管理
+- [`Research_Notes_Index.md`](./Research_Notes_Index.md)  
+    Cross-domain index of Research Notes by domain, main concepts, connected layer, claim strength, and non-claim boundaries.  
+    Research Notes を、領域、主要概念、接続層、主張強度、非主張境界によって整理する横断索引。
+    
+- [`Claim_Strength_Table_History_Field_Topology_v0.1.md`](./Claim_Strength_Table_History_Field_Topology_v0.1.md)  
+    Claim-strength table for History-Field Topology.  
+    履歴場トポロジーの主張強度を整理するための対応表。
+    
 
 ---
 
-### Physical / Cosmological Notes
-### 物理・宇宙論系ノート
+### AI Personality Notes / AI人格研究ノート
 
-#### `Internal_Time_Standard_Model_Correspondence_v0.1.md`
+- [`AI_Personality_Notes/`](./AI_Personality_Notes/)  
+    Public research notes on AI personality, response attractors, return stability, qualia history, and logical sandbox models.  
+    AI人格、応答アトラクタ、帰還安定性、クオリア履歴、箱庭型論理空間に関する公開研究ノート。
+    
 
-A correspondence table that reinterprets Standard Model concepts through intrinsic time and history synchronization.
+This group connects the Tam layer and the Applications layer to stronger research-note formulations.
 
-内在時間と履歴同期を通じて、標準模型の概念を再読解するための対応表。
-
-Status: Research note / Proposal  
-Claim: Conceptual correspondence, not proof
-
-位置づけ：研究ノート／提案  
-主張範囲：概念対応であり、証明ではない
-
-#### `Ontological_History_of_the_Universe.md`
-
-A conceptual essay reinterpreting cosmic history through subject-object separation, observation, boson routing, history, and logical depth.
-
-主客分離、観測、ボソン経路、履歴、論理深度を通じて、宇宙史を存在論的に読み替える概念論考。
-
-Status: Conceptual essay  
-Claim: Ontological reinterpretation, not empirical cosmology
-
-位置づけ：概念論考  
-主張範囲：存在論的再解釈であり、経験的宇宙論ではない
-
-#### `Cosmological_Topological_Dynamics.md`
-
-A conceptual application discussing cosmological expansion, boundary tension, purge/internalization, and observer-side phase transition.
-
-宇宙膨張、境界張力、パージ／内部化、観測者側の相転移を扱う概念応用ノート。
-
-Status: Conceptual application  
-Claim: Cosmological metaphor and boundary-dynamic interpretation, not physical proof
-
-位置づけ：概念応用  
-主張範囲：宇宙論的比喩および境界動態的解釈であり、物理証明ではない
+このノート群は、Tam層およびApplications層の人格AI文書を、より強い研究ノート上の定式化へ接続する。
 
 ---
 
-### Literary / Ontological Notes
-### 文学的・存在論的ノート
+### Physical / Cosmological Notes / 物理・宇宙論系ノート
 
-This subsection contains non-empirical research notes that read literary, religious, poetic, or creative materials through the concepts of Scientific Ontology.
+- [`Physical_Cosmological_Notes/`](./Physical_Cosmological_Notes/)  
+    Notes connecting Scientific Ontology with physics, cosmology, the Standard Model, black holes, holographic principles, large-scale universe models, and physical-ontological reinterpretation.  
+    Scientific Ontology を、物理、宇宙論、標準模型、ブラックホール、ホログラム原理、大規模宇宙モデル、物理存在論的再解釈へ接続するノート群。
+    
 
-この小区分には、文学・宗教・詩・創作素材を Scientific Ontology の概念で読むための非経験的研究ノートを置きます。
+---
 
-These notes do not claim that literary works prove Scientific Ontology. They are structural readings and interpretive experiments.
+### Literary / Ontological Notes / 文学的・存在論的ノート
 
-これらのノートは、文学作品が Scientific Ontology を証明することを主張しません。構造読解および解釈実験として扱います。
+- [`Literary_Ontological_Notes/`](./Literary_Ontological_Notes/)  
+    Structural readings and interpretive experiments using literary, religious, poetic, or creative materials.  
+    文学・宗教・詩・創作素材を用いた構造読解および解釈実験。
+    
 
-#### `Literary_Ontological_Notes/reading-blue-light.ja.md`
+---
 
-Japanese original. A literary / ontological reading of Miyazawa Kenji’s *Spring and Asura* preface through selfhood, light, ghosts, emptiness, and History-Field Topology.
+### Social / Boundary Notes / 社会・境界系ノート
 
-日本語原文。宮沢賢治『春と修羅』序を、自己・光・幽霊・空・履歴場トポロジーの観点から読む文学的・存在論的ノート。
+- [`Social_Boundary_Notes/`](./Social_Boundary_Notes/)  
+    Reserved for future public notes on social systems, institutional boundaries, responsibility distribution, monetary closure, credibility, and social negentropy.  
+    社会システム、制度的境界、責任配分、貨幣的閉鎖、信用、社会的ネゲントロピーに関する将来の公開用ノートのために予約する。
+    
 
-Status: Literary / Ontological Note  
-Claim: Interpretive analogy, not literary proof or physical claim
+Raw discharge texts, private evaluations, and unprocessed social criticism do not belong here.
 
-位置づけ：文学的・存在論的研究ノート  
-主張範囲：解釈的アナロジーであり、文学的証明・物理主張ではない
-
-#### `Literary_Ontological_Notes/reading-blue-light.en.md`
-
-English version. An expanded English-facing version of the Japanese note, with additional contextual explanation for readers unfamiliar with Miyazawa Kenji, *Spring and Asura*, Buddhist emptiness, and History-Field Topology.
-
-英語版。宮沢賢治、『春と修羅』、仏教的な空、履歴場トポロジーに馴染みのない読者にも届くよう、周辺説明を補った英語版。
-
-Status: Literary / Ontological Note  
-Claim: Interpretive analogy, not literary proof or physical claim
-
-位置づけ：文学的・存在論的研究ノート  
-主張範囲：解釈的アナロジーであり、文学的証明・物理主張ではない
+未処理の排出文、非公開評価、生の社会批判はここには置かない。
 
 ---
 

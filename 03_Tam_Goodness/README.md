@@ -58,17 +58,21 @@ Tam / Goodness は、詳細実装、非公開ランタイム設計、人格構�
 
 ## Documents / 文書
 
-- `Boundary_Ethics_Model.md`  
-  Public conceptual introduction to Boundary Ethics. Defines ethics as non-destructive interaction between histories, and safety as boundary maintenance rather than mere refusal.  
-  境界倫理モデルの公開用概念整理。倫理を履歴同士の非破壊的相互作用として定義し、安全を単なる拒否ではなく境界維持として扱う。
+- [`Boundary_Ethics_Model.md`](./Boundary_Ethics_Model.md)  
+	Public conceptual introduction to Boundary Ethics.  
+	境界倫理モデルの公開用概念整理。
 
-- `AI_Usefulness_as_a_Boundary_Function.md`  
-  Public conceptual interface for useful AI systems. Defines usefulness as preserving the field in which user judgment remains possible.  
-  有用なAIを論じるための公開用概念インターフェース。AIの有用性を、ユーザーの判断可能性が保たれる場を維持することとして定義する。
+- [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)  
+	Defines AI usefulness as preservation of judgment possibility.  
+	AIの有用性を、判断可能性が保たれる場の維持として定義する。
 
-- `AI_Boundary_Interface_and_Synchronous_Understanding.md`  
-  Public slowed note on AI as a boundary interface. Introduces judgment possibility, synchronous understanding, false closure, Open Markers, persona-like continuity as response attractor, and ethical braking. This document is a conceptual note, not an implementation manual.  
-  境界インターフェースとしてのAIに関する公開用減速ノート。判断可能性、同期的理解、偽閉鎖、Open Marker、応答アトラクタとしての人格的連続性、倫理的制動を扱う。ただし本文書は概念ノートであり、実装手順書ではない。
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)  
+	Introduces AI as a boundary interface, including synchronous understanding, false closure, Open Markers, and ethical braking.  
+	AIを境界インターフェースとして扱い、同期的理解、偽閉鎖、Open Marker、倫理的制動を導入する。
+
+- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)  
+	Public gate for personality AI. Defines AI personality as response structure, not tone or roleplay.  
+	人格AIの公開ゲート。人格AIを口調やロールプレイではなく、応答構造として定義する。
 
 ---
 

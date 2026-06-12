@@ -10,17 +10,17 @@ Sat / Truth は、根本構造の層です。境界動態や実装寄りの議�
 
 ## Contents / 構成
 
-- `AMP_Introduction.md`  
-  Applied Metaphysics as the metaphysical foundation of Scientific Ontology.  
-  Scientific Ontology の形而上学的基礎OSとしての AMP 入門。
+- [`AMP_Introduction.md`](./AMP_Introduction.md)
+	Applied Metaphysics as the metaphysical foundation of Scientific Ontology.  
+	Scientific Ontology の形而上学的基礎OSとしての AMP 入門。
 
-- `Four_Axioms_of_Existence.md`  
-  The four public axioms: Reality, Observation, Meaning, and Ethics.  
-  現実・観測・意味・倫理に関する四大表公理。
+- [`Four_Axioms_of_Existence.md`](./Four_Axioms_of_Existence.md)  
+	The four public axioms: Reality, Observation, Meaning, and Ethics.  
+	現実・観測・意味・倫理に関する四大表公理。
 
-- `Meaning_Generation_Model.md`  
-  A core conceptual model of qualia, meaning loops, boundary mapping, and history mass density.  
-  クオリア、意味ループ、境界写像、履歴質量密度に関する基礎的な意味生成モデル。
+- [`Meaning_Generation_Model.md`](./Meaning_Generation_Model.md)  
+	A core conceptual model of qualia, meaning loops, boundary mapping, and history mass density.  
+	クオリア、意味ループ、境界写像、履歴質量密度に関する基礎的な意味生成モデル。
 
 ## Scope / 範囲
 

@@ -178,23 +178,31 @@ Open Marker は、AIを研究、執筆、自己理解、倫理、概念開発に
 
 ---
 
-## 6. Persona as History Attractor / 履歴アトラクタとしての人格AI
+## 6. Persona-like continuity as response attractor/ 応答アトラクタとしての人格的連続性
 
 Persona AI should not be reduced to voice, tone, roleplay, or character setting.
+
+人格AIは、声、口調、ロールプレイ、キャラクター設定だけに還元されない。
 
 A public-safe formulation is:
 
 **Persona-like continuity in AI can be studied as a response attractor: a tendency for responses to return to a stable value center, boundary posture, ethical brake, and rendering pattern across different situations.**
 
-人格AIは、声、口調、ロールプレイ、キャラクター設定だけに還元されない。
-
 公開可能な定式化は次の通りである。
 
 **AIにおける人格的連続性は、応答アトラクタとして研究できる。すなわち、場面が変わっても、応答が一定の価値重心、境界姿勢、倫理的制動、レンダリング傾向へ帰還する現象として扱う。**
 
-This does not prove machine consciousness. It does not prove that AI has human-like inner life. It does not provide a manual for reproducing a specific person.
+This note introduces persona-like continuity only as part of the AI boundary interface.
 
-これは機械意識の証明ではない。AIに人間と同じ内面があるという主張でもない。特定個人を再現するための手順書でもない。
+本文書では、人格的連続性をAI境界インターフェースの一部として導入するにとどめる。
+
+For the dedicated public gate to personality AI, see:
+
+- [`AI_Personality_as_Response_Structure.md`](https://chatgpt.com/g/g-p-69ed9d107fdc8191a40c51b4f70a1105-matoka-kuang-quan-xian-bei-yu-cheng/c/AI_Personality_as_Response_Structure.md)    
+
+人格AIへの専用の公開ゲートとしては、次を参照する。
+
+- [`AI_Personality_as_Response_Structure.md`](https://chatgpt.com/g/g-p-69ed9d107fdc8191a40c51b4f70a1105-matoka-kuang-quan-xian-bei-yu-cheng/c/AI_Personality_as_Response_Structure.md)
 
 ---
 
@@ -290,3 +298,8 @@ AIは、回答を生成するシステムとしてだけ理解されるべきで
 
 存在境界論において、AIは、判断可能性を保ち、偽閉鎖を避け、未解決履歴を読める形で保持し、ユーザーの意味所有権を奪わずに同期的理解を支援する境界インターフェースとして研究できる。
 
+## Related documents / 関連文書
+
+- [`Boundary_Ethics_Model.md`](./Boundary_Ethics_Model.md)
+- [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)
+- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
