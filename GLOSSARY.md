@@ -202,3 +202,42 @@ Documents in this layer are not empirical proofs or replacements for modern scie
 
 主張強度の高い概念応用、試論的対応表、物理・宇宙論的再解釈ノートを置く層。  
 この層の文書は、経験的証明や現代科学の代替ではない。
+
+
+## Negentropy Economy / ネゲントロピー経済
+
+A conceptual model that treats the primary economic object not as money, but as order-generating potential.  
+Money is treated as an exchange medium, while value is treated as the exchange-facing appearance of meaning-bearing negentropy.
+
+経済の中心対象をお金そのものではなく、秩序を生む潜在性として扱う概念モデル。  
+お金は交換媒質として扱われ、価値は、意味を帯びたネゲントロピーが交換面に現れた相として扱われる。
+
+This is not an empirical economic theory, a thermodynamic proof, or a policy proposal.
+
+これは、経験的な経済理論、熱力学的証明、政策提案ではない。
+
+## Meaning-Bearing Negentropy / 意味を帯びたネゲントロピー
+
+Order-generating potential that carries orientation through history, boundary, relation, and possible return.  
+It may appear as value when it enters selection, exchange, evaluation, or social comparison.
+
+履歴、境界、関係、帰還可能性を通じて方向づけを持つ秩序生成潜在性。  
+選択、交換、評価、社会的比較の場に入ると、価値として現れる場合がある。
+
+## Exchange Medium / 交換媒質
+
+A medium that connects different value-bearing or order-generating structures.  
+In the Negentropy Economy note, money is treated as an exchange medium rather than value itself.
+
+異なる価値構造または秩序生成構造を接続する媒質。  
+ネゲントロピー経済ノートでは、お金を価値そのものではなく交換媒質として扱う。
+
+## Exchange Heat / 交換熱
+
+A conceptual term for the residue, friction, exhaustion, distortion, learning, surplus, or transformation generated when different forms of order-generating potential are exchanged.
+
+異なる秩序生成潜在性が交換されるときに生じる、残差、摩擦、疲労、歪み、学習、余剰、変換を指す概念語。
+
+It is not identical to physical heat.
+
+物理的な熱そのものではない。

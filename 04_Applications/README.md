@@ -12,7 +12,10 @@ It does not contain runtime specifications, persona core parameters, interventio
 
 ## Contents
 
-- `Personality_AI/`
-	Public-facing applications of Scientific Ontology to personality AI, return dynamics, and meaning formation.  
-	人格AI、帰還動態、意味生成への公開応用。
+- [`Application_Boundary_Theory_Core.md`](./Application_Boundary_Theory_Core.md)  
+  Public core definition of Application Boundary Theory.  
+  アプリケーション境界論の公開用コア定義。
 
+- [`Personality_AI/`](./Personality_AI/)  
+  Public-facing applications of Scientific Ontology to personality AI, return dynamics, and meaning formation.  
+  人格AI、帰還動態、意味生成への公開応用。

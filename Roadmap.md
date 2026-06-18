@@ -10,6 +10,8 @@
 - AMP Introduction
 - Four Axioms of Existence
 - Meaning Generation Model
+- Boundary Epistemological Critique
+- Boundary Epistemological Critique: Annotations
 
 ## Phase 2: Raj / Beauty Constructive Frameworks
 - HFC Introduction

@@ -68,7 +68,7 @@ Documents in this directory do not claim that:
     Cross-domain index of Research Notes by domain, main concepts, connected layer, claim strength, and non-claim boundaries.  
     Research Notes を、領域、主要概念、接続層、主張強度、非主張境界によって整理する横断索引。
     
-- [`Claim_Strength_Table_History_Field_Topology_v0.1.md`](./Claim_Strength_Table_History_Field_Topology_v0.1.md)  
+- [`Claim_Strength_Table_History_Field_Topology_v0.1.md`](10_PUBLIC_GITHUB/Scientific-Ontology/05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md)  
     Claim-strength table for History-Field Topology.  
     履歴場トポロジーの主張強度を整理するための対応表。
     
@@ -109,8 +109,12 @@ This group connects the Tam layer and the Applications layer to stronger researc
 ### Social / Boundary Notes / 社会・境界系ノート
 
 - [`Social_Boundary_Notes/`](./Social_Boundary_Notes/)  
-    Reserved for future public notes on social systems, institutional boundaries, responsibility distribution, monetary closure, credibility, and social negentropy.  
-    社会システム、制度的境界、責任配分、貨幣的閉鎖、信用、社会的ネゲントロピーに関する将来の公開用ノートのために予約する。
+    Public research notes on social systems, institutional boundaries, responsibility distribution, monetary closure, credibility, social negentropy, and meaning-bearing exchange.  
+    社会システム、制度的境界、責任配分、貨幣的閉鎖、信用、社会的ネゲントロピー、意味を帯びた交換に関する公開用研究ノート。
+
+    - [`Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md`](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md)  
+      Conceptual model treating money as exchange medium and value as the exchange-facing appearance of meaning-bearing negentropy.  
+      お金を交換媒質として扱い、価値を「意味を帯びたネゲントロピー」が交換面に現れた相として整理する概念モデル.
     
 
 Raw discharge texts, private evaluations, and unprocessed social criticism do not belong here.

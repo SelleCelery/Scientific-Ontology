@@ -12,15 +12,15 @@ Here, **Scientific** does not mean that this project claims to be a natural scie
 
 ## Documents / 文書
 
-- `Scientific_Ontology_and_Science.md`
+- [`Scientific_Ontology_and_Science.md`](./Scientific_Ontology_and_Science.md)
 	Public position statement that Scientific Ontology and the Heuristic Status of Science
 	科学をヒューリスティックとして扱うことについての公開用立場表明
 
-- `Scientific_Ontology_System_Map.md`  
+- [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)
 	A high-level public map of the repository structure, Sat/Raj/Tam placement, Research Notes, and the public boundary of the project.  
 	リポジトリ構造、Sat/Raj/Tam、Research Notes、公開境界を整理する公開用体系マップ。
 
-- `Scientific_Terminology_Protocol.md`  
+- [`Scientific_Terminology_Protocol.md`](./Scientific_Terminology_Protocol.md)
 	A terminology and publication-risk protocol for using scientific vocabulary without overwriting standard scientific definitions.  
 	標準科学の定義を上書きせずに科学語彙を扱うための用語運用規約。
 
@@ -58,10 +58,10 @@ Private-to-public review should be performed outside this public repository, the
 
 ## Related / 関連
 
-- `../05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md`  
+- [`Claim_Strength_Table_History_Field_Topology_v0.1.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md) 
   Detailed claim-strength table for History-Field Topology.  
   履歴場トポロジーの詳細な主張強度対応表。
 
-- `../03_Tam_Goodness/AI_Usefulness_as_a_Boundary_Function.md`  
+- [`AI_Usefulness_as_a_Boundary_Function`](../03_Tam_Goodness/AI_Usefulness_as_a_Boundary_Function)
   Public-facing conceptual interface for AI usefulness as boundary maintenance.  
   AIの有用性を境界維持として扱う公開用概念インターフェース。

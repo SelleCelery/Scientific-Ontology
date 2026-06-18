@@ -22,6 +22,16 @@ Sat / Truth は、根本構造の層です。境界動態や実装寄りの議�
 	A core conceptual model of qualia, meaning loops, boundary mapping, and history mass density.  
 	クオリア、意味ループ、境界写像、履歴質量密度に関する基礎的な意味生成モデル。
 
+- [`Boundary_Epistemological_Critique.en.md`](./Boundary_Epistemological_Critique.en.md)
+	Conditions for the Formation of Knowledge through Operational Correspondence, Collation, and Residual Retention.
+- [`Boundary_Epistemological_Critique.ja.md`](./Boundary_Epistemological_Critique.ja.md)
+	同期・照合・残差保持による知の成立条件。
+
+- [`Boundary_Epistemological_Critique_Annotations.en.md`](./Boundary_Epistemological_Critique_Annotations.en.md)
+	A Topographic Guide through the Spherical World, Inner Motion, and the Logical-Depth Axis.
+- [`Boundary_Epistemological_Critique_Annotations.ja.md`](./Boundary_Epistemological_Critique_Annotations.ja.md)
+	球世界・内面運動・論理深度軸による地形図
+
 ## Scope / 範囲
 
 Sat / Truth contains foundational concepts only.

@@ -1,7 +1,7 @@
 # Scientific Ontology｜存在境界論
 ## Conceptual Interaction and Boundary Studies
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20665198.svg)](https://doi.org/10.5281/zenodo.20665198)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20749351.svg)](https://doi.org/10.5281/zenodo.20749351)
 
 This repository is the public-facing interface and work-in-progress conceptual archive for **Scientific Ontology**.
 
@@ -17,6 +17,10 @@ Here, **Scientific** does not mean that this project claims to be a natural scie
 Scientific Ontology studies conceptual interaction and boundary conditions through logical depth.
 
 存在境界論は、概念間相互作用を観測し、論理深度によって境界づける研究です。
+
+Version 3.0 adds Boundary Epistemological Critique as a foundational account of how knowledge, meaning, operational correspondence, collation, residuals, and residues arise at boundaries.
+
+v3.0 では、境界において知・意味・同期・照合・残差・残渣がどのように立ち上がるかを扱う基礎論として、境界認識批判を追加しました。
 
 ---
 
@@ -57,6 +61,7 @@ The fundamental question is:
 **神なき世界で、どう壊れにくい世界を再設計するか。**
 
 ---
+
 ## Position on Science / 科学に対する立場
 
 Scientific Ontology does not reject the achievements or effectiveness of modern science.
@@ -91,7 +96,44 @@ From this restart, Scientific Ontology may issue update demands toward science i
 
 その再起動から、存在境界論は科学そのものに更新要求を出すことがある。
 
+For details, see:
  -[`Scientific_Ontology_and_Science.md`](./00_Overview/Scientific_Ontology_and_Science.md)
+
+---
+
+## v3.0 Core Update / v3.0 基幹更新
+
+Version 3.0 introduces **Boundary Epistemological Critique** as a new foundational layer of Scientific Ontology.
+
+This addition clarifies how knowledge is formed through boundary, history, internal heuristics, external heuristics, operational correspondence, collation, residual retention, and residue formation.
+
+v3.0 では、存在境界論｜Scientific Ontology の基礎層として **境界認識批判** を追加しました。
+
+この追加により、知が、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持・残渣化を通じてどのように成立するのかを明示します。
+
+Boundary Epistemological Critique does not treat knowledge as a simple copy of the world, nor as a purely subjective construction. It treats knowledge as a process in which a history-bearing entity receives external input, processes it internally, corresponds operationally with external heuristic structures, collates agreements and disagreements, and preserves what cannot be closed immediately.
+
+境界認識批判は、知を「世界の単純な写し」としても、「主体が勝手に構成したもの」としても扱いません。履歴を持つ存在が外部入力を受け取り、内部で処理し、外部ヒューリスティックと同期し、その一致・不一致・残差を照合し、すぐには閉じきれないものを保持する過程として扱います。
+
+This update also introduces the distinction between **residual** and **residue**.
+
+- A **residual** is a difference that remains available for re-collation.    
+- A **residue** is a sedimented remainder that may be excluded from classification, institutional accounting, or explicit explanation while still affecting the field.    
+
+この更新では、**残差** と **残渣** の区別も導入します。
+
+- **残差** とは、再照合可能な差分です。    
+- **残渣** とは、分類・制度的会計・説明から外されながらも、なお場に作用し続ける履歴的沈殿です。    
+
+This distinction is important for AI, science, ethics, economics, language, and institutional analysis. A system may appear to function successfully while externalizing residues into bodies, environments, relationships, or future generations.
+
+この区別は、AI・科学・倫理・経済・言語・制度分析において重要です。ある体系は、表面上は正常に機能しているように見えながら、その残渣を身体・環境・関係・未来世代へ外部化している場合があります。
+
+For details, see:
+- [`Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)    
+- [`Boundary_Epistemological_Critique.en.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.en.md)    
+- [`Boundary_Epistemological_Critique_Annotations.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md)
+- [`Boundary_Epistemological_Critique_Annotations.en.md`](./01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md)
 
 ---
 
@@ -148,9 +190,8 @@ To observe is not to scan a coordinate, but to encounter a history. To interact 
 > Ontological rendering: Ethics is taking interest in the other’s “so far” and not carelessly destroying or overwriting it.  
 > 存在論訳：倫理とは、相手のそれまでにちゃんと興味を持ち、勝手に壊したり上書きしたりしないことである。
 
-For a fuller explanation, see:
-
-- [`01_Sat_Truth/Four_Axioms_of_Existence.md`](./01_Sat_Truth/Four_Axioms_of_Existence.md)
+For details, see:
+- [`Four_Axioms_of_Existence.md`](./01_Sat_Truth/Four_Axioms_of_Existence.md)
 
 ---
 
@@ -181,7 +222,9 @@ Main contents:
 
 - AMP Introduction
 - Four Axioms of Existence
-- Meaning Generation Model
+- Meaning Generation Model 
+- Boundary Epistemological Critique
+- Boundary Epistemological Critique: Annotations
 
 ### 02 Raj / Beauty / 激・美
 
@@ -210,31 +253,75 @@ Implementation-facing details and non-public operational specifications are main
 
 実装寄りの詳細および非公開の運用仕様は別管理とします。
 
-### 04 Applications / 応用
+## 04_Applications / 応用層
 
-Public-facing conceptual applications.
+`04_Applications` contains applied frameworks that translate Scientific Ontology into practical boundary design.
 
-公開可能な概念応用。
+This layer does not expose private implementation logic. Instead, it explains how boundary, history, operational correspondence, collation, residual retention, and residue formation can be used to think about software, AI, institutional design, communication, and responsibility.
 
-Main contents:
+`04_Applications` は、存在境界論｜Scientific Ontology を実践的な境界設計へ接続する応用層です。
 
-- Personality AI
-- Meaning as Return Orbit
+この層は、非公開の実装論理を公開するものではありません。境界・履歴・同期・照合・残差保持・残渣化を、ソフトウェア、AI、制度設計、コミュニケーション、責任境界の設計にどう接続できるかを示します。
 
-主な内容：
+### Application Boundary Theory / アプリケーション境界論
 
-- 人格AI
-- 帰還軌道としての意味
+v3.0 adds **Application Boundary Theory** as a core applied bridge.
 
-### 05 Research Notes / 研究ノート
+Application Boundary Theory treats software craftsmanship not as the concealment of internal complexity, but as the design of external boundary surfaces through which complex internal processes can be used responsibly.
 
-High-claim-strength conceptual applications, speculative correspondences, and physical, cosmological, or literary reinterpretation notes.
+In this view, AI lightweighting is not merely model compression. It is also the design of external logic that prevents unnecessary search, false closure, and uncontrolled residue formation.
 
-主張強度の高い概念応用、試論的対応表、物理・宇宙論・文学的再解釈ノート。
+v3.0 では、応用層の中核的な橋渡しとして **アプリケーション境界論** を追加しました。
 
-Documents in this directory are not empirical proofs, peer-reviewed physical theories, orthodox literary scholarship, or replacements for modern science.
+アプリケーション境界論では、ソフトウェアの職人性を、内部の複雑さを秘技化することではなく、複雑な内部処理を責任ある形で扱える外部境界面へ変換することとして捉えます。
 
-このディレクトリの文書は、経験的証明、査読済み物理理論、正統な文学研究、現代科学の代替として提示するものではありません。
+この視点では、AI軽量化とは単なるモデル圧縮ではありません。余計な探索、偽閉鎖、制御不能な残渣化を起こさない外部論理の設計でもあります。
+
+See:
+
+- [`Application_Boundary_Theory_Core.md`](./04_Applications/Application_Boundary_Theory_Core.md)
+
+## 05_Research_Notes / 研究ノート
+
+`05_Research_Notes` contains exploratory research branches that extend the core framework into formal space theory, time theory, cosmological correspondence, semantic residue, social boundary analysis, and value theory.
+
+These notes are not presented as replacements for physics, economics, sociology, or policy science. They are research notes for examining what each formal or social system makes observable, what it excludes, what remains as residual, and what sedimentates as residue.
+
+`05_Research_Notes` は、基幹理論を、形式空間論、時間論、宇宙論的対応、意味論的残差、社会境界分析、価値論へ拡張するための探索的研究枝です。
+
+これらのノートは、物理学、経済学、社会学、政策科学の代替として提示するものではありません。各形式体系・社会体系が、何を観測可能にし、何を排除し、何を残差として残し、何を残渣として沈殿させるのかを検討するための研究ノートです。
+
+### Main research branches / 主な研究枝
+
+- **Formal Space and Boundary Noise / 形式空間と境界ノイズ**  
+    Research on how Hilbert space, rigged Hilbert space, entropy space, and related formal spaces determine what can be state-formed, projected, classified, or left as noise and residual.
+    
+- **Internal Time and Logical-depth Axis / 内在時間と論理-深度軸**  
+    Research on non-linear depth structures in which unresolved problems, contradictions, residuals, residues, and semantic pressure are held and reconstructed.
+    
+- **Cosmological and Topological Correspondence / 宇宙論的・位相的対応**  
+    Research notes that explore how boundary, history, topology, and field-like structures may be used as conceptual correspondences without claiming to replace physical theory.
+    
+- **Social Boundary Notes / 社会境界ノート**  
+    Research on institutions, authority, responsibility, organization, exploitation, trust, and the externalization of residues into bodies, environments, relationships, and future possibilities.
+    
+- **Negentropy Economy / ネゲントロピー経済**  
+    An emerging research direction on value, money, exchange, residual externalization, and order-generating potential. This direction asks not only whether an exchange succeeds, but what kind of residue it leaves behind.
+    
+
+### Emerging Research Direction: Negentropy Economy / 今後の研究方向：ネゲントロピー経済
+
+Negentropy Economy studies value not as price itself, but as order-generating potential.
+
+Money is treated not as value itself, but as a medium that connects different forms of value. Exchange is examined as a contact between different forms of negentropy, and the central question becomes whether the exchange increases order-generating capacity or externalizes residue into bodies, environments, relationships, or future generations.
+
+ネゲントロピー経済は、価値を価格そのものではなく、秩序生成能力として捉える研究方向です。
+
+お金は価値そのものではなく、異なる価値を接続する媒質として扱われます。交換は、異なる質のネゲントロピー同士の接触として検討されます。中心となる問いは、交換が成功したかどうかだけではなく、その交換が秩序生成能力を増やしたのか、それとも身体・環境・関係・未来世代へ残渣を外部化したのかです。
+
+This branch connects directly to Boundary Epistemological Critique through operational correspondence, collation, residual retention, and residue formation.
+
+この研究枝は、同期・照合・残差保持・残渣化を通じて、境界認識批判と直接接続します。
 
 ### 99 Private Core Not Included / 非公開中核は含まない
 
@@ -282,6 +369,46 @@ Useful AI does not merely produce answers. It preserves the field in which user 
 
 有用なAIは、単に答えを出すものではありません。ユーザーの判断可能性が保たれる場を維持するものです。
 
+### Operational Correspondence / 同期
+
+Operational correspondence is the condition in which an internal heuristic and an external heuristic correspond stably enough to function.
+
+It is not mere simultaneity. It includes physical, communicative, institutional, linguistic, and practical forms of correspondence.
+
+同期とは、内部ヒューリスティックと外部ヒューリスティックが、運用上安定して対応する状態です。
+
+これは単なる同時化ではありません。物理的・通信的・制度的・言語的・実践的な対応を含みます。
+
+### Collation / 照合
+
+Collation is the operation of reading what agreement, disagreement, and residuals mean.
+
+Operational correspondence asks whether something works. Collation asks what its working, failure, mismatch, or residue means.
+
+照合とは、一致・不一致・残差が何を意味するかを読む操作です。
+
+同期は、それが機能するかを問います。照合は、その機能・失敗・不一致・残渣が何を意味するかを問います。
+
+### Residual and Residue / 残差と残渣
+
+A residual is a difference that remains available for re-collation.
+
+A residue is a sedimented remainder that remains after processing, classification, institutionalization, exchange, or explanation, and may continue to affect the field even when it is no longer visible within the current system.
+
+残差とは、再照合可能な差分です。
+
+残渣とは、処理・分類・制度化・交換・説明のあとに残り、現行体系の内部では見えなくなっても、なお場に作用し続ける履歴的沈殿です。
+
+### Logical-depth Axis / 論理-深度軸
+
+The logical-depth axis is not simply before and after in external time.
+
+It is a depth direction in which unresolved problems, contradictions, branches, residuals, residues, and semantic pressure are held and reconstructed.
+
+論理-深度軸とは、外的時間における前後関係そのものではありません。
+
+未解決・矛盾・分岐・残差・残渣・意味圧を保持し、再構成するための深度方向です。
+
 ---
 
 ## Public Scope / 公開範囲
@@ -314,24 +441,35 @@ It does not include:
 
 ## Citation / DOI
 
-Latest public record (all versions):  
+Legacy project DOI / 継続プロジェクト DOI:  
 [10.5281/zenodo.19222394](https://doi.org/10.5281/zenodo.19222394)
 
-Current public edition (v2.2.0):  
-[10.5281/zenodo.20665198](https://doi.org/10.5281/zenodo.20665198)
+Current Zenodo version-family DOI / 現行Zenodo系列 DOI:  
+[10.5281/zenodo.20665197](https://doi.org/10.5281/zenodo.20665197)
+
+Current public edition (v3.0.0) / 現行公開版:  
+[10.5281/zenodo.20749351](https://doi.org/10.5281/zenodo.20749351)
 
 Use the version-specific DOI when citing this release.
 
 この版を引用する場合は、版固有 DOI を使用してください。
 
+Some earlier public releases may exist as separately archived Zenodo records. This release preserves continuity through related identifiers and the long-running project DOI.
+
+一部の過去公開版は、Zenodo上で別レコードとしてアーカイブされている場合があります。本リリースでは、Related identifiers と継続プロジェクト DOI によって連続性を明示します。
+
 ---
 
 ## License / ライセンス
 
-This repository is licensed under Creative Commons Attribution-NonCommercial 4.0 International unless otherwise stated.
+From v3.0.0 onward, this repository is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0) unless otherwise stated.
 
-本リポジトリの内容は、特に明記がない限り、Creative Commons Attribution-NonCommercial 4.0 International のもとで公開します。
+v3.0.0 以降、本リポジトリの内容は、特に明記がない限り、Creative Commons Attribution 4.0 International（CC BY 4.0）のもとで公開します。
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+Previous archived releases may retain the license stated in their own release files.
+
+過去にアーカイブされたリリースは、それぞれのリリース内に記載されたライセンス条件を保持する場合があります。
 
 [![Status: Work in Progress](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)](https://img.shields.io/badge/Status-Work_in_Progress-blue.svg)
