@@ -8,6 +8,7 @@
 # Allow repository control files
 !.gitattributes
 !.gitignore
+!.zenodo.json
 !README.md
 !LICENSE.md
 !CITATION.cff
@@ -15,13 +16,16 @@
 !RELEASE_NOTES.md
 !Roadmap.md
 !GLOSSARY.md
+!Translation_Note.md
 
 # Allow public folders and selected public files
 !00_Overview/**
 !01_Sat_Truth/**
 !02_Raj_Beauty/**
 !03_Tam_Goodness/**
+!04_Applications/**
 !05_Research_Notes/**
+!06_Visual_Materials/**
 !99_Private_Core_Not_Included/**
 
 # Python / local environment

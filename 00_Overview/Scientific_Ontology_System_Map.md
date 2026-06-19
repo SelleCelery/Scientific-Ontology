@@ -20,9 +20,9 @@ It replaces the older public framing of “存在論科学” with a more precis
 
 ## 0. Core Definition / 中核定義
 
-**Existence-Boundary Theory / Scientific Ontology studies conceptual interaction and boundary conditions through logical depth.**
+**Existence-Boundary Theory / Scientific Ontology studies conceptual interaction and boundary conditions through the logical-depth axis.**
 
-**存在境界論は、概念間相互作用を観測し、論理深度によって境界づける研究である。**
+**存在境界論は、概念間相互作用を観測し、論理-深度軸によって境界づける研究である。**
 
 Here, “conceptual interaction” does not mean only social debates, ideologies, money, religion, or politics. Those can be later examples, but they are not the root of the system.
 
@@ -53,12 +53,17 @@ At the root, this project concerns:
   README.md
   Scientific_Ontology_System_Map.md
   Scientific_Terminology_Protocol.md
+  Scientific_Ontology_and_Science.md
 
 01_Sat_Truth/
   README.md
   AMP_Introduction.md
   Four_Axioms_of_Existence.md
   Meaning_Generation_Model.md
+  Boundary_Epistemological_Critique.en.md
+  Boundary_Epistemological_Critique.jp.md
+  Boundary_Epistemological_Critique_Annotations.en.md
+  Boundary_Epistemological_Critique_Annotations.jp.md
 
 02_Raj_Beauty/
   README.md
@@ -69,10 +74,12 @@ At the root, this project concerns:
   README.md
   Boundary_Ethics_Model.md
   AI_Usefulness_as_a_Boundary_Function.md
-  [candidate] AI_Boundary_Interface_and_Synchronous_Understanding.md
+  AI_Boundary_Interface_and_Synchronous_Understanding.md
+  AI_Personality_as_Response_Structure.md
   
 04_Applications/
   README.md
+  Application_Boundary_Theory_Core.md
   Personality_AI/
     README.md
     Meaning_As_Return_Orbit.md
@@ -80,10 +87,29 @@ At the root, this project concerns:
 05_Research_Notes/
   README.md
   Claim_Strength_Table_History_Field_Topology_v0.1.md
-  Internal_Time_Standard_Model_Correspondence_v0.1.md
-  Ontological_History_of_the_Universe.md
-  Cosmological_Topological_Dynamics.md
+  AI_Personality/
+    README.md
+    History_Loop_Radius_and_Return_Stability.md
+    Logical_Sandbox_and_Negentropy_Model.md
   Literary_Ontological_Notes/
+	README.md
+	reading-blue-light.en.md
+	reading-blue-light.jp.md
+  Physical_Cosmological_Notes/
+	README.md
+	Internal_Time_Standard_Model_Correspondence_v0.1.md
+	Ontological_History_of_the_Universe.md
+	Cosmological_Topological_Dynamics.md
+  Social_Boundary_Notes/
+    README.md
+    Negentropy_Economy_Principles.md
+    Negentropy_Economy_and_Meaning_Generation.md
+
+06_Visual_Materials/
+  README.md
+  Scientific_Ontology_Conceptual_Poster_Note.md
+  Scientific_Ontology_Conceptual_Poster.en.png
+  Scientific_Ontology_Conceptual_Poster.ja.png
 
 99_Private_Core_Not_Included/
   README.md
@@ -159,6 +185,28 @@ Documents in this directory are not empirical proofs, peer-reviewed physical the
 
 このディレクトリの文書は、経験的証明、査読済み物理理論、正統な文学研究、現代科学の代替ではない。
 
+### 06 Visual Materials / 視覚資料
+
+Conceptual posters, visual system maps, and reader-orientation figures.
+
+概念ポスター、視覚的システムマップ、読者向け導入図を置く。
+
+This layer provides public-facing visual entry points into Scientific Ontology. It is not a theoretical body, empirical evidence layer, formal proof layer, or implementation layer.
+
+この層は、Scientific Ontology への公開用視覚導線を提供する。理論本文、実証資料、形式的証明、実装層ではない。
+
+Visual Materials may summarize relations among operational correspondence, collation, residuals, residues, the logical-depth axis, meaning generation, heuristic operation, boundary interpretation, and application paths such as finance and residue.
+
+Visual Materials では、同期、照合、残差、残渣、論理-深度軸、意味生成、ヒューリスティック運用、境界解釈、金融と残渣のような応用導線の関係を、視覚的に整理することができる。
+
+These materials should be read as conceptual companion figures. They may use cosmological, economic, linguistic, computational, and institutional motifs, but such motifs are used as conceptual analogies, not as direct empirical or institutional claims.
+
+これらの資料は、概念補助図として読むべきである。宇宙論、経済、言語、計算、制度に関するモチーフを用いる場合があるが、それらは概念的類比であり、直接的な実証主張または制度的主張ではない。
+
+This directory should include explanatory notes when a visual figure requires non-obvious reading conditions.
+
+視覚図が通常の読み方では誤読されやすい場合、このディレクトリには読解注記を添える。
+
 ### 99 Private Core Not Included / 非公開中核は含めない
 
 This directory is a marker. It exists to state that non-public materials are intentionally excluded from the public repository.
@@ -195,11 +243,20 @@ Applications
 Research Notes
   High-claim applications and speculative correspondences
   高主張強度の応用・試論的対応
+
+Cross-cutting public interface:
+  Visual Materials
+  Conceptual posters, visual maps, and reader-orientation figures
+  概念ポスター・視覚地図・読者向け導入図
 ```
 
 This flow should not be read as a simple hierarchy of importance. Sat, Raj, and Tam are phases of the same system.
 
 この流れは単純な重要度の上下ではない。Sat、Raj、Tam は同じ体系の位相である。
+
+Visual Materials should not be read as an additional theoretical phase after Research Notes. It is a cross-cutting public interface that helps readers enter the system from multiple directions.
+
+Visual Materials は、Research Notes の後に続く追加理論段階として読むべきではない。これは、読者が複数の方向から体系へ入るための横断的な公開インターフェースである。
 
 ---
 
@@ -352,7 +409,9 @@ Public documents should not state:
 Sat は根本構造を置く。  
 Raj は履歴と境界の動態を置く。  
 Tam は非破壊的相互作用とAI境界インターフェースを置く。  
+Applications は公開可能な概念応用を置く。  
 Research Notes は高主張強度の応用・試論を置く。  
+Visual Materials は、読者が体系へ入るための視覚的導線を置く。  
 非公開素材は、公開リポジトリでは索引化しない。
 
 The public edition should remain an interface, not an exposure of the private core.

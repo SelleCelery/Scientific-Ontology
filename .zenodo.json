@@ -1,0 +1,43 @@
+{
+"title": "Scientific Ontology (SO): Public Edition v3.0.0",
+"upload_type": "publication",
+"publication_type": "other",
+"description": "Scientific Ontology (SO): Public Edition v3.0.0 is a public documentation release of a boundary-based philosophical and theoretical framework for describing existence, knowledge, meaning, communication, ethics, AI usefulness, and social systems through boundary, history, heuristics, operational correspondence, collation, residual retention, and residue formation. This release introduces Boundary Epistemological Critique as a new foundational layer, adds bilingual core and annotation files, strengthens the application layer through Application Boundary Theory, and prepares research directions including formal space theory, boundary noise, internal time, social boundary analysis, and Negentropy Economy.",
+"creators": [
+{
+"name": "万度 華凜"
+}
+],
+"license": "cc-by-4.0",
+"version": "3.0.0",
+"publication_date": "2026-06-19",
+"keywords": [
+"Scientific Ontology",
+"Boundary Theory",
+"Boundary Epistemological Critique",
+"History-Field Communication",
+"Applied Metaphysics",
+"Heuristics",
+"Operational Correspondence",
+"Collation",
+"Residual",
+"Residue",
+"Boundary Ethics",
+"AI Usefulness",
+"Application Boundary Theory",
+"Negentropy Economy",
+"Meaning Generation",
+"Internal Time",
+"Logical-depth Axis"
+],
+"language": "eng",
+"related_identifiers": [
+{
+"identifier": "https://github.com/SelleCelery/Scientific-Ontology",
+"relation": "isSupplementedBy",
+"scheme": "url"
+}
+],
+"notes": "This public edition is not presented as a replacement for physics, economics, sociology, policy science, or existing philosophical traditions. It is a conceptual and methodological framework for examining what a system makes observable, what it excludes, what remains as residual, and what sedimentates as residue. From v3.0.0 onward, the public edition is released under Creative Commons Attribution 4.0 International (CC BY 4.0)."
+}
+

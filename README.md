@@ -1,4 +1,5 @@
 # Scientific Ontology｜存在境界論
+
 ## Conceptual Interaction and Boundary Studies
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20749351.svg)](https://doi.org/10.5281/zenodo.20749351)
@@ -10,17 +11,49 @@ The Japanese public-facing name has been updated from 「存在論科学」 to �
 
 「存在論科学」は旧称・開発名です。公開上の日本語名としては、より誤解を受けにくい名称として **存在境界論** を用います。
 
-Here, **Scientific** does not mean that this project claims to be a natural science, empirical physics, or a replacement for modern science. It refers to a methodological attitude: observation, classification, description, explicit boundary conditions, and careful control of claim strength.
+Here, **Scientific** does not mean that this project claims to be a natural science, empirical physics, or a replacement for modern science. It refers to a methodological attitude: observation, classification, description, re-collatability, explicit boundary conditions, and careful control of claim strength.
 
-ここでいう **Scientific** は、狭義の自然科学を名乗るものではありません。観測・分類・記述・検証可能性・境界条件の明示・主張強度の管理を重視する方法態度を指します。
+ここでいう **Scientific** は、狭義の自然科学を名乗るものではありません。観測・分類・記述・再照合可能性・境界条件の明示・主張強度の管理を重視する方法態度を指します。
 
-Scientific Ontology studies conceptual interaction and boundary conditions through logical depth.
+Here, **re-collatability** is used as the Scientific Ontology counterpart to verifiability: the capacity to reopen a description, classification, boundary-setting, or residual treatment and collate it again against other histories, observations, boundary conditions, counterexamples, and remaining residuals.
 
-存在境界論は、概念間相互作用を観測し、論理深度によって境界づける研究です。
+ここでいう **再照合可能性** は、存在境界論における「検証可能性」に相当する概念です。記述、分類、境界設定、残差処理を後から再び開き、別の履歴、観測条件、境界条件、反例、残された残差に照らして照合し直せることを指します。
 
-Version 3.0 adds Boundary Epistemological Critique as a foundational account of how knowledge, meaning, operational correspondence, collation, residuals, and residues arise at boundaries.
+Scientific Ontology studies conceptual interaction and boundary conditions through the logical-depth axis.
 
-v3.0 では、境界において知・意味・同期・照合・残差・残渣がどのように立ち上がるかを扱う基礎論として、境界認識批判を追加しました。
+存在境界論は、概念間相互作用を観測し、論理-深度軸によって境界づける研究です。
+
+Boundary Epistemological Critique is included as a foundational account of how knowledge, meaning, operational correspondence, collation, residuals, and residues arise at boundaries.
+
+境界認識批判は、境界において知・意味・同期・照合・残差・残渣がどのように立ち上がるかを扱う基礎論として含まれています。
+
+For version-specific changes, see [`RELEASE_NOTES.md`](./RELEASE_NOTES.md).
+
+版ごとの変更点については、[`RELEASE_NOTES.md`](./RELEASE_NOTES.md) を参照してください。
+
+---
+## Visual Overview / 視覚的概要
+
+<a href="./06_Visual_Materials/Scientific_Ontology_Conceptual_Poster.en.png">
+  <img src="./06_Visual_Materials/Scientific_Ontology_Conceptual_Poster.ja.png" width="480" alt="Scientific Ontology conceptual poster Japanese">
+</a>
+
+The Japanese poster is shown below as a compact visual overview.  
+Click the image to open the full-size Japanese version.
+
+日本語版ポスターを、コンパクトな視覚的概要として表示しています。  
+画像をクリックすると、日本語版の拡大画像を開きます。
+
+Poster files and companion notes:
+
+- [Japanese poster / 日本語版ポスター](./06_Visual_Materials/Scientific_Ontology_Conceptual_Poster.ja.png)
+- [English poster / 英語版ポスター](./06_Visual_Materials/Scientific_Ontology_Conceptual_Poster.en.png)
+- [Visual Materials README / 視覚資料 README](./06_Visual_Materials/README.md)
+- [Bilingual companion note / 日英併記の読解注記](./06_Visual_Materials/Scientific_Ontology_Conceptual_Poster_Note.md)
+
+For best readability, open the poster image in another tab or window and read the companion note alongside it.
+
+読みやすさのため、ポスター画像を別タブまたは別ウィンドウで開き、読解注記と並べて読むことを推奨します。
 
 ---
 
