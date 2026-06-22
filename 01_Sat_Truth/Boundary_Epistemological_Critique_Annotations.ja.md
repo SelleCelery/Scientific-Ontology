@@ -1,10 +1,17 @@
 # 境界認識批判 注解
+## 球世界・内面運動・論理-深度軸による地形図
 
-## 球世界・内面運動・論理深度軸による地形図
+> Status: Annotation draft / 日本語注解草稿
+> Layer: `01_Sat_Truth` / Sat / Truth companion annotation
+> Relation: `Boundary_Epistemological_Critique.ja.md` および `Boundary_Epistemological_Critique.en.md` の別ファイル注解
+> Scope: philosophical problem-fields, terrain map, residuals, residues, re-collation, logical-depth axis
+> Language: Japanese authoritative draft / 日本語正本草稿
+> Authoritative source: this Japanese text unless otherwise stated
+> Claim: annotation and terrain map, not authority claim, philosophical history, empirical proof, or physical theory
 
-> Status: Annotation Draft / 注解草稿  
-> Relation: `Boundary_Epistemological_Critique.ja.md` の別ファイル注解  
-> Purpose: 本注解は、本文命題列を哲学者名で権威づけるためのものではない。境界認識批判が扱う運動、すなわち感性・悟性・理性・同期・照合・残差保持・再照合の流れを、既存思想の問題圏と照合するための地形図である。
+本注解は、本文命題列を哲学者名で権威づけるためのものではない。境界認識批判が扱う運動、すなわち感性・悟性・理性・同期・照合・残差保持・残渣化・再照合・論理-深度軸を、既存思想の問題圏と照合するための地形図である。
+
+思想家マップは、思想史の年表ではない。各思想家を、境界認識批判の地形上でどの地点を照らすかという観点から配置する。
 
 ---
 
@@ -160,7 +167,7 @@
 
 第四に、論理-深度軸がある。ここでは、同一平面では閉じられないものが、どの深度で保持され、再照合されるかが問われる。
 
-第五に、エントロピー帯域と空間把握の軸がある。ここでは、ノイズが単に消すべきものなのか、それとも境界不整合を示すものなのかが問われる。ヒルベルト空間、リグドヒルベルト空間、エントロピー空間への関心は、この軸にある。
+第五に、エントロピー帯域と空間把握の軸がある。ここでは、ノイズが単に消すべきものなのか、それとも境界不整合を示すものなのかが問われる。ヒルベルト空間、rigged Hilbert 空間、エントロピー空間への関心は、この軸にある。
 
 この地形図の中心には、カントとウィトゲンシュタインを置くことができる。
 
@@ -240,5 +247,4 @@
 
 この再配置によって、境界認識批判は「未踏の新説」を名乗る必要がなくなる。むしろ、既存思想の複数の問題圏が、境界・履歴・ヒューリスティック・同期・照合・残差保持という語彙で、同じ地形上に再配置される。
 
-その地形図を先に読むと、本文命題列は読みやすくなる。本文は定義を固定するための骨格であり、本注解はその骨格がどのような球世界・内面運動・論理深度軸の上で動いているかを示す地図である。
-
+その地形図を先に読むと、本文命題列は読みやすくなる。本文は定義を固定するための骨格であり、本注解はその骨格がどのような球世界・内面運動・論理-深度軸の上で動いているかを示す地図である。

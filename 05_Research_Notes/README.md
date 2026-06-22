@@ -1,180 +1,168 @@
-# Research Notes / 研究ノート
+# 研究ノート / Research Notes
 
-This directory contains high-claim-strength research notes, speculative correspondences, conceptual applications, and non-empirical structural readings related to **存在境界論｜Scientific Ontology**.
+> Status: Public research-note index / 公開用研究ノート索引  
+> Layer: 05_Research_Notes  
+> Scope: research-note layer, claim-strength handling, branch map  
+> Language: Japanese authoritative text / English commensurated rendering  
+> Authoritative source: Japanese text  
+> Claim strength: Research-note layer; not empirical proof, not completed physical theory, not implementation specification  
+> Commensuration status: Section-level Japanese-first text with English commensurated renderings.
 
-このディレクトリには、**存在境界論｜Scientific Ontology** に関する、主張強度の高い研究ノート、試論的対応表、概念応用、および非経験的な構造読解を置きます。
+---
+## 2. 配置方針
 
-Documents in this directory may connect Scientific Ontology with physics, cosmology, the Standard Model, black holes, holographic principles, large-scale universe models, literature, religion, poetry, or creative thought.
+Research Notes に置く資料は、次のいずれかに該当する。
 
-このディレクトリの文書は、Scientific Ontology を、物理、宇宙論、標準模型、ブラックホール、ホログラム原理、大規模宇宙モデル、文学、宗教、詩、創作思考などへ接続する場合があります。
+- 既存科学・数理・宇宙論との接触を持つが、証明ではなく対応候補であるもの
+- 公開層の概念を強い物理・宇宙論・文学・社会・価値論へ展開するもの
+- 主張強度、誤読リスク、疑似科学化リスクが通常公開層より高いもの
+- 01〜04 の中核定義を変更する権限は持たないが、将来補強する可能性を持つもの
+- 日本語正本と英語通約の整備が未完了であり、明示的な状態表示を必要とするもの
 
-They are not presented as empirical proofs, peer-reviewed physical theories, orthodox literary scholarship, or replacements for modern science.
+ネゲントロピー経済に関する条文系文書は、現時点では保留扱いを認める。公開する場合は、法令・会計基準・政策案としてではなく、境界経済論の概念ノートとして扱う。
 
-これらは、経験的証明、査読済み物理理論、正統な文学研究、現代科学の代替として提示するものではありません。
+### English commensurated rendering
 
-The purpose of this directory is to preserve strong conceptual moves while keeping them clearly separated from the public foundational layers.
+A document belongs in Research Notes when it meets one or more of the following conditions:
 
-このディレクトリの目的は、強い概念的展開を保持しつつ、それらを公開用の基礎層から明確に分離して扱うことです。
+- it touches existing science, mathematics, or cosmology, but remains a correspondence candidate rather than a proof;
+- it extends public-layer concepts toward stronger physical, cosmological, literary, social, or value-theoretical applications;
+- its claim strength, risk of misreading, or risk of pseudo-scientific interpretation is higher than the standard public layers;
+- it does not have authority to revise core definitions in layers 01-04, but may later reinforce them;
+- its Japanese authoritative text and English commensurated rendering are not yet fully aligned, and it therefore requires explicit status labeling.
+
+Principle-style documents on Negentropy Economy may remain on hold at this stage. If published, they should be treated as conceptual notes in boundary economics, not as laws, accounting standards, or policy proposals.
 
 ---
 
-## Scope / 範囲
+## 3. 主な研究枝
 
-Research Notes may include:
+### 3.1 統合索引・主張強度管理
 
-- high-claim-strength conceptual applications
-- speculative correspondence tables
-- physical or cosmological reinterpretation notes
-- literary / ontological structural readings
-- non-empirical interpretive experiments
-- notes that require stronger disclaimers than the main Sat / Raj / Tam layers
+- [`Research_Notes_Index.md`](./Research_Notes_Index.md)  
+  研究ノートを、領域、主要概念、接続層、主張強度、非主張境界によって整理する横断索引。
 
-研究ノートには、以下を含みます。
+- [`Claim_Strength_Table_History_Field_Topology.md`](./Claim_Strength_Table_History_Field_Topology.md)  
+  履歴場トポロジーおよび関連概念の主張強度、公開判断、誤読リスク、応用リスクを管理する対応表。
 
-- 主張強度の高い概念応用
-- 試論的対応表
-- 物理・宇宙論的再解釈ノート
-- 文学的・存在論的な構造読解
-- 非経験的な解釈実験
-- Sat / Raj / Tam の主要公開層よりも強い注記を必要とする資料
+### 3.2 AI人格研究ノート
+
+- [`AI_Personality_Notes/`](./AI_Personality_Notes/)  
+  AI人格、応答アトラクタ、履歴ループ半径、帰還安定性、論理箱庭、クオリア履歴、ネゲントロピー的論理資源に関する研究ノート。
+
+この枝は、`04_Applications` の人格AI文書を、より強い研究ノート上の定式化へ接続する。AI意識や人間同等の人格を主張するものではない。
+
+### 3.3 物理・宇宙論系ノート
+
+- [`Physical_Cosmological_Notes/`](./Physical_Cosmological_Notes/)  
+  intrinsic time、標準模型対応、宇宙論的対応、履歴場トポロジー、物理位相への試論的接続を扱う。
+
+この枝は、現代物理学の代替ではない。物理語彙との接触を持つため、主張強度と非主張境界を明示する。
+
+### 3.4 文学的・存在論的ノート
+
+- [`Literary_Ontological_Notes/`](./Literary_Ontological_Notes/)  
+  文学・詩・宗教的語彙・創作素材を、存在境界論の概念で構造的に読む研究ノート。
+
+これは文学研究の代替ではなく、文学作品が存在境界論を証明するという主張でもない。
+
+### 3.5 社会・境界系ノート
+
+- [`Social_Boundary_Notes/`](./Social_Boundary_Notes/)  
+  社会システム、制度的境界、責任配分、信用、残差・残渣、ネゲントロピー経済、意味を帯びた交換に関する研究ノート。
+
+未処理の排出文、生の社会批判、非公開評価はこの層には置かない。
+
+### English commensurated rendering
+
+#### Integration and claim-strength control
+
+- [`Research_Notes_Index.md`](./Research_Notes_Index.md)  
+  A cross-domain index organizing Research Notes by domain, main concepts, connected layer, claim strength, and non-claim boundaries.
+
+- [`Claim_Strength_Table_History_Field_Topology.md`](./Claim_Strength_Table_History_Field_Topology.md)  
+  A management table for claim strength, publication handling, misreading risk, and application risk in History-Field Topology and related concepts.
+
+#### AI Personality Notes
+
+- [`AI_Personality_Notes/`](./AI_Personality_Notes/)  
+  Research notes on AI personality, response attractors, history-loop radius, return stability, logical sandboxes, qualia history, and negentropy-like logical resources.
+
+This branch connects personality-AI documents in `04_Applications` to stronger research-note formulations. It does not claim AI consciousness or human-equivalent personhood.
+
+#### Physical / Cosmological Notes
+
+- [`Physical_Cosmological_Notes/`](./Physical_Cosmological_Notes/)  
+  Notes on intrinsic time, Standard Model correspondence, cosmological correspondence, History-Field Topology, and exploratory contact with the physical phase.
+
+This branch does not replace contemporary physics. Because it touches physical vocabulary, it must state claim strength and non-claim boundaries explicitly.
+
+#### Literary / Ontological Notes
+
+- [`Literary_Ontological_Notes/`](./Literary_Ontological_Notes/)  
+  Structural readings of literary, poetic, religious, or creative materials through the concepts of Scientific Ontology.
+
+This is not a replacement for literary scholarship, nor does it claim that literary works prove Scientific Ontology.
+
+#### Social / Boundary Notes
+
+- [`Social_Boundary_Notes/`](./Social_Boundary_Notes/)  
+  Research notes on social systems, institutional boundaries, responsibility distribution, trust, residuals, residues, Negentropy Economy, and meaning-bearing exchange.
+
+Raw discharge texts, unprocessed social criticism, and private evaluations do not belong here.
 
 ---
 
-## Not Claims / 非主張事項
+## 4. 非主張事項
+
+このディレクトリの文書は、以下を主張しない。
+
+- 存在境界論が経験科学を置き換えること
+- 物理・宇宙論的対応が証明済みの物理理論であること
+- 文学作品が存在境界論を証明すること
+- 宗教的・詩的素材が物理学へ還元されること
+- ネゲントロピー経済が政策案・会計基準・代替通貨制度であること
+- AI人格研究ノートがAI意識や人間同等の人格を証明すること
+- Research Notes が 01〜04 の中核定義を上書きすること
+
+### English commensurated rendering
 
 Documents in this directory do not claim that:
 
-- Scientific Ontology replaces empirical science
-- speculative correspondences are proven physical theories
-- literary works prove Scientific Ontology
-- religious or poetic texts are reducible to physics
-- conceptual analogies are equivalent to scientific laws
-
-このディレクトリの文書は、以下を主張しません。
-
-- Scientific Ontology が経験科学を置き換えること
-- 試論的対応が証明済みの物理理論であること
-- 文学作品が Scientific Ontology を証明すること
-- 宗教的・詩的テキストが物理学へ還元されること
-- 概念的アナロジーが科学法則と等価であること
+- Scientific Ontology replaces empirical science;
+- physical or cosmological correspondences are proven physical theories;
+- literary works prove Scientific Ontology;
+- religious or poetic materials are reducible to physics;
+- Negentropy Economy is a policy proposal, accounting standard, or replacement currency system;
+- AI Personality Notes prove AI consciousness or human-equivalent personhood;
+- Research Notes override the core definitions in layers 01-04.
 
 ---
 
-## Research Note Groups / 研究ノート群
+## 5. 読み方
 
-### Integration and Claim-Strength Control / 統合索引・主張強度管理
+この層は、鞘付きの牙である。
 
-- [`Research_Notes_Index.md`](./Research_Notes_Index.md)  
-    Cross-domain index of Research Notes by domain, main concepts, connected layer, claim strength, and non-claim boundaries.  
-    Research Notes を、領域、主要概念、接続層、主張強度、非主張境界によって整理する横断索引。
-    
-- [`Claim_Strength_Table_History_Field_Topology_v0.1.md`](10_PUBLIC_GITHUB/Scientific-Ontology/05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md)  
-    Claim-strength table for History-Field Topology.  
-    履歴場トポロジーの主張強度を整理するための対応表。
-    
+強い命題を弱めるためではなく、誤った層で使わせないために置く。
 
----
+Research Notes の文書を読むときは、少なくとも次を確認する。
 
-### AI Personality Notes / AI人格研究ノート
+- どの公開層から派生しているか
+- どの既存語彙と衝突するか
+- 主張強度はどの程度か
+- 何を主張しないか
+- どの部分が概念整理、構造アナロジー、存在論的再解釈、作業仮説、物理接続候補なのか
 
-- [`AI_Personality_Notes/`](./AI_Personality_Notes/)  
-    Public research notes on AI personality, response attractors, return stability, qualia history, and logical sandbox models.  
-    AI人格、応答アトラクタ、帰還安定性、クオリア履歴、箱庭型論理空間に関する公開研究ノート。
-    
+### English commensurated rendering
 
-This group connects the Tam layer and the Applications layer to stronger research-note formulations.
+This layer is a sheathed fang.
 
-このノート群は、Tam層およびApplications層の人格AI文書を、より強い研究ノート上の定式化へ接続する。
+It exists not to weaken strong claims, but to prevent them from being used in the wrong layer.
 
----
+When reading a Research Note, check at least the following:
 
-### Physical / Cosmological Notes / 物理・宇宙論系ノート
-
-- [`Physical_Cosmological_Notes/`](./Physical_Cosmological_Notes/)  
-    Notes connecting Scientific Ontology with physics, cosmology, the Standard Model, black holes, holographic principles, large-scale universe models, and physical-ontological reinterpretation.  
-    Scientific Ontology を、物理、宇宙論、標準模型、ブラックホール、ホログラム原理、大規模宇宙モデル、物理存在論的再解釈へ接続するノート群。
-    
-
----
-
-### Literary / Ontological Notes / 文学的・存在論的ノート
-
-- [`Literary_Ontological_Notes/`](./Literary_Ontological_Notes/)  
-    Structural readings and interpretive experiments using literary, religious, poetic, or creative materials.  
-    文学・宗教・詩・創作素材を用いた構造読解および解釈実験。
-    
-
----
-
-### Social / Boundary Notes / 社会・境界系ノート
-
-- [`Social_Boundary_Notes/`](./Social_Boundary_Notes/)  
-    Public research notes on social systems, institutional boundaries, responsibility distribution, monetary closure, credibility, social negentropy, and meaning-bearing exchange.  
-    社会システム、制度的境界、責任配分、貨幣的閉鎖、信用、社会的ネゲントロピー、意味を帯びた交換に関する公開用研究ノート。
-
-    - [`Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md`](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md)  
-      Conceptual model treating money as exchange medium and value as the exchange-facing appearance of meaning-bearing negentropy.  
-      お金を交換媒質として扱い、価値を「意味を帯びたネゲントロピー」が交換面に現れた相として整理する概念モデル.
-    
-
-Raw discharge texts, private evaluations, and unprocessed social criticism do not belong here.
-
-未処理の排出文、非公開評価、生の社会批判はここには置かない。
-
----
-
-## Directory Policy / 配置方針
-
-Research Notes are separated from the main public layers because their claims are stronger, more speculative, or more dependent on analogy than the core public documents.
-
-研究ノートは、主要な公開層よりも主張が強い、試論的である、またはアナロジー依存度が高いため、別ディレクトリとして分離します。
-
-Use this directory when a document:
-
-- connects Scientific Ontology to physics or cosmology
-- proposes a speculative correspondence table
-- reads literature, religion, or creative material through Scientific Ontology
-- requires explicit disclaimers about proof, analogy, or interpretive status
-- should not be placed directly in Sat / Raj / Tam
-
-以下の場合、このディレクトリに配置します。
-
-- Scientific Ontology を物理・宇宙論へ接続する
-- 試論的対応表を提示する
-- 文学・宗教・創作素材を Scientific Ontology で読む
-- 証明・アナロジー・解釈上の位置づけについて明示的な注記が必要である
-- Sat / Raj / Tam に直接置くには主張強度が高い
-
----
-
-## Relationship to Main Layers / 主要層との関係
-
-### Sat / Truth
-
-Research Notes are not foundational axioms. They may use Sat concepts, but they do not belong to the metaphysical foundation layer.
-
-研究ノートは根本公理ではありません。Sat の概念を用いることはありますが、形而上学的基礎層には属しません。
-
-### Raj / Beauty
-
-Research Notes may extend Raj frameworks such as History-Field Communication or History-Field Topology. However, stronger physical, cosmological, or literary applications are kept here to avoid overloading the Raj layer.
-
-研究ノートは、履歴場通信論や履歴場トポロジーなどの Raj のフレームを拡張する場合があります。ただし、主張強度の高い物理・宇宙論・文学的応用は、Raj 層を過剰に重くしないため、ここに分離します。
-
-### Tam / Goodness
-
-Research Notes are not implementation protocols. AI safety, boundary ethics, and public AI boundary-interface materials belong to Tam unless they are speculative or unpublished internal notes.
-
-研究ノートは実装プロトコルではありません。AI安全、境界倫理、公開用AI境界インターフェースは Tam に属します。ただし、試論的または非公開寄りの内部ノートは別管理します。
-
----
-
-## Summary / 要約
-
-This directory is for strong but bounded experiments.
-
-It is where Scientific Ontology is allowed to touch physics, cosmology, literature, religion, poetry, and creative thought without pretending that analogy is proof.
-
-このディレクトリは、強いが境界づけられた実験のための場所です。
-
-ここでは、Scientific Ontology が、物理、宇宙論、文学、宗教、詩、創作思考に触れることを許します。ただし、アナロジーを証明と偽らないことを条件とします。
+- which public layer it derives from;
+- which existing vocabulary it collides with;
+- how strong its claim is;
+- what it does not claim;
+- which parts are conceptual clarification, structural analogy, ontological reinterpretation, working hypothesis, or physical correspondence candidate.

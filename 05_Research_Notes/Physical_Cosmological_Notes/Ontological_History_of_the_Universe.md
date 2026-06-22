@@ -1,24 +1,29 @@
-# Ontological History of the Universe  
-# 存在論的宇宙史
+# 存在論的宇宙史 / Ontological History of the Universe
 
-## Overcoming the Subject-Object Fallacy and the Emergence of Physical Laws via Boson Routing  
-## 主客の誤認の超克とボソン経路による物理法則の創発モデル
-
-> **Status / 位置づけ**  
-> This document is a public-facing conceptual essay in Scientific Ontology. It is not an empirical cosmology paper, a physical proof, or a replacement for modern scientific cosmology.
->
-> 本文書は、存在境界論における公開用の概念論考です。経験的宇宙論、物理学的証明、または現代科学の代替理論ではありません。
->
-> It presents an ontological reinterpretation of cosmic history through the concepts of subject-object separation, observation, boson routing, history, and logical depth.
->
-> 主客分離、観測、ボソン経路、履歴、論理深度という概念を用いて、宇宙史を存在論的に読み替える試みです。
->
-> At this stage, the Japanese text should be treated as the primary reference.
->
-> 現時点では、日本語記述を主要な参照本文として扱います。
+> Status: Public conceptual essay / 公開用概念論考  
+> Layer: 05_Research_Notes / Physical_Cosmological_Notes  
+> Scope: ontological cosmic history, subject-object fallacy, boson routing, logical depth  
+> Language: Japanese authoritative text / English commensurated rendering  
+> Authoritative source: Japanese text  
+> Claim strength: Ontological reinterpretation / cosmological essay; not empirical cosmology, not physical proof, not replacement for modern cosmology  
+> Commensuration status: Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
+> Reason / 理由: The English text exists, but the body still follows an older interleaved order. This file is marked as an interleaved draft until a full Japanese-first re-layout is performed.
 
 ---
 
+## 0. 通約状態 / Commensuration status
+
+Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
+
+理由：The English text exists, but the body still follows an older interleaved order. This file is marked as an interleaved draft until a full Japanese-first re-layout is performed.
+
+### English commensurated rendering
+
+Commensuration status: Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
+
+Reason: The English text exists, but the body still follows an older interleaved order. This file is marked as an interleaved draft until a full Japanese-first re-layout is performed.
+
+---
 ## 1. Abstract / 要旨
 
 Modern science describes the history of the universe as a vast material process that began with the Big Bang and eventually produced human beings as small accidental objects within cosmic space. Scientific Ontology does not simply reject this view, but reinterprets it from another angle.

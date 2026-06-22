@@ -25,7 +25,7 @@
 - Public AI safety and boundary concepts
 
 ## Phase 4: Research Notes
-- Internal Time Standard Model Correspondence
+- Intrinsic Time Standard Model Correspondence
 - Ontological History of the Universe
 - Cosmological Topological Dynamics
 - High-claim-strength conceptual applications

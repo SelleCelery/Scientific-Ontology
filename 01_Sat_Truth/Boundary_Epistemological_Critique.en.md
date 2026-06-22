@@ -1,12 +1,18 @@
 # Boundary Epistemological Critique
-
 ## Conditions for the Formation of Knowledge through Operational Correspondence, Collation, and Residual Retention
 
-> Status: Core Draft / English Translation  
-> Layer: Sat / Truth Foundation, with Research Note branches  
-> Scope: epistemology, metaphysics, boundary theory, heuristic theory, semantic residue, AI-era knowledge  
-> Language: English translation. The Japanese draft remains authoritative.  
-> Note: This text is not a synthesis of the history of philosophy. It is a core sequence of propositions for redefining the conditions under which knowledge forms through boundary, history, operational correspondence, collation, and residual retention. Connections with existing philosophical traditions are placed in a separate annotation file, not as authority claims, but as acts of collation.
+> Status: Core public draft / English commensurated rendering
+> Layer: `01_Sat_Truth` / Sat / Truth foundation, with Research Note branches
+> Scope: epistemology, metaphysics, boundary theory, heuristic theory, residual retention, residue formation, AI-era knowledge
+> Language: English commensurated rendering
+> Authoritative source: `Boundary_Epistemological_Critique.ja.md` unless otherwise stated
+> Claim: foundational epistemological critique, not empirical proof, physical theory, final formal specification, or synthesis of the history of philosophy
+
+This text redefines the conditions under which knowledge forms through boundary, history, internal and external heuristics, operational correspondence, collation, residual retention, and re-collatability.
+
+It is not an attempt to authorize the system through philosopher names. Existing traditions are handled in the annotation file as acts of collation, not as authority claims.
+
+For general translation and terminology policy, see `../Translation_Note.md`, `../Publication_and_Commensuration_Policy.md`, and the term collision registries.
 
 ---
 
@@ -608,8 +614,8 @@ A.6 The skeleton of this text is boundary, history, internal heuristic, external
 
 ### B.1 Boundary Epistemological Critique / 境界認識批判
 
-Preferred term: **Boundary Epistemological Critique**  
-Short candidate: **Boundary Critique**  
+Preferred term: **Boundary Epistemological Critique**
+Short candidate: **Boundary Critique**
 Explanatory phrase: **Critique of Boundary Cognition**
 
 Note: `Boundary Critique` is short and strong, but weakens the epistemological context. The formal title should be `Boundary Epistemological Critique`. `Boundary Epistemic Critique` is intelligible, but in English it is stiffer and less stable as a system title than `Epistemological`.
@@ -618,7 +624,7 @@ Note: `Boundary Critique` is short and strong, but weakens the epistemological c
 
 ### B.2 Operational Correspondence / 同期
 
-Preferred term: **operational correspondence**  
+Preferred term: **operational correspondence**
 Secondary term: **synchronization**
 
 Note: Synchronization here is not mere simultaneity. It includes physical synchronization, communicative alignment, social adjustment, and institutional correspondence. At first occurrence, use `operational correspondence`, and add `synchronization` where necessary.
@@ -627,7 +633,7 @@ Note: Synchronization here is not mere simultaneity. It includes physical synchr
 
 ### B.3 Collation / 照合
 
-Preferred term: **collation**  
+Preferred term: **collation**
 Explanatory phrases: **semantic collation / cross-checking / semantic comparison**
 
 Note: `Collation` works well as a system term, but may sound stiff to general readers. At first occurrence, explain it as semantic collation: the operation of reading what agreements, disagreements, and residuals in operational correspondence mean. Avoid translating it as `verification`, which narrows the meaning too much toward validation.
@@ -636,7 +642,7 @@ Note: `Collation` works well as a system term, but may sound stiff to general re
 
 ### B.4 Residual / 残差
 
-Preferred term: **residual**  
+Preferred term: **residual**
 Explanatory phrases: **re-collatable residual / unresolved residual**
 
 Note: A residual is a still re-collatable difference that appears through operational correspondence, collation, classification, and observation. Use `residual` when the remainder can still be handled as an object of operation.
@@ -645,7 +651,7 @@ Note: A residual is a still re-collatable difference that appears through operat
 
 ### B.5 Residue / 残渣
 
-Preferred term: **residue**  
+Preferred term: **residue**
 Emphatic phrase: **sedimented residue**
 
 Note: A residue is a historical sediment left after processing, classification, institutionalization, exchange, or explanation, often made invisible while still acting upon the field. Use `residue` or `sedimented residue` for environmental load, extra-institutional debt, embodied discomfort, or the remains of exploitation.
@@ -656,7 +662,7 @@ Additional note: Even when treated as a pure virtual or imaginary component, do 
 
 ### B.6 History / 履歴
 
-Preferred term: **history**  
+Preferred term: **history**
 Emphatic phrases: **accumulated history / history-bearing**
 
 Note: History here is not mere pastness, but accumulation that changes the next reception, reaction, judgment, and meaning-attribution. Use phrases such as `history-bearing entity` or `history-bearing field` where needed.
@@ -665,7 +671,7 @@ Note: History here is not mere pastness, but accumulation that changes the next 
 
 ### B.7 History-Field / 履歴場
 
-Preferred term: **history-field**  
+Preferred term: **history-field**
 Explanatory phrase: **history-bearing field**
 
 Note: `Field` may be confused with a physical field. At first occurrence, explain it as `history-field, or history-bearing field`, and state that it is not identical to a field in standard physics.
@@ -684,7 +690,7 @@ Additional note: False closure is an operation that borrows a structure resembli
 
 ### B.9 Capacity for Judgment / 判断可能性
 
-Preferred term: **capacity for judgment**  
+Preferred term: **capacity for judgment**
 Contextual candidates: **room for judgment / conditions for judgment**
 
 Note: `Judgment-possibility` is too stiff. Use `capacity for judgment` when the ability of the judging subject is emphasized. Use `room for judgment` or `conditions for judgment` when the space, field, or conditions for judgment are emphasized.
@@ -701,7 +707,7 @@ Note: False closure is the operation of treating what remains unresolved as if i
 
 ### B.11 Semantic Pressure / 意味圧
 
-Preferred term: **semantic pressure**  
+Preferred term: **semantic pressure**
 Explanatory phrase: **meaning pressure**
 
 Note: `Semantic pressure` is preferred. It must be clearly stated that this is not physical pressure.
@@ -712,7 +718,7 @@ Additional note: Semantic pressure is the pressure by which an unclosed gap or r
 
 ### B.12 Logical-Depth Axis / 論理-深度軸
 
-Preferred term: **logical-depth axis**  
+Preferred term: **logical-depth axis**
 Supplementary phrase: **logical-depth axis in the SO sense**
 
 Note: Avoid identifying this with `logical depth` in computational theory. In Scientific Ontology, logical depth is the depth direction in which unresolved problems, contradictions, branches, residuals, and semantic pressure are retained and reconstructed.
@@ -723,7 +729,7 @@ Additional note: Where needed, it can be described as a direction distinct from 
 
 ### B.13 Commensuration / 通約
 
-Preferred term: **commensuration**  
+Preferred term: **commensuration**
 Explanatory phrases: **construction of a comparable interface / making different frameworks comparable**
 
 Note: This connects to the Kuhnian problem of commensurability. Here, however, commensuration does not mean complete translation. It means constructing a collatable interface between different language games, paradigms, or history-fields.
@@ -734,7 +740,7 @@ Additional note: `Bridge` may be used in some contexts, but it gives too strong 
 
 ### B.14 Capacity for Re-Collation / 再照合可能性
 
-Preferred term: **capacity for re-collation**  
+Preferred term: **capacity for re-collation**
 Candidates: **re-examinability / capacity for re-examination**
 
 Note: `Re-collation` works well as a system term, but is stiff. In contexts of meaning, judgment, and scholarly institutions, use `re-examinability` or `capacity for re-examination` as needed.

@@ -1,28 +1,21 @@
 # Overview / 概要
 
+> Status: Public navigation layer  
+> Layer: `00_Overview` / public repository governance  
+> Scope: navigation, terminology, publication scope, claim-strength control, commensuration policy  
+> Language: English / Japanese  
+> Authoritative source: Japanese descriptions unless otherwise stated  
+> Claim: public navigation and governance, not theory body or implementation specification
+
 This directory contains navigation, terminology, publication-scope, and claim-strength documents for **存在境界論｜Scientific Ontology**.
 
 このディレクトリには、**存在境界論｜Scientific Ontology** リポジトリ全体を読むためのナビゲーション文書、用語規約、公開範囲、主張強度管理に関する文書を置きます。
 
 「存在論科学」は旧称・開発名です。公開名としては **存在境界論｜Scientific Ontology** を用います。
 
-Here, **Scientific** does not mean that this project claims to be a natural science. It refers to a methodological attitude: observation, classification, description, explicit boundary conditions, and careful control of claim strength.
+Here, **Scientific** does not mean that this project claims to be a natural science, empirical physics, or a replacement for modern science. It refers to a methodological attitude: observation, classification, description, re-collatability, explicit boundary conditions, and careful control of claim strength.
 
-ここでいう **Scientific** は、狭義の自然科学を名乗るものではありません。観測・分類・記述・境界条件の明示・主張強度の管理を重視する方法態度を指します。
-
-## Documents / 文書
-
-- [`Scientific_Ontology_and_Science.md`](./Scientific_Ontology_and_Science.md)
-	Public position statement that Scientific Ontology and the Heuristic Status of Science
-	科学をヒューリスティックとして扱うことについての公開用立場表明
-
-- [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)
-	A high-level public map of the repository structure, Sat/Raj/Tam placement, Research Notes, and the public boundary of the project.  
-	リポジトリ構造、Sat/Raj/Tam、Research Notes、公開境界を整理する公開用体系マップ。
-
-- [`Scientific_Terminology_Protocol.md`](./Scientific_Terminology_Protocol.md)
-	A terminology and publication-risk protocol for using scientific vocabulary without overwriting standard scientific definitions.  
-	標準科学の定義を上書きせずに科学語彙を扱うための用語運用規約。
+ここでいう **Scientific** は、狭義の自然科学、経験物理学、または現代科学の代替を名乗るものではありません。観測・分類・記述・再照合可能性・境界条件の明示・主張強度の管理を重視する方法態度を指します。
 
 ## Directory Role / この層の役割
 
@@ -32,11 +25,12 @@ Overview は理論本文の置き場ではありません。公開アーカイ�
 
 Use this directory when a document:
 
-- maps the whole public system
-- defines terminology policy
-- explains publication scope
-- controls claim strength
-- clarifies the relationship between the former name and the current public name
+- maps the whole public system;
+- defines terminology policy;
+- explains publication scope;
+- controls claim strength;
+- clarifies the relationship between the former name and the current public name;
+- explains how standard scientific terms may be used without overwriting their established meanings.
 
 以下の文書は、このディレクトリに置きます。
 
@@ -45,12 +39,49 @@ Use this directory when a document:
 - 公開範囲の説明
 - 主張強度管理
 - 旧称「存在論科学」と公開名「存在境界論」の関係整理
+- 標準科学語彙を、既存定義を上書きせずに扱うための説明
+
+## Documents / 文書
+
+- [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)  
+  A high-level public map of the repository structure, Sat/Raj/Tam placement, Applications, Research Notes, Visual Materials, and the public boundary of the project.  
+  リポジトリ構造、Sat/Raj/Tam、Applications、Research Notes、Visual Materials、公開境界を整理する公開用体系マップ。
+
+- [`Scientific_Terminology_Protocol.md`](./Scientific_Terminology_Protocol.md)  
+  A terminology and publication-risk protocol for using scientific vocabulary without overwriting standard scientific definitions.  
+  標準科学の定義を上書きせずに科学語彙を扱うための用語運用規約。
+
+## Repository-Level Policy Documents / リポジトリ全体の方針文書
+
+The following files may be placed at the repository root or referenced from this directory. They govern public communication across the repository.
+
+以下の文書は、リポジトリ直下に置くか、このディレクトリから参照します。リポジトリ全体の公開コミュニケーションを制御する文書です。
+
+- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)  
+  Public policy for publication, commensuration, terminology revision, and public-boundary management.  
+  公開、通約、用語変更、公開境界管理のための方針文書。
+
+- [`Translation_Note.md`](../Translation_Note.md)  
+  Translation and commensuration note. Japanese is treated as the authoritative source unless otherwise stated; English is a commensurated rendering or working reference.  
+  翻訳・通約注記。特に明記しない限り日本語を正本とし、英語は通約版または作業用参照本文として扱う。
+
+- [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md)  
+  Japanese canonical terminology collision registry.  
+  日本語正本語の用語衝突管理表。
+
+- [`TERM_COLLISION_REGISTRY.en.md`](../TERM_COLLISION_REGISTRY.en.md)  
+  English rendering collision registry.  
+  英語通約語の用語衝突管理表。
+
+These policy documents exist to make public communication possible without freezing internal inquiry.
+
+これらの方針文書は、内部探求を固定するためではなく、公開時の伝達可能性を確保するために置かれています。
 
 ## Public Boundary / 公開境界
 
-Public documents should describe concepts, reading maps, and claim conditions. They should not include unpublished source inventories, private draft titles, internal evaluation maps, or implementation-oriented checklists.
+Public documents should describe concepts, reading maps, claim conditions, and non-operational boundary principles. They should not include unpublished source inventories, private draft titles, internal evaluation maps, private implementation details, or implementation-oriented checklists.
 
-公開文書に置くのは、概念、読解地図、主張条件です。未公開素材の索引、非公開草稿の題名、内部評価表、実装寄りチェックリストは置きません。
+公開文書に置くのは、概念、読解地図、主張条件、非操作的な境界原則です。未公開素材の索引、非公開草稿の題名、内部評価表、非公開実装詳細、実装寄りチェックリストは置きません。
 
 Private-to-public review should be performed outside this public repository, then reflected here only as public-safe documents.
 
@@ -58,10 +89,19 @@ Private-to-public review should be performed outside this public repository, the
 
 ## Related / 関連
 
-- [`Claim_Strength_Table_History_Field_Topology_v0.1.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md) 
+- [`Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)  
   Detailed claim-strength table for History-Field Topology.  
   履歴場トポロジーの詳細な主張強度対応表。
 
-- [`AI_Usefulness_as_a_Boundary_Function`](../03_Tam_Goodness/AI_Usefulness_as_a_Boundary_Function)
+
+- [`Scientific_Ontology_and_Science.md`](../02_Raj_Beauty/Scientific_Ontology_and_Science.md)  
+  Public position statement on how Scientific Ontology relates to modern science and why science is treated as a powerful heuristic system rather than rejected or uncritically accepted.  
+  存在境界論が現代科学とどのように関係するか、また科学を否定でも無批判な受容でもなく強力なヒューリスティック体系として扱う理由についての公開用立場表明。
+
+- [`AI_Usefulness_as_a_Boundary_Function.md`](../04_Applications/AI_Usefulness_as_a_Boundary_Function.md)  
   Public-facing conceptual interface for AI usefulness as boundary maintenance.  
   AIの有用性を境界維持として扱う公開用概念インターフェース。
+
+- [`README.md`](../README.md)  
+  Repository root public interface.  
+  リポジトリ直下の公開用入口。

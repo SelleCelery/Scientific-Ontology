@@ -1,19 +1,29 @@
-# Negentropy Economy and Meaning Generation / ネゲントロピー経済と意味生成
+# ネゲントロピー経済と意味生成 / Negentropy Economy and Meaning Generation
 
-Status: Research Note / Conceptual Draft  
-状態：研究ノート / 概念ドラフト
-
-Layer: Social Boundary Notes  
-層：社会境界ノート
-
-Claim Strength: Conceptual model / heuristic framework  
-主張強度：概念モデル / ヒューリスティック枠組み
-
-Public Scope: This note is not an empirical economic theory, a thermodynamic proof, or a policy proposal. It is a conceptual model within Scientific Ontology / Existence-Boundary Theory.  
-公開範囲：本ノートは、経験的な経済理論、熱力学的証明、政策提案ではない。Scientific Ontology / 存在境界論における概念モデルである。
+> Status: Public research note / 公開研究ノート  
+> Layer: 05_Research_Notes / Social_Boundary_Notes  
+> Scope: Negentropy Economy, meaning generation, money, value, exchange medium  
+> Language: Japanese authoritative text / English commensurated rendering  
+> Authoritative source: Japanese text  
+> Claim strength: Conceptual model / heuristic framework; not empirical economics, not policy proposal, not replacement currency system  
+> Commensuration status: Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
+> Reason / 理由: The English text exists, but the body still follows an older interleaved order. This file is marked explicitly until a full Japanese-first re-layout is performed.
 
 ---
 
+## 0. 通約状態 / Commensuration status
+
+Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
+
+理由：The English text exists, but the body still follows an older interleaved order. This file is marked explicitly until a full Japanese-first re-layout is performed.
+
+### English commensurated rendering
+
+Commensuration status: Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
+
+Reason: The English text exists, but the body still follows an older interleaved order. This file is marked explicitly until a full Japanese-first re-layout is performed.
+
+---
 ## 0. Non-Claims / 非主張
 
 This note does not claim that economic value can be directly reduced to physical negentropy.  
@@ -593,11 +603,11 @@ It should not be used as a direct policy proposal, economic doctrine, or empiric
     Ethical treatment of boundaries, harm, responsibility, and non-destructive response.  
     境界、害、責任、非破壊的応答を扱う倫理モデル。
     
-- [`AI_Personality_as_Response_Structure.md`](../../03_Tam_Goodness/AI_Personality_as_Response_Structure.md)  
+- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)  
     Personality as response structure rather than tone, roleplay, or surface character.  
     人格を口調・ロールプレイ・表層キャラクターではなく、応答構造として扱う文書。
     
-- [`Meaning_As_Return_Orbit.md`](../../04_Applications/Personality_AI/Meaning_As_Return_Orbit.md)  
+- [`Meaning_As_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_As_Return_Orbit.md)  
     Application note connecting meaning, return, orbit, and personality AI.  
     意味・帰還・軌道・人格AIを接続する応用ノート。
     

@@ -29,7 +29,7 @@ Open the poster in another tab or window, then read the companion note alongside
 
 - [Japanese poster / 日本語版ポスター](./Scientific_Ontology_Conceptual_Poster.ja.png)
 - [English poster / 英語版ポスター](./Scientific_Ontology_Conceptual_Poster.en.png)
-- [Companion note / 読解注記](.Scientific_Ontology_Conceptual_Poster_Note.md)
+- [Companion note / 読解注記](./Scientific_Ontology_Conceptual_Poster_Note.md)
 
 ---
 

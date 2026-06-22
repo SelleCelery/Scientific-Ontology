@@ -1,26 +1,29 @@
 # Existence-Boundary Theory System Map / 存在境界論 体系マップ
 ## Scientific Ontology as Conceptual Interaction and Boundary Studies
 
-> Status: Public system map draft v0.3  
+> Status: Public system map  
 > Layer: `00_Overview` / public navigation  
-> Former public name: 存在論科学 / Scientific Ontology  
-> Current public name: 存在境界論｜Scientific Ontology  
-> Scope: repository structure, Sat/Raj/Tam placement, Research Notes, publication boundary  
+> Former Japanese public name: 存在論科学  
+> Current Japanese public name: 存在境界論  
+> English project name: Scientific Ontology  
+> Scope: repository structure, Sat/Raj/Tam placement, Applications, Research Notes, Visual Materials, publication boundary  
+> Language: English / Japanese  
+> Authoritative source: Japanese descriptions unless otherwise stated  
 > Claim: navigational and methodological, not empirical proof or implementation specification
 
 This document is a high-level public system map for **存在境界論｜Scientific Ontology**.
 
-It replaces the older public framing of “存在論科学” with a more precise public name: **存在境界論**. The English name **Scientific Ontology** is retained, but **Scientific** is used as a methodological attitude, not as a claim to be a natural science, empirical physics, or a replacement for modern science.
-
 本文書は、**存在境界論｜Scientific Ontology** の公開用体系マップである。
 
-旧称「存在論科学」は開発名・旧称として保持する。公開名としては、より誤解を受けにくい **存在境界論** を用いる。英語名 **Scientific Ontology** は維持するが、ここでいう **Scientific** は、狭義の自然科学ではなく、観測・分類・記述・境界条件の明示・主張強度管理を重視する方法態度を指す。
+The older Japanese framing “存在論科学” is retained as a former name and development name. The current Japanese public-facing name is **存在境界論**. The English project name **Scientific Ontology** is retained, but **Scientific** is used as a methodological attitude, not as a claim to be a natural science, empirical physics, or a replacement for modern science.
+
+旧称「存在論科学」は、旧称・開発名として保持する。公開上の日本語名としては、より誤解を受けにくい **存在境界論** を用いる。英語名 **Scientific Ontology** は維持するが、ここでいう **Scientific** は、狭義の自然科学、経験物理学、または現代科学の代替を名乗るものではなく、観測・分類・記述・再照合可能性・境界条件の明示・主張強度管理を重視する方法態度を指す。
 
 ---
 
 ## 0. Core Definition / 中核定義
 
-**Existence-Boundary Theory / Scientific Ontology studies conceptual interaction and boundary conditions through the logical-depth axis.**
+**Scientific Ontology studies conceptual interaction and boundary conditions through the logical-depth axis.**
 
 **存在境界論は、概念間相互作用を観測し、論理-深度軸によって境界づける研究である。**
 
@@ -28,27 +31,37 @@ Here, “conceptual interaction” does not mean only social debates, ideologies
 
 At the root, this project concerns:
 
-- existence as history-bearing rather than historyless points
-- observation as encounter with history
-- meaning as a closed communication loop
-- ethics as non-destructive interaction between histories
-- boundary as the condition under which histories can contact without being overwritten
+- existence as history-bearing rather than historyless points;
+- observation as encounter with history;
+- meaning as a closed communication loop;
+- ethics as non-destructive interaction between histories;
+- boundary as the condition under which histories can contact without being overwritten;
+- re-collatability as the capacity to reopen descriptions, classifications, boundary settings, and residual treatments.
 
 ここでいう「概念間相互作用」は、貨幣・正義・宗教・政治などの具体的社会論だけを意味しない。それらは後段の応用例になりうるが、体系の根ではない。
 
 根にあるのは、次の問いである。
 
-- 存在を、履歴なき点ではなく、履歴を持つものとして扱うこと
-- 観測を、履歴との邂逅として扱うこと
-- 意味を、閉じたコミュニケーションループとして扱うこと
-- 倫理を、履歴同士の非破壊的相互作用として扱うこと
-- 境界を、履歴ある存在どうしが上書きされずに接触する条件として扱うこと
+- 存在を、履歴なき点ではなく、履歴を持つものとして扱うこと。
+- 観測を、履歴との邂逅として扱うこと。
+- 意味を、閉じたコミュニケーションループとして扱うこと。
+- 倫理を、履歴同士の非破壊的相互作用として扱うこと。
+- 境界を、履歴ある存在どうしが上書きされずに接触する条件として扱うこと。
+- 再照合可能性を、記述・分類・境界設定・残差処理を後から再び開ける条件として扱うこと。
 
 ---
 
 ## 1. Public Repository Architecture / 公開リポジトリ構造
 
 ```text
+README.md
+GLOSSARY.md
+Roadmap.md
+Publication_and_Commensuration_Policy.md
+Translation_Note.md
+TERM_COLLISION_REGISTRY.md
+TERM_COLLISION_REGISTRY.en.md
+
 00_Overview/
   README.md
   Scientific_Ontology_System_Map.md
@@ -61,9 +74,9 @@ At the root, this project concerns:
   Four_Axioms_of_Existence.md
   Meaning_Generation_Model.md
   Boundary_Epistemological_Critique.en.md
-  Boundary_Epistemological_Critique.jp.md
+  Boundary_Epistemological_Critique.ja.md
   Boundary_Epistemological_Critique_Annotations.en.md
-  Boundary_Epistemological_Critique_Annotations.jp.md
+  Boundary_Epistemological_Critique_Annotations.ja.md
 
 02_Raj_Beauty/
   README.md
@@ -76,7 +89,7 @@ At the root, this project concerns:
   AI_Usefulness_as_a_Boundary_Function.md
   AI_Boundary_Interface_and_Synchronous_Understanding.md
   AI_Personality_as_Response_Structure.md
-  
+
 04_Applications/
   README.md
   Application_Boundary_Theory_Core.md
@@ -86,20 +99,20 @@ At the root, this project concerns:
 
 05_Research_Notes/
   README.md
-  Claim_Strength_Table_History_Field_Topology_v0.1.md
+  Claim_Strength_Table_History_Field_Topology.md
   AI_Personality/
     README.md
     History_Loop_Radius_and_Return_Stability.md
     Logical_Sandbox_and_Negentropy_Model.md
   Literary_Ontological_Notes/
-	README.md
-	reading-blue-light.en.md
-	reading-blue-light.jp.md
+    README.md
+    reading-blue-light.en.md
+    reading-blue-light.ja.md
   Physical_Cosmological_Notes/
-	README.md
-	Internal_Time_Standard_Model_Correspondence_v0.1.md
-	Ontological_History_of_the_Universe.md
-	Cosmological_Topological_Dynamics.md
+    README.md
+    Intrinsic_Time_Standard_Model_Correspondence.md
+    Ontological_History_of_the_Universe.md
+    Cosmological_Topological_Dynamics.md
   Social_Boundary_Notes/
     README.md
     Negentropy_Economy_Principles.md
@@ -121,13 +134,41 @@ This map lists only public-facing files and public-facing candidates. It does no
 
 ---
 
-## 2. Directory Roles / 各層の役割
+## 2. Root-Level Governance / ルート直下の統治文書
+
+Root-level documents define the public interface of the repository as a whole.
+
+リポジトリ直下の文書は、公開リポジトリ全体の入口と統治条件を定める。
+
+- `README.md` presents the public-facing entry point.
+- `GLOSSARY.md` provides public glossary terms.
+- `Roadmap.md` describes broad public phases.
+- `Publication_and_Commensuration_Policy.md` defines publication, commensuration, terminology revision, and public-boundary policy.
+- `Translation_Note.md` defines translation and commensuration handling.
+- `TERM_COLLISION_REGISTRY.md` records Japanese canonical terminology collision surfaces.
+- `TERM_COLLISION_REGISTRY.en.md` records English rendering collision surfaces.
+
+- `README.md` は公開入口を示す。
+- `GLOSSARY.md` は公開用語集を提供する。
+- `Roadmap.md` は公開上の大まかな段階を示す。
+- `Publication_and_Commensuration_Policy.md` は、公開、通約、用語変更、公開境界管理の方針を定める。
+- `Translation_Note.md` は、翻訳と通約の扱いを定める。
+- `TERM_COLLISION_REGISTRY.md` は、日本語正本語の衝突面を記録する。
+- `TERM_COLLISION_REGISTRY.en.md` は、英語通約語の衝突面を記録する。
+
+These files are not theory-body documents. They are public interface controls.
+
+これらは理論本文ではない。公開インターフェースを制御する文書である。
+
+---
+
+## 3. Directory Roles / 各層の役割
 
 ### 00 Overview / 概要
 
-Navigation, terminology, publication scope, and claim-strength control.
+Navigation, terminology, publication scope, science-positioning, and claim-strength control.
 
-公開アーカイブを読むための地図、用語規約、公開範囲、主張強度管理を置く。
+公開アーカイブを読むための地図、用語規約、公開範囲、科学に対する立場、主張強度管理を置く。
 
 This layer does not contain the theoretical body itself. It defines how the public archive should be read.
 
@@ -149,7 +190,7 @@ Constructive theories, boundary dynamics, History-Field Communication, and publi
 
 構築理論、境界動態、履歴場通信論、公開用解釈フレームを置く。
 
-Raj concerns how history, boundary, communication, synchronization, non-synchronization, cutoff, and reconnection operate.
+Raj concerns how history, boundary, communication, operational correspondence, non-correspondence, cutoff, and reconnection operate.
 
 Raj は、履歴・境界・通信・同期／非同期・切断・再接続がどのように動くかを扱う。
 
@@ -169,21 +210,19 @@ Public-facing conceptual applications of Scientific Ontology.
 
 存在境界論｜Scientific Ontology の概念を、AI、人格、社会、創作、実践などの具体領域へ接続する公開応用層である。
 
-This layer is not a private implementation layer.  
-It presents applied conceptual reports and public-facing explanatory models.
+This layer is not a private implementation layer. It presents applied conceptual reports and public-facing explanatory models.
 
-この層は非公開実装層ではない。  
-公開可能な応用レポート、概念説明、評価用の見取り図を置く。
+この層は非公開実装層ではない。公開可能な応用レポート、概念説明、評価用の見取り図を置く。
 
 ### 05 Research Notes / 研究ノート
 
-High-claim-strength conceptual applications, speculative correspondences, and physical, cosmological, or literary reinterpretation notes.
+High-claim-strength conceptual applications, speculative correspondences, and physical, cosmological, social, or literary reinterpretation notes.
 
-主張強度の高い概念応用、試論的対応表、物理・宇宙論・文学的再解釈ノートを置く。
+主張強度の高い概念応用、試論的対応表、物理・宇宙論・社会・文学的再解釈ノートを置く。
 
-Documents in this directory are not empirical proofs, peer-reviewed physical theories, orthodox literary scholarship, or replacements for modern science.
+Documents in this directory are not empirical proofs, peer-reviewed physical theories, orthodox literary scholarship, economic policy proposals, or replacements for modern science.
 
-このディレクトリの文書は、経験的証明、査読済み物理理論、正統な文学研究、現代科学の代替ではない。
+このディレクトリの文書は、経験的証明、査読済み物理理論、正統な文学研究、経済政策提案、現代科学の代替ではない。
 
 ### 06 Visual Materials / 視覚資料
 
@@ -219,7 +258,7 @@ It should not become an index of private files. It should only state the boundar
 
 ---
 
-## 3. Logical Flow / 論理的流れ
+## 4. Logical Flow / 論理的流れ
 
 ```text
 Pre-Ontological Ground
@@ -260,7 +299,7 @@ Visual Materials は、Research Notes の後に続く追加理論段階として
 
 ---
 
-## 4. Sat / Raj / Tam Topology / 三層トポロジー
+## 5. Sat / Raj / Tam Topology / 三層トポロジー
 
 ### Sat / Truth / 純・真
 
@@ -270,31 +309,31 @@ Sat は、形而上学的基礎と公開公理の層である。
 
 It contains:
 
-- the public entrance to AMP
-- the Four Axioms of Existence
-- the Meaning Generation Model
-- the basic relation between existence, observation, meaning, and ethics
+- the public entrance to AMP;
+- the Four Axioms of Existence;
+- the Meaning Generation Model;
+- the basic relation between existence, observation, meaning, and ethics.
 
 ここに置くもの：
 
-- AMP の公開入口
-- 存在の四大表公理
-- 意味生成モデル
-- 存在・観測・意味・倫理の基本関係
+- AMP の公開入口。
+- 存在の四大表公理。
+- 意味生成モデル。
+- 存在・観測・意味・倫理の基本関係。
 
 It does not contain:
 
-- concrete social criticism
-- financial or ideological analysis
-- AI implementation procedures
-- unpublished internal mechanisms
+- concrete social criticism;
+- financial or ideological analysis;
+- AI implementation procedures;
+- unpublished internal mechanisms.
 
 ここに置かないもの：
 
-- 具体的社会批判
-- 金融・イデオロギー分析
-- AI実装手順
-- 未公開の内部機構
+- 具体的社会批判。
+- 金融・イデオロギー分析。
+- AI実装手順。
+- 未公開の内部機構。
 
 ### Raj / Beauty / 激・美
 
@@ -304,21 +343,21 @@ Raj は、構築的動態の層である。
 
 It contains:
 
-- History-Field Communication
-- History-Field Topology
-- boundary dynamics
-- synchronization and non-synchronization
-- cutoff and reconnection
-- meaning generation as movement across boundaries
+- History-Field Communication;
+- History-Field Topology;
+- boundary dynamics;
+- operational correspondence and non-correspondence;
+- cutoff and reconnection;
+- meaning generation as movement across boundaries.
 
 ここに置くもの：
 
-- 履歴場通信論
-- 履歴場トポロジー
-- 境界動態
-- 同期と非同期
-- 切断と再接続
-- 境界を通じた意味生成の動態
+- 履歴場通信論。
+- 履歴場トポロジー。
+- 境界動態。
+- 同期と非同期。
+- 切断と再接続。
+- 境界を通じた意味生成の動態。
 
 Raj may later support analysis of society, history, money, justice, religion, and other conceptual systems. However, those are not the core of Raj. They belong to later applications or Research Notes unless rewritten as boundary-dynamic theory.
 
@@ -332,39 +371,39 @@ Tam は、境界倫理と判断可能性を保つインターフェース設計�
 
 It contains:
 
-- Boundary Ethics
-- AI usefulness as a boundary function
-- non-destructive interaction
-- judgment possibility
-- public-safe AI boundary-interface concepts
+- Boundary Ethics;
+- AI usefulness as a boundary function;
+- non-destructive interaction;
+- judgment possibility;
+- public-safe AI boundary-interface concepts.
 
 ここに置くもの：
 
-- 境界倫理
-- 境界機能としてのAI有用性
-- 非破壊的相互作用
-- 判断可能性
-- 公開可能なAI境界インターフェース概念
+- 境界倫理。
+- 境界機能としてのAI有用性。
+- 非破壊的相互作用。
+- 判断可能性。
+- 公開可能なAI境界インターフェース概念。
 
 It does not contain:
 
-- implementation manuals
-- private review maps
-- unpublished source inventories
-- operational instructions
-- private persona or runtime materials
+- implementation manuals;
+- private review maps;
+- unpublished source inventories;
+- operational instructions;
+- private persona or runtime materials.
 
 ここに置かないもの：
 
-- 実装手順書
-- 非公開審査表
-- 未公開素材の索引
-- 運用指示
-- 非公開の人格・ランタイム資料
+- 実装手順書。
+- 非公開審査表。
+- 未公開素材の索引。
+- 運用指示。
+- 非公開の人格・ランタイム資料。
 
 ---
 
-## 5. Public Boundary Rules / 公開境界ルール
+## 6. Public Boundary Rules / 公開境界ルール
 
 The public repository should not expose private material through titles, inventories, or source-to-public mapping tables.
 
@@ -372,37 +411,37 @@ The public repository should not expose private material through titles, invento
 
 Public documents may state:
 
-- what public layer a concept belongs to
-- what claim strength it uses
-- what kind of boundary condition it requires
-- whether the document is theoretical, methodological, speculative, or interpretive
+- what public layer a concept belongs to;
+- what claim strength it uses;
+- what kind of boundary condition it requires;
+- whether the document is theoretical, methodological, speculative, interpretive, or visual.
 
 公開文書で述べてよいもの：
 
-- 公開概念がどの層に属するか
-- どの主張強度で扱うか
-- どの境界条件が必要か
-- 理論文書、方法論文書、試論、解釈ノートのどれか
+- 公開概念がどの層に属するか。
+- どの主張強度で扱うか。
+- どの境界条件が必要か。
+- 理論文書、方法論文書、試論、解釈ノート、視覚資料のどれか。
 
 Public documents should not state:
 
-- unpublished draft titles
-- private source paths
-- internal evaluation maps
-- private implementation details
-- source-to-public transfer tables
+- unpublished draft titles;
+- private source paths;
+- internal evaluation maps;
+- private implementation details;
+- source-to-public transfer tables.
 
 公開文書で述べないもの：
 
-- 未公開草稿の題名
-- 非公開ソースのパス
-- 内部評価表
-- 非公開実装詳細
-- 非公開素材から公開文書への対応表
+- 未公開草稿の題名。
+- 非公開ソースのパス。
+- 内部評価表。
+- 非公開実装詳細。
+- 非公開素材から公開文書への対応表。
 
 ---
 
-## 6. Summary / 要約
+## 7. Summary / 要約
 
 存在境界論は、存在を履歴あるものとして扱い、観測・意味・倫理・境界を通じて読む公開可能な概念体系である。
 

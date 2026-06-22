@@ -1,15 +1,29 @@
-# 内在時間標準模型対応表 v0.1
+# 内在時間標準模型対応表 / Intrinsic Time and Standard Model Correspondence
 
-## 内在時間を最小追加仮定とする、粒子属性・相互作用・境界情報の存在論的再読解
+> Status: Japanese authoritative research note / 日本語正本研究ノート  
+> Layer: 05_Research_Notes / Physical_Cosmological_Notes  
+> Scope: intrinsic time, Standard Model correspondence, particle attributes, interaction, boundary information  
+> Language: Japanese authoritative text only; English commensurated rendering pending  
+> Authoritative source: Japanese text  
+> Claim strength: S4-S5 candidate; proposal, not proof; not a replacement for particle physics  
+> Commensuration status: Not yet commensurated into English.
+> Reason / 理由: English commensuration is held because the note touches high-claim-strength physical correspondence. It requires separate terminology and claim-strength review before English publication.
 
-> Status: Research note / 研究ノート  
-> Layer: Physical correspondence / 物理接続候補  
-> Claim strength: S4-S5 candidate / 形式化候補・物理主張候補  
-> Public scope: Proposal, not proof / 証明ではなく提案  
-> Date: 2026-05-31
+---
 
-## 0. 目的
+## 0. 通約状態 / Commensuration status
 
+Not yet commensurated into English.
+
+理由：English commensuration is held because the note touches high-claim-strength physical correspondence. It requires separate terminology and claim-strength review before English publication.
+
+### English commensurated rendering
+
+Commensuration status: Not yet commensurated into English.
+
+Reason: English commensuration is held because the note touches high-claim-strength physical correspondence. It requires separate terminology and claim-strength review before English publication.
+
+---
 本稿は、素粒子物理学の標準模型を置き換えるものではない。
 
 既存の数理形式、実験値、予測精度、ゲージ理論、標準模型の有効性を否定しない。  

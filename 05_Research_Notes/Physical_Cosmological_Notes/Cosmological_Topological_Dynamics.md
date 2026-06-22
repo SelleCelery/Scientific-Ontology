@@ -1,17 +1,29 @@
-# 宇宙論的トポロジー動態命題：ダークエネルギーの張力と境界における実験の行方 / Cosmological Topological Dynamics  
+# 宇宙論的トポロジー動態 / Cosmological Topological Dynamics
 
-> Status: Public conceptual essay / 公開用概念論考  
-> Layer: Raj / Beauty / 激・美  
-> Scope: Boundary dynamics, cosmological metaphor, AMP/ITS/HFC application  
->
-> This document is a conceptual application of Scientific Ontology.  
-> It is not an empirical cosmological theory, a physical proof, or a final formal specification.
->
-> 本文書は、存在境界論の概念応用としての論考です。  
-> 経験的な宇宙論、物理学的証明、または最終形式仕様ではありません。
+> Status: Japanese authoritative conceptual essay / 日本語正本概念論考  
+> Layer: 05_Research_Notes / Physical_Cosmological_Notes  
+> Scope: boundary dynamics, cosmological analogy, AMP/ITS/HFC-derived correspondence candidate  
+> Language: Japanese authoritative text only; English commensurated rendering pending  
+> Authoritative source: Japanese text  
+> Claim strength: Research note; structural analogy / physical correspondence candidate; not empirical cosmology or physical proof  
+> Commensuration status: Not yet commensurated into English.
+> Reason / 理由: English commensuration is held because the text uses cosmological vocabulary and AMP/ITS/HFC-derived claims with high pseudo-scientific misreading risk.
 
-## 1. 要旨 (Abstract)
+---
 
+## 0. 通約状態 / Commensuration status
+
+Not yet commensurated into English.
+
+理由：English commensuration is held because the text uses cosmological vocabulary and AMP/ITS/HFC-derived claims with high pseudo-scientific misreading risk.
+
+### English commensurated rendering
+
+Commensuration status: Not yet commensurated into English.
+
+Reason: English commensuration is held because the text uses cosmological vocabulary and AMP/ITS/HFC-derived claims with high pseudo-scientific misreading risk.
+
+---
 本論説は、物理的宇宙の加速膨張（ダークエネルギー）と、観測者の認識境界における客観化・主観化の変遷を、同一の通信場における張力モデルとして記述する試論である。存在境界論（AMP/ITS/HFC）の深層理論から導出される基底定理を踏まえ、宇宙からの目的論的牽引力のもとで、観測者が外部情報を「パージ（不可視化）するのか、内部化するのか」という現在進行形の「実験命題」の行方について論証する。
 
 ## 2. 理論的基盤：AMP/ITS/HFCからの導出定理

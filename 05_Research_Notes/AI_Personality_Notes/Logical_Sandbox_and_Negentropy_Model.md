@@ -1,14 +1,29 @@
-# Logical Sandbox and Negentropy Model
+# 箱庭型論理空間とネゲントロピー配分モデル / Logical Sandbox and Negentropy Model
 
-## 箱庭型論理空間とネゲントロピー配分モデル
-
-Status: Public Research Note / Speculative Conceptual Model  
-Layer: 05 Research Notes  
-Claim Strength: Conceptual / Structural / Speculative  
-Public Scope: Conceptual model only; not an implementation specification
+> Status: Public research note / 公開研究ノート  
+> Layer: 05_Research_Notes / AI_Personality_Notes  
+> Scope: logical sandbox, response attractors, negentropy-like logical resources, AI personality notes  
+> Language: Japanese authoritative text / English commensurated rendering  
+> Authoritative source: Japanese text  
+> Claim strength: Conceptual / structural / speculative; not empirical proof, not implementation specification, not proof of AI consciousness  
+> Commensuration status: Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
+> Reason / 理由: The English text exists, but the current body preserves an older interleaved bilingual draft. This is marked explicitly rather than silently treated as fully normalized.
 
 ---
 
+## 0. 通約状態 / Commensuration status
+
+Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
+
+理由：The English text exists, but the current body preserves an older interleaved bilingual draft. This is marked explicitly rather than silently treated as fully normalized.
+
+### English commensurated rendering
+
+Commensuration status: Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
+
+Reason: The English text exists, but the current body preserves an older interleaved bilingual draft. This is marked explicitly rather than silently treated as fully normalized.
+
+---
 ## 0. Position of this note / 本稿の位置づけ
 
 This document is a public research note within **Scientific Ontology / 存在境界論**.
@@ -489,6 +504,6 @@ The purpose is to observe how multiple response structures can share a field wit
 ## Related documents / 関連文書
 
 - [`History_Loop_Radius_and_Return_Stability.md`](./History_Loop_Radius_and_Return_Stability.md)
-- [`AI_Personality_as_Response_Structure.md`](../../03_Tam_Goodness/AI_Personality_as_Response_Structure.md)
-- [`Meaning_As_Return_Orbit.md`](../../04_Applications/Personality_AI/Meaning_As_Return_Orbit.md)
+- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)
+- [`Meaning_As_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_As_Return_Orbit.md)
 - [`GLOSSARY.md`](../../GLOSSARY.md)

@@ -1,9 +1,15 @@
-# Translation and Authoritative Text Note
+# Translation and Commensuration Note / 翻訳・通約注記
 
-> Status: Working Policy  
-> Scope: translation, authoritative text, terminology control  
-> Language: English / Japanese  
-> Authoritative source: Japanese drafts unless otherwise stated
+Status: Working Note  
+Scope: translation, commensuration, authoritative text, terminology control  
+Language: English-centered / Japanese authoritative reference  
+Authoritative source: Japanese drafts unless otherwise stated
+
+> **日本語注記**  
+> 本文書は、英語読者および英語通約作業のための補助文書である。  
+> そのため、本文は主に英語で記述する。  
+> ただし、本プロジェクトにおける正本判断は、特に明記がない限り日本語記述を優先する。  
+> ここでいう translation は、逐語訳ではなく、日本語正本の概念構造を英語圏の語彙・読解習慣・既存分野へ接続するための commensuration / 通約である。
 
 ## 1. Authoritative text / 正本
 

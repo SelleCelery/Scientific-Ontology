@@ -1,10 +1,17 @@
 # Boundary Epistemological Critique: Annotations
-
 ## A Topographic Guide through the Spherical World, Inner Motion, and the Logical-Depth Axis
 
-> Status: Annotation Draft  
-> Relation: Companion annotation to `Boundary_Epistemological_Critique.en.md`  
-> Purpose: This annotation is not meant to authorize the main text by invoking the names of philosophers. It is a topographic guide for comparing the movement treated by Boundary Epistemological Critique--sensibility, understanding, reason, operational correspondence, collation, residual retention, and re-collation--with existing philosophical problem-fields.
+> Status: Annotation draft / English commensurated rendering
+> Layer: `01_Sat_Truth` / Sat / Truth companion annotation
+> Relation: Companion annotation to `Boundary_Epistemological_Critique.en.md` and `Boundary_Epistemological_Critique.ja.md`
+> Scope: philosophical problem-fields, terrain map, residuals, residues, re-collation, logical-depth axis
+> Language: English commensurated rendering
+> Authoritative source: `Boundary_Epistemological_Critique_Annotations.ja.md` unless otherwise stated
+> Claim: annotation and terrain map, not authority claim, philosophical history, empirical proof, or physical theory
+
+This annotation does not authorize the main text by invoking philosopher names. It is a terrain map for comparing the movement treated by Boundary Epistemological Critique with existing philosophical problem-fields.
+
+The philosopher map is not a historical timeline. It is a map of where different thinkers illuminate operational correspondence, collation, residual retention, residue formation, re-collation, and the logical-depth axis.
 
 ---
 
@@ -241,4 +248,3 @@ Boundary Epistemological Critique does not absorb these into a single history of
 Through this re-placement, Boundary Epistemological Critique need not present itself as an unexplored new doctrine. Instead, multiple existing philosophical problem-fields are reconfigured on the same terrain through the vocabulary of boundary, history, heuristic, operational correspondence, collation, and residual retention.
 
 When this terrain map is read first, the propositional main text becomes easier to read. The main text is the skeleton that fixes definitions. This annotation is the map that shows how that skeleton moves across the spherical world, inner motion, and the logical-depth axis.
-

@@ -426,7 +426,7 @@ Related reading:
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md)
-- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md)
+- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md`](Claim_Strength_Table_History_Field_Topology.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 このパネルは、残差保持と論理-深度軸への入口である。
@@ -441,7 +441,7 @@ Related reading:
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md)
-- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md)
+- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md`](Claim_Strength_Table_History_Field_Topology.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 ---
@@ -473,7 +473,7 @@ Related reading:
 関連文書：
 
 - [`00_Overview/Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md)
-- [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
+- [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 ---

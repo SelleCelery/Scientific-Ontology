@@ -1,12 +1,18 @@
 # 境界認識批判
-
 ## 同期・照合・残差保持による知の成立条件
 
-> Status: Core Draft / 基幹草稿  
-> Layer: Sat / Truth Foundation, with Research Note branches  
-> Scope: epistemology, metaphysics, boundary theory, heuristic theory, semantic residue, AI-era knowledge  
-> Language: Japanese authoritative draft / 日本語正本草稿  
-> Note: 本稿は哲学史の総合ではない。知の成立条件を、境界・履歴・同期・照合・残差保持から再定義するための基幹命題列である。既存思想との接続は、権威づけではなく照合のために別注解へ置く。
+> Status: Core public draft / 日本語正本草稿
+> Layer: `01_Sat_Truth` / Sat / Truth foundation, with Research Note branches
+> Scope: epistemology, metaphysics, boundary theory, heuristic theory, residual retention, residue formation, AI-era knowledge
+> Language: Japanese authoritative draft / 日本語正本草稿
+> Authoritative source: this Japanese text unless otherwise stated
+> Claim: foundational epistemological critique, not empirical proof, physical theory, final formal specification, or synthesis of the history of philosophy
+
+本稿は、知の成立条件を、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持・再照合可能性から再定義するための基幹命題列である。
+
+本稿は哲学史の総合ではない。既存思想との接続は、権威づけではなく照合のために注解ファイルへ置く。
+
+翻訳・通約・用語衝突管理の一般方針については、`../Translation_Note.md`、`../Publication_and_Commensuration_Policy.md`、および用語衝突管理表を参照する。
 
 ---
 
@@ -138,15 +144,15 @@
 
 4.4　したがって、感性論と悟性論は、形式空間論を要求する。
 
-4.5　ここでいう形式空間には、ヒルベルト空間、リグドヒルベルト空間、エントロピー空間、およびそれらに対応する観測・分類・意味生成の空間が含まれる。
+4.5　ここでいう形式空間には、ヒルベルト空間、rigged Hilbert 空間、エントロピー空間、およびそれらに対応する観測・分類・意味生成の空間が含まれる。
 
 4.5.1　ヒルベルト空間は、状態・射影・観測断面を考えるための形式空間である。
 
 4.5.1.1　境界認識批判におけるヒルベルト空間への関心は、物理状態の再計算ではなく、何が状態化され、何が射影から漏れるかにある。
 
-4.5.2　リグドヒルベルト空間は、通常の状態空間では閉じにくい一般化状態・境界状態・連続的対象を扱うための拡張空間である。
+4.5.2　rigged Hilbert 空間は、通常の状態空間では閉じにくい一般化状態・境界状態・連続的対象を扱うための拡張空間である。
 
-4.5.2.1　境界認識批判におけるリグドヒルベルト空間への関心は、正規化された状態として閉じにくいもの、または観測断面に安定的に収まりきらないものをどう扱うかにある。
+4.5.2.1　境界認識批判におけるrigged Hilbert 空間への関心は、正規化された状態として閉じにくいもの、または観測断面に安定的に収まりきらないものをどう扱うかにある。
 
 4.5.3　エントロピー空間は、分布・散逸・圧縮・ノイズ・未統合残差を扱うための空間である。
 
@@ -158,9 +164,9 @@
 
 4.6.2　境界認識批判が追うべきなのは、各形式空間が何を状態化し、何を観測可能にし、何を分類不能にし、何をノイズ・残差・意味圧として漏出させるかである。
 
-4.7　したがって、存在論科学は時空だけを扱わない。
+4.7　したがって、存在境界論は時空だけを扱わない。
 
-4.7.1　存在論科学は、外的時空に加えて、内在時間、エントロピー時間、論理-深度軸を扱う。
+4.7.1　存在境界論は、外的時空に加えて、内在時間、エントロピー時間、論理-深度軸を扱う。
 
 4.7.1.1　外的時空とは、物理的・社会的に共有される時間空間順序である。
 
@@ -170,7 +176,7 @@
 
 4.7.1.4　論理-深度軸とは、外的時間の前後ではなく、未解決・矛盾・分岐・残差・意味圧をどれだけ保持し、再構成できるかを示す深度方向である。
 
-4.8　存在論科学の主たる探究対象は、この形式空間と時間軸の交差において、認識・意味・観測・ノイズ・残差がどのように立ち上がるかである。
+4.8　存在境界論の主たる探究対象は、この形式空間と時間軸の交差において、認識・意味・観測・ノイズ・残差がどのように立ち上がるかである。
 
 4.9　この章は、境界認識批判から分岐する詳細研究領域であり、空間論・時間論・境界ノイズ論として別稿化される。
 
@@ -604,12 +610,12 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ---
 
-## ## Appendix B. 英訳時の注意語
+## Appendix B. 英訳時の注意語
 
 ### B.1　境界認識批判
 
-定義語: **Boundary Epistemological Critique**  
-短縮候補: **Boundary Critique**  
+定義語: **Boundary Epistemological Critique**
+短縮候補: **Boundary Critique**
 説明句: **Critique of Boundary Cognition**
 
 注意: `Boundary Critique` は短く強いが、認識論的文脈が薄くなる。正式名称としては `Boundary Epistemological Critique` を推奨する。`Boundary Epistemic Critique` も意味は通るが、英語表現としてはやや硬く、体系名としては `Epistemological` の方が安定する。
@@ -618,7 +624,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.2　同期
 
-定義語: **operational correspondence**  
+定義語: **operational correspondence**
 併記候補: **synchronization**
 
 注意: ここでいう同期は、単なる同時化ではない。物理的同期、通信的同期、社会的調整、制度的対応を含むため、初出では `operational correspondence` として説明し、必要に応じて `synchronization` を併記する。
@@ -627,7 +633,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.3　照合
 
-定義語: **collation**  
+定義語: **collation**
 説明句: **semantic collation / cross-checking / semantic comparison**
 
 注意: `collation` は体系語として使いやすいが、一般読者にはやや硬い。初出では `semantic collation` とし、「同期の一致・不一致・残差が何を意味するかを読む操作」と説明する。`verification` と訳すと、検証・確認に寄りすぎるため避ける。
@@ -636,7 +642,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.4　残差
 
-定義語: **residual**  
+定義語: **residual**
 説明句: **re-collatable residual / unresolved residual**
 
 注意: 残差は、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。操作対象として扱える差分を指す場合は `residual` がよい。
@@ -645,7 +651,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.5　残渣
 
-定義語: **residue**  
+定義語: **residue**
 強調候補: **sedimented residue**
 
 注意: 残渣は、処理・分類・制度化・交換・説明のあとに残り、しばしば不可視化されながらも場に作用し続ける履歴的沈殿である。環境負荷、制度外負債、身体化した違和感、搾取の残りを含む場合は `residue` または `sedimented residue` がよい。
@@ -656,7 +662,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.6　履歴
 
-定義語: **history**  
+定義語: **history**
 強調候補: **accumulated history / history-bearing**
 
 注意: ここでいう履歴は、単なる過去ではなく、次の受け取り方・反応・判断・意味づけを変える蓄積である。必要に応じて `history-bearing entity` や `history-bearing field` とする。
@@ -665,7 +671,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.7　履歴場
 
-定義語: **history-field**  
+定義語: **history-field**
 説明句: **history-bearing field**
 
 注意: `field` は物理場との混同を招きやすい。初出では `history-field, or history-bearing field` と説明し、標準物理学の field と同一視しないことを明記する。
@@ -684,7 +690,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.9　判断可能性
 
-定義語: **capacity for judgment**  
+定義語: **capacity for judgment**
 文脈候補: **room for judgment / conditions for judgment**
 
 注意: `judgment-possibility` は硬い。本人の能力を強調する場合は `capacity for judgment`、判断の余地・場・条件を強調する場合は `room for judgment` または `conditions for judgment` がよい。
@@ -701,7 +707,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.11　意味圧
 
-定義語: **semantic pressure**  
+定義語: **semantic pressure**
 説明句: **meaning pressure**
 
 注意: `semantic pressure` がよい。物理的な圧力ではないことを明記する。
@@ -712,10 +718,10 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.12　論理-深度軸
 
-定義語: **logical-depth axis**  
-補足候補: **logic-depth axis in the SO sense**
+定義語: **logical-depth axis**
+補足候補: **logical-depth axis in the SO sense**
 
-注意: 計算理論上の `logical depth` との同一視を避ける。SOにおける論理深度は、未解決・矛盾・分岐・残差・意味圧を保持し、再構成する深度方向である。
+注意: 計算理論上の `logical depth` との同一視を避ける。SOにおける論理-深度は、未解決・矛盾・分岐・残差・意味圧を保持し、再構成する深度方向である。
 
 補足: 必要に応じて、外的時間に対する別方向、すなわち残差・残渣・未閉鎖 gap が蓄積する虚軸的な時間構造として説明する。ただし、数理的に虚軸と定義していない段階では、`quasi-temporal depth axis` 程度に留める。
 
@@ -723,7 +729,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.13　通約
 
-定義語: **commensuration**  
+定義語: **commensuration**
 説明句: **construction of a comparable interface / making different frameworks comparable**
 
 注意: クーン的な通約可能性の問題と接続する。ただし、ここでいう通約は完全翻訳ではない。異なる言語ゲーム、パラダイム、履歴場の間に、照合可能な対応面を作ることである。
@@ -734,7 +740,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 
 ### B.14　再照合可能性
 
-定義語: **capacity for re-collation**  
+定義語: **capacity for re-collation**
 候補: **re-examinability / capacity for re-examination**
 
 注意: `re-collation` は体系語としてはよいが硬い。意味・判断・学問制度の文脈では `re-examinability` または `capacity for re-examination` を併用する。

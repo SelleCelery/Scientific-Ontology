@@ -4,6 +4,11 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20749351.svg)](https://doi.org/10.5281/zenodo.20749351)
 
+> Status: Public Interface  
+> Scope: repository overview, public navigation, publication boundary  
+> Language: English / Japanese  
+> Authoritative source: Japanese descriptions unless otherwise stated
+
 This repository is the public-facing interface and work-in-progress conceptual archive for **Scientific Ontology**.
 
 **Scientific Ontology** remains the English project name.  
@@ -34,7 +39,7 @@ For version-specific changes, see [`RELEASE_NOTES.md`](./RELEASE_NOTES.md).
 ---
 ## Visual Overview / 視覚的概要
 
-<a href="./06_Visual_Materials/Scientific_Ontology_Conceptual_Poster.en.png">
+<a href="./06_Visual_Materials/Scientific_Ontology_Conceptual_Poster.ja.png">
   <img src="./06_Visual_Materials/Scientific_Ontology_Conceptual_Poster.ja.png" width="480" alt="Scientific Ontology conceptual poster Japanese">
 </a>
 
@@ -130,7 +135,7 @@ From this restart, Scientific Ontology may issue update demands toward science i
 その再起動から、存在境界論は科学そのものに更新要求を出すことがある。
 
 For details, see:
- -[`Scientific_Ontology_and_Science.md`](./00_Overview/Scientific_Ontology_and_Science.md)
+- [`Scientific_Ontology_and_Science.md`](./02_Raj_Beauty/Scientific_Ontology_and_Science.md)
 
 ---
 
@@ -230,91 +235,254 @@ For details, see:
 
 ## Layer Map / 階層マップ
 
-This repository organizes public-facing materials into the following areas.
+This repository organizes public-facing materials into the following layers.
 
-本リポジトリでは、公開用資料を以下の領域に分けて整理します。
+本リポジトリでは、公開用資料を以下の層に分けて整理します。
+
+These layers are not a simple ranking of importance.  
+They describe a movement of grounding, dynamics, cognition, application, and research feedback.
+
+これらの層は、単純な重要度の上下ではありません。  
+形而上の基礎、境界動態、認識プロトコル、応用、研究フィードバックの運動を示します。
+
+Scientific Ontology is not a theory made only for AI.  
+AI is one powerful application, instrument, and boundary interface, but it is not the final purpose of the theory.
+
+存在境界論は、AIのためだけの理論ではありません。  
+AIは強力な応用先であり、観測装置であり、境界インターフェースになりうるものですが、理論の最終目的ではありません。
+
+The relation between theory and application is respiratory.  
+Applications test, expose, and return residuals to the theory; theory then reorganizes the conditions under which applications remain usable without destroying judgment, meaning, or history.
+
+理論と応用の関係は、呼吸的です。  
+応用は、理論を検査し、残差を露出させ、理論へ返します。理論はその残差を受け取り、判断・意味・履歴を破壊せずに応用が機能する条件を再編成します。
+
+---
 
 ### 00 Overview / 概要
 
 Navigation, terminology, publication scope, and claim-strength control.
 
-全体地図、用語規約、公開範囲、主張強度管理。
+公開アーカイブを読むための地図、用語規約、公開範囲、主張強度管理を置きます。
+
+This layer does not contain the theoretical body itself.  
+It defines how the public archive should be read.
+
+この層は理論本文ではありません。  
+公開アーカイブの読み方を定めます。
 
 Main contents:
 
+- Repository README
 - System Map
 - Terminology Protocol
+- Publication and Commensuration Policy
+- Translation Note
+- Term Collision Registry
+
+主な内容：
+
+- ルート README
+- 体系マップ
+- 科学語彙接続プロトコル
+- 公開・通約方針
+- 翻訳・通約注記
+- 用語衝突管理表
+
+---
 
 ### 01 Sat / Truth / 純・真
 
 Metaphysical foundations and public axiomatic materials.
 
-形而上学的基礎と、公理的見取り図に関する公開資料。
+形而上学的基礎と、公理的見取り図を置きます。
 
-Main contents:
+Sat concerns the fundamental structure of existence, observation, meaning, ethics, and boundary.  
+It should not be reduced to AI, social criticism, implementation, or applied examples.
 
-- AMP Introduction
-- Four Axioms of Existence
-- Meaning Generation Model 
-- Boundary Epistemological Critique
-- Boundary Epistemological Critique: Annotations
+Sat は、存在・観測・意味・倫理・境界の根本構造を扱います。  
+AI、社会批判、実装、応用例へ降ろしすぎない層です。
+
+Main contents, in conceptual order:
+
+- `AMP_Introduction.md`
+- `Four_Axioms_of_Existence.md`
+- `Meaning_Generation_Model.md`
+- `Boundary_Epistemological_Critique.*`
+
+概念上の順序：
+
+- `AMP_Introduction.md`
+- `Four_Axioms_of_Existence.md`
+- `Meaning_Generation_Model.md`
+- `Boundary_Epistemological_Critique.*`
+
+---
 
 ### 02 Raj / Beauty / 激・美
 
-Constructive theories, boundary dynamics, History-Field Communication, and public interpretive frameworks.
+Boundary dynamics, history-field communication, and public interpretive frameworks.
 
-構築理論、境界動態、履歴場通信論、公開用解釈フレーム。
+境界動態、履歴場通信論、公開用解釈フレームを置きます。
 
-Main contents:
+Raj concerns how history-bearing beings, fields, concepts, and systems move through boundary contact, operational correspondence, non-correspondence, cutoff, reconnection, and transformation.
 
-- HFC Introduction
-- History-Field Topology
+Raj は、履歴を持つ存在・場・概念・体系が、境界接触、同期、非同期、切断、再接続、変容を通じてどのように動くかを扱います。
+
+This layer may connect Scientific Ontology to science, but it does not replace modern science.  
+Science is treated as a powerful historically formed heuristic system whose conditions of observation, objectification, causality, time, and repeatability can be reopened.
+
+この層では、存在境界論を科学へ接続する場合があります。  
+ただし、現代科学を置き換えるものではありません。科学を、観測・対象化・因果・時間・反復可能性の条件を再び開くことのできる、歴史的に形成された強力なヒューリスティック体系として扱います。
+
+Main contents, in conceptual order:
+
+- `Scientific_Ontology_and_Science.md`
+- `HFC_Introduction.md`
+- `History_Field_Topology.md`
+
+概念上の順序：
+
+- `Scientific_Ontology_and_Science.md`
+- `HFC_Introduction.md`
+- `History_Field_Topology.md`
+
+---
 
 ### 03 Tam / Goodness / 暗・善
 
-Public-facing boundary ethics and AI boundary-interface materials.
+Cognitive and ethical protocol layer.
 
-境界倫理およびAI境界インターフェースに関する公開用資料。
+認識と倫理のプロトコル層です。
+
+Tam concerns how history-bearing beings, fields, and meaning-units can handle residuals, unresolved material, judgment, false closure, ethical braking, and return paths without destroying one another's histories.
+
+Tam は、履歴を持つ存在・場・意味単位が、残差、未解決、判断、偽閉鎖、倫理的制動、返路を、互いの履歴を破壊せずにどう扱うかを問う層です。
+
+This layer can be discussed without AI.  
+AI may later apply these protocols, but AI is not the center of Tam.
+
+この層は、AI抜きでも語ることができます。  
+AIは後段でこのプロトコルを応用できますが、Tam の中心は AI そのものではありません。
 
 Main contents:
 
-- Boundary Ethics Model
-- AI Usefulness as a Boundary Function
-- AI Boundary Interface and Synchronous Understanding
+- `Boundary_Ethics_Model.md`
+- `Meaning_As_Return_Orbit.md`
 
-Implementation-facing details and non-public operational specifications are maintained separately.
+主な内容：
 
-実装寄りの詳細および非公開の運用仕様は別管理とします。
+- `Boundary_Ethics_Model.md`
+- `Meaning_As_Return_Orbit.md`
 
-## 04_Applications / 応用層
+---
 
-`04_Applications` contains applied frameworks that translate Scientific Ontology into practical boundary design.
+### 04 Applications / 応用・実装接続層
 
-This layer does not expose private implementation logic. Instead, it explains how boundary, history, operational correspondence, collation, residual retention, and residue formation can be used to think about software, AI, institutional design, communication, and responsibility.
+Public-facing application and implementation-connection layer.
 
-`04_Applications` は、存在境界論｜Scientific Ontology を実践的な境界設計へ接続する応用層です。
+公開可能な応用・実装接続層です。
 
-この層は、非公開の実装論理を公開するものではありません。境界・履歴・同期・照合・残差保持・残渣化を、ソフトウェア、AI、制度設計、コミュニケーション、責任境界の設計にどう接続できるかを示します。
+Applications translate the metaphysical, dynamic, and cognitive protocols of Sat, Raj, and Tam into concrete public-facing domains.
 
-### Application Boundary Theory / アプリケーション境界論
+Applications は、Sat、Raj、Tam で整理された形而上構造、境界動態、認識プロトコルを、具体的な公開応用領域へ接続します。
 
-v3.0 adds **Application Boundary Theory** as a core applied bridge.
+This layer is not the private implementation layer.  
+It does not disclose runtime kernels, persona cores, operational thresholds, private simulation structures, or internal control procedures.
 
-Application Boundary Theory treats software craftsmanship not as the concealment of internal complexity, but as the design of external boundary surfaces through which complex internal processes can be used responsibly.
+この層は非公開実装層ではありません。  
+ランタイムカーネル、人格式Core、運用閾値、非公開シミュレーション構造、内部制御手順は公開しません。
 
-In this view, AI lightweighting is not merely model compression. It is also the design of external logic that prevents unnecessary search, false closure, and uncontrolled residue formation.
+`Application_Boundary_Theory_Core.md` is the core file of this layer and should remain directly under `04_Applications`.
 
-v3.0 では、応用層の中核的な橋渡しとして **アプリケーション境界論** を追加しました。
+`Application_Boundary_Theory_Core.md` は、この層の中核ファイルであり、今後も `04_Applications` 直下に置きます。
 
-アプリケーション境界論では、ソフトウェアの職人性を、内部の複雑さを秘技化することではなく、複雑な内部処理を責任ある形で扱える外部境界面へ変換することとして捉えます。
+Current and future application directions may include:
 
-この視点では、AI軽量化とは単なるモデル圧縮ではありません。余計な探索、偽閉鎖、制御不能な残渣化を起こさない外部論理の設計でもあります。
+- Boundary AI
+- ConnectBits
+- SO-Enneagram
+- Paradigm Bridge
+- Persona AI
+- other public AI or interface series
 
-See:
+現在および今後の応用方向には、以下が含まれます。
 
-- [`Application_Boundary_Theory_Core.md`](./04_Applications/Application_Boundary_Theory_Core.md)
+- Boundary AI
+- ConnectBits
+- SO-Enneagram
+- Paradigm Bridge
+- Persona AI
+- その他の公開可能な AI・インターフェース系列
 
-## 05_Research_Notes / 研究ノート
+Main contents:
+
+- `Application_Boundary_Theory_Core.md`
+- `AI_Usefulness_as_a_Boundary_Function.md`
+- `AI_Boundary_Interface_and_Synchronous_Understanding.md`
+- `AI_Personality_as_Response_Structure.md`
+
+主な内容：
+
+- `Application_Boundary_Theory_Core.md`
+- `AI_Usefulness_as_a_Boundary_Function.md`
+- `AI_Boundary_Interface_and_Synchronous_Understanding.md`
+- `AI_Personality_as_Response_Structure.md`
+
+---
+
+### 05 Research Notes / 研究ノート
+
+Exploratory theories, reinforcement notes, high-claim applications, and unstable branches.
+
+補強理論、未安定理論、高主張強度の応用、探索枝を置きます。
+
+Research Notes may contain stronger hypotheses, analogies, physical correspondence candidates, cosmological applications, social boundary analysis, value theory, consciousness-related notes, or literary-ontological readings.
+
+Research Notes では、通常公開層よりも強い仮説、比喩、物理接続候補、宇宙論的応用、社会境界分析、価値論、意識論的ノート、文学的・存在論的読解を扱う場合があります。
+
+These notes may later support Sat, Raj, Tam, or Applications.  
+However, they are not yet stable enough to be treated as core public theory.
+
+これらのノートは、後に Sat、Raj、Tam、Applications を補強する可能性があります。  
+ただし、現時点では、基幹公開理論として扱うにはまだ安定していないものを含みます。
+
+Documents in this layer must state their claim strength and should not be read as empirical proof, peer-reviewed physical theory, orthodox social science, or implementation specification.
+
+この層の文書は、主張強度を明示する必要があります。  
+経験的証明、査読済み物理理論、正統な社会科学、実装仕様として読むべきではありません。
+
+---
+
+### 06 Visual Materials / 視覚資料
+
+Conceptual posters, visual system maps, and reader-orientation figures.
+
+概念ポスター、視覚的システムマップ、読者向け導入図を置きます。
+
+This layer is a cross-cutting public interface.  
+It is not a theoretical body, empirical evidence layer, formal proof layer, or implementation layer.
+
+この層は横断的な公開インターフェースです。  
+理論本文、実証資料、形式的証明、実装層ではありません。
+
+---
+
+### 99 Private Core Not Included / 非公開中核は含めない
+
+This directory is a boundary marker.
+
+このディレクトリは境界標識です。
+
+It states that private axioms, full implementation schemas, runtime materials, private drafts, detailed internal specifications, and non-public simulation materials are intentionally excluded from the public repository.
+
+非公開公理、完全な実装スキーマ、ランタイム資料、非公開草案、詳細な内部仕様、非公開シミュレーション資料を、公開リポジトリには意図的に含めないことを示します。
+
+It should not become an index of private files.
+
+ここは非公開ファイルの索引にしてはいけません。
+
+### 05_Research_Notes / 研究ノート
 
 `05_Research_Notes` contains exploratory research branches that extend the core framework into formal space theory, time theory, cosmological correspondence, semantic residue, social boundary analysis, and value theory.
 
@@ -324,12 +492,12 @@ These notes are not presented as replacements for physics, economics, sociology,
 
 これらのノートは、物理学、経済学、社会学、政策科学の代替として提示するものではありません。各形式体系・社会体系が、何を観測可能にし、何を排除し、何を残差として残し、何を残渣として沈殿させるのかを検討するための研究ノートです。
 
-### Main research branches / 主な研究枝
+#### Main research branches / 主な研究枝
 
 - **Formal Space and Boundary Noise / 形式空間と境界ノイズ**  
     Research on how Hilbert space, rigged Hilbert space, entropy space, and related formal spaces determine what can be state-formed, projected, classified, or left as noise and residual.
     
-- **Internal Time and Logical-depth Axis / 内在時間と論理-深度軸**  
+- **Intrinsic Time and Logical-depth Axis / 内在時間と論理-深度軸**  
     Research on non-linear depth structures in which unresolved problems, contradictions, residuals, residues, and semantic pressure are held and reconstructed.
     
 - **Cosmological and Topological Correspondence / 宇宙論的・位相的対応**  
@@ -339,10 +507,9 @@ These notes are not presented as replacements for physics, economics, sociology,
     Research on institutions, authority, responsibility, organization, exploitation, trust, and the externalization of residues into bodies, environments, relationships, and future possibilities.
     
 - **Negentropy Economy / ネゲントロピー経済**  
-    An emerging research direction on value, money, exchange, residual externalization, and order-generating potential. This direction asks not only whether an exchange succeeds, but what kind of residue it leaves behind.
-    
+    An emerging research direction on value, money, exchange, residual externalization, and order-generating potential. This direction asks not only whether an exchange succeeds, but what kind of residue it leaves behind.    
 
-### Emerging Research Direction: Negentropy Economy / 今後の研究方向：ネゲントロピー経済
+#### Emerging Research Direction: Negentropy Economy / 今後の研究方向：ネゲントロピー経済
 
 Negentropy Economy studies value not as price itself, but as order-generating potential.
 
@@ -386,9 +553,9 @@ Meaning is not information alone. Meaning arises when information circulates, re
 
 ### Intrinsic Time / 内在時間
 
-Intrinsic time is internal temporal ordering within a history-bearing entity or field. It is not identical to clock time.
+Intrinsic time is the depth-order in which communication history may acquire logical depth. It is related to the logical-depth axis and is not identical to clock time, subjective time, or inner count-time.
 
-内在時間とは、履歴を持つ存在または場の内部にある時間的順序です。時計時間そのものではありません。
+内在時間とは、通信履歴が論理的深度を持つ場合の深度秩序です。論理-深度軸と関係しますが、時計時間、主観時間、内的計数時間とは同一ではありません。
 
 ### Boundary Ethics / 境界倫理
 
@@ -472,6 +639,48 @@ It does not include:
 
 ---
 
+## Repository Policy / リポジトリ方針
+
+<!--
+AI / 保守メモ:
+公開用の方針文書・用語集・研究ノート・管理表を追加する場合は、
+原則として短いメタデータヘッダを付ける。
+
+例:
+> Status:
+> Scope:
+> Language:
+> Authoritative source:
+> Claim strength:  （必要な場合）
+
+これは保守上の慣習であり、主要な公開方針セクションではない。
+文書自体が必要としない限り、過度に規約化しないこと。
+-->
+
+For publication, translation, commensuration, and terminology-collision management, see:
+
+- [`Publication_and_Commensuration_Policy.md`](./Publication_and_Commensuration_Policy.md)
+- [`Translation_Note.md`](./Translation_Note.md) — English translation and commensuration note
+- [`TERM_COLLISION_REGISTRY.en.md`](./TERM_COLLISION_REGISTRY.en.md) / [`Japanese canonical terms`](./TERM_COLLISION_REGISTRY.md)
+
+This repository treats Japanese descriptions as the primary reference.  
+English terms are provisional commensurated renderings, not fixed word-for-word translations.
+
+公開、翻訳、通約、用語衝突管理については、以下を参照してください。
+
+- [`Publication_and_Commensuration_Policy.md`](./Publication_and_Commensuration_Policy.md)
+- [`Translation_Note.md`](./Translation_Note.md)（英語通約注記）
+- [`TERM_COLLISION_REGISTRY.md`（日本語正本語）](./TERM_COLLISION_REGISTRY.md)
+- [`TERM_COLLISION_REGISTRY.en.md`（英語通約語）](./TERM_COLLISION_REGISTRY.en.md)
+
+本リポジトリでは、日本語記述を主要な参照本文として扱います。  
+英語表記は、固定された逐語訳ではなく、暫定的な通約表現です。
+
+Public-facing documents should generally begin with a short metadata header indicating status, scope, language relation, and claim strength where relevant.
+
+公開用文書では、原則として、状態・射程・言語関係・必要に応じた主張強度を示す短いメタデータヘッダを冒頭に置く。
+
+---
 ## Citation / DOI
 
 Legacy project DOI / 継続プロジェクト DOI:  

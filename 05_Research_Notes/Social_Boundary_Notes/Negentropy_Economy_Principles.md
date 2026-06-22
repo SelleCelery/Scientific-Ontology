@@ -1,35 +1,29 @@
-# ネゲントロピー経済 原則条文
+# ネゲントロピー経済原則 / Negentropy Economy Principles
 
-> Status: Core Draft  
-> Layer: Applications / Value Theory / Boundary Economics  
-> Scope: negentropy economy, residue assessment, ownership heuristics, accounting closure, institutional collation  
-> Language: Japanese authoritative draft / English working translation planned  
-> Note: 本稿は、法令、会計基準、認証制度、政策案そのものではない。制度・経済・会計システムと照合するための理論的枠組みである。
-
-## 残渣査定のための境界経済論
-
-### 前文
-
-ネゲントロピー経済は、価格、所有、交換、利益、成長を否定する理論ではない。
-
-それらは、人間社会が資源、責任、機会、期待を同期させるために形成してきた強力なヒューリスティックである。
-
-しかし、同期に成功したものが、ただちに価値の全体を示すわけではない。
-
-価格化されたものの外側に、価格化されなかった負荷がある。
-
-所有されたものの外側に、所有によって見えなくなった能力がある。
-
-利益として記録されたものの外側に、身体、環境、制度、関係、未来へ移送された残渣がある。
-
-本原則は、交換や制度が何を秩序として生成し、何を残差として残し、何を残渣として外部化しているかを査定するための理論的枠組みである。
-
-本原則は、法令、会計基準、政策案、倫理規定そのものではない。
-
-本原則は、それらと照合するための境界原則である。
+> Status: Japanese authoritative draft / 日本語正本草稿  
+> Layer: 05_Research_Notes / Social_Boundary_Notes  
+> Scope: value, price, ownership, exchange, collation, false closure, residue assessment  
+> Language: Japanese authoritative text only; English commensurated rendering pending  
+> Authoritative source: Japanese text  
+> Claim strength: Principle-style conceptual draft; not law, not accounting standard, not policy proposal  
+> Commensuration status: Not yet commensurated into English.
+> Reason / 理由: English commensuration is held because this article-like text may be misread as legal, accounting, economic, or policy doctrine. It should be translated only after the Negentropy Economy frame is stabilized.
 
 ---
 
+## 0. 通約状態 / Commensuration status
+
+Not yet commensurated into English.
+
+理由：English commensuration is held because this article-like text may be misread as legal, accounting, economic, or policy doctrine. It should be translated only after the Negentropy Economy frame is stabilized.
+
+### English commensurated rendering
+
+Commensuration status: Not yet commensurated into English.
+
+Reason: English commensuration is held because this article-like text may be misread as legal, accounting, economic, or policy doctrine. It should be translated only after the Negentropy Economy frame is stabilized.
+
+---
 ## 第一章　定義
 
 ### 第一条　ネゲントロピー経済

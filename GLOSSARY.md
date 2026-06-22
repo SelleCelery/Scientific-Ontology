@@ -17,23 +17,23 @@ It does not replace empirical science.
 
 ## ITS
 
-Intrinsic Time System / Intrinsic Time Theory.  
-A conceptual framework that treats meaning, qualia, history, and internal temporal ordering as central to existence and interpretation.  
-In public documents, ITS terms should be treated as conceptual or structural unless explicitly stated otherwise.
+Information-Time Soliton Unified Theory.  
+A metaphysical-mathematical and topological-ontological theory concerning information, time, solitonic stability, bosonic fields, slicing, observation, meaning circulation, iMass/rMass, communication impedance, and the AMP Core.  
+In the public repository, ITS is not presented as a replacement for empirical science or as a complete public specification. Public documents may refer to ITS-derived concepts only within their stated claim strength.
 
-内在時間システム／内在時間理論。  
-意味、クオリア、履歴、内部的な時間順序を、存在と解釈の中心に置く概念フレーム。  
-公開資料では、明示しない限り、ITS関連語は概念的・構造的な用語として扱う。
+Information-Time Soliton Unified Theory（ITS理論）。  
+情報、時間、ソリトン的安定性、ボソン場、切断、観測、意味の円環、iMass/rMass、通信インピーダンス、AMP Core を扱う、形而上学的数学・位相的存在論の理論。  
+公開リポジトリでは、ITSを経験科学の代替や完全な公開仕様として提示しない。公開文書では、ITS由来の概念を、それぞれの主張強度の範囲内で扱う。
 
 ## Intrinsic Time / 内在時間
 
-Internal temporal ordering within a history-bearing entity or field.  
-It is not identical to clock time.  
-It refers to the order in which histories are updated, folded, synchronized, or reinterpreted.
+The depth-order in which communication history may acquire logical depth.  
+It is related to the logical-depth axis and is not identical to clock time, subjective time, or inner count-time.  
+At this stage, it is not fixed as a single temporal order.
 
-履歴を持つ存在または場の内部にある時間的順序。  
-時計時間そのものではない。  
-履歴が更新され、折り畳まれ、同期し、再解釈される順序を指す。
+通信履歴が論理的深度を持つ場合の深度秩序。  
+論理-深度軸と関係するが、時計時間、主観時間、内的計数時間とは同一ではない。  
+現時点では、単一の時間秩序として確定しない。
 
 ## iMass
 
@@ -61,11 +61,19 @@ Friction, interpretation, qualia, resistance, and communication occur at the bou
 
 ## Qualia / クオリア
 
-A felt event generated when external input touches internal history through a boundary.  
-In this repository, qualia is treated as a boundary event, not as a purely private inner object.
+Qualia are felt events generated at a boundary.
 
-外部入力が境界を通じて内部履歴に触れるときに生じる質的経験。  
-本リポジトリでは、クオリアを純粋な内面物ではなく、境界で発生する出来事として扱う。
+They arise when external input touches internal history through a boundary, producing a felt texture of friction.  
+They also arise when already closed internal histories, main lines, or branch lines resurface at the boundary through resonance or contact.
+
+In this repository, qualia are treated not as purely private inner objects, but as boundary events in which history becomes felt.
+
+クオリアとは、境界で発生する質感を伴う出来事である。
+
+それは、外部入力と内部履歴が境界で接触したときに生じる摩擦の質感として現れる。  
+また、すでに閉じた内部履歴、主線、または枝線が、共鳴や接触によって再び境界へ浮上するときに生じる質感も含む。
+
+本リポジトリでは、クオリアを純粋な内面物ではなく、履歴が質感として現れる境界出来事として扱う。
 
 ## Meaning Loop / 意味ループ
 

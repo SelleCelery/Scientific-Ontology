@@ -1,46 +1,54 @@
+# 社会境界ノート / Social Boundary Notes
 
-# Social Boundary Notes / 社会境界系ノート
-
-This directory contains public Research Notes on social systems, institutional boundaries, responsibility distribution, monetary closure, credibility, social negentropy, and meaning-bearing exchange.
-
-このディレクトリには、社会システム、制度的境界、責任配分、貨幣的閉鎖、信用、社会的ネゲントロピー、意味を帯びた交換に関する公開用 Research Notes を置く。
-
-These notes may connect Scientific Ontology with economy, money, value, social trust, social residue, institutional debt, and boundary ethics.
-
-これらのノートは、Scientific Ontology を、経済、お金、価値、社会的信頼、社会的残差、制度的負債、境界倫理へ接続する場合がある。
-
-They are not empirical economic theories, policy proposals, replacement currency systems, or moral doctrines.
-
-これらは、経験的な経済理論、政策提案、代替通貨制度、道徳教義ではない。
+> Status: Public research-note subdirectory / 公開用研究ノート小分類  
+> Layer: 05_Research_Notes / Social_Boundary_Notes  
+> Scope: social boundary, value, money, exchange, residue, negentropy economy  
+> Language: Japanese authoritative text / English commensurated rendering  
+> Authoritative source: Japanese text  
+> Claim strength: Conceptual model; not empirical economics, not policy proposal, not accounting standard  
+> Commensuration status: Section-level Japanese-first text with English commensurated renderings.
 
 ---
-
-## Documents / 文書
+## 2. 文書
 
 - [`Negentropy_Economy_and_Meaning_Generation.md`](./Negentropy_Economy_and_Meaning_Generation.md)  
-  Treats money as an exchange medium rather than value itself, and treats value as the exchange-facing appearance of meaning-bearing negentropy.  
-  お金を価値そのものではなく交換媒質として扱い、価値を「意味を帯びたネゲントロピー」が交換面に現れた相として整理する。
+  お金を価値そのものではなく交換媒質として扱い、価値を「意味を帯びたネゲントロピー」が交換面に現れた相として整理する概念モデル。
+
+- [`Negentropy_Economy_Principles.md`](./Negentropy_Economy_Principles.md)  
+  残渣査定のための境界経済論。現時点では日本語正本の条文草稿であり、英語通約は保留する。
+
+### English commensurated rendering
+
+- [`Negentropy_Economy_and_Meaning_Generation.md`](./Negentropy_Economy_and_Meaning_Generation.md)  
+  A conceptual model that treats money as an exchange medium rather than value itself, and treats value as the exchange-facing appearance of meaning-bearing negentropy.
+
+- [`Negentropy_Economy_Principles.md`](./Negentropy_Economy_Principles.md)  
+  A boundary-economics principle draft for residue assessment. At this stage, it is a Japanese authoritative principle draft; English commensuration is on hold.
 
 ---
 
-## Boundary Policy / 境界方針
+## 3. 境界方針
+
+社会境界系ノートでは、以下を区別する。
+
+- 概念モデルと経験的経済主張
+- 交換媒質と価値そのもの
+- お金と秩序生成能力
+- 残差と残渣
+- 社会批評と未処理の排出文
+- 公開用概念ノートと非公開運用資料
+
+未処理の排出文、非公開評価、生の社会批判はここには置かない。
+
+### English commensurated rendering
 
 Social Boundary Notes should distinguish:
 
 - conceptual models from empirical economic claims;
 - exchange media from value itself;
-- money from order-generating potential;
-- social critique from unprocessed discharge;
+- money from order-generating capacity;
+- residuals from residues;
+- social criticism from unprocessed discharge;
 - public conceptual notes from private operational material.
 
-社会境界系ノートでは、以下を区別する。
-
-- 概念モデルと経験的経済主張;
-- 交換媒質と価値そのもの;
-- お金と秩序生成の潜在性;
-- 社会批評と未処理の排出文;
-- 公開用概念ノートと非公開運用資料。
-
 Raw discharge texts, private evaluations, and unprocessed social criticism do not belong here.
-
-未処理の排出文、非公開評価、生の社会批判はここには置かない。
