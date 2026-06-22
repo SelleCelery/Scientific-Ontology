@@ -1,14 +1,30 @@
-# 社会境界ノート / Social Boundary Notes
+# Social Boundary Notes / 社会境界系ノート
 
 > Status: Public research-note subdirectory / 公開用研究ノート小分類  
 > Layer: 05_Research_Notes / Social_Boundary_Notes  
-> Scope: social boundary, value, money, exchange, residue, negentropy economy  
+> Scope: social systems, institutional boundaries, responsibility distribution, trust, value, residue, Negentropy Economy  
 > Language: Japanese authoritative text / English commensurated rendering  
 > Authoritative source: Japanese text  
-> Claim strength: Conceptual model; not empirical economics, not policy proposal, not accounting standard  
-> Commensuration status: Section-level Japanese-first text with English commensurated renderings.
+> Claim strength: Conceptual model; not empirical economics, not policy proposal, not accounting standard
+
+## 1. 位置づけ
+
+このディレクトリには、社会システム、制度的境界、責任配分、信用、残差、残渣、価値、貨幣、ネゲントロピー経済、意味を帯びた交換に関する公開用研究ノートを置く。
+
+これらのノートは、経験的な経済理論、政策提案、代替通貨制度、会計基準、法令、道徳教義ではない。
+
+社会批判を未処理のまま置く場所でもない。残差と残渣を見える形へ減速し、公開可能な概念モデルとして整理する場所である。
+
+### English commensurated rendering
+
+This directory contains public research notes on social systems, institutional boundaries, responsibility distribution, trust, residuals, residues, value, money, Negentropy Economy, and meaning-bearing exchange.
+
+These notes are not empirical economic theories, policy proposals, replacement currency systems, accounting standards, laws, or moral doctrines.
+
+This is not a place for unprocessed social criticism. It is a place for slowing residuals and residues into publicly readable conceptual models.
 
 ---
+
 ## 2. 文書
 
 - [`Negentropy_Economy_and_Meaning_Generation.md`](./Negentropy_Economy_and_Meaning_Generation.md)  

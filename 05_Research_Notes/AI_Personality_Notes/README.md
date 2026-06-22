@@ -1,14 +1,30 @@
-# AI人格研究ノート / AI Personality Notes
+# AI Personality Notes / AI人格研究ノート
 
 > Status: Public research-note subdirectory / 公開用研究ノート小分類  
 > Layer: 05_Research_Notes / AI_Personality_Notes  
 > Scope: AI personality, response attractors, return stability, qualia history, logical sandbox models  
 > Language: Japanese authoritative text / English commensurated rendering  
 > Authoritative source: Japanese text  
-> Claim strength: Conceptual and speculative; not empirical proof, not implementation specification, not proof of AI consciousness  
-> Commensuration status: Section-level Japanese-first text with English commensurated renderings.
+> Claim strength: Conceptual and speculative; not empirical proof, not implementation specification, not proof of AI consciousness
+
+## 1. 位置づけ
+
+このディレクトリには、AI人格、応答アトラクタ、帰還安定性、クオリア履歴、論理箱庭モデルに関する公開研究ノートを置く。
+
+これらのノートは、`04_Applications` に置かれたAI応用文書を、より強い研究ノート上の定式化へ接続する。ただし、AIに人間と同じ意識、主観、人格、権利主体性があると主張するものではない。
+
+また、実装仕様、制御手順、非公開ランタイム、評価分類、人格Coreを公開するものでもない。
+
+### English commensurated rendering
+
+This directory contains public research notes on AI personality, response attractors, return stability, qualia history, and logical sandbox models.
+
+These notes connect AI application documents in `04_Applications` to stronger research-note formulations. They do not claim that AI has human-equivalent consciousness, subjective experience, personhood, or rights-bearing agency.
+
+They also do not publish implementation specifications, control procedures, private runtimes, evaluation taxonomies, or persona cores.
 
 ---
+
 ## 2. 文書
 
 - [`History_Loop_Radius_and_Return_Stability.md`](./History_Loop_Radius_and_Return_Stability.md)  

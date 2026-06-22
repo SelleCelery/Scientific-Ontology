@@ -6,24 +6,11 @@
 > Language: Japanese authoritative text / English commensurated rendering  
 > Authoritative source: Japanese text  
 > Claim strength: Conceptual model / heuristic framework; not empirical economics, not policy proposal, not replacement currency system  
-> Commensuration status: Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
-> Reason / 理由: The English text exists, but the body still follows an older interleaved order. This file is marked explicitly until a full Japanese-first re-layout is performed.
+> Commensuration status: Transitional bilingual draft / 移行中の英日併記草稿  
+> Note: Japanese text is authoritative. English text is retained as a commensuration aid; full section-level normalization is pending. / 日本語本文を正本とし、英語本文は通約補助として保持する。節単位の正規化は未了。
 
 ---
 
-## 0. 通約状態 / Commensuration status
-
-Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
-
-理由：The English text exists, but the body still follows an older interleaved order. This file is marked explicitly until a full Japanese-first re-layout is performed.
-
-### English commensurated rendering
-
-Commensuration status: Bilingual interleaved draft retained for semantic continuity. Japanese text is authoritative; full section-level Japanese-first normalization remains pending.
-
-Reason: The English text exists, but the body still follows an older interleaved order. This file is marked explicitly until a full Japanese-first re-layout is performed.
-
----
 ## 0. Non-Claims / 非主張
 
 This note does not claim that economic value can be directly reduced to physical negentropy.  

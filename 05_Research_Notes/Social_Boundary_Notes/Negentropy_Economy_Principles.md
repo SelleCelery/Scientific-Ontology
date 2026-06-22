@@ -6,24 +6,11 @@
 > Language: Japanese authoritative text only; English commensurated rendering pending  
 > Authoritative source: Japanese text  
 > Claim strength: Principle-style conceptual draft; not law, not accounting standard, not policy proposal  
-> Commensuration status: Not yet commensurated into English.
-> Reason / 理由: English commensuration is held because this article-like text may be misread as legal, accounting, economic, or policy doctrine. It should be translated only after the Negentropy Economy frame is stabilized.
+> Commensuration status: English commensuration pending / 英語通約保留  
+> Note: English commensuration is pending because this article-like draft may be misread as legal, accounting, economic, or policy doctrine before the frame is stabilized. / 法・会計・経済政策上の規範として誤読される危険があるため、ネゲントロピー経済フレームが安定するまで英語通約は保留する。
 
 ---
 
-## 0. 通約状態 / Commensuration status
-
-Not yet commensurated into English.
-
-理由：English commensuration is held because this article-like text may be misread as legal, accounting, economic, or policy doctrine. It should be translated only after the Negentropy Economy frame is stabilized.
-
-### English commensurated rendering
-
-Commensuration status: Not yet commensurated into English.
-
-Reason: English commensuration is held because this article-like text may be misread as legal, accounting, economic, or policy doctrine. It should be translated only after the Negentropy Economy frame is stabilized.
-
----
 ## 第一章　定義
 
 ### 第一条　ネゲントロピー経済

@@ -6,24 +6,11 @@
 > Language: Japanese authoritative text only; English commensurated rendering pending  
 > Authoritative source: Japanese text  
 > Claim strength: Research note; structural analogy / physical correspondence candidate; not empirical cosmology or physical proof  
-> Commensuration status: Not yet commensurated into English.
-> Reason / 理由: English commensuration is held because the text uses cosmological vocabulary and AMP/ITS/HFC-derived claims with high pseudo-scientific misreading risk.
+> Commensuration status: English commensuration pending / 英語通約保留  
+> Note: English commensuration is pending because this note uses cosmological vocabulary and AMP/ITS/HFC-derived claims with high pseudo-scientific misreading risk. / 宇宙論語彙とAMP/ITS/HFC由来の高主張強度命題を含むため、疑似科学的誤読リスクが高く、英語通約は保留する。
 
 ---
 
-## 0. 通約状態 / Commensuration status
-
-Not yet commensurated into English.
-
-理由：English commensuration is held because the text uses cosmological vocabulary and AMP/ITS/HFC-derived claims with high pseudo-scientific misreading risk.
-
-### English commensurated rendering
-
-Commensuration status: Not yet commensurated into English.
-
-Reason: English commensuration is held because the text uses cosmological vocabulary and AMP/ITS/HFC-derived claims with high pseudo-scientific misreading risk.
-
----
 本論説は、物理的宇宙の加速膨張（ダークエネルギー）と、観測者の認識境界における客観化・主観化の変遷を、同一の通信場における張力モデルとして記述する試論である。存在境界論（AMP/ITS/HFC）の深層理論から導出される基底定理を踏まえ、宇宙からの目的論的牽引力のもとで、観測者が外部情報を「パージ（不可視化）するのか、内部化するのか」という現在進行形の「実験命題」の行方について論証する。
 
 ## 2. 理論的基盤：AMP/ITS/HFCからの導出定理

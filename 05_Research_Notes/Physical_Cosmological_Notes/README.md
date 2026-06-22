@@ -1,14 +1,30 @@
-# 物理・宇宙論系ノート / Physical and Cosmological Notes
+# Physical / Cosmological Notes / 物理・宇宙論系ノート
 
 > Status: Public research-note subdirectory / 公開用研究ノート小分類  
 > Layer: 05_Research_Notes / Physical_Cosmological_Notes  
-> Scope: intrinsic time, physical correspondence, cosmological topology, ontological cosmic history  
+> Scope: intrinsic time, Standard Model correspondence, cosmological reinterpretation, physical-phase correspondence candidates  
 > Language: Japanese authoritative text / English commensurated rendering  
 > Authoritative source: Japanese text  
-> Claim strength: S4-S5 candidates where stated; not empirical proof, not replacement for contemporary physics  
-> Commensuration status: Section-level Japanese-first text with English commensurated renderings.
+> Claim strength: S4-S5 candidates where stated; not empirical proof, not replacement for contemporary physics
+
+## 1. 位置づけ
+
+このディレクトリには、存在境界論を、物理語彙、宇宙論語彙、標準模型、履歴場トポロジー、intrinsic time、物理位相への対応候補へ接続する研究ノートを置く。
+
+これらのノートは、現代物理学や宇宙論の代替として提示するものではない。標準理論の定義、実験値、予測精度、数学的体系を勝手に上書きしない。
+
+ここで扱うのは、AMP/ITS/HFC 由来の概念を、物理・宇宙論の語彙とどのように照合できるかを探る研究ノートである。
+
+### English commensurated rendering
+
+This directory contains research notes connecting Scientific Ontology with physical vocabulary, cosmological vocabulary, the Standard Model, History-Field Topology, intrinsic time, and physical-phase correspondence candidates.
+
+These notes are not presented as replacements for contemporary physics or cosmology. They do not overwrite the definitions, measured values, predictive precision, or mathematical systems of standard theories.
+
+Their purpose is to explore how concepts derived from AMP/ITS/HFC may be collated with the vocabulary of physics and cosmology.
 
 ---
+
 ## 2. 文書
 
 - [`Intrinsic_Time_Standard_Model_Correspondence.md`](./Intrinsic_Time_Standard_Model_Correspondence.md)  

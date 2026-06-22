@@ -6,24 +6,11 @@
 > Language: Japanese authoritative text only; English commensurated rendering pending  
 > Authoritative source: Japanese text  
 > Claim strength: S4-S5 candidate; proposal, not proof; not a replacement for particle physics  
-> Commensuration status: Not yet commensurated into English.
-> Reason / 理由: English commensuration is held because the note touches high-claim-strength physical correspondence. It requires separate terminology and claim-strength review before English publication.
+> Commensuration status: English commensuration pending / 英語通約保留  
+> Note: English commensuration is pending because this note touches high-claim-strength physical correspondence and requires separate terminology and claim-strength review. / 高主張強度の物理対応候補を扱うため、用語と主張強度の再点検を行うまで英語通約は保留する。
 
 ---
 
-## 0. 通約状態 / Commensuration status
-
-Not yet commensurated into English.
-
-理由：English commensuration is held because the note touches high-claim-strength physical correspondence. It requires separate terminology and claim-strength review before English publication.
-
-### English commensurated rendering
-
-Commensuration status: Not yet commensurated into English.
-
-Reason: English commensuration is held because the note touches high-claim-strength physical correspondence. It requires separate terminology and claim-strength review before English publication.
-
----
 本稿は、素粒子物理学の標準模型を置き換えるものではない。
 
 既存の数理形式、実験値、予測精度、ゲージ理論、標準模型の有効性を否定しない。  

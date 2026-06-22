@@ -1,8 +1,11 @@
-# Scientific Ontology Conceptual Poster Note
+# Scientific Ontology Conceptual Poster Note / 概念ポスター読解注記
 
-> Status: Public Companion Note  
+> Status: Public companion note / 公開用補助注記  
+> Layer: 06_Visual_Materials  
 > Scope: conceptual poster explanation, visual interpretation, claim boundary  
-> Language: Japanese / English  
+> Language: Japanese authoritative text / English commensurated rendering  
+> Authoritative source: Japanese text  
+> Claim strength: Conceptual orientation aid; not empirical data, not formal proof, not physical cosmology model, not financial model, not policy proposal, not AI system specification  
 > Related files:
 
 - [`Scientific_Ontology_Conceptual_Poster.ja.png`](./Scientific_Ontology_Conceptual_Poster.ja.png)
@@ -10,7 +13,7 @@
 
 ---
 
-# A. What this file is / このファイルは何か
+## A. What this file is / このファイルは何か
 
 This note explains how to read the **Scientific Ontology Conceptual Poster**.
 
@@ -42,7 +45,7 @@ This poster is not an empirical data figure, formal proof, physical cosmology mo
 
 これは、実証的データ図、形式的証明、物理宇宙論モデル、金融モデル、政策提案、AIシステム仕様、法令、会計基準ではない。
 
-## Reading setup / 読解の準備
+### Reading setup / 読解の準備
 
 This note is intended to be read while viewing the conceptual poster.
 
@@ -70,7 +73,7 @@ It explains how to read the main structure, avoid major misreadings, and follow 
 
 ---
 
-# B. Minimal reading to prevent misreadings / まず誤読を防ぐための最小読解
+## B. Minimal reading to prevent misreadings / まず誤読を防ぐための最小読解
 
 This poster can be read in several layers.
 
@@ -112,9 +115,9 @@ This is a Flatland-like reading problem: the diagram is drawn in a spatial form,
 
 ---
 
-# C. Central model of the diagram / 図の中心モデル
+## C. Central model of the diagram / 図の中心モデル
 
-## C.1 Central sphere / 中心球体
+### C.1 Central sphere / 中心球体
 
 The central sphere in this poster is not the universe as physical space.
 
@@ -152,7 +155,7 @@ It says that an observed world is sliced out from a deeper history-field structu
 
 このポスターが示しているのは、観測された世界が、感性、悟性、理性の組み合わせによって、より深い履歴場構造から切り出されるということである。
 
-## C.2 Equator, poles, and other world-cuttings / 赤道・極点・別の世界切断
+### C.2 Equator, poles, and other world-cuttings / 赤道・極点・別の世界切断
 
 The equator is not merely the middle line of a sphere.
 
@@ -218,7 +221,7 @@ If an omniscient observer still has an outside, that outside is not inside the s
 
 もし全知でありながら外部があるならば、その外部は同じ極の内部にはない。それは別宇宙の赤道境界である。
 
-## C.3 Observer, sensibility, understanding, and reason / 観測者・感性・悟性・理性
+### C.3 Observer, sensibility, understanding, and reason / 観測者・感性・悟性・理性
 
 The observer is not fixed at a single point.
 
@@ -292,7 +295,7 @@ When the mode of closure itself is examined, revised, and made responsible to re
 
 しかし、閉じ方そのものを探求し、修正し、残差に対して責任を持つならば、それは内部秩序へ向かう運動、すなわち反獣性となる。
 
-## C.4 Reading openness / 読解の開放性
+### C.4 Reading openness / 読解の開放性
 
 The central model should not be read as a single fixed doctrine.
 
@@ -362,7 +365,7 @@ It is a map for re-collation.
 
 ---
 
-# D. Panel guide and reading paths / パネル位置と読解導線
+## D. Panel guide and reading paths / パネル位置と読解導線
 
 The peripheral panels are not secondary decorations.
 
@@ -386,7 +389,7 @@ The labels such as “upper-right,” “lower-left,” and “central vertical 
 
 ---
 
-## D.1 Upper-right panel / 右上パネル — Operational correspondence and collation / 同期と照合
+### D.1 Upper-right panel / 右上パネル — Operational correspondence and collation / 同期と照合
 
 This panel provides an entry point into the core epistemological vocabulary of SO.
 
@@ -412,7 +415,7 @@ Related reading:
 
 ---
 
-## D.2 Central vertical axis / 中央縦軸 — Residuals, residues, and the logical-depth axis / 残差・残渣・論理-深度軸
+### D.2 Central vertical axis / 中央縦軸 — Residuals, residues, and the logical-depth axis / 残差・残渣・論理-深度軸
 
 This panel provides an entry point into residual retention and the logical-depth axis.
 
@@ -426,7 +429,7 @@ Related reading:
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md)
-- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md`](Claim_Strength_Table_History_Field_Topology.md)
+- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 このパネルは、残差保持と論理-深度軸への入口である。
@@ -441,12 +444,12 @@ Related reading:
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md)
-- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology_v0.1.md`](Claim_Strength_Table_History_Field_Topology.md)
+- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 ---
 
-## D.3 Lower-left panel / 左下パネル — Language games and paradigm bridge / 言語ゲームとパラダイム・ブリッジ
+### D.3 Lower-left panel / 左下パネル — Language games and paradigm bridge / 言語ゲームとパラダイム・ブリッジ
 
 This panel provides an entry point into language games, commensuration, and translation between different frameworks.
 
@@ -478,7 +481,7 @@ Related reading:
 
 ---
 
-## D.4 Upper-left panel / 左上パネル — Formation and cosmological motifs / 形成・宇宙論的モチーフ
+### D.4 Upper-left panel / 左上パネル — Formation and cosmological motifs / 形成・宇宙論的モチーフ
 
 This panel uses cosmological motifs to show formation, stabilization, differentiation, and residual emergence.
 
@@ -506,7 +509,7 @@ Related reading:
 
 ---
 
-## D.5 Lower-right panel / 右下パネル — Finance and residue / 金融と残渣
+### D.5 Lower-right panel / 右下パネル — Finance and residue / 金融と残渣
 
 The finance section is an application panel, not the central definition of SO.
 
@@ -549,7 +552,7 @@ Related reading:
 
 ---
 
-# F. Claim boundary / 主張境界
+## E. Claim boundary / 主張境界
 
 This poster is a conceptual map.
 

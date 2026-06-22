@@ -482,53 +482,6 @@ It should not become an index of private files.
 
 ここは非公開ファイルの索引にしてはいけません。
 
-### 05_Research_Notes / 研究ノート
-
-`05_Research_Notes` contains exploratory research branches that extend the core framework into formal space theory, time theory, cosmological correspondence, semantic residue, social boundary analysis, and value theory.
-
-These notes are not presented as replacements for physics, economics, sociology, or policy science. They are research notes for examining what each formal or social system makes observable, what it excludes, what remains as residual, and what sedimentates as residue.
-
-`05_Research_Notes` は、基幹理論を、形式空間論、時間論、宇宙論的対応、意味論的残差、社会境界分析、価値論へ拡張するための探索的研究枝です。
-
-これらのノートは、物理学、経済学、社会学、政策科学の代替として提示するものではありません。各形式体系・社会体系が、何を観測可能にし、何を排除し、何を残差として残し、何を残渣として沈殿させるのかを検討するための研究ノートです。
-
-#### Main research branches / 主な研究枝
-
-- **Formal Space and Boundary Noise / 形式空間と境界ノイズ**  
-    Research on how Hilbert space, rigged Hilbert space, entropy space, and related formal spaces determine what can be state-formed, projected, classified, or left as noise and residual.
-    
-- **Intrinsic Time and Logical-depth Axis / 内在時間と論理-深度軸**  
-    Research on non-linear depth structures in which unresolved problems, contradictions, residuals, residues, and semantic pressure are held and reconstructed.
-    
-- **Cosmological and Topological Correspondence / 宇宙論的・位相的対応**  
-    Research notes that explore how boundary, history, topology, and field-like structures may be used as conceptual correspondences without claiming to replace physical theory.
-    
-- **Social Boundary Notes / 社会境界ノート**  
-    Research on institutions, authority, responsibility, organization, exploitation, trust, and the externalization of residues into bodies, environments, relationships, and future possibilities.
-    
-- **Negentropy Economy / ネゲントロピー経済**  
-    An emerging research direction on value, money, exchange, residual externalization, and order-generating potential. This direction asks not only whether an exchange succeeds, but what kind of residue it leaves behind.    
-
-#### Emerging Research Direction: Negentropy Economy / 今後の研究方向：ネゲントロピー経済
-
-Negentropy Economy studies value not as price itself, but as order-generating potential.
-
-Money is treated not as value itself, but as a medium that connects different forms of value. Exchange is examined as a contact between different forms of negentropy, and the central question becomes whether the exchange increases order-generating capacity or externalizes residue into bodies, environments, relationships, or future generations.
-
-ネゲントロピー経済は、価値を価格そのものではなく、秩序生成能力として捉える研究方向です。
-
-お金は価値そのものではなく、異なる価値を接続する媒質として扱われます。交換は、異なる質のネゲントロピー同士の接触として検討されます。中心となる問いは、交換が成功したかどうかだけではなく、その交換が秩序生成能力を増やしたのか、それとも身体・環境・関係・未来世代へ残渣を外部化したのかです。
-
-This branch connects directly to Boundary Epistemological Critique through operational correspondence, collation, residual retention, and residue formation.
-
-この研究枝は、同期・照合・残差保持・残渣化を通じて、境界認識批判と直接接続します。
-
-### 99 Private Core Not Included / 非公開中核は含まない
-
-This public repository does not include private axioms, full implementation schemas, runtime materials, private drafts, or detailed internal specifications.
-
-この公開リポジトリには、非公開公理、完全な実装スキーマ、ランタイム資料、非公開草案、詳細な内部仕様は含めません。
-
 ---
 
 ## Core Concepts / 中核概念

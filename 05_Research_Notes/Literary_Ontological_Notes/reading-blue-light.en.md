@@ -1,29 +1,18 @@
-# Reading the Blue Light / 青い照明を読む
+# Reading the Blue Light
 
-> Status: English commensurated rendering / 英語通約版  
+## Miyazawa Kenji’s _Spring and Asura_ and History-Field Topology
+
+> Language: English  
+> Japanese original: [青い照明を読む](./reading-blue-light.ja.md)  
+> Status: Literary / Ontological Note  
 > Layer: 05_Research_Notes / Literary_Ontological_Notes  
-> Scope: Miyazawa Kenji, Spring and Asura, History-Field Topology, structural reading  
-> Language: English commensurated rendering of Japanese authoritative text  
-> Authoritative source: `reading-blue-light.ja.md`  
-> Claim strength: Interpretive analogy; not literary proof, not physical claim  
-> Commensuration status: This is the English commensurated rendering of the paired Japanese authoritative file.
-> Reason / 理由: The English text is maintained separately to preserve readability while keeping the Japanese file authoritative.
+> Scope: Miyazawa Kenji, _Spring and Asura_, History-Field Topology, structural reading  
+> Claim: Interpretive analogy, not literary proof or physical claim
 
----
+## Positioning
 
-## 0. 通約状態 / Commensuration status
+### Neither literary scholarship nor physical theory, but an ontological reading
 
-This is the English commensurated rendering of the paired Japanese authoritative file.
-
-理由：The English text is maintained separately to preserve readability while keeping the Japanese file authoritative.
-
-### English commensurated rendering
-
-Commensuration status: This is the English commensurated rendering of the paired Japanese authoritative file.
-
-Reason: The English text is maintained separately to preserve readability while keeping the Japanese file authoritative.
-
----
 This essay does not attempt to explain Miyazawa Kenji through science.
 
 It also does not claim that _Spring and Asura_ proves History-Field Topology.
