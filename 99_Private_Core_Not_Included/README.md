@@ -1,4 +1,7 @@
 # Private Core Not Included / 非公開中核は含まない
+> Layer: 99_Private_Core_Not_Included
+> Status: README  
+> Scope: Public interface
 
 This public repository contains only the public interface and introductory materials of **存在境界論｜Scientific Ontology**.
 

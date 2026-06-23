@@ -1,11 +1,8 @@
 # Social Boundary Notes / 社会境界系ノート
 
-> Status: Public research-note subdirectory / 公開用研究ノート小分類  
 > Layer: 05_Research_Notes / Social_Boundary_Notes  
-> Scope: social systems, institutional boundaries, responsibility distribution, trust, value, residue, Negentropy Economy  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: Conceptual model; not empirical economics, not policy proposal, not accounting standard
+> Status: README  
+> Scope: Public interface
 
 ## 1. 位置づけ
 
@@ -27,18 +24,18 @@ This is not a place for unprocessed social criticism. It is a place for slowing 
 
 ## 2. 文書
 
-- [`Negentropy_Economy_and_Meaning_Generation.md`](./Negentropy_Economy_and_Meaning_Generation.md)  
+- [`Negentropy_Economy_and_Meaning_Generation.ja.md`](./Negentropy_Economy_and_Meaning_Generation.ja.md)  
   お金を価値そのものではなく交換媒質として扱い、価値を「意味を帯びたネゲントロピー」が交換面に現れた相として整理する概念モデル。
 
-- [`Negentropy_Economy_Principles.md`](./Negentropy_Economy_Principles.md)  
+- [`Negentropy_Economy_Principles.ja.md`](./Negentropy_Economy_Principles.ja.md)  
   残渣査定のための境界経済論。現時点では日本語正本の条文草稿であり、英語通約は保留する。
 
 ### English commensurated rendering
 
-- [`Negentropy_Economy_and_Meaning_Generation.md`](./Negentropy_Economy_and_Meaning_Generation.md)  
+- [`Negentropy_Economy_and_Meaning_Generation.en.md`](./Negentropy_Economy_and_Meaning_Generation.en.md)  
   A conceptual model that treats money as an exchange medium rather than value itself, and treats value as the exchange-facing appearance of meaning-bearing negentropy.
 
-- [`Negentropy_Economy_Principles.md`](./Negentropy_Economy_Principles.md)  
+- [`Negentropy_Economy_Principles.en.md`](./Negentropy_Economy_Principles.en.md)  
   A boundary-economics principle draft for residue assessment. At this stage, it is a Japanese authoritative principle draft; English commensuration is on hold.
 
 ---

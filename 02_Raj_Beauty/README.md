@@ -1,11 +1,8 @@
 # Raj / Beauty / 激・美
 
-> Status: Public layer README
-> Layer: `02_Raj_Beauty`
-> Scope: constructive theories, boundary dynamics, HFC, History-Field Topology, communication, meaning, experience
-> Language: Japanese authoritative text / English commensurated rendering
-> Authoritative source: Japanese text
-> Claim strength: public conceptual and interpretive layer; stronger physical or cosmological reinterpretations belong to Research Notes or unpublished core work
+> Layer: 02_Raj_Beauty
+> Status: README  
+> Scope: Public interface
 
 ---
 

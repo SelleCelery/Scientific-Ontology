@@ -2,17 +2,11 @@
 
 ――宮沢賢治『春と修羅』序と履歴場トポロジー
 
-> Language: Japanese  
-> English version: [Reading the Blue Light](./reading-blue-light.en.md)  
-> Status: Literary / Ontological Note  
-> Layer: 05_Research_Notes / Literary_Ontological_Notes  
-> Scope: Miyazawa Kenji, Spring and Asura, History-Field Topology, structural reading  
-> Claim: Interpretive analogy, not literary proof or physical claim
+> Status: Research note
+> Scope: literary-ontology
+> Language: ja
+> Claim profile: S1/S2
 
-> 位置づけ：文学的・存在論的研究ノート  
-> 層：05_Research_Notes / Literary_Ontological_Notes  
-> 範囲：宮沢賢治、『春と修羅』、履歴場トポロジー、構造読解  
-> 主張範囲：解釈的アナロジーであり、文学的証明・物理主張ではない
 ## 位置づけ
 
 ### 文学研究でも物理主張でもなく、存在論的読解である

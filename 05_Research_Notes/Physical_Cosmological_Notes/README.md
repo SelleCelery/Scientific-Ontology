@@ -1,11 +1,8 @@
 # Physical / Cosmological Notes / 物理・宇宙論系ノート
 
-> Status: Public research-note subdirectory / 公開用研究ノート小分類  
 > Layer: 05_Research_Notes / Physical_Cosmological_Notes  
-> Scope: intrinsic time, Standard Model correspondence, cosmological reinterpretation, physical-phase correspondence candidates  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: S4-S5 candidates where stated; not empirical proof, not replacement for contemporary physics
+> Status: README  
+> Scope: Public interface
 
 ## 1. 位置づけ
 
@@ -27,24 +24,24 @@ Their purpose is to explore how concepts derived from AMP/ITS/HFC may be collate
 
 ## 2. 文書
 
-- [`Intrinsic_Time_Standard_Model_Correspondence.md`](./Intrinsic_Time_Standard_Model_Correspondence.md)  
+- [`Intrinsic_Time_Standard_Model_Correspondence.ja.md`](./Intrinsic_Time_Standard_Model_Correspondence.ja..md)  
   intrinsic time を最小追加仮定として、標準模型の粒子属性・相互作用・境界情報を存在論的に再読解する対応表。`Internal Time` とは表記しない。
 
-- [`Ontological_History_of_the_Universe.md`](./Ontological_History_of_the_Universe.md)  
+- [`Ontological_History_of_the_Universe.ja.md`](./Ontological_History_of_the_Universe.ja.md)  
   主客誤認、ボソン経路、履歴、論理深度を通じて宇宙史を存在論的に読み替える概念論考。
 
-- [`Cosmological_Topological_Dynamics.md`](./Cosmological_Topological_Dynamics.md)  
+- [`Cosmological_Topological_Dynamics.ja.md`](./Cosmological_Topological_Dynamics.ja.md)  
   ダークエネルギー的張力、境界、パージ、内部化を、宇宙論的トポロジー動態として読む試論。
 
 ### English commensurated rendering
 
-- [`Intrinsic_Time_Standard_Model_Correspondence.md`](./Intrinsic_Time_Standard_Model_Correspondence.md)  
+- [`Intrinsic_Time_Standard_Model_Correspondence.en.md`](./Intrinsic_Time_Standard_Model_Correspondence.en.md)  
   A correspondence table that uses intrinsic time as a minimal additional assumption for ontologically re-reading particle attributes, interactions, and boundary information in the Standard Model. Do not render this as `Internal Time`.
 
-- [`Ontological_History_of_the_Universe.md`](./Ontological_History_of_the_Universe.md)  
+- [`Ontological_History_of_the_Universe.en.md`](./Ontological_History_of_the_Universe.en.md)  
   A conceptual essay re-reading cosmic history through the subject-object fallacy, boson routing, history, and logical depth.
 
-- [`Cosmological_Topological_Dynamics.md`](./Cosmological_Topological_Dynamics.md)  
+- [`Cosmological_Topological_Dynamics.en.md`](./Cosmological_Topological_Dynamics.en.md)  
   An exploratory note reading dark-energy-like tension, boundary, purge, and internalization as cosmological topological dynamics.
 
 ---

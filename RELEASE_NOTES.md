@@ -1,4 +1,5 @@
 # Release Notes: Scientific Ontology Public Edition v3.0.0
+> Status: Release notes
 
 Release date: 2026-06-19
 

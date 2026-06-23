@@ -1,15 +1,11 @@
 # 研究ノート / Research Notes
 
-> Status: Public research-note index / 公開用研究ノート索引  
 > Layer: 05_Research_Notes  
-> Scope: research-note layer, claim-strength handling, branch map  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: Research-note layer; not empirical proof, not completed physical theory, not implementation specification  
-> Commensuration status: Section-level Japanese-first text with English commensurated renderings.
+> Status: README  
+> Scope: Public interface
 
 ---
-## 2. 配置方針
+## 1. 配置方針
 
 Research Notes に置く資料は、次のいずれかに該当する。
 

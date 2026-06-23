@@ -1,12 +1,10 @@
 # 境界認識批判
 ## 同期・照合・残差保持による知の成立条件
 
-> Status: Core public draft / 日本語正本草稿
-> Layer: `01_Sat_Truth` / Sat / Truth foundation, with Research Note branches
-> Scope: epistemology, metaphysics, boundary theory, heuristic theory, residual retention, residue formation, AI-era knowledge
-> Language: Japanese authoritative draft / 日本語正本草稿
-> Authoritative source: this Japanese text unless otherwise stated
-> Claim: foundational epistemological critique, not empirical proof, physical theory, final formal specification, or synthesis of the history of philosophy
+> Status: Draft
+> Scope: boundary-epistemology
+> Language: ja
+> Claim profile: S2/S3
 
 本稿は、知の成立条件を、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持・再照合可能性から再定義するための基幹命題列である。
 

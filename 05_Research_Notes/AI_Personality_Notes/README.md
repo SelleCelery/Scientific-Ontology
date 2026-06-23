@@ -1,11 +1,8 @@
 # AI Personality Notes / AI人格研究ノート
 
-> Status: Public research-note subdirectory / 公開用研究ノート小分類  
-> Layer: 05_Research_Notes / AI_Personality_Notes  
-> Scope: AI personality, response attractors, return stability, qualia history, logical sandbox models  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: Conceptual and speculative; not empirical proof, not implementation specification, not proof of AI consciousness
+> Layer: 05_Research_Notes / AI_Personality_Notes
+> Status: README  
+> Scope: Public interface
 
 ## 1. 位置づけ
 

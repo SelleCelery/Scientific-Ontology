@@ -1,4 +1,6 @@
 # Glossary / 用語集
+> Status: Glossary
+> Scope: terminology
 
 ## AMP
 

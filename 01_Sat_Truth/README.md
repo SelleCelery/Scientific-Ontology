@@ -1,11 +1,10 @@
 # Sat / Truth / 純・真
 
-> Status: Public layer README
-> Layer: `01_Sat_Truth` / Sat / Truth foundation
-> Scope: metaphysical foundations, public axioms, meaning generation, boundary epistemology
-> Language: English / Japanese
-> Authoritative source: Japanese descriptions unless otherwise stated
-> Claim: public conceptual foundation, not empirical proof, physical theory, implementation specification, or private AMP Core
+> Layer: 01_Sat_Truth
+> Status: README  
+> Scope: Public interface
+
+---
 
 This layer contains the public-facing metaphysical and axiomatic foundations of **存在境界論｜Scientific Ontology**.
 

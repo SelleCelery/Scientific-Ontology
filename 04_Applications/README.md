@@ -1,11 +1,8 @@
 # Applications / 応用
 
-> Status: Public layer index  
-> Layer: `04_Applications` / public application layer  
-> Scope: public applications of Scientific Ontology to software, AI, meaning generation, interfaces, and practical systems  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: public conceptual interface, not private runtime design or implementation specification
+> Layer: 04_Applications
+> Status: README  
+> Scope: Public interface
 
 ---
 

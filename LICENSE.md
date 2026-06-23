@@ -1,4 +1,5 @@
 # License
+> Status: License
 
 Unless otherwise stated, the contents of this repository are licensed under the Creative Commons Attribution 4.0 International License.
 

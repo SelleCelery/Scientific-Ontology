@@ -1,15 +1,12 @@
 # 研究ノート統合索引 / Research Notes Index
 
-> Status: Public index / 公開用索引  
-> Layer: 05_Research_Notes  
-> Scope: research-note mapping, claim strength, connected layer, non-claim boundary  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: Index only; not a theory expansion  
-> Commensuration status: Japanese authoritative table followed by English commensurated table.
+> Status: Index
+> Scope: research-notes
+> Language: ja+en
 
 ---
-## 2. 文書索引
+
+## 1. 文書索引
 
 | File | 領域 | 主要概念 | 接続層 | 主張強度 | 非主張境界 |
 |---|---|---|---|---|---|
@@ -24,7 +21,20 @@
 | [`Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md`](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md) | 社会境界 / 価値論 | ネゲントロピー経済、意味生成、貨幣、価値、交換媒質 | 03 / 05 | 概念モデル | 経験的経済理論ではない。政策提案ではない。代替通貨制度ではない |
 | [`Social_Boundary_Notes/Negentropy_Economy_Principles.md`](./Social_Boundary_Notes/Negentropy_Economy_Principles.md) | 社会境界 / 条文草案 | 残渣査定、価値、価格、所有、交換、照合、偽閉鎖 | 03 / 05 | Japanese authoritative draft / commensuration pending | 法令、会計基準、政策案ではない。英語通約は保留 |
 
-### English commensurated rendering
+
+## 2. 管理メモ
+
+- `intrinsic time` は `Internal Time` と訳さない。
+- ITS は `Information-Time Soliton Unified Theory` であり、`Intrinsic Time System` ではない。
+- `Negentropy_Economy_Principles.md` は、英語通約を保留してよい。公開する場合は、状態表示を明示する。
+- 物理・宇宙論系ノートは、標準科学の代替ではなく、Research Notes上の対応候補として扱う。
+- AI人格系ノートは、AI意識や人間的主体性の証明として扱わない。
+
+---
+
+## English commensurated rendering
+
+## 1. Document Index
 
 | File | Domain | Main concepts | Connected layer | Claim strength | Non-claim boundary |
 |---|---|---|---|---|---|
@@ -41,15 +51,8 @@
 
 ---
 
-## 3. 管理メモ
 
-- `intrinsic time` は `Internal Time` と訳さない。
-- ITS は `Information-Time Soliton Unified Theory` であり、`Intrinsic Time System` ではない。
-- `Negentropy_Economy_Principles.md` は、英語通約を保留してよい。公開する場合は、状態表示を明示する。
-- 物理・宇宙論系ノートは、標準科学の代替ではなく、Research Notes上の対応候補として扱う。
-- AI人格系ノートは、AI意識や人間的主体性の証明として扱わない。
-
-### English commensurated rendering
+## 2. Management Notes
 
 - `内在時間` should be rendered as `intrinsic time`, not `Internal Time`.
 - ITS means `Information-Time Soliton Unified Theory`, not `Intrinsic Time System`.

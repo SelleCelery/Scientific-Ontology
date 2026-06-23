@@ -1,12 +1,8 @@
 # Visual Materials / 視覚資料
 
-> Status: Public companion materials / 公開用補助資料  
-> Layer: 06_Visual_Materials  
-> Scope: conceptual posters, visual system maps, research companion figures  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: Conceptual orientation aid; not empirical data, not formal proof, not physical cosmology model, not financial model, not policy proposal, not AI system specification
-
+> Layer: 06_Visual_Materials
+> Status: README  
+> Scope: Public interface
 ## 1. この層の位置づけ
 
 本フォルダには、**存在境界論｜Scientific Ontology** の概念ポスターおよび視覚的補助図を収録する。

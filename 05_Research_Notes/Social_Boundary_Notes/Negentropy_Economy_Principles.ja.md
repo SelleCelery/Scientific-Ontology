@@ -1,13 +1,9 @@
-# ネゲントロピー経済原則 / Negentropy Economy Principles
+# ネゲントロピー経済原則
 
-> Status: Japanese authoritative draft / 日本語正本草稿  
-> Layer: 05_Research_Notes / Social_Boundary_Notes  
-> Scope: value, price, ownership, exchange, collation, false closure, residue assessment  
-> Language: Japanese authoritative text only; English commensurated rendering pending  
-> Authoritative source: Japanese text  
-> Claim strength: Principle-style conceptual draft; not law, not accounting standard, not policy proposal  
-> Commensuration status: English commensuration pending / 英語通約保留  
-> Note: English commensuration is pending because this article-like draft may be misread as legal, accounting, economic, or policy doctrine before the frame is stabilized. / 法・会計・経済政策上の規範として誤読される危険があるため、ネゲントロピー経済フレームが安定するまで英語通約は保留する。
+> Status: Draft
+> Scope: negentropy-economy
+> Language: ja
+> Claim profile: U/E -> S
 
 ---
 

@@ -1,13 +1,10 @@
 # 境界認識批判 注解
 ## 球世界・内面運動・論理-深度軸による地形図
 
-> Status: Annotation draft / 日本語注解草稿
-> Layer: `01_Sat_Truth` / Sat / Truth companion annotation
-> Relation: `Boundary_Epistemological_Critique.ja.md` および `Boundary_Epistemological_Critique.en.md` の別ファイル注解
-> Scope: philosophical problem-fields, terrain map, residuals, residues, re-collation, logical-depth axis
-> Language: Japanese authoritative draft / 日本語正本草稿
-> Authoritative source: this Japanese text unless otherwise stated
-> Claim: annotation and terrain map, not authority claim, philosophical history, empirical proof, or physical theory
+> Status: Annotation
+> Scope: boundary-epistemology
+> Language: ja
+> Claim profile: S2/S3
 
 本注解は、本文命題列を哲学者名で権威づけるためのものではない。境界認識批判が扱う運動、すなわち感性・悟性・理性・同期・照合・残差保持・残渣化・再照合・論理-深度軸を、既存思想の問題圏と照合するための地形図である。
 

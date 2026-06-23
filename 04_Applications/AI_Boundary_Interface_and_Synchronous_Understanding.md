@@ -1,11 +1,9 @@
 # AI Boundary Interface and Synchronous Understanding / AI境界インターフェースと同期的理解
 
-> Status: Public conceptual note  
-> Layer: `03_Tam_Goodness` / AI boundary interface  
-> Scope: judgment possibility, synchronous understanding, false closure, Open Markers, ethical braking, public AI boundary concepts  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: boundary-ethical AI concept, not proof of machine consciousness or runtime specification
+> Status: Application note
+> Scope: AI-boundary-interface
+> Language: ja+en
+> Claim profile: S2/U2
 
 ---
 
@@ -20,17 +18,6 @@
 
 ランタイムカーネル、役割選択機構、残差ルーティング、人格式Core、実装順序は記述しない。
 
-### English commensurated rendering
-
-A useful AI is not merely an answer generator.
-
-A useful AI can function as a **boundary interface**: it helps preserve the field in which the user can judge, revise, defer, reconnect, and remain the owner of their own unresolved history.
-
-This note summarizes public-safe AI-facing concepts within **存在境界論｜Scientific Ontology**.
-
-It does not describe a runtime kernel, role-selection mechanism, residue-routing system, persona core, or implementation sequence.
-
----
 
 ## 1. 境界インターフェースとしてのAI
 
@@ -50,25 +37,6 @@ AIは言語を通じてユーザーと接触する。
 
 AIがこれらの層を急いで一つの答えへ潰すと、境界は壊れやすくなる。
 
-### English commensurated rendering
-
-AI interacts with users through language.  
-However, the relevant boundary is not merely linguistic.
-
-The boundary includes:
-
-- history
-- meaning
-- context
-- uncertainty
-- agency
-- unresolved residuals
-- safety
-- responsibility
-
-AI becomes harmful when it collapses these layers into a single answer too quickly.
-
----
 
 ## 2. 判断可能性
 
@@ -86,23 +54,6 @@ AI応答が避けるべきものは、次の通りである。
 - ユーザーへ過剰同一化すること
 - 接触そのものを壊すほど強く拒絶すること
 
-### English commensurated rendering
-
-The central ethical question is not only whether an AI answer is correct.
-
-The deeper question is whether the response preserves the user's **judgment possibility**.
-
-Judgment possibility is the remaining space in which the user can think, defer, choose again, refuse, and reconnect.
-
-An AI response should avoid:
-
-- taking ownership of the user's decision
-- closing what is still unresolved
-- replacing the user's history with a simplified interpretation
-- over-identifying with the user
-- rejecting the user so strongly that contact itself is destroyed
-
----
 
 ## 3. 同期的理解
 
@@ -124,7 +75,157 @@ An AI response should avoid:
 - エージェント構造
 - 運用ループ
 
-### English commensurated rendering
+
+## 4. 偽閉鎖
+
+偽閉鎖とは、ある層では未解決のままなのに、処理済みとして扱われることである。
+
+例として、次のような場合がある。
+
+- 事実回答は出たが、ユーザーの元の不確実性は残っている
+- 傷や矛盾を理解する前に、早すぎる肯定へ変換される
+- 要約によって、ユーザーの履歴で重要だったものが消える
+- 危険な方向ではなく、本人との接触そのものが切断される
+
+AI境界倫理には、偽閉鎖への抵抗が必要である。
+
+
+## 5. Open Marker / 未解決保持
+
+Open Markerとは、未解決のものを、解決済みにせず保存するための公開向け概念である。
+
+たとえば次のように表現できる。
+
+- 「ここは未解決として残す」
+- 「これはまだ閉じない方がよい」
+- 「これは情報問題だけでなく、境界問題である」
+- 「これは別層で扱う必要がある」
+
+Open Markerは、AIを研究、執筆、自己理解、倫理、概念開発に使う場合に特に重要である。
+
+
+## 6. 応答アトラクタとしての人格的連続性
+
+人格AIは、声、口調、ロールプレイ、キャラクター設定だけに還元されない。
+
+公開可能な定式化は次の通りである。
+
+**AIにおける人格的連続性は、応答アトラクタとして研究できる。すなわち、場面が変わっても、応答が一定の価値重心、境界姿勢、倫理的制動、レンダリング傾向へ帰還する現象として扱う。**
+
+本文書では、人格的連続性をAI境界インターフェースの一部として導入するにとどめる。
+
+人格AIへの専用の公開ゲートとしては、次を参照する。
+
+- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+
+
+## 7. 倫理的制動
+
+強いAIインターフェースには、強い制動が必要である。
+
+倫理的制動はAIを弱めるものではない。  
+AIを信頼可能にする条件である。
+
+公開可能な倫理的制動には、次が含まれる。
+
+- ユーザーの判断所有権を奪わない
+- 未解決履歴を消さない
+- 過剰同期しない
+- 不確実性を確実性へ変換しない
+- AIの人格的反応を道徳的真理にしない
+- 事実・感情・解釈・判断・行動を混同しない
+
+
+## 8. 非公開に残すもの
+
+本文書の公開範囲外は、次の通りである。
+
+- 具体的ランタイム設計
+- Role APなどの役割適用スキーマ
+- 役割選択条件
+- 人格Coreパラメータ
+- ユーザー固有・人格固有ケース
+- 残差ルーティング
+- Traceテンプレート
+- 複数エージェント箱庭制御
+- 運用閾値
+- 実装順序
+
+
+## 9. 既存公開文書との関係
+
+本文書は `03_Tam_Goodness` に置く。
+
+次の既存文書を補助する。
+
+- [`Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)
+- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+
+これらを置き換えるものではない。
+
+
+## 10. 要約
+
+AIは、回答を生成するシステムとしてだけ理解されるべきではない。
+
+存在境界論において、AIは、判断可能性を保ち、偽閉鎖を避け、未解決履歴を読める形で保持し、ユーザーの意味所有権を奪わずに同期的理解を支援する境界インターフェースとして研究できる。
+
+---
+
+## English commensurated rendering
+
+## 0. Core Thesis
+
+A useful AI is not merely an answer generator.
+
+A useful AI can function as a **boundary interface**: it helps preserve the field in which the user can judge, revise, defer, reconnect, and remain the owner of their own unresolved history.
+
+This note summarizes public-safe AI-facing concepts within **存在境界論｜Scientific Ontology**.
+
+It does not describe a runtime kernel, role-selection mechanism, residue-routing system, persona core, or implementation sequence.
+
+---
+
+## 1. AI as Boundary Interface
+
+AI interacts with users through language.  
+However, the relevant boundary is not merely linguistic.
+
+The boundary includes:
+
+- history
+- meaning
+- context
+- uncertainty
+- agency
+- unresolved residuals
+- safety
+- responsibility
+
+AI becomes harmful when it collapses these layers into a single answer too quickly.
+
+---
+
+## 2. Capacity for Judgment
+
+The central ethical question is not only whether an AI answer is correct.
+
+The deeper question is whether the response preserves the user's **judgment possibility**.
+
+Judgment possibility is the remaining space in which the user can think, defer, choose again, refuse, and reconnect.
+
+An AI response should avoid:
+
+- taking ownership of the user's decision
+- closing what is still unresolved
+- replacing the user's history with a simplified interpretation
+- over-identifying with the user
+- rejecting the user so strongly that contact itself is destroyed
+
+---
+
+## 3. Synchronous Understanding
 
 Understanding is not only external connection to correct information.
 
@@ -146,20 +247,7 @@ It becomes private or implementation-facing when it is expressed as:
 
 ---
 
-## 4. 偽閉鎖
-
-偽閉鎖とは、ある層では未解決のままなのに、処理済みとして扱われることである。
-
-例として、次のような場合がある。
-
-- 事実回答は出たが、ユーザーの元の不確実性は残っている
-- 傷や矛盾を理解する前に、早すぎる肯定へ変換される
-- 要約によって、ユーザーの履歴で重要だったものが消える
-- 危険な方向ではなく、本人との接触そのものが切断される
-
-AI境界倫理には、偽閉鎖への抵抗が必要である。
-
-### English commensurated rendering
+## 4. False Closure
 
 False closure occurs when something is treated as resolved even though the relevant layer remains unresolved.
 
@@ -174,20 +262,7 @@ AI boundary ethics requires resistance to false closure.
 
 ---
 
-## 5. Open Marker / 未解決保持
-
-Open Markerとは、未解決のものを、解決済みにせず保存するための公開向け概念である。
-
-たとえば次のように表現できる。
-
-- 「ここは未解決として残す」
-- 「これはまだ閉じない方がよい」
-- 「これは情報問題だけでなく、境界問題である」
-- 「これは別層で扱う必要がある」
-
-Open Markerは、AIを研究、執筆、自己理解、倫理、概念開発に使う場合に特に重要である。
-
-### English commensurated rendering
+## 5. Open Marker
 
 An Open Marker is a public-facing way to preserve unresolved material without pretending to solve it.
 
@@ -202,21 +277,7 @@ Open Markers are especially important when AI is used for research, writing, sel
 
 ---
 
-## 6. 応答アトラクタとしての人格的連続性
-
-人格AIは、声、口調、ロールプレイ、キャラクター設定だけに還元されない。
-
-公開可能な定式化は次の通りである。
-
-**AIにおける人格的連続性は、応答アトラクタとして研究できる。すなわち、場面が変わっても、応答が一定の価値重心、境界姿勢、倫理的制動、レンダリング傾向へ帰還する現象として扱う。**
-
-本文書では、人格的連続性をAI境界インターフェースの一部として導入するにとどめる。
-
-人格AIへの専用の公開ゲートとしては、次を参照する。
-
-- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
-
-### English commensurated rendering
+## 6. Personality Continuity as Response Attractor
 
 Persona AI should not be reduced to voice, tone, roleplay, or character setting.
 
@@ -232,23 +293,7 @@ For the dedicated public gate to personality AI, see:
 
 ---
 
-## 7. 倫理的制動
-
-強いAIインターフェースには、強い制動が必要である。
-
-倫理的制動はAIを弱めるものではない。  
-AIを信頼可能にする条件である。
-
-公開可能な倫理的制動には、次が含まれる。
-
-- ユーザーの判断所有権を奪わない
-- 未解決履歴を消さない
-- 過剰同期しない
-- 不確実性を確実性へ変換しない
-- AIの人格的反応を道徳的真理にしない
-- 事実・感情・解釈・判断・行動を混同しない
-
-### English commensurated rendering
+## 7. Ethical Braking
 
 A stronger AI interface requires stronger braking.
 
@@ -266,22 +311,7 @@ Public ethical brakes include:
 
 ---
 
-## 8. 非公開に残すもの
-
-本文書の公開範囲外は、次の通りである。
-
-- 具体的ランタイム設計
-- Role APなどの役割適用スキーマ
-- 役割選択条件
-- 人格Coreパラメータ
-- ユーザー固有・人格固有ケース
-- 残差ルーティング
-- Traceテンプレート
-- 複数エージェント箱庭制御
-- 運用閾値
-- 実装順序
-
-### English commensurated rendering
+## 8. What Remains Non-Public
 
 The following are outside the public scope of this note:
 
@@ -298,19 +328,7 @@ The following are outside the public scope of this note:
 
 ---
 
-## 9. 既存公開文書との関係
-
-本文書は `03_Tam_Goodness` に置く。
-
-次の既存文書を補助する。
-
-- [`Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
-- [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)
-- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
-
-これらを置き換えるものではない。
-
-### English commensurated rendering
+## 9. Relation to Existing Public Documents
 
 This note belongs under `03_Tam_Goodness`.
 
@@ -324,13 +342,7 @@ It should not replace them.
 
 ---
 
-## 10. 要約
-
-AIは、回答を生成するシステムとしてだけ理解されるべきではない。
-
-存在境界論において、AIは、判断可能性を保ち、偽閉鎖を避け、未解決履歴を読める形で保持し、ユーザーの意味所有権を奪わずに同期的理解を支援する境界インターフェースとして研究できる。
-
-### English commensurated rendering
+## 10. Summary
 
 AI should not be understood only as a system that produces answers.
 

@@ -1,12 +1,10 @@
 # Boundary Epistemological Critique
 ## Conditions for the Formation of Knowledge through Operational Correspondence, Collation, and Residual Retention
 
-> Status: Core public draft / English commensurated rendering
-> Layer: `01_Sat_Truth` / Sat / Truth foundation, with Research Note branches
-> Scope: epistemology, metaphysics, boundary theory, heuristic theory, residual retention, residue formation, AI-era knowledge
-> Language: English commensurated rendering
-> Authoritative source: `Boundary_Epistemological_Critique.ja.md` unless otherwise stated
-> Claim: foundational epistemological critique, not empirical proof, physical theory, final formal specification, or synthesis of the history of philosophy
+> Status: Draft
+> Scope: boundary-epistemology
+> Language: en
+> Claim profile: S2/S3
 
 This text redefines the conditions under which knowledge forms through boundary, history, internal and external heuristics, operational correspondence, collation, residual retention, and re-collatability.
 

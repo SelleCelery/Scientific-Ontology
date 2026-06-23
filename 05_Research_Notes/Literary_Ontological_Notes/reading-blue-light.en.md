@@ -1,13 +1,11 @@
 # Reading the Blue Light
 
-## Miyazawa Kenji’s _Spring and Asura_ and History-Field Topology
+Miyazawa Kenji’s _Spring and Asura_ and History-Field Topology
 
-> Language: English  
-> Japanese original: [青い照明を読む](./reading-blue-light.ja.md)  
-> Status: Literary / Ontological Note  
-> Layer: 05_Research_Notes / Literary_Ontological_Notes  
-> Scope: Miyazawa Kenji, _Spring and Asura_, History-Field Topology, structural reading  
-> Claim: Interpretive analogy, not literary proof or physical claim
+> Status: Research note
+> Scope: literary-ontology
+> Language: en
+> Claim profile: S1/S2
 
 ## Positioning
 

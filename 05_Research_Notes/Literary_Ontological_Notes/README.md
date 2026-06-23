@@ -1,11 +1,8 @@
 # Literary / Ontological Notes / 文学的・存在論的ノート
 
-> Status: Public research-note subdirectory / 公開用研究ノート小分類  
-> Layer: 05_Research_Notes / Literary_Ontological_Notes  
-> Scope: literary texts, poetic language, religious vocabulary, creative materials, structural reading  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text where Japanese original exists  
-> Claim strength: Interpretive analogy; not literary proof, not physical claim
+> Layer: 05_Research_Notes / Literary_Ontological_Notes
+> Status: README  
+> Scope: Public interface
 
 ## 1. 位置づけ
 

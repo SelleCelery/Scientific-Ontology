@@ -1,35 +1,12 @@
 # Scientific Ontology Conceptual Poster Note / 概念ポスター読解注記
 
-> Status: Public companion note / 公開用補助注記  
-> Layer: 06_Visual_Materials  
-> Scope: conceptual poster explanation, visual interpretation, claim boundary  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: Conceptual orientation aid; not empirical data, not formal proof, not physical cosmology model, not financial model, not policy proposal, not AI system specification  
-> Related files:
+> Status: Visual note
+> Scope: conceptual-poster
+> Language: ja+en
+> Claim profile: S1
 
-- [`Scientific_Ontology_Conceptual_Poster.ja.png`](./Scientific_Ontology_Conceptual_Poster.ja.png)
-- [`Scientific_Ontology_Conceptual_Poster.en.png`](./Scientific_Ontology_Conceptual_Poster.en.png)   
 
----
-
-## A. What this file is / このファイルは何か
-
-This note explains how to read the **Scientific Ontology Conceptual Poster**.
-
-The poster is a visual companion figure for Scientific Ontology (SO). It is not a replacement for the written theory. It is a conceptual map for orientation.
-
-The poster contains several layers:
-
-- the central sphere model    
-- operational correspondence and collation    
-- residuals and residues    
-- logical-depth axis    
-- language games and paradigm translation    
-- finance and residue as an application panel    
-
-This poster is not an empirical data figure, formal proof, physical cosmology model, financial model, policy proposal, AI system specification, legal standard, or accounting standard.
-
+## A. このファイルは何か
 本注記は、**Scientific Ontology Conceptual Poster** の読み方を説明するための補助文書である。
 
 このポスターは、Scientific Ontology (SO) の視覚的補助図であり、本文理論の代替ではない。読者が理論構造へ入るための概念地図である。
@@ -45,25 +22,16 @@ This poster is not an empirical data figure, formal proof, physical cosmology mo
 
 これは、実証的データ図、形式的証明、物理宇宙論モデル、金融モデル、政策提案、AIシステム仕様、法令、会計基準ではない。
 
-### Reading setup / 読解の準備
-
-This note is intended to be read while viewing the conceptual poster.
-
-For best results, open one of the poster images in another browser tab or window, and read this note alongside it.
-
-Recommended viewing files:
+### 読解の準備
 
 - [Japanese poster / 日本語版ポスター](./Scientific_Ontology_Conceptual_Poster.ja.png)
 - [English poster / 英語版ポスター](./Scientific_Ontology_Conceptual_Poster.en.png)
-
-This note does not repeat every visual element in the poster.  
-It explains how to read the main structure, avoid major misreadings, and follow the reading paths from the central model to the surrounding panels.
 
 本注記は、概念ポスターを見ながら読むことを想定している。
 
 ポスター画像を別のブラウザタブまたは別ウィンドウで開き、本注記と並べて読むことを推奨する。
 
-推奨表示ファイル：
+参照推薦ファイル：
 
 - [Japanese poster / 日本語版ポスター](./Scientific_Ontology_Conceptual_Poster.ja.png)
 - [English poster / 英語版ポスター](./Scientific_Ontology_Conceptual_Poster.en.png)
@@ -71,29 +39,7 @@ It explains how to read the main structure, avoid major misreadings, and follow 
 本注記は、ポスター内のすべての視覚要素を逐語的に説明するものではない。  
 中心構造の読み方、主要な誤読の回避、中心モデルから周辺パネルへ進む読解導線を説明する。
 
----
-
-## B. Minimal reading to prevent misreadings / まず誤読を防ぐための最小読解
-
-This poster can be read in several layers.
-
-First reading:  
-Read it as a conceptual map of operational correspondence, collation, residuals, and residues.
-
-Second reading:  
-Read the central sphere not as the universe itself, but as a structure from which an observed world is cut out.
-
-Third reading:  
-Read the vertical direction as the logical-depth axis, and the horizontal section as the plane on which space, time, objects, and external worldhood appear for a given observer.
-
-Fourth reading:  
-Read the equator as a Big-Bang boundary where another mode of world-cutting may begin.
-
-Fifth reading:  
-Read finance and residue as an application panel showing how a synchronized system can still leave uncollated burdens outside its own closure.
-
-This is a Flatland-like reading problem: the diagram is drawn in a spatial form, but it asks the reader to treat space itself as one possible section of a deeper structure.
-
+## B. まず誤読を防ぐための最小読解
 このポスターは、複数の層で読むことができる。
 
 第一読解：  
@@ -113,29 +59,8 @@ This is a Flatland-like reading problem: the diagram is drawn in a spatial form,
 
 これは Flatland 的な読解問題である。図は空間的な形で描かれているが、読者には、空間そのものをより深い構造の一断面として読むことが求められる。
 
----
-
-## C. Central model of the diagram / 図の中心モデル
-
-### C.1 Central sphere / 中心球体
-
-The central sphere in this poster is not the universe as physical space.
-
-It is not a literal astronomical sphere, planet, cosmos, or container of outer space.
-
-The sphere represents a pre-spatial and pre-objective structure in which a world becomes cut out through observation, boundary operation, history, sensibility, understanding, and logical depth.
-
-In this model, what appears as a “universe” is not the whole sphere itself. A universe appears as a horizontal section cut through the sphere.
-
-More precisely, the external world of a given observer is cut out as a horizontal plane or band parallel to the equator.
-
-The vertical direction of the sphere should be read as the logical-depth axis.
-
-The horizontal direction should be read as the distributional plane on which space, time, objects, relations, and external worldhood appear for a given observer.
-
-Therefore, the poster does not say that the universe is a sphere in physical space.
-
-It says that an observed world is sliced out from a deeper history-field structure by the combination of sensibility, understanding, and reason.
+## C. 図の中心モデル
+### 中心球体
 
 中心球体は、物理空間としての宇宙そのものではない。
 
@@ -155,39 +80,7 @@ It says that an observed world is sliced out from a deeper history-field structu
 
 このポスターが示しているのは、観測された世界が、感性、悟性、理性の組み合わせによって、より深い履歴場構造から切り出されるということである。
 
-### C.2 Equator, poles, and other world-cuttings / 赤道・極点・別の世界切断
-
-The equator is not merely the middle line of a sphere.
-
-The equator is a Big-Bang boundary: a line or band of undifferentiated possibility from which a world-cutting can emerge.
-
-For an observer located in one observational hemisphere, the equator is the limit at which the current mode of world-cutting reaches an undifferentiated threshold.
-
-Crossing the equator does not mean moving to another place inside the same space.
-
-It means crossing the death-line of the current world-cutting and entering a different possible distribution of worldhood.
-
-Beyond the equator, there may be another world: another way in which space, time, force, objecthood, and meaning are cut out.
-
-In this sense, space and time are not treated as absolute containers.
-
-They are modes of distribution that appear within a given horizontal world-section.
-
-If the observer crosses the equatorial boundary into another hemisphere, the horizontal direction may no longer correspond to the same space-time distribution. Another force-system and another entropy distribution may be operating there.
-
-The poles are not simple moral opposites such as light and darkness.
-
-A pole is a compression point where the external object is lost and everything is internalized as observer-logic.
-
-At the pole, there is no external object left to be observed. Everything has been folded into the internal logic of the observer.
-
-For this reason, an observer at the pole may appear omniscient within that observational field.
-
-However, this is not omniscience with an outside.
-
-It is omniscience without externality.
-
-If an omniscient observer still has an outside, that outside is not inside the same pole. It is the equatorial boundary of another universe.
+### 赤道・極点・別の世界切断
 
 赤道は、単なる球体の中央線ではない。
 
@@ -221,43 +114,7 @@ If an omniscient observer still has an outside, that outside is not inside the s
 
 もし全知でありながら外部があるならば、その外部は同じ極の内部にはない。それは別宇宙の赤道境界である。
 
-### C.3 Observer, sensibility, understanding, and reason / 観測者・感性・悟性・理性
-
-The observer is not fixed at a single point.
-
-The observer has degrees of freedom in both the vertical and horizontal directions.
-
-Horizontally, the observer participates in a distribution of space, time, objects, social relations, language games, and external worldhood.
-
-Vertically, the observer moves along the logical-depth axis, where unresolved questions, contradictions, residuals, residues, branches, and semantic pressure are held or reconstructed.
-
-Observation is not determined by external input alone.
-
-Observation is determined by the combination of sensibility and understanding formed through internal history.
-
-Sensibility determines what can appear as signal, discomfort, difference, or residual.
-
-Understanding determines how what appears is classified as object, relation, cause, responsibility, value, or meaning.
-
-Reason relates to how these observations are closed.
-
-Reason may follow inertia and fix observation into a stable interpretation.
-
-Reason may also exceed inertia and update the mode of sensibility and understanding itself.
-
-In this sense, reason is not only a faculty of conclusion. It is also a force that governs how history is handled.
-
-More precisely, reason governs how the observer closes, preserves, reopens, or reconfigures residuals.
-
-Reason itself is also inertia.
-
-It closes because stability is necessary.
-
-The desire to close what has not yet been closed is a form of external order, or beast-like force.
-
-When this desire merely forces closure, it becomes false closure.
-
-When the mode of closure itself is examined, revised, and made responsible to residuals, it becomes a movement toward internal order, or counter-beastliness.
+### 観測者・感性・悟性・理性
 
 観測者は、単一点に固定されているわけではない。
 
@@ -295,40 +152,7 @@ When the mode of closure itself is examined, revised, and made responsible to re
 
 しかし、閉じ方そのものを探求し、修正し、残差に対して責任を持つならば、それは内部秩序へ向かう運動、すなわち反獣性となる。
 
-### C.4 Reading openness / 読解の開放性
-
-The central model should not be read as a single fixed doctrine.
-
-It is a conceptual device for shifting the reader’s viewpoint.
-
-The purpose of the sphere model is not to impose one final interpretation of the universe, cognition, or meaning.
-
-Its purpose is to make visible that any observed world is cut out from a deeper structure through the observer’s history, sensibility, understanding, reason, and residual handling.
-
-Therefore, different readers may enter the poster from different layers:
-
-- cosmological motifs
-- epistemological structure
-- heuristic operation
-- language games
-- logical-depth axis
-- residue assessment
-- finance and institutional closure
-- application to AI or computation
-
-These readings do not need to be reduced to one single interpretation.
-
-However, the following claim boundary should be preserved:
-
-The sphere is not physical space itself.  
-The observed world is a section cut from a deeper structure.  
-The vertical direction indicates logical depth.  
-The horizontal section indicates a world-distribution for a given observer.  
-The equator indicates a threshold where another mode of world-cutting may begin.
-
-In this sense, the poster is not a closed explanation.
-
-It is a map for re-collation.
+### 読解の開放性
 
 中心モデルは、単一の固定教義として読まれるべきではない。
 
@@ -363,17 +187,7 @@ It is a map for re-collation.
 
 これは、再照合のための地図である。
 
----
-
-## D. Panel guide and reading paths / パネル位置と読解導線
-
-The peripheral panels are not secondary decorations.
-
-They provide different entry points into the central model. Each panel highlights one way in which a world is cut out, synchronized, collated, stabilized, or left with residuals.
-
-The purpose of this section is not to fully explain every panel.  
-It gives reading paths and points readers toward related documents.
-
+## D. パネル位置と読解導線
 周辺パネルは単なる装飾ではない。
 
 それらは中心モデルへの複数の入口である。各パネルは、世界がどのように切り出され、同期され、照合され、安定化され、また残差を残すのかを、異なる側面から示している。
@@ -381,26 +195,10 @@ It gives reading paths and points readers toward related documents.
 本節の目的は、各パネルを完全に説明することではない。  
 読解導線を示し、関連文書へ接続することである。
 
-The following guide refers to the approximate locations of the poster panels.
-The labels such as “upper-right,” “lower-left,” and “central vertical axis” indicate where to look on the poster while reading this note.
-
 以下の読解導線では、ポスター上のおおよその位置を示す。  
 「右上パネル」「左下パネル」「中央縦軸」などの表記は、本注記を読みながらポスター上のどこを見るべきかを示すためのものである。
 
----
-
-### D.1 Upper-right panel / 右上パネル — Operational correspondence and collation / 同期と照合
-
-This panel provides an entry point into the core epistemological vocabulary of SO.
-
-Operational correspondence refers to synchronization in the SO sense: a stable operational relation between internal heuristics and external structures.
-
-Collation refers to reading what agreement, disagreement, residuals, and residues mean.
-
-Related reading:
-
-- [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
-- [`GLOSSARY.md`](../GLOSSARY.md)
+### 右上パネル — 同期と照合
 
 このパネルは、SOの認識論的な基本語彙への入口である。
 
@@ -413,24 +211,7 @@ Related reading:
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
----
-
-### D.2 Central vertical axis / 中央縦軸 — Residuals, residues, and the logical-depth axis / 残差・残渣・論理-深度軸
-
-This panel provides an entry point into residual retention and the logical-depth axis.
-
-A residual is not merely an error or noise. It is a difference that may still be re-collatable.
-
-A residue is what remains sedimented after something has been treated as processed, settled, accounted for, or resolved.
-
-The logical-depth axis indicates the direction in which unresolved questions, contradictions, branches, residuals, residues, and semantic pressure can be held and reconstructed.
-
-Related reading:
-
-- [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
-- [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md)
-- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)
-- [`GLOSSARY.md`](../GLOSSARY.md)
+### 中央縦軸 — 残差・残渣・論理-深度軸
 
 このパネルは、残差保持と論理-深度軸への入口である。
 
@@ -447,23 +228,8 @@ Related reading:
 - [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
----
 
-### D.3 Lower-left panel / 左下パネル — Language games and paradigm bridge / 言語ゲームとパラダイム・ブリッジ
-
-This panel provides an entry point into language games, commensuration, and translation between different frameworks.
-
-The poster does not assume that all worlds share one universal language.
-
-Different communities, paradigms, and history-fields may operate with different rules of collation.
-
-A paradigm bridge does not erase differences. It creates a comparable interface while preserving residuals.
-
-Related reading:
-
-- [`00_Overview/Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md)
-- [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
-- [`GLOSSARY.md`](../GLOSSARY.md)
+### 左下パネル — 言語ゲームとパラダイム・ブリッジ
 
 このパネルは、言語ゲーム、通約、異なる枠組み間の翻訳への入口である。
 
@@ -479,21 +245,8 @@ Related reading:
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
----
 
-### D.4 Upper-left panel / 左上パネル — Formation and cosmological motifs / 形成・宇宙論的モチーフ
-
-This panel uses cosmological motifs to show formation, stabilization, differentiation, and residual emergence.
-
-These motifs should not be read as a direct physical cosmology model.
-
-They function as conceptual analogies for asking how a field becomes stabilized, how forces or rules become differentiated, and how residuals appear during stabilization.
-
-Related reading:
-
-- [`00_Overview/Scientific_Ontology_System_Map.md`](../00_Overview/Scientific_Ontology_System_Map.md)
-- [`05_Research_Notes/Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md)
-- [`GLOSSARY.md`](../GLOSSARY.md)
+### 左上パネル — 形成・宇宙論的モチーフ
 
 このパネルは、形成、安定化、分化、残差発生を示すために宇宙論的モチーフを用いている。
 
@@ -507,28 +260,7 @@ Related reading:
 - [`05_Research_Notes/Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
----
-
-### D.5 Lower-right panel / 右下パネル — Finance and residue / 金融と残渣
-
-The finance section is an application panel, not the central definition of SO.
-
-It shows how a highly synchronized system can appear settled within its own operational frame while leaving residues outside that frame.
-
-Finance, accounting, and transactions may make something appear closed, settled, liquid, or accounted for.
-
-However, what is settled in a financial or accounting frame may remain unsettled in bodies, institutions, ecosystems, communities, future generations, or unrecognized abilities.
-
-This panel does not claim universal validity as a complete theory of finance.
-
-It presents one judgment-path: a problem that appears flat, economic, or transactional may in fact require attention to residues and the logical-depth axis.
-
-Related reading:
-
-- [`04_Applications/Application_Boundary_Theory_Core.md`](../04_Applications/Application_Boundary_Theory_Core.md)
-- [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md)
-- [`03_Tam_Goodness/Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
-- [`GLOSSARY.md`](../GLOSSARY.md)
+### 右下パネル — 金融と残渣
 
 金融の領域は、SOの中心定義ではなく、応用パネルである。
 
@@ -550,37 +282,7 @@ Related reading:
 - [`03_Tam_Goodness/Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
----
-
-## E. Claim boundary / 主張境界
-
-This poster is a conceptual map.
-
-It may use cosmological, economic, linguistic, computational, and institutional motifs as analogies.
-
-These motifs should not be read as direct empirical claims.
-
-The central model does not claim that physical space is literally a sphere.
-
-The application panels do not claim universal validity as complete theories of finance, society, computation, or institutions.
-
-In particular, the finance-and-residue panel does not claim that finance is reducible to residue, or that every financial system has the same structure.
-
-It marks a question:
-
-When a system appears settled on a flat operational plane, what remains unresolved along the logical-depth axis?
-
-The poster is intended to preserve multiple reading paths while preventing a few major misreadings:
-
-- the sphere is not physical space itself
-- the observed world is a section cut from a deeper structure
-- the vertical direction indicates the logical-depth axis
-- the horizontal section indicates a world-distribution for a given observer
-- the equator indicates a threshold where another mode of world-cutting may begin
-- finance and residue are presented as an application path, not as a universal economic doctrine
-
-For formal definitions, claim strength, and scope limitations, please refer to the main text documents and glossary.
-
+## E. 主張境界
 本ポスターは概念地図である。
 
 宇宙論、経済、言語、計算、制度に関するモチーフを比喩的・構造的に用いる場合がある。
@@ -607,3 +309,309 @@ For formal definitions, claim strength, and scope limitations, please refer to t
 - 金融と残渣は応用的な読解導線であり、普遍的な経済教義ではない
 
 正式な定義、主張強度、適用範囲については、本文資料および用語集を参照すること。
+
+
+---
+
+## English commensurated rendering
+## A. What this file is
+
+This note explains how to read the **Scientific Ontology Conceptual Poster**.
+
+The poster is a visual companion figure for Scientific Ontology (SO). It is not a replacement for the written theory. It is a conceptual map for orientation.
+
+The poster contains several layers:
+
+- the central sphere model    
+- operational correspondence and collation    
+- residuals and residues    
+- logical-depth axis    
+- language games and paradigm translation    
+- finance and residue as an application panel    
+
+This poster is not an empirical data figure, formal proof, physical cosmology model, financial model, policy proposal, AI system specification, legal standard, or accounting standard.
+
+### Reading setup
+
+This note is intended to be read while viewing the conceptual poster.
+
+For best results, open one of the poster images in another browser tab or window, and read this note alongside it.
+
+Recommended viewing files:
+
+- [Japanese poster / 日本語版ポスター](./Scientific_Ontology_Conceptual_Poster.ja.png)
+- [English poster / 英語版ポスター](./Scientific_Ontology_Conceptual_Poster.en.png)
+
+This note does not repeat every visual element in the poster.  
+It explains how to read the main structure, avoid major misreadings, and follow the reading paths from the central model to the surrounding panels.
+
+- [Japanese poster / 日本語版ポスター](./Scientific_Ontology_Conceptual_Poster.ja.png)
+- [English poster / 英語版ポスター](./Scientific_Ontology_Conceptual_Poster.en.png)
+
+## B. Minimal reading to prevent misreadings
+This poster can be read in several layers.
+
+First reading:  
+Read it as a conceptual map of operational correspondence, collation, residuals, and residues.
+
+Second reading:  
+Read the central sphere not as the universe itself, but as a structure from which an observed world is cut out.
+
+Third reading:  
+Read the vertical direction as the logical-depth axis, and the horizontal section as the plane on which space, time, objects, and external worldhood appear for a given observer.
+
+Fourth reading:  
+Read the equator as a Big-Bang boundary where another mode of world-cutting may begin.
+
+Fifth reading:  
+Read finance and residue as an application panel showing how a synchronized system can still leave uncollated burdens outside its own closure.
+
+This is a Flatland-like reading problem: the diagram is drawn in a spatial form, but it asks the reader to treat space itself as one possible section of a deeper structure.
+
+## C. Central model of the diagram
+### C.1 Central sphere
+
+The central sphere in this poster is not the universe as physical space.
+
+It is not a literal astronomical sphere, planet, cosmos, or container of outer space.
+
+The sphere represents a pre-spatial and pre-objective structure in which a world becomes cut out through observation, boundary operation, history, sensibility, understanding, and logical depth.
+
+In this model, what appears as a “universe” is not the whole sphere itself. A universe appears as a horizontal section cut through the sphere.
+
+More precisely, the external world of a given observer is cut out as a horizontal plane or band parallel to the equator.
+
+The vertical direction of the sphere should be read as the logical-depth axis.
+
+The horizontal direction should be read as the distributional plane on which space, time, objects, relations, and external worldhood appear for a given observer.
+
+Therefore, the poster does not say that the universe is a sphere in physical space.
+
+It says that an observed world is sliced out from a deeper history-field structure by the combination of sensibility, understanding, and reason.
+
+### C.2 Equator, poles, and other world-cuttings
+
+The equator is not merely the middle line of a sphere.
+
+The equator is a Big-Bang boundary: a line or band of undifferentiated possibility from which a world-cutting can emerge.
+
+For an observer located in one observational hemisphere, the equator is the limit at which the current mode of world-cutting reaches an undifferentiated threshold.
+
+Crossing the equator does not mean moving to another place inside the same space.
+
+It means crossing the death-line of the current world-cutting and entering a different possible distribution of worldhood.
+
+Beyond the equator, there may be another world: another way in which space, time, force, objecthood, and meaning are cut out.
+
+In this sense, space and time are not treated as absolute containers.
+
+They are modes of distribution that appear within a given horizontal world-section.
+
+If the observer crosses the equatorial boundary into another hemisphere, the horizontal direction may no longer correspond to the same space-time distribution. Another force-system and another entropy distribution may be operating there.
+
+The poles are not simple moral opposites such as light and darkness.
+
+A pole is a compression point where the external object is lost and everything is internalized as observer-logic.
+
+At the pole, there is no external object left to be observed. Everything has been folded into the internal logic of the observer.
+
+For this reason, an observer at the pole may appear omniscient within that observational field.
+
+However, this is not omniscience with an outside.
+
+It is omniscience without externality.
+
+If an omniscient observer still has an outside, that outside is not inside the same pole. It is the equatorial boundary of another universe.
+
+### C.3 Observer, sensibility, understanding, and reason
+
+The observer is not fixed at a single point.
+
+The observer has degrees of freedom in both the vertical and horizontal directions.
+
+Horizontally, the observer participates in a distribution of space, time, objects, social relations, language games, and external worldhood.
+
+Vertically, the observer moves along the logical-depth axis, where unresolved questions, contradictions, residuals, residues, branches, and semantic pressure are held or reconstructed.
+
+Observation is not determined by external input alone.
+
+Observation is determined by the combination of sensibility and understanding formed through internal history.
+
+Sensibility determines what can appear as signal, discomfort, difference, or residual.
+
+Understanding determines how what appears is classified as object, relation, cause, responsibility, value, or meaning.
+
+Reason relates to how these observations are closed.
+
+Reason may follow inertia and fix observation into a stable interpretation.
+
+Reason may also exceed inertia and update the mode of sensibility and understanding itself.
+
+In this sense, reason is not only a faculty of conclusion. It is also a force that governs how history is handled.
+
+More precisely, reason governs how the observer closes, preserves, reopens, or reconfigures residuals.
+
+Reason itself is also inertia.
+
+It closes because stability is necessary.
+
+The desire to close what has not yet been closed is a form of external order, or beast-like force.
+
+When this desire merely forces closure, it becomes false closure.
+
+When the mode of closure itself is examined, revised, and made responsible to residuals, it becomes a movement toward internal order, or counter-beastliness.
+
+### C.4 Reading openness
+
+The central model should not be read as a single fixed doctrine.
+
+It is a conceptual device for shifting the reader’s viewpoint.
+
+The purpose of the sphere model is not to impose one final interpretation of the universe, cognition, or meaning.
+
+Its purpose is to make visible that any observed world is cut out from a deeper structure through the observer’s history, sensibility, understanding, reason, and residual handling.
+
+Therefore, different readers may enter the poster from different layers:
+
+- cosmological motifs
+- epistemological structure
+- heuristic operation
+- language games
+- logical-depth axis
+- residue assessment
+- finance and institutional closure
+- application to AI or computation
+
+These readings do not need to be reduced to one single interpretation.
+
+However, the following claim boundary should be preserved:
+
+The sphere is not physical space itself.  
+The observed world is a section cut from a deeper structure.  
+The vertical direction indicates logical depth.  
+The horizontal section indicates a world-distribution for a given observer.  
+The equator indicates a threshold where another mode of world-cutting may begin.
+
+In this sense, the poster is not a closed explanation.
+
+It is a map for re-collation.
+
+## D. Panel guide and reading paths
+The peripheral panels are not secondary decorations.
+
+They provide different entry points into the central model. Each panel highlights one way in which a world is cut out, synchronized, collated, stabilized, or left with residuals.
+
+The purpose of this section is not to fully explain every panel.  
+It gives reading paths and points readers toward related documents.
+
+The following guide refers to the approximate locations of the poster panels.
+The labels such as “upper-right,” “lower-left,” and “central vertical axis” indicate where to look on the poster while reading this note.
+
+### D.1 Upper-right panel
+
+This panel provides an entry point into the core epistemological vocabulary of SO.
+
+Operational correspondence refers to synchronization in the SO sense: a stable operational relation between internal heuristics and external structures.
+
+Collation refers to reading what agreement, disagreement, residuals, and residues mean.
+
+Related reading:
+
+- [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
+- [`GLOSSARY.md`](../GLOSSARY.md)
+
+### D.2 Central vertical axis
+
+This panel provides an entry point into residual retention and the logical-depth axis.
+
+A residual is not merely an error or noise. It is a difference that may still be re-collatable.
+
+A residue is what remains sedimented after something has been treated as processed, settled, accounted for, or resolved.
+
+The logical-depth axis indicates the direction in which unresolved questions, contradictions, branches, residuals, residues, and semantic pressure can be held and reconstructed.
+
+Related reading:
+
+- [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
+- [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md)
+- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)
+- [`GLOSSARY.md`](../GLOSSARY.md)
+
+### D.3 Lower-left panel
+
+This panel provides an entry point into language games, commensuration, and translation between different frameworks.
+
+The poster does not assume that all worlds share one universal language.
+
+Different communities, paradigms, and history-fields may operate with different rules of collation.
+
+A paradigm bridge does not erase differences. It creates a comparable interface while preserving residuals.
+
+Related reading:
+
+- [`00_Overview/Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md)
+- [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
+- [`GLOSSARY.md`](../GLOSSARY.md)
+
+### D.4 Upper-left panel
+
+This panel uses cosmological motifs to show formation, stabilization, differentiation, and residual emergence.
+
+These motifs should not be read as a direct physical cosmology model.
+
+They function as conceptual analogies for asking how a field becomes stabilized, how forces or rules become differentiated, and how residuals appear during stabilization.
+
+Related reading:
+
+- [`00_Overview/Scientific_Ontology_System_Map.md`](../00_Overview/Scientific_Ontology_System_Map.md)
+- [`05_Research_Notes/Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md)
+- [`GLOSSARY.md`](../GLOSSARY.md)
+
+### D.5 Lower-right panel
+
+The finance section is an application panel, not the central definition of SO.
+
+It shows how a highly synchronized system can appear settled within its own operational frame while leaving residues outside that frame.
+
+Finance, accounting, and transactions may make something appear closed, settled, liquid, or accounted for.
+
+However, what is settled in a financial or accounting frame may remain unsettled in bodies, institutions, ecosystems, communities, future generations, or unrecognized abilities.
+
+This panel does not claim universal validity as a complete theory of finance.
+
+It presents one judgment-path: a problem that appears flat, economic, or transactional may in fact require attention to residues and the logical-depth axis.
+
+Related reading:
+
+- [`04_Applications/Application_Boundary_Theory_Core.md`](../04_Applications/Application_Boundary_Theory_Core.md)
+- [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md)
+- [`03_Tam_Goodness/Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`GLOSSARY.md`](../GLOSSARY.md)
+
+## E. Claim boundary
+This poster is a conceptual map.
+
+It may use cosmological, economic, linguistic, computational, and institutional motifs as analogies.
+
+These motifs should not be read as direct empirical claims.
+
+The central model does not claim that physical space is literally a sphere.
+
+The application panels do not claim universal validity as complete theories of finance, society, computation, or institutions.
+
+In particular, the finance-and-residue panel does not claim that finance is reducible to residue, or that every financial system has the same structure.
+
+It marks a question:
+
+When a system appears settled on a flat operational plane, what remains unresolved along the logical-depth axis?
+
+The poster is intended to preserve multiple reading paths while preventing a few major misreadings:
+
+- the sphere is not physical space itself
+- the observed world is a section cut from a deeper structure
+- the vertical direction indicates the logical-depth axis
+- the horizontal section indicates a world-distribution for a given observer
+- the equator indicates a threshold where another mode of world-cutting may begin
+- finance and residue are presented as an application path, not as a universal economic doctrine
+
+For formal definitions, claim strength, and scope limitations, please refer to the main text documents and glossary.

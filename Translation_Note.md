@@ -1,9 +1,8 @@
 # Translation and Commensuration Note / 翻訳・通約注記
 
-Status: Working Note  
-Scope: translation, commensuration, authoritative text, terminology control  
-Language: English-centered / Japanese authoritative reference  
-Authoritative source: Japanese drafts unless otherwise stated
+> Status: Working Note
+> Scope: translation, commensuration, authoritative text, terminology control
+> Language: English-centered / Japanese authoritative reference
 
 > **日本語注記**  
 > 本文書は、英語読者および英語通約作業のための補助文書である。  
@@ -36,27 +35,16 @@ Core terms should follow the established translation policy defined in the relev
 Examples include:
 
 - 境界認識批判: Boundary Epistemological Critique
-    
 - 同期: operational correspondence
-    
 - 照合: collation
-    
 - 残差: residual
-    
 - 残渣: residue / sedimented residue
-    
 - 履歴場: history-field / history-bearing field
-    
 - 偽閉鎖: false closure
-    
 - 意味圧: semantic pressure
-    
 - 論理-深度軸: logical-depth axis
-    
 - 通約: commensuration
-    
 - 再照合可能性: capacity for re-collation / re-examinability
-    
 
 Where a new document introduces domain-specific usage, the new usage should be defined explicitly rather than silently replacing an existing core term.
 
@@ -71,21 +59,13 @@ In economic, accounting, contractual, or institutional contexts, it may refer to
 Therefore, translations should distinguish at least the following:
 
 - 閉鎖: closure
-    
 - 内部ループを閉じる: to close an internal loop
-    
 - 意味ループを閉じる: to close a semantic loop
-    
 - 解決済みとする: to treat as resolved
-    
 - 決算済みとする: to treat as accounted for
-    
 - 清算済みとする: to treat as settled / cleared
-    
 - 責任処理済みとする: to treat responsibility as settled
-    
 - 偽閉鎖: false closure
-    
 
 False closure refers to treating something as resolved, settled, accounted for, or responsibility-settled while residuals or residues remain active.
 
@@ -98,28 +78,19 @@ Where mathematical, computational, or legal meanings are not yet formally define
 For example:
 
 - 論理-深度軸 should not be identified directly with computational logical depth.
-    
 - 虚方向 should not be treated as a fully defined mathematical imaginary axis unless explicitly formalized.
-    
 - トークン should not be confused with cryptocurrency, securities, or LLM tokens unless the context explicitly defines it.
-    
 - 残渣査定 should not be treated as a legal audit, accounting standard, or certification regime unless the document explicitly says so.
-    
 
 ## 6. Translation priority / 翻訳優先順位
 
 When translating, priority should be given in the following order:
 
 1. Preservation of conceptual boundary
-    
 2. Preservation of claim strength
-    
 3. Preservation of relation between terms
-    
 4. Readability in English
-    
 5. Stylistic smoothness
-    
 
 A smooth translation that erases residuals, overstates formalization, or converts a provisional concept into a settled claim should be avoided.
 
@@ -128,14 +99,9 @@ A smooth translation that erases residuals, overstates formalization, or convert
 If an English translation is found to deviate from the Japanese authoritative draft, the correction should be made by one of the following methods:
 
 1. Correcting the English text directly.
-    
 2. Adding a translator’s note.
-    
 3. Adding a glossary entry.
-    
 4. Marking the expression as provisional.
-    
 5. Returning to the Japanese source text for re-collation.
-    
 
 Translation correction is not merely linguistic correction. It is part of maintaining re-collatability across language games.

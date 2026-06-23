@@ -1,11 +1,8 @@
 # Overview / 概要
 
-> Status: Public navigation layer  
-> Layer: `00_Overview` / public repository governance  
-> Scope: navigation, terminology, publication scope, claim-strength control, commensuration policy  
-> Language: English / Japanese  
-> Authoritative source: Japanese descriptions unless otherwise stated  
-> Claim: public navigation and governance, not theory body or implementation specification
+> Layer: 00_Overview
+> Status: README  
+> Scope: Public interface
 
 This directory contains navigation, terminology, publication-scope, and claim-strength documents for **存在境界論｜Scientific Ontology**.
 

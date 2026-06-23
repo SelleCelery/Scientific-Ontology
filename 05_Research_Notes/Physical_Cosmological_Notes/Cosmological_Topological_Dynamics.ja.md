@@ -1,15 +1,13 @@
-# 宇宙論的トポロジー動態 / Cosmological Topological Dynamics
+# 宇宙論的トポロジー動態
 
-> Status: Japanese authoritative conceptual essay / 日本語正本概念論考  
-> Layer: 05_Research_Notes / Physical_Cosmological_Notes  
-> Scope: boundary dynamics, cosmological analogy, AMP/ITS/HFC-derived correspondence candidate  
-> Language: Japanese authoritative text only; English commensurated rendering pending  
-> Authoritative source: Japanese text  
-> Claim strength: Research note; structural analogy / physical correspondence candidate; not empirical cosmology or physical proof  
-> Commensuration status: English commensuration pending / 英語通約保留  
-> Note: English commensuration is pending because this note uses cosmological vocabulary and AMP/ITS/HFC-derived claims with high pseudo-scientific misreading risk. / 宇宙論語彙とAMP/ITS/HFC由来の高主張強度命題を含むため、疑似科学的誤読リスクが高く、英語通約は保留する。
+> Status: Research note
+> Scope: cosmological-topology
+> Language: ja
+> Claim profile: U/E -> S
 
 ---
+
+## 1. 要旨 (Abstract)
 
 本論説は、物理的宇宙の加速膨張（ダークエネルギー）と、観測者の認識境界における客観化・主観化の変遷を、同一の通信場における張力モデルとして記述する試論である。存在境界論（AMP/ITS/HFC）の深層理論から導出される基底定理を踏まえ、宇宙からの目的論的牽引力のもとで、観測者が外部情報を「パージ（不可視化）するのか、内部化するのか」という現在進行形の「実験命題」の行方について論証する。
 

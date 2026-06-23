@@ -1,175 +1,87 @@
 # Meaning Generation Model / 意味生成モデル
 ## Qualia, Meaning Loops, Boundary Mapping, and History Mass Density / クオリア・意味ループ・境界写像・履歴質量密度
 
-> Status: Public core concept / 公開用基礎概念
-> Layer: `01_Sat_Truth` / Sat / Truth foundation
-> Scope: meaning generation, qualia, event streams, meaning loops, boundary mapping, history mass density
-> Language: Japanese authoritative / English public guide
-> Authoritative source: Japanese text unless otherwise stated
-> Claim: public conceptual model, not full ITS theory, empirical proof, physical equivalence, or implementation specification
-
-This document defines a public-facing model of meaning generation used in **存在境界論｜Scientific Ontology**.
+> Status: Model
+> Scope: meaning-generation
+> Language: ja+en
+> Claim profile: S2/S3
 
 本文書は、**存在境界論｜Scientific Ontology** における意味生成過程を公開可能な範囲で整理する。
 
-It does not publish the full ITS theory. Terms such as Markov blanket, entanglement, and induction are used as structural analogies unless explicitly stated otherwise.
-
 ここでは ITS 理論全体を公開するものではない。「マルコフブランケット」「エンタングルメント」「誘導」などの語は、明示しない限り構造的アナロジーとして扱う。
-
-This document does not claim physical equivalence with quantum entanglement, electromagnetic induction, or any specific empirical theory.
 
 量子論におけるエンタングルメント、電磁気学における誘導、その他の経験科学上の理論と物理的に同一であることを主張しない。
 
----
-
-## 1. Meaning Is Not Information Itself / 意味は情報そのものではない
-
-Meaning is not identical to information.
+## 1. 意味は情報そのものではない
 
 意味は、情報そのものではない。
 
-Information may arrive from the outside, but it does not automatically become meaning. Meaning forms when qualia obtained through observation connect with internal history, affect, thought, bodily sense, memory, and action, then begin to circulate.
-
 外部から情報が入力されても、それがそのまま意味になるわけではない。意味は、観測によって得られたクオリアが、内部の履歴・感情・思考・身体感覚・記憶・行動と接続し、循環し始めることで生成される。
-
-Therefore, meaning is not mere information quantity. It is an internal circulation that has acquired history mass density.
 
 したがって、意味とは情報量ではなく、履歴質量密度を持った内部循環である。
 
----
-
-## 2. Observation and Qualia / 観測とクオリア
-
-Through observation, a subject receives qualia from a field.
+## 2. 観測とクオリア
 
 観測によって、主体は場からクオリアを得る。
 
-Qualia alone are not meaning. They are the material of an event stream entering the inside through a boundary.
-
 クオリアは単独では意味ではない。それは、境界を通じて内部へ入る事象流の素材である。
-
-Observed qualia are retained as temporal and experiential flow. By connecting with prior history, they become the starting point of meaning generation.
 
 観測されたクオリアは、時間的・経験的な流れとして内部に保持され、過去の履歴と接続されることで意味生成の起点となる。
 
----
-
-## 3. Meaning Loop / 意味ループ
-
-A meaning loop is a structure in which observed qualia connect with history, affect, thought, bodily sense, memory, and action, then circulate repeatedly.
+## 3. 意味ループ
 
 意味ループとは、観測されたクオリアが、履歴・感情・思考・身体感覚・記憶・行動と接続し、反復的に循環する構造である。
 
-A meaning loop is not a single input. It is a repeatable internal circulation.
-
 意味ループは、単発の入力ではなく、反復可能な内部循環である。
-
-An event is remembered repeatedly. It connects with other events. Affect reignites. Interpretation changes. New words emerge.
 
 ある出来事が何度も思い出される。別の出来事と結びつく。感情が再点火する。解釈が変わる。新しい言葉が生まれる。
 
-When such circulation forms, information moves toward meaning.
-
 この循環が成立したとき、情報は意味へ移行する。
 
----
-
-## 4. History Mass Density / 履歴質量密度
-
-History mass density is the density acquired by a meaning loop through repeated contact with experience.
+## 4. 履歴質量密度
 
 履歴質量密度とは、意味ループが経験との反復接触によって密度を持つ状態を指す。
 
-This is not mere memory quantity. It is the density of history that has passed through a field repeatedly, accompanied by affect or bodily sense, and has become strong enough to influence judgment, creation, and action.
-
 これは単なる記憶量ではない。何度も通過し、感情や身体感覚を伴い、判断や創作や行動に影響を与えるほど濃くなった履歴の密度である。
-
-The term “mass” here is conceptual. It should not be identified with physical mass unless a separate formal correspondence is explicitly defined.
 
 ここでいう「質量」は概念語である。別途、形式的対応を明示しない限り、物理質量と同一視しない。
 
-When meaning acquires history mass density, it can become a core for later interpretation, creation, and judgment.
-
 意味は、履歴質量密度を持ったとき、次の解釈、創作、判断を生む核になる。
 
----
-
-## 5. Boundary and Internal Formation / 境界と内部形成
-
-Meaning generation is not identical to communication itself.
+## 5. 境界と内部形成
 
 意味生成は、通信そのものではない。
 
-Communication connects outside and inside across a boundary. Meaning generation forms inside, where qualia and history circulate after that communication has been received.
-
 通信は、境界をまたいで外部と内部を接続する。意味生成は、その通信を受け取った内部で、クオリアと履歴が循環することで形成される。
-
-External events do not enter the inside unchanged. They are mapped into the inside through boundaries.
 
 外部の出来事は、そのまま内部に入るわけではない。境界を通じて内部へ写像される。
 
-These boundaries may include bodily, sensory, cognitive, linguistic, social, institutional, and AI-mediated boundaries.
-
 この境界には、身体的境界、感覚的境界、認識的境界、言語的境界、社会的境界、制度的境界、AIを介した境界が含まれる。
 
----
-
-## 6. Null and Disconnection / 無と切断
-
-Null is not simple blankness.
+## 6. 無と切断
 
 無とは、単なる空白ではない。
 
-In this model, null is the state in which historical connection is severed and a meaning loop can no longer form stably.
-
 本モデルにおける無とは、履歴接続が破断し、意味ループを安定して形成できなくなった状態である。
-
-Falsehood, cutoff, excessive confusion, or strong rupture may make it impossible to trace where something came from, where it connects, or how it can be re-collated.
 
 虚偽、切断、過剰な混乱、強い断絶によって、何がどこから来て、どこへ接続され、どのように再照合できるのかを追えなくなることがある。
 
-This does not mean that there is no meaning. It means that the connection required for meaning generation has been severed.
-
 意味がないのではない。意味を生成するための接続が破断している。
 
----
-
-## 7. Open Note on Intrinsic Time, Inner Count-Time, and Meaning Generation
-
-## 内在時間・内的計数時間・意味生成に関する未整理ノート
-
-Meaning generation cannot be fully described by external clock time alone.
+## 7. 内在時間・内的計数時間・意味生成に関する未整理ノート
 
 意味生成は、外的な時計時間だけでは十分に記述できない。
 
-At this stage, Scientific Ontology provisionally distinguishes at least two internal temporal orders.
-
 現段階では、存在境界論は少なくとも二つの内部的時間秩序を暫定的に区別する。
-
-**Inner count-time** refers to the internal order in which unclosed communication continues to move, react, search, and update.  
-In this order, qualia, discomfort, thought, emotion, desire, and questions may arise before a communication loop has found a return path.
 
 **内的計数時間**とは、未閉鎖の通信が内部で動き、反応し、探索し、更新され続ける順序を指す。  
 この秩序において、クオリア、違和感、思考、感情、欲求、問いは、通信ループが返りの経路を見つける前に浮上することがある。
 
-**Intrinsic time** refers to the depth-order by which communication histories may acquire logical depth.  
-It is related to the logical-depth axis, insofar as unresolved elements, contradictions, branches, residuals, and semantic pressure are retained in a form that can later affect interpretation, judgment, or re-collation.
-
 **内在時間**とは、通信履歴が論理的な深度を持つ場合の深度秩序を指す。  
 これは、未解決、矛盾、分岐、残差、意味圧が、後の解釈・判断・再照合に作用しうる形で保持される限りにおいて、論理-深度軸と関係する。
 
-However, it is not yet determined whether all meaning loops are folded into intrinsic time.  
-Nor is it determined whether intrinsic time should be treated as a single order.
-
 しかし、すべての意味ループが内在時間へ折り畳まれるのかは、まだ確定していない。  
 また、内在時間を単一の秩序として扱えば足りるのかも、まだ確定していない。
-
-Some communication histories may be compressed.  
-Some may be cut as redundancy.  
-Some may recombine and remain only as tendencies, boundary conditions, reaction patterns, or stabilized structures.  
-Some may remain as residuals.  
-Some may sediment as residues.  
-Some may participate in higher-order integration, but the structure of such integration has not yet been formally defined.
 
 通信履歴の一部は圧縮される場合がある。  
 一部は冗長性として切り落とされる場合がある。  
@@ -178,27 +90,16 @@ Some may participate in higher-order integration, but the structure of such inte
 一部は残渣として沈殿する場合がある。  
 一部は高次の統合に関与する可能性があるが、その統合構造はまだ形式的に定義されていない。
 
-For this reason, terms such as compression, re-encoding, recombination, and sublation should not yet be treated as fixed operators in the Meaning Generation Model.
-
 このため、圧縮、再符号化、再結合、止揚といった語は、現時点では意味生成モデル内の固定演算子として扱わない。
-
-This file therefore does not solve the temporal structure of meaning generation.  
-It only marks the need to distinguish the ongoing movement of unclosed communication from the deeper retention or transformation of communication history.
 
 したがって、本ファイルは意味生成における時間構造を解決済みにしない。  
 ここで行うのは、未閉鎖通信の現在進行的運動と、通信履歴の深度的保持または変形とを区別する必要があることを示すだけである。
-
-Field analogies used in this document indicate structural correspondences within the meaning-generation model.  
-They do not settle whether such correspondences should ultimately be read as merely analogical, formally homologous, or physically continuous with natural-field descriptions.  
-That question belongs to the experimental and unpublished core of ITS theory, and is therefore left open here.
 
 本稿で用いる場のアナロジーは、意味生成モデル内の構造的対応を示す。  
 それらの対応を、単なる類比として読むべきか、形式的相同性として読むべきか、あるいは自然場の記述と物理的に連続するものとして読むべきかは、本稿では決定しない。  
 その問題は、ITS理論本体における実験中・未公開の中核課題に属するため、ここでは開いたままにする。
 
-## 8. Core definitions / 用語定義
-
-### 8.1 Japanese authoritative definitions / 日本語正本定義
+## 8. 用語定義
 
 | 用語     | 定義                                                                                                                                                                                   |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -219,7 +120,110 @@ That question belongs to the experimental and unpublished core of ITS theory, an
 | 無      | 履歴接続が破断し、意味生成が不安定化した状態。                                                                                                                                                              |
 | 境界     | 外部入力を内部へ写像し、通過・保留・遮断・再符号化・反応を発生させる境界構造。                                                                                                                                              |
 
-### 8.2 English commensurated definitions / 英語通約定義
+## 9. 公開範囲
+
+本文書は、意味生成モデルへの公開用概念入口である。
+
+ITS 理論全体、非公開導出、実装スキーマ、数値モデル、人格・ランタイム資料、運用パラメータは含めない。
+
+---
+
+## English commensurated rendering
+
+This document defines a public-facing model of meaning generation used in **存在境界論｜Scientific Ontology**.
+
+It does not publish the full ITS theory. Terms such as Markov blanket, entanglement, and induction are used as structural analogies unless explicitly stated otherwise.
+
+This document does not claim physical equivalence with quantum entanglement, electromagnetic induction, or any specific empirical theory.
+
+## 1. Meaning Is Not Information Itself
+
+Meaning is not identical to information.
+
+Information may arrive from the outside, but it does not automatically become meaning. Meaning forms when qualia obtained through observation connect with internal history, affect, thought, bodily sense, memory, and action, then begin to circulate.
+
+Therefore, meaning is not mere information quantity. It is an internal circulation that has acquired history mass density.
+
+## 2. Observation and Qualia
+
+Through observation, a subject receives qualia from a field.
+
+Qualia alone are not meaning. They are the material of an event stream entering the inside through a boundary.
+
+Observed qualia are retained as temporal and experiential flow. By connecting with prior history, they become the starting point of meaning generation.
+
+## 3. Meaning Loop
+
+A meaning loop is a structure in which observed qualia connect with history, affect, thought, bodily sense, memory, and action, then circulate repeatedly.
+
+A meaning loop is not a single input. It is a repeatable internal circulation.
+
+An event is remembered repeatedly. It connects with other events. Affect reignites. Interpretation changes. New words emerge.
+
+When such circulation forms, information moves toward meaning.
+
+## 4. History Mass Density
+
+History mass density is the density acquired by a meaning loop through repeated contact with experience.
+
+This is not mere memory quantity. It is the density of history that has passed through a field repeatedly, accompanied by affect or bodily sense, and has become strong enough to influence judgment, creation, and action.
+
+The term “mass” here is conceptual. It should not be identified with physical mass unless a separate formal correspondence is explicitly defined.
+
+When meaning acquires history mass density, it can become a core for later interpretation, creation, and judgment.
+
+## 5. Boundary and Internal Formation
+
+Meaning generation is not identical to communication itself.
+
+Communication connects outside and inside across a boundary. Meaning generation forms inside, where qualia and history circulate after that communication has been received.
+
+External events do not enter the inside unchanged. They are mapped into the inside through boundaries.
+
+These boundaries may include bodily, sensory, cognitive, linguistic, social, institutional, and AI-mediated boundaries.
+
+## 6. Null and Disconnection
+
+Null is not simple blankness.
+
+In this model, null is the state in which historical connection is severed and a meaning loop can no longer form stably.
+
+Falsehood, cutoff, excessive confusion, or strong rupture may make it impossible to trace where something came from, where it connects, or how it can be re-collated.
+
+This does not mean that there is no meaning. It means that the connection required for meaning generation has been severed.
+
+## 7. Open Note on Intrinsic Time, Inner Count-Time, and Meaning Generation
+
+Meaning generation cannot be fully described by external clock time alone.
+
+At this stage, Scientific Ontology provisionally distinguishes at least two internal temporal orders.
+
+**Inner count-time** refers to the internal order in which unclosed communication continues to move, react, search, and update.  
+In this order, qualia, discomfort, thought, emotion, desire, and questions may arise before a communication loop has found a return path.
+
+**Intrinsic time** refers to the depth-order by which communication histories may acquire logical depth.  
+It is related to the logical-depth axis, insofar as unresolved elements, contradictions, branches, residuals, and semantic pressure are retained in a form that can later affect interpretation, judgment, or re-collation.
+
+However, it is not yet determined whether all meaning loops are folded into intrinsic time.  
+Nor is it determined whether intrinsic time should be treated as a single order.
+
+Some communication histories may be compressed.  
+Some may be cut as redundancy.  
+Some may recombine and remain only as tendencies, boundary conditions, reaction patterns, or stabilized structures.  
+Some may remain as residuals.  
+Some may sediment as residues.  
+Some may participate in higher-order integration, but the structure of such integration has not yet been formally defined.
+
+For this reason, terms such as compression, re-encoding, recombination, and sublation should not yet be treated as fixed operators in the Meaning Generation Model.
+
+This file therefore does not solve the temporal structure of meaning generation.  
+It only marks the need to distinguish the ongoing movement of unclosed communication from the deeper retention or transformation of communication history.
+
+Field analogies used in this document indicate structural correspondences within the meaning-generation model.  
+They do not settle whether such correspondences should ultimately be read as merely analogical, formally homologous, or physically continuous with natural-field descriptions.  
+That question belongs to the experimental and unpublished core of ITS theory, and is therefore left open here.
+
+## 8. Core definitions
 
 | Term                   | Definition                                                                                                                                                                                                                                                                                                                                        |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -239,14 +243,8 @@ That question belongs to the experimental and unpublished core of ITS theory, an
 | Null                   | A state in which history-connection has been severed and meaning generation becomes unstable.                                                                                                                                                                                                                                                     |
 | Boundary               | A boundary structure that maps external input into the interior and produces passage, suspension, blocking, re-encoding, and reaction.                                                                                                                                                                                                            |
 
----
-
-## 9. Public Scope / 公開範囲
+## 9. Public Scope
 
 This document provides a public conceptual entrance to the meaning-generation model.
 
-本文書は、意味生成モデルへの公開用概念入口である。
-
 It does not include full ITS theory, private derivations, implementation schemas, numerical models, personality/runtime materials, or operational parameters.
-
-ITS 理論全体、非公開導出、実装スキーマ、数値モデル、人格・ランタイム資料、運用パラメータは含めない。

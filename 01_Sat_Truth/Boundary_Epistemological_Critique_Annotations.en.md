@@ -1,13 +1,10 @@
 # Boundary Epistemological Critique: Annotations
 ## A Topographic Guide through the Spherical World, Inner Motion, and the Logical-Depth Axis
 
-> Status: Annotation draft / English commensurated rendering
-> Layer: `01_Sat_Truth` / Sat / Truth companion annotation
-> Relation: Companion annotation to `Boundary_Epistemological_Critique.en.md` and `Boundary_Epistemological_Critique.ja.md`
-> Scope: philosophical problem-fields, terrain map, residuals, residues, re-collation, logical-depth axis
-> Language: English commensurated rendering
-> Authoritative source: `Boundary_Epistemological_Critique_Annotations.ja.md` unless otherwise stated
-> Claim: annotation and terrain map, not authority claim, philosophical history, empirical proof, or physical theory
+> Status: Annotation
+> Scope: boundary-epistemology
+> Language: en
+> Claim profile: S2/S3
 
 This annotation does not authorize the main text by invoking philosopher names. It is a terrain map for comparing the movement treated by Boundary Epistemological Critique with existing philosophical problem-fields.
 

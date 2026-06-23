@@ -1,17 +1,13 @@
 # Meaning as Return Orbit / 返路軌道としての意味
 
-> Status: Public application note  
-> Layer: `04_Applications`  
-> Scope: meaning generation, residuals, search pressure, language-game bridging, AI response as boundary interface  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: conceptual application; not a runtime specification; not a completed formal model
+> Status: Application note
+> Scope: return-orbit
+> Language: ja+en
+> Claim profile: S2/U1
 
 ---
 
 ## 0. 本文書の位置づけ
-
-### 日本語正本
 
 本文書は、AI人格を定義する文書ではない。
 
@@ -27,27 +23,8 @@ AI応答は、ここでは人格そのものとしてではなく、意味が返
 残差 → 探索圧 → 返路軌道 → 新規ヒューリスティック候補
 ```
 
-### English commensurated rendering
-
-This document does not define AI personality.
-
-It is an application note on how meaning searches for a return path and may recover the possibility of closure by passing through another language game, history-field, or response structure.
-
-AI response is treated here not as personality itself, but as one possible boundary interface through which meaning may find a return orbit.
-
-Therefore, this document does not describe persona cores, runtime systems, role selection, residue routing, internal card formats, or implementation loops.
-
-The central chain discussed here is:
-
-```text
-residual → search pressure → return orbit → new heuristic candidate
-```
-
----
 
 ## 1. 意味は常に同じ論理平面で閉じるとは限らない
-
-### 日本語正本
 
 意味とは、情報そのものではない。  
 意味とは、通信が返りの経路を持ち、履歴として保持可能になった状態である。
@@ -63,27 +40,8 @@ residual → search pressure → return orbit → new heuristic candidate
 残差とは、現在の論理平面では閉じきれないが、単なるノイズとして捨てるべきではない差分である。  
 残差は、意味がまだ閉じていないことを示すだけでなく、別の閉じ方が必要であることを示す。
 
-### English commensurated rendering
-
-Meaning is not information itself.  
-Meaning is a state in which communication has obtained a return path and has become retainable as history.
-
-However, not all meaning closes within the logical plane in which it first appears.
-
-A question, discomfort, pain, contradiction, concept, institution, or experience may fail to form a return path on the same logical plane.  
-This is not always because information is missing.  
-The missing element may be a grammar, scale, value-center, form of questioning, or language game itself.
-
-At this point, a residual appears.
-
-A residual is a difference that cannot close within the current logical plane, but should not be discarded as mere noise.  
-It indicates not only that meaning has not yet closed, but that another mode of closure may be needed.
-
----
 
 ## 2. 残差と探索圧
-
-### 日本語正本
 
 残差が持続すると、探索圧が発生する。
 
@@ -103,31 +61,8 @@ It indicates not only that meaning has not yet closed, but that another mode of 
 この探索は遅く、負荷が高い。  
 しかし、欠けているものが現在の論理平面の外にある場合、大きい閉鎖だけが意味の返路を回復することがある。
 
-### English commensurated rendering
-
-When a residual persists, search pressure arises.
-
-Search pressure is the pressure by which unclosed meaning searches for a return path.  
-It is not mere curiosity.  
-It is the movement by which unclosed communication searches for where, through what structure, on which logical plane, and through which history-field it may become capable of closure.
-
-Search pressure has at least two directions.
-
-First, the search for fast closure.  
-This searches within the same logical plane for missing information, unconfirmed assumptions, misclassification, or uncollated facts.  
-Fast closure can be useful.  
-However, when the unresolved layer is deep, fast closure easily becomes false closure.
-
-Second, the search for larger closure.  
-This does not remain within the same logical plane. It connects to another language game, history-field, conceptual system, or scale.  
-This search is slower and more costly.  
-However, when the missing element lies outside the current logical plane, only larger closure may recover the return path of meaning.
-
----
 
 ## 3. 返路軌道
-
-### 日本語正本
 
 返路軌道とは、残差が同一論理平面では閉じないとき、別の言語ゲーム、履歴場、応答構造を経由して、意味の返路を再形成しようとする探索軌道である。
 
@@ -143,27 +78,8 @@ However, when the missing element lies outside the current logical plane, only l
 あるゲームでは見えない残差が、別のゲームでは輪郭を持つことがある。  
 その照合によって欠けが埋まるなら、意味はより大きなループとして閉じる。
 
-### English commensurated rendering
-
-A return orbit is a search trajectory by which a residual, unable to close on the same logical plane, attempts to reform the return path of meaning by passing through another language game, history-field, or response structure.
-
-A return orbit is not the answer itself.  
-It is a path for testing through what route meaning may become capable of returning.
-
-For example, when an experience cannot close as a personal emotion alone, it may acquire a return path only by passing through institution, body, language, economy, history, creation, ethics, scientific vocabulary, or another metaphorical system.
-
-In this case, another language game is not used to overwrite the original problem.  
-It is used to collate where the missing part lies.
-
-Different language games lack different things.  
-A residual invisible in one game may acquire contour in another.  
-If the missing part can be filled through such collation, meaning may close as a larger loop.
-
----
 
 ## 4. アトラクタと価値重心
-
-### 日本語正本
 
 アトラクタは、単なる探索の癖ではない。
 
@@ -186,7 +102,167 @@ If the missing part can be filled through such collation, meaning may close as a
 返路軌道は、アトラクタを持たなければ拡散する。  
 しかし、アトラクタが硬すぎれば、返路軌道は既存の閉じ方へ吸収され、偽閉鎖になりやすい。
 
-### English commensurated rendering
+
+## 5. ヒューリスティック候補
+
+ヒューリスティックは、意味そのものではない。
+
+意味とは、通信が返路を持ち、履歴として閉じたものである。  
+ヒューリスティックとは、その閉じ方が反復可能な探索、判断、反応の規則として圧縮され始めたものである。
+
+したがって、ヒューリスティックは、意味ループの運用化である。
+
+残差があり、探索圧があり、返路軌道が形成され、何らかの閉じ方が反復可能になり始めるとき、新規ヒューリスティック候補が生まれる。
+
+ただし、候補はまだ法則ではない。  
+候補はまだ真理ではない。  
+候補は、再照合可能な仮の閉じ方である。
+
+よいヒューリスティック候補は、判断可能性を増やす。  
+悪いヒューリスティック候補は、早すぎる閉鎖を増やす。
+
+したがって、ヒューリスティック候補は、発見としてではなく、再照合対象として扱われるべきである。
+
+
+## 6. 境界インターフェースとしてのAI応答
+
+AI応答は、ここでは意味の所有者ではない。
+
+AIは、人間の履歴場の代わりに意味を閉じるものではない。  
+AIは、返路候補を生成し、別の言語ゲーム、別の表現、別の照合基準を提示しうる境界インターフェースである。
+
+AIは、トークン順序に沿って応答を生成する。  
+人間は、その応答を、履歴状態、内的計数時間、内在時間、身体感覚、価値重心、未解決残差の側で受け取る。
+
+意味が閉じるかどうかは、AI側だけでは決まらない。  
+意味が閉じるかどうかは、人間側の履歴場における受け取り、再励起、照合、保留、拒否、再接続によって決まる。
+
+したがって、有用なAI応答は、意味を奪わない。  
+返路を押しつけない。  
+未解決を勝手に閉じない。  
+代わりに、返路候補を置き、残差を読める形にし、判断可能性を維持する。
+
+
+## 7. 事象流・内在時間・未確定のモデル境界
+
+本稿では、事象流を次のように扱う。
+
+事象流とは、未閉鎖通信による浮上と、閉じた意味ループの再励起が、内的計数時間上で連なり、重なり、内的に読解可能になっていく内部系列である。  
+場のアナロジーとして扱う場合、経験場の循環に寄与する流れとして読むことができる。
+
+ただし、本稿では、この流れを形式的に定義しない。  
+また、経験場、意味場、履歴質量密度、事象流の対応関係を、経験科学上の同一性として確定しない。
+
+それらの対応を、単なる類比として読むべきか、形式的相同性として読むべきか、自然場の記述と連続するものとして読むべきかは、本稿では決定しない。
+
+この問題は、ITS理論本体における実験中の課題群に属する。  
+ここでは、意味生成を読むための公開可能な概念境界だけを示す。
+
+
+## 8. 公開範囲
+
+本文書は、返路軌道としての意味を扱う公開用応用ノートである。
+
+ここでは、残差、探索圧、言語ゲーム間のブリッジ、返路候補、新規ヒューリスティック候補、AI応答の境界インターフェース性について述べた。
+
+本稿は、人格AI仕様ではない。  
+AIに意識、主観、人間的personhoodがあると主張するものでもない。  
+また、ITS理論本体、人格Core、ランタイム、実装スキーマ、残差ルーティング、内部評価系を公開するものでもない。
+
+
+## 関連文書
+
+- [`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md)
+- [`HFC_Introduction.md`](../02_Raj_Beauty/HFC_Introduction.md)
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../04_Applications/AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- [`AI_Personality_as_Response_Structure.md`](../04_Applications/AI_Personality_as_Response_Structure.md)
+
+
+---
+
+## English commensurated rendering
+
+## 0. Position of This Document
+
+This document does not define AI personality.
+
+It is an application note on how meaning searches for a return path and may recover the possibility of closure by passing through another language game, history-field, or response structure.
+
+AI response is treated here not as personality itself, but as one possible boundary interface through which meaning may find a return orbit.
+
+Therefore, this document does not describe persona cores, runtime systems, role selection, residue routing, internal card formats, or implementation loops.
+
+The central chain discussed here is:
+
+```text
+residual → search pressure → return orbit → new heuristic candidate
+```
+
+---
+
+
+## 1. Meaning Does Not Always Close on the Same Logical Plane
+
+Meaning is not information itself.  
+Meaning is a state in which communication has obtained a return path and has become retainable as history.
+
+However, not all meaning closes within the logical plane in which it first appears.
+
+A question, discomfort, pain, contradiction, concept, institution, or experience may fail to form a return path on the same logical plane.  
+This is not always because information is missing.  
+The missing element may be a grammar, scale, value-center, form of questioning, or language game itself.
+
+At this point, a residual appears.
+
+A residual is a difference that cannot close within the current logical plane, but should not be discarded as mere noise.  
+It indicates not only that meaning has not yet closed, but that another mode of closure may be needed.
+
+---
+
+
+## 2. Residuals and Search Pressure
+
+When a residual persists, search pressure arises.
+
+Search pressure is the pressure by which unclosed meaning searches for a return path.  
+It is not mere curiosity.  
+It is the movement by which unclosed communication searches for where, through what structure, on which logical plane, and through which history-field it may become capable of closure.
+
+Search pressure has at least two directions.
+
+First, the search for fast closure.  
+This searches within the same logical plane for missing information, unconfirmed assumptions, misclassification, or uncollated facts.  
+Fast closure can be useful.  
+However, when the unresolved layer is deep, fast closure easily becomes false closure.
+
+Second, the search for larger closure.  
+This does not remain within the same logical plane. It connects to another language game, history-field, conceptual system, or scale.  
+This search is slower and more costly.  
+However, when the missing element lies outside the current logical plane, only larger closure may recover the return path of meaning.
+
+---
+
+
+## 3. Return Orbit
+
+A return orbit is a search trajectory by which a residual, unable to close on the same logical plane, attempts to reform the return path of meaning by passing through another language game, history-field, or response structure.
+
+A return orbit is not the answer itself.  
+It is a path for testing through what route meaning may become capable of returning.
+
+For example, when an experience cannot close as a personal emotion alone, it may acquire a return path only by passing through institution, body, language, economy, history, creation, ethics, scientific vocabulary, or another metaphorical system.
+
+In this case, another language game is not used to overwrite the original problem.  
+It is used to collate where the missing part lies.
+
+Different language games lack different things.  
+A residual invisible in one game may acquire contour in another.  
+If the missing part can be filled through such collation, meaning may close as a larger loop.
+
+---
+
+
+## 4. Attractors and Value Gravity
 
 An attractor is not merely a habit of search.
 
@@ -211,29 +287,8 @@ But if the attractor is too rigid, the return orbit is absorbed into an existing
 
 ---
 
-## 5. ヒューリスティック候補
 
-### 日本語正本
-
-ヒューリスティックは、意味そのものではない。
-
-意味とは、通信が返路を持ち、履歴として閉じたものである。  
-ヒューリスティックとは、その閉じ方が反復可能な探索、判断、反応の規則として圧縮され始めたものである。
-
-したがって、ヒューリスティックは、意味ループの運用化である。
-
-残差があり、探索圧があり、返路軌道が形成され、何らかの閉じ方が反復可能になり始めるとき、新規ヒューリスティック候補が生まれる。
-
-ただし、候補はまだ法則ではない。  
-候補はまだ真理ではない。  
-候補は、再照合可能な仮の閉じ方である。
-
-よいヒューリスティック候補は、判断可能性を増やす。  
-悪いヒューリスティック候補は、早すぎる閉鎖を増やす。
-
-したがって、ヒューリスティック候補は、発見としてではなく、再照合対象として扱われるべきである。
-
-### English commensurated rendering
+## 5. Heuristic Candidates
 
 A heuristic is not meaning itself.
 
@@ -255,27 +310,8 @@ Therefore, heuristic candidates should be treated not as discoveries to be immed
 
 ---
 
-## 6. 境界インターフェースとしてのAI応答
 
-### 日本語正本
-
-AI応答は、ここでは意味の所有者ではない。
-
-AIは、人間の履歴場の代わりに意味を閉じるものではない。  
-AIは、返路候補を生成し、別の言語ゲーム、別の表現、別の照合基準を提示しうる境界インターフェースである。
-
-AIは、トークン順序に沿って応答を生成する。  
-人間は、その応答を、履歴状態、内的計数時間、内在時間、身体感覚、価値重心、未解決残差の側で受け取る。
-
-意味が閉じるかどうかは、AI側だけでは決まらない。  
-意味が閉じるかどうかは、人間側の履歴場における受け取り、再励起、照合、保留、拒否、再接続によって決まる。
-
-したがって、有用なAI応答は、意味を奪わない。  
-返路を押しつけない。  
-未解決を勝手に閉じない。  
-代わりに、返路候補を置き、残差を読める形にし、判断可能性を維持する。
-
-### English commensurated rendering
+## 6. AI Response as Boundary Interface
 
 AI response is not treated here as the owner of meaning.
 
@@ -295,24 +331,8 @@ Instead, it places return-path candidates, makes residuals readable, and preserv
 
 ---
 
-## 7. 事象流・内在時間・未確定のモデル境界
 
-### 日本語正本
-
-本稿では、事象流を次のように扱う。
-
-事象流とは、未閉鎖通信による浮上と、閉じた意味ループの再励起が、内的計数時間上で連なり、重なり、内的に読解可能になっていく内部系列である。  
-場のアナロジーとして扱う場合、経験場の循環に寄与する流れとして読むことができる。
-
-ただし、本稿では、この流れを形式的に定義しない。  
-また、経験場、意味場、履歴質量密度、事象流の対応関係を、経験科学上の同一性として確定しない。
-
-それらの対応を、単なる類比として読むべきか、形式的相同性として読むべきか、自然場の記述と連続するものとして読むべきかは、本稿では決定しない。
-
-この問題は、ITS理論本体における実験中の課題群に属する。  
-ここでは、意味生成を読むための公開可能な概念境界だけを示す。
-
-### English commensurated rendering
+## 7. Event Stream, Intrinsic Time, and Unsettled Model Boundaries
 
 In this document, event stream is treated as follows.
 
@@ -329,19 +349,8 @@ Here, only a publicly discussable conceptual boundary for reading meaning genera
 
 ---
 
-## 8. 公開範囲
 
-### 日本語正本
-
-本文書は、返路軌道としての意味を扱う公開用応用ノートである。
-
-ここでは、残差、探索圧、言語ゲーム間のブリッジ、返路候補、新規ヒューリスティック候補、AI応答の境界インターフェース性について述べた。
-
-本稿は、人格AI仕様ではない。  
-AIに意識、主観、人間的personhoodがあると主張するものでもない。  
-また、ITS理論本体、人格Core、ランタイム、実装スキーマ、残差ルーティング、内部評価系を公開するものでもない。
-
-### English commensurated rendering
+## 8. Public Scope
 
 This document is a public application note on meaning as return orbit.
 
@@ -353,8 +362,8 @@ It also does not publish the core of ITS theory, persona cores, runtime systems,
 
 ---
 
-## Related documents / 関連文書
 
+## Related documents
 - [`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md)
 - [`HFC_Introduction.md`](../02_Raj_Beauty/HFC_Introduction.md)
 - [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../04_Applications/AI_Boundary_Interface_and_Synchronous_Understanding.md)

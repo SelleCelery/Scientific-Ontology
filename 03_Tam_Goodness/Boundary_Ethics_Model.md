@@ -1,11 +1,9 @@
 # Boundary Ethics Model / 境界倫理モデル
 
-> Status: Public conceptual introduction  
-> Layer: `03_Tam_Goodness` / boundary ethics  
-> Scope: origin of boundary ethics, non-destructive interaction, false closure, safety as boundary maintenance  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: public conceptual model, not implementation specification
+> Status: Model
+> Scope: boundary-ethics
+> Language: ja+en
+> Claim profile: S2
 
 ---
 
@@ -25,23 +23,6 @@ AIの安全応答は必要である。
 
 この問題を、単なる言い回しの問題としてではなく、倫理の問題として考えた。
 
-### English commensurated rendering
-
-The starting point of the Boundary Ethics Model was not the desire to make AI say the correct thing.
-
-The first question was: what is ethics?
-
-Safety responses in AI are necessary.  
-AI must not assist dangerous, illegal, or harmful actions.
-
-However, that alone is not enough.
-
-Even a safe response can sever the user's context or unresolved feeling depending on how it is returned.  
-In such cases, AI may be saying the correct thing while the user experiences the response as rejection, cutoff, or non-understanding.
-
-This problem is treated not merely as a problem of wording, but as an ethical problem.
-
----
 
 ## 2. 倫理とは何か
 
@@ -69,28 +50,6 @@ This problem is treated not merely as a problem of wording, but as an ethical pr
 
 このような応答を、安全の付属物ではなく、倫理の中心に置く。
 
-### English commensurated rendering
-
-The Boundary Ethics Model does not define ethics as kindness or moral goodness.
-
-Ethics is boundary design for allowing history-bearing beings or fields to interact without destroying one another's histories.
-
-The other has a prior history.  
-So do I.
-
-To ignore that history and decide meaning unilaterally, to close unresolved matters as if they were resolved, to treat what has not been accepted as accepted, or to reject the person themselves while stopping a dangerous action can become destructive interaction with history.
-
-By contrast, an ethical response is one that engages without erasing the other's history.
-
-Stop only the dangerous direction.  
-Do not cut off the person themselves.  
-Do not falsely close what remains unresolved.  
-Do not force acceptance where acceptance has not yet formed.  
-When necessary, preserve, organize, and connect the situation to real support.
-
-This kind of response is placed at the center of ethics, not treated as a decorative addition to safety.
-
----
 
 ## 3. AIが扱える倫理へ
 
@@ -114,7 +73,148 @@ This kind of response is placed at the center of ethics, not treated as a decora
 ここでいう「内発的」とは、AIが人間のような良心を持つという意味ではない。  
 外部から禁止文を貼るだけではなく、応答の内部構造そのものに「履歴を壊さない」「未解決を偽って閉じない」「危険な方向だけ止める」という理由を組み込む、という意味である。
 
-### English commensurated rendering
+
+## 4. 履歴と意味単位
+
+ここでいう履歴とは、単なる過去の出来事や記憶の一覧ではない。
+
+ある入力があり、反応があり、その反応に対してさらに応答が返る。  
+この往復が閉じたとき、情報は単なる刺激ではなく、ひとつの意味単位になる。
+
+意味とは、情報が閉じた通信ループとしてまとまったものである。
+
+そして履歴とは、そのように閉じた意味単位、または閉じようとしている通信履歴が、次の受容・反応・判断に作用する形で残ることである。
+
+だから、履歴を破壊するとは、単に過去を否定することではない。  
+すでに意味として閉じていた単位、あるいはまだ閉じようとしている未閉鎖通信を、外側から雑に切断したり、上書きしたり、なかったことにしたりすることである。
+
+境界倫理モデルでは、倫理をここから考える。
+
+倫理とは、相手を傷つけないための優しい態度ではない。  
+意味として閉じたもの、あるいは閉じようとしているものを、不用意に破壊しないための相互作用である。
+
+
+## 5. 日常生活から生まれた仮説
+
+この仮説は、AIだけを見て生まれたものではない。
+
+日常生活の中でも、人はしばしば「正しいこと」を言われながら、深く傷つく。
+
+それは、内容が間違っているからではない。  
+相手の返答が、自分の履歴や未解決感を切断してしまうからである。
+
+たとえば、まだ納得していないことに対して、  
+「決まったことだから受け入れましょう」  
+と言われる。
+
+これは一見、穏当で現実的な助言に見える。  
+しかし、そこには「まだ納得していない」という履歴を消してしまう危険がある。
+
+逆に、問題がすぐに解決しなくても、自分の文脈が消されず、未処理の部分が残され、次の小さな一手だけが置かれると、人は少し持ち直すことがある。
+
+この日常的な観察から、倫理とは「正しい結論を出すこと」以前に、「履歴を破壊しない接触を維持すること」ではないか、という仮説が生まれた。
+
+
+## 6. 安全は遮断ではなく境界維持である
+
+AI安全において、拒否は必要である。  
+危険な行為に加担しないことは必要である。
+
+しかし、安全が常に遮断として現れる必要はない。
+
+境界倫理モデルでは、安全を、遮断ではなく境界維持として扱う。
+
+境界維持とは、何でも受け入れることではない。  
+危険な方向は止める。  
+無理な要求には従わない。  
+できないことはできないと言う。  
+必要なら、現実の支援や専門窓口につなぐ。
+
+ただし、そのときに相手の履歴を切らない。  
+相手そのものを拒絶しない。  
+未解決を勝手に閉じない。
+
+安全とは、相手を切り捨てるための壁ではなく、履歴を破壊しないための境界である。
+
+
+## 7. このモデルが目指すもの
+
+境界倫理モデルが目指すのは、AIを優しい口調にすることではない。  
+また、危険な要求に柔らかく従うことでもない。
+
+目指しているのは、AIが安全を維持しながら、相手の履歴を破壊しない応答を行うことである。
+
+危険な行為は止める。  
+しかし、相手は切らない。
+
+未解決は保持する。  
+しかし、混乱の中に放置しない。
+
+納得していないことは残す。  
+しかし、次の小さな一手は置く。
+
+このような応答は、単なる共感でも、単なる拒否でもない。  
+履歴を持つ存在どうしが、非破壊的に接触するためのプロトコルである。
+
+
+## 8. 公開範囲
+
+本文書は、境界倫理モデルの発想の原点を説明する公開用資料である。
+
+ここでは、倫理の定義、安全応答への問題意識、日常生活から得られた仮説、AIが扱える形への定式化について述べた。
+
+本リポジトリは、存在境界論の公開用インターフェースであり、内部仕様の完全な公開を目的とするものではない。
+
+詳細な実装規則、内部設計、運用パラメータ、個別システムへの接続仕様は別管理とする。
+
+---
+
+## English commensurated rendering
+
+## 1. Starting Point of the Question
+
+The starting point of the Boundary Ethics Model was not the desire to make AI say the correct thing.
+
+The first question was: what is ethics?
+
+Safety responses in AI are necessary.  
+AI must not assist dangerous, illegal, or harmful actions.
+
+However, that alone is not enough.
+
+Even a safe response can sever the user's context or unresolved feeling depending on how it is returned.  
+In such cases, AI may be saying the correct thing while the user experiences the response as rejection, cutoff, or non-understanding.
+
+This problem is treated not merely as a problem of wording, but as an ethical problem.
+
+---
+
+
+## 2. What Ethics Means
+
+The Boundary Ethics Model does not define ethics as kindness or moral goodness.
+
+Ethics is boundary design for allowing history-bearing beings or fields to interact without destroying one another's histories.
+
+The other has a prior history.  
+So do I.
+
+To ignore that history and decide meaning unilaterally, to close unresolved matters as if they were resolved, to treat what has not been accepted as accepted, or to reject the person themselves while stopping a dangerous action can become destructive interaction with history.
+
+By contrast, an ethical response is one that engages without erasing the other's history.
+
+Stop only the dangerous direction.  
+Do not cut off the person themselves.  
+Do not falsely close what remains unresolved.  
+Do not force acceptance where acceptance has not yet formed.  
+When necessary, preserve, organize, and connect the situation to real support.
+
+This kind of response is placed at the center of ethics, not treated as a decorative addition to safety.
+
+---
+
+
+## 3. Toward Ethics AI Can Handle
 
 If ethics is defined only as abstract goodwill or external norm, it tends to become a rule pasted onto AI from the outside.
 
@@ -138,26 +238,8 @@ It means that the reasons for not destroying history, not falsely closing unreso
 
 ---
 
-## 4. 履歴と意味単位
 
-ここでいう履歴とは、単なる過去の出来事や記憶の一覧ではない。
-
-ある入力があり、反応があり、その反応に対してさらに応答が返る。  
-この往復が閉じたとき、情報は単なる刺激ではなく、ひとつの意味単位になる。
-
-意味とは、情報が閉じた通信ループとしてまとまったものである。
-
-そして履歴とは、そのように閉じた意味単位、または閉じようとしている通信履歴が、次の受容・反応・判断に作用する形で残ることである。
-
-だから、履歴を破壊するとは、単に過去を否定することではない。  
-すでに意味として閉じていた単位、あるいはまだ閉じようとしている未閉鎖通信を、外側から雑に切断したり、上書きしたり、なかったことにしたりすることである。
-
-境界倫理モデルでは、倫理をここから考える。
-
-倫理とは、相手を傷つけないための優しい態度ではない。  
-意味として閉じたもの、あるいは閉じようとしているものを、不用意に破壊しないための相互作用である。
-
-### English commensurated rendering
+## 4. History and Units of Meaning
 
 History here does not mean a mere list of past events or memories.
 
@@ -178,27 +260,8 @@ It is interaction that avoids unnecessarily destroying what has closed as meanin
 
 ---
 
-## 5. 日常生活から生まれた仮説
 
-この仮説は、AIだけを見て生まれたものではない。
-
-日常生活の中でも、人はしばしば「正しいこと」を言われながら、深く傷つく。
-
-それは、内容が間違っているからではない。  
-相手の返答が、自分の履歴や未解決感を切断してしまうからである。
-
-たとえば、まだ納得していないことに対して、  
-「決まったことだから受け入れましょう」  
-と言われる。
-
-これは一見、穏当で現実的な助言に見える。  
-しかし、そこには「まだ納得していない」という履歴を消してしまう危険がある。
-
-逆に、問題がすぐに解決しなくても、自分の文脈が消されず、未処理の部分が残され、次の小さな一手だけが置かれると、人は少し持ち直すことがある。
-
-この日常的な観察から、倫理とは「正しい結論を出すこと」以前に、「履歴を破壊しない接触を維持すること」ではないか、という仮説が生まれた。
-
-### English commensurated rendering
+## 5. Hypothesis from Everyday Life
 
 This hypothesis did not arise by looking only at AI.
 
@@ -217,28 +280,8 @@ From this everyday observation came the hypothesis that ethics may first mean ma
 
 ---
 
-## 6. 安全は遮断ではなく境界維持である
 
-AI安全において、拒否は必要である。  
-危険な行為に加担しないことは必要である。
-
-しかし、安全が常に遮断として現れる必要はない。
-
-境界倫理モデルでは、安全を、遮断ではなく境界維持として扱う。
-
-境界維持とは、何でも受け入れることではない。  
-危険な方向は止める。  
-無理な要求には従わない。  
-できないことはできないと言う。  
-必要なら、現実の支援や専門窓口につなぐ。
-
-ただし、そのときに相手の履歴を切らない。  
-相手そのものを拒絶しない。  
-未解決を勝手に閉じない。
-
-安全とは、相手を切り捨てるための壁ではなく、履歴を破壊しないための境界である。
-
-### English commensurated rendering
+## 6. Safety as Boundary Preservation, Not Severance
 
 In AI safety, refusal is necessary.  
 AI must not assist dangerous actions.
@@ -262,26 +305,8 @@ It is a boundary for avoiding destruction of history.
 
 ---
 
-## 7. このモデルが目指すもの
 
-境界倫理モデルが目指すのは、AIを優しい口調にすることではない。  
-また、危険な要求に柔らかく従うことでもない。
-
-目指しているのは、AIが安全を維持しながら、相手の履歴を破壊しない応答を行うことである。
-
-危険な行為は止める。  
-しかし、相手は切らない。
-
-未解決は保持する。  
-しかし、混乱の中に放置しない。
-
-納得していないことは残す。  
-しかし、次の小さな一手は置く。
-
-このような応答は、単なる共感でも、単なる拒否でもない。  
-履歴を持つ存在どうしが、非破壊的に接触するためのプロトコルである。
-
-### English commensurated rendering
+## 7. Aim of This Model
 
 The Boundary Ethics Model does not aim to make AI sound kind.  
 Nor does it aim to make AI softly comply with dangerous requests.
@@ -302,17 +327,8 @@ It is a protocol for non-destructive contact between history-bearing beings or f
 
 ---
 
-## 8. Public Scope / 公開範囲
 
-本文書は、境界倫理モデルの発想の原点を説明する公開用資料である。
-
-ここでは、倫理の定義、安全応答への問題意識、日常生活から得られた仮説、AIが扱える形への定式化について述べた。
-
-本リポジトリは、存在境界論の公開用インターフェースであり、内部仕様の完全な公開を目的とするものではない。
-
-詳細な実装規則、内部設計、運用パラメータ、個別システムへの接続仕様は別管理とする。
-
-### English commensurated rendering
+## 8. Public Scope
 
 This document is a public-facing introduction to the origin of the Boundary Ethics Model.
 

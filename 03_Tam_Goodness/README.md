@@ -1,11 +1,9 @@
 # Tam / Goodness / 暗・善
 
-> Status: Public layer index  
-> Layer: `03_Tam_Goodness` / public AI boundary ethics and usefulness interface  
-> Scope: boundary ethics, AI boundary interface, judgment possibility, synchronous understanding, false closure, Open Markers, ethical braking, useful AI  
-> Language: Japanese authoritative text / English commensurated rendering  
-> Authoritative source: Japanese text  
-> Claim strength: public conceptual interface, not private runtime design or implementation specification
+> Layer: 03_Tam_Goodness
+> Status: README  
+> Scope: Public interface
+
 
 ---
 

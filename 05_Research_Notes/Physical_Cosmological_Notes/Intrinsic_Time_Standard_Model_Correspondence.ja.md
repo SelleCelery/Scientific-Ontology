@@ -1,15 +1,13 @@
-# 内在時間標準模型対応表 / Intrinsic Time and Standard Model Correspondence
+# 内在時間標準模型対応表
 
-> Status: Japanese authoritative research note / 日本語正本研究ノート  
-> Layer: 05_Research_Notes / Physical_Cosmological_Notes  
-> Scope: intrinsic time, Standard Model correspondence, particle attributes, interaction, boundary information  
-> Language: Japanese authoritative text only; English commensurated rendering pending  
-> Authoritative source: Japanese text  
-> Claim strength: S4-S5 candidate; proposal, not proof; not a replacement for particle physics  
-> Commensuration status: English commensuration pending / 英語通約保留  
-> Note: English commensuration is pending because this note touches high-claim-strength physical correspondence and requires separate terminology and claim-strength review. / 高主張強度の物理対応候補を扱うため、用語と主張強度の再点検を行うまで英語通約は保留する。
+> Status: Research table
+> Scope: intrinsic-time
+> Language: ja
+> Claim profile: U/E -> S
 
 ---
+
+## 0. 目的
 
 本稿は、素粒子物理学の標準模型を置き換えるものではない。
 
@@ -109,17 +107,11 @@
 本稿は、次を主張しない。
 
 - 標準模型が間違っているとは主張しない。
-    
 - 標準模型のラグランジアンを再導出したとは主張しない。
-    
 - 粒子質量、結合定数、崩壊率などを予測したとは主張しない。
-    
 - 既存実験結果を置き換えるとは主張しない。
-    
 - ブラックホール情報問題を数理的に解決したとは主張しない。
-    
 - ホログラフィック原理やワームホールを物理的に証明したとは主張しない。
-    
 
 本稿は、内在時間という最小追加仮定によって、既存の物理概念がどのように履歴場トポロジーの語彙へ対応しうるかを整理するための研究ノートである。
 

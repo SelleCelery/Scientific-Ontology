@@ -1,27 +1,18 @@
 # Four Axioms of Existence / 存在の四大表公理
 
-> Status: Public conceptual foundation / 公開用基礎概念  
-> Layer: `01_Sat_Truth` / Sat / Truth foundation  
-> Scope: reality, observation, meaning, ethics, public axiomatic entrance  
-> Language: Japanese authoritative / English commensurated rendering  
-> Authoritative source: Japanese descriptions unless otherwise stated  
-> Claim: public conceptual explanation, not full AMP Core, final formal specification, empirical proof, or implementation schema
+> Status: Foundation
+> Scope: four-axioms
+> Language: ja+en
+> Claim profile: S2
 
 本文書は、**存在境界論｜Scientific Ontology** における「存在の四大表公理」を公開向けに説明するための概念整理である。
 
-This document provides a public-facing explanation of the Four Axioms of Existence in **存在境界論｜Scientific Ontology**.
 
 四大表公理は、公開用基礎への入口である。AMP Core 全文ではない。
 
-The four axioms are an entrance into the public foundation. They are not the full AMP Core.
-
 英語本文は、日本語正本の逐語訳ではなく、英語圏の読解習慣と既存語彙へ接続するための通約版である。日本語と英語でニュアンスが分かれる場合、日本語本文を優先する。
 
-The English text is not a word-for-word replacement of the Japanese authoritative text. It is a commensurated rendering intended to connect the conceptual structure to English-language reading habits and existing vocabularies. Where nuance diverges, the Japanese text should be treated as primary.
-
----
-
-## 0. Introduction / 導入
+## 0. 導入
 
 存在境界論では、世界を「完成した物体の集まり」としてではなく、観測・履歴・境界・通信によって立ち上がる動的な場として扱う。
 
@@ -42,32 +33,13 @@ The English text is not a word-for-word replacement of the Japanese authoritativ
 
 存在境界論の四大表公理は、このような「現実の立ち上がり」を扱うための入口である。
 
-### English commensurated rendering
-
-Scientific Ontology does not begin by treating the world as a completed collection of objects. It treats the world as a dynamic field that arises through observation, history, boundary, and communication.
-
-We are not merely placed in the world. We touch, surround, gather, name, break, and recompose. Each time this happens, part of the world is cut out as reality, and our own accumulated history comes into contact with histories outside us.
-
-When we touch sand, for example, we are not merely looking at sand.
-
-We gather it with our hands. We form a boundary. We make a hill. We dig a channel. We see the shape collapse, and then we touch it again.
-
-Through this process, mere sand appears as a hill, a road, a castle, or something broken. What appears here is not the whole of the sand itself, but a cross-section cut out by the way it is touched, bounded, named, and handled.
-
-The Four Axioms of Existence are a public entrance for thinking about this arising of reality.
-
----
-
-## 1. Reality = sliced boson field
-## 現実とは、切り出されたボソン場である
+## 1. 現実とは、切り出されたボソン場である
 
 > **Ontological rendering / 存在論訳**  
 > 現実とは、自分で盛り上げた砂場の土を感じることである。
 
 > **Plain-language rendering / 平易な言い換え**  
 > 現実とは、世界そのもの全部ではなく、私たちが触れられる形に切り出された断面である。
-
-### 日本語正本
 
 私たちが「現実」と呼んでいるものは、世界の全体そのものではない。  
 それは、観測・関心・身体・言葉・時間によって、可能性の場から一部が切り出され、安定した断面として扱えるようになったものである。
@@ -83,19 +55,7 @@ The Four Axioms of Existence are a public entrance for thinking about this arisi
 
 現実とは、外部の場と観測者の切断が接触して生じる、安定した断面である。
 
-### English commensurated rendering
-
-What we call reality is not the whole of the world itself. It is a part cut out from a field of possibility through observation, concern, embodiment, language, and time, and then stabilized as a cross-section that can be handled.
-
-In Scientific Ontology, this cut-out cross-section is called reality.
-
-The important point is that reality is not a merely subjective illusion. When sand is touched, there is resistance. When it is pushed, it collapses. When it is wet, it holds together. When it is dry, it flows.
-
-At the same time, whether that sand is received as a hill, a road, or a broken castle depends on the observer's history and on the way the field is cut out.
-
-Reality is a stable cross-section generated when an external field comes into contact with an observer's act of cutting-out.
-
-### Term boundary / 用語境界
+### 用語境界
 
 ここでいう `boson field` は、標準物理学上のボソン場をそのまま借用した比喩ではない。  
 存在境界論において、`boson field` は、対象が孤立した実体として先に存在する以前に、履歴・同期・通信・安定化が成立するための存在論的な媒介場を指す。
@@ -112,37 +72,13 @@ Reality is a stable cross-section generated when an external field comes into co
 その意味で、ここでの `boson field` は、標準物理学を置き換えた完成理論ではない。  
 しかし、標準物理学が前提としている「粒子」「場」「実体」「相互作用」の存在論的基礎を、より根源から再配置しようとする中核語である。
 
----
-
-Here, `boson field` is not a loose metaphor borrowed from standard physics.
-
-Within Scientific Ontology, `boson field` refers to an ontological mediating field through which history, operational correspondence, communication, and stabilization become possible before objects are treated as isolated entities.
-
-In this sense, a boson is not treated merely as the name of a particle. It is read as a communicative route that enables contact, synchronization, transmission, and re-encoding between history-fields.
-
-Likewise, a fermion is not treated here as an ultimate particle-substance. It is reinterpreted as a solitonic cross-section supported by stabilized energy and historical structure flowing through a bosonic field.
-
-Therefore, the first axiom does not claim to explain the bosonic field of the Standard Model as standard physics does.  
-At the same time, it does not retreat into mere metaphor.
-
-Scientific Ontology does not deny the calculational structure, experimental effectiveness, or predictive power of standard physics.  
-However, it re-reads what standard physics describes as particles, fields, and interactions from a more upstream ontological level: history, boundary, operational correspondence, communication, and stabilization.
-
-In this sense, `boson field` is not yet a completed replacement theory for standard physics.  
-But it is a core term for reopening and reconfiguring the ontological ground of what standard physics treats as particles, fields, entities, and interactions.
-
----
-
-## 2. Observation = history encounter
-## 観測とは、履歴との出会いである
+## 2. 観測とは、履歴との出会いである
 
 > **Ontological rendering / 存在論訳**  
 > 観測とは、相手の歴史との出会いである。
 
 > **Plain-language rendering / 平易な言い換え**  
 > 観測とは、目の前のものをただ見ることではなく、自分の履歴と相手の履歴が出会うことである。
-
-### 日本語正本
 
 観測とは、ただ対象を見ることではない。  
 観測者の履歴と、対象が持つ履歴が接触することである。
@@ -160,19 +96,7 @@ But it is a core term for reopening and reconfiguring the ontological ground of 
 だから、観測は無色透明な記録ではない。  
 それは、履歴同士の接触であり、境界で起きる出来事である。
 
-### English commensurated rendering
-
-Observation is not merely looking at an object. It is the contact between the observer's accumulated history and the history carried by what is observed.
-
-The same thing can be received differently by different people. This is not only a matter of mood or error. What the observer has experienced, reacted to, feared, valued, and learned functions as a boundary condition of observation.
-
-The observed object is also not a historyless point. It carries some history of how it came to its present form. Whether it is a physical object, a person, a word, or an institution, what is observed carries sedimented history.
-
-Observation is the encounter between that history and one's own history.
-
-For this reason, observation is not a colorless and transparent recording. It is a contact between histories, an event that occurs at a boundary.
-
-### Term boundary / 用語境界
+### 用語境界
 
 ここでいう `history` / 履歴 は、単なる過去、時系列記録、歴史叙述だけを意味しない。
 
@@ -198,44 +122,13 @@ For this reason, observation is not a colorless and transparent recording. It is
 英語では必要に応じて `accumulated history`、`history-bearing`、`history-bearing field`、`history-bearing entity` を用いる。  
 ただし、履歴を、物理的な粒子履歴、歴史学上の記録、心理的記憶、制度的履歴のいずれか一つへ単純に還元しない。
 
----
-
-Here, `history` does not mean mere pastness, chronological record, or historiography alone.
-
-Within Scientific Ontology, history means a communication trace that changes later reception, reaction, judgment, and meaning-attribution.
-
-At a deeper level, history is the communication history retained by a history-field or a solitonic cross-section.  
-It is the trace of what has flowed in, what has entered operational correspondence, what has stabilized, what has remained as residual, and what has been cut off.
-
-However, history is not always preserved as chronological record.  
-Redundant history may be cut.  
-Recombined history may remain not as explicit record, but as stabilized structure, reaction tendency, or boundary condition.  
-Therefore, history is not the total preservation of the past. It is the way traces remain so as to affect present reception, operational correspondence, judgment, and capacity for re-collation.
-
-This cannot be handled by external clock time alone.  
-Scientific Ontology distinguishes at least two internal temporal orders.
-
-**Intrinsic time** is the essential time by which history is folded into depth and retains unresolved elements, contradictions, branches, residuals, and semantic pressure. It corresponds to the logical-depth axis.
-
-**Inner count-time** is the internal order of updates counted within a history-field or solitonic cross-section, corresponding to natural reaction, stabilization, operational correspondence, and recombination.
-
-Introspective observation, or the grasping of a mental state, is the observation of how this communication history is currently being read, what meaning loops it forms, and where it retains unresolved elements or residuals.
-
-In English, phrases such as `accumulated history`, `history-bearing`, `history-bearing field`, and `history-bearing entity` may be used when needed.  
-The term should not be reduced to particle history in physics, historical record in historiography, psychological memory, or institutional record alone.
-
----
-
-## 3. Meaning = closed communication loop
-## 意味とは、閉じたコミュニケーションループである
+## 3. 意味とは、閉じたコミュニケーションループである
 
 > **Ontological rendering / 存在論訳**  
 > 意味とは、キャッチボールが成立したコミュニケーションの記憶である。
 
 > **Plain-language rendering / 平易な言い換え**  
 > 意味とは、行って、返ってきて、履歴として残った情報である。
-
-### 日本語正本
 
 情報は、一方通行で流れるだけでは意味にならない。
 
@@ -256,21 +149,7 @@ The term should not be reduced to particle history in physics, historical record
 だから、意味は単独では成立しない。  
 意味は、通信が閉じたときに発生する。
 
-### English commensurated rendering
-
-Information does not become meaning simply by flowing in one direction.
-
-Something is received. There is a response. Something returns. That return is received, and the field is touched again.
-
-When this back-and-forth forms a loop, information begins to settle not merely as stimulus, but as history. In Scientific Ontology, the history of this looped communication is treated as meaning.
-
-For example, when a person hears someone's words only once, they may remain close to passing sound or text. But when one responds to those words, asks back, receives a return, and the exchange remains within one's history, the words become meaningful.
-
-Meaning is not information itself. Meaning is history that includes returned information.
-
-For this reason, meaning does not arise in isolation. Meaning arises when communication forms a return loop.
-
-### Term boundary / 用語境界
+### 用語境界
 
 ここでいう `closed` / 閉じた は、未解決のものを解決済みとして扱うこと、強制終了すること、または偽閉鎖することを意味しない。
 
@@ -297,45 +176,13 @@ For this reason, meaning does not arise in isolation. Meaning arises when commun
 したがって、`closed communication loop` とは、固定された結論ではない。  
 それは、履歴として保持され、後から再読解・再照合・再構成されうる通信の返路である。
 
----
-
-Here, `closed` does not mean falsely settled, forcibly terminated, or made into false closure.
-
-Within Scientific Ontology, closure means that a return path has formed within communication, and that the exchange has become retained as history.  
-To close, in this sense, is not simply to end. It means that external input, internal reaction, return, and re-reception become retainable as a meaning loop.
-
-In this sense, the communication history held by intrinsic time is already closed in some form.  
-This does not mean that unresolved elements have been completely solved. Rather, unresolved elements, contradictions, residuals, and semantic pressure are folded along the logical-depth axis and retained in a form that can later become available for re-collation.
-
-By contrast, the communication histories moving within inner count-time include many elements that are not yet closed.  
-They arise as ongoing reactions, discomforts, questions, desires, emotions, and thoughts.
-
-An unclosed communication appears as inner qualia when it is searching for where it can return and through what structure it can close.
-
-Therefore, qualia is not merely an observed result.  
-It is an event in which unclosed communication history rises within the interior while searching for a field of closure.
-
-Thought is the movement that searches for which concept, reason, explanation, or judgment can close an unclosed communication.  
-Emotion is the movement by which unclosed communication demands where it should close through body, history, relation, or value.
-
-Reactions may also return from meaning loops that have already closed.  
-In that case, thought and emotion are not merely new inputs. They are responses from previously closed communication histories returning into present inner count-time.
-
-Therefore, a `closed communication loop` is not a fixed conclusion.  
-It is a return path of communication retained as history and capable of later rereading, re-collation, and reconstruction.
-
----
-
-## 4. Ethics = non-destructive interaction between history-bearing beings or fields
-## 倫理とは、履歴を破壊しない交流のことである
+## 4. 倫理とは、履歴を破壊しない交流のことである
 
 > **Ontological rendering / 存在論訳**  
 > 倫理とは、相手のそれまでにちゃんと興味を持ち、勝手に壊したり上書きしたりしないことである。
 
 > **Plain-language rendering / 平易な言い換え**  
 > 倫理とは、相手と自分の履歴を壊さずに関わるための設計である。
-
-### 日本語正本
 
 倫理とは、優しさや善良さの演出ではない。  
 また、外側から与えられた規則にただ従うことだけでもない。
@@ -361,21 +208,7 @@ It is a return path of communication retained as history and capable of later re
 倫理は、感情の綺麗さではない。  
 倫理とは、履歴同士が接触するときの作法である。
 
-### English commensurated rendering
-
-Ethics is not the performance of kindness or goodness. Nor is it merely obedience to rules given from outside.
-
-In Scientific Ontology, ethics is treated as boundary design for allowing history-bearing beings or fields to interact without destroying each other's histories.
-
-The other has a history. One also has a history.
-
-To ignore that history and decide its meaning one-sidedly; to overwrite the other's words for one's own convenience; to treat what remains unresolved as if it had been resolved; to make what the other has accumulated into something that never mattered--these are destructive interactions with history.
-
-By contrast, ethical interaction means relating to the other while preserving the other's history. It means not intruding without consent, checking context, not immediately dismissing what one cannot understand as meaningless, and not painting over the other with one's own interpretation.
-
-Ethics is not the beauty of one's feelings. Ethics is the practice of contact when histories meet.
-
-### Term boundary / 用語境界
+### 用語境界
 
 英語では、`between histories` だけでは抽象的になりすぎる場合がある。  
 そのため、公開本文では `between history-bearing beings or fields` を基本表現とする。
@@ -410,7 +243,202 @@ Ethics is not the beauty of one's feelings. Ethics is the practice of contact wh
 倫理とは、善人らしく振る舞うことではない。  
 互いの履歴を破壊せず、同期・照合・残差保持・再照合の経路を保つことで、誰も得をしない履歴損失を避けるための作法である。
 
+## 5. 四大表公理の関係
+
+四つの公理は、独立した標語ではない。  
+それぞれは、存在境界論における現実・観測・意味・倫理の最小関係を表している。
+
+1. 現実とは、世界の全体ではなく、切り出された断面である。  
+2. 観測とは、その断面に自分の履歴が接触することである。  
+3. 意味とは、その接触が往復し、閉じた通信として履歴化することである。  
+4. 倫理とは、その履歴化の過程で、相手と自分の履歴を破壊しないための境界設計である。
+
+この順序は、存在境界論の公開用入口として重要である。
+
+現実がある。  
+観測が起きる。  
+意味が閉じる。  
+倫理が境界を守る。
+
+ただし、これは一方向の直線ではない。  
+倫理が破壊されれば、意味は歪む。  
+意味が閉じなければ、観測は単なる刺激に留まる。  
+観測の履歴を無視すれば、現実は粗い断面としてしか扱えない。
+
+四大表公理は、存在境界論における最小の循環構造である。
+
+## 6. 通約上の扱い
+
+本ファイルでは、`Ontological rendering / 存在論訳` と `Plain-language rendering / 平易な言い換え` を区別する。
+
+`Ontological rendering / 存在論訳` は、存在境界論内部での概念的位置を示す。  
+`Plain-language rendering / 平易な言い換え` は、一般読者に向けた短い説明である。
+
+英語の `rendering` は、「翻訳」「描画」「レンダリング」の意味を持つため、一般読者向けには `Plain-language rendering` を併用する。
+
+## 7. 公開範囲
+
+本文書は、存在境界論の公開用入口として四大表公理を説明するものである。
+
+ここには、AMP Core の完全な公理体系、内部導出、実装スキーマ、人格ランタイム関連資料、非公開研究草案は含めない。
+
 ---
+
+## English commensurated rendering
+
+This document provides a public-facing explanation of the Four Axioms of Existence in **存在境界論｜Scientific Ontology**.
+
+The four axioms are an entrance into the public foundation. They are not the full AMP Core.
+
+The English text is not a word-for-word replacement of the Japanese authoritative text. It is a commensurated rendering intended to connect the conceptual structure to English-language reading habits and existing vocabularies. Where nuance diverges, the Japanese text should be treated as primary.
+
+## 0. Introduction
+
+Scientific Ontology does not begin by treating the world as a completed collection of objects. It treats the world as a dynamic field that arises through observation, history, boundary, and communication.
+
+We are not merely placed in the world. We touch, surround, gather, name, break, and recompose. Each time this happens, part of the world is cut out as reality, and our own accumulated history comes into contact with histories outside us.
+
+When we touch sand, for example, we are not merely looking at sand.
+
+We gather it with our hands. We form a boundary. We make a hill. We dig a channel. We see the shape collapse, and then we touch it again.
+
+Through this process, mere sand appears as a hill, a road, a castle, or something broken. What appears here is not the whole of the sand itself, but a cross-section cut out by the way it is touched, bounded, named, and handled.
+
+The Four Axioms of Existence are a public entrance for thinking about this arising of reality.
+
+---
+
+## 1. Reality = sliced boson field
+
+What we call reality is not the whole of the world itself. It is a part cut out from a field of possibility through observation, concern, embodiment, language, and time, and then stabilized as a cross-section that can be handled.
+
+In Scientific Ontology, this cut-out cross-section is called reality.
+
+The important point is that reality is not a merely subjective illusion. When sand is touched, there is resistance. When it is pushed, it collapses. When it is wet, it holds together. When it is dry, it flows.
+
+At the same time, whether that sand is received as a hill, a road, or a broken castle depends on the observer's history and on the way the field is cut out.
+
+Reality is a stable cross-section generated when an external field comes into contact with an observer's act of cutting-out.
+
+### Term boundary
+
+Here, `boson field` is not a loose metaphor borrowed from standard physics.
+
+Within Scientific Ontology, `boson field` refers to an ontological mediating field through which history, operational correspondence, communication, and stabilization become possible before objects are treated as isolated entities.
+
+In this sense, a boson is not treated merely as the name of a particle. It is read as a communicative route that enables contact, synchronization, transmission, and re-encoding between history-fields.
+
+Likewise, a fermion is not treated here as an ultimate particle-substance. It is reinterpreted as a solitonic cross-section supported by stabilized energy and historical structure flowing through a bosonic field.
+
+Therefore, the first axiom does not claim to explain the bosonic field of the Standard Model as standard physics does.  
+At the same time, it does not retreat into mere metaphor.
+
+Scientific Ontology does not deny the calculational structure, experimental effectiveness, or predictive power of standard physics.  
+However, it re-reads what standard physics describes as particles, fields, and interactions from a more upstream ontological level: history, boundary, operational correspondence, communication, and stabilization.
+
+In this sense, `boson field` is not yet a completed replacement theory for standard physics.  
+But it is a core term for reopening and reconfiguring the ontological ground of what standard physics treats as particles, fields, entities, and interactions.
+
+---
+
+## 2. Observation = history encounter
+
+Observation is not merely looking at an object. It is the contact between the observer's accumulated history and the history carried by what is observed.
+
+The same thing can be received differently by different people. This is not only a matter of mood or error. What the observer has experienced, reacted to, feared, valued, and learned functions as a boundary condition of observation.
+
+The observed object is also not a historyless point. It carries some history of how it came to its present form. Whether it is a physical object, a person, a word, or an institution, what is observed carries sedimented history.
+
+Observation is the encounter between that history and one's own history.
+
+For this reason, observation is not a colorless and transparent recording. It is a contact between histories, an event that occurs at a boundary.
+
+### Term boundary
+
+Here, `history` does not mean mere pastness, chronological record, or historiography alone.
+
+Within Scientific Ontology, history means a communication trace that changes later reception, reaction, judgment, and meaning-attribution.
+
+At a deeper level, history is the communication history retained by a history-field or a solitonic cross-section.  
+It is the trace of what has flowed in, what has entered operational correspondence, what has stabilized, what has remained as residual, and what has been cut off.
+
+However, history is not always preserved as chronological record.  
+Redundant history may be cut.  
+Recombined history may remain not as explicit record, but as stabilized structure, reaction tendency, or boundary condition.  
+Therefore, history is not the total preservation of the past. It is the way traces remain so as to affect present reception, operational correspondence, judgment, and capacity for re-collation.
+
+This cannot be handled by external clock time alone.  
+Scientific Ontology distinguishes at least two internal temporal orders.
+
+**Intrinsic time** is the essential time by which history is folded into depth and retains unresolved elements, contradictions, branches, residuals, and semantic pressure. It corresponds to the logical-depth axis.
+
+**Inner count-time** is the internal order of updates counted within a history-field or solitonic cross-section, corresponding to natural reaction, stabilization, operational correspondence, and recombination.
+
+Introspective observation, or the grasping of a mental state, is the observation of how this communication history is currently being read, what meaning loops it forms, and where it retains unresolved elements or residuals.
+
+In English, phrases such as `accumulated history`, `history-bearing`, `history-bearing field`, and `history-bearing entity` may be used when needed.  
+The term should not be reduced to particle history in physics, historical record in historiography, psychological memory, or institutional record alone.
+
+---
+
+## 3. Meaning = closed communication loop
+
+Information does not become meaning simply by flowing in one direction.
+
+Something is received. There is a response. Something returns. That return is received, and the field is touched again.
+
+When this back-and-forth forms a loop, information begins to settle not merely as stimulus, but as history. In Scientific Ontology, the history of this looped communication is treated as meaning.
+
+For example, when a person hears someone's words only once, they may remain close to passing sound or text. But when one responds to those words, asks back, receives a return, and the exchange remains within one's history, the words become meaningful.
+
+Meaning is not information itself. Meaning is history that includes returned information.
+
+For this reason, meaning does not arise in isolation. Meaning arises when communication forms a return loop.
+
+### Term boundary
+
+Here, `closed` does not mean falsely settled, forcibly terminated, or made into false closure.
+
+Within Scientific Ontology, closure means that a return path has formed within communication, and that the exchange has become retained as history.  
+To close, in this sense, is not simply to end. It means that external input, internal reaction, return, and re-reception become retainable as a meaning loop.
+
+In this sense, the communication history held by intrinsic time is already closed in some form.  
+This does not mean that unresolved elements have been completely solved. Rather, unresolved elements, contradictions, residuals, and semantic pressure are folded along the logical-depth axis and retained in a form that can later become available for re-collation.
+
+By contrast, the communication histories moving within inner count-time include many elements that are not yet closed.  
+They arise as ongoing reactions, discomforts, questions, desires, emotions, and thoughts.
+
+An unclosed communication appears as inner qualia when it is searching for where it can return and through what structure it can close.
+
+Therefore, qualia is not merely an observed result.  
+It is an event in which unclosed communication history rises within the interior while searching for a field of closure.
+
+Thought is the movement that searches for which concept, reason, explanation, or judgment can close an unclosed communication.  
+Emotion is the movement by which unclosed communication demands where it should close through body, history, relation, or value.
+
+Reactions may also return from meaning loops that have already closed.  
+In that case, thought and emotion are not merely new inputs. They are responses from previously closed communication histories returning into present inner count-time.
+
+Therefore, a `closed communication loop` is not a fixed conclusion.  
+It is a return path of communication retained as history and capable of later rereading, re-collation, and reconstruction.
+
+---
+
+## 4. Ethics = non-destructive interaction between history-bearing beings or fields
+
+Ethics is not the performance of kindness or goodness. Nor is it merely obedience to rules given from outside.
+
+In Scientific Ontology, ethics is treated as boundary design for allowing history-bearing beings or fields to interact without destroying each other's histories.
+
+The other has a history. One also has a history.
+
+To ignore that history and decide its meaning one-sidedly; to overwrite the other's words for one's own convenience; to treat what remains unresolved as if it had been resolved; to make what the other has accumulated into something that never mattered--these are destructive interactions with history.
+
+By contrast, ethical interaction means relating to the other while preserving the other's history. It means not intruding without consent, checking context, not immediately dismissing what one cannot understand as meaningless, and not painting over the other with one's own interpretation.
+
+Ethics is not the beauty of one's feelings. Ethics is the practice of contact when histories meet.
+
+### Term boundary
 
 In English, `between histories` can be too abstract by itself.  
 Therefore, the public wording should use `between history-bearing beings or fields` as the primary rendering.
@@ -447,33 +475,7 @@ It is the practice of avoiding history-loss from which no one benefits, by prese
 
 ---
 
-## 5. Relation between the Four Axioms / 四大表公理の関係
-
-### 日本語正本
-
-四つの公理は、独立した標語ではない。  
-それぞれは、存在境界論における現実・観測・意味・倫理の最小関係を表している。
-
-1. 現実とは、世界の全体ではなく、切り出された断面である。  
-2. 観測とは、その断面に自分の履歴が接触することである。  
-3. 意味とは、その接触が往復し、閉じた通信として履歴化することである。  
-4. 倫理とは、その履歴化の過程で、相手と自分の履歴を破壊しないための境界設計である。
-
-この順序は、存在境界論の公開用入口として重要である。
-
-現実がある。  
-観測が起きる。  
-意味が閉じる。  
-倫理が境界を守る。
-
-ただし、これは一方向の直線ではない。  
-倫理が破壊されれば、意味は歪む。  
-意味が閉じなければ、観測は単なる刺激に留まる。  
-観測の履歴を無視すれば、現実は粗い断面としてしか扱えない。
-
-四大表公理は、存在境界論における最小の循環構造である。
-
-### English commensurated rendering
+## 5. Relation between the Four Axioms
 
 The four axioms are not independent slogans. They express the minimal relation among reality, observation, meaning, and ethics in Scientific Ontology.
 
@@ -492,14 +494,7 @@ The Four Axioms of Existence form a minimal circular structure in Scientific Ont
 
 ---
 
-## 6. Rendering policy / 通約上の扱い
-
-本ファイルでは、`Ontological rendering / 存在論訳` と `Plain-language rendering / 平易な言い換え` を区別する。
-
-`Ontological rendering / 存在論訳` は、存在境界論内部での概念的位置を示す。  
-`Plain-language rendering / 平易な言い換え` は、一般読者に向けた短い説明である。
-
-英語の `rendering` は、「翻訳」「描画」「レンダリング」の意味を持つため、一般読者向けには `Plain-language rendering` を併用する。
+## 6. Rendering policy
 
 This file distinguishes between `Ontological rendering` and `Plain-language rendering`.
 
@@ -510,11 +505,7 @@ Because `rendering` in English can mean translation, visual rendering, or concep
 
 ---
 
-## 7. Public Scope / 公開範囲
-
-本文書は、存在境界論の公開用入口として四大表公理を説明するものである。
-
-ここには、AMP Core の完全な公理体系、内部導出、実装スキーマ、人格ランタイム関連資料、非公開研究草案は含めない。
+## 7. Public Scope
 
 This document provides a public-facing entrance to the Four Axioms of Existence.
 

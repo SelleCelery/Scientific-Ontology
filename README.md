@@ -4,10 +4,9 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20749351.svg)](https://doi.org/10.5281/zenodo.20749351)
 
-> Status: Public Interface  
-> Scope: repository overview, public navigation, publication boundary  
-> Language: English / Japanese  
-> Authoritative source: Japanese descriptions unless otherwise stated
+> Layer: Repository root  
+> Status: README  
+> Scope: Public interface
 
 This repository is the public-facing interface and work-in-progress conceptual archive for **Scientific Ontology**.
 
@@ -600,11 +599,11 @@ AI / 保守メモ:
 原則として短いメタデータヘッダを付ける。
 
 例:
-> Status:
-> Scope:
+> Layer:(READMEの場合)
+> Status:（選択肢：）
+> Scope:（選択肢：）
 > Language:
-> Authoritative source:
-> Claim strength:  （必要な場合）
+> Claim strength:  （S/U/E：特記事項）
 
 これは保守上の慣習であり、主要な公開方針セクションではない。
 文書自体が必要としない限り、過度に規約化しないこと。
