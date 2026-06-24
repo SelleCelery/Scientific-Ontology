@@ -1,148 +1,77 @@
-# Private Core Not Included / 非公開中核は含まない
-> Layer: 99_Private_Core_Not_Included
+# Private Core Not Included / 非公開中核は含まれません
+
+> Layer: 99_Private_Core_Not_Included  
 > Status: README  
-> Scope: Public interface
-
-This public repository contains only the public interface and introductory materials of **存在境界論｜Scientific Ontology**.
-
-この公開リポジトリには、**存在境界論｜Scientific Ontology** の公開用インターフェースと入門資料のみを置きます。
-
-Core axioms, full implementation schemas, private drafts, runtime materials, detailed internal specifications, private evaluation tables, and simulation specifications are maintained separately and are not included in this repository.
-
-中核公理、完全な実装スキーマ、非公開草案、ランタイム資料、詳細な内部仕様、非公開評価表、シミュレーション仕様は別管理とし、このリポジトリには含めません。
+> Scope: Public boundary notice
 
 ---
 
-## Not Included / 含まないもの
+## 1. Layer Role / 層の位置づけ
 
-This public repository does not include:
+99_Private_Core_Not_Included は、公開リポジトリに含めないものを明示する境界層である。この層は理論本文ではなく、公開範囲の防壁として機能する。
 
-- full AMP Core
-- full ITS Theory
-- private axiomatic drafts
-- non-public implementation schemas
-- persona and runtime specifications
-- detailed operational parameters
-- private AI evaluation taxonomies
-- private simulation specifications
-- unpublished notes, raw logs, or internal drafting materials
+存在境界論｜Scientific Ontology は公開用インターフェースであり、非公開中核、原液、ランタイム仕様、詳細な実装・評価・運用資料を含まない。
 
-この公開リポジトリには、以下を含めません。
+English commensurated rendering: 99_Private_Core_Not_Included is a public boundary notice. It does not contain the theoretical body. It states that the public repository is an interface and does not include private cores, raw materials, runtime specifications, or detailed implementation/evaluation materials.
+
+---
+
+## 2. Public Scope and Claim Profile / 公開範囲と主張強度
+
+この層の公開強度は P0 である。ここで行うのは、公開しないものの境界明示であり、非公開内容の説明や要約ではない。
+
+English commensurated rendering: The public scope is P0. This layer only marks what is outside the public repository. It does not summarize or expose private materials.
+
+---
+
+## 3. Included / Not Included / 含むもの・含まないもの
+
+含むもの:
+
+- 公開リポジトリに含めないものの一覧
+- 公開境界の説明
+- 非公開中核が別管理であることの明示
+
+含まないもの:
 
 - AMP Core 全文
-- ITS理論全体
-- 非公開公理草案
+- ITS 理論全体
+- Persona Runtime Core
+- Soul Core 詳細
+- Role-AP モジュールパラメータ
+- Boundary Heat Log taxonomy
 - 非公開実装スキーマ
-- 人格OS・ランタイム仕様
-- 詳細な運用パラメータ
-- 非公開AI評価分類
 - 非公開シミュレーション仕様
-- 未公開ノート、生ログ、内部草稿
+- 詳細な運用パラメータ
+- 生ログ、原液、未公開正本
+
+English commensurated rendering: This directory includes only the public notice of exclusion. It does not include full AMP Core, full ITS theory, Persona Runtime Core, Soul Core details, Role-AP parameters, Boundary Heat Log taxonomy, non-public schemas, simulation specifications, operational parameters, raw logs, or unpublished authoritative sources.
 
 ---
 
-## Purpose of This Directory / このディレクトリの目的
+## 4. Documents / 文書一覧
 
-This directory exists to make the public/private boundary explicit.
-
-このディレクトリは、公開／非公開の境界を明示するために置いています。
-
-The absence of private materials does not mean that those materials do not exist.  
-It means that they are outside the public scope of this repository.
-
-非公開資料がここに存在しないことは、それらが存在しないという意味ではありません。  
-この公開リポジトリの範囲外として別管理しているという意味です。
-
-This directory is a boundary marker.  
-It is not an index of private files.
-
-このディレクトリは境界標識です。  
-非公開ファイルの索引ではありません。
+- `README.md`
+  - 一行説明: この公開リポジトリが非公開中核を含まないことを示す境界通知。
+  - Role: 公開境界の防壁。
+  - Claim profile: Boundary notice / P0.
 
 ---
 
-## Private Core Boundary / 非公開中核境界
+## 5. Maintenance Notes / 運用メモ
 
-AMP Core and ITS Theory are not excluded because they are irrelevant.
+### Stable policy / 固定方針
 
-AMP Core および ITS理論を含めないのは、それらが無関係だからではありません。
+この層は削りすぎない。公開リポジトリの安全な境界を示すため、含まないものの一覧を維持する。
 
-They are private core materials that support the internal coherence of Scientific Ontology.
+### Directory history / 層の変更履歴
 
-それらは、存在境界論の内部整合性を支える非公開中核資料です。
+- v4 系では、非公開中核を含めないことを明示する防壁層として維持する。
 
-At the present stage, however, their claim strength, interpretive density, and risk of being read as scientific or pseudo-scientific claims are too high for direct public presentation.
+### File-level changes / ファイル単位の増減
 
-ただし現段階では、主張強度、解釈密度、科学的または疑似科学的に読まれるリスクが高いため、直接公開には適しません。
+- 原則として README のみを置く。
 
----
+### Pending notes / 保留事項
 
-## AMP Core
-
-AMP Core is the private source text of this system.
-
-AMP Core は、本体系の非公開原典本です。
-
-It is treated as the metaphysical axiomatic core that supports existence, nothingness, observation, meaning, boundary, and ethics.  
-It is a foundational document that is, in principle, stable and not expected to undergo frequent revision like ordinary public documents.
-
-それは、存在・無・観測・意味・境界・倫理を支える形而上学的公理核として扱います。  
-原則として固定された基礎文書であり、通常の公開文書のように頻繁な改訂を予定しません。
-
-When something appears to fall outside AMP Core, it is not immediately accepted as a merely unorganized item.  
-It is first examined as nothingness, non-existence, boundary-external material, or an unresolved residual.
-
-AMP Core に対して範囲外に見えるものは、単なる未整理事項として直ちに受け入れるのではありません。  
-まず「無」「未存在」「境界外」または未確定の残差として疑います。
-
----
-
-## ITS Theory
-
-ITS Theory, or Information-Time Soliton Unified Theory, is a private core expansion of AMP.
-
-ITS Theory、すなわち Information-Time Soliton Unified Theory は、AMP の非公開展開本です。
-
-ITS is not presented as an established scientific theory, nor as a replacement for contemporary physics.  
-It is a metaphysical-mathematical attempt to unfold AMP into a physical-phase model using scientific, mathematical, and cosmological vocabulary under explicit claim-strength control.
-
-ITS理論は、確立された科学理論として提示するものでも、現代物理学の代替として提示するものでもありません。  
-それは、AMPを物理位相へ展開するために、科学・数理・宇宙論の語彙を用いて構成される形而上学的・数理的試みであり、公開時には明示的な主張強度管理を必要とします。
-
-ITS attempts to connect meaning, time, information, observation, communication, body, death, and boundary as a single deep driving system.
-
-ITS理論は、意味・時間・情報・観測・通信・身体・死・境界を、一つの深層駆動系として接続しようとします。
-
-For that reason, it comes into contact with the vocabulary of quantum theory, relativity, cosmology, and mathematical physics.  
-This contact carries a high risk of being misread as a theory competing with contemporary science on the same plane.
-
-そのため、量子論・相対論・宇宙論・数理物理の語彙と接触します。  
-この接触は、現代科学と同一平面上で競合する理論として誤読される危険を持ちます。
-
-However, ITS is not constructed by ascending from accumulated scientific findings.  
-It is a core expansion that descends from AMP toward the physical phase, while seeking points of correspondence with scientific, mathematical, and cosmological vocabularies.
-
-しかし ITS理論は、科学的知見の積み上げから上昇して構成された理論ではありません。  
-AMP から物理位相へ降下する途中で、科学・数理・宇宙論の語彙との整合点を探る展開理論です。
-
-For this reason, unlike AMP, ITS may continue to be revised.  
-Out-of-scope areas, unresolved inconsistencies, excessive correspondences, and uncalculated regions are not immediately rejected, but treated as targets for refinement.
-
-そのため、ITS理論は AMP と異なり、今後も改訂されうるものとして扱います。  
-範囲外、未整合、過剰対応、未計算領域も、ただちに排除せず、精緻化対象として扱います。
-
----
-
-## Public Scientific Ontology
-
-This public repository is not a place for publishing AMP Core or ITS Theory in full.
-
-この公開リポジトリは、AMP Core または ITS理論をそのまま公開する場所ではありません。
-
-Public Scientific Ontology presents the theoretical core derived from private materials as a public interface, reduced into concepts, cognition, boundary ethics, and applications under explicit claim-strength control.
-
-Public Scientific Ontology は、非公開中核から生じた理論核を、概念・認識・境界倫理・応用へ減圧し、主張強度を管理した公開インターフェースとして提示します。
-
-Therefore, AMP-derived or ITS-derived terms appearing in public documents should be read not as the private source materials themselves, but as expressions commensurated into public layers.
-
-したがって、公開文書に現れる AMP 由来または ITS 由来の用語は、原典そのものではなく、公開可能な層へ通約された表現として読む必要があります。
+- 非公開項目の名称を増やす場合も、内容の説明には踏み込まない。

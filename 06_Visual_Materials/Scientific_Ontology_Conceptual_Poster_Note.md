@@ -277,8 +277,8 @@
 関連文書：
 
 - [`04_Applications/Application_Boundary_Theory_Core.md`](../04_Applications/Application_Boundary_Theory_Core.md)
-- [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md)
-- [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.md)
+- [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md)
+- [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md)
 - [`03_Tam_Goodness/Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
@@ -584,7 +584,8 @@ It presents one judgment-path: a problem that appears flat, economic, or transac
 Related reading:
 
 - [`04_Applications/Application_Boundary_Theory_Core.md`](../04_Applications/Application_Boundary_Theory_Core.md)
-- [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.md)
+- [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md)
+- [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.en.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.en.md)
 - [`03_Tam_Goodness/Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 

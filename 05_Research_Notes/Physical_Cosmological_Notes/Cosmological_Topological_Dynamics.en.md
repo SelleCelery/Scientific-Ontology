@@ -9,7 +9,7 @@
 
 ## 1. Abstract
 
-This essay is a trial account that describes the accelerated expansion of the physical universe, often associated with dark energy, and the transition between objectification and subjectivization at the observer's epistemic boundary as a tension model within a single communication field. Based on basal theorems derived from the deep theoretical layer of Scientific Ontology (AMP/ITS/HFC), it examines the ongoing experimental proposition of whether the observer purges external information by rendering it invisible, or internalizes it, under a teleological traction from the universe.
+This essay is a trial account that describes the accelerated expansion of the physical universe, often associated with dark energy, and the transition between objectification and subjectivization at the observer's epistemic boundary as a tension model within a single communication field. Based on derived foundational propositions from the deep theoretical layer of Scientific Ontology (AMP/ITS/HFC), it examines the ongoing experimental proposition of whether the observer purges external information by rendering it invisible, or internalizes it, under a teleological tension exerted by the universe.
 
 ## 2. Theoretical Foundation: Derived Theorems from AMP/ITS/HFC
 

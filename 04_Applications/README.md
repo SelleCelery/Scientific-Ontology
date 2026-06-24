@@ -1,127 +1,91 @@
-# Applications / 応用
+# Applications / 応用層
 
-> Layer: 04_Applications
+> Layer: 04_Applications  
 > Status: README  
-> Scope: Public interface
+> Scope: Public application interfaces and non-operational design notes
 
 ---
 
-## 1. 層の位置づけ
+## 1. Layer Role / 層の位置づけ
 
-### 日本語正本
+04_Applications は、Sat / Raj / Tam で整理された概念を、AI境界インターフェース、応用境界理論、有用性、人格応答構造などの公開可能な応用文書へ接続する層である。
 
-`04_Applications` は、存在境界論｜Scientific Ontology の概念を、具体的な応用領域へ接続する公開応用層である。
+この層は、実装仕様の公開場所ではない。公開可能な設計思想、使用者の判断可能性を守るインターフェース概念、応答構造としてのAI人格、応用境界理論の入口を置く。
 
-この層は、非公開実装層ではない。  
-ランタイム仕様、人格Coreパラメータ、役割選択条件、残差ルーティング、介入変数、内部評価ログ、非公開シミュレーション仕様は含めない。
-
-ここで扱うのは、Sat / Truth、Raj / Beauty、Tam / Goodness で整理された概念を、公開可能な範囲で、ソフトウェア、AI応答、意味生成、境界設計、実践的判断へ接続することである。
-
-### English commensurated rendering
-
-`04_Applications` is the public application layer that connects the concepts of Scientific Ontology to concrete domains of use.
-
-This layer is not a private implementation layer.  
-It does not include runtime specifications, persona-core parameters, role-selection conditions, residue routing, intervention variables, internal evaluation logs, or non-public simulation specifications.
-
-Its role is to connect the concepts developed in Sat / Truth, Raj / Beauty, and Tam / Goodness to software, AI response, meaning generation, boundary design, and practical judgment within the public scope.
+English commensurated rendering: 04_Applications connects the Sat/Raj/Tam conceptual structure to public-facing application interfaces, especially AI boundary interfaces, usefulness, response-structure models, and application boundary theory. It is not a place for publishing implementation specifications.
 
 ---
 
-## 2. 含むもの
+## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
-### 日本語正本
+この層の公開強度は、原則として P1-P2 である。概念応用、公開可能な設計思想、非操作的な応用説明を扱う。実装コード、非公開パラメータ、制御構造、人格OSの詳細は含めない。
 
-`04_Applications` には、以下を含む。
-
-- 公開可能な応用ノート
-- ソフトウェア・AI・人間システムへの概念応用
-- アプリケーション境界論
-- 返路軌道としての意味生成
-- 境界面、外部論理、責任境界
-- 判断可能性を保つ実践設計
-- 非公開実装へ踏み込まない応用的整理
-
-### English commensurated rendering
-
-`04_Applications` includes:
-
-- public application notes
-- conceptual applications to software, AI, and human systems
-- Application Boundary Theory
-- meaning generation as return orbit
-- boundary surfaces, external logic, and responsibility boundaries
-- practical design that preserves judgment possibility
-- application-level organization that does not disclose private implementation structures
+English commensurated rendering: The default public scope is P1-P2. This layer contains conceptual applications and public design interfaces. It does not publish implementation code, private parameters, control structures, or persona OS details.
 
 ---
 
-## 3. 含まないもの
+## 3. Included / Not Included / 含むもの・含まないもの
 
-### 日本語正本
+含むもの:
 
-`04_Applications` には、以下を含めない。
+- AI境界インターフェースの公開用説明
+- AI有用性を境界機能として扱う文書
+- AI人格を応答構造として扱う公開用入口
+- 応用境界理論の中核説明
+- 公開可能な応用設計メモ
 
-- 非公開ランタイム資料
-- 人格Core仕様
-- 役割選択プロセス
-- 残差ルーティング
-- 内部カード形式
-- 実装ループ
-- 運用閾値
-- 非公開評価マップ
-- 非公開素材の索引
+含まないもの:
 
-### English commensurated rendering
+- 実装コード
+- 非公開実装スキーマ
+- 詳細な運用パラメータ
+- AI制御構造
+- 人格OS・Soul Core・Runtime Core
+- 内部評価ログ
+- 非公開シミュレーション仕様
 
-`04_Applications` does not include:
-
-- private runtime materials
-- persona-core specifications
-- role-selection processes
-- residue routing
-- internal card formats
-- implementation loops
-- operational thresholds
-- non-public evaluation maps
-- private source inventories
+English commensurated rendering: This layer includes public AI boundary-interface documents, usefulness as boundary function, AI personality as response structure, and application boundary theory. It excludes implementation code, private schemas, operational parameters, AI control structures, persona cores, internal logs, and non-public simulation specifications.
 
 ---
 
-## 4. 文書一覧
+## 4. Documents / 文書一覧
 
-### 日本語正本
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
+  - 一行説明: AIを境界インターフェースとして扱い、同期的理解、偽閉鎖、Open Marker、倫理的制動を説明する。
+  - Role: AI境界インターフェースの公開文書。
+  - Claim profile: Application interface / P1.
 
-- [`Application_Boundary_Theory_Core.md`](./Application_Boundary_Theory_Core.md)  
-  アプリケーション境界論の公開用コア定義。システムの実用的価値を、内部の複雑さそのものではなく、外部から扱える境界面、外部論理、責任境界の設計として捉える。
+- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+  - 一行説明: AI人格を、口調やロールプレイではなく、判断可能性を保つ応答構造として扱う。
+  - Role: AI人格概念の公開ゲート。
+  - Claim profile: Application concept / P1-P2.
 
-- [`Meaning_As_Return_Orbit.md`](../03_Tam_Goodness/Meaning_As_Return_Orbit.md)  
-  返路軌道としての意味を扱う公開応用ノート。残差、探索圧、言語ゲーム間のブリッジ、返路候補、新規ヒューリスティック候補を、AI応答を含む境界インターフェースの観点から整理する。
+- [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)
+  - 一行説明: AIの有用性を、ユーザーの判断可能性が保たれる場の維持として定義する。
+  - Role: AI有用性の公開用概念インターフェース。
+  - Claim profile: Application interface / P1.
 
-### English commensurated rendering
-
-- [`Application_Boundary_Theory_Core.md`](./Application_Boundary_Theory_Core.md)  
-  Public core definition of Application Boundary Theory. It treats the practical value of a system not as internal complexity itself, but as the design of boundary surfaces, external logic, and responsibility boundaries that can be handled from outside.
-
-- [`Meaning_As_Return_Orbit.md`](../03_Tam_Goodness/Meaning_As_Return_Orbit.md)  
-  Public application note on meaning as return orbit. It organizes residuals, search pressure, bridging between language games, return-path candidates, and new heuristic candidates through the lens of boundary interfaces, including AI response.
+- [`Application_Boundary_Theory_Core.md`](./Application_Boundary_Theory_Core.md)
+  - 一行説明: 応用領域における境界理論の中核概念を整理する。
+  - Role: 応用境界理論の基礎ノート。
+  - Claim profile: Application theory note / P1-P2.
 
 ---
 
-## 5. 配置方針
+## 5. Maintenance Notes / 運用メモ
 
-### 日本語正本
+### Stable policy / 固定方針
 
-`Meaning_As_Return_Orbit.md` は、人格AI仕様ではない。  
-そのため、`Personality_AI` サブディレクトリではなく、`04_Applications` 直下に置く。
+Applications は、公開可能な応用説明の層である。実装可能性を示す場合でも、非公開パラメータや制御構造は出さない。
 
-AI人格との接続は、03 Tam / Goodness 側の関連文書から弱く参照するにとどめる。  
-本文書の主題は人格AIではなく、AI応答を含む境界インターフェースを経由して、意味が返路を形成する過程である。
+### Directory history / 層の変更履歴
 
-### English commensurated rendering
+- v4 系では、AI関連文書を Tam から Applications へ分離し、Tam を境界倫理・非破壊性の原理層として残した。
 
-`Meaning_As_Return_Orbit.md` is not a personality-AI specification.  
-For that reason, it is placed directly under `04_Applications`, not under a `Personality_AI` subdirectory.
+### File-level changes / ファイル単位の増減
 
-Its relation to personality AI should remain weak and indirect through related-document links from the Tam / Goodness layer.  
-The main subject of the document is not personality AI itself, but the process by which meaning forms a return path through boundary interfaces, including AI response.
+- AI有用性、AI境界インターフェース、AI人格応答構造、応用境界理論を本層の中心に置く。
+
+### Pending notes / 保留事項
+
+- 実装寄りの内容が増えた場合は、公開文書ではなく非公開開発資料へ退避する。

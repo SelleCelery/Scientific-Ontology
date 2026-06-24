@@ -1,28 +1,47 @@
-cff-version: 1.3.0
+cff-version: 1.2.0
 message: "If you use or refer to this public edition, please cite it as below."
-title: "Scientific Ontology (SO): Public Edition"
-version: "2.2.0"
+title: "Scientific Ontology (SO) / 存在境界論: Public Edition v4.0.0"
+version: "4.0.0"
 type: generic
 authors:
   - family-names: "万度"
     given-names: "華凜"
-date-released: 2026-06-12
-license: "CC-BY-NC-4.0"
-doi: "10.5281/zenodo.20665198"
+date-released: 2026-06-25
+license: "CC-BY-4.0"
+doi: "10.5281/zenodo.20828016"
 url: "https://github.com/SelleCelery/Scientific-Ontology"
 abstract: >-
-  Scientific Ontology Public Edition v2.2.0 is a public-facing conceptual
-  archive for Existence-Boundary Theory / Scientific Ontology. This release
-  adds an Applications layer, develops public personality AI documents around
-  response structure and return dynamics, reorganizes AI-related Research
-  Notes, and clarifies the project's methodological position on science as a
-  heuristic system. It is not an empirical scientific theory, implementation
-  specification, or disclosure of private core materials.
+  Scientific Ontology (SO) / 存在境界論 Public Edition v4.0.0 is a
+  public-facing conceptual archive and documentation release for a
+  boundary-based framework describing existence, knowledge, meaning,
+  communication, ethics, AI usefulness, social systems, and research-facing
+  theoretical notes through history, boundary, operational correspondence,
+  collation, residual retention, residue formation, intrinsic time, and the
+  logical-depth axis. This release consolidates the public Japanese name
+  存在境界論, redesigns the repository as an English-accessible public entrance,
+  standardizes README navigation, expands Research Notes including
+  physical/cosmological and negentropy-economy materials, adds Visual
+  Materials and conceptual posters, and clarifies the relation between
+  high-entropy observation-based science and low-entropy activity-based
+  top-down theory. It is not an empirical scientific theory, an AI runtime
+  package, a policy doctrine, or a disclosure of private core materials.
 keywords:
-  - scientific ontology
+  - Scientific Ontology
+  - 存在境界論
+  - boundary studies
   - applied metaphysics
-  - history-field topology
-  - boundary ethics
+  - AMP
+  - ITS
+  - history-field communication
+  - boundary epistemological critique
   - intrinsic time
-  - meaning generation
-  - AI boundary function
+  - logical-depth axis
+  - operational correspondence
+  - collation
+  - residual
+  - residue
+  - negentropy economy
+  - boundary ethics
+  - AI usefulness
+  - conceptual framework
+  - heuristic verification

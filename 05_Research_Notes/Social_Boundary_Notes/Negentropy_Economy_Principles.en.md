@@ -4,7 +4,6 @@
 > Scope: negentropy-economy
 > Language: en; commensurated rendering
 > Claim profile: U/E -> S
-> Authoritative source: Japanese canonical draft
 
 ---
 

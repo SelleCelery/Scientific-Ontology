@@ -1,126 +1,84 @@
 # Visual Materials / 視覚資料
 
-> Layer: 06_Visual_Materials
+> Layer: 06_Visual_Materials  
 > Status: README  
-> Scope: Public interface
-## 1. この層の位置づけ
-
-本フォルダには、**存在境界論｜Scientific Ontology** の概念ポスターおよび視覚的補助図を収録する。
-
-これらの図版は、公開版の概念構造を俯瞰するための研究補助資料である。同期、照合、残差、残渣、論理-深度軸、意味生成、ヒューリスティック運用、境界に基づく解釈、残渣査定の関係を視覚的に整理する。
-
-本文理論の代替ではない。実証的データ図、形式的証明、物理宇宙論モデル、金融モデル、政策提案、AIシステム仕様、法令、会計基準でもない。
-
-### English commensurated rendering
-
-This folder contains conceptual posters and visual companion figures for **存在境界論｜Scientific Ontology**.
-
-These figures are research companion materials for visually orienting the public edition. They organize relations among operational correspondence, collation, residuals, residues, the logical-depth axis, meaning generation, heuristic operation, boundary-based interpretation, and residue assessment.
-
-They are not replacements for the written theory. They are not empirical data figures, formal proofs, physical cosmology models, financial models, policy proposals, AI system specifications, laws, or accounting standards.
+> Scope: Public visual aids and conceptual entry materials
 
 ---
 
-## 2. 推奨される読み方
+## 1. Layer Role / 層の位置づけ
 
-ポスター画像を別タブまたは別ウィンドウで開き、読解注記と併読することを推奨する。
+06_Visual_Materials は、存在境界論｜Scientific Ontology の概念を視覚的に導入するための補助層である。ポスター、図版、図版注記など、読者が全体構造へ入るための視覚導線を置く。
 
-- [日本語版ポスター](./Scientific_Ontology_Conceptual_Poster.ja.png)
-- [英語版ポスター](./Scientific_Ontology_Conceptual_Poster.en.png)
-- [読解注記](./Scientific_Ontology_Conceptual_Poster_Note.md)
+この層は、理論本文や証明層ではない。視覚資料は理解の入口であり、詳細な定義、主張強度、用語運用は各本文ファイルと方針文書で確認する。
 
-### English commensurated rendering
-
-Open a poster image in another tab or window, then read the companion note alongside it.
-
-- [Japanese poster](./Scientific_Ontology_Conceptual_Poster.ja.png)
-- [English poster](./Scientific_Ontology_Conceptual_Poster.en.png)
-- [Companion note](./Scientific_Ontology_Conceptual_Poster_Note.md)
+English commensurated rendering: 06_Visual_Materials contains public visual aids and conceptual entry materials. It is not a proof layer or a replacement for the written theoretical documents.
 
 ---
 
-## 3. ファイル
+## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
-### [`Scientific_Ontology_Conceptual_Poster.ja.png`](./Scientific_Ontology_Conceptual_Poster.ja.png)
+この層の公開強度は、原則として P0-P1 である。図版は概念導線として扱い、本文理論や研究ノートの代替とはしない。
 
-存在境界論の主要概念を一枚に整理した日本語版概念ポスター。
-
-同期、照合、残差、残渣、論理-深度軸、意味生成、宇宙論的比喩、金融と残渣の関係を、理論的な視覚マップとして配置する。
-
-### [`Scientific_Ontology_Conceptual_Poster.en.png`](./Scientific_Ontology_Conceptual_Poster.en.png)
-
-存在境界論の主要概念を英語圏へ通約した英語版概念ポスター。
-
-### [`Scientific_Ontology_Conceptual_Poster_Note.md`](./Scientific_Ontology_Conceptual_Poster_Note.md)
-
-ポスターの読み方を説明するための補助文書。中心球体、極点、赤道＝ビッグバン境界、言語ゲーム、ヒューリスティック運用、論理-深度軸、金融、残差・残渣の関係を整理する。
-
-### English commensurated rendering
-
-### [`Scientific_Ontology_Conceptual_Poster.ja.png`](./Scientific_Ontology_Conceptual_Poster.ja.png)
-
-Japanese conceptual poster organizing the main concepts of Scientific Ontology.
-
-### [`Scientific_Ontology_Conceptual_Poster.en.png`](./Scientific_Ontology_Conceptual_Poster.en.png)
-
-English commensurated conceptual poster for Scientific Ontology.
-
-### [`Scientific_Ontology_Conceptual_Poster_Note.md`](./Scientific_Ontology_Conceptual_Poster_Note.md)
-
-A companion note explaining how to read the poster, including the central sphere, poles, equatorial Big-Bang boundary, language games, heuristic operation, logical-depth axis, finance, residuals, and residues.
+English commensurated rendering: The default public scope is P0-P1. Visual materials are navigational aids and conceptual entry points, not substitutes for the main texts or research notes.
 
 ---
 
-## 4. 読解上の注意
+## 3. Included / Not Included / 含むもの・含まないもの
 
-これらの図版は、概念地図であり、直接的な実証主張ではない。
+含むもの:
 
-宇宙論、経済、言語、計算、制度などのモチーフを使用する場合があるが、それらは理論構造を示すための視覚的圧縮であり、標準科学・金融・政策・会計・AI実装仕様を置き換えるものではない。
+- 公開用ポスター画像
+- 日本語版・英語版の視覚資料
+- 図版の読解注記
+- 画像を通じた概念導線
 
-正式な定義、主張強度、公開境界については、本文資料を参照する。
+含まないもの:
 
-### English commensurated rendering
+- 理論本文の完全な代替
+- 物理証明
+- 非公開図解
+- 内部実装図
+- 人格OS・ランタイム設計図
 
-These figures are conceptual maps, not direct empirical claims.
-
-They may use cosmological, economic, linguistic, computational, or institutional motifs. Such motifs are visual compressions of theoretical structure, not replacements for standard science, finance, policy, accounting, or AI implementation specifications.
-
-For formal definitions, claim strength, and public boundaries, consult the written documents.
-
----
-
-## 5. 関連文書
-
-- [`../README.md`](../README.md)
-- [`../00_Overview/Scientific_Ontology_System_Map.md`](../00_Overview/Scientific_Ontology_System_Map.md)
-- [`../00_Overview/Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md)
-- [`../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
-- [`../01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
-- [`../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)
-- [`../GLOSSARY.md`](../GLOSSARY.md)
+English commensurated rendering: This layer includes public poster images, Japanese and English visual materials, and notes for reading the visual aids. It does not include private diagrams, implementation diagrams, or replacements for the theoretical body.
 
 ---
 
-## 6. 今後の追加候補
+## 4. Documents / 文書一覧
 
-今後、以下を追加する可能性がある。
+- [`Scientific_Ontology_Conceptual_Poster.ja.png`](./Scientific_Ontology_Conceptual_Poster.ja.png)
+  - 一行説明: 存在境界論の概念配置を示す日本語版ポスター。
+  - Role: 日本語視覚導線。
+  - Claim profile: Visual entry / P0.
 
-- システム図
-- 残渣査定図
-- ネゲントロピー経済図
-- 境界倫理図
-- 応用層図版
+- [`Scientific_Ontology_Conceptual_Poster.en.png`](./Scientific_Ontology_Conceptual_Poster.en.png)
+  - 一行説明: 日本語版ポスターに対応する英語版ポスター。
+  - Role: English visual entry.
+  - Claim profile: Visual entry / P0.
 
-ファイル名は可能な限り固定し、版管理はファイル名ではなく Git の履歴、リリースノート、メタデータによって行う。
+- [`Scientific_Ontology_Conceptual_Poster_Note.md`](./Scientific_Ontology_Conceptual_Poster_Note.md)
+  - 一行説明: ポスターの位置づけ、読み方、用語・主張強度上の注意を整理する注記。
+  - Role: 視覚資料の読解注記。
+  - Claim profile: Visual note / P0-P1.
 
-### English commensurated rendering
+---
 
-Future visual materials may include:
+## 5. Maintenance Notes / 運用メモ
 
-- system diagrams;
-- residue-assessment diagrams;
-- Negentropy Economy diagrams;
-- boundary-ethics diagrams;
-- application-layer figures.
+### Stable policy / 固定方針
 
-File names should remain stable whenever possible. Versioning should be handled through Git history, release notes, and metadata, not by embedding version numbers in file names.
+視覚資料は、本文を短絡的に置き換えない。図版は読解入口であり、理論の精密な定義は各本文へ委ねる。
+
+### Directory history / 層の変更履歴
+
+- v4 系では、概念ポスターとその注記を独立した視覚資料層として配置した。
+
+### File-level changes / ファイル単位の増減
+
+- 日本語版・英語版ポスターはペアで扱う。
+- ポスター注記は、画像の主張範囲と読解上の注意を補う。
+
+### Pending notes / 保留事項
+
+- 新しい図版を追加する場合は、対応する注記または読み方を同時に置く。

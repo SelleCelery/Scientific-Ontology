@@ -97,6 +97,8 @@
 
 目的は、その境界を制御された形で開き直すことである。
 
+用語運用については、[`Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md) を参照する。
+
 ## 7. 公開・通約境界
 
 存在境界論は、特に明記しない限り、日本語正本を基準として記述される。英語記述は単純な逐語置換ではなく、別の言語ゲームの読者に向けた通約表現である。
@@ -213,8 +215,6 @@ This distinction is necessary because the purpose is not to blur science and met
 The purpose is to reopen the boundary between them in a controlled way.
 
 For terminology handling, see [`Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md).
-
-用語運用については、[`Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md) を参照する。
 
 ## 7. Publication and Commensuration Boundary
 

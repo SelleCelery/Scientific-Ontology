@@ -1,104 +1,103 @@
 # Overview / 概要
 
-> Layer: 00_Overview
+> Layer: 00_Overview  
 > Status: README  
-> Scope: Public interface
+> Scope: Public navigation, terminology, and publication control
 
-This directory contains navigation, terminology, publication-scope, and claim-strength documents for **存在境界論｜Scientific Ontology**.
+---
 
-このディレクトリには、**存在境界論｜Scientific Ontology** リポジトリ全体を読むためのナビゲーション文書、用語規約、公開範囲、主張強度管理に関する文書を置きます。
+## 1. Layer Role / 層の位置づけ
 
-「存在論科学」は旧称・開発名です。公開名としては **存在境界論｜Scientific Ontology** を用います。
+00_Overview は、リポジトリ全体の入口・用語管理・公開方針・主張強度管理を置く層である。理論本文そのものを展開する場所ではなく、存在境界論｜Scientific Ontology の公開文書群をどう読むか、どの語をどの強度で扱うか、どの範囲を公開対象とするかを整理する。
 
-Here, **Scientific** does not mean that this project claims to be a natural science, empirical physics, or a replacement for modern science. It refers to a methodological attitude: observation, classification, description, re-collatability, explicit boundary conditions, and careful control of claim strength.
+この層は、読者が Sat / Raj / Tam / Applications / Research Notes / Visual Materials へ進む前に、公開名、旧称、用語衝突、標準科学語彙との接続条件を確認するためのナビゲーション層である。
 
-ここでいう **Scientific** は、狭義の自然科学、経験物理学、または現代科学の代替を名乗るものではありません。観測・分類・記述・再照合可能性・境界条件の明示・主張強度の管理を重視する方法態度を指します。
+English commensurated rendering: 00_Overview is the navigation and publication-control layer for the repository. It does not develop the main theoretical body. It explains how the public archive should be read, how terminology is controlled, and how claim strength and publication scope are managed before the reader moves into the other layers.
 
-## Directory Role / この層の役割
+---
 
-Overview does not contain the main theoretical body. It defines how the public archive should be read.
+## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
-Overview は理論本文の置き場ではありません。公開アーカイブをどのように読むかを定める層です。
+この層の公開強度は、原則として P0-P1 である。ここで扱うのは、公開説明、用語規約、翻訳・通約規則、公開境界、主張強度の管理であり、非公開中核、実装パラメータ、人格OS、内部評価表を含めない。
 
-Use this directory when a document:
+この層での「Scientific」は、狭義の自然科学を名乗るという意味ではなく、観測、分類、記述、再照合可能性、境界条件の明示、主張強度管理を重視する方法態度を指す。
 
-- maps the whole public system;
-- defines terminology policy;
-- explains publication scope;
-- controls claim strength;
-- clarifies the relationship between the former name and the current public name;
-- explains how standard scientific terms may be used without overwriting their established meanings.
+English commensurated rendering: The default public scope of this layer is P0-P1. It contains public explanation, terminology policy, translation and commensuration rules, publication boundaries, and claim-profile management. It does not include private core materials, implementation parameters, persona OS materials, or internal evaluation tables.
 
-以下の文書は、このディレクトリに置きます。
+---
 
-- 公開体系全体を示す地図
+## 3. Included / Not Included / 含むもの・含まないもの
+
+含むもの:
+
+- 公開体系全体のナビゲーション
 - 用語運用規約
-- 公開範囲の説明
-- 主張強度管理
-- 旧称「存在論科学」と公開名「存在境界論」の関係整理
-- 標準科学語彙を、既存定義を上書きせずに扱うための説明
+- 公開範囲と通約方針
+- 主張強度・用語衝突の管理
+- 旧称「存在論科学」と公開名「存在境界論｜Scientific Ontology」の整理
+- 標準科学語彙を上書きせずに扱うための接続条件
 
-## Documents / 文書
+含まないもの:
 
-- [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)  
-  A high-level public map of the repository structure, Sat/Raj/Tam placement, Applications, Research Notes, Visual Materials, and the public boundary of the project.  
-  リポジトリ構造、Sat/Raj/Tam、Applications、Research Notes、Visual Materials、公開境界を整理する公開用体系マップ。
+- AMP Core 全文
+- ITS 理論全体
+- 非公開公理草案
+- 非公開実装スキーマ
+- 人格OS・ランタイム仕様
+- 非公開素材索引
+- 内部評価・監査マップ
 
-- [`Scientific_Terminology_Protocol.md`](./Scientific_Terminology_Protocol.md)  
-  A terminology and publication-risk protocol for using scientific vocabulary without overwriting standard scientific definitions.  
-  標準科学の定義を上書きせずに科学語彙を扱うための用語運用規約。
+English commensurated rendering: This layer includes navigation, terminology policy, publication and commensuration policy, claim-profile control, name-transition handling, and rules for using scientific vocabulary without overwriting standard definitions. It does not include full private cores, implementation schemas, persona/runtime materials, or unpublished source inventories.
 
-## Repository-Level Policy Documents / リポジトリ全体の方針文書
+---
 
-The following files may be placed at the repository root or referenced from this directory. They govern public communication across the repository.
+## 4. Documents / 文書一覧
 
-以下の文書は、リポジトリ直下に置くか、このディレクトリから参照します。リポジトリ全体の公開コミュニケーションを制御する文書です。
+- [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)
+  - 一行説明: リポジトリ全体の層構造、主要概念、公開境界を示す体系マップ。
+  - Role: 全体ナビゲーション。
+  - Claim profile: Public map / P0-P1.
 
-- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)  
-  Public policy for publication, commensuration, terminology revision, and public-boundary management.  
-  公開、通約、用語変更、公開境界管理のための方針文書。
+- [`Scientific_Terminology_Protocol.md`](./Scientific_Terminology_Protocol.md)
+  - 一行説明: 標準科学語彙を尊重しながら、存在境界論内での読み替え・再定義・主張強度を管理する規約。
+  - Role: 用語運用・科学語彙接続プロトコル。
+  - Claim profile: Terminology policy / P0-P1.
 
-- [`Translation_Note.md`](../Translation_Note.md)  
-  Translation and commensuration note. Japanese is treated as the authoritative source unless otherwise stated; English is a commensurated rendering or working reference.  
-  翻訳・通約注記。特に明記しない限り日本語を正本とし、英語は通約版または作業用参照本文として扱う。
+関連するルート文書:
 
-- [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md)  
-  Japanese canonical terminology collision registry.  
-  日本語正本語の用語衝突管理表。
+- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
+  - 一行説明: 公開、通約、用語変更、公開境界管理の方針。
+  - Role: リポジトリ全体の公開方針。
+  - Claim profile: Policy / P0.
 
-- [`TERM_COLLISION_REGISTRY.en.md`](../TERM_COLLISION_REGISTRY.en.md)  
-  English rendering collision registry.  
-  英語通約語の用語衝突管理表。
+- [`Translation_Note.md`](../Translation_Note.md)
+  - 一行説明: 日本語正本と英語通約の扱いを定める注記。
+  - Role: 翻訳・通約規則。
+  - Claim profile: Policy / P0.
 
-These policy documents exist to make public communication possible without freezing internal inquiry.
+- [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md) / [`TERM_COLLISION_REGISTRY.en.md`](../TERM_COLLISION_REGISTRY.en.md)
+  - 一行説明: 日本語正本語と英語通約語の衝突・揺れを管理する表。
+  - Role: 用語衝突管理。
+  - Claim profile: Terminology control / P0.
 
-これらの方針文書は、内部探求を固定するためではなく、公開時の伝達可能性を確保するために置かれています。
+---
 
-## Public Boundary / 公開境界
+## 5. Maintenance Notes / 運用メモ
 
-Public documents should describe concepts, reading maps, claim conditions, and non-operational boundary principles. They should not include unpublished source inventories, private draft titles, internal evaluation maps, private implementation details, or implementation-oriented checklists.
+### Stable policy / 固定方針
 
-公開文書に置くのは、概念、読解地図、主張条件、非操作的な境界原則です。未公開素材の索引、非公開草稿の題名、内部評価表、非公開実装詳細、実装寄りチェックリストは置きません。
+00_Overview は、理論本文を膨らませる場所ではなく、読解経路と公開条件を固定する場所として扱う。ここに理論詳細を追加しすぎない。
 
-Private-to-public review should be performed outside this public repository, then reflected here only as public-safe documents.
+### Directory history / 層の変更履歴
 
-非公開素材から公開文書への審査は、公開リポジトリの外で行います。その結果だけを、公開可能な文書としてここに反映します。
+- v4 系では、旧称「存在論科学」と公開名「存在境界論｜Scientific Ontology」の関係整理を明示する方向へ移行した。
+- 科学語彙の扱いは、標準定義の尊重、読み替えの明示、SO定義の明示、限定条件提示を基本とする。
 
-## Related / 関連
+### File-level changes / ファイル単位の増減
 
-- [`Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)  
-  Detailed claim-strength table for History-Field Topology.  
-  履歴場トポロジーの詳細な主張強度対応表。
+- 体系マップと科学語彙接続プロトコルを本層の中心文書として扱う。
+- 全体方針文書は原則としてルートに置き、本層から参照する。
 
+### Pending notes / 保留事項
 
-- [`Scientific_Ontology_and_Science.md`](../02_Raj_Beauty/Scientific_Ontology_and_Science.md)  
-  Public position statement on how Scientific Ontology relates to modern science and why science is treated as a powerful heuristic system rather than rejected or uncritically accepted.  
-  存在境界論が現代科学とどのように関係するか、また科学を否定でも無批判な受容でもなく強力なヒューリスティック体系として扱う理由についての公開用立場表明。
-
-- [`AI_Usefulness_as_a_Boundary_Function.md`](../04_Applications/AI_Usefulness_as_a_Boundary_Function.md)  
-  Public-facing conceptual interface for AI usefulness as boundary maintenance.  
-  AIの有用性を境界維持として扱う公開用概念インターフェース。
-
-- [`README.md`](../README.md)  
-  Repository root public interface.  
-  リポジトリ直下の公開用入口。
+- ルート README のコンパクト化後、Overview との役割分担を再確認する。

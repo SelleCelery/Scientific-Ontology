@@ -1,134 +1,90 @@
 # Raj / Beauty / 激・美
 
-> Layer: 02_Raj_Beauty
+> Layer: 02_Raj_Beauty  
 > Status: README  
-> Scope: Public interface
+> Scope: Public constructive frameworks and boundary dynamics
 
 ---
 
-## Role of this layer / この層の役割
+## 1. Layer Role / 層の位置づけ
 
-Raj / Beauty is the layer of movement.
+02_Raj_Beauty は、Sat / Truth の基礎概念に運動を与える構築層である。履歴を持つ存在・場が、境界を通じて通信し、同期し、非同期し、切断され、再接続され、意味や質的経験を生成する過程を扱う。
 
-It asks how history-bearing beings or fields communicate, synchronize, desynchronize, cut off, reconnect, generate meaning, lose meaning, retain residuals, sediment residues, and produce qualitative experience through boundaries.
+この層は根本公理そのものではない。HFC、履歴場トポロジー、科学との接続面を通じて、基礎概念を物理・情報・生命・社会・AI・死生観へ展開するための公開フレームを置く。
 
-Raj / Beauty は、運動の層です。
-
-履歴を持つ存在・場が、境界を通じてどのように通信し、同期し、非同期し、切断され、再接続され、意味を生成または喪失し、残差を保持し、残渣を沈殿させ、質的経験を生じさせるかを扱います。
-
-This layer is built on Sat / Truth, but it is not itself the foundational axiom layer.  
-It develops movement, communication, topology, and interpretation from the metaphysical foundations.
-
-この層は Sat / Truth の上に立つが、それ自体は根本公理層ではありません。  
-形而上学的基礎から、運動、通信、トポロジー、解釈を展開する層です。
+English commensurated rendering: 02_Raj_Beauty is the constructive layer that gives movement to the foundations established in Sat / Truth. It treats history-bearing beings or fields as communicating, synchronizing, desynchronizing, cutting off, reconnecting, and generating meaning or qualitative experience through boundaries.
 
 ---
 
-## Scope / 範囲
+## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
-Raj / Beauty includes:
+この層の公開強度は、原則として P0-P2 である。HFC と履歴場トポロジーは公開用フレームとして置くが、物理接続の強い命題、宇宙論的試論、標準模型対応は Research Notes に置く。
 
-- History-Field Communication theory
-- History-Field Topology
-- boundary dynamics
-- synchronization and desynchronization
-- historical cutoff and reconnection
-- communication, meaning, qualia, and experience models
-- inner count-time and intrinsic time as public conceptual distinctions
-- public interpretive frameworks that do not close stronger physical or cosmological questions too quickly
+現代科学との関係では、標準科学を否定せず、標準定義を上書きしない。接続面では、構造アナロジー、存在論的再解釈、形式化候補、物理主張候補を区別する。
 
-Raj / Beauty には、以下を含めます。
+English commensurated rendering: The default public scope is P0-P2. HFC and History-Field Topology are public frameworks, while stronger physical or cosmological correspondence claims belong in Research Notes. This layer does not overwrite standard scientific definitions.
 
-- 履歴場通信論
+---
+
+## 3. Included / Not Included / 含むもの・含まないもの
+
+含むもの:
+
+- 履歴場通信論（HFC）
 - 履歴場トポロジー
 - 境界動態
-- 同期と非同期
+- 同期・非同期
 - 履歴切断と再接続
-- 通信・意味・クオリア・経験モデル
-- 内的計数時間と内在時間の公開用概念区別
-- より強い物理的・宇宙論的問題を早く閉じすぎない公開用解釈フレーム
+- 意味、クオリア、経験、事象流の公開用モデル
+- 現代科学との接続面に関する立場表明
 
-This layer does not primarily contain social criticism, monetary analysis, world-history modeling, or application essays. Those may appear later as Research Notes or separate applications, but they are not the central role of Raj / Beauty.
+含まないもの:
 
-この層は、社会批判、貨幣分析、世界史モデル、応用エッセイを主目的とはしません。それらは必要に応じて Research Notes または別の応用層に置きますが、Raj / Beauty の中心ではありません。
+- 根本公理そのもの
+- 非公開AMP/ITS/HFC Core
+- 標準模型対応表
+- 宇宙論的・物理的な高主張強度ノート
+- 実装仕様、人格OS、運用パラメータ
+- 社会批判や経済論を主目的とする文書
 
----
-
-## Boundary of field analogies / 場のアナロジー境界
-
-Raj / Beauty may use field-like language: field, flow, circulation, excitation, density, pressure, path, cutoff, residual, and residue.
-
-These terms are not merely decorative metaphors. They are used because history-bearing communication often behaves as if it has direction, density, excitation, circulation, resistance, and boundary conditions.
-
-However, this public layer does not decide whether such correspondences should ultimately be read as mere analogy, formal homology, or physical continuity with natural-field descriptions.
-
-That question belongs to stronger research layers, ITS core work, and unpublished or experimental materials.
-
-Raj / Beauty では、場、流れ、循環、励起、密度、圧、経路、切断、残差、残渣といった場的語彙を用いる場合があります。
-
-これらの語は、単なる装飾的比喩だけではありません。履歴を持つ通信は、方向、密度、励起、循環、抵抗、境界条件を持つかのように振る舞うことがあるからです。
-
-ただし、この公開層では、その対応を単なる類比として読むべきか、形式的相同性として読むべきか、自然場の記述との物理的連続性として読むべきかは決定しません。
-
-その問題は、より強い研究層、ITS Core 作業、非公開または実験中の資料に属します。
+English commensurated rendering: This layer includes HFC, History-Field Topology, boundary dynamics, synchronization/desynchronization, and public position statements on science. It does not include full private cores, Standard Model correspondence notes, high-claim physical notes, implementation specifications, or social/economic theory as its main body.
 
 ---
 
-## Documents / 文書
+## 4. Documents / 文書一覧
 
-- [`HFC_Introduction.md`](./HFC_Introduction.md)  
-  Public introduction to History-Field Communication theory.  
-  It explains history, boundary, communication, severance, qualia, meaning loops, event streams, and ethics as a communication model among history-bearing beings or fields.  
-  履歴場通信論の公開用入門。履歴、境界、通信、切断、クオリア、意味ループ、事象流、倫理を、履歴を持つ存在・場どうしの通信モデルとして説明します。
+- [`HFC_Introduction.md`](./HFC_Introduction.md)
+  - 一行説明: 人間、言語、AI、社会、倫理を、履歴を持つ場どうしの通信として読み直す公開用入門。
+  - Role: 履歴場通信論の公開入口。
+  - Claim profile: Public conceptual model / P0-P1.
 
-- [`History_Field_Topology.md`](./History_Field_Topology.md)  
-  A public conceptual frame for reading physics, information, life, society, AI, and views of life and death through history, boundary, synchronization, event streams, entropy communication, intrinsic time, and historical cutoff.  
-  履歴・境界・同期／非同期・事象流・エントロピー通信・内在時間・履歴切断を通じて、物理・情報・生命・社会・AI・死生観を読むための公開用概念フレーム。
+- [`History_Field_Topology.md`](./History_Field_Topology.md)
+  - 一行説明: 物理・情報・生命・社会・AI・死生観を、履歴、境界、同期、切断、意味閉路から読むための公開フレーム。
+  - Role: 構築的・解釈的フレーム。
+  - Claim profile: Public interpretive frame / P1-P2.
 
----
-
-## Relation to Sat / Truth / Sat との関係
-
-Raj / Beauty depends on the Sat / Truth layer for its foundational concepts:
-
-- Reality as sliced field
-- Observation as history encounter
-- Meaning as closed communication loop
-- Ethics as non-destructive interaction between history-bearing beings or fields
-- Boundary Epistemological Critique
-- distinction between inner count-time and intrinsic time as an open conceptual refinement
-
-Raj / Beauty は、Sat / Truth 層の以下の基礎概念に依存します。
-
-- 切り出された場としての現実
-- 履歴との出会いとしての観測
-- 閉じた通信ループとしての意味
-- 履歴を持つ存在・場どうしの非破壊的相互作用としての倫理
-- 境界認識批判
-- 内的計数時間と内在時間の区別という未整理だが重要な概念更新
-
-Raj / Beauty should not force these concepts into completed systems too quickly.  
-Its task is to give them movement while preserving their unresolved frontiers.
-
-Raj / Beauty は、これらの概念を早く完成体系へ押し込めすぎてはいけません。  
-この層の役割は、未解決のフロンティアを残したまま、それらに運動を与えることです。
+- [`Scientific_Ontology_and_Science.md`](./Scientific_Ontology_and_Science.md)
+  - 一行説明: 存在境界論と現代科学の関係、および高エントロピー観測ベースの科学と低エントロピー活動ベースのトップダウン理論の本拠地差分を整理する。
+  - Role: 科学との接続面の公開用立場表明。
+  - Claim profile: Public position statement / P1-P2.
 
 ---
 
-## Moved to Research Notes / 研究ノートへ移動
+## 5. Maintenance Notes / 運用メモ
 
-The following documents are conceptually related to Raj / Beauty, but are better treated as research notes because they make stronger cosmological or physical reinterpretive moves.
+### Stable policy / 固定方針
 
-以下の文書は Raj / Beauty と接続しますが、宇宙論的・物理的な再解釈の主張強度が高いため、研究ノートとして扱います。
+Raj / Beauty は、基礎概念を動かす層である。物理・宇宙論・標準模型に強く接続する文書は、この層の本文ではなく Research Notes に置く。
 
-- [`Ontological_History_of_the_Universe.md`](../05_Research_Notes/Physical_Cosmological_Notes/Ontological_History_of_the_Universe.md)
-- [`Cosmological_Topological_Dynamics.md`](../05_Research_Notes/Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.md)
-- [`Intrinsic_Time_Standard_Model_Correspondence.md`](../05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.md)
+### Directory history / 層の変更履歴
 
-These documents should be read as conceptual applications and research notes, not as public foundational documents.
+- 物理・宇宙論接続文書は、主張強度が高いため 05_Research_Notes/Physical_Cosmological_Notes へ移した。
+- 科学との関係整理は、本層に残し、読者が Research Notes へ進む前の接続面として扱う。
 
-They may reopen stronger questions concerning physics, cosmology, intrinsic time, field correspondence, and Standard Model reinterpretation, but this README does not close those questions.
+### File-level changes / ファイル単位の増減
 
-これらは、公開用の基礎文書ではなく、存在境界論の概念応用・研究ノートとして読むものです。
+- [`Scientific_Ontology_and_Science.md`](./Scientific_Ontology_and_Science.md) は Overview ではなく Raj に置く。理由は、単なる運用規約ではなく、科学との構造的接続面を扱うためである。
 
-物理、宇宙論、内在時間、場対応、標準模型再解釈に関するより強い問いを開く場合がありますが、この README ではそれらの問いを閉じません。
+### Pending notes / 保留事項
+
+- HFC と ITS の境界は、今後も `GLOSSARY.md` と `Scientific_Terminology_Protocol.md` で確認する。
