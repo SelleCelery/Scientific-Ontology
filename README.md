@@ -323,8 +323,9 @@ Current public edition DOI:
 
 For citation details and related identifiers, see:
 
-- [`CITATION.md
-- [`CITATION.cff
+
+- [`CITATION.md`](./CITATION.md)
+- [`CITATION.cff`](./CITATION.cff)
 - [`RELEASE_NOTES.md`](./RELEASE_NOTES.md)
 
 特定のリリースを引用する場合は、版固有 DOI を使用してください。
@@ -336,8 +337,8 @@ For citation details and related identifiers, see:
 引用形式および関連識別子については、以下を参照してください。
 
 - [`CITATION.md`](./CITATION.md)
-- [`CITATION.cff
-- [`RELEASE_NOTES.md
+- [`CITATION.cff`](./CITATION.cff)
+- [`RELEASE_NOTES.md`](./RELEASE_NOTES.md)
 
 ---
 
