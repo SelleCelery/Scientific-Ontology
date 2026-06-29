@@ -376,7 +376,7 @@ Scientific Ontologyにおいては、意味が基底に置かれる。
 - [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)  
     人格を口調・ロールプレイ・表層キャラクターではなく、応答構造として扱う文書。
 
-- [`Meaning_As_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_As_Return_Orbit.md)  
+- [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)  
     意味・帰還・軌道・人格AIを接続する応用ノート。
 
 - [`History_Loop_Radius_and_Return_Stability.md`](../AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)  

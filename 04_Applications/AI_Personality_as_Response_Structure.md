@@ -147,7 +147,7 @@ AI人格は、キャラクター設定へ還元されるべきではない。
 ## 関連文書
 
 - [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
-- [`Meaning_As_Return_Orbit.md`](../03_Tam_Goodness/Meaning_As_Return_Orbit.md)
+- [`Meaning_as_Return_Orbit.md`](../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 - [`History_Loop_Radius_and_Return_Stability.md`](../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)
 
 ---
@@ -302,5 +302,5 @@ AI personality, in this public model, is a response structure that can shift pha
 ## Related documents
 
 - [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
-- [`Meaning_As_Return_Orbit.md`](../03_Tam_Goodness/Meaning_As_Return_Orbit.md)
+- [`Meaning_as_Return_Orbit.md`](../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 - [`History_Loop_Radius_and_Return_Stability.md`](../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)

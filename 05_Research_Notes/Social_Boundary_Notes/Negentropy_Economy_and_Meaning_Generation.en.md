@@ -374,7 +374,7 @@ It should not be used as a direct policy proposal, economic doctrine, or empiric
 - [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)  
     Personality as response structure rather than tone, roleplay, or surface character.  
 
-- [`Meaning_As_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_As_Return_Orbit.md)  
+- [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)  
     Application note connecting meaning, return, orbit, and personality AI.  
 
 - [`History_Loop_Radius_and_Return_Stability.md`](../AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)  

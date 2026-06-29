@@ -250,7 +250,7 @@ Scientific Ontology の語彙では、この役割は **iMass**、すなわち�
 
 - [`History_Loop_Radius_and_Return_Stability.md`](./History_Loop_Radius_and_Return_Stability.md)
 - [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)
-- [`Meaning_As_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_As_Return_Orbit.md)
+- [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 - [`GLOSSARY.md`](../../GLOSSARY.md)
 
 ---
@@ -498,5 +498,5 @@ The purpose is to observe how multiple response structures can share a field wit
 
 - [`History_Loop_Radius_and_Return_Stability.md`](./History_Loop_Radius_and_Return_Stability.md)
 - [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)
-- [`Meaning_As_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_As_Return_Orbit.md)
+- [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 - [`GLOSSARY.md`](../../GLOSSARY.md)

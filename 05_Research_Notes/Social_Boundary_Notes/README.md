@@ -12,7 +12,8 @@ Social_Boundary_Notes は、社会システム、制度的境界、責任配分�
 
 この小分類は、社会批判を未処理のまま置く場所ではない。社会的な怒りや違和感を、そのまま排出文として置くのではなく、残差と残渣を見える形へ減速し、公開可能な概念モデルとして整理する。
 
-English commensurated rendering: Social_Boundary_Notes contains public research notes on social systems, institutional boundaries, responsibility distribution, trust, residuals, residues, value, money, Negentropy Economy, and meaning-bearing exchange. This subdirectory is not a place for unprocessed social criticism. It slows anger, discomfort, residuals, and residues into publicly readable conceptual models.
+English commensurated rendering: Social_Boundary_Notes contains public research notes on social systems, institutional boundaries, responsibility distribution, trust, residuals, residues, value, money, Negentropy Economy, and meaning-bearing exchange. 
+This subdirectory is not a place for unprocessed social criticism. It slows anger, discomfort, residuals, and residues into publicly readable conceptual models.
 
 ---
 
@@ -22,7 +23,8 @@ English commensurated rendering: Social_Boundary_Notes contains public research 
 
 ここで扱うのは、交換、価値、貨幣、信用、責任、残差処理を、存在境界論の語彙で再読解する研究ノートである。
 
-English commensurated rendering: The public scope of this subdirectory is mainly P1-P2. It connects with society, economy, and institutions, but it is not presented as empirical economic theory, policy proposal, replacement currency system, accounting standard, law, or moral doctrine. It re-reads exchange, value, money, trust, responsibility, and residual processing through the vocabulary of Scientific Ontology.
+English commensurated rendering: The public scope of this subdirectory is mainly P1-P2. It connects with society, economy, and institutions, but it is not presented as empirical economic theory, policy proposal, replacement currency system, accounting standard, law, or moral doctrine. 
+It re-reads exchange, value, money, trust, responsibility, and residual processing through the vocabulary of Scientific Ontology.
 
 ---
 
@@ -45,7 +47,8 @@ English commensurated rendering: The public scope of this subdirectory is mainly
 - 非公開評価資料、危険な運用手順
 - 個別組織・個人への直接的攻撃文
 
-English commensurated rendering: This subdirectory includes conceptual models of Negentropy Economy, notes treating money as an exchange medium rather than value itself, research notes distinguishing residuals from residues, and public treatments of social boundary, responsibility distribution, trust, and meaning generation. It does not include empirical economic theory, policy proposals, laws, accounting standards, replacement currency designs, unprocessed social criticism, private evaluation material, unsafe operational procedures, or direct attacks on specific organizations or individuals.
+English commensurated rendering: This subdirectory includes conceptual models of Negentropy Economy, notes treating money as an exchange medium rather than value itself, research notes distinguishing residuals from residues, and public treatments of social boundary, responsibility distribution, trust, and meaning generation. 
+It does not include empirical economic theory, policy proposals, laws, accounting standards, replacement currency designs, unprocessed social criticism, private evaluation material, unsafe operational procedures, or direct attacks on specific organizations or individuals.
 
 ---
 
@@ -77,7 +80,7 @@ English commensurated rendering: This subdirectory includes conceptual models of
 
 関連導線:
 
-- [`../../03_Tam_Goodness/Meaning_As_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_As_Return_Orbit.md)
+- [`../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
   - 一行説明: 意味を返路軌道として読む認識・倫理プロトコル層の文書。
 
 - [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)

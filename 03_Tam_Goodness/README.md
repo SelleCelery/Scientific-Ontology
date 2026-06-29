@@ -56,7 +56,7 @@ English commensurated rendering: This layer includes public boundary ethics, mea
   - Role: 境界倫理モデルの公開用概念整理。
   - Claim profile: Public ethics model / P0-P1.
 
-- [`Meaning_As_Return_Orbit.md`](./Meaning_As_Return_Orbit.md)
+- [`Meaning_as_Return_Orbit.md`](./Meaning_as_Return_Orbit.md)
   - 一行説明: 意味を、一方向の情報伝達ではなく、戻り、循環し、履歴として残る帰還軌道として扱う。
   - Role: 意味生成と境界倫理をつなぐ概念ノート。
   - Claim profile: Public conceptual note / P1.
@@ -88,7 +88,7 @@ Tam / Goodness は、非破壊性と境界維持の層である。AI文書が関
 ### File-level changes / ファイル単位の増減
 
 - [`Boundary_Ethics_Model.md`](./Boundary_Ethics_Model.md) は本層の中心文書として維持する。
-- [`Meaning_As_Return_Orbit.md`](./Meaning_As_Return_Orbit.md) は、倫理・意味・帰還構造をつなぐ文書として本層に配置する。
+- [`Meaning_as_Return_Orbit.md`](./Meaning_as_Return_Orbit.md) は、倫理・意味・帰還構造をつなぐ文書として本層に配置する。
 
 ### Pending notes / 保留事項
 

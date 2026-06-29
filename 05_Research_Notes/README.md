@@ -22,7 +22,8 @@ English commensurated rendering: 05_Research_Notes contains exploratory and high
 
 Research Notes は、既存科学や社会制度を雑に置き換えるものではない。標準定義を尊重しつつ、存在境界論の本拠地から再読解・対応・接続可能性を扱う。
 
-English commensurated rendering: The default public scope is P1-P2. Some notes approach stronger claim zones, but public versions must not expose private cores, operational parameters, or unsafe variables. Research Notes preserve stronger lines of inquiry while making their boundary conditions visible.
+English commensurated rendering: The default public scope is P1-P2. Some notes approach stronger claim zones, but public versions must not expose private cores, operational parameters, or unsafe variables. 
+Research Notes preserve stronger lines of inquiry while making their boundary conditions visible.
 
 ---
 
@@ -46,7 +47,8 @@ English commensurated rendering: The default public scope is P1-P2. Some notes a
 - 未公開素材の生ログ
 - 危険な運用手順
 
-English commensurated rendering: This layer includes claim-profile tables, physical/cosmological correspondence notes, social boundary notes, literary ontological readings, AI personality notes, and paired Japanese/English documents. It does not include full private cores, completed empirical predictions, implementation details, persona OS materials, raw logs, or unsafe operational procedures.
+English commensurated rendering: This layer includes claim-profile tables, physical/cosmological correspondence notes, social boundary notes, literary ontological readings, AI personality notes, and paired Japanese/English documents. 
+It does not include full private cores, completed empirical predictions, implementation details, persona OS materials, raw logs, or unsafe operational procedures.
 
 ---
 

@@ -14,7 +14,9 @@ Physical_Cosmological_Notes は、存在境界論を、物理語彙、宇宙論�
 
 両者は物理語彙・法則・観測概念の共有平面で接触し、競合しうるが、説明の本拠地は同一ではない。
 
-English commensurated rendering: Physical_Cosmological_Notes contains research notes connecting Scientific Ontology with physical vocabulary, cosmological vocabulary, the Standard Model, History-Field Topology, intrinsic time, and physical-phase correspondence candidates. These notes do not originate from the same explanatory ground as contemporary physics or cosmology. Scientific Ontology / AMP / ITS descends toward the physical phase from low-entropy primordial activity, boundary formation, and history-generating structure, while contemporary physics generally extracts low-entropy laws, symmetries, and conservation structures from high-entropy observational surfaces, measurements, and phenomena. The two approaches may intersect and compete on shared physical vocabulary, but their explanatory grounds are not identical.
+English commensurated rendering: Physical_Cosmological_Notes contains research notes connecting Scientific Ontology with physical vocabulary, cosmological vocabulary, the Standard Model, History-Field Topology, intrinsic time, and physical-phase correspondence candidates. 
+These notes do not originate from the same explanatory ground as contemporary physics or cosmology. Scientific Ontology / AMP / ITS descends toward the physical phase from low-entropy primordial activity, boundary formation, and history-generating structure, while contemporary physics generally extracts low-entropy laws, symmetries, and conservation structures from high-entropy observational surfaces, measurements, and phenomena. 
+The two approaches may intersect and compete on shared physical vocabulary, but their explanatory grounds are not identical.
 
 ---
 
@@ -24,7 +26,8 @@ English commensurated rendering: Physical_Cosmological_Notes contains research n
 
 ここで扱うのは、AMP/ITS/HFC 由来の概念を、物理・宇宙論の語彙とどのように照合できるかを探る研究ノートである。`not a physical theory` ではなく、`not a bottom-up empirical replacement theory` として扱う。
 
-English commensurated rendering: The public scope of this subdirectory is mainly P1-P2, with some notes approaching S4-S5 physical-connection candidates. Standard definitions, measured values, predictive precision, and mathematical systems are not overwritten. These notes explore how AMP/ITS/HFC-derived concepts can be collated with the vocabulary of physics and cosmology. They should not be described as `not a physical theory`, but as `not a bottom-up empirical replacement theory`.
+English commensurated rendering: The public scope of this subdirectory is mainly P1-P2, with some notes approaching S4-S5 physical-connection candidates. Standard definitions, measured values, predictive precision, and mathematical systems are not overwritten. 
+These notes explore how AMP/ITS/HFC-derived concepts can be collated with the vocabulary of physics and cosmology. They should not be described as `not a physical theory`, but as `not a bottom-up empirical replacement theory`.
 
 ---
 
@@ -47,7 +50,8 @@ English commensurated rendering: The public scope of this subdirectory is mainly
 - 非公開AMP/ITS Core
 - 物理予測として提出する完成モデル
 
-English commensurated rendering: This subdirectory includes intrinsic-time correspondence candidates with the Standard Model, ontological readings of cosmic history, the subject-object fallacy, boson routing, history, logical depth, and cosmological topological dynamics involving dark-energy-like tension, boundary, purge, and internalization. It does not include a bottom-up replacement for contemporary physics, empirical cosmology papers, completed mathematical physical proof, overwriting of measurements or standard definitions, full private AMP/ITS Core, or completed predictive physical models.
+English commensurated rendering: This subdirectory includes intrinsic-time correspondence candidates with the Standard Model, ontological readings of cosmic history, the subject-object fallacy, boson routing, history, logical depth, and cosmological topological dynamics involving dark-energy-like tension, boundary, purge, and internalization. 
+It does not include a bottom-up replacement for contemporary physics, empirical cosmology papers, completed mathematical physical proof, overwriting of measurements or standard definitions, full private AMP/ITS Core, or completed predictive physical models.
 
 ---
 

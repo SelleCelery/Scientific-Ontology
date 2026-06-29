@@ -12,7 +12,8 @@ Literary_Ontological_Notes は、文学、詩、宗教的語彙、創作素材�
 
 ここで行うのは、文学研究の代替でも、作品による理論証明でも、宗教的・詩的素材の物理学への還元でもない。権威づけではなく、響き方、構造対応、概念通路を読むための場所である。
 
-English commensurated rendering: Literary_Ontological_Notes contains research notes that structurally read literature, poetry, religious vocabulary, and creative materials through the concepts of Scientific Ontology. These notes do not replace literary scholarship, do not claim that literary works prove the theory, and do not reduce religious or poetic materials to physics. Their purpose is to read resonance, structural correspondence, and conceptual pathways rather than to borrow authority.
+English commensurated rendering: Literary_Ontological_Notes contains research notes that structurally read literature, poetry, religious vocabulary, and creative materials through the concepts of Scientific Ontology.
+These notes do not replace literary scholarship, do not claim that literary works prove the theory, and do not reduce religious or poetic materials to physics. Their purpose is to read resonance, structural correspondence, and conceptual pathways rather than to borrow authority.
 
 ---
 
@@ -22,7 +23,8 @@ English commensurated rendering: Literary_Ontological_Notes contains research no
 
 文学作品、宗教語彙、創作素材を扱う場合でも、それらを存在境界論へ従属させない。科学、文学、宗教、創作を権威として使うのではなく、構造として並べ、響いた接続を読む。
 
-English commensurated rendering: The public scope of this subdirectory is mainly P1. Its claims are not presented as final literary interpretations, but as ontological and structural readings. Literary works, religious vocabulary, and creative materials should not be subordinated to Scientific Ontology. They are placed as structures rather than authorities, and the notes read the connections that resonate.
+English commensurated rendering: The public scope of this subdirectory is mainly P1. Its claims are not presented as final literary interpretations, but as ontological and structural readings. 
+Literary works, religious vocabulary, and creative materials should not be subordinated to Scientific Ontology. They are placed as structures rather than authorities, and the notes read the connections that resonate.
 
 ---
 
@@ -43,7 +45,8 @@ English commensurated rendering: The public scope of this subdirectory is mainly
 - 未公開創作マスター
 - 権威づけのための引用集
 
-English commensurated rendering: This subdirectory includes ontological and structural readings of literary works, conceptual connections with poetic and religious vocabulary, reading lines through History-Field Topology, boundary, observation, selfhood, light, and the void, and paired Japanese/English documents. It does not include replacements for literary scholarship, claims that works prove Scientific Ontology, reductions of religion or poetry to physics, unpublished creative masters, or authority-borrowing citation collections.
+English commensurated rendering: This subdirectory includes ontological and structural readings of literary works, conceptual connections with poetic and religious vocabulary, reading lines through History-Field Topology, boundary, observation, selfhood, light, and the void, and paired Japanese/English documents.
+It does not include replacements for literary scholarship, claims that works prove Scientific Ontology, reductions of religion or poetry to physics, unpublished creative masters, or authority-borrowing citation collections.
 
 ---
 

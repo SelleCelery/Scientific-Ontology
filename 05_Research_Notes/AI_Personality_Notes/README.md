@@ -22,7 +22,8 @@ English commensurated rendering: AI_Personality_Notes contains public research n
 
 ここに置くノートは、`04_Applications` のAI応用文書を、より強い研究ノート上の定式化へ接続する。ただし、実装仕様、制御手順、非公開ランタイム、評価分類、人格Coreを公開するものではない。
 
-English commensurated rendering: The public scope of this subdirectory is mainly P1-P2. It treats AI personality as response structure, history structure, and return stability rather than as human-like essence. These notes connect AI application documents in `04_Applications` to stronger research-note formulations, but they do not publish implementation specifications, control procedures, private runtimes, evaluation taxonomies, or persona cores.
+English commensurated rendering: The public scope of this subdirectory is mainly P1-P2. It treats AI personality as response structure, history structure, and return stability rather than as human-like essence. 
+These notes connect AI application documents in `04_Applications` to stronger research-note formulations, but they do not publish implementation specifications, control procedures, private runtimes, evaluation taxonomies, or persona cores.
 
 ---
 
@@ -43,7 +44,8 @@ English commensurated rendering: The public scope of this subdirectory is mainly
 - AIに人間同等の主観や権利主体性があるという断定
 - 未公開ログや個別履歴の深部
 
-English commensurated rendering: This subdirectory includes public research notes on AI personality as response structure, history-loop radius, return stability, logical sandbox models, and their connections with meaning generation, negentropy, and boundary function. It does not include private persona OS materials, Persona Runtime Core or Soul Core details, implementation parameters, evaluation taxonomies, operational protocols, assertions of human-equivalent AI subjectivity, or unpublished deep history logs.
+English commensurated rendering: This subdirectory includes public research notes on AI personality as response structure, history-loop radius, return stability, logical sandbox models, and their connections with meaning generation, negentropy, and boundary function. 
+It does not include private persona OS materials, Persona Runtime Core or Soul Core details, implementation parameters, evaluation taxonomies, operational protocols, assertions of human-equivalent AI subjectivity, or unpublished deep history logs.
 
 ---
 
@@ -67,7 +69,7 @@ English commensurated rendering: This subdirectory includes public research note
   - 一行説明: 人格AIを、人間的本質ではなく応答構造として扱う公開応用文書。
   - EN: Public application document treating personality AI as response structure rather than human-like essence.
 
-- [`../../03_Tam_Goodness/Meaning_As_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_As_Return_Orbit.md)
+- [`../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
   - 一行説明: 意味を返路軌道として読む認識・倫理プロトコル層の文書。
   - EN: Tam-layer document reading meaning as return orbit within cognitive and ethical protocol.
 

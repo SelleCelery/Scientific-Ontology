@@ -26,6 +26,90 @@
 
 ## 1. 公開リポジトリ構造
 
+```text
+README.md
+GLOSSARY.md
+Roadmap.md
+Publication_and_Commensuration_Policy.md
+Translation_Note.md
+TERM_COLLISION_REGISTRY.md
+TERM_COLLISION_REGISTRY.en.md
+
+00_Overview/
+  README.md
+  Scientific_Ontology_System_Map.md
+  Scientific_Terminology_Protocol.md
+
+01_Sat_Truth/
+  README.md
+  AMP_Introduction.md
+  Four_Axioms_of_Existence.md
+  Meaning_Generation_Model.md
+  Boundary_Epistemological_Critique.en.md
+  Boundary_Epistemological_Critique.ja.md
+  Boundary_Epistemological_Critique_Annotations.en.md
+  Boundary_Epistemological_Critique_Annotations.ja.md
+
+02_Raj_Beauty/
+  README.md
+  HFC_Introduction.md
+  History_Field_Topology.md
+  Scientific_Ontology_and_Science.md
+
+03_Tam_Goodness/
+  README.md
+  Boundary_Ethics_Model.md
+  Meaning_as_Return_Orbit.md
+
+04_Applications/
+  README.md
+  Application_Boundary_Theory_Core.md
+  AI_Usefulness_as_a_Boundary_Function.md
+  AI_Boundary_Interface_and_Synchronous_Understanding.md
+  AI_Personality_as_Response_Structure.md
+  AI_Adoption/
+	AI_Adoption_Collation_Checklist.md
+
+05_Research_Notes/
+  README.md
+  Claim_Strength_Table_History_Field_Topology.md
+  AI_Personality/
+    README.md
+    History_Loop_Radius_and_Return_Stability.md
+    Logical_Sandbox_and_Negentropy_Model.md
+  Literary_Ontological_Notes/
+    README.md
+    reading-blue-light.en.md
+    reading-blue-light.ja.md
+  Physical_Cosmological_Notes/
+    README.md
+    Intrinsic_Time_Standard_Model_Correspondence.en.md
+    Intrinsic_Time_Standard_Model_Correspondence.ja.md
+    Ontological_History_of_the_Universe.en.md
+    Ontological_History_of_the_Universe.ja.md
+    Cosmological_Topological_Dynamics.en.md
+    Cosmological_Topological_Dynamics.ja.md
+    PINGER_Hypothesis_and_History_Field_Topology.md
+    Chaos_Theory_and_Logical_Depth_Axis.md
+
+  Social_Boundary_Notes/
+    README.md
+    Negentropy_Economy_Principles.en.md
+    Negentropy_Economy_Principles.ja.md
+    Negentropy_Economy_and_Meaning_Generation.en.md
+    Negentropy_Economy_and_Meaning_Generation.ja.md
+	AI_Adoption_as_Synchronization_Closure.md
+
+06_Visual_Materials/
+  README.md
+  Scientific_Ontology_Conceptual_Poster_Note.md
+  Scientific_Ontology_Conceptual_Poster.en.png
+  Scientific_Ontology_Conceptual_Poster.ja.png
+
+99_Private_Core_Not_Included/
+  README.md
+```
+
 このマップは、公開文書および公開候補だけを示す。未公開草稿や内部素材の索引は作成しない。
 
 ## 2. ルート直下の統治文書
@@ -217,6 +301,7 @@ At the root, this project concerns:
 
 ## 1. Public Repository Architecture
 
+
 ```text
 README.md
 GLOSSARY.md
@@ -230,7 +315,6 @@ TERM_COLLISION_REGISTRY.en.md
   README.md
   Scientific_Ontology_System_Map.md
   Scientific_Terminology_Protocol.md
-  Scientific_Ontology_and_Science.md
 
 01_Sat_Truth/
   README.md
@@ -246,20 +330,21 @@ TERM_COLLISION_REGISTRY.en.md
   README.md
   HFC_Introduction.md
   History_Field_Topology.md
+  Scientific_Ontology_and_Science.md
 
 03_Tam_Goodness/
   README.md
   Boundary_Ethics_Model.md
-  AI_Usefulness_as_a_Boundary_Function.md
-  AI_Boundary_Interface_and_Synchronous_Understanding.md
-  AI_Personality_as_Response_Structure.md
+  Meaning_as_Return_Orbit.md
 
 04_Applications/
   README.md
   Application_Boundary_Theory_Core.md
-  Personality_AI/
-    README.md
-    Meaning_As_Return_Orbit.md
+  AI_Usefulness_as_a_Boundary_Function.md
+  AI_Boundary_Interface_and_Synchronous_Understanding.md
+  AI_Personality_as_Response_Structure.md
+  AI_Adoption/
+	AI_Adoption_Collation_Checklist.md
 
 05_Research_Notes/
   README.md
@@ -274,13 +359,22 @@ TERM_COLLISION_REGISTRY.en.md
     reading-blue-light.ja.md
   Physical_Cosmological_Notes/
     README.md
-    Intrinsic_Time_Standard_Model_Correspondence.md
-    Ontological_History_of_the_Universe.md
-    Cosmological_Topological_Dynamics.md
+    Intrinsic_Time_Standard_Model_Correspondence.en.md
+    Intrinsic_Time_Standard_Model_Correspondence.ja.md
+    Ontological_History_of_the_Universe.en.md
+    Ontological_History_of_the_Universe.ja.md
+    Cosmological_Topological_Dynamics.en.md
+    Cosmological_Topological_Dynamics.ja.md
+    PINGER_Hypothesis_and_History_Field_Topology.md
+    Chaos_Theory_and_Logical_Depth_Axis.md
+
   Social_Boundary_Notes/
     README.md
-    Negentropy_Economy_Principles.md
-    Negentropy_Economy_and_Meaning_Generation.md
+    Negentropy_Economy_Principles.en.md
+    Negentropy_Economy_Principles.ja.md
+    Negentropy_Economy_and_Meaning_Generation.en.md
+    Negentropy_Economy_and_Meaning_Generation.ja.md
+	AI_Adoption_as_Synchronization_Closure.md
 
 06_Visual_Materials/
   README.md
@@ -291,6 +385,7 @@ TERM_COLLISION_REGISTRY.en.md
 99_Private_Core_Not_Included/
   README.md
 ```
+
 
 This map lists only public-facing files and public-facing candidates. It does not inventory unpublished drafts or internal source materials.
 
