@@ -16,6 +16,9 @@
 !Roadmap.md
 !GLOSSARY.md
 !Translation_Note.md
+!Publication_and_Commensuration_Policy.md
+!TERM_COLLISION_REGISTRY.md
+!TERM_COLLISION_REGISTRY.en.md
 
 # Allow public folders and selected public files
 !00_Overview/**
@@ -25,7 +28,7 @@
 !04_Applications/**
 !05_Research_Notes/**
 !06_Visual_Materials/**
-!99_Private_Core_Not_Included/**
+!99_Private_Core_Not_Included/README.md
 
 # Python / local environment
 .venv/
