@@ -12,7 +12,11 @@
 
 この層は、実装仕様の公開場所ではない。公開可能な設計思想、使用者の判断可能性を守るインターフェース概念、応答構造としてのAI人格、応用境界理論の入口を置く。
 
-English commensurated rendering: 04_Applications connects the Sat/Raj/Tam conceptual structure to public-facing application interfaces, especially AI boundary interfaces, usefulness, response-structure models, and application boundary theory. It is not a place for publishing implementation specifications.
+English commensurated rendering: 
+
+04_Applications connects the Sat/Raj/Tam conceptual structure to public-facing application interfaces, especially AI boundary interfaces, usefulness, response-structure models, and application boundary theory. 
+
+It is not a place for publishing implementation specifications.
 
 ---
 
@@ -33,6 +37,7 @@ English commensurated rendering: The default public scope is P1-P2. This layer c
 - AI人格を応答構造として扱う公開用入口
 - 応用境界理論の中核説明
 - 公開可能な応用設計メモ
+- AI導入を境界設計・責任境界・照合可能性として扱う応用文書
 
 含まないもの:
 
@@ -44,11 +49,18 @@ English commensurated rendering: The default public scope is P1-P2. This layer c
 - 内部評価ログ
 - 非公開シミュレーション仕様
 
-English commensurated rendering: This layer includes public AI boundary-interface documents, usefulness as boundary function, AI personality as response structure, and application boundary theory. It excludes implementation code, private schemas, operational parameters, AI control structures, persona cores, internal logs, and non-public simulation specifications.
+English commensurated rendering: This layer includes public AI boundary-interface documents, usefulness as boundary function, AI personality as response structure, and application boundary theory. 
+
+It excludes implementation code, private schemas, operational parameters, AI control structures, persona cores, internal logs, and non-public simulation specifications.
 
 ---
 
 ## 4. Documents / 文書一覧
+
+- [`AI_Adoption/README.md`](./AI_Adoption/README.md)
+  - 一行説明: AI導入を、単なるAI機器・サービス導入ではなく、判断可能性、責任境界、照合可能性を維持する境界設計として扱う応用小分類。
+  - Role: AI導入応用文書の入口。
+  - Claim profile: Application notes / P1-P2.
 
 - [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
   - 一行説明: AIを境界インターフェースとして扱い、同期的理解、偽閉鎖、Open Marker、倫理的制動を説明する。

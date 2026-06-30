@@ -12,7 +12,11 @@
 
 この層は、応用・社会批判・AI実装・物理対応へ進む前に、理論の基底語彙と認識条件を固定する場所である。
 
-English commensurated rendering: 01_Sat_Truth is the public foundational layer. It explains the conditions under which existence, observation, meaning, ethics, and knowledge become possible. It contains public-facing materials on AMP, the Four Axioms of Existence, meaning generation, and Boundary Epistemological Critique.
+English commensurated rendering: 
+
+01_Sat_Truth is the public foundational layer. It explains the conditions under which existence, observation, meaning, ethics, and knowledge become possible. 
+
+It contains public-facing materials on AMP, the Four Axioms of Existence, meaning generation, and Boundary Epistemological Critique.
 
 ---
 
@@ -22,7 +26,11 @@ English commensurated rendering: 01_Sat_Truth is the public foundational layer. 
 
 この層で科学語彙を用いる場合、標準定義を上書きせず、必要に応じて構造アナロジー、存在論的再解釈、SO定義を区別する。
 
-English commensurated rendering: The default public scope is P0-P1. This layer presents public foundations and conceptual conditions, not the full AMP Core, the full ITS theory, physical-claim candidates, or AI implementation specifications.
+English commensurated rendering: 
+
+The default public scope is P0-P1. 
+
+This layer presents public foundations and conceptual conditions, not the full AMP Core, the full ITS theory, physical-claim candidates, or AI implementation specifications.
 
 ---
 
@@ -45,7 +53,11 @@ English commensurated rendering: The default public scope is P0-P1. This layer p
 - 社会批判・経済論
 - AIランタイム・人格OS・実装パラメータ
 
-English commensurated rendering: This layer includes public foundational documents and commensurated renderings. It does not include full private cores, physical correspondence notes, social/economic theory, runtime specifications, or implementation parameters.
+English commensurated rendering: 
+
+This layer includes public foundational documents and commensurated renderings. 
+
+It does not include full private cores, physical correspondence notes, social/economic theory, runtime specifications, or implementation parameters.
 
 ---
 

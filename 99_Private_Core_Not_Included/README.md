@@ -12,7 +12,11 @@
 
 存在境界論｜Scientific Ontology は公開用インターフェースであり、非公開中核、原液、ランタイム仕様、詳細な実装・評価・運用資料を含まない。
 
-English commensurated rendering: 99_Private_Core_Not_Included is a public boundary notice. It does not contain the theoretical body. It states that the public repository is an interface and does not include private cores, raw materials, runtime specifications, or detailed implementation/evaluation materials.
+English commensurated rendering: 
+
+99_Private_Core_Not_Included is a public boundary notice. It does not contain the theoretical body. 
+
+It states that the public repository is an interface and does not include private cores, raw materials, runtime specifications, or detailed implementation/evaluation materials.
 
 ---
 
@@ -20,7 +24,9 @@ English commensurated rendering: 99_Private_Core_Not_Included is a public bounda
 
 この層の公開強度は P0 である。ここで行うのは、公開しないものの境界明示であり、非公開内容の説明や要約ではない。
 
-English commensurated rendering: The public scope is P0. This layer only marks what is outside the public repository. It does not summarize or expose private materials.
+English commensurated rendering: 
+
+The public scope is P0. This layer only marks what is outside the public repository. It does not summarize or expose private materials.
 
 ---
 
@@ -45,7 +51,11 @@ English commensurated rendering: The public scope is P0. This layer only marks w
 - 詳細な運用パラメータ
 - 生ログ、原液、未公開正本
 
-English commensurated rendering: This directory includes only the public notice of exclusion. It does not include full AMP Core, full ITS theory, Persona Runtime Core, Soul Core details, Role-AP parameters, Boundary Heat Log taxonomy, non-public schemas, simulation specifications, operational parameters, raw logs, or unpublished authoritative sources.
+English commensurated rendering: 
+
+This directory includes only the public notice of exclusion. 
+
+It does not include full AMP Core, full ITS theory, Persona Runtime Core, Soul Core details, Role-AP parameters, Boundary Heat Log taxonomy, non-public schemas, simulation specifications, operational parameters, raw logs, or unpublished authoritative sources.
 
 ---
 

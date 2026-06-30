@@ -12,7 +12,11 @@
 
 この層は根本公理そのものではない。HFC、履歴場トポロジー、科学との接続面を通じて、基礎概念を物理・情報・生命・社会・AI・死生観へ展開するための公開フレームを置く。
 
-English commensurated rendering: 02_Raj_Beauty is the constructive layer that gives movement to the foundations established in Sat / Truth. It treats history-bearing beings or fields as communicating, synchronizing, desynchronizing, cutting off, reconnecting, and generating meaning or qualitative experience through boundaries.
+English commensurated rendering: 
+
+02_Raj_Beauty is the constructive layer that gives movement to the foundations established in Sat / Truth. 
+
+It treats history-bearing beings or fields as communicating, synchronizing, desynchronizing, cutting off, reconnecting, and generating meaning or qualitative experience through boundaries.
 
 ---
 
@@ -22,7 +26,11 @@ English commensurated rendering: 02_Raj_Beauty is the constructive layer that gi
 
 現代科学との関係では、標準科学を否定せず、標準定義を上書きしない。接続面では、構造アナロジー、存在論的再解釈、形式化候補、物理主張候補を区別する。
 
-English commensurated rendering: The default public scope is P0-P2. HFC and History-Field Topology are public frameworks, while stronger physical or cosmological correspondence claims belong in Research Notes. This layer does not overwrite standard scientific definitions.
+English commensurated rendering: 
+
+The default public scope is P0-P2. HFC and History-Field Topology are public frameworks, while stronger physical or cosmological correspondence claims belong in Research Notes. 
+
+This layer does not overwrite standard scientific definitions.
 
 ---
 
@@ -47,7 +55,11 @@ English commensurated rendering: The default public scope is P0-P2. HFC and Hist
 - 実装仕様、人格OS、運用パラメータ
 - 社会批判や経済論を主目的とする文書
 
-English commensurated rendering: This layer includes HFC, History-Field Topology, boundary dynamics, synchronization/desynchronization, and public position statements on science. It does not include full private cores, Standard Model correspondence notes, high-claim physical notes, implementation specifications, or social/economic theory as its main body.
+English commensurated rendering: 
+
+This layer includes HFC, History-Field Topology, boundary dynamics, synchronization/desynchronization, and public position statements on science. 
+
+It does not include full private cores, Standard Model correspondence notes, high-claim physical notes, implementation specifications, or social/economic theory as its main body.
 
 ---
 

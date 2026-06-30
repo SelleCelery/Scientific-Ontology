@@ -12,7 +12,11 @@
 
 この層は「鞘付きの牙」である。理論を弱めるためではなく、強い命題を適切な鞘に入れ、公開時の境界条件を明示するために存在する。
 
-English commensurated rendering: 05_Research_Notes contains exploratory and higher-claim documents that should not be placed directly into the foundational public layers, but should not be discarded. It serves as a sheath for stronger notes: physical/cosmological correspondence, social boundary notes, literary ontological readings, and AI personality research.
+English commensurated rendering: 
+
+05_Research_Notes contains exploratory and higher-claim documents that should not be placed directly into the foundational public layers, but should not be discarded. 
+
+It serves as a sheath for stronger notes: physical/cosmological correspondence, social boundary notes, literary ontological readings, and AI personality research.
 
 ---
 

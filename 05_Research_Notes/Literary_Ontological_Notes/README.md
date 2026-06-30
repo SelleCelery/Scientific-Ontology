@@ -12,7 +12,10 @@ Literary_Ontological_Notes は、文学、詩、宗教的語彙、創作素材�
 
 ここで行うのは、文学研究の代替でも、作品による理論証明でも、宗教的・詩的素材の物理学への還元でもない。権威づけではなく、響き方、構造対応、概念通路を読むための場所である。
 
-English commensurated rendering: Literary_Ontological_Notes contains research notes that structurally read literature, poetry, religious vocabulary, and creative materials through the concepts of Scientific Ontology.
+English commensurated rendering: 
+
+Literary_Ontological_Notes contains research notes that structurally read literature, poetry, religious vocabulary, and creative materials through the concepts of Scientific Ontology.
+
 These notes do not replace literary scholarship, do not claim that literary works prove the theory, and do not reduce religious or poetic materials to physics. Their purpose is to read resonance, structural correspondence, and conceptual pathways rather than to borrow authority.
 
 ---

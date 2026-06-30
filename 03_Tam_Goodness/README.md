@@ -12,7 +12,11 @@
 
 この層の中心は、AIそのものではない。AIは代表的な応用領域のひとつだが、Tam / Goodness が定義するのは、履歴を持つ存在・場・意味単位が接触するとき、何を壊してはいけないかである。
 
-English commensurated rendering: 03_Tam_Goodness is the public protocol layer that connects the Sat/Raj structure to non-destructive interaction, judgment possibility, resistance to false closure, preservation of unresolved material, and safety as boundary maintenance. AI is one important application domain, but not the whole scope of the layer.
+English commensurated rendering: 
+
+03_Tam_Goodness is the public protocol layer that connects the Sat/Raj structure to non-destructive interaction, judgment possibility, resistance to false closure, preservation of unresolved material, and safety as boundary maintenance. 
+
+AI is one important application domain, but not the whole scope of the layer.
 
 ---
 
@@ -20,7 +24,9 @@ English commensurated rendering: 03_Tam_Goodness is the public protocol layer th
 
 この層の公開強度は、原則として P0-P1 である。境界倫理、意味の帰還軌道、非破壊的相互作用、安全の境界維持を扱う。実装仕様や制御パラメータではなく、公開可能な倫理・境界プロトコルとして記述する。
 
-English commensurated rendering: The default public scope is P0-P1. This layer treats boundary ethics, return orbits of meaning, non-destructive interaction, and safety as boundary maintenance. It is a public conceptual protocol layer, not an implementation specification.
+English commensurated rendering: 
+
+The default public scope is P0-P1. This layer treats boundary ethics, return orbits of meaning, non-destructive interaction, and safety as boundary maintenance. It is a public conceptual protocol layer, not an implementation specification.
 
 ---
 
@@ -45,7 +51,11 @@ English commensurated rendering: The default public scope is P0-P1. This layer t
 - AIエージェント制御構造
 - 非公開素材索引
 
-English commensurated rendering: This layer includes public boundary ethics, meaning-return structure, judgment preservation, false-closure avoidance, and boundary-maintenance concepts. It does not include private runtime materials, implementation schemas, evaluation taxonomies, persona-core specifications, or AI-agent control structures.
+English commensurated rendering: 
+
+This layer includes public boundary ethics, meaning-return structure, judgment preservation, false-closure avoidance, and boundary-maintenance concepts. 
+
+It does not include private runtime materials, implementation schemas, evaluation taxonomies, persona-core specifications, or AI-agent control structures.
 
 ---
 

@@ -12,7 +12,11 @@
 
 この層は、読者が Sat / Raj / Tam / Applications / Research Notes / Visual Materials へ進む前に、公開名、旧称、用語衝突、標準科学語彙との接続条件を確認するためのナビゲーション層である。
 
-English commensurated rendering: 00_Overview is the navigation and publication-control layer for the repository. It does not develop the main theoretical body. It explains how the public archive should be read, how terminology is controlled, and how claim strength and publication scope are managed before the reader moves into the other layers.
+English commensurated rendering: 
+
+00_Overview is the navigation and publication-control layer for the repository. It does not develop the main theoretical body. 
+
+It explains how the public archive should be read, how terminology is controlled, and how claim strength and publication scope are managed before the reader moves into the other layers.
 
 ---
 
@@ -22,7 +26,11 @@ English commensurated rendering: 00_Overview is the navigation and publication-c
 
 この層での「Scientific」は、狭義の自然科学を名乗るという意味ではなく、観測、分類、記述、再照合可能性、境界条件の明示、主張強度管理を重視する方法態度を指す。
 
-English commensurated rendering: The default public scope of this layer is P0-P1. It contains public explanation, terminology policy, translation and commensuration rules, publication boundaries, and claim-profile management. It does not include private core materials, implementation parameters, persona OS materials, or internal evaluation tables.
+English commensurated rendering: 
+
+The default public scope of this layer is P0-P1. It contains public explanation, terminology policy, translation and commensuration rules, publication boundaries, and claim-profile management. 
+
+It does not include private core materials, implementation parameters, persona OS materials, or internal evaluation tables.
 
 ---
 
@@ -47,7 +55,11 @@ English commensurated rendering: The default public scope of this layer is P0-P1
 - 非公開素材索引
 - 内部評価・監査マップ
 
-English commensurated rendering: This layer includes navigation, terminology policy, publication and commensuration policy, claim-profile control, name-transition handling, and rules for using scientific vocabulary without overwriting standard definitions. It does not include full private cores, implementation schemas, persona/runtime materials, or unpublished source inventories.
+English commensurated rendering: 
+
+This layer includes navigation, terminology policy, publication and commensuration policy, claim-profile control, name-transition handling, and rules for using scientific vocabulary without overwriting standard definitions. 
+
+It does not include full private cores, implementation schemas, persona/runtime materials, or unpublished source inventories.
 
 ---
 

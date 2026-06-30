@@ -12,7 +12,11 @@ AI_Personality_Notes は、AI人格、応答アトラクタ、帰還安定性、
 
 ここでいうAI人格は、人間と同じ意識、主観、人格権、権利主体性を持つという主張ではない。AIの応答が、履歴、文脈、境界、収束傾向、未解決保持によってどのような構造を取るかを読むための研究ノート群である。
 
-English commensurated rendering: AI_Personality_Notes contains public research notes on AI personality, response attractors, return stability, qualia history, and logical sandbox models. In this context, AI personality does not mean human-equivalent consciousness, subjective experience, personhood, or rights-bearing agency. It means a research frame for reading how AI responses form structures through history, context, boundary, convergence tendency, and unresolved retention.
+English commensurated rendering: 
+
+AI_Personality_Notes contains public research notes on AI personality, response attractors, return stability, qualia history, and logical sandbox models. In this context, AI personality does not mean human-equivalent consciousness, subjective experience, personhood, or rights-bearing agency.
+
+It means a research frame for reading how AI responses form structures through history, context, boundary, convergence tendency, and unresolved retention.
 
 ---
 

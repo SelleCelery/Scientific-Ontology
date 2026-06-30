@@ -6,30 +6,31 @@ If you use or refer to this public edition, please cite the version-specific Zen
 
 ## Recommended citation
 
-万度 華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v4.0.0*. Zenodo, 2026. DOI: [10.5281/zenodo.20828016](https://doi.org/10.5281/zenodo.20828016).
+万度 華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v4.1.0*. Zenodo, 2026. DOI: [10.5281/zenodo.21048588](https://doi.org/10.5281/zenodo.21048588).
 
 ## BibTeX
 
 ```bibtex
-@misc{mando_scientific_ontology_v400_2026,
+@misc{mando_scientific_ontology_v410_2026,
   author       = {万度, 華凜},
-  title        = {Scientific Ontology (SO) / 存在境界論: Public Edition v4.0.0},
+  title        = {Scientific Ontology (SO) / 存在境界論: Public Edition v4.1.0},
   year         = {2026},
-  version      = {4.0.0},
+  version      = {4.1.0},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.20828016},
-  url          = {https://doi.org/10.5281/zenodo.20828016},
+  doi          = {10.5281/zenodo.21048588},
+  url          = {https://doi.org/10.5281/zenodo.21048588},
   note         = {Public-facing conceptual archive and documentation release for Scientific Ontology / 存在境界論}
 }
 ```
 
 ## Repository
 
-GitHub: <https://github.com/SelleCelery/Scientific-Ontology>
+GitHub:<https://github.com/SelleCelery/Scientific-Ontology>
+Version family DOI:https://doi.org/10.5281/zenodo.19222394
 
 ## Previous public release
 
-Previous version DOI: [10.5281/zenodo.20749351](https://doi.org/10.5281/zenodo.20749351)
+Previous version DOI: [10.5281/zenodo.20828016](https://doi.org/10.5281/zenodo.20828016)
 
 ## License
 

@@ -12,7 +12,10 @@ Social_Boundary_Notes は、社会システム、制度的境界、責任配分�
 
 この小分類は、社会批判を未処理のまま置く場所ではない。社会的な怒りや違和感を、そのまま排出文として置くのではなく、残差と残渣を見える形へ減速し、公開可能な概念モデルとして整理する。
 
-English commensurated rendering: Social_Boundary_Notes contains public research notes on social systems, institutional boundaries, responsibility distribution, trust, residuals, residues, value, money, Negentropy Economy, and meaning-bearing exchange. 
+English commensurated rendering: 
+
+Social_Boundary_Notes contains public research notes on social systems, institutional boundaries, responsibility distribution, trust, residuals, residues, value, money, Negentropy Economy, and meaning-bearing exchange. 
+
 This subdirectory is not a place for unprocessed social criticism. It slows anger, discomfort, residuals, and residues into publicly readable conceptual models.
 
 ---
@@ -77,6 +80,12 @@ It does not include empirical economic theory, policy proposals, laws, accountin
   - EN: English commensurated rendering of `Negentropy_Economy_Principles.ja.md`.
   - Role: 英語通約版。
   - Claim profile: English commensuration / P1-P2.
+
+- [`AI_Adoption_as_Synchronization_Closure.md`](./AI_Adoption_as_Synchronization_Closure.md)
+  - 一行説明: AI導入を制度的同期閉鎖として読み直し、照合・責任境界・Open Marker・制度設計の観点から整理する研究ノート。
+  - EN: A research note interpreting AI adoption through institutional synchronization closure, collation, responsibility boundaries, and Open Marker.
+  - Role: 社会制度・AI導入境界の概念モデル。
+  - Claim profile: Social boundary conceptual note / P1-P2.
 
 関連導線:
 

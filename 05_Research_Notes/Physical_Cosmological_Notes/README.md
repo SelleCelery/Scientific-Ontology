@@ -14,7 +14,10 @@ Physical_Cosmological_Notes は、存在境界論を、物理語彙、宇宙論�
 
 両者は物理語彙・法則・観測概念の共有平面で接触し、競合しうるが、説明の本拠地は同一ではない。
 
-English commensurated rendering: Physical_Cosmological_Notes contains research notes connecting Scientific Ontology with physical vocabulary, cosmological vocabulary, the Standard Model, History-Field Topology, intrinsic time, and physical-phase correspondence candidates. 
+English commensurated rendering: 
+
+Physical_Cosmological_Notes contains research notes connecting Scientific Ontology with physical vocabulary, cosmological vocabulary, the Standard Model, History-Field Topology, intrinsic time, and physical-phase correspondence candidates. 
+
 These notes do not originate from the same explanatory ground as contemporary physics or cosmology. Scientific Ontology / AMP / ITS descends toward the physical phase from low-entropy primordial activity, boundary formation, and history-generating structure, while contemporary physics generally extracts low-entropy laws, symmetries, and conservation structures from high-entropy observational surfaces, measurements, and phenomena. 
 The two approaches may intersect and compete on shared physical vocabulary, but their explanatory grounds are not identical.
 
@@ -92,6 +95,18 @@ It does not include a bottom-up replacement for contemporary physics, empirical 
   - EN: English commensurated rendering of `Cosmological_Topological_Dynamics.ja.md`.
   - Role: 英語通約版。
   - Claim profile: English commensuration / P1-P2.
+
+- [`PINGER_Hypothesis_and_History_Field_Topology.md`](./PINGER_Hypothesis_and_History_Field_Topology.md)
+  - 一行説明: PINGER仮説を履歴場トポロジーの射影として扱い、物理近接語彙との接続境界を整理する研究ノート。
+  - EN: A research note treating the PINGER hypothesis as a projection from History-Field Topology and clarifying its boundary with physics-proximate terminology.
+  - Role: 履歴場トポロジーの物理位相への射影ノート。
+  - Claim profile: Physical-projection conceptual note / P1-P2.
+
+- [`Chaos_Theory_and_Logical_Depth_Axis.md`](./Chaos_Theory_and_Logical_Depth_Axis.md)
+  - 一行説明: カオス理論を、内在時間、内的計数時間、論理-深度軸、履歴重力圏の観点から読み直す研究ノート。
+  - EN: A research note re-reading chaos theory through intrinsic time, internal count-time, the logical-depth axis, and history-gravity domains.
+  - Role: カオス理論と論理-深度軸の接続ノート。
+  - Claim profile: Conceptual correspondence note / P1-P2.
 
 関連導線:
 

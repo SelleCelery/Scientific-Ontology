@@ -12,7 +12,11 @@
 
 この層は、理論本文や証明層ではない。視覚資料は理解の入口であり、詳細な定義、主張強度、用語運用は各本文ファイルと方針文書で確認する。
 
-English commensurated rendering: 06_Visual_Materials contains public visual aids and conceptual entry materials. It is not a proof layer or a replacement for the written theoretical documents.
+English commensurated rendering: 
+
+06_Visual_Materials contains public visual aids and conceptual entry materials. 
+
+It is not a proof layer or a replacement for the written theoretical documents.
 
 ---
 

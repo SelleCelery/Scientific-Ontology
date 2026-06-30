@@ -1,47 +1,36 @@
 cff-version: 1.2.0
-message: "If you use or refer to this public edition, please cite it as below."
-title: "Scientific Ontology (SO) / 存在境界論: Public Edition v4.0.0"
-version: "4.0.0"
-type: generic
+title: "Scientific Ontology (SO) / 存在境界論: Public Edition v4.1.0"
+
+message: >
+  If you use this public edition, please cite the version-specific Zenodo DOI.
+
+type: report
+
 authors:
   - family-names: "万度"
     given-names: "華凜"
-date-released: 2026-06-25
+
+version: "4.1.0"
+
+doi: "10.5281/zenodo.21048588"
+
+date-released: "2026-06-30"
+
 license: "CC-BY-4.0"
-doi: "10.5281/zenodo.20828016"
-url: "https://github.com/SelleCelery/Scientific-Ontology"
-abstract: >-
-  Scientific Ontology (SO) / 存在境界論 Public Edition v4.0.0 is a
-  public-facing conceptual archive and documentation release for a
-  boundary-based framework describing existence, knowledge, meaning,
-  communication, ethics, AI usefulness, social systems, and research-facing
-  theoretical notes through history, boundary, operational correspondence,
-  collation, residual retention, residue formation, intrinsic time, and the
-  logical-depth axis. This release consolidates the public Japanese name
-  存在境界論, redesigns the repository as an English-accessible public entrance,
-  standardizes README navigation, expands Research Notes including
-  physical/cosmological and negentropy-economy materials, adds Visual
-  Materials and conceptual posters, and clarifies the relation between
-  high-entropy observation-based science and low-entropy activity-based
-  top-down theory. It is not an empirical scientific theory, an AI runtime
-  package, a policy doctrine, or a disclosure of private core materials.
+
+repository-code: "https://github.com/SelleCelery/Scientific-Ontology"
+
+url: "https://doi.org/10.5281/zenodo.21048588"
+
 keywords:
   - Scientific Ontology
   - 存在境界論
-  - boundary studies
-  - applied metaphysics
-  - AMP
-  - ITS
-  - history-field communication
-  - boundary epistemological critique
-  - intrinsic time
-  - logical-depth axis
-  - operational correspondence
-  - collation
-  - residual
-  - residue
-  - negentropy economy
-  - boundary ethics
-  - AI usefulness
-  - conceptual framework
-  - heuristic verification
+  - Boundary Studies
+  - History-Field Topology
+  - Intrinsic Time
+  - Logical-depth Axis
+  - Synchronization
+  - Collation
+  - AI Adoption
+  - Boundary Ethics
+  - Conceptual Framework

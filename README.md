@@ -2,7 +2,7 @@
 
 ## Conceptual Interaction and Boundary Studies
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20828016.svg)](https://doi.org/10.5281/zenodo.20828016)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21048588.svg)](https://doi.org/10.5281/zenodo.21048588)
 
 > Layer: Repository root  
 > Status: Public interface README  
@@ -210,7 +210,6 @@ For details, see:
 ## 6. Repository Map / リポジトリ構成
 
 For detailed descriptions, open the README in each directory.
-
 詳細は、各ディレクトリの README を参照してください。
 
 - [`00_Overview/`](./00_Overview/README.md)  
@@ -226,8 +225,8 @@ For detailed descriptions, open the README in each directory.
     Boundary ethics, residual handling, false closure, and return paths.  
     境界倫理、残差処理、偽閉鎖、意味の帰還。
 - [`04_Applications/`](./04_Applications/README.md)  
-    Public-facing application and implementation-connection layer, including AI boundary concepts.  
-    AI境界概念を含む、公開可能な応用・実装接続層。
+    Public-facing application layer, including AI boundary concepts, AI adoption guidance, and implementation-oriented documents.
+    AI境界概念、AI導入のガイダンス、および実装に焦点を当てたドキュメントを含む、公開可能な応用・実装接続層。
 - [`05_Research_Notes/`](./05_Research_Notes/README.md)  
     Exploratory notes, stronger hypotheses, physical correspondence candidates, social boundary analysis, and literary-ontological readings.  探索ノート、強い仮説、物理接続候補、社会境界分析、文学的・存在論的読解。
 - [`06_Visual_Materials/`](./06_Visual_Materials/README.md)  
@@ -236,6 +235,10 @@ For detailed descriptions, open the README in each directory.
 - [`99_Private_Core_Not_Included/`](./99_Private_Core_Not_Included/README.md)  
     Boundary marker showing what is intentionally excluded from the public repository.  
     公開リポジトリに含めない非公開中核の境界標識。
+
+For research milestones and development policy, see:
+研究上の到達点と発展方針については、以下を参照してください。
+- [`Roadmap.md`](./Roadmap.md)
 
 ---
 
@@ -319,26 +322,26 @@ Use the version-specific DOI when citing a specific release.
 
 Current public edition DOI:
 
-[10.5281/zenodo.20828016](https://doi.org/10.5281/zenodo.20828016)
+[10.5281/zenodo.21048588](https://doi.org/10.5281/zenodo.21048588)
 
 For citation details and related identifiers, see:
 
 
 - [`CITATION.md`](./CITATION.md)
 - [`CITATION.cff`](./CITATION.cff)
-- [`RELEASE_NOTES.md`](./RELEASE_NOTES.md)
+- [`RELEASE_NOTES.md`](RELEASE_NOTES.md)
 
 特定のリリースを引用する場合は、版固有 DOI を使用してください。
 
 現行公開版 DOI:
 
-[10.5281/zenodo.20828016](https://doi.org/10.5281/zenodo.20828016)
+[10.5281/zenodo.21048588](https://doi.org/10.5281/zenodo.21048588)
 
 引用形式および関連識別子については、以下を参照してください。
 
 - [`CITATION.md`](./CITATION.md)
 - [`CITATION.cff`](./CITATION.cff)
-- [`RELEASE_NOTES.md`](./RELEASE_NOTES.md)
+- [`RELEASE_NOTES.md`](RELEASE_NOTES.md)
 
 ---
 

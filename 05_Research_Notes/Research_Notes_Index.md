@@ -78,7 +78,30 @@
 - 主要概念: 残渣査定、価値、価格、所有、交換、照合、偽閉鎖
 - 接続層: 03 / 05
 - 主張強度: Japanese authoritative draft / commensuration pending
-- 非主張境界: 法令、会計基準、政策案ではない。英語通約は保留
+- 非主張境界: 法令、会計基準、政策案ではない。
+
+### [`Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.md`](./Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.md)
+
+- 領域: 物理近接語彙 / 履歴場トポロジー
+- 主要概念: PINGER仮説、射影、履歴場トポロジー、物理近接語彙、エンタングルメント
+- 接続層: 02 / 05
+- 主張強度: 概念射影 / 物理接続候補
+- 非主張境界: 標準物理学の置換ではない。経験物理理論として提出するものではない
+
+### [`Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.md`](./Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.md)
+
+- 領域: カオス理論 / 論理-深度軸
+- 主要概念: カオス、内在時間、内的計数時間、論理-深度軸、履歴重力圏
+- 接続層: 02 / 05
+- 主張強度: 概念対応ノート
+- 非主張境界: 数理カオス理論の置換ではない。予測モデルとして完成したものではない
+### [`Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md`](./Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md)
+
+- 領域: 社会境界 / AI導入
+- 主要概念: AI導入、同期閉鎖、照合、責任境界、Open Marker、制度設計
+- 接続層: 04 / 05
+- 主張強度: 社会境界概念ノート
+- 非主張境界: 法令、調達基準、行政監査基準、実装仕様ではない
 
 ## 2. 管理メモ
 
@@ -162,7 +185,31 @@
 - Main concepts: residue assessment, value, price, ownership, exchange, collation, false closure
 - Connected layer: 03 / 05
 - Claim strength: Japanese authoritative draft / commensuration pending
-- Non-claim boundary: Not law, accounting standard, or policy proposal; English commensuration is on hold
+- Non-claim boundary: Not law, accounting standard, or policy proposal
+
+### [`Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.md`](./Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.md)
+
+- Domain: Physics-proximate terminology / History-Field Topology
+- Main concepts: PINGER hypothesis, projection, History-Field Topology, physics-proximate terminology, entanglement
+- Connected layer: 02 / 05
+- Claim strength: Conceptual projection / physical correspondence candidate
+- Non-claim boundary: Not a replacement for standard physics; not presented as empirical physics
+
+### [`Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.md`](./Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.md)
+
+- Domain: Chaos theory / logical-depth axis
+- Main concepts: chaos, intrinsic time, internal count-time, logical-depth axis, history-gravity domain
+- Connected layer: 02 / 05
+- Claim strength: Conceptual correspondence note
+- Non-claim boundary: Not a replacement for mathematical chaos theory; not a completed predictive model
+
+### [`Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md`](./Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md)
+
+- Domain: Social boundary / AI adoption
+- Main concepts: AI adoption, synchronization closure, collation, responsibility boundary, Open Marker, institutional design
+- Connected layer: 04 / 05
+- Claim strength: Social-boundary conceptual note
+- Non-claim boundary: Not law, procurement rules, audit standards, or implementation specification
 
 ---
 

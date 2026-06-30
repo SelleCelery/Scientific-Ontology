@@ -1,43 +1,53 @@
 {
-  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v4.0.0",
+  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v4.1.0",
   "upload_type": "publication",
   "publication_type": "other",
-  "description": "Scientific Ontology (SO) / 存在境界論: Public Edition v4.0.0 is a public documentation release of a boundary-based conceptual framework for describing existence, knowledge, meaning, communication, ethics, AI usefulness, social systems, and research-facing theoretical notes through history, boundary, operational correspondence, collation, residual retention, residue formation, intrinsic time, and the logical-depth axis.\n\nThis release consolidates the public Japanese name of the project as 存在境界論 while retaining Scientific Ontology as the English project name. It reorganizes the repository as an English-accessible public entrance while preserving Japanese as the primary conceptual reference where meanings diverge.\n\nv4.0.0 compactifies the root README, standardizes first-level and Research Notes subdirectory README files, improves directory navigation, updates publication and commensuration policy, clarifies terminology-collision management, adds a Visual Materials layer and conceptual posters, and strengthens the distinction between core public concepts, applications, visual materials, and higher-claim Research Notes.\n\nMajor additions and reorganizations include paired Japanese and English physical/cosmological Research Notes, expanded social-boundary and Negentropy Economy Research Notes, a claim-strength table for History-Field Topology, standardized README navigation, and improved local-link hygiene.\n\nA central clarification in this release concerns the relation between Scientific Ontology and existing sciences. This public edition does not present itself as a replacement for empirical physics, economics, sociology, policy science, AI research, or existing philosophical traditions. Contemporary sciences generally proceed from high-entropy observational surfaces, measurements, and distributions of phenomena toward low-entropy laws, symmetries, and conservation structures. Scientific Ontology / AMP / ITS instead begins from low-entropy primordial activity, boundary formation, and history-generating structure, then descends toward physical, informational, social, ethical, and interpretive phases. The two approaches may intersect and compete on shared vocabulary, but they do not originate from the same explanatory ground.\n\nThis public edition is a conceptual and methodological framework. It is not a complete formal specification, an empirical scientific theory, an AI runtime package, a policy doctrine, or a disclosure of private core materials.",
+
+  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v4.1.0 expands the public research and application layers established in v4.0.0.\n\nThis release introduces new Research Notes on AI adoption, History-Field Topology, and the Logical-depth Axis together with a new Applications layer for AI adoption. It preserves the existing publication policy, claim-strength management, terminology governance, and public/private boundary while extending the publicly discussable conceptual framework.\n\nScientific Ontology is a boundary-oriented conceptual framework for studying existence, history, communication, meaning, ethics, AI applications, and institutional interpretation through iterative publication, practical application, and conceptual refinement.",
+
   "creators": [
     {
       "name": "万度 華凜"
     }
   ],
+
   "license": "cc-by-4.0",
-  "version": "4.0.0",
-  "publication_date": "2026-06-25",
+
+  "version": "4.1.0",
+
+  "publication_date": "2026-06-30",
+
   "keywords": [
     "Scientific Ontology",
     "存在境界論",
     "Boundary Studies",
+    "Conceptual Framework",
     "Applied Metaphysics",
-    "AMP",
-    "Information-Time Soliton",
-    "ITS",
-    "History-Field Communication",
-    "HFC",
-    "Boundary Epistemological Critique",
+    "History-Field Topology",
     "Intrinsic Time",
     "Logical-depth Axis",
-    "Operational Correspondence",
+    "Synchronization",
     "Collation",
-    "Residual",
-    "Residue",
-    "Negentropy Economy",
+    "AI Adoption",
+    "Institutional Boundary",
     "Boundary Ethics",
+    "Negentropy Economy",
     "AI Usefulness",
-    "Conceptual Framework",
+    "History-Forming AI Persona",
+    "Operational Correspondence",
     "Heuristic Verification"
   ],
+
   "language": "eng",
+
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.20749351",
+      "identifier": "10.5281/zenodo.19222394",
+      "relation": "isVersionOf",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.20828016",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     },
@@ -47,5 +57,6 @@
       "scheme": "url"
     }
   ],
-  "notes": "This release supersedes the previous public documentation structure while preserving archival continuity with earlier DOI-bound releases. From v3.0.0 onward, the public edition is released under Creative Commons Attribution 4.0 International (CC BY 4.0), unless otherwise stated. Earlier releases remain archived as historical snapshots and should be read according to the metadata and license files deposited with each version."
+
+  "notes": "This release expands the public research and application layers while preserving the publication policy, public/private boundary, terminology governance, and claim-strength management established in earlier public editions. Earlier releases remain archived within the Zenodo record family for historical continuity."
 }
