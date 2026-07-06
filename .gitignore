@@ -19,6 +19,16 @@
 !Publication_and_Commensuration_Policy.md
 !TERM_COLLISION_REGISTRY.md
 !TERM_COLLISION_REGISTRY.en.md
+!tools/
+!tools/Public_Format_Registry.yml
+!.github/workflows/public-format-check.yml
+!scripts/check_public_format.py
+!tools/Public_Format_Registry.yml
+!tools/docs_manifest.yml
+!tools/maintenance_rules.yml
+!requirements-public-check.txt
+!tools/CHECKER_USAGE.md
+!docs/CHECKER_USAGE.md
 
 # Allow public folders and selected public files
 !00_Overview/**
@@ -30,10 +40,17 @@
 !06_Visual_Materials/**
 !99_Private_Core_Not_Included/README.md
 
-# Python / local environment
-.venv/
+
+# Public format checker outputs
+public_format_report.md
+public_format_report.json
+
+# Python cache / local env
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.venv/
+venv/
 
 # OS files
 .DS_Store

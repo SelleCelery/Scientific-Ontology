@@ -1,0 +1,126 @@
+# Public maintenance rules for Scientific Ontology / 存在境界論
+# Version: 0.1.0
+
+maintenance_rules:
+  version: "0.1.0"
+  role: "terminology-and-maintenance-rules"
+  default_severity: "warning"
+  principle: >
+    Detect public drift that can be checked mechanically, while leaving
+    conceptual judgment to human or LLM review.
+
+  term_rules:
+    replacements:
+      - from: "Internal Time"
+        use: "intrinsic time"
+        severity: "error"
+        reason: "The project standard is intrinsic time. Internal Time should not be used as the English rendering of 内在時間."
+        match_case: true
+        allowed_near:
+          - "Do not translate"
+          - "do not translate"
+          - "not translate"
+          - "とは訳さない"
+          - "訳さない"
+      - from: "Intricit Time"
+        use: "intrinsic time"
+        severity: "error"
+        reason: "Legacy typo or obsolete rendering."
+        match_case: false
+      - from: "科学的存在論"
+        use: "存在境界論"
+        severity: "warning"
+        reason: "Current Japanese public-facing name is 存在境界論. The older name may appear only as former/development name."
+        allowed_near:
+          - "旧称"
+          - "開発名"
+          - "former name"
+          - "development name"
+
+    caution_terms:
+      - term: "エンタングルメント"
+        severity: "warning"
+        note: "量子論上のエンタングルメントと同一視しない。"
+        expected_boundary_markers:
+          - "同一視しない"
+          - "置き換えない"
+          - "代替ではない"
+          - "not identical with quantum entanglement"
+          - "does not replace quantum theory"
+      - term: "エンタングル"
+        severity: "warning"
+        note: "SO内部語として使う場合は、履歴拘束・相互作用履歴の持続として説明する。"
+        expected_boundary_markers:
+          - "履歴"
+          - "相互作用"
+          - "拘束"
+          - "history"
+          - "interaction"
+      - term: "エントロピー"
+        severity: "warning"
+        note: "標準熱力学・情報理論との区別を明記する。"
+        expected_boundary_markers:
+          - "標準"
+          - "同一ではない"
+          - "概念語"
+          - "standard thermodynamics"
+          - "information theory"
+      - term: "ネゲントロピー経済"
+        severity: "warning"
+        note: "経済理論、熱力学的証明、政策提案として提示しない。"
+        expected_boundary_markers:
+          - "経済理論ではない"
+          - "熱力学的証明ではない"
+          - "政策提案ではない"
+          - "not an empirical economic theory"
+          - "not a thermodynamic proof"
+
+  profile_rules:
+    readme_uses:
+      - "Public profile"
+      - "Claim profile"
+    assertion_documents_use:
+      - "Claim strength"
+    internal_tables_use:
+      - "S"
+      - "E"
+      - "U"
+      - "P"
+      - "V"
+    forbidden_patterns:
+      - pattern: "Claim profile: Literary/"
+        severity: "warning"
+        reason: "Literary or creative scope should be represented by Status/Scope or Claim strength, not a custom Claim profile namespace."
+      - pattern: "Claim profile: S"
+        severity: "warning"
+        reason: "Use Claim strength for S/E/U/P/V classifications."
+
+  public_boundary_rules:
+    forbidden_public_patterns:
+      - pattern: "sandbox:/"
+        severity: "error"
+      - pattern: "/mnt/data"
+        severity: "error"
+      - pattern: "file_000000"
+        severity: "error"
+      - pattern: "myfiles_browser"
+        severity: "error"
+      - pattern: "10_PUBLIC_GITHUB"
+        severity: "error"
+    private_core_terms:
+      - term: "full AMP Core"
+        public_handling: "excluded-material marker only"
+      - term: "full ITS theory"
+        public_handling: "excluded-material marker only"
+      - term: "soul_core"
+        public_handling: "do not expose"
+      - term: "Role AP"
+        public_handling: "do not expose unless explicitly public and abstracted"
+
+  release_rules:
+    version_metadata:
+      severity: "warning"
+      note: "Multiple versions may be legitimate in release history, but release metadata should identify the current release clearly."
+    doi_metadata:
+      severity: "warning"
+      note: "Multiple DOI strings may be legitimate when version DOI, concept DOI, and older release DOI are all present."

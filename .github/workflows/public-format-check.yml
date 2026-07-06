@@ -1,0 +1,86 @@
+name: Public Format Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      release_gate:
+        description: "Run stricter release-gate manifest checks"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      check_external:
+        description: "Check external HTTP/HTTPS links"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+jobs:
+  public-format-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-public-check.txt
+
+      - name: Build checker flags
+        id: flags
+        shell: bash
+        run: |
+          FLAGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.release_gate }}" = "true" ]; then
+            FLAGS="$FLAGS --release-gate"
+          fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.check_external }}" = "true" ]; then
+            FLAGS="$FLAGS --check-external"
+          fi
+          echo "flags=$FLAGS" >> "$GITHUB_OUTPUT"
+
+      - name: Run public format checker
+        run: |
+          python scripts/check_public_format.py \
+            --root . \
+            --registry tools/Public_Format_Registry.yml \
+            --manifest tools/docs_manifest.yml \
+            --maintenance-rules tools/maintenance_rules.yml \
+            --md-log public_format_report.md \
+            --json-log public_format_report.json \
+            --github-annotations \
+            --check-release-metadata \
+            ${{ steps.flags.outputs.flags }}
+
+      - name: Add report to job summary
+        if: always()
+        run: |
+          if [ -f public_format_report.md ]; then
+            cat public_format_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload check reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-format-check-report
+          path: |
+            public_format_report.md
+            public_format_report.json

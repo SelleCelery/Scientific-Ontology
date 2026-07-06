@@ -1,0 +1,163 @@
+# Public document manifest for Scientific Ontology / 存在境界論
+# Version: 0.1.0
+
+manifest:
+  version: "0.1.0"
+  role: "public-document-ledger"
+  coverage: "partial-seed"
+  default_severity: "warning"
+  release_gate_severity: "error"
+  principle: >
+    Track public-facing documents and expected metadata without turning early
+    drafts into hard release blockers. Missing or incomplete manifest entries
+    should be warnings during ordinary editing and release-gate errors only
+    when the release process explicitly enables strict mode.
+
+  path_policy:
+    separator: "/"
+    root: "."
+    private_core_paths_must_not_be_indexed: true
+    planned_documents_allowed: true
+
+  required_fields_for_public_documents:
+    - "path"
+    - "document_type"
+    - "title_ja"
+    - "title_en"
+    - "layer"
+    - "status"
+    - "public_profile"
+    - "state"
+
+  document_type_values:
+    - "assertion_document"
+    - "root_readme"
+    - "layer_readme"
+    - "subdirectory_readme"
+    - "common_fixed_explanation"
+    - "root_document"
+    - "index"
+    - "visual_material"
+
+  state_values:
+    - "public"
+    - "public-candidate"
+    - "planned"
+    - "legacy"
+    - "deprecated"
+
+  check_rules:
+    manifest_path_missing:
+      normal: "warning"
+      release_gate: "error"
+      note: "Use state: planned for documents that are intentionally listed before creation."
+    unlisted_public_markdown:
+      normal: "warning"
+      release_gate: "warning"
+      note: "The manifest may remain partial until release preparation."
+    related_link_missing:
+      normal: "warning"
+      release_gate: "error"
+    status_not_registered:
+      normal: "warning"
+      release_gate: "error"
+    profile_mismatch:
+      normal: "warning"
+      release_gate: "warning"
+
+layers:
+  root:
+    path: "."
+    label_ja: "ルート"
+    label_en: "Root"
+    default_document_type: "root_document"
+  overview:
+    path: "00_Overview"
+    label_ja: "概要"
+    label_en: "Overview"
+    default_public_profile: "P0-P1"
+  sat_truth:
+    path: "01_Sat_Truth"
+    label_ja: "純・真"
+    label_en: "Sat / Truth"
+    default_public_profile: "P0-P1"
+  raj_beauty:
+    path: "02_Raj_Beauty"
+    label_ja: "激・美"
+    label_en: "Raj / Beauty"
+    default_public_profile: "P0-P1"
+  tam_goodness:
+    path: "03_Tam_Goodness"
+    label_ja: "暗・善"
+    label_en: "Tam / Goodness"
+    default_public_profile: "P0-P1"
+  applications:
+    path: "04_Applications"
+    label_ja: "応用"
+    label_en: "Applications"
+    default_public_profile: "P1-P2.5"
+  research_notes:
+    path: "05_Research_Notes"
+    label_ja: "研究ノート"
+    label_en: "Research Notes"
+    default_public_profile: "P1-P2.5"
+  visual_materials:
+    path: "06_Visual_Materials"
+    label_ja: "視覚資料"
+    label_en: "Visual Materials"
+    default_public_profile: "P0-P1"
+  private_core_marker:
+    path: "99_Private_Core_Not_Included"
+    label_ja: "非公開中核は含めない"
+    label_en: "Private Core Not Included"
+    default_public_profile: "P3 marker only"
+
+documents:
+  - path: "README.md"
+    document_type: "root_readme"
+    title_ja: "存在境界論 公開リポジトリ入口"
+    title_en: "Scientific Ontology Public Repository Entry"
+    layer: "root"
+    status: "README"
+    scope: "repository entrance, public navigation, citation links"
+    public_profile: "P0"
+    state: "public"
+    role_ja: "公開リポジトリの入口"
+    role_en: "Public entry point for the repository"
+
+  - path: "01_Sat_Truth/Boundary_Realism_Principle.ja.md"
+    document_type: "assertion_document"
+    title_ja: "境界実在性の原則"
+    title_en: "Boundary Realism Principle"
+    layer: "01_Sat_Truth"
+    status: "Foundational principle"
+    scope: "boundary realism, ontological reserve, AMP repositioning"
+    public_profile: "P1"
+    internal_profile:
+      S: "S2-S3"
+      E: "E1-E2"
+      U: "U0-U1"
+      V: "V0-V1"
+    state: "public-candidate"
+    role_ja: "Sat層の基底配置文書"
+    role_en: "Foundational positioning document for the Sat layer"
+    related:
+      - "01_Sat_Truth/AMP_Introduction.md"
+      - "01_Sat_Truth/Four_Axioms_of_Existence.md"
+
+  - path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md"
+    document_type: "assertion_document"
+    title_ja: "返りの倫理と報復変換論"
+    title_en: "Return Ethics and Retaliation Conversion"
+    layer: "05_Research_Notes/Cross_Domain_Ontological_Notes"
+    status: "Cross-domain ontological note"
+    scope: "boundary ethics, return, retaliation, responsibility processing, negentropy economy"
+    public_profile: "P2"
+    internal_profile:
+      S: "S2-S3"
+      E: "E2"
+      U: "U1-U2"
+      V: "V1"
+    state: "planned"
+    role_ja: "力・返り・責任処理の境界倫理モデル"
+    role_en: "Boundary-ethics model of power, return, and responsibility processing"
