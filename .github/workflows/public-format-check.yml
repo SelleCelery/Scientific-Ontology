@@ -23,6 +23,14 @@ on:
         options:
           - "false"
           - "true"
+      check_anchors:
+        description: "Check local Markdown heading anchors"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
 
 jobs:
   public-format-check:
@@ -53,6 +61,9 @@ jobs:
           fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.check_external }}" = "true" ]; then
             FLAGS="$FLAGS --check-external"
+          fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.check_anchors }}" = "true" ]; then
+            FLAGS="$FLAGS --check-anchors"
           fi
           echo "flags=$FLAGS" >> "$GITHUB_OUTPUT"
 

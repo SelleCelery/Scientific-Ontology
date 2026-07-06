@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import dataclasses
+import fnmatch
 import json
 import re
 import sys
@@ -42,6 +43,38 @@ DEFAULT_FORBIDDEN_PATTERNS = [
     "file_000000",
     "myfiles_browser",
 ]
+
+# Generated checker outputs and local-only files must not be treated as public
+# Markdown sources. These names are skipped even when they are present at the
+# repository root because batch runs may leave them behind.
+DEFAULT_EXCLUDED_FILE_NAMES = {
+    "public_format_report.md",
+    "public_format_report.json",
+    "CHECKER_USAGE.md",
+    "CHECKER_EXTENSION_REPORT.md",
+}
+
+# Pattern exclusions cover Windows/browser duplicate downloads such as
+# CHECKER_USAGE(4).md. These are operational checker notes, not public
+# Scientific Ontology documents, and should not trigger terminology drift checks.
+DEFAULT_EXCLUDED_FILE_PATTERNS = (
+    "CHECKER_USAGE*.md",
+    "CHECKER_EXTENSION_REPORT*.md",
+)
+
+DEFAULT_EXCLUDED_DIR_NAMES = {
+    ".git",
+    ".github",
+    "node_modules",
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".checker_reports",
+    "checker_reports",
+}
 
 DEFAULT_STATUS_VALUES = {
     "readme",
@@ -242,6 +275,8 @@ class Registry:
         self.status_values = {str(s).strip().lower() for s in status_core} or DEFAULT_STATUS_VALUES
         forbidden = fr.get("ai_final_check", {}).get("forbidden_public_patterns", [])
         self.forbidden_patterns = [str(p) for p in forbidden] or DEFAULT_FORBIDDEN_PATTERNS
+        checker_outputs = fr.get("ai_final_check", {}).get("generated_outputs", [])
+        self.generated_outputs = {str(p).replace("\\", "/") for p in checker_outputs} or set(DEFAULT_EXCLUDED_FILE_NAMES)
         self.readme_variants = (
             fr.get("document_types", {}).get("readme", {}).get("variants", {})
             if isinstance(fr.get("document_types", {}).get("readme", {}), dict)
@@ -444,6 +479,7 @@ class MaintenanceRules:
         tr = self.root.get("term_rules", {}) if isinstance(self.root, dict) else {}
         self.replacements = tr.get("replacements", []) if isinstance(tr, dict) else []
         self.caution_terms = tr.get("caution_terms", []) if isinstance(tr, dict) else []
+        self.term_exceptions = tr.get("exceptions", []) if isinstance(tr, dict) else []
         self.profile_rules = self.root.get("profile_rules", {}) if isinstance(self.root, dict) else {}
         pbr = self.root.get("public_boundary_rules", {}) if isinstance(self.root, dict) else {}
         self.boundary_forbidden_patterns = pbr.get("forbidden_public_patterns", []) if isinstance(pbr, dict) else []
@@ -502,14 +538,57 @@ def relpath(path: Path, root: Path) -> str:
         return path.as_posix()
 
 
-def iter_markdown_files(root: Path, include_private_marker: bool = True) -> Iterable[Path]:
-    ignored_dirs = {".git", ".github", "node_modules", ".venv", "venv", "__pycache__"}
+def normalize_rel(value: str) -> str:
+    return str(value).replace("\\", "/").lstrip("./")
+
+
+def build_excluded_paths(root: Path, registry: Registry, args: argparse.Namespace) -> set[str]:
+    excluded = {normalize_rel(p) for p in getattr(registry, "generated_outputs", set())}
+    for value in args.exclude_path or []:
+        excluded.add(normalize_rel(value))
+    for value in [args.md_log, args.json_log]:
+        if value:
+            try:
+                excluded.add(Path(value).resolve().relative_to(root).as_posix())
+            except ValueError:
+                excluded.add(normalize_rel(value))
+    return excluded
+
+
+def is_excluded_path(path: Path, root: Path, excluded_paths: set[str]) -> bool:
+    try:
+        rel = path.relative_to(root).as_posix()
+    except ValueError:
+        return True
+    parts = set(path.relative_to(root).parts)
+    if parts & DEFAULT_EXCLUDED_DIR_NAMES:
+        return True
+    if path.name in DEFAULT_EXCLUDED_FILE_NAMES:
+        return True
+    if any(fnmatch.fnmatch(path.name, pattern) for pattern in DEFAULT_EXCLUDED_FILE_PATTERNS):
+        return True
+    if rel in excluded_paths:
+        return True
+    for item in excluded_paths:
+        if item.endswith("/") and rel.startswith(item):
+            return True
+    return False
+
+
+def iter_markdown_files(
+    root: Path,
+    include_private_marker: bool = True,
+    excluded_paths: Optional[set[str]] = None,
+) -> Iterable[Path]:
+    excluded_paths = excluded_paths or set()
     for path in root.rglob("*.md"):
         try:
             rel_parts = set(path.relative_to(root).parts)
         except ValueError:
             continue
-        if rel_parts & ignored_dirs:
+        if rel_parts & DEFAULT_EXCLUDED_DIR_NAMES:
+            continue
+        if is_excluded_path(path, root, excluded_paths):
             continue
         if not include_private_marker and "99_Private_Core_Not_Included" in rel_parts:
             continue
@@ -685,6 +764,71 @@ def resolve_local_link(source: Path, target: str) -> Optional[Path]:
         return None
     return (source.parent / unquoted).resolve()
 
+def resolve_link_path_and_fragment(source: Path, target: str) -> Tuple[Optional[Path], str]:
+    if not target:
+        return None, ""
+    if is_external_url(target) or is_ignored_link_scheme(target):
+        return None, ""
+    parsed = urllib.parse.urlparse(target)
+    if parsed.scheme:
+        return None, ""
+    fragment = urllib.parse.unquote(parsed.fragment or "")
+    unquoted_path = urllib.parse.unquote(parsed.path or "")
+    if not unquoted_path:
+        return source.resolve(), fragment
+    return (source.parent / unquoted_path).resolve(), fragment
+
+
+def github_slugify_heading(heading: str) -> str:
+    # Approximate GitHub Markdown heading anchors. This intentionally keeps
+    # Japanese and other Unicode word characters, removes most punctuation,
+    # lowercases ASCII, converts whitespace to hyphens, and collapses hyphens.
+    value = heading.strip().lower()
+    value = re.sub(r"`([^`]*)`", r"\1", value)
+    value = re.sub(r"<[^>]+>", "", value)
+    value = re.sub(r"[^\w\s\-　-鿿぀-ヿ＀-￯]", "", value, flags=re.UNICODE)
+    value = re.sub(r"[\s　]+", "-", value)
+    value = re.sub(r"-+", "-", value).strip("-")
+    return value
+
+
+def markdown_heading_anchors(text: str) -> set[str]:
+    anchors: set[str] = set()
+    counts: Dict[str, int] = {}
+    for line in strip_code_fences(text).splitlines():
+        m = re.match(r"^\s{0,3}(#{1,6})\s+(.+?)\s*#*\s*$", line)
+        if not m:
+            continue
+        raw = m.group(2).strip()
+        slug = github_slugify_heading(raw)
+        if not slug:
+            continue
+        count = counts.get(slug, 0)
+        counts[slug] = count + 1
+        anchors.add(slug if count == 0 else f"{slug}-{count}")
+    return anchors
+
+
+def anchor_target_ok(target_file: Path, fragment: str, cache: Dict[Path, set[str]]) -> bool:
+    if not fragment:
+        return True
+    normalized = fragment.lstrip("#").strip()
+    if not normalized:
+        return True
+    # GitHub supports some user-content- prefixed anchors in rendered HTML.
+    alternatives = {normalized, normalized.lower()}
+    if normalized.startswith("user-content-"):
+        alternatives.add(normalized[len("user-content-"):])
+    if target_file.suffix.lower() not in {".md", ".markdown"}:
+        return True
+    if target_file not in cache:
+        try:
+            cache[target_file] = markdown_heading_anchors(read_text(target_file))
+        except Exception:
+            cache[target_file] = set()
+    anchors = cache[target_file]
+    return any(alt in anchors for alt in alternatives)
+
 
 def external_url_ok(url: str, timeout: float) -> Tuple[bool, str]:
     try:
@@ -731,6 +875,65 @@ def find_term_occurrences(text: str, term: str, match_case: bool = False) -> Ite
     return positions
 
 
+def path_matches_any(relative: str, patterns: Sequence[str]) -> bool:
+    if not patterns:
+        return True
+    normalized = normalize_rel(relative)
+    return any(fnmatch.fnmatch(normalized, normalize_rel(str(pattern))) for pattern in patterns)
+
+
+def regex_context_matches(text: str, idx: int, patterns: Sequence[str], window: int) -> bool:
+    if not patterns:
+        return False
+    start = max(0, idx - window)
+    end = min(len(text), idx + window)
+    context = text[start:end]
+    for pattern in patterns:
+        try:
+            if re.search(str(pattern), context, flags=re.IGNORECASE | re.DOTALL):
+                return True
+        except re.error:
+            # Invalid exception regexes should not crash the checker. They are
+            # reported by YAML review/manual review rather than treated as matches.
+            continue
+    return False
+
+
+def term_exception_applies(
+    rules: MaintenanceRules,
+    relative: str,
+    term: str,
+    text: str,
+    idx: int,
+    default_window: int,
+) -> Tuple[bool, bool, str]:
+    """Return (is_allowed, should_report, reason) for term exception registry.
+
+    Exceptions are intentionally data-driven. They are for cases where a
+    deprecated term appears as a prohibited rendering, former-name note,
+    translation warning, or checker documentation example. Such occurrences
+    should not be treated as public terminology drift.
+    """
+    for item in getattr(rules, "term_exceptions", []) or []:
+        if not isinstance(item, dict):
+            continue
+        item_term = str(item.get("term", ""))
+        if item_term and item_term.lower() != term.lower():
+            continue
+        paths = [str(v) for v in item.get("paths", []) or []]
+        if paths and not path_matches_any(relative, paths):
+            continue
+        window = int(item.get("context_window", default_window) or default_window)
+        markers = [str(v) for v in item.get("allowed_near", []) or []]
+        patterns = [str(v) for v in item.get("allowed_patterns", []) or []]
+        marker_ok = bool(markers and has_marker_near(text, idx, markers, window))
+        pattern_ok = bool(patterns and regex_context_matches(text, idx, patterns, window))
+        if marker_ok or pattern_ok:
+            report = bool(item.get("report", False))
+            return True, report, str(item.get("reason", "Allowed by maintenance exception registry."))
+    return False, False, ""
+
+
 def check_maintenance_for_file(
     path: Path,
     root: Path,
@@ -756,19 +959,30 @@ def check_maintenance_for_file(
         severity = normalize_severity(item.get("severity"), "warning")
         match_case = bool(item.get("match_case", False))
         allowed_near = [str(v) for v in item.get("allowed_near", []) or []]
+        allowed_patterns = [str(v) for v in item.get("allowed_patterns", []) or []]
+        report_allowed = bool(item.get("report_allowed", False))
         for idx in find_term_occurrences(visible_text, source, match_case=match_case):
             hits += 1
+            allowed_by_exception, exception_report, exception_reason = term_exception_applies(
+                rules, relative, source, visible_text, idx, args.term_context_window
+            )
+            allowed_by_rule = False
             if allowed_near and has_marker_near(visible_text, idx, allowed_near, args.term_context_window):
-                issues.append(
-                    Issue(
-                        "info",
-                        relative,
-                        line_number_for_offset(visible_text, idx),
-                        "TERM_LEGACY_ALLOWED_BY_CONTEXT",
-                        f"Legacy or deprecated term appears in an allowed context: {source}",
-                        f"Confirm the context is really a former-name or exception note. Preferred term: {replacement}",
+                allowed_by_rule = True
+            if allowed_patterns and regex_context_matches(visible_text, idx, allowed_patterns, args.term_context_window):
+                allowed_by_rule = True
+            if allowed_by_exception or allowed_by_rule:
+                if report_allowed or exception_report:
+                    issues.append(
+                        Issue(
+                            "info",
+                            relative,
+                            line_number_for_offset(visible_text, idx),
+                            "TERM_LEGACY_ALLOWED_BY_CONTEXT",
+                            f"Legacy or deprecated term appears in an allowed context: {source}",
+                            exception_reason or f"Confirm the context is really a former-name or exception note. Preferred term: {replacement}",
+                        )
                     )
-                )
                 continue
             issues.append(
                 Issue(
@@ -1118,6 +1332,7 @@ def check_file(
     maint_issues, maintenance_hits = check_maintenance_for_file(path, root, text, meta, doc_type, maintenance_rules, registry, args)
     issues.extend(maint_issues)
 
+    anchor_cache: Dict[Path, set[str]] = {}
     for target, line, is_image in extract_markdown_links(text):
         checked_links += 1
         if is_external_url(target):
@@ -1136,7 +1351,7 @@ def check_file(
                         )
                     )
             continue
-        local = resolve_local_link(path, target)
+        local, fragment = resolve_link_path_and_fragment(path, target)
         if local is None:
             continue
         if not local.exists():
@@ -1151,6 +1366,18 @@ def check_file(
                     "Fix the relative path, move the target file, or remove the stale link.",
                 )
             )
+            continue
+        if args.check_anchors and fragment and not anchor_target_ok(local, fragment, anchor_cache):
+            issues.append(
+                Issue(
+                    "warning",
+                    relative,
+                    line,
+                    "BROKEN_MARKDOWN_ANCHOR",
+                    f"Markdown anchor was not found in target: {target}",
+                    "Check the heading text, GitHub-generated anchor slug, or remove the stale fragment.",
+                )
+            )
 
     file_info = {
         "relative": relative,
@@ -1162,9 +1389,16 @@ def check_file(
     return issues, checked_links, external_checked, maintenance_hits, file_info
 
 
-def check_release_metadata(root: Path) -> List[Issue]:
+def check_release_metadata(root: Path, excluded_paths: Optional[set[str]] = None) -> List[Issue]:
     issues: List[Issue] = []
-    root_files = [p for p in root.glob("*") if p.is_file() and p.suffix.lower() in {".md", ".cff", ".json"}]
+    excluded_paths = excluded_paths or set()
+    root_files = [
+        p
+        for p in root.glob("*")
+        if p.is_file()
+        and p.suffix.lower() in {".md", ".cff", ".json"}
+        and not is_excluded_path(p, root, excluded_paths)
+    ]
     doi_map: Dict[str, List[str]] = {}
     version_map: Dict[str, List[str]] = {}
     doi_pattern = re.compile(r"10\.5281/zenodo\.\d+")
@@ -1470,7 +1704,9 @@ def run_checks(args: argparse.Namespace) -> CheckResult:
     maintenance_hits = 0
     file_index: Dict[str, Dict[str, Any]] = {}
 
-    for path in iter_markdown_files(root, include_private_marker=args.include_private_marker):
+    excluded_paths = build_excluded_paths(root, registry, args)
+
+    for path in iter_markdown_files(root, include_private_marker=args.include_private_marker, excluded_paths=excluded_paths):
         checked_files += 1
         file_issues, file_links, file_external, file_hits, file_info = check_file(path, root, registry, maintenance_rules, args)
         issues.extend(file_issues)
@@ -1484,7 +1720,7 @@ def run_checks(args: argparse.Namespace) -> CheckResult:
     issues.extend(manifest_issues)
 
     if args.check_release_metadata:
-        issues.extend(check_release_metadata(root))
+        issues.extend(check_release_metadata(root, excluded_paths))
 
     severity_order = {"error": 0, "warning": 1, "info": 2}
     issues.sort(key=lambda i: (severity_order.get(i.severity, 9), i.path, i.line, i.code))
@@ -1610,6 +1846,17 @@ def build_parser() -> argparse.ArgumentParser:
         "--no-maintenance-rules",
         action="store_true",
         help="Skip maintenance_rules.yml checks even if the file exists.",
+    )
+    parser.add_argument(
+        "--exclude-path",
+        action="append",
+        default=[],
+        help="Relative file or directory path to exclude from public Markdown checks. May be repeated.",
+    )
+    parser.add_argument(
+        "--check-anchors",
+        action="store_true",
+        help="Also check local Markdown #heading anchors. Off by default because generated anchors can be renderer-specific.",
     )
     parser.add_argument(
         "--term-context-window",

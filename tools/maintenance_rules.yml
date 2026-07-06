@@ -16,12 +16,28 @@ maintenance_rules:
         severity: "error"
         reason: "The project standard is intrinsic time. Internal Time should not be used as the English rendering of 内在時間."
         match_case: true
+        report_allowed: false
         allowed_near:
           - "Do not translate"
           - "do not translate"
           - "not translate"
+          - "should not be used"
+          - "do not use"
+          - "not `Internal Time`"
           - "とは訳さない"
           - "訳さない"
+          - "使用せず"
+          - "使わず"
+          - "用いず"
+          - "表記は使用せず"
+          - "intrinsic time に統一"
+          - "`intrinsic time` に統一"
+        allowed_patterns:
+          - '(?i)\b(do not|don''t|not|never|should not|must not)\b.{0,120}`?Internal Time`?'
+          - '(?i)`?Internal Time`?.{0,120}\b(should not|must not|do not|don''t|not be used|not translate|not be translated)\b'
+          - '`?Internal Time`?.{0,120}(とは訳さない|訳さない|使わない|使わず|使用しない|使用せず|用いない|用いず)'
+          - '`?Internal Time`?.{0,120}(表記)?は?(使用せず|使わず|用いず).{0,80}`?intrinsic time`?.{0,80}(統一|統一する)'
+          - '`?Internal Time`?.{0,120}`?intrinsic time`?.{0,80}(統一|統一する)'
       - from: "Intricit Time"
         use: "intrinsic time"
         severity: "error"
@@ -36,6 +52,36 @@ maintenance_rules:
           - "開発名"
           - "former name"
           - "development name"
+
+    exceptions:
+      - term: "Internal Time"
+        reason: "Allowed only when it appears as a prohibited rendering, translation warning, or legacy-name note. Suppress reporting in such contexts."
+        report: false
+        context_window: 360
+        paths:
+          - "05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md"
+          - "05_Research_Notes/Physical_Cosmological_Notes/README.md"
+          - "05_Research_Notes/Research_Notes_Index.md"
+          - "tools/CHECKER_USAGE*.md"
+        allowed_near:
+          - "とは訳さない"
+          - "訳さない"
+          - "使用せず"
+          - "使わず"
+          - "用いず"
+          - "表記は使用せず"
+          - "intrinsic time に統一"
+          - "`intrinsic time` に統一"
+          - "Do not translate"
+          - "do not translate"
+          - "should not be used"
+          - "do not use"
+        allowed_patterns:
+          - '(?i)\b(do not|don''t|not|never|should not|must not)\b.{0,160}`?Internal Time`?'
+          - '(?i)`?Internal Time`?.{0,160}\b(should not|must not|do not|don''t|not be used|not translate|not be translated)\b'
+          - '`?Internal Time`?.{0,160}(とは訳さない|訳さない|使わない|使わず|使用しない|使用せず|用いない|用いず)'
+          - '`?Internal Time`?.{0,160}(表記)?は?(使用せず|使わず|用いず).{0,80}`?intrinsic time`?.{0,80}(統一|統一する)'
+          - '`?Internal Time`?.{0,160}`?intrinsic time`?.{0,80}(統一|統一する)'
 
     caution_terms:
       - term: "エンタングルメント"

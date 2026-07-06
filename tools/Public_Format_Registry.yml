@@ -368,6 +368,15 @@ format_registry:
       - "10_PUBLIC_GITHUB"
       - "file_000000"
       - "myfiles_browser"
+    generated_outputs:
+      - "public_format_report.md"
+      - "public_format_report.json"
+      - "CHECKER_USAGE.md"
+      - "CHECKER_USAGE*.md"
+      - "CHECKER_EXTENSION_REPORT.md"
+      - "CHECKER_EXTENSION_REPORT*.md"
+      - ".checker_reports/"
+      - "checker_reports/"
     final_review_output:
       recommended_sections:
         - "Overall judgment"
