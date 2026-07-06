@@ -3,7 +3,7 @@
 > Status: Research note
 > Scope: cosmological-topology
 > Language: ja
-> Claim profile: U/E -> S
+> Claim strength: U/E -> S
 
 ---
 

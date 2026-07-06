@@ -1,9 +1,9 @@
 # PINGER Hypothesis and History-Field Topology / PINGER仮説と履歴場トポロジー
 
 > Status: Research Note  
-> Scope: Physical / Cosmological Notes  
-> Relation: Projection model and conceptual model; not a replacement for standard physics  
+> Scope: Physical / Cosmological Notes 
 > Language: Japanese authoritative text; English commensuration pending
+> Claim strength: U/E -> S
 
 ---
 
@@ -17,17 +17,11 @@
 本稿の目的は、以下にある。
 
 1. 存在境界論における履歴場トポロジーを、時空座標、相互作用点、伝播経路、観測断面へ制限したとき、なぜファインマンダイアグラムに近い図式として射影されるのかを説明すること。
-    
 2. 履歴場どうしの非局所的な対応を、時空座標上の分離可能性の問題として制限したとき、なぜ `entanglement` に近い構造として現れるのかを整理すること。
-    
 3. PINGER仮説を、粒子内在時間の概念モデルとして整理すること。
-    
 4. 宇宙外殻を、空間的な壁ではなく「返路を持つ境界」として読むこと。
-    
 5. BlackHoleを、標準天体物理学上のblack holeそのものではなく、「ある」という通信と「無＝通信切断」の関係から読む境界モデルとして整理すること。
-    
 6. 物理語彙に接近しながらも、標準定義、存在論的再解釈、概念モデル、射影、形式化候補を混同しないこと。
-    
 
 本稿における論証対象は、経験的検証ではない。  
 本稿が扱うのは、存在境界論内部における無矛盾性、説明的接続性、未解決残差の保持である。
@@ -66,17 +60,11 @@
 本稿の語彙運用は、以下の原則に従う。
 
 - 標準物理学の用語は、その標準定義を尊重する。
-    
 - 存在境界論における使用は、概念モデル、存在論的再解釈、または射影として明示する。
-    
 - 標準物理学上の実証済み命題として提示しない。
-    
 - 物理的対応候補と、構造的アナロジーを混同しない。
-    
 - 「似ている」と「同一である」を混同しない。
-    
 - 未解決点を、解決済みとして扱わない。
-    
 
 ---
 

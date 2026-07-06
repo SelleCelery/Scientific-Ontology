@@ -3,7 +3,7 @@
 > Status: Foundation
 > Scope: four-axioms
 > Language: ja+en
-> Claim profile: S2
+> Claim strength: S2
 
 本文書は、**存在境界論｜Scientific Ontology** における「存在の四大表公理」を公開向けに説明するための概念整理である。
 

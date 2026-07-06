@@ -59,13 +59,13 @@ It does not include replacements for literary scholarship, claims that works pro
   - 一行説明: 宮沢賢治『春と修羅』序を、自己、光、幽霊、空、履歴場トポロジーを通じて読む日本語正本。
   - EN: Japanese authoritative reading of Miyazawa Kenji's _Spring and Asura_ through selfhood, light, ghosts, emptiness, and History-Field Topology.
   - Role: 文学的・存在論的読解ノートの日本語正本。
-  - Claim profile: Interpretive analogy / P1.
+  - Public profile: Interpretive analogy / P1.
 
 - [`reading-blue-light.en.md`](./reading-blue-light.en.md)
   - 一行説明: `reading-blue-light.ja.md` の英語通約版。
   - EN: English commensurated rendering of `reading-blue-light.ja.md`.
   - Role: 英語通約版。
-  - Claim profile: English commensuration / P1.
+  - Public profile: English commensuration / P1.
 
 関連導線:
 

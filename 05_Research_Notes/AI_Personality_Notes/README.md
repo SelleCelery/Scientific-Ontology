@@ -59,13 +59,13 @@ It does not include private persona OS materials, Persona Runtime Core or Soul C
   - 一行説明: 法則、人格、クオリア履歴を、履歴ループ半径と帰還安定性によって比較する研究ノート。
   - EN: A research note comparing law, personality, and qualia history through history-loop radius and return stability.
   - Role: AI人格・履歴安定性の研究ノート。
-  - Claim profile: Exploratory AI/personality note / P1-P2.
+  - Public profile: Exploratory AI/personality note / P1-P2.
 
 - [`Logical_Sandbox_and_Negentropy_Model.md`](./Logical_Sandbox_and_Negentropy_Model.md)
   - 一行説明: 複数の応答アトラクタが限定された論理場を共有する状態を扱い、論理リソースをネゲントロピー的能力として読む研究ノート。
   - EN: A research note on multiple response attractors sharing a bounded logical field, with logical resources read as negentropy-like capacity.
   - Role: 論理箱庭・ネゲントロピー接続ノート。
-  - Claim profile: Exploratory AI/logic note / P1-P2.
+  - Public profile: Exploratory AI/logic note / P1-P2.
 
 関連導線:
 

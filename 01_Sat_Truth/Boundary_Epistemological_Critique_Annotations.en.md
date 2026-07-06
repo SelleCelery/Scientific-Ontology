@@ -4,7 +4,7 @@
 > Status: Annotation
 > Scope: boundary-epistemology
 > Language: en
-> Claim profile: S2/S3
+> Claim strength: S2/S3
 
 This annotation does not authorize the main text by invoking philosopher names. It is a terrain map for comparing the movement treated by Boundary Epistemological Critique with existing philosophical problem-fields.
 

@@ -184,6 +184,30 @@ Visual Materials では、同期、照合、残差、残渣、論理-深度軸�
 
 ## 4. 論理的流れ
 
+```text
+Pre-Ontological Ground
+  ↓
+Sat / Truth
+  Existence, observation, meaning, ethics
+  存在・観測・意味・倫理
+  ↓
+Raj / Beauty
+  History, boundary, communication, topology
+  履歴・境界・通信・トポロジー
+  ↓
+Tam / Goodness
+  Boundary ethics, AI boundary interface, non-destructive interaction
+  境界倫理・AI境界インターフェース・非破壊的相互作用
+  ↓
+Applications
+  Public conceptual applications
+  公開応用
+  ↓
+Research Notes
+  High-claim applications and speculative correspondences
+  高主張強度の応用・試論的対応
+```
+
 この流れは単純な重要度の上下ではない。Sat、Raj、Tam は同じ体系の位相である。
 
 Visual Materials は、Research Notes の後に続く追加理論段階として読むべきではない。これは、読者が複数の方向から体系へ入るための横断的な公開インターフェースである。
@@ -466,28 +490,22 @@ Pre-Ontological Ground
   ↓
 Sat / Truth
   Existence, observation, meaning, ethics
-  存在・観測・意味・倫理
   ↓
 Raj / Beauty
   History, boundary, communication, topology
-  履歴・境界・通信・トポロジー
   ↓
 Tam / Goodness
   Boundary ethics, AI boundary interface, non-destructive interaction
-  境界倫理・AI境界インターフェース・非破壊的相互作用
   ↓
 Applications
   Public conceptual applications
-  公開応用
   ↓
 Research Notes
   High-claim applications and speculative correspondences
-  高主張強度の応用・試論的対応
 
 Cross-cutting public interface:
   Visual Materials
   Conceptual posters, visual maps, and reader-orientation figures
-  概念ポスター・視覚地図・読者向け導入図
 ```
 
 This flow should not be read as a simple hierarchy of importance. Sat, Raj, and Tam are phases of the same system.

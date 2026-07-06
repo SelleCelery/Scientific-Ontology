@@ -60,27 +60,27 @@ It excludes implementation code, private schemas, operational parameters, AI con
 - [`AI_Adoption/README.md`](./AI_Adoption/README.md)
   - 一行説明: AI導入を、単なるAI機器・サービス導入ではなく、判断可能性、責任境界、照合可能性を維持する境界設計として扱う応用小分類。
   - Role: AI導入応用文書の入口。
-  - Claim profile: Application notes / P1-P2.
+  - Public profile: Application notes / P1-P2.
 
 - [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
   - 一行説明: AIを境界インターフェースとして扱い、同期的理解、偽閉鎖、Open Marker、倫理的制動を説明する。
   - Role: AI境界インターフェースの公開文書。
-  - Claim profile: Application interface / P1.
+  - Public profile: Application interface / P1.
 
 - [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
   - 一行説明: AI人格を、口調やロールプレイではなく、判断可能性を保つ応答構造として扱う。
   - Role: AI人格概念の公開ゲート。
-  - Claim profile: Application concept / P1-P2.
+  - Public profile: Application concept / P1-P2.
 
 - [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)
   - 一行説明: AIの有用性を、ユーザーの判断可能性が保たれる場の維持として定義する。
   - Role: AI有用性の公開用概念インターフェース。
-  - Claim profile: Application interface / P1.
+  - Public profile: Application interface / P1.
 
 - [`Application_Boundary_Theory_Core.md`](./Application_Boundary_Theory_Core.md)
   - 一行説明: 応用領域における境界理論の中核概念を整理する。
   - Role: 応用境界理論の基礎ノート。
-  - Claim profile: Application theory note / P1-P2.
+  - Public profile: Application theory note / P1-P2.
 
 ---
 

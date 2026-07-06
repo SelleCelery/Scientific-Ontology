@@ -4,7 +4,7 @@
 > Status: Draft
 > Scope: boundary-epistemology
 > Language: en
-> Claim profile: S2/S3
+> Claim strength: S2/S3
 
 This text redefines the conditions under which knowledge forms through boundary, history, internal and external heuristics, operational correspondence, collation, residual retention, and re-collatability.
 

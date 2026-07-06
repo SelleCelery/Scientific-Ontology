@@ -6,7 +6,7 @@
 > Status: Frame
 > Scope: history-field-topology
 > Language: ja+en
-> Claim profile: S2/S3
+> Claim strength: S2/S3
 
 ---
 

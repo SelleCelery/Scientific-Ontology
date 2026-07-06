@@ -4,7 +4,7 @@
 > Status: README  
 > Scope: AI adoption, institutional boundaries, practical collation, responsibility boundaries, Open Marker, Japanese administrative application  
 > Language: Japanese applications; English summaries may be added where appropriate  
-> Claim profile: Application notes / S1-S2
+> Claim strength: Application notes / S1-S2
 
 ---
 
@@ -65,13 +65,13 @@ It does not include legal advice, procurement specifications, audit standards, v
 
 ---
 
-## 4. Documents / 文書一覧
+## Claim strength/ 文書一覧
 
 - [`AI_Adoption_Collation_Checklist.md`](./AI_Adoption_Collation_Checklist.md)    
     - 一行説明: AI導入をAI機器の導入ではなく、判断可能性・責任境界・再照合可能性として確認するための実務チェックリスト。
     - EN: A practical checklist for evaluating AI adoption through human judgment, responsibility boundaries, and re-collation rather than AI deployment alone.
     - Role: AI導入実務の基本チェックリスト。
-    - Claim profile: Practical application note / S1-S2.
+    - Claim strength: Practical application note / S1-S2.
 
 関連導線:
 

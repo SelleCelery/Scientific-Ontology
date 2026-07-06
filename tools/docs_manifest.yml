@@ -1,17 +1,20 @@
 # Public document manifest for Scientific Ontology / 存在境界論
-# Version: 0.1.0
+# Version: 0.1.1
 
 manifest:
-  version: "0.1.0"
+  version: "0.1.1"
   role: "public-document-ledger"
   coverage: "partial-seed"
-  default_severity: "warning"
+  default_severity: "warning-only"
   release_gate_severity: "error"
   principle: >
     Track public-facing documents and expected metadata without turning early
     drafts into hard release blockers. Missing or incomplete manifest entries
     should be warnings during ordinary editing and release-gate errors only
     when the release process explicitly enables strict mode.
+  note: >
+    This manifest is an initial public-document registry seed.
+    It is not yet a complete inventory of all public Markdown files.
 
   path_policy:
     separator: "/"
@@ -125,7 +128,7 @@ documents:
     role_ja: "公開リポジトリの入口"
     role_en: "Public entry point for the repository"
 
-  - path: "01_Sat_Truth/Boundary_Realism_Principle.ja.md"
+  - path: "01_Sat_Truth/Boundary_Realism_Principle.md"
     document_type: "assertion_document"
     title_ja: "境界実在性の原則"
     title_en: "Boundary Realism Principle"

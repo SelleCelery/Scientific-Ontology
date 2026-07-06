@@ -64,49 +64,49 @@ It does not include a bottom-up replacement for contemporary physics, empirical 
   - 一行説明: intrinsic time を最小追加仮定として、標準模型の粒子属性・相互作用・境界情報を存在論的に再読解する対応表。
   - EN: A correspondence table that uses intrinsic time as a minimal additional assumption for ontologically re-reading particle attributes, interactions, and boundary information in the Standard Model.
   - Role: 物理接続候補・対応表。
-  - Claim profile: S4-S5 candidate / P1-P2.
+  - Public profile: S4-S5 candidate / P1-P2.
 
 - [`Intrinsic_Time_Standard_Model_Correspondence.en.md`](./Intrinsic_Time_Standard_Model_Correspondence.en.md)
   - 一行説明: `Intrinsic_Time_Standard_Model_Correspondence.ja.md` の英語通約版。
   - EN: English commensurated rendering of `Intrinsic_Time_Standard_Model_Correspondence.ja.md`.
   - Role: 英語通約版。
-  - Claim profile: English commensuration / P1-P2.
+  - Public profile: English commensuration / P1-P2.
 
 - [`Ontological_History_of_the_Universe.ja.md`](./Ontological_History_of_the_Universe.ja.md)
   - 一行説明: 主客誤認、ボソン経路、履歴、論理深度を通じて宇宙史を存在論的に読み替える概念論考。
   - EN: A conceptual essay re-reading cosmic history through the subject-object fallacy, boson routing, history, and logical depth.
   - Role: 宇宙史の存在論的読解ノート。
-  - Claim profile: Conceptual essay / P1-P2.
+  - Public profile: Conceptual essay / P1-P2.
 
 - [`Ontological_History_of_the_Universe.en.md`](./Ontological_History_of_the_Universe.en.md)
   - 一行説明: `Ontological_History_of_the_Universe.ja.md` の英語通約版。
   - EN: English commensurated rendering of `Ontological_History_of_the_Universe.ja.md`.
   - Role: 英語通約版。
-  - Claim profile: English commensuration / P1-P2.
+  - Public profile: English commensuration / P1-P2.
 
 - [`Cosmological_Topological_Dynamics.ja.md`](./Cosmological_Topological_Dynamics.ja.md)
   - 一行説明: ダークエネルギー的張力、境界、パージ、内部化を、宇宙論的トポロジー動態として読む試論。
   - EN: An exploratory note reading dark-energy-like tension, boundary, purge, and internalization as cosmological topological dynamics.
   - Role: 宇宙論的トポロジー動態ノート。
-  - Claim profile: Conceptual / high-claim exploratory note / P1-P2.
+  - Public profile: Conceptual / high-claim exploratory note / P1-P2.
 
 - [`Cosmological_Topological_Dynamics.en.md`](./Cosmological_Topological_Dynamics.en.md)
   - 一行説明: `Cosmological_Topological_Dynamics.ja.md` の英語通約版。
   - EN: English commensurated rendering of `Cosmological_Topological_Dynamics.ja.md`.
   - Role: 英語通約版。
-  - Claim profile: English commensuration / P1-P2.
+  - Public profile: English commensuration / P1-P2.
 
 - [`PINGER_Hypothesis_and_History_Field_Topology.md`](./PINGER_Hypothesis_and_History_Field_Topology.md)
   - 一行説明: PINGER仮説を履歴場トポロジーの射影として扱い、物理近接語彙との接続境界を整理する研究ノート。
   - EN: A research note treating the PINGER hypothesis as a projection from History-Field Topology and clarifying its boundary with physics-proximate terminology.
   - Role: 履歴場トポロジーの物理位相への射影ノート。
-  - Claim profile: Physical-projection conceptual note / P1-P2.
+  - Public profile: Physical-projection conceptual note / P1-P2.
 
 - [`Chaos_Theory_and_Logical_Depth_Axis.md`](./Chaos_Theory_and_Logical_Depth_Axis.md)
   - 一行説明: カオス理論を、内在時間、内的計数時間、論理-深度軸、履歴重力圏の観点から読み直す研究ノート。
   - EN: A research note re-reading chaos theory through intrinsic time, internal count-time, the logical-depth axis, and history-gravity domains.
   - Role: カオス理論と論理-深度軸の接続ノート。
-  - Claim profile: Conceptual correspondence note / P1-P2.
+  - Public profile: Conceptual correspondence note / P1-P2.
 
 関連導線:
 

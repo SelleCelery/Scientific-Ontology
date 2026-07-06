@@ -3,7 +3,7 @@
 > Status: Research table
 > Scope: intrinsic-time
 > Language: en; commensurated rendering
-> Claim profile: U/E -> S
+> Claim strength: U/E -> S
 
 ---
 

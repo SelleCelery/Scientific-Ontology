@@ -4,8 +4,8 @@
 
 > Status: Research note  
 > Scope: AI adoption, institutional synchronization, boundary design, collation, institutional procurement, public-sector case studies  
-> Language: Japanese authoritative; English commensurated rendering included  
-> Claim profile: S2/S3; not a policy proposal, procurement rule, legal standard, or empirical evaluation
+> Language: ja+en
+> Claim strength: S2/S3; not a policy proposal, procurement rule, legal standard, or empirical evaluation
 
 ---
 

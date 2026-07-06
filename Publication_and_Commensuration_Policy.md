@@ -108,6 +108,16 @@ ITS理論は、AMPを、情報・時間・トポロジー・観測・通信・�
 これらを公開しないのは、無関係だからではありません。  
 現段階では、主張強度、解釈密度、科学的または疑似科学的に読まれるリスクが高く、直接公開に適さないためです。
 
+## 形式レジストリ
+
+この文書は、リポジトリの公開方針、通約方針、引用方針、用語管理方針を定める。
+
+文書形式の照合は、別の形式レジストリで管理する。
+
+ヘッダー構造、README構造、文書種別分類、AIによる最終チェック項目については、以下を参照する。
+
+- [`tools/Public_Format_Registry.yml`](./tools/Public_Format_Registry.yml)
+
 ---
 
 # English Commensurated Version
@@ -183,3 +193,13 @@ AMP Core is treated as the private axiomatic source text of the system.
 ITS Theory is treated as a private core expansion that unfolds AMP toward a physical-phase model using information, time, topology, observation, communication, and phase-transition vocabulary.
 
 These materials are not excluded because they are irrelevant, but because their claim strength, interpretive density, and risk of scientific or pseudo-scientific misreading are too high for direct public presentation at this stage.
+
+## Format Registry
+
+This document defines the publication, commensuration, citation, and terminology policies of the repository.
+
+Document-format checking is managed separately.
+
+For header structure, README structure, document-type classification, and AI-assisted final-check rules, see:
+
+- [`tools/Public_Format_Registry.yml`](./tools/Public_Format_Registry.yml)

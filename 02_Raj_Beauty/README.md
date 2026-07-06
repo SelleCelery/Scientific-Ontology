@@ -68,17 +68,17 @@ It does not include full private cores, Standard Model correspondence notes, hig
 - [`HFC_Introduction.md`](./HFC_Introduction.md)
   - 一行説明: 人間、言語、AI、社会、倫理を、履歴を持つ場どうしの通信として読み直す公開用入門。
   - Role: 履歴場通信論の公開入口。
-  - Claim profile: Public conceptual model / P0-P1.
+  - Public profile: Public conceptual model / P0-P1.
 
 - [`History_Field_Topology.md`](./History_Field_Topology.md)
   - 一行説明: 物理・情報・生命・社会・AI・死生観を、履歴、境界、同期、切断、意味閉路から読むための公開フレーム。
   - Role: 構築的・解釈的フレーム。
-  - Claim profile: Public interpretive frame / P1-P2.
+  - Public profile: Public interpretive frame / P1-P2.
 
 - [`Scientific_Ontology_and_Science.md`](./Scientific_Ontology_and_Science.md)
   - 一行説明: 存在境界論と現代科学の関係、および高エントロピー観測ベースの科学と低エントロピー活動ベースのトップダウン理論の本拠地差分を整理する。
   - Role: 科学との接続面の公開用立場表明。
-  - Claim profile: Public position statement / P1-P2.
+  - Public profile: Public position statement / P1-P2.
 
 ---
 

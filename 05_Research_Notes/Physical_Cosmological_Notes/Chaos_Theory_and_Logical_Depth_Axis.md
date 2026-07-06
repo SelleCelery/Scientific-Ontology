@@ -1,10 +1,9 @@
 # Chaos Theory and the Logical-Depth Axis / カオス理論と論理-深度軸
 
 > Status: Research note draft  
-> Layer: `05_Research_Notes / Physical_Cosmological_Notes`  
 > Scope: chaos theory, nonlinear determinism, internal count-time, intrinsic time, logical-depth axis, residuals, residues, history-field correspondence, history-gravity domain  
-> Relation: conceptual correspondence, not a replacement for chaos theory, dynamical systems theory, physics, or empirical science  
-> Language: Japanese authoritative text; English commensuration pending
+>Language: Japanese authoritative text; English commensuration pending
+>Claim strength: U/E -> S
 
 ---
 

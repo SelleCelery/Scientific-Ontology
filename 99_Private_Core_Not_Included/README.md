@@ -16,11 +16,11 @@ English commensurated rendering:
 
 99_Private_Core_Not_Included is a public boundary notice. It does not contain the theoretical body. 
 
-It states that the public repository is an interface and does not include private cores, raw materials, runtime specifications, or detailed implementation/evaluation materials.
+It states that the publPublic profile is an interface and does not include private cores, raw materials, runtime specifications, or detailed implementation/evaluation materials.
 
 ---
 
-## 2. Public Scope and Claim Profile / 公開範囲と主張強度
+## 2. Public Scope and Claim profile / 公開範囲と主張強度
 
 この層の公開強度は P0 である。ここで行うのは、公開しないものの境界明示であり、非公開内容の説明や要約ではない。
 
@@ -64,7 +64,7 @@ It does not include full AMP Core, full ITS theory, Persona Runtime Core, Soul C
 - `README.md`
   - 一行説明: この公開リポジトリが非公開中核を含まないことを示す境界通知。
   - Role: 公開境界の防壁。
-  - Claim profile: Boundary notice / P0.
+  - Public profile: Boundary notice / P0.
 
 ---
 

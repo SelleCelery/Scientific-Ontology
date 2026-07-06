@@ -3,7 +3,7 @@
 > Status: Research note
 > Scope: logical-sandbox
 > Language: ja+en
-> Claim profile: S3/U2
+> Claim strength: S3/U2
 
 ---
 

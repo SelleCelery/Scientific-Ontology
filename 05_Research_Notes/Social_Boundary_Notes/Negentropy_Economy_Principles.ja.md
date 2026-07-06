@@ -3,7 +3,7 @@
 > Status: Draft
 > Scope: negentropy-economy
 > Language: ja
-> Claim profile: U/E -> S
+> Claim strength: U/E -> S
 
 ---
 

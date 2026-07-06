@@ -3,7 +3,7 @@
 > Status: Model
 > Scope: boundary-ethics
 > Language: ja+en
-> Claim profile: S2
+> Claim strength: S2
 
 ---
 

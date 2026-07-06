@@ -4,7 +4,7 @@
 > Status: Draft
 > Scope: boundary-epistemology
 > Language: ja
-> Claim profile: S2/S3
+> Claim strength: S2/S3
 
 本稿は、知の成立条件を、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持・再照合可能性から再定義するための基幹命題列である。
 

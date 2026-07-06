@@ -8,7 +8,7 @@
 > Status: Public interface README  
 > Scope: Overview, reading guide, repository navigation  
 > Language: English-first public entrance; Japanese remains the primary conceptual reference where meanings diverge  
-> Claim profile: Conceptual framework, heuristic verification, boundary studies, and research-facing notes
+> Claim Profile: Conceptual framework, heuristic verification, boundary studies, and research-facing notes
 
 ---
 
@@ -107,7 +107,7 @@ Scientific Ontology follows these principles:
 ## 4. Minimal Conceptual Entrance / 最小概念入口
 
 This README only introduces the minimum conceptual entrance.  
-For definitions, claim profiles, and detailed explanations, follow the directory links below.
+For definitions, Claim strengths, and detailed explanations, follow the directory links below.
 
 このREADMEでは、入口概念だけを示します。  
 詳細な定義、主張強度、説明は、各ディレクトリおよび用語集を参照してください。
@@ -202,6 +202,7 @@ AMP/ITS は、低エントロピーな根源的活動、境界形成、履歴生
 
 For details, see:
 
+- [`00_Overview/Physics_Correspondence_Policy.ja.md`](./00_Overview/Physics_Correspondence_Policy.ja.md)
 - [`02_Raj_Beauty/Scientific_Ontology_and_Science.md`](./02_Raj_Beauty/Scientific_Ontology_and_Science.md)
 - [`00_Overview/Scientific_Terminology_Protocol.md`](./00_Overview/Scientific_Terminology_Protocol.md)
 

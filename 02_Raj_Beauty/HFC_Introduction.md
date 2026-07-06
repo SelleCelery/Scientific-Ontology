@@ -3,7 +3,7 @@
 > Status: Introduction
 > Scope: HFC
 > Language: ja+en
-> Claim profile: S2/S3
+> Claim strength: S2/S3
 
 ---
 

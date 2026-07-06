@@ -3,7 +3,7 @@
 > Status: Research note
 > Scope: history-loop
 > Language: ja+en
-> Claim profile: S3/U2
+> Claim strength: S3/U2
 
 ---
 

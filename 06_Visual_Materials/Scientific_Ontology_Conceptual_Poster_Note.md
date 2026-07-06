@@ -3,7 +3,7 @@
 > Status: Visual note
 > Scope: conceptual-poster
 > Language: ja+en
-> Claim profile: S1
+> Claim strength: S1
 
 
 ## A. このファイルは何か

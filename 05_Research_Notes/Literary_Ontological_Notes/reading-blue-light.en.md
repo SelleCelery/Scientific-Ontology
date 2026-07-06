@@ -5,7 +5,7 @@ Miyazawa Kenji’s _Spring and Asura_ and History-Field Topology
 > Status: Research note
 > Scope: literary-ontology
 > Language: en
-> Claim profile: S1/S2
+> Claim strength: S1/S2
 
 ## Positioning
 

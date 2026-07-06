@@ -3,7 +3,7 @@
 > Status: Application note
 > Scope: return-orbit
 > Language: ja+en
-> Claim profile: S2/U1
+> Claim strength: S2/U1
 
 ---
 

@@ -2,8 +2,8 @@
 
 > Status: Draft
 > Scope: negentropy-economy
-> Language: en; commensurated rendering
-> Claim profile: U/E -> S
+> Language: en
+> Claim strength: U/E -> S
 
 ---
 

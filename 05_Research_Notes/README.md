@@ -61,32 +61,32 @@ It does not include full private cores, completed empirical predictions, impleme
 - [`Claim_Strength_Table_History_Field_Topology.md`](./Claim_Strength_Table_History_Field_Topology.md)
   - 一行説明: 履歴場トポロジー関連命題を、主張強度、検証段階、公開層、次の作業へ分ける管理表。
   - Role: 主張強度管理。
-  - Claim profile: Claim-profile control / P1-P2.
+  - Public profile: Claim-profile control / P1-P2.
 
 - [`Research_Notes_Index.md`](./Research_Notes_Index.md)
   - 一行説明: 研究ノート層全体の索引。物理、社会、文学、AI人格関連ノートへの導線を置く。
   - Role: 研究ノート索引。
-  - Claim profile: Navigation / P0-P1.
+  - Public profile: Navigation / P0-P1.
 
 - [`Physical_Cosmological_Notes/README.md`](./Physical_Cosmological_Notes/README.md)
   - 一行説明: 物理・宇宙論接続ノートのサブディレクトリ入口。
   - Role: 物理・宇宙論対応ノートの案内。
-  - Claim profile: High-claim research notes / P1-P2.
+  - Public profile: High-claim research notes / P1-P2.
 
 - [`Social_Boundary_Notes/README.md`](./Social_Boundary_Notes/README.md)
   - 一行説明: ネゲントロピー経済、社会境界、意味生成に関するノート群の入口。
   - Role: 社会境界研究ノートの案内。
-  - Claim profile: Social boundary research notes / P1-P2.
+  - Public profile: Social boundary research notes / P1-P2.
 
 - [`Literary_Ontological_Notes/README.md`](./Literary_Ontological_Notes/README.md)
   - 一行説明: 文学作品を、証明ではなく存在論的構造読解として扱うノート群の入口。
   - Role: 文学的・存在論的読解ノートの案内。
-  - Claim profile: Interpretive note / P1.
+  - Public profile: Interpretive note / P1.
 
 - [`AI_Personality_Notes/README.md`](./AI_Personality_Notes/README.md)
   - 一行説明: AI人格、論理サンドボックス、帰還安定性などを研究ノートとして扱う入口。
   - Role: AI人格研究ノートの案内。
-  - Claim profile: Exploratory AI note / P1-P2.
+  - Public profile: Exploratory AI note / P1-P2.
 
 ---
 

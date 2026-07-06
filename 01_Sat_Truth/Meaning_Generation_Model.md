@@ -4,7 +4,7 @@
 > Status: Model
 > Scope: meaning-generation
 > Language: ja+en
-> Claim profile: S2/S3
+> Claim strength: S2/S3
 
 本文書は、**存在境界論｜Scientific Ontology** における意味生成過程を公開可能な範囲で整理する。
 

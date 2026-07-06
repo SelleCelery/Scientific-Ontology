@@ -4,7 +4,7 @@
 > Status: Annotation
 > Scope: boundary-epistemology
 > Language: ja
-> Claim profile: S2/S3
+> Claim strength: S2/S3
 
 本注解は、本文命題列を哲学者名で権威づけるためのものではない。境界認識批判が扱う運動、すなわち感性・悟性・理性・同期・照合・残差保持・残渣化・再照合・論理-深度軸を、既存思想の問題圏と照合するための地形図である。
 

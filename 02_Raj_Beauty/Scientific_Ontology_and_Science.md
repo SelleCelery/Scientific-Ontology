@@ -4,7 +4,7 @@
 > Status: Position
 > Scope: science-commensuration
 > Language: ja+en
-> Claim profile: S2
+> Claim strength: S2
 
 本文書は、**存在境界論｜Scientific Ontology** が現代科学とどのように関係するかを明確にするための公開用立場表明である。
 

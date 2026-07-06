@@ -105,3 +105,13 @@ If an English translation is found to deviate from the Japanese authoritative dr
 5. Returning to the Japanese source text for re-collation.
 
 Translation correction is not merely linguistic correction. It is part of maintaining re-collatability across language games.
+
+## 8. Japanese Authority and English Commensuration Policy
+
+For theory documents, policy documents, research notes, and system maps, Japanese is treated as the authoritative text. English is provided as commensuration, not as a word-for-word translation or an independent authoritative version.
+
+In such documents, Japanese and English should normally be separated into full blocks:
+1. Japanese authoritative text
+2. English commensurated rendering
+
+README files may use a more accessible bilingual layout because their primary function is navigation, not theoretical authority. In README files, short Japanese and English explanations may be placed near each other for reader orientation.

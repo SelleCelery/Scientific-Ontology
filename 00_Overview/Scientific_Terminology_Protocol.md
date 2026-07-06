@@ -3,7 +3,7 @@
 > Status: Protocol
 > Scope: terminology-control
 > Language: ja+en
-> Claim profile: S0/S1
+> Claim strength: S0/S1
 
 本文書は、**存在境界論｜Scientific Ontology** が既存科学から借りる語彙をどのように扱うかを定める。
 

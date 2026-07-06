@@ -65,32 +65,37 @@ It does not include full private cores, implementation schemas, persona/runtime 
 
 ## 4. Documents / 文書一覧
 
+- [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md)
+  - 一行説明: 存在境界論が物理語彙へ近づく理由、標準物理学との非同一性、物理近接語彙の分類、Research Notes に置くべき高強度仮説の扱いを定める公開方針。
+  - Role: 物理近接語彙に関する公開方針。
+  - Public profile: S2/S3; conceptual policy, not an empirical physics claim.
+
 - [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)
   - 一行説明: リポジトリ全体の層構造、主要概念、公開境界を示す体系マップ。
   - Role: 全体ナビゲーション。
-  - Claim profile: Public map / P0-P1.
+  - Public profile: Public map / P0-P1.
 
 - [`Scientific_Terminology_Protocol.md`](./Scientific_Terminology_Protocol.md)
   - 一行説明: 標準科学語彙を尊重しながら、存在境界論内での読み替え・再定義・主張強度を管理する規約。
   - Role: 用語運用・科学語彙接続プロトコル。
-  - Claim profile: Terminology policy / P0-P1.
+  - Public profile: Terminology policy / P0-P1.
 
 関連するルート文書:
 
 - [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
   - 一行説明: 公開、通約、用語変更、公開境界管理の方針。
   - Role: リポジトリ全体の公開方針。
-  - Claim profile: Policy / P0.
+  - Public profile: Policy / P0.
 
 - [`Translation_Note.md`](../Translation_Note.md)
   - 一行説明: 日本語正本と英語通約の扱いを定める注記。
   - Role: 翻訳・通約規則。
-  - Claim profile: Policy / P0.
+  - Public profile: Policy / P0.
 
 - [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md) / [`TERM_COLLISION_REGISTRY.en.md`](../TERM_COLLISION_REGISTRY.en.md)
   - 一行説明: 日本語正本語と英語通約語の衝突・揺れを管理する表。
   - Role: 用語衝突管理。
-  - Claim profile: Terminology control / P0.
+  - Public profile: Terminology control / P0.
 
 ---
 

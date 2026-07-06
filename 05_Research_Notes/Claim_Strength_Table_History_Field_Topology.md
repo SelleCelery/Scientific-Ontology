@@ -3,8 +3,30 @@
 > Status: Research table
 > Scope: claim-control
 > Language: ja+en
-> Claim profile: classifier
+> Claim strength: classifier
 
+---
+
+## 0.1 判定順序 / Evaluation Order
+
+本表では、S / E / U / P / V を横並びの分類として扱わない。
+
+Sコードは、命題そのものの主張強度を示す。  
+Eコードは、その命題がどのように誤読・批判されやすいかを示す。  
+Uコードは、その命題がどのように応用・転用されうるかを示す。  
+Pコードは、S・E・Uを踏まえた最終的な公開レイヤーである。  
+Vコードは、公開判断ではなく、今後どの検証・形式化段階へ進めるかを示す。
+
+したがって、公開判定は次の順で行う。
+
+```text
+1. Sコードで、命題の主張強度を判定する。
+2. Sコードから、暫定的な公開レイヤー P_base を置く。
+3. Eコードで、誤読・批判リスクによる減速を行う。
+4. Uコードで、応用・安全リスクによる減速、抽象化、非公開化を行う。
+5. 最終的な公開レイヤー P_final を決定する。
+6. Vコードで、今後の検証・形式化段階を別途管理する。
+```
 ---
 
 ## 1. 主張強度コード
@@ -18,6 +40,7 @@
 | S4 | 形式化候補 | 状態変数、演算規則、評価指標へ落とせる候補。 | Research Notes向き |
 | S5 | 物理主張候補 | 既存科学と正面接続しうる強い命題。 | 内部精査優先。外部では慎重 |
 
+---
 
 ## 2. 公開・誤読・応用リスクコード
 
@@ -50,6 +73,47 @@
 | U3 | 運用リスク | 詳細公開により、非公開境界の保全性が下がる。 | 原則非公開 |
 | U4 | 秘匿必須 | 分類以上の記述を公開しない。 | 公開禁止 |
 
+## 2.1 Sコードからの暫定公開レイヤー / Base Public Layer from S-code
+
+| Sコード | 暫定P | 理由 |
+|---|---|---|
+| S0 | P0 | 用語整理であり、外部理論への強い主張がないため。 |
+| S1 | P0-P1 | 構造アナロジーとして公開可能だが、比喩の事実化に注意する。 |
+| S2 | P1 | 存在論的再解釈であるため、注記・限定条件が必要。 |
+| S3 | P1-P2 | 作業仮説であるため、仮説・試論として公開する。 |
+| S4 | P2 | 形式化候補であり、Research Notes 向き。 |
+| S5 | P2-P3 | 既存科学との正面接続を含むため、内部精査または強い減速が必要。 |
+
+## 2.2 E/Uコードによる減速規則 / Deceleration by E/U Codes
+
+EコードとUコードは、Sコードから導かれた暫定Pを減速・抽象化・非公開化する。
+
+### Eコードによる調整
+
+| Eコード | 調整 |
+|---|---|
+| E0 | P_base を維持する。 |
+| E1 | 定義、注記、非主張事項を追加する。通常はPを維持する。 |
+| E2 | 少なくともP1以上に減速し、主張範囲と非主張事項を明記する。 |
+| E3 | 少なくともP2へ退避し、疑似科学化・宗教化・文学証明化を避ける。場合によってはP2.5またはP3へ送る。 |
+
+### Uコードによる調整
+
+| Uコード | 調整                              |
+| ---- | ------------------------------- |
+| U0   | P_base を維持する。                   |
+| U1   | 注記つきで公開する。通常はP1以上にする。           |
+| U2   | 抽象化して公開する。原則としてP2.5を検討する。       |
+| U3   | 詳細公開しない。原則としてP3、または概念蒸留版のみP2.5。 |
+| U4   | 公開禁止。P3固定。                      |
+
+## 2.3 公開レイヤーの決定 / Public Layer Decision
+
+最終的な公開レイヤーは、次のように決定する。
+
+P_final = decelerate(P_base(S), E, U)
+
+---
 
 ## 3. 検証・形式化コード
 
@@ -293,16 +357,16 @@ High E should be slowed down with definitions, non-claim boundaries, and disclai
 
 The Japanese table above is authoritative. The following table preserves its public structure for English commensuration.
 
-| Item | Public wording | Claim type | S | E | U | P | V | Handling |
-|---|---|---|---|---|---|---|---|---|
-| intrinsic time / 内在時間 | Not clock time, but a depth-order in which communication history may acquire logical depth. It is related to the logical-depth axis, but is not identical with inner count-time. | SO redefinition / physical correspondence candidate | S3-S5 | E2-E3 | U0-U1 | P2 | V1-V5 | Do not translate as `Internal Time`. It is not the abbreviation ITS. |
-| time operator / 時間演算子 | Within ITS, treated as an operator that cuts through the bosonic field and generates local reality. | Derived from non-public core / physical-phase candidate | S4-S5 | E3 | U0-U1 | P2-P3 | V1-V5 | Reduce to conceptual explanation in public materials. |
-| particle as observed section / 粒子＝観測断面 | Read a particle as the appearance of a field as a stable section at an observational boundary. | Ontological reinterpretation / physical correspondence candidate | S3-S5 | E3 | U0 | P2 | V1-V5 | State that this is not a replacement for standard QFT. |
-| boson as synchronization mediator / ボソン＝同期媒介 | Read a boson ontologically as something that mediates interaction history. | Physical correspondence candidate | S4-S5 | E3 | U0-U1 | P2 | V1-V5 | Distinguish from the standard physical definition. |
-| Feynman diagram as history topology / ファインマンダイアグラム＝履歴トポロジー | Read Feynman diagrams structurally as diagrams of interaction history. | Structural analogy / ontological reinterpretation | S2-S4 | E3 | U0 | P2 | V1 | Respect their standard definition as a computational tool in QFT. |
-| gravity as synchronization delay / 重力＝同期遅延 | An exploratory reading of gravity in terms of history density and synchronization cost. | Physical correspondence candidate | S4-S5 | E3 | U0-U1 | P2 | V1-V5 | Research Notes only. State that it is not physical proof. |
-| dark energy as unclosed meaning pressure / ダークエネルギー＝未閉鎖意味圧 | An exploratory reading of cosmological vocabulary through the structural analogy of unclosed semantic pressure. | Structural analogy / physical correspondence candidate | S3-S5 | E3 | U0 | P2 | V1 | Treat as Research Notes, not as a physical claim. |
-| CPT reinterpretation / CPT再解釈 | An exploratory reading of C/P/T as reversal mappings of history, position, and temporal direction. | Physical correspondence candidate | S3-S5 | E3 | U0-U1 | P2 | V1-V5 | State its relation to the standard CPT theorem. |
+| Item                                                       | Public wording                                                                                                                                                                   | Claim type                                                       | S     | E     | U     | P     | V     | Handling                                                             |
+| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----- | ----- | ----- | ----- | ----- | -------------------------------------------------------------------- |
+| intrinsic time / 内在時間                                      | Not clock time, but a depth-order in which communication history may acquire logical depth. It is related to the logical-depth axis, but is not identical with inner count-time. | SO redefinition / physical correspondence candidate              | S3-S5 | E2-E3 | U0-U1 | P2    | V1-V5 | Do not translate as `Internal Time`. It is not the abbreviation ITS. |
+| time operator / 時間演算子                                      | Within ITS, treated as an operator that cuts through the bosonic field and generates local reality.                                                                              | Derived from non-public core / physical-phase candidate          | S4-S5 | E3    | U0-U1 | P2-P3 | V1-V5 | Reduce to conceptual explanation in public materials.                |
+| particle as observed section / 粒子＝観測断面                     | Read a particle as the appearance of a field as a stable section at an observational boundary.                                                                                   | Ontological reinterpretation / physical correspondence candidate | S3-S5 | E3    | U0    | P2    | V1-V5 | State that this is not a replacement for standard QFT.               |
+| boson as synchronization mediator / ボソン＝同期媒介               | Read a boson ontologically as something that mediates interaction history.                                                                                                       | Physical correspondence candidate                                | S4-S5 | E3    | U0-U1 | P2    | V1-V5 | Distinguish from the standard physical definition.                   |
+| Feynman diagram as history topology / ファインマンダイアグラム＝履歴トポロジー | Read Feynman diagrams structurally as diagrams of interaction history.                                                                                                           | Structural analogy / ontological reinterpretation                | S2-S4 | E3    | U0    | P2    | V1    | Respect their standard definition as a computational tool in QFT.    |
+| gravity as synchronization delay / 重力＝同期遅延                 | An exploratory reading of gravity in terms of history density and synchronization cost.                                                                                          | Physical correspondence candidate                                | S4-S5 | E3    | U0-U1 | P2    | V1-V5 | Research Notes only. State that it is not physical proof.            |
+| dark energy as unclosed meaning pressure / ダークエネルギー＝未閉鎖意味圧 | An exploratory reading of cosmological vocabulary through the structural analogy of unclosed semantic pressure.                                                                  | Structural analogy / physical correspondence candidate           | S3-S5 | E3    | U0    | P2    | V1    | Treat as Research Notes, not as a physical claim.                    |
+| CPT reinterpretation / CPT再解釈                              | An exploratory reading of C/P/T as reversal mappings of history, position, and temporal direction.                                                                               | Physical correspondence candidate                                | S3-S5 | E3    | U0-U1 | P2    | V1-V5 | State its relation to the standard CPT theorem.                      |
 
 Key public handling rules:
 

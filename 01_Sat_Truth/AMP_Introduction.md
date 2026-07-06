@@ -3,11 +3,13 @@
 > Status: Introduction
 > Scope: AMP
 > Language: ja+en
-> Claim profile: S2
+> Claim strength: S2
 
 本文書は、**存在境界論｜Scientific Ontology** の形而上学的基礎として AMP を紹介する公開用入門である。
 
 ここで提示する AMP は、経験科学、物理的証明、現代科学の代替ではない。存在・観測・意味・倫理・境界がどのように成立するかを問うための概念的基礎である。
+
+AMPは、境界系が接触履歴を凝集し、それを認識、意味、後続事象の条件として返すという境界実在性の原則を前提とする。
 
 ## 1. AMPとは何か
 
@@ -118,6 +120,8 @@ AMP Core の完全な公理体系、内部導出、実装スキーマ、AI人格
 This document introduces AMP as the metaphysical foundation of **存在境界論｜Scientific Ontology**.
 
 AMP is not presented here as empirical science, physical proof, or a replacement for modern science. It is a conceptual foundation for asking how existence, observation, meaning, ethics, and boundary become possible.
+
+AMP presupposes the Boundary Realism Principle, including the view that boundary systems condense contact histories and return them as conditions for cognition, meaning, and subsequent events.
 
 ## 1. What AMP Is
 

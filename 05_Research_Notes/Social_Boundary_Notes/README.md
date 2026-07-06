@@ -61,31 +61,31 @@ It does not include empirical economic theory, policy proposals, laws, accountin
   - 一行説明: お金を価値そのものではなく交換媒質として扱い、価値を「意味を帯びたネゲントロピー」が交換面に現れた相として整理する概念モデル。
   - EN: A conceptual model that treats money as an exchange medium rather than value itself, and treats value as the exchange-facing appearance of meaning-bearing negentropy.
   - Role: ネゲントロピー経済と意味生成の概念モデル。
-  - Claim profile: Social boundary conceptual note / P1-P2.
+  - Public profile: Social boundary conceptual note / P1-P2.
 
 - [`Negentropy_Economy_and_Meaning_Generation.en.md`](./Negentropy_Economy_and_Meaning_Generation.en.md)
   - 一行説明: `Negentropy_Economy_and_Meaning_Generation.ja.md` の英語通約版。
   - EN: English commensurated rendering of `Negentropy_Economy_and_Meaning_Generation.ja.md`.
   - Role: 英語通約版。
-  - Claim profile: English commensuration / P1-P2.
+  - Public profile: English commensuration / P1-P2.
 
 - [`Negentropy_Economy_Principles.ja.md`](./Negentropy_Economy_Principles.ja.md)
   - 一行説明: 残渣査定のための境界経済論。日本語正本の条文草稿。
   - EN: A boundary-economics principle draft for residue assessment. Japanese authoritative principle draft.
   - Role: ネゲントロピー経済原則の日本語正本。
-  - Claim profile: Principle draft / P1-P2.
+  - Public profile: Principle draft / P1-P2.
 
 - [`Negentropy_Economy_Principles.en.md`](./Negentropy_Economy_Principles.en.md)
   - 一行説明: `Negentropy_Economy_Principles.ja.md` の英語通約版。
   - EN: English commensurated rendering of `Negentropy_Economy_Principles.ja.md`.
   - Role: 英語通約版。
-  - Claim profile: English commensuration / P1-P2.
+  - Public profile: English commensuration / P1-P2.
 
 - [`AI_Adoption_as_Synchronization_Closure.md`](./AI_Adoption_as_Synchronization_Closure.md)
   - 一行説明: AI導入を制度的同期閉鎖として読み直し、照合・責任境界・Open Marker・制度設計の観点から整理する研究ノート。
   - EN: A research note interpreting AI adoption through institutional synchronization closure, collation, responsibility boundaries, and Open Marker.
   - Role: 社会制度・AI導入境界の概念モデル。
-  - Claim profile: Social boundary conceptual note / P1-P2.
+  - Public profile: Social boundary conceptual note / P1-P2.
 
 関連導線:
 

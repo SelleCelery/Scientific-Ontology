@@ -5,7 +5,7 @@
 > Status: Research note
 > Scope: literary-ontology
 > Language: ja
-> Claim profile: S1/S2
+> Claim strength: S1/S2
 
 ## 位置づけ
 

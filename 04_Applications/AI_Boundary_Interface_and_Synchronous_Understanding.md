@@ -3,7 +3,7 @@
 > Status: Application note
 > Scope: AI-boundary-interface
 > Language: ja+en
-> Claim profile: S2/U2
+> Claim strength: S2/U2
 
 ---
 

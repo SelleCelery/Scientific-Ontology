@@ -54,17 +54,17 @@ English commensurated rendering: This layer includes public poster images, Japan
 - [`Scientific_Ontology_Conceptual_Poster.ja.png`](./Scientific_Ontology_Conceptual_Poster.ja.png)
   - 一行説明: 存在境界論の概念配置を示す日本語版ポスター。
   - Role: 日本語視覚導線。
-  - Claim profile: Visual entry / P0.
+  - Public profile: Visual entry / P0.
 
 - [`Scientific_Ontology_Conceptual_Poster.en.png`](./Scientific_Ontology_Conceptual_Poster.en.png)
   - 一行説明: 日本語版ポスターに対応する英語版ポスター。
   - Role: English visual entry.
-  - Claim profile: Visual entry / P0.
+  - Public profile: Visual entry / P0.
 
 - [`Scientific_Ontology_Conceptual_Poster_Note.md`](./Scientific_Ontology_Conceptual_Poster_Note.md)
   - 一行説明: ポスターの位置づけ、読み方、用語・主張強度上の注意を整理する注記。
   - Role: 視覚資料の読解注記。
-  - Claim profile: Visual note / P0-P1.
+  - Public profile: Visual note / P0-P1.
 
 ---
 

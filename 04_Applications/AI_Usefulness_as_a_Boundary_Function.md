@@ -3,7 +3,7 @@
 > Status: Application note
 > Scope: AI-usefulness
 > Language: ja+en
-> Claim profile: S2/U2
+> Claim strength: S2/U2
 
 ---
 
