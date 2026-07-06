@@ -4,7 +4,9 @@
 
 > Status: Application note / Practical checklist
 > Scope: AI adoption, Japanese administrative contexts, municipal DX, procurement, certification, responsibility boundaries, re-collation
-> Language: Japanese only; English commensuration is not planned for this release because the checklist depends on Japanese administrative, municipal, procurement, and organizational contexts.
+> Language: Japanese only
+> English commensuration: not planned for this release
+> Note: Context-dependent checklist for Japanese administrative, municipal, procurement, and organizational settings.
 > Claim strength: S1/S2
 
 ---
