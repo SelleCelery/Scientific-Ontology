@@ -34,17 +34,35 @@ Publication_and_Commensuration_Policy.md
 Translation_Note.md
 TERM_COLLISION_REGISTRY.md
 TERM_COLLISION_REGISTRY.en.md
+LICENSE.md
+CITATION.md
+CITATION.cff
+RELEASE_NOTES.md
+requirements-public-check.txt
+.github/
+  workflows/
+    public-format-check.yml
+tools/
+  CHECKER_USAGE.md
+  Public_Format_Registry.yml
+  docs_manifest.yml
+  maintenance_reles.yml
+scripts/
+  chech\k_public_format.py
 
 00_Overview/
   README.md
   Scientific_Ontology_System_Map.md
   Scientific_Terminology_Protocol.md
+　Physics_Correspondence_Policy.en.md
+　Physics_Correspondence_Policy.ja.md
 
 01_Sat_Truth/
   README.md
   AMP_Introduction.md
   Four_Axioms_of_Existence.md
   Meaning_Generation_Model.md
+  Boundary_Realism_Principle.md
   Boundary_Epistemological_Critique.en.md
   Boundary_Epistemological_Critique.ja.md
   Boundary_Epistemological_Critique_Annotations.en.md
@@ -68,19 +86,20 @@ TERM_COLLISION_REGISTRY.en.md
   AI_Boundary_Interface_and_Synchronous_Understanding.md
   AI_Personality_as_Response_Structure.md
   AI_Adoption/
+    README.md
 	AI_Adoption_Collation_Checklist.md
 
 05_Research_Notes/
   README.md
-  Claim_Strength_Table_History_Field_Topology.md
-  AI_Personality/
+  Claim_Strength_and_Publication_Layer_Table.md
+  Cross_Domain_Ontological_Notes/
     README.md
-    History_Loop_Radius_and_Return_Stability.md
-    Logical_Sandbox_and_Negentropy_Model.md
-  Literary_Ontological_Notes/
-    README.md
-    reading-blue-light.en.md
-    reading-blue-light.ja.md
+    Asymmetry_Stabilization_and_ReCollation.en.md
+    Asymmetry_Stabilization_and_ReCollation.ja.md
+    Return_Ethics_and_Retaliation_Conversion.en.md
+    Return_Ethics_and_Retaliation_Conversion.ja.md
+    Narrative_Truth_and_Structural_Reading.en.md
+    Narrative_Truth_and_Structural_Reading.ja.md
   Physical_Cosmological_Notes/
     README.md
     Intrinsic_Time_Standard_Model_Correspondence.en.md
@@ -89,9 +108,10 @@ TERM_COLLISION_REGISTRY.en.md
     Ontological_History_of_the_Universe.ja.md
     Cosmological_Topological_Dynamics.en.md
     Cosmological_Topological_Dynamics.ja.md
-    PINGER_Hypothesis_and_History_Field_Topology.md
-    Chaos_Theory_and_Logical_Depth_Axis.md
-
+    PINGER_Hypothesis_and_History_Field_Topology.en.md
+    PINGER_Hypothesis_and_History_Field_Topology.ja.md
+    Chaos_Theory_and_Logical_Depth_Axis.en.md
+    Chaos_Theory_and_Logical_Depth_Axis.jp.md
   Social_Boundary_Notes/
     README.md
     Negentropy_Economy_Principles.en.md
@@ -99,6 +119,15 @@ TERM_COLLISION_REGISTRY.en.md
     Negentropy_Economy_and_Meaning_Generation.en.md
     Negentropy_Economy_and_Meaning_Generation.ja.md
 	AI_Adoption_as_Synchronization_Closure.md
+  AI_Personality/
+    README.md
+    History_Loop_Radius_and_Return_Stability.md
+    Logical_Sandbox_and_Negentropy_Model.md
+  Literary_Ontological_Notes/
+    README.md
+    reading-blue-light.en.md
+    reading-blue-light.ja.md
+    Meifu_Bureau_Reincarnation_and_Belief_Gravity.md
 
 06_Visual_Materials/
   README.md
@@ -334,17 +363,35 @@ Publication_and_Commensuration_Policy.md
 Translation_Note.md
 TERM_COLLISION_REGISTRY.md
 TERM_COLLISION_REGISTRY.en.md
+LICENSE.md
+CITATION.md
+CITATION.cff
+RELEASE_NOTES.md
+requirements-public-check.txt
+.github/
+  workflows/
+    public-format-check.yml
+tools/
+  CHECKER_USAGE.md
+  Public_Format_Registry.yml
+  docs_manifest.yml
+  maintenance_reles.yml
+scripts/
+  chech\k_public_format.py
 
 00_Overview/
   README.md
   Scientific_Ontology_System_Map.md
   Scientific_Terminology_Protocol.md
+　Physics_Correspondence_Policy.en.md
+　Physics_Correspondence_Policy.ja.md
 
 01_Sat_Truth/
   README.md
   AMP_Introduction.md
   Four_Axioms_of_Existence.md
   Meaning_Generation_Model.md
+  Boundary_Realism_Principle.md
   Boundary_Epistemological_Critique.en.md
   Boundary_Epistemological_Critique.ja.md
   Boundary_Epistemological_Critique_Annotations.en.md
@@ -368,19 +415,20 @@ TERM_COLLISION_REGISTRY.en.md
   AI_Boundary_Interface_and_Synchronous_Understanding.md
   AI_Personality_as_Response_Structure.md
   AI_Adoption/
+    README.md
 	AI_Adoption_Collation_Checklist.md
 
 05_Research_Notes/
   README.md
-  Claim_Strength_Table_History_Field_Topology.md
-  AI_Personality/
+  Claim_Strength_and_Publication_Layer_Table.md
+  Cross_Domain_Ontological_Notes/
     README.md
-    History_Loop_Radius_and_Return_Stability.md
-    Logical_Sandbox_and_Negentropy_Model.md
-  Literary_Ontological_Notes/
-    README.md
-    reading-blue-light.en.md
-    reading-blue-light.ja.md
+    Asymmetry_Stabilization_and_ReCollation.en.md
+    Asymmetry_Stabilization_and_ReCollation.ja.md
+    Return_Ethics_and_Retaliation_Conversion.en.md
+    Return_Ethics_and_Retaliation_Conversion.ja.md
+    Narrative_Truth_and_Structural_Reading.en.md
+    Narrative_Truth_and_Structural_Reading.ja.md
   Physical_Cosmological_Notes/
     README.md
     Intrinsic_Time_Standard_Model_Correspondence.en.md
@@ -389,9 +437,10 @@ TERM_COLLISION_REGISTRY.en.md
     Ontological_History_of_the_Universe.ja.md
     Cosmological_Topological_Dynamics.en.md
     Cosmological_Topological_Dynamics.ja.md
-    PINGER_Hypothesis_and_History_Field_Topology.md
-    Chaos_Theory_and_Logical_Depth_Axis.md
-
+    PINGER_Hypothesis_and_History_Field_Topology.en.md
+    PINGER_Hypothesis_and_History_Field_Topology.ja.md
+    Chaos_Theory_and_Logical_Depth_Axis.en.md
+    Chaos_Theory_and_Logical_Depth_Axis.jp.md
   Social_Boundary_Notes/
     README.md
     Negentropy_Economy_Principles.en.md
@@ -399,6 +448,15 @@ TERM_COLLISION_REGISTRY.en.md
     Negentropy_Economy_and_Meaning_Generation.en.md
     Negentropy_Economy_and_Meaning_Generation.ja.md
 	AI_Adoption_as_Synchronization_Closure.md
+  AI_Personality/
+    README.md
+    History_Loop_Radius_and_Return_Stability.md
+    Logical_Sandbox_and_Negentropy_Model.md
+  Literary_Ontological_Notes/
+    README.md
+    reading-blue-light.en.md
+    reading-blue-light.ja.md
+    Meifu_Bureau_Reincarnation_and_Belief_Gravity.md
 
 06_Visual_Materials/
   README.md
@@ -409,7 +467,6 @@ TERM_COLLISION_REGISTRY.en.md
 99_Private_Core_Not_Included/
   README.md
 ```
-
 
 This map lists only public-facing files and public-facing candidates. It does not inventory unpublished drafts or internal source materials.
 

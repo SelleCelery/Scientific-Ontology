@@ -251,7 +251,7 @@ term_rules:
     - term: "Internal Time"
       report: false
       paths:
-        - "05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md"
+        - "05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md"
       allowed_patterns:
         - "`?Internal Time`?.{0,160}(とは訳さない|訳さない)"
 ```

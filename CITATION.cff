@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Scientific Ontology (SO) / 存在境界論: Public Edition v4.1.0"
+title: "Scientific Ontology (SO) / 存在境界論: Public Edition v4.2.0"
 
 message: >
   If you use this public edition, please cite the version-specific Zenodo DOI.
@@ -10,27 +10,30 @@ authors:
   - family-names: "万度"
     given-names: "華凜"
 
-version: "4.1.0"
+version: "4.2.0"
 
-doi: "10.5281/zenodo.21048588"
+doi: "10.5281/zenodo.21240120"
 
-date-released: "2026-06-30"
+date-released: "2026-07-07"
 
 license: "CC-BY-4.0"
 
 repository-code: "https://github.com/SelleCelery/Scientific-Ontology"
 
-url: "https://doi.org/10.5281/zenodo.21048588"
+url: "https://doi.org/10.5281/zenodo.21240120"
 
 keywords:
   - Scientific Ontology
   - 存在境界論
   - Boundary Studies
   - History-Field Topology
+  - Boundary Realism
+  - Physics Correspondence Policy
   - Intrinsic Time
   - Logical-depth Axis
   - Synchronization
   - Collation
-  - AI Adoption
+  - Re-collation
+  - Claim Strength Management
   - Boundary Ethics
   - Conceptual Framework

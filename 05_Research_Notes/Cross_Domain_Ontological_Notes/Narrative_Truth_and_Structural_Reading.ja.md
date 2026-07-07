@@ -3,7 +3,7 @@
 
 > Status: Cross-domain ontological note / Literary ontology note
 > Scope: narrative truth, structural reading, reality fantasy, power, responsibility, return ethics
-> Language: Japanese authoritative; English commensuration pending
+> Language: ja
 > Claim strength: Literary/S2-S3; conceptual reading model, not literary canon or empirical social theory
 
 ## 0. 位置づけ
@@ -354,8 +354,9 @@
 
 ## 15. 関連文書
 
-- `Boundary_Realism_Principle.ja.md`
-- `Return_Ethics_and_Retaliation_Conversion.ja.md`
-- `Asymmetry_Stabilization_and_ReCollation.ja.md`
-- `../Literary_Ontological_Notes/README.md`
-- `../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`
+- [`Asymmetry_Stabilization_and_ReCollation.ja.md`](./Asymmetry_Stabilization_and_ReCollation.ja.md)
+- [`Return_Ethics_and_Retaliation_Conversion.ja.md`](./Return_Ethics_and_Retaliation_Conversion.ja.md)
+- [`../../01_Sat_Truth/Boundary_Realism_Principle.md`](../../01_Sat_Truth/Boundary_Realism_Principle.md)
+- [`../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md`](../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md)
+- [`../Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md`](../Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md)
+- [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)

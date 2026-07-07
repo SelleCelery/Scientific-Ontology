@@ -1,22 +1,16 @@
 {
-  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v4.1.0",
+  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v4.2.0",
   "upload_type": "publication",
   "publication_type": "other",
-
-  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v4.1.0 expands the public research and application layers established in v4.0.0.\n\nThis release introduces new Research Notes on AI adoption, History-Field Topology, and the Logical-depth Axis together with a new Applications layer for AI adoption. It preserves the existing publication policy, claim-strength management, terminology governance, and public/private boundary while extending the publicly discussable conceptual framework.\n\nScientific Ontology is a boundary-oriented conceptual framework for studying existence, history, communication, meaning, ethics, AI applications, and institutional interpretation through iterative publication, practical application, and conceptual refinement.",
-
+  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v4.2.0 strengthens the public interface for boundary-oriented conceptual research.\n\nThis release clarifies why physics-adjacent vocabulary appears in the framework, adds the Boundary Realism Principle to the public Sat / Truth layer, reorganizes the Research Notes Index, and introduces a broader Claim Strength and Publication Layer Table for managing exploratory notes, stronger hypotheses, cross-domain readings, and public-facing claim boundaries.\n\nMajor additions include the Physics Correspondence Policy, Boundary Realism Principle, Cross-Domain Ontological Notes, Japanese / English separated renderings for PINGER and Chaos / Logical-depth Axis notes, a literary-ontological note on Meifu Bureau / reincarnation / belief gravity, and public-format checking tools.\n\nScientific Ontology is a boundary-oriented conceptual framework for studying existence, history, communication, meaning, ethics, AI applications, physics-adjacent correspondence, literary ontology, and institutional interpretation through iterative publication, practical application, and conceptual refinement.",
   "creators": [
     {
       "name": "万度 華凜"
     }
   ],
-
   "license": "cc-by-4.0",
-
-  "version": "4.1.0",
-
-  "publication_date": "2026-06-30",
-
+  "version": "4.2.0",
+  "publication_date": "2026-07-07",
   "keywords": [
     "Scientific Ontology",
     "存在境界論",
@@ -24,22 +18,24 @@
     "Conceptual Framework",
     "Applied Metaphysics",
     "History-Field Topology",
+    "Boundary Realism",
+    "Physics Correspondence Policy",
     "Intrinsic Time",
     "Logical-depth Axis",
     "Synchronization",
     "Collation",
-    "AI Adoption",
-    "Institutional Boundary",
+    "Re-collation",
+    "Claim Strength Management",
+    "Publication Layer",
     "Boundary Ethics",
+    "Narrative Truth",
+    "Literary Ontology",
     "Negentropy Economy",
     "AI Usefulness",
-    "History-Forming AI Persona",
     "Operational Correspondence",
     "Heuristic Verification"
   ],
-
   "language": "eng",
-
   "related_identifiers": [
     {
       "identifier": "10.5281/zenodo.19222394",
@@ -47,7 +43,7 @@
       "scheme": "doi"
     },
     {
-      "identifier": "10.5281/zenodo.20828016",
+      "identifier": "10.5281/zenodo.21048588",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     },
@@ -57,6 +53,5 @@
       "scheme": "url"
     }
   ],
-
-  "notes": "This release expands the public research and application layers while preserving the publication policy, public/private boundary, terminology governance, and claim-strength management established in earlier public editions. Earlier releases remain archived within the Zenodo record family for historical continuity."
+  "notes": "This release strengthens the public interface for physics correspondence, boundary realism, Research Notes navigation, and claim-strength / publication-layer management while preserving the publication policy, public/private boundary, terminology governance, and CC BY 4.0 licensing established in earlier public editions. Earlier releases remain archived within the Zenodo record family for historical continuity."
 }

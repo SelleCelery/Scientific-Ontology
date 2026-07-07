@@ -75,7 +75,7 @@ It does not include full private cores, physical correspondence notes, social/ec
 
 ## 4. Documents / 文書一覧
 
-- [`Boundary_Realism_Principle.ja.md`](../../../CURRENT_WORK_SPACE/Boundary_Realism_Principle.ja.md)
+- [`Boundary_Realism_Principle.md`](./Boundary_Realism_Principle.md)
   - 一行説明: 境界実在性の原則をSat層の基底配置として置き、AMP、四大表公理、意味生成、境界認識批判の関係を整理する文書。
   - EN: A foundational document placing the Boundary Realism Principle in the Sat layer and clarifying the relation among AMP, the Four Axioms, meaning generation, and boundary epistemological critique.
   - Role: Sat層の基底配置文書。

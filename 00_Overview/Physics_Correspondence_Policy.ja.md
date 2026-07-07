@@ -545,8 +545,8 @@ Research Notes は、牙を抜く場所ではない。
 
 - [`README.md`](../README.md)
 - [`02_Raj_Beauty/Scientific_Ontology_and_Science.md`](../02_Raj_Beauty/Scientific_Ontology_and_Science.md)
-- [`01_Sat_Truth/Boundary_Realism_Principle.ja.md`](../../../CURRENT_WORK_SPACE/Boundary_Realism_Principle.ja.md)
-- [`05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.md`](../05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.md)
+- [`01_Sat_Truth/Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md)
+- [`05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md`](../05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md)
 - [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md)
 - [`TERM_COLLISION_REGISTRY.en.md`](../TERM_COLLISION_REGISTRY.en.md)
 - [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)

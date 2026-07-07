@@ -225,7 +225,7 @@
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md)
-- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)
+- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 
@@ -534,7 +534,7 @@ Related reading:
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md)
-- [`05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md`](../05_Research_Notes/Claim_Strength_Table_History_Field_Topology.md)
+- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 ### D.3 Lower-left panel

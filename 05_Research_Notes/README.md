@@ -58,12 +58,12 @@ It does not include full private cores, completed empirical predictions, impleme
 
 ## 4. Documents / 文書一覧
 
-- [`Claim_Strength_Table_History_Field_Topology.md`](./Claim_Strength_Table_History_Field_Topology.md)
+- [`Claim_Strength_and_Publication_Layer_Table.md`](Claim_Strength_and_Publication_Layer_Table.md)
   - 一行説明: 履歴場トポロジー関連命題を、主張強度、検証段階、公開層、次の作業へ分ける管理表。
   - Role: 主張強度管理。
   - Public profile: Claim-profile control / P1-P2.
 
-- [`Research_Notes_Index.md`](./Research_Notes_Index.md)
+- [`Research_Notes_Index.md`](Research_Notes_Index.md)
   - 一行説明: 研究ノート層全体の索引。物理、社会、文学、AI人格関連ノートへの導線を置く。
   - Role: 研究ノート索引。
   - Public profile: Navigation / P0-P1.
@@ -103,7 +103,7 @@ Research Notes は、基礎層を勝手に更新する場所ではない。強�
 
 ### File-level changes / ファイル単位の増減
 
-- 研究ノート一覧は [`Research_Notes_Index.md`](./Research_Notes_Index.md) に集約する。
+- 研究ノート一覧は [`Research_Notes_Index.md`](Research_Notes_Index.md) に集約する。
 - 各サブディレクトリの詳細なファイル増減は、各サブREADMEへ置く。
 
 ### Pending notes / 保留事項

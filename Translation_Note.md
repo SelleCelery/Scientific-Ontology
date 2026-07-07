@@ -18,7 +18,9 @@ English versions are provided as translation drafts, working equivalents, and in
 
 Where the Japanese and English versions diverge in nuance, the Japanese text should be consulted as the primary source.
 
-ただし、英訳は単なる機械的置換ではない。英語圏で読解可能な体系語として成立させるため、必要に応じて語順、説明句、補助語を調整する。
+However, English translation is not merely a matter of mechanical substitution. 
+
+To ensure the text functions as a coherent, systematic discourse that is comprehensible to English-speaking readers, word order, explanatory phrases, and auxiliary words are adjusted as necessary.
 
 ## 2. Translation method / 翻訳方法
 
@@ -47,6 +49,39 @@ Examples include:
 - 再照合可能性: capacity for re-collation / re-examinability
 
 Where a new document introduces domain-specific usage, the new usage should be defined explicitly rather than silently replacing an existing core term.
+
+### 3.1 Research Note English Rendering / Research Notes の英語通約
+
+For Research Notes, English rendering should preserve conceptual force while keeping claim strength visible.
+
+Core SO terms should remain stable even when they sound technical. Examples include:
+
+- boundary
+- history
+- history-field / history-bearing field
+- operational correspondence
+- collation
+- re-collation
+- residual
+- residue / sedimented residue
+- ontological rereading
+- non-claim boundary
+- claim strength
+
+However, ordinary Japanese terms should not be mechanically fixed to one English word.  
+When a Japanese term has different conceptual roles, English rendering should preserve the boundary between those roles.
+
+Examples:
+
+- 生命: life / living system
+- 生活: lived life / daily life
+- 空: emptiness / undifferentiated emptiness, not automatically Void
+- 閉じる: close / treat as resolved / settle / account for, depending on context
+
+In Research Notes, smoothness should not erase the provisional character of a concept.  
+When a term approaches physics, cosmology, biology, social science, cultural theory, consciousness theory, or other established fields, the English rendering should make clear whether the use is a standard definition, SO definition, structural analogy, ontological rereading, conceptual model, working hypothesis, formalization candidate, or high-strength hypothesis.
+
+Where misreading risk is high, add a non-claim boundary rather than weakening the central thesis.
 
 ## 4. On “closure” / 「閉じる」について
 

@@ -1,26 +1,26 @@
-# Release Notes: Scientific Ontology (SO) / 存在境界論 Public Edition v4.1.0
+# Release Notes: Scientific Ontology (SO) / 存在境界論 Public Edition v4.2.0
 > Status: Release notes
 > Scope: Public release metadata and change log
 > Language: English-first with Japanese conceptual reference
-> DOI: 10.5281/zenodo.21048588
+> DOI: 10.5281/zenodo.21240120
 
-Release date: 2026-06-30
+Release date: 2026-07-07
 
 ---
 
 ## Citation
 
-If you cite this release, please cite the version-specific Zenodo DOI for v4.1.0.
+If you cite this release, please cite the version-specific Zenodo DOI for v4.2.0.
 
-DOI:
-https://doi.org/10.5281/zenodo.21048588
+DOI:  
+https://doi.org/10.5281/zenodo.21240120
 
 Recommended citation:
 
-万度 華凜.
-*Scientific Ontology (SO) / 存在境界論: Public Edition v4.1.0*.
-Zenodo, 2026.
-https://doi.org/10.5281/zenodo.21048588
+万度 華凜.  
+*Scientific Ontology (SO) / 存在境界論: Public Edition v4.2.0*.  
+Zenodo, 2026.  
+https://doi.org/10.5281/zenodo.21240120
 
 For machine-readable citation metadata, see [`CITATION.cff`](./CITATION.cff).  
 For human-readable citation guidance, see [`CITATION.md`](./CITATION.md).
@@ -33,73 +33,140 @@ This release continues the CC BY 4.0 licensing policy introduced in v3.0.0.
 
 ---
 
-## Version family DOI:
+## Version family DOI
+
 https://doi.org/10.5281/zenodo.19222394
 
 ---
 
 ## Purpose
 
-Scientific Ontology (SO) / 存在境界論 Public Edition v4.1.0 expands the public research and application layers established in v4.0.0.
+Scientific Ontology (SO) / 存在境界論 Public Edition v4.2.0 strengthens the public interface for boundary-oriented conceptual research by clarifying three release-critical layers:
 
-Rather than reorganizing the repository, this release extends Research Notes and Applications while preserving the existing publication policy, public/private boundary, terminology management, and claim-strength framework.
+1. why physics-adjacent vocabulary appears in the framework,
+2. how boundary realism is positioned within the public Sat / Truth layer, and
+3. how Research Notes are indexed, classified, and managed through claim-strength and publication-layer controls.
 
-Particular attention is given to institutional AI adoption, synchronization and collation, history-field topology, and conceptual correspondence with physics-oriented terminology.
+This release does not replace established science, philosophy, literary studies, ethics, social science, theology, or AI research.  
+It improves the public apparatus for distinguishing conceptual models, heuristic correspondences, structural readings, stronger hypotheses, and non-empirical boundary claims.
 
-v4.1.0 は、v4.0.0 で整備した公開体系を維持しつつ、Research Notes 層および Applications 層を拡張する公開版である。
+v4.2.0 は、存在境界論の公開インターフェースを強化するリリースである。
 
-本リリースでは、公開境界、用語管理、主張強度管理を維持したまま、AI導入、履歴場トポロジー、同期と照合、物理近接概念に関する研究ノートと応用文書を追加した。
+特に、物理近接語彙をなぜ使うのか、境界実在性をどこに置くのか、Research Notes をどのように索引化し、主張強度と公開層で管理するのかを整理した。
 
----
-
-## Major changes from v4.0.0
-
-### Research Notes
-
-Added
-
-- PINGER_Hypothesis_and_History_Field_Topology.md
-- Chaos_Theory_and_Logical_Depth_Axis.md
-- AI_Adoption_as_Synchronization_Closure.md
-
-### Applications
-
-Added
-
-- AI Adoption application layer
-- AI Adoption README
-- AI Adoption Collation Checklist
+本リリースは、現代科学、哲学、文学研究、倫理学、社会科学、神学、AI研究を置き換えるものではない。  
+概念モデル、ヒューリスティック対応、構造的読解、強い仮説、非経験的な境界主張を区別するための公開装置を整えるものである。
 
 ---
 
-### Documentation
+## Major changes from v4.1.0
 
-Updated
+### Public overview and repository entrance
 
-- Scientific_Ontology_System_Map.md
-- README files
-- repository navigation
-- public metadata
+Updated:
 
----
+- `README.md`
 
-### Expanded
+The root README now functions more explicitly as a v4.2.0 reading entrance.  
+It adds release-level orientation toward the Physics Correspondence Policy, Boundary Realism Principle, Research Notes Index, and Claim Strength / Publication Layer Table.
 
-Research Notes now cover:
+### Physics-adjacent vocabulary and correspondence policy
 
-- synchronization / collation
-- institutional AI adoption
-- logical-depth interpretation of chaos
-- history-field projection concepts
+Added:
+
+- `00_Overview/Physics_Correspondence_Policy.ja.md`
+- `00_Overview/Physics_Correspondence_Policy.en.md`
+
+This policy explains why Scientific Ontology uses vocabulary adjacent to physics, including boson field, entanglement, intrinsic time, entropy communication, History-Field Topology, and related terms.
+
+The policy clarifies that such vocabulary is not used to replace standard physics.  
+It is used because the framework studies observation-formation conditions, boundary contact, history formation, correspondence, projection, and residual structure.
+
+### Boundary realism
+
+Added:
+
+- `01_Sat_Truth/Boundary_Realism_Principle.md`
+
+This document positions boundary realism as a public Sat / Truth layer principle.  
+It clarifies that Scientific Ontology treats boundaries, contact, history, return paths, and residual effects as the primary public-real layer, rather than claiming direct ownership of existence itself.
+
+### Research Notes navigation
+
+Updated:
+
+- `05_Research_Notes/README.md`
+- `05_Research_Notes/Research_Notes_Index.md`
+
+The Research Notes index has been reorganized as a public navigation layer.  
+It improves readability by using Japanese display titles where appropriate and by connecting notes to domain, concept, claim strength, publication layer, and non-claim boundaries.
+
+### Claim strength and publication-layer management
+
+Added / replaced:
+
+- `05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`
+
+This file replaces the earlier claim-strength table centered on History-Field Topology naming.  
+It generalizes the table into a broader claim-strength and publication-layer control document for Research Notes.
+
+The table distinguishes S / E / U / P / V codes, public-layer placement, slowing rules, and release-facing claim management.
+
+### Cross-domain ontological notes
+
+Added / expanded:
+
+- `05_Research_Notes/Cross_Domain_Ontological_Notes/README.md`
+- `05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md`
+- `05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md`
+- `05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md`
+- `05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md`
+- `05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md`
+- `05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md`
+
+These documents expand the cross-domain layer for asymmetry, return ethics, retaliation conversion, narrative truth, and structural reading.
+
+### Physical and cosmological notes
+
+Updated / split:
+
+- `05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md`
+- `05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.en.md`
+- `05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md`
+- `05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.en.md`
+
+The PINGER hypothesis and Chaos / Logical-depth Axis notes are now separated into Japanese primary text and English commensurated renderings.
+
+### Literary-ontological notes
+
+Added / expanded:
+
+- `05_Research_Notes/Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md`
+
+This note extends the literary-ontological layer through the Meifu Bureau / reincarnation / belief-gravity cluster.
+
+### Public format checking and maintenance tools
+
+Added / expanded:
+
+- `scripts/check_public_format.py`
+- `tools/CHECKER_USAGE.md`
+- `tools/CHECKER_EXTENSION_REPORT.md`
+- `tools/Public_Format_Registry.yml`
+- `tools/docs_manifest.yml`
+- `tools/maintenance_rules.yml`
+
+The release includes public-format checking tools for local link validation, anchor checking, release metadata review, and maintenance-rule support.
 
 ---
 
 ## Clarified
 
-- AI adoption is treated as institutional boundary design rather than AI deployment alone.
-- Research Notes distinguish conceptual models from implementation guidance.
-- Physics-oriented terminology is presented as projection or correspondence rather than replacement of established physics.
-- Repository navigation has been updated to reflect the current public structure.
+- Scientific Ontology uses physics-adjacent vocabulary as correspondence, projection, analogy, or internal conceptual modeling, not as replacement physics.
+- Boundary realism is a public-facing principle about the reality of boundary contact, history, return paths, and residual effects.
+- Research Notes are exploratory and must be read through claim-strength and publication-layer controls.
+- Japanese text remains the primary conceptual reference where meaning diverges; English text is commensurated rendering rather than fixed word-for-word translation.
+- Cross-domain notes may connect ethics, narrative, social structure, physics-adjacent vocabulary, and literary reading without claiming empirical reduction across those domains.
 
 ---
 
@@ -115,19 +182,24 @@ This release does not disclose:
 - persona generation mechanisms
 - implementation parameters
 - private evaluation functions
+- private persona or soul-core specifications
+- non-public simulation specifications
 
 ---
 
 ## Included
 
 - Public overview and navigation documents.
-- Public Sat / Truth foundation documents, including AMP introduction, Four Axioms, Meaning Generation Model, and Boundary Epistemological Critique.
-- Public Raj / Beauty framework documents, including HFC, History-Field Topology, and the science-position document.
+- Public Sat / Truth foundation documents, including AMP introduction, Four Axioms, Meaning Generation Model, Boundary Epistemological Critique, and Boundary Realism Principle.
+- Public Raj / Beauty framework documents, including HFC, History-Field Topology, Scientific Ontology and Science, and physics correspondence policy links.
 - Public Tam / Goodness documents, including Boundary Ethics and Meaning as Return Orbit.
-- Public Applications layer, including AI usefulness, AI boundary interface, AI personality as response structure, AI adoption, and implementation-oriented application documents.
-- Research Notes with explicit claim boundaries, including physical/cosmological notes, social boundary and negentropy-economy notes, AI personality notes, and literary-ontological notes.
+- Public Applications layer, including AI usefulness, AI boundary interface, AI personality as response structure, and implementation-oriented application documents.
+- Research Notes with explicit claim boundaries, including AI personality notes, physical/cosmological notes, social boundary notes, literary-ontological notes, and cross-domain ontological notes.
+- Claim-strength and publication-layer table for Research Notes.
 - Visual Materials, including Japanese and English conceptual posters and companion note.
-- Glossary, roadmap, publication policy, translation note, terminology-collision registries, citation metadata, license file, and release notes.
+- Glossary, roadmap, publication policy, translation note, terminology-collision registries, citation metadata, license file, release notes, and public-format checking tools.
+
+---
 
 ## Not included
 
@@ -150,14 +222,34 @@ This release does not include:
 
 ## Previous public release
 
-The previous public release is v4.0.0.
+The previous public release is v4.1.0.
 
-DOI:
-https://doi.org/10.5281/zenodo.20828016
+DOI:  
+https://doi.org/10.5281/zenodo.21048588
 
 ---
 
 ## Release History
+
+### v4.2.0
+
+Strengthened the public interface for physics correspondence, boundary realism, Research Notes navigation, and claim-strength / publication-layer management.
+
+Major additions and updates include:
+
+- Physics Correspondence Policy, Japanese and English
+- Boundary Realism Principle
+- reorganized Research Notes Index
+- Claim Strength and Publication Layer Table
+- Cross-Domain Ontological Notes
+- Japanese / English split for PINGER and Chaos / Logical-depth Axis notes
+- Meifu Bureau literary-ontological note
+- public-format checking and maintenance tools
+
+DOI:  
+https://doi.org/10.5281/zenodo.21240120
+
+---
 
 ### v4.1.0
 
@@ -171,7 +263,7 @@ Major additions include:
 - Chaos Theory and Logical-depth Axis
 - updated repository navigation and system map
 
-DOI:
+DOI:  
 https://doi.org/10.5281/zenodo.21048588
 
 ---
@@ -190,7 +282,7 @@ Major achievements:
 - clarified the relation between Scientific Ontology and existing sciences
 - strengthened publication policy, terminology management, and claim-strength management
 
-DOI:
+DOI:  
 https://doi.org/10.5281/zenodo.20828016
 
 ---
@@ -206,7 +298,7 @@ Highlights:
 - adopted CC BY 4.0 licensing
 - expanded bilingual public documentation
 
-DOI:
+DOI:  
 https://doi.org/10.5281/zenodo.20749351
 
 ---
@@ -222,7 +314,7 @@ Highlights:
 - reorganized public conceptual documentation
 - strengthened repository navigation
 
-DOI:
+DOI:  
 https://doi.org/10.5281/zenodo.20665198
 
 ---
@@ -236,7 +328,7 @@ Highlights:
 - reorganized the repository as a public conceptual archive
 - separated public documentation from private development materials
 
-DOI:
+DOI:  
 https://doi.org/10.5281/zenodo.20548136
 
 ---
@@ -251,5 +343,5 @@ This release history summarizes the major milestones of the public edition.
 
 For the complete archival record of all published versions, including early public drafts, see the Zenodo record family.
 
-Record family DOI:
+Record family DOI:  
 https://doi.org/10.5281/zenodo.19222394

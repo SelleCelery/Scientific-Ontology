@@ -89,7 +89,7 @@ It does not include replacements for standard theories in specialized fields, co
 
 関連導線:
 
-- [`../../01_Sat_Truth/Boundary_Realism_Principle.ja.md`](../../../../CURRENT_WORK_SPACE/Boundary_Realism_Principle.ja.md)
+- [`../../01_Sat_Truth/Boundary_Realism_Principle.md`](../../01_Sat_Truth/Boundary_Realism_Principle.md)
   - 一行説明: Cross-Domain Notes の前提となる境界実在性の原則。
 
 - [`../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md`](../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md)

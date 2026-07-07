@@ -96,24 +96,36 @@ It does not include a bottom-up replacement for contemporary physics, empirical 
   - Role: 英語通約版。
   - Public profile: English commensuration / P1-P2.
 
-- [`PINGER_Hypothesis_and_History_Field_Topology.md`](./PINGER_Hypothesis_and_History_Field_Topology.md)
+- [`PINGER_Hypothesis_and_History_Field_Topology.ja.md`](./PINGER_Hypothesis_and_History_Field_Topology.ja.md)
   - 一行説明: PINGER仮説を履歴場トポロジーの射影として扱い、物理近接語彙との接続境界を整理する研究ノート。
   - EN: A research note treating the PINGER hypothesis as a projection from History-Field Topology and clarifying its boundary with physics-proximate terminology.
   - Role: 履歴場トポロジーの物理位相への射影ノート。
   - Public profile: Physical-projection conceptual note / P1-P2.
 
-- [`Chaos_Theory_and_Logical_Depth_Axis.md`](./Chaos_Theory_and_Logical_Depth_Axis.md)
-  - 一行説明: カオス理論を、内在時間、内的計数時間、論理-深度軸、履歴重力圏の観点から読み直す研究ノート。
+- [`PINGER_Hypothesis_and_History_Field_Topology.en.md`](./PINGER_Hypothesis_and_History_Field_Topology.en.md)
+  - 一行説明:`PINGER_Hypothesis_and_History_Field_Topology.ja.md`の英語通約版。
+  - EN: English commensurated rendering of `PINGER_Hypothesis_and_History_Field_Topology.ja.md`
+  - Role: 英語通約版
+  - Public profile: English commensuration / P1-P2.
+
+- [`Chaos_Theory_and_Logical_Depth_Axis.ja.md`](Chaos_Theory_and_Logical_Depth_Axis.ja.md)
+  -  一行説明: カオス理論を、内在時間、内的計数時間、論理-深度軸、履歴重力圏の観点から読み直す研究ノート。
   - EN: A research note re-reading chaos theory through intrinsic time, internal count-time, the logical-depth axis, and history-gravity domains.
   - Role: カオス理論と論理-深度軸の接続ノート。
   - Public profile: Conceptual correspondence note / P1-P2.
+
+- [`Chaos_Theory_and_Logical_Depth_Axis.en.md`](Chaos_Theory_and_Logical_Depth_Axis.en.md)
+  - 一行説明: `Chaos_Theory_and_Logical_Depth_Axis.ja.md`の英語通約版。
+  - EN: English commensurated rendering of `Chaos_Theory_and_Logical_Depth_Axis.ja.md`
+  - Role: カオス理論と論理-深度軸の接続ノート。
+  - Public profile: English commensuration / P1-P2.
 
 関連導線:
 
 - [`../../02_Raj_Beauty/Scientific_Ontology_and_Science.md`](../../02_Raj_Beauty/Scientific_Ontology_and_Science.md)
   - 一行説明: 存在境界論と現代科学の接続面を整理するRaj層文書。
 
-- [`../Claim_Strength_Table_History_Field_Topology.md`](../Claim_Strength_Table_History_Field_Topology.md)
+- [`../Claim_Strength_and_Publication_Layer_Table.md`](../Claim_Strength_and_Publication_Layer_Table.md)
   - 一行説明: 履歴場トポロジー関連命題の主張強度管理表。
 
 - [`../README.md`](../README.md)

@@ -1,9 +1,9 @@
-# 非対称性の仮安定化と再照合
+# 非対称性の仮安定化と再照合 / Asymmetry Stabilization and ReCollation
 ## 宇宙から文化までをロック機構として読む存在論的モデル
 
 > Status: Research note
 > Scope: asymmetry stabilization, cosmological analogy, life, civilization, culture, recollation
-> Language: Japanese authoritative; English commensuration pending
+> Language: ja
 > Claim strength: S2/S3; conceptual model, not a physics claim
 
 ---

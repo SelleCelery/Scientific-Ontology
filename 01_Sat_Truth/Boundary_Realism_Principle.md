@@ -4,7 +4,7 @@
 > Status: Foundational principle
 > Scope: boundary realism, ontological reserve, AMP repositioning, qualia premise
 > Language: ja+en
-> Claim profile: S2/S3; conceptual framework, not an empirical physics claim
+> Claim strength: S2/S3; conceptual framework, not an empirical physics claim
 
 ## 0. 位置づけ
 

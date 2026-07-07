@@ -3,7 +3,7 @@
 
 > Status: Cross-domain ontological note
 > Scope: boundary ethics, return, retaliation, responsibility processing, maturation, negentropy economy, Kantian commensuration
-> Language: Japanese authoritative; English commensuration pending
+> Language: ja
 > Claim strength: S2/S3; conceptual model, not legal doctrine, political prescription, or empirical economics
 
 ## 0. 位置づけ
@@ -383,9 +383,9 @@
 
 ## 20. 関連文書
 
-- `Boundary_Realism_Principle.ja.md`
-- `Asymmetry_Stabilization_and_ReCollation.ja.md`
-- `Narrative_Truth_and_Structural_Reading.ja.md`
-- `../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md`
-- `../Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md`
-- `../../03_Tam_Goodness/Boundary_Ethics_Model.md`
+- [`Asymmetry_Stabilization_and_ReCollation.ja.md`](./Asymmetry_Stabilization_and_ReCollation.ja.md)
+- [`Narrative_Truth_and_Structural_Reading.ja.md`](./Narrative_Truth_and_Structural_Reading.ja.md)
+- [`../../01_Sat_Truth/Boundary_Realism_Principle.md`](../../01_Sat_Truth/Boundary_Realism_Principle.md)
+- [`../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md`](../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md)
+- [`../Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md`](../Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md)
+- [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)

@@ -2,7 +2,7 @@
 
 > Status: Research note draft  
 > Scope: chaos theory, nonlinear determinism, internal count-time, intrinsic time, logical-depth axis, residuals, residues, history-field correspondence, history-gravity domain  
->Language: Japanese authoritative text; English commensuration pending
+>Language: ja
 >Claim strength: U/E -> S
 
 ---
@@ -33,6 +33,9 @@
 
 本稿の中心は、カオス理論そのものを拡張することではない。  
 カオス理論が示す「決定論的構造と予測不能性の両立」を入口として、外的時系列だけでは扱いきれない履歴差分、内在時間、論理-深度軸の問題を整理することである。
+
+物理近接語彙、クレームの範囲、およびクレーム外の範囲の取り扱いについては、以下を参照のこと。
+- [`Physics_Correspondence_Policy.en.md`](../../00_Overview/Physics_Correspondence_Policy.en.md).
 
 ---
 
@@ -114,11 +117,8 @@
 本稿では、少なくとも次の三つを区別する。
 
 1. 内的計数時間
-    
 2. 内在時間
-    
 3. 論理-深度軸
-    
 
 この三つは連続しているが、同一ではない。
 
@@ -418,9 +418,3 @@
 
 この見方は、カオス理論そのものではない。  
 だが、カオス理論が示す「決定論的構造と予測不能性の両立」は、存在境界論において、外的時系列だけでは見えない履歴構造を考えるための重要な入口となる。
-
----
-
-## Index Note / Research Notes Index 用メモ
-
-`Chaos_Theory_and_Logical_Depth_Axis.md` — カオス理論を時系列的非線形決定論として尊重したうえで、予測不能に見える差分がどのように履歴差分・残差保持・論理-深度軸へ移行するかを検討する研究ノート。内的計数時間、内在時間、論理-深度軸、履歴重力圏を区別し、偶然に見える出来事が履歴場内部では構造的に強く拘束されている場合を扱う。
