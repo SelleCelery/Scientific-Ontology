@@ -1,10 +1,10 @@
 # Public document manifest for Scientific Ontology / 存在境界論
-# Version: 0.1.1
+# Version: 0.2.0
 
 manifest:
-  version: "0.1.1"
+  version: "0.2.0"
   role: "public-document-ledger"
-  coverage: "partial-seed"
+  coverage: "partial-seed-with-v4.3-core-contracts"
   default_severity: "warning-only"
   release_gate_severity: "error"
   principle: >
@@ -15,6 +15,32 @@ manifest:
   note: >
     This manifest is an initial public-document registry seed.
     It is not yet a complete inventory of all public Markdown files.
+
+
+  relation_contract_policy:
+    applies_to: "documents participating in a coordination_group"
+    canonical_location: "tools/docs_manifest.yml"
+    markdown_projection: >
+      Coordinated documents may include short human-readable relation and
+      depth-interface summaries, but this manifest owns the machine-readable
+      contract.
+    enforcement:
+      normal: "warning"
+      release_gate: "error for duplicate ownership, broken targets, missing return paths, or missing depth interfaces"
+    principles:
+      - "Each concept ID has one canonical owner."
+      - "Importing a concept permits reference and application, not silent redefinition."
+      - "Exports state what a document contributes to downstream documents."
+      - "Tests identify application documents or downstream models that expose the claim to operational feedback."
+      - "Returns-to relations carry failure, residual, or revision payloads back upstream."
+      - "A depth interface must preserve unresolved material and specify a return path."
+      - "Cycles are allowed only when the relation type and returned payload are explicit."
+
+  concept_id_policy:
+    syntax: "lower_snake_case"
+    stability: "Concept IDs remain stable even when visible Japanese or English labels change."
+    path_rule: "Document paths use repository-relative POSIX separators."
+    private_boundary: "Private-core paths and private implementation identifiers must not be indexed."
 
   path_policy:
     separator: "/"
@@ -115,6 +141,72 @@ layers:
     label_en: "Private Core Not Included"
     default_public_profile: "P3 marker only"
 
+
+coordination_groups:
+  v4_3_core_five_document_contract:
+    label_ja: "v4.3.0 中核5文書競合防止契約"
+    label_en: "v4.3.0 Core Five-Document Non-Competition Contract"
+    purpose: >
+      Distribute conceptual responsibility across five documents without
+      flattening their differences or allowing each document to reproduce the
+      entire system.
+    documents:
+      - "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+      - "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+      - "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+      - "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+      - "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+    invariant:
+      - "The concept network maps positions and return paths; it does not become a compressed encyclopedia."
+      - "Cognitive-axis theory owns formation, stabilization, and transformation of cognitive direction."
+      - "Axiom modules own comparison, commensuration, suspension, and preservation of untranslatable residuals."
+      - "Truth management owns purpose commitment, sharing, world formation, and boundary CA."
+      - "The organizational model owns responsibility, ports, protocols, audit, and operational return paths."
+    depth_port_requirement: true
+    open_question_requirement: true
+    relation_cycle_policy: "typed-return-cycles-allowed"
+
+concept_ownership:
+  epistemic_boundary_conditions:
+    canonical_owner: "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md"
+    other_documents: "reference_or_apply_only"
+  meaning_generation:
+    canonical_owner: "01_Sat_Truth/Meaning_Generation_Model.md"
+    other_documents: "reference_or_apply_only"
+  conceptual_network_topology:
+    canonical_owner: "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+    other_documents: "navigation_reference_only"
+  aporia_registry:
+    canonical_owner: "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+    other_documents: "submit_open_questions_and_residuals"
+  entropy_attributed_difference:
+    canonical_owner: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+    other_documents: "reference_or_apply_only"
+  cognitive_axis_formation:
+    canonical_owner: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+    other_documents: "reference_or_apply_only"
+  worldview_commensuration_protocol:
+    canonical_owner: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+    other_documents: "use_protocol_without_redefining_it"
+  core_invariant_and_operational_drift:
+    canonical_owner: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+    other_documents: "reference_or_apply_only"
+  first_shared_and_world_forming_purpose:
+    canonical_owner: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+    other_documents: "reference_or_operationalize_only"
+  boundary_ca:
+    canonical_owner: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+    other_documents: "implement_or_return_results"
+  organizational_boundary:
+    canonical_owner: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+    other_documents: "reference_or_apply_only"
+  responsibility_boundary:
+    canonical_owner: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+    other_documents: "reference_or_apply_only"
+  port_protocol_and_audit:
+    canonical_owner: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+    other_documents: "implement_without_redefining_the_core_model"
+
 documents:
   - path: "README.md"
     document_type: "root_readme"
@@ -164,3 +256,456 @@ documents:
     state: "planned"
     role_ja: "力・返り・責任処理の境界倫理モデル"
     role_en: "Boundary-ethics model of power, return, and responsibility processing"
+
+  - path: "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md"
+    document_type: "assertion_document"
+    title_ja: "境界認識批判"
+    title_en: "Boundary Epistemological Critique"
+    layer: "01_Sat_Truth"
+    status: "Foundational principle"
+    scope: "epistemic boundary conditions, synchronization, collation, residual preservation, false closure"
+    public_profile: "P1-P2"
+    internal_profile:
+      S: "S3-S4"
+      E: "E2-E3"
+      U: "U1"
+      R: "R0-R2"
+      V: "V0-V1"
+    state: "public-candidate"
+    role_ja: "知の成立条件と失敗条件の定義所有者"
+    role_en: "Canonical owner of epistemic validity and failure conditions"
+
+  - path: "01_Sat_Truth/Meaning_Generation_Model.md"
+    document_type: "assertion_document"
+    title_ja: "意味生成モデル"
+    title_en: "Meaning Generation Model"
+    layer: "01_Sat_Truth"
+    status: "Model"
+    scope: "meaning loop, qualia, history, intrinsic time, meaning formation"
+    public_profile: "P1-P2.5"
+    internal_profile:
+      S: "S3-S4"
+      E: "E2-E3"
+      U: "U1"
+      R: "R1-R3"
+      V: "V0-V1"
+    state: "public-candidate"
+    role_ja: "情報が意味として成立する条件の定義所有者"
+    role_en: "Canonical owner of meaning-generation conditions"
+
+  - path: "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+    document_type: "assertion_document"
+    title_ja: "存在境界論 概念ネットワーク"
+    title_en: "Scientific Ontology Concept Network"
+    layer: "00_Overview"
+    status: "Methodological note"
+    scope: "concept topology, reading routes, non-closure, aporia management, document relations"
+    public_profile: "P1-P2"
+    internal_profile:
+      S: "S4-S5"
+      E: "E3"
+      U: "U1"
+      R: "R0-R5 map"
+      V: "V0-V1"
+    state: "public-candidate"
+    role_ja: "理論間の位置関係、返路、アポリアを管理する全体地図"
+    role_en: "System map for conceptual positions, return paths, and aporia"
+    coordination_group: "v4_3_core_five_document_contract"
+    logical_contract:
+      contract_id: "concept_network"
+      owns:
+        - "conceptual_network_topology"
+        - "document_role_mapping"
+        - "aporia_registry"
+      imports:
+        - "epistemic_boundary_conditions"
+        - "cognitive_axis_formation"
+        - "meaning_generation"
+        - "worldview_commensuration_protocol"
+        - "first_shared_and_world_forming_purpose"
+        - "organizational_boundary"
+      exports:
+        - "typed_reading_routes"
+        - "document_position_map"
+        - "open_aporia_map"
+        - "cross-layer_return_paths"
+      tests:
+        - target: "README.md"
+          relation: "navigation_consistency"
+          evidence: "The public entrance reflects current canonical documents and reading routes."
+        - target: "00_Overview/Claim_Strength_and_Publication_Layer_Table.md"
+          relation: "publication_consistency"
+          evidence: "Document roles and public handling remain aligned."
+      returns_to:
+        - target: "01_Sat_Truth/Boundary_Realism_Principle.md"
+          payload:
+            - "public-boundary conflict"
+            - "ontological overreach"
+        - target: "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+          payload:
+            - "new aporia"
+            - "unassigned concept"
+            - "broken return path"
+      depth_interface:
+        entry_signals:
+          - "unresolved cross-document residual"
+          - "missing link between layers"
+          - "conflict that cannot be settled on the current logical plane"
+        retains:
+          - "aporia"
+          - "non-closure"
+          - "unassigned residual"
+        delegates_to:
+          - "applied_metaphysics_research"
+          - "intrinsic_time_research"
+        return_path:
+          - "boundary operation"
+          - "publication handling"
+          - "document-role revision"
+        closure_policy: "The overview may register and route an aporia but may not resolve a high-strength hypothesis by overview authority."
+      delegates:
+        - concept: "cognitive_axis_formation"
+          target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        - concept: "worldview_commensuration_protocol"
+          target: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+        - concept: "first_shared_and_world_forming_purpose"
+          target: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+        - concept: "organizational_boundary"
+          target: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+      explicit_open_questions:
+        - "Which unresolved concepts still lack a canonical owner?"
+        - "Where does a cross-layer translation preserve vocabulary but lose structure?"
+        - "Which application failures require revision of the system map rather than a local fix?"
+
+  - path: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+    document_type: "assertion_document"
+    title_ja: "エントロピー属性つき差分と認識軸生成"
+    title_en: "Entropy-Attributed Difference and Cognitive Axis Formation"
+    layer: "02_Raj_Beauty"
+    status: "Model"
+    scope: "difference, attention, abstraction, sensibility, understanding, value, cost, residual, cognitive-axis formation"
+    public_profile: "P2-P2.5"
+    internal_profile:
+      S: "S2-S3"
+      E: "E2-E3"
+      U: "U1"
+      R: "R1-R2"
+      V: "V0-V1"
+    state: "public-candidate"
+    role_ja: "認識方向の生成、安定、変形の定義所有者"
+    role_en: "Canonical owner of cognitive-direction formation, stabilization, and transformation"
+    coordination_group: "v4_3_core_five_document_contract"
+    logical_contract:
+      contract_id: "cognitive_axis_formation"
+      owns:
+        - "entropy_attributed_difference"
+        - "attention_and_abstraction_dynamics"
+        - "cognitive_axis_formation"
+        - "cognitive_axis_stabilization"
+        - "cognitive_axis_transformation"
+      imports:
+        - "epistemic_boundary_conditions"
+        - "meaning_generation"
+      exports:
+        - "stabilized_attention_abstraction_pattern"
+        - "cognitive_axis"
+        - "residual_profile"
+        - "axis_transformation_conditions"
+      tests:
+        - target: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+          relation: "downstream_commensuration"
+          evidence: "The exported axis can be compared without becoming a diagnosis or personality type."
+        - target: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+          relation: "purpose_precondition"
+          evidence: "Purpose selection can identify the cognitive weighting from which it arose."
+      returns_to:
+        - target: "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md"
+          payload:
+            - "failure of epistemic distinction"
+            - "false closure"
+            - "unclassifiable residual"
+        - target: "01_Sat_Truth/Meaning_Generation_Model.md"
+          payload:
+            - "difference that becomes salient but not meaningful"
+            - "meaning-loop instability"
+      depth_interface:
+        entry_signals:
+          - "persistent residual across repeated perception"
+          - "axis transformation unexplained by plane-level description"
+        retains:
+          - "history dependence"
+          - "meaning pressure"
+          - "unresolved temporal ordering"
+        delegates_to:
+          - "meaning_loop"
+          - "intrinsic_time"
+          - "logical_depth_axis"
+        return_path:
+          - "revised attention-abstraction model"
+          - "axis transformation condition"
+          - "explicit open question"
+        closure_policy: "Intrinsic time and logical-depth hypotheses remain interfaces, not completed proofs inside the public cognitive-axis model."
+      delegates:
+        - concept: "epistemic_boundary_conditions"
+          target: "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md"
+        - concept: "meaning_generation"
+          target: "01_Sat_Truth/Meaning_Generation_Model.md"
+        - concept: "worldview_commensuration_protocol"
+          target: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+      explicit_open_questions:
+        - "How can an axis change without coercive intervention or diagnostic classification?"
+        - "When do multiple cognitive axes coexist rather than collapse into one dominant axis?"
+        - "How should residuals alter later attention without being overinterpreted?"
+
+  - path: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+    document_type: "assertion_document"
+    title_ja: "認識ブリッジとしての選択公理モジュール"
+    title_en: "Optional Axiom Modules as Cognitive Bridge"
+    layer: "03_Tam_Goodness"
+    status: "Protocol"
+    scope: "worldview comparison, commensuration, core invariant, operational drift, translation residual, boundary protocol"
+    public_profile: "P1-P2"
+    internal_profile:
+      S: "S2-S3"
+      E: "E1-E2"
+      U: "U1"
+      R: "R2-R3"
+      V: "V0-V1"
+    state: "public-candidate"
+    role_ja: "異なる認識形式を比較・通約・保留する境界プロトコル"
+    role_en: "Boundary protocol for comparing, commensurating, and suspending cognitive frameworks"
+    coordination_group: "v4_3_core_five_document_contract"
+    logical_contract:
+      contract_id: "optional_axiom_bridge"
+      owns:
+        - "worldview_commensuration_protocol"
+        - "core_invariant_and_operational_drift"
+        - "translation_residual"
+        - "connection_type_classification"
+      imports:
+        - "cognitive_axis"
+        - "residual_profile"
+      exports:
+        - "candidate_purposes"
+        - "hidden_costs"
+        - "excluded_boundaries"
+        - "untranslatable_residuals"
+        - "conditional_connection_map"
+      tests:
+        - target: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+          relation: "purpose_selection_input"
+          evidence: "Candidate purposes retain their hidden costs and excluded boundaries."
+        - target: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+          relation: "cross-worldview_boundary_test"
+          evidence: "Different value systems can interact without forced integration."
+      returns_to:
+        - target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+          payload:
+            - "axis pattern cannot be reconstructed"
+            - "attention-abstraction contradiction"
+        - target: "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+          payload:
+            - "untranslatable residual"
+            - "new non-commensurable region"
+      depth_interface:
+        entry_signals:
+          - "core invariants remain incompatible after surface translation"
+          - "shared vocabulary hides different operational consequences"
+        retains:
+          - "translation residual"
+          - "non-commensurable region"
+          - "unresolved ethical cost"
+        delegates_to:
+          - "historical_context_research"
+          - "metaphysical_comparison"
+          - "aporia_registry"
+        return_path:
+          - "conditional connection"
+          - "explicit non-connection"
+          - "candidate purpose with cost annotation"
+        closure_policy: "The protocol may classify a relation as incompatible or open; it must not force synthesis merely to complete the map."
+      delegates:
+        - concept: "cognitive_axis_formation"
+          target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        - concept: "first_shared_and_world_forming_purpose"
+          target: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+      explicit_open_questions:
+        - "When is non-translation more responsible than partial translation?"
+        - "How should power asymmetry alter a nominally mutual commensuration process?"
+        - "Which residuals should remain open rather than become candidate purposes?"
+
+  - path: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+    document_type: "assertion_document"
+    title_ja: "真理の経営学｜目的・共有・境界によるPDCAの再定義"
+    title_en: "Truth Management and Boundary PDCA"
+    layer: "00_Overview"
+    status: "Methodological note"
+    scope: "purpose, sharing, world formation, boundary CA, PDCA reinterpretation, historical and organizational application"
+    public_profile: "P1-P2"
+    internal_profile:
+      S: "S3-S4"
+      E: "E2"
+      U: "U1-U2"
+      R: "R2-R3"
+      V: "V0-V1"
+    state: "public-candidate"
+    role_ja: "候補目的を第一義として選び、共有後の世界を境界CAで再照合する運用モデル"
+    role_en: "Operational model for purpose commitment, shared world formation, and boundary CA"
+    coordination_group: "v4_3_core_five_document_contract"
+    logical_contract:
+      contract_id: "truth_management"
+      owns:
+        - "first_shared_and_world_forming_purpose"
+        - "boundary_ca"
+        - "pdca_reinterpretation"
+        - "purpose_recommitment"
+      imports:
+        - "candidate_purposes"
+        - "hidden_costs"
+        - "excluded_boundaries"
+        - "untranslatable_residuals"
+        - "cognitive_axis"
+      exports:
+        - "purpose_contract"
+        - "preserved_history_requirements"
+        - "forbidden_externalizations"
+        - "stop_conditions"
+        - "boundary_ca_requirements"
+      tests:
+        - target: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+          relation: "organizational_operationalization"
+          evidence: "Purpose becomes responsibility, port, protocol, audit, and stop conditions."
+        - target: "04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md"
+          relation: "application_feedback"
+          evidence: "The purpose survives contact with implementation, responsibility, and re-collation requirements."
+      returns_to:
+        - target: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+          payload:
+            - "purpose conflict"
+            - "hidden cost exposed by world formation"
+            - "excluded boundary becomes material"
+        - target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+          payload:
+            - "recognition drift"
+            - "purpose no longer matches the generating cognitive axis"
+        - target: "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+          payload:
+            - "unresolved first-purpose aporia"
+      depth_interface:
+        entry_signals:
+          - "the origin of the first purpose cannot be justified on the current plane"
+          - "historical persistence conflicts with present boundary feedback"
+          - "purpose abandonment conditions remain undecidable"
+        retains:
+          - "origin of first purpose"
+          - "historical persistence"
+          - "unresolved abandonment condition"
+        delegates_to:
+          - "historical_interpretation"
+          - "axiom_commensuration"
+          - "aporia_registry"
+        return_path:
+          - "revised first purpose"
+          - "conditional continuation"
+          - "explicit abandonment or suspension"
+        closure_policy: "A purpose may be provisionally committed, but its origin and persistence may not be treated as self-validating."
+      delegates:
+        - concept: "cognitive_axis_formation"
+          target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        - concept: "worldview_commensuration_protocol"
+          target: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+        - concept: "organizational_boundary"
+          target: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+      explicit_open_questions:
+        - "Who may legitimately define, revise, or abandon a shared first purpose?"
+        - "How should future generations, nature, and absent stakeholders enter boundary CA?"
+        - "When does provisional closure become false closure?"
+
+  - path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+    document_type: "assertion_document"
+    title_ja: "組織境界とポートモデル"
+    title_en: "Organizational Boundary and Port Model"
+    layer: "05_Research_Notes/Cross_Domain_Ontological_Notes"
+    status: "Cross-domain ontological note"
+    scope: "organization, responsibility boundary, ports, protocols, audit, abnormality, externalization, AI, peace"
+    public_profile: "P2"
+    internal_profile:
+      S: "S3-S4"
+      E: "E2"
+      U: "U1-U2"
+      R: "R3"
+      V: "V1-V4"
+    state: "public-candidate"
+    role_ja: "目的を責任、通信、監査、停止、返路へ変換する横断実装モデル"
+    role_en: "Cross-domain model converting purpose into responsibility, communication, audit, stop conditions, and return paths"
+    coordination_group: "v4_3_core_five_document_contract"
+    logical_contract:
+      contract_id: "organizational_boundary_and_ports"
+      owns:
+        - "organizational_boundary"
+        - "responsibility_boundary"
+        - "port_protocol_and_audit"
+        - "organizational_negentropy_definition"
+        - "boundary_update"
+      imports:
+        - "purpose_contract"
+        - "preserved_history_requirements"
+        - "forbidden_externalizations"
+        - "stop_conditions"
+        - "boundary_ca_requirements"
+      exports:
+        - "implementation_specification"
+        - "responsibility_map"
+        - "port_contract"
+        - "audit_requirements"
+        - "open_marker_requirements"
+        - "operational_return_path"
+      tests:
+        - target: "04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md"
+          relation: "ai_application_test"
+          evidence: "Responsibility, stop authority, open markers, and re-collation remain operable."
+        - target: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+          relation: "social_boundary_test"
+          evidence: "Different boundaries can interact without forced absorption or return-path loss."
+      returns_to:
+        - target: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+          payload:
+            - "implementation failure"
+            - "externalized cost"
+            - "purpose-protocol contradiction"
+            - "stop condition not enforceable"
+        - target: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+          payload:
+            - "hidden value conflict"
+            - "untranslated institutional assumption"
+        - target: "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+          payload:
+            - "cross-domain residual without owner"
+      depth_interface:
+        entry_signals:
+          - "responsibility history exceeds the current audit horizon"
+          - "externalized cost returns after organizational closure"
+          - "long-term effects cannot be represented by current ports"
+        retains:
+          - "responsibility history"
+          - "externalized residue"
+          - "long-horizon uncertainty"
+        delegates_to:
+          - "historical_field_analysis"
+          - "social_boundary_research"
+          - "aporia_registry"
+        return_path:
+          - "boundary update"
+          - "port redesign"
+          - "purpose revision request"
+          - "application checklist revision"
+        closure_policy: "Operational closure is provisional and must preserve auditability, stop authority, and a route for delayed returns."
+      delegates:
+        - concept: "first_shared_and_world_forming_purpose"
+          target: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
+        - concept: "worldview_commensuration_protocol"
+          target: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+      explicit_open_questions:
+        - "How should responsibility be distributed without becoming responsibility dilution?"
+        - "How far into the future must an organization preserve a return path?"
+        - "How should the audit system itself be audited when its blind spots are structural?"

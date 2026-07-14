@@ -1,8 +1,8 @@
 # Public maintenance rules for Scientific Ontology / 存在境界論
-# Version: 0.1.0
+# Version: 0.2.0
 
 maintenance_rules:
-  version: "0.1.0"
+  version: "0.2.0"
   role: "terminology-and-maintenance-rules"
   default_severity: "warning"
   principle: >
@@ -162,6 +162,164 @@ maintenance_rules:
         public_handling: "do not expose"
       - term: "Role AP"
         public_handling: "do not expose unless explicitly public and abstracted"
+
+
+  conceptual_contract_rules:
+    source_of_truth: "tools/docs_manifest.yml"
+    applies_to_coordination_group: "v4_3_core_five_document_contract"
+    principle: >
+      Mechanical checks should detect broken ownership, relations, and return
+      paths. Human or LLM review should decide whether prose has silently
+      redefined an imported concept.
+
+    ownership_rules:
+      canonical_owner_unique:
+        severity: "error"
+        rule: "Each concept ID in concept_ownership must have exactly one canonical_owner."
+      owned_concept_declared:
+        severity: "error"
+        rule: "Every item in logical_contract.owns must appear in concept_ownership or be explicitly marked document_local."
+      imported_concept_not_reowned:
+        severity: "error"
+        rule: "A document must not list the same concept in both owns and imports."
+      imported_definition_drift:
+        severity: "warning"
+        review: "LLM"
+        rule: >
+          Compare prose definitions against the canonical owner. Flag passages
+          that appear to redefine an imported concept rather than reference,
+          apply, test, or operationalize it.
+      owner_path_exists:
+        severity: "error"
+        release_gate: true
+
+    relation_rules:
+      required_fields:
+        severity: "error"
+        fields:
+          - "owns"
+          - "imports"
+          - "exports"
+          - "tests"
+          - "returns_to"
+          - "depth_interface"
+          - "delegates"
+          - "explicit_open_questions"
+      target_path_exists:
+        severity: "error"
+        applies_to:
+          - "tests.target"
+          - "returns_to.target"
+          - "delegates.target"
+      export_has_consumer:
+        severity: "warning"
+        rule: "Each export should be imported, tested, or named as a public output by at least one downstream document."
+      import_has_owner:
+        severity: "error"
+        rule: "Each imported canonical concept must resolve to concept_ownership."
+      return_payload_required:
+        severity: "error"
+        rule: "Every returns_to relation must name a non-empty payload."
+      cycle_policy:
+        severity: "error"
+        allowed_when:
+          - "The backward edge is expressed through returns_to."
+          - "The returned payload is explicit."
+          - "The forward relation is imports, exports, delegates, or tests."
+        forbidden_when:
+          - "Two documents both claim canonical ownership of the same concept."
+          - "A cycle has no revision, residual, failure, or test payload."
+
+    depth_port_rules:
+      required_for_coordinated_documents: true
+      required_fields:
+        - "entry_signals"
+        - "retains"
+        - "delegates_to"
+        - "return_path"
+        - "closure_policy"
+      missing_depth_interface:
+        severity: "error"
+      empty_retains:
+        severity: "error"
+        reason: "A depth port that preserves nothing is only a disguised hand-off."
+      empty_return_path:
+        severity: "error"
+        reason: "Deep exploration must return to a public boundary, model revision, or explicit open question."
+      false_depth_closure:
+        severity: "warning"
+        review: "LLM"
+        markers:
+          - "proves the whole system"
+          - "fully resolves"
+          - "complete explanation"
+          - "therefore all"
+        rule: >
+          Flag claims that use a depth interface to close an unresolved
+          metaphysical, physical, psychological, or institutional question
+          without an explicit claim boundary.
+      orphan_depth_delegate:
+        severity: "warning"
+        rule: "A conceptual delegates_to target may remain non-path-based, but it must be named in the concept network or aporia registry."
+      open_question_required:
+        severity: "warning"
+        rule: "Each coordinated document should retain at least one explicit open question."
+
+    five_document_non_competition_rules:
+      concept_network:
+        may:
+          - "map"
+          - "route"
+          - "register aporia"
+          - "summarize roles"
+        must_not:
+          - "replace detailed definitions owned by the other four documents"
+      cognitive_axis_formation:
+        may:
+          - "define formation, stabilization, and transformation of cognitive direction"
+        must_not:
+          - "own epistemic validity, meaning generation, worldview ranking, or purpose management"
+      optional_axiom_bridge:
+        may:
+          - "compare"
+          - "commensurate"
+          - "suspend"
+          - "retain translation residuals"
+        must_not:
+          - "diagnose persons"
+          - "rank worldviews as universally superior"
+          - "force synthesis"
+      truth_management:
+        may:
+          - "commit purpose"
+          - "describe sharing and world formation"
+          - "run boundary CA"
+        must_not:
+          - "redefine cognitive-axis formation"
+          - "erase the costs returned by applications"
+      organizational_boundary_and_ports:
+        may:
+          - "operationalize purpose as responsibility, ports, protocols, audit, and stop conditions"
+        must_not:
+          - "claim authority to define the first purpose"
+          - "treat implementation closure as final truth"
+
+    ai_review_workflow:
+      ordinary_edit:
+        - "Validate YAML structure and target paths."
+        - "Report duplicate ownership and missing return payloads."
+        - "Warn about incomplete depth interfaces."
+      pull_request:
+        - "Compare changed prose with owns/imports/delegates."
+        - "Detect silent concept redefinition."
+        - "Summarize new residuals and open questions."
+      release_gate:
+        - "Require all five coordinated documents to exist."
+        - "Require unique canonical ownership."
+        - "Require valid depth interfaces and return paths."
+        - "Require application tests or an explicit reason for absence."
+        - "Generate a concept-contract report for human approval."
+
 
   release_rules:
     version_metadata:

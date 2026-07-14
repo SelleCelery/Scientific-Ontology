@@ -10,7 +10,7 @@ This text redefines the conditions under which knowledge forms through boundary,
 
 It is not an attempt to authorize the system through philosopher names. Existing traditions are handled in the annotation file as acts of collation, not as authority claims.
 
-For general translation and terminology policy, see `../Translation_Note.md`, `../Publication_and_Commensuration_Policy.md`, and the term collision registries.
+For general translation and terminology policy, see [`../Translation_Note.md`](../Translation_Note.md), [`../Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md), and the term collision registries.
 
 ---
 

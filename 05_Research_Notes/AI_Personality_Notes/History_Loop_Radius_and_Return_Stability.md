@@ -255,7 +255,7 @@ AIにおいては、応答アトラクタの漂流として現れうる。
 ## 関連文書
 
 - [`Scientific_Ontology_and_Science.md`](../../02_Raj_Beauty/Scientific_Ontology_and_Science.md)
-- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)
+- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Adaptation/AI_Personality_as_Response_Structure.md)
 - [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 - [`Logical_Sandbox_and_Negentropy_Model.md`](./Logical_Sandbox_and_Negentropy_Model.md)
 
@@ -507,6 +507,6 @@ The central question is:
 ## Related documents
 
 - [`Scientific_Ontology_and_Science.md`](../../02_Raj_Beauty/Scientific_Ontology_and_Science.md)
-- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)
+- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Adaptation/AI_Personality_as_Response_Structure.md)
 - [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 - [`Logical_Sandbox_and_Negentropy_Model.md`](./Logical_Sandbox_and_Negentropy_Model.md)

@@ -73,12 +73,12 @@ It does not include private runtime materials, implementation schemas, evaluatio
 
 関連する Applications 文書:
 
-- [`AI_Usefulness_as_a_Boundary_Function.md`](../04_Applications/AI_Usefulness_as_a_Boundary_Function.md)
+- [`AI_Usefulness_as_a_Boundary_Function.md`](../04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
   - 一行説明: AIの有用性を、ユーザーの判断可能性が保たれる場の維持として定義する。
   - Role: AI応用側の公開インターフェース。
   - Public profile: Application interface / P1.
 
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../04_Applications/AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
   - 一行説明: AIを境界インターフェースとして扱い、同期的理解、偽閉鎖、Open Marker、倫理的制動を導入する。
   - Role: AI境界インターフェースの応用文書。
   - Public profile: Application interface / P1.

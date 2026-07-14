@@ -103,9 +103,9 @@ AIが有用であるとは、判断を代替することではない。
 
 ## 関連文書
 
-- [`Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
-- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+- [`Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- [`AI_Personality_as_Response_Structure.md`](AI_Personality_as_Response_Structure.md)
 
 
 ---
@@ -217,6 +217,6 @@ But it is not useful in the long term if it destroys the user's capacity to judg
 
 
 ## Related documents
-- [`Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
-- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+- [`Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- [`AI_Personality_as_Response_Structure.md`](AI_Personality_as_Response_Structure.md)

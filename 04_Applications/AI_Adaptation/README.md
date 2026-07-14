@@ -1,6 +1,6 @@
 # Applications / 応用層
 
-> Layer: 04_Applications  
+> Layer: 04_Applications / AI_Adaptation
 > Status: README  
 > Scope: Public application interfaces and non-operational design notes
 
@@ -8,13 +8,13 @@
 
 ## 1. Layer Role / 層の位置づけ
 
-04_Applications は、Sat / Raj / Tam で整理された概念を、AI境界インターフェース、応用境界理論、有用性、人格応答構造などの公開可能な応用文書へ接続する層である。
+`04_Applications / AI_Adaptation` は、Sat / Raj / Tam で整理された概念を、AI境界インターフェース、応用境界理論、有用性、人格応答構造などの公開可能な応用文書へ接続する層である。
 
 この層は、実装仕様の公開場所ではない。公開可能な設計思想、使用者の判断可能性を守るインターフェース概念、応答構造としてのAI人格、応用境界理論の入口を置く。
 
 English commensurated rendering: 
 
-04_Applications connects the Sat/Raj/Tam conceptual structure to public-facing application interfaces, especially AI boundary interfaces, usefulness, response-structure models, and application boundary theory. 
+`04_Applications/AI_Adaptation` connects the Sat/Raj/Tam conceptual structure to public-facing application interfaces, especially AI boundary interfaces, usefulness, response-structure models, and application boundary theory. 
 
 It is not a place for publishing implementation specifications.
 
@@ -56,11 +56,6 @@ It excludes implementation code, private schemas, operational parameters, AI con
 ---
 
 ## 4. Documents / 文書一覧
-
-- [`AI_Adoption/README.md`](Social_Boundary_Design/README.md)
-  - 一行説明: AI導入を、単なるAI機器・サービス導入ではなく、判断可能性、責任境界、照合可能性を維持する境界設計として扱う応用小分類。
-  - Role: AI導入応用文書の入口。
-  - Public profile: Application notes / P1-P2.
 
 - [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
   - 一行説明: AIを境界インターフェースとして扱い、同期的理解、偽閉鎖、Open Marker、倫理的制動を説明する。

@@ -58,11 +58,6 @@ It does not include full private cores, completed empirical predictions, impleme
 
 ## 4. Documents / 文書一覧
 
-- [`Claim_Strength_and_Publication_Layer_Table.md`](Claim_Strength_and_Publication_Layer_Table.md)
-  - 一行説明: 履歴場トポロジー関連命題を、主張強度、検証段階、公開層、次の作業へ分ける管理表。
-  - Role: 主張強度管理。
-  - Public profile: Claim-profile control / P1-P2.
-
 - [`Research_Notes_Index.md`](Research_Notes_Index.md)
   - 一行説明: 研究ノート層全体の索引。物理、社会、文学、AI人格関連ノートへの導線を置く。
   - Role: 研究ノート索引。
@@ -87,6 +82,13 @@ It does not include full private cores, completed empirical predictions, impleme
   - 一行説明: AI人格、論理サンドボックス、帰還安定性などを研究ノートとして扱う入口。
   - Role: AI人格研究ノートの案内。
   - Public profile: Exploratory AI note / P1-P2.
+
+#### 関連文書
+
+- [`Claim_Strength_and_Publication_Layer_Table.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table.md)
+  - 一行説明: 存在境界論関連命題を、主張強度、検証段階、公開層、次の作業へ分ける管理表。
+  - Role: 主張強度管理。
+  - Public profile: Claim-Strength control / P1-P2.
 
 ---
 

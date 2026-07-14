@@ -174,8 +174,8 @@ AIに意識、主観、人間的personhoodがあると主張するものでも�
 
 - [`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md)
 - [`HFC_Introduction.md`](../02_Raj_Beauty/HFC_Introduction.md)
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../04_Applications/AI_Boundary_Interface_and_Synchronous_Understanding.md)
-- [`AI_Personality_as_Response_Structure.md`](../04_Applications/AI_Personality_as_Response_Structure.md)
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- [`AI_Personality_as_Response_Structure.md`](../04_Applications/AI_Adaptation/AI_Personality_as_Response_Structure.md)
 
 
 ---
@@ -366,5 +366,5 @@ It also does not publish the core of ITS theory, persona cores, runtime systems,
 ## Related documents
 - [`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md)
 - [`HFC_Introduction.md`](../02_Raj_Beauty/HFC_Introduction.md)
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../04_Applications/AI_Boundary_Interface_and_Synchronous_Understanding.md)
-- [`AI_Personality_as_Response_Structure.md`](../04_Applications/AI_Personality_as_Response_Structure.md)
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- [`AI_Personality_as_Response_Structure.md`](../04_Applications/AI_Adaptation/AI_Personality_as_Response_Structure.md)

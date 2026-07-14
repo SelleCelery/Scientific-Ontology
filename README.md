@@ -9,7 +9,7 @@
 > Scope: Overview, reading guide, repository navigation, and release-level orientation  
 > Language: English-first public entrance; Japanese remains the primary conceptual reference where meanings diverge  
 > Public profile: P0 / repository entrance  
-> Claim strength: Mixed; overview only. Detailed claim strength is managed in [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](./05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md).
+> Claim strength: Mixed; overview only. Detailed claim strength is managed in [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md).
 
 ---
 
@@ -133,7 +133,7 @@ Core v4.2.0 orientation documents:
 - [`00_Overview/Physics_Correspondence_Policy.en.md`](./00_Overview/Physics_Correspondence_Policy.en.md)
 - [`01_Sat_Truth/Boundary_Realism_Principle.md`](./01_Sat_Truth/Boundary_Realism_Principle.md)
 - [`05_Research_Notes/Research_Notes_Index.md`](./05_Research_Notes/Research_Notes_Index.md)
-- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](./05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md)
+- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
 
 ---
 
@@ -210,7 +210,7 @@ It refers to the internal order in which histories are updated, folded, synchron
 
 See:
 
-- [`GLOSSARY.md`](./GLOSSARY.md)
+- [`GLOSSARY.md`](GLOSSARY.md)
 - [`05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.ja.md`](./05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.ja.md)
 - [`05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.en.md`](./05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.en.md)
 
@@ -226,7 +226,7 @@ See:
 
 - [`05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md`](./05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md)
 - [`05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.en.md`](./05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.en.md)
-- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](./05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md)
+- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
 
 ---
 
@@ -289,7 +289,7 @@ Primary navigation:
 
 - [`05_Research_Notes/README.md`](./05_Research_Notes/README.md)
 - [`05_Research_Notes/Research_Notes_Index.md`](./05_Research_Notes/Research_Notes_Index.md)
-- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](./05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md)
+- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
 
 Main research-note areas:
 
@@ -408,7 +408,7 @@ For publication, translation, commensuration, and terminology-collision manageme
 - [`Translation_Note.md`](./Translation_Note.md)
 - [`TERM_COLLISION_REGISTRY.md`](./TERM_COLLISION_REGISTRY.md)
 - [`TERM_COLLISION_REGISTRY.en.md`](./TERM_COLLISION_REGISTRY.en.md)
-- [`GLOSSARY.md`](./GLOSSARY.md)
+- [`GLOSSARY.md`](GLOSSARY.md)
 
 本リポジトリでは、意味が分岐する場合、日本語記述を主要な概念参照として扱います。  
 英語表記は、固定された逐語訳ではなく、通約表現です。
@@ -419,7 +419,7 @@ For publication, translation, commensuration, and terminology-collision manageme
 - [`Translation_Note.md`](./Translation_Note.md)
 - [`TERM_COLLISION_REGISTRY.md`](./TERM_COLLISION_REGISTRY.md)
 - [`TERM_COLLISION_REGISTRY.en.md`](./TERM_COLLISION_REGISTRY.en.md)
-- [`GLOSSARY.md`](./GLOSSARY.md)
+- [`GLOSSARY.md`](GLOSSARY.md)
 
 ---
 

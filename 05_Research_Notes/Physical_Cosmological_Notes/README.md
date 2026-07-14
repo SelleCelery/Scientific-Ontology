@@ -125,7 +125,7 @@ It does not include a bottom-up replacement for contemporary physics, empirical 
 - [`../../02_Raj_Beauty/Scientific_Ontology_and_Science.md`](../../02_Raj_Beauty/Scientific_Ontology_and_Science.md)
   - 一行説明: 存在境界論と現代科学の接続面を整理するRaj層文書。
 
-- [`../Claim_Strength_and_Publication_Layer_Table.md`](../Claim_Strength_and_Publication_Layer_Table.md)
+- [`../Claim_Strength_and_Publication_Layer_Table.md`](../../../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
   - 一行説明: 履歴場トポロジー関連命題の主張強度管理表。
 
 - [`../README.md`](../README.md)

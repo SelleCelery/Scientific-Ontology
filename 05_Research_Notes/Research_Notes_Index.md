@@ -18,17 +18,6 @@
 
 ## 1. 文書索引
 
-### 05_Research_Notes 直下
-
-- [存在境界論：主張強度・公開レイヤー対応表/`Claim_Strength_and_Publication_Layer_Table.md`](./Claim_Strength_and_Publication_Layer_Table.md)
-  - 概要: Scientific Ontology 全体における主張強度、誤読リスク、応用リスク、公開レイヤー、検証段階を整理する管理表。S / E / U / P / V を横並びの分類としてではなく、公開判断の順序として扱う。
-  - 領域: 主張強度管理 / 公開レイヤー管理
-  - 主要概念: Sコード、Eコード、Uコード、Pコード、Vコード、公開境界、用語衝突、Research Notes 配置
-  - 接続層: 00 / 02 / 05
-  - 主張強度: 分類器 / 境界管理
-  - 公開強度: P0-P1
-  - 非主張境界: 理論展開そのものではない。個別命題の正しさを証明する表ではなく、公開時の減速・抽象化・配置を管理する表である。
-
 ### Cross_Domain_Ontological_Notes / 横断領域存在論ノート
 
 - [非対称性の仮安定化と再照合/`Asymmetry_Stabilization_and_ReCollation.ja.md`](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md)
@@ -57,6 +46,17 @@
   - 主張強度: Literary/S2-S3
   - 公開強度: P1-P2
   - 非主張境界: 文学的正典の主張ではない。経験的社会理論ではない。物語を事実の代替証明として扱うものではない。
+
+
+- [エントロピー属性つきエネルギーと身体化された認識軸生成](./Cross_Domain_Ontological_Notes/Entropy_Attributed_Energy_and_Embodied_Cognitive_Axis_Formation.md) 
+- 概要: 関心・捨象・価値・コストが、エントロピー属性を帯びた差分と身体定位を通じてどのように認識軸を形成するかを扱う横断領域ノート。選択公理集を、思想分類ではなく、認識軸の安定パターンを配置するための地図として読むための前提文書。  
+- 主要概念: 公理、公理系、エントロピー、エネルギー、認識、認識フィルター
+- 接続層: 03 / 05
+- 主張強度: S2-S3 / E3 / U1-U2
+- 公開強度: P2.5 / V0-V1
+- 非主張境界: 身体、神経、体液、食物、流路などを想起させる語彙に接近するが、医学的・生理学的診断、体質分類、治療法、自己診断には落とさない。  
+    
+  **Handling:** 
 
 ### Physical_Cosmological_Notes / 物理・宇宙論系ノート
 
@@ -175,6 +175,17 @@
   - 非主張境界: 宗教教義ではない。仏教教説の解説ではない。標準物理学上の重力概念ではない。物理主張ではない。
   - 備考: 日本語のみ。英語通約は現時点では予定または保留扱い。
 
+#### 重要参考文書
+
+- [存在境界論：主張強度・公開レイヤー対応表/`Claim_Strength_and_Publication_Layer_Table.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table)
+  - 概要: Scientific Ontology 全体における主張強度、誤読リスク、応用リスク、公開レイヤー、検証段階を整理する管理表。S / E / U / P / V を横並びの分類としてではなく、公開判断の順序として扱う。
+  - 領域: 主張強度管理 / 公開レイヤー管理
+  - 主要概念: Sコード、Eコード、Uコード、Pコード、Vコード、公開境界、用語衝突、Research Notes 配置
+  - 接続層: 00 / 02 / 05
+  - 主張強度: 分類器 / 境界管理
+  - 公開強度: P0-P1
+  - 非主張境界: 理論展開そのものではない。個別命題の正しさを証明する表ではなく、公開時の減速・抽象化・配置を管理する表である。
+
 ---
 
 ## 2. 管理メモ
@@ -204,7 +215,7 @@ The claim-strength and publication-layer labels shown here are public-facing sum
 
 ### Root of 05_Research_Notes
 
-- [Claim Strength and Publication-Layer Table for Scientific Ontology](./Claim_Strength_and_Publication_Layer_Table.md)
+- [Claim Strength and Publication-Layer Table for Scientific Ontology](../../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
   - Summary: A control table for claim strength, misreading risk, application risk, publication layer, and verification stage across Scientific Ontology. S / E / U / P / V are treated not as flat labels but as an ordered publication-decision process.
   - Domain: Claim-strength control / publication-layer control
   - Main concepts: S code, E code, U code, P code, V code, publication boundary, term collision, Research Notes placement

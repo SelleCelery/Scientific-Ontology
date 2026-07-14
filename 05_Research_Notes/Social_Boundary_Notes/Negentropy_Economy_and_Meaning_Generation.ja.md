@@ -373,7 +373,7 @@ Scientific Ontologyにおいては、意味が基底に置かれる。
 - [`Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)  
     境界、害、責任、非破壊的応答を扱う倫理モデル。
 
-- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)  
+- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Adaptation/AI_Personality_as_Response_Structure.md)  
     人格を口調・ロールプレイ・表層キャラクターではなく、応答構造として扱う文書。
 
 - [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)  

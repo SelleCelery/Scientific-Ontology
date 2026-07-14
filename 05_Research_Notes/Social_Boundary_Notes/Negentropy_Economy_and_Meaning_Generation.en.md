@@ -371,7 +371,7 @@ It should not be used as a direct policy proposal, economic doctrine, or empiric
 - [`Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)  
     Ethical treatment of boundaries, harm, responsibility, and non-destructive response.  
 
-- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)  
+- [`AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Adaptation/AI_Personality_as_Response_Structure.md)  
     Personality as response structure rather than tone, roleplay, or surface character.  
 
 - [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)  

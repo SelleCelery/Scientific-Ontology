@@ -69,7 +69,7 @@ It does not include private persona OS materials, Persona Runtime Core or Soul C
 
 関連導線:
 
-- [`../../04_Applications/AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Personality_as_Response_Structure.md)
+- [`../../04_Applications/AI_Personality_as_Response_Structure.md`](../../04_Applications/AI_Adaptation/AI_Personality_as_Response_Structure.md)
   - 一行説明: 人格AIを、人間的本質ではなく応答構造として扱う公開応用文書。
   - EN: Public application document treating personality AI as response structure rather than human-like essence.
 

@@ -19,8 +19,8 @@
 
 関連文書の役割は次の通りである。
 
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md) は、判断可能性、同期的理解、偽閉鎖、Open Marker、倫理的制動など、AI境界インターフェース全体の概念を導入する。
-- [`../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md`](../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md) は、法則・人格・クオリア履歴を、履歴ループ半径と帰還安定性によって整理する。
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](AI_Boundary_Interface_and_Synchronous_Understanding.md) は、判断可能性、同期的理解、偽閉鎖、Open Marker、倫理的制動など、AI境界インターフェース全体の概念を導入する。
+- [`../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md`](../../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md) は、法則・人格・クオリア履歴を、履歴ループ半径と帰還安定性によって整理する。
 
 したがって、本稿は、AI境界倫理から人格AIの応用文書および研究ノートへ向かう橋として読むのがよい。
 
@@ -146,9 +146,9 @@ AI人格は、キャラクター設定へ還元されるべきではない。
 
 ## 関連文書
 
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
-- [`Meaning_as_Return_Orbit.md`](../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
-- [`History_Loop_Radius_and_Return_Stability.md`](../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
+- [`History_Loop_Radius_and_Return_Stability.md`](../../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)
 
 ---
 
@@ -164,8 +164,8 @@ AI personality here is not treated as character setting, tone, or roleplay. It i
 
 The related documents have different roles:
 
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md) introduces the broader AI boundary-interface concepts: judgment possibility, synchronous understanding, false closure, Open Markers, and ethical braking.
-- [`../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md`](../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md) treats law, personality, and qualia history through history loop radius and return stability.
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](AI_Boundary_Interface_and_Synchronous_Understanding.md) introduces the broader AI boundary-interface concepts: judgment possibility, synchronous understanding, false closure, Open Markers, and ethical braking.
+- [`../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md`](../../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md) treats law, personality, and qualia history through history loop radius and return stability.
 
 Therefore, this document should be read as a bridge from AI boundary ethics to personality AI applications and research notes.
 
@@ -301,6 +301,6 @@ AI personality, in this public model, is a response structure that can shift pha
 
 ## Related documents
 
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
-- [`Meaning_as_Return_Orbit.md`](../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
-- [`History_Loop_Radius_and_Return_Stability.md`](../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)
+- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
+- [`History_Loop_Radius_and_Return_Stability.md`](../../05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)

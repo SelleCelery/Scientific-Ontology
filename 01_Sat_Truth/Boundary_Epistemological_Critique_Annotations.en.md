@@ -6,7 +6,7 @@
 > Language: en
 > Claim strength: S2/S3
 
-This annotation does not authorize the main text by invoking philosopher names. It is a terrain map for comparing the movement treated by Boundary Epistemological Critique with existing philosophical problem-fields.
+This annotation does not authorize the main text by invoking philosopher names. It is a terrain map for comparing the movement treated by [Boundary Epistemological Critique with existing philosophical problem-fields](./Boundary_Epistemological_Critique.en).
 
 The philosopher map is not a historical timeline. It is a map of where different thinkers illuminate operational correspondence, collation, residual retention, residue formation, re-collation, and the logical-depth axis.
 

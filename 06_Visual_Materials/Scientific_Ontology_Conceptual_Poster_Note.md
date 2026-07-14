@@ -225,7 +225,7 @@
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md)
-- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md)
+- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 
@@ -276,7 +276,7 @@
 
 関連文書：
 
-- [`04_Applications/Application_Boundary_Theory_Core.md`](../04_Applications/Application_Boundary_Theory_Core.md)
+- [`04_Applications/Application_Boundary_Theory_Core.md`](../04_Applications/AI_Adaptation/Application_Boundary_Theory_Core.md)
 - [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md)
 - [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md)
 - [`03_Tam_Goodness/Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
@@ -534,7 +534,7 @@ Related reading:
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md)
-- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md)
+- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 ### D.3 Lower-left panel
@@ -583,7 +583,7 @@ It presents one judgment-path: a problem that appears flat, economic, or transac
 
 Related reading:
 
-- [`04_Applications/Application_Boundary_Theory_Core.md`](../04_Applications/Application_Boundary_Theory_Core.md)
+- [`04_Applications/Application_Boundary_Theory_Core.md`](../04_Applications/AI_Adaptation/Application_Boundary_Theory_Core.md)
 - [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md)
 - [`05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.en.md`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.en.md)
 - [`03_Tam_Goodness/Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)

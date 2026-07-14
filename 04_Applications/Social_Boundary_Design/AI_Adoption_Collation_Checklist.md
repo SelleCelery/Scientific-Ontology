@@ -15,7 +15,7 @@
 
 本文書は、AI導入を検討・評価・説明するための実務用チェックリストである。
 
-本文書は、Research Note `AI_Adoption_as_Synchronization_Closure.md` で整理した「AI導入は制度的同期閉鎖になりうる」という理論的診断を、日本の行政・自治体DX・公共調達・資格認定・組織運用の文脈で扱える形へ落とした応用文書である。
+本文書は、Research Note [`AI_Adoption_as_Synchronization_Closure.md`](../../05_Research_Notes/Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure) で整理した「AI導入は制度的同期閉鎖になりうる」という理論的診断を、日本の行政・自治体DX・公共調達・資格認定・組織運用の文脈で扱える形へ落とした応用文書である。
 
 ここでいうAI導入とは、AIモデルそのものの性能評価だけを指さない。
 
@@ -401,13 +401,13 @@ AI導入を、より責任あるものにするための照合表である。
 * [`../../05_Research_Notes/Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md`](../../05_Research_Notes/Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md)
   本チェックリストの理論的背景。AI導入が同期閉鎖へ陥る構造を扱う。
 
-* [`../AI_Boundary_Interface_and_Synchronous_Understanding.md`](../AI_Boundary_Interface_and_Synchronous_Understanding.md)
+* [`../AI_Boundary_Interface_and_Synchronous_Understanding.md`](../AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
   判断可能性、同期的理解、偽閉鎖、Open Markerなど、AI境界インターフェースの基礎概念を扱う。
 
-* [`../AI_Usefulness_as_a_Boundary_Function.md`](../AI_Usefulness_as_a_Boundary_Function.md)
+* [`../AI_Usefulness_as_a_Boundary_Function.md`](../AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
   AI有用性を、速度や自動化ではなく、判断が可能であり続ける場を保つ境界機能として扱う。
 
-* [`../Application_Boundary_Theory_Core.md`](../Application_Boundary_Theory_Core.md)
+* [`../Application_Boundary_Theory_Core.md`](../AI_Adaptation/Application_Boundary_Theory_Core.md)
   内部の複雑さを、外部から扱える責任境界へ変換するアプリケーション境界論を扱う。
 
 ---

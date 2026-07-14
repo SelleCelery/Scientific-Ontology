@@ -116,7 +116,7 @@ Open Markerは、AIを研究、執筆、自己理解、倫理、概念開発に�
 
 人格AIへの専用の公開ゲートとしては、次を参照する。
 
-- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+- [`AI_Personality_as_Response_Structure.md`](AI_Personality_as_Response_Structure.md)
 
 
 ## 7. 倫理的制動
@@ -158,9 +158,9 @@ AIを信頼可能にする条件である。
 
 次の既存文書を補助する。
 
-- [`Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
-- [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)
-- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+- [`Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`AI_Usefulness_as_a_Boundary_Function.md`](AI_Usefulness_as_a_Boundary_Function.md)
+- [`AI_Personality_as_Response_Structure.md`](AI_Personality_as_Response_Structure.md)
 
 これらを置き換えるものではない。
 
@@ -289,7 +289,7 @@ This note introduces persona-like continuity only as part of the AI boundary int
 
 For the dedicated public gate to personality AI, see:
 
-- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+- [`AI_Personality_as_Response_Structure.md`](AI_Personality_as_Response_Structure.md)
 
 ---
 
@@ -334,9 +334,9 @@ This note belongs under `03_Tam_Goodness`.
 
 It supports the following public documents:
 
-- [`Boundary_Ethics_Model.md`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
-- [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)
-- [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+- [`Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`AI_Usefulness_as_a_Boundary_Function.md`](AI_Usefulness_as_a_Boundary_Function.md)
+- [`AI_Personality_as_Response_Structure.md`](AI_Personality_as_Response_Structure.md)
 
 It should not replace them.
 

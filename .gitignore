@@ -40,6 +40,9 @@
 !06_Visual_Materials/**
 !99_Private_Core_Not_Included/README.md
 
+# Draft / pre-release files
+# Files or directories whose basename starts with 000 are excluded from public tracking.
+000*
 
 # Public format checker outputs
 public_format_report.md

@@ -11,6 +11,8 @@ Checks:
 - optional external URL reachability
 - optional docs_manifest.yml consistency checks
 - optional maintenance_rules.yml terminology and public-boundary drift checks
+- concept ownership and five-document non-competition contracts
+- typed imports, exports, tests, return paths, delegations, and depth interfaces
 
 The checker is intentionally conservative. It reports clear mechanical failures as
 ERROR and leaves interpretive issues as WARNING/INFO for human or LLM review.
@@ -52,6 +54,8 @@ DEFAULT_EXCLUDED_FILE_NAMES = {
     "public_format_report.json",
     "CHECKER_USAGE.md",
     "CHECKER_EXTENSION_REPORT.md",
+    "concept_contract_report.md",
+    "concept_contract_report.json",
 }
 
 # Pattern exclusions cover Windows/browser duplicate downloads such as
@@ -244,6 +248,9 @@ class CheckResult:
     external_links_checked: int
     manifest_documents_checked: int = 0
     maintenance_term_hits: int = 0
+    contract_documents_checked: int = 0
+    concepts_checked: int = 0
+    contract_relations_checked: int = 0
 
     @property
     def error_count(self) -> int:
@@ -403,6 +410,12 @@ class Manifest:
         self.document_type_values = {str(v) for v in self.manifest.get("document_type_values", [])}
         self.state_values = {str(v) for v in self.manifest.get("state_values", [])}
         self.check_rules = self.manifest.get("check_rules", {}) if isinstance(self.manifest, dict) else {}
+        self.coordination_groups = self.data.get("coordination_groups", {}) if isinstance(self.data, dict) else {}
+        self.concept_ownership = self.data.get("concept_ownership", {}) if isinstance(self.data, dict) else {}
+        self.document_by_path: Dict[str, Dict[str, Any]] = {}
+        for item in self.documents if isinstance(self.documents, list) else []:
+            if isinstance(item, dict) and item.get("path"):
+                self.document_by_path[str(item.get("path"))] = item
         self.layer_path_by_key: Dict[str, str] = {}
         if isinstance(self.layers, dict):
             for key, value in self.layers.items():
@@ -484,6 +497,9 @@ class MaintenanceRules:
         pbr = self.root.get("public_boundary_rules", {}) if isinstance(self.root, dict) else {}
         self.boundary_forbidden_patterns = pbr.get("forbidden_public_patterns", []) if isinstance(pbr, dict) else []
         self.private_core_terms = pbr.get("private_core_terms", []) if isinstance(pbr, dict) else []
+        self.conceptual_contract_rules = (
+            self.root.get("conceptual_contract_rules", {}) if isinstance(self.root, dict) else {}
+        )
 
     @classmethod
     def load(cls, path: Path, root: Path, explicit: bool = False) -> Tuple[Optional["MaintenanceRules"], List[Issue]]:
@@ -670,7 +686,6 @@ def classify_document(path: Path, root: Path, registry: Registry, meta: Optional
         "license",
         "release notes",
         "policy",
-        "protocol",
         "working note",
         "meta",
     }:
@@ -1678,6 +1693,418 @@ def check_manifest(
     return issues, docs_checked
 
 
+
+def _as_list(value: Any) -> List[Any]:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return value
+    return [value]
+
+
+def _rule_config(rules: Optional[MaintenanceRules], *path: str) -> Dict[str, Any]:
+    current: Any = getattr(rules, "conceptual_contract_rules", {}) if rules else {}
+    for key in path:
+        if not isinstance(current, dict):
+            return {}
+        current = current.get(key, {})
+    return current if isinstance(current, dict) else {}
+
+
+def _rule_severity(
+    rules: Optional[MaintenanceRules],
+    path: Sequence[str],
+    default: str,
+    release_gate: bool = False,
+) -> str:
+    config = _rule_config(rules, *path)
+    severity = normalize_severity(config.get("severity"), default)
+    if release_gate and config.get("release_gate") is True and severity != "error":
+        return "error"
+    return severity
+
+
+def _contract_issue(
+    issues: List[Issue],
+    severity: str,
+    code: str,
+    message: str,
+    suggestion: str,
+    path: str = "tools/docs_manifest.yml",
+) -> None:
+    issues.append(Issue(severity, path, 1, code, message, suggestion))
+
+
+def check_logical_contracts(
+    root: Path,
+    manifest: Optional[Manifest],
+    maintenance_rules: Optional[MaintenanceRules],
+    args: argparse.Namespace,
+) -> Tuple[List[Issue], int, int, int, Dict[str, Any]]:
+    """Validate machine-readable document contracts.
+
+    This function intentionally limits itself to mechanically defensible checks.
+    Whether prose silently redefines an imported concept remains a WARNING for
+    human or LLM review rather than a deterministic ERROR.
+    """
+    issues: List[Issue] = []
+    report: Dict[str, Any] = {
+        "coordination_groups": {},
+        "concept_ownership": {},
+        "documents": {},
+        "relations": [],
+    }
+    if manifest is None:
+        return issues, 0, 0, 0, report
+
+    release_gate = bool(args.release_gate)
+    contract_docs: Dict[str, Dict[str, Any]] = {}
+    for raw_doc in manifest.documents if isinstance(manifest.documents, list) else []:
+        if isinstance(raw_doc, dict) and isinstance(raw_doc.get("logical_contract"), dict):
+            path_value = manifest_doc_path(raw_doc)
+            if path_value:
+                contract_docs[path_value] = raw_doc
+
+    # Index owned concepts and exported outputs.
+    declared_owners: Dict[str, str] = {}
+    for concept_id, config in manifest.concept_ownership.items() if isinstance(manifest.concept_ownership, dict) else []:
+        if not isinstance(config, dict):
+            _contract_issue(
+                issues,
+                "error",
+                "CONCEPT_OWNERSHIP_ENTRY_INVALID",
+                f"concept_ownership entry is not a mapping: {concept_id}",
+                "Use a mapping with canonical_owner and other_documents.",
+            )
+            continue
+        owner = str(config.get("canonical_owner", "")).strip()
+        if not owner:
+            _contract_issue(
+                issues,
+                "error",
+                "CONCEPT_CANONICAL_OWNER_MISSING",
+                f"Concept has no canonical_owner: {concept_id}",
+                "Add canonical_owner: <repository-relative path>.",
+            )
+            continue
+        declared_owners[str(concept_id)] = owner
+        report["concept_ownership"][str(concept_id)] = owner
+        if not (root / owner).exists():
+            _contract_issue(
+                issues,
+                _rule_severity(maintenance_rules, ("ownership_rules", "owner_path_exists"), "error", release_gate),
+                "CONCEPT_OWNER_PATH_MISSING",
+                f"Canonical owner path does not exist for '{concept_id}': {owner}",
+                "Create the owner document, correct the path, or mark the document planned before release.",
+                owner,
+            )
+
+    export_producers: Dict[str, List[str]] = {}
+    for path_value, raw_doc in contract_docs.items():
+        contract = raw_doc.get("logical_contract", {})
+        for export_id in _as_list(contract.get("exports")):
+            export_producers.setdefault(str(export_id), []).append(path_value)
+
+    # Validate coordination groups and required members.
+    groups = manifest.coordination_groups if isinstance(manifest.coordination_groups, dict) else {}
+    for group_id, group in groups.items():
+        if not isinstance(group, dict):
+            _contract_issue(
+                issues,
+                "error",
+                "COORDINATION_GROUP_INVALID",
+                f"Coordination group is not a mapping: {group_id}",
+                "Use a mapping with documents and invariants.",
+            )
+            continue
+        members = [str(v) for v in _as_list(group.get("documents"))]
+        report["coordination_groups"][str(group_id)] = members
+        for member in members:
+            raw_doc = manifest.document_by_path.get(member)
+            if raw_doc is None:
+                _contract_issue(
+                    issues,
+                    "error" if release_gate else "warning",
+                    "COORDINATION_MEMBER_NOT_IN_MANIFEST",
+                    f"Coordination-group member is not registered in documents: {member}",
+                    "Add the document entry and logical_contract to docs_manifest.yml.",
+                    member,
+                )
+                continue
+            if not isinstance(raw_doc.get("logical_contract"), dict):
+                _contract_issue(
+                    issues,
+                    "error" if release_gate else "warning",
+                    "COORDINATION_MEMBER_CONTRACT_MISSING",
+                    f"Coordination-group member has no logical_contract: {member}",
+                    "Add owns/imports/exports/tests/returns_to/depth_interface/delegates/open questions.",
+                    member,
+                )
+
+    relation_count = 0
+    required_fields = [
+        "owns", "imports", "exports", "tests", "returns_to",
+        "depth_interface", "delegates", "explicit_open_questions",
+    ]
+    configured_fields = _rule_config(maintenance_rules, "relation_rules", "required_fields").get("fields")
+    if isinstance(configured_fields, list) and configured_fields:
+        required_fields = [str(v) for v in configured_fields]
+
+    consumed_ids: set[str] = set()
+    for path_value, raw_doc in contract_docs.items():
+        contract = raw_doc.get("logical_contract", {})
+        report["documents"][path_value] = {
+            "contract_id": contract.get("contract_id"),
+            "owns": _as_list(contract.get("owns")),
+            "imports": _as_list(contract.get("imports")),
+            "exports": _as_list(contract.get("exports")),
+        }
+        for field in required_fields:
+            if field not in contract:
+                _contract_issue(
+                    issues,
+                    "error",
+                    "LOGICAL_CONTRACT_FIELD_MISSING",
+                    f"Logical contract lacks required field '{field}': {path_value}",
+                    f"Add logical_contract.{field}.",
+                    path_value,
+                )
+
+        owns = {str(v) for v in _as_list(contract.get("owns"))}
+        imports = {str(v) for v in _as_list(contract.get("imports"))}
+        exports = {str(v) for v in _as_list(contract.get("exports"))}
+        overlap = owns & imports
+        if overlap:
+            _contract_issue(
+                issues,
+                "error",
+                "CONTRACT_OWNS_IMPORTS_OVERLAP",
+                f"Document both owns and imports the same concept(s): {', '.join(sorted(overlap))}",
+                "Keep canonical definition authority in owns or dependency in imports, not both.",
+                path_value,
+            )
+
+        for concept_id in owns:
+            expected_owner = declared_owners.get(concept_id)
+            if expected_owner is None:
+                # concept_ownership is reserved for concepts shared across documents.
+                # A concept owned by exactly one logical contract may remain
+                # document-local, but it is surfaced for explicit review.
+                local_owners = [
+                    candidate_path
+                    for candidate_path, candidate_doc in contract_docs.items()
+                    if concept_id in {str(v) for v in _as_list(candidate_doc.get("logical_contract", {}).get("owns"))}
+                ]
+                if len(local_owners) > 1:
+                    _contract_issue(
+                        issues,
+                        "error",
+                        "DOCUMENT_LOCAL_CONCEPT_MULTIPLE_OWNERS",
+                        f"Unregistered concept is owned by multiple documents: {concept_id} -> {', '.join(local_owners)}",
+                        "Register one canonical owner in concept_ownership and change other documents to imports/delegates.",
+                        path_value,
+                    )
+                else:
+                    _contract_issue(
+                        issues,
+                        "warning" if release_gate else "info",
+                        "DOCUMENT_LOCAL_CONCEPT_INFERRED",
+                        f"Owned concept is treated as document-local because it is absent from concept_ownership: {concept_id}",
+                        "Register it globally only when another document imports or delegates this concept.",
+                        path_value,
+                    )
+            elif expected_owner != path_value:
+                _contract_issue(
+                    issues,
+                    "error",
+                    "CANONICAL_OWNER_MISMATCH",
+                    f"'{concept_id}' is owned by {path_value}, but concept_ownership names {expected_owner}.",
+                    "Keep one canonical owner and move other uses to imports/delegates.",
+                    path_value,
+                )
+
+        for import_id in imports:
+            consumed_ids.add(import_id)
+            producers = set(export_producers.get(import_id, []))
+            owner = declared_owners.get(import_id)
+            if owner:
+                producers.add(owner)
+            if not producers:
+                _contract_issue(
+                    issues,
+                    _rule_severity(maintenance_rules, ("relation_rules", "import_has_owner"), "error", release_gate),
+                    "CONTRACT_IMPORT_UNRESOLVED",
+                    f"Imported concept/output has no registered owner or exporter: {import_id}",
+                    "Register a canonical owner, add an exporting document, or correct the import ID.",
+                    path_value,
+                )
+
+        # Typed path relations.
+        for relation_name in ("tests", "returns_to", "delegates"):
+            for item in _as_list(contract.get(relation_name)):
+                relation_count += 1
+                if not isinstance(item, dict):
+                    _contract_issue(
+                        issues,
+                        "error",
+                        "CONTRACT_RELATION_INVALID",
+                        f"{relation_name} entry is not a mapping in {path_value}.",
+                        "Use a mapping with target and the relation-specific fields.",
+                        path_value,
+                    )
+                    continue
+                target = str(item.get("target", "")).strip()
+                if not target:
+                    _contract_issue(
+                        issues,
+                        "error",
+                        "CONTRACT_RELATION_TARGET_MISSING",
+                        f"{relation_name} entry has no target in {path_value}.",
+                        "Add target: <repository-relative path>.",
+                        path_value,
+                    )
+                    continue
+                report["relations"].append({"source": path_value, "type": relation_name, "target": target})
+                if not (root / target).exists():
+                    _contract_issue(
+                        issues,
+                        _rule_severity(maintenance_rules, ("relation_rules", "target_path_exists"), "error", release_gate),
+                        "CONTRACT_RELATION_TARGET_MISSING_PATH",
+                        f"{relation_name} target does not exist: {target}",
+                        "Create the target, correct the path, or mark the relation planned outside the release gate.",
+                        path_value,
+                    )
+                if relation_name == "returns_to" and not _as_list(item.get("payload")):
+                    _contract_issue(
+                        issues,
+                        _rule_severity(maintenance_rules, ("relation_rules", "return_payload_required"), "error", release_gate),
+                        "CONTRACT_RETURN_PAYLOAD_EMPTY",
+                        f"returns_to relation has no payload: {path_value} -> {target}",
+                        "Name the residual, failure, conflict, or revision request returned upstream.",
+                        path_value,
+                    )
+                if relation_name == "delegates":
+                    concept = str(item.get("concept", "")).strip()
+                    if not concept:
+                        _contract_issue(
+                            issues,
+                            "error",
+                            "CONTRACT_DELEGATE_CONCEPT_MISSING",
+                            f"Delegate relation has no concept ID: {path_value} -> {target}",
+                            "Add concept: <canonical concept ID>.",
+                            path_value,
+                        )
+                    else:
+                        expected = declared_owners.get(concept)
+                        if expected and expected != target:
+                            _contract_issue(
+                                issues,
+                                "error",
+                                "CONTRACT_DELEGATE_OWNER_MISMATCH",
+                                f"Delegate target for '{concept}' is {target}, but canonical owner is {expected}.",
+                                "Delegate to the canonical owner or correct concept_ownership.",
+                                path_value,
+                            )
+
+        depth = contract.get("depth_interface")
+        required_depth = ["entry_signals", "retains", "delegates_to", "return_path", "closure_policy"]
+        configured_depth = _rule_config(maintenance_rules, "depth_port_rules").get("required_fields")
+        if isinstance(configured_depth, list) and configured_depth:
+            required_depth = [str(v) for v in configured_depth]
+        if not isinstance(depth, dict):
+            _contract_issue(
+                issues,
+                _rule_severity(maintenance_rules, ("depth_port_rules", "missing_depth_interface"), "error", release_gate),
+                "DEPTH_INTERFACE_MISSING",
+                f"Coordinated document has no depth_interface: {path_value}",
+                "Add entry_signals, retains, delegates_to, return_path, and closure_policy.",
+                path_value,
+            )
+        else:
+            for field in required_depth:
+                value = depth.get(field)
+                empty = value is None or value == "" or (isinstance(value, list) and not value)
+                if empty:
+                    _contract_issue(
+                        issues,
+                        "error",
+                        "DEPTH_INTERFACE_FIELD_EMPTY",
+                        f"depth_interface.{field} is empty: {path_value}",
+                        "A depth port must preserve unresolved material and state how it returns.",
+                        path_value,
+                    )
+
+        if not _as_list(contract.get("explicit_open_questions")):
+            _contract_issue(
+                issues,
+                _rule_severity(maintenance_rules, ("depth_port_rules", "open_question_required"), "warning", release_gate),
+                "CONTRACT_OPEN_QUESTION_MISSING",
+                f"Coordinated document has no explicit open question: {path_value}",
+                "Retain at least one unresolved question or state why the document is intentionally closed.",
+                path_value,
+            )
+
+        # Deterministic proxy for the LLM-only prose drift check.
+        if imports:
+            _contract_issue(
+                issues,
+                "info",
+                "CONTRACT_PROSE_REDEFINITION_REVIEW_REQUIRED",
+                f"Review imported concepts for silent prose redefinition: {path_value}",
+                "An LLM or human reviewer should compare the prose against canonical owners; the checker only validates the relation graph.",
+                path_value,
+            )
+
+    # Export reachability.
+    for output_id, producers in sorted(export_producers.items()):
+        if output_id not in consumed_ids:
+            for producer in producers:
+                _contract_issue(
+                    issues,
+                    "warning" if release_gate else "info",
+                    "CONTRACT_EXPORT_WITHOUT_CONSUMER",
+                    f"Export has no importing consumer: {output_id}",
+                    "Add a downstream import/test or document its standalone public role.",
+                    producer,
+                )
+
+    return issues, len(contract_docs), len(declared_owners), relation_count, report
+
+
+def write_contract_json_log(report: Dict[str, Any], issues: List[Issue], path: Path) -> None:
+    payload = dict(report)
+    payload["issues"] = [issue.as_dict() for issue in issues]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def write_contract_markdown_log(report: Dict[str, Any], issues: List[Issue], path: Path) -> None:
+    lines = [
+        "# Concept Contract Check Report",
+        "",
+        f"- Coordination groups: {len(report.get('coordination_groups', {}))}",
+        f"- Registered concept owners: {len(report.get('concept_ownership', {}))}",
+        f"- Contract documents: {len(report.get('documents', {}))}",
+        f"- Typed relations: {len(report.get('relations', []))}",
+        f"- Errors: {sum(1 for i in issues if i.severity == 'error')}",
+        f"- Warnings: {sum(1 for i in issues if i.severity == 'warning')}",
+        "",
+        "## Contract documents",
+        "",
+    ]
+    for doc_path, info in sorted(report.get("documents", {}).items()):
+        lines.append(f"- `{doc_path}` — `{info.get('contract_id')}`")
+    lines.extend(["", "## Issues", ""])
+    if not issues:
+        lines.append("None.")
+    else:
+        for issue in issues:
+            lines.append(f"- **{issue.severity.upper()}** `{issue.path}` `{issue.code}`: {issue.message}")
+            if issue.suggestion:
+                lines.append(f"  - Suggested fix: {issue.suggestion}")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
 def run_checks(args: argparse.Namespace) -> CheckResult:
     root = Path(args.root).resolve()
     registry_path = Path(args.registry).resolve() if args.registry else root / "tools" / "Public_Format_Registry.yml"
@@ -1719,6 +2146,13 @@ def run_checks(args: argparse.Namespace) -> CheckResult:
     manifest_issues, manifest_docs_checked = check_manifest(root, manifest, registry, file_index, args)
     issues.extend(manifest_issues)
 
+    contract_issues, contract_docs_checked, concepts_checked, contract_relations_checked, contract_report = check_logical_contracts(
+        root, manifest, maintenance_rules, args
+    )
+    issues.extend(contract_issues)
+    setattr(args, "_contract_report", contract_report)
+    setattr(args, "_contract_issues", contract_issues)
+
     if args.check_release_metadata:
         issues.extend(check_release_metadata(root, excluded_paths))
 
@@ -1731,6 +2165,9 @@ def run_checks(args: argparse.Namespace) -> CheckResult:
         external_links_checked=external_checked,
         manifest_documents_checked=manifest_docs_checked,
         maintenance_term_hits=maintenance_hits,
+        contract_documents_checked=contract_docs_checked,
+        concepts_checked=concepts_checked,
+        contract_relations_checked=contract_relations_checked,
     )
 
 
@@ -1742,6 +2179,9 @@ def write_json_log(result: CheckResult, path: Path) -> None:
             "external_links_checked": result.external_links_checked,
             "manifest_documents_checked": result.manifest_documents_checked,
             "maintenance_term_hits": result.maintenance_term_hits,
+            "contract_documents_checked": result.contract_documents_checked,
+            "concepts_checked": result.concepts_checked,
+            "contract_relations_checked": result.contract_relations_checked,
             "errors": result.error_count,
             "warnings": result.warning_count,
             "info": result.info_count,
@@ -1764,6 +2204,9 @@ def write_markdown_log(result: CheckResult, path: Path) -> None:
         f"- External links checked: {result.external_links_checked}",
         f"- Manifest documents checked: {result.manifest_documents_checked}",
         f"- Maintenance term hits: {result.maintenance_term_hits}",
+        f"- Contract documents checked: {result.contract_documents_checked}",
+        f"- Concept owners checked: {result.concepts_checked}",
+        f"- Contract relations checked: {result.contract_relations_checked}",
         f"- Errors: {result.error_count}",
         f"- Warnings: {result.warning_count}",
         f"- Info: {result.info_count}",
@@ -1792,6 +2235,9 @@ def print_console_summary(result: CheckResult) -> None:
     print(f"  External links checked: {result.external_links_checked}")
     print(f"  Manifest documents checked: {result.manifest_documents_checked}")
     print(f"  Maintenance term hits: {result.maintenance_term_hits}")
+    print(f"  Contract documents checked: {result.contract_documents_checked}")
+    print(f"  Concept owners checked: {result.concepts_checked}")
+    print(f"  Contract relations checked: {result.contract_relations_checked}")
     print(f"  Errors: {result.error_count}")
     print(f"  Warnings: {result.warning_count}")
     print(f"  Info: {result.info_count}")
@@ -1870,6 +2316,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="Use release-gate severity for manifest checks and enable unlisted manifest checks.",
     )
     parser.add_argument("--json-log", default=None, help="Write machine-readable JSON report.")
+    parser.add_argument(
+        "--contract-json-log",
+        default=None,
+        help="Write machine-readable concept-contract report.",
+    )
+    parser.add_argument(
+        "--contract-md-log",
+        default=None,
+        help="Write human/LLM-readable concept-contract report.",
+    )
     parser.add_argument("--md-log", default=None, help="Write human/LLM-readable Markdown report.")
     parser.add_argument(
         "--github-annotations",
@@ -1914,6 +2370,12 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         write_json_log(result, Path(args.json_log))
     if args.md_log:
         write_markdown_log(result, Path(args.md_log))
+    contract_report = getattr(args, "_contract_report", {})
+    contract_issues = getattr(args, "_contract_issues", [])
+    if args.contract_json_log:
+        write_contract_json_log(contract_report, contract_issues, Path(args.contract_json_log))
+    if args.contract_md_log:
+        write_contract_markdown_log(contract_report, contract_issues, Path(args.contract_md_log))
     if args.github_annotations:
         emit_github_annotations(result)
     if result.error_count and not args.no_fail_on_error:

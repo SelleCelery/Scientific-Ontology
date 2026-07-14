@@ -5,10 +5,12 @@ on:
   push:
     branches:
       - main
+    tags:
+      - "v*"
   workflow_dispatch:
     inputs:
       release_gate:
-        description: "Run stricter release-gate manifest checks"
+        description: "Run stricter release-gate checks"
         required: false
         default: "false"
         type: choice
@@ -32,11 +34,13 @@ on:
           - "false"
           - "true"
 
+permissions:
+  contents: read
+
 jobs:
   public-format-check:
+    name: Public format and contract check
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -45,20 +49,18 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements-public-check.txt
 
-      - name: Build checker flags
+      - name: Build optional flags
         id: flags
         shell: bash
         run: |
           FLAGS=""
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.release_gate }}" = "true" ]; then
-            FLAGS="$FLAGS --release-gate"
-          fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.check_external }}" = "true" ]; then
             FLAGS="$FLAGS --check-external"
           fi
@@ -67,7 +69,23 @@ jobs:
           fi
           echo "flags=$FLAGS" >> "$GITHUB_OUTPUT"
 
-      - name: Run public format checker
+      - name: Validate YAML inputs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+
+          paths = [
+              Path("tools/Public_Format_Registry.yml"),
+              Path("tools/docs_manifest.yml"),
+              Path("tools/maintenance_rules.yml"),
+          ]
+          for path in paths:
+              yaml.safe_load(path.read_text(encoding="utf-8"))
+              print(f"OK: {path}")
+          PY
+
+      - name: Run ordinary public format checker
         run: |
           python scripts/check_public_format.py \
             --root . \
@@ -76,22 +94,92 @@ jobs:
             --maintenance-rules tools/maintenance_rules.yml \
             --md-log public_format_report.md \
             --json-log public_format_report.json \
+            --contract-md-log concept_contract_report.md \
+            --contract-json-log concept_contract_report.json \
             --github-annotations \
             --check-release-metadata \
             ${{ steps.flags.outputs.flags }}
 
-      - name: Add report to job summary
+      - name: Add ordinary reports to job summary
         if: always()
         run: |
           if [ -f public_format_report.md ]; then
             cat public_format_report.md >> "$GITHUB_STEP_SUMMARY"
           fi
+          if [ -f concept_contract_report.md ]; then
+            printf '\n---\n\n' >> "$GITHUB_STEP_SUMMARY"
+            cat concept_contract_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
 
-      - name: Upload check reports
+      - name: Upload ordinary reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: public-format-check-report
+          if-no-files-found: warn
           path: |
             public_format_report.md
             public_format_report.json
+            concept_contract_report.md
+            concept_contract_report.json
+
+  release-gate:
+    name: Release contract gate
+    if: >-
+      startsWith(github.ref, 'refs/tags/v') ||
+      (github.event_name == 'workflow_dispatch' && inputs.release_gate == 'true')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-public-check.txt
+
+      - name: Run release gate
+        run: |
+          python scripts/check_public_format.py \
+            --root . \
+            --registry tools/Public_Format_Registry.yml \
+            --manifest tools/docs_manifest.yml \
+            --maintenance-rules tools/maintenance_rules.yml \
+            --release-gate \
+            --manifest-check-unlisted \
+            --check-anchors \
+            --check-release-metadata \
+            --md-log release_public_format_report.md \
+            --json-log release_public_format_report.json \
+            --contract-md-log release_concept_contract_report.md \
+            --contract-json-log release_concept_contract_report.json \
+            --github-annotations
+
+      - name: Add release reports to job summary
+        if: always()
+        run: |
+          if [ -f release_public_format_report.md ]; then
+            cat release_public_format_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f release_concept_contract_report.md ]; then
+            printf '\n---\n\n' >> "$GITHUB_STEP_SUMMARY"
+            cat release_concept_contract_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload release-gate reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-contract-gate-report
+          if-no-files-found: warn
+          path: |
+            release_public_format_report.md
+            release_public_format_report.json
+            release_concept_contract_report.md
+            release_concept_contract_report.json
