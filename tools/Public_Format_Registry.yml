@@ -1,8 +1,8 @@
 # Public Format Registry for Scientific Ontology / 存在境界論
-# Version: 0.3.0
+# Version: 0.2.0
 
 format_registry:
-  version: "0.3.0"
+  version: "0.2.0"
 
   project:
     canonical_name_en: "Scientific Ontology"
@@ -52,8 +52,6 @@ format_registry:
       - "Introduction"
       - "Foundation"
       - "Foundational principle"
-      - "Methodological note"
-      - "Practical checklist"
       - "Position"
       - "Protocol"
       - "Policy"
@@ -74,6 +72,10 @@ format_registry:
       - "Draft"
       - "Visual note"
       - "Working note"
+      - "Research Note / Conceptual Model / Metamodel"
+      - "Research Note / First Draft"
+      - "Cross-domain Ontological Note / First Draft"
+      - "Application Note / First Draft"
       - "Map"
       - "Roadmap"
       - "Citation"
@@ -117,7 +119,6 @@ format_registry:
         U: "application and safety risk"
         P: "public layer / publication handling"
         V: "verification or formalization stage"
-        R: "rendering distance from core vocabulary; supplementary, not a substitute for S/E/U/P/V"
         note: "free-text non-claim boundary or qualifier"
       scale_hint:
         S0: "standard definition, metadata, or format operation"
@@ -126,106 +127,6 @@ format_registry:
         S3: "strong reinterpretation or cross-domain model"
         S4: "formalization candidate or high-strength research hypothesis"
         S5: "physics- or implementation-proximate strong hypothesis; normally not for public foundation documents"
-
-
-  logical_contracts:
-    canonical_sidecar: "tools/docs_manifest.yml"
-    purpose: >
-      Keep document ownership, imports, exports, tests, return paths, depth
-      interfaces, delegations, and open questions machine-readable without
-      overloading Markdown headers.
-    applies_when:
-      - "A document belongs to a coordination_group."
-      - "A concept has a canonical owner and multiple downstream uses."
-      - "A document crosses a logical-depth boundary."
-    header_policy:
-      rule: "Do not copy the full logical contract into the Markdown metadata header."
-      recommended_projection:
-        - "A short relation-to-other-documents section."
-        - "A short depth-interface or open-questions section when relevant."
-      canonical_precedence: "docs_manifest.yml overrides informal relation prose when they conflict."
-
-    schema:
-      contract_id:
-        type: "stable lower_snake_case string"
-        required: true
-      owns:
-        type: "list of concept IDs"
-        required: true
-        meaning: "Concepts for which the document is the canonical definition owner."
-      imports:
-        type: "list of concept IDs"
-        required: true
-        meaning: "Concepts used under another document's definition authority."
-      exports:
-        type: "list of concept IDs or typed outputs"
-        required: true
-        meaning: "Outputs made available to downstream documents."
-      tests:
-        type: "list of typed target relations"
-        required: true
-        fields:
-          target: "repository-relative path"
-          relation: "test or operationalization type"
-          evidence: "what the target exposes or verifies"
-      returns_to:
-        type: "list of typed backward relations"
-        required: true
-        fields:
-          target: "repository-relative upstream path"
-          payload: "non-empty list of residuals, failures, conflicts, or revision requests"
-      depth_interface:
-        type: "object"
-        required: true
-        fields:
-          entry_signals: "conditions that require movement off the current logical plane"
-          retains: "residuals or pressures that must not be erased"
-          delegates_to: "named research fields, concepts, or aporia registries"
-          return_path: "how the deep inquiry returns to public operation or model revision"
-          closure_policy: "what the document is not authorized to close"
-      delegates:
-        type: "list of concept-to-owner mappings"
-        required: true
-        fields:
-          concept: "canonical concept ID"
-          target: "definition-owner path"
-      explicit_open_questions:
-        type: "list of unresolved questions"
-        required: true
-
-    relation_semantics:
-      owns: "definition authority"
-      imports: "reference or application dependency"
-      exports: "downstream interface"
-      tests: "operational exposure"
-      returns_to: "feedback, residual, or revision edge"
-      delegates: "explicit refusal to duplicate another document's definition"
-      depth_interface: "controlled movement along the logical-depth axis"
-
-    coordination_profiles:
-      v4_3_core_five_document_contract:
-        source: "docs_manifest.coordination_groups.v4_3_core_five_document_contract"
-        required_documents:
-          - "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
-          - "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
-          - "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
-          - "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
-          - "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
-        body_projection:
-          exact_heading_required: false
-          recommended_content:
-            - "What this document owns."
-            - "What it imports and delegates."
-            - "What it exports downstream."
-            - "What failures or residuals return upstream."
-            - "Where the depth interface begins and what it cannot close."
-        ai_check:
-          - "The prose does not silently claim concepts absent from owns."
-          - "Imported concepts are linked or attributed to their canonical owner."
-          - "The document has a usable downstream output."
-          - "Application failures can return upstream through a typed relation."
-          - "The depth interface preserves unresolved material and has a return path."
-
 
   document_types:
     assertion_document:
@@ -394,6 +295,45 @@ format_registry:
 
   language_policy:
     default: "Japanese authoritative; English commensurated rendering included where required."
+    canonical_integrated_value: "Japanese authoritative; English commensurated rendering included"
+    accepted_value_aliases:
+      "ja+en": "Japanese authoritative; English commensurated rendering included"
+      "en+ja-coauth": "English-first co-authoritative public interface; Japanese co-authoritative companion"
+    alias_semantics:
+      "ja+en": >
+        Formal abbreviated metadata for an integrated bilingual file in which
+        the Japanese section is authoritative and the English section is its
+        commensurated rendering. It does not merely mean that two languages
+        are present.
+      "en+ja-coauth": >
+        Root-README-only abbreviated metadata for an English-first public
+        interface in which English and Japanese are co-authoritative for the
+        README invitation and navigation role. This does not alter concept
+        ownership or the default language relation of linked documents.
+    supported_publication_forms:
+      separated_pair:
+        japanese: "*.ja.md"
+        english: "*.en.md"
+        relation: "Japanese authoritative source with a separate English commensurated rendering."
+      integrated_bilingual:
+        file: "*.md"
+        accepted_language_values:
+          - "ja+en"
+          - "Japanese authoritative; English commensurated rendering included"
+        relation: "Japanese authoritative text and English commensurated rendering in one file."
+      root_readme_coauthoritative:
+        file: "README.md"
+        accepted_language_values:
+          - "en+ja-coauth"
+          - "English-first co-authoritative public interface; Japanese co-authoritative companion"
+        relation: >
+          English and Japanese are co-authoritative for the root README's
+          promotional and navigational role only. English is precision-led;
+          Japanese is accessibility-led. Linked owner documents govern
+          technical definitions and claim boundaries.
+      language_neutral_or_governance:
+        file: "*.md"
+        relation: "Governance, metadata, registry, table, or intentionally language-neutral document."
     required_language_header_when:
       - "Japanese only"
       - "English only"
@@ -406,10 +346,44 @@ format_registry:
       - "Japanese authoritative; English commensuration pending"
       - "Japanese only; English commensuration pending"
       - "English-first public entrance; Japanese remains the primary conceptual reference where meanings diverge"
+      - "English-first co-authoritative public interface; Japanese co-authoritative companion"
+      - "en+ja-coauth"
       - "English-centered metadata"
       - "ja+en"
       - "ja"
       - "en"
+    validation:
+      - "Treat ja+en and the canonical integrated value as semantically equivalent."
+      - "For ja+en, verify that Japanese authoritative content and an English commensurated section are both present."
+      - "Do not interpret ja+en as two co-equal canonical language texts."
+      - "Treat en+ja-coauth as a root-README-only exception; reject it for other paths unless the Policy is revised."
+      - "For the co-authoritative root README, verify shared core invitation, non-claims, reading routes, and release metadata without requiring sentence-level symmetry."
+      - "Do not require existing integrated bilingual files to split unless a maintenance rule explicitly requires separation."
+
+
+  high_depth_identifiers:
+    examples:
+      - "iMass"
+      - "rMass"
+    canonical_rule: "Retain the identifier unchanged rather than expanding it into a single fixed English phrase."
+    preserve:
+      - "generative lineage"
+      - "paired relations"
+      - "application-level manifestations"
+      - "claim strength"
+      - "non-identity with established scientific concepts"
+      - "unresolved residuals"
+      - "non-claim boundaries"
+    prohibit:
+      - "Treating one manifestation as an exhaustive lexical expansion."
+      - "Using fluent English to create a falsely completed definition."
+    intrinsic_time_rendering:
+      noun: "intrinsic time"
+      modifier: "intrinsic-time"
+      forbidden:
+        - "Internal Time"
+        - "internal time"
+        - "internal-time"
 
   ai_final_check:
     review_phases:
@@ -438,15 +412,9 @@ format_registry:
         - "Reinterpretation, analogy, SO definition, and physical correspondence candidate are distinguished."
         - "Policy, legal, procurement, audit, medical, and safety interpretations are not overstated."
         - "Literary readings are not presented as proof."
-      logical_contract_check:
-        - "Coordinated documents are registered in docs_manifest.yml."
-        - "Each owned concept has one canonical owner."
-        - "Imports resolve to a canonical owner and are not silently redefined."
-        - "Exports have a downstream consumer, test, or stated public role."
-        - "Every returns_to relation has a target and a non-empty payload."
-        - "Every coordinated document has a complete depth interface."
-        - "The depth interface preserves unresolved material and returns to public operation, model revision, or an explicit open question."
-        - "The five-document non-competition contract is respected."
+        - "High-depth identifiers remain canonical identifiers and are not falsely completed through lexical expansion."
+        - "Meaning Capacity is distinguished from electrical capacitance; Meaning-Experience Capacitor remains a structural analogy."
+        - "General Port and Organizational Port retain separate definition ownership."
       release_metadata_check:
         - "Version is consistent."
         - "DOI is consistent."
@@ -460,10 +428,6 @@ format_registry:
         - "README document list omits an actual public file without reason"
         - "internal or local-only URL in public Markdown"
         - "DOI/version mismatch across root metadata"
-        - "duplicate canonical concept owner"
-        - "broken logical-contract target"
-        - "missing return payload in a coordinated document"
-        - "missing depth interface or return path in a coordinated document"
         - "private core material disclosed in public document"
         - "standard scientific term overwritten without boundary note"
       warning:
@@ -473,9 +437,6 @@ format_registry:
         - "README maintenance notes absent or stale"
         - "Roadmap duplicates repository map"
         - "manifest and repository file list are not synchronized"
-        - "imported concept appears to be silently redefined"
-        - "export has no downstream consumer or stated public role"
-        - "depth delegate is not registered in the concept network or aporia registry"
       info:
         - "Header field could be shortened"
         - "Scope could be clarified"
@@ -490,8 +451,6 @@ format_registry:
     generated_outputs:
       - "public_format_report.md"
       - "public_format_report.json"
-      - "concept_contract_report.md"
-      - "concept_contract_report.json"
       - "CHECKER_USAGE.md"
       - "CHECKER_USAGE*.md"
       - "CHECKER_EXTENSION_REPORT.md"
@@ -530,7 +489,6 @@ format_registry:
       - "Update when a new document type is introduced."
       - "Update when header labels change."
       - "Update when release-check requirements change."
-      - "Update when a coordination profile or logical-contract field changes."
       - "Do not update merely to enforce stylistic preference."
     companion_files:
       docs_manifest: "tools/docs_manifest.yml"

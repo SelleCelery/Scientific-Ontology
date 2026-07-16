@@ -1,124 +1,110 @@
-# Social Boundary Notes / 社会境界系ノート
+# Social Boundary Notes / 社会境界ノート
 
-> Layer: 05_Research_Notes / Social_Boundary_Notes  
-> Status: README  
-> Scope: Social boundary, value, residue, and negentropy economy notes
+> Layer: 05_Research_Notes / Social_Boundary_Notes
+> Status: README
+> Scope: social systems / institutional boundaries / AI adoption / value / residue / negentropy economy
+> Language: ja+en
+> Public profile: P1-P2
+> Authority: Directory navigation and maintenance contract; not a concept-definition owner
 
----
+# 日本語正本
 
-## 1. Subdirectory Role / 小分類の位置づけ
+## 1. Directory Role / ディレクトリの位置づけ
 
-Social_Boundary_Notes は、社会システム、制度的境界、責任配分、信用、残差、残渣、価値、貨幣、ネゲントロピー経済、意味を帯びた交換に関する公開研究ノートを置く小分類である。
+この小分類は、社会制度、責任配分、信用、価値、貨幣、残差、残渣、AI導入を、境界と履歴から研究する。
 
-この小分類は、社会批判を未処理のまま置く場所ではない。社会的な怒りや違和感を、そのまま排出文として置くのではなく、残差と残渣を見える形へ減速し、公開可能な概念モデルとして整理する。
+社会批判を未処理の排出文として置くのではなく、誰の境界にどの負荷が現れ、何が価値として可視化され、何が残渣として外部化されるかを概念モデルへ減速する。
 
-English commensurated rendering: 
+## 2. Public Scope / 公開範囲
 
-Social_Boundary_Notes contains public research notes on social systems, institutional boundaries, responsibility distribution, trust, residuals, residues, value, money, Negentropy Economy, and meaning-bearing exchange. 
+本READMEは、標準科学、法令、政策、既存分野の定義を置き換えるものではない。
 
-This subdirectory is not a place for unprocessed social criticism. It slows anger, discomfort, residuals, and residues into publicly readable conceptual models.
+含むもの：
 
----
+- AI導入を同期閉鎖として読む研究
+- ネゲントロピー経済
 
-## 2. Public Scope and Claim Profile / 公開範囲と主張強度
+ネゲントロピー経済は経験的経済理論ではなく、熱力学的証明ではなく、政策提案ではない。
+- 意味生成と交換
+- 残差・残渣、信用、責任、価値の概念モデル
 
-この小分類の公開強度は P1-P2 を中心とする。社会・経済・制度に接続するが、経験的な経済理論、政策提案、代替通貨制度、会計基準、法令、道徳教義として提出するものではない。
-
-ここで扱うのは、交換、価値、貨幣、信用、責任、残差処理を、存在境界論の語彙で再読解する研究ノートである。
-
-English commensurated rendering: The public scope of this subdirectory is mainly P1-P2. It connects with society, economy, and institutions, but it is not presented as empirical economic theory, policy proposal, replacement currency system, accounting standard, law, or moral doctrine. 
-It re-reads exchange, value, money, trust, responsibility, and residual processing through the vocabulary of Scientific Ontology.
-
----
-
-## 3. Included / Not Included / 含むもの・含まないもの
-
-含むもの:
-
-- ネゲントロピー経済に関する概念モデル
-- 貨幣を価値そのものではなく交換媒質として読むノート
-- 残差と残渣の区別に関する研究ノート
-- 社会境界、責任配分、信用、意味生成に関する公開可能な整理
-- 日本語正本と英語通約版のペア文書
-
-含まないもの:
+含まないもの：
 
 - 経験的経済理論
-- 政策提案、法令、会計基準
-- 代替通貨制度の設計
-- 未処理の社会批判や排出文
-- 非公開評価資料、危険な運用手順
-- 個別組織・個人への直接的攻撃文
+- 政策、法令、会計基準
+- 代替通貨制度
+- 特定組織・個人への攻撃
+- 非公開評価資料または危険な運用手順
 
-English commensurated rendering: This subdirectory includes conceptual models of Negentropy Economy, notes treating money as an exchange medium rather than value itself, research notes distinguishing residuals from residues, and public treatments of social boundary, responsibility distribution, trust, and meaning generation. 
-It does not include empirical economic theory, policy proposals, laws, accounting standards, replacement currency designs, unprocessed social criticism, private evaluation material, unsafe operational procedures, or direct attacks on specific organizations or individuals.
+## 3. Documents / 文書一覧
 
----
+1. [`AI_Adoption_as_Synchronization_Closure.md`](./AI_Adoption_as_Synchronization_Closure.md)
+2. [`Negentropy_Economy_and_Meaning_Generation.ja.md`](./Negentropy_Economy_and_Meaning_Generation.ja.md) / [`en`](./Negentropy_Economy_and_Meaning_Generation.en.md)
+3. [`Negentropy_Economy_Principles.ja.md`](./Negentropy_Economy_Principles.ja.md) / [`en`](./Negentropy_Economy_Principles.en.md)
 
-## 4. Documents / 文書一覧
+## 4. Maintenance Notes / 運用メモ
 
-- [`Negentropy_Economy_and_Meaning_Generation.ja.md`](./Negentropy_Economy_and_Meaning_Generation.ja.md)
-  - 一行説明: お金を価値そのものではなく交換媒質として扱い、価値を「意味を帯びたネゲントロピー」が交換面に現れた相として整理する概念モデル。
-  - EN: A conceptual model that treats money as an exchange medium rather than value itself, and treats value as the exchange-facing appearance of meaning-bearing negentropy.
-  - Role: ネゲントロピー経済と意味生成の概念モデル。
-  - Public profile: Social boundary conceptual note / P1-P2.
-
-- [`Negentropy_Economy_and_Meaning_Generation.en.md`](./Negentropy_Economy_and_Meaning_Generation.en.md)
-  - 一行説明: `Negentropy_Economy_and_Meaning_Generation.ja.md` の英語通約版。
-  - EN: English commensurated rendering of `Negentropy_Economy_and_Meaning_Generation.ja.md`.
-  - Role: 英語通約版。
-  - Public profile: English commensuration / P1-P2.
-
-- [`Negentropy_Economy_Principles.ja.md`](./Negentropy_Economy_Principles.ja.md)
-  - 一行説明: 残渣査定のための境界経済論。日本語正本の条文草稿。
-  - EN: A boundary-economics principle draft for residue assessment. Japanese authoritative principle draft.
-  - Role: ネゲントロピー経済原則の日本語正本。
-  - Public profile: Principle draft / P1-P2.
-
-- [`Negentropy_Economy_Principles.en.md`](./Negentropy_Economy_Principles.en.md)
-  - 一行説明: `Negentropy_Economy_Principles.ja.md` の英語通約版。
-  - EN: English commensurated rendering of `Negentropy_Economy_Principles.ja.md`.
-  - Role: 英語通約版。
-  - Public profile: English commensuration / P1-P2.
-
-- [`AI_Adoption_as_Synchronization_Closure.md`](./AI_Adoption_as_Synchronization_Closure.md)
-  - 一行説明: AI導入を制度的同期閉鎖として読み直し、照合・責任境界・Open Marker・制度設計の観点から整理する研究ノート。
-  - EN: A research note interpreting AI adoption through institutional synchronization closure, collation, responsibility boundaries, and Open Marker.
-  - Role: 社会制度・AI導入境界の概念モデル。
-  - Public profile: Social boundary conceptual note / P1-P2.
-
-関連導線:
-
-- [`../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
-  - 一行説明: 意味を返路軌道として読む認識・倫理プロトコル層の文書。
+上流：
 
 - [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
-  - 一行説明: 履歴を破壊しない相互作用として倫理を扱う境界倫理モデル。
+- [`../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
+- [`../../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md`](../../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md)
 
-- [`../README.md`](../README.md)
-  - 一行説明: Research Notes 層の親README。
+下流：[`../../04_Applications/Social_Boundary_Design/README.md`](../../04_Applications/Social_Boundary_Design/README.md)
 
-- [`../Research_Notes_Index.md`](../Research_Notes_Index.md)
-  - 一行説明: Research Notes 全体の索引。
+- 貨幣、価値、秩序生成能力を同一視しない。
+- 残差と残渣を区別する。
+- 社会批判を概念化せずに公開ノートへ置かない。
+- 経済・制度語彙では経験的主張との境界を示す。
+- 応用チェックリストと研究仮説を混同しない。
 
----
+# English Commensurated Rendering
 
-## 5. Maintenance Notes / 運用メモ
+## 0. Role
 
-### Stable policy / 固定方針
+This subdirectory studies social institutions, responsibility distribution, trust, value, money, residuals, residues, and AI adoption through boundaries and history.
 
-社会境界系ノートでは、概念モデルと経験的経済主張、交換媒質と価値そのもの、お金と秩序生成能力、残差と残渣、社会批評と未処理の排出文を区別する。
+Rather than preserving social criticism as unprocessed discharge, it slows the material into conceptual models showing whose boundaries bear which burdens, what becomes visible as value, and what is externalized as residue.
 
-### Directory history / 小分類の変更履歴
+## 1. Public Scope
 
-- v4 系で、ネゲントロピー経済・社会境界・残渣査定関連ノートを Research Notes 内の独立小分類として分離した。
-- 主要文書を `.ja.md` / `.en.md` ペアへ分離した。
+This README is not a replacement for standard science, law, policy, or established disciplinary definitions.
 
-### File-level changes / ファイル単位の増減
+Included:
 
-- 日本語正本と英語通約版の対応を維持する。
-- 条文草稿は、公開原則・通約規則・主張強度管理に従って更新する。
+- research reading AI adoption as synchronization closure;
+- Negentropy Economy;
 
-### Pending notes / 保留事項
+Negentropy Economy is not an empirical economic theory, not a thermodynamic proof, and not a policy proposal.
+- meaning generation and exchange;
+- conceptual models of residuals, residues, trust, responsibility, and value.
 
-- 政策・法令・会計基準のように読まれる表現を追加する場合は、公開範囲と主張強度を先に確認する。
+Not included:
+
+- empirical economic theory;
+- policy, law, or accounting standards;
+- alternative currency systems;
+- attacks on specific organizations or individuals;
+- private evaluation materials or hazardous operational procedures.
+
+## 2. Documents and Recommended Reading Order
+
+1. [`AI_Adoption_as_Synchronization_Closure.md`](./AI_Adoption_as_Synchronization_Closure.md)
+2. [`Negentropy_Economy_and_Meaning_Generation.ja.md`](./Negentropy_Economy_and_Meaning_Generation.ja.md) / [`en`](./Negentropy_Economy_and_Meaning_Generation.en.md)
+3. [`Negentropy_Economy_Principles.ja.md`](./Negentropy_Economy_Principles.ja.md) / [`en`](./Negentropy_Economy_Principles.en.md)
+
+## 3. Return and Maintenance
+
+Upstream:
+
+- [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
+- [`../../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md`](../../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md)
+
+Downstream: [`../../04_Applications/Social_Boundary_Design/README.md`](../../04_Applications/Social_Boundary_Design/README.md)
+
+- Do not identify money, value, and order-generating capacity.
+- Distinguish residuals from residues.
+- Do not place unprocessed social criticism in public research notes.
+- State boundaries with empirical claims when using economic or institutional vocabulary.
+- Do not confuse application checklists with research hypotheses.

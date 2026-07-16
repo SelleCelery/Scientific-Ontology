@@ -2,7 +2,7 @@
 
 > Status: Research note
 > Scope: cosmological-topology
-> Language: en; commensurated rendering
+> Language: English commensurated rendering
 > Claim strength: U/E -> S
 
 ---

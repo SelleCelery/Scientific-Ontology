@@ -23,11 +23,11 @@
 
 本稿は、認識軸そのものを生成しない。
 
-認識軸の生成、安定、硬直、漂移、分岐、再接続は、[`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja) が主に扱う。
+認識軸の生成、安定、硬直、漂移、分岐、再接続は、[`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md) が主に扱う。
 
 本稿は、目的を決定しない。
 
-何を第一義として目的化し、その共有がどのような世界を形成したかを境界で検査する仕事は、[`Truth_Management_and_Boundary_PDCA.ja.md`](../00_Overview/Truth_Management_and_Boundary_PDCA.ja) が主に扱う。
+何を第一義として目的化し、その共有がどのような世界を形成したかを境界で検査する仕事は、[`Truth_Management_and_Boundary_PDCA.ja.md`](../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md) が主に扱う。
 
 本稿は、その中間に位置する。
 
@@ -823,6 +823,6 @@ AIに何を最適化させるかだけでなく、どの差分を捨象させ、
 - [`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md)
 - [`Truth_Management_and_Boundary_PDCA.ja.md`](../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md)
 - [`Scientific_Ontology_Concept_Network.ja.md`](../00_Overview/Scientific_Ontology_Concept_Network.ja.md)
-- [`Claim_Strength_and_Publication_Layer_Table.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table.md)
-- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
-- [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md)
+- [`Claim_Strength_and_Publication_Layer_Table.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md)
+- [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
+- [`TERM_COLLISION_REGISTRY.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md)

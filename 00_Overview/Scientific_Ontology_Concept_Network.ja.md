@@ -399,7 +399,7 @@ Tam / Goodnessは、暗さや失敗を排除する層ではない。
 
 どの問いがどの文書を通過し、どこで別の分野へ接続するかを見えるようにするためのものである。
 
-各命題の主張強度、誤読・応用リスク、公開レイヤー、検証段階は、[`Claim Strength and Publication-Layer Table`](./Claim_Strength_and_Publication_Layer_Table.md)で管理する。ラベルは読者への権威づけではなく、文書がどの言語ゲームへ接近し、どこで減速・抽象化・非公開化を必要とするかを示す公開制御である。
+各命題の主張強度、誤読・応用リスク、公開レイヤー、検証段階は、[`Claim Strength and Publication-Layer Table`](Claim_Strength_and_Publication_Layer_Table.ja.md)で管理する。ラベルは読者への権威づけではなく、文書がどの言語ゲームへ接近し、どこで減速・抽象化・非公開化を必要とするかを示す公開制御である。
 
 ---
 
@@ -537,7 +537,7 @@ CheckとActは、会議室の内部だけでは完了しない。
 
 ---
 
-## 10. [組織境界とポートモデル](../05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md)
+## 10. [組織境界とポートモデル](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 
 目的が共有されると、組織が生まれる。
 
@@ -722,7 +722,7 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 ### 組織・経営から入る
 
 - [`Truth Management and Boundary PDCA`](./Truth_Management_and_Boundary_PDCA.ja.md)
-- [`Organizational Boundary and Port Model`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md)
+- [`Organizational Boundary and Port Model`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`Negentropy Economy and Meaning Generation`](../05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md)
 
 ### AI・制度から入る
@@ -747,11 +747,11 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 
 ---
 
-## 14. v4.3.0で何が見えるようになったのか
+## 14. 現行公開体系で何が見えるようになったのか
 
 v4.2.0までの公開体系は、境界実在性、履歴場、意味生成、境界倫理、AI境界機能、物理対応方針を、それぞれ比較的明確に提示していた。
 
-v4.3.0では、それらの間を結ぶ循環が前景化する。
+現行公開体系では、それらの間を結ぶ循環が前景化する。
 
 特に、次の接続が見えるようになる。
 
@@ -788,7 +788,7 @@ AI・制度・社会への実装
 
 を、一つの方法論的循環として示せる段階へ進んだことを意味する。
 
-v4.3.0における概念ネットワークは、索引の追加ではない。
+現行公開体系における概念ネットワークは、索引の追加ではない。
 
 公開体系が、自らの研究方法を説明できるようになるための入口である。
 
@@ -849,12 +849,12 @@ v4.3.0における概念ネットワークは、索引の追加ではない。
 ## 17. 関連文書
 
 - [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md)
-- [`Claim_Strength_and_Publication_Layer_Table.md`](./Claim_Strength_and_Publication_Layer_Table.md)
+- [`Claim_Strength_and_Publication_Layer_Table.md`](Claim_Strength_and_Publication_Layer_Table.ja.md)
 - [`Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md)
 - [`Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md)
 - [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 - [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
-- [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md)
+- [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md)
-- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
+- [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)

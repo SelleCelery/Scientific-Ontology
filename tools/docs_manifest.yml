@@ -143,9 +143,9 @@ layers:
 
 
 coordination_groups:
-  v4_3_core_five_document_contract:
-    label_ja: "v4.3.0 中核5文書競合防止契約"
-    label_en: "v4.3.0 Core Five-Document Non-Competition Contract"
+  core_document_responsibility_contract:
+    label_ja: "中核文書責務分離・競合防止契約"
+    label_en: "Core Document Responsibility and Non-Competition Contract"
     purpose: >
       Distribute conceptual responsibility across five documents without
       flattening their differences or allowing each document to reproduce the
@@ -155,7 +155,7 @@ coordination_groups:
       - "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
       - "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
       - "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
-      - "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+      - "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
     invariant:
       - "The concept network maps positions and return paths; it does not become a compressed encyclopedia."
       - "Cognitive-axis theory owns formation, stabilization, and transformation of cognitive direction."
@@ -165,6 +165,7 @@ coordination_groups:
     depth_port_requirement: true
     open_question_requirement: true
     relation_cycle_policy: "typed-return-cycles-allowed"
+
 
 concept_ownership:
   epistemic_boundary_conditions:
@@ -197,15 +198,69 @@ concept_ownership:
   boundary_ca:
     canonical_owner: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
     other_documents: "implement_or_return_results"
+  cognitive_field:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+    other_documents: "reference_or_operationalize_without_reifying"
+  cognitive_phase:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+    other_documents: "reference_or_operationalize_without_typing_persons"
+  operational_discretization:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+    other_documents: "apply_without_projecting_discrete_implementation_upstream"
+  operational_port:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+    other_documents: "reference_or_implement_without_redefining"
+  existence_phase:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
+    other_documents: "reference_or_apply_only"
+  existence_phase_compression:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
+    other_documents: "diagnose_or_return_residuals"
+  single_metric_compression:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
+    other_documents: "reference_as_failure_mode"
+  boundary_diplomacy:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+    other_documents: "reference_or_apply_only"
+  port_allocation:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+    other_documents: "allocate_without_redefining_port"
+  multi_port_potentiality:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+    other_documents: "apply_as_reopenability_condition"
+  scoped_port_operation:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+    other_documents: "apply_with_scope_duration_and_return_path"
+  gateway_capture:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+    other_documents: "reference_as_failure_mode"
   organizational_boundary:
-    canonical_owner: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
     other_documents: "reference_or_apply_only"
   responsibility_boundary:
-    canonical_owner: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
     other_documents: "reference_or_apply_only"
+  organizational_port:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+    other_documents: "implement_without_redefining_the_general_port"
   port_protocol_and_audit:
-    canonical_owner: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
     other_documents: "implement_without_redefining_the_core_model"
+  boundary_update:
+    canonical_owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+    other_documents: "return_operational_failures_and_update_boundaries"
+  meaning_experience_field:
+    canonical_owner: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+    other_documents: "reference_as_application_concept"
+  meaning_capacity:
+    canonical_owner: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+    other_documents: "reference_without_reducing_to_capacitance"
+  meaning_experience_capacitor:
+    canonical_owner: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+    other_documents: "structural_analogy_only"
+  existence_strength:
+    canonical_owner: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+    other_documents: "reference_as_application_concept"
 
 documents:
   - path: "README.md"
@@ -217,8 +272,11 @@ documents:
     scope: "repository entrance, public navigation, citation links"
     public_profile: "P0"
     state: "public"
-    role_ja: "公開リポジトリの入口"
-    role_en: "Public entry point for the repository"
+    language_relation: "english_first_japanese_english_coauthoritative_root_interface"
+    language_scope: "README invitation, orientation, navigation, and release metadata only"
+    definition_authority: "delegated_to_linked_public_definition_owners"
+    role_ja: "英語先行・日英共同正本による公開リポジトリの入口"
+    role_en: "English-first, English–Japanese co-authoritative public entry point for the repository"
 
   - path: "01_Sat_Truth/Boundary_Realism_Principle.md"
     document_type: "assertion_document"
@@ -240,11 +298,11 @@ documents:
       - "01_Sat_Truth/AMP_Introduction.md"
       - "01_Sat_Truth/Four_Axioms_of_Existence.md"
 
-  - path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md"
+  - path: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Return_Ethics_and_Retaliation_Conversion.ja.md"
     document_type: "assertion_document"
     title_ja: "返りの倫理と報復変換論"
     title_en: "Return Ethics and Retaliation Conversion"
-    layer: "05_Research_Notes/Cross_Domain_Ontological_Notes"
+    layer: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies"
     status: "Cross-domain ontological note"
     scope: "boundary ethics, return, retaliation, responsibility processing, negentropy economy"
     public_profile: "P2"
@@ -310,7 +368,7 @@ documents:
     state: "public-candidate"
     role_ja: "理論間の位置関係、返路、アポリアを管理する全体地図"
     role_en: "System map for conceptual positions, return paths, and aporia"
-    coordination_group: "v4_3_core_five_document_contract"
+    coordination_group: "core_document_responsibility_contract"
     logical_contract:
       contract_id: "concept_network"
       owns:
@@ -333,7 +391,7 @@ documents:
         - target: "README.md"
           relation: "navigation_consistency"
           evidence: "The public entrance reflects current canonical documents and reading routes."
-        - target: "00_Overview/Claim_Strength_and_Publication_Layer_Table.md"
+        - target: "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md"
           relation: "publication_consistency"
           evidence: "Document roles and public handling remain aligned."
       returns_to:
@@ -371,7 +429,7 @@ documents:
         - concept: "first_shared_and_world_forming_purpose"
           target: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
         - concept: "organizational_boundary"
-          target: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+          target: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
       explicit_open_questions:
         - "Which unresolved concepts still lack a canonical owner?"
         - "Where does a cross-layer translation preserve vocabulary but lose structure?"
@@ -394,7 +452,7 @@ documents:
     state: "public-candidate"
     role_ja: "認識方向の生成、安定、変形の定義所有者"
     role_en: "Canonical owner of cognitive-direction formation, stabilization, and transformation"
-    coordination_group: "v4_3_core_five_document_contract"
+    coordination_group: "core_document_responsibility_contract"
     logical_contract:
       contract_id: "cognitive_axis_formation"
       owns:
@@ -474,7 +532,7 @@ documents:
     state: "public-candidate"
     role_ja: "異なる認識形式を比較・通約・保留する境界プロトコル"
     role_en: "Boundary protocol for comparing, commensurating, and suspending cognitive frameworks"
-    coordination_group: "v4_3_core_five_document_contract"
+    coordination_group: "core_document_responsibility_contract"
     logical_contract:
       contract_id: "optional_axiom_bridge"
       owns:
@@ -551,7 +609,7 @@ documents:
     state: "public-candidate"
     role_ja: "候補目的を第一義として選び、共有後の世界を境界CAで再照合する運用モデル"
     role_en: "Operational model for purpose commitment, shared world formation, and boundary CA"
-    coordination_group: "v4_3_core_five_document_contract"
+    coordination_group: "core_document_responsibility_contract"
     logical_contract:
       contract_id: "truth_management"
       owns:
@@ -572,7 +630,7 @@ documents:
         - "stop_conditions"
         - "boundary_ca_requirements"
       tests:
-        - target: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+        - target: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
           relation: "organizational_operationalization"
           evidence: "Purpose becomes responsibility, port, protocol, audit, and stop conditions."
         - target: "04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md"
@@ -615,17 +673,71 @@ documents:
         - concept: "worldview_commensuration_protocol"
           target: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
         - concept: "organizational_boundary"
-          target: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+          target: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
       explicit_open_questions:
         - "Who may legitimately define, revise, or abandon a shared first purpose?"
         - "How should future generations, nature, and absent stakeholders enter boundary CA?"
         - "When does provisional closure become false closure?"
 
-  - path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+  - path: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+    document_type: "assertion_document"
+    title_ja: "認識動態コミュニケーションモデル"
+    title_en: "Cognitive Dynamics Communication Model"
+    layer: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies"
+    status: "Research Note / Conceptual Model / Metamodel"
+    scope: "cognitive field, cognitive phase, operational discretization, port, commensuration, logical depth, return paths"
+    public_profile: "P1-P2"
+    internal_profile:
+      S: "S2-S3"
+      E: "E1"
+      U: "U1"
+      R: "R2-R3"
+      V: "V0-V1"
+    state: "public-candidate"
+    role_ja: "連続する認識と離散的運用の間の操作構造を所有するメタモデル"
+    role_en: "Metamodel owning the operational mapping between seamless cognition and discrete operation"
+
+  - path: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
+    document_type: "assertion_document"
+    title_ja: "存在相の圧縮"
+    title_en: "Compression of Existence Phases"
+    layer: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies"
+    status: "Research Note / First Draft"
+    scope: "existence phases, compression, cognition, society, economy, AI, peace"
+    public_profile: "P1-P2"
+    internal_profile:
+      S: "S2-S3"
+      E: "E1-E2"
+      U: "U1"
+      R: "R2-R3"
+      V: "V0-V2"
+    state: "public-candidate"
+    role_ja: "存在相圧縮の利益、損失、外部化、再開条件の診断所有者"
+    role_en: "Canonical diagnostic owner for the gains, losses, externalization, and reopening conditions of existence-phase compression"
+
+  - path: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+    document_type: "assertion_document"
+    title_ja: "境界外交とポート配分"
+    title_en: "Boundary Diplomacy and Port Allocation"
+    layer: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies"
+    status: "Cross-domain Ontological Note / First Draft"
+    scope: "boundary diplomacy, port allocation, cognitive axes, commensuration, peace, AI"
+    public_profile: "P1-P2"
+    internal_profile:
+      S: "S3"
+      E: "E2"
+      U: "U1-U2"
+      R: "R2-R3"
+      V: "V0-V2"
+    state: "public-candidate"
+    role_ja: "ポート配分、通約、保留、再開、ゲートウェイ捕捉の動態所有者"
+    role_en: "Canonical owner of the dynamics of port allocation, commensuration, holding, reopening, and gateway capture"
+
+  - path: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
     document_type: "assertion_document"
     title_ja: "組織境界とポートモデル"
     title_en: "Organizational Boundary and Port Model"
-    layer: "05_Research_Notes/Cross_Domain_Ontological_Notes"
+    layer: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies"
     status: "Cross-domain ontological note"
     scope: "organization, responsibility boundary, ports, protocols, audit, abnormality, externalization, AI, peace"
     public_profile: "P2"
@@ -638,12 +750,13 @@ documents:
     state: "public-candidate"
     role_ja: "目的を責任、通信、監査、停止、返路へ変換する横断実装モデル"
     role_en: "Cross-domain model converting purpose into responsibility, communication, audit, stop conditions, and return paths"
-    coordination_group: "v4_3_core_five_document_contract"
+    coordination_group: "core_document_responsibility_contract"
     logical_contract:
       contract_id: "organizational_boundary_and_ports"
       owns:
         - "organizational_boundary"
         - "responsibility_boundary"
+        - "organizational_port"
         - "port_protocol_and_audit"
         - "organizational_negentropy_definition"
         - "boundary_update"
@@ -709,3 +822,22 @@ documents:
         - "How should responsibility be distributed without becoming responsibility dilution?"
         - "How far into the future must an organization preserve a return path?"
         - "How should the audit system itself be audited when its blind spots are structural?"
+
+  - path: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+    document_type: "assertion_document"
+    title_ja: "生存競争の本質と非本質"
+    title_en: "The Essential and Non-Essential Aspects of the Struggle for Existence"
+    layer: "04_Applications/Social_Boundary_Design"
+    status: "Application Note / First Draft"
+    scope: "peace, society, boundary ethics, meaning-experience field, social boundary design"
+    public_profile: "P1-P2"
+    internal_profile:
+      S: "S2"
+      E: "E1-E2"
+      U: "U1"
+      R: "R2-R4"
+      V: "V0-V1"
+    state: "public-candidate"
+    role_ja: "存在相、意味容量、境界外交を平和仕様へ接続する公開応用文書"
+    role_en: "Public application connecting existence phases, meaning capacity, and boundary diplomacy to a peace specification"
+

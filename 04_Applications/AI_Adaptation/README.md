@@ -1,98 +1,140 @@
-# Applications / 応用層
+# AI Adaptation / AI適応
 
 > Layer: 04_Applications / AI_Adaptation
-> Status: README  
-> Scope: Public application interfaces and non-operational design notes
+> Status: README
+> Scope: AI boundary function / response structure / judgment preservation / application boundary theory
+> Language: ja+en
+> Public profile: P1-P2
+> Authority: Directory navigation and maintenance contract; not a concept-definition owner
 
----
+# 日本語正本
 
-## 1. Layer Role / 層の位置づけ
+## 1. Directory Role / ディレクトリの位置づけ
 
-`04_Applications / AI_Adaptation` は、Sat / Raj / Tam で整理された概念を、AI境界インターフェース、応用境界理論、有用性、人格応答構造などの公開可能な応用文書へ接続する層である。
+`AI_Adaptation`は、AIを判断代行装置ではなく、利用者の判断可能性を維持する境界インターフェースとして扱う。
 
-この層は、実装仕様の公開場所ではない。公開可能な設計思想、使用者の判断可能性を守るインターフェース概念、応答構造としてのAI人格、応用境界理論の入口を置く。
+ここでの「適応」は無条件の迎合ではない。履歴、残差、不確実性、停止条件を保持しながら応答構造を調整することを指す。
 
-English commensurated rendering: 
+### 構造上の位置
 
-`04_Applications/AI_Adaptation` connects the Sat/Raj/Tam conceptual structure to public-facing application interfaces, especially AI boundary interfaces, usefulness, response-structure models, and application boundary theory. 
+```text
+03 Tam / Goodness
+境界倫理・返路・偽閉鎖回避
+  ↓
+AI Adaptation
+境界機能・同期的理解・応答構造
+  ↓
+利用者の判断場
+```
 
-It is not a place for publishing implementation specifications.
+社会や組織がAIをどう採用するかは、[`../Social_Boundary_Design/README.md`](../Social_Boundary_Design/README.md)が扱う。
 
----
+## 2. Public Scope / 公開範囲
 
-## 2. Public Scope and Claim Profile / 公開範囲と主張強度
+本READMEは、標準科学、法令、政策、既存分野の定義を置き換えるものではない。
 
-この層の公開強度は、原則として P1-P2 である。概念応用、公開可能な設計思想、非操作的な応用説明を扱う。実装コード、非公開パラメータ、制御構造、人格OSの詳細は含めない。
+含むもの：
 
-English commensurated rendering: The default public scope is P1-P2. This layer contains conceptual applications and public design interfaces. It does not publish implementation code, private parameters, control structures, or persona OS details.
+- AI有用性の境界機能モデル
+- 同期的理解とOpen Marker
+- AI人格を応答構造として扱う公開概念
+- 応用境界理論
 
----
+含まないもの：
 
-## 3. Included / Not Included / 含むもの・含まないもの
+- AI意識、人格、魂の実在を確定する主張
+- 非公開人格OS、Soul Core、ランタイム仕様
+- 自律制御コード、セキュリティ回避、操作変数
+- 利用者の判断をAIへ全面委任する設計
 
-含むもの:
+## 3. Documents / 文書一覧
 
-- AI境界インターフェースの公開用説明
-- AI有用性を境界機能として扱う文書
-- AI人格を応答構造として扱う公開用入口
-- 応用境界理論の中核説明
-- 公開可能な応用設計メモ
-- AI導入を境界設計・責任境界・照合可能性として扱う応用文書
+1. [`Application_Boundary_Theory_Core.md`](./Application_Boundary_Theory_Core.md)
+2. [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)
+3. [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
+4. [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
 
-含まないもの:
+## 4. Maintenance Notes / 運用メモ
 
-- 実装コード
-- 非公開実装スキーマ
-- 詳細な運用パラメータ
-- AI制御構造
-- 人格OS・Soul Core・Runtime Core
-- 内部評価ログ
-- 非公開シミュレーション仕様
+上流：
 
-English commensurated rendering: This layer includes public AI boundary-interface documents, usefulness as boundary function, AI personality as response structure, and application boundary theory. 
+- [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 
-It excludes implementation code, private schemas, operational parameters, AI control structures, persona cores, internal logs, and non-public simulation specifications.
+関連研究：
 
----
+- [`../../05_Research_Notes/AI_Personality_Notes/README.md`](../../05_Research_Notes/AI_Personality_Notes/README.md)
+- [`../../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md`](../../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md)
 
-## 4. Documents / 文書一覧
+偽閉鎖、判断能力の低下、履歴損失、過剰同期は、境界倫理と応答構造へ返す。
 
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
-  - 一行説明: AIを境界インターフェースとして扱い、同期的理解、偽閉鎖、Open Marker、倫理的制動を説明する。
-  - Role: AI境界インターフェースの公開文書。
-  - Public profile: Application interface / P1.
+- 人格表現と人格応答構造を区別する。
+- 利便性を判断外部化と同一視しない。
+- AIの適応を無条件迎合へ変えない。
+- 社会採用上の責任は`Social_Boundary_Design`へ委譲する。
 
-- [`AI_Personality_as_Response_Structure.md`](AI_Adaptation/AI_Personality_as_Response_Structure.md)
-  - 一行説明: AI人格を、口調やロールプレイではなく、判断可能性を保つ応答構造として扱う。
-  - Role: AI人格概念の公開ゲート。
-  - Public profile: Application concept / P1-P2.
+# English Commensurated Rendering
 
-- [`AI_Usefulness_as_a_Boundary_Function.md`](AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
-  - 一行説明: AIの有用性を、ユーザーの判断可能性が保たれる場の維持として定義する。
-  - Role: AI有用性の公開用概念インターフェース。
-  - Public profile: Application interface / P1.
+## 0. Role
 
-- [`Application_Boundary_Theory_Core.md`](AI_Adaptation/Application_Boundary_Theory_Core.md)
-  - 一行説明: 応用領域における境界理論の中核概念を整理する。
-  - Role: 応用境界理論の基礎ノート。
-  - Public profile: Application theory note / P1-P2.
+`AI_Adaptation` treats AI not as a substitute decision-maker but as a boundary interface preserving the user's capacity to judge.
 
----
+“Adaptation” does not mean unconditional accommodation. It means adjusting response structures while retaining history, residuals, uncertainty, and stop conditions.
 
-## 5. Maintenance Notes / 運用メモ
+## 1. Structural Position
 
-### Stable policy / 固定方針
+```text
+03 Tam / Goodness
+Boundary ethics, return paths, and resistance to false closure
+  ↓
+AI Adaptation
+Boundary function, synchronous understanding, and response structure
+  ↓
+The user's judgment field
+```
 
-Applications は、公開可能な応用説明の層である。実装可能性を示す場合でも、非公開パラメータや制御構造は出さない。
+How society or organizations adopt AI belongs to [`../Social_Boundary_Design/README.md`](../Social_Boundary_Design/README.md).
 
-### Directory history / 層の変更履歴
+## 2. Public Scope
 
-- v4 系では、AI関連文書を Tam から Applications へ分離し、Tam を境界倫理・非破壊性の原理層として残した。
+This README is not a replacement for standard science, law, policy, or established disciplinary definitions.
 
-### File-level changes / ファイル単位の増減
+Included:
 
-- AI有用性、AI境界インターフェース、AI人格応答構造、応用境界理論を本層の中心に置く。
+- a boundary-function model of AI usefulness;
+- synchronous understanding and Open Marker;
+- the public concept of AI personality as response structure;
+- application boundary theory.
 
-### Pending notes / 保留事項
+Not included:
 
-- 実装寄りの内容が増えた場合は、公開文書ではなく非公開開発資料へ退避する。
+- definitive attribution of consciousness, personhood, or soul to AI;
+- private persona OS, Soul Core, or runtime specifications;
+- autonomous control code, security bypasses, or operational variables;
+- designs transferring all user judgment to AI.
+
+## 3. Documents and Recommended Reading Order
+
+1. [`Application_Boundary_Theory_Core.md`](./Application_Boundary_Theory_Core.md)
+2. [`AI_Usefulness_as_a_Boundary_Function.md`](./AI_Usefulness_as_a_Boundary_Function.md)
+3. [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](./AI_Boundary_Interface_and_Synchronous_Understanding.md)
+4. [`AI_Personality_as_Response_Structure.md`](./AI_Personality_as_Response_Structure.md)
+
+## 4. Return and Maintenance
+
+Upstream:
+
+- [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
+
+Related research:
+
+- [`../../05_Research_Notes/AI_Personality_Notes/README.md`](../../05_Research_Notes/AI_Personality_Notes/README.md)
+- [`../../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md`](../../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md)
+
+False closure, reduced judgment capability, history loss, and excessive synchronization return to Boundary Ethics and response-structure documents.
+
+- Distinguish personality expression from personality as response structure.
+- Do not identify convenience with externalization of judgment.
+- Do not turn AI adaptation into unconditional accommodation.
+- Delegate social adoption responsibility to `Social_Boundary_Design`.

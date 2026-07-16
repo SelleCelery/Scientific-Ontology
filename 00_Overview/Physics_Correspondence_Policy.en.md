@@ -564,9 +564,9 @@ Related documents:
 - [`02_Raj_Beauty/Scientific_Ontology_and_Science.md`](../02_Raj_Beauty/Scientific_Ontology_and_Science.md)
 - [`01_Sat_Truth/Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md)
 - [`05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.en.md`](../05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.en.md)
-- [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md)
-- [`TERM_COLLISION_REGISTRY.en.md`](../TERM_COLLISION_REGISTRY.en.md)
-- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
+- [`TERM_COLLISION_REGISTRY.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md)
+- [`TERM_COLLISION_REGISTRY.en.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.en.md)
+- [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
 
 ---
 

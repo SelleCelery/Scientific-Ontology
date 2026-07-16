@@ -1,88 +1,102 @@
 # Visual Materials / 視覚資料
 
-> Layer: 06_Visual_Materials  
-> Status: README  
-> Scope: Public visual aids and conceptual entry materials
+> Layer: 06_Visual_Materials
+> Status: README
+> Scope: public visual aids / conceptual posters / visual reading notes
+> Language: ja+en
+> Public profile: P0-P1
+> Authority: Directory navigation and maintenance contract; not a concept-definition owner
 
----
+# 日本語正本
 
 ## 1. Layer Role / 層の位置づけ
 
-06_Visual_Materials は、存在境界論｜Scientific Ontology の概念を視覚的に導入するための補助層である。ポスター、図版、図版注記など、読者が全体構造へ入るための視覚導線を置く。
+`06_Visual_Materials`は、存在境界論の概念配置へ視覚的に入るための補助層である。
 
-この層は、理論本文や証明層ではない。視覚資料は理解の入口であり、詳細な定義、主張強度、用語運用は各本文ファイルと方針文書で確認する。
-
-English commensurated rendering: 
-
-06_Visual_Materials contains public visual aids and conceptual entry materials. 
-
-It is not a proof layer or a replacement for the written theoretical documents.
-
----
+画像は理解を加速できる一方、概念差、主張強度、非主張境界を圧縮する。そのため、視覚資料は本文の代替ではなく、本文へ戻るための入口として扱う。
 
 ## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
-この層の公開強度は、原則として P0-P1 である。図版は概念導線として扱い、本文理論や研究ノートの代替とはしない。
-
-English commensurated rendering: The default public scope is P0-P1. Visual materials are navigational aids and conceptual entry points, not substitutes for the main texts or research notes.
-
----
+このREADMEの公開プロファイルはP0-P1であり、視覚資料そのものを理論証明として扱わない。
 
 ## 3. Included / Not Included / 含むもの・含まないもの
 
-含むもの:
+含むもの：
 
-- 公開用ポスター画像
-- 日本語版・英語版の視覚資料
+- 日本語版・英語版の公開ポスター
+- 概念配置図
 - 図版の読解注記
-- 画像を通じた概念導線
 
-含まないもの:
+含まないもの：
 
 - 理論本文の完全な代替
-- 物理証明
-- 非公開図解
-- 内部実装図
-- 人格OS・ランタイム設計図
-
-English commensurated rendering: This layer includes public poster images, Japanese and English visual materials, and notes for reading the visual aids. It does not include private diagrams, implementation diagrams, or replacements for the theoretical body.
-
----
+- 図そのものによる証明
+- 非公開実装図、人格OS図、内部評価図
+- 画像生成プロンプトや制作過程の生ログ
 
 ## 4. Documents / 文書一覧
 
-- [`Scientific_Ontology_Conceptual_Poster.ja.png`](./Scientific_Ontology_Conceptual_Poster.ja.png)
-  - 一行説明: 存在境界論の概念配置を示す日本語版ポスター。
-  - Role: 日本語視覚導線。
-  - Public profile: Visual entry / P0.
+1. [`Scientific_Ontology_Conceptual_Poster.ja.png`](./Scientific_Ontology_Conceptual_Poster.ja.png)
+2. [`Scientific_Ontology_Conceptual_Poster.en.png`](./Scientific_Ontology_Conceptual_Poster.en.png)
+3. [`Scientific_Ontology_Conceptual_Poster_Note.md`](./Scientific_Ontology_Conceptual_Poster_Note.md)
 
-- [`Scientific_Ontology_Conceptual_Poster.en.png`](./Scientific_Ontology_Conceptual_Poster.en.png)
-  - 一行説明: 日本語版ポスターに対応する英語版ポスター。
-  - Role: English visual entry.
-  - Public profile: Visual entry / P0.
-
-- [`Scientific_Ontology_Conceptual_Poster_Note.md`](./Scientific_Ontology_Conceptual_Poster_Note.md)
-  - 一行説明: ポスターの位置づけ、読み方、用語・主張強度上の注意を整理する注記。
-  - Role: 視覚資料の読解注記。
-  - Public profile: Visual note / P0-P1.
-
----
+画像だけで理解を閉じず、注記とConcept Networkを併読する。
 
 ## 5. Maintenance Notes / 運用メモ
 
-### Stable policy / 固定方針
+上流：
 
-視覚資料は、本文を短絡的に置き換えない。図版は読解入口であり、理論の精密な定義は各本文へ委ねる。
+- [`../00_Overview/Scientific_Ontology_Concept_Network.ja.md`](../00_Overview/Scientific_Ontology_Concept_Network.ja.md)
+- [`../00_Overview/Scientific_Ontology_System_Map.md`](../00_Overview/Scientific_Ontology_System_Map.md)
+- [`../GLOSSARY.md`](../GLOSSARY.md)
 
-### Directory history / 層の変更履歴
+- 日本語版と英語版の概念配置を一致させる。
+- 画像変更時は読解注記も確認する。
+- 図版へ版固有・作業用識別子を残さない。
+- 視覚的簡略化によって消えた条件を注記で補う。
+- 新しい視覚資料には本文への返路を付ける。
 
-- v4 系では、概念ポスターとその注記を独立した視覚資料層として配置した。
+# English Commensurated Rendering
 
-### File-level changes / ファイル単位の増減
+## 0. Role
 
-- 日本語版・英語版ポスターはペアで扱う。
-- ポスター注記は、画像の主張範囲と読解上の注意を補う。
+`06_Visual_Materials` is a supporting layer for visually entering the conceptual arrangement of Scientific Ontology.
 
-### Pending notes / 保留事項
+Images can accelerate understanding, but they also compress conceptual differences, claim strength, and non-claim boundaries. Visual materials are therefore entrances returning readers to the texts, not replacements for them.
 
-- 新しい図版を追加する場合は、対応する注記または読み方を同時に置く。
+## 1. Public Scope
+
+Included:
+
+- public Japanese and English posters;
+- conceptual arrangement diagrams;
+- notes for reading visual materials.
+
+Not included:
+
+- complete replacements for theoretical texts;
+- proof by image alone;
+- private implementation diagrams, persona-OS diagrams, or internal evaluation maps;
+- image-generation prompts or raw production logs.
+
+## 2. Materials and Reading Order
+
+1. [`Scientific_Ontology_Conceptual_Poster.ja.png`](./Scientific_Ontology_Conceptual_Poster.ja.png)
+2. [`Scientific_Ontology_Conceptual_Poster.en.png`](./Scientific_Ontology_Conceptual_Poster.en.png)
+3. [`Scientific_Ontology_Conceptual_Poster_Note.md`](./Scientific_Ontology_Conceptual_Poster_Note.md)
+
+Do not close understanding at the image alone; read the note and Concept Network with it.
+
+## 3. Return and Maintenance
+
+Upstream:
+
+- [`../00_Overview/Scientific_Ontology_Concept_Network.ja.md`](../00_Overview/Scientific_Ontology_Concept_Network.ja.md)
+- [`../00_Overview/Scientific_Ontology_System_Map.md`](../00_Overview/Scientific_Ontology_System_Map.md)
+- [`../GLOSSARY.md`](../GLOSSARY.md)
+
+- Keep conceptual placement aligned between Japanese and English posters.
+- Review the reading note when images change.
+- Do not leave version-specific or local working identifiers in visual materials.
+- Restore conditions lost through visual simplification in the note.
+- Attach a return path to the texts for every new visual material.

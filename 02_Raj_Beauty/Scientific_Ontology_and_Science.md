@@ -97,7 +97,7 @@
 
 目的は、その境界を制御された形で開き直すことである。
 
-用語運用については、[`Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md) を参照する。
+用語運用については、[`Scientific_Terminology_Protocol.md`](../90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md) を参照する。
 
 ## 7. 公開・通約境界
 
@@ -214,7 +214,7 @@ This distinction is necessary because the purpose is not to blur science and met
 
 The purpose is to reopen the boundary between them in a controlled way.
 
-For terminology handling, see [`Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md).
+For terminology handling, see [`Scientific_Terminology_Protocol.md`](../90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md).
 
 ## 7. Publication and Commensuration Boundary
 

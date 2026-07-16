@@ -1,102 +1,142 @@
-# Raj / Beauty / 激・美
+# Raj / Beauty / Raj・美
 
-> Layer: 02_Raj_Beauty  
-> Status: README  
-> Scope: Public constructive frameworks and boundary dynamics
+> Layer: 02_Raj_Beauty
+> Status: README
+> Scope: communication content / event-streams / history-field dynamics / cognitive-axis formation / science commensuration
+> Language: ja+en
+> Public profile: P0-P2
+> Authority: Directory navigation and maintenance contract; not a concept-definition owner
 
----
+# 日本語正本
 
 ## 1. Layer Role / 層の位置づけ
 
-02_Raj_Beauty は、Sat / Truth の基礎概念に運動を与える構築層である。履歴を持つ存在・場が、境界を通じて通信し、同期し、非同期し、切断され、再接続され、意味や質的経験を生成する過程を扱う。
+`02_Raj_Beauty`は、中核三層において**ネットワークを流れる通信内容と、その受け取られ方・読み方の生成**を扱う。
 
-この層は根本公理そのものではない。HFC、履歴場トポロジー、科学との接続面を通じて、基礎概念を物理・情報・生命・社会・AI・死生観へ展開するための公開フレームを置く。
+この層は、事象流、履歴、差分、意味圧、同期・非同期、切断・再接続、注意、抽象化、認識軸の形成を扱う。そのため、履歴場通信、履歴場トポロジー、科学との接続面、境界認識生成が置かれる。
 
-English commensurated rendering: 
+### 構造上の位置
 
-02_Raj_Beauty is the constructive layer that gives movement to the foundations established in Sat / Truth. 
-
-It treats history-bearing beings or fields as communicating, synchronizing, desynchronizing, cutting off, reconnecting, and generating meaning or qualitative experience through boundaries.
-
----
+```text
+01 Sat / Truth
+ネットワーク構造と成立条件
+  ↓
+02 Raj / Beauty
+通信内容・履歴・差分・読みの生成
+  ↓
+03 Tam / Goodness
+通信規約・通約・管理・返送
+```
 
 ## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
-この層の公開強度は、原則として P0-P2 である。HFC と履歴場トポロジーは公開用フレームとして置くが、物理接続の強い命題、宇宙論的試論、標準模型対応は Research Notes に置く。
+本READMEは、標準科学、法令、政策、既存分野の定義を置き換えるものではない。
 
-現代科学との関係では、標準科学を否定せず、標準定義を上書きしない。接続面では、構造アナロジー、存在論的再解釈、形式化候補、物理主張候補を区別する。
-
-English commensurated rendering: 
-
-The default public scope is P0-P2. HFC and History-Field Topology are public frameworks, while stronger physical or cosmological correspondence claims belong in Research Notes. 
-
-This layer does not overwrite standard scientific definitions.
-
----
+このREADMEの公開プロファイルは、メタデータ欄に示す。各文書固有の主張強度は本文メタデータと主張強度表を参照する。
 
 ## 3. Included / Not Included / 含むもの・含まないもの
 
-含むもの:
+含むもの：
 
-- 履歴場通信論（HFC）
+- 履歴場通信論
 - 履歴場トポロジー
-- 境界動態
-- 同期・非同期
-- 履歴切断と再接続
-- 意味、クオリア、経験、事象流の公開用モデル
-- 現代科学との接続面に関する立場表明
+- 同期、非同期、切断、再接続
+- 差分、注意、抽象化、認識軸形成
+- 現代科学との接続面
 
-含まないもの:
+含まないもの：
 
-- 根本公理そのもの
-- 非公開AMP/ITS/HFC Core
-- 標準模型対応表
-- 宇宙論的・物理的な高主張強度ノート
-- 実装仕様、人格OS、運用パラメータ
-- 社会批判や経済論を主目的とする文書
-
-English commensurated rendering: 
-
-This layer includes HFC, History-Field Topology, boundary dynamics, synchronization/desynchronization, and public position statements on science. 
-
-It does not include full private cores, Standard Model correspondence notes, high-claim physical notes, implementation specifications, or social/economic theory as its main body.
-
----
+- 非公開HFCまたはITSの全構造
+- 経験科学または標準物理学の置換
+- 物理・宇宙論上の強い仮説の本体
+- 通信規約や倫理判断の最終管理
+- 実装コード、制御パラメータ、内部シミュレーション
 
 ## 4. Documents / 文書一覧
 
-- [`HFC_Introduction.md`](./HFC_Introduction.md)
-  - 一行説明: 人間、言語、AI、社会、倫理を、履歴を持つ場どうしの通信として読み直す公開用入門。
-  - Role: 履歴場通信論の公開入口。
-  - Public profile: Public conceptual model / P0-P1.
-
-- [`History_Field_Topology.md`](./History_Field_Topology.md)
-  - 一行説明: 物理・情報・生命・社会・AI・死生観を、履歴、境界、同期、切断、意味閉路から読むための公開フレーム。
-  - Role: 構築的・解釈的フレーム。
-  - Public profile: Public interpretive frame / P1-P2.
-
-- [`Scientific_Ontology_and_Science.md`](./Scientific_Ontology_and_Science.md)
-  - 一行説明: 存在境界論と現代科学の関係、および高エントロピー観測ベースの科学と低エントロピー活動ベースのトップダウン理論の本拠地差分を整理する。
-  - Role: 科学との接続面の公開用立場表明。
-  - Public profile: Public position statement / P1-P2.
-
----
+1. [`HFC_Introduction.md`](./HFC_Introduction.md)
+2. [`History_Field_Topology.md`](./History_Field_Topology.md)
+3. [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](./Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md) / [`en`](./Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
+4. [`Scientific_Ontology_and_Science.md`](./Scientific_Ontology_and_Science.md)
 
 ## 5. Maintenance Notes / 運用メモ
 
-### Stable policy / 固定方針
+上流：[`../01_Sat_Truth/README.md`](../01_Sat_Truth/README.md)
 
-Raj / Beauty は、基礎概念を動かす層である。物理・宇宙論・標準模型に強く接続する文書は、この層の本文ではなく Research Notes に置く。
+下流：
 
-### Directory history / 層の変更履歴
+- [`../03_Tam_Goodness/README.md`](../03_Tam_Goodness/README.md)
+- [`../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md)
+- [`../05_Research_Notes/Physical_Cosmological_Notes/README.md`](../05_Research_Notes/Physical_Cosmological_Notes/README.md)
 
-- 物理・宇宙論接続文書は、主張強度が高いため 05_Research_Notes/Physical_Cosmological_Notes へ移した。
-- 科学との関係整理は、本層に残し、読者が Research Notes へ進む前の接続面として扱う。
+認識生成モデルが説明できない事例、科学との接続で生じた残差、実装上の認識負荷は、この層または`01`へ返す。
 
-### File-level changes / ファイル単位の増減
+- `02`を物理仮説の保管場所にしない。
+- 通信内容・読みの生成と、通信規約・倫理管理を区別する。
+- 科学語彙は標準定義を上書きしない。
+- 認識軸を人格診断または固定類型として扱わない。
 
-- [`Scientific_Ontology_and_Science.md`](./Scientific_Ontology_and_Science.md) は Overview ではなく Raj に置く。理由は、単なる運用規約ではなく、科学との構造的接続面を扱うためである。
+# English Commensurated Rendering
 
-### Pending notes / 保留事項
+## 0. Role
 
-- HFC と ITS の境界は、今後も `GLOSSARY.md` と `Scientific_Terminology_Protocol.md` で確認する。
+`02_Raj_Beauty` addresses **what flows through the network and how reception and reading are generated**.
+
+It treats event-streams, history, difference, meaning pressure, synchronization and desynchronization, cutoff and reconnection, attention, abstraction, and cognitive-axis formation. This is why History-Field Communication, History-Field Topology, the interface with science, and boundary-cognition formation belong here.
+
+## 1. Structural Position
+
+```text
+01 Sat / Truth
+Network structure and conditions of formation
+  ↓
+02 Raj / Beauty
+Communication content, history, difference, and generation of reading
+  ↓
+03 Tam / Goodness
+Communication protocols, commensuration, management, and return
+```
+
+## 2. Public Scope
+
+This README is not a replacement for standard science, law, policy, or established disciplinary definitions.
+
+Included:
+
+- History-Field Communication;
+- History-Field Topology;
+- synchronization, desynchronization, cutoff, and reconnection;
+- difference, attention, abstraction, and cognitive-axis formation;
+- the interface with contemporary science.
+
+Not included:
+
+- full private structures of HFC or ITS;
+- replacement of empirical science or standard physics;
+- the main body of stronger physical or cosmological hypotheses;
+- final management of communication protocols or ethical judgment;
+- implementation code, control parameters, or internal simulations.
+
+## 3. Documents and Recommended Reading Order
+
+1. [`HFC_Introduction.md`](./HFC_Introduction.md)
+2. [`History_Field_Topology.md`](./History_Field_Topology.md)
+3. [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](./Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md) / [`en`](./Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
+4. [`Scientific_Ontology_and_Science.md`](./Scientific_Ontology_and_Science.md)
+
+## 4. Return and Maintenance
+
+Upstream: [`../01_Sat_Truth/README.md`](../01_Sat_Truth/README.md)
+
+Downstream:
+
+- [`../03_Tam_Goodness/README.md`](../03_Tam_Goodness/README.md)
+- [`../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md)
+- [`../05_Research_Notes/Physical_Cosmological_Notes/README.md`](../05_Research_Notes/Physical_Cosmological_Notes/README.md)
+
+Cases unexplained by cognitive-formation models, residuals in scientific correspondence, and cognitive burdens found in implementation return to this layer or to `01`.
+
+- Do not use `02` as storage for physical hypotheses.
+- Distinguish communication content and generation of reading from protocol and ethical management.
+- Do not overwrite standard scientific definitions.
+- Do not treat cognitive axes as personality diagnoses or fixed types.

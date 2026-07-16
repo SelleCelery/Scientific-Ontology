@@ -17,7 +17,7 @@
 
 > 履歴を持つ観測者に差分が接触したとき、何が感じられ、何が理解可能になり、何が見えなくなるという方向性は、どのように形成されるのか。
 
-本稿は、知の正当化条件そのものを定義しない。同期、照合、偽閉鎖、再照合可能性といった知の成立条件は、[`Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja) が主に扱う。
+本稿は、知の正当化条件そのものを定義しない。同期、照合、偽閉鎖、再照合可能性といった知の成立条件は、[`Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md) が主に扱う。
 
 本稿は、情報が意味になる条件そのものも定義しない。意味ループ、履歴、クオリア、内在時間の関係は、[`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md) が主に扱う。
 
@@ -575,5 +575,5 @@
 - [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
 - [`Truth_Management_and_Boundary_PDCA.ja.md`](../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md)
 - [`Scientific_Ontology_Concept_Network.ja.md`](../00_Overview/Scientific_Ontology_Concept_Network.ja.md)
-- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
-- [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md)
+- [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
+- [`TERM_COLLISION_REGISTRY.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md)

@@ -225,7 +225,7 @@
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md)
-- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
+- [`00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 
@@ -241,7 +241,7 @@
 
 関連文書：
 
-- [`00_Overview/Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md)
+- [`00_Overview/Scientific_Terminology_Protocol.md`](../90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
@@ -534,7 +534,7 @@ Related reading:
 
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md)
-- [`05_Research_Notes/Claim_Strength_and_Publication_Layer_Table.md`](../../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
+- [`00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 
 ### D.3 Lower-left panel
@@ -549,7 +549,7 @@ A paradigm bridge does not erase differences. It creates a comparable interface 
 
 Related reading:
 
-- [`00_Overview/Scientific_Terminology_Protocol.md`](../00_Overview/Scientific_Terminology_Protocol.md)
+- [`00_Overview/Scientific_Terminology_Protocol.md`](../90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md)
 - [`01_Sat_Truth/Boundary_Epistemological_Critique.en.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
 - [`GLOSSARY.md`](../GLOSSARY.md)
 

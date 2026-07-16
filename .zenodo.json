@@ -1,49 +1,43 @@
 {
-  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v4.2.0",
+  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v4.3.0",
   "upload_type": "publication",
-  "publication_type": "other",
-  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v4.2.0 strengthens the public interface for boundary-oriented conceptual research.\n\nThis release clarifies why physics-adjacent vocabulary appears in the framework, adds the Boundary Realism Principle to the public Sat / Truth layer, reorganizes the Research Notes Index, and introduces a broader Claim Strength and Publication Layer Table for managing exploratory notes, stronger hypotheses, cross-domain readings, and public-facing claim boundaries.\n\nMajor additions include the Physics Correspondence Policy, Boundary Realism Principle, Cross-Domain Ontological Notes, Japanese / English separated renderings for PINGER and Chaos / Logical-depth Axis notes, a literary-ontological note on Meifu Bureau / reincarnation / belief gravity, and public-format checking tools.\n\nScientific Ontology is a boundary-oriented conceptual framework for studying existence, history, communication, meaning, ethics, AI applications, physics-adjacent correspondence, literary ontology, and institutional interpretation through iterative publication, practical application, and conceptual refinement.",
+  "publication_type": "report",
+  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v4.3.0 develops the boundary-oriented research movement established in the preceding public edition.\n\nThe release connects three layers of boundary cognition: critique of the conditions under which cognition is formed, formation of cognitive axes from entropy-attributed difference and history, and operation of distinct cognitive forms through commensuration, suspension, reopening, and return. It further connects these layers to research dynamics, organizational boundaries, port allocation, AI and institutional design, and a public specification for peace.\n\nMajor additions include the Scientific Ontology Concept Network, Truth Management and Boundary PDCA, Entropy-Attributed Difference and Cognitive Axis Formation, Optional Axiom Modules as a Cognitive Bridge, Cognitive Dynamics Communication Studies, Organizational Boundary and Port Model, and Specification for Peace.\n\nThe repository also strengthens its public governance infrastructure through concept-lineage metadata, public definition ownership, publication and commensuration policy, terminology collision registries, machine-readable document relationships, and public-format checking. The root README is an English-first, English/Japanese co-authoritative public interface; most research documents retain Japanese-authoritative and English-commensurated relations.\n\nScientific Ontology is a public conceptual framework for studying boundary, contact, history, cognition, communication, meaning, ethics, AI, organizations, social design, physics-adjacent correspondence, and return paths. It does not claim to replace established empirical sciences or to establish physical identity from cross-domain structural resemblance.",
   "creators": [
     {
-      "name": "万度 華凜"
+      "name": "万土, 華凜"
     }
   ],
+  "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "4.2.0",
-  "publication_date": "2026-07-07",
+  "version": "4.3.0",
+  "publication_date": "2026-07-16",
   "keywords": [
     "Scientific Ontology",
     "存在境界論",
+    "Boundary Cognition",
+    "Boundary Epistemology",
+    "Cognitive Axis Formation",
     "Boundary Studies",
-    "Conceptual Framework",
-    "Applied Metaphysics",
     "History-Field Topology",
     "Boundary Realism",
-    "Physics Correspondence Policy",
-    "Intrinsic Time",
-    "Logical-depth Axis",
-    "Synchronization",
-    "Collation",
+    "Commensuration",
     "Re-collation",
-    "Claim Strength Management",
-    "Publication Layer",
+    "Research Dynamics",
+    "Boundary PDCA",
+    "Organizational Boundary",
+    "Port Model",
+    "Peace Specification",
+    "AI Governance",
     "Boundary Ethics",
-    "Narrative Truth",
-    "Literary Ontology",
-    "Negentropy Economy",
-    "AI Usefulness",
-    "Operational Correspondence",
-    "Heuristic Verification"
+    "Claim Strength Management",
+    "Concept Lineage",
+    "Conceptual Framework"
   ],
   "language": "eng",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.19222394",
-      "relation": "isVersionOf",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.21048588",
+      "identifier": "10.5281/zenodo.21240120",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     },
@@ -53,5 +47,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "This release strengthens the public interface for physics correspondence, boundary realism, Research Notes navigation, and claim-strength / publication-layer management while preserving the publication policy, public/private boundary, terminology governance, and CC BY 4.0 licensing established in earlier public editions. Earlier releases remain archived within the Zenodo record family for historical continuity."
+  "notes": "This release extends boundary epistemological critique into boundary cognition formation, boundary cognition operation, research dynamics, organizational implementation, and peace specification. It remains a public conceptual research archive with explicit claim-strength, non-claim, terminology, and public/private boundaries."
 }

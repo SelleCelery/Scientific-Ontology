@@ -10,7 +10,7 @@
 
 本稿は哲学史の総合ではない。既存思想との接続は、権威づけではなく照合のために注解ファイルへ置く。
 
-翻訳・通約・用語衝突管理の一般方針については、[`../Translation_Note.md`](../Translation_Note.md)、[`../Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)、および用語衝突管理表を参照する。
+翻訳・通約・用語衝突管理の一般方針については、[`../Translation_Note.md`](../90_Repository_Governance/Translation_Note.md)、[`../Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)、および用語衝突管理表を参照する。
 
 ---
 

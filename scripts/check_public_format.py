@@ -80,6 +80,16 @@ DEFAULT_EXCLUDED_DIR_NAMES = {
     "checker_reports",
 }
 
+DEFAULT_EXCLUDED_MARKDOWN_DIRS = {
+    "tools",
+    "scripts",
+}
+
+DEFAULT_EXCLUDED_MARKDOWN_FILE_PATTERNS = (
+    "000*.md",
+)
+
+
 DEFAULT_STATUS_VALUES = {
     "readme",
     "introduction",
@@ -573,10 +583,27 @@ def build_excluded_paths(root: Path, registry: Registry, args: argparse.Namespac
 
 def is_excluded_path(path: Path, root: Path, excluded_paths: set[str]) -> bool:
     try:
-        rel = path.relative_to(root).as_posix()
+        relative_path = path.relative_to(root)
+        rel = relative_path.as_posix()
     except ValueError:
         return True
-    parts = set(path.relative_to(root).parts)
+
+    parts_tuple = relative_path.parts
+    parts = set(parts_tuple)
+
+    # Public Markdown checks intentionally ignore operational documentation
+    # under tools/ and scripts/, and draft files whose basename begins with 000.
+    # Non-Markdown files in tools/ remain available to registry, manifest,
+    # maintenance-rule, and checker execution.
+    if path.suffix.lower() == ".md":
+        if parts_tuple and parts_tuple[0] in DEFAULT_EXCLUDED_MARKDOWN_DIRS:
+            return True
+        if any(
+            fnmatch.fnmatch(path.name, pattern)
+            for pattern in DEFAULT_EXCLUDED_MARKDOWN_FILE_PATTERNS
+        ):
+            return True
+
     if parts & DEFAULT_EXCLUDED_DIR_NAMES:
         return True
     if path.name in DEFAULT_EXCLUDED_FILE_NAMES:
@@ -1248,7 +1275,12 @@ def check_file(
         policy = registry.readme_document_list_policy(doc_type)
         require_all = bool(policy.get("require_all_same_directory_files", doc_type in {"layer_readme", "subdirectory_readme", "readme"}))
         if require_all:
-            siblings = sorted(p.name for p in path.parent.glob("*.md") if p.name != "README.md")
+            siblings = sorted(
+                sibling.name
+                for sibling in path.parent.glob("*.md")
+                if sibling.name != "README.md"
+                and not is_excluded_path(sibling, root, set())
+            )
             for sibling in siblings:
                 if sibling not in text:
                     issues.append(

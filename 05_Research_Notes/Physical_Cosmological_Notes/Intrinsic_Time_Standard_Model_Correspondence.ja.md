@@ -2,7 +2,7 @@
 
 > Status: Research table
 > Scope: intrinsic-time
-> Language: ja
+> Language: Japanese authoritative; English commensuration available
 > Claim strength: U/E -> S
 
 ---

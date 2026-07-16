@@ -1,87 +1,110 @@
 # Private Core Not Included / 非公開中核は含まれません
 
-> Layer: 99_Private_Core_Not_Included  
-> Status: README  
-> Scope: Public boundary notice
+> Layer: 99_Private_Core_Not_Included
+> Status: README
+> Scope: public boundary notice / excluded private origins / non-disclosure boundary
+> Language: ja+en
+> Public profile: P0
+> Authority: Public boundary notice; not a description of private contents
 
----
+# 日本語正本
 
 ## 1. Layer Role / 層の位置づけ
 
-99_Private_Core_Not_Included は、公開リポジトリに含めないものを明示する境界層である。この層は理論本文ではなく、公開範囲の防壁として機能する。
+`99_Private_Core_Not_Included`は、公開リポジトリの外部に非公開中核が存在することと、公開文書がそれらを含まないことを示す境界通知である。
 
-存在境界論｜Scientific Ontology は公開用インターフェースであり、非公開中核、原液、ランタイム仕様、詳細な実装・評価・運用資料を含まない。
+この層は非公開内容の要約、索引、予告ではない。公開体系が、非公開起源に依存しなくても読解可能でなければならないことを確認する。
 
-English commensurated rendering: 
+### 構造上の位置
 
-99_Private_Core_Not_Included is a public boundary notice. It does not contain the theoretical body. 
+```text
+非公開起源
+  ──内容は公開しない──
+99 Public Boundary Notice
+  ↓
+公開定義は01–06とGlossaryだけで理解可能
+```
 
-It states that the publPublic profile is an interface and does not include private cores, raw materials, runtime specifications, or detailed implementation/evaluation materials.
+Private lineageは概念系譜を示すが、公開定義所有権を与えない。
 
----
+## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
-## 2. Public Scope and Claim profile / 公開範囲と主張強度
+本READMEは、標準科学、法令、政策、既存分野の定義を置き換えるものではない。
 
-この層の公開強度は P0 である。ここで行うのは、公開しないものの境界明示であり、非公開内容の説明や要約ではない。
-
-English commensurated rendering: 
-
-The public scope is P0. This layer only marks what is outside the public repository. It does not summarize or expose private materials.
-
----
+この境界通知の公開プロファイルはP0であり、理論的主張を追加しない。
 
 ## 3. Included / Not Included / 含むもの・含まないもの
 
-含むもの:
+含むもの：
 
-- 公開リポジトリに含めないものの一覧
-- 公開境界の説明
-- 非公開中核が別管理であることの明示
+- 非公開中核を含まないという通知
+- 公開と非公開の境界原則
+- 公開文書の自己完結性に関する条件
 
-含まないもの:
+含まないもの：
 
-- AMP Core 全文
-- ITS 理論全体
-- Persona Runtime Core
-- Soul Core 詳細
-- Role-AP モジュールパラメータ
-- Boundary Heat Log taxonomy
-- 非公開実装スキーマ
-- 非公開シミュレーション仕様
-- 詳細な運用パラメータ
-- 生ログ、原液、未公開正本
-
-English commensurated rendering: 
-
-This directory includes only the public notice of exclusion. 
-
-It does not include full AMP Core, full ITS theory, Persona Runtime Core, Soul Core details, Role-AP parameters, Boundary Heat Log taxonomy, non-public schemas, simulation specifications, operational parameters, raw logs, or unpublished authoritative sources.
-
----
+- 非公開中核の本文、要約、詳細な目次
+- 内部プロンプト、ランタイム、評価体系
+- 実装パラメータ、運用ログ、未公開正本
+- 非公開内容を推測するための手掛かり
 
 ## 4. Documents / 文書一覧
 
-- `README.md`
-  - 一行説明: この公開リポジトリが非公開中核を含まないことを示す境界通知。
-  - Role: 公開境界の防壁。
-  - Public profile: Boundary notice / P0.
-
----
+- `README.md`：非公開中核を含まないことを示す公開境界通知。
 
 ## 5. Maintenance Notes / 運用メモ
 
-### Stable policy / 固定方針
+このディレクトリには原則として`README.md`のみを置く。
 
-この層は削りすぎない。公開リポジトリの安全な境界を示すため、含まないものの一覧を維持する。
+- 非公開項目の具体的内容を追加しない。
+- 宣伝的な謎または権威づけに使わない。
+- 公開定義が非公開資料なしで理解できるかを確認する。
+- 公開除外の実務はルート`.gitignore`に従う。
+- 作業ZIPに含まれることと公開追跡されることを区別する。
 
-### Directory history / 層の変更履歴
+# English Commensurated Rendering
 
-- v4 系では、非公開中核を含めないことを明示する防壁層として維持する。
+## 0. Role
 
-### File-level changes / ファイル単位の増減
+`99_Private_Core_Not_Included` is a boundary notice stating that non-public cores exist outside the public repository and are not included in the public documents.
 
-- 原則として README のみを置く。
+This layer is not a summary, index, or preview of private material. It confirms that the public system must remain intelligible without access to private origins.
 
-### Pending notes / 保留事項
+## 1. Structural Position
 
-- 非公開項目の名称を増やす場合も、内容の説明には踏み込まない。
+```text
+Private origins
+  ── contents are not published ──
+99 Public Boundary Notice
+  ↓
+Public definitions remain intelligible through 01–06 and the Glossary
+```
+
+Private lineage indicates conceptual history but does not grant public definition ownership.
+
+## 2. Public Scope
+
+This README is not a replacement for standard science, law, policy, or established disciplinary definitions.
+
+Included:
+
+- notice that private cores are not included;
+- principles separating public and private materials;
+- conditions for the self-sufficiency of public documents.
+
+Not included:
+
+- private-core texts, summaries, or detailed tables of contents;
+- internal prompts, runtimes, or evaluation systems;
+- implementation parameters, operational logs, or unpublished authoritative texts;
+- clues intended to reconstruct private contents.
+
+## 3. Documents and Maintenance
+
+As a rule, this directory contains only `README.md`.
+
+- Do not add concrete descriptions of private material.
+- Do not use this layer as promotional mystery or authority signaling.
+- Confirm that public definitions remain intelligible without private documents.
+- Follow the root `.gitignore` for practical exclusion.
+- Distinguish inclusion in a working ZIP from public version tracking.

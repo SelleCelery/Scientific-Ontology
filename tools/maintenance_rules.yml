@@ -38,6 +38,28 @@ maintenance_rules:
           - '`?Internal Time`?.{0,120}(とは訳さない|訳さない|使わない|使わず|使用しない|使用せず|用いない|用いず)'
           - '`?Internal Time`?.{0,120}(表記)?は?(使用せず|使わず|用いず).{0,80}`?intrinsic time`?.{0,80}(統一|統一する)'
           - '`?Internal Time`?.{0,120}`?intrinsic time`?.{0,80}(統一|統一する)'
+      - from: "internal time"
+        use: "intrinsic time"
+        severity: "error"
+        reason: "The canonical English commensuration of 内在時間 is intrinsic time."
+        match_case: true
+        report_allowed: false
+      - from: "internal-time"
+        use: "intrinsic-time"
+        severity: "error"
+        reason: "Use intrinsic-time when the canonical term modifies another noun."
+        match_case: false
+        report_allowed: false
+      - from: "Recognition_Dynamics_Communication_Model"
+        use: "Cognitive_Dynamics_Communication_Model"
+        severity: "error"
+        reason: "The public model and file name use Cognitive rather than Recognition."
+        match_case: true
+      - from: "05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md"
+        use: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+        severity: "warning"
+        reason: "The organizational port model belongs to Cognitive Dynamics Communication Studies."
+        match_case: true
       - from: "Intricit Time"
         use: "intrinsic time"
         severity: "error"
@@ -121,6 +143,91 @@ maintenance_rules:
           - "not an empirical economic theory"
           - "not a thermodynamic proof"
 
+
+    canonical_term_contracts:
+      Cognitive Field:
+        canonical_ja: "認識場"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+        non_identity: "physical field, neuroscientific entity, fixed psychological space"
+      Cognitive Phase:
+        canonical_ja: "認識相"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+        non_identity: "personality type, developmental stage, fixed cognitive function"
+      Operational Discretization:
+        canonical_ja: "操作的離散化"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+        non_identity: "ontological proof of discrete cognitive modules"
+      Port:
+        canonical_ja: "ポート"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+        rule: "General operational concept; Organizational Port is owned separately."
+      Organizational Port:
+        canonical_ja: "組織ポート"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+      Existence Phase:
+        canonical_ja: "存在相"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
+      Existence-Phase Compression:
+        canonical_ja: "存在相圧縮"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
+      Boundary Diplomacy:
+        canonical_ja: "境界外交"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+      Port Allocation:
+        canonical_ja: "ポート配分"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+      Multi-Port Potentiality:
+        canonical_ja: "複数ポート潜在性"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+      Scoped Port Operation:
+        canonical_ja: "限定ポート運用"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+      Meaning-Experience Field:
+        canonical_ja: "意味・経験場"
+        owner: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+        non_identity: "physical field"
+      Meaning Capacity:
+        canonical_ja: "意味容量"
+        owner: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+        forbidden_rendering: "Meaning Capacitance as the canonical general term"
+      Meaning-Experience Capacitor:
+        canonical_ja: "意味経験キャパシタ"
+        owner: "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+        handling: "structural analogy only"
+      Gateway Capture:
+        canonical_ja: "ゲートウェイ捕捉"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+      Single-Metric Compression:
+        canonical_ja: "単一指標圧縮"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
+      Boundary Update:
+        canonical_ja: "境界更新"
+        owner: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+
+    high_depth_identifier_rules:
+      canonical_identifiers:
+        - "iMass"
+        - "rMass"
+      handling:
+        - "Keep the canonical identifier unexpanded in English commensuration."
+        - "Allow generative lineage, paired relations, application manifestations, and conceptual effects to be explained."
+        - "Do not promote a manifestation, etymological resonance, or provisional rendering into an exhaustive definition."
+        - "Preserve claim strength, lineage, non-identity, application scope, unresolved residuals, and non-claim boundaries."
+      forbidden_expansions_as_canonical_names:
+        iMass:
+          - "Information Inertial Mass"
+          - "Imaginary Mass"
+        rMass:
+          - "Rendered Mass"
+          - "Real Mass"
+      intrinsic_time:
+        canonical_noun: "intrinsic time"
+        canonical_modifier: "intrinsic-time"
+        forbidden:
+          - "Internal Time"
+          - "internal time"
+          - "internal-time"
+
   profile_rules:
     readme_uses:
       - "Public profile"
@@ -166,7 +273,7 @@ maintenance_rules:
 
   conceptual_contract_rules:
     source_of_truth: "tools/docs_manifest.yml"
-    applies_to_coordination_group: "v4_3_core_five_document_contract"
+    applies_to_coordination_group: "core_document_responsibility_contract"
     principle: >
       Mechanical checks should detect broken ownership, relations, and return
       paths. Human or LLM review should decide whether prose has silently

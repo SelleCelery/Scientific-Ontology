@@ -1,120 +1,156 @@
 # Overview / 概要
 
-> Layer: 00_Overview  
-> Status: README  
-> Scope: Public navigation, terminology, and publication control
+> Layer: 00_Overview
+> Status: README
+> Scope: public orientation / concept network / system map / research dynamics / claim control / physics correspondence
+> Language: ja+en
+> Public profile: P0-P1
+> Authority: Directory navigation and maintenance contract; not a concept-definition owner
 
----
+# 日本語正本
 
 ## 1. Layer Role / 層の位置づけ
 
-00_Overview は、リポジトリ全体の入口・用語管理・公開方針・主張強度管理を置く層である。理論本文そのものを展開する場所ではなく、存在境界論｜Scientific Ontology の公開文書群をどう読むか、どの語をどの強度で扱うか、どの範囲を公開対象とするかを整理する。
+`00_Overview`は、存在境界論の公開体系を読むための上位案内層である。個別理論を最初から展開するのではなく、概念と文書の接続、リポジトリ構造、研究動態、主張強度、物理近接語彙の接続条件を示す。
 
-この層は、読者が Sat / Raj / Tam / Applications / Research Notes / Visual Materials へ進む前に、公開名、旧称、用語衝突、標準科学語彙との接続条件を確認するためのナビゲーション層である。
+この層は単なる事務的メタ層ではない。基礎概念が、境界認識批判、認識生成、認識運用、応用、返送へどう展開するかを示す読解面である。
 
-English commensurated rendering: 
+公開・通約・用語衝突の統治規則は、[`90_Repository_Governance`](../90_Repository_Governance/README.md)が担当する。
 
-00_Overview is the navigation and publication-control layer for the repository. It does not develop the main theoretical body. 
+### 構造上の位置
 
-It explains how the public archive should be read, how terminology is controlled, and how claim strength and publication scope are managed before the reader moves into the other layers.
-
----
+```text
+ルートREADME・Glossary・Roadmap
+  ↓
+00_Overview
+  ├─ Concept Network
+  ├─ System Map
+  ├─ Truth Management / Boundary PDCA
+  ├─ Claim Strength Control
+  └─ Physics Correspondence Policy
+  ↓
+01–03 中核三層
+  ↓
+04 Applications / 05 Research Notes / 06 Visual Materials
+```
 
 ## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
-この層の公開強度は、原則として P0-P1 である。ここで扱うのは、公開説明、用語規約、翻訳・通約規則、公開境界、主張強度の管理であり、非公開中核、実装パラメータ、人格OS、内部評価表を含めない。
+本READMEは、標準科学、法令、政策、既存分野の定義を置き換えるものではない。
 
-この層での「Scientific」は、狭義の自然科学を名乗るという意味ではなく、観測、分類、記述、再照合可能性、境界条件の明示、主張強度管理を重視する方法態度を指す。
-
-English commensurated rendering: 
-
-The default public scope of this layer is P0-P1. It contains public explanation, terminology policy, translation and commensuration rules, publication boundaries, and claim-profile management. 
-
-It does not include private core materials, implementation parameters, persona OS materials, or internal evaluation tables.
-
----
+このREADMEの公開プロファイルは、メタデータ欄に示す。各文書固有の主張強度は本文メタデータと主張強度表を参照する。
 
 ## 3. Included / Not Included / 含むもの・含まないもの
 
-含むもの:
+含むもの：
 
-- 公開体系全体のナビゲーション
-- 用語運用規約
-- 公開範囲と通約方針
-- 主張強度・用語衝突の管理
-- 旧称「存在論科学」と公開名「存在境界論｜Scientific Ontology」の整理
-- 標準科学語彙を上書きせずに扱うための接続条件
+- 概念配置と読解経路
+- リポジトリ体系図
+- 研究動態と目的循環
+- 主張強度・公開層の管理
+- 物理近接語彙の公開条件
 
-含まないもの:
+含まないもの：
 
-- AMP Core 全文
-- ITS 理論全体
-- 非公開公理草案
-- 非公開実装スキーマ
-- 人格OS・ランタイム仕様
-- 非公開素材索引
-- 内部評価・監査マップ
-
-English commensurated rendering: 
-
-This layer includes navigation, terminology policy, publication and commensuration policy, claim-profile control, name-transition handling, and rules for using scientific vocabulary without overwriting standard definitions. 
-
-It does not include full private cores, implementation schemas, persona/runtime materials, or unpublished source inventories.
-
----
+- 非公開中核の内容
+- 全概念の詳細定義の一括所有
+- 経験科学上の証明
+- 実装コード、非公開パラメータ、内部評価資料
 
 ## 4. Documents / 文書一覧
 
-- [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md)
-  - 一行説明: 存在境界論が物理語彙へ近づく理由、標準物理学との非同一性、物理近接語彙の分類、Research Notes に置くべき高強度仮説の扱いを定める公開方針。
-  - Role: 物理近接語彙に関する公開方針。
-  - Public profile: S2/S3; conceptual policy, not an empirical physics claim.
+1. [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md) / [`en`](./Scientific_Ontology_Concept_Network.en.md)  
+   概念配置、文書所有、読解経路、返路、アポリアの入口。
 
-- [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)
-  - 一行説明: リポジトリ全体の層構造、主要概念、公開境界を示す体系マップ。
-  - Role: 全体ナビゲーション。
-  - Public profile: Public map / P0-P1.
+2. [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)  
+   リポジトリ構造、各層の責務、公開境界、統治領域。
 
-- [`Scientific_Terminology_Protocol.md`](./Scientific_Terminology_Protocol.md)
-  - 一行説明: 標準科学語彙を尊重しながら、存在境界論内での読み替え・再定義・主張強度を管理する規約。
-  - Role: 用語運用・科学語彙接続プロトコル。
-  - Public profile: Terminology policy / P0-P1.
+3. [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md) / [`en`](./Truth_Management_and_Boundary_PDCA.en.md)  
+   第一義、共有、世界形成、Boundary PDCAを通じた研究・運用循環。
 
-関連するルート文書:
+4. [`Claim_Strength_and_Publication_Layer_Table.ja.md`](./Claim_Strength_and_Publication_Layer_Table.ja.md) / [`en`](./Claim_Strength_and_Publication_Layer_Table.en.md)  
+   主張強度、証拠強度、利用リスク、未確定性、公開層、通約距離。
 
-- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
-  - 一行説明: 公開、通約、用語変更、公開境界管理の方針。
-  - Role: リポジトリ全体の公開方針。
-  - Public profile: Policy / P0.
-
-- [`Translation_Note.md`](../Translation_Note.md)
-  - 一行説明: 日本語正本と英語通約の扱いを定める注記。
-  - Role: 翻訳・通約規則。
-  - Public profile: Policy / P0.
-
-- [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md) / [`TERM_COLLISION_REGISTRY.en.md`](../TERM_COLLISION_REGISTRY.en.md)
-  - 一行説明: 日本語正本語と英語通約語の衝突・揺れを管理する表。
-  - Role: 用語衝突管理。
-  - Public profile: Terminology control / P0.
-
----
+5. [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md) / [`en`](./Physics_Correspondence_Policy.en.md)  
+   物理近接語彙と標準物理学の非同一性、強い仮説の配置条件。
 
 ## 5. Maintenance Notes / 運用メモ
 
-### Stable policy / 固定方針
+応用、反例、通約残差、実装結果は、Concept Network、Roadmap、主張強度表、または個別の公開定義所有文書へ返送する。
 
-00_Overview は、理論本文を膨らませる場所ではなく、読解経路と公開条件を固定する場所として扱う。ここに理論詳細を追加しすぎない。
+- 全文書一覧へ肥大化させない。
+- 版固有の変更履歴は`RELEASE_NOTES.md`へ置く。
+- 文書関係の機械可読な正本は`tools/docs_manifest.yml`で管理する。
+- 日本語正本と英語通約の射程を一致させる。
 
-### Directory history / 層の変更履歴
+# English Commensurated Rendering
 
-- v4 系では、旧称「存在論科学」と公開名「存在境界論｜Scientific Ontology」の関係整理を明示する方向へ移行した。
-- 科学語彙の扱いは、標準定義の尊重、読み替えの明示、SO定義の明示、限定条件提示を基本とする。
+## 0. Role
 
-### File-level changes / ファイル単位の増減
+`00_Overview` is the upper orientation layer for reading the public system of Scientific Ontology. Rather than developing each theory from the beginning, it shows concept-document relations, repository architecture, research dynamics, claim control, and the conditions for using physics-adjacent terminology.
 
-- 体系マップと科学語彙接続プロトコルを本層の中心文書として扱う。
-- 全体方針文書は原則としてルートに置き、本層から参照する。
+This is not merely an administrative metadata layer. It is a reading surface showing how foundational concepts extend through boundary epistemological critique, cognitive formation, cognitive operation, application, and return.
 
-### Pending notes / 保留事項
+Publication, commensuration, and terminology-collision governance belong to [`90_Repository_Governance`](../90_Repository_Governance/README.md).
 
-- ルート README のコンパクト化後、Overview との役割分担を再確認する。
+## 1. Structural Position
+
+```text
+Root README, Glossary, and Roadmap
+  ↓
+00_Overview
+  ├─ Concept Network
+  ├─ System Map
+  ├─ Truth Management / Boundary PDCA
+  ├─ Claim Strength Control
+  └─ Physics Correspondence Policy
+  ↓
+Core layers 01–03
+  ↓
+04 Applications / 05 Research Notes / 06 Visual Materials
+```
+
+## 2. Public Scope
+
+This README is not a replacement for standard science, law, policy, or established disciplinary definitions.
+
+Included:
+
+- concept placement and reading routes;
+- repository system map;
+- research dynamics and purpose cycles;
+- claim-strength and publication-layer control;
+- public conditions for physics-adjacent vocabulary.
+
+Not included:
+
+- private-core contents;
+- centralized ownership of every detailed concept definition;
+- empirical proof;
+- implementation code, private parameters, or internal evaluation materials.
+
+## 3. Documents and Recommended Reading Order
+
+1. [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md) / [`en`](./Scientific_Ontology_Concept_Network.en.md)  
+   Entrance to concept placement, document ownership, reading routes, return paths, and aporias.
+
+2. [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)  
+   Repository architecture, layer responsibilities, public boundaries, and governance areas.
+
+3. [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md) / [`en`](./Truth_Management_and_Boundary_PDCA.en.md)  
+   Research and operational circulation through first purpose, sharing, world formation, and Boundary PDCA.
+
+4. [`Claim_Strength_and_Publication_Layer_Table.ja.md`](./Claim_Strength_and_Publication_Layer_Table.ja.md) / [`en`](./Claim_Strength_and_Publication_Layer_Table.en.md)  
+   Claim strength, evidence strength, use risk, uncertainty, publication layer, and rendering distance.
+
+5. [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md) / [`en`](./Physics_Correspondence_Policy.en.md)  
+   Non-identity with standard physics and placement conditions for stronger hypotheses.
+
+## 4. Return and Maintenance
+
+Applications, counterexamples, commensuration residuals, and implementation results return to the Concept Network, Roadmap, claim-control table, or the relevant public definition owner.
+
+- Do not turn this layer into an exhaustive file list.
+- Place version-specific history in `RELEASE_NOTES.md`.
+- Maintain machine-readable document relations in `tools/docs_manifest.yml`.
+- Keep the Japanese authoritative scope aligned with the English commensuration.

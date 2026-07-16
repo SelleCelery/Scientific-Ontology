@@ -2,7 +2,7 @@
 
 > Status: Research note draft  
 > Scope: chaos theory, nonlinear determinism, internal count-time, intrinsic time, logical-depth axis, residuals, residues, history-field correspondence, history-gravity domain  
-> Language: en
+> Language: English commensurated rendering
 > Claim strength: U/E -> S; research hypothesis, not an empirical physics claim
 
 ---

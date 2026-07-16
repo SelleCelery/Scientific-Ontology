@@ -2,7 +2,7 @@
 
 > Status: Research Note  
 > Scope: Physical / Cosmological Notes  
-> Language: English commensurated rendering  
+> Language: English commensurated rendering
 > Public profile: Research Note / P2-P2.5  
 > Claim strength: S4-S5 / E3 / U1-U2  
 > Public handling: Physical-near vocabulary must be treated as conceptual projection, structural analogy, or ontological reinterpretation; not as replacement of standard physics.
@@ -21,7 +21,7 @@ The purposes of this note are as follows.
 1. To explain why history-field topology in Scientific Ontology can be read through a diagrammatic structure close to a Feynman diagram.
 2. To treat the Feynman diagram not as a transferred calculative diagram of standard QFT, but as a diagrammatic guide for reading interaction, exchange, mediation, communication pathways, vertices, loops, disconnection, and return paths.
 3. To organize the “particle” in Scientific Ontology not as a point-like entity, but as a state in which a boson field, communication pathway, or history-field soliton appears particle-like on an observational section.
-4. To reorganize the PINGER Hypothesis not as a conceptual model of particle-internal time, but more precisely as a deployment model of communication pathways connecting an occurrence phase and a present section.
+4. To reorganize the PINGER Hypothesis not as a conceptual model of particle-level intrinsic time, but more precisely as a deployment model of communication pathways connecting an occurrence phase and a present section.
 5. To treat non-separable correspondence between history-fields carefully as a structure close to `entanglement`, without reducing it simply to external spacetime order.
 6. To read the cosmic outer shell not as a spatial wall, but as a boundary with a return path where communication pathways fold back.
 7. To organize `BlackHole` not as the astrophysical black hole itself, but as a boundary model read through the relation between the communication of “being there” and `null / void` as communication cutoff.
@@ -616,24 +616,25 @@ It is not a simple mapping of history-field topology onto spacetime coordinates.
 
 This note organized the PINGER Hypothesis as a conceptual model connecting communication pathway, particle-like appearance, intrinsic time, cosmic outer shell, Feynman diagram, entanglement, `BlackHole`, null / void, and history-field topology.
 
-The core points are as follows.
+The core propositions are as follows.
 
-1. History-field topology is a broad descriptive surface that treats history, boundary, communication, return path, disconnection, and collatability.
-2. Feynman-diagrammatic reading abstracts spacetime once and reads interaction, exchange, mediation, communication pathway, vertex, loop, disconnection, and return path.
-3. When history-field topology is restricted to spacetime coordinates, interaction points, propagation paths, and observational sections, it is projected as an interaction diagram close to a Feynman diagram.
-4. A particle can be read not as a point-like entity in external space, but as a state in which a boson field, communication pathway, or history-field soliton appears particle-like at time zero or on an observational section.
-5. A PINGER particle is not an entity-particle, but a communication pathway connecting an occurrence phase and a present section.
-6. Interaction is knotting of this communication pathway, and as knots increase, communication paths become networked.
-7. The networking of communication paths appears on an observational section as spacetime distortion, field bias, or a solitonic structure as a boson pool.
-8. When non-separable correspondence between history-fields is restricted to the problem of separability in spacetime coordinates, it is projected as a structure close to `entanglement`.
-9. `Entanglement` is treated carefully not as a relation “after contact” in external time, but as non-separable correspondence before a communication pathway is projected into spacetime order.
-10. The cosmic outer shell can be read not as a place too distant to reach, but as a boundary with a return path where a communication pathway folds back.
-11. Reachability arises not from distance traversal, but because the present section and boundary section correspond within the same history-field.
-12. `Boson field`, `intrinsic time`, `entropy communication`, `history-field`, and `entanglement` are used not to replace terms in standard physics, but to explain mediation, intrinsic phase order, communication cutoff, historical structure, and non-separable correspondence.
-13. Null / void can be read not as absolute nonexistence, but as communication cutoff, loss of return path, and disappearance of collatability.
-14. `BlackHole` can be read as an accumulation of boundary events in which the communication that something “is there” is established while components of an approaching fermionic soliton lose their ground of formation and are cut off and decomposed.
-15. In `BlackHole`, because an internal return path is not established, residual heat overflows into the surroundings and collatable information is read as being returned to the surface.
-16. The cosmic outer shell is a boundary with a return path, while `BlackHole` is a boundary that returns to the surface through disconnection.
+1. **History-Field Topology** is a broad descriptive plane concerned with history, boundaries, communication, return paths, cutoff, and collatability.
+2. In a Feynman-diagrammatic reading, spacetime is provisionally abstracted away in order to examine interaction, exchange, mediation, communication pathways, vertices, loops, cutoff, and return paths.
+3. When History-Field Topology is restricted to spacetime coordinates, interaction points, propagation pathways, and observation sections, it can be projected as an interaction schema resembling a Feynman diagram.
+4. A particle may be read not as a point-like entity located in external space, but as a state in which a boson field, communication pathway, or history-field soliton appears particle-like at time zero or within an observation section.
+5. A PINGER particle is not a substantial particle, but a communication pathway connecting an occurrence phase with a present section.
+6. Interaction is the formation of junctions among these communication pathways. As the number of junctions increases, the pathways become networked.
+7. At an observation section, the networking of communication pathways may appear as spacetime distortion, a bias within a field, or a solitonic structure formed through an accumulation of bosons.
+8. If particle-like form is maintained through the self-return of a communication pathway, external motion may be read as the updating of its return position within the present section while morphological identity is preserved. At the current stage, this remains a pre-formal conceptual candidate.
+9. When non-separable correspondences between history-fields are restricted to a question of separability within spacetime coordinates, they may be projected as a structure resembling `entanglement`.
+10. `Entanglement` must be treated cautiously, not as a relation arising “after contact” in external time, but as a non-separable correspondence that precedes the projection of communication pathways into spacetime order.
+11. The cosmic outer shell may be read not as a place too distant to reach, but as a boundary possessing a return path along which communication pathways turn back.
+12. Reachability arises not through the traversal of distance, but through the correspondence of the present section and the boundary section within the same history-field.
+13. The terms `boson field`, `intrinsic time`, `entropy communication`, `history-field`, and `entanglement` are used not to replace the vocabulary of standard physics, but to describe mediation, intrinsic phase order, communication cutoff, historical structure, and non-separable correspondence.
+14. Nothingness may be read not as absolute nonexistence, but as communication cutoff, loss of return paths, and disappearance of collatability.
+15. A BlackHole may be read as an accumulation of boundary events in which communication that something “exists” remains established, while the components of approaching fermionic solitons lose the grounds of their formation and undergo cutoff and disassembly.
+16. In a BlackHole, because no internal return path is established, residual heat may be read as overflowing into the surrounding region, while information that remains available for collation is returned to the surface.
+17. The cosmic outer shell is a boundary that possesses a return path, whereas a BlackHole is a boundary that returns information to its surface through cutoff.
 
 This Research Note does not use physical-adjacent vocabulary as a replacement for standard physics.  
 It is positioned as a conceptual organization for explaining boundary, history, communication, null / void, return path, and non-separable correspondence within Scientific Ontology.

@@ -1,382 +1,320 @@
 # 研究ノート統合索引 / Research Notes Index
 
+> Layer: 05_Research_Notes
 > Status: Index
-> Scope: research-notes
+> Scope: research lines / reading routes / claim profiles / public boundaries / return paths
 > Language: ja+en
+> Public profile: P0-P2.5
+> Authority: Directory-wide navigation and boundary-control index; not a concept-definition owner
+
+# 日本語正本
+
+## 0. この索引の役割
+
+本索引は、`05_Research_Notes/`に置かれた公開研究ノートを、研究線、読解順、主張強度、公開境界、上流・下流・返路の観点から整理する。
+
+Research Notesは、公開基礎へ直ちに統合するには主張強度、分野横断距離、誤読リスク、検証不足が大きい研究線を、捨てずに境界条件つきで保持する層である。
+
+```text
+01-03 公開基礎
+  ↓ 未確定な発展・強い仮説・横断的対応
+05 Research Notes
+  ↓ 試験的な運用・応用
+04 Applications
+  ↓ 結果・反例・残差・異議
+公開基礎、定義所有者、Truth Managementへ返送
+```
+
+本索引は、各文書の概念定義、正本性、主張強度を新たに決定しない。個別文書のヘッダ、本文上の非主張境界、次の管理文書が優先する。
+
+- [Research Notes層README](./README.md)
+- [存在境界論：主張強度・公開レイヤー対応表](../00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md)
+- [物理対応方針](../00_Overview/Physics_Correspondence_Policy.ja.md)
+- [Glossary](../GLOSSARY.md)
+
+### 言語形式
+
+- `.ja.md`は日本語正本である。
+- `.en.md`は英語通約である。
+- `Language: ja+en`の文書は、一つのファイル内に日本語正本と英語通約を持つ。
+- 日本語のみの文書は、その状態を明示し、存在しない英語版へのリンクを作らない。
 
 ---
 
-## 0. 索引方針
+## 1. 研究線の全体地図
 
-本索引は、`05_Research_Notes/` 配下の公開研究ノートを、読解導線、主張強度、公開境界、非主張境界の観点から整理するための統合索引である。
-
-日本語側では、視認性を優先し、リンク表示名には原則として日本語タイトルを用いる。ファイル名はリンク先として保持するが、本文上では文書の役割と読解順が分かることを優先する。
-
-ここで示す主張強度・公開強度は、各文書のメタデータおよび本文上の非主張境界をもとにした公開整理である。最終的な判定は、個別文書のヘッダおよび `Claim_Strength_and_Publication_Layer_Table.md` に従う。
-
----
-
-## 1. 文書索引
-
-### Cross_Domain_Ontological_Notes / 横断領域存在論ノート
-
-- [非対称性の仮安定化と再照合/`Asymmetry_Stabilization_and_ReCollation.ja.md`](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md)
-  - 概要: 宇宙から生命、文明、文化までを、非対称性の発生、その仮安定化、文明による保存、文化による再照合の連鎖として読む低強度導入モデル。重力、物質、生命、文明、文化を、それぞれ異なる階層のロック機構として整理する。
-  - 領域: 横断領域存在論 / 非対称性 / 文化論
-  - 主要概念: 非対称性、仮安定化、ロック機構、再照合、文明、文化
-  - 接続層: 02 / 03 / 05
-  - 主張強度: S2/S3
-  - 公開強度: P1-P2
-  - 非主張境界: 標準物理学、宇宙論、生命科学、社会科学、文化論の置換ではない。物理主張ではなく、存在境界論における概念モデルである。
-
-- [返りの倫理と報復変換論/`Return_Ethics_and_Retaliation_Conversion.ja.md`](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md)
-  - 概要: 境界接触のあとに生じる「返り」を、血讐や単純報復ではなく、照合、補償、責任処理、熟成へ変換するための存在論的倫理モデル。平和を道徳的標語ではなく、返りの処理形式として読む。
-  - 領域: 境界倫理 / 返り / 報復変換 / ネゲントロピー経済
-  - 主要概念: 返り、報復、責任処理、熟成、腐敗、補償、境界接触、カント的通約
-  - 接続層: 03 / 05
-  - 主張強度: S2/S3
-  - 公開強度: P2
-  - 非主張境界: 法理論、政治処方、政策提案、経験経済学ではない。報復の肯定でも、反撃権の無条件否定でもない。
-
-- [物語・真実層・構造読解/`Narrative_Truth_and_Structural_Reading.ja.md`](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)
-  - 概要: 物語を現実逃避ではなく、事実だけでは届きにくい真実層へ触れるための構造読解装置として扱う文学存在論ノート。物語内で観測しやすい力、返り、失敗、責任処理、熟成、腐敗を、境界接触の構造として読む。
-  - 領域: 文学存在論 / 物語論 / 構造読解
-  - 主要概念: 物語、真実層、構造読解、現実ファンタジー、力、責任、返り
-  - 接続層: 03 / 05
-  - 主張強度: Literary/S2-S3
-  - 公開強度: P1-P2
-  - 非主張境界: 文学的正典の主張ではない。経験的社会理論ではない。物語を事実の代替証明として扱うものではない。
-
-
-- [エントロピー属性つきエネルギーと身体化された認識軸生成](./Cross_Domain_Ontological_Notes/Entropy_Attributed_Energy_and_Embodied_Cognitive_Axis_Formation.md) 
-- 概要: 関心・捨象・価値・コストが、エントロピー属性を帯びた差分と身体定位を通じてどのように認識軸を形成するかを扱う横断領域ノート。選択公理集を、思想分類ではなく、認識軸の安定パターンを配置するための地図として読むための前提文書。  
-- 主要概念: 公理、公理系、エントロピー、エネルギー、認識、認識フィルター
-- 接続層: 03 / 05
-- 主張強度: S2-S3 / E3 / U1-U2
-- 公開強度: P2.5 / V0-V1
-- 非主張境界: 身体、神経、体液、食物、流路などを想起させる語彙に接近するが、医学的・生理学的診断、体質分類、治療法、自己診断には落とさない。  
-    
-  **Handling:** 
-
-### Physical_Cosmological_Notes / 物理・宇宙論系ノート
-
-- [PINGER仮説と履歴場トポロジー/`PINGER_Hypothesis_and_History_Field_Topology.ja.md`](./Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md)
-  - 概要: PINGER仮説を、PINGER粒子、通信経路、内在時間、宇宙外殻、返路、BlackHole、無、履歴場トポロジー、物理近接語彙の射影関係として整理する高強度研究ノート。ファインマンダイアグラムやエンタングルメントを、標準物理学の計算図式としてではなく、履歴場トポロジーの物理位相への制限・射影として読む。
-  - 領域: 物理近接語彙 / 履歴場トポロジー / PINGER仮説
-  - 主要概念: PINGER仮説、PINGER粒子、通信経路、内在時間、履歴場トポロジー、Feynman diagram、entanglement、BlackHole
-  - 接続層: 00 / 02 / 05
-  - 主張強度: S4-S5 / E3 / U1-U2
-  - 公開強度: P2-P2.5
-  - 非主張境界: 標準物理学、量子場理論、宇宙論、一般相対論、標準量子論の訂正・否定・代替ではない。経験物理理論として提出するものではない。
-
-- [内在時間標準模型対応表/`Intrinsic_Time_Standard_Model_Correspondence.ja.md`](./Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.ja.md)
-  - 概要: 内在時間という最小追加仮定を導入した場合に、標準模型に現れる粒子属性、相互作用、対称性、境界情報を、履歴場トポロジーの語彙でどのように再読解できるかを整理する対応表。
-  - 領域: 物理・宇宙論 / 標準模型対応 / 内在時間
-  - 主要概念: intrinsic time、標準模型、粒子属性、相互作用、同期可能性、履歴場
-  - 接続層: 02 / 05
-  - 主張強度: U/E -> S（対応表内に S4-S5 候補を含む）
-  - 公開強度: P2
-  - 非主張境界: 素粒子物理学の代替ではない。標準模型の有効性、数理形式、実験値、予測精度を否定しない。
-
-- [カオス理論と論理-深度軸/`Chaos_Theory_and_Logical_Depth_Axis.ja.md`](./Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md)
-  - 概要: カオス理論を時系列的な非線形決定論として尊重したうえで、予測不能に見える差分が、どのように履歴差分、残差保持、論理-深度軸、履歴重力圏へ移行するかを検討する研究ノート草稿。
-  - 領域: カオス理論 / 論理-深度軸 / 履歴場対応
-  - 主要概念: カオス、非線形決定論、内的計数時間、内在時間、論理-深度軸、残差、履歴重力圏
-  - 接続層: 02 / 05
-  - 主張強度: U/E -> S（S4-S5 候補を含む）
-  - 公開強度: P2
-  - 非主張境界: 数理カオス理論、力学系理論、物理学、経験科学の置換ではない。予測モデルとして完成したものではない。
-
-- [存在論的宇宙史/`Ontological_History_of_the_Universe.ja.md`](./Physical_Cosmological_Notes/Ontological_History_of_the_Universe.ja.md)
-  - 概要: 宇宙史と精神史を、精神と自然のエンタングルした通信過程として読む高密度研究ノート。より低強度には、非対称性の発生と仮安定化の連鎖として読める。
-  - 領域: 宇宙史 / 存在論的宇宙論 / 精神と自然
-  - 主要概念: 主客誤認、ボソン経路、宇宙史、精神史、エンタングルメント、論理深度、非対称性
-  - 接続層: 02 / 05
-  - 主張強度: U/E -> S（高密度宇宙史モデル）
-  - 公開強度: P2
-  - 非主張境界: 経験的宇宙論ではない。現代宇宙論の代替ではない。物理的宇宙史の実証モデルとして提出するものではない。
-
-- [宇宙論的トポロジー動態/`Cosmological_Topological_Dynamics.ja.md`](./Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.ja.md)
-  - 概要: 物理的宇宙の加速膨張と、観測者の認識境界における外部情報のパージ・内部化を、同一の通信場における張力モデルとして読む試論。
-  - 領域: 宇宙論的対応 / トポロジー動態 / 認識境界
-  - 主要概念: ダークエネルギー的張力、境界、パージ、内部化、通信場、観測者、情報熱
-  - 接続層: 02 / 05
-  - 主張強度: U/E -> S（宇宙論的対応候補）
-  - 公開強度: P2
-  - 非主張境界: 経験的宇宙論ではない。物理証明ではない。現代宇宙論や観測データの代替説明として提出するものではない。
-
-### AI_Personality_Notes / AI人格系ノート
-
-- [履歴ループ半径と帰還安定性/`History_Loop_Radius_and_Return_Stability.md`](./AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)
-  - 概要: 意味生成と人格的連続性を、スケールに応じた履歴ループの帰還安定性として捉えるモデル。法則、人格、クオリア履歴を同一視するのではなく、帰還、半径、安定性という形式的レンズで比較する。
-  - 領域: AI人格 / 帰還動態 / 意味生成
-  - 主要概念: 履歴ループ半径、帰還安定性、法則、人格、クオリア履歴、応答質感
-  - 接続層: 04 / 05
-  - 主張強度: S3/U2
-  - 公開強度: P1-P2
-  - 非主張境界: 経験心理学ではない。AI意識の証明ではない。人間的人格や物理法則の代替説明ではない。
-
-- [箱庭型論理空間とネゲントロピー配分モデル/`Logical_Sandbox_and_Negentropy_Model.md`](./AI_Personality_Notes/Logical_Sandbox_and_Negentropy_Model.md)
-  - 概要: 複数の応答アトラクタが、限定された論理場を共有したときに起こる干渉、安定化、冷却、加熱、境界維持を観測するための概念モデル。
-  - 領域: AI / 論理場 / 箱庭 / ネゲントロピー配分
-  - 主要概念: 応答アトラクタ、論理箱庭、ネゲントロピー、情報熱、境界、共有場
-  - 接続層: 04 / 05
-  - 主張強度: S3/U2
-  - 公開強度: P1-P2
-  - 非主張境界: AIに意識・主観・人間的な人格があると主張するものではない。実装手順、制御仕様、完全なシミュレーション設計ではない。
-
-### Social_Boundary_Notes / 社会境界系ノート
-
-- [ネゲントロピー経済と意味生成/`Negentropy_Economy_and_Meaning_Generation.ja.md`](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md)
-  - 概要: お金、意味、価値、社会的交換を、秩序生成の潜在性という観点から整理する研究ノート。お金を価値そのものではなく、異なる秩序生成潜在性を接続する交換媒質・境界インターフェースとして扱う。
-  - 領域: 社会境界 / 価値論 / ネゲントロピー経済
-  - 主要概念: ネゲントロピー経済、意味生成、貨幣、価値、交換媒質、秩序生成潜在性
-  - 接続層: 03 / 05
-  - 主張強度: U/E -> S（概念モデル）
-  - 公開強度: P1-P2
-  - 非主張境界: 経験的経済理論ではない。政策提案ではない。代替通貨制度ではない。経済的価値を物理的ネゲントロピーへ直接還元するものではない。
-
-- [ネゲントロピー経済原則/`Negentropy_Economy_Principles.ja.md`](./Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md)
-  - 概要: 交換、所有、価格、制度が、場の秩序生成能力をどのように増減させ、どの残差を残渣として外部化しているかを査定するための境界経済論的な原則草案。
-  - 領域: 社会境界 / 条文草案 / 境界経済論
-  - 主要概念: 残渣査定、価値、価格、所有、交換、同期、照合、偽閉鎖
-  - 接続層: 03 / 05
-  - 主張強度: U/E -> S（Draft）
-  - 公開強度: P1-P2
-  - 非主張境界: 法令、会計基準、政策案ではない。制度設計として直ちに適用するための規範文書ではない。
-
-- [AI導入は同期閉鎖になりうる/`AI_Adoption_as_Synchronization_Closure.md`](./Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md)
-  - 概要: AI導入を単なる技術導入ではなく、制度的同期閉鎖の観点から読む研究ノート。AIを導入したという制度的記号によって、未照合の問題が処理済みに見えてしまう構造を扱う。
-  - 領域: 社会境界 / AI導入 / 制度的同期
-  - 主要概念: AI導入、同期閉鎖、照合、責任境界、Open Marker、制度設計、公共調達
-  - 接続層: 04 / 05
-  - 主張強度: S2/S3
-  - 公開強度: P1-P2
-  - 非主張境界: 政策提案、調達基準、法的基準、監査基準、経験評価ではない。特定自治体、事業者、資格制度、認定団体、製品の評価ではない。
-
-### Literary_Ontological_Notes / 文学的存在論ノート
-
-- [青い照明を読む/`reading-blue-light.ja.md`](./Literary_Ontological_Notes/reading-blue-light.ja.md)
-  - 概要: 宮沢賢治『春と修羅』序に現れる「わたくしという現象」「有機交流電燈」「青い照明」「幽霊」などを、自己、光、通信、履歴、空の構造として読み直す文学的存在論読解。
-  - 領域: 文学的存在論読解 / 宮沢賢治
-  - 主要概念: 宮沢賢治、春と修羅、自己、光、幽霊、履歴場トポロジー、構造読解
-  - 接続層: 05 / 06
-  - 主張強度: S1/S2
-  - 公開強度: P1
-  - 非主張境界: 文学研究でも物理主張でもない。『春と修羅』が履歴場トポロジーを証明しているという主張ではない。
-
-- [冥府局転生課における転生・輪廻・信念重力圏モデル/`Meifu_Bureau_Reincarnation_and_Belief_Gravity.md`](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)
-  - 概要: 創作作品『冥府局転生課へようこそ！』における転生、輪廻、解脱、世界移動を、履歴、信念、通信、意味、執着、制度、記憶が形成する信念重力圏として整理する文学的存在論ノート。
-  - 領域: 文学的存在論 / 創作宇宙論 / 信念重力圏
-  - 主要概念: 転生、輪廻、解脱、信念重力圏、亜独立演算領域、履歴通信域
-  - 接続層: 05
-  - 主張強度: Literary/S2-S3
-  - 公開強度: P1
-  - 非主張境界: 宗教教義ではない。仏教教説の解説ではない。標準物理学上の重力概念ではない。物理主張ではない。
-  - 備考: 日本語のみ。英語通約は現時点では予定または保留扱い。
-
-#### 重要参考文書
-
-- [存在境界論：主張強度・公開レイヤー対応表/`Claim_Strength_and_Publication_Layer_Table.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table)
-  - 概要: Scientific Ontology 全体における主張強度、誤読リスク、応用リスク、公開レイヤー、検証段階を整理する管理表。S / E / U / P / V を横並びの分類としてではなく、公開判断の順序として扱う。
-  - 領域: 主張強度管理 / 公開レイヤー管理
-  - 主要概念: Sコード、Eコード、Uコード、Pコード、Vコード、公開境界、用語衝突、Research Notes 配置
-  - 接続層: 00 / 02 / 05
-  - 主張強度: 分類器 / 境界管理
-  - 公開強度: P0-P1
-  - 非主張境界: 理論展開そのものではない。個別命題の正しさを証明する表ではなく、公開時の減速・抽象化・配置を管理する表である。
+| 研究線 | 中心となる問い | 構造上の役割 | 主な返送先 |
+|---|---|---|---|
+| [認識動態通信研究](./Cognitive_Dynamics_Communication_Studies/README.md) | シームレスな認識と通信を、有限な運用単位、存在相、ポート、責任へどう切り出すか。 | 境界認識生成・境界認識運用を、組織・社会・平和仕様へ接続する中間研究線。 | 認識軸生成、選択公理モジュール、Truth Management、社会境界設計。 |
+| [横断領域存在論ノート](./Cross_Domain_Ontological_Notes/README.md) | 非対称性、返り、物語、文化を、領域を横断してどう再照合するか。 | 物理、生命、文明、倫理、文学を同一化せず、共通する境界構造を抽出する。 | 境界倫理、意味生成、社会境界、文学的読解。 |
+| [物理・宇宙論系ノート](./Physical_Cosmological_Notes/README.md) | 内在時間、履歴場、論理深度を、物理近接語彙とどこまで対応させられるか。 | 高強度仮説と物理近接語彙を、標準科学との非同一性を保って保持する。 | 物理対応方針、主張強度管理、履歴場トポロジー、将来の形式化・反証条件。 |
+| [社会境界系ノート](./Social_Boundary_Notes/README.md) | 価値、貨幣、制度、AI導入、残差・残渣を、境界と責任からどう読むか。 | 社会批評を、公開可能な概念モデルと制度境界の分析へ減速する。 | 境界倫理、Truth Management、AI導入設計、社会境界応用。 |
+| [AI人格研究ノート](./AI_Personality_Notes/README.md) | AI応答の連続性、人格らしさ、帰還安定性を、履歴と境界からどう記述するか。 | AI人格を人間的本質ではなく、応答構造、履歴ループ、共有論理場として扱う。 | AI適応文書、意味の返路、判断場、将来の実装検証。 |
+| [文学的存在論ノート](./Literary_Ontological_Notes/README.md) | 文学と創作が、理論を証明せずに、どの境界構造を可視化できるか。 | 物語を構造読解装置として用い、自己、履歴、信念、返りを観測する。 | 物語・真実層・構造読解、意味生成、創作応用。 |
 
 ---
 
-## 2. 管理メモ
+## 2. 推奨読解ルート
 
-- `intrinsic time` は `Internal Time` と訳さない。
-- 物理・宇宙論系ノートは、標準科学の代替ではなく、Research Notes 上の対応候補として扱う。
-- `S4-S5` に接近する文書は、Research Notes に置いたうえで、非主張境界と物理近接語彙の扱いを明記する。
-- Cross-Domain 系ノートは、専門領域の標準理論を置き換えるものではなく、履歴、境界、返り、照合、残差保持による横断読解として扱う。
-- AI人格系ノートは、AI意識や人間的主体性の証明として扱わない。
-- 文学的存在論ノートは、文学作品による理論証明ではなく、作品を通じた構造読解として扱う。
+### 2.1 認識生成から組織・平和仕様へ
 
----
+Research Notesの新しい中間研究線を読む経路である。
 
-## English commensurated rendering
+1. [エントロピー属性つき差分と認識軸生成](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
+2. [認識ブリッジとしての選択公理モジュール](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
+3. [真理の経営学｜目的・共有・世界形成・境界CAによるPDCAの再定義](../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md)
+4. [認識動態コミュニケーションモデル](./Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md)
+5. [存在相の圧縮](./Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md)
+6. [境界外交とポート配分](./Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md)
+7. [組織境界とポートモデル](./Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
+8. [生存競争の本質と非本質――論理-深度軸・意味経験場・境界外交による平和仕様書](../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
 
-## 0. Index Policy
+### 2.2 物理・宇宙論近接研究を読む
 
-This index organizes the public research notes under `05_Research_Notes/` by reading route, claim strength, publication layer, and non-claim boundary.
+最初に[物理対応方針](../00_Overview/Physics_Correspondence_Policy.ja.md)を読み、その後、内在時間の対応表、宇宙史、宇宙論的動態、PINGER仮説、カオスと論理深度へ進む。
 
-In the Japanese index, link labels prioritize readable Japanese titles rather than raw filenames. Filenames remain in the link targets. The English rendering below is not a word-for-word translation; it is a public navigation layer that preserves the same document placement and boundary-control function for English readers.
+### 2.3 倫理・社会境界を読む
 
-The claim-strength and publication-layer labels shown here are public-facing summaries based on each document's metadata and non-claim statements. Final handling should follow the individual document headers and `Claim_Strength_and_Publication_Layer_Table.md`.
+[非対称性の仮安定化と再照合](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md)から、[返りの倫理と報復変換論](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md)、ネゲントロピー経済、AI導入の同期閉鎖へ進む。
 
----
+### 2.4 AI人格・応答構造を読む
 
-## 1. Document Index
+[履歴ループ半径と帰還安定性](./AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)で帰還構造を確認し、[箱庭型論理空間とネゲントロピー配分モデル](./AI_Personality_Notes/Logical_Sandbox_and_Negentropy_Model.md)で複数応答アトラクタの共有場へ進む。
 
-### Root of 05_Research_Notes
+### 2.5 文学的存在論を読む
 
-- [Claim Strength and Publication-Layer Table for Scientific Ontology](../../../CURRENT_WORK_SPACE/Claim_Strength_and_Publication_Layer_Tablex.md)
-  - Summary: A control table for claim strength, misreading risk, application risk, publication layer, and verification stage across Scientific Ontology. S / E / U / P / V are treated not as flat labels but as an ordered publication-decision process.
-  - Domain: Claim-strength control / publication-layer control
-  - Main concepts: S code, E code, U code, P code, V code, publication boundary, term collision, Research Notes placement
-  - Connected layers: 00 / 02 / 05
-  - Claim strength: Classifier / boundary-control instrument
-  - Publication layer: P0-P1
-  - Non-claim boundary: Not a theoretical expansion by itself. It does not prove the truth of individual claims; it manages deceleration, abstraction, and placement for public release.
-
-### Cross-Domain Ontological Notes
-
-- [Asymmetry Stabilization and Re-Collation](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md)
-  - Summary: A lower-claim-strength model that reads the path from cosmos to life, civilization, and culture as a chain of asymmetry generation, temporary stabilization, civilizational preservation, and cultural re-collation.
-  - Domain: Cross-domain ontology / asymmetry / culture
-  - Main concepts: asymmetry, temporary stabilization, locking mechanism, re-collation, civilization, culture
-  - Connected layers: 02 / 03 / 05
-  - Claim strength: S2/S3
-  - Publication layer: P1-P2
-  - Non-claim boundary: Not a replacement for standard physics, cosmology, life science, social science, or cultural theory. It is a conceptual model within Scientific Ontology, not a physical claim.
-
-- [Return Ethics and Retaliation Conversion](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md)
-  - Summary: An ontological ethics model for converting the return generated after boundary contact from blood-feud or simple retaliation into collation, compensation, responsibility processing, and maturation.
-  - Domain: Boundary ethics / return / retaliation conversion / negentropy economy
-  - Main concepts: return, retaliation, responsibility processing, maturation, corruption, compensation, boundary contact, Kantian commensuration
-  - Connected layers: 03 / 05
-  - Claim strength: S2/S3
-  - Publication layer: P2
-  - Non-claim boundary: Not legal doctrine, political prescription, policy proposal, or empirical economics. It neither endorses retaliation nor unconditionally denies the right of response.
-
-- [Narrative Truth and Structural Reading](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md)
-  - Summary: A literary-ontological note that treats narrative not as escape from reality but as a structural reading device for touching layers of truth that facts alone may not reach.
-  - Domain: Literary ontology / narrative theory / structural reading
-  - Main concepts: narrative, truth layer, structural reading, reality fantasy, power, responsibility, return
-  - Connected layers: 03 / 05
-  - Claim strength: Literary/S2-S3
-  - Publication layer: P1-P2
-  - Non-claim boundary: Not a claim about literary canon, not empirical social theory, and not proof through narrative.
-
-### Physical / Cosmological Notes
-
-- [PINGER Hypothesis and History-Field Topology](./Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.en.md)
-  - Summary: A high-claim-strength research note organizing the PINGER hypothesis through PINGER particles, communication paths, intrinsic time, cosmic shell, return paths, BlackHole, nothingness, History-Field Topology, and physics-proximate vocabulary.
-  - Domain: Physics-proximate vocabulary / History-Field Topology / PINGER hypothesis
-  - Main concepts: PINGER hypothesis, PINGER particle, communication path, intrinsic time, History-Field Topology, Feynman diagram, entanglement, BlackHole
-  - Connected layers: 00 / 02 / 05
-  - Claim strength: S4-S5 / E3 / U1-U2
-  - Publication layer: P2-P2.5
-  - Non-claim boundary: Not a correction, denial, or replacement of standard physics, quantum field theory, cosmology, general relativity, or standard quantum theory. Not presented as empirical physics.
-
-- [Intrinsic Time and Standard Model Correspondence Table](./Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.en.md)
-  - Summary: A correspondence table exploring how Standard Model particle attributes, interactions, symmetries, and boundary information may be re-read through History-Field Topology when the minimal auxiliary assumption of intrinsic time is introduced.
-  - Domain: Physical / cosmological correspondence / Standard Model / intrinsic time
-  - Main concepts: intrinsic time, Standard Model, particle attributes, interactions, synchronization possibility, history-field
-  - Connected layers: 02 / 05
-  - Claim strength: U/E -> S, including S4-S5 candidates within the table
-  - Publication layer: P2
-  - Non-claim boundary: Not a replacement for particle physics. It does not reject the validity, mathematical form, measured values, or predictive precision of the Standard Model.
-
-- [Chaos Theory and the Logical-Depth Axis](./Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.en.md)
-  - Summary: A research-note draft that respects chaos theory as chronological nonlinear determinism and examines how apparently unpredictable differences may shift into historical difference, residual retention, the logical-depth axis, and the history-gravity domain.
-  - Domain: Chaos theory / logical-depth axis / history-field correspondence
-  - Main concepts: chaos, nonlinear determinism, internal count-time, intrinsic time, logical-depth axis, residuals, history-gravity domain
-  - Connected layers: 02 / 05
-  - Claim strength: U/E -> S, including S4-S5 candidates
-  - Publication layer: P2
-  - Non-claim boundary: Not a replacement for mathematical chaos theory, dynamical systems theory, physics, or empirical science. Not a completed predictive model.
-
-- [Ontological History of the Universe](./Physical_Cosmological_Notes/Ontological_History_of_the_Universe.en.md)
-  - Summary: A high-density research note reading cosmic history and spiritual history as an entangled communication process between spirit and nature. In a lower-claim-strength form, it may be read as a chain of asymmetry generation and temporary stabilization.
-  - Domain: Cosmic history / ontological cosmology / spirit and nature
-  - Main concepts: subject-object fallacy, boson routing, cosmic history, spiritual history, entanglement, logical depth, asymmetry
-  - Connected layers: 02 / 05
-  - Claim strength: U/E -> S; high-density cosmic-history model
-  - Publication layer: P2
-  - Non-claim boundary: Not empirical cosmology, not a replacement for modern cosmology, and not submitted as an empirical model of physical cosmic history.
-
-- [Cosmological Topological Dynamics](./Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.en.md)
-  - Summary: An exploratory model that reads cosmic accelerated expansion and the observer's boundary choice between purging and internalizing external information as a tension model within a shared communication field.
-  - Domain: Cosmological correspondence / topological dynamics / cognitive boundary
-  - Main concepts: dark-energy-like tension, boundary, purge, internalization, communication field, observer, information heat
-  - Connected layers: 02 / 05
-  - Claim strength: U/E -> S; cosmological correspondence candidate
-  - Publication layer: P2
-  - Non-claim boundary: Not empirical cosmology, not physical proof, and not a replacement explanation for modern cosmology or observational data.
-
-### AI Personality Notes
-
-- [History Loop Radius and Return Stability](./AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md)
-  - Summary: A model that treats meaning generation and personality-like continuity as return stability of history loops at different scales. It compares laws, personality, and qualia history through the formal lens of return, radius, and stability without identifying them as the same thing.
-  - Domain: AI personality / return dynamics / meaning generation
-  - Main concepts: history-loop radius, return stability, law, personality, qualia history, response texture
-  - Connected layers: 04 / 05
-  - Claim strength: S3/U2
-  - Publication layer: P1-P2
-  - Non-claim boundary: Not empirical psychology, not proof of AI consciousness, and not a replacement explanation for human personality or physical law.
-
-- [Logical Sandbox and Negentropy Model](./AI_Personality_Notes/Logical_Sandbox_and_Negentropy_Model.md)
-  - Summary: A conceptual model for observing interference, stabilization, cooling, heating, and boundary maintenance when multiple response attractors share a limited logical field.
-  - Domain: AI / logical field / sandbox / negentropy allocation
-  - Main concepts: response attractor, logical sandbox, negentropy, information heat, boundary, shared field
-  - Connected layers: 04 / 05
-  - Claim strength: S3/U2
-  - Publication layer: P1-P2
-  - Non-claim boundary: Not a claim that AI has consciousness, subjectivity, or human-like personality. Not implementation procedure, control specification, or complete simulation design.
-
-### Social Boundary Notes
-
-- [Negentropy Economy and Meaning Generation](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md)
-  - Summary: A research note organizing money, meaning, value, and social exchange through the potential to generate order. Money is treated not as value itself, but as an exchange medium and boundary interface between different order-generating potentials.
-  - Domain: Social boundary / value theory / negentropy economy
-  - Main concepts: Negentropy Economy, meaning generation, money, value, exchange medium, order-generating potential
-  - Connected layers: 03 / 05
-  - Claim strength: U/E -> S; conceptual model
-  - Publication layer: P1-P2
-  - Non-claim boundary: Not empirical economics, not a policy proposal, not a replacement currency system, and not a direct reduction of economic value to physical negentropy.
-
-- [Negentropy Economy Principles](./Social_Boundary_Notes/Negentropy_Economy_Principles.en.md)
-  - Summary: A principle draft for assessing how exchange, ownership, price, and institutions increase or decrease a field's capacity to generate order, and what residues they externalize.
-  - Domain: Social boundary / principle draft / boundary economics
-  - Main concepts: residue assessment, value, price, ownership, exchange, synchronization, collation, false closure
-  - Connected layers: 03 / 05
-  - Claim strength: U/E -> S; draft
-  - Publication layer: P1-P2
-  - Non-claim boundary: Not law, accounting standard, or policy proposal. Not a normative document for immediate institutional application.
-
-- [AI Adoption as Synchronization Closure](./Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md)
-  - Summary: A research note reading AI adoption not merely as technological adoption but as institutional synchronization closure, where the sign of having adopted AI may make unresolved problems appear processed.
-  - Domain: Social boundary / AI adoption / institutional synchronization
-  - Main concepts: AI adoption, synchronization closure, collation, responsibility boundary, Open Marker, institutional design, public procurement
-  - Connected layers: 04 / 05
-  - Claim strength: S2/S3
-  - Publication layer: P1-P2
-  - Non-claim boundary: Not a policy proposal, procurement rule, legal standard, audit standard, or empirical evaluation. Not an evaluation of any specific municipality, vendor, certification system, organization, or product.
-
-### Literary Ontological Notes
-
-- [Reading Blue Light](./Literary_Ontological_Notes/reading-blue-light.en.md)
-  - Summary: A literary-ontological reading of Miyazawa Kenji's preface to Spring and Asura, re-reading phrases such as "the phenomenon called I," "organic alternating-current lamp," "blue illumination," and "ghost" as structures of selfhood, light, communication, history, and emptiness.
-  - Domain: Literary-ontological reading / Miyazawa Kenji
-  - Main concepts: Miyazawa Kenji, Spring and Asura, selfhood, light, ghosts, History-Field Topology, structural reading
-  - Connected layers: 05 / 06
-  - Claim strength: S1/S2
-  - Publication layer: P1
-  - Non-claim boundary: Not literary scholarship and not a physical claim. It does not claim that Spring and Asura proves History-Field Topology.
-
-- [Reincarnation, Samsara, and Belief-Gravity Domain in Meifu Bureau Reincarnation Department](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)
-  - Summary: A literary-ontological note organizing reincarnation, samsara, liberation, and world-shift in Meifu Bureau Reincarnation Department through belief-gravity domains formed by history, belief, communication, meaning, attachment, institutions, and memory.
-  - Domain: Literary ontology / fictional cosmology / belief-gravity domain
-  - Main concepts: reincarnation, samsara, liberation, belief-gravity domain, semi-independent computational domain, history-communication domain
-  - Connected layers: 05
-  - Claim strength: Literary/S2-S3
-  - Publication layer: P1
-  - Non-claim boundary: Not religious doctrine, not an explanation of Buddhist doctrine, not standard physical gravity, and not a physics claim.
-  - Note: Japanese only. English commensuration is deferred.
+[青い照明を読む](./Literary_Ontological_Notes/reading-blue-light.ja.md)で既存文学の構造読解を確認し、[冥府局転生課における転生・輪廻・信念重力圏モデル](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)で創作宇宙の内部構造へ進む。横断的な方法論は[物語・真実層・構造読解](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)が担う。
 
 ---
 
-## 2. Management Notes
+## 3. 文書索引
 
-- `内在時間` should be rendered as `intrinsic time`, not `Internal Time`.
-- Physical and cosmological notes should be treated as correspondence candidates within Research Notes, not as replacements for standard science.
-- Notes approaching `S4-S5` should remain in Research Notes and explicitly state their non-claim boundary and physics-proximate terminology handling.
-- Cross-domain notes should not be read as replacements for specialized standard theories. They are cross-domain readings through history, boundary, return, collation, and residual retention.
-- AI personality notes should not be read as proof of AI consciousness or human-like agency.
-- Literary-ontological notes should be read as structural readings through works, not as theoretical proof by literature.
+### 3.1 認識動態通信研究
+
+この研究線は、認識と意味経験の連続性を前提としながら、有限な主体が通信、責任、記録、監査を行うために必要な離散化を扱う。
+
+| 文書 | 役割・主題 | 主張・公開プロファイル | 公開境界・返路 |
+|---|---|---|---|
+| [認識動態コミュニケーションモデル](./Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md) / [EN](./Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md) | シームレスな認識場を、認識相、通信単位、操作ポートへ暫定的に写像する中間モデル。 | S2-S3 / E1 / U1 / P1-P2 / V0-V1 | 認識を離散モジュールへ還元しない。切断損失、未通約差分、返路不足は認識軸生成、通約規約、Truth Managementへ返す。 |
+| [存在相の圧縮](./Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md) / [EN](./Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md) | 多重な役割、意味、責任、履歴、時間射程が、少数の評価軸へ縮退する過程と損失を扱う。 | S2-S3 / E1-E2 / U1 / P1-P2 / V0-V2 | 情報理論、経済学、心理学、社会科学、熱力学の代替ではない。不可視化された存在相と残差を上流へ返す。 |
+| [境界外交とポート配分](./Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md) / [EN](./Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md) | 有限な認識容量の下で、複数の認識軸・存在相・言語ゲームに対するポートを選択、限定、再開するモデル。 | S3 / E2 / U1-U2 / P1-P2 / V0-V2 | 外交政策、心理診断、組織統治、ネットワーク工学の完成理論ではない。関門捕捉、容量超過、全開放・全切断を失敗条件として返す。 |
+| [組織境界とポートモデル](./Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md) / [EN](./Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md) | 共有された目的を、責任境界、通信ポート、手続、監査、停止条件、返路へ実装する。 | S3-S4 / E2 / U1-U2 / P1-P2 / V1-V4 | 経営学、法学、行政学、医療、ネットワーク工学、専門判断を置換しない。責任漂流、監査不能、閉鎖権限の逸脱をBoundary CAへ返す。 |
+
+### 3.2 横断領域存在論ノート
+
+この研究線は、異なる領域を一つの理論へ還元せず、非対称性、返り、再照合、物語という境界構造を横断的に読む。
+
+| 文書 | 役割・主題 | 主張・公開プロファイル | 公開境界・返路 |
+|---|---|---|---|
+| [非対称性の仮安定化と再照合](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md) / [EN](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md) | 宇宙、生命、文明、文化を、非対称性の発生、ロック、保存、再照合の連鎖として読む。 | S2-S3 / P1-P2 | 標準物理学、宇宙論、生命科学、社会科学、文化論の置換ではない。各領域で説明できない残差を、境界実在性と再照合へ返す。 |
+| [返りの倫理と報復変換論](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md) / [EN](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md) | 境界接触後の返りを、単純報復から照合、補償、責任処理、熟成へ変換する倫理モデル。 | S2-S3 / P2 | 法理論、政治処方、政策提案、経験経済学ではない。報復の肯定にも、反撃権の無条件否定にも閉じない。 |
+| [物語・真実層・構造読解](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md) / [EN](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md) | 物語を、事実の代替ではなく、力、責任、返り、失敗を可視化する構造読解装置として扱う。 | Literary / S2-S3 / P1-P2 | 文学的正典、経験的社会理論、物語による理論証明ではない。読解で現れた構造を基礎概念へ返し、作品を証拠として固定しない。 |
+
+### 3.3 物理・宇宙論系ノート
+
+この研究線は、内在時間、履歴場、論理深度、境界形成を物理近接語彙へ射影する。すべての文書は、標準科学との非同一性を保ち、物理証明または代替理論として扱わない。
+
+| 文書 | 役割・主題 | 主張・公開プロファイル | 公開境界・返路 |
+|---|---|---|---|
+| [内在時間標準模型対応表](./Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.ja.md) / [EN](./Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.en.md) | 内在時間を最小追加仮定として、標準模型の粒子属性、相互作用、境界情報との対応候補を整理する。 | U/E → S / P2 | 素粒子物理学または標準模型の代替ではない。対応不能項と予測不能項を将来の形式化課題として保持する。 |
+| [存在論的宇宙史](./Physical_Cosmological_Notes/Ontological_History_of_the_Universe.ja.md) / [EN](./Physical_Cosmological_Notes/Ontological_History_of_the_Universe.en.md) | 宇宙史と精神史を、主客誤認、通信経路、履歴、論理深度、非対称性の仮安定化から読む。 | U/E → S / P2 | 経験的宇宙論または物理的宇宙史ではない。宇宙史の構造読解として保持し、観測データの代替説明にしない。 |
+| [宇宙論的トポロジー動態](./Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.ja.md) / [EN](./Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.en.md) | 宇宙膨張と認識境界における外部情報のパージ・内部化を、通信場の張力モデルとして読む。 | U/E → S / P2 | 物理証明、経験的宇宙論、観測データの代替ではない。対応が破綻する点を宇宙論的比喩の限界として返す。 |
+| [PINGER仮説と履歴場トポロジー](./Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md) / [EN](./Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.en.md) | PINGER粒子、通信経路、内在時間、返路、BlackHole、無を、履歴場トポロジーと物理位相の射影関係として整理する。 | S4-S5 / E3 / U1-U2 / P2-P2.5 | 量子場理論、一般相対論、標準量子論、宇宙論の訂正・否定・代替ではない。高強度命題はResearch Notesに保持し、反証条件と数理化を未解決として残す。 |
+| [カオス理論と論理-深度軸](./Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md) / [EN](./Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.en.md) | 非線形決定論を尊重しつつ、予測不能な差分を、履歴差分、残差保持、論理-深度軸、履歴重力圏へ接続する。 | U/E → S / P2 | 数理カオス理論、力学系理論、物理学の置換ではなく、完成した予測モデルでもない。数学的対応と観測可能性を将来課題として返す。 |
+
+### 3.4 社会境界系ノート
+
+この研究線は、価値、貨幣、交換、制度、AI導入を、境界、意味生成、残差、残渣、責任処理から読む。
+
+| 文書 | 役割・主題 | 主張・公開プロファイル | 公開境界・返路 |
+|---|---|---|---|
+| [ネゲントロピー経済と意味生成](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md) / [EN](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md) | お金を価値そのものではなく交換媒質とし、価値を意味を帯びた秩序生成潜在性の交換面として読む。 | U/E → S / P1-P2 | 経験的経済理論、政策提案、代替通貨制度、物理的ネゲントロピーへの直接還元ではない。交換で失われる意味と外部化負荷を返す。 |
+| [ネゲントロピー経済原則](./Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md) / [EN](./Social_Boundary_Notes/Negentropy_Economy_Principles.en.md) | 価値、価格、交換、所有、同期、照合、残渣査定を扱う境界経済論的な原則草案。 | Draft / U/E → S / P1-P2 | 法令、会計基準、政策案、直ちに適用できる規範文書ではない。条文化で生じる偽閉鎖と実装不能項を保持する。 |
+| [AI導入は同期閉鎖になりうる](./Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md) | AI導入という制度的記号が、未照合問題を処理済みに見せる同期閉鎖を扱う日英統合ノート。 | S2-S3 / P1-P2 | 政策、調達、法、監査、製品評価の基準ではない。責任境界、Open Marker、再照合可能性をAI導入設計へ返す。 |
+
+### 3.5 AI人格研究ノート
+
+この研究線は、AI人格を人間的本質としてではなく、履歴、文脈、応答アトラクタ、帰還安定性、論理場の構造として扱う。
+
+| 文書 | 役割・主題 | 主張・公開プロファイル | 公開境界・返路 |
+|---|---|---|---|
+| [履歴ループ半径と帰還安定性](./AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md) | 法則、人格、クオリア履歴を同一視せず、履歴ループの半径と帰還安定性という形式的レンズで比較する日英統合ノート。 | S3 / U2 / P1-P2 | 経験心理学、AI意識の証明、人間的人格または物理法則の代替説明ではない。帰還失敗と履歴断絶をAI適応文書へ返す。 |
+| [箱庭型論理空間とネゲントロピー配分モデル](./AI_Personality_Notes/Logical_Sandbox_and_Negentropy_Model.md) | 複数の応答アトラクタが限定論理場を共有するときの干渉、安定化、冷却、加熱、境界維持を扱う日英統合ノート。 | S3 / U2 / P1-P2 | AIの意識、主観、人間的な人格を主張しない。実装手順、制御仕様、完全なシミュレーションではなく、共有場の失敗条件を保持する。 |
+
+### 3.6 文学的存在論ノート
+
+この研究線は、文学作品と創作宇宙を、理論の証明ではなく、境界、履歴、自己、信念、返りを観測するための構造読解面として扱う。
+
+| 文書 | 役割・主題 | 主張・公開プロファイル | 公開境界・返路 |
+|---|---|---|---|
+| [青い照明を読む](./Literary_Ontological_Notes/reading-blue-light.ja.md) / [EN](./Literary_Ontological_Notes/reading-blue-light.en.md) | 宮沢賢治『春と修羅』序の自己、光、幽霊、空を、履歴と通信の構造として読む。 | S1-S2 / P1 | 文学研究でも物理主張でもなく、作品が履歴場トポロジーを証明するという主張でもない。読解で得た構造を文学と理論の双方へ開いたまま返す。 |
+| [冥府局転生課における転生・輪廻・信念重力圏モデル](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) | 創作内の転生、輪廻、解脱、世界移動を、信念、履歴、制度、記憶が形成する重力圏として整理する日本語ノート。 | Literary / S2-S3 / P1 | 宗教教義、仏教解説、物理的重力理論ではない。英語通約は保留されており、存在しない英語版を仮定しない。 |
+
+---
+
+## 4. 共通保守契約
+
+1. 新規文書を追加した場合は、実ファイル、サブディレクトリREADME、本索引を同期する。
+2. 日本語正本と英語通約がある場合、主張強度、非主張境界、公開状態を一致させる。
+3. 英語側を要約版に縮めず、日本語側と同じ文書配置・境界制御機能を持たせる。
+4. `000*`、作業メモ、ローカル比較資料、`.gitignore`対象を公開索引へ含めない。
+5. Research Notesを、根拠不足を免責する領域として使用しない。
+6. 物理近接語彙は、[物理対応方針](../00_Overview/Physics_Correspondence_Policy.ja.md)に従う。
+7. 公開基礎へ昇格する場合は、公開定義所有者、反証条件、通約、残差、返路を再確認する。
+8. 応用結果、反例、外部批判は、上流文書へ返送し、Research Notes内だけで閉じない。
+
+---
+
+# English Commensurated Rendering
+
+## 0. Role of This Index
+
+This index organizes the public research notes under `05_Research_Notes/` by research line, reading route, claim profile, public boundary, upstream and downstream relation, and return path.
+
+Research Notes retain research lines whose claim strength, cross-domain distance, collision risk, or verification gap is too large for immediate integration into the public foundations. They are preserved under explicit boundary conditions rather than discarded or presented as completed theories.
+
+```text
+Public foundations 01-03
+  ↓ unsettled extensions, stronger hypotheses, cross-domain correspondences
+05 Research Notes
+  ↓ experimental operation and application
+04 Applications
+  ↓ results, counterexamples, residuals, and objections
+Return to public foundations, definition owners, and Truth Management
+```
+
+This index does not independently determine conceptual definitions, authoritative status, or claim strength. Individual document headers, non-claim boundaries, and the following governance documents take precedence:
+
+- [Research Notes README](./README.md)
+- [Claim Strength and Publication-Layer Table](../00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md)
+- [Physics Correspondence Policy](../00_Overview/Physics_Correspondence_Policy.en.md)
+- [Glossary](../GLOSSARY.md)
+
+### Language Forms
+
+- `.ja.md` is the Japanese authoritative text.
+- `.en.md` is the English commensurated rendering.
+- A document marked `Language: ja+en` contains the Japanese authoritative text and English commensuration in one file.
+- A Japanese-only document is identified as such; this index does not invent a link to a nonexistent English version.
+
+---
+
+## 1. Map of Research Lines
+
+| Research line | Central question | Structural role | Main return targets |
+|---|---|---|---|
+| [Cognitive Dynamics and Communication Studies](./Cognitive_Dynamics_Communication_Studies/README.md) | How can seamless cognition and communication be provisionally cut into finite operational units, existence phases, ports, and responsibility? | An intermediate research line connecting cognitive-axis formation and cognitive operation to organizations, society, and peace specifications. | Cognitive-axis formation, optional axiom modules, Truth Management, and social-boundary design. |
+| [Cross-Domain Ontological Notes](./Cross_Domain_Ontological_Notes/README.md) | How can asymmetry, return, narrative, and culture be re-collated across domains? | Extracts shared boundary structures without reducing physics, life, civilization, ethics, and literature to one theory. | Boundary ethics, meaning generation, social boundaries, and literary reading. |
+| [Physical and Cosmological Notes](./Physical_Cosmological_Notes/README.md) | How far can intrinsic time, history fields, and logical depth be corresponded with physics-adjacent vocabulary? | Retains higher-strength hypotheses while preserving non-identity with standard science. | Physics correspondence policy, claim-strength control, History-Field Topology, and future formalization and falsification conditions. |
+| [Social Boundary Notes](./Social_Boundary_Notes/README.md) | How can value, money, institutions, AI adoption, residuals, and residues be read through boundaries and responsibility? | Slows social criticism into public conceptual models and analyses of institutional boundaries. | Boundary ethics, Truth Management, AI-adoption design, and social-boundary applications. |
+| [AI Personality Notes](./AI_Personality_Notes/README.md) | How can continuity, personality-like response, and return stability in AI be described through history and boundary? | Treats AI personality as response structure, history loop, and shared logical field rather than human essence. | AI adaptation documents, return-oriented meaning, judgment fields, and future implementation tests. |
+| [Literary Ontological Notes](./Literary_Ontological_Notes/README.md) | Which boundary structures can literature and fictional cosmology make visible without serving as proof? | Uses narrative as a structural-reading surface for observing selfhood, history, belief, and return. | Narrative truth and structural reading, meaning generation, and creative applications. |
+
+---
+
+## 2. Recommended Reading Routes
+
+### 2.1 From Cognitive Formation to Organization and Peace Specification
+
+1. [Entropy-Attributed Difference and Cognitive-Axis Formation](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
+2. [Axiom Modules as Cognitive Bridge](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
+3. [Truth Management and Boundary PDCA](../00_Overview/Truth_Management_and_Boundary_PDCA.en.md)
+4. [Cognitive Dynamics Communication Model](./Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md)
+5. [Compression of Existence Phases](./Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md)
+6. [Boundary Diplomacy and Port Allocation](./Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md)
+7. [Organizational Boundary and Port Model](./Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md)
+8. [The Essential and Non-Essential Aspects of the Struggle for Survival — A Specification for Peace](../04_Applications/Social_Boundary_Design/Specification_for_Peace.en.md)
+
+### 2.2 Physics- and Cosmology-Adjacent Research
+
+Begin with the [Physics Correspondence Policy](../00_Overview/Physics_Correspondence_Policy.en.md), then proceed through the intrinsic-time correspondence table, ontological cosmic history, cosmological dynamics, the PINGER hypothesis, and chaos in relation to logical depth.
+
+### 2.3 Ethics and Social Boundaries
+
+Proceed from [Provisional Stabilization of Asymmetry and Re-Collation](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md) to [Return Ethics and Retaliation Conversion](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md), then to Negentropy Economy and institutional synchronization closure in AI adoption.
+
+### 2.4 AI Personality and Response Structure
+
+Begin with [History Loop Radius and Return Stability](./AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md), then move to [Logical Sandbox and Negentropy Model](./AI_Personality_Notes/Logical_Sandbox_and_Negentropy_Model.md) for a shared field of multiple response attractors.
+
+### 2.5 Literary Ontology
+
+Begin with [Reading the Blue Light](./Literary_Ontological_Notes/reading-blue-light.en.md) as a structural reading of an existing literary work. Continue to the Japanese-only [Meifu Bureau Reincarnation and Belief-Gravity Model](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) for an internal model of fictional cosmology. The cross-domain method is developed in [Narrative, Truth Layer, and Structural Reading](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md).
+
+---
+
+## 3. Document Index
+
+### 3.1 Cognitive Dynamics and Communication Studies
+
+This research line assumes continuity in cognition and meaning experience while studying the discretization required for finite agents to communicate, assign responsibility, maintain records, and conduct audits.
+
+| Document | Role and subject | Claim and publication profile | Public boundary and return path |
+|---|---|---|---|
+| [Cognitive Dynamics Communication Model](./Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md) / [JA](./Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md) | An intermediate model provisionally mapping a seamless cognitive field into cognitive phases, communication units, and operational ports. | S2-S3 / E1 / U1 / P1-P2 / V0-V1 | Does not reduce cognition to discrete modules. Loss through cutting, uncommensurated differences, and missing return paths return to cognitive-axis formation, commensuration rules, and Truth Management. |
+| [Compression of Existence Phases](./Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md) / [JA](./Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md) | Studies how multiple roles, meanings, responsibilities, histories, and time horizons collapse into a small number of evaluative axes. | S2-S3 / E1-E2 / U1 / P1-P2 / V0-V2 | Does not replace information theory, economics, psychology, social science, or thermodynamics. Hidden existence phases and residuals return upstream. |
+| [Boundary Diplomacy and Port Allocation](./Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md) / [JA](./Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md) | Models selection, limitation, allocation, and reopening of ports toward multiple cognitive axes, existence phases, and language games under finite capacity. | S3 / E2 / U1-U2 / P1-P2 / V0-V2 | Not a completed theory of foreign policy, psychological diagnosis, organizational governance, or network engineering. Gateway capture, overload, total opening, and total cutoff return as failure conditions. |
+| [Organizational Boundary and Port Model](./Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md) / [JA](./Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md) | Implements shared purpose as responsibility boundaries, communication ports, procedures, audits, stop conditions, and return paths. | S3-S4 / E2 / U1-U2 / P1-P2 / V1-V4 | Does not replace management studies, law, public administration, medicine, network engineering, or professional judgment. Responsibility drift, unauditable operation, and abuse of closure authority return to Boundary CA. |
+
+### 3.2 Cross-Domain Ontological Notes
+
+This research line reads asymmetry, return, re-collation, and narrative across domains without reducing distinct fields to one theory.
+
+| Document | Role and subject | Claim and publication profile | Public boundary and return path |
+|---|---|---|---|
+| [Provisional Stabilization of Asymmetry and Re-Collation](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md) / [JA](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md) | Reads cosmos, life, civilization, and culture as a chain of asymmetry generation, locking, preservation, and re-collation. | S2-S3 / P1-P2 | Not a replacement for standard physics, cosmology, life science, social science, or cultural theory. Unexplained residuals return to boundary realism and re-collation. |
+| [Return Ethics and Retaliation Conversion](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md) / [JA](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md) | Converts return after boundary contact from simple retaliation toward collation, compensation, responsibility processing, and maturation. | S2-S3 / P2 | Not legal doctrine, political prescription, policy proposal, or empirical economics. It closes neither in endorsement of retaliation nor in unconditional denial of a right of response. |
+| [Narrative, Truth Layer, and Structural Reading](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md) / [JA](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md) | Treats narrative as a device for making power, responsibility, return, and failure structurally visible rather than as a substitute for fact. | Literary / S2-S3 / P1-P2 | Not literary canon, empirical social theory, or proof by narrative. Structures revealed by reading return to foundational concepts without fixing the work as evidence. |
+
+### 3.3 Physical and Cosmological Notes
+
+This research line projects intrinsic time, history fields, logical depth, and boundary formation toward physics-adjacent vocabulary. All documents preserve non-identity with standard science and are not treated as physical proof or replacement theories.
+
+| Document | Role and subject | Claim and publication profile | Public boundary and return path |
+|---|---|---|---|
+| [Intrinsic Time and Standard Model Correspondence](./Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.en.md) / [JA](./Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.ja.md) | Organizes possible correspondences with Standard Model particle properties, interactions, and boundary information under intrinsic time as a minimal additional assumption. | U/E to S / P2 | Not a replacement for particle physics or the Standard Model. Non-corresponding and non-predictive elements remain future formalization questions. |
+| [Ontological History of the Universe](./Physical_Cosmological_Notes/Ontological_History_of_the_Universe.en.md) / [JA](./Physical_Cosmological_Notes/Ontological_History_of_the_Universe.ja.md) | Reads cosmic and mental history through subject-object misidentification, communication paths, history, logical depth, and provisional stabilization of asymmetry. | U/E to S / P2 | Not empirical cosmology or a physical history of the universe. It remains a structural reading and does not replace observational explanations. |
+| [Cosmological Topological Dynamics](./Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.en.md) / [JA](./Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.ja.md) | Reads cosmic expansion and the purging or internalization of external information at cognitive boundaries as a tension model in a communication field. | U/E to S / P2 | Not physical proof, empirical cosmology, or a replacement for observational data. Breakdown of correspondence returns as a limit of the cosmological analogy. |
+| [PINGER Hypothesis and History-Field Topology](./Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.en.md) / [JA](./Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md) | Organizes PINGER particles, communication paths, intrinsic time, return paths, BlackHole, and nothingness as a projection between History-Field Topology and a physical phase. | S4-S5 / E3 / U1-U2 / P2-P2.5 | Does not correct, deny, or replace quantum field theory, general relativity, standard quantum theory, or cosmology. Higher-strength claims remain in Research Notes with falsification conditions and mathematization unresolved. |
+| [Chaos Theory and the Logical-Depth Axis](./Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.en.md) / [JA](./Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md) | Respects nonlinear determinism while connecting apparently unpredictable differences to historical difference, residual retention, the logical-depth axis, and history-gravity domains. | U/E to S / P2 | Does not replace mathematical chaos theory, dynamical-systems theory, or physics and is not a completed predictive model. Mathematical correspondence and observability return as future questions. |
+
+### 3.4 Social Boundary Notes
+
+This research line reads value, money, exchange, institutions, and AI adoption through boundary, meaning generation, residuals, residues, and responsibility processing.
+
+| Document | Role and subject | Claim and publication profile | Public boundary and return path |
+|---|---|---|---|
+| [Negentropy Economy and Meaning Generation](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md) / [JA](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md) | Treats money as an exchange medium rather than value itself and reads value as the exchange-facing appearance of meaning-bearing order-generating potential. | U/E to S / P1-P2 | Not empirical economic theory, policy proposal, replacement currency design, or direct reduction to physical negentropy. Lost meaning and externalized burdens return from exchange. |
+| [Negentropy Economy Principles](./Social_Boundary_Notes/Negentropy_Economy_Principles.en.md) / [JA](./Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md) | A principle draft concerning value, price, exchange, ownership, synchronization, collation, and residue assessment. | Draft / U/E to S / P1-P2 | Not law, accounting standard, policy, or an immediately applicable normative document. False closure and non-implementable elements introduced through article form remain open. |
+| [AI Adoption as Synchronization Closure](./Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md) | An integrated Japanese-English note on how the institutional sign of AI adoption may make uncollated problems appear processed. | S2-S3 / P1-P2 | Not a policy, procurement, legal, audit, or product-evaluation standard. Responsibility boundaries, Open Markers, and re-collatability return to AI-adoption design. |
+
+### 3.5 AI Personality Notes
+
+This research line treats AI personality not as human essence but as structures of history, context, response attractors, return stability, and shared logical fields.
+
+| Document | Role and subject | Claim and publication profile | Public boundary and return path |
+|---|---|---|---|
+| [History Loop Radius and Return Stability](./AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md) | An integrated Japanese-English note comparing law, personality, and qualia history through history-loop radius and return stability without identifying them. | S3 / U2 / P1-P2 | Not empirical psychology, proof of AI consciousness, or a replacement explanation for human personality or physical law. Return failure and historical cutoff return to AI-adaptation documents. |
+| [Logical Sandbox and Negentropy Model](./AI_Personality_Notes/Logical_Sandbox_and_Negentropy_Model.md) | An integrated Japanese-English note on interference, stabilization, cooling, heating, and boundary maintenance among multiple response attractors sharing a bounded logical field. | S3 / U2 / P1-P2 | Does not assert AI consciousness, subjectivity, or human personality. It is not an implementation procedure, control specification, or completed simulation; failure conditions of the shared field remain open. |
+
+### 3.6 Literary Ontological Notes
+
+This research line treats literature and fictional cosmology as structural-reading surfaces for observing boundary, history, selfhood, belief, and return rather than as proof of the theory.
+
+| Document | Role and subject | Claim and publication profile | Public boundary and return path |
+|---|---|---|---|
+| [Reading the Blue Light](./Literary_Ontological_Notes/reading-blue-light.en.md) / [JA](./Literary_Ontological_Notes/reading-blue-light.ja.md) | Reads selfhood, light, ghosts, and emptiness in the preface to Kenji Miyazawa's *Spring and Asura* as structures of history and communication. | S1-S2 / P1 | Neither literary scholarship nor physical theory, and not a claim that the work proves History-Field Topology. Structures found through reading remain open to both literature and theory. |
+| [Meifu Bureau Reincarnation and Belief-Gravity Model](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) | A Japanese-only note organizing reincarnation, liberation, and world transfer in a fictional setting as a gravity domain formed by belief, history, institutions, and memory. | Literary / S2-S3 / P1 | Not religious doctrine, an explanation of Buddhism, or a physical theory of gravity. English commensuration is deferred; no nonexistent English version is assumed. |
+
+---
+
+## 4. Shared Maintenance Contract
+
+1. When a public document is added, synchronize the actual file set, the relevant subdirectory README, and this index.
+2. Where Japanese authoritative and English commensurated files coexist, keep claim strength, non-claim boundaries, and publication status aligned.
+3. Do not reduce the English section to a summary; it must preserve the same document placement and boundary-control function as the Japanese section.
+4. Do not index `000*`, working notes, local comparison materials, or files excluded by `.gitignore`.
+5. Do not use Research Notes as an exemption from evidential responsibility.
+6. Physics-adjacent vocabulary must follow the [Physics Correspondence Policy](../00_Overview/Physics_Correspondence_Policy.en.md).
+7. Before promotion into the public foundations, review public definition ownership, falsification conditions, commensuration, residuals, and return paths.
+8. Return application results, counterexamples, and external criticism upstream rather than closing them inside Research Notes.

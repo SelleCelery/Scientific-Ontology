@@ -1,105 +1,162 @@
-# Tam / Goodness / 暗・善
+# Tam / Goodness / Tam・善
 
-> Layer: 03_Tam_Goodness  
-> Status: README  
-> Scope: Public boundary ethics and non-destructive interaction
+> Layer: 03_Tam_Goodness
+> Status: README
+> Scope: communication protocols / boundary ethics / commensuration / closure and reopening / return management
+> Language: ja+en
+> Public profile: P0-P2
+> Authority: Directory navigation and maintenance contract; not a concept-definition owner
 
----
+# 日本語正本
 
 ## 1. Layer Role / 層の位置づけ
 
-03_Tam_Goodness は、Sat / Truth と Raj / Beauty で整理された存在論的・境界動態的構造を、非破壊的相互作用、判断可能性、偽閉鎖の回避、未解決保持、安全の境界維持へ接続する公開プロトコル層である。
+`03_Tam_Goodness`は、中核三層において**通信を成立させる規約と、その管理**を扱う。
 
-この層の中心は、AIそのものではない。AIは代表的な応用領域のひとつだが、Tam / Goodness が定義するのは、履歴を持つ存在・場・意味単位が接触するとき、何を壊してはいけないかである。
+この層は、何を受け入れ、保留し、停止するか、異なる認識形式をどう比較・通約するか、仮閉鎖と偽閉鎖をどう区別するか、残差、異議、意味、責任をどこへ返すかを問う。
 
-English commensurated rendering: 
+そのため、境界倫理、意味の返路、選択公理モジュール、通約、閉鎖、再開、返送が置かれる。
 
-03_Tam_Goodness is the public protocol layer that connects the Sat/Raj structure to non-destructive interaction, judgment possibility, resistance to false closure, preservation of unresolved material, and safety as boundary maintenance. 
+### 構造上の位置
 
-AI is one important application domain, but not the whole scope of the layer.
+```text
+01 Sat / Truth
+構造と成立条件
+  ↓
+02 Raj / Beauty
+通信内容と読みの生成
+  ↓
+03 Tam / Goodness
+規約・通約・閉鎖・再開・返送
+  ↓
+04 Applications / 05 Research Notes
+```
 
----
+倫理は後から付加される装飾ではなく、異なる履歴と認識軸を破壊せず運用するための通信管理条件である。
 
 ## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
-この層の公開強度は、原則として P0-P1 である。境界倫理、意味の帰還軌道、非破壊的相互作用、安全の境界維持を扱う。実装仕様や制御パラメータではなく、公開可能な倫理・境界プロトコルとして記述する。
+本READMEは、標準科学、法令、政策、既存分野の定義を置き換えるものではない。
 
-English commensurated rendering: 
-
-The default public scope is P0-P1. This layer treats boundary ethics, return orbits of meaning, non-destructive interaction, and safety as boundary maintenance. It is a public conceptual protocol layer, not an implementation specification.
-
----
+このREADMEの公開プロファイルは、メタデータ欄に示す。各文書固有の主張強度は本文メタデータと主張強度表を参照する。
 
 ## 3. Included / Not Included / 含むもの・含まないもの
 
-含むもの:
+含むもの：
 
-- 公開用境界倫理
+- 境界倫理と非破壊的距離
 - 意味の帰還軌道
-- 判断可能性の保持
-- 偽閉鎖と未解決保持
-- Open Marker に接続する倫理的発想
-- 安全を境界維持として扱う概念整理
+- 選択公理モジュール
+- 中核不変項と運用ドリフト
+- 仮閉鎖、偽閉鎖、再開、返送
 
-含まないもの:
+含まないもの：
 
-- 非公開ランタイム資料
-- 非公開実装スキーマ
-- 詳細な運用パラメータ
-- 内部評価分類
-- 人格OS・人格Core仕様
-- AIエージェント制御構造
-- 非公開素材索引
-
-English commensurated rendering: 
-
-This layer includes public boundary ethics, meaning-return structure, judgment preservation, false-closure avoidance, and boundary-maintenance concepts. 
-
-It does not include private runtime materials, implementation schemas, evaluation taxonomies, persona-core specifications, or AI-agent control structures.
-
----
+- 普遍的な道徳教義
+- 法的・医療的・政策的な個別助言
+- AI制御コードまたは非公開ランタイム
+- 他者の思想・人格を診断する分類表
+- 接触継続または無条件受容の義務
 
 ## 4. Documents / 文書一覧
 
-- [`Boundary_Ethics_Model.md`](./Boundary_Ethics_Model.md)
-  - 一行説明: 倫理を、履歴を持つ存在・場どうしが互いの履歴を破壊せずに接触するための境界設計として扱う。
-  - Role: 境界倫理モデルの公開用概念整理。
-  - Public profile: Public ethics model / P0-P1.
+1. [`Boundary_Ethics_Model.md`](./Boundary_Ethics_Model.md)
+2. [`Meaning_as_Return_Orbit.md`](./Meaning_as_Return_Orbit.md)
+3. [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](./Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md) / [`en`](./Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
 
-- [`Meaning_as_Return_Orbit.md`](./Meaning_as_Return_Orbit.md)
-  - 一行説明: 意味を、一方向の情報伝達ではなく、戻り、循環し、履歴として残る帰還軌道として扱う。
-  - Role: 意味生成と境界倫理をつなぐ概念ノート。
-  - Public profile: Public conceptual note / P1.
-
-関連する Applications 文書:
-
-- [`AI_Usefulness_as_a_Boundary_Function.md`](../04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
-  - 一行説明: AIの有用性を、ユーザーの判断可能性が保たれる場の維持として定義する。
-  - Role: AI応用側の公開インターフェース。
-  - Public profile: Application interface / P1.
-
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
-  - 一行説明: AIを境界インターフェースとして扱い、同期的理解、偽閉鎖、Open Marker、倫理的制動を導入する。
-  - Role: AI境界インターフェースの応用文書。
-  - Public profile: Application interface / P1.
-
----
+ファイル名が`000`で始まる作業草稿は公開内容に含めない。
 
 ## 5. Maintenance Notes / 運用メモ
 
-### Stable policy / 固定方針
+上流：
 
-Tam / Goodness は、非破壊性と境界維持の層である。AI文書が関連しても、この層を AI 実装層へ吸収しない。
+- [`../01_Sat_Truth/README.md`](../01_Sat_Truth/README.md)
+- [`../02_Raj_Beauty/README.md`](../02_Raj_Beauty/README.md)
 
-### Directory history / 層の変更履歴
+下流：
 
-- AI関連文書の多くは 04_Applications へ移し、Tam には境界倫理と意味の帰還軌道を残す構成へ整理した。
+- [`../04_Applications/README.md`](../04_Applications/README.md)
+- [`../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md)
+- [`../05_Research_Notes/Cross_Domain_Ontological_Notes/README.md`](../05_Research_Notes/Cross_Domain_Ontological_Notes/README.md)
 
-### File-level changes / ファイル単位の増減
+倫理上の破綻、通約不能残差、偽閉鎖、実装負荷は、該当規約と上流の認識条件へ返す。
 
-- [`Boundary_Ethics_Model.md`](./Boundary_Ethics_Model.md) は本層の中心文書として維持する。
-- [`Meaning_as_Return_Orbit.md`](./Meaning_as_Return_Orbit.md) は、倫理・意味・帰還構造をつなぐ文書として本層に配置する。
+- 原理は`03`、具体的応用は`04`、高リスクな展開は`05`へ分ける。
+- 同期を完全一致、同意、服従と同一視しない。
+- 通約を差異消去または単純翻訳へ縮減しない。
+- 作業草稿を公開文書一覧へ含めない。
 
-### Pending notes / 保留事項
+# English Commensurated Rendering
 
-- AI応用文書との重複が増えた場合は、Tam には原理を、Applications には応用を残す。
+## 0. Role
+
+`03_Tam_Goodness` addresses **the protocols that make communication possible and the management of those protocols**.
+
+It asks what should be admitted, held, or stopped; how distinct cognitive forms may be compared and commensurated; how provisional closure differs from false closure; and where residuals, objections, meaning, and responsibility should return.
+
+This is why Boundary Ethics, return paths of meaning, optional axiom modules, commensuration, closure, reopening, and return belong here.
+
+## 1. Structural Position
+
+```text
+01 Sat / Truth
+Structure and conditions of formation
+  ↓
+02 Raj / Beauty
+Communication content and generation of reading
+  ↓
+03 Tam / Goodness
+Protocols, commensuration, closure, reopening, and return
+  ↓
+04 Applications / 05 Research Notes
+```
+
+Ethics is not an ornament added afterward. It is a condition for managing communication among distinct histories and cognitive axes without destroying them.
+
+## 2. Public Scope
+
+This README is not a replacement for standard science, law, policy, or established disciplinary definitions.
+
+Included:
+
+- Boundary Ethics and non-destructive distance;
+- return orbits of meaning;
+- optional axiom modules;
+- core invariants and operational drift;
+- provisional closure, false closure, reopening, and return.
+
+Not included:
+
+- universal moral doctrine;
+- individualized legal, medical, or policy advice;
+- AI control code or private runtime materials;
+- taxonomies for diagnosing another person's worldview or personality;
+- an obligation of continued contact or unconditional acceptance.
+
+## 3. Documents and Recommended Reading Order
+
+1. [`Boundary_Ethics_Model.md`](./Boundary_Ethics_Model.md)
+2. [`Meaning_as_Return_Orbit.md`](./Meaning_as_Return_Orbit.md)
+3. [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](./Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md) / [`en`](./Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
+
+Working drafts whose basenames begin with `000` are not part of the public contents.
+
+## 4. Return and Maintenance
+
+Upstream:
+
+- [`../01_Sat_Truth/README.md`](../01_Sat_Truth/README.md)
+- [`../02_Raj_Beauty/README.md`](../02_Raj_Beauty/README.md)
+
+Downstream:
+
+- [`../04_Applications/README.md`](../04_Applications/README.md)
+- [`../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md)
+- [`../05_Research_Notes/Cross_Domain_Ontological_Notes/README.md`](../05_Research_Notes/Cross_Domain_Ontological_Notes/README.md)
+
+Ethical failures, non-commensurable residuals, false closure, and implementation burdens return to the relevant protocols and upstream cognitive conditions.
+
+- Keep principles in `03`, applications in `04`, and higher-risk extensions in `05`.
+- Do not identify synchronization with complete agreement, consent, or submission.
+- Do not reduce commensuration to difference-erasure or simple translation.
+- Do not include working drafts in the public document list.

@@ -1,97 +1,104 @@
-# Literary / Ontological Notes / 文学的・存在論的ノート
+# Literary Ontological Notes / 文学的存在論ノート
 
-> Layer: 05_Research_Notes / Literary_Ontological_Notes  
-> Status: README  
-> Scope: Literary and ontological readings
+> Layer: 05_Research_Notes / Literary_Ontological_Notes
+> Status: README
+> Scope: literary ontology / structural reading / history / meaning / belief-gravity / fictional cosmology
+> Language: ja+en
+> Public profile: P1-P2
+> Authority: Directory navigation and maintenance contract; not a concept-definition owner
 
----
+# 日本語正本
 
-## 1. Subdirectory Role / 小分類の位置づけ
+## 1. Directory Role / ディレクトリの位置づけ
 
-Literary_Ontological_Notes は、文学、詩、宗教的語彙、創作素材を、存在境界論の概念で構造的に読むための研究ノートを置く小分類である。
+この小分類は、文学作品と創作宇宙を、境界、履歴、自己、光、信念、意味、返りの構造として読む。
 
-ここで行うのは、文学研究の代替でも、作品による理論証明でも、宗教的・詩的素材の物理学への還元でもない。権威づけではなく、響き方、構造対応、概念通路を読むための場所である。
+文学を理論の証明として使用するのではない。理論が何を可視化し、何を読み落とし、作品固有の残差をどこまで保持できるかを試す読解面である。
 
-English commensurated rendering: 
+## 2. Public Scope / 公開範囲
 
-Literary_Ontological_Notes contains research notes that structurally read literature, poetry, religious vocabulary, and creative materials through the concepts of Scientific Ontology.
+本READMEは、標準科学、法令、政策、既存分野の定義を置き換えるものではない。
 
-These notes do not replace literary scholarship, do not claim that literary works prove the theory, and do not reduce religious or poetic materials to physics. Their purpose is to read resonance, structural correspondence, and conceptual pathways rather than to borrow authority.
+含むもの：
 
----
+- 文学的存在論読解
+- 自己、光、通信、履歴、空の構造
+- 転生、輪廻、信念重力圏の創作モデル
+- 日本語限定または日英ペアの読解ノート
 
-## 2. Public Scope and Claim Profile / 公開範囲と主張強度
+含まないもの：
 
-この小分類の公開強度は P1 を中心とする。主張は、作品解釈の正解提示ではなく、存在論的・構造的読解の提示である。
+- 文学史上の正統解釈の独占
+- 作者の意図の確定
+- 作品による物理・宗教・形而上学の証明
+- 創作設定と経験的事実の同一視
 
-文学作品、宗教語彙、創作素材を扱う場合でも、それらを存在境界論へ従属させない。科学、文学、宗教、創作を権威として使うのではなく、構造として並べ、響いた接続を読む。
+## 3. Documents / 文書一覧
 
-English commensurated rendering: The public scope of this subdirectory is mainly P1. Its claims are not presented as final literary interpretations, but as ontological and structural readings. 
-Literary works, religious vocabulary, and creative materials should not be subordinated to Scientific Ontology. They are placed as structures rather than authorities, and the notes read the connections that resonate.
+- [`reading-blue-light.ja.md`](./reading-blue-light.ja.md) / [`en`](./reading-blue-light.en.md)  
+  既存文学への構造読解。
 
----
+- [`Meifu_Bureau_Reincarnation_and_Belief_Gravity.md`](./Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)  
+  創作宇宙を用いた転生、輪廻、信念重力圏、履歴保持の概念試験。
 
-## 3. Included / Not Included / 含むもの・含まないもの
+## 4. Maintenance Notes / 運用メモ
 
-含むもの:
+上流：
 
-- 文学作品の存在論的・構造的読解
-- 詩的語彙、宗教的語彙、創作素材との概念接続
-- 履歴場トポロジー、境界、観測、自己、光、無などの読解補助線
-- 日本語正本と英語通約版のペア文書
+- [`../../01_Sat_Truth/Meaning_Generation_Model.md`](../../01_Sat_Truth/Meaning_Generation_Model.md)
+- [`../../02_Raj_Beauty/History_Field_Topology.md`](../../02_Raj_Beauty/History_Field_Topology.md)
+- [`../Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md`](../Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)
 
-含まないもの:
+- 作品を理論の証拠として扱わない。
+- 作者意図、作品構造、読者側履歴を区別する。
+- 文学的多義性を単一定義へ閉じない。
+- 創作設定を経験的主張へ変えない。
+- 日本語限定文書は理由をメタデータで示す。
 
-- 文学研究の代替
-- 作品が存在境界論を証明するという主張
-- 宗教や詩を物理学へ還元する説明
-- 未公開創作マスター
-- 権威づけのための引用集
+# English Commensurated Rendering
 
-English commensurated rendering: This subdirectory includes ontological and structural readings of literary works, conceptual connections with poetic and religious vocabulary, reading lines through History-Field Topology, boundary, observation, selfhood, light, and the void, and paired Japanese/English documents.
-It does not include replacements for literary scholarship, claims that works prove Scientific Ontology, reductions of religion or poetry to physics, unpublished creative masters, or authority-borrowing citation collections.
+## 0. Role
 
----
+This subdirectory reads literary works and fictional cosmologies through structures of boundary, history, self, light, belief, meaning, and return.
 
-## 4. Documents / 文書一覧
+It does not use literature as proof of the theory. It tests what the theory makes visible, what it misses, and how well it preserves work-specific residuals.
 
-- [`reading-blue-light.ja.md`](./reading-blue-light.ja.md)
-  - 一行説明: 宮沢賢治『春と修羅』序を、自己、光、幽霊、空、履歴場トポロジーを通じて読む日本語正本。
-  - EN: Japanese authoritative reading of Miyazawa Kenji's _Spring and Asura_ through selfhood, light, ghosts, emptiness, and History-Field Topology.
-  - Role: 文学的・存在論的読解ノートの日本語正本。
-  - Public profile: Interpretive analogy / P1.
+## 1. Public Scope
 
-- [`reading-blue-light.en.md`](./reading-blue-light.en.md)
-  - 一行説明: `reading-blue-light.ja.md` の英語通約版。
-  - EN: English commensurated rendering of `reading-blue-light.ja.md`.
-  - Role: 英語通約版。
-  - Public profile: English commensuration / P1.
+This README is not a replacement for standard science, law, policy, or established disciplinary definitions.
 
-関連導線:
+Included:
 
-- [`../README.md`](../README.md)
-  - 一行説明: Research Notes 層の親README。
+- literary ontological reading;
+- structures of self, light, communication, history, and emptiness;
+- fictional models of reincarnation, cyclic return, and belief-gravity domains;
+- Japanese-only or paired Japanese-English reading notes.
 
-- [`../Research_Notes_Index.md`](../Research_Notes_Index.md)
-  - 一行説明: Research Notes 全体の索引。
+Not included:
 
----
+- monopoly over canonical literary interpretation;
+- definitive claims about authorial intention;
+- proof of physics, religion, or metaphysics through literary works;
+- identification of fictional settings with empirical fact.
 
-## 5. Maintenance Notes / 運用メモ
+## 2. Documents
 
-### Stable policy / 固定方針
+- [`reading-blue-light.ja.md`](./reading-blue-light.ja.md) / [`en`](./reading-blue-light.en.md)  
+  Structural reading of an existing literary work.
 
-この小分類では、文学・宗教・創作素材を、証明や権威ではなく、構造反響として扱う。作品の正しさを奪わず、こちらの理論へ従属させない。
+- [`Meifu_Bureau_Reincarnation_and_Belief_Gravity.md`](./Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)  
+  Conceptual testing of reincarnation, cyclic return, belief-gravity domains, and history retention through a fictional cosmology.
 
-### Directory history / 小分類の変更履歴
+## 3. Return and Maintenance
 
-- v4 系で、文学的・存在論的読解を Research Notes 内の独立小分類として分離した。
-- `reading-blue-light` は `.ja.md` / `.en.md` のペアとして管理する。
+Upstream:
 
-### File-level changes / ファイル単位の増減
+- [`../../01_Sat_Truth/Meaning_Generation_Model.md`](../../01_Sat_Truth/Meaning_Generation_Model.md)
+- [`../../02_Raj_Beauty/History_Field_Topology.md`](../../02_Raj_Beauty/History_Field_Topology.md)
+- [`../Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md`](../Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)
 
-- 日本語正本を更新した場合は、英語通約版との差分を後続作業として確認する。
-
-### Pending notes / 保留事項
-
-- 未公開創作正本や創作マスターはこの公開小分類へ置かない。
+- Do not use works as evidence proving the theory.
+- Distinguish authorial intention, work structure, and reader history.
+- Do not close literary polysemy into a single definition.
+- Do not convert fictional settings into empirical claims.
+- State the reason in metadata where a document remains Japanese-only.

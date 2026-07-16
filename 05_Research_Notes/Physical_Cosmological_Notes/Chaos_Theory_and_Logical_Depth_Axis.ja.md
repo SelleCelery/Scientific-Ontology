@@ -2,7 +2,7 @@
 
 > Status: Research note draft  
 > Scope: chaos theory, nonlinear determinism, internal count-time, intrinsic time, logical-depth axis, residuals, residues, history-field correspondence, history-gravity domain  
->Language: ja
+>Language: Japanese authoritative; English commensuration available
 >Claim strength: U/E -> S
 
 ---

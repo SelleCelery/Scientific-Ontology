@@ -276,11 +276,11 @@ The term collision registries record where actual public terms collide with exis
 
 Use:
 
-- [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md) for Japanese canonical terms;
-- [`TERM_COLLISION_REGISTRY.en.md`](../TERM_COLLISION_REGISTRY.en.md) for English renderings.
+- [`TERM_COLLISION_REGISTRY.ja.md`](TERM_COLLISION_REGISTRY.ja.md) for Japanese canonical terms;
+- [`TERM_COLLISION_REGISTRY.en.md`](TERM_COLLISION_REGISTRY.en.md) for English renderings.
 
-- 日本語正本語: [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md)
-- 英語通約語: [`TERM_COLLISION_REGISTRY.en.md`](../TERM_COLLISION_REGISTRY.en.md)
+- 日本語正本語: [`TERM_COLLISION_REGISTRY.ja.md`](TERM_COLLISION_REGISTRY.ja.md)
+- 英語通約語: [`TERM_COLLISION_REGISTRY.en.md`](TERM_COLLISION_REGISTRY.en.md)
 
 ## 7. Summary
 

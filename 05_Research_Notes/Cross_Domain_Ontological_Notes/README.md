@@ -1,134 +1,112 @@
-# Cross-Domain Ontological Notes / 横断領域存在論ノート
+# Cross-Domain Ontological Notes / 分野横断存在論ノート
 
-> Layer: 05_Research_Notes / Cross_Domain_Ontological_Notes  
-> Status: README  
-> Scope: Cross-domain ontology, asymmetry, boundary contact, return ethics, narrative truth
+> Layer: 05_Research_Notes / Cross_Domain_Ontological_Notes
+> Status: README
+> Scope: asymmetry / re-collation / return ethics / retaliation conversion / narrative truth / structural reading
+> Language: ja+en
+> Public profile: P1-P2
+> Authority: Directory navigation and maintenance contract; not a concept-definition owner
 
----
+# 日本語正本
 
-## 1. Subdirectory Role / 小分類の位置づけ
+## 1. Directory Role / ディレクトリの位置づけ
 
-Cross_Domain_Ontological_Notes は、存在境界論を、物理、生命、文明、文化、倫理、経済、文学、AIなど、単一領域に閉じない構造へ接続する研究ノートを置く小分類である。
+この小分類は、単一分野へ閉じない存在論的構造を、倫理、文化、文明、経済、文学、権力、責任へ横断的に展開する。
 
-この小分類は、各専門領域の標準理論を置き換えるためのものではない。ここで行うのは、履歴、境界、接触、返り、同期、照合、残差保持、再照合という補助線を用いて、複数領域にまたがる構造を読み直すことである。
+分野を混同するのではなく、境界、履歴、返り、非対称性、残差、再照合という共通構造が、各領域でどのように異なる相を取るかを読む。
 
-特に、本小分類では、非対称性の仮安定化、境界接触における返り、熟成と腐敗、物語による真実層の読解を扱う。
+## 2. Public Scope / 公開範囲
 
-English commensurated rendering:
+本READMEは、標準科学、法令、政策、既存分野の定義を置き換えるものではない。
 
-Cross_Domain_Ontological_Notes contains research notes connecting Scientific Ontology with structures that do not remain confined to a single domain, including physics, life, civilization, culture, ethics, economy, literature, and AI.
+含むもの：
 
-This subdirectory does not replace the standard theories of each specialized field. It re-reads cross-domain structures through the auxiliary lines of history, boundary, contact, return, synchronization, collation, residual retention, and re-collation.
+- 非対称性の仮安定化と再照合
+- 返りの倫理と報復変換
+- 物語、真実層、構造読解
 
-In particular, this subdirectory deals with asymmetry stabilization, returns in boundary contact, maturation and corruption, and structural reading of narrative truth.
+含まないもの：
 
----
+- 普遍的道徳教義
+- 法的応報論または刑罰政策
+- 経験的社会科学の完成理論
+- 文学作品の正統解釈を独占する主張
+- 物理的宇宙論の証明
 
-## 2. Public Scope and Claim Profile / 公開範囲と主張強度
+## 3. Documents / 文書一覧
 
-この小分類の公開強度は P1-P2 を中心とする。標準物理学、生命科学、社会科学、法学、経済学、文学研究、AI研究を勝手に上書きすることを試みるものではない。
+- [`Asymmetry_Stabilization_and_ReCollation.ja.md`](./Asymmetry_Stabilization_and_ReCollation.ja.md) / [`en`](./Asymmetry_Stabilization_and_ReCollation.en.md)
+- [`Return_Ethics_and_Retaliation_Conversion.ja.md`](./Return_Ethics_and_Retaliation_Conversion.ja.md) / [`en`](./Return_Ethics_and_Retaliation_Conversion.en.md)
+- [`Narrative_Truth_and_Structural_Reading.ja.md`](./Narrative_Truth_and_Structural_Reading.ja.md) / [`en`](./Narrative_Truth_and_Structural_Reading.en.md)
 
-ここで扱うのは、AMP/HFC/存在境界論由来の概念を、複数領域にまたがる構造とどのように照合できるかを探る研究ノートである。
+読解順は固定されない。倫理的返りを中心に読む場合はReturn Ethicsから、文化・文明の構造を読む場合はAsymmetryから入る。
 
-English commensurated rendering:
+## 4. Maintenance Notes / 運用メモ
 
-The public scope of this subdirectory is mainly S2-S3. It does not overwrite standard physics, life science, social science, law, economics, literary studies, or AI research.
-
-These notes explore how concepts derived from AMP, HFC, and Scientific Ontology can be collated with cross-domain structures.
-
----
-
-## 3. Included / Not Included / 含むもの・含まないもの
-
-含むもの:
-
-- 非対称性の発生、仮安定化、再照合に関する存在論的モデル
-- 境界接触における返り、報復変換、責任処理、熟成、腐敗に関する倫理モデル
-- 物語、真実層、構造読解、役割語、力、失敗、返りに関する文学存在論ノート
-- Sat層の境界実在性の原則を前提とした横断領域への展開
-- ネゲントロピー経済、境界倫理、意味生成モデルとの接続候補
-
-含まないもの:
-
-- 各専門領域の標準理論の置換
-- 経験的科学論文として完成した検証モデル
-- 現実の法制度や政治制度への直接処方
-- 経済制度の完成提案
-- 文学研究や社会科学の代替理論
-- 非公開AMP/ITS Core
-- 物理予測として提出する完成モデル
-
-English commensurated rendering:
-
-This subdirectory includes ontological models of asymmetry emergence, stabilization, and re-collation; ethical models of return, retaliation conversion, responsibility processing, maturation, and corruption in boundary contact; literary-ontological notes on narrative, truth-layer, structural reading, role-words, power, failure, and return; cross-domain developments based on the Boundary Realism Principle in the Sat layer; and correspondence candidates with negentropy economy, boundary ethics, and meaning generation.
-
-It does not include replacements for standard theories in specialized fields, completed empirical scientific models, direct prescriptions for legal or political systems, completed economic system proposals, substitutes for literary studies or social science, full private AMP/ITS Core, or completed predictive physical models.
-
----
-
-## 4. Documents / 文書一覧
-
-- [`Asymmetry_Stabilization_and_ReCollation.ja.md`](./Asymmetry_Stabilization_and_ReCollation.ja.md)
-  - 一行説明: 宇宙から生命、文明、文化までを、非対称性の発生、仮安定化、再照合の連鎖として読む存在論的モデル。
-  - EN: An ontological model reading the development from the cosmos to life, civilization, and culture as a chain of asymmetry emergence, provisional stabilization, and re-collation.
-  - Role: 横断領域の低強度導入ノート。
-  - Public profile: P1-P2.
-
-- [`Return_Ethics_and_Retaliation_Conversion.ja.md`](./Return_Ethics_and_Retaliation_Conversion.ja.md)
-  - 一行説明: 境界接触によって生じる返りを、報復、腐敗、熟成、補償、責任処理の観点から読む境界倫理モデル。
-  - EN: A boundary-ethics model reading returns generated by boundary contact through retaliation, corruption, maturation, compensation, and responsibility processing.
-  - Role: 力・返り・責任処理の境界倫理モデル。
-  - Public profile: P2.
-
-- [`Narrative_Truth_and_Structural_Reading.ja.md`](./Narrative_Truth_and_Structural_Reading.ja.md)
-  - 一行説明: 物語を、真実層、構造、力、返り、責任処理、熟成、腐敗を読むための文学存在論ノートとして扱う。
-  - EN: A literary-ontological note treating narrative as a device for reading truth-layer, structure, power, return, responsibility processing, maturation, and corruption.
-  - Role: 文学存在論・構造読解ノート。
-  - Public profile: P1-P2.
-
-
-関連導線:
+上流：
 
 - [`../../01_Sat_Truth/Boundary_Realism_Principle.md`](../../01_Sat_Truth/Boundary_Realism_Principle.md)
-  - 一行説明: Cross-Domain Notes の前提となる境界実在性の原則。
-
-- [`../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md`](../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md)
-  - 一行説明: 意味、秩序、価値、責任、負債、残差の授受体系としてのネゲントロピー経済ノート。
-
 - [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
-  - 一行説明: 履歴を破壊しない相互作用として倫理を扱う境界倫理モデル。
-
 - [`../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
-  - 一行説明: 意味が返路を探し、別の履歴場や言語ゲームを経由して閉じる可能性を扱う応用ノート。
 
-- [`../Research_Notes_Index.md`](../Research_Notes_Index.md)
-  - 一行説明: Research Notes 全体の索引。
+関連：
 
----
+- [`../Literary_Ontological_Notes/README.md`](../Literary_Ontological_Notes/README.md)
+- [`../Social_Boundary_Notes/README.md`](../Social_Boundary_Notes/README.md)
 
-## 5. Maintenance Notes / 運用メモ
+- 構造対応と分野同一性を区別する。
+- 文学・社会・倫理を互いの証明として使用しない。
+- 返りを報復だけへ縮減しない。
+- 横断で失われた分野固有の残差を明記する。
 
-### Stable policy / 固定方針
+# English Commensurated Rendering
 
-Cross-Domain Notes は、単一領域への還元を避ける。各専門領域の標準理論を置き換えず、履歴、境界、接触、返り、同期、照合、残差保持、再照合の観点から、領域間の対応関係を読む。
+## 0. Role
 
-強い比喩、物理近接語彙、経済語彙、法・倫理語彙を使用する場合は、標準定義と存在境界論上の再解釈を混同しない。
+This subdirectory extends ontological structures across ethics, culture, civilization, economy, literature, power, and responsibility without closing them inside a single discipline.
 
-### Directory history / 小分類の変更履歴
+It does not collapse disciplines into one another. It reads how shared structures—boundary, history, return, asymmetry, residuals, and re-collation—take different forms in each domain.
 
-- v4.2系で、Cross_Domain_Ontological_Notes を Research Notes 内の独立小分類として作成した。
-- `Asymmetry_Stabilization_and_ReCollation.ja.md` を横断領域の低強度導入ノートとして配置した。
-- `Return_Ethics_and_Retaliation_Conversion.ja.md` を力・返り・責任処理の境界倫理モデルとして追加した。
-- `Narrative_Truth_and_Structural_Reading.ja.md` を文学存在論・構造読解ノートとして追加した。
+## 1. Public Scope
 
-### File-level changes / ファイル単位の増減
+This README is not a replacement for standard science, law, policy, or established disciplinary definitions.
 
-- Cross-Domain Notes に追加する文書は、少なくとも二つ以上の領域を接続すること。
-- 単一領域に閉じる文書は、Physical_Cosmological_Notes、AI_Personality_Notes、Literary_Ontological_Notes、Social_Boundary_Notes など、より適切な小分類へ配置する。
-- 各文書は、可能な限り `非主張` または主張境界を明記する。
+Included:
 
-### Pending notes / 保留事項
+- provisional stabilization of asymmetry and re-collation;
+- return ethics and retaliation conversion;
+- narrative, truth layers, and structural reading.
 
-- 英語通約版の整備。
-- `Narrative_Truth_and_Structural_Reading.ja.md` を Literary_Ontological_Notes へも導線接続するか検討する。
-- ネゲントロピー経済関連文書との相互参照パスを、実配置に合わせて確認する。
+Not included:
+
+- universal moral doctrine;
+- legal retributive theory or penal policy;
+- a completed empirical social-science theory;
+- monopoly over canonical literary interpretation;
+- proof of a physical cosmology.
+
+## 2. Documents
+
+- [`Asymmetry_Stabilization_and_ReCollation.ja.md`](./Asymmetry_Stabilization_and_ReCollation.ja.md) / [`en`](./Asymmetry_Stabilization_and_ReCollation.en.md)
+- [`Return_Ethics_and_Retaliation_Conversion.ja.md`](./Return_Ethics_and_Retaliation_Conversion.ja.md) / [`en`](./Return_Ethics_and_Retaliation_Conversion.en.md)
+- [`Narrative_Truth_and_Structural_Reading.ja.md`](./Narrative_Truth_and_Structural_Reading.ja.md) / [`en`](./Narrative_Truth_and_Structural_Reading.en.md)
+
+The reading order is not fixed. Begin with Return Ethics for ethical return, or with Asymmetry for cultural and civilizational structures.
+
+## 3. Return and Maintenance
+
+Upstream:
+
+- [`../../01_Sat_Truth/Boundary_Realism_Principle.md`](../../01_Sat_Truth/Boundary_Realism_Principle.md)
+- [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+- [`../../03_Tam_Goodness/Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
+
+Related:
+
+- [`../Literary_Ontological_Notes/README.md`](../Literary_Ontological_Notes/README.md)
+- [`../Social_Boundary_Notes/README.md`](../Social_Boundary_Notes/README.md)
+
+- Distinguish structural correspondence from disciplinary identity.
+- Do not use literature, society, and ethics as proof of one another.
+- Do not reduce return to retaliation alone.
+- State domain-specific residuals lost in cross-domain reading.

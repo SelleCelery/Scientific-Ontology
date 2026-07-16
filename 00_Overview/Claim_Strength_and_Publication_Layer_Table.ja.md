@@ -208,7 +208,7 @@ Rコードは、命題が存在境界論の公開中核から、どの言語ゲ�
 
 ## 8. 中核語彙 / Core Vocabulary
 
-以下は、v4.3.0における公開中核語彙である。
+以下は、現行公開体系における公開中核語彙である。
 
 | 項目 | 公開定義 | Type | S | E | U | P | V | R |
 |---|---|---|---|---|---|---|---|---|
@@ -237,6 +237,11 @@ Rコードは、命題が存在境界論の公開中核から、どの言語ゲ�
 | Sensibility / 感性 | 何が感じられる差分として立ち上がるかの開口。カント哲学の厳密な再定義ではない。 | SO補助語彙 | S2-S3 | E2 | U1 | P1 | V0-V2 | R2 |
 | Understanding / 悟性 | 感じられた差分が、対象、関係、原因、責任等として整理される編成。 | SO補助語彙 | S2-S3 | E2 | U1 | P1 | V0-V2 | R2 |
 | Cognitive Axis / 認識軸 | 関心、捨象、価値、コスト、残差、反復によって安定した観測方向。 | 動態モデル | S2-S3 | E2-E3 | U1-U2 | P1-P2.5 | V0-V3 | R1-R2 |
+| Cognitive Field / 認識場 | 身体、感覚、履歴、注意、意味、関係、価値が相互浸透的に作動する認識全体を扱う操作的概念。 | 認識メタモデル | S2-S3 | E2 | U1 | P1-P2 | V0-V2 | R2-R3 |
+| Cognitive Phase / 認識相 | 目的、注意、身体状態、役割、履歴によって認識場内に一時的に形成される準安定構成。 | 認識メタモデル | S2-S3 | E2 | U1-U2 | P1-P2 | V0-V2 | R2-R3 |
+| Operational Discretization / 操作的離散化 | 連続する認識または存在を、通信、判断、責任、記録、実装のための暫定単位へ切り出す。 | 運用メタモデル | S2-S3 | E1-E2 | U1-U2 | P1-P2 | V0-V3 | R2 |
+| Existence Phase / 存在相 | 境界関係における役割、意味、責任、履歴、評価空間、時間射程の関係的まとまり。 | 横断的存在モデル | S2 | E1-E2 | U1 | P1 | V0-V2 | R2-R3 |
+| Existence-Phase Compression / 存在相圧縮 | 複数存在相を少数評価軸へ集約し、処理可能性と不可視化・外部化を同時に生む。 | 横断的診断モデル | S2-S3 | E1-E2 | U1-U2 | P1-P2 | V0-V3 | R2-R3 |
 | Meaning Loop / 意味ループ | 差分が履歴へ統合され、保留、切断、返り、後続条件を伴う意味として閉じる循環。 | 意味生成モデル | S2-S3 | E2 | U0-U1 | P1 | V0-V3 | R1-R2 |
 | Optional Axiom Module / 選択公理モジュール | 世界観を、関心、捨象、価値、コスト、Core Invariant、Operational Driftとして比較する単位。 | 認識ブリッジ | S2-S3 | E1-E2 | U1-U2 | P1-P2.5 | V0-V3 | R2 |
 | Cognitive Bridge Protocol / 認識ブリッジ | 異なる認識形式の中核を壊さず、翻訳、保留、接続、遮断、残差保持を行う境界プロトコル。 | 通約プロトコル | S3-S4 | E2 | U1-U2 | P1-P2.5 | V1-V4 | R2-R3 |
@@ -258,7 +263,15 @@ Rコードは、命題が存在境界論の公開中核から、どの言語ゲ�
 | Boundary CA / 境界CA | 形成された世界の境界で、疲弊、外部化、異常、残差、残渣を確認し、目的・境界・運用を修正すること。 | 運用プロトコル | S3-S4 | E2 | U1-U2 | P1-P2 | V1-V4 | R3 |
 | Organizational Boundary / 組織境界 | 組織が内部・外部、通信、責任、履歴、処理能力を定義する動的境界。 | 組織モデル | S3 | E2 | U1 | P1-P2 | V1-V4 | R3 |
 | Responsibility Boundary / 責任境界 | 行為だけでなく、許可、監督、改善、履歴保持、例外対応を引き受ける主体の境界。 | 倫理・組織概念 | S2-S3 | E1-E2 | U1 | P1 | V1-V3 | R1-R3 |
-| Port / ポート | 特定の通信を受け入れ、変換し、処理し、返す組織境界上の通信口。 | 組織・ネットワーク類比 | S2-S3 | E1-E2 | U1 | P1 | V1-V4 | R3 |
+| Port / ポート | 境界上の接触を、目的、注意、履歴、責任条件のもとで有限な通信運用へ切り出す暫定的・重複可能な操作単位。 | 認識・通信メタモデル | S2-S3 | E2 | U1-U2 | P1-P2 | V0-V3 | R2-R3 |
+| Organizational Port / 組織ポート | 一般ポートを、主体、権限、容量、プロトコル、ログ、監査、停止・再開条件を備えた組織通信口へ実装する。 | 組織実装モデル | S3 | E2 | U1-U2 | P1-P2 | V1-V4 | R2-R3 |
+| Port Allocation / ポート配分 | 目的、緊急性、可逆性、処理能力、責任境界、再照合可能性に応じてポートを配分する。 | 動態制御モデル | S3 | E2 | U1-U2 | P1-P2 | V0-V3 | R2-R3 |
+| Multi-Port Potentiality / 複数ポート潜在性 | 未使用の認識形式、言語ゲーム、責任経路を保持し、必要に応じて再開・新設できる状態。 | 平和・通信条件 | S2-S3 | E1-E2 | U1 | P1-P2 | V1-V3 | R2-R3 |
+| Scoped Port Operation / 限定ポート運用 | 使用ポートを限定しつつ、対象外差分の保留先、返路、期限、再開条件を保持する。 | 運用プロトコル | S2-S3 | E1-E2 | U1-U2 | P1-P2 | V1-V3 | R2 |
+| Boundary Diplomacy / 境界外交 | 異なる境界系を同一化せず、履歴、目的、言語ゲーム、責任境界を保持して通信可能性を維持する。 | 境界制御モデル | S3 | E2 | U1-U2 | P1-P2 | V0-V3 | R2-R3 |
+| Boundary Update / 境界更新 | 反復する異常、外部化、責任不明を受け、境界、権限、ポート、プロトコル、監査を再構成する。 | 組織更新モデル | S3 | E1-E2 | U1-U2 | P1-P2 | V1-V4 | R2 |
+| Gateway Capture / ゲートウェイ捕捉 | 仲介者が通信路、翻訳基準、接続先を独占し、当事者間通信と監査可能性を縮小する。 | 失敗類型 | S2-S3 | E1-E2 | U2 | P1-P2 | V1-V3 | R2-R3 |
+| Single-Metric Compression / 単一指標圧縮 | 一つの外部指標を複数の存在相、履歴、責任、時間射程の全体として扱う破壊的圧縮。 | 失敗類型 | S2-S3 | E1-E2 | U1-U2 | P1-P2 | V1-V3 | R2-R3 |
 | Protocol / プロトコル | 誰が、何を、どの条件で、どの形式へ変換し、どこへ返すかを定める境界手続。 | 運用概念 | S2-S3 | E1 | U1-U2 | P1-P2 | V1-V4 | R3 |
 | Negentropy Definition / ネゲントロピー定義 | 組織が何を負荷として受け入れ、何へ変換し、どの秩序・意味・ケア・判断可能性を返すかという自己定義。 | 組織・価値モデル | S2-S3 | E2 | U1 | P1-P2 | V1-V3 | R2-R3 |
 
@@ -273,6 +286,10 @@ Rコードは、命題が存在境界論の公開中核から、どの言語ゲ�
 | AI Adoption | AI導入を、モデル性能だけでなく、調達、権限、説明、監査、例外、撤退を含む組織境界設計として扱う。 | 社会実装モデル | S3-S4 | E2 | U2 | P2-P2.5 | V2-V4 | R3 |
 | DSSI | デジタル主権と判断場を支える境界インターフェースの実装例。 | 実装候補 | S3-S4 | E1-E2 | U2-U3 | P2.5 | V2-V4 | R3 |
 | Peace Specification / 平和仕様 | 異なる存在相が境界と履歴を保持したまま、破壊的でない相互作用を継続できる条件を扱う。 | 社会境界モデル | S2-S3 | E2 | U1 | P1-P2 | V1-V3 | R2-R3 |
+| Meaning-Experience Field / 意味・経験場 | 差分が履歴へ接続され、意味、判断、行為、応答へ変換され、外界へ返る循環を扱う応用概念。 | 応用場モデル | S2 | E2 | U1 | P1-P2 | V0-V2 | R2-R3 |
+| Meaning Capacity / 意味容量 | 差分、矛盾、意味圧を即時切断・偽閉鎖・破壊的放電へ送らず、保留、通約、再構成のために保持する能力。 | 応用容量概念 | S2 | E1-E2 | U1-U2 | P1-P2 | V0-V2 | R2-R3 |
+| Meaning-Experience Capacitor / 意味経験キャパシタ | 差分保持、深度移送、再構成、返送をキャパシタとの構造対応で読む応用モデル。 | 構造アナロジー | S1-S2 | E3 | U1 | P2 | V0-V2 | R4 |
+| Existence Strength / 存在強度 | 世界との相互作用を継続し、履歴、意味、関係、構造を形成・維持・更新する能力を読む応用概念。 | 社会・平和応用概念 | S2 | E2 | U1 | P1-P2 | V0-V2 | R2-R3 |
 | Negentropy Economy / ネゲントロピー経済 | 意味、秩序、責任、履歴、行為可能性を回収・保持・再編成する働きとして経済を読む。経済理論、熱力学的証明、政策提案として提示しない。 | 経済哲学モデル | S2-S3 | E2 | U1-U2 | P1-P2 | V1-V3 | R2-R3 |
 
 ネゲントロピー経済は、経済理論、熱力学的証明、政策提案として提示しない。価値循環と組織的変換を読む概念モデルに限定する。
@@ -311,6 +328,7 @@ Rコードは、命題が存在境界論の公開中核から、どの言語ゲ�
 | AMP | 境界実在論が留保する先を、応用形而上学として仮説記述する内部中核。 | S5 | E3 | U1-U2 | P3 | V0-V5 | R5 |
 | ITS | 場、時間演算子、観測断面、情報時間ソリトン等を統合する高強度理論候補。 | S5 | E3 | U1-U2 | P3 | V0-V5 | R5 |
 | Private Core | 個別傷、誘導条件、安全評価、非公開運用等を含みうる内部層。 | S3-S5 | E1-E3 | U3-U4 | P3 | V0-V4 | R3-R5 |
+| iMass / rMass | 単一英語句へ展開せず、公理的識別子兼探索的演算子として保持するITS・PINGER由来の高深度識別子。 | S4-S5 | E3 | U1 | P2-P3 | V0-V5 | R4-R5 |
 
 高強度・非公開層は、公開体系の秘密の権威ではない。
 
@@ -325,7 +343,7 @@ Rコードは、命題が存在境界論の公開中核から、どの言語ゲ�
 
 ---
 
-## 14. v4.3.0主要文書の分類 / Document-Level Classification
+## 14. 主要文書の分類 / Document-Level Classification
 
 | Document | Function | S | E | U | P | V | R |
 |---|---|---|---|---|---|---|---|
@@ -333,7 +351,11 @@ Rコードは、命題が存在境界論の公開中核から、どの言語ゲ�
 | `Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md` | 認識軸の生成、安定、硬直、漂移、分岐、再照合を扱う。 | S2-S3 | E2-E3 | U1 | P1-P2.5 | V0-V3 | R1-R2 |
 | `Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md` | 認識形式を比較し、通約、保留、遮断、残差保持を行う。 | S2-S3 | E1-E2 | U1-U2 | P1-P2.5 | V0-V3 | R2-R3 |
 | `Truth_Management_and_Boundary_PDCA.ja.md` | 第一義、共有、世界形成、境界CAによって目的を検査する。 | S3-S4 | E2 | U1-U2 | P1-P2 | V0-V3 | R2-R3 |
-| `Organizational_Boundary_and_Port_Model.ja.md` | 目的を責任境界、ポート、プロトコル、監査へ実装する。 | S3-S4 | E2 | U1-U2 | P1-P2 | V1-V4 | R3 |
+| `Cognitive_Dynamics_Communication_Model.ja.md` | シームレスな認識場を暫定的な操作単位へ写像し、下流実装からの逆投影を防ぐ。 | S2-S3 | E1 | U1 | P1-P2 | V0-V1 | R2-R3 |
+| `Compression_of_Existence_Phases.ja.md` | 存在相圧縮の利益、損失、外部化、再開条件を診断する。 | S2-S3 | E1-E2 | U1 | P1-P2 | V0-V2 | R2-R3 |
+| `Boundary_Diplomacy_and_Port_Allocation.ja.md` | 複数ポート間の配分、通約、保留、再開、ゲートウェイ捕捉を扱う。 | S3 | E2 | U1-U2 | P1-P2 | V0-V2 | R2-R3 |
+| `Organizational_Boundary_and_Port_Model.ja.md` | 選択されたポートを責任境界、権限、プロトコル、監査へ実装する。 | S3-S4 | E2 | U1-U2 | P1-P2 | V1-V4 | R3 |
+| `Specification_for_Peace.ja.md` | 存在相、意味容量、境界外交を、平和の公開応用仕様へ接続する。 | S2 | E1-E2 | U1 | P1-P2 | V0-V1 | R2-R4 |
 | `Boundary_Realism_Principle.md` | 人間が実在的に扱える範囲を境界・履歴・返りへ制御する。 | S2-S3 | E1-E2 | U0 | P0-P1 | V0-V1 | R0-R2 |
 | `Boundary_Epistemological_Critique.ja.md` | 同期、照合、残差保持、偽閉鎖によって知の成立条件を批判する。 | S3-S4 | E2-E3 | U1 | P1-P2 | V0-V4 | R1-R4 |
 | `Meaning_Generation_Model.md` | 差分が履歴へ統合され、意味ループと返路を形成する条件を扱う。 | S2-S4 | E2 | U1 | P1-P2 | V0-V4 | R1-R3 |
@@ -404,9 +426,9 @@ Claim strength
 
 ---
 
-## 17. v4.3.0の総合判定
+## 17. 総合判定
 
-v4.3.0では、個別概念の追加よりも、次の循環が明示される。
+現行公開体系では、個別概念の追加よりも、次の循環が明示される。
 
 ```text
 差分接触
@@ -458,6 +480,6 @@ AMP / ITSはR5、S5、P3を基本とし、公開体系の第一主張へ直接�
 - [`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md)
 - [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 - [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
-- [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md)
-- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
-- [`TERM_COLLISION_REGISTRY.md`](../TERM_COLLISION_REGISTRY.md)
+- [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
+- [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
+- [`TERM_COLLISION_REGISTRY.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md)

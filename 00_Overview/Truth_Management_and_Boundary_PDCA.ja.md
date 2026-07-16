@@ -509,7 +509,7 @@ AIには目的関数、システム指示、評価指標、利用文脈が与え
 
 目的を、組織設計へ渡せる形に整える。
 
-[`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md) へ渡す最小出力は、次の通りである。
+[`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md) へ渡す最小出力は、次の通りである。
 
 - 第一義と競合目的
 - 対象境界
@@ -615,10 +615,10 @@ AIには目的関数、システム指示、評価指標、利用文脈が与え
 ## 17. 関連文書
 
 - [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md)
-- [`Claim_Strength_and_Publication_Layer_Table.md`](./Claim_Strength_and_Publication_Layer_Table.md)
+- [`Claim_Strength_and_Publication_Layer_Table.md`](Claim_Strength_and_Publication_Layer_Table.ja.md)
 - [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 - [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
 - [`Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 - [`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md)
-- [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Organizational_Boundary_and_Port_Model.ja.md)
-- [`Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
+- [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
+- [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
