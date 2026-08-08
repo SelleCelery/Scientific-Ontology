@@ -38,6 +38,7 @@
 - [`Asymmetry_Stabilization_and_ReCollation.ja.md`](./Asymmetry_Stabilization_and_ReCollation.ja.md) / [`en`](./Asymmetry_Stabilization_and_ReCollation.en.md)
 - [`Return_Ethics_and_Retaliation_Conversion.ja.md`](./Return_Ethics_and_Retaliation_Conversion.ja.md) / [`en`](./Return_Ethics_and_Retaliation_Conversion.en.md)
 - [`Narrative_Truth_and_Structural_Reading.ja.md`](./Narrative_Truth_and_Structural_Reading.ja.md) / [`en`](./Narrative_Truth_and_Structural_Reading.en.md)
+- [`Consent_Boundary_and_Sentence_Bit_Asymmetry.ja`](./Consent_Boundary_and_Sentence_Bit_Asymmetry.ja) / `en`
 
 読解順は固定されない。倫理的返りを中心に読む場合はReturn Ethicsから、文化・文明の構造を読む場合はAsymmetryから入る。
 
@@ -90,6 +91,7 @@ Not included:
 - [`Asymmetry_Stabilization_and_ReCollation.ja.md`](./Asymmetry_Stabilization_and_ReCollation.ja.md) / [`en`](./Asymmetry_Stabilization_and_ReCollation.en.md)
 - [`Return_Ethics_and_Retaliation_Conversion.ja.md`](./Return_Ethics_and_Retaliation_Conversion.ja.md) / [`en`](./Return_Ethics_and_Retaliation_Conversion.en.md)
 - [`Narrative_Truth_and_Structural_Reading.ja.md`](./Narrative_Truth_and_Structural_Reading.ja.md) / [`en`](./Narrative_Truth_and_Structural_Reading.en.md)
+- [`Consent_Boundary_and_Sentence_Bit_Asymmetry.ja`](./Consent_Boundary_and_Sentence_Bit_Asymmetry.ja) / `en`
 
 The reading order is not fixed. Begin with Return Ethics for ethical return, or with Asymmetry for cultural and civilizational structures.
 

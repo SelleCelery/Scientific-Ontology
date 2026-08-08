@@ -2,7 +2,7 @@
 
 > Layer: 05_Research_Notes / Social_Boundary_Notes
 > Status: README
-> Scope: social systems / institutional boundaries / AI adoption / value / residue / negentropy economy
+> Scope: social systems / institutional boundaries / AI adoption / DSSI / digital sovereignty / value / residue / negentropy economy
 > Language: ja+en
 > Public profile: P1-P2
 > Authority: Directory navigation and maintenance contract; not a concept-definition owner
@@ -22,6 +22,7 @@
 含むもの：
 
 - AI導入を同期閉鎖として読む研究
+- DSSIにおける観測、判断主権、説明責任の返送
 - ネゲントロピー経済
 
 ネゲントロピー経済は経験的経済理論ではなく、熱力学的証明ではなく、政策提案ではない。
@@ -41,6 +42,7 @@
 1. [`AI_Adoption_as_Synchronization_Closure.md`](./AI_Adoption_as_Synchronization_Closure.md)
 2. [`Negentropy_Economy_and_Meaning_Generation.ja.md`](./Negentropy_Economy_and_Meaning_Generation.ja.md) / [`en`](./Negentropy_Economy_and_Meaning_Generation.en.md)
 3. [`Negentropy_Economy_Principles.ja.md`](./Negentropy_Economy_Principles.ja.md) / [`en`](./Negentropy_Economy_Principles.en.md)
+4. [`DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md`](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md) — English commensuration pending
 
 ## 4. Maintenance Notes / 運用メモ
 
@@ -57,6 +59,8 @@
 - 社会批判を概念化せずに公開ノートへ置かない。
 - 経済・制度語彙では経験的主張との境界を示す。
 - 応用チェックリストと研究仮説を混同しない。
+- DSSIの観測ログを、証拠化、第三者監視、不利益判断へ逆用しない。
+- 一般的技術用途の説明で、個別運営者の説明責任を代行しない。
 
 # English Commensurated Rendering
 
@@ -73,6 +77,7 @@ This README is not a replacement for standard science, law, policy, or establish
 Included:
 
 - research reading AI adoption as synchronization closure;
+- observation, judgment sovereignty, and responsibility return in DSSI;
 - Negentropy Economy;
 
 Negentropy Economy is not an empirical economic theory, not a thermodynamic proof, and not a policy proposal.
@@ -92,6 +97,7 @@ Not included:
 1. [`AI_Adoption_as_Synchronization_Closure.md`](./AI_Adoption_as_Synchronization_Closure.md)
 2. [`Negentropy_Economy_and_Meaning_Generation.ja.md`](./Negentropy_Economy_and_Meaning_Generation.ja.md) / [`en`](./Negentropy_Economy_and_Meaning_Generation.en.md)
 3. [`Negentropy_Economy_Principles.ja.md`](./Negentropy_Economy_Principles.ja.md) / [`en`](./Negentropy_Economy_Principles.en.md)
+4. [`DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md`](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md) — English commensuration pending
 
 ## 3. Return and Maintenance
 
@@ -108,3 +114,5 @@ Downstream: [`../../04_Applications/Social_Boundary_Design/README.md`](../../04_
 - Do not place unprocessed social criticism in public research notes.
 - State boundaries with empirical claims when using economic or institutional vocabulary.
 - Do not confuse application checklists with research hypotheses.
+- Do not reverse DSSI observation logs into evidentiary, third-party surveillance, or adverse-decision instruments.
+- Do not substitute general technical possibilities for the operator's responsibility to explain a specific implementation.

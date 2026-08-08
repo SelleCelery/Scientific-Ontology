@@ -75,7 +75,7 @@ Research Notesの新しい中間研究線を読む経路である。
 
 ### 2.3 倫理・社会境界を読む
 
-[非対称性の仮安定化と再照合](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md)から、[返りの倫理と報復変換論](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md)、ネゲントロピー経済、AI導入の同期閉鎖へ進む。
+[非対称性の仮安定化と再照合](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md)から、[返りの倫理と報復変換論](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md)、ネゲントロピー経済、AI導入の同期閉鎖へ進み、[DSSIにおける観測、判断主権、説明責任の返送](./Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md)で公開実装上の責任境界へ接続する。
 
 ### 2.4 AI人格・応答構造を読む
 
@@ -131,6 +131,7 @@ Research Notesの新しい中間研究線を読む経路である。
 | [ネゲントロピー経済と意味生成](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md) / [EN](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md) | お金を価値そのものではなく交換媒質とし、価値を意味を帯びた秩序生成潜在性の交換面として読む。 | U/E → S / P1-P2 | 経験的経済理論、政策提案、代替通貨制度、物理的ネゲントロピーへの直接還元ではない。交換で失われる意味と外部化負荷を返す。 |
 | [ネゲントロピー経済原則](./Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md) / [EN](./Social_Boundary_Notes/Negentropy_Economy_Principles.en.md) | 価値、価格、交換、所有、同期、照合、残渣査定を扱う境界経済論的な原則草案。 | Draft / U/E → S / P1-P2 | 法令、会計基準、政策案、直ちに適用できる規範文書ではない。条文化で生じる偽閉鎖と実装不能項を保持する。 |
 | [AI導入は同期閉鎖になりうる](./Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md) | AI導入という制度的記号が、未照合問題を処理済みに見せる同期閉鎖を扱う日英統合ノート。 | S2-S3 / P1-P2 | 政策、調達、法、監査、製品評価の基準ではない。責任境界、Open Marker、再照合可能性をAI導入設計へ返す。 |
+| [DSSIにおける観測、判断主権、説明責任の返送](./Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md) | DSSIを、通信の告発・証拠化ではなく、観測事実、照合条件、説明責任の返送によって判断場を維持する実装として位置づける。 | S3-S4 / E2 / U2-U3 / P2-P2.5 | 法的証拠、フォレンジック仕様、セキュリティ判定、政治処方ではない。一般論で運営者の説明責任を代行せず、ログの第三者監視・不利益判断への転用を支持しない。英語通約は保留。 |
 
 ### 3.5 AI人格研究ノート
 
@@ -231,7 +232,7 @@ Begin with the [Physics Correspondence Policy](../00_Overview/Physics_Correspond
 
 ### 2.3 Ethics and Social Boundaries
 
-Proceed from [Provisional Stabilization of Asymmetry and Re-Collation](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md) to [Return Ethics and Retaliation Conversion](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md), then to Negentropy Economy and institutional synchronization closure in AI adoption.
+Proceed from [Provisional Stabilization of Asymmetry and Re-Collation](./Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md) to [Return Ethics and Retaliation Conversion](./Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md), then to Negentropy Economy and institutional synchronization closure in AI adoption. The Japanese-authoritative [DSSI note on observation, judgment sovereignty, and responsibility return](./Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md) connects this line to public implementation boundaries.
 
 ### 2.4 AI Personality and Response Structure
 
@@ -287,6 +288,7 @@ This research line reads value, money, exchange, institutions, and AI adoption t
 | [Negentropy Economy and Meaning Generation](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md) / [JA](./Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md) | Treats money as an exchange medium rather than value itself and reads value as the exchange-facing appearance of meaning-bearing order-generating potential. | U/E to S / P1-P2 | Not empirical economic theory, policy proposal, replacement currency design, or direct reduction to physical negentropy. Lost meaning and externalized burdens return from exchange. |
 | [Negentropy Economy Principles](./Social_Boundary_Notes/Negentropy_Economy_Principles.en.md) / [JA](./Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md) | A principle draft concerning value, price, exchange, ownership, synchronization, collation, and residue assessment. | Draft / U/E to S / P1-P2 | Not law, accounting standard, policy, or an immediately applicable normative document. False closure and non-implementable elements introduced through article form remain open. |
 | [AI Adoption as Synchronization Closure](./Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md) | An integrated Japanese-English note on how the institutional sign of AI adoption may make uncollated problems appear processed. | S2-S3 / P1-P2 | Not a policy, procurement, legal, audit, or product-evaluation standard. Responsibility boundaries, Open Markers, and re-collatability return to AI-adoption design. |
+| [Observation, Judgment Sovereignty, and Responsibility Return in DSSI](./Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md) | Positions DSSI as an implementation that maintains the judgment field through observed facts, conditions for collation, and return of explanatory responsibility rather than accusation or evidentiary use. Japanese authoritative text; English commensuration pending. | S3-S4 / E2 / U2-U3 / P2-P2.5 | Not legal evidence, a forensic specification, a security verdict, or a political prescription. It does not substitute general technical possibilities for operator explanation and does not endorse use of logs for third-party surveillance or adverse decisions. |
 
 ### 3.5 AI Personality Notes
 

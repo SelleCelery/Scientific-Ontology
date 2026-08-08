@@ -37,7 +37,8 @@
 
 - [`reading-blue-light.ja.md`](./reading-blue-light.ja.md) / [`en`](./reading-blue-light.en.md)  
   既存文学への構造読解。
-
+- [`Literature_as_Worldmaking.ja.md`](./Literature_as_Worldmaking.ja.md) / `en`
+  文学を、世界制作発表として読む。
 - [`Meifu_Bureau_Reincarnation_and_Belief_Gravity.md`](./Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)  
   創作宇宙を用いた転生、輪廻、信念重力圏、履歴保持の概念試験。
 
@@ -83,9 +84,10 @@ Not included:
 
 ## 2. Documents
 
-- [`reading-blue-light.ja.md`](./reading-blue-light.ja.md) / [`en`](./reading-blue-light.en.md)  
+- [`reading-blue-light.ja.md`](./reading-blue-light.ja.md) / [`en`](./reading-blue-light.en.md)
   Structural reading of an existing literary work.
-
+-  [`Literature_as_Worldmaking.ja.md`](./Literature_as_Worldmaking.ja.md) / `en`
+   Literature does not merely describe a world; it presents a world that has been made.
 - [`Meifu_Bureau_Reincarnation_and_Belief_Gravity.md`](./Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)  
   Conceptual testing of reincarnation, cyclic return, belief-gravity domains, and history retention through a fictional cosmology.
 

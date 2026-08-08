@@ -46,8 +46,12 @@
 000*
 
 # Public format checker outputs
-public_format_report.md
-public_format_report.json
+public_format_report*.md
+public_format_report*.json
+public_format_release_report*.md
+public_format_release_report*.json
+concept_contract_report*.md
+concept_contract_report*.json
 
 # Python cache / local env
 __pycache__/
