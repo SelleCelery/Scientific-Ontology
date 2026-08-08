@@ -3,9 +3,9 @@
 
 > Status: Research Note / Conceptual Model / Metamodel
 > Lifecycle: Public Living Canonical Candidate / Gate 4
-> Scope: semantic network topology / communication phase / multilayer-temporal-higher-order networks / distance / bandwidth / return expectancy / logical-depth  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S3-S4 / E2-E3 / U0-U1 / P1-P2.5 / V0-V2  
+> Scope: semantic network topology / communication phase / multilayer-temporal-higher-order networks / distance / bandwidth / return expectancy / logical-depth
+> Language: Japanese authoritative; English commensuration available
+> Claim strength: S3-S4 / E2-E3 / U0-U1 / P1-P2.5 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08
 > Canonical scope: 意味ネットワークの型、距離、帯域、返り期待値、履歴変形、三つの主張位相を統合する中央照合面
@@ -69,7 +69,7 @@ Network文書は三位相を同居させる。ただし、各節がどの位相�
 - 変更が公開操作層、存在論深度仮説層、AMP・神学レンダリング層のどこに属するか。
 - 他文書の概念所有を暗黙に奪っていないか。
 
-この役割を、研究線の**代謝中枢**と呼ぶ。代謝中枢は変更を自動承認しない。外部やSOLiteから返った案を [`Return_Intake_Log.md`](./Return_Intake_Log.md) に置き、影響範囲を確認し、採用・保留・却下を記録する。
+この役割を、研究線の**代謝中枢**と呼ぶ。代謝中枢は変更を自動承認しない。外部やSOLiteから返った案を [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) に置き、影響範囲を確認し、採用・保留・却下を記録する。
 
 変更の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md) に残す。中央性は完全性や最終裁定権を意味しない。
 
@@ -634,7 +634,7 @@ Shannonの情報理論は、可能なメッセージの分布、選択、不確�
 - returns_to: [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](../Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md)
 - opens_depth_interface_to: AMP系譜（非公開・根拠化禁止）
 - maintenance_log: [`CHANGELOG.md`](./CHANGELOG.md)
-- return_intake: [`Return_Intake_Log.md`](./Return_Intake_Log.md)
+- return_intake: [`Return_Intake_Log.md`](Return_Intake_Log.ja.md)
 
 ## 参考文献・照合先
 
@@ -657,4 +657,4 @@ Shannonの情報理論は、可能なメッセージの分布、選択、不確�
 - Gate 3 public-collation candidate.
 - Gate 2監査回答、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
-更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](./Return_Intake_Log.md) を参照。
+更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) を参照。

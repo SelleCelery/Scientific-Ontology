@@ -1,14 +1,14 @@
 # Return Intake Log / 返り受付簿
 ## Language, Meaning, and Communication Phase Studies
 
-> Status: Registry  
-> Lifecycle: Public Living Canonical support  
-> Scope: external and internal returns / disposition / recollation conditions  
-> Language: Japanese authoritative  
-> Claim strength: S1-S3 / E2 / U0-U1 / P1 / V1  
+> Status: Registry
+> Lifecycle: Public Living Canonical support
+> Scope: external and internal returns / disposition / recollation conditions
+> Language: Japanese authoritative; English commensuration available
+> Claim strength: S1-S3 / E2 / U0-U1 / P1 / V1
 > Non-claim boundary: 受付項目は正本定義ではない。特にエントロピー等の科学語彙は標準熱力学・情報理論と同一視せず、採否確定前の照合候補として記録する。
-> Version: 1.0.0-rc.1  
-> Last updated: 2026-08-08  
+> Version: 1.0.0-rc.1
+> Last updated: 2026-08-08
 > Rule: 返りは常時受理するが、自動的に正本へ統合しない。
 
 ## 1. Disposition / 判定区分

@@ -3,9 +3,9 @@
 
 > Status: Research Note / Conceptual Model / Metamodel
 > Lifecycle: Public Living Canonical Candidate / Gate 4
-> Scope: Japanese / English / grammar / discourse / commitment timing / omission / modality / responsibility / commensuration residuals  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S2-S3 / E3 / U0 / P1-P2.5 / V0-V2  
+> Scope: Japanese / English / grammar / discourse / commitment timing / omission / modality / responsibility / commensuration residuals
+> Language: Japanese authoritative; English commensuration available
+> Claim strength: S2-S3 / E3 / U0 / P1-P2.5 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08
 > Canonical scope: 日本語と英語の文法・談話資源が意味確定、保留、責任配置へ与える影響の対照仮説
@@ -272,4 +272,4 @@ Do not treat unresolved matters as resolved.
 - Gate 3 public-collation candidate.
 - Gate 2監査回答、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
-更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](./Return_Intake_Log.md) を参照。
+更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) を参照。

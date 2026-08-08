@@ -3,9 +3,9 @@
 
 > Status: Research Note / Conceptual Model / Metamodel
 > Lifecycle: Public Living Canonical Candidate / Gate 4
-> Scope: compressed experience / literature / reading / history redeployment / qualia difference / sensitivity / worldmaking interface  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S3 / E2-E3 / U0-U1 / P1-P2.5 / V0-V2  
+> Scope: compressed experience / literature / reading / history redeployment / qualia difference / sensitivity / worldmaking interface
+> Language: Japanese authoritative; English commensuration available
+> Claim strength: S3 / E2-E3 / U0-U1 / P1-P2.5 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08
 > Canonical scope: 文学的接触における圧縮経験、履歴再展開、クオリア差分接触の一作動面
@@ -59,10 +59,10 @@
 
 読者は、作品の提示する経路へ自分を一時的に投入する。
 
-自分ならどこで止まるか。  
-何を恐れるか。  
-何を守るか。  
-この人物はなぜここまで行けたのか。  
+自分ならどこで止まるか。
+何を恐れるか。
+何を守るか。
+この人物はなぜここまで行けたのか。
 この世界では、何が見え、何が見えないのか。
 
 この自己投入によって、作品内の運動と自分の履歴との差分が立ち上がる。
@@ -73,12 +73,12 @@
 
 ここでいう**クオリア差分接触**とは、圧縮経験の再展開によって、作品の履歴運動と読者自身の履歴・可能な行為との差が、身体的・感情的・意味的な質感として現れることを指す。
 
-「すげー」と感じる。  
-涙が出る。  
-身体が熱くなる。  
-怖い。  
-美しい。  
-許せない。  
+「すごい」と感じる。
+涙が出る。
+身体が熱くなる。
+怖い。
+美しい。
+許せない。
 まだ自分にも、その方向へ動ける部分があると感じる。
 
 これらは命題理解の付加物とは限らない。作品が保持していた圧縮履歴が、読者の履歴と接触した結果として立ち上がる、一つの意味経験である。
@@ -160,8 +160,8 @@
 
 文学的接触は、別の自己定義を開くことがある。
 
-> 素晴らしい行為や思考へ触れたとき、素晴らしいと感じられる自分。  
-> 他者の履歴へ自分を投入し、その差分を保持できる自分。  
+> 素晴らしい行為や思考へ触れたとき、素晴らしいと感じられる自分。
+> 他者の履歴へ自分を投入し、その差分を保持できる自分。
 > 怒りやルサンチマンの中にいても、意味へ深く反応する部分を失っていない自分。
 
 これは道徳的純潔の証明ではない。
@@ -239,7 +239,7 @@
 - imports_from: [`Meaning_Generation_Model.md`](../../01_Sat_Truth/Meaning_Generation_Model.md)
 - imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 - imports_from: [`Narrative_Truth_and_Structural_Reading.ja.md`](../Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)
-- collates_with: 世界制作としての文学（公開記事・将来の研究ノート候補。現行リポジトリでは未固定）
+- collates_with: [`Literature_as_Worldmaking.ja.md`](../Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md)
 - imports_from: [`Meaning_as_Collation_and_Return_Path.ja.md`](./Meaning_as_Collation_and_Return_Path.ja.md)
 - tests_with: [`Intension_Extension_and_False_Extension.ja.md`](./Intension_Extension_and_False_Extension.ja.md)
 - returns_to: [`Meaning_Generation_Model.md`](../../01_Sat_Truth/Meaning_Generation_Model.md)
@@ -263,4 +263,4 @@
 - Gate 3 public-collation candidate.
 - Gate 2監査回答、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
-更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](./Return_Intake_Log.md) を参照。
+更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) を参照。

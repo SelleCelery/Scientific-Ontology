@@ -1,14 +1,14 @@
 # CHANGELOG
 ## Language, Meaning, and Communication Phase Studies / 言語・意味・通信位相研究
 
-> Status: Release notes  
-> Lifecycle: Public Living Canonical support  
-> Scope: research-line-wide conceptual changes / version history / propagation history  
-> Language: Japanese authoritative  
-> Claim strength: S0-S1 / E0-E1 / U0 / P1 / V1  
+> Status: Release notes
+> Lifecycle: Public Living Canonical support
+> Scope: research-line-wide conceptual changes / version history / propagation history
+> Language: Japanese authoritative
+> Claim strength: S0-S1 / E0-E1 / U0 / P1 / V1
 > Non-claim boundary: 本文書はエントロピー、感情、愛等の概念を定義せず、各正本文書の変更履歴だけを記録する。標準熱力学、情報理論、心理学等の代替説明を提示しない。 This document is not a replacement for standard thermodynamics, information theory, psychology, or other empirical sciences.
 
-> This log records research-line-wide conceptual metabolism.  
+> This log records research-line-wide conceptual metabolism.
 > 文書ごとの細部は各文書末尾の`Revision History`を参照する。
 
 ## [1.0.0-rc.1] — 2026-08-08
@@ -18,7 +18,7 @@
 
 - 九研究ノートを`Public Living Canonical Candidate`へ昇格。
 - 研究線全体の変更履歴として本ファイルを追加。
-- 外部・内部からの返りを採用・保留・却下まで追跡する[`Return_Intake_Log.md`](./Return_Intake_Log.md)を追加。
+- 外部・内部からの返りを採用・保留・却下まで追跡する[`Return_Intake_Log.md`](Return_Intake_Log.ja.md)を追加。
 - 文書別`Revision History`を九本すべてへ追加。
 - SOLiteを、自動逆輸入しない常設照合面として接続。
 - Network文書へ、九文書間の変更伝播を観測する「代謝中枢」の役割を追加。

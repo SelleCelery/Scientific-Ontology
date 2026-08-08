@@ -3,9 +3,9 @@
 
 > Status: Research Note / Conceptual Model / Metamodel
 > Lifecycle: Public Living Canonical Candidate / Gate 4
-> Scope: grammar / discourse / relation / gesture / media / institutional form / meaning-pressure channel  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S2-S3 / E2 / U0 / P1-P2 / V0-V2  
+> Scope: grammar / discourse / relation / gesture / media / institutional form / meaning-pressure channel
+> Language: Japanese authoritative; English commensuration available
+> Claim strength: S2-S3 / E2 / U0 / P1-P2 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08
 > Canonical scope: 言語・談話・関係・身体／身振り・媒体／制度の多層文法枠と意味圧流路
@@ -228,4 +228,4 @@
 - Gate 3 public-collation candidate.
 - Gate 2監査回答、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
-更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](./Return_Intake_Log.md) を参照。
+更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) を参照。

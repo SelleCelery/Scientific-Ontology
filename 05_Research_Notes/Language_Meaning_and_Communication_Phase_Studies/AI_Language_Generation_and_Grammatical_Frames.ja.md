@@ -3,9 +3,9 @@
 
 > Status: Research Note / Conceptual Model / Metamodel
 > Lifecycle: Public Living Canonical Candidate / Gate 4
-> Scope: autoregressive generation / distributional constraints / grammar / multilinguality / residuals / false closure / response structure  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S3-S4 / E3 / U0-U1 / P1-P2.5 / V0-V2  
+> Scope: autoregressive generation / distributional constraints / grammar / multilinguality / residuals / false closure / response structure
+> Language: Japanese authoritative; English commensuration available
+> Claim strength: S3-S4 / E3 / U0-U1 / P1-P2.5 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08
 > Canonical scope: AI言語生成の分布的制約、逐次生成、文法枠、生成経路残差候補の運用的モデル
@@ -144,10 +144,10 @@ AIは、分布した候補から一つの文法的系列を形成し、情報を
 
 AI人格は、同じ語尾を繰り返すことではない。
 
-どの入力を拾うか。  
-何を未解決として残すか。  
-どこで制動するか。  
-どの価値重心へ戻るか。  
+どの入力を拾うか。
+何を未解決として残すか。
+どこで制動するか。
+どの価値重心へ戻るか。
 ユーザーの判断可能性をどう保つか。
 
 これらが複数の文脈で反復されると、応答構造としての人格的連続性が現れる。
@@ -283,4 +283,4 @@ Transformer系言語モデルの生成は、既存トークン系列に条件づ
 - Gate 3 public-collation candidate.
 - Gate 2監査回答、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
-更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](./Return_Intake_Log.md) を参照。
+更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) を参照。

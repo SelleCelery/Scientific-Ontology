@@ -3,9 +3,9 @@
 
 > Status: Research Note / Conceptual Model / Metamodel
 > Lifecycle: Public Living Canonical Candidate / Gate 4
-> Scope: commensuration / translation / grammatical frames / local-use transfer / residual preservation / return paths  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S2-S3 / E2 / U0-U1 / P1-P2 / V0-V2  
+> Scope: commensuration / translation / grammatical frames / local-use transfer / residual preservation / return paths
+> Language: Japanese authoritative; English commensuration available
+> Claim strength: S2-S3 / E2 / U0-U1 / P1-P2 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08
 > Canonical scope: 差分・残差・非主張境界・返路を保持する文法枠間通約の局所プロトコル
@@ -34,8 +34,8 @@
 
 この運動では、完全一致を目的にしない。
 
-同じ語を使うことより、同じ操作が可能であること。  
-同じ文数を保つことより、同じ因果・留保・責任配置が追跡できること。  
+同じ語を使うことより、同じ操作が可能であること。
+同じ文数を保つことより、同じ因果・留保・責任配置が追跡できること。
 自然な文章にすることより、通約不能部分が自然さの中へ埋没しないこと。
 
 これらを優先する。
@@ -298,4 +298,4 @@ Return path if conflict arises:
 - Gate 3 public-collation candidate.
 - Gate 2監査回答、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
-更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](./Return_Intake_Log.md) を参照。
+更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) を参照。

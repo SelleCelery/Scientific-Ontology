@@ -1,15 +1,15 @@
 # Language, Meaning, and Communication Phase Studies / 言語・意味・通信位相研究
 
-> Layer: 05_Research_Notes / Language_Meaning_and_Communication_Phase_Studies  
-> Status: README  
-> Lifecycle: Public Living Canonical Candidate / Gate 4  
-> Scope: language / meaning / communication phase / grammar / return paths / commensuration / AI language generation / qualia  
-> Language: Japanese authoritative; English commensuration pending  
-> Public profile: P1-P2.5  
-> Authority: Directory navigation, living-canonical maintenance, and cross-document collation contract; not a general concept-definition owner  
-> Version: 1.0.0-rc.1  
-> Last updated: 2026-08-08  
-> Maintenance: Living canonical. See [`CHANGELOG.md`](./CHANGELOG.md) and [`Return_Intake_Log.md`](./Return_Intake_Log.md).
+> Layer: 05_Research_Notes / Language_Meaning_and_Communication_Phase_Studies
+> Status: README
+> Lifecycle: Public Living Canonical Candidate / Gate 4
+> Scope: language / meaning / communication phase / grammar / return paths / commensuration / AI language generation / qualia
+> Language: Japanese authoritative; English commensuration pending
+> Public profile: P1-P2.5
+> Authority: Directory navigation, living-canonical maintenance, and cross-document collation contract; not a general concept-definition owner
+> Version: 1.0.0-rc.1
+> Last updated: 2026-08-08
+> Maintenance: Living canonical. See [`CHANGELOG.md`](./CHANGELOG.md) and [`Return_Intake_Log.md`](Return_Intake_Log.ja.md).
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## 1. Directory Role / ディレクトリの位置づけ
 
-> **事象は境界で起きている。**  
+> **事象は境界で起きている。**
 > **主観でも客観でもなく、それらが混ざり合うところで。**
 
 本ディレクトリは、言語を、完成した意味の透明な搬送容器として扱わない。
@@ -77,31 +77,31 @@
 
 ## 3. Documents / 文書一覧
 
-1. [`Speech_as_Sequential_Decompression.ja.md`](./Speech_as_Sequential_Decompression.ja.md)  
+1. [`Speech_as_Sequential_Decompression.ja.md`](./Speech_as_Sequential_Decompression.ja.md)
    全体圧、逐次的除圧、残差保持切断、自己聴取。
 
-2. [`Grammar_as_a_Meaning_Pressure_Channel.ja.md`](./Grammar_as_a_Meaning_Pressure_Channel.ja.md)  
+2. [`Grammar_as_a_Meaning_Pressure_Channel.ja.md`](./Grammar_as_a_Meaning_Pressure_Channel.ja.md)
    言語・談話・関係・身体／身振り・媒体／制度の多層文法。
 
-3. [`Meaning_as_Collation_and_Return_Path.ja.md`](./Meaning_as_Collation_and_Return_Path.ja.md)  
+3. [`Meaning_as_Collation_and_Return_Path.ja.md`](./Meaning_as_Collation_and_Return_Path.ja.md)
    作動的意味循環、言語的統覚、返路閉鎖、感情と思考、思考としての愛。
 
-4. [`Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md`](./Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md)  
+4. [`Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md`](./Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md)
    異種ノード、距離・帯域、返り期待値、相転移、認識軸依存不可逆性、三つの記述位相、研究線の中央照合面。
 
-5. [`Intension_Extension_and_False_Extension.ja.md`](./Intension_Extension_and_False_Extension.ja.md)  
+5. [`Intension_Extension_and_False_Extension.ja.md`](./Intension_Extension_and_False_Extension.ja.md)
    内包を照合往復の内部、外延を返路ある接続、偽外延を返路なき根拠化として扱う。
 
-6. [`Commensuration_as_Cross_Grammatical_Collation.ja.md`](./Commensuration_as_Cross_Grammatical_Collation.ja.md)  
+6. [`Commensuration_as_Cross_Grammatical_Collation.ja.md`](./Commensuration_as_Cross_Grammatical_Collation.ja.md)
    差分、残差、返路、概念所有、主張強度を保持する通約。
 
-7. [`Linguistic_Frame_Differences_between_Japanese_and_English.ja.md`](./Linguistic_Frame_Differences_between_Japanese_and_English.ja.md)  
+7. [`Linguistic_Frame_Differences_between_Japanese_and_English.ja.md`](./Linguistic_Frame_Differences_between_Japanese_and_English.ja.md)
    意味確定・保留・責任配置に関する対照仮説と反例。
 
-8. [`AI_Language_Generation_and_Grammatical_Frames.ja.md`](./AI_Language_Generation_and_Grammatical_Frames.ja.md)  
+8. [`AI_Language_Generation_and_Grammatical_Frames.ja.md`](./AI_Language_Generation_and_Grammatical_Frames.ja.md)
    分布的制約状態、逐次生成、生成経路残差候補の運用的推定。
 
-9. [`Compressed_Experience_Qualia_and_Literature.ja.md`](./Compressed_Experience_Qualia_and_Literature.ja.md)  
+9. [`Compressed_Experience_Qualia_and_Literature.ja.md`](./Compressed_Experience_Qualia_and_Literature.ja.md)
    文学一般を定義せず、圧縮経験、再展開、クオリア差分接触を扱う。
 
 ## 4. Maintenance Notes / 運用メモ
@@ -125,7 +125,7 @@
 - 外部返りを受理できるが、自動的に正本化しない。
 - 未解決を完成した文章で隠さない。
 
-更新は、各文書末尾の`Revision History`、研究線全体の[`CHANGELOG.md`](./CHANGELOG.md)、返りの採否を記録する[`Return_Intake_Log.md`](./Return_Intake_Log.md)の三層で管理する。
+更新は、各文書末尾の`Revision History`、研究線全体の[`CHANGELOG.md`](./CHANGELOG.md)、返りの採否を記録する[`Return_Intake_Log.md`](Return_Intake_Log.ja.md)の三層で管理する。
 
 ### 5.1 変更級
 
@@ -161,7 +161,7 @@ SO
 - SOからSOLiteへの変形は自由である。
 - SOLiteからSOへの返りは常時受理する。
 - SOLiteの人気、面白さ、キャラクター発言は、SOの根拠にならない。
-- 逆輸入は必ず[`Return_Intake_Log.md`](./Return_Intake_Log.md)を経る。
+- 逆輸入は必ず[`Return_Intake_Log.md`](Return_Intake_Log.ja.md)を経る。
 
 **Automatic integration: no. Permanent collation channel: yes.**
 

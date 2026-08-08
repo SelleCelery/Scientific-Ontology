@@ -3,9 +3,9 @@
 
 > Status: Research Note / Conceptual Model / Metamodel
 > Lifecycle: Public Living Canonical Candidate / Gate 4
-> Scope: speech production / whole pressure / sequential decompression / non-destructive segmentation / self-monitoring / residual pressure  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S2-S3 / E1-E2 / U0 / P1-P2 / V0-V2  
+> Scope: speech production / whole pressure / sequential decompression / non-destructive segmentation / self-monitoring / residual pressure
+> Language: Japanese authoritative; English commensuration available
+> Claim strength: S2-S3 / E1-E2 / U0 / P1-P2 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08
 > Canonical scope: 発話位相における位相依存的全体圧、逐次的除圧、残差保持切断、自己聴取の局所モデル
@@ -56,9 +56,9 @@
 
 全体圧には、同じ方向の成分だけが含まれるとは限らない。
 
-伝えたいが、傷つけたくない。  
-近づきたいが、拒まれたくない。  
-責任を明確にしたいが、断罪したくない。  
+伝えたいが、傷つけたくない。
+近づきたいが、拒まれたくない。
+責任を明確にしたいが、断罪したくない。
 説明したいが、言語化によって壊したくない。
 
 これらは相殺されてゼロになるのではなく、発話の順序、強度、沈黙、言い直しを拘束する。
@@ -77,10 +77,10 @@
 
 一つのスピーチが出ると、その部分に対応する圧は外部へ放出される。しかし、残ったものは単純な引き算の余りではない。
 
-言ったことで、初めて自分の意図を知る。  
-予想より強い言い方になったと気づく。  
-弱すぎて何も伝えていないと感じる。  
-意図しない含意が立ち上がる。  
+言ったことで、初めて自分の意図を知る。
+予想より強い言い方になったと気づく。
+弱すぎて何も伝えていないと感じる。
+意図しない含意が立ち上がる。
 相手の反応によって、別の履歴が前景化する。
 
 したがって、発話は除圧であると同時に、圧の再編である。
@@ -173,22 +173,22 @@ Luhmannは通信を、内面内容の転送ではなく、情報、発話、理�
 
 ## 9. 失敗モード
 
-1. **完成原稿仮説**  
+1. **完成原稿仮説**
    発話前に完全な文章が内部に存在するとみなす。
 
-2. **単一圧仮説**  
+2. **単一圧仮説**
    全体圧を一つの強度へ還元する。
 
-3. **発話文絶対化**  
+3. **発話文絶対化**
    一度の文を人格・意図の全体とみなす。
 
-4. **除圧万能化**  
+4. **除圧万能化**
    発話が新しい圧、義務、関係を生成することを無視する。
 
-5. **自己聴取の省略**  
+5. **自己聴取の省略**
    自分の発話から返った差分を受け取らない。
 
-6. **受け手複製モデル**  
+6. **受け手複製モデル**
    発話者の意味が受け手へそのまま複製されるとみなす。
 
 ## 10. 高密度語の局所用法
@@ -249,4 +249,4 @@ Luhmannは通信を、内面内容の転送ではなく、情報、発話、理�
 - Gate 3 public-collation candidate.
 - Gate 2監査回答、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
-更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](./Return_Intake_Log.md) を参照。
+更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) を参照。
