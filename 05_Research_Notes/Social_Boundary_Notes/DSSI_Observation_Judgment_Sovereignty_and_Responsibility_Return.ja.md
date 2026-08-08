@@ -3,7 +3,7 @@
 
 > Status: Research note
 > Scope: DSSI, digital sovereignty, browser observability, judgment-field maintenance, responsibility boundary, evidentiary boundary, public implementation
-> Language: ja; English commensuration pending
+> Language: Japanese authoritative; English commensuration available
 > Claim strength: S3-S4/E2/U2-U3; conceptual and implementation-boundary model, not legal doctrine, forensic specification, security assessment, or political prescription
 
 ---

@@ -1,10 +1,10 @@
 # 世界制作としての文学
 ## 真・美・善・無と世界の運用構造
 
-**Status:** Status: Public Research Note / Living Draft 
+**Status:** Public Research Note / Living Draft
 **Layer:** Research Note  
 **Domain:** Literary Ontology / Worldmaking  
-**Language:** Japanese authoritative text  
+**Language:** Japanese authoritative; English commensuration available  
 **Claim Strength:** S2–S3  
 **Scope:** 文学作品が世界の成立条件をどのように制作・提示し、その内部で生じる因果、通信、履歴、責任、意味の帰結をどのように観測可能にするかを記述する。文学の価値一般を一つの基準へ還元するものではなく、個別作品の優劣を判定する評価表でもない。
 

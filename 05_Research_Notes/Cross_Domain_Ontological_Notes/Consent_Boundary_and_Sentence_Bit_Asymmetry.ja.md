@@ -2,7 +2,7 @@
 ## 規約提示・医療説明・制約下受諾における応答権の圧縮
 
 > Status: Research Note / Application Bridge  
-> Language: Japanese canonical  
+> Language: Japanese authoritative; English commensuration available  
 > Related application: DSSI / Digital Sovereignty Support Interface  
 > Claim strength: Conceptual model / design hypothesis  
 > Legal status: This document does not determine the legal validity or invalidity of any agreement.
