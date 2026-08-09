@@ -1,58 +1,43 @@
 cff-version: 1.2.0
-title: "Scientific Ontology (SO) / 存在境界論: Public Edition v4.3.0"
-
-message: >
-  If you use or refer to this public edition, please cite the report described
-  in preferred-citation using the version-specific Zenodo DOI. The public
-  scholarly author name for this release is 万土 華凜.
-
+message: This file describes the v5.0.0 release candidate. The version-specific Zenodo DOI is pending; update release_state.yml after Zenodo assigns it and rerun the release update tool.
+title: 'Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0'
 type: dataset
-
 authors:
-  - family-names: "万土"
-    given-names: "華凜"
-
-version: "4.3.0"
-
-doi: "10.5281/zenodo.21394190"
-
-date-released: "2026-07-16"
-
-license: "CC-BY-4.0"
-
-repository-code: "https://github.com/SelleCelery/Scientific-Ontology"
-
-url: "https://doi.org/10.5281/zenodo.21394190"
-
+- family-names: 万土
+  given-names: 華凜
+  orcid: https://orcid.org/0009-0001-5709-2669
+version: 5.0.0
+license: CC-BY-4.0
+repository-code: https://github.com/SelleCelery/Scientific-Ontology
+url: https://github.com/SelleCelery/Scientific-Ontology
 keywords:
-  - Scientific Ontology
-  - 存在境界論
-  - Boundary Cognition
-  - Boundary Epistemology
-  - Cognitive Axis Formation
-  - Boundary Studies
-  - History-Field Topology
-  - Boundary Realism
-  - Commensuration
-  - Re-collation
-  - Research Dynamics
-  - Boundary PDCA
-  - Organizational Boundary
-  - Port Model
-  - Peace Specification
-  - AI Governance
-  - Boundary Ethics
-  - Claim Strength Management
-  - Concept Lineage
-  - Conceptual Framework
-
+- Scientific Ontology
+- 存在境界論
+- Boundary Cognition
+- Boundary Epistemology
+- Boundary Studies
+- Boundary Realism
+- Commensuration
+- Re-collation
+- Research Dynamics
+- Language and Meaning
+- Communication Phase
+- Return Path
+- Consent Boundary
+- Sentence/Bit Asymmetry
+- Literature as Worldmaking
+- DSSI
+- AI Governance
+- Boundary Ethics
+- Claim Strength Management
+- Conceptual Framework
 preferred-citation:
   type: report
   authors:
-    - family-names: "万土"
-      given-names: "華凜"
-  title: "Scientific Ontology (SO) / 存在境界論: Public Edition v4.3.0"
+  - family-names: 万土
+    given-names: 華凜
+    orcid: https://orcid.org/0009-0001-5709-2669
+  title: 'Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0'
   year: 2026
-  version: "4.3.0"
-  doi: "10.5281/zenodo.21394190"
-  url: "https://doi.org/10.5281/zenodo.21394190"
+  version: 5.0.0
+  url: https://github.com/SelleCelery/Scientific-Ontology

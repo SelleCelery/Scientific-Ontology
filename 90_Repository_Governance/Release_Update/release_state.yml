@@ -3,7 +3,7 @@
 # Human meaning decisions remain in README.md and Roadmap.md.
 # Do not infer missing values. Use null + explicit status instead.
 
-schema_version: "1.0"
+schema_version: "1.2"
 
 project:
   name_en: "Scientific Ontology (SO)"
@@ -13,7 +13,9 @@ project:
   license: "CC-BY-4.0"
 
 public_author:
-  name: "万土 華凜"
+  display_name: "万土華凜"
+  family_name: "万土"
+  given_name: "華凜"
   romanized_name: null
   romanization_policy: "do_not_infer"
   orcid: "0009-0001-5709-2669"
@@ -22,38 +24,143 @@ public_author:
 release:
   version: "5.0.0"
   display_version: "v5.0.0"
-  status: "preparation" # preparation | release_candidate | published | superseded
+  series: "v5"
+  role: "opening_release"
+  status: "release_candidate" # preparation | release_candidate | published | superseded
   publication_date: null # YYYY-MM-DD; set only when fixed
   title: "Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0"
+  completion_claim: "series_opening_not_series_completion"
 
   theme:
     ja: "事象は境界で起きている。主観でも客観でもなく、それらが混ざり合うところで。"
     ja_authority: "human"
-    en: null
-    en_status: "pending_commensuration"
+    en: "Events happen at boundaries. Neither simply subjective nor simply objective, but where different modes of description come into contact."
+    en_status: "fixed_public_interface"
 
   purpose:
-    ja: >-
+    ja: |-
       v4系までに積み上げた境界・履歴・通信・返路の理論を体系内部から遊離させ、
       言語、文学、会計、制度、AI、インターフェイスへ実装・汎用化し、
       外部との接触から返る残差によって理論自身を再照合するv5系を開始する。
+      v5.0はv5系の完成版ではなく、以後のv5.xで研究・実装・外部照合の成果を追加するための開幕版である。
     authority: "human"
 
   highlights:
     # Human-approved factual release highlights only.
-    # Keep these short; RELEASE_NOTES.md may expand them, but must not invent new claims.
+    # RELEASE_NOTES.md may expand them, but must not invent new claims.
+    - id: "v5_opening"
+      en: "Open the v5 series as a living research series centered on implementation, generalization, external collation, and revision through return."
+      ja: "v5系を、実装・汎用化・外部照合・返りによる再更新を行う生きた研究系列として開始する。"
+      status: "included"
+
+    - id: "operational_outline"
+      en: "Publish the Scientific Ontology Operational Outline as a cross-series operational orientation articulated during preparation for v5."
+      ja: "v5系開始にあたって自覚された存在境界論の全体運用方針としてScientific Ontology Operational Outlineを公開する。"
+      status: "included"
+
     - id: "language_meaning_communication_phase"
-      ja: "言語・意味・通信位相研究の公開正本群を導入する。"
+      en: "Introduce the nine Language, Meaning, and Communication Phase research documents as a living-canonical research line with explicit change and return handling."
+      ja: "言語・意味・通信位相研究の九本の公開正本候補を、代謝型のLiving Canonical研究線として導入する。"
       status: "included"
+
     - id: "dssi_research_note"
-      ja: "DSSIの観測・判断・主権・責任返還に関する研究ノートを公開研究線へ導入する。"
+      en: "Introduce the DSSI research note on observation, judgment, sovereignty, and responsibility return; the DSSI application itself is not included in v5.0."
+      ja: "DSSIの観測・判断・主権・責任返還に関する研究ノートを公開研究線へ導入する。DSSIアプリ本体はv5.0に含めない。"
       status: "included"
+
     - id: "consent_boundary"
+      en: "Introduce the research note on consent boundaries and sentence/bit asymmetry."
       ja: "同意境界とセンテンス／ビット非対称の研究ノートを公開研究線へ導入する。"
       status: "included"
+
     - id: "literature_worldmaking"
+      en: "Introduce Literature as Worldmaking as a public research note."
       ja: "世界制作としての文学を公開研究ノートとして導入する。"
       status: "included"
+
+  zenodo_description_en: >-
+    Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0 opens the v5 living research series.
+    It carries the framework outward from its internal vocabulary into language, literature, consent,
+    institutions, AI, interfaces, and other application surfaces, while treating criticism, failure,
+    residuals, and unexpected returns from those contacts as inputs for re-collation rather than as
+    post-publication noise. The release adds the Scientific Ontology Operational Outline; the nine
+    Language, Meaning, and Communication Phase research documents and their living-canonical return
+    structure; Consent Boundary and Sentence/Bit Asymmetry; Literature as Worldmaking; and the DSSI
+    research note on observation, judgment, sovereignty, and responsibility return. The DSSI application
+    itself is not part of v5.0. Scientific Ontology does not claim that cross-domain structural resemblance
+    establishes physical identity, nor that the framework replaces established empirical disciplines.
+
+  zenodo_notes_en: >-
+    v5.0.0 is the opening release of the v5 series, not the completion of v5. The series is intended to
+    continue through v5.x while research, implementation, and external collation can be absorbed without
+    reorganizing the framework's basic descriptive surface or core structure. A transition to v6 would be
+    considered only if such a structural reorganization becomes necessary. The DSSI application is excluded
+    from this release; only its public research and implementation-boundary note is included.
+
+series_policy:
+  model: "living_series"
+  default_branch_for_new_work: "v5.x"
+  continue_v5_until: >-
+    v5系の前提、基礎的な記述面、概念所有、または中核不変項そのものを再編する必要がある
+    構造的要素が見つかるまで、研究・実装・外部照合の成果をv5.xとして追加する。
+  v6_transition_condition: >-
+    単なる研究追加や実装追加ではなく、v5系の枠そのものでは吸収できず、
+    体系全体の説明本拠地または中核構造を一段組み替える必要が生じた場合にv6系への移行を検討する。
+  authority: "human"
+
+public_scope:
+  inclusion_policy:
+    public_candidates: "include_if_explicitly_marked_public_candidate_at_publication_cut"
+    internal_000_prefixed: "exclude"
+    unpublished_private_core: "exclude"
+
+  guaranteed_inclusions:
+    - id: "operational_outline"
+      path: "00_Overview/Scientific_Ontology_Operational_Outline.ja.md"
+      status: "included"
+      role: "cross_series_operational_orientation"
+      note: "新しい上位公理ではなく、v5系開始時に自覚された存在境界論全体の運用方針を示す公開アウトライン。"
+      english_commensuration: "00_Overview/Scientific_Ontology_Operational_Outline.en.md"
+
+    - id: "language_meaning_communication_phase"
+      path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/"
+      status: "included"
+      role: "public_living_canonical_research_line"
+      document_count_ja_core: 9
+      document_count_exclusions:
+        - Return_Intake_Log.ja.md
+      note: "Gate 4を通過した九研究ノートと、その更新・返り管理構造を公開する。"
+
+    - id: "consent_boundary"
+      path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md"
+      status: "included"
+      role: "public_research_note"
+
+    - id: "literature_worldmaking"
+      path: "05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md"
+      status: "included"
+      role: "public_living_research_note"
+
+    - id: "dssi_research_note"
+      path: "05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md"
+      status: "included"
+      role: "public_research_note"
+      note: "DSSIの研究・実装境界を扱う。アプリケーション本体の公開を意味しない。"
+
+  deferred_or_excluded:
+    - id: "dssi_application"
+      status: "not_included"
+      earliest_target: "v5.1_or_later"
+      commitment: "not_committed"
+      reason: "v5.0では研究ノートのみを公開し、アプリケーション本体は公開条件が整った後に別途判断する。"
+
+    - id: "000_prefixed_working_files"
+      status: "excluded"
+      reason: "ローカル公開前・内部保留フラグを保持する。"
+
+    - id: "private_core"
+      status: "excluded"
+      reason: "Public Editionの非公開境界を維持する。"
 
 previous_release:
   version: "4.3.0"
@@ -62,6 +169,7 @@ previous_release:
   publication_date: "2026-07-16"
 
 zenodo:
+  record_resource_type: "publication-report"
   version_family_doi: "10.5281/zenodo.19222394"
   version_doi:
     status: "pending" # pending | assigned
@@ -71,6 +179,33 @@ zenodo:
     previous_release_relation: "isNewVersionOf"
     repository_relation: "isSupplementedBy"
 
+  file_strategy:
+    model: "curated_exposure_plus_full_archive"
+    full_archive:
+      filename: "Scientific_Ontology_Public_Edition.zip"
+      role: "complete_repository_snapshot"
+    default_preview:
+      filename: "README.pdf"
+      role: "record_landing_document"
+    exposed_companion_files:
+      - filename: "Scientific_Ontology_Operational_Outline.ja.pdf"
+        source: "00_Overview/Scientific_Ontology_Operational_Outline.ja.md"
+        role: "cross_series_operational_orientation"
+      - filename: "Scientific_Ontology_Operational_Outline.en.pdf"
+        source: "00_Overview/Scientific_Ontology_Operational_Outline.en.md"
+        role: "english_commensuration_of_operational_orientation"
+      - filename: "Roadmap.pdf"
+        source: "Roadmap.md"
+        role: "living_series_map"
+      - filename: "Language_Meaning_and_Communication_Phase_Studies_Overview.ja.pdf"
+        source: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md"
+        role: "research_line_entrance"
+    expose_individual_research_notes_by_default: false
+    note: >-
+      The Zenodo release record represents the Public Edition as one research object.
+      Individual research notes remain available through the repository/archive unless
+      a note is later promoted to an independently citable Zenodo record.
+
 citation:
   type_cff: "dataset"
   preferred_citation_type: "report"
@@ -79,6 +214,27 @@ citation:
   publisher: "Zenodo"
   author_name_policy: "preserve_unicode_public_name"
   orcid_policy: "propagate_exactly"
+  keywords:
+    - "Scientific Ontology"
+    - "存在境界論"
+    - "Boundary Cognition"
+    - "Boundary Epistemology"
+    - "Boundary Studies"
+    - "Boundary Realism"
+    - "Commensuration"
+    - "Re-collation"
+    - "Research Dynamics"
+    - "Language and Meaning"
+    - "Communication Phase"
+    - "Return Path"
+    - "Consent Boundary"
+    - "Sentence/Bit Asymmetry"
+    - "Literature as Worldmaking"
+    - "DSSI"
+    - "AI Governance"
+    - "Boundary Ethics"
+    - "Claim Strength Management"
+    - "Conceptual Framework"
 
 release_artifacts:
   # Core update pack. README/Roadmap are human-owned documents;
@@ -99,7 +255,7 @@ release_artifacts:
 
 validation:
   require_exact_version_match: true
-  require_exact_author_name_match: true
+  require_exact_author_name_match_when_set: true
   require_exact_orcid_match: true
   require_release_date_match_when_set: true
   forbid_inferred_romanization: true
@@ -107,3 +263,6 @@ validation:
   require_previous_release_link: true
   require_clean_json_for_zenodo: true
   require_valid_yaml_for_cff_and_state: true
+  require_dssi_application_exclusion_for_v5_0: true
+  require_operational_outline_inclusion_for_v5_0: true
+  require_internal_000_exclusion: true

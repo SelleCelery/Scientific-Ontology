@@ -1,60 +1,58 @@
 # Citation
 
-> Status: Citation  
-> Scope: Human-readable citation guidance  
-> Language: English and Japanese  
-> Current version: v4.3.0  
-> Version-specific DOI: 10.5281/zenodo.21394190
+> Status: Citation / release_candidate
+> Scope: Human-readable citation guidance
+> Language: English and Japanese
+> Target version: v5.0.0
+> Version-specific DOI: pending
 
-If you use, discuss, or refer to this public edition, cite the version-specific Zenodo DOI.
+If you use, discuss, or refer to a published public edition, cite its version-specific Zenodo DOI. For this release candidate, use the version and repository URL until the v5.0.0 DOI is assigned.
 
-この公開版を利用・参照・論評する場合は、版固有のZenodo DOIを使用してください。
+公開済みPublic Editionを利用・参照・論評する場合は、版固有のZenodo DOIを使用してください。このリリース候補については、v5.0.0のDOIが確定するまで版番号とリポジトリURLを使用します。
 
 ---
 
-## Public author name / 公開著者名
+## Public author identity / 公開著者識別
 
-The public scholarly author name used for this project is:
+**万土華凜**
+Family name / 姓: **万土**
+Given name / 名: **華凜**
+ORCID: <https://orcid.org/0009-0001-5709-2669>
 
-**万土 華凜**
+The Unicode author name is intentional. No Latin-script romanization is registered in this release; do not infer one.
 
-This is the name that should be retained in citations and bibliographic metadata.  
-A Latin-script romanization has not been registered in this release. Do not replace the Unicode name with an inferred romanization.
-
-本プロジェクトで使用する公開上の著者名は、次のとおりです。
-
-**万土 華凜**
-
-引用および書誌メタデータでは、この表記を維持してください。  
-本公開版ではローマ字表記を登録していないため、推測したローマ字表記へ置換しないでください。
+Unicodeの著者名表記を維持します。本公開版ではローマ字表記を登録していないため、推測したローマ字表記へ置換しません。
 
 ---
 
 ## Recommended citation
 
-万土 華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v4.3.0*. Zenodo, 2026. DOI: [10.5281/zenodo.21394190](https://doi.org/10.5281/zenodo.21394190).
+万土華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0*. Release candidate, 2026. Version-specific Zenodo DOI pending. Repository: <https://github.com/SelleCelery/Scientific-Ontology>.
 
 ---
 
-## Suggested English-language citation
 
-万土, 華凜. (2026). *Scientific Ontology (SO) / 存在境界論: Public Edition v4.3.0*. Zenodo. [https://doi.org/10.5281/zenodo.21394190](https://doi.org/10.5281/zenodo.21394190)
+## Pre-publication DOI state / 公開前DOI状態
 
-The Japanese-script author name is intentional and may be used directly in English-language bibliographies.
+The version-specific DOI for v5.0.0 has not yet been assigned. Do not reuse the v4.3.0 DOI or the version-family DOI as the v5.0.0 version DOI.
+
+v5.0.0の版固有DOIは、まだ発行されていません。v4.3.0のDOIまたは全版DOIを、v5.0.0の版固有DOIとして流用しないでください。
+
+After Zenodo assigns the DOI, update only `release_state.yml` first and rerun the release update tool.
+
+ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し、その後Release Updateを再実行します。
 
 ---
-
 ## BibTeX
 
 ```bibtex
-@misc{scientific_ontology_v430_2026,
+@misc{scientific_ontology_v500_2026,
   author       = {万土, 華凜},
-  title        = {Scientific Ontology (SO) / 存在境界論: Public Edition v4.3.0},
+  title        = {Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0},
   year         = {2026},
-  version      = {4.3.0},
+  version      = {5.0.0},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21394190},
-  url          = {https://doi.org/10.5281/zenodo.21394190},
+  url          = {https://github.com/SelleCelery/Scientific-Ontology},
   note         = {Public conceptual research archive and documentation release for Scientific Ontology / 存在境界論}
 }
 ```
@@ -64,8 +62,8 @@ The Japanese-script author name is intentional and may be used directly in Engli
 ## Machine-readable metadata
 
 - [`CITATION.cff`](./CITATION.cff)
-- [Zenodo version-specific record](https://doi.org/10.5281/zenodo.21394190)
 - [Zenodo version family](https://doi.org/10.5281/zenodo.19222394)
+- v5.0.0 version-specific Zenodo record: pending
 
 ---
 
@@ -77,7 +75,8 @@ GitHub: <https://github.com/SelleCelery/Scientific-Ontology>
 
 ## Previous public release
 
-Previous version DOI: [10.5281/zenodo.21240120](https://doi.org/10.5281/zenodo.21240120)
+Previous version: **v4.3.0**
+Previous version DOI: [10.5281/zenodo.21394190](https://doi.org/10.5281/zenodo.21394190)
 
 ---
 

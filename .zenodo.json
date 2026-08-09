@@ -1,43 +1,43 @@
 {
-  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v4.3.0",
+  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0",
   "upload_type": "publication",
   "publication_type": "report",
-  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v4.3.0 develops the boundary-oriented research movement established in the preceding public edition.\n\nThe release connects three layers of boundary cognition: critique of the conditions under which cognition is formed, formation of cognitive axes from entropy-attributed difference and history, and operation of distinct cognitive forms through commensuration, suspension, reopening, and return. It further connects these layers to research dynamics, organizational boundaries, port allocation, AI and institutional design, and a public specification for peace.\n\nMajor additions include the Scientific Ontology Concept Network, Truth Management and Boundary PDCA, Entropy-Attributed Difference and Cognitive Axis Formation, Optional Axiom Modules as a Cognitive Bridge, Cognitive Dynamics Communication Studies, Organizational Boundary and Port Model, and Specification for Peace.\n\nThe repository also strengthens its public governance infrastructure through concept-lineage metadata, public definition ownership, publication and commensuration policy, terminology collision registries, machine-readable document relationships, and public-format checking. The root README is an English-first, English/Japanese co-authoritative public interface; most research documents retain Japanese-authoritative and English-commensurated relations.\n\nScientific Ontology is a public conceptual framework for studying boundary, contact, history, cognition, communication, meaning, ethics, AI, organizations, social design, physics-adjacent correspondence, and return paths. It does not claim to replace established empirical sciences or to establish physical identity from cross-domain structural resemblance.",
+  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0 opens the v5 living research series. It carries the framework outward from its internal vocabulary into language, literature, consent, institutions, AI, interfaces, and other application surfaces, while treating criticism, failure, residuals, and unexpected returns from those contacts as inputs for re-collation rather than as post-publication noise. The release adds the Scientific Ontology Operational Outline; the nine Language, Meaning, and Communication Phase research documents and their living-canonical return structure; Consent Boundary and Sentence/Bit Asymmetry; Literature as Worldmaking; and the DSSI research note on observation, judgment, sovereignty, and responsibility return. The DSSI application itself is not part of v5.0. Scientific Ontology does not claim that cross-domain structural resemblance establishes physical identity, nor that the framework replaces established empirical disciplines.",
   "creators": [
     {
-      "name": "万土, 華凜"
+      "name": "万土, 華凜",
+      "orcid": "0009-0001-5709-2669"
     }
   ],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "4.3.0",
-  "publication_date": "2026-07-16",
+  "version": "5.0.0",
   "keywords": [
     "Scientific Ontology",
     "存在境界論",
     "Boundary Cognition",
     "Boundary Epistemology",
-    "Cognitive Axis Formation",
     "Boundary Studies",
-    "History-Field Topology",
     "Boundary Realism",
     "Commensuration",
     "Re-collation",
     "Research Dynamics",
-    "Boundary PDCA",
-    "Organizational Boundary",
-    "Port Model",
-    "Peace Specification",
+    "Language and Meaning",
+    "Communication Phase",
+    "Return Path",
+    "Consent Boundary",
+    "Sentence/Bit Asymmetry",
+    "Literature as Worldmaking",
+    "DSSI",
     "AI Governance",
     "Boundary Ethics",
     "Claim Strength Management",
-    "Concept Lineage",
     "Conceptual Framework"
   ],
   "language": "eng",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.21240120",
+      "identifier": "10.5281/zenodo.21394190",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     },
@@ -47,5 +47,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "This release extends boundary epistemological critique into boundary cognition formation, boundary cognition operation, research dynamics, organizational implementation, and peace specification. It remains a public conceptual research archive with explicit claim-strength, non-claim, terminology, and public/private boundaries."
+  "notes": "v5.0.0 is the opening release of the v5 series, not the completion of v5. The series is intended to continue through v5.x while research, implementation, and external collation can be absorbed without reorganizing the framework's basic descriptive surface or core structure. A transition to v6 would be considered only if such a structural reorganization becomes necessary. The DSSI application is excluded from this release; only its public research and implementation-boundary note is included."
 }
