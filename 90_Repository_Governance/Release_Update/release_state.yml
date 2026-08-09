@@ -1,0 +1,109 @@
+# Scientific Ontology / 存在境界論
+# Single source of truth for release-level facts.
+# Human meaning decisions remain in README.md and Roadmap.md.
+# Do not infer missing values. Use null + explicit status instead.
+
+schema_version: "1.0"
+
+project:
+  name_en: "Scientific Ontology (SO)"
+  name_ja: "存在境界論"
+  edition_name_en: "Public Edition"
+  repository_url: "https://github.com/SelleCelery/Scientific-Ontology"
+  license: "CC-BY-4.0"
+
+public_author:
+  name: "万土 華凜"
+  romanized_name: null
+  romanization_policy: "do_not_infer"
+  orcid: "0009-0001-5709-2669"
+  orcid_url: "https://orcid.org/0009-0001-5709-2669"
+
+release:
+  version: "5.0.0"
+  display_version: "v5.0.0"
+  status: "preparation" # preparation | release_candidate | published | superseded
+  publication_date: null # YYYY-MM-DD; set only when fixed
+  title: "Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0"
+
+  theme:
+    ja: "事象は境界で起きている。主観でも客観でもなく、それらが混ざり合うところで。"
+    ja_authority: "human"
+    en: null
+    en_status: "pending_commensuration"
+
+  purpose:
+    ja: >-
+      v4系までに積み上げた境界・履歴・通信・返路の理論を体系内部から遊離させ、
+      言語、文学、会計、制度、AI、インターフェイスへ実装・汎用化し、
+      外部との接触から返る残差によって理論自身を再照合するv5系を開始する。
+    authority: "human"
+
+  highlights:
+    # Human-approved factual release highlights only.
+    # Keep these short; RELEASE_NOTES.md may expand them, but must not invent new claims.
+    - id: "language_meaning_communication_phase"
+      ja: "言語・意味・通信位相研究の公開正本群を導入する。"
+      status: "included"
+    - id: "dssi_research_note"
+      ja: "DSSIの観測・判断・主権・責任返還に関する研究ノートを公開研究線へ導入する。"
+      status: "included"
+    - id: "consent_boundary"
+      ja: "同意境界とセンテンス／ビット非対称の研究ノートを公開研究線へ導入する。"
+      status: "included"
+    - id: "literature_worldmaking"
+      ja: "世界制作としての文学を公開研究ノートとして導入する。"
+      status: "included"
+
+previous_release:
+  version: "4.3.0"
+  display_version: "v4.3.0"
+  doi: "10.5281/zenodo.21394190"
+  publication_date: "2026-07-16"
+
+zenodo:
+  version_family_doi: "10.5281/zenodo.19222394"
+  version_doi:
+    status: "pending" # pending | assigned
+    value: null
+    url: null
+  related_identifiers:
+    previous_release_relation: "isNewVersionOf"
+    repository_relation: "isSupplementedBy"
+
+citation:
+  type_cff: "dataset"
+  preferred_citation_type: "report"
+  publication_type_zenodo: "report"
+  year: 2026
+  publisher: "Zenodo"
+  author_name_policy: "preserve_unicode_public_name"
+  orcid_policy: "propagate_exactly"
+
+release_artifacts:
+  # Core update pack. README/Roadmap are human-owned documents;
+  # the others are synchronized or drafted from this state.
+  core:
+    - path: "README.md"
+      ownership: "human"
+    - path: "Roadmap.md"
+      ownership: "human"
+    - path: "RELEASE_NOTES.md"
+      ownership: "ai_draft_human_approve"
+    - path: "CITATION.cff"
+      ownership: "machine_sync"
+    - path: "CITATION.md"
+      ownership: "machine_sync_human_review"
+    - path: ".zenodo.json"
+      ownership: "machine_sync"
+
+validation:
+  require_exact_version_match: true
+  require_exact_author_name_match: true
+  require_exact_orcid_match: true
+  require_release_date_match_when_set: true
+  forbid_inferred_romanization: true
+  forbid_placeholder_doi: true
+  require_previous_release_link: true
+  require_clean_json_for_zenodo: true
+  require_valid_yaml_for_cff_and_state: true
