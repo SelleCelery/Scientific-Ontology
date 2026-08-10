@@ -1,10 +1,10 @@
 # Public document manifest for Scientific Ontology / 存在境界論
-# Version: 0.2.0
+# Version: 0.3.0
 
 manifest:
-  version: "0.2.0"
+  version: "0.3.0"
   role: "public-document-ledger"
-  coverage: "partial-seed-with-v4.3-core-contracts"
+  coverage: "partial-seed-with-v5-opening-contracts"
   default_severity: "warning-only"
   release_gate_severity: "error"
   principle: >
@@ -13,7 +13,7 @@ manifest:
     should be warnings during ordinary editing and release-gate errors only
     when the release process explicitly enables strict mode.
   note: >
-    This manifest is an initial public-document registry seed.
+    This manifest is a public-document registry seed extended for the v5 opening release.
     It is not yet a complete inventory of all public Markdown files.
 
 
@@ -333,6 +333,32 @@ documents:
     role_ja: "知の成立条件と失敗条件の定義所有者"
     role_en: "Canonical owner of epistemic validity and failure conditions"
 
+    doc_id: boundary_epistemological_critique
+    discovery:
+      topics:
+        - boundary
+        - epistemology
+        - cognition
+        - science
+      aliases:
+        ja:
+          - 境界認識
+          - 知の成立条件
+          - 認識と照合
+        en:
+          - boundary epistemology
+          - conditions of knowledge
+          - cognition and collation
+      reader_questions:
+        ja:
+          - 知識はどうやって成立するのか
+          - 主観と客観をどう照合するのか
+          - 観測から漏れる残差をどう扱うのか
+        en:
+          - How does knowledge become possible?
+          - How can subjective and objective descriptions be collated?
+          - How should residuals outside observation be retained?
+      entry_level: foundation
   - path: "01_Sat_Truth/Meaning_Generation_Model.md"
     document_type: "assertion_document"
     title_ja: "意味生成モデル"
@@ -351,6 +377,31 @@ documents:
     role_ja: "情報が意味として成立する条件の定義所有者"
     role_en: "Canonical owner of meaning-generation conditions"
 
+    doc_id: meaning_generation_model
+    discovery:
+      topics:
+        - meaning
+        - cognition
+        - boundary
+      aliases:
+        ja:
+          - 意味の成立
+          - 意味生成
+          - 意味ループ
+        en:
+          - meaning formation
+          - meaning generation
+          - meaning loop
+      reader_questions:
+        ja:
+          - 意味はどうやって成立するのか
+          - 情報と意味は何が違うのか
+          - 履歴は意味にどう作用するのか
+        en:
+          - How does meaning form?
+          - What distinguishes information from meaning?
+          - How does history participate in meaning?
+      entry_level: foundation
   - path: "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
     document_type: "assertion_document"
     title_ja: "存在境界論 概念ネットワーク"
@@ -435,6 +486,32 @@ documents:
         - "Where does a cross-layer translation preserve vocabulary but lose structure?"
         - "Which application failures require revision of the system map rather than a local fix?"
 
+    doc_id: scientific_ontology_concept_network
+    discovery:
+      topics:
+        - overview
+        - boundary
+        - commensuration
+        - network
+      aliases:
+        ja:
+          - 存在境界論の全体地図
+          - 概念のつながり
+          - 理論の読み方
+        en:
+          - Scientific Ontology map
+          - concept relations
+          - reading routes
+      reader_questions:
+        ja:
+          - 存在境界論の全体像を知りたい
+          - 文書や概念はどうつながっているのか
+          - どこから読み始めればよいのか
+        en:
+          - What is the overall structure of Scientific Ontology?
+          - How are the documents and concepts connected?
+          - Where should I start reading?
+      entry_level: foundation
   - path: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
     document_type: "assertion_document"
     title_ja: "エントロピー属性つき差分と認識軸生成"
@@ -592,6 +669,32 @@ documents:
         - "How should power asymmetry alter a nominally mutual commensuration process?"
         - "Which residuals should remain open rather than become candidate purposes?"
 
+    doc_id: optional_axiom_modules_cognitive_bridge
+    discovery:
+      topics:
+        - commensuration
+        - epistemology
+        - ethics
+        - communication
+      aliases:
+        ja:
+          - 世界観の比較
+          - 認識ブリッジ
+          - 翻訳不能残差
+        en:
+          - worldview comparison
+          - cognitive bridge
+          - untranslatable residuals
+      reader_questions:
+        ja:
+          - 違う世界観を壊さずに比較するにはどうすればよいか
+          - 同じ言葉で中核が違うときどう照合するのか
+          - 翻訳できない残差をどう保持するのか
+        en:
+          - How can different worldviews be compared without erasing them?
+          - How should the same word with different cores be collated?
+          - How should untranslatable residuals be retained?
+      entry_level: intermediate
   - path: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
     document_type: "assertion_document"
     title_ja: "真理の経営学｜目的・共有・境界によるPDCAの再定義"
@@ -841,3 +944,438 @@ documents:
     role_ja: "存在相、意味容量、境界外交を平和仕様へ接続する公開応用文書"
     role_en: "Public application connecting existence phases, meaning capacity, and boundary diplomacy to a peace specification"
 
+  # v5 opening release additions -------------------------------------------------
+    doc_id: specification_for_peace
+    discovery:
+      topics:
+        - peace
+        - ethics
+        - communication
+        - boundary
+      aliases:
+        ja:
+          - 平和仕様
+          - 限定接触
+          - 差分を消さない平和
+        en:
+          - peace specification
+          - limited contact
+          - peace without erasing difference
+      reader_questions:
+        ja:
+          - すべてを開かずに平和を作るにはどうすればよいか
+          - 違いを消さずに接触を続けるには何が必要か
+          - 拒否や停止を残した平和は設計できるか
+        en:
+          - How can peace be designed without opening every channel?
+          - How can contact continue without erasing difference?
+          - Can peace preserve refusal and stopping conditions?
+      entry_level: intermediate
+  - path: "00_Overview/Scientific_Ontology_Operational_Outline.ja.md"
+    document_type: "assertion_document"
+    title_ja: "存在境界論 運用アウトライン"
+    title_en: "Scientific Ontology Operational Outline"
+    layer: "00_Overview"
+    status: "Public Overview Candidate / cross-series operational orientation"
+    scope: "boundary events, agency, responsibility partition, mobility, cost terrain, justice, theory use, open future"
+    public_profile: "P0-P1"
+    state: "public-candidate"
+    language_relation: "japanese_authoritative_with_separate_english_commensuration"
+    related:
+      - "00_Overview/Scientific_Ontology_Operational_Outline.en.md"
+      - "README.md"
+      - "Roadmap.md"
+
+    doc_id: scientific_ontology_operational_outline
+    discovery:
+      topics:
+        - overview
+        - boundary
+        - ethics
+        - responsibility
+      aliases:
+        ja:
+          - 存在境界論の運用方針
+          - 責任分界
+          - 可動性のための理論
+        en:
+          - Scientific Ontology operational orientation
+          - responsibility partition
+          - theory for mobility
+      reader_questions:
+        ja:
+          - 存在境界論は何のために使うのか
+          - 自分の責任と外部の責任をどう見分けるのか
+          - 理論を正しさではなく資材として使うとは何か
+        en:
+          - What is Scientific Ontology for?
+          - How can responsibility be partitioned between self and world?
+          - What does it mean to use theory as material rather than authority?
+      entry_level: foundation
+  - path: "00_Overview/Scientific_Ontology_Operational_Outline.en.md"
+    document_type: "assertion_document"
+    title_ja: "存在境界論 運用アウトライン 英語通約"
+    title_en: "Scientific Ontology Operational Outline"
+    layer: "00_Overview"
+    status: "Public Overview Candidate / cross-series operational orientation"
+    scope: "English commensuration of the cross-series operational orientation"
+    public_profile: "P0-P1"
+    state: "public-candidate"
+    language_relation: "english_commensuration_of_japanese_authoritative_source"
+    related:
+      - "00_Overview/Scientific_Ontology_Operational_Outline.ja.md"
+
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md"
+    document_type: "subdirectory_readme"
+    title_ja: "言語・意味・通信位相研究"
+    title_en: "Language, Meaning, and Communication Phase Studies"
+    layer: "05_Research_Notes"
+    status: "README"
+    scope: "living-canonical research line navigation, maintenance, and return intake"
+    public_profile: "P2"
+    state: "public-candidate"
+
+    doc_id: language_meaning_communication_phase_studies
+    discovery:
+      topics:
+        - language
+        - meaning
+        - communication
+        - commensuration
+      aliases:
+        ja:
+          - 言語研究の入口
+          - 言語・意味研究
+          - 通信位相研究
+        en:
+          - language studies entry
+          - language and meaning studies
+          - communication phase studies
+      reader_questions:
+        ja:
+          - 言語・意味・通信位相研究の全体を見たい
+          - 発話から意味までの研究文書を探したい
+          - この研究線の文書はどう分かれているのか
+        en:
+          - What does the language, meaning, and communication phase research line contain?
+          - Where can I read from speech to meaning?
+          - How are the documents in this research line divided?
+      entry_level: foundation
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Grammar_as_a_Meaning_Pressure_Channel.ja.md"
+    document_type: "assertion_document"
+    title_ja: "文法枠とは何か"
+    title_en: "Grammar as a Meaning-Pressure Channel"
+    layer: "05_Research_Notes"
+    status: "Research Note / Conceptual Model / Metamodel"
+    public_profile: "P2"
+    state: "public-candidate"
+
+    doc_id: grammar_meaning_pressure_channel
+    discovery:
+      topics:
+        - language
+        - communication
+        - meaning
+      aliases:
+        ja:
+          - 文法枠
+          - 意味圧の流路
+          - 発話以外の文法
+        en:
+          - grammatical frame
+          - meaning-pressure channel
+          - grammar beyond utterance
+      reader_questions:
+        ja:
+          - 文法は語順や統語だけなのか
+          - 文法は意味圧をどう切り出すのか
+          - 身振りや制度も文法として扱えるのか
+        en:
+          - Is grammar more than syntax and word order?
+          - How does grammar channel meaning pressure?
+          - Can gesture and institutional form operate grammatically?
+      entry_level: intermediate
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md"
+    document_type: "assertion_document"
+    title_ja: "意味が分かるとは何か"
+    title_en: "Meaning as Collation and Return Path"
+    layer: "05_Research_Notes"
+    status: "Research Note / Conceptual Model / Metamodel"
+    public_profile: "P2"
+    state: "public-candidate"
+
+    doc_id: meaning_collation_return_path
+    discovery:
+      topics:
+        - meaning
+        - language
+        - cognition
+        - communication
+      aliases:
+        ja:
+          - 意味が分かる
+          - 照合と返路
+          - 言語的統覚
+        en:
+          - understanding meaning
+          - collation and return path
+          - linguistic apperception
+      reader_questions:
+        ja:
+          - 意味が分かるとはどういうことか
+          - 返路が閉じるとなぜ意味になるのか
+          - 感情と思考は返路によってどう違うのか
+        en:
+          - What does it mean to understand meaning?
+          - Why does return-path closure matter for meaning?
+          - How do emotion and thought differ through return paths?
+      entry_level: intermediate
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md"
+    document_type: "assertion_document"
+    title_ja: "圧縮経験・クオリア・文学"
+    title_en: "Compressed Experience, Qualia, and Literature"
+    layer: "05_Research_Notes"
+    status: "Research Note / Conceptual Model / Metamodel"
+    public_profile: "P2"
+    state: "public-candidate"
+
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.ja.md"
+    document_type: "assertion_document"
+    title_ja: "AI言語生成と文法枠"
+    title_en: "AI Language Generation and Grammatical Frames"
+    layer: "05_Research_Notes"
+    status: "Research Note / Conceptual Model / Metamodel"
+    public_profile: "P2"
+    state: "public-candidate"
+
+    doc_id: ai_language_generation_grammatical_frames
+    discovery:
+      topics:
+        - ai
+        - language
+        - communication
+        - cognition
+      aliases:
+        ja:
+          - AIの文法枠
+          - LLMの言語生成
+          - AIの意味閉鎖
+        en:
+          - AI grammatical frames
+          - LLM language generation
+          - AI meaning closure
+      reader_questions:
+        ja:
+          - AIはどのように文法枠を選ぶのか
+          - 言語が変わるとAIの応答はどう変わるのか
+          - AIの出力が早く閉じるとはどういうことか
+        en:
+          - How does AI select grammatical frames?
+          - How does language choice change AI responses?
+          - What does premature closure in AI output mean?
+      entry_level: intermediate
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md"
+    document_type: "assertion_document"
+    title_ja: "発話とは何か"
+    title_en: "Speech as Sequential Decompression"
+    layer: "05_Research_Notes"
+    status: "Research Note / Conceptual Model / Metamodel"
+    public_profile: "P2"
+    state: "public-candidate"
+
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md"
+    document_type: "assertion_document"
+    title_ja: "内包・外延・偽外延"
+    title_en: "Intension, Extension, and False Extension"
+    layer: "05_Research_Notes"
+    status: "Research Note / Conceptual Model / Metamodel"
+    public_profile: "P2"
+    state: "public-candidate"
+
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md"
+    document_type: "assertion_document"
+    title_ja: "意味ネットワーク・トポロジーと通約帯域"
+    title_en: "Semantic Network Topology and Commensuration Bandwidth"
+    layer: "05_Research_Notes"
+    status: "Research Note / Conceptual Model / Metamodel"
+    public_profile: "P2"
+    state: "public-candidate"
+
+    doc_id: semantic_network_topology_commensuration_bandwidth
+    discovery:
+      topics:
+        - network
+        - commensuration
+        - communication
+        - meaning
+        - logical_depth
+      aliases:
+        ja:
+          - 通約帯域
+          - 意味ネットワーク
+          - 論理深度距離
+        en:
+          - commensuration bandwidth
+          - semantic network topology
+          - logical-depth distance
+      reader_questions:
+        ja:
+          - 同じ言葉なのに分野が違うと話が噛み合わないのはなぜか
+          - 概念間の距離や帯域をどう考えるのか
+          - 返り期待値や通信重力圏とは何か
+          - 違う分野で同じ言葉なのに話が噛み合わない
+        en:
+          - Why can the same word fail across different fields?
+          - How can distance and bandwidth between concepts be described?
+          - What are return expectancy and communication gravity domains?
+      entry_level: advanced
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+    document_type: "assertion_document"
+    title_ja: "通約とは何か"
+    title_en: "Commensuration as Cross-Grammatical Collation"
+    layer: "05_Research_Notes"
+    status: "Research Note / Conceptual Model / Metamodel"
+    public_profile: "P2"
+    state: "public-candidate"
+
+    doc_id: commensuration_cross_grammatical_collation
+    discovery:
+      topics:
+        - commensuration
+        - language
+        - communication
+        - boundary
+      aliases:
+        ja:
+          - 通約とは何か
+          - 文法枠間照合
+          - 翻訳残差
+        en:
+          - what is commensuration
+          - cross-grammatical collation
+          - translation residuals
+      reader_questions:
+        ja:
+          - 異なる言語や分野を同一化せず通約するにはどうすればよいか
+          - 翻訳で何を保持し何を残差として残すのか
+          - 偽通約とは何か
+        en:
+          - How can languages or fields be commensurated without identification?
+          - What should translation preserve and retain as residual?
+          - What is false commensuration?
+      entry_level: intermediate
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md"
+    document_type: "assertion_document"
+    title_ja: "日本語と英語の文法枠"
+    title_en: "Linguistic Frame Differences between Japanese and English"
+    layer: "05_Research_Notes"
+    status: "Research Note / Conceptual Model / Metamodel"
+    public_profile: "P2"
+    state: "public-candidate"
+
+  - path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md"
+    document_type: "assertion_document"
+    title_ja: "同意境界とセンテンス／ビット非対称"
+    title_en: "Consent Boundary and Sentence/Bit Asymmetry"
+    layer: "05_Research_Notes"
+    status: "Research note"
+    public_profile: "P2"
+    state: "public-candidate"
+
+    doc_id: consent_boundary_sentence_bit_asymmetry
+    discovery:
+      topics:
+        - consent
+        - communication
+        - responsibility
+        - judgment
+      aliases:
+        ja:
+          - 一ビット同意
+          - 同意画面の非対称
+          - 制約下受諾
+        en:
+          - one-bit consent
+          - consent interface asymmetry
+          - acceptance under constraint
+      reader_questions:
+        ja:
+          - 長い規約に一ビットで同意する構造は何を落とすのか
+          - 同意するしかない状況をどう記録するのか
+          - 同意の留保を返すにはどんなポートが必要か
+        en:
+          - What is lost when long terms receive a one-bit answer?
+          - How can acceptance under constraint be recorded?
+          - What response port is needed for consent reservations?
+      entry_level: intermediate
+  - path: "05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md"
+    document_type: "assertion_document"
+    title_ja: "世界制作としての文学"
+    title_en: "Literature as Worldmaking"
+    layer: "05_Research_Notes"
+    status: "Research note"
+    public_profile: "P2"
+    state: "public-candidate"
+
+    doc_id: literature_worldmaking
+    discovery:
+      topics:
+        - literature
+        - meaning
+        - boundary
+      aliases:
+        ja:
+          - 世界制作としての文学
+          - 文学は世界を作る
+          - 文学世界の運用
+        en:
+          - literature as worldmaking
+          - literature makes worlds
+          - operation of literary worlds
+      reader_questions:
+        ja:
+          - 文学は何を制作しているのか
+          - 作品世界と現実世界はどう橋渡しされるのか
+          - 文学で真・美・善・無をどう読むのか
+        en:
+          - What does literature make?
+          - How can a literary world connect with the actual world?
+          - How can truth, beauty, goodness, and null be read in literature?
+      entry_level: intermediate
+  - path: "05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md"
+    document_type: "assertion_document"
+    title_ja: "DSSI：観測・判断主権・責任返還"
+    title_en: "DSSI: Observation, Judgment, Sovereignty, and Responsibility Return"
+    layer: "05_Research_Notes"
+    status: "Research note"
+    public_profile: "P2"
+    state: "public-candidate"
+
+    doc_id: dssi_observation_judgment_sovereignty
+    discovery:
+      topics:
+        - ai
+        - judgment
+        - responsibility
+        - communication
+        - boundary
+      aliases:
+        ja:
+          - 判断主権
+          - 観測と判断の分離
+          - 責任を利用者へ返す
+        en:
+          - judgment sovereignty
+          - separating observation from judgment
+          - returning responsibility to the user
+      reader_questions:
+        ja:
+          - AIやインターフェースに判断を任せすぎないためにはどうすればよいか
+          - 観測と判断をどう分離するのか
+          - 利用者へ判断責任をどう返すのか
+          - AIに判断を任せたくない
+        en:
+          - How can AI or interfaces avoid taking over judgment?
+          - How should observation be separated from judgment?
+          - How can responsibility be returned to the user?
+      entry_level: intermediate

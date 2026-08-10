@@ -1,0 +1,65 @@
+tests:
+  - id: meaning-basic
+    query: 意味はどうやって成立するの
+    mode: question
+    expect_top_any:
+      - meaning_generation_model
+      - meaning_collation_return_path
+  - id: return-path
+    query: 返路って何
+    mode: question
+    expect_top_any:
+      - meaning_collation_return_path
+      - semantic_network_topology_commensuration_bandwidth
+  - id: ai-judgment
+    query: AIに判断を任せたくない
+    mode: question
+    expect_top_any:
+      - dssi_observation_judgment_sovereignty
+      - ai_language_generation_grammatical_frames
+  - id: commensuration-gap
+    query: 違う分野で同じ言葉なのに話が噏み合わない
+    mode: question
+    expect_top_any:
+      - semantic_network_topology_commensuration_bandwidth
+      - commensuration_cross_grammatical_collation
+  - id: literature-worldmaking
+    query: 文学は何を作っているの
+    mode: question
+    expect_top_any:
+      - literature_worldmaking
+  - id: science-boundary
+    query: 科学と存在境界論はどういう関係なの
+    mode: question
+    expect_top_any:
+      - boundary_epistemological_critique
+      - scientific_ontology_operational_outline
+      - scientific_ontology_concept_network
+  - id: consent-bit
+    query: 長い規約に同意するかどうかしか返せない
+    mode: question
+    expect_top_any:
+      - consent_boundary_sentence_bit_asymmetry
+  - id: peace-contact
+    query: すべてを開かずに平和を作るには
+    mode: question
+    expect_top_any:
+      - specification_for_peace
+  - id: grammar-beyond-syntax
+    query: 文法は語順だけなの
+    mode: question
+    expect_top_any:
+      - grammar_meaning_pressure_channel
+  - id: overview-entry
+    query: 存在境界論の全体像を知りたい
+    mode: question
+    expect_top_any:
+      - scientific_ontology_concept_network
+      - scientific_ontology_operational_outline
+      - language_meaning_communication_phase_studies
+  - id: commensuration-term
+    query: 通約とは何か
+    mode: term
+    expect_top_any:
+      - commensuration_cross_grammatical_collation
+      - optional_axiom_modules_cognitive_bridge

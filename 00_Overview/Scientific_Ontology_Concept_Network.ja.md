@@ -28,6 +28,10 @@
 
 **存在境界論とは、閉じなさを放置するのではなく、閉じなさを管理する体系である。**
 
+そのため、存在境界論は、主観に重心を置く理論、客観に重心を置く理論、横断研究、宗教、文学、制度、科学などのどれか一つを最終言語として先に選ばない。それぞれが持つ成立条件、観測範囲、主張強度、限界を保持したまま、境界へ持ち寄って照合できる場そのものを整えようとする。
+
+ここでいう通約は、異なる領域を同一化することではない。何が保持され、何が変形し、どこから比喩になり、何が残差として残り、どの返路が成立するかを追跡可能にすることである。科学を宗教の証拠にせず、宗教を科学の代用品にせず、それでも異なる言語ゲームが世界へ触れている可能性を最初から切り捨てない。
+
 管理するとは、曖昧なものを曖昧なまま正当化することではない。何が未解決なのか、どの境界で記述が失効したのか、何が残差として残ったのか、次にどの照合が必要なのかを明示し、探索可能な状態で保持することである。
 
 ---
@@ -234,6 +238,9 @@ Boundary Realism and Epistemological Critique
 │                 ↕                     │
 │ Meaning Generation                    │
 │ 差分 → 履歴統合 → 意味ループ → 返路       │
+│                 ↕                     │
+│ Language / Meaning / Communication    │
+│ 文法・発話・通約・通信位相・返路          │
 └───────────────────────────────────────┘
         ↓
 Optional Axiom Modules as Cognitive Bridge
@@ -474,6 +481,14 @@ Tam / Goodnessは、暗さや失敗を排除する層ではない。
 
 ---
 
+### 8.4 言語・意味・通信位相研究――横断基盤
+
+[`Language, Meaning, and Communication Phase Studies`](../05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md)は、文法、発話、意味、通約、意味ネットワーク、AI言語生成を、返路を含む通信位相として扱う横断研究線である。
+
+この研究線は、`Meaning_Generation_Model`やHFCを置き換えない。言語的意味の局所問題を扱い、意味生成、履歴場、認識論、AI応用へ残差を返す。
+
+v5系では、この研究線を最初のLiving Canonical運用面として扱い、変更履歴とReturn Intakeによって、公開後の誤読、抵抗、実装失敗、未解決差分を研究側へ戻せるようにする。
+
 ## 9. [真理の経営学](./Truth_Management_and_Boundary_PDCA.ja.md) ― 認識から目的へ
 
 認識軸が形成されると、次に「何を目的として置くか」が問題になる。
@@ -624,6 +639,7 @@ AIの有用性は、答えの速度や量だけで測れない。
 
 - [`AI_Adoption_as_Synchronization_Closure`](../05_Research_Notes/Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md)
 - [`AI Adoption Collation Checklist`](../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
+- [`DSSI: Observation, Judgment, Sovereignty, and Responsibility Return`](../05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md)
 
 DSSIのような実装は、「安全に技術を使う」という抽象語を、入力前警告、保留、履歴保持、送信制御、責任返路、判断場維持として具体化する例になりうる。
 
@@ -696,10 +712,11 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 最短の読み順は、次である。
 
 1. [`README.md`](../README.md)  
-2. [`Scientific Ontology System Map`](./Scientific_Ontology_System_Map.md)  
-3. [`Boundary Realism Principle`](../01_Sat_Truth/Boundary_Realism_Principle.md)  
-4. 本稿  
-5. 関心に応じた各ルート  
+2. [`Scientific Ontology Operational Outline`](./Scientific_Ontology_Operational_Outline.ja.md)
+3. [`Scientific Ontology System Map`](./Scientific_Ontology_System_Map.md)
+4. [`Boundary Realism Principle`](../01_Sat_Truth/Boundary_Realism_Principle.md)
+5. 本稿
+6. 関心に応じた各ルート
 
 ### 存在論・実在論から入る
 
@@ -718,6 +735,7 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 - [`Boundary Ethics Model`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
 - [`Meaning as Return Orbit`](../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 - [`Return Ethics and Retaliation Conversion`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md)
+- [`Consent Boundary and Sentence/Bit Asymmetry`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md)
 
 ### 組織・経営から入る
 
@@ -730,12 +748,14 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 - [`Application Boundary Theory Core`](../04_Applications/AI_Adaptation/Application_Boundary_Theory_Core.md)
 - [`AI Usefulness as a Boundary Function`](../04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
 - [`AI Adoption Collation Checklist`](../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
+- [`DSSI: Observation, Judgment, Sovereignty, and Responsibility Return`](../05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md)
 
 ### 歴史・社会・物語から入る
 
 - [`Asymmetry Stabilization and Re-Collation`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md)
 - [`Narrative, Truth Layer, and Structural Reading`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)
 - [`Literary / Ontological Notes`](../05_Research_Notes/Literary_Ontological_Notes/README.md)
+- [`Literature as Worldmaking`](../05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md)
 
 ### 物理近接概念から入る
 
@@ -749,14 +769,21 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 
 ## 14. 現行公開体系で何が見えるようになったのか
 
-v4.2.0までの公開体系は、境界実在性、履歴場、意味生成、境界倫理、AI境界機能、物理対応方針を、それぞれ比較的明確に提示していた。
+v4系までの公開体系は、境界実在性、履歴場、意味生成、境界倫理、AI境界機能、物理対応方針を、それぞれ比較的明確に提示し、それらを研究動態として接続してきた。
 
-現行公開体系では、それらの間を結ぶ循環が前景化する。
+v5系の開始では、その循環を理論内部に留めず、言語、文学、同意、制度、AI、インターフェイスへ持ち出し、そこで返る批判、失敗、残差、未解決点によって上流文書を更新できる代謝へ明示的に開く。
+
+現行公開体系では、さらに次の二つが前景化する。
+
+1. 異なる言語ゲームを、成立条件と主張境界を保ったまま照合する場。
+2. 研究ノートを外へ持ち出し、返りによって正本を更新するLiving Canonical運用。
 
 特に、次の接続が見えるようになる。
 
 ```text
 認識形成
+  ↓
+言語・意味・通信位相での照合
   ↓
 目的設定
   ↓
@@ -848,6 +875,8 @@ AI・制度・社会への実装
 
 ## 17. 関連文書
 
+- [`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md)
+- [`Language, Meaning, and Communication Phase Studies`](../05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md)
 - [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md)
 - [`Claim_Strength_and_Publication_Layer_Table.md`](Claim_Strength_and_Publication_Layer_Table.ja.md)
 - [`Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md)

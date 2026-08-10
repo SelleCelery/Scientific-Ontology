@@ -80,11 +80,16 @@ jobs:
               Path("tools/Public_Format_Registry.yml"),
               Path("tools/docs_manifest.yml"),
               Path("tools/maintenance_rules.yml"),
+              Path("90_Repository_Governance/Release_Update/release_state.yml"),
           ]
           for path in paths:
               yaml.safe_load(path.read_text(encoding="utf-8"))
               print(f"OK: {path}")
           PY
+
+      - name: Check release metadata synchronization
+        run: |
+          python 90_Repository_Governance/Release_Update/release_update.py --check
 
       - name: Run ordinary public format checker
         run: |
@@ -145,6 +150,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements-public-check.txt
+
+      - name: Check release metadata synchronization
+        run: |
+          python 90_Repository_Governance/Release_Update/release_update.py --check
 
       - name: Run release gate
         run: |

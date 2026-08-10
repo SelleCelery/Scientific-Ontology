@@ -1,0 +1,5273 @@
+{
+  "schema_version": "0.1",
+  "search_spec_version": "0.1",
+  "source": {
+    "manifest_sha256": "b66f7a0b1aa319b821123bf9f36ff607d4807a546812d739f8567f2cd812c7f1",
+    "search_config_sha256": "7908516c611d2e2a2b6924a10456e9debe59c6dd966337a3b996d38a1dd404af",
+    "coverage": "partial-seed-with-v5-opening-contracts",
+    "visibility_profile": "preview"
+  },
+  "search_profile": {
+    "normalization": {
+      "unicode": "NFKC",
+      "ascii_casefold": true,
+      "punctuation_to_space": true,
+      "collapse_whitespace": true,
+      "kana_fold": false
+    },
+    "query_mode": {
+      "default": "auto",
+      "values": [
+        "auto",
+        "term",
+        "question"
+      ]
+    },
+    "modes": {
+      "term": {
+        "field_weights": {
+          "title": 10.0,
+          "owned_concept": 9.0,
+          "aliases": 8.0,
+          "topics": 6.0,
+          "reader_questions": 4.0,
+          "role": 3.0,
+          "scope": 2.0
+        }
+      },
+      "question": {
+        "field_weights": {
+          "reader_questions": 10.0,
+          "aliases": 8.0,
+          "topics": 6.0,
+          "owned_concept": 6.0,
+          "role": 5.0,
+          "scope": 4.0,
+          "title": 3.0
+        }
+      }
+    },
+    "match_strength": {
+      "exact": 1.0,
+      "contains": 0.9,
+      "term_coverage": 0.75,
+      "query_expansion": 0.65,
+      "char_ngram_cap": 0.45
+    },
+    "thresholds": {
+      "minimum_result_score": 2.5,
+      "char_ngram_min_chars": 4,
+      "char_ngram_min_similarity": 0.28
+    },
+    "question_markers_ja": [
+      "?",
+      "？",
+      "とは",
+      "どう",
+      "なぜ",
+      "何",
+      "どこ",
+      "どの"
+    ]
+  },
+  "topics": {
+    "overview": {
+      "ja": "全体像",
+      "en": "Overview"
+    },
+    "boundary": {
+      "ja": "境界",
+      "en": "Boundary"
+    },
+    "epistemology": {
+      "ja": "認識論",
+      "en": "Epistemology"
+    },
+    "cognition": {
+      "ja": "認識",
+      "en": "Cognition"
+    },
+    "meaning": {
+      "ja": "意味",
+      "en": "Meaning"
+    },
+    "language": {
+      "ja": "言語",
+      "en": "Language"
+    },
+    "communication": {
+      "ja": "通信",
+      "en": "Communication"
+    },
+    "commensuration": {
+      "ja": "通約",
+      "en": "Commensuration"
+    },
+    "network": {
+      "ja": "ネットワーク",
+      "en": "Network"
+    },
+    "logical_depth": {
+      "ja": "論理-深度",
+      "en": "Logical depth"
+    },
+    "ai": {
+      "ja": "AI",
+      "en": "AI"
+    },
+    "judgment": {
+      "ja": "判断",
+      "en": "Judgment"
+    },
+    "responsibility": {
+      "ja": "責任",
+      "en": "Responsibility"
+    },
+    "ethics": {
+      "ja": "倫理",
+      "en": "Ethics"
+    },
+    "peace": {
+      "ja": "平和",
+      "en": "Peace"
+    },
+    "consent": {
+      "ja": "同意",
+      "en": "Consent"
+    },
+    "literature": {
+      "ja": "文学",
+      "en": "Literature"
+    },
+    "science": {
+      "ja": "科学",
+      "en": "Science"
+    }
+  },
+  "query_expansions": {
+    "meaning_formation": {
+      "note": "Search-only association; does not assert conceptual identity.",
+      "ja": [
+        "意味はどうやって成立する",
+        "意味ができる",
+        "情報と意味"
+      ],
+      "en": [
+        "how meaning forms",
+        "meaning formation",
+        "information and meaning"
+      ]
+    },
+    "return_path": {
+      "note": "Search-only association; does not assert conceptual identity.",
+      "ja": [
+        "返路",
+        "元へ戻す経路",
+        "結果を返す"
+      ],
+      "en": [
+        "return path",
+        "path of return",
+        "returning consequences"
+      ]
+    },
+    "judgment_delegation": {
+      "note": "Search-only association; does not assert conceptual identity.",
+      "ja": [
+        "判断を任せる",
+        "判断を委ねる",
+        "決定権を渡す",
+        "人間に判断を残す"
+      ],
+      "en": [
+        "delegate judgment",
+        "hand over decision authority",
+        "retain human judgment"
+      ]
+    },
+    "commensuration_gap": {
+      "note": "Search-only association; does not assert conceptual identity.",
+      "ja": [
+        "同じ言葉なのに話が噏み合わない",
+        "分野が違うと通じない",
+        "異なる世界観を比較する"
+      ],
+      "en": [
+        "same words but frameworks do not match",
+        "different fields do not communicate",
+        "compare different worldviews"
+      ]
+    },
+    "literature_worldmaking": {
+      "note": "Search-only association; does not assert conceptual identity.",
+      "ja": [
+        "文学は何をしている",
+        "物語が世界を作る",
+        "世界制作としての文学"
+      ],
+      "en": [
+        "what literature does",
+        "stories make worlds",
+        "literature as worldmaking"
+      ]
+    },
+    "science_boundary": {
+      "note": "Search-only association; does not assert conceptual identity.",
+      "ja": [
+        "科学と存在境界論",
+        "科学と宗教",
+        "主観と客観"
+      ],
+      "en": [
+        "science and Scientific Ontology",
+        "science and religion",
+        "subjective and objective"
+      ]
+    },
+    "consent_one_bit": {
+      "note": "Search-only association; does not assert conceptual identity.",
+      "ja": [
+        "同意を一ビット",
+        "同意するしかない",
+        "留保付きで受諾する"
+      ],
+      "en": [
+        "one-bit consent",
+        "no option but to consent",
+        "accept with reservations"
+      ]
+    },
+    "peace_limited_contact": {
+      "note": "Search-only association; does not assert conceptual identity.",
+      "ja": [
+        "すべてを開かない平和",
+        "差分を消さない平和",
+        "限定的な接触"
+      ],
+      "en": [
+        "peace without opening every channel",
+        "peace without erasing difference",
+        "limited contact"
+      ]
+    },
+    "grammar_beyond_syntax": {
+      "note": "Search-only association; does not assert conceptual identity.",
+      "ja": [
+        "文法は語順だけ",
+        "身振りも文法",
+        "制度も文法"
+      ],
+      "en": [
+        "grammar is more than syntax",
+        "gesture as grammar",
+        "institutional grammar"
+      ]
+    }
+  },
+  "documents": [
+    {
+      "id": "00_overview_scientific_ontology_operational_outline_en",
+      "id_source": "fallback",
+      "path": "00_Overview/Scientific_Ontology_Operational_Outline.en.md",
+      "title": {
+        "ja": "存在境界論 運用アウトライン 英語通約",
+        "en": "Scientific Ontology Operational Outline"
+      },
+      "layer": "00_Overview",
+      "document_type": "assertion_document",
+      "status": "Public Overview Candidate / cross-series operational orientation",
+      "state": "public-candidate",
+      "scope": "English commensuration of the cross-series operational orientation",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": "english_commensuration_of_japanese_authoritative_source",
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [
+          "00_Overview/Scientific_Ontology_Operational_Outline.ja.md"
+        ],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "存在境界論 運用アウトライン 英語通約",
+            "normalized": "存在境界論 運用アウトライン 英語通約",
+            "compact": "存在境界論運用アウトライン英語通約"
+          },
+          {
+            "lang": "en",
+            "text": "Scientific Ontology Operational Outline",
+            "normalized": "scientific ontology operational outline",
+            "compact": "scientificontologyoperationaloutline"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "English commensuration of the cross-series operational orientation",
+            "normalized": "english commensuration of the cross series operational orientation",
+            "compact": "englishcommensurationofthecrossseriesoperationalorientation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "00_overview_truth_management_and_boundary_pdca_ja",
+      "id_source": "fallback",
+      "path": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+      "title": {
+        "ja": "真理の経営学｜目的・共有・境界によるPDCAの再定義",
+        "en": "Truth Management and Boundary PDCA"
+      },
+      "layer": "00_Overview",
+      "document_type": "assertion_document",
+      "status": "Methodological note",
+      "state": "public-candidate",
+      "scope": "purpose, sharing, world formation, boundary CA, PDCA reinterpretation, historical and organizational application",
+      "role": {
+        "ja": "候補目的を第一義として選び、共有後の世界を境界CAで再照合する運用モデル",
+        "en": "Operational model for purpose commitment, shared world formation, and boundary CA"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [
+          "boundary_ca",
+          "first_shared_and_world_forming_purpose",
+          "pdca_reinterpretation",
+          "purpose_recommitment"
+        ],
+        "imports": [
+          "candidate_purposes",
+          "cognitive_axis",
+          "excluded_boundaries",
+          "hidden_costs",
+          "untranslatable_residuals"
+        ],
+        "exports": [
+          "boundary_ca_requirements",
+          "forbidden_externalizations",
+          "preserved_history_requirements",
+          "purpose_contract",
+          "stop_conditions"
+        ]
+      },
+      "relations": {
+        "related": [],
+        "tests": [
+          "04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md",
+          "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+        ],
+        "returns_to": [
+          "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+          "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+        ],
+        "delegates": [
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+          "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
+          "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+        ]
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "真理の経営学｜目的・共有・境界によるPDCAの再定義",
+            "normalized": "真理の経営学 目的 共有 境界によるpdcaの再定義",
+            "compact": "真理の経営学目的共有境界によるpdcaの再定義"
+          },
+          {
+            "lang": "en",
+            "text": "Truth Management and Boundary PDCA",
+            "normalized": "truth management and boundary pdca",
+            "compact": "truthmanagementandboundarypdca"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "boundary_ca",
+            "normalized": "boundary ca",
+            "compact": "boundaryca"
+          },
+          {
+            "lang": "und",
+            "text": "first_shared_and_world_forming_purpose",
+            "normalized": "first shared and world forming purpose",
+            "compact": "firstsharedandworldformingpurpose"
+          },
+          {
+            "lang": "und",
+            "text": "pdca_reinterpretation",
+            "normalized": "pdca reinterpretation",
+            "compact": "pdcareinterpretation"
+          },
+          {
+            "lang": "und",
+            "text": "purpose_recommitment",
+            "normalized": "purpose recommitment",
+            "compact": "purposerecommitment"
+          }
+        ],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "候補目的を第一義として選び、共有後の世界を境界CAで再照合する運用モデル",
+            "normalized": "候補目的を第一義として選び 共有後の世界を境界caで再照合する運用モデル",
+            "compact": "候補目的を第一義として選び共有後の世界を境界caで再照合する運用モデル"
+          },
+          {
+            "lang": "en",
+            "text": "Operational model for purpose commitment, shared world formation, and boundary CA",
+            "normalized": "operational model for purpose commitment shared world formation and boundary ca",
+            "compact": "operationalmodelforpurposecommitmentsharedworldformationandboundaryca"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "purpose, sharing, world formation, boundary CA, PDCA reinterpretation, historical and organizational application",
+            "normalized": "purpose sharing world formation boundary ca pdca reinterpretation historical and organizational application",
+            "compact": "purposesharingworldformationboundarycapdcareinterpretationhistoricalandorganizationalapplication"
+          }
+        ]
+      }
+    },
+    {
+      "id": "01_sat_truth_boundary_realism_principle",
+      "id_source": "fallback",
+      "path": "01_Sat_Truth/Boundary_Realism_Principle.md",
+      "title": {
+        "ja": "境界実在性の原則",
+        "en": "Boundary Realism Principle"
+      },
+      "layer": "01_Sat_Truth",
+      "document_type": "assertion_document",
+      "status": "Foundational principle",
+      "state": "public-candidate",
+      "scope": "boundary realism, ontological reserve, AMP repositioning",
+      "role": {
+        "ja": "Sat層の基底配置文書",
+        "en": "Foundational positioning document for the Sat layer"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [
+          "01_Sat_Truth/AMP_Introduction.md",
+          "01_Sat_Truth/Four_Axioms_of_Existence.md"
+        ],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "境界実在性の原則",
+            "normalized": "境界実在性の原則",
+            "compact": "境界実在性の原則"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary Realism Principle",
+            "normalized": "boundary realism principle",
+            "compact": "boundaryrealismprinciple"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "Sat層の基底配置文書",
+            "normalized": "sat層の基底配置文書",
+            "compact": "sat層の基底配置文書"
+          },
+          {
+            "lang": "en",
+            "text": "Foundational positioning document for the Sat layer",
+            "normalized": "foundational positioning document for the sat layer",
+            "compact": "foundationalpositioningdocumentforthesatlayer"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "boundary realism, ontological reserve, AMP repositioning",
+            "normalized": "boundary realism ontological reserve amp repositioning",
+            "compact": "boundaryrealismontologicalreserveamprepositioning"
+          }
+        ]
+      }
+    },
+    {
+      "id": "02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "id_source": "fallback",
+      "path": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+      "title": {
+        "ja": "エントロピー属性つき差分と認識軸生成",
+        "en": "Entropy-Attributed Difference and Cognitive Axis Formation"
+      },
+      "layer": "02_Raj_Beauty",
+      "document_type": "assertion_document",
+      "status": "Model",
+      "state": "public-candidate",
+      "scope": "difference, attention, abstraction, sensibility, understanding, value, cost, residual, cognitive-axis formation",
+      "role": {
+        "ja": "認識方向の生成、安定、変形の定義所有者",
+        "en": "Canonical owner of cognitive-direction formation, stabilization, and transformation"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [
+          "attention_and_abstraction_dynamics",
+          "cognitive_axis_formation",
+          "cognitive_axis_stabilization",
+          "cognitive_axis_transformation",
+          "entropy_attributed_difference"
+        ],
+        "imports": [
+          "epistemic_boundary_conditions",
+          "meaning_generation"
+        ],
+        "exports": [
+          "axis_transformation_conditions",
+          "cognitive_axis",
+          "residual_profile",
+          "stabilized_attention_abstraction_pattern"
+        ]
+      },
+      "relations": {
+        "related": [],
+        "tests": [
+          "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+          "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+        ],
+        "returns_to": [
+          "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+          "01_Sat_Truth/Meaning_Generation_Model.md"
+        ],
+        "delegates": [
+          "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+          "01_Sat_Truth/Meaning_Generation_Model.md",
+          "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+        ]
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "エントロピー属性つき差分と認識軸生成",
+            "normalized": "エントロピー属性つき差分と認識軸生成",
+            "compact": "エントロピー属性つき差分と認識軸生成"
+          },
+          {
+            "lang": "en",
+            "text": "Entropy-Attributed Difference and Cognitive Axis Formation",
+            "normalized": "entropy attributed difference and cognitive axis formation",
+            "compact": "entropyattributeddifferenceandcognitiveaxisformation"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "attention_and_abstraction_dynamics",
+            "normalized": "attention and abstraction dynamics",
+            "compact": "attentionandabstractiondynamics"
+          },
+          {
+            "lang": "und",
+            "text": "cognitive_axis_formation",
+            "normalized": "cognitive axis formation",
+            "compact": "cognitiveaxisformation"
+          },
+          {
+            "lang": "und",
+            "text": "cognitive_axis_stabilization",
+            "normalized": "cognitive axis stabilization",
+            "compact": "cognitiveaxisstabilization"
+          },
+          {
+            "lang": "und",
+            "text": "cognitive_axis_transformation",
+            "normalized": "cognitive axis transformation",
+            "compact": "cognitiveaxistransformation"
+          },
+          {
+            "lang": "und",
+            "text": "entropy_attributed_difference",
+            "normalized": "entropy attributed difference",
+            "compact": "entropyattributeddifference"
+          }
+        ],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "認識方向の生成、安定、変形の定義所有者",
+            "normalized": "認識方向の生成 安定 変形の定義所有者",
+            "compact": "認識方向の生成安定変形の定義所有者"
+          },
+          {
+            "lang": "en",
+            "text": "Canonical owner of cognitive-direction formation, stabilization, and transformation",
+            "normalized": "canonical owner of cognitive direction formation stabilization and transformation",
+            "compact": "canonicalownerofcognitivedirectionformationstabilizationandtransformation"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "difference, attention, abstraction, sensibility, understanding, value, cost, residual, cognitive-axis formation",
+            "normalized": "difference attention abstraction sensibility understanding value cost residual cognitive axis formation",
+            "compact": "differenceattentionabstractionsensibilityunderstandingvaluecostresidualcognitiveaxisformation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "id_source": "fallback",
+      "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+      "title": {
+        "ja": "境界外交とポート配分",
+        "en": "Boundary Diplomacy and Port Allocation"
+      },
+      "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
+      "document_type": "assertion_document",
+      "status": "Cross-domain Ontological Note / First Draft",
+      "state": "public-candidate",
+      "scope": "boundary diplomacy, port allocation, cognitive axes, commensuration, peace, AI",
+      "role": {
+        "ja": "ポート配分、通約、保留、再開、ゲートウェイ捕捉の動態所有者",
+        "en": "Canonical owner of the dynamics of port allocation, commensuration, holding, reopening, and gateway capture"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [
+          "boundary_diplomacy",
+          "gateway_capture",
+          "multi_port_potentiality",
+          "port_allocation",
+          "scoped_port_operation"
+        ],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "境界外交とポート配分",
+            "normalized": "境界外交とポート配分",
+            "compact": "境界外交とポート配分"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary Diplomacy and Port Allocation",
+            "normalized": "boundary diplomacy and port allocation",
+            "compact": "boundarydiplomacyandportallocation"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "boundary_diplomacy",
+            "normalized": "boundary diplomacy",
+            "compact": "boundarydiplomacy"
+          },
+          {
+            "lang": "und",
+            "text": "gateway_capture",
+            "normalized": "gateway capture",
+            "compact": "gatewaycapture"
+          },
+          {
+            "lang": "und",
+            "text": "multi_port_potentiality",
+            "normalized": "multi port potentiality",
+            "compact": "multiportpotentiality"
+          },
+          {
+            "lang": "und",
+            "text": "port_allocation",
+            "normalized": "port allocation",
+            "compact": "portallocation"
+          },
+          {
+            "lang": "und",
+            "text": "scoped_port_operation",
+            "normalized": "scoped port operation",
+            "compact": "scopedportoperation"
+          }
+        ],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "ポート配分、通約、保留、再開、ゲートウェイ捕捉の動態所有者",
+            "normalized": "ポート配分 通約 保留 再開 ゲートウェイ捕捉の動態所有者",
+            "compact": "ポート配分通約保留再開ゲートウェイ捕捉の動態所有者"
+          },
+          {
+            "lang": "en",
+            "text": "Canonical owner of the dynamics of port allocation, commensuration, holding, reopening, and gateway capture",
+            "normalized": "canonical owner of the dynamics of port allocation commensuration holding reopening and gateway capture",
+            "compact": "canonicalownerofthedynamicsofportallocationcommensurationholdingreopeningandgatewaycapture"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "boundary diplomacy, port allocation, cognitive axes, commensuration, peace, AI",
+            "normalized": "boundary diplomacy port allocation cognitive axes commensuration peace ai",
+            "compact": "boundarydiplomacyportallocationcognitiveaxescommensurationpeaceai"
+          }
+        ]
+      }
+    },
+    {
+      "id": "05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "id_source": "fallback",
+      "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+      "title": {
+        "ja": "認識動態コミュニケーションモデル",
+        "en": "Cognitive Dynamics Communication Model"
+      },
+      "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "cognitive field, cognitive phase, operational discretization, port, commensuration, logical depth, return paths",
+      "role": {
+        "ja": "連続する認識と離散的運用の間の操作構造を所有するメタモデル",
+        "en": "Metamodel owning the operational mapping between seamless cognition and discrete operation"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [
+          "cognitive_field",
+          "cognitive_phase",
+          "operational_discretization",
+          "operational_port"
+        ],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "認識動態コミュニケーションモデル",
+            "normalized": "認識動態コミュニケーションモデル",
+            "compact": "認識動態コミュニケーションモデル"
+          },
+          {
+            "lang": "en",
+            "text": "Cognitive Dynamics Communication Model",
+            "normalized": "cognitive dynamics communication model",
+            "compact": "cognitivedynamicscommunicationmodel"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "cognitive_field",
+            "normalized": "cognitive field",
+            "compact": "cognitivefield"
+          },
+          {
+            "lang": "und",
+            "text": "cognitive_phase",
+            "normalized": "cognitive phase",
+            "compact": "cognitivephase"
+          },
+          {
+            "lang": "und",
+            "text": "operational_discretization",
+            "normalized": "operational discretization",
+            "compact": "operationaldiscretization"
+          },
+          {
+            "lang": "und",
+            "text": "operational_port",
+            "normalized": "operational port",
+            "compact": "operationalport"
+          }
+        ],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "連続する認識と離散的運用の間の操作構造を所有するメタモデル",
+            "normalized": "連続する認識と離散的運用の間の操作構造を所有するメタモデル",
+            "compact": "連続する認識と離散的運用の間の操作構造を所有するメタモデル"
+          },
+          {
+            "lang": "en",
+            "text": "Metamodel owning the operational mapping between seamless cognition and discrete operation",
+            "normalized": "metamodel owning the operational mapping between seamless cognition and discrete operation",
+            "compact": "metamodelowningtheoperationalmappingbetweenseamlesscognitionanddiscreteoperation"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "cognitive field, cognitive phase, operational discretization, port, commensuration, logical depth, return paths",
+            "normalized": "cognitive field cognitive phase operational discretization port commensuration logical depth return paths",
+            "compact": "cognitivefieldcognitivephaseoperationaldiscretizationportcommensurationlogicaldepthreturnpaths"
+          }
+        ]
+      }
+    },
+    {
+      "id": "05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "id_source": "fallback",
+      "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
+      "title": {
+        "ja": "存在相の圧縮",
+        "en": "Compression of Existence Phases"
+      },
+      "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
+      "document_type": "assertion_document",
+      "status": "Research Note / First Draft",
+      "state": "public-candidate",
+      "scope": "existence phases, compression, cognition, society, economy, AI, peace",
+      "role": {
+        "ja": "存在相圧縮の利益、損失、外部化、再開条件の診断所有者",
+        "en": "Canonical diagnostic owner for the gains, losses, externalization, and reopening conditions of existence-phase compression"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [
+          "existence_phase",
+          "existence_phase_compression",
+          "single_metric_compression"
+        ],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "存在相の圧縮",
+            "normalized": "存在相の圧縮",
+            "compact": "存在相の圧縮"
+          },
+          {
+            "lang": "en",
+            "text": "Compression of Existence Phases",
+            "normalized": "compression of existence phases",
+            "compact": "compressionofexistencephases"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "existence_phase",
+            "normalized": "existence phase",
+            "compact": "existencephase"
+          },
+          {
+            "lang": "und",
+            "text": "existence_phase_compression",
+            "normalized": "existence phase compression",
+            "compact": "existencephasecompression"
+          },
+          {
+            "lang": "und",
+            "text": "single_metric_compression",
+            "normalized": "single metric compression",
+            "compact": "singlemetriccompression"
+          }
+        ],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "存在相圧縮の利益、損失、外部化、再開条件の診断所有者",
+            "normalized": "存在相圧縮の利益 損失 外部化 再開条件の診断所有者",
+            "compact": "存在相圧縮の利益損失外部化再開条件の診断所有者"
+          },
+          {
+            "lang": "en",
+            "text": "Canonical diagnostic owner for the gains, losses, externalization, and reopening conditions of existence-phase compression",
+            "normalized": "canonical diagnostic owner for the gains losses externalization and reopening conditions of existence phase compression",
+            "compact": "canonicaldiagnosticownerforthegainslossesexternalizationandreopeningconditionsofexistencephasecompression"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "existence phases, compression, cognition, society, economy, AI, peace",
+            "normalized": "existence phases compression cognition society economy ai peace",
+            "compact": "existencephasescompressioncognitionsocietyeconomyaipeace"
+          }
+        ]
+      }
+    },
+    {
+      "id": "05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "id_source": "fallback",
+      "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
+      "title": {
+        "ja": "組織境界とポートモデル",
+        "en": "Organizational Boundary and Port Model"
+      },
+      "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
+      "document_type": "assertion_document",
+      "status": "Cross-domain ontological note",
+      "state": "public-candidate",
+      "scope": "organization, responsibility boundary, ports, protocols, audit, abnormality, externalization, AI, peace",
+      "role": {
+        "ja": "目的を責任、通信、監査、停止、返路へ変換する横断実装モデル",
+        "en": "Cross-domain model converting purpose into responsibility, communication, audit, stop conditions, and return paths"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [
+          "boundary_update",
+          "organizational_boundary",
+          "organizational_negentropy_definition",
+          "organizational_port",
+          "port_protocol_and_audit",
+          "responsibility_boundary"
+        ],
+        "imports": [
+          "boundary_ca_requirements",
+          "forbidden_externalizations",
+          "preserved_history_requirements",
+          "purpose_contract",
+          "stop_conditions"
+        ],
+        "exports": [
+          "audit_requirements",
+          "implementation_specification",
+          "open_marker_requirements",
+          "operational_return_path",
+          "port_contract",
+          "responsibility_map"
+        ]
+      },
+      "relations": {
+        "related": [],
+        "tests": [
+          "04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md",
+          "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+        ],
+        "returns_to": [
+          "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+          "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+        ],
+        "delegates": [
+          "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+          "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+        ]
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "組織境界とポートモデル",
+            "normalized": "組織境界とポートモデル",
+            "compact": "組織境界とポートモデル"
+          },
+          {
+            "lang": "en",
+            "text": "Organizational Boundary and Port Model",
+            "normalized": "organizational boundary and port model",
+            "compact": "organizationalboundaryandportmodel"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "boundary_update",
+            "normalized": "boundary update",
+            "compact": "boundaryupdate"
+          },
+          {
+            "lang": "und",
+            "text": "organizational_boundary",
+            "normalized": "organizational boundary",
+            "compact": "organizationalboundary"
+          },
+          {
+            "lang": "und",
+            "text": "organizational_negentropy_definition",
+            "normalized": "organizational negentropy definition",
+            "compact": "organizationalnegentropydefinition"
+          },
+          {
+            "lang": "und",
+            "text": "organizational_port",
+            "normalized": "organizational port",
+            "compact": "organizationalport"
+          },
+          {
+            "lang": "und",
+            "text": "port_protocol_and_audit",
+            "normalized": "port protocol and audit",
+            "compact": "portprotocolandaudit"
+          },
+          {
+            "lang": "und",
+            "text": "responsibility_boundary",
+            "normalized": "responsibility boundary",
+            "compact": "responsibilityboundary"
+          }
+        ],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "目的を責任、通信、監査、停止、返路へ変換する横断実装モデル",
+            "normalized": "目的を責任 通信 監査 停止 返路へ変換する横断実装モデル",
+            "compact": "目的を責任通信監査停止返路へ変換する横断実装モデル"
+          },
+          {
+            "lang": "en",
+            "text": "Cross-domain model converting purpose into responsibility, communication, audit, stop conditions, and return paths",
+            "normalized": "cross domain model converting purpose into responsibility communication audit stop conditions and return paths",
+            "compact": "crossdomainmodelconvertingpurposeintoresponsibilitycommunicationauditstopconditionsandreturnpaths"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "organization, responsibility boundary, ports, protocols, audit, abnormality, externalization, AI, peace",
+            "normalized": "organization responsibility boundary ports protocols audit abnormality externalization ai peace",
+            "compact": "organizationresponsibilityboundaryportsprotocolsauditabnormalityexternalizationaipeace"
+          }
+        ]
+      }
+    },
+    {
+      "id": "05_research_notes_language_meaning_and_communication_phase_studies_compressed_experience_qualia_and_literature_ja",
+      "id_source": "fallback",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
+      "title": {
+        "ja": "圧縮経験・クオリア・文学",
+        "en": "Compressed Experience, Qualia, and Literature"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "圧縮経験・クオリア・文学",
+            "normalized": "圧縮経験 クオリア 文学",
+            "compact": "圧縮経験クオリア文学"
+          },
+          {
+            "lang": "en",
+            "text": "Compressed Experience, Qualia, and Literature",
+            "normalized": "compressed experience qualia and literature",
+            "compact": "compressedexperiencequaliaandliterature"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "05_research_notes_language_meaning_and_communication_phase_studies_intension_extension_and_false_extension_ja",
+      "id_source": "fallback",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
+      "title": {
+        "ja": "内包・外延・偽外延",
+        "en": "Intension, Extension, and False Extension"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "内包・外延・偽外延",
+            "normalized": "内包 外延 偽外延",
+            "compact": "内包外延偽外延"
+          },
+          {
+            "lang": "en",
+            "text": "Intension, Extension, and False Extension",
+            "normalized": "intension extension and false extension",
+            "compact": "intensionextensionandfalseextension"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "05_research_notes_language_meaning_and_communication_phase_studies_linguistic_frame_differences_between_japanese_and_english_ja",
+      "id_source": "fallback",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md",
+      "title": {
+        "ja": "日本語と英語の文法枠",
+        "en": "Linguistic Frame Differences between Japanese and English"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "日本語と英語の文法枠",
+            "normalized": "日本語と英語の文法枠",
+            "compact": "日本語と英語の文法枠"
+          },
+          {
+            "lang": "en",
+            "text": "Linguistic Frame Differences between Japanese and English",
+            "normalized": "linguistic frame differences between japanese and english",
+            "compact": "linguisticframedifferencesbetweenjapaneseandenglish"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "05_research_notes_language_meaning_and_communication_phase_studies_speech_as_sequential_decompression_ja",
+      "id_source": "fallback",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md",
+      "title": {
+        "ja": "発話とは何か",
+        "en": "Speech as Sequential Decompression"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "発話とは何か",
+            "normalized": "発話とは何か",
+            "compact": "発話とは何か"
+          },
+          {
+            "lang": "en",
+            "text": "Speech as Sequential Decompression",
+            "normalized": "speech as sequential decompression",
+            "compact": "speechassequentialdecompression"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "ai_language_generation_grammatical_frames",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.ja.md",
+      "title": {
+        "ja": "AI言語生成と文法枠",
+        "en": "AI Language Generation and Grammatical Frames"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "ai",
+          "language",
+          "communication",
+          "cognition"
+        ],
+        "aliases": {
+          "ja": [
+            "AIの文法枠",
+            "LLMの言語生成",
+            "AIの意味閉鎖"
+          ],
+          "en": [
+            "AI grammatical frames",
+            "LLM language generation",
+            "AI meaning closure"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "AIはどのように文法枠を選ぶのか",
+            "言語が変わるとAIの応答はどう変わるのか",
+            "AIの出力が早く閉じるとはどういうことか"
+          ],
+          "en": [
+            "How does AI select grammatical frames?",
+            "How does language choice change AI responses?",
+            "What does premature closure in AI output mean?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "AI言語生成と文法枠",
+            "normalized": "ai言語生成と文法枠",
+            "compact": "ai言語生成と文法枠"
+          },
+          {
+            "lang": "en",
+            "text": "AI Language Generation and Grammatical Frames",
+            "normalized": "ai language generation and grammatical frames",
+            "compact": "ailanguagegenerationandgrammaticalframes"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "AIの文法枠",
+            "normalized": "aiの文法枠",
+            "compact": "aiの文法枠"
+          },
+          {
+            "lang": "ja",
+            "text": "LLMの言語生成",
+            "normalized": "llmの言語生成",
+            "compact": "llmの言語生成"
+          },
+          {
+            "lang": "ja",
+            "text": "AIの意味閉鎖",
+            "normalized": "aiの意味閉鎖",
+            "compact": "aiの意味閉鎖"
+          },
+          {
+            "lang": "en",
+            "text": "AI grammatical frames",
+            "normalized": "ai grammatical frames",
+            "compact": "aigrammaticalframes"
+          },
+          {
+            "lang": "en",
+            "text": "LLM language generation",
+            "normalized": "llm language generation",
+            "compact": "llmlanguagegeneration"
+          },
+          {
+            "lang": "en",
+            "text": "AI meaning closure",
+            "normalized": "ai meaning closure",
+            "compact": "aimeaningclosure"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "ai",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "ja",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "en",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "und",
+            "text": "language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "ja",
+            "text": "言語",
+            "normalized": "言語",
+            "compact": "言語"
+          },
+          {
+            "lang": "en",
+            "text": "Language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          },
+          {
+            "lang": "ja",
+            "text": "認識",
+            "normalized": "認識",
+            "compact": "認識"
+          },
+          {
+            "lang": "en",
+            "text": "Cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "AIはどのように文法枠を選ぶのか",
+            "normalized": "aiはどのように文法枠を選ぶのか",
+            "compact": "aiはどのように文法枠を選ぶのか"
+          },
+          {
+            "lang": "ja",
+            "text": "言語が変わるとAIの応答はどう変わるのか",
+            "normalized": "言語が変わるとaiの応答はどう変わるのか",
+            "compact": "言語が変わるとaiの応答はどう変わるのか"
+          },
+          {
+            "lang": "ja",
+            "text": "AIの出力が早く閉じるとはどういうことか",
+            "normalized": "aiの出力が早く閉じるとはどういうことか",
+            "compact": "aiの出力が早く閉じるとはどういうことか"
+          },
+          {
+            "lang": "en",
+            "text": "How does AI select grammatical frames?",
+            "normalized": "how does ai select grammatical frames",
+            "compact": "howdoesaiselectgrammaticalframes"
+          },
+          {
+            "lang": "en",
+            "text": "How does language choice change AI responses?",
+            "normalized": "how does language choice change ai responses",
+            "compact": "howdoeslanguagechoicechangeairesponses"
+          },
+          {
+            "lang": "en",
+            "text": "What does premature closure in AI output mean?",
+            "normalized": "what does premature closure in ai output mean",
+            "compact": "whatdoesprematureclosureinaioutputmean"
+          }
+        ],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "boundary_epistemological_critique",
+      "id_source": "explicit",
+      "path": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+      "title": {
+        "ja": "境界認識批判",
+        "en": "Boundary Epistemological Critique"
+      },
+      "layer": "01_Sat_Truth",
+      "document_type": "assertion_document",
+      "status": "Foundational principle",
+      "state": "public-candidate",
+      "scope": "epistemic boundary conditions, synchronization, collation, residual preservation, false closure",
+      "role": {
+        "ja": "知の成立条件と失敗条件の定義所有者",
+        "en": "Canonical owner of epistemic validity and failure conditions"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "boundary",
+          "epistemology",
+          "cognition",
+          "science"
+        ],
+        "aliases": {
+          "ja": [
+            "境界認識",
+            "知の成立条件",
+            "認識と照合"
+          ],
+          "en": [
+            "boundary epistemology",
+            "conditions of knowledge",
+            "cognition and collation"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "知識はどうやって成立するのか",
+            "主観と客観をどう照合するのか",
+            "観測から漏れる残差をどう扱うのか"
+          ],
+          "en": [
+            "How does knowledge become possible?",
+            "How can subjective and objective descriptions be collated?",
+            "How should residuals outside observation be retained?"
+          ]
+        },
+        "entry_level": "foundation"
+      },
+      "concepts": {
+        "owned": [
+          "epistemic_boundary_conditions"
+        ],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "境界認識批判",
+            "normalized": "境界認識批判",
+            "compact": "境界認識批判"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary Epistemological Critique",
+            "normalized": "boundary epistemological critique",
+            "compact": "boundaryepistemologicalcritique"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "epistemic_boundary_conditions",
+            "normalized": "epistemic boundary conditions",
+            "compact": "epistemicboundaryconditions"
+          }
+        ],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "境界認識",
+            "normalized": "境界認識",
+            "compact": "境界認識"
+          },
+          {
+            "lang": "ja",
+            "text": "知の成立条件",
+            "normalized": "知の成立条件",
+            "compact": "知の成立条件"
+          },
+          {
+            "lang": "ja",
+            "text": "認識と照合",
+            "normalized": "認識と照合",
+            "compact": "認識と照合"
+          },
+          {
+            "lang": "en",
+            "text": "boundary epistemology",
+            "normalized": "boundary epistemology",
+            "compact": "boundaryepistemology"
+          },
+          {
+            "lang": "en",
+            "text": "conditions of knowledge",
+            "normalized": "conditions of knowledge",
+            "compact": "conditionsofknowledge"
+          },
+          {
+            "lang": "en",
+            "text": "cognition and collation",
+            "normalized": "cognition and collation",
+            "compact": "cognitionandcollation"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "und",
+            "text": "epistemology",
+            "normalized": "epistemology",
+            "compact": "epistemology"
+          },
+          {
+            "lang": "ja",
+            "text": "認識論",
+            "normalized": "認識論",
+            "compact": "認識論"
+          },
+          {
+            "lang": "en",
+            "text": "Epistemology",
+            "normalized": "epistemology",
+            "compact": "epistemology"
+          },
+          {
+            "lang": "und",
+            "text": "cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          },
+          {
+            "lang": "ja",
+            "text": "認識",
+            "normalized": "認識",
+            "compact": "認識"
+          },
+          {
+            "lang": "en",
+            "text": "Cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          },
+          {
+            "lang": "und",
+            "text": "science",
+            "normalized": "science",
+            "compact": "science"
+          },
+          {
+            "lang": "ja",
+            "text": "科学",
+            "normalized": "科学",
+            "compact": "科学"
+          },
+          {
+            "lang": "en",
+            "text": "Science",
+            "normalized": "science",
+            "compact": "science"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "知識はどうやって成立するのか",
+            "normalized": "知識はどうやって成立するのか",
+            "compact": "知識はどうやって成立するのか"
+          },
+          {
+            "lang": "ja",
+            "text": "主観と客観をどう照合するのか",
+            "normalized": "主観と客観をどう照合するのか",
+            "compact": "主観と客観をどう照合するのか"
+          },
+          {
+            "lang": "ja",
+            "text": "観測から漏れる残差をどう扱うのか",
+            "normalized": "観測から漏れる残差をどう扱うのか",
+            "compact": "観測から漏れる残差をどう扱うのか"
+          },
+          {
+            "lang": "en",
+            "text": "How does knowledge become possible?",
+            "normalized": "how does knowledge become possible",
+            "compact": "howdoesknowledgebecomepossible"
+          },
+          {
+            "lang": "en",
+            "text": "How can subjective and objective descriptions be collated?",
+            "normalized": "how can subjective and objective descriptions be collated",
+            "compact": "howcansubjectiveandobjectivedescriptionsbecollated"
+          },
+          {
+            "lang": "en",
+            "text": "How should residuals outside observation be retained?",
+            "normalized": "how should residuals outside observation be retained",
+            "compact": "howshouldresidualsoutsideobservationberetained"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "知の成立条件と失敗条件の定義所有者",
+            "normalized": "知の成立条件と失敗条件の定義所有者",
+            "compact": "知の成立条件と失敗条件の定義所有者"
+          },
+          {
+            "lang": "en",
+            "text": "Canonical owner of epistemic validity and failure conditions",
+            "normalized": "canonical owner of epistemic validity and failure conditions",
+            "compact": "canonicalownerofepistemicvalidityandfailureconditions"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "epistemic boundary conditions, synchronization, collation, residual preservation, false closure",
+            "normalized": "epistemic boundary conditions synchronization collation residual preservation false closure",
+            "compact": "epistemicboundaryconditionssynchronizationcollationresidualpreservationfalseclosure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "commensuration_cross_grammatical_collation",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+      "title": {
+        "ja": "通約とは何か",
+        "en": "Commensuration as Cross-Grammatical Collation"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "commensuration",
+          "language",
+          "communication",
+          "boundary"
+        ],
+        "aliases": {
+          "ja": [
+            "通約とは何か",
+            "文法枠間照合",
+            "翻訳残差"
+          ],
+          "en": [
+            "what is commensuration",
+            "cross-grammatical collation",
+            "translation residuals"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "異なる言語や分野を同一化せず通約するにはどうすればよいか",
+            "翻訳で何を保持し何を残差として残すのか",
+            "偽通約とは何か"
+          ],
+          "en": [
+            "How can languages or fields be commensurated without identification?",
+            "What should translation preserve and retain as residual?",
+            "What is false commensuration?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "通約とは何か",
+            "normalized": "通約とは何か",
+            "compact": "通約とは何か"
+          },
+          {
+            "lang": "en",
+            "text": "Commensuration as Cross-Grammatical Collation",
+            "normalized": "commensuration as cross grammatical collation",
+            "compact": "commensurationascrossgrammaticalcollation"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "通約とは何か",
+            "normalized": "通約とは何か",
+            "compact": "通約とは何か"
+          },
+          {
+            "lang": "ja",
+            "text": "文法枠間照合",
+            "normalized": "文法枠間照合",
+            "compact": "文法枠間照合"
+          },
+          {
+            "lang": "ja",
+            "text": "翻訳残差",
+            "normalized": "翻訳残差",
+            "compact": "翻訳残差"
+          },
+          {
+            "lang": "en",
+            "text": "what is commensuration",
+            "normalized": "what is commensuration",
+            "compact": "whatiscommensuration"
+          },
+          {
+            "lang": "en",
+            "text": "cross-grammatical collation",
+            "normalized": "cross grammatical collation",
+            "compact": "crossgrammaticalcollation"
+          },
+          {
+            "lang": "en",
+            "text": "translation residuals",
+            "normalized": "translation residuals",
+            "compact": "translationresiduals"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "ja",
+            "text": "通約",
+            "normalized": "通約",
+            "compact": "通約"
+          },
+          {
+            "lang": "en",
+            "text": "Commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "und",
+            "text": "language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "ja",
+            "text": "言語",
+            "normalized": "言語",
+            "compact": "言語"
+          },
+          {
+            "lang": "en",
+            "text": "Language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "異なる言語や分野を同一化せず通約するにはどうすればよいか",
+            "normalized": "異なる言語や分野を同一化せず通約するにはどうすればよいか",
+            "compact": "異なる言語や分野を同一化せず通約するにはどうすればよいか"
+          },
+          {
+            "lang": "ja",
+            "text": "翻訳で何を保持し何を残差として残すのか",
+            "normalized": "翻訳で何を保持し何を残差として残すのか",
+            "compact": "翻訳で何を保持し何を残差として残すのか"
+          },
+          {
+            "lang": "ja",
+            "text": "偽通約とは何か",
+            "normalized": "偽通約とは何か",
+            "compact": "偽通約とは何か"
+          },
+          {
+            "lang": "en",
+            "text": "How can languages or fields be commensurated without identification?",
+            "normalized": "how can languages or fields be commensurated without identification",
+            "compact": "howcanlanguagesorfieldsbecommensuratedwithoutidentification"
+          },
+          {
+            "lang": "en",
+            "text": "What should translation preserve and retain as residual?",
+            "normalized": "what should translation preserve and retain as residual",
+            "compact": "whatshouldtranslationpreserveandretainasresidual"
+          },
+          {
+            "lang": "en",
+            "text": "What is false commensuration?",
+            "normalized": "what is false commensuration",
+            "compact": "whatisfalsecommensuration"
+          }
+        ],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "consent_boundary_sentence_bit_asymmetry",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md",
+      "title": {
+        "ja": "同意境界とセンテンス／ビット非対称",
+        "en": "Consent Boundary and Sentence/Bit Asymmetry"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research note",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "consent",
+          "communication",
+          "responsibility",
+          "judgment"
+        ],
+        "aliases": {
+          "ja": [
+            "一ビット同意",
+            "同意画面の非対称",
+            "制約下受諾"
+          ],
+          "en": [
+            "one-bit consent",
+            "consent interface asymmetry",
+            "acceptance under constraint"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "長い規約に一ビットで同意する構造は何を落とすのか",
+            "同意するしかない状況をどう記録するのか",
+            "同意の留保を返すにはどんなポートが必要か"
+          ],
+          "en": [
+            "What is lost when long terms receive a one-bit answer?",
+            "How can acceptance under constraint be recorded?",
+            "What response port is needed for consent reservations?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "同意境界とセンテンス／ビット非対称",
+            "normalized": "同意境界とセンテンス ビット非対称",
+            "compact": "同意境界とセンテンスビット非対称"
+          },
+          {
+            "lang": "en",
+            "text": "Consent Boundary and Sentence/Bit Asymmetry",
+            "normalized": "consent boundary and sentence bit asymmetry",
+            "compact": "consentboundaryandsentencebitasymmetry"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "一ビット同意",
+            "normalized": "一ビット同意",
+            "compact": "一ビット同意"
+          },
+          {
+            "lang": "ja",
+            "text": "同意画面の非対称",
+            "normalized": "同意画面の非対称",
+            "compact": "同意画面の非対称"
+          },
+          {
+            "lang": "ja",
+            "text": "制約下受諾",
+            "normalized": "制約下受諾",
+            "compact": "制約下受諾"
+          },
+          {
+            "lang": "en",
+            "text": "one-bit consent",
+            "normalized": "one bit consent",
+            "compact": "onebitconsent"
+          },
+          {
+            "lang": "en",
+            "text": "consent interface asymmetry",
+            "normalized": "consent interface asymmetry",
+            "compact": "consentinterfaceasymmetry"
+          },
+          {
+            "lang": "en",
+            "text": "acceptance under constraint",
+            "normalized": "acceptance under constraint",
+            "compact": "acceptanceunderconstraint"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "consent",
+            "normalized": "consent",
+            "compact": "consent"
+          },
+          {
+            "lang": "ja",
+            "text": "同意",
+            "normalized": "同意",
+            "compact": "同意"
+          },
+          {
+            "lang": "en",
+            "text": "Consent",
+            "normalized": "consent",
+            "compact": "consent"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          },
+          {
+            "lang": "ja",
+            "text": "責任",
+            "normalized": "責任",
+            "compact": "責任"
+          },
+          {
+            "lang": "en",
+            "text": "Responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          },
+          {
+            "lang": "und",
+            "text": "judgment",
+            "normalized": "judgment",
+            "compact": "judgment"
+          },
+          {
+            "lang": "ja",
+            "text": "判断",
+            "normalized": "判断",
+            "compact": "判断"
+          },
+          {
+            "lang": "en",
+            "text": "Judgment",
+            "normalized": "judgment",
+            "compact": "judgment"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "長い規約に一ビットで同意する構造は何を落とすのか",
+            "normalized": "長い規約に一ビットで同意する構造は何を落とすのか",
+            "compact": "長い規約に一ビットで同意する構造は何を落とすのか"
+          },
+          {
+            "lang": "ja",
+            "text": "同意するしかない状況をどう記録するのか",
+            "normalized": "同意するしかない状況をどう記録するのか",
+            "compact": "同意するしかない状況をどう記録するのか"
+          },
+          {
+            "lang": "ja",
+            "text": "同意の留保を返すにはどんなポートが必要か",
+            "normalized": "同意の留保を返すにはどんなポートが必要か",
+            "compact": "同意の留保を返すにはどんなポートが必要か"
+          },
+          {
+            "lang": "en",
+            "text": "What is lost when long terms receive a one-bit answer?",
+            "normalized": "what is lost when long terms receive a one bit answer",
+            "compact": "whatislostwhenlongtermsreceiveaonebitanswer"
+          },
+          {
+            "lang": "en",
+            "text": "How can acceptance under constraint be recorded?",
+            "normalized": "how can acceptance under constraint be recorded",
+            "compact": "howcanacceptanceunderconstraintberecorded"
+          },
+          {
+            "lang": "en",
+            "text": "What response port is needed for consent reservations?",
+            "normalized": "what response port is needed for consent reservations",
+            "compact": "whatresponseportisneededforconsentreservations"
+          }
+        ],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "dssi_observation_judgment_sovereignty",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md",
+      "title": {
+        "ja": "DSSI：観測・判断主権・責任返還",
+        "en": "DSSI: Observation, Judgment, Sovereignty, and Responsibility Return"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research note",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "ai",
+          "judgment",
+          "responsibility",
+          "communication",
+          "boundary"
+        ],
+        "aliases": {
+          "ja": [
+            "判断主権",
+            "観測と判断の分離",
+            "責任を利用者へ返す"
+          ],
+          "en": [
+            "judgment sovereignty",
+            "separating observation from judgment",
+            "returning responsibility to the user"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "AIやインターフェースに判断を任せすぎないためにはどうすればよいか",
+            "観測と判断をどう分離するのか",
+            "利用者へ判断責任をどう返すのか",
+            "AIに判断を任せたくない"
+          ],
+          "en": [
+            "How can AI or interfaces avoid taking over judgment?",
+            "How should observation be separated from judgment?",
+            "How can responsibility be returned to the user?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "DSSI：観測・判断主権・責任返還",
+            "normalized": "dssi 観測 判断主権 責任返還",
+            "compact": "dssi観測判断主権責任返還"
+          },
+          {
+            "lang": "en",
+            "text": "DSSI: Observation, Judgment, Sovereignty, and Responsibility Return",
+            "normalized": "dssi observation judgment sovereignty and responsibility return",
+            "compact": "dssiobservationjudgmentsovereigntyandresponsibilityreturn"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "判断主権",
+            "normalized": "判断主権",
+            "compact": "判断主権"
+          },
+          {
+            "lang": "ja",
+            "text": "観測と判断の分離",
+            "normalized": "観測と判断の分離",
+            "compact": "観測と判断の分離"
+          },
+          {
+            "lang": "ja",
+            "text": "責任を利用者へ返す",
+            "normalized": "責任を利用者へ返す",
+            "compact": "責任を利用者へ返す"
+          },
+          {
+            "lang": "en",
+            "text": "judgment sovereignty",
+            "normalized": "judgment sovereignty",
+            "compact": "judgmentsovereignty"
+          },
+          {
+            "lang": "en",
+            "text": "separating observation from judgment",
+            "normalized": "separating observation from judgment",
+            "compact": "separatingobservationfromjudgment"
+          },
+          {
+            "lang": "en",
+            "text": "returning responsibility to the user",
+            "normalized": "returning responsibility to the user",
+            "compact": "returningresponsibilitytotheuser"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "ai",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "ja",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "en",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "und",
+            "text": "judgment",
+            "normalized": "judgment",
+            "compact": "judgment"
+          },
+          {
+            "lang": "ja",
+            "text": "判断",
+            "normalized": "判断",
+            "compact": "判断"
+          },
+          {
+            "lang": "en",
+            "text": "Judgment",
+            "normalized": "judgment",
+            "compact": "judgment"
+          },
+          {
+            "lang": "und",
+            "text": "responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          },
+          {
+            "lang": "ja",
+            "text": "責任",
+            "normalized": "責任",
+            "compact": "責任"
+          },
+          {
+            "lang": "en",
+            "text": "Responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "AIやインターフェースに判断を任せすぎないためにはどうすればよいか",
+            "normalized": "aiやインターフェースに判断を任せすぎないためにはどうすればよいか",
+            "compact": "aiやインターフェースに判断を任せすぎないためにはどうすればよいか"
+          },
+          {
+            "lang": "ja",
+            "text": "観測と判断をどう分離するのか",
+            "normalized": "観測と判断をどう分離するのか",
+            "compact": "観測と判断をどう分離するのか"
+          },
+          {
+            "lang": "ja",
+            "text": "利用者へ判断責任をどう返すのか",
+            "normalized": "利用者へ判断責任をどう返すのか",
+            "compact": "利用者へ判断責任をどう返すのか"
+          },
+          {
+            "lang": "ja",
+            "text": "AIに判断を任せたくない",
+            "normalized": "aiに判断を任せたくない",
+            "compact": "aiに判断を任せたくない"
+          },
+          {
+            "lang": "en",
+            "text": "How can AI or interfaces avoid taking over judgment?",
+            "normalized": "how can ai or interfaces avoid taking over judgment",
+            "compact": "howcanaiorinterfacesavoidtakingoverjudgment"
+          },
+          {
+            "lang": "en",
+            "text": "How should observation be separated from judgment?",
+            "normalized": "how should observation be separated from judgment",
+            "compact": "howshouldobservationbeseparatedfromjudgment"
+          },
+          {
+            "lang": "en",
+            "text": "How can responsibility be returned to the user?",
+            "normalized": "how can responsibility be returned to the user",
+            "compact": "howcanresponsibilitybereturnedtotheuser"
+          }
+        ],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "grammar_meaning_pressure_channel",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Grammar_as_a_Meaning_Pressure_Channel.ja.md",
+      "title": {
+        "ja": "文法枠とは何か",
+        "en": "Grammar as a Meaning-Pressure Channel"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "language",
+          "communication",
+          "meaning"
+        ],
+        "aliases": {
+          "ja": [
+            "文法枠",
+            "意味圧の流路",
+            "発話以外の文法"
+          ],
+          "en": [
+            "grammatical frame",
+            "meaning-pressure channel",
+            "grammar beyond utterance"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "文法は語順や統語だけなのか",
+            "文法は意味圧をどう切り出すのか",
+            "身振りや制度も文法として扱えるのか"
+          ],
+          "en": [
+            "Is grammar more than syntax and word order?",
+            "How does grammar channel meaning pressure?",
+            "Can gesture and institutional form operate grammatically?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "文法枠とは何か",
+            "normalized": "文法枠とは何か",
+            "compact": "文法枠とは何か"
+          },
+          {
+            "lang": "en",
+            "text": "Grammar as a Meaning-Pressure Channel",
+            "normalized": "grammar as a meaning pressure channel",
+            "compact": "grammarasameaningpressurechannel"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "文法枠",
+            "normalized": "文法枠",
+            "compact": "文法枠"
+          },
+          {
+            "lang": "ja",
+            "text": "意味圧の流路",
+            "normalized": "意味圧の流路",
+            "compact": "意味圧の流路"
+          },
+          {
+            "lang": "ja",
+            "text": "発話以外の文法",
+            "normalized": "発話以外の文法",
+            "compact": "発話以外の文法"
+          },
+          {
+            "lang": "en",
+            "text": "grammatical frame",
+            "normalized": "grammatical frame",
+            "compact": "grammaticalframe"
+          },
+          {
+            "lang": "en",
+            "text": "meaning-pressure channel",
+            "normalized": "meaning pressure channel",
+            "compact": "meaningpressurechannel"
+          },
+          {
+            "lang": "en",
+            "text": "grammar beyond utterance",
+            "normalized": "grammar beyond utterance",
+            "compact": "grammarbeyondutterance"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "ja",
+            "text": "言語",
+            "normalized": "言語",
+            "compact": "言語"
+          },
+          {
+            "lang": "en",
+            "text": "Language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "ja",
+            "text": "意味",
+            "normalized": "意味",
+            "compact": "意味"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "文法は語順や統語だけなのか",
+            "normalized": "文法は語順や統語だけなのか",
+            "compact": "文法は語順や統語だけなのか"
+          },
+          {
+            "lang": "ja",
+            "text": "文法は意味圧をどう切り出すのか",
+            "normalized": "文法は意味圧をどう切り出すのか",
+            "compact": "文法は意味圧をどう切り出すのか"
+          },
+          {
+            "lang": "ja",
+            "text": "身振りや制度も文法として扱えるのか",
+            "normalized": "身振りや制度も文法として扱えるのか",
+            "compact": "身振りや制度も文法として扱えるのか"
+          },
+          {
+            "lang": "en",
+            "text": "Is grammar more than syntax and word order?",
+            "normalized": "is grammar more than syntax and word order",
+            "compact": "isgrammarmorethansyntaxandwordorder"
+          },
+          {
+            "lang": "en",
+            "text": "How does grammar channel meaning pressure?",
+            "normalized": "how does grammar channel meaning pressure",
+            "compact": "howdoesgrammarchannelmeaningpressure"
+          },
+          {
+            "lang": "en",
+            "text": "Can gesture and institutional form operate grammatically?",
+            "normalized": "can gesture and institutional form operate grammatically",
+            "compact": "cangestureandinstitutionalformoperategrammatically"
+          }
+        ],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "language_meaning_communication_phase_studies",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
+      "title": {
+        "ja": "言語・意味・通信位相研究",
+        "en": "Language, Meaning, and Communication Phase Studies"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "subdirectory_readme",
+      "status": "README",
+      "state": "public-candidate",
+      "scope": "living-canonical research line navigation, maintenance, and return intake",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "language",
+          "meaning",
+          "communication",
+          "commensuration"
+        ],
+        "aliases": {
+          "ja": [
+            "言語研究の入口",
+            "言語・意味研究",
+            "通信位相研究"
+          ],
+          "en": [
+            "language studies entry",
+            "language and meaning studies",
+            "communication phase studies"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "言語・意味・通信位相研究の全体を見たい",
+            "発話から意味までの研究文書を探したい",
+            "この研究線の文書はどう分かれているのか"
+          ],
+          "en": [
+            "What does the language, meaning, and communication phase research line contain?",
+            "Where can I read from speech to meaning?",
+            "How are the documents in this research line divided?"
+          ]
+        },
+        "entry_level": "foundation"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "言語・意味・通信位相研究",
+            "normalized": "言語 意味 通信位相研究",
+            "compact": "言語意味通信位相研究"
+          },
+          {
+            "lang": "en",
+            "text": "Language, Meaning, and Communication Phase Studies",
+            "normalized": "language meaning and communication phase studies",
+            "compact": "languagemeaningandcommunicationphasestudies"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "言語研究の入口",
+            "normalized": "言語研究の入口",
+            "compact": "言語研究の入口"
+          },
+          {
+            "lang": "ja",
+            "text": "言語・意味研究",
+            "normalized": "言語 意味研究",
+            "compact": "言語意味研究"
+          },
+          {
+            "lang": "ja",
+            "text": "通信位相研究",
+            "normalized": "通信位相研究",
+            "compact": "通信位相研究"
+          },
+          {
+            "lang": "en",
+            "text": "language studies entry",
+            "normalized": "language studies entry",
+            "compact": "languagestudiesentry"
+          },
+          {
+            "lang": "en",
+            "text": "language and meaning studies",
+            "normalized": "language and meaning studies",
+            "compact": "languageandmeaningstudies"
+          },
+          {
+            "lang": "en",
+            "text": "communication phase studies",
+            "normalized": "communication phase studies",
+            "compact": "communicationphasestudies"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "ja",
+            "text": "言語",
+            "normalized": "言語",
+            "compact": "言語"
+          },
+          {
+            "lang": "en",
+            "text": "Language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "und",
+            "text": "meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "ja",
+            "text": "意味",
+            "normalized": "意味",
+            "compact": "意味"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "ja",
+            "text": "通約",
+            "normalized": "通約",
+            "compact": "通約"
+          },
+          {
+            "lang": "en",
+            "text": "Commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "言語・意味・通信位相研究の全体を見たい",
+            "normalized": "言語 意味 通信位相研究の全体を見たい",
+            "compact": "言語意味通信位相研究の全体を見たい"
+          },
+          {
+            "lang": "ja",
+            "text": "発話から意味までの研究文書を探したい",
+            "normalized": "発話から意味までの研究文書を探したい",
+            "compact": "発話から意味までの研究文書を探したい"
+          },
+          {
+            "lang": "ja",
+            "text": "この研究線の文書はどう分かれているのか",
+            "normalized": "この研究線の文書はどう分かれているのか",
+            "compact": "この研究線の文書はどう分かれているのか"
+          },
+          {
+            "lang": "en",
+            "text": "What does the language, meaning, and communication phase research line contain?",
+            "normalized": "what does the language meaning and communication phase research line contain",
+            "compact": "whatdoesthelanguagemeaningandcommunicationphaseresearchlinecontain"
+          },
+          {
+            "lang": "en",
+            "text": "Where can I read from speech to meaning?",
+            "normalized": "where can i read from speech to meaning",
+            "compact": "wherecanireadfromspeechtomeaning"
+          },
+          {
+            "lang": "en",
+            "text": "How are the documents in this research line divided?",
+            "normalized": "how are the documents in this research line divided",
+            "compact": "howarethedocumentsinthisresearchlinedivided"
+          }
+        ],
+        "role": [],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "living-canonical research line navigation, maintenance, and return intake",
+            "normalized": "living canonical research line navigation maintenance and return intake",
+            "compact": "livingcanonicalresearchlinenavigationmaintenanceandreturnintake"
+          }
+        ]
+      }
+    },
+    {
+      "id": "literature_worldmaking",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md",
+      "title": {
+        "ja": "世界制作としての文学",
+        "en": "Literature as Worldmaking"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research note",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "literature",
+          "meaning",
+          "boundary"
+        ],
+        "aliases": {
+          "ja": [
+            "世界制作としての文学",
+            "文学は世界を作る",
+            "文学世界の運用"
+          ],
+          "en": [
+            "literature as worldmaking",
+            "literature makes worlds",
+            "operation of literary worlds"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "文学は何を制作しているのか",
+            "作品世界と現実世界はどう橋渡しされるのか",
+            "文学で真・美・善・無をどう読むのか"
+          ],
+          "en": [
+            "What does literature make?",
+            "How can a literary world connect with the actual world?",
+            "How can truth, beauty, goodness, and null be read in literature?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "世界制作としての文学",
+            "normalized": "世界制作としての文学",
+            "compact": "世界制作としての文学"
+          },
+          {
+            "lang": "en",
+            "text": "Literature as Worldmaking",
+            "normalized": "literature as worldmaking",
+            "compact": "literatureasworldmaking"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "世界制作としての文学",
+            "normalized": "世界制作としての文学",
+            "compact": "世界制作としての文学"
+          },
+          {
+            "lang": "ja",
+            "text": "文学は世界を作る",
+            "normalized": "文学は世界を作る",
+            "compact": "文学は世界を作る"
+          },
+          {
+            "lang": "ja",
+            "text": "文学世界の運用",
+            "normalized": "文学世界の運用",
+            "compact": "文学世界の運用"
+          },
+          {
+            "lang": "en",
+            "text": "literature as worldmaking",
+            "normalized": "literature as worldmaking",
+            "compact": "literatureasworldmaking"
+          },
+          {
+            "lang": "en",
+            "text": "literature makes worlds",
+            "normalized": "literature makes worlds",
+            "compact": "literaturemakesworlds"
+          },
+          {
+            "lang": "en",
+            "text": "operation of literary worlds",
+            "normalized": "operation of literary worlds",
+            "compact": "operationofliteraryworlds"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "literature",
+            "normalized": "literature",
+            "compact": "literature"
+          },
+          {
+            "lang": "ja",
+            "text": "文学",
+            "normalized": "文学",
+            "compact": "文学"
+          },
+          {
+            "lang": "en",
+            "text": "Literature",
+            "normalized": "literature",
+            "compact": "literature"
+          },
+          {
+            "lang": "und",
+            "text": "meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "ja",
+            "text": "意味",
+            "normalized": "意味",
+            "compact": "意味"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "文学は何を制作しているのか",
+            "normalized": "文学は何を制作しているのか",
+            "compact": "文学は何を制作しているのか"
+          },
+          {
+            "lang": "ja",
+            "text": "作品世界と現実世界はどう橋渡しされるのか",
+            "normalized": "作品世界と現実世界はどう橋渡しされるのか",
+            "compact": "作品世界と現実世界はどう橋渡しされるのか"
+          },
+          {
+            "lang": "ja",
+            "text": "文学で真・美・善・無をどう読むのか",
+            "normalized": "文学で真 美 善 無をどう読むのか",
+            "compact": "文学で真美善無をどう読むのか"
+          },
+          {
+            "lang": "en",
+            "text": "What does literature make?",
+            "normalized": "what does literature make",
+            "compact": "whatdoesliteraturemake"
+          },
+          {
+            "lang": "en",
+            "text": "How can a literary world connect with the actual world?",
+            "normalized": "how can a literary world connect with the actual world",
+            "compact": "howcanaliteraryworldconnectwiththeactualworld"
+          },
+          {
+            "lang": "en",
+            "text": "How can truth, beauty, goodness, and null be read in literature?",
+            "normalized": "how can truth beauty goodness and null be read in literature",
+            "compact": "howcantruthbeautygoodnessandnullbereadinliterature"
+          }
+        ],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "meaning_collation_return_path",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md",
+      "title": {
+        "ja": "意味が分かるとは何か",
+        "en": "Meaning as Collation and Return Path"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "meaning",
+          "language",
+          "cognition",
+          "communication"
+        ],
+        "aliases": {
+          "ja": [
+            "意味が分かる",
+            "照合と返路",
+            "言語的統覚"
+          ],
+          "en": [
+            "understanding meaning",
+            "collation and return path",
+            "linguistic apperception"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "意味が分かるとはどういうことか",
+            "返路が閉じるとなぜ意味になるのか",
+            "感情と思考は返路によってどう違うのか"
+          ],
+          "en": [
+            "What does it mean to understand meaning?",
+            "Why does return-path closure matter for meaning?",
+            "How do emotion and thought differ through return paths?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "意味が分かるとは何か",
+            "normalized": "意味が分かるとは何か",
+            "compact": "意味が分かるとは何か"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning as Collation and Return Path",
+            "normalized": "meaning as collation and return path",
+            "compact": "meaningascollationandreturnpath"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "意味が分かる",
+            "normalized": "意味が分かる",
+            "compact": "意味が分かる"
+          },
+          {
+            "lang": "ja",
+            "text": "照合と返路",
+            "normalized": "照合と返路",
+            "compact": "照合と返路"
+          },
+          {
+            "lang": "ja",
+            "text": "言語的統覚",
+            "normalized": "言語的統覚",
+            "compact": "言語的統覚"
+          },
+          {
+            "lang": "en",
+            "text": "understanding meaning",
+            "normalized": "understanding meaning",
+            "compact": "understandingmeaning"
+          },
+          {
+            "lang": "en",
+            "text": "collation and return path",
+            "normalized": "collation and return path",
+            "compact": "collationandreturnpath"
+          },
+          {
+            "lang": "en",
+            "text": "linguistic apperception",
+            "normalized": "linguistic apperception",
+            "compact": "linguisticapperception"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "ja",
+            "text": "意味",
+            "normalized": "意味",
+            "compact": "意味"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "und",
+            "text": "language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "ja",
+            "text": "言語",
+            "normalized": "言語",
+            "compact": "言語"
+          },
+          {
+            "lang": "en",
+            "text": "Language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "und",
+            "text": "cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          },
+          {
+            "lang": "ja",
+            "text": "認識",
+            "normalized": "認識",
+            "compact": "認識"
+          },
+          {
+            "lang": "en",
+            "text": "Cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "意味が分かるとはどういうことか",
+            "normalized": "意味が分かるとはどういうことか",
+            "compact": "意味が分かるとはどういうことか"
+          },
+          {
+            "lang": "ja",
+            "text": "返路が閉じるとなぜ意味になるのか",
+            "normalized": "返路が閉じるとなぜ意味になるのか",
+            "compact": "返路が閉じるとなぜ意味になるのか"
+          },
+          {
+            "lang": "ja",
+            "text": "感情と思考は返路によってどう違うのか",
+            "normalized": "感情と思考は返路によってどう違うのか",
+            "compact": "感情と思考は返路によってどう違うのか"
+          },
+          {
+            "lang": "en",
+            "text": "What does it mean to understand meaning?",
+            "normalized": "what does it mean to understand meaning",
+            "compact": "whatdoesitmeantounderstandmeaning"
+          },
+          {
+            "lang": "en",
+            "text": "Why does return-path closure matter for meaning?",
+            "normalized": "why does return path closure matter for meaning",
+            "compact": "whydoesreturnpathclosurematterformeaning"
+          },
+          {
+            "lang": "en",
+            "text": "How do emotion and thought differ through return paths?",
+            "normalized": "how do emotion and thought differ through return paths",
+            "compact": "howdoemotionandthoughtdifferthroughreturnpaths"
+          }
+        ],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "meaning_generation_model",
+      "id_source": "explicit",
+      "path": "01_Sat_Truth/Meaning_Generation_Model.md",
+      "title": {
+        "ja": "意味生成モデル",
+        "en": "Meaning Generation Model"
+      },
+      "layer": "01_Sat_Truth",
+      "document_type": "assertion_document",
+      "status": "Model",
+      "state": "public-candidate",
+      "scope": "meaning loop, qualia, history, intrinsic time, meaning formation",
+      "role": {
+        "ja": "情報が意味として成立する条件の定義所有者",
+        "en": "Canonical owner of meaning-generation conditions"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "meaning",
+          "cognition",
+          "boundary"
+        ],
+        "aliases": {
+          "ja": [
+            "意味の成立",
+            "意味生成",
+            "意味ループ"
+          ],
+          "en": [
+            "meaning formation",
+            "meaning generation",
+            "meaning loop"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "意味はどうやって成立するのか",
+            "情報と意味は何が違うのか",
+            "履歴は意味にどう作用するのか"
+          ],
+          "en": [
+            "How does meaning form?",
+            "What distinguishes information from meaning?",
+            "How does history participate in meaning?"
+          ]
+        },
+        "entry_level": "foundation"
+      },
+      "concepts": {
+        "owned": [
+          "meaning_generation"
+        ],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "意味生成モデル",
+            "normalized": "意味生成モデル",
+            "compact": "意味生成モデル"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning Generation Model",
+            "normalized": "meaning generation model",
+            "compact": "meaninggenerationmodel"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "meaning_generation",
+            "normalized": "meaning generation",
+            "compact": "meaninggeneration"
+          }
+        ],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "意味の成立",
+            "normalized": "意味の成立",
+            "compact": "意味の成立"
+          },
+          {
+            "lang": "ja",
+            "text": "意味生成",
+            "normalized": "意味生成",
+            "compact": "意味生成"
+          },
+          {
+            "lang": "ja",
+            "text": "意味ループ",
+            "normalized": "意味ループ",
+            "compact": "意味ループ"
+          },
+          {
+            "lang": "en",
+            "text": "meaning formation",
+            "normalized": "meaning formation",
+            "compact": "meaningformation"
+          },
+          {
+            "lang": "en",
+            "text": "meaning generation",
+            "normalized": "meaning generation",
+            "compact": "meaninggeneration"
+          },
+          {
+            "lang": "en",
+            "text": "meaning loop",
+            "normalized": "meaning loop",
+            "compact": "meaningloop"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "ja",
+            "text": "意味",
+            "normalized": "意味",
+            "compact": "意味"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "und",
+            "text": "cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          },
+          {
+            "lang": "ja",
+            "text": "認識",
+            "normalized": "認識",
+            "compact": "認識"
+          },
+          {
+            "lang": "en",
+            "text": "Cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          },
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "意味はどうやって成立するのか",
+            "normalized": "意味はどうやって成立するのか",
+            "compact": "意味はどうやって成立するのか"
+          },
+          {
+            "lang": "ja",
+            "text": "情報と意味は何が違うのか",
+            "normalized": "情報と意味は何が違うのか",
+            "compact": "情報と意味は何が違うのか"
+          },
+          {
+            "lang": "ja",
+            "text": "履歴は意味にどう作用するのか",
+            "normalized": "履歴は意味にどう作用するのか",
+            "compact": "履歴は意味にどう作用するのか"
+          },
+          {
+            "lang": "en",
+            "text": "How does meaning form?",
+            "normalized": "how does meaning form",
+            "compact": "howdoesmeaningform"
+          },
+          {
+            "lang": "en",
+            "text": "What distinguishes information from meaning?",
+            "normalized": "what distinguishes information from meaning",
+            "compact": "whatdistinguishesinformationfrommeaning"
+          },
+          {
+            "lang": "en",
+            "text": "How does history participate in meaning?",
+            "normalized": "how does history participate in meaning",
+            "compact": "howdoeshistoryparticipateinmeaning"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "情報が意味として成立する条件の定義所有者",
+            "normalized": "情報が意味として成立する条件の定義所有者",
+            "compact": "情報が意味として成立する条件の定義所有者"
+          },
+          {
+            "lang": "en",
+            "text": "Canonical owner of meaning-generation conditions",
+            "normalized": "canonical owner of meaning generation conditions",
+            "compact": "canonicalownerofmeaninggenerationconditions"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "meaning loop, qualia, history, intrinsic time, meaning formation",
+            "normalized": "meaning loop qualia history intrinsic time meaning formation",
+            "compact": "meaningloopqualiahistoryintrinsictimemeaningformation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "optional_axiom_modules_cognitive_bridge",
+      "id_source": "explicit",
+      "path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
+      "title": {
+        "ja": "認識ブリッジとしての選択公理モジュール",
+        "en": "Optional Axiom Modules as Cognitive Bridge"
+      },
+      "layer": "03_Tam_Goodness",
+      "document_type": "assertion_document",
+      "status": "Protocol",
+      "state": "public-candidate",
+      "scope": "worldview comparison, commensuration, core invariant, operational drift, translation residual, boundary protocol",
+      "role": {
+        "ja": "異なる認識形式を比較・通約・保留する境界プロトコル",
+        "en": "Boundary protocol for comparing, commensurating, and suspending cognitive frameworks"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "commensuration",
+          "epistemology",
+          "ethics",
+          "communication"
+        ],
+        "aliases": {
+          "ja": [
+            "世界観の比較",
+            "認識ブリッジ",
+            "翻訳不能残差"
+          ],
+          "en": [
+            "worldview comparison",
+            "cognitive bridge",
+            "untranslatable residuals"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "違う世界観を壊さずに比較するにはどうすればよいか",
+            "同じ言葉で中核が違うときどう照合するのか",
+            "翻訳できない残差をどう保持するのか"
+          ],
+          "en": [
+            "How can different worldviews be compared without erasing them?",
+            "How should the same word with different cores be collated?",
+            "How should untranslatable residuals be retained?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [
+          "connection_type_classification",
+          "core_invariant_and_operational_drift",
+          "translation_residual",
+          "worldview_commensuration_protocol"
+        ],
+        "imports": [
+          "cognitive_axis",
+          "residual_profile"
+        ],
+        "exports": [
+          "candidate_purposes",
+          "conditional_connection_map",
+          "excluded_boundaries",
+          "hidden_costs",
+          "untranslatable_residuals"
+        ]
+      },
+      "relations": {
+        "related": [],
+        "tests": [
+          "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+          "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md"
+        ],
+        "returns_to": [
+          "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        ],
+        "delegates": [
+          "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        ]
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "認識ブリッジとしての選択公理モジュール",
+            "normalized": "認識ブリッジとしての選択公理モジュール",
+            "compact": "認識ブリッジとしての選択公理モジュール"
+          },
+          {
+            "lang": "en",
+            "text": "Optional Axiom Modules as Cognitive Bridge",
+            "normalized": "optional axiom modules as cognitive bridge",
+            "compact": "optionalaxiommodulesascognitivebridge"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "connection_type_classification",
+            "normalized": "connection type classification",
+            "compact": "connectiontypeclassification"
+          },
+          {
+            "lang": "und",
+            "text": "core_invariant_and_operational_drift",
+            "normalized": "core invariant and operational drift",
+            "compact": "coreinvariantandoperationaldrift"
+          },
+          {
+            "lang": "und",
+            "text": "translation_residual",
+            "normalized": "translation residual",
+            "compact": "translationresidual"
+          },
+          {
+            "lang": "und",
+            "text": "worldview_commensuration_protocol",
+            "normalized": "worldview commensuration protocol",
+            "compact": "worldviewcommensurationprotocol"
+          }
+        ],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "世界観の比較",
+            "normalized": "世界観の比較",
+            "compact": "世界観の比較"
+          },
+          {
+            "lang": "ja",
+            "text": "認識ブリッジ",
+            "normalized": "認識ブリッジ",
+            "compact": "認識ブリッジ"
+          },
+          {
+            "lang": "ja",
+            "text": "翻訳不能残差",
+            "normalized": "翻訳不能残差",
+            "compact": "翻訳不能残差"
+          },
+          {
+            "lang": "en",
+            "text": "worldview comparison",
+            "normalized": "worldview comparison",
+            "compact": "worldviewcomparison"
+          },
+          {
+            "lang": "en",
+            "text": "cognitive bridge",
+            "normalized": "cognitive bridge",
+            "compact": "cognitivebridge"
+          },
+          {
+            "lang": "en",
+            "text": "untranslatable residuals",
+            "normalized": "untranslatable residuals",
+            "compact": "untranslatableresiduals"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "ja",
+            "text": "通約",
+            "normalized": "通約",
+            "compact": "通約"
+          },
+          {
+            "lang": "en",
+            "text": "Commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "und",
+            "text": "epistemology",
+            "normalized": "epistemology",
+            "compact": "epistemology"
+          },
+          {
+            "lang": "ja",
+            "text": "認識論",
+            "normalized": "認識論",
+            "compact": "認識論"
+          },
+          {
+            "lang": "en",
+            "text": "Epistemology",
+            "normalized": "epistemology",
+            "compact": "epistemology"
+          },
+          {
+            "lang": "und",
+            "text": "ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          },
+          {
+            "lang": "ja",
+            "text": "倫理",
+            "normalized": "倫理",
+            "compact": "倫理"
+          },
+          {
+            "lang": "en",
+            "text": "Ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "違う世界観を壊さずに比較するにはどうすればよいか",
+            "normalized": "違う世界観を壊さずに比較するにはどうすればよいか",
+            "compact": "違う世界観を壊さずに比較するにはどうすればよいか"
+          },
+          {
+            "lang": "ja",
+            "text": "同じ言葉で中核が違うときどう照合するのか",
+            "normalized": "同じ言葉で中核が違うときどう照合するのか",
+            "compact": "同じ言葉で中核が違うときどう照合するのか"
+          },
+          {
+            "lang": "ja",
+            "text": "翻訳できない残差をどう保持するのか",
+            "normalized": "翻訳できない残差をどう保持するのか",
+            "compact": "翻訳できない残差をどう保持するのか"
+          },
+          {
+            "lang": "en",
+            "text": "How can different worldviews be compared without erasing them?",
+            "normalized": "how can different worldviews be compared without erasing them",
+            "compact": "howcandifferentworldviewsbecomparedwithouterasingthem"
+          },
+          {
+            "lang": "en",
+            "text": "How should the same word with different cores be collated?",
+            "normalized": "how should the same word with different cores be collated",
+            "compact": "howshouldthesamewordwithdifferentcoresbecollated"
+          },
+          {
+            "lang": "en",
+            "text": "How should untranslatable residuals be retained?",
+            "normalized": "how should untranslatable residuals be retained",
+            "compact": "howshoulduntranslatableresidualsberetained"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "異なる認識形式を比較・通約・保留する境界プロトコル",
+            "normalized": "異なる認識形式を比較 通約 保留する境界プロトコル",
+            "compact": "異なる認識形式を比較通約保留する境界プロトコル"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary protocol for comparing, commensurating, and suspending cognitive frameworks",
+            "normalized": "boundary protocol for comparing commensurating and suspending cognitive frameworks",
+            "compact": "boundaryprotocolforcomparingcommensuratingandsuspendingcognitiveframeworks"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "worldview comparison, commensuration, core invariant, operational drift, translation residual, boundary protocol",
+            "normalized": "worldview comparison commensuration core invariant operational drift translation residual boundary protocol",
+            "compact": "worldviewcomparisoncommensurationcoreinvariantoperationaldrifttranslationresidualboundaryprotocol"
+          }
+        ]
+      }
+    },
+    {
+      "id": "readme",
+      "id_source": "fallback",
+      "path": "README.md",
+      "title": {
+        "ja": "存在境界論 公開リポジトリ入口",
+        "en": "Scientific Ontology Public Repository Entry"
+      },
+      "layer": "root",
+      "document_type": "root_readme",
+      "status": "README",
+      "state": "public",
+      "scope": "repository entrance, public navigation, citation links",
+      "role": {
+        "ja": "英語先行・日英共同正本による公開リポジトリの入口",
+        "en": "English-first, English–Japanese co-authoritative public entry point for the repository"
+      },
+      "language_relation": "english_first_japanese_english_coauthoritative_root_interface",
+      "discovery": {
+        "topics": [],
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "存在境界論 公開リポジトリ入口",
+            "normalized": "存在境界論 公開リポジトリ入口",
+            "compact": "存在境界論公開リポジトリ入口"
+          },
+          {
+            "lang": "en",
+            "text": "Scientific Ontology Public Repository Entry",
+            "normalized": "scientific ontology public repository entry",
+            "compact": "scientificontologypublicrepositoryentry"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "英語先行・日英共同正本による公開リポジトリの入口",
+            "normalized": "英語先行 日英共同正本による公開リポジトリの入口",
+            "compact": "英語先行日英共同正本による公開リポジトリの入口"
+          },
+          {
+            "lang": "en",
+            "text": "English-first, English–Japanese co-authoritative public entry point for the repository",
+            "normalized": "english first english japanese co authoritative public entry point for the repository",
+            "compact": "englishfirstenglishjapanesecoauthoritativepublicentrypointfortherepository"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "repository entrance, public navigation, citation links",
+            "normalized": "repository entrance public navigation citation links",
+            "compact": "repositoryentrancepublicnavigationcitationlinks"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scientific_ontology_concept_network",
+      "id_source": "explicit",
+      "path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+      "title": {
+        "ja": "存在境界論 概念ネットワーク",
+        "en": "Scientific Ontology Concept Network"
+      },
+      "layer": "00_Overview",
+      "document_type": "assertion_document",
+      "status": "Methodological note",
+      "state": "public-candidate",
+      "scope": "concept topology, reading routes, non-closure, aporia management, document relations",
+      "role": {
+        "ja": "理論間の位置関係、返路、アポリアを管理する全体地図",
+        "en": "System map for conceptual positions, return paths, and aporia"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "overview",
+          "boundary",
+          "commensuration",
+          "network"
+        ],
+        "aliases": {
+          "ja": [
+            "存在境界論の全体地図",
+            "概念のつながり",
+            "理論の読み方"
+          ],
+          "en": [
+            "Scientific Ontology map",
+            "concept relations",
+            "reading routes"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "存在境界論の全体像を知りたい",
+            "文書や概念はどうつながっているのか",
+            "どこから読み始めればよいのか"
+          ],
+          "en": [
+            "What is the overall structure of Scientific Ontology?",
+            "How are the documents and concepts connected?",
+            "Where should I start reading?"
+          ]
+        },
+        "entry_level": "foundation"
+      },
+      "concepts": {
+        "owned": [
+          "aporia_registry",
+          "conceptual_network_topology",
+          "document_role_mapping"
+        ],
+        "imports": [
+          "cognitive_axis_formation",
+          "epistemic_boundary_conditions",
+          "first_shared_and_world_forming_purpose",
+          "meaning_generation",
+          "organizational_boundary",
+          "worldview_commensuration_protocol"
+        ],
+        "exports": [
+          "cross-layer_return_paths",
+          "document_position_map",
+          "open_aporia_map",
+          "typed_reading_routes"
+        ]
+      },
+      "relations": {
+        "related": [],
+        "tests": [
+          "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+          "README.md"
+        ],
+        "returns_to": [
+          "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "01_Sat_Truth/Boundary_Realism_Principle.md"
+        ],
+        "delegates": [
+          "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+          "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
+          "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+        ]
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "存在境界論 概念ネットワーク",
+            "normalized": "存在境界論 概念ネットワーク",
+            "compact": "存在境界論概念ネットワーク"
+          },
+          {
+            "lang": "en",
+            "text": "Scientific Ontology Concept Network",
+            "normalized": "scientific ontology concept network",
+            "compact": "scientificontologyconceptnetwork"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "aporia_registry",
+            "normalized": "aporia registry",
+            "compact": "aporiaregistry"
+          },
+          {
+            "lang": "und",
+            "text": "conceptual_network_topology",
+            "normalized": "conceptual network topology",
+            "compact": "conceptualnetworktopology"
+          },
+          {
+            "lang": "und",
+            "text": "document_role_mapping",
+            "normalized": "document role mapping",
+            "compact": "documentrolemapping"
+          }
+        ],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "存在境界論の全体地図",
+            "normalized": "存在境界論の全体地図",
+            "compact": "存在境界論の全体地図"
+          },
+          {
+            "lang": "ja",
+            "text": "概念のつながり",
+            "normalized": "概念のつながり",
+            "compact": "概念のつながり"
+          },
+          {
+            "lang": "ja",
+            "text": "理論の読み方",
+            "normalized": "理論の読み方",
+            "compact": "理論の読み方"
+          },
+          {
+            "lang": "en",
+            "text": "Scientific Ontology map",
+            "normalized": "scientific ontology map",
+            "compact": "scientificontologymap"
+          },
+          {
+            "lang": "en",
+            "text": "concept relations",
+            "normalized": "concept relations",
+            "compact": "conceptrelations"
+          },
+          {
+            "lang": "en",
+            "text": "reading routes",
+            "normalized": "reading routes",
+            "compact": "readingroutes"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "overview",
+            "normalized": "overview",
+            "compact": "overview"
+          },
+          {
+            "lang": "ja",
+            "text": "全体像",
+            "normalized": "全体像",
+            "compact": "全体像"
+          },
+          {
+            "lang": "en",
+            "text": "Overview",
+            "normalized": "overview",
+            "compact": "overview"
+          },
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "und",
+            "text": "commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "ja",
+            "text": "通約",
+            "normalized": "通約",
+            "compact": "通約"
+          },
+          {
+            "lang": "en",
+            "text": "Commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "und",
+            "text": "network",
+            "normalized": "network",
+            "compact": "network"
+          },
+          {
+            "lang": "ja",
+            "text": "ネットワーク",
+            "normalized": "ネットワーク",
+            "compact": "ネットワーク"
+          },
+          {
+            "lang": "en",
+            "text": "Network",
+            "normalized": "network",
+            "compact": "network"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "存在境界論の全体像を知りたい",
+            "normalized": "存在境界論の全体像を知りたい",
+            "compact": "存在境界論の全体像を知りたい"
+          },
+          {
+            "lang": "ja",
+            "text": "文書や概念はどうつながっているのか",
+            "normalized": "文書や概念はどうつながっているのか",
+            "compact": "文書や概念はどうつながっているのか"
+          },
+          {
+            "lang": "ja",
+            "text": "どこから読み始めればよいのか",
+            "normalized": "どこから読み始めればよいのか",
+            "compact": "どこから読み始めればよいのか"
+          },
+          {
+            "lang": "en",
+            "text": "What is the overall structure of Scientific Ontology?",
+            "normalized": "what is the overall structure of scientific ontology",
+            "compact": "whatistheoverallstructureofscientificontology"
+          },
+          {
+            "lang": "en",
+            "text": "How are the documents and concepts connected?",
+            "normalized": "how are the documents and concepts connected",
+            "compact": "howarethedocumentsandconceptsconnected"
+          },
+          {
+            "lang": "en",
+            "text": "Where should I start reading?",
+            "normalized": "where should i start reading",
+            "compact": "whereshouldistartreading"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "理論間の位置関係、返路、アポリアを管理する全体地図",
+            "normalized": "理論間の位置関係 返路 アポリアを管理する全体地図",
+            "compact": "理論間の位置関係返路アポリアを管理する全体地図"
+          },
+          {
+            "lang": "en",
+            "text": "System map for conceptual positions, return paths, and aporia",
+            "normalized": "system map for conceptual positions return paths and aporia",
+            "compact": "systemmapforconceptualpositionsreturnpathsandaporia"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "concept topology, reading routes, non-closure, aporia management, document relations",
+            "normalized": "concept topology reading routes non closure aporia management document relations",
+            "compact": "concepttopologyreadingroutesnonclosureaporiamanagementdocumentrelations"
+          }
+        ]
+      }
+    },
+    {
+      "id": "scientific_ontology_operational_outline",
+      "id_source": "explicit",
+      "path": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+      "title": {
+        "ja": "存在境界論 運用アウトライン",
+        "en": "Scientific Ontology Operational Outline"
+      },
+      "layer": "00_Overview",
+      "document_type": "assertion_document",
+      "status": "Public Overview Candidate / cross-series operational orientation",
+      "state": "public-candidate",
+      "scope": "boundary events, agency, responsibility partition, mobility, cost terrain, justice, theory use, open future",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": "japanese_authoritative_with_separate_english_commensuration",
+      "discovery": {
+        "topics": [
+          "overview",
+          "boundary",
+          "ethics",
+          "responsibility"
+        ],
+        "aliases": {
+          "ja": [
+            "存在境界論の運用方針",
+            "責任分界",
+            "可動性のための理論"
+          ],
+          "en": [
+            "Scientific Ontology operational orientation",
+            "responsibility partition",
+            "theory for mobility"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "存在境界論は何のために使うのか",
+            "自分の責任と外部の責任をどう見分けるのか",
+            "理論を正しさではなく資材として使うとは何か"
+          ],
+          "en": [
+            "What is Scientific Ontology for?",
+            "How can responsibility be partitioned between self and world?",
+            "What does it mean to use theory as material rather than authority?"
+          ]
+        },
+        "entry_level": "foundation"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [
+          "00_Overview/Scientific_Ontology_Operational_Outline.en.md",
+          "README.md",
+          "Roadmap.md"
+        ],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "存在境界論 運用アウトライン",
+            "normalized": "存在境界論 運用アウトライン",
+            "compact": "存在境界論運用アウトライン"
+          },
+          {
+            "lang": "en",
+            "text": "Scientific Ontology Operational Outline",
+            "normalized": "scientific ontology operational outline",
+            "compact": "scientificontologyoperationaloutline"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "存在境界論の運用方針",
+            "normalized": "存在境界論の運用方針",
+            "compact": "存在境界論の運用方針"
+          },
+          {
+            "lang": "ja",
+            "text": "責任分界",
+            "normalized": "責任分界",
+            "compact": "責任分界"
+          },
+          {
+            "lang": "ja",
+            "text": "可動性のための理論",
+            "normalized": "可動性のための理論",
+            "compact": "可動性のための理論"
+          },
+          {
+            "lang": "en",
+            "text": "Scientific Ontology operational orientation",
+            "normalized": "scientific ontology operational orientation",
+            "compact": "scientificontologyoperationalorientation"
+          },
+          {
+            "lang": "en",
+            "text": "responsibility partition",
+            "normalized": "responsibility partition",
+            "compact": "responsibilitypartition"
+          },
+          {
+            "lang": "en",
+            "text": "theory for mobility",
+            "normalized": "theory for mobility",
+            "compact": "theoryformobility"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "overview",
+            "normalized": "overview",
+            "compact": "overview"
+          },
+          {
+            "lang": "ja",
+            "text": "全体像",
+            "normalized": "全体像",
+            "compact": "全体像"
+          },
+          {
+            "lang": "en",
+            "text": "Overview",
+            "normalized": "overview",
+            "compact": "overview"
+          },
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "und",
+            "text": "ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          },
+          {
+            "lang": "ja",
+            "text": "倫理",
+            "normalized": "倫理",
+            "compact": "倫理"
+          },
+          {
+            "lang": "en",
+            "text": "Ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          },
+          {
+            "lang": "und",
+            "text": "responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          },
+          {
+            "lang": "ja",
+            "text": "責任",
+            "normalized": "責任",
+            "compact": "責任"
+          },
+          {
+            "lang": "en",
+            "text": "Responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "存在境界論は何のために使うのか",
+            "normalized": "存在境界論は何のために使うのか",
+            "compact": "存在境界論は何のために使うのか"
+          },
+          {
+            "lang": "ja",
+            "text": "自分の責任と外部の責任をどう見分けるのか",
+            "normalized": "自分の責任と外部の責任をどう見分けるのか",
+            "compact": "自分の責任と外部の責任をどう見分けるのか"
+          },
+          {
+            "lang": "ja",
+            "text": "理論を正しさではなく資材として使うとは何か",
+            "normalized": "理論を正しさではなく資材として使うとは何か",
+            "compact": "理論を正しさではなく資材として使うとは何か"
+          },
+          {
+            "lang": "en",
+            "text": "What is Scientific Ontology for?",
+            "normalized": "what is scientific ontology for",
+            "compact": "whatisscientificontologyfor"
+          },
+          {
+            "lang": "en",
+            "text": "How can responsibility be partitioned between self and world?",
+            "normalized": "how can responsibility be partitioned between self and world",
+            "compact": "howcanresponsibilitybepartitionedbetweenselfandworld"
+          },
+          {
+            "lang": "en",
+            "text": "What does it mean to use theory as material rather than authority?",
+            "normalized": "what does it mean to use theory as material rather than authority",
+            "compact": "whatdoesitmeantousetheoryasmaterialratherthanauthority"
+          }
+        ],
+        "role": [],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "boundary events, agency, responsibility partition, mobility, cost terrain, justice, theory use, open future",
+            "normalized": "boundary events agency responsibility partition mobility cost terrain justice theory use open future",
+            "compact": "boundaryeventsagencyresponsibilitypartitionmobilitycostterrainjusticetheoryuseopenfuture"
+          }
+        ]
+      }
+    },
+    {
+      "id": "semantic_network_topology_commensuration_bandwidth",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
+      "title": {
+        "ja": "意味ネットワーク・トポロジーと通約帯域",
+        "en": "Semantic Network Topology and Commensuration Bandwidth"
+      },
+      "layer": "05_Research_Notes",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public-candidate",
+      "scope": "",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "network",
+          "commensuration",
+          "communication",
+          "meaning",
+          "logical_depth"
+        ],
+        "aliases": {
+          "ja": [
+            "通約帯域",
+            "意味ネットワーク",
+            "論理深度距離"
+          ],
+          "en": [
+            "commensuration bandwidth",
+            "semantic network topology",
+            "logical-depth distance"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "同じ言葉なのに分野が違うと話が噛み合わないのはなぜか",
+            "概念間の距離や帯域をどう考えるのか",
+            "返り期待値や通信重力圏とは何か",
+            "違う分野で同じ言葉なのに話が噛み合わない"
+          ],
+          "en": [
+            "Why can the same word fail across different fields?",
+            "How can distance and bandwidth between concepts be described?",
+            "What are return expectancy and communication gravity domains?"
+          ]
+        },
+        "entry_level": "advanced"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "意味ネットワーク・トポロジーと通約帯域",
+            "normalized": "意味ネットワーク トポロジーと通約帯域",
+            "compact": "意味ネットワークトポロジーと通約帯域"
+          },
+          {
+            "lang": "en",
+            "text": "Semantic Network Topology and Commensuration Bandwidth",
+            "normalized": "semantic network topology and commensuration bandwidth",
+            "compact": "semanticnetworktopologyandcommensurationbandwidth"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "通約帯域",
+            "normalized": "通約帯域",
+            "compact": "通約帯域"
+          },
+          {
+            "lang": "ja",
+            "text": "意味ネットワーク",
+            "normalized": "意味ネットワーク",
+            "compact": "意味ネットワーク"
+          },
+          {
+            "lang": "ja",
+            "text": "論理深度距離",
+            "normalized": "論理深度距離",
+            "compact": "論理深度距離"
+          },
+          {
+            "lang": "en",
+            "text": "commensuration bandwidth",
+            "normalized": "commensuration bandwidth",
+            "compact": "commensurationbandwidth"
+          },
+          {
+            "lang": "en",
+            "text": "semantic network topology",
+            "normalized": "semantic network topology",
+            "compact": "semanticnetworktopology"
+          },
+          {
+            "lang": "en",
+            "text": "logical-depth distance",
+            "normalized": "logical depth distance",
+            "compact": "logicaldepthdistance"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "network",
+            "normalized": "network",
+            "compact": "network"
+          },
+          {
+            "lang": "ja",
+            "text": "ネットワーク",
+            "normalized": "ネットワーク",
+            "compact": "ネットワーク"
+          },
+          {
+            "lang": "en",
+            "text": "Network",
+            "normalized": "network",
+            "compact": "network"
+          },
+          {
+            "lang": "und",
+            "text": "commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "ja",
+            "text": "通約",
+            "normalized": "通約",
+            "compact": "通約"
+          },
+          {
+            "lang": "en",
+            "text": "Commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "ja",
+            "text": "意味",
+            "normalized": "意味",
+            "compact": "意味"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "und",
+            "text": "logical_depth",
+            "normalized": "logical depth",
+            "compact": "logicaldepth"
+          },
+          {
+            "lang": "ja",
+            "text": "論理-深度",
+            "normalized": "論理 深度",
+            "compact": "論理深度"
+          },
+          {
+            "lang": "en",
+            "text": "Logical depth",
+            "normalized": "logical depth",
+            "compact": "logicaldepth"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "同じ言葉なのに分野が違うと話が噛み合わないのはなぜか",
+            "normalized": "同じ言葉なのに分野が違うと話が噛み合わないのはなぜか",
+            "compact": "同じ言葉なのに分野が違うと話が噛み合わないのはなぜか"
+          },
+          {
+            "lang": "ja",
+            "text": "概念間の距離や帯域をどう考えるのか",
+            "normalized": "概念間の距離や帯域をどう考えるのか",
+            "compact": "概念間の距離や帯域をどう考えるのか"
+          },
+          {
+            "lang": "ja",
+            "text": "返り期待値や通信重力圏とは何か",
+            "normalized": "返り期待値や通信重力圏とは何か",
+            "compact": "返り期待値や通信重力圏とは何か"
+          },
+          {
+            "lang": "ja",
+            "text": "違う分野で同じ言葉なのに話が噛み合わない",
+            "normalized": "違う分野で同じ言葉なのに話が噛み合わない",
+            "compact": "違う分野で同じ言葉なのに話が噛み合わない"
+          },
+          {
+            "lang": "en",
+            "text": "Why can the same word fail across different fields?",
+            "normalized": "why can the same word fail across different fields",
+            "compact": "whycanthesamewordfailacrossdifferentfields"
+          },
+          {
+            "lang": "en",
+            "text": "How can distance and bandwidth between concepts be described?",
+            "normalized": "how can distance and bandwidth between concepts be described",
+            "compact": "howcandistanceandbandwidthbetweenconceptsbedescribed"
+          },
+          {
+            "lang": "en",
+            "text": "What are return expectancy and communication gravity domains?",
+            "normalized": "what are return expectancy and communication gravity domains",
+            "compact": "whatarereturnexpectancyandcommunicationgravitydomains"
+          }
+        ],
+        "role": [],
+        "scope": []
+      }
+    },
+    {
+      "id": "specification_for_peace",
+      "id_source": "explicit",
+      "path": "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md",
+      "title": {
+        "ja": "生存競争の本質と非本質",
+        "en": "The Essential and Non-Essential Aspects of the Struggle for Existence"
+      },
+      "layer": "04_Applications/Social_Boundary_Design",
+      "document_type": "assertion_document",
+      "status": "Application Note / First Draft",
+      "state": "public-candidate",
+      "scope": "peace, society, boundary ethics, meaning-experience field, social boundary design",
+      "role": {
+        "ja": "存在相、意味容量、境界外交を平和仕様へ接続する公開応用文書",
+        "en": "Public application connecting existence phases, meaning capacity, and boundary diplomacy to a peace specification"
+      },
+      "language_relation": null,
+      "discovery": {
+        "topics": [
+          "peace",
+          "ethics",
+          "communication",
+          "boundary"
+        ],
+        "aliases": {
+          "ja": [
+            "平和仕様",
+            "限定接触",
+            "差分を消さない平和"
+          ],
+          "en": [
+            "peace specification",
+            "limited contact",
+            "peace without erasing difference"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "すべてを開かずに平和を作るにはどうすればよいか",
+            "違いを消さずに接触を続けるには何が必要か",
+            "拒否や停止を残した平和は設計できるか"
+          ],
+          "en": [
+            "How can peace be designed without opening every channel?",
+            "How can contact continue without erasing difference?",
+            "Can peace preserve refusal and stopping conditions?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [
+          "existence_strength",
+          "meaning_capacity",
+          "meaning_experience_capacitor",
+          "meaning_experience_field"
+        ],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "生存競争の本質と非本質",
+            "normalized": "生存競争の本質と非本質",
+            "compact": "生存競争の本質と非本質"
+          },
+          {
+            "lang": "en",
+            "text": "The Essential and Non-Essential Aspects of the Struggle for Existence",
+            "normalized": "the essential and non essential aspects of the struggle for existence",
+            "compact": "theessentialandnonessentialaspectsofthestruggleforexistence"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "existence_strength",
+            "normalized": "existence strength",
+            "compact": "existencestrength"
+          },
+          {
+            "lang": "und",
+            "text": "meaning_capacity",
+            "normalized": "meaning capacity",
+            "compact": "meaningcapacity"
+          },
+          {
+            "lang": "und",
+            "text": "meaning_experience_capacitor",
+            "normalized": "meaning experience capacitor",
+            "compact": "meaningexperiencecapacitor"
+          },
+          {
+            "lang": "und",
+            "text": "meaning_experience_field",
+            "normalized": "meaning experience field",
+            "compact": "meaningexperiencefield"
+          }
+        ],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "平和仕様",
+            "normalized": "平和仕様",
+            "compact": "平和仕様"
+          },
+          {
+            "lang": "ja",
+            "text": "限定接触",
+            "normalized": "限定接触",
+            "compact": "限定接触"
+          },
+          {
+            "lang": "ja",
+            "text": "差分を消さない平和",
+            "normalized": "差分を消さない平和",
+            "compact": "差分を消さない平和"
+          },
+          {
+            "lang": "en",
+            "text": "peace specification",
+            "normalized": "peace specification",
+            "compact": "peacespecification"
+          },
+          {
+            "lang": "en",
+            "text": "limited contact",
+            "normalized": "limited contact",
+            "compact": "limitedcontact"
+          },
+          {
+            "lang": "en",
+            "text": "peace without erasing difference",
+            "normalized": "peace without erasing difference",
+            "compact": "peacewithouterasingdifference"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "peace",
+            "normalized": "peace",
+            "compact": "peace"
+          },
+          {
+            "lang": "ja",
+            "text": "平和",
+            "normalized": "平和",
+            "compact": "平和"
+          },
+          {
+            "lang": "en",
+            "text": "Peace",
+            "normalized": "peace",
+            "compact": "peace"
+          },
+          {
+            "lang": "und",
+            "text": "ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          },
+          {
+            "lang": "ja",
+            "text": "倫理",
+            "normalized": "倫理",
+            "compact": "倫理"
+          },
+          {
+            "lang": "en",
+            "text": "Ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "すべてを開かずに平和を作るにはどうすればよいか",
+            "normalized": "すべてを開かずに平和を作るにはどうすればよいか",
+            "compact": "すべてを開かずに平和を作るにはどうすればよいか"
+          },
+          {
+            "lang": "ja",
+            "text": "違いを消さずに接触を続けるには何が必要か",
+            "normalized": "違いを消さずに接触を続けるには何が必要か",
+            "compact": "違いを消さずに接触を続けるには何が必要か"
+          },
+          {
+            "lang": "ja",
+            "text": "拒否や停止を残した平和は設計できるか",
+            "normalized": "拒否や停止を残した平和は設計できるか",
+            "compact": "拒否や停止を残した平和は設計できるか"
+          },
+          {
+            "lang": "en",
+            "text": "How can peace be designed without opening every channel?",
+            "normalized": "how can peace be designed without opening every channel",
+            "compact": "howcanpeacebedesignedwithoutopeningeverychannel"
+          },
+          {
+            "lang": "en",
+            "text": "How can contact continue without erasing difference?",
+            "normalized": "how can contact continue without erasing difference",
+            "compact": "howcancontactcontinuewithouterasingdifference"
+          },
+          {
+            "lang": "en",
+            "text": "Can peace preserve refusal and stopping conditions?",
+            "normalized": "can peace preserve refusal and stopping conditions",
+            "compact": "canpeacepreserverefusalandstoppingconditions"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "存在相、意味容量、境界外交を平和仕様へ接続する公開応用文書",
+            "normalized": "存在相 意味容量 境界外交を平和仕様へ接続する公開応用文書",
+            "compact": "存在相意味容量境界外交を平和仕様へ接続する公開応用文書"
+          },
+          {
+            "lang": "en",
+            "text": "Public application connecting existence phases, meaning capacity, and boundary diplomacy to a peace specification",
+            "normalized": "public application connecting existence phases meaning capacity and boundary diplomacy to a peace specification",
+            "compact": "publicapplicationconnectingexistencephasesmeaningcapacityandboundarydiplomacytoapeacespecification"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "peace, society, boundary ethics, meaning-experience field, social boundary design",
+            "normalized": "peace society boundary ethics meaning experience field social boundary design",
+            "compact": "peacesocietyboundaryethicsmeaningexperiencefieldsocialboundarydesign"
+          }
+        ]
+      }
+    }
+  ]
+}

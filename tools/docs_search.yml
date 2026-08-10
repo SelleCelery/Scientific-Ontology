@@ -1,0 +1,199 @@
+search:
+  spec_version: '0.1'
+  normalization:
+    unicode: NFKC
+    ascii_casefold: true
+    punctuation_to_space: true
+    collapse_whitespace: true
+    kana_fold: false
+  query_mode:
+    default: auto
+    values:
+      - auto
+      - term
+      - question
+  modes:
+    term:
+      field_weights:
+        title: 10.0
+        owned_concept: 9.0
+        aliases: 8.0
+        topics: 6.0
+        reader_questions: 4.0
+        role: 3.0
+        scope: 2.0
+    question:
+      field_weights:
+        reader_questions: 10.0
+        aliases: 8.0
+        topics: 6.0
+        owned_concept: 6.0
+        role: 5.0
+        scope: 4.0
+        title: 3.0
+  match_strength:
+    exact: 1.0
+    contains: 0.9
+    term_coverage: 0.75
+    query_expansion: 0.65
+    char_ngram_cap: 0.45
+  thresholds:
+    minimum_result_score: 2.5
+    char_ngram_min_chars: 4
+    char_ngram_min_similarity: 0.28
+  question_markers_ja:
+    - '?'
+    - ？
+    - とは
+    - どう
+    - なぜ
+    - 何
+    - どこ
+    - どの
+  navigation_topics:
+    overview:
+      ja: 全体像
+      en: Overview
+    boundary:
+      ja: 境界
+      en: Boundary
+    epistemology:
+      ja: 認識論
+      en: Epistemology
+    cognition:
+      ja: 認識
+      en: Cognition
+    meaning:
+      ja: 意味
+      en: Meaning
+    language:
+      ja: 言語
+      en: Language
+    communication:
+      ja: 通信
+      en: Communication
+    commensuration:
+      ja: 通約
+      en: Commensuration
+    network:
+      ja: ネットワーク
+      en: Network
+    logical_depth:
+      ja: 論理-深度
+      en: Logical depth
+    ai:
+      ja: AI
+      en: AI
+    judgment:
+      ja: 判断
+      en: Judgment
+    responsibility:
+      ja: 責任
+      en: Responsibility
+    ethics:
+      ja: 倫理
+      en: Ethics
+    peace:
+      ja: 平和
+      en: Peace
+    consent:
+      ja: 同意
+      en: Consent
+    literature:
+      ja: 文学
+      en: Literature
+    science:
+      ja: 科学
+      en: Science
+  query_expansions:
+    meaning_formation:
+      note: Search-only association; does not assert conceptual identity.
+      ja:
+        - 意味はどうやって成立する
+        - 意味ができる
+        - 情報と意味
+      en:
+        - how meaning forms
+        - meaning formation
+        - information and meaning
+    return_path:
+      note: Search-only association; does not assert conceptual identity.
+      ja:
+        - 返路
+        - 元へ戻す経路
+        - 結果を返す
+      en:
+        - return path
+        - path of return
+        - returning consequences
+    judgment_delegation:
+      note: Search-only association; does not assert conceptual identity.
+      ja:
+        - 判断を任せる
+        - 判断を委ねる
+        - 決定権を渡す
+        - 人間に判断を残す
+      en:
+        - delegate judgment
+        - hand over decision authority
+        - retain human judgment
+    commensuration_gap:
+      note: Search-only association; does not assert conceptual identity.
+      ja:
+        - 同じ言葉なのに話が噏み合わない
+        - 分野が違うと通じない
+        - 異なる世界観を比較する
+      en:
+        - same words but frameworks do not match
+        - different fields do not communicate
+        - compare different worldviews
+    literature_worldmaking:
+      note: Search-only association; does not assert conceptual identity.
+      ja:
+        - 文学は何をしている
+        - 物語が世界を作る
+        - 世界制作としての文学
+      en:
+        - what literature does
+        - stories make worlds
+        - literature as worldmaking
+    science_boundary:
+      note: Search-only association; does not assert conceptual identity.
+      ja:
+        - 科学と存在境界論
+        - 科学と宗教
+        - 主観と客観
+      en:
+        - science and Scientific Ontology
+        - science and religion
+        - subjective and objective
+    consent_one_bit:
+      note: Search-only association; does not assert conceptual identity.
+      ja:
+        - 同意を一ビット
+        - 同意するしかない
+        - 留保付きで受諾する
+      en:
+        - one-bit consent
+        - no option but to consent
+        - accept with reservations
+    peace_limited_contact:
+      note: Search-only association; does not assert conceptual identity.
+      ja:
+        - すべてを開かない平和
+        - 差分を消さない平和
+        - 限定的な接触
+      en:
+        - peace without opening every channel
+        - peace without erasing difference
+        - limited contact
+    grammar_beyond_syntax:
+      note: Search-only association; does not assert conceptual identity.
+      ja:
+        - 文法は語順だけ
+        - 身振りも文法
+        - 制度も文法
+      en:
+        - grammar is more than syntax
+        - gesture as grammar
+        - institutional grammar

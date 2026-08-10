@@ -37,6 +37,7 @@ Research Notesは基礎層を暗黙に更新しない。昇格には、定義所
 
 含むもの：
 
+- 言語・意味・通信位相の横断研究
 - 物理・宇宙論近接仮説
 - 認識動態・通信・組織境界研究
 - 横断的倫理・物語・非対称性研究
@@ -58,6 +59,7 @@ Research Notesは基礎層を暗黙に更新しない。昇格には、定義所
 
 最初に[`Research_Notes_Index.md`](./Research_Notes_Index.md)を参照する。
 
+- [`Language_Meaning_and_Communication_Phase_Studies/README.md`](./Language_Meaning_and_Communication_Phase_Studies/README.md)：文法、意味、発話、通約、意味ネットワーク、AI言語生成、返路
 - [`Cognitive_Dynamics_Communication_Studies/README.md`](./Cognitive_Dynamics_Communication_Studies/README.md)：シームレスな認識通信、存在相圧縮、ポート、組織境界
 - [`Cross_Domain_Ontological_Notes/README.md`](./Cross_Domain_Ontological_Notes/README.md)：非対称性、再照合、返りの倫理、物語的真理
 - [`Physical_Cosmological_Notes/README.md`](./Physical_Cosmological_Notes/README.md)：内在時間、宇宙史、PINGER、カオス、論理-深度軸
@@ -80,6 +82,7 @@ Research Notesは基礎層を暗黙に更新しない。昇格には、定義所
 - Research Notesを根拠の免責領域として使用しない。
 - 基礎層へ昇格する際は公開定義所有者を明示する。
 - 文書一覧は索引と各サブREADMEで同期する。
+- 言語・意味・通信位相研究では変更履歴とReturn Intakeを保守し、公開後の残差を研究線へ返す。
 
 # English Commensurated Rendering
 
@@ -107,6 +110,7 @@ Research Notes may not alter foundational layers silently. Promotion requires re
 
 Included:
 
+- cross-cutting research on language, meaning, and communication phase;
 - physics- and cosmology-adjacent hypotheses;
 - cognitive dynamics, communication, and organizational-boundary research;
 - cross-domain ethics, narrative, and asymmetry research;
@@ -128,6 +132,7 @@ Not included:
 
 Begin with [`Research_Notes_Index.md`](./Research_Notes_Index.md).
 
+- [`Language_Meaning_and_Communication_Phase_Studies/README.md`](./Language_Meaning_and_Communication_Phase_Studies/README.md): grammar, meaning, speech, commensuration, semantic networks, AI language generation, and return paths
 - [`Cognitive_Dynamics_Communication_Studies/README.md`](./Cognitive_Dynamics_Communication_Studies/README.md): seamless cognition, existence-phase compression, ports, and organizational boundaries
 - [`Cross_Domain_Ontological_Notes/README.md`](./Cross_Domain_Ontological_Notes/README.md): asymmetry, re-collation, return ethics, and narrative truth
 - [`Physical_Cosmological_Notes/README.md`](./Physical_Cosmological_Notes/README.md): intrinsic time, cosmic history, PINGER, chaos, and logical depth
@@ -150,3 +155,4 @@ Downstream: [`../04_Applications/README.md`](../04_Applications/README.md)
 - Do not use Research Notes as an exemption from evidential responsibility.
 - Identify a public definition owner before promotion.
 - Keep document lists synchronized with the index and subdirectory READMEs.
+- In the language/meaning/communication-phase line, retain change history and Return Intake so that public residuals can return to the research line.

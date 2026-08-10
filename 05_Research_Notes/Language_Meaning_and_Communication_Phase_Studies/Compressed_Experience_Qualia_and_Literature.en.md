@@ -240,7 +240,7 @@ These sources are not grounds for literary experience. They are used to identify
 - imports_from: [`Meaning_Generation_Model.md`](../../01_Sat_Truth/Meaning_Generation_Model.md)
 - imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
 - imports_from: [`Narrative_Truth_and_Structural_Reading.en.md`](../Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md)
-- collates_with: [`Literature_as_Worldmaking.en.md`](../Literary_Ontological_Notes/Literature_as_Worldmakingen.md)
+- collates_with: [`Literature_as_Worldmaking.en.md`](../Literary_Ontological_Notes/Literature_as_Worldmaking.en.md)
 - imports_from: [`Meaning_as_Collation_and_Return_Path.en.md`](./Meaning_as_Collation_and_Return_Path.en.md)
 - tests_with: [`Intension_Extension_and_False_Extension.en.md`](./Intension_Extension_and_False_Extension.en.md)
 - returns_to: [`Meaning_Generation_Model.md`](../../01_Sat_Truth/Meaning_Generation_Model.md)

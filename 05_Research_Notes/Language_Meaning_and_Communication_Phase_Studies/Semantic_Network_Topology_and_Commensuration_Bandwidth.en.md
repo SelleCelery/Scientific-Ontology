@@ -33,7 +33,7 @@ As the central placement document for Language, Meaning, and Communication Phase
 
 This note is not an authoritative source above the other eight documents. It is a central collational surface that places their concepts and makes conflicts and return paths visible.
 
-At a deeper level of Scientific Ontology, however, the root structure of existence itself is provisionally rendered as a network. The concentration here of distance, bandwidth, return paths, gravity, phase transition, time, and entropy is therefore not treated as an editorial accident. Rather than divide the responsibilities at Gate 3, the document separates claim phases.
+At a deeper level of Scientific Ontology, however, the root structure of existence itself is provisionally rendered as a network. The concentration here of distance, bandwidth, return paths, gravity, phase transition, time, and entropy is therefore not treated as an editorial accident. Rather than divide the responsibilities, the document separates claim phases.
 
 ## 1. Central Thesis
 

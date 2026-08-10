@@ -2,7 +2,7 @@
 
 > Layer: 00_Overview  
 > Status: Map  
-> Scope: repository architecture / conceptual layers / public boundary / governance / research dynamics  
+> Scope: repository architecture / operational orientation / conceptual layers / public boundary / governance / research dynamics
 > Language: ja+en  
 > Public profile: P0-P1  
 > Claim strength: Repository and concept-architecture map; not an empirical claim  
@@ -42,12 +42,18 @@
 
 これらを通じて、存在がどのように現れ、認識され、意味を持ち、他の存在、制度、環境、未来へ作用するかを記述する。
 
-公開体系では、境界認識批判から認識生成、認識運用、実装、返送へ至る次の連続を明示する。
+存在境界論は、主観側、客観側、横断研究、その他の異なる言語ゲームのどれか一つを最終言語として選ぶことから始めない。それぞれの成立条件、観測範囲、主張強度、限界を保持したまま、境界へ持ち寄って照合できる場を整えること自体を研究対象とする。通約は同一化ではなく、差異、非同一性、残差、返路を追跡可能にする操作である。
+
+また、v5系開始時に追加された[`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md)は、境界事件、作用、返り、責任分界、可動性という運用方向を提示する。これは新しい上位公理ではなく、既存概念を外部実装へ持ち出すための全体方針である。
+
+公開体系では、境界認識批判から認識生成、言語・意味・通信位相の横断基盤、認識運用、実装、返送へ至る次の連続を明示する。
 
 ```text
 境界認識批判
   ↓
 境界認識生成
+  ↓
+言語・意味・通信位相の横断基盤
   ↓
 境界認識運用
   ↓
@@ -93,6 +99,8 @@
 │
 ├─ 00_Overview/
 │  ├─ README.md
+│  ├─ Scientific_Ontology_Operational_Outline.ja.md
+│  ├─ Scientific_Ontology_Operational_Outline.en.md
 │  ├─ Scientific_Ontology_System_Map.md
 │  ├─ Scientific_Ontology_Concept_Network.ja.md
 │  ├─ Scientific_Ontology_Concept_Network.en.md
@@ -163,7 +171,21 @@
 │  │  ├─ Return_Ethics_and_Retaliation_Conversion.ja.md
 │  │  ├─ Return_Ethics_and_Retaliation_Conversion.en.md
 │  │  ├─ Narrative_Truth_and_Structural_Reading.ja.md
-│  │  └─ Narrative_Truth_and_Structural_Reading.en.md
+│  │  ├─ Narrative_Truth_and_Structural_Reading.en.md
+│  │  ├─ Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md
+│  │  └─ Consent_Boundary_and_Sentence_Bit_Asymmetry.en.md
+│  ├─ Language_Meaning_and_Communication_Phase_Studies/
+│  │  ├─ README.md
+│  │  ├─ Grammar_as_a_Meaning_Pressure_Channel.ja.md / .en.md
+│  │  ├─ Meaning_as_Collation_and_Return_Path.ja.md / .en.md
+│  │  ├─ Compressed_Experience_Qualia_and_Literature.ja.md / .en.md
+│  │  ├─ AI_Language_Generation_and_Grammatical_Frames.ja.md / .en.md
+│  │  ├─ Speech_as_Sequential_Decompression.ja.md / .en.md
+│  │  ├─ Intension_Extension_and_False_Extension.ja.md / .en.md
+│  │  ├─ Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md / .en.md
+│  │  ├─ Commensuration_as_Cross_Grammatical_Collation.ja.md / .en.md
+│  │  ├─ Linguistic_Frame_Differences_between_Japanese_and_English.ja.md / .en.md
+│  │  └─ Return_Intake_Log.ja.md / .en.md
 │  ├─ Physical_Cosmological_Notes/
 │  │  ├─ README.md
 │  │  ├─ Intrinsic_Time_Standard_Model_Correspondence.ja.md
@@ -179,6 +201,8 @@
 │  ├─ Social_Boundary_Notes/
 │  │  ├─ README.md
 │  │  ├─ AI_Adoption_as_Synchronization_Closure.md
+│  │  ├─ DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md
+│  │  ├─ DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md
 │  │  ├─ Negentropy_Economy_Principles.ja.md
 │  │  ├─ Negentropy_Economy_Principles.en.md
 │  │  ├─ Negentropy_Economy_and_Meaning_Generation.ja.md
@@ -191,7 +215,9 @@
 │     ├─ README.md
 │     ├─ reading-blue-light.ja.md
 │     ├─ reading-blue-light.en.md
-│     └─ Meifu_Bureau_Reincarnation_and_Belief_Gravity.md
+│     ├─ Meifu_Bureau_Reincarnation_and_Belief_Gravity.md
+│     ├─ Literature_as_Worldmaking.ja.md
+│     └─ Literature_as_Worldmaking.en.md
 │
 ├─ 06_Visual_Materials/
 │  ├─ README.md
@@ -203,6 +229,11 @@
 │  ├─ README.md
 │  ├─ Publication_and_Commensuration_Policy.md
 │  ├─ Translation_Note.md
+│  ├─ Release_Update/
+│  │  ├─ UPDATE_PACK.md
+│  │  ├─ release_state.yml
+│  │  ├─ release_update.py
+│  │  └─ requirements.txt
 │  └─ Terminology/
 │     ├─ README.md
 │     ├─ Scientific_Terminology_Protocol.md
@@ -249,6 +280,7 @@ Glossaryは統治文書の一種でもあるが、公開概念の横断入口と
 
 中心的な役割は次である。
 
+- 存在境界論全体の運用方針を示す。
 - 概念体系の入口を示す。
 - リポジトリ構造を示す。
 - 研究動態と目的循環を示す。
@@ -257,6 +289,7 @@ Glossaryは統治文書の一種でもあるが、公開概念の横断入口と
 
 主要文書：
 
+- [`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md)：v5系開始時に自覚された全体運用方針。新しい上位公理ではなく、外部実装へ向けた運用方向を示す。
 - [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md)：概念配置、読解経路、定義所有、返路、アポリアの入口。
 - [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)：リポジトリと概念層の体系配置。
 - [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md)：第一義、共有、世界形成、Boundary PDCAを通じた研究・運用循環。
@@ -330,6 +363,12 @@ AIや制度を採用する社会側の境界、責任、照合、平和条件を
 
 `05_Research_Notes`は、公開基礎層へ直接入れるには主張強度または誤読リスクが高いが、捨てずに保持すべき研究線を置く。
 
+### `Language_Meaning_and_Communication_Phase_Studies`
+
+言語、意味、文法、発話、通約、意味ネットワーク、AI言語生成を、返路を含む通信位相として扱う横断研究線。v5系では最初のLiving Canonical運用線として、変更履歴とReturn Intakeを明示的に持つ。
+
+この研究線は、意味生成モデルを置換しない。言語的意味を局所所有し、既存の意味、HFC、認識論、AI応用へ残差を返す。
+
 ### `Cognitive_Dynamics_Communication_Studies`
 
 認識が通信的にはシームレスでありながら、実際の運用では存在相、ポート、容量、責任へ離散化される構造を扱う。
@@ -338,7 +377,7 @@ AIや制度を採用する社会側の境界、責任、照合、平和条件を
 
 ### `Cross_Domain_Ontological_Notes`
 
-非対称性、返りの倫理、報復変換、物語的真理など、複数分野を横断する存在論的読解を置く。
+非対称性、返りの倫理、報復変換、物語的真理、同意境界とsentence/bit非対称など、複数分野を横断する存在論的読解を置く。
 
 ### `Physical_Cosmological_Notes`
 
@@ -346,7 +385,7 @@ AIや制度を採用する社会側の境界、責任、照合、平和条件を
 
 ### `Social_Boundary_Notes`
 
-AI導入、ネゲントロピー経済、意味生成、社会境界に関する研究ノートを置く。
+AI導入、ネゲントロピー経済、意味生成、社会境界、DSSIの観測・判断主権・責任返還に関する研究ノートを置く。DSSIアプリケーション本体はv5.0には含まれない。
 
 ### `AI_Personality_Notes`
 
@@ -354,7 +393,7 @@ AI人格、履歴ループ、帰還安定性、論理サンドボックスを研
 
 ### `Literary_Ontological_Notes`
 
-文学を証拠として使用するのではなく、境界、履歴、意味、信念重力を読む存在論的読解として扱う。
+文学を証拠として使用するのではなく、境界、履歴、意味、信念重力、世界制作としての文学を読む存在論的読解として扱う。
 
 各文書の詳細は、[`Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md)を参照する。
 
@@ -401,6 +440,10 @@ tools/*.yml
 
 ---
 
+### Release Update / リリース更新
+
+`90_Repository_Governance/Release_Update`は、版ごとの公開事実を`release_state.yml`へ集約し、`release_update.py`によって`RELEASE_NOTES.md`、`CITATION.cff`、`CITATION.md`、`.zenodo.json`を同期する。README、Roadmap、Concept Network、System Map、Glossary等の意味内容は自動生成せず、人間所有の構造文書としてレビューする。
+
 ## 11. `tools`・`scripts`・`.github` — 機械可読統治と検査
 
 | ファイル | 役割 |
@@ -434,6 +477,8 @@ tools/*.yml
   ↓
 02 差分・履歴・認識方向
   ↓
+05 横断基盤：言語・意味・通信位相
+  ↓
 03 規約・倫理・通約・管理
   ↓
 04 公開応用
@@ -447,7 +492,7 @@ tools/*.yml
 01–03の正本所有文書へ返送
 ```
 
-研究動態とは、根拠へ深く降りることで、表層において記述、比較、実装、再照合できる領域を増やす運動である。
+研究動態とは、根拠へ深く降りることで、表層において記述、比較、実装、再照合できる領域を増やす運動である。v5系では、この循環を代謝型に明示し、研究ノートを他領域へ持ち出した結果、批判、失敗、残差、実装上の盲点が返れば、その返りを上流文書の更新理由として扱う。
 
 倫理は、その運動の外部に置かれた応用ではない。壊さずに接触し、全面切断せずに停止し、差異を同一化せずに通信する必要が、認識、ポート、責任、組織の記述解像度を引き上げる。
 
@@ -473,9 +518,10 @@ tools/*.yml
 
 目的別の入口は次である。
 
-- 全体を短時間で把握する：[`README.md`](../README.md) → [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md)
+- 全体を短時間で把握する：[`README.md`](../README.md) → [`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md) → [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md)
 - 基底を読む：[`Four_Axioms_of_Existence.md`](../01_Sat_Truth/Four_Axioms_of_Existence.md) → [`Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md)
 - 境界認識を読む：境界認識批判 → 認識軸生成 → 選択公理モジュール → Truth Management
+- 言語・意味・通信位相を読む：[`Language, Meaning, and Communication Phase Studies`](../05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md) → 個別9研究 → Return Intake
 - 倫理・組織・平和を読む：Cognitive Dynamics → Port Allocation → Organizational Boundary → Specification for Peace
 - 物理近接研究を読む：Physics Correspondence Policy → Physical Cosmological Notes
 - 公開・通約規則を確認する：Glossary → Publication and Commensuration Policy → Term Collision Registries
@@ -495,6 +541,8 @@ tools/*.yml
 - 公開境界または`.gitignore`の公開許可構造が変わる。
 
 個別ファイルの追加・削除は、各README、manifest、Release Notesで管理する。
+
+ただし、全体運用方針、新しい横断研究線、公開入口の変更が生じた場合は、ルートREADME、Roadmap、`00_Overview/README.md`、Concept Network、System Map、Glossary、Research Notes Indexを一つの構造更新単位としてレビューする。
 
 ---
 
@@ -530,12 +578,18 @@ Its central public objects are:
 
 Through these concepts, the system describes how existence appears, becomes recognized, acquires meaning, and affects other existences, institutions, environments, and futures.
 
+Scientific Ontology does not begin by selecting a subjective account, an objective account, cross-domain research, or any other language game as the final language. It attempts to maintain a field in which different language games can be brought to the boundary while preserving their conditions of validity, observational scope, claim strength, and limits. Commensuration is not identification; it keeps difference, non-identity, residuals, and return paths traceable.
+
+The [`Scientific_Ontology_Operational_Outline.en.md`](./Scientific_Ontology_Operational_Outline.en.md), added at the opening of the v5 series, presents an operational direction through boundary events, action, return, responsibility partition, and mobility. It is not a new superior axiom but a whole-system orientation for carrying existing concepts into external implementation.
+
 The public architecture makes the following continuity explicit:
 
 ```text
 critique of boundary cognition
   ↓
 formation of boundary cognition
+  ↓
+cross-cutting foundation: language / meaning / communication phase
   ↓
 operation of boundary cognition
   ↓
@@ -581,6 +635,8 @@ The following tree represents the public structure and excludes `000*` working d
 │
 ├─ 00_Overview/
 │  ├─ README.md
+│  ├─ Scientific_Ontology_Operational_Outline.ja.md
+│  ├─ Scientific_Ontology_Operational_Outline.en.md
 │  ├─ Scientific_Ontology_System_Map.md
 │  ├─ Scientific_Ontology_Concept_Network.ja.md
 │  ├─ Scientific_Ontology_Concept_Network.en.md
@@ -651,7 +707,21 @@ The following tree represents the public structure and excludes `000*` working d
 │  │  ├─ Return_Ethics_and_Retaliation_Conversion.ja.md
 │  │  ├─ Return_Ethics_and_Retaliation_Conversion.en.md
 │  │  ├─ Narrative_Truth_and_Structural_Reading.ja.md
-│  │  └─ Narrative_Truth_and_Structural_Reading.en.md
+│  │  ├─ Narrative_Truth_and_Structural_Reading.en.md
+│  │  ├─ Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md
+│  │  └─ Consent_Boundary_and_Sentence_Bit_Asymmetry.en.md
+│  ├─ Language_Meaning_and_Communication_Phase_Studies/
+│  │  ├─ README.md
+│  │  ├─ Grammar_as_a_Meaning_Pressure_Channel.ja.md / .en.md
+│  │  ├─ Meaning_as_Collation_and_Return_Path.ja.md / .en.md
+│  │  ├─ Compressed_Experience_Qualia_and_Literature.ja.md / .en.md
+│  │  ├─ AI_Language_Generation_and_Grammatical_Frames.ja.md / .en.md
+│  │  ├─ Speech_as_Sequential_Decompression.ja.md / .en.md
+│  │  ├─ Intension_Extension_and_False_Extension.ja.md / .en.md
+│  │  ├─ Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md / .en.md
+│  │  ├─ Commensuration_as_Cross_Grammatical_Collation.ja.md / .en.md
+│  │  ├─ Linguistic_Frame_Differences_between_Japanese_and_English.ja.md / .en.md
+│  │  └─ Return_Intake_Log.ja.md / .en.md
 │  ├─ Physical_Cosmological_Notes/
 │  │  ├─ README.md
 │  │  ├─ Intrinsic_Time_Standard_Model_Correspondence.ja.md
@@ -667,6 +737,8 @@ The following tree represents the public structure and excludes `000*` working d
 │  ├─ Social_Boundary_Notes/
 │  │  ├─ README.md
 │  │  ├─ AI_Adoption_as_Synchronization_Closure.md
+│  │  ├─ DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md
+│  │  ├─ DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md
 │  │  ├─ Negentropy_Economy_Principles.ja.md
 │  │  ├─ Negentropy_Economy_Principles.en.md
 │  │  ├─ Negentropy_Economy_and_Meaning_Generation.ja.md
@@ -679,7 +751,9 @@ The following tree represents the public structure and excludes `000*` working d
 │     ├─ README.md
 │     ├─ reading-blue-light.ja.md
 │     ├─ reading-blue-light.en.md
-│     └─ Meifu_Bureau_Reincarnation_and_Belief_Gravity.md
+│     ├─ Meifu_Bureau_Reincarnation_and_Belief_Gravity.md
+│     ├─ Literature_as_Worldmaking.ja.md
+│     └─ Literature_as_Worldmaking.en.md
 │
 ├─ 06_Visual_Materials/
 │  ├─ README.md
@@ -691,6 +765,11 @@ The following tree represents the public structure and excludes `000*` working d
 │  ├─ README.md
 │  ├─ Publication_and_Commensuration_Policy.md
 │  ├─ Translation_Note.md
+│  ├─ Release_Update/
+│  │  ├─ UPDATE_PACK.md
+│  │  ├─ release_state.yml
+│  │  ├─ release_update.py
+│  │  └─ requirements.txt
 │  └─ Terminology/
 │     ├─ README.md
 │     ├─ Scientific_Terminology_Protocol.md
@@ -818,6 +897,12 @@ This layer does not include implementation code, product specifications, legal a
 
 `05_Research_Notes` retains research lines whose claim strength or misreading risk is too high for direct placement in the public foundational layers, but which should not be discarded.
 
+### `Language_Meaning_and_Communication_Phase_Studies`
+
+A cross-cutting research line treating language, meaning, grammar, speech, commensuration, semantic networks, and AI language generation as communication phases with return paths. In the v5 series it is the first line to operate explicitly as a living-canonical research surface with change history and Return Intake.
+
+It does not replace the Meaning Generation Model. It owns only local linguistic-meaning questions and returns residuals to meaning, HFC, epistemology, and AI application documents.
+
 ### `Cognitive_Dynamics_Communication_Studies`
 
 This area examines how cognition can be communicatively seamless while practical operation requires discretization into phases, ports, capacities, and responsibilities.
@@ -826,7 +911,7 @@ It connects cognitive dynamics to organizational boundaries, responsibility boun
 
 ### `Cross_Domain_Ontological_Notes`
 
-This area contains cross-domain ontological readings of asymmetry, return ethics, retaliation conversion, and narrative truth.
+This area contains cross-domain ontological readings of asymmetry, return ethics, retaliation conversion, narrative truth, and the consent boundary under sentence/bit asymmetry.
 
 ### `Physical_Cosmological_Notes`
 
@@ -834,7 +919,7 @@ This area contains higher-claim-strength, physics- and cosmology-adjacent hypoth
 
 ### `Social_Boundary_Notes`
 
-This area contains research notes on AI adoption, negentropy economy, meaning generation, and social boundaries.
+This area contains research notes on AI adoption, negentropy economy, meaning generation, social boundaries, and DSSI research on observation, judgment sovereignty, and responsibility return. The DSSI application itself is not included in v5.0.
 
 ### `AI_Personality_Notes`
 
@@ -842,7 +927,7 @@ This area treats AI personality, history loops, return stability, and logical sa
 
 ### `Literary_Ontological_Notes`
 
-This area does not use literature as empirical proof. It uses ontological reading to examine boundaries, history, meaning, and belief gravity.
+This area does not use literature as empirical proof. It uses ontological reading to examine boundaries, history, meaning, belief gravity, and literature as worldmaking.
 
 For document-level details, see [`Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md).
 
@@ -888,6 +973,10 @@ tools/*.yml
 ```
 
 ---
+
+### Release Update
+
+`90_Repository_Governance/Release_Update` centralizes release facts in `release_state.yml`. `release_update.py` synchronizes `RELEASE_NOTES.md`, `CITATION.cff`, `CITATION.md`, and `.zenodo.json`. It does not generate the substantive meaning of the README, Roadmap, Concept Network, System Map, or Glossary; those remain human-owned structural documents.
 
 ## 11. `tools`, `scripts`, and `.github` — Machine-Readable Governance and Validation
 

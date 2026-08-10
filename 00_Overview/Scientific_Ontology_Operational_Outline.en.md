@@ -1,4 +1,4 @@
-﻿# Scientific Ontology Operational Outline
+# Scientific Ontology Operational Outline
 
 ## A Whole-System Orientation Recognized at the Opening of the v5 Series
 
@@ -33,7 +33,7 @@ This is the shortest operational entrance used by this outline.
 
 ---
 
-## 1. Do not explain everything from outside窶俳r from the self
+## 1. Do not explain everything from outside—or from the self
 
 When an unwelcome external event reaches a person, it can expose what that person fears, expects, rejects, lacks, or can no longer tolerate. But this does not mean that everything is the person's responsibility.
 
@@ -202,7 +202,7 @@ The purpose is not only to prove that Scientific Ontology was already correct. T
 
 Implementation and generalization increase this circulation.
 
-The framework goes out, is used, is allowed to fail, receives return, and窶背here necessary窶廃ermits the theory itself to change.
+The framework goes out, is used, is allowed to fail, receives return, and—where necessary—permits the theory itself to change.
 
 This metabolism belongs to the operation of Scientific Ontology itself.
 
@@ -220,7 +220,7 @@ This document does not claim that:
 6. one universal definition of justice has been settled;
 7. the difference between subjective and objective description should be erased;
 8. "eternity" has been established here as an empirical scientific fact;
-9. mobility should always be maximized窶敗afety, rest, protection, and temporary fixation may be necessary;
+9. mobility should always be maximized—safety, rest, protection, and temporary fixation may be necessary;
 10. usefulness alone determines whether a theory is true.
 
 The document proposes an operational line for bringing such different conditions into boundary collation and updating judgment through action and return.

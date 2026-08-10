@@ -261,6 +261,7 @@ class CheckResult:
     contract_documents_checked: int = 0
     concepts_checked: int = 0
     contract_relations_checked: int = 0
+    release_state_items_checked: int = 0
 
     @property
     def error_count(self) -> int:
@@ -1481,6 +1482,121 @@ def check_release_metadata(root: Path, excluded_paths: Optional[set[str]] = None
     return issues
 
 
+def check_release_state_consistency(
+    root: Path,
+    manifest: Optional[Manifest],
+    release_gate: bool = False,
+) -> Tuple[List[Issue], int]:
+    """Check release_state.yml against repository paths and docs_manifest.yml.
+
+    release_state.yml owns release facts. docs_manifest.yml owns the public
+    document ledger. This bridge only checks mechanically defensible overlap;
+    it does not transfer conceptual ownership between those files.
+    """
+    issues: List[Issue] = []
+    checked = 0
+    state_path = root / "90_Repository_Governance" / "Release_Update" / "release_state.yml"
+    if not state_path.exists():
+        return issues, checked
+    if yaml is None:
+        issues.append(Issue(
+            "warning", relpath(state_path, root), 1, "PYYAML_MISSING_FOR_RELEASE_STATE",
+            "PyYAML is not installed; release_state.yml consistency checks were skipped.",
+            "Install PyYAML, for example: python -m pip install pyyaml",
+        ))
+        return issues, checked
+    try:
+        data = yaml.safe_load(state_path.read_text(encoding="utf-8")) or {}
+    except Exception as exc:
+        issues.append(Issue(
+            "error", relpath(state_path, root), 1, "RELEASE_STATE_PARSE_FAILED",
+            f"Could not parse release_state.yml: {exc}",
+            "Fix release_state.yml syntax before release validation.",
+        ))
+        return issues, checked
+
+    public_scope = data.get("public_scope", {}) if isinstance(data, dict) else {}
+    inclusions = public_scope.get("guaranteed_inclusions", []) if isinstance(public_scope, dict) else []
+    manifest_by_path = manifest.document_by_path if manifest is not None else {}
+
+    for item in inclusions if isinstance(inclusions, list) else []:
+        if not isinstance(item, dict) or item.get("status") != "included":
+            continue
+        checked += 1
+        rel = str(item.get("path", "")).strip()
+        if not rel:
+            issues.append(Issue(
+                "error", relpath(state_path, root), 1, "RELEASE_STATE_INCLUDED_PATH_MISSING",
+                "An included release-state item has no path.",
+                "Add a repository-relative path to every guaranteed inclusion.",
+            ))
+            continue
+        abs_path = root / rel
+        if not abs_path.exists():
+            issues.append(Issue(
+                "error", rel, 1, "RELEASE_STATE_INCLUDED_PATH_NOT_FOUND",
+                f"Guaranteed inclusion does not exist: {rel}",
+                "Create the file/directory, correct release_state.yml, or remove it from guaranteed inclusions.",
+            ))
+            continue
+
+        english = str(item.get("english_commensuration", "")).strip()
+        if english:
+            checked += 1
+            if not (root / english).exists():
+                issues.append(Issue(
+                    "error", english, 1, "RELEASE_STATE_ENGLISH_COMMENSURATION_NOT_FOUND",
+                    f"English commensuration listed by release_state.yml does not exist: {english}",
+                    "Create the commensuration or correct release_state.yml.",
+                ))
+
+        if manifest is None:
+            continue
+        if abs_path.is_file():
+            entry = manifest_by_path.get(rel)
+            if entry is None:
+                issues.append(Issue(
+                    "error" if release_gate else "warning", rel, 1,
+                    "RELEASE_STATE_INCLUDED_PATH_NOT_IN_MANIFEST",
+                    "Guaranteed release inclusion is not registered in docs_manifest.yml.",
+                    "Register the public document in tools/docs_manifest.yml.",
+                ))
+            elif str(entry.get("state", "")).strip() in {"planned", "deprecated"}:
+                issues.append(Issue(
+                    "error", rel, 1, "RELEASE_STATE_MANIFEST_STATE_CONFLICT",
+                    f"Guaranteed inclusion has incompatible manifest state: {entry.get('state')}",
+                    "Set the manifest state to public/public-candidate or revise the release inclusion.",
+                ))
+        elif abs_path.is_dir():
+            prefix = rel.rstrip("/") + "/"
+            registered = [k for k in manifest_by_path if k.startswith(prefix)]
+            if not registered:
+                issues.append(Issue(
+                    "error" if release_gate else "warning", rel, 1,
+                    "RELEASE_STATE_INCLUDED_DIRECTORY_NOT_IN_MANIFEST",
+                    "Guaranteed release directory has no registered documents in docs_manifest.yml.",
+                    "Register the research-line README and release-relevant documents in tools/docs_manifest.yml.",
+                ))
+
+    release_artifacts = data.get("release_artifacts", {}) if isinstance(data, dict) else {}
+    core = release_artifacts.get("core", []) if isinstance(release_artifacts, dict) else []
+    for item in core if isinstance(core, list) else []:
+        if not isinstance(item, dict):
+            continue
+        rel = str(item.get("path", "")).strip()
+        if not rel:
+            continue
+        checked += 1
+        if not (root / rel).exists():
+            issues.append(Issue(
+                "error", rel, 1, "RELEASE_ARTIFACT_PATH_NOT_FOUND",
+                f"Core release artifact does not exist: {rel}",
+                "Generate/synchronize the artifact or correct release_state.yml.",
+            ))
+
+    return issues, checked
+
+
 def manifest_doc_path(doc: Dict[str, Any]) -> str:
     return str(doc.get("path", "")).strip()
 
@@ -2185,6 +2301,12 @@ def run_checks(args: argparse.Namespace) -> CheckResult:
     setattr(args, "_contract_report", contract_report)
     setattr(args, "_contract_issues", contract_issues)
 
+    release_state_items_checked = 0
+    release_state_issues, release_state_items_checked = check_release_state_consistency(
+        root, manifest, release_gate=bool(args.release_gate)
+    )
+    issues.extend(release_state_issues)
+
     if args.check_release_metadata:
         issues.extend(check_release_metadata(root, excluded_paths))
 
@@ -2200,6 +2322,7 @@ def run_checks(args: argparse.Namespace) -> CheckResult:
         contract_documents_checked=contract_docs_checked,
         concepts_checked=concepts_checked,
         contract_relations_checked=contract_relations_checked,
+        release_state_items_checked=release_state_items_checked,
     )
 
 
@@ -2214,6 +2337,7 @@ def write_json_log(result: CheckResult, path: Path) -> None:
             "contract_documents_checked": result.contract_documents_checked,
             "concepts_checked": result.concepts_checked,
             "contract_relations_checked": result.contract_relations_checked,
+            "release_state_items_checked": result.release_state_items_checked,
             "errors": result.error_count,
             "warnings": result.warning_count,
             "info": result.info_count,
@@ -2239,6 +2363,7 @@ def write_markdown_log(result: CheckResult, path: Path) -> None:
         f"- Contract documents checked: {result.contract_documents_checked}",
         f"- Concept owners checked: {result.concepts_checked}",
         f"- Contract relations checked: {result.contract_relations_checked}",
+        f"- Release-state items checked: {result.release_state_items_checked}",
         f"- Errors: {result.error_count}",
         f"- Warnings: {result.warning_count}",
         f"- Info: {result.info_count}",
@@ -2270,6 +2395,7 @@ def print_console_summary(result: CheckResult) -> None:
     print(f"  Contract documents checked: {result.contract_documents_checked}")
     print(f"  Concept owners checked: {result.concepts_checked}")
     print(f"  Contract relations checked: {result.contract_relations_checked}")
+    print(f"  Release-state items checked: {result.release_state_items_checked}")
     print(f"  Errors: {result.error_count}")
     print(f"  Warnings: {result.warning_count}")
     print(f"  Info: {result.info_count}")

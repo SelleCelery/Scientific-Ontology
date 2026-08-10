@@ -23,6 +23,13 @@
 !tools/Public_Format_Registry.yml
 !.github/workflows/public-format-check.yml
 !scripts/check_public_format.py
+!scripts/build_docs_index.py
+!scripts/query_docs.py
+!tools/docs_search.yml
+!tools/docs_search_tests.yml
+!tools/docs_index.json
+!tools/docs_index.schema.json
+!tools/DOCS_NAVIGATION.md
 !tools/Public_Format_Registry.yml
 !tools/docs_manifest.yml
 !tools/maintenance_rules.yml

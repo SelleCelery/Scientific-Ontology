@@ -1,8 +1,8 @@
 # Public maintenance rules for Scientific Ontology / 存在境界論
-# Version: 0.2.0
+# Version: 0.3.0
 
 maintenance_rules:
-  version: "0.2.0"
+  version: "0.3.0"
   role: "terminology-and-maintenance-rules"
   default_severity: "warning"
   principle: >
@@ -74,6 +74,18 @@ maintenance_rules:
           - "開発名"
           - "former name"
           - "development name"
+      - from: "辺路"
+        use: "返路"
+        severity: "error"
+        reason: "返路 is the canonical project term. 辺路 is not an alternate spelling."
+      - from: "変路"
+        use: "返路"
+        severity: "error"
+        reason: "返路 is the canonical project term. 変路 is not an alternate spelling."
+      - from: "位相通信"
+        use: "通信位相"
+        severity: "error"
+        reason: "The canonical project term is 通信位相."
 
     exceptions:
       - term: "Internal Time"

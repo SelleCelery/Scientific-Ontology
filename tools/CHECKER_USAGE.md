@@ -132,13 +132,16 @@ python scripts/check_public_format.py \
 
 ## 4. Supported files / 対応ファイル
 
-The checker now reads all three maintenance files directly:
+The checker reads the three public-maintenance YAML files directly and, when present, also checks the release-state bridge:
 
 ```text
 tools/Public_Format_Registry.yml
 tools/docs_manifest.yml
 tools/maintenance_rules.yml
+90_Repository_Governance/Release_Update/release_state.yml
 ```
+
+`release_state.yml` remains the single source of release facts. The public-format checker does not redefine those facts; it checks that guaranteed inclusions and core release artifacts actually exist and do not conflict with the public document ledger.
 
 You can disable the optional files when needed:
 
@@ -273,3 +276,24 @@ Manual `workflow_dispatch` supports two optional inputs:
 Do not use this checker to freeze inquiry.
 
 Use it to stabilize the public boundary: links, metadata, release facts, terminology drift, and non-claim boundaries.
+
+
+## 12. v5 release-state bridge / v5リリース状態ブリッジ
+
+For v5 and later release preparation, run the release synchronizer before the public-format checker:
+
+```powershell
+python 90_Repository_Governance/Release_Update/release_update.py --check
+python scripts/check_public_format.py --root . --release-gate --manifest-check-unlisted --check-anchors --check-release-metadata
+```
+
+The responsibilities remain separate:
+
+- `release_state.yml` owns release facts and guaranteed inclusions.
+- `release_update.py` synchronizes release metadata artifacts.
+- `docs_manifest.yml` owns the public document ledger and typed conceptual relations.
+- `Public_Format_Registry.yml` owns public formatting rules.
+- `maintenance_rules.yml` owns terminology, public-boundary, and maintenance exceptions.
+- `check_public_format.py` validates the resulting public boundary without becoming a new definition owner.
+
+At release gate, a guaranteed inclusion missing from `docs_manifest.yml` is an error. A guaranteed included directory must have at least one registered document under that directory.

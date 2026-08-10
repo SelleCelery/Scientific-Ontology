@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/scientific-ontology/docs-index.schema.json",
+  "title": "Scientific Ontology document navigation index",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "search_spec_version",
+    "source",
+    "search_profile",
+    "topics",
+    "query_expansions",
+    "documents"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "search_spec_version": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "manifest_sha256",
+        "search_config_sha256",
+        "coverage",
+        "visibility_profile"
+      ],
+      "properties": {
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "search_config_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "coverage": {
+          "type": "string"
+        },
+        "visibility_profile": {
+          "enum": [
+            "preview",
+            "public"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "search_profile": {
+      "type": "object"
+    },
+    "topics": {
+      "type": "object"
+    },
+    "query_expansions": {
+      "type": "object"
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/document"
+      }
+    }
+  },
+  "$defs": {
+    "search_value": {
+      "type": "object",
+      "required": [
+        "lang",
+        "text",
+        "normalized",
+        "compact"
+      ],
+      "properties": {
+        "lang": {
+          "enum": [
+            "ja",
+            "en",
+            "und"
+          ]
+        },
+        "text": {
+          "type": "string"
+        },
+        "normalized": {
+          "type": "string"
+        },
+        "compact": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "document": {
+      "type": "object",
+      "required": [
+        "id",
+        "id_source",
+        "path",
+        "title",
+        "layer",
+        "document_type",
+        "status",
+        "state",
+        "scope",
+        "role",
+        "discovery",
+        "concepts",
+        "relations",
+        "search_fields"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+        },
+        "id_source": {
+          "enum": [
+            "explicit",
+            "fallback"
+          ]
+        },
+        "path": {
+          "type": "string"
+        },
+        "title": {
+          "type": "object"
+        },
+        "layer": {
+          "type": "string"
+        },
+        "document_type": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "role": {
+          "type": "object"
+        },
+        "language_relation": {},
+        "discovery": {
+          "type": "object"
+        },
+        "concepts": {
+          "type": "object"
+        },
+        "relations": {
+          "type": "object"
+        },
+        "search_fields": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/search_value"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

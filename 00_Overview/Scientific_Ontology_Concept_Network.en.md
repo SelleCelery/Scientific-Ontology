@@ -27,6 +27,10 @@ In this sense, Scientific Ontology is not a closed system.
 
 **Scientific Ontology does not abandon non-closure; it is a system for managing non-closure.**
 
+For that reason, Scientific Ontology does not begin by choosing theories weighted toward subjectivity, theories weighted toward objectivity, cross-domain research, religion, literature, institutions, science, or any other language game as the final language. It attempts to maintain a field in which these can be brought to a boundary while preserving their own conditions of validity, observational scope, claim strength, and limits.
+
+Commensuration here is not an identification of domains. It makes traceable what is preserved, what is transformed, where structural comparison becomes metaphor, what remains as a residual, and which return paths remain available. Science is not used as evidence for religion; religion is not used as a substitute for science. Yet the possibility that different language games touch the world from different angles is not discarded in advance.
+
 To manage non-closure does not mean legitimizing ambiguity simply by leaving it ambiguous. It means stating what remains unresolved, where a description ceased to apply, what remained as a residual, and which collation is required next, then retaining these matters in a condition that remains open to inquiry.
 
 ---
@@ -236,6 +240,9 @@ boundary / contact / history / return / conditions for the formation of knowledg
 │ Meaning Generation                        │
 │ difference → historical integration       │
 │            → meaning loop → return path   │
+│                      ↕                     │
+│ Language / Meaning / Communication Phase  │
+│ grammar / speech / commensuration / return│
 └────────────────────────────────────────────┘
         ↓
 Optional Axiom Modules as Cognitive Bridge
@@ -369,6 +376,7 @@ It takes up invisible burdens, cutoffs, residuals, harm, responsibility, and ret
 - [`Meaning as Return Orbit`](../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 - [`Optional Axiom Modules as Cognitive Bridge`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
 - [`Return Ethics and Retaliation Conversion`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md)
+- [`Consent Boundary and Sentence/Bit Asymmetry`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.en.md)
 
 The three phases do not divide Truth, Beauty, and Goodness into fixed compartments.
 
@@ -472,6 +480,14 @@ The Meaning Generation Model connects realism and epistemology.
 It connects the realist aspect—in which something acts upon a boundary—with the epistemic aspect—in which that action connects to a particular history and is experienced as a particular world, through a meaning loop.
 
 ---
+
+### 8.4 Language, Meaning, and Communication Phase Studies — Cross-Cutting Foundation
+
+[`Language, Meaning, and Communication Phase Studies`](../05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md) is a cross-cutting research line that treats grammar, speech, meaning, commensuration, semantic networks, and AI language generation as communication phases that retain return paths.
+
+This line does not replace the `Meaning_Generation_Model` or HFC. It owns local questions of linguistic meaning and returns residuals to meaning generation, history-field research, epistemology, and AI applications.
+
+In the v5 series, this line is the first research surface operated explicitly under a living-canonical model, with change history and Return Intake allowing public misunderstanding, resistance, implementation failure, and unresolved differences to return to the research layer.
 
 ## 9. [Truth Management](./Truth_Management_and_Boundary_PDCA.en.md) — From Cognition to Purpose
 
@@ -623,6 +639,7 @@ The boundary of the entire institutional arrangement must be collated, including
 
 - [`AI Adoption as Synchronization Closure`](../05_Research_Notes/Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md)
 - [`AI Adoption Collation Checklist`](../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
+- [`DSSI: Observation, Judgment, Sovereignty, and Responsibility Return`](../05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md)
 
 An implementation such as DSSI can provide an example of converting the abstract phrase “use technology safely” into pre-input warnings, suspension, historical retention, transmission control, responsibility return paths, and maintenance of the field of judgment.
 
@@ -719,6 +736,7 @@ The shortest reading route is:
 - [`Boundary Ethics Model`](../03_Tam_Goodness/Boundary_Ethics_Model.md)
 - [`Meaning as Return Orbit`](../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 - [`Return Ethics and Retaliation Conversion`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md)
+- [`Consent Boundary and Sentence/Bit Asymmetry`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.en.md)
 
 ### Entering Through Organization and Management
 
@@ -731,12 +749,14 @@ The shortest reading route is:
 - [`Application Boundary Theory Core`](../04_Applications/AI_Adaptation/Application_Boundary_Theory_Core.md)
 - [`AI Usefulness as a Boundary Function`](../04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
 - [`AI Adoption Collation Checklist`](../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
+- [`DSSI: Observation, Judgment, Sovereignty, and Responsibility Return`](../05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md)
 
 ### Entering Through History, Society, and Narrative
 
 - [`Asymmetry Stabilization and Re-Collation`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md)
 - [`Narrative, Truth Layer, and Structural Reading`](../05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md)
 - [`Literary / Ontological Notes`](../05_Research_Notes/Literary_Ontological_Notes/README.md)
+- [`Literature as Worldmaking`](../05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.en.md)
 
 ### Entering Through Physical-Near Concepts
 
@@ -750,14 +770,21 @@ Reading only the physical-near notes first makes it easy to misread the entire f
 
 ## 14. What Becomes Visible in the Current Public System?
 
-Up to v4.2.0, the public framework had presented Boundary Realism, history-fields, meaning generation, boundary ethics, AI boundary functions, and the Physics Correspondence Policy with relative clarity as distinct elements.
+Through the v4 series, the public framework presented Boundary Realism, history-fields, meaning generation, boundary ethics, AI boundary functions, and the Physics Correspondence Policy with increasing clarity and connected them through research dynamics.
 
-In the current public system, the cycle connecting them comes into the foreground.
+At the opening of the v5 series, that circulation is carried beyond the framework's internal vocabulary into language, literature, consent, institutions, AI, and interfaces. Criticism, failure, residuals, and unresolved conditions returned from those contacts are explicitly allowed to revise upstream documents.
+
+Two additional features therefore come into the foreground:
+
+1. a field for collating different language games while preserving their conditions and claim boundaries; and
+2. a living-canonical operation in which research documents may be revised by what returns from public use, implementation, and criticism.
 
 The following connections become especially visible:
 
 ```text
 cognitive formation
+  ↓
+collation through language, meaning, and communication phase
   ↓
 purpose setting
   ↓
@@ -846,6 +873,8 @@ What Scientific Ontology manages is not a completed world.
 
 ## 17. Related Documents
 
+- [`Scientific_Ontology_Operational_Outline.en.md`](./Scientific_Ontology_Operational_Outline.en.md)
+- [`Language, Meaning, and Communication Phase Studies`](../05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md)
 - [`Truth_Management_and_Boundary_PDCA.en.md`](./Truth_Management_and_Boundary_PDCA.en.md)
 - [`Claim_Strength_and_Publication_Layer_Table.en.md`](./Claim_Strength_and_Publication_Layer_Table.en.md)
 - [`Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md)

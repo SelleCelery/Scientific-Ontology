@@ -1,13 +1,13 @@
 # Literature as Worldmaking
 ## The Operational Structure of Worlds through Truth, Beauty, Goodness, and Null
 
-**Status:** Public Research Note / Living Draft  
-**Layer:** Research Note  
-**Domain:** Literary Ontology / Worldmaking  
-**Language:** English commensurated rendering  
-**Japanese authoritative source:** [`Literature_as_Worldmaking.ja.md`](./Literature_as_Worldmaking.ja.md)  
-**Claim Strength:** S2–S3  
-**Scope:** This document describes how literary works make and present the conditions under which a world can arise, and how they make observable the consequences of causality, communication, history, responsibility, and meaning within that world. It does not reduce literary value in general to a single criterion, nor does it provide a scoring system for judging individual works.
+> Status: Public Research Note / Living Draft
+> Layer: Research Note
+> Domain: Literary Ontology / Worldmaking
+> Language: English commensurated rendering
+> Japanese authoritative source: [`Literature_as_Worldmaking.ja.md`](./Literature_as_Worldmaking.ja.md)
+> Claim strength: S2–S3
+> Scope: This document describes how literary works make and present the conditions under which a world can arise, and how they make observable the consequences of causality, communication, history, responsibility, and meaning within that world. It does not reduce literary value in general to a single criterion, nor does it provide a scoring system for judging individual works.
 
 ---
 

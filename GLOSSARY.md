@@ -166,6 +166,28 @@ Return is not limited to retaliation. It may include learning, gratitude, exhaus
 
 ---
 
+## Return Path / 返路
+
+**Canonical Japanese:** 返路
+**English commensuration:** Return Path
+**Rendering distance:** R2-R3
+**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
+**Operationalized in:** meaning generation, commensuration, provisional closure, language/meaning studies, organizational audit, and responsibility return.
+
+差分、残差、異議、結果が、履歴更新、再照合、判断更新へ戻るために保持される経路。
+
+A path through which differences, residuals, objections, or consequences can re-enter history, re-collation, or later judgment.
+
+返路は、元の相手へ直接戻る経路だけを意味しない。記憶、記録、制度、作品、別の対話、将来の行為などを経由しても、差分が更新可能な履歴へ再接続できるなら返路として扱う。
+
+A return path need not lead directly back to the original addressee. Memory, records, institutions, works, later conversations, or future action may function as detours when they reconnect a difference to an updatable history.
+
+`返り`が戻ってくる結果や作用を指すのに対し、`返路`はその差分を再び照合・更新へ接続できる経路を指す。
+
+`Return` names what comes back; `Return Path` names the route that keeps what returns reconnectable to collation and revision.
+
+---
+
 ## Downstream Condition / 後続条件
 
 **Canonical Japanese:** 後続条件  
@@ -190,7 +212,7 @@ It includes delayed institutional, bodily, and environmental conditions, not onl
 **Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 **Private lineage:** AMP Core  
 **Public generative source:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
-**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
+**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 **Operationalized in:** Concept Network, commensuration policy, depth ports, organizational audit, and provisional closure.  
 
 現在の分類、説明、プロトコル、通約では閉じられないが、将来の再照合へ保持できる未処理差分。
@@ -210,7 +232,7 @@ A residual is not itself a failure. Treating it as absent may produce false clos
 **Rendering distance:** R2
 **Private lineage:** AMP Core  
 **Public generative source:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
-**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
+**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 **Operationalized in:** Return ethics, social-boundary notes, environmental return, and exchange-heat models.  
 
 処理が終わったと宣言された後も、身体、制度、関係、環境、象徴、未来へ残り続ける履歴負荷。
@@ -231,7 +253,7 @@ A historical burden that persists in bodies, institutions, relationships, enviro
 **Public handling:** Not identical to simple comparison or synchronization
 **Private lineage:** AMP Core  
 **Public generative source:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
-**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
+**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 **Operationalized in:** AI adoption collation, Concept Network, commensuration, Boundary CA, and public-format checking.  
 
 異なる履歴、目的、境界、主張、観測結果を、差異を消さずに関係づけ、整合・不整合・未解決部分を確認する操作。
@@ -251,7 +273,7 @@ Collation is stronger than synchronization in one respect: it preserves comparab
 **Rendering distance:** R3
 **Private lineage:** AMP Core  
 **Public generative source:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
-**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
+**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 **Operationalized in:** Provisional closure, public checker return paths, concept contracts, and organizational audit.  
 
 仮閉鎖、翻訳、制度処理、判断の後でも、残差、履歴、異議を再び開き、正本または責任主体へ返せる性質。
@@ -271,7 +293,7 @@ It prioritizes the stability of return over the permanent fixation of correctnes
 **Rendering distance:** R2
 **Private lineage:** AMP Core  
 **Public generative source:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
-**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
+**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 **Operationalized in:** Commensuration residual handling, depth ports, checklists, and managed non-closure.  
 
 未解決を解決済みに見せず、一時的に破綻しない単位へ収納すること。
@@ -292,7 +314,7 @@ It records what remains unresolved, under what conditions it may be reopened, an
 **Rendering distance:** R2
 **Private lineage:** AMP Core  
 **Public generative source:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
-**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
+**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 **Operationalized in:** Public-format checking, organizational audit, AI adaptation, and truth management.  
 
 未解決のものを、解決済み、理解済み、同意済み、完了済みとして扱う失敗。
@@ -329,7 +351,7 @@ Meaning is not information alone. Information acts as meaning when it circulates
 **Public handling:** Boundary-event interpretation; not asserted as a complete theory of consciousness
 **Private lineage:** AMP Core; ITS contributes a field-oriented interpretation.  
 **Public generative source:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
-**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)  
+**Public definition owner:** [`01_Sat_Truth/Boundary_Epistemological_Critique.ja.md`](./01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
 **Operationalized in:** Meaning generation, cognitive-axis formation, literary reading, and AI-personality notes.  
 
 外部入力または内部履歴が境界へ現れたときに生じる質感を伴う出来事。
@@ -386,7 +408,7 @@ A cognitive axis is not a personality diagnosis or a permanent type.
 **English commensuration:** Cognitive Field  
 **Concept ID:** `cognitive_field`  
 **Public definition owner:** [`05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md`](./05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md)  
-**Rendering distance:** R2-R3  
+**Rendering distance:** R2-R3
 **Public handling:** Conceptual model; not a field in standard physics or a completed cognitive-science theory
 
 身体、感覚、履歴、注意、意味、関係、価値が、単純には分離できない状態で相互浸透的に作動する認識全体を指す操作的概念。
@@ -414,6 +436,27 @@ A quasi-stable cognitive configuration that temporarily forms within a cognitive
 人格類型、発達段階、固定的な認知機能ではない。
 
 It is not a personality type, developmental stage, or fixed cognitive function.
+
+---
+
+## Communication Phase / 通信位相
+
+**Canonical Japanese:** 通信位相
+**English commensuration:** Communication Phase
+**Rendering distance:** R2-R3
+**Public handling:** Cross-cutting research term; not identical to a phase in physics or signal engineering.
+
+差分が、特定の文法、媒体、履歴、帯域、役割、返路条件のもとで、表現、送信、受容、照合、返送されるときの通信上の局所構成。
+
+A local communicative configuration in which differences are expressed, transmitted, received, collated, and returned under particular grammatical, medial, historical, bandwidth, role, and return-path conditions.
+
+通信位相は、通信内容そのものでも、固定された主体類型でもない。同じ内容でも、文法、媒体、受け手の履歴、帯域、返路条件が変われば、異なる通信位相として作用しうる。
+
+A communication phase is neither the message content itself nor a fixed type of subject. The same content may operate differently when grammar, medium, recipient history, bandwidth, or return-path conditions change.
+
+主要な研究入口は[`Language, Meaning, and Communication Phase Studies`](./05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md)である。
+
+The main research entrance is [`Language, Meaning, and Communication Phase Studies`](./05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md).
 
 ---
 
@@ -827,7 +870,7 @@ A rule specifying who receives what, under which conditions, how it is transform
 
 **Canonical Japanese:** 深度ポート  
 **English commensuration:** Depth Port  
-**Rendering distance:** R2-R3  
+**Rendering distance:** R2-R3
 **Public definition owner:** [`05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md`](./05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 
 現在の論理平面では処理できない問題を消去せず、残差、委譲先、返路、閉鎖権限の限界を保持して深度方向へ送るポート。
@@ -941,7 +984,7 @@ An ethical model for returning, transforming, or repairing consequences, burdens
 **English commensuration:** Meaning-Experience Field  
 **Concept ID:** `meaning_experience_field`  
 **Public definition owner:** [`04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md`](./04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)  
-**Rendering distance:** R2-R3  
+**Rendering distance:** R2-R3
 **Public handling:** Application concept; not a physical field
 
 存在が差分を受け取り、履歴へ接続し、意味、判断、行為、応答へ変換し、外界へ返す循環を扱う応用概念。
@@ -1504,5 +1547,11 @@ A former or non-preferred term retained for traceability to earlier documents.
 8. 非主張境界が必要か。
 9. manifestへ登録すべき共有概念か。
 10. 旧語または別表記を残す必要があるか。
+
+### v5開始時点でGlossaryへ昇格しない運用語
+
+[`Scientific_Ontology_Operational_Outline.ja.md`](00_Overview/Scientific_Ontology_Operational_Outline.ja.md)で使用する`境界事件`、`可動性`、`責任分界`、`作用経路の地形`は、現時点では全体系の正規語彙として固定しない。運用アウトライン内の局所語として保持し、他文書で定義所有が必要になった時点でGlossary昇格を再検討する。
+
+`Living Canonical`および`Return Intake`も、現時点では言語・意味・通信位相研究の保守運用語であり、存在境界論の中核概念とは扱わない。
 
 用語集は、概念を増やすためではなく、概念間の境界と返路を保つために更新する。

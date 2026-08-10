@@ -1,8 +1,8 @@
 # Public Format Registry for Scientific Ontology / 存在境界論
-# Version: 0.2.0
+# Version: 0.3.0
 
 format_registry:
-  version: "0.2.0"
+  version: "0.3.0"
 
   project:
     canonical_name_en: "Scientific Ontology"
@@ -81,6 +81,7 @@ format_registry:
       - "Citation"
       - "License"
       - "Release notes"
+      - "Public Overview Candidate / cross-series operational orientation"
     rule: "Status describes document role, not claim strength."
 
   metadata_labels:
@@ -186,11 +187,10 @@ format_registry:
             Claim strength: "not_required"
           body:
             required_sections:
-              - "Public Scope / 公開範囲"
-              - "Repository Structure / リポジトリ構造"
-              - "How to Read / 読み方"
-              - "Citation / 引用"
-              - "License / ライセンス"
+              - "The world is already being made"
+              - "Enter through the question that catches you"
+              - "Two Public Front Doors, One Research System"
+              - "Current release, citation, and public boundary"
           document_list_policy:
             mode: "navigation_only"
             require_all_same_directory_files: false
