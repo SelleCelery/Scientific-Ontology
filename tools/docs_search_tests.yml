@@ -18,7 +18,7 @@ tests:
       - dssi_observation_judgment_sovereignty
       - ai_language_generation_grammatical_frames
   - id: commensuration-gap
-    query: 違う分野で同じ言葉なのに話が噏み合わない
+    query: 違う分野で同じ言葉なのに話が噛み合わない
     mode: question
     expect_top_any:
       - semantic_network_topology_commensuration_bandwidth
@@ -63,3 +63,61 @@ tests:
     expect_top_any:
       - commensuration_cross_grammatical_collation
       - optional_axiom_modules_cognitive_bridge
+browse_tests:
+  - id: browse-overview
+    topic: overview
+    require_featured: true
+    minimum_starter_questions: 3
+    expect_any:
+      - scientific_ontology_concept_network
+      - scientific_ontology_operational_outline
+  - id: browse-boundary
+    topic: boundary
+    require_featured: true
+    minimum_starter_questions: 3
+    expect_any:
+      - boundary_epistemological_critique
+      - meaning_generation_model
+      - scientific_ontology_operational_outline
+  - id: browse-meaning
+    topic: meaning
+    require_featured: true
+    minimum_starter_questions: 3
+    expect_any:
+      - meaning_generation_model
+      - meaning_collation_return_path
+  - id: browse-language
+    topic: language
+    require_featured: true
+    minimum_starter_questions: 3
+    expect_any:
+      - language_meaning_communication_phase_studies
+      - grammar_meaning_pressure_channel
+      - commensuration_cross_grammatical_collation
+  - id: browse-ai
+    topic: ai
+    require_featured: true
+    minimum_starter_questions: 3
+    expect_any:
+      - dssi_observation_judgment_sovereignty
+      - ai_language_generation_grammatical_frames
+  - id: browse-ethics
+    topic: ethics
+    require_featured: true
+    minimum_starter_questions: 3
+    expect_any:
+      - scientific_ontology_operational_outline
+      - optional_axiom_modules_cognitive_bridge
+      - consent_boundary_sentence_bit_asymmetry
+  - id: browse-science
+    topic: science
+    require_featured: true
+    minimum_starter_questions: 3
+    expect_any:
+      - boundary_epistemological_critique
+  - id: browse-literature
+    topic: literature
+    require_featured: true
+    minimum_starter_questions: 3
+    expect_any:
+      - literature_worldmaking

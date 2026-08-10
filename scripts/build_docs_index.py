@@ -22,7 +22,7 @@ try:
 except Exception as exc:  # pragma: no cover
     raise SystemExit("PyYAML is required: python -m pip install pyyaml") from exc
 
-SCHEMA_VERSION = "0.1"
+SCHEMA_VERSION = "0.2"
 DOC_ID_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*$")
 PROCESS_MARKER_RE = re.compile(r"^(?:gate[_-]?\d+|u\d+(?:[_-][a-z0-9]+)?)$", re.IGNORECASE)
 FORBIDDEN_TEXT = (
@@ -135,6 +135,48 @@ def relation_targets(items: Any) -> List[str]:
         elif isinstance(item, str):
             targets.append(item)
     return sorted(set(targets))
+
+
+def validate_navigation_topics(topics: Mapping[str, Any]) -> None:
+    featured_orders: Dict[int, str] = {}
+    for topic_id, raw in topics.items():
+        topic_id = str(topic_id)
+        if not DOC_ID_RE.fullmatch(topic_id):
+            raise ValueError(f"Invalid navigation topic ID: {topic_id}")
+        if not isinstance(raw, Mapping):
+            raise ValueError(f"Navigation topic must be a mapping: {topic_id}")
+        if not str(raw.get("ja", "")).strip() or not str(raw.get("en", "")).strip():
+            raise ValueError(f"Navigation topic requires ja/en labels: {topic_id}")
+        browse = raw.get("browse")
+        if browse is None:
+            continue
+        if not isinstance(browse, Mapping):
+            raise ValueError(f"browse metadata must be a mapping: {topic_id}")
+        enabled = bool(browse.get("enabled", False))
+        if not enabled:
+            continue
+        try:
+            order = int(browse.get("order"))
+        except Exception as exc:
+            raise ValueError(f"Featured browse topic requires integer order: {topic_id}") from exc
+        if order in featured_orders:
+            raise ValueError(
+                f"Featured browse topic order collision: {topic_id} and {featured_orders[order]} use {order}"
+            )
+        featured_orders[order] = topic_id
+        for field in ("label", "description", "starter_questions"):
+            if not isinstance(browse.get(field), Mapping):
+                raise ValueError(f"Featured browse topic requires {field}: {topic_id}")
+        for lang in ("ja", "en"):
+            if not str(browse["label"].get(lang, "")).strip():
+                raise ValueError(f"Featured browse topic requires {lang} label: {topic_id}")
+            if not str(browse["description"].get(lang, "")).strip():
+                raise ValueError(f"Featured browse topic requires {lang} description: {topic_id}")
+            questions = as_list(browse["starter_questions"].get(lang))
+            if len(questions) < 2:
+                raise ValueError(f"Featured browse topic requires at least 2 {lang} starter questions: {topic_id}")
+            if len(questions) > 5:
+                print(f"WARNING: more than 5 starter questions ({lang}) in topic {topic_id}", file=sys.stderr)
 
 
 def build_document(
@@ -306,7 +348,8 @@ def compile_index(root: Path, manifest_path: Path, search_path: Path, visibility
     topics = search.get("navigation_topics", {}) if isinstance(search.get("navigation_topics"), dict) else {}
     expansions = search.get("query_expansions", {}) if isinstance(search.get("query_expansions"), dict) else {}
     if str(search.get("spec_version", "")) != SCHEMA_VERSION:
-        raise ValueError("docs_search.yml spec_version must be 0.1")
+        raise ValueError(f"docs_search.yml spec_version must be {SCHEMA_VERSION}")
+    validate_navigation_topics(topics)
 
     allowed_states = {"public"} if visibility == "public" else {"public", "public-candidate"}
     documents: List[Dict[str, Any]] = []

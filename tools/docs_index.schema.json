@@ -14,10 +14,10 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "0.1"
+      "const": "0.2"
     },
     "search_spec_version": {
-      "type": "string"
+      "const": "0.2"
     },
     "source": {
       "type": "object",
@@ -52,7 +52,10 @@
       "type": "object"
     },
     "topics": {
-      "type": "object"
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/topic"
+      }
     },
     "query_expansions": {
       "type": "object"
@@ -164,6 +167,91 @@
               "$ref": "#/$defs/search_value"
             }
           }
+        }
+      },
+      "additionalProperties": false
+    },
+    "localized_string": {
+      "type": "object",
+      "required": [
+        "ja",
+        "en"
+      ],
+      "properties": {
+        "ja": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "localized_string_array": {
+      "type": "object",
+      "required": [
+        "ja",
+        "en"
+      ],
+      "properties": {
+        "ja": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "en": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "browse_topic": {
+      "type": "object",
+      "required": [
+        "enabled",
+        "order",
+        "label",
+        "description",
+        "starter_questions"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "label": {
+          "$ref": "#/$defs/localized_string"
+        },
+        "description": {
+          "$ref": "#/$defs/localized_string"
+        },
+        "starter_questions": {
+          "$ref": "#/$defs/localized_string_array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "topic": {
+      "type": "object",
+      "required": [
+        "ja",
+        "en"
+      ],
+      "properties": {
+        "ja": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        },
+        "browse": {
+          "$ref": "#/$defs/browse_topic"
         }
       },
       "additionalProperties": false

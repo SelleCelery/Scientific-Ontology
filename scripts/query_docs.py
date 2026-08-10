@@ -25,6 +25,13 @@ METHOD_PRIORITY = {
     "char_ngram": 1,
 }
 
+ENTRY_LEVEL_ORDER = {
+    "foundation": 0,
+    "intermediate": 1,
+    "advanced": 2,
+    "": 3,
+}
+
 
 def repo_root() -> Path:
     return Path(__file__).resolve().parents[1]
@@ -384,9 +391,154 @@ def print_document(doc: Mapping[str, Any]) -> None:
     print("owned concepts: " + ", ".join(doc.get("concepts", {}).get("owned", [])))
 
 
+def localized_value(value: Any, lang: str, fallback: str = "") -> str:
+    if isinstance(value, Mapping):
+        if lang == "en":
+            return str(value.get("en") or value.get("ja") or fallback)
+        return str(value.get("ja") or value.get("en") or fallback)
+    return str(value or fallback)
+
+
+def topic_documents(index: Mapping[str, Any], topic_id: str) -> List[Dict[str, Any]]:
+    docs = [
+        dict(doc)
+        for doc in index.get("documents", [])
+        if topic_id in doc.get("discovery", {}).get("topics", [])
+    ]
+    docs.sort(
+        key=lambda doc: (
+            ENTRY_LEVEL_ORDER.get(str(doc.get("discovery", {}).get("entry_level", "")), 3),
+            normalize_text(doc.get("title", {}).get("ja") or doc.get("title", {}).get("en") or doc.get("id", "")),
+            str(doc.get("id", "")),
+        )
+    )
+    return docs
+
+
+def topic_card(index: Mapping[str, Any], topic_id: str) -> Dict[str, Any]:
+    topics = index.get("topics", {})
+    config = topics.get(topic_id, {}) if isinstance(topics, Mapping) else {}
+    if not isinstance(config, Mapping):
+        config = {}
+    browse = config.get("browse", {}) if isinstance(config.get("browse"), Mapping) else {}
+    docs = topic_documents(index, topic_id)
+    counts = {"foundation": 0, "intermediate": 0, "advanced": 0, "unspecified": 0}
+    for doc in docs:
+        level = str(doc.get("discovery", {}).get("entry_level", ""))
+        counts[level if level in {"foundation", "intermediate", "advanced"} else "unspecified"] += 1
+    label = browse.get("label", {}) if isinstance(browse.get("label"), Mapping) else {}
+    description = browse.get("description", {}) if isinstance(browse.get("description"), Mapping) else {}
+    questions = browse.get("starter_questions", {}) if isinstance(browse.get("starter_questions"), Mapping) else {}
+    return {
+        "topic_id": topic_id,
+        "base_label": {"ja": str(config.get("ja", "")), "en": str(config.get("en", ""))},
+        "featured": bool(browse.get("enabled", False)),
+        "order": int(browse.get("order", 9999)),
+        "label": {
+            "ja": str(label.get("ja") or config.get("ja", "")),
+            "en": str(label.get("en") or config.get("en", "")),
+        },
+        "description": {"ja": str(description.get("ja", "")), "en": str(description.get("en", ""))},
+        "starter_questions": {
+            "ja": [str(v) for v in questions.get("ja", []) or []],
+            "en": [str(v) for v in questions.get("en", []) or []],
+        },
+        "document_count": len(docs),
+        "entry_level_counts": counts,
+    }
+
+
+def browse_topics(index: Mapping[str, Any], include_empty: bool = False) -> List[Dict[str, Any]]:
+    topics = index.get("topics", {})
+    cards: List[Dict[str, Any]] = []
+    if not isinstance(topics, Mapping):
+        return cards
+    for topic_id in topics:
+        card = topic_card(index, str(topic_id))
+        if not card["featured"]:
+            continue
+        if not include_empty and int(card["document_count"]) == 0:
+            continue
+        cards.append(card)
+    cards.sort(key=lambda card: (int(card["order"]), str(card["topic_id"])))
+    return cards
+
+
+def document_browse_summary(doc: Mapping[str, Any]) -> Dict[str, Any]:
+    return {
+        "doc_id": str(doc.get("id", "")),
+        "title": dict(doc.get("title", {})),
+        "path": str(doc.get("path", "")),
+        "role": dict(doc.get("role", {})),
+        "entry_level": str(doc.get("discovery", {}).get("entry_level", "")),
+        "reader_questions": dict(doc.get("discovery", {}).get("reader_questions", {})),
+    }
+
+
+def browse_payload(index: Mapping[str, Any], topic_id: str | None = None) -> Dict[str, Any]:
+    if topic_id is None:
+        return {
+            "visibility_profile": index.get("source", {}).get("visibility_profile", ""),
+            "topics": browse_topics(index),
+        }
+    topics = index.get("topics", {})
+    if not isinstance(topics, Mapping) or topic_id not in topics:
+        raise KeyError(topic_id)
+    return {
+        "visibility_profile": index.get("source", {}).get("visibility_profile", ""),
+        "topic": topic_card(index, topic_id),
+        "documents": [document_browse_summary(doc) for doc in topic_documents(index, topic_id)],
+    }
+
+
+def print_browse(payload: Mapping[str, Any], lang: str, base_url: str | None) -> None:
+    if "topics" in payload:
+        cards = payload.get("topics", [])
+        print(f"Browse topics ({len(cards)})")
+        for card in cards:
+            label = localized_value(card.get("label", {}), lang, str(card.get("topic_id", "")))
+            description = localized_value(card.get("description", {}), lang)
+            print(f"- {label} [{card['topic_id']}] ({card['document_count']} documents)")
+            if description:
+                print(f"  {description}")
+            questions = card.get("starter_questions", {}).get("en" if lang == "en" else "ja", [])
+            if questions:
+                print(f"  Q: {questions[0]}")
+        return
+
+    card = payload.get("topic", {})
+    label = localized_value(card.get("label", {}), lang, str(card.get("topic_id", "")))
+    description = localized_value(card.get("description", {}), lang)
+    print(f"{label} [{card.get('topic_id', '')}]")
+    if description:
+        print(description)
+    questions = card.get("starter_questions", {}).get("en" if lang == "en" else "ja", [])
+    if questions:
+        print("Starter questions:")
+        for question in questions:
+            print(f"- {question}")
+    docs = payload.get("documents", [])
+    print(f"Documents ({len(docs)}):")
+    current_level = None
+    for doc in docs:
+        level = str(doc.get("entry_level") or "unspecified")
+        if level != current_level:
+            current_level = level
+            print(f"  [{level}]")
+        title = localized_value(doc.get("title", {}), lang, str(doc.get("doc_id", "")))
+        role = localized_value(doc.get("role", {}), lang)
+        print(f"  - {title} ({doc['doc_id']})")
+        if role:
+            print(f"    {role}")
+        print(f"    {result_url(str(doc['path']), base_url)}")
+        doc_questions = doc.get("reader_questions", {}).get("en" if lang == "en" else "ja", [])
+        if doc_questions:
+            print(f"    Q: {doc_questions[0]}")
+
+
 def run_tests(index: Mapping[str, Any], tests_path: Path) -> int:
     tests_data = load_yaml(tests_path)
-    failures = 0
+    search_failures = 0
     tests = tests_data.get("tests", [])
     for test in tests:
         test_id = str(test.get("id", "unnamed"))
@@ -407,15 +559,46 @@ def run_tests(index: Mapping[str, Any], tests_path: Path) -> int:
         if ok:
             print(f"PASS {test_id}: mode={resolved} top={ids[:top_n]}")
         else:
-            failures += 1
+            search_failures += 1
             print(f"FAIL {test_id}: mode={resolved} expected_any={expected} actual={ids[:top_n]}")
             for result in results[:3]:
                 reasons = "; ".join(
                     f"{m['field']}/{m['method']}={m['contribution']:.2f}" for m in result.get("matches", [])[:3]
                 )
                 print(f"  {result['doc_id']}: {result['score']:.2f} :: {reasons}")
-    print(f"SEARCH TESTS: {len(tests) - failures}/{len(tests)} PASS")
-    return 1 if failures else 0
+    print(f"SEARCH TESTS: {len(tests) - search_failures}/{len(tests)} PASS")
+
+    browse_failures = 0
+    browse_tests = tests_data.get("browse_tests", []) or []
+    for test in browse_tests:
+        test_id = str(test.get("id", "unnamed-browse"))
+        topic_id = str(test.get("topic", ""))
+        try:
+            payload = browse_payload(index, topic_id)
+        except KeyError:
+            payload = None
+        ok = payload is not None
+        actual_ids: List[str] = []
+        if payload is not None:
+            actual_ids = [str(doc.get("doc_id", "")) for doc in payload.get("documents", [])]
+            expected = [str(v) for v in test.get("expect_any", [])]
+            if expected and not (set(expected) & set(actual_ids)):
+                ok = False
+            card = payload.get("topic", {})
+            if bool(test.get("require_featured", False)) and not bool(card.get("featured", False)):
+                ok = False
+            minimum_questions = int(test.get("minimum_starter_questions", 0))
+            questions = card.get("starter_questions", {}).get(str(test.get("lang", "ja")), [])
+            if len(questions) < minimum_questions:
+                ok = False
+        if ok:
+            print(f"PASS {test_id}: topic={topic_id} docs={actual_ids[:5]}")
+        else:
+            browse_failures += 1
+            print(f"FAIL {test_id}: topic={topic_id} docs={actual_ids[:5]}")
+    if browse_tests:
+        print(f"BROWSE TESTS: {len(browse_tests) - browse_failures}/{len(browse_tests)} PASS")
+    return 1 if (search_failures or browse_failures) else 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -445,6 +628,12 @@ def build_parser() -> argparse.ArgumentParser:
     related = sub.add_parser("related")
     related.add_argument("doc_id")
     related.add_argument("--json", action="store_true")
+
+    browse = sub.add_parser("browse", help="Browse beginner-facing topic entry surfaces.")
+    browse.add_argument("topic_id", nargs="?")
+    browse.add_argument("--lang", choices=["ja", "en", "both"], default="ja")
+    browse.add_argument("--json", action="store_true")
+    browse.add_argument("--base-url", default=None)
 
     topics = sub.add_parser("topics")
     topics.add_argument("--json", action="store_true")
@@ -509,6 +698,18 @@ def main(argv: Sequence[str] | None = None) -> int:
                 print(f"concepts.{key}: {', '.join(values)}")
             for key, values in payload["relations"].items():
                 print(f"relations.{key}: {', '.join(values)}")
+        return 0
+
+    if args.command == "browse":
+        try:
+            payload = browse_payload(index, args.topic_id)
+        except KeyError:
+            print(f"ERROR: unknown topic_id: {args.topic_id}", file=sys.stderr)
+            return 1
+        if args.json:
+            print(json.dumps(payload, ensure_ascii=False, indent=2))
+        else:
+            print_browse(payload, args.lang, args.base_url)
         return 0
 
     if args.command == "topics":

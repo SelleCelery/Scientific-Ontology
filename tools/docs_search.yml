@@ -1,5 +1,5 @@
 search:
-  spec_version: '0.1'
+  spec_version: '0.2'
   normalization:
     unicode: NFKC
     ascii_casefold: true
@@ -54,9 +54,45 @@ search:
     overview:
       ja: 全体像
       en: Overview
+      browse:
+        enabled: true
+        order: 10
+        label:
+          ja: 全体像から入る
+          en: Start with the whole
+        description:
+          ja: 存在境界論が何を研究対象とし、文書群がどう配置されているかをつかむための入口。
+          en: An entry point for understanding what Scientific Ontology studies and how its public documents are arranged.
+        starter_questions:
+          ja:
+            - 存在境界論は何をしようとしているの？
+            - どこから読めばいい？
+            - 主要な文書はどうつながっているの？
+          en:
+            - What is Scientific Ontology trying to do?
+            - Where should I start reading?
+            - How are the main documents connected?
     boundary:
       ja: 境界
       en: Boundary
+      browse:
+        enabled: true
+        order: 20
+        label:
+          ja: 境界・認識から入る
+          en: Start with boundary and cognition
+        description:
+          ja: 何かが何かに触れるとき、観測・認識・履歴がどう立ち上がるかをたどる入口。
+          en: An entry point for tracing how observation, cognition, and history arise when things come into contact.
+        starter_questions:
+          ja:
+            - 境界とは何？
+            - 観測する側と観測される側はどう関係する？
+            - 認識はどこまで対象そのものを捉えているの？
+          en:
+            - What is a boundary?
+            - How are observer and observed related?
+            - How far does cognition reach the thing itself?
     epistemology:
       ja: 認識論
       en: Epistemology
@@ -66,9 +102,45 @@ search:
     meaning:
       ja: 意味
       en: Meaning
+      browse:
+        enabled: true
+        order: 30
+        label:
+          ja: 意味・意味生成から入る
+          en: Start with meaning and meaning formation
+        description:
+          ja: 情報や経験が履歴との照合を通じて、どのように意味として成立し、次の認識条件を変えるかを見る入口。
+          en: An entry point for how information and experience become meaningful through collation with history and alter later conditions of cognition.
+        starter_questions:
+          ja:
+            - 意味はどうやって成立するの？
+            - 情報と意味は何が違うの？
+            - 分かったという感覚は真理と同じなの？
+          en:
+            - How does meaning form?
+            - What is the difference between information and meaning?
+            - Is the feeling of understanding the same as truth?
     language:
       ja: 言語
       en: Language
+      browse:
+        enabled: true
+        order: 40
+        label:
+          ja: 言語・通信・通約から入る
+          en: Start with language, communication, and commensuration
+        description:
+          ja: 言葉・文法・通信の枠が何を伝え、何を残し、異なる記述体系をどこまで照合できるかを見る入口。
+          en: An entry point for what language, grammar, and communication transmit or leave residual, and how far different descriptive systems can be collated.
+        starter_questions:
+          ja:
+            - 同じ言葉なのに、なぜ話が噛み合わないの？
+            - 言葉にできなかったものはどこへ行くの？
+            - 違う分野の説明はどこまで比較できるの？
+          en:
+            - Why can the same words still fail to connect?
+            - What happens to what could not be expressed?
+            - How far can descriptions from different fields be compared?
     communication:
       ja: 通信
       en: Communication
@@ -84,6 +156,24 @@ search:
     ai:
       ja: AI
       en: AI
+      browse:
+        enabled: true
+        order: 50
+        label:
+          ja: AI・判断から入る
+          en: Start with AI and judgment
+        description:
+          ja: AIを利用するとき、観測・生成・判断・責任をどこで分け、人間側へ何を返すべきかを見る入口。
+          en: An entry point for separating observation, generation, judgment, and responsibility when using AI, and for deciding what must return to the human side.
+        starter_questions:
+          ja:
+            - AIに判断を任せすぎると何が起きるの？
+            - AIを使っても人間に判断を残すには？
+            - AIの応答と人格はどう区別するの？
+          en:
+            - What happens when too much judgment is delegated to AI?
+            - How can human judgment be retained while using AI?
+            - How should AI responses be distinguished from personhood?
     judgment:
       ja: 判断
       en: Judgment
@@ -93,6 +183,24 @@ search:
     ethics:
       ja: 倫理
       en: Ethics
+      browse:
+        enabled: true
+        order: 60
+        label:
+          ja: 倫理・責任から入る
+          en: Start with ethics and responsibility
+        description:
+          ja: 作用の結果、負担、自由、責任分界をどう返し、他者や未来へ固定しないかを考える入口。
+          en: An entry point for how consequences, burdens, freedom, and responsibility boundaries are returned rather than fixed into others or the future.
+        starter_questions:
+          ja:
+            - 責任はどこまで自分にあるの？
+            - 相手を自分の納得のために巻き込まないとは？
+            - 同意や拒否の余地はどう守るの？
+          en:
+            - How far does my responsibility extend?
+            - What does it mean not to enroll another person in my own closure?
+            - How can room for consent and refusal be preserved?
     peace:
       ja: 平和
       en: Peace
@@ -102,9 +210,45 @@ search:
     literature:
       ja: 文学
       en: Literature
+      browse:
+        enabled: true
+        order: 80
+        label:
+          ja: 文学・世界制作から入る
+          en: Start with literature and worldmaking
+        description:
+          ja: 物語や文学が他者の履歴を圧縮して渡し、読者の履歴の中でどのような差分を生むかを見る入口。
+          en: An entry point for how literature compresses and carries other histories and produces differences within a reader's history.
+        starter_questions:
+          ja:
+            - 文学は存在境界論では何をしているの？
+            - 物語はどうやって別の世界を経験させるの？
+            - 作者と読者は同じ経験を共有しているの？
+          en:
+            - What is literature doing in Scientific Ontology?
+            - How can stories let readers experience another world?
+            - Do author and reader share the same experience?
     science:
       ja: 科学
       en: Science
+      browse:
+        enabled: true
+        order: 70
+        label:
+          ja: 科学との接続から入る
+          en: Start with the relation to science
+        description:
+          ja: 存在境界論と経験科学がどこで接触し、どこから先は類比・通約・仮説として区別すべきかを見る入口。
+          en: An entry point for where Scientific Ontology contacts empirical science and where analogy, commensuration, or hypothesis must remain distinct.
+        starter_questions:
+          ja:
+            - 存在境界論は科学そのものなの？
+            - 科学と存在境界論はどこで接続するの？
+            - 物理学の言葉を使うとき何を区別する必要があるの？
+          en:
+            - Is Scientific Ontology itself empirical science?
+            - Where does Scientific Ontology connect with science?
+            - What must remain distinct when physical terminology is used?
   query_expansions:
     meaning_formation:
       note: Search-only association; does not assert conceptual identity.
@@ -140,7 +284,7 @@ search:
     commensuration_gap:
       note: Search-only association; does not assert conceptual identity.
       ja:
-        - 同じ言葉なのに話が噏み合わない
+        - 同じ言葉なのに話が噛み合わない
         - 分野が違うと通じない
         - 異なる世界観を比較する
       en:
