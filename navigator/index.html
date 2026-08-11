@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scientific Ontology document navigator: topics, search, typed relations, and data-audit surfaces.">
+  <title>Scientific Ontology · Document Navigator</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Scientific Ontology Document Navigator home">
+      <span class="brand-mark">SO</span>
+      <span>
+        <strong>Scientific Ontology</strong>
+        <small>Document Navigator</small>
+      </span>
+    </a>
+    <div class="header-actions">
+      <span id="data-status" class="load-status"></span>
+      <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
+    </div>
+  </header>
+  <div id="app" aria-live="polite"></div>
+  <footer class="site-footer">
+    <p>Search association ≠ conceptual identity · relation ≠ truth · observed link ≠ ownership.</p>
+  </footer>
+  <script type="module" src="./dist/app.js"></script>
+</body>
+</html>

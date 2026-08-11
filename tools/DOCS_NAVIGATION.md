@@ -206,8 +206,246 @@ DN-3.5 intentionally excludes morphology analyzers, full-text indexing, BM25, em
 
 The current topic surface is a seed navigation layer, not a complete classification of the repository.
 
-## 12. Future boundary
+## 12. Transition from DN-3.5 to DN-4
 
-DN-4 may add a structural graph using Glossary anchors, System Map placement, Concept Network relations, Markdown links, and typed manifest relations. Structural authority, centrality, corroboration, and change-impact signals must remain distinct from direct query relevance. They may later help arrange topic pages, but must not silently turn navigation prominence into truth or concept ownership.
+DN-3.5 established Search / Browse / Topic entry surfaces. DN-4 now adds an inspectable structural relation graph while keeping structural relations distinct from direct query relevance. Numeric centrality and browser rendering remain downstream concerns.
 
-DN-5 may add a static TypeScript/HTML client. Search, topic cards, topic pages, and golden tests must consume the same `docs_index.json` contract as the Python reference client.
+## 13. DN-4 Typed Relation Graph
+
+DN-4 adds a relation graph without changing DN-3 direct search relevance.
+
+```text
+tools/docs_manifest.yml
+GLOSSARY.md
+Scientific_Ontology_System_Map.md
+Scientific_Ontology_Concept_Network.ja.md
+public Markdown links
+        ↓
+scripts/build_docs_graph.py
+        ↓
+tools/docs_graph.json
+```
+
+The primary artifact is the graph itself: nodes, typed edges, and provenance. Counts, centrality, importance, or trust scores are not the graph and are not generated in DN-4 v0.1.
+
+The graph keeps these distinctions:
+
+```text
+relation != truth
+relation != evidence
+search relevance != structural relation
+observed link != conceptual ownership
+multiple provenance records != automatic trust score
+```
+
+### 13.1 Node types
+
+- `document`: manifest/index registered public or public-candidate document.
+- `observed_document`: existing public Markdown that is visible in repository topology but is not yet registered in the manifest-derived search index. It receives only path-derived observational identity; it does not gain concept ownership, discovery metadata, or canonical identity.
+- `concept`: machine-readable concept identifier from ownership/logical contracts.
+- `topic`: controlled DN-3.5 navigation topic.
+- `layer`: top-level repository layer.
+- `glossary_term`: human-facing lexical entry from `GLOSSARY.md`.
+- `source_artifact`: structural source such as the Glossary or System Map when it is not represented as a manifest document.
+
+`observed_document` exists so that the graph can preserve actual public Markdown link topology before manifest coverage becomes complete. Promotion into the searchable public ledger still requires explicit manifest work.
+
+### 13.2 Typed edges
+
+Declared manifest relations:
+
+```text
+owns
+imports
+exports
+tests
+returns_to
+delegates
+related_to
+```
+
+Navigation and placement:
+
+```text
+placed_in
+belongs_to_topic
+```
+
+Observed/structural relations:
+
+```text
+links_to
+lexical_anchor
+definition_owner_reference
+generative_source_reference
+operationalized_in_reference
+contains_term
+map_reference
+concept_network_reference
+```
+
+Every edge keeps provenance, including source type, source path, source location where available, and manifest payload/evidence where present.
+
+If the same semantic edge is supported by several sources, the graph retains several provenance records instead of collapsing them into a scalar confidence value.
+
+### 13.3 Build and inspect
+
+```bash
+python scripts/build_docs_graph.py
+python scripts/build_docs_graph.py --check
+python scripts/query_docs.py graph-test
+```
+
+Inspect a one-hop neighborhood:
+
+```bash
+python scripts/query_docs.py graph meaning_generation_model
+python scripts/query_docs.py graph "Boundary / 境界"
+```
+
+Inspect a two-hop subgraph as JSON for a later browser relation map:
+
+```bash
+python scripts/query_docs.py graph meaning_generation_model --depth 2 --json
+```
+
+Find an inspectable route between nodes:
+
+```bash
+python scripts/query_docs.py trace meaning meaning_generation
+```
+
+The default trace is undirected for exploration because a reader may move from topic to document to owned concept even when an edge is declared in the opposite direction. `--directed` is available when direction itself is the question.
+
+### 13.4 Coverage diagnostics
+
+DN-4 distinguishes manifest-registered documents from public Markdown observed only through repository structure.
+
+`docs_graph.json` therefore reports:
+
+- observed but unregistered public documents;
+- genuinely missing document references;
+- unresolved concept IDs;
+- references intentionally excluded by private/process boundaries.
+
+Private-core paths are not written into the graph output, including diagnostics.
+
+### 13.5 Metrics remain deferred
+
+DN-4 v0.1 does not calculate PageRank, betweenness, authority, trust, or structural-importance scores.
+
+Such metrics can always be derived later from `nodes + edges`. The reverse is not possible: a count such as `inbound_links: 11` cannot reconstruct which eleven relations produced it.
+
+Therefore the relation map is canonical for DN-4; numeric summaries are optional derived views for later work.
+
+## 14. Next boundary
+
+DN-5 may render `docs_index.json` and `docs_graph.json` through the same TypeScript/HTML navigation client.
+
+The first browser graph should be local and inspectable rather than a full-repository hairball: one selected node, its typed one-hop relations, optional two-hop expansion, provenance inspection, and direct document opening.
+
+Application/tool launch manifests remain a separate future responsibility and are not folded into the document graph in DN-4.
+
+## 14. DN-5 Browser Client and Python / TypeScript parity
+
+DN-5 adds a dependency-free static browser client under `navigator/`.
+It consumes the existing generated read models directly:
+
+```text
+tools/docs_index.json  ─┐
+                        ├─> navigator/dist/app.js -> browser UI
+tools/docs_graph.json  ─┘
+```
+
+The browser does not create or maintain a second search database. Search, topic browsing, and graph traversal are implemented in TypeScript against the same JSON contracts used by the Python reference client.
+
+### 14.1 Browser surfaces
+
+The first browser client deliberately separates four surfaces:
+
+```text
+Explore
+  topic cards + repository/system layers
+
+Search
+  direct relevance + inspectable match reasons
+
+Relations
+  one-hop typed relation map + provenance list
+
+Data audit
+  manifest/index/graph coverage and diagnostics
+```
+
+`Explore` includes system-layer navigation such as `01_Sat_Truth`, `02_Raj_Beauty`, `03_Tam_Goodness`, applications, and research notes. This is repository placement, not a claim that those folders are a strict ontological hierarchy.
+
+The relation map renders actual typed edges. It does not calculate centrality or turn link counts into importance scores. Observed-but-unregistered Markdown remains visibly distinct from manifest-registered documents.
+
+### 14.2 Data alignment
+
+At runtime the client compares the manifest hash embedded in `docs_index.json` with the manifest hash embedded in `docs_graph.json`. A mismatch is shown as a browser warning rather than silently merging stale artifacts.
+
+The `Data audit` surface exists specifically so that UI inspection can return to the underlying data contract. It exposes registered vs observed-only documents by layer and the graph diagnostics without promoting observed files into canonical document identity.
+
+### 14.3 TypeScript source and tracked JavaScript
+
+```text
+navigator/src/search-core.ts
+navigator/src/graph-core.ts
+navigator/src/app.ts
+navigator/dist/*.js
+```
+
+The compiled JavaScript is tracked so the static client has no build dependency at runtime. TypeScript is the human-maintained browser reference source.
+
+Rebuild when `navigator/src/*.ts` changes:
+
+```bash
+tsc -p navigator/tsconfig.json
+```
+
+### 14.4 Python / TypeScript parity
+
+Run:
+
+```bash
+node scripts/check_docs_web_parity.mjs
+```
+
+The parity runner compares the TypeScript implementation with the Python reference client across:
+
+- all current search regression queries;
+- all current topic-browse regressions;
+- graph one-hop neighborhoods used by graph regression cases;
+- graph trace regression cases.
+
+Parity means implementation equivalence for the current contract and corpus. It is not a claim that JavaScript provides a universal byte-for-byte implementation of Python Unicode `casefold` for every possible future language character. Any future normalization expansion must be added to the cross-client regression corpus before being relied on.
+
+### 14.5 Local preview
+
+Because the client fetches the generated JSON rather than embedding a copy, open it over HTTP from the repository root:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000/navigator/
+```
+
+Opening `navigator/index.html` directly through `file://` is not supported because browser fetch restrictions vary.
+
+### 14.6 DN-5 boundary
+
+DN-5 does not:
+
+- add a framework or package-manager dependency;
+- introduce a second search index;
+- add graph centrality to direct relevance;
+- promote observed-only documents into the manifest;
+- create application-download or launch registries;
+- modify theory prose to make the UI look cleaner.
+
+The UI is intentionally an inspection surface. Data defects or incomplete navigation metadata revealed by the UI should be corrected upstream in the manifest, search config, graph source, Glossary, Map, or theory document that owns them.

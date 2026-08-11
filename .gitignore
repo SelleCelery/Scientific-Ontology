@@ -25,6 +25,11 @@
 !scripts/check_public_format.py
 !scripts/build_docs_index.py
 !scripts/query_docs.py
+!scripts/build_docs_graph.py
+!tools/docs_graph.yml
+!tools/docs_graph_tests.yml
+!tools/docs_graph.json
+!tools/docs_graph.schema.json
 !tools/docs_search.yml
 !tools/docs_search_tests.yml
 !tools/docs_index.json
@@ -87,4 +92,6 @@ desktop.ini
 ~$*.*
 
 # Build outputs for docs
-_build/
+_build/!navigator/
+!navigator/**
+!scripts/check_docs_web_parity.mjs
