@@ -1,0 +1,218 @@
+{
+  "schema_version": "0.1",
+  "home": {
+    "eyebrow": {
+      "ja": "SCIENTIFIC ONTOLOGY",
+      "en": "SCIENTIFIC ONTOLOGY"
+    },
+    "title": {
+      "ja": "存在境界論を読む",
+      "en": "Read Scientific Ontology"
+    },
+    "description": {
+      "ja": "境界、接触、履歴、返りから、認識・意味・倫理・AI・社会へ。体系の層、案内文書、問い、検索、関係から、いま読みたい場所へ入れます。",
+      "en": "Move from boundaries, contact, history, and return toward cognition, meaning, ethics, AI, and society. Enter through system layers, guide documents, questions, search, or relations."
+    }
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "order": 10,
+      "path": "00_Overview",
+      "readme_path": "00_Overview/README.md",
+      "label": {
+        "ja": "00｜Overview",
+        "en": "00 | Overview"
+      },
+      "subtitle": {
+        "ja": "全体の地図と読み方",
+        "en": "Maps and reading routes"
+      },
+      "description": {
+        "ja": "個別理論へ入る前に、概念と文書の接続、体系図、運用方針、研究動態、主張強度、物理近接語彙の接続条件を見渡す案内層。",
+        "en": "An orientation layer for seeing concept-document connections, system maps, operational policy, research dynamics, claim strength, and conditions for physics-adjacent terminology before entering individual theories."
+      }
+    },
+    {
+      "id": "sat_truth",
+      "order": 20,
+      "path": "01_Sat_Truth",
+      "readme_path": "01_Sat_Truth/README.md",
+      "label": {
+        "ja": "01｜Sat / Truth",
+        "en": "01 | Sat / Truth"
+      },
+      "subtitle": {
+        "ja": "構造と成立条件",
+        "en": "Structure and conditions of formation"
+      },
+      "description": {
+        "ja": "ネットワーク構造そのものと、存在・接触・観測・意味・知がどのように成立しうるかを扱う基礎層。",
+        "en": "The foundation layer for network structure itself and for the conditions under which existence, contact, observation, meaning, and knowledge can arise."
+      }
+    },
+    {
+      "id": "raj_beauty",
+      "order": 30,
+      "path": "02_Raj_Beauty",
+      "readme_path": "02_Raj_Beauty/README.md",
+      "label": {
+        "ja": "02｜Raj / Beauty",
+        "en": "02 | Raj / Beauty"
+      },
+      "subtitle": {
+        "ja": "履歴・差分・読みの生成",
+        "en": "History, difference, and the generation of reading"
+      },
+      "description": {
+        "ja": "ネットワークを流れる通信内容と、その受け取られ方・読み方の生成を扱う。事象流、履歴、差分、注意、抽象化、認識軸形成へ進む層。",
+        "en": "The layer for communication content moving through the network and for how reception and reading are generated, including event streams, history, difference, attention, abstraction, and cognitive-axis formation."
+      }
+    },
+    {
+      "id": "tam_goodness",
+      "order": 40,
+      "path": "03_Tam_Goodness",
+      "readme_path": "03_Tam_Goodness/README.md",
+      "label": {
+        "ja": "03｜Tam / Goodness",
+        "en": "03 | Tam / Goodness"
+      },
+      "subtitle": {
+        "ja": "規約・通約・返送",
+        "en": "Protocols, commensuration, and return"
+      },
+      "description": {
+        "ja": "通信を成立させる規約と、その管理を扱う。受容・保留・停止、通約、仮閉鎖、残差、異議、責任、返送を読む層。",
+        "en": "The layer for protocols that make communication possible and for their management: acceptance, suspension, stopping, commensuration, provisional closure, residuals, objections, responsibility, and return."
+      }
+    },
+    {
+      "id": "applications",
+      "order": 50,
+      "path": "04_Applications",
+      "readme_path": "04_Applications/README.md",
+      "label": {
+        "ja": "04｜Applications",
+        "en": "04 | Applications"
+      },
+      "subtitle": {
+        "ja": "理論を設計へ接続する",
+        "en": "Connect theory to design"
+      },
+      "description": {
+        "ja": "01–03で形成された構造・認識・規約を、公開可能な設計インターフェース、評価枠、チェックリスト、仕様へ接続し、実装からの残差を上流へ返す層。",
+        "en": "Connects the structures, cognition, and protocols formed in 01–03 to public design interfaces, evaluation frames, checklists, and specifications, while returning implementation residuals upstream."
+      }
+    },
+    {
+      "id": "research_notes",
+      "order": 60,
+      "path": "05_Research_Notes",
+      "readme_path": "05_Research_Notes/README.md",
+      "label": {
+        "ja": "05｜Research Notes",
+        "en": "05 | Research Notes"
+      },
+      "subtitle": {
+        "ja": "未確定な発展を、捨てずに保持する",
+        "en": "Keep unresolved developments inspectable"
+      },
+      "description": {
+        "ja": "公開基礎へ直ちに統合するには距離やリスクが大きい研究線を、非主張境界・反例・残差・検証段階とともに保持する探索層。",
+        "en": "An exploratory layer that keeps research lines too distant or risky for immediate integration into the public foundations together with non-claim boundaries, counterexamples, residuals, and validation stages."
+      }
+    },
+    {
+      "id": "visual_materials",
+      "order": 70,
+      "path": "06_Visual_Materials",
+      "readme_path": "06_Visual_Materials/README.md",
+      "label": {
+        "ja": "06｜Visual Materials",
+        "en": "06 | Visual Materials"
+      },
+      "subtitle": {
+        "ja": "図から入り、本文へ戻る",
+        "en": "Enter visually, return to the text"
+      },
+      "description": {
+        "ja": "概念配置へ視覚的に入るための補助層。図を理論本文の代替にせず、圧縮で失われた条件を確認しながら本文へ戻る入口として扱う。",
+        "en": "A supporting layer for entering the conceptual arrangement visually. Images are not substitutes for theory texts; they are entrances that return readers to conditions compressed by visualization."
+      }
+    }
+  ],
+  "guides": [
+    {
+      "id": "repository_entry",
+      "order": 10,
+      "path": "README.md",
+      "label": {
+        "ja": "存在境界論とは何か",
+        "en": "What is Scientific Ontology?"
+      },
+      "purpose": {
+        "ja": "体系の開始線、公開上の姿勢、v5系でどこへ進むのかを最初に読む。",
+        "en": "Start with the opening line, public stance, and where the v5 series is going."
+      }
+    },
+    {
+      "id": "operational_outline",
+      "order": 20,
+      "path": {
+        "ja": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "en": "00_Overview/Scientific_Ontology_Operational_Outline.en.md"
+      },
+      "label": {
+        "ja": "運用の入口から読む",
+        "en": "Start from operational orientation"
+      },
+      "purpose": {
+        "ja": "境界事件、作用、返り、責任分界、可動性という短い運用線から全体へ入る。",
+        "en": "Enter through the compact operational line of boundary events, action, return, responsibility partition, and mobility."
+      }
+    },
+    {
+      "id": "system_map",
+      "order": 30,
+      "path": "00_Overview/Scientific_Ontology_System_Map.md",
+      "label": {
+        "ja": "体系の配置を見る",
+        "en": "See the system layout"
+      },
+      "purpose": {
+        "ja": "概念体系、公開体系、リポジトリ体系の三つの面から、各層と公開境界の配置を俯瞰する。",
+        "en": "Survey layer placement and public boundaries across the conceptual, publication, and repository architectures."
+      }
+    },
+    {
+      "id": "concept_network",
+      "order": 40,
+      "path": {
+        "ja": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "en": "00_Overview/Scientific_Ontology_Concept_Network.en.md"
+      },
+      "label": {
+        "ja": "概念のつながりを見る",
+        "en": "See how the concepts connect"
+      },
+      "purpose": {
+        "ja": "概念の一覧ではなく、文書所有、読解経路、返路、アポリアを含むネットワークとして全体を読む。",
+        "en": "Read the system as a network of document ownership, reading routes, return paths, and aporia rather than as a flat concept list."
+      }
+    },
+    {
+      "id": "glossary",
+      "order": 50,
+      "path": "GLOSSARY.md",
+      "label": {
+        "ja": "用語から確認する",
+        "en": "Check the terminology"
+      },
+      "purpose": {
+        "ja": "標準表記、英語通約、公開上の注意を確認し、詳細定義を所有する文書へ戻る。",
+        "en": "Check standard forms, English commensurations, and public-handling notes, then return to the documents that own detailed definitions."
+      }
+    }
+  ]
+}

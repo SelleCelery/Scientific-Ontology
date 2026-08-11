@@ -35,6 +35,7 @@
 !tools/docs_index.json
 !tools/docs_index.schema.json
 !tools/DOCS_NAVIGATION.md
+!tools/NAVIGATOR_INTERFACE_CONTRACT.md
 !tools/Public_Format_Registry.yml
 !tools/docs_manifest.yml
 !tools/maintenance_rules.yml
@@ -96,3 +97,12 @@ _build/!navigator/
 !navigator/**
 !scripts/check_docs_web_parity.mjs
 !scripts/serve_navigator.py
+!scripts/validate_registration_candidates.py
+!scripts/build_registration_candidates_preview.py
+!scripts/check_navigator_interface.py
+!tools/docs_registration_candidates.yml
+!tools/docs_registration_candidates.schema.json
+!tools/docs_registration_candidates.preview.json
+!tools/DOCS_REGISTRATION_CANDIDATES.md
+!tools/REGISTRATION_CANDIDATES_FULL_REVIEW.md
+!tools/REGISTRATION_CANDIDATES_REPORT.md

@@ -498,3 +498,143 @@ python scripts/serve_navigator.py --check
 This strict-decodes every Markdown document currently exposed by `docs_index.json` / `docs_graph.json` and validates the explicit UTF-8 MIME mappings. It is a source-integrity check for the Reader boundary, not a substitute for the repository's broader public-format/mojibake checker.
 
 DN-5.1 intentionally does not edit theory prose, promote observed documents, add application registries, or treat visual rendering as evidence that source content is correct. UI-discovered content defects still return to the owning data/document layer.
+
+## 16. DN-5.3 Registration Candidate Preview
+
+The Navigator may load a separate candidate-only read model:
+
+```text
+tools/docs_registration_candidates.yml
+  -> scripts/build_registration_candidates_preview.py
+  -> tools/docs_registration_candidates.preview.json
+  -> Navigator / Candidate review
+```
+
+This surface is deliberately outside `docs_manifest.yml` and outside direct search ranking. It exists so observed-only documents can be reviewed before canonical registration.
+
+The browser exposes:
+
+- proposed document identity, role, scope, layer, and public profile;
+- proposed topics, aliases, reader questions, and entry level;
+- language-family/counterpart proposals;
+- confidence and explicit human-judgment items;
+- the source excerpts used to form each proposal;
+- direct jumps to the strict UTF-8 Reader and the current typed relation graph.
+
+The preview must preserve these boundaries:
+
+```text
+candidate != manifest registration
+candidate topic != ontological classification
+candidate doc_id != canonical identity until accepted
+candidate role != theory rewrite
+candidate evidence != proof of concept ownership
+```
+
+The candidate JSON is generated and must not be edited by hand.
+
+```bash
+python scripts/validate_registration_candidates.py --root .
+python scripts/build_registration_candidates_preview.py
+python scripts/build_registration_candidates_preview.py --check
+```
+
+`--check` also blocks when the candidate ledger was generated against a different manifest or graph hash. This prevents a stale candidate UI from being silently treated as a current review surface.
+
+The Candidate review tab is a review interface, not an approval workflow. Acceptance still requires an explicit later promotion into `tools/docs_manifest.yml` and regeneration of the normal search and graph read models.
+
+## 17. DN-5.4A Public / Developer Interface Contract
+
+DN-5.4A separates the default reader-facing Navigator from the repository-maintenance surface while preserving one shared search/graph implementation.
+
+```text
+/navigator/
+  = Public Navigator
+
+/navigator/dev.html
+  = Developer Navigator
+```
+
+The detailed responsibility contract is maintained in:
+
+```text
+tools/NAVIGATOR_INTERFACE_CONTRACT.md
+```
+
+### 17.1 Public Navigator
+
+The default public information architecture is now:
+
+```text
+Read
+  - system-layer introductions
+  - layer README entrances
+  - guide documents by reading purpose
+  - topic and starter-question entrances
+
+Search
+  - explainable direct relevance
+
+Relation Map
+  - typed relation traversal
+
+Reader
+  - strict UTF-8 detail view reached from the surfaces above
+```
+
+The old standalone Explore tab is folded into `Read`. Topic discovery remains available as a compact entrance rather than presenting itself as a separate subsystem.
+
+Reader-facing layer and guide copy is owned by:
+
+```text
+navigator/public-content.json
+```
+
+That file is presentation metadata only. It may summarize the role already stated by a layer README or explain why a guide document is useful, but it does not own theory definitions, concept identity, or search associations.
+
+The public runtime loads:
+
+```text
+tools/docs_index.json
+tools/docs_graph.json
+navigator/public-content.json
+```
+
+It does not fetch `tools/docs_registration_candidates.preview.json`.
+
+### 17.2 Developer Navigator
+
+The developer entry retains the current DN-5.3 maintenance surfaces:
+
+```text
+Read
+Search
+Relations
+Candidate Review
+Data Audit
+```
+
+Candidate and audit data are loaded only in developer mode. DN-5.4A does not yet add manifest-writing controls; those belong to the later registration workbench.
+
+### 17.3 Public presentation rules
+
+Public document cards suppress maintenance fields such as state, raw path, candidate status, and internal IDs. They foreground:
+
+```text
+title
+role
+reader question
+entry depth
+Read
+Relations
+```
+
+Search still exposes score reasons, but the public rendering translates field and method names into reader-facing labels. The underlying numeric contributions remain inspectable.
+
+The public relation map renders human-facing relation and node-type labels while preserving the exact typed relation in `docs_graph.json`. Relation count remains distinct from importance.
+
+### 17.4 Development preview
+
+During release preparation the public shell may run against `visibility_profile: preview`. In that case it shows only a compact release-preparation notice. Manifest hashes, candidate counts, and registration diagnostics remain developer-only.
+
+DN-6 must generate/check a public visibility profile and must reject a public release artifact that depends on candidate-preview data or exposes developer-maintenance surfaces as the default entry.

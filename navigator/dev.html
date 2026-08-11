@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scientific Ontology developer navigator: candidate review, data audit, search diagnostics, and typed relations.">
+  <title>Scientific Ontology · Developer Navigator</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-interface="developer">
+  <header class="site-header developer-site-header">
+    <a class="brand" href="./dev.html" aria-label="Scientific Ontology Developer Navigator home">
+      <span class="brand-mark">SO</span>
+      <span>
+        <strong>Scientific Ontology</strong>
+        <small>Developer Navigator</small>
+      </span>
+    </a>
+    <div class="header-actions">
+      <a class="public-mode-link" href="./index.html">Public</a>
+      <span id="data-status" class="load-status"></span>
+      <button id="lang-toggle" class="lang-toggle" type="button">EN</button>
+    </div>
+  </header>
+  <div id="app" aria-live="polite"></div>
+  <footer class="site-footer">
+    <p>Developer surface · candidate ≠ registration · search association ≠ conceptual identity.</p>
+  </footer>
+  <script type="module" src="./dist/app.js"></script>
+</body>
+</html>

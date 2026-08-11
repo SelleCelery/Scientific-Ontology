@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientific-ontology.local/schemas/docs-registration-candidates-0.1.json",
+  "title": "Scientific Ontology document registration candidates",
+  "type": "object",
+  "required": [
+    "registration_candidates"
+  ],
+  "properties": {
+    "registration_candidates": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "status",
+        "source",
+        "policy",
+        "summary",
+        "candidates"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "0.1"
+        },
+        "status": {
+          "const": "review_candidate"
+        },
+        "source": {
+          "type": "object"
+        },
+        "policy": {
+          "type": "object"
+        },
+        "summary": {
+          "type": "object"
+        },
+        "candidates": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "observed_node_id",
+              "recommended_action",
+              "navigation",
+              "proposed",
+              "review"
+            ],
+            "properties": {
+              "path": {
+                "type": "string",
+                "pattern": "^[^/].*\\.md$"
+              },
+              "observed_node_id": {
+                "type": "string"
+              },
+              "recommended_action": {
+                "type": "string"
+              },
+              "navigation": {
+                "type": "object"
+              },
+              "proposed": {
+                "type": "object",
+                "required": [
+                  "doc_id",
+                  "document_type",
+                  "layer",
+                  "status",
+                  "state",
+                  "role_ja",
+                  "role_en",
+                  "language_relation",
+                  "discovery"
+                ],
+                "properties": {
+                  "doc_id": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+                  },
+                  "document_type": {
+                    "type": "string"
+                  },
+                  "title_ja": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "title_en": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "layer": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string"
+                  },
+                  "scope": {
+                    "type": "string"
+                  },
+                  "public_profile": {
+                    "type": "string"
+                  },
+                  "state": {
+                    "const": "public-candidate"
+                  },
+                  "role_ja": {
+                    "type": "string"
+                  },
+                  "role_en": {
+                    "type": "string"
+                  },
+                  "language_relation": {
+                    "type": "object"
+                  },
+                  "discovery": {
+                    "type": "object"
+                  }
+                }
+              },
+              "review": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

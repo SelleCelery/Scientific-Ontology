@@ -145,7 +145,8 @@ def main() -> int:
         return strict_utf8_check()
 
     server = ThreadingHTTPServer((args.host, args.port), Utf8NavigatorHandler)
-    print(f"Scientific Ontology Navigator: http://{args.host}:{args.port}/navigator/")
+    print(f"Scientific Ontology Public Navigator: http://{args.host}:{args.port}/navigator/")
+    print(f"Scientific Ontology Developer Navigator: http://{args.host}:{args.port}/navigator/dev.html")
     print("Text resources are served with explicit charset=utf-8.")
     try:
         server.serve_forever()

@@ -2,9 +2,14 @@ import { browsePayload, browseTopics, localizedValue, searchDocuments, } from ".
 import { graphNodeLabel, graphNodeMap, graphSubgraph, layerSummaries, resolveGraphNode, } from "./graph-core.js";
 const INDEX_URL = "../tools/docs_index.json";
 const GRAPH_URL = "../tools/docs_graph.json";
+const CANDIDATES_URL = "../tools/docs_registration_candidates.preview.json";
+const PUBLIC_CONTENT_URL = "./public-content.json";
 const MAX_MAP_EDGES = 24;
+const interfaceMode = document.body.dataset.interface === "developer" ? "developer" : "public";
 let docsIndex;
 let docsGraph;
+let publicContent = {};
+let registrationCandidates = null;
 let displayLang = "ja";
 const app = document.querySelector("#app");
 const status = document.querySelector("#data-status");
@@ -81,6 +86,114 @@ function normalizeRepoPath(basePath, target) {
 function localized(value, fallback = "") {
     return localizedValue(value, displayLang, fallback);
 }
+function isDeveloper() {
+    return interfaceMode === "developer";
+}
+function publicLayerConfigs() {
+    return [...(publicContent.layers ?? [])].sort((a, b) => Number(a.order ?? 999) - Number(b.order ?? 999) || String(a.id ?? "").localeCompare(String(b.id ?? ""), "en"));
+}
+function publicLayerConfig(layerKey) {
+    return publicLayerConfigs().find((item) => String(item.id ?? "") === layerKey);
+}
+function publicGuides() {
+    return [...(publicContent.guides ?? [])].sort((a, b) => Number(a.order ?? 999) - Number(b.order ?? 999) || String(a.id ?? "").localeCompare(String(b.id ?? ""), "en"));
+}
+function publicGuidePath(config) {
+    const value = config.path;
+    if (value && typeof value === "object")
+        return String(value[displayLang] ?? value.ja ?? value.en ?? "");
+    return String(value ?? "");
+}
+function entryLevelLabel(value) {
+    const labels = {
+        foundation: ["まず読む", "Start here"],
+        intermediate: ["もう少し進む", "Go further"],
+        advanced: ["深く読む", "Read deeply"],
+    };
+    const pair = labels[value];
+    return pair ? pair[displayLang === "ja" ? 0 : 1] : value;
+}
+function relationLabel(relation) {
+    const labels = {
+        owns: ["定義を所有", "owns definition"],
+        imports: ["参照して使う", "imports"],
+        exports: ["下流へ渡す", "exports"],
+        tests: ["検査する", "tests"],
+        returns_to: ["返す", "returns to"],
+        delegates: ["委譲する", "delegates"],
+        related_to: ["関連", "related to"],
+        placed_in: ["体系層", "placed in"],
+        belongs_to_topic: ["トピック", "topic"],
+        links_to: ["本文リンク", "links to"],
+        lexical_anchor: ["用語入口", "lexical anchor"],
+        definition_owner_reference: ["定義所有者を参照", "definition-owner reference"],
+        generative_source_reference: ["生成源を参照", "generative-source reference"],
+        operationalized_in_reference: ["応用先を参照", "operationalized-in reference"],
+        contains_term: ["用語を収録", "contains term"],
+        map_reference: ["体系マップ参照", "system-map reference"],
+        concept_network_reference: ["概念ネットワーク参照", "concept-network reference"],
+    };
+    const pair = labels[relation];
+    return pair ? pair[displayLang === "ja" ? 0 : 1] : relation.replaceAll("_", " ");
+}
+function displayGraphNodeLabel(node) {
+    if (!isDeveloper() && node.type === "layer") {
+        const config = publicLayerConfig(String(node.key ?? ""));
+        if (config)
+            return localized(config.label, String(node.key ?? ""));
+    }
+    return graphNodeLabel(node, displayLang);
+}
+function nodeTypeLabel(type) {
+    const labels = {
+        document: ["文書", "Document"],
+        observed_document: ["文書", "Document"],
+        concept: ["概念", "Concept"],
+        topic: ["トピック", "Topic"],
+        layer: ["体系層", "Layer"],
+        glossary_term: ["用語", "Term"],
+        source_artifact: ["案内資料", "Guide source"],
+    };
+    const pair = labels[type];
+    return pair ? pair[displayLang === "ja" ? 0 : 1] : type;
+}
+function provenanceLabel(type) {
+    const labels = {
+        manifest: ["文書台帳", "manifest"],
+        markdown: ["本文", "Markdown"],
+        markdown_link: ["本文リンク", "Markdown link"],
+        glossary: ["用語集", "Glossary"],
+        system_map: ["体系マップ", "System Map"],
+        concept_network: ["概念ネットワーク", "Concept Network"],
+    };
+    const pair = labels[type];
+    return pair ? pair[displayLang === "ja" ? 0 : 1] : type.replaceAll("_", " ");
+}
+function matchFieldLabel(field) {
+    const base = field.split(".", 1)[0];
+    const labels = {
+        title: ["タイトル", "title"],
+        owned_concept: ["定義概念", "owned concept"],
+        aliases: ["別名・入口表現", "alias / entry phrase"],
+        topics: ["トピック", "topic"],
+        reader_questions: ["読者の問い", "reader question"],
+        role: ["文書の役割", "document role"],
+        scope: ["扱う範囲", "scope"],
+    };
+    const pair = labels[base];
+    return pair ? pair[displayLang === "ja" ? 0 : 1] : field.replaceAll("_", " ");
+}
+function matchMethodLabel(method) {
+    const labels = {
+        exact: ["完全一致", "exact match"],
+        contains: ["部分一致", "contains"],
+        term_coverage: ["語のまとまり", "term coverage"],
+        query_expansion: ["検索上の関連表現", "search-only expansion"],
+        char_ngram: ["文字列の近さ", "character similarity"],
+    };
+    const pair = labels[method];
+    return pair ? pair[displayLang === "ja" ? 0 : 1] : method.replaceAll("_", " ");
+}
 function setRoute(values) {
     const params = new URLSearchParams();
     for (const [key, value] of Object.entries(values))
@@ -118,6 +231,57 @@ function docByPath(path) {
 function graphNodeByPath(path) {
     return (docsGraph.nodes ?? []).find((node) => (node.type === "document" || node.type === "observed_document") && String(node.path ?? "") === path);
 }
+function candidatePayload() {
+    return registrationCandidates?.registration_candidates ?? null;
+}
+function candidateList() {
+    return candidatePayload()?.candidates ?? [];
+}
+function candidateByPath(path) {
+    return candidateList().find((candidate) => String(candidate.path ?? "") === path);
+}
+function candidateTitle(candidate) {
+    const proposed = candidate.proposed ?? {};
+    const preferred = displayLang === "ja" ? proposed.title_ja : proposed.title_en;
+    const fallback = displayLang === "ja" ? proposed.title_en : proposed.title_ja;
+    return String(preferred || fallback || proposed.doc_id || candidate.path || "");
+}
+function candidateRole(candidate) {
+    const proposed = candidate.proposed ?? {};
+    return String((displayLang === "ja" ? proposed.role_ja : proposed.role_en) || proposed.role_ja || proposed.role_en || "");
+}
+function candidateQuestionList(candidate) {
+    const questions = candidate.proposed?.discovery?.reader_questions ?? {};
+    return (questions[displayLang] ?? questions.ja ?? questions.en ?? []).map((value) => String(value));
+}
+function candidateAliases(candidate) {
+    const aliases = candidate.proposed?.discovery?.aliases ?? {};
+    return (aliases[displayLang] ?? aliases.ja ?? aliases.en ?? []).map((value) => String(value));
+}
+function candidateSearchText(candidate) {
+    const proposed = candidate.proposed ?? {};
+    const discovery = proposed.discovery ?? {};
+    const values = [
+        candidate.path,
+        candidate.recommended_action,
+        candidate.navigation?.visibility,
+        proposed.doc_id,
+        proposed.title_ja,
+        proposed.title_en,
+        proposed.layer,
+        proposed.status,
+        proposed.scope,
+        proposed.role_ja,
+        proposed.role_en,
+        ...(discovery.topics ?? []),
+        ...(discovery.aliases?.ja ?? []),
+        ...(discovery.aliases?.en ?? []),
+        ...(discovery.reader_questions?.ja ?? []),
+        ...(discovery.reader_questions?.en ?? []),
+        ...(candidate.review?.needs_human_judgment ?? []),
+    ];
+    return values.filter(Boolean).join(" ").normalize("NFKC").toLocaleLowerCase("ja-JP");
+}
 function readerButton(path, className = "text-button") {
     const read = button(displayLang === "ja" ? "読む" : "Read", className);
     read.addEventListener("click", () => setRoute({ read: path }));
@@ -139,12 +303,19 @@ function graphNodeForDocument(doc) {
 }
 function navBar(active) {
     const nav = el("nav", "view-tabs");
-    const items = [
-        ["explore", displayLang === "ja" ? "探索" : "Explore", {}],
-        ["search", displayLang === "ja" ? "検索" : "Search", { view: "search" }],
-        ["relations", displayLang === "ja" ? "関係マップ" : "Relations", { view: "relations" }],
-        ["audit", displayLang === "ja" ? "データ点検" : "Data audit", { view: "audit" }],
-    ];
+    const items = isDeveloper()
+        ? [
+            ["home", displayLang === "ja" ? "読む" : "Read", {}],
+            ["search", displayLang === "ja" ? "検索" : "Search", { view: "search" }],
+            ["relations", displayLang === "ja" ? "関係マップ" : "Relations", { view: "relations" }],
+            ["candidates", displayLang === "ja" ? "候補レビュー" : "Candidate review", { view: "candidates" }],
+            ["audit", displayLang === "ja" ? "データ点検" : "Data audit", { view: "audit" }],
+        ]
+        : [
+            ["home", displayLang === "ja" ? "読む" : "Read", {}],
+            ["search", displayLang === "ja" ? "検索" : "Search", { view: "search" }],
+            ["relations", displayLang === "ja" ? "関係マップ" : "Relations", { view: "relations" }],
+        ];
     for (const [id, label, target] of items) {
         const b = button(label, `tab ${id === active ? "active" : ""}`);
         b.addEventListener("click", () => setRoute(target));
@@ -153,8 +324,17 @@ function navBar(active) {
     return nav;
 }
 function dataBanner() {
-    const wrap = el("div", "data-banner");
     const profile = String(docsIndex.source?.visibility_profile ?? "unknown");
+    if (!isDeveloper()) {
+        if (profile === "public")
+            return el("div", "public-profile-spacer");
+        const notice = el("div", "public-preview-note");
+        notice.append(badge(displayLang === "ja" ? "公開準備プレビュー" : "Release-preparation preview", "warn"), el("span", "", displayLang === "ja"
+            ? "現在は公開候補データで表示しています。候補レビューや登録診断はこの公開面には表示されません。"
+            : "This view currently uses release-preparation data. Candidate review and registration diagnostics are not shown on the public surface."));
+        return notice;
+    }
+    const wrap = el("div", "data-banner");
     wrap.append(badge(profile === "preview" ? "PREVIEW" : profile.toUpperCase(), profile === "preview" ? "warn" : ""));
     const indexHash = String(docsIndex.source?.manifest_sha256 ?? "");
     const graphHash = String(docsGraph.source?.manifest_sha256 ?? "");
@@ -187,95 +367,169 @@ function searchBox(initial = "") {
     });
     return form;
 }
-function renderExplore() {
-    const page = el("main", "page");
-    page.append(navBar("explore"), dataBanner());
-    const hero = el("section", "hero");
-    hero.append(eyebrow(displayLang === "ja" ? "DOCUMENT NAVIGATOR" : "DOCUMENT NAVIGATOR"), el("h1", "hero-title", displayLang === "ja" ? "知らないところから入れる入口" : "An entry point before you know the terms"), el("p", "hero-copy", displayLang === "ja"
-        ? "READMEで体系の趣旨をつかんだ後、トピック・体系層・問い・検索・関係から次の文書へ進めます。"
-        : "After the README explains the project, move through topics, system layers, questions, search, and relations to the next document."), searchBox());
-    page.append(hero);
-    const topicSection = el("section", "section");
-    topicSection.append(eyebrow(displayLang === "ja" ? "TOPICS" : "TOPICS"), el("h2", "section-title", displayLang === "ja" ? "関心から入る" : "Enter through an interest"), el("p", "section-copy", displayLang === "ja"
-        ? "トピックは分類学ではなく、読者の入口です。一つの文書が複数の入口に現れることがあります。"
-        : "Topics are navigation entries, not an ontology. A document may appear through several entries."));
-    const grid = el("div", "card-grid");
+function publicLayerCard(config) {
+    const item = el("article", "public-layer-card");
+    const label = localized(config.label, String(config.id ?? ""));
+    const subtitle = localized(config.subtitle, "");
+    const description = localized(config.description, "");
+    const top = el("div", "public-layer-card-top");
+    top.append(el("span", "public-layer-code", label));
+    if (subtitle)
+        top.append(el("span", "public-layer-subtitle", subtitle));
+    item.append(top);
+    if (description)
+        item.append(el("p", "public-layer-description", description));
+    const actions = el("div", "card-actions");
+    const open = button(displayLang === "ja" ? "この層を見る" : "Open this layer", "button primary compact-button");
+    open.addEventListener("click", () => setRoute({ layer: `layer:${String(config.id ?? "")}` }));
+    actions.append(open);
+    const readmePath = String(config.readme_path ?? "");
+    if (readmePath && readerAllowedPaths().has(readmePath)) {
+        const readme = readerButton(readmePath, "button quiet-button");
+        readme.textContent = displayLang === "ja" ? "層の案内を読む" : "Read layer guide";
+        actions.append(readme);
+    }
+    item.append(actions);
+    return item;
+}
+function publicGuideCard(config) {
+    const item = el("article", "guide-card");
+    const label = localized(config.label, String(config.id ?? ""));
+    const purpose = localized(config.purpose, "");
+    item.append(el("div", "guide-kicker", displayLang === "ja" ? "案内文書" : "Guide"), el("h3", "guide-title", label));
+    if (purpose)
+        item.append(el("p", "guide-copy", purpose));
+    const path = publicGuidePath(config);
+    const actions = el("div", "card-actions");
+    if (path && readerAllowedPaths().has(path))
+        actions.append(readerButton(path, "button primary compact-button"));
+    const graphNode = graphNodeByPath(path);
+    if (graphNode) {
+        const relations = button(displayLang === "ja" ? "関係を見る" : "Relations", "button quiet-button");
+        relations.addEventListener("click", () => setRoute({ graph: String(graphNode.id) }));
+        actions.append(relations);
+    }
+    item.append(actions);
+    return item;
+}
+function publicQuestionEntrances() {
+    const rows = [];
     for (const card of browseTopics(docsIndex)) {
-        const item = el("article", "topic-card card");
-        const heading = el("h3", "card-title", localized(card.label, String(card.topic_id)));
-        const count = badge(`${card.document_count} ${displayLang === "ja" ? "文書" : "docs"}`);
-        const description = el("p", "card-copy", localized(card.description));
-        const questions = el("div", "question-preview");
-        const qList = card.starter_questions?.[displayLang] ?? [];
-        for (const q of qList.slice(0, 2))
-            questions.append(el("div", "question-line", `Q. ${q}`));
-        const open = button(displayLang === "ja" ? "この入口を見る" : "Open this entry", "text-button");
-        open.addEventListener("click", () => setRoute({ topic: String(card.topic_id) }));
-        item.append(heading, count, description, questions, open);
-        grid.append(item);
+        const questions = card.starter_questions?.[displayLang] ?? card.starter_questions?.ja ?? card.starter_questions?.en ?? [];
+        if (questions.length)
+            rows.push({ topicId: String(card.topic_id), question: String(questions[0]) });
     }
-    topicSection.append(grid);
-    page.append(topicSection);
-    const layerSection = el("section", "section alt-section");
-    layerSection.append(eyebrow(displayLang === "ja" ? "SYSTEM LAYERS" : "SYSTEM LAYERS"), el("h2", "section-title", displayLang === "ja" ? "体系の配置から入る" : "Enter through the system layout"), el("p", "section-copy", displayLang === "ja"
-        ? "01 Sat / Truth、02 Raj / Beauty、03 Tam / Goodness、応用、研究ノートなど、リポジトリ上の配置をそのまま入口にします。"
-        : "Use repository placement itself as an entry: 01 Sat / Truth, 02 Raj / Beauty, 03 Tam / Goodness, applications, research notes, and more."));
-    const layers = el("div", "layer-list");
-    for (const layer of layerSummaries(docsGraph).filter((row) => row.key !== "root")) {
-        const row = el("button", "layer-row");
-        row.type = "button";
-        row.addEventListener("click", () => setRoute({ layer: String(layer.id) }));
-        const name = el("span", "layer-name", `${localized(layer.label, String(layer.key))}`);
-        const path = el("span", "layer-path", String(layer.path));
-        const counts = el("span", "layer-count", `${layer.registered.length} ${displayLang === "ja" ? "登録" : "registered"} · ${layer.observed.length} ${displayLang === "ja" ? "観測のみ" : "observed"}`);
-        row.append(name, path, counts);
-        layers.append(row);
+    return rows.slice(0, 8);
+}
+function renderPublicHome() {
+    const page = el("main", "page public-home");
+    page.append(navBar("home"), dataBanner());
+    const home = publicContent.home ?? {};
+    const hero = el("section", "public-hero");
+    hero.append(eyebrow(localized(home.eyebrow, "SCIENTIFIC ONTOLOGY")), el("h1", "public-hero-title", localized(home.title, displayLang === "ja" ? "存在境界論を読む" : "Read Scientific Ontology")), el("p", "public-hero-copy", localized(home.description, "")), searchBox());
+    const quick = el("div", "public-quick-questions");
+    quick.append(el("span", "quick-label", displayLang === "ja" ? "問いから入る" : "Start with a question"));
+    for (const row of publicQuestionEntrances().slice(0, 5)) {
+        const q = button(row.question, "question-button public-question-button");
+        q.addEventListener("click", () => setRoute({ view: "search", q: row.question }));
+        quick.append(q);
     }
-    layerSection.append(layers);
+    hero.append(quick);
+    page.append(hero);
+    const layerSection = el("section", "section public-section");
+    layerSection.append(eyebrow(displayLang === "ja" ? "READ BY LAYER" : "READ BY LAYER"), el("h2", "section-title", displayLang === "ja" ? "体系の層から読む" : "Read through the system layers"), el("p", "section-copy", displayLang === "ja"
+        ? "各層のREADMEが持つ役割を短くほどき、いま読みたい場所へ直接入れるようにしています。層は重要度の順位ではなく、体系上の役割です。"
+        : "Each layer README is condensed into a reader-facing entrance. Layers express roles in the system, not an importance ranking."));
+    const layerGrid = el("div", "public-layer-grid");
+    for (const config of publicLayerConfigs())
+        layerGrid.append(publicLayerCard(config));
+    layerSection.append(layerGrid);
     page.append(layerSection);
+    const guideSection = el("section", "section guide-section");
+    guideSection.append(eyebrow(displayLang === "ja" ? "GUIDE DOCUMENTS" : "GUIDE DOCUMENTS"), el("h2", "section-title", displayLang === "ja" ? "目的から案内文書を選ぶ" : "Choose a guide by what you need"), el("p", "section-copy", displayLang === "ja"
+        ? "ファイル名ではなく、『何を知りたいときに読むか』から選べます。"
+        : "Choose by what you want to understand, rather than by filename."));
+    const guideGrid = el("div", "guide-grid");
+    for (const guide of publicGuides())
+        guideGrid.append(publicGuideCard(guide));
+    guideSection.append(guideGrid);
+    page.append(guideSection);
+    const topicSection = el("section", "section topic-strip-section");
+    topicSection.append(eyebrow(displayLang === "ja" ? "INTERESTS" : "INTERESTS"), el("h2", "section-title", displayLang === "ja" ? "関心から寄り道する" : "Take a route through an interest"), el("p", "section-copy", displayLang === "ja"
+        ? "トピックは厳密な分類ではなく、別の入口です。同じ文書が複数の関心から見つかることがあります。"
+        : "Topics are alternate entrances, not strict classifications. A document can be reachable from more than one interest."));
+    const strip = el("div", "topic-strip");
+    for (const card of browseTopics(docsIndex)) {
+        const b = button(localized(card.label, String(card.topic_id)), "topic-pill");
+        b.addEventListener("click", () => setRoute({ topic: String(card.topic_id) }));
+        strip.append(b);
+    }
+    topicSection.append(strip);
+    page.append(topicSection);
     return page;
 }
+function renderExplore() {
+    return renderPublicHome();
+}
 function docCard(doc) {
-    const item = el("article", "doc-card card");
+    const item = el("article", `doc-card card ${isDeveloper() ? "developer-doc-card" : "public-doc-card"}`);
     const level = String(doc.entry_level ?? doc.discovery?.entry_level ?? "");
     const state = String(doc.state ?? "");
     const top = el("div", "card-meta");
     if (level)
-        top.append(badge(level));
-    if (state)
+        top.append(badge(isDeveloper() ? level : entryLevelLabel(level)));
+    if (isDeveloper() && state)
         top.append(badge(state, state === "public-candidate" ? "warn" : ""));
-    item.append(top, el("h3", "card-title", titleForDoc(doc)));
+    if (top.childElementCount)
+        item.append(top);
+    item.append(el("h3", "card-title", titleForDoc(doc)));
     const role = roleForDoc(doc);
     if (role)
         item.append(el("p", "card-copy", role));
     const questions = doc.reader_questions ?? doc.discovery?.reader_questions ?? {};
     const qList = questions[displayLang] ?? questions.ja ?? questions.en ?? [];
-    if (qList.length)
-        item.append(el("div", "question-line", `Q. ${qList[0]}`));
+    if (qList.length) {
+        const question = el("div", "public-card-question");
+        question.append(el("span", "question-mark", "Q"), el("span", "", String(qList[0])));
+        item.append(question);
+    }
     const path = String(doc.path ?? "");
-    item.append(el("div", "path", path));
+    if (isDeveloper())
+        item.append(el("div", "path", path));
     const actions = el("div", "card-actions");
-    const detail = button(displayLang === "ja" ? "文書を見る" : "Inspect document", "text-button");
     const id = String(doc.doc_id ?? doc.id ?? "");
-    detail.addEventListener("click", () => setRoute({ doc: id }));
-    actions.append(detail);
-    if (path)
-        actions.append(readerButton(path), rawFileLink(path));
+    if (isDeveloper()) {
+        const detail = button(displayLang === "ja" ? "文書を見る" : "Inspect document", "text-button");
+        detail.addEventListener("click", () => setRoute({ doc: id }));
+        actions.append(detail);
+        if (path)
+            actions.append(readerButton(path), rawFileLink(path));
+    }
+    else {
+        if (path)
+            actions.append(readerButton(path, "button primary compact-button"));
+        const graphId = graphNodeForDocument(doc);
+        if (graphId) {
+            const relations = button(displayLang === "ja" ? "関係を見る" : "Relations", "button quiet-button");
+            relations.addEventListener("click", () => setRoute({ graph: graphId }));
+            actions.append(relations);
+        }
+    }
     item.append(actions);
     return item;
 }
 function renderTopic(topicId) {
     const page = el("main", "page");
-    page.append(navBar("explore"), dataBanner());
+    page.append(navBar("home"), dataBanner());
     const payload = browsePayload(docsIndex, topicId);
     const card = payload.topic;
-    const back = button(displayLang === "ja" ? "← トピック一覧" : "← Topics", "back-button");
+    const back = button(displayLang === "ja" ? "← 読む" : "← Read", "back-button");
     back.addEventListener("click", () => setRoute({}));
     page.append(back);
     const hero = el("section", "topic-hero");
-    hero.append(eyebrow(`TOPIC · ${topicId}`), el("h1", "hero-title", localized(card.label, topicId)), el("p", "hero-copy", localized(card.description)));
+    hero.append(eyebrow(isDeveloper() ? `TOPIC · ${topicId}` : "TOPIC"), el("h1", "hero-title", localized(card.label, topicId)), el("p", "hero-copy", localized(card.description)));
     const questions = el("div", "starter-questions");
-    questions.append(el("h2", "minor-title", displayLang === "ja" ? "この入口から始められる問い" : "Questions that can start here"));
+    questions.append(el("h2", "minor-title", displayLang === "ja" ? "この関心から始められる問い" : "Questions that can start from here"));
     for (const q of card.starter_questions?.[displayLang] ?? []) {
         const qButton = button(String(q), "question-button");
         qButton.addEventListener("click", () => setRoute({ view: "search", q: String(q) }));
@@ -307,9 +561,83 @@ function renderTopic(topicId) {
     }
     return page;
 }
+function renderPublicLayer(layerId) {
+    const page = el("main", "page public-layer-page");
+    page.append(navBar("home"), dataBanner());
+    const layer = layerSummaries(docsGraph).find((row) => String(row.id) === layerId);
+    if (!layer)
+        return errorPage(`Unknown layer: ${layerId}`);
+    const config = publicLayerConfig(String(layer.key));
+    const back = button(displayLang === "ja" ? "← 体系から読む" : "← Read by layer", "back-button");
+    back.addEventListener("click", () => setRoute({}));
+    page.append(back);
+    const hero = el("section", "public-layer-hero");
+    const label = config ? localized(config.label, localized(layer.label, String(layer.key))) : localized(layer.label, String(layer.key));
+    const subtitle = config ? localized(config.subtitle, "") : "";
+    const description = config ? localized(config.description, "") : "";
+    hero.append(eyebrow(displayLang === "ja" ? "SYSTEM LAYER" : "SYSTEM LAYER"), el("h1", "public-layer-title", label));
+    if (subtitle)
+        hero.append(el("p", "public-layer-lead", subtitle));
+    if (description)
+        hero.append(el("p", "public-layer-copy", description));
+    const heroActions = el("div", "reader-actions");
+    const readmePath = String(config?.readme_path ?? "");
+    if (readmePath && readerAllowedPaths().has(readmePath)) {
+        const readme = readerButton(readmePath, "button primary");
+        readme.textContent = displayLang === "ja" ? "この層の案内を読む" : "Read this layer guide";
+        heroActions.append(readme);
+    }
+    hero.append(heroActions);
+    page.append(hero);
+    if (layer.registered.length) {
+        const section = el("section", "section public-section");
+        section.append(eyebrow(displayLang === "ja" ? "DOCUMENTS" : "DOCUMENTS"), el("h2", "section-title", displayLang === "ja" ? "この層で読む" : "Read in this layer"), el("p", "section-copy", displayLang === "ja"
+            ? "現在Navigatorの公開読解面に登録されている文書です。入口の深さは読み始める順の目安で、価値や真理の順位ではありません。"
+            : "These documents are currently registered on the Navigator reading surface. Entry depth is a reading aid, not a ranking of value or truth."));
+        const grid = el("div", "doc-grid");
+        for (const node of layer.registered) {
+            const doc = docById(String(node.key));
+            if (doc)
+                grid.append(docCard(doc));
+        }
+        if (!grid.childElementCount)
+            grid.append(el("p", "empty", displayLang === "ja" ? "現在この層の文書カードを準備中です。" : "Document cards for this layer are being prepared."));
+        section.append(grid);
+        page.append(section);
+    }
+    else {
+        const empty = el("section", "section public-section");
+        empty.append(el("h2", "section-title small", displayLang === "ja" ? "この層の案内から始める" : "Start with the layer guide"), el("p", "section-copy", displayLang === "ja"
+            ? "この層の個別文書カードは現在整備中です。READMEから層の役割と収録内容を確認できます。"
+            : "Individual document cards for this layer are still being prepared. The README explains the layer role and included materials."));
+        page.append(empty);
+    }
+    const topicIds = new Set();
+    for (const node of layer.registered) {
+        const doc = docById(String(node.key));
+        for (const topic of doc?.discovery?.topics ?? [])
+            topicIds.add(String(topic));
+    }
+    if (topicIds.size) {
+        const topicSection = el("section", "section compact-section");
+        topicSection.append(el("h2", "section-title small", displayLang === "ja" ? "この層から広がる関心" : "Interests reachable from this layer"));
+        const strip = el("div", "topic-strip");
+        for (const topicId of Array.from(topicIds).sort()) {
+            const topic = docsIndex.topics?.[topicId] ?? {};
+            const b = button(localized(topic, topicId), "topic-pill");
+            b.addEventListener("click", () => setRoute({ topic: topicId }));
+            strip.append(b);
+        }
+        topicSection.append(strip);
+        page.append(topicSection);
+    }
+    return page;
+}
 function renderLayer(layerId) {
+    if (!isDeveloper())
+        return renderPublicLayer(layerId);
     const page = el("main", "page");
-    page.append(navBar("explore"), dataBanner());
+    page.append(navBar("home"), dataBanner());
     const layer = layerSummaries(docsGraph).find((row) => String(row.id) === layerId);
     if (!layer)
         return errorPage(`Unknown layer: ${layerId}`);
@@ -329,7 +657,7 @@ function renderLayer(layerId) {
                 grid.append(docCard(doc));
             else {
                 const card = el("article", "doc-card card");
-                card.append(el("h3", "card-title", graphNodeLabel(node, displayLang)), el("div", "path", String(node.path ?? "")));
+                card.append(el("h3", "card-title", displayGraphNodeLabel(node)), el("div", "path", String(node.path ?? "")));
                 grid.append(card);
             }
         }
@@ -345,12 +673,20 @@ function renderLayer(layerId) {
         for (const node of layer.observed) {
             const row = el("div", "observed-row");
             const main = el("div", "observed-main");
-            main.append(el("strong", "", graphNodeLabel(node, displayLang)), el("div", "path", String(node.path ?? "")));
             const path = String(node.path ?? "");
+            main.append(el("strong", "", displayGraphNodeLabel(node)), el("div", "path", path));
+            const candidate = candidateByPath(path);
+            if (candidate)
+                main.append(badge(displayLang === "ja" ? "登録候補あり" : "Candidate available", "warn"));
             const read = readerButton(path);
             const relation = button(displayLang === "ja" ? "関係を見る" : "Relations", "text-button");
             relation.addEventListener("click", () => setRoute({ graph: String(node.id) }));
             row.append(main, read, relation);
+            if (candidate) {
+                const inspectCandidate = button(displayLang === "ja" ? "候補" : "Candidate", "text-button");
+                inspectCandidate.addEventListener("click", () => setRoute({ view: "candidates", candidate: path }));
+                row.append(inspectCandidate);
+            }
             list.append(row);
         }
         section.append(list);
@@ -362,44 +698,89 @@ function renderSearch(query) {
     const page = el("main", "page");
     page.append(navBar("search"), dataBanner());
     const section = el("section", "search-page");
-    section.append(eyebrow("SEARCH"), el("h1", "hero-title", displayLang === "ja" ? "問い・用語から探す" : "Search by question or term"), searchBox(query));
-    if (!query) {
-        section.append(el("p", "section-copy", displayLang === "ja"
+    section.append(eyebrow("SEARCH"), el("h1", "hero-title", displayLang === "ja" ? "問い・用語から探す" : "Search by question or term"), el("p", "hero-copy", isDeveloper()
+        ? displayLang === "ja"
             ? "検索は直接関連だけを順位づけします。関係グラフのcentralityやリンク数は検索スコアへ混ぜていません。"
-            : "Search ranks direct relevance only. Graph centrality and link counts are not mixed into search scores."));
+            : "Search ranks direct relevance only. Graph centrality and link counts are not mixed into search scores."
+        : displayLang === "ja"
+            ? "分かっている用語でも、まだ形になっていない問いでも探せます。結果には、なぜ見つかったかを確認できる説明を残しています。"
+            : "Search with a known term or with a question that is not yet fully formed. Each result keeps an explanation of why it matched."), searchBox(query));
+    if (!query) {
+        if (!isDeveloper()) {
+            const quick = el("div", "public-quick-questions search-quick-questions");
+            quick.append(el("span", "quick-label", displayLang === "ja" ? "たとえば" : "Try"));
+            for (const row of publicQuestionEntrances().slice(0, 5)) {
+                const q = button(row.question, "question-button public-question-button");
+                q.addEventListener("click", () => setRoute({ view: "search", q: row.question }));
+                quick.append(q);
+            }
+            section.append(quick);
+        }
         page.append(section);
         return page;
     }
     const found = searchDocuments(query, docsIndex, "auto", 12, "both");
-    section.append(el("div", "search-summary", `${displayLang === "ja" ? "判定モード" : "Resolved mode"}: ${found.mode} · ${found.results.length} ${displayLang === "ja" ? "件" : "results"}`));
+    section.append(el("div", "search-summary", isDeveloper()
+        ? `${displayLang === "ja" ? "判定モード" : "Resolved mode"}: ${found.mode} · ${found.results.length} ${displayLang === "ja" ? "件" : "results"}`
+        : `${found.results.length} ${displayLang === "ja" ? "件見つかりました" : "results"}`));
     const results = el("div", "search-results");
     for (const result of found.results) {
-        const card = el("article", "search-result card");
+        const card = el("article", `search-result card ${isDeveloper() ? "developer-search-result" : "public-search-result"}`);
         const heading = el("div", "result-heading");
         heading.append(el("h2", "card-title", titleForDoc(result)), badge(result.score.toFixed(2), "score"));
         card.append(heading);
         const role = roleForDoc(result);
         if (role)
             card.append(el("p", "card-copy", role));
-        const reasons = el("div", "match-reasons");
-        for (const match of (result.matches ?? []).slice(0, 3)) {
-            const reason = el("div", "match-reason");
-            reason.append(badge(String(match.field)), el("span", "", `${String(match.method)} · +${Number(match.contribution).toFixed(2)}`), el("span", "match-text", `“${String(match.text)}”`));
-            reasons.append(reason);
+        if (isDeveloper()) {
+            const reasons = el("div", "match-reasons");
+            for (const match of (result.matches ?? []).slice(0, 3)) {
+                const reason = el("div", "match-reason");
+                reason.append(badge(String(match.field)), el("span", "", `${String(match.method)} · +${Number(match.contribution).toFixed(2)}`), el("span", "match-text", `“${String(match.text)}”`));
+                reasons.append(reason);
+            }
+            card.append(reasons, el("div", "path", String(result.path ?? "")));
         }
-        card.append(reasons, el("div", "path", String(result.path ?? "")));
+        else {
+            const details = el("details", "search-explanation");
+            const summary = el("summary", "search-explanation-summary", displayLang === "ja" ? "なぜ見つかった？" : "Why did this match?");
+            details.append(summary);
+            const reasons = el("div", "public-match-reasons");
+            for (const match of (result.matches ?? []).slice(0, 4)) {
+                const row = el("div", "public-match-reason");
+                row.append(el("span", "public-match-label", matchFieldLabel(String(match.field))), el("span", "public-match-method", `${matchMethodLabel(String(match.method))} · +${Number(match.contribution).toFixed(2)}`), el("span", "public-match-text", `“${String(match.text)}”`));
+                reasons.append(row);
+            }
+            details.append(reasons);
+            card.append(details);
+        }
         const actions = el("div", "card-actions");
-        const detail = button(displayLang === "ja" ? "文書と関係を見る" : "Document and relations", "text-button");
-        detail.addEventListener("click", () => setRoute({ doc: String(result.doc_id) }));
-        actions.append(detail);
         const path = String(result.path ?? "");
-        if (path)
-            actions.append(readerButton(path), rawFileLink(path));
+        if (isDeveloper()) {
+            const detail = button(displayLang === "ja" ? "文書と関係を見る" : "Document and relations", "text-button");
+            detail.addEventListener("click", () => setRoute({ doc: String(result.doc_id) }));
+            actions.append(detail);
+            if (path)
+                actions.append(readerButton(path), rawFileLink(path));
+        }
+        else {
+            if (path)
+                actions.append(readerButton(path, "button primary compact-button"));
+            const graphId = graphNodeForDocument(result);
+            if (graphId) {
+                const relations = button(displayLang === "ja" ? "関係を見る" : "Relations", "button quiet-button");
+                relations.addEventListener("click", () => setRoute({ graph: graphId }));
+                actions.append(relations);
+            }
+        }
         card.append(actions);
         results.append(card);
     }
-    if (!found.results.length)
-        results.append(el("p", "empty", displayLang === "ja" ? "該当する検索結果はありません。" : "No search results."));
+    if (!found.results.length) {
+        results.append(el("p", "empty", displayLang === "ja"
+            ? "まだ該当する文書が見つかりません。言い換えるか、読む画面から体系・案内文書を辿ってみてください。"
+            : "No document matched yet. Try another phrasing or return to Read and enter through the system layers or guide documents."));
+    }
     section.append(results);
     page.append(section);
     return page;
@@ -408,8 +789,10 @@ function renderDocument(docId) {
     const doc = docById(docId);
     if (!doc)
         return errorPage(`Unknown document: ${docId}`);
+    if (!isDeveloper())
+        return renderReader(String(doc.path ?? ""));
     const page = el("main", "page");
-    page.append(navBar("explore"), dataBanner());
+    page.append(navBar("home"), dataBanner());
     const back = button(displayLang === "ja" ? "← 戻る" : "← Back", "back-button");
     back.addEventListener("click", () => history.length > 1 ? history.back() : setRoute({}));
     page.append(back);
@@ -701,9 +1084,62 @@ async function fetchUtf8Strict(path) {
     }
     return { text, contentType: response.headers.get("content-type") ?? "" };
 }
+function publicRelatedDocuments(rootId, limit = 6) {
+    const nodeMap = graphNodeMap(docsGraph);
+    const seen = new Set();
+    const rows = [];
+    const edges = (docsGraph.edges ?? [])
+        .filter((edge) => edge.from === rootId || edge.to === rootId)
+        .sort((a, b) => String(a.relation).localeCompare(String(b.relation), "en") || String(a.from).localeCompare(String(b.from), "en") || String(a.to).localeCompare(String(b.to), "en"));
+    for (const edge of edges) {
+        const outgoing = edge.from === rootId;
+        const otherId = String(outgoing ? edge.to : edge.from);
+        if (seen.has(otherId))
+            continue;
+        const node = nodeMap.get(otherId);
+        if (!node || (node.type !== "document" && node.type !== "observed_document"))
+            continue;
+        const path = String(node.path ?? "");
+        if (!path || !readerAllowedPaths().has(path))
+            continue;
+        seen.add(otherId);
+        rows.push({ node, relation: String(edge.relation), direction: outgoing ? "outgoing" : "incoming" });
+        if (rows.length >= limit)
+            break;
+    }
+    return rows;
+}
+function publicReaderRelatedSection(graphNode) {
+    const rows = publicRelatedDocuments(String(graphNode.id));
+    if (!rows.length)
+        return null;
+    const section = el("section", "section reader-related-section");
+    section.append(eyebrow(displayLang === "ja" ? "NEXT ROUTES" : "NEXT ROUTES"), el("h2", "section-title", displayLang === "ja" ? "この文書から、次に辿れるもの" : "Where this document can lead next"), el("p", "section-copy", displayLang === "ja"
+        ? "重要度順ではなく、現在のtyped relationで直接つながっている文書から表示しています。"
+        : "These are direct typed-relation neighbors, not an importance ranking."));
+    const grid = el("div", "reader-related-grid");
+    for (const row of rows) {
+        const item = el("article", "reader-related-card");
+        item.append(el("div", "relation-human-label", `${row.direction === "outgoing" ? "→" : "←"} ${relationLabel(row.relation)}`), el("h3", "card-title", displayGraphNodeLabel(row.node)));
+        const path = String(row.node.path ?? "");
+        const doc = docByPath(path);
+        const role = doc ? roleForDoc(doc) : "";
+        if (role)
+            item.append(el("p", "card-copy", role));
+        const actions = el("div", "card-actions");
+        actions.append(readerButton(path, "button quiet-button"));
+        const relations = button(displayLang === "ja" ? "関係を見る" : "Relations", "text-button");
+        relations.addEventListener("click", () => setRoute({ graph: String(row.node.id) }));
+        actions.append(relations);
+        item.append(actions);
+        grid.append(item);
+    }
+    section.append(grid);
+    return section;
+}
 function renderReader(path) {
-    const page = el("main", "page reader-page");
-    page.append(navBar("reader"), dataBanner());
+    const page = el("main", `page reader-page ${isDeveloper() ? "developer-reader" : "public-reader"}`);
+    page.append(navBar(isDeveloper() ? "reader" : "home"), dataBanner());
     const back = button(displayLang === "ja" ? "← 戻る" : "← Back", "back-button");
     back.addEventListener("click", () => history.length > 1 ? history.back() : setRoute({}));
     page.append(back);
@@ -713,29 +1149,49 @@ function renderReader(path) {
     }
     const doc = docByPath(path);
     const graphNode = graphNodeByPath(path);
-    const title = doc ? titleForDoc(doc) : graphNode ? graphNodeLabel(graphNode, displayLang) : path.split("/").at(-1) ?? path;
+    const title = doc ? titleForDoc(doc) : graphNode ? displayGraphNodeLabel(graphNode) : path.split("/").at(-1) ?? path;
     const header = el("section", "reader-header");
     const decodeState = badge(displayLang === "ja" ? "UTF-8 strict 読込中" : "UTF-8 strict loading", "warn");
     decodeState.id = "reader-decode-state";
-    header.append(eyebrow("READER · UTF-8 STRICT"), el("h1", "hero-title", title), el("div", "path", path), decodeState);
+    if (isDeveloper()) {
+        header.append(eyebrow("READER · UTF-8 STRICT"), el("h1", "hero-title", title), el("div", "path", path), decodeState);
+    }
+    else {
+        header.append(eyebrow(displayLang === "ja" ? "READ" : "READ"), el("h1", "reader-public-title", title));
+        const role = doc ? roleForDoc(doc) : "";
+        if (role)
+            header.append(el("p", "reader-public-role", role));
+    }
     const actions = el("div", "reader-actions");
-    if (doc) {
+    if (isDeveloper() && doc) {
         const inspect = button(displayLang === "ja" ? "文書情報" : "Document info", "button secondary");
         inspect.addEventListener("click", () => setRoute({ doc: String(doc.doc_id ?? doc.id) }));
         actions.append(inspect);
     }
     if (graphNode) {
-        const relations = button(displayLang === "ja" ? "関係を見る" : "Relations", "button secondary");
+        const relations = button(displayLang === "ja" ? "関係を見る" : "Relations", isDeveloper() ? "button secondary" : "button quiet-button");
         relations.addEventListener("click", () => setRoute({ graph: String(graphNode.id) }));
         actions.append(relations);
     }
-    actions.append(rawFileLink(path, "button ghost"));
+    if (isDeveloper()) {
+        const candidate = candidateByPath(path);
+        if (candidate) {
+            const inspectCandidate = button(displayLang === "ja" ? "登録候補" : "Registration candidate", "button secondary");
+            inspectCandidate.addEventListener("click", () => setRoute({ view: "candidates", candidate: path }));
+            actions.append(inspectCandidate);
+        }
+        actions.append(rawFileLink(path, "button ghost"));
+    }
+    else {
+        actions.append(rawFileLink(path, "text-link reader-source-link"));
+    }
     header.append(actions);
     page.append(header);
-    const notice = el("div", "reader-boundary-note", displayLang === "ja"
-        ? "ReaderはHTTPレスポンスの文字コード推測に依存せず、受信バイト列をUTF-8として厳密に復号します。失敗時は文字化け表示へフォールバックしません。"
-        : "The Reader does not rely on browser charset guessing. It strictly decodes response bytes as UTF-8 and does not fall back to replacement-decoded text.");
-    page.append(notice);
+    if (isDeveloper()) {
+        page.append(el("div", "reader-boundary-note", displayLang === "ja"
+            ? "ReaderはHTTPレスポンスの文字コード推測に依存せず、受信バイト列をUTF-8として厳密に復号します。失敗時は文字化け表示へフォールバックしません。"
+            : "The Reader does not rely on browser charset guessing. It strictly decodes response bytes as UTF-8 and does not fall back to replacement-decoded text."));
+    }
     const shell = el("section", "reader-shell");
     shell.append(el("p", "reader-loading", displayLang === "ja" ? "文書を読み込んでいます…" : "Loading document…"));
     page.append(shell);
@@ -743,9 +1199,19 @@ function renderReader(path) {
         .then(({ text, contentType }) => {
         decodeState.textContent = "UTF-8 strict PASS";
         decodeState.className = "badge pass";
-        const meta = el("div", "reader-http-meta");
-        meta.append(el("span", "muted", `Content-Type: ${contentType || "(not declared)"}`), el("span", "muted", `${new TextEncoder().encode(text).length.toLocaleString()} bytes decoded`));
-        shell.replaceChildren(meta, renderMarkdown(text, path));
+        if (isDeveloper()) {
+            const meta = el("div", "reader-http-meta");
+            meta.append(el("span", "muted", `Content-Type: ${contentType || "(not declared)"}`), el("span", "muted", `${new TextEncoder().encode(text).length.toLocaleString()} bytes decoded`));
+            shell.replaceChildren(meta, renderMarkdown(text, path));
+        }
+        else {
+            shell.replaceChildren(renderMarkdown(text, path));
+            if (graphNode) {
+                const related = publicReaderRelatedSection(graphNode);
+                if (related)
+                    page.append(related);
+            }
+        }
     })
         .catch((error) => {
         decodeState.textContent = "UTF-8 strict FAIL";
@@ -756,13 +1222,17 @@ function renderReader(path) {
 }
 function relationSection(rootId) {
     const section = el("section", "section relation-section");
-    section.append(eyebrow("TYPED RELATION GRAPH"), el("h2", "section-title", displayLang === "ja" ? "このノードの関係" : "Relations for this node"));
-    section.append(el("p", "section-copy", displayLang === "ja"
-        ? "線は重要度ではなく、実際に抽出されたtyped relationです。辺を支えるsourceは下の一覧で確認できます。"
-        : "Lines are extracted typed relations, not importance scores. Provenance for each edge is listed below."));
+    section.append(eyebrow(isDeveloper() ? "TYPED RELATION GRAPH" : (displayLang === "ja" ? "RELATIONS" : "RELATIONS")), el("h2", "section-title", displayLang === "ja" ? "この文書のつながり" : "Connections from this document"));
+    section.append(el("p", "section-copy", isDeveloper()
+        ? displayLang === "ja"
+            ? "線は重要度ではなく、実際に抽出されたtyped relationです。辺を支えるsourceは下の一覧で確認できます。"
+            : "Lines are extracted typed relations, not importance scores. Provenance for each edge is listed below."
+        : displayLang === "ja"
+            ? "線は重要度ではなく、文書台帳・用語集・体系図・本文リンクなどから現在確認できる関係です。"
+            : "Lines are current typed relations observed from the document ledger, glossary, system maps, and Markdown links; they are not importance scores."));
     const map = relationMap(rootId);
     section.append(map);
-    const full = button(displayLang === "ja" ? "関係マップ画面で開く" : "Open relation map", "button secondary");
+    const full = button(displayLang === "ja" ? "関係マップで広げる" : "Open the relation map", "button secondary");
     full.addEventListener("click", () => setRoute({ graph: rootId }));
     section.append(full);
     return section;
@@ -787,7 +1257,7 @@ function relationMap(rootId) {
     svg.setAttribute("viewBox", `0 0 1000 ${height}`);
     svg.setAttribute("class", "relation-svg");
     svg.setAttribute("role", "img");
-    svg.setAttribute("aria-label", `${graphNodeLabel(root, displayLang)} relation map`);
+    svg.setAttribute("aria-label", `${displayGraphNodeLabel(root)} relation map`);
     const ns = "http://www.w3.org/2000/svg";
     const defs = document.createElementNS(ns, "defs");
     const marker = document.createElementNS(ns, "marker");
@@ -840,9 +1310,9 @@ function relationMap(rootId) {
         row.type = "button";
         row.addEventListener("click", () => setRoute({ graph: otherId }));
         const direction = el("span", "relation-direction", outgoingEdge ? "→" : "←");
-        const rel = el("span", "relation-type", String(edge.relation));
-        const label = el("span", "relation-target", graphNodeLabel(other, displayLang));
-        const provTypes = Array.from(new Set((edge.provenance ?? []).map((p) => String(p.source_type ?? "")).filter(Boolean))).join(" + ");
+        const rel = el("span", "relation-type", isDeveloper() ? String(edge.relation) : relationLabel(String(edge.relation)));
+        const label = el("span", "relation-target", displayGraphNodeLabel(other));
+        const provTypes = Array.from(new Set((edge.provenance ?? []).map((p) => String(p.source_type ?? "")).filter(Boolean))).map((value) => isDeveloper() ? value : provenanceLabel(value)).join(" + ");
         const prov = el("span", "relation-provenance", provTypes || "—");
         row.append(direction, rel, label, prov);
         list.append(row);
@@ -871,13 +1341,13 @@ function drawGraphNode(svg, node, x, y, root) {
     text.setAttribute("y", String(y - 3));
     text.setAttribute("text-anchor", "middle");
     text.setAttribute("class", "svg-node-label");
-    text.textContent = truncate(graphNodeLabel(node, displayLang), root ? 34 : 28);
+    text.textContent = truncate(displayGraphNodeLabel(node), root ? 34 : 28);
     const type = document.createElementNS(ns, "text");
     type.setAttribute("x", String(x));
     type.setAttribute("y", String(y + 15));
     type.setAttribute("text-anchor", "middle");
     type.setAttribute("class", "svg-node-type");
-    type.textContent = String(node.type);
+    type.textContent = isDeveloper() ? String(node.type) : nodeTypeLabel(String(node.type));
     group.append(rect, text, type);
     if (!root) {
         const activate = () => setRoute({ graph: String(node.id) });
@@ -905,20 +1375,26 @@ function drawEdge(svg, x1, y1, x2, y2, relation, direction) {
     text.setAttribute("y", String(ty));
     text.setAttribute("text-anchor", "middle");
     text.setAttribute("class", "svg-edge-label");
-    text.textContent = truncate(relation, 24);
+    text.textContent = truncate(isDeveloper() ? relation : relationLabel(relation), 24);
     line.dataset.direction = direction;
     svg.append(line, text);
 }
 function renderRelations(nodeQuery = "") {
     const page = el("main", "page");
     page.append(navBar("relations"), dataBanner());
-    const section = el("section", "section");
-    section.append(eyebrow("TYPED RELATION GRAPH"), el("h1", "hero-title", displayLang === "ja" ? "関係から読む" : "Read through relations"), el("p", "hero-copy", displayLang === "ja"
-        ? "文書・概念・トピック・Glossary語・体系層をノードとして、宣言関係と観測リンクを区別したまま辿ります。"
-        : "Traverse documents, concepts, topics, glossary terms, and system layers while preserving the distinction between declared relations and observed links."));
+    const section = el("section", "section relation-page");
+    section.append(eyebrow(isDeveloper() ? "TYPED RELATION GRAPH" : "RELATION MAP"), el("h1", "hero-title", displayLang === "ja" ? "関係から読む" : "Read through relations"), el("p", "hero-copy", isDeveloper()
+        ? displayLang === "ja"
+            ? "文書・概念・トピック・Glossary語・体系層をノードとして、宣言関係と観測リンクを区別したまま辿ります。"
+            : "Traverse documents, concepts, topics, glossary terms, and system layers while preserving the distinction between declared relations and observed links."
+        : displayLang === "ja"
+            ? "文書、概念、用語、トピック、体系層がどこでつながっているかを、関係の向きを保ったまま辿れます。線の多さは重要度を意味しません。"
+            : "Follow how documents, concepts, terms, topics, and system layers connect while preserving relation direction. More lines do not mean greater importance."));
     const form = el("form", "graph-search");
     const input = el("input", "search-input");
-    input.placeholder = displayLang === "ja" ? "文書名・概念・Glossary語・node ID" : "Document, concept, glossary term, or node ID";
+    input.placeholder = isDeveloper()
+        ? displayLang === "ja" ? "文書名・概念・Glossary語・node ID" : "Document, concept, glossary term, or node ID"
+        : displayLang === "ja" ? "文書名・概念・用語から探す" : "Find a document, concept, or term";
     input.value = nodeQuery;
     const submit = button(displayLang === "ja" ? "関係を表示" : "Show relations", "button primary");
     submit.type = "submit";
@@ -936,15 +1412,24 @@ function renderRelations(nodeQuery = "") {
         }
     });
     section.append(form);
+    if (!isDeveloper()) {
+        const legend = el("div", "relation-legend");
+        const relations = ["owns", "imports", "returns_to", "placed_in", "belongs_to_topic", "links_to"];
+        for (const relation of relations)
+            legend.append(el("span", "relation-legend-item", relationLabel(relation)));
+        section.append(legend);
+    }
     if (nodeQuery) {
         try {
             const rootId = resolveGraphNode(docsGraph, nodeQuery);
             const root = graphNodeMap(docsGraph).get(rootId);
             const current = el("div", "graph-current");
-            current.append(el("h2", "section-title small", graphNodeLabel(root, displayLang)), badge(String(root.type)), el("div", "path", String(root.path ?? root.id)));
+            current.append(el("h2", "section-title small", displayGraphNodeLabel(root)), badge(isDeveloper() ? String(root.type) : nodeTypeLabel(String(root.type))));
+            if (isDeveloper())
+                current.append(el("div", "path", String(root.path ?? root.id)));
             const rootPath = String(root.path ?? "");
             if ((root.type === "document" || root.type === "observed_document") && readerAllowedPaths().has(rootPath)) {
-                current.append(readerButton(rootPath));
+                current.append(readerButton(rootPath, isDeveloper() ? "text-button" : "button quiet-button"));
             }
             section.append(current, relationMap(rootId));
         }
@@ -953,18 +1438,284 @@ function renderRelations(nodeQuery = "") {
         }
     }
     else {
-        const starters = el("div", "starter-node-grid");
+        const starters = el("div", "starter-node-grid public-relation-starters");
         const seeds = ["doc:scientific_ontology_concept_network", "doc:meaning_generation_model", "topic:ai", "layer:sat_truth"];
         for (const id of seeds) {
             const node = graphNodeMap(docsGraph).get(id);
             if (!node)
                 continue;
-            const b = button(graphNodeLabel(node, displayLang), "starter-node");
+            const b = button(displayGraphNodeLabel(node), "starter-node");
             b.addEventListener("click", () => setRoute({ graph: id }));
             starters.append(b);
         }
         section.append(el("h2", "minor-title", displayLang === "ja" ? "例から開く" : "Open an example"), starters);
     }
+    page.append(section);
+    return page;
+}
+function candidateStateBanner() {
+    const payload = candidatePayload();
+    const banner = el("div", "candidate-boundary-note");
+    banner.append(badge("CANDIDATE PREVIEW", "warn"));
+    banner.append(el("span", "", displayLang === "ja"
+        ? "これはmanifest登録前のレビュー面です。表示中のrole・topic・問い・doc_idは候補であり、canonical ownershipや検索順位を変更しません。"
+        : "This is a pre-manifest review surface. Proposed roles, topics, questions, and doc IDs are candidates only; they do not change canonical ownership or search ranking."));
+    if (!payload)
+        banner.append(badge(displayLang === "ja" ? "候補データ未読込" : "Candidate data unavailable", "danger"));
+    return banner;
+}
+function candidateMetric(label, value) {
+    const box = el("div", "stat-box");
+    box.append(el("span", "stat-value", value), el("span", "stat-label", label));
+    return box;
+}
+function candidateDetail(candidate) {
+    const page = el("main", "page");
+    page.append(navBar("candidates"), dataBanner(), candidateStateBanner());
+    const back = button(displayLang === "ja" ? "← 候補一覧" : "← Candidate list", "back-button");
+    back.addEventListener("click", () => setRoute({ view: "candidates" }));
+    page.append(back);
+    const proposed = candidate.proposed ?? {};
+    const discovery = proposed.discovery ?? {};
+    const review = candidate.review ?? {};
+    const hero = el("section", "doc-header candidate-detail-header");
+    const meta = el("div", "doc-meta-line");
+    meta.append(badge(String(candidate.recommended_action ?? "candidate"), "warn"), badge(String(review.confidence ?? "unknown")), badge(String(candidate.navigation?.visibility ?? "unclassified")), badge(String(discovery.entry_level ?? "unclassified")));
+    hero.append(eyebrow(`REGISTRATION CANDIDATE · ${String(proposed.doc_id ?? "")}`), el("h1", "hero-title", candidateTitle(candidate)), meta);
+    const role = candidateRole(candidate);
+    if (role)
+        hero.append(el("p", "hero-copy", role));
+    hero.append(el("div", "path", String(candidate.path ?? "")));
+    const actions = el("div", "reader-actions");
+    const path = String(candidate.path ?? "");
+    if (path && readerAllowedPaths().has(path))
+        actions.append(readerButton(path, "button primary"));
+    const graphId = String(candidate.observed_node_id ?? "");
+    if (graphId && graphNodeMap(docsGraph).has(graphId)) {
+        const relations = button(displayLang === "ja" ? "現在の関係を見る" : "Current relations", "button secondary");
+        relations.addEventListener("click", () => setRoute({ graph: graphId }));
+        actions.append(relations);
+    }
+    if (path)
+        actions.append(rawFileLink(path, "button ghost"));
+    hero.append(actions);
+    page.append(hero);
+    const info = el("div", "candidate-detail-grid");
+    const identity = el("section", "info-panel");
+    identity.append(el("h2", "minor-title", displayLang === "ja" ? "提案された登録情報" : "Proposed registration"));
+    const identityRows = [
+        ["doc_id", String(proposed.doc_id ?? "")],
+        [displayLang === "ja" ? "文書型" : "Document type", String(proposed.document_type ?? "")],
+        [displayLang === "ja" ? "体系層" : "Layer", String(proposed.layer ?? "")],
+        ["status", String(proposed.status ?? "")],
+        ["public_profile", String(proposed.public_profile ?? "")],
+        ["state", String(proposed.state ?? "")],
+    ];
+    for (const [label, value] of identityRows) {
+        if (!value)
+            continue;
+        const row = el("div", "candidate-kv");
+        row.append(el("span", "candidate-k", label), el("span", "candidate-v", value));
+        identity.append(row);
+    }
+    if (proposed.scope) {
+        identity.append(el("h3", "candidate-subtitle", "scope"), el("p", "card-copy", String(proposed.scope)));
+    }
+    const discoveryPanel = el("section", "info-panel");
+    discoveryPanel.append(el("h2", "minor-title", displayLang === "ja" ? "探索メタデータ案" : "Discovery metadata proposal"));
+    const topicWrap = el("div", "chip-wrap");
+    for (const topic of discovery.topics ?? [])
+        topicWrap.append(badge(String(topic)));
+    if (!topicWrap.childElementCount)
+        topicWrap.append(el("span", "muted", displayLang === "ja" ? "topicなし" : "No topics"));
+    discoveryPanel.append(el("h3", "candidate-subtitle", "topics"), topicWrap);
+    const questions = candidateQuestionList(candidate);
+    discoveryPanel.append(el("h3", "candidate-subtitle", displayLang === "ja" ? "reader questions" : "reader questions"));
+    const qList = el("ul", "plain-list");
+    for (const question of questions)
+        qList.append(el("li", "", question));
+    if (!questions.length)
+        qList.append(el("li", "muted", displayLang === "ja" ? "この言語では未設定" : "Not set for this language"));
+    discoveryPanel.append(qList);
+    const aliases = candidateAliases(candidate);
+    if (aliases.length) {
+        discoveryPanel.append(el("h3", "candidate-subtitle", "aliases"));
+        const aliasWrap = el("div", "chip-wrap");
+        for (const alias of aliases)
+            aliasWrap.append(badge(alias));
+        discoveryPanel.append(aliasWrap);
+    }
+    info.append(identity, discoveryPanel);
+    page.append(info);
+    const language = proposed.language_relation ?? {};
+    const languagePanel = el("section", "audit-panel candidate-review-panel");
+    languagePanel.append(el("h2", "section-title small", displayLang === "ja" ? "言語関係" : "Language relation"));
+    const langRows = [
+        ["family_id", String(language.family_id ?? "")],
+        ["language", String(language.language ?? "")],
+        ["role", String(language.role ?? "")],
+        ["counterpart_path", String(language.counterpart_path ?? "")],
+    ];
+    for (const [label, value] of langRows) {
+        if (!value)
+            continue;
+        const row = el("div", "candidate-kv");
+        row.append(el("span", "candidate-k", label), el("span", "candidate-v path", value));
+        languagePanel.append(row);
+    }
+    page.append(languagePanel);
+    const reviewPanel = el("section", "audit-panel candidate-review-panel");
+    reviewPanel.append(el("h2", "section-title small", displayLang === "ja" ? "人間レビューが必要な点" : "Human review points"));
+    const needs = (review.needs_human_judgment ?? []).map((value) => String(value));
+    if (needs.length) {
+        const needsWrap = el("div", "chip-wrap");
+        for (const item of needs)
+            needsWrap.append(badge(item, "warn"));
+        reviewPanel.append(needsWrap);
+    }
+    else {
+        reviewPanel.append(el("p", "muted", displayLang === "ja" ? "明示された追加判断項目はありません。" : "No additional human-judgment item is explicitly listed."));
+    }
+    if (review.notes || candidate.notes)
+        reviewPanel.append(el("p", "card-copy", String(review.notes ?? candidate.notes)));
+    page.append(reviewPanel);
+    const evidencePanel = el("section", "audit-panel candidate-review-panel");
+    evidencePanel.append(el("h2", "section-title small", displayLang === "ja" ? "この候補の根拠" : "Evidence for this candidate"), el("p", "section-copy", displayLang === "ja"
+        ? "候補生成時に参照した現在本文の箇所です。ここにない意味を補って登録案を強めてはいません。"
+        : "These are locations in the current text used when generating the candidate. The proposal is not strengthened by adding meanings absent from this evidence."));
+    const evidenceList = el("div", "candidate-evidence-list");
+    for (const evidence of review.evidence ?? []) {
+        const row = el("div", "candidate-evidence");
+        const head = el("div", "candidate-evidence-head");
+        head.append(badge(String(evidence.kind ?? "evidence")), el("span", "path", `${String(evidence.path ?? candidate.path ?? "")}:${String(evidence.line ?? "")}`));
+        row.append(head, el("p", "candidate-evidence-text", String(evidence.text ?? "")));
+        evidenceList.append(row);
+    }
+    if (!evidenceList.childElementCount)
+        evidenceList.append(el("p", "muted", displayLang === "ja" ? "根拠抜粋なし" : "No evidence excerpt"));
+    evidencePanel.append(evidenceList);
+    page.append(evidencePanel);
+    return page;
+}
+function renderCandidates(candidatePath = "") {
+    if (candidatePath) {
+        const candidate = candidateByPath(candidatePath);
+        return candidate ? candidateDetail(candidate) : errorPage(`Unknown registration candidate: ${candidatePath}`);
+    }
+    const page = el("main", "page");
+    page.append(navBar("candidates"), dataBanner(), candidateStateBanner());
+    const payload = candidatePayload();
+    const section = el("section", "section candidate-page");
+    section.append(eyebrow("REGISTRATION CANDIDATES"), el("h1", "hero-title", displayLang === "ja" ? "未登録文書を、登録前にUIで読む" : "Review unregistered documents before manifest registration"), el("p", "hero-copy", displayLang === "ja"
+        ? "100文書の暫定地図です。本文を改稿せず、提案されたrole・topic・問い・言語関係・確認事項をReaderと現在の関係グラフに照らして点検します。"
+        : "This is a provisional map of 100 documents. Review proposed roles, topics, questions, language relations, and judgment points against the Reader and current relation graph without rewriting the documents."));
+    if (!payload) {
+        section.append(el("p", "error", displayLang === "ja" ? "候補preview JSONを読み込めませんでした。" : "Candidate preview JSON could not be loaded."));
+        page.append(section);
+        return page;
+    }
+    const summary = payload.summary ?? {};
+    const stats = el("div", "audit-stats candidate-stats");
+    stats.append(candidateMetric(displayLang === "ja" ? "候補" : "Candidates", String(summary.total_candidates ?? candidateList().length)), candidateMetric(displayLang === "ja" ? "高信頼" : "High confidence", String(summary.by_confidence?.high ?? 0)), candidateMetric(displayLang === "ja" ? "要確認" : "Medium confidence", String(summary.by_confidence?.medium ?? 0)), candidateMetric(displayLang === "ja" ? "主要表示候補" : "Primary navigation", String(summary.by_navigation_visibility?.primary ?? 0)));
+    section.append(stats);
+    const filters = el("div", "candidate-filters");
+    const queryLabel = el("label", "candidate-filter");
+    queryLabel.append(el("span", "candidate-filter-label", displayLang === "ja" ? "候補内検索" : "Filter candidates"));
+    const queryInput = el("input", "search-input");
+    queryInput.type = "search";
+    queryInput.placeholder = displayLang === "ja" ? "タイトル・role・問い・path" : "Title, role, question, or path";
+    queryLabel.append(queryInput);
+    function makeSelect(label, values, allLabel) {
+        const wrap = el("label", "candidate-filter");
+        wrap.append(el("span", "candidate-filter-label", label));
+        const select = document.createElement("select");
+        select.className = "candidate-select";
+        const all = document.createElement("option");
+        all.value = "";
+        all.textContent = allLabel;
+        select.append(all);
+        for (const value of values) {
+            const option = document.createElement("option");
+            option.value = value;
+            option.textContent = value;
+            select.append(option);
+        }
+        wrap.append(select);
+        return { wrap, select };
+    }
+    const allCandidates = candidateList().slice().sort((a, b) => String(a.proposed?.layer ?? "").localeCompare(String(b.proposed?.layer ?? ""), "en") ||
+        candidateTitle(a).localeCompare(candidateTitle(b), displayLang === "ja" ? "ja" : "en"));
+    const layers = Array.from(new Set(allCandidates.map((candidate) => String(candidate.proposed?.layer ?? "")).filter(Boolean))).sort();
+    const actions = Array.from(new Set(allCandidates.map((candidate) => String(candidate.recommended_action ?? "")).filter(Boolean))).sort();
+    const confidences = Array.from(new Set(allCandidates.map((candidate) => String(candidate.review?.confidence ?? "")).filter(Boolean))).sort();
+    const visibilities = Array.from(new Set(allCandidates.map((candidate) => String(candidate.navigation?.visibility ?? "")).filter(Boolean))).sort();
+    const layerFilter = makeSelect(displayLang === "ja" ? "体系層" : "Layer", layers, displayLang === "ja" ? "すべて" : "All");
+    const actionFilter = makeSelect(displayLang === "ja" ? "推奨処理" : "Recommended action", actions, displayLang === "ja" ? "すべて" : "All");
+    const confidenceFilter = makeSelect(displayLang === "ja" ? "confidence" : "Confidence", confidences, displayLang === "ja" ? "すべて" : "All");
+    const visibilityFilter = makeSelect(displayLang === "ja" ? "表示役割" : "Visibility", visibilities, displayLang === "ja" ? "すべて" : "All");
+    filters.append(queryLabel, layerFilter.wrap, actionFilter.wrap, confidenceFilter.wrap, visibilityFilter.wrap);
+    section.append(filters);
+    const summaryLine = el("div", "candidate-result-summary");
+    const grid = el("div", "candidate-grid");
+    section.append(summaryLine, grid);
+    const draw = () => {
+        const query = queryInput.value.trim().normalize("NFKC").toLocaleLowerCase("ja-JP");
+        const filtered = allCandidates.filter((candidate) => {
+            if (layerFilter.select.value && candidate.proposed?.layer !== layerFilter.select.value)
+                return false;
+            if (actionFilter.select.value && candidate.recommended_action !== actionFilter.select.value)
+                return false;
+            if (confidenceFilter.select.value && candidate.review?.confidence !== confidenceFilter.select.value)
+                return false;
+            if (visibilityFilter.select.value && candidate.navigation?.visibility !== visibilityFilter.select.value)
+                return false;
+            return !query || candidateSearchText(candidate).includes(query);
+        });
+        summaryLine.textContent = `${filtered.length} / ${allCandidates.length} ${displayLang === "ja" ? "候補を表示" : "candidates shown"}`;
+        grid.replaceChildren();
+        for (const candidate of filtered) {
+            const card = el("article", "candidate-card card");
+            const top = el("div", "card-meta");
+            top.append(badge(String(candidate.recommended_action ?? "candidate"), "warn"), badge(String(candidate.review?.confidence ?? "unknown")), badge(String(candidate.navigation?.visibility ?? "")));
+            card.append(top, el("h2", "card-title", candidateTitle(candidate)));
+            const role = candidateRole(candidate);
+            if (role)
+                card.append(el("p", "card-copy", role));
+            const topics = el("div", "chip-wrap candidate-topic-wrap");
+            for (const topic of candidate.proposed?.discovery?.topics ?? [])
+                topics.append(badge(String(topic)));
+            if (topics.childElementCount)
+                card.append(topics);
+            const questions = candidateQuestionList(candidate);
+            if (questions.length)
+                card.append(el("div", "question-line", `Q. ${questions[0]}`));
+            const needs = (candidate.review?.needs_human_judgment ?? []).map((value) => String(value));
+            if (needs.length)
+                card.append(el("div", "candidate-review-hint", `${displayLang === "ja" ? "確認" : "Review"}: ${needs.join(" · ")}`));
+            card.append(el("div", "path", String(candidate.path ?? "")));
+            const actionsRow = el("div", "card-actions");
+            const inspect = button(displayLang === "ja" ? "候補詳細" : "Candidate detail", "text-button");
+            inspect.addEventListener("click", () => setRoute({ view: "candidates", candidate: String(candidate.path ?? "") }));
+            actionsRow.append(inspect);
+            const path = String(candidate.path ?? "");
+            if (path && readerAllowedPaths().has(path))
+                actionsRow.append(readerButton(path));
+            const graphId = String(candidate.observed_node_id ?? "");
+            if (graphId && graphNodeMap(docsGraph).has(graphId)) {
+                const relations = button(displayLang === "ja" ? "関係" : "Relations", "text-button");
+                relations.addEventListener("click", () => setRoute({ graph: graphId }));
+                actionsRow.append(relations);
+            }
+            card.append(actionsRow);
+            grid.append(card);
+        }
+        if (!filtered.length)
+            grid.append(el("p", "empty", displayLang === "ja" ? "条件に合う候補はありません。" : "No candidate matches the filters."));
+    };
+    queryInput.addEventListener("input", draw);
+    for (const select of [layerFilter.select, actionFilter.select, confidenceFilter.select, visibilityFilter.select])
+        select.addEventListener("change", draw);
+    draw();
     page.append(section);
     return page;
 }
@@ -986,6 +1737,7 @@ function renderAudit() {
         [displayLang === "ja" ? "検索対象文書" : "Search-index documents", String((docsIndex.documents ?? []).length)],
         [displayLang === "ja" ? "登録document nodes" : "Registered document nodes", String(nodeCounts.get("document") ?? 0)],
         [displayLang === "ja" ? "観測のみdocument nodes" : "Observed-only document nodes", String(nodeCounts.get("observed_document") ?? 0)],
+        [displayLang === "ja" ? "登録候補" : "Registration candidates", String(candidatePayload()?.summary?.total_candidates ?? 0)],
         [displayLang === "ja" ? "concept nodes" : "Concept nodes", String(nodeCounts.get("concept") ?? 0)],
         [displayLang === "ja" ? "typed edges" : "Typed edges", String((docsGraph.edges ?? []).length)],
     ];
@@ -1010,6 +1762,16 @@ function renderAudit() {
         diagnostics.append(row);
     }
     section.append(diagnostics);
+    if (candidatePayload()) {
+        const candidateAudit = el("section", "audit-panel");
+        candidateAudit.append(el("h2", "section-title small", displayLang === "ja" ? "登録候補preview" : "Registration candidate preview"), el("p", "section-copy", displayLang === "ja"
+            ? "観測のみ100文書に対する暫定登録案です。manifestとは分離され、検索ランキングにも入りません。"
+            : "Provisional registration proposals for the 100 observed-only documents. They remain separate from the manifest and search ranking."));
+        const candidateOpen = button(displayLang === "ja" ? "候補レビューを開く" : "Open candidate review", "button secondary");
+        candidateOpen.addEventListener("click", () => setRoute({ view: "candidates" }));
+        candidateAudit.append(candidateOpen);
+        section.append(candidateAudit);
+    }
     const relationPanel = el("section", "audit-panel");
     relationPanel.append(el("h2", "section-title small", displayLang === "ja" ? "関係型の走査結果" : "Observed relation types"), el("p", "section-copy", displayLang === "ja"
         ? "これは重要度ではなく、現時点の走査件数です。各relationの具体的な辺は関係マップ側で確認します。"
@@ -1039,7 +1801,7 @@ function renderAudit() {
 }
 function errorPage(message) {
     const page = el("main", "page");
-    page.append(navBar("explore"), el("p", "error", message));
+    page.append(navBar("home"), el("p", "error", message));
     return page;
 }
 function render() {
@@ -1062,7 +1824,9 @@ function render() {
             content = renderSearch(params.get("q") ?? "");
         else if (params.get("view") === "relations")
             content = renderRelations();
-        else if (params.get("view") === "audit")
+        else if (isDeveloper() && params.get("view") === "candidates")
+            content = renderCandidates(params.get("candidate") ?? "");
+        else if (isDeveloper() && params.get("view") === "audit")
             content = renderAudit();
         else
             content = renderExplore();
@@ -1076,13 +1840,28 @@ function render() {
 async function load() {
     try {
         status.textContent = displayLang === "ja" ? "データを読み込み中…" : "Loading data…";
-        const [indexResponse, graphResponse] = await Promise.all([fetch(INDEX_URL), fetch(GRAPH_URL)]);
+        const candidatePromise = isDeveloper()
+            ? fetch(CANDIDATES_URL).catch(() => null)
+            : Promise.resolve(null);
+        const [indexResponse, graphResponse, publicContentResponse, candidateResponse] = await Promise.all([
+            fetch(INDEX_URL),
+            fetch(GRAPH_URL),
+            fetch(PUBLIC_CONTENT_URL),
+            candidatePromise,
+        ]);
         if (!indexResponse.ok)
             throw new Error(`docs_index.json: HTTP ${indexResponse.status}`);
         if (!graphResponse.ok)
             throw new Error(`docs_graph.json: HTTP ${graphResponse.status}`);
+        if (!publicContentResponse.ok)
+            throw new Error(`public-content.json: HTTP ${publicContentResponse.status}`);
         docsIndex = await indexResponse.json();
         docsGraph = await graphResponse.json();
+        publicContent = await publicContentResponse.json();
+        if (isDeveloper() && candidateResponse?.ok)
+            registrationCandidates = await candidateResponse.json();
+        else
+            registrationCandidates = null;
         status.textContent = "";
         render();
     }
