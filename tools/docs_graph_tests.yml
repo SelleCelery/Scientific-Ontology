@@ -1,0 +1,52 @@
+tests:
+  - id: meaning-owner
+    from: 'doc:meaning_generation_model'
+    relation: owns
+    to: 'concept:meaning_generation'
+
+  - id: concept-network-imports-meaning
+    from: 'doc:scientific_ontology_concept_network'
+    relation: imports
+    to: 'concept:meaning_generation'
+
+  - id: meaning-topic
+    from: 'doc:meaning_generation_model'
+    relation: belongs_to_topic
+    to: 'topic:meaning'
+
+  - id: meaning-layer
+    from: 'doc:meaning_generation_model'
+    relation: placed_in
+    to: 'layer:sat_truth'
+
+  - id: glossary-boundary-anchor
+    from_label_contains: 'Boundary / 境界'
+    from_type: glossary_term
+    relation: lexical_anchor
+    to: 'concept:epistemic_boundary_conditions'
+
+  - id: system-map-references-concept-network
+    from: 'artifact:system_map'
+    relation: map_reference
+    to: 'doc:scientific_ontology_concept_network'
+
+  - id: concept-network-links-meaning-model
+    from: 'doc:scientific_ontology_concept_network'
+    relation_any:
+      - concept_network_reference
+      - links_to
+    to: 'doc:meaning_generation_model'
+
+path_tests:
+  - id: meaning-topic-to-owner
+    from: 'topic:meaning'
+    to: 'concept:meaning_generation'
+    max_depth: 3
+    directed: false
+
+  - id: glossary-boundary-to-critique
+    from_label_contains: 'Boundary / 境界'
+    from_type: glossary_term
+    to: 'doc:boundary_epistemological_critique'
+    max_depth: 4
+    directed: false

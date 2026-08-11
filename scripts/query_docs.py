@@ -601,11 +601,231 @@ def run_tests(index: Mapping[str, Any], tests_path: Path) -> int:
     return 1 if (search_failures or browse_failures) else 0
 
 
+
+def graph_node_label(node: Mapping[str, Any], lang: str = "ja") -> str:
+    if node.get("type") == "document":
+        title = node.get("title", {})
+        if isinstance(title, Mapping):
+            return str(title.get(lang) or title.get("ja") or title.get("en") or node.get("key") or node.get("id"))
+    label = node.get("label", {})
+    if isinstance(label, Mapping):
+        return str(label.get(lang) or label.get("ja") or label.get("en") or label.get("raw") or node.get("key") or node.get("id"))
+    return str(node.get("key") or node.get("id"))
+
+
+def graph_node_map(graph: Mapping[str, Any]) -> Dict[str, Mapping[str, Any]]:
+    return {str(node.get("id")): node for node in graph.get("nodes", []) if isinstance(node, Mapping) and node.get("id")}
+
+
+def resolve_graph_node(graph: Mapping[str, Any], query: str, node_type: str | None = None) -> str:
+    nodes = graph_node_map(graph)
+    if query in nodes and (node_type is None or nodes[query].get("type") == node_type):
+        return query
+    prefixes = ["doc", "concept", "topic", "term", "layer", "artifact"]
+    for prefix in prefixes:
+        candidate = f"{prefix}:{query}"
+        if candidate in nodes and (node_type is None or nodes[candidate].get("type") == node_type):
+            return candidate
+    norm = normalize_text(query)
+    matches: List[str] = []
+    for node_id, node in nodes.items():
+        if node_type is not None and node.get("type") != node_type:
+            continue
+        label_map = node.get("label", {}) if isinstance(node.get("label"), Mapping) else {}
+        values = [node_id, str(node.get("key", "")), graph_node_label(node, "ja"), graph_node_label(node, "en"), str(label_map.get("raw", ""))]
+        if any(normalize_text(value) == norm for value in values if value):
+            matches.append(node_id)
+    if len(matches) == 1:
+        return matches[0]
+    if len(matches) > 1:
+        raise ValueError(f"ambiguous graph node '{query}': {', '.join(matches[:8])}")
+    # Bounded contains fallback for human labels.
+    contains: List[str] = []
+    if len(norm) >= 3:
+        for node_id, node in nodes.items():
+            if node_type is not None and node.get("type") != node_type:
+                continue
+            label_map = node.get("label", {}) if isinstance(node.get("label"), Mapping) else {}
+            values = [str(node.get("key", "")), graph_node_label(node, "ja"), graph_node_label(node, "en"), str(label_map.get("raw", ""))]
+            if any(norm in normalize_text(value) for value in values if value):
+                contains.append(node_id)
+    if len(contains) == 1:
+        return contains[0]
+    if len(contains) > 1:
+        raise ValueError(f"ambiguous graph node '{query}': {', '.join(contains[:8])}")
+    raise KeyError(query)
+
+
+def graph_subgraph(graph: Mapping[str, Any], start_id: str, depth: int = 1, relation: str | None = None) -> Dict[str, Any]:
+    nodes = graph_node_map(graph)
+    all_edges = [edge for edge in graph.get("edges", []) if isinstance(edge, Mapping)]
+    selected_nodes = {start_id}
+    frontier = {start_id}
+    selected_edges: List[Mapping[str, Any]] = []
+    seen_edge_keys: set[Tuple[str, str, str]] = set()
+    for _ in range(max(0, depth)):
+        next_frontier: set[str] = set()
+        for edge in all_edges:
+            if relation and str(edge.get("relation")) != relation:
+                continue
+            source = str(edge.get("from"))
+            target = str(edge.get("to"))
+            if source in frontier or target in frontier:
+                key = (source, str(edge.get("relation")), target)
+                if key not in seen_edge_keys:
+                    selected_edges.append(edge)
+                    seen_edge_keys.add(key)
+                if source not in selected_nodes:
+                    next_frontier.add(source)
+                if target not in selected_nodes:
+                    next_frontier.add(target)
+        selected_nodes.update(next_frontier)
+        frontier = next_frontier
+        if not frontier:
+            break
+    return {
+        "root": start_id,
+        "depth": depth,
+        "nodes": [nodes[node_id] for node_id in sorted(selected_nodes) if node_id in nodes],
+        "edges": sorted(selected_edges, key=lambda e: (str(e.get("from")), str(e.get("relation")), str(e.get("to")))),
+    }
+
+
+def trace_graph(graph: Mapping[str, Any], source_id: str, target_id: str, directed: bool = False, max_depth: int = 6) -> Dict[str, Any] | None:
+    edges = [edge for edge in graph.get("edges", []) if isinstance(edge, Mapping)]
+    adjacency: Dict[str, List[Tuple[str, Mapping[str, Any], str]]] = {}
+    for edge in edges:
+        source = str(edge.get("from"))
+        target = str(edge.get("to"))
+        adjacency.setdefault(source, []).append((target, edge, "forward"))
+        if not directed:
+            adjacency.setdefault(target, []).append((source, edge, "reverse"))
+    queue: List[Tuple[str, List[Dict[str, Any]]]] = [(source_id, [])]
+    visited = {source_id}
+    while queue:
+        node_id, steps = queue.pop(0)
+        if node_id == target_id:
+            return {"from": source_id, "to": target_id, "directed": directed, "steps": steps}
+        if len(steps) >= max_depth:
+            continue
+        for next_id, edge, direction in adjacency.get(node_id, []):
+            if next_id in visited:
+                continue
+            visited.add(next_id)
+            queue.append((next_id, steps + [{
+                "from": node_id,
+                "to": next_id,
+                "direction": direction,
+                "relation": str(edge.get("relation")),
+                "edge": edge,
+            }]))
+    return None
+
+
+def provenance_summary(edge: Mapping[str, Any]) -> str:
+    kinds = sorted({str(p.get("source_type", "")) for p in edge.get("provenance", []) if isinstance(p, Mapping)})
+    return ",".join(kinds)
+
+
+def print_graph_subgraph(payload: Mapping[str, Any], lang: str = "ja", limit: int = 80) -> None:
+    nodes = {str(n.get("id")): n for n in payload.get("nodes", []) if isinstance(n, Mapping)}
+    root = str(payload.get("root", ""))
+    root_node = nodes.get(root, {})
+    print(f"Root: [{root_node.get('type', '')}] {graph_node_label(root_node, lang)} <{root}>")
+    edges = payload.get("edges", [])
+    shown = 0
+    for edge in edges:
+        if shown >= limit:
+            break
+        source = str(edge.get("from", ""))
+        target = str(edge.get("to", ""))
+        if source == root:
+            other = nodes.get(target, {})
+            arrow = "->"
+            relation = str(edge.get("relation", ""))
+        elif target == root:
+            other = nodes.get(source, {})
+            arrow = "<-"
+            relation = str(edge.get("relation", ""))
+        else:
+            continue
+        print(f"  {arrow} {relation} {arrow} [{other.get('type', '')}] {graph_node_label(other, lang)} <{other.get('id', '')}> [{provenance_summary(edge)}]")
+        shown += 1
+    if int(payload.get("depth", 1)) > 1:
+        print(f"Subgraph: {len(nodes)} nodes / {len(edges)} edges (use --json for the complete relation map)")
+    if len(edges) > limit:
+        print(f"... {len(edges) - limit} more edges omitted; use --json or --limit")
+
+
+def print_trace(payload: Mapping[str, Any], graph: Mapping[str, Any], lang: str = "ja") -> None:
+    nodes = graph_node_map(graph)
+    print(f"Trace ({len(payload.get('steps', []))} steps, directed={payload.get('directed')}):")
+    current = str(payload.get("from", ""))
+    start = nodes.get(current, {})
+    print(f"  [{start.get('type', '')}] {graph_node_label(start, lang)} <{current}>")
+    for step in payload.get("steps", []):
+        target = str(step.get("to", ""))
+        node = nodes.get(target, {})
+        direction = str(step.get("direction", "forward"))
+        marker = "--" if direction == "forward" else "<-"
+        print(f"  {marker} {step.get('relation')} ({direction}) -> [{node.get('type', '')}] {graph_node_label(node, lang)} <{target}>")
+
+
+def run_graph_tests(graph: Mapping[str, Any], tests_path: Path) -> int:
+    data = load_yaml(tests_path)
+    edges = [edge for edge in graph.get("edges", []) if isinstance(edge, Mapping)]
+    failures = 0
+    tests = data.get("tests", []) or []
+    for test in tests:
+        test_id = str(test.get("id", "unnamed-graph"))
+        try:
+            if test.get("from"):
+                source = resolve_graph_node(graph, str(test.get("from")))
+            else:
+                source = resolve_graph_node(graph, str(test.get("from_label_contains", "")), str(test.get("from_type")) if test.get("from_type") else None)
+            target = resolve_graph_node(graph, str(test.get("to")))
+        except Exception as exc:
+            failures += 1
+            print(f"FAIL {test_id}: node resolution: {exc}")
+            continue
+        relations = [str(test.get("relation"))] if test.get("relation") else [str(v) for v in test.get("relation_any", [])]
+        ok = any(str(edge.get("from")) == source and str(edge.get("to")) == target and str(edge.get("relation")) in relations for edge in edges)
+        if ok:
+            print(f"PASS {test_id}: {source} --{relations}--> {target}")
+        else:
+            failures += 1
+            print(f"FAIL {test_id}: missing {source} --{relations}--> {target}")
+    path_tests = data.get("path_tests", []) or []
+    for test in path_tests:
+        test_id = str(test.get("id", "unnamed-path"))
+        try:
+            if test.get("from"):
+                source = resolve_graph_node(graph, str(test.get("from")))
+            else:
+                source = resolve_graph_node(graph, str(test.get("from_label_contains", "")), str(test.get("from_type")) if test.get("from_type") else None)
+            target = resolve_graph_node(graph, str(test.get("to")))
+            payload = trace_graph(graph, source, target, directed=bool(test.get("directed", False)), max_depth=int(test.get("max_depth", 6)))
+        except Exception as exc:
+            payload = None
+            failures += 1
+            print(f"FAIL {test_id}: node/path resolution: {exc}")
+            continue
+        if payload is not None:
+            print(f"PASS {test_id}: {source} -> {target} in {len(payload['steps'])} steps")
+        else:
+            failures += 1
+            print(f"FAIL {test_id}: no path")
+    total = len(tests) + len(path_tests)
+    print(f"GRAPH TESTS: {total - failures}/{total} PASS")
+    return 1 if failures else 0
+
 def build_parser() -> argparse.ArgumentParser:
     root = repo_root()
     parser = argparse.ArgumentParser(description="Query Scientific Ontology document index.")
     parser.add_argument("--index", default=str(root / "tools/docs_index.json"))
     parser.add_argument("--tests", default=str(root / "tools/docs_search_tests.yml"))
+    parser.add_argument("--graph", default=str(root / "tools/docs_graph.json"))
+    parser.add_argument("--graph-tests", default=str(root / "tools/docs_graph_tests.yml"))
     sub = parser.add_subparsers(dest="command", required=True)
 
     search = sub.add_parser("search")
@@ -638,6 +858,23 @@ def build_parser() -> argparse.ArgumentParser:
     topics = sub.add_parser("topics")
     topics.add_argument("--json", action="store_true")
 
+    graph = sub.add_parser("graph", help="Show a typed relation neighborhood from docs_graph.json.")
+    graph.add_argument("node")
+    graph.add_argument("--depth", type=int, choices=[1, 2], default=1)
+    graph.add_argument("--relation", default=None)
+    graph.add_argument("--lang", choices=["ja", "en"], default="ja")
+    graph.add_argument("--limit", type=int, default=80)
+    graph.add_argument("--json", action="store_true")
+
+    trace = sub.add_parser("trace", help="Find a short relation path between two graph nodes.")
+    trace.add_argument("source")
+    trace.add_argument("target")
+    trace.add_argument("--directed", action="store_true")
+    trace.add_argument("--max-depth", type=int, default=6)
+    trace.add_argument("--lang", choices=["ja", "en"], default="ja")
+    trace.add_argument("--json", action="store_true")
+
+    sub.add_parser("graph-test")
     sub.add_parser("test")
     return parser
 
@@ -719,6 +956,46 @@ def main(argv: Sequence[str] | None = None) -> int:
             for topic_id, labels in sorted(index.get("topics", {}).items()):
                 print(f"{topic_id}\t{labels.get('ja', '')}\t{labels.get('en', '')}")
         return 0
+
+    if args.command in {"graph", "trace", "graph-test"}:
+        try:
+            graph_data = load_json(Path(args.graph))
+        except Exception as exc:
+            print(f"ERROR: could not load graph: {exc}", file=sys.stderr)
+            return 1
+
+        if args.command == "graph":
+            try:
+                node_id = resolve_graph_node(graph_data, args.node)
+            except Exception as exc:
+                print(f"ERROR: {exc}", file=sys.stderr)
+                return 1
+            payload = graph_subgraph(graph_data, node_id, depth=args.depth, relation=args.relation)
+            if args.json:
+                print(json.dumps(payload, ensure_ascii=False, indent=2))
+            else:
+                print_graph_subgraph(payload, args.lang, args.limit)
+            return 0
+
+        if args.command == "trace":
+            try:
+                source_id = resolve_graph_node(graph_data, args.source)
+                target_id = resolve_graph_node(graph_data, args.target)
+            except Exception as exc:
+                print(f"ERROR: {exc}", file=sys.stderr)
+                return 1
+            payload = trace_graph(graph_data, source_id, target_id, directed=args.directed, max_depth=args.max_depth)
+            if payload is None:
+                print("NO PATH")
+                return 1
+            if args.json:
+                print(json.dumps(payload, ensure_ascii=False, indent=2))
+            else:
+                print_trace(payload, graph_data, args.lang)
+            return 0
+
+        if args.command == "graph-test":
+            return run_graph_tests(graph_data, Path(args.graph_tests))
 
     if args.command == "test":
         return run_tests(index, Path(args.tests))

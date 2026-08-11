@@ -1,0 +1,117 @@
+graph:
+  spec_version: '0.1'
+  default_visibility: preview
+
+  principles:
+    - 'The graph stores inspectable relations first; numeric metrics are derived views, not the graph itself.'
+    - 'A relation keeps its provenance. Agreement across sources is visible as multiple provenance records, not collapsed into a trust score.'
+    - 'Structural relation does not imply truth, evidence, conceptual identity, or direct search relevance.'
+    - 'DN-4 does not rerank DN-3 search results.'
+
+  node_types:
+    document: 'Public or public-candidate document represented by the manifest-derived index.'
+    observed_document: 'Existing public Markdown observed in the repository but not yet registered in the manifest-derived search index.'
+    concept: 'Machine-readable concept identifier appearing in ownership or logical contracts.'
+    topic: 'Controlled navigation topic from docs_search.yml; not an ontological class.'
+    layer: 'Top-level repository layer used for public navigation.'
+    glossary_term: 'Human-facing lexical entry extracted from GLOSSARY.md.'
+    source_artifact: 'Public structural source that participates in graph construction but is not yet a manifest document.'
+
+  relation_types:
+    owns:
+      class: declared
+      description: 'Document owns a concept under manifest ownership/contract rules.'
+    imports:
+      class: declared
+      description: 'Document imports a concept without redefining it.'
+    exports:
+      class: declared
+      description: 'Document exports an operational concept or payload.'
+    tests:
+      class: declared
+      description: 'Document tests or is checked against another document.'
+    returns_to:
+      class: declared
+      description: 'Document returns failure, residual, or revision payload to another document.'
+    delegates:
+      class: declared
+      description: 'Document delegates a concept or responsibility to another document.'
+    related_to:
+      class: declared
+      description: 'Manifest-declared related document relation.'
+    placed_in:
+      class: structural
+      description: 'Document is placed in a top-level repository layer.'
+    belongs_to_topic:
+      class: navigation
+      description: 'Document is reachable from a controlled navigation topic.'
+    links_to:
+      class: observed
+      description: 'Observed Markdown link between indexed documents.'
+    lexical_anchor:
+      class: lexical
+      description: 'Glossary term explicitly names a registered concept ID.'
+    definition_owner_reference:
+      class: lexical
+      description: 'Glossary entry explicitly links to a public definition-owner document.'
+    generative_source_reference:
+      class: lexical
+      description: 'Glossary entry explicitly links to a public generative-source document.'
+    operationalized_in_reference:
+      class: lexical
+      description: 'Glossary entry explicitly links to an operationalization document.'
+    contains_term:
+      class: structural
+      description: 'Glossary source artifact contains a human-facing term entry.'
+    map_reference:
+      class: structural
+      description: 'System Map explicitly links to an indexed document.'
+    concept_network_reference:
+      class: structural
+      description: 'Concept Network explicitly links to an indexed document.'
+
+  source_artifacts:
+    glossary:
+      node_id: 'artifact:glossary'
+      path: 'GLOSSARY.md'
+      label_ja: '用語集'
+      label_en: 'Glossary'
+      parser: glossary
+    system_map:
+      node_id: 'artifact:system_map'
+      path: '00_Overview/Scientific_Ontology_System_Map.md'
+      label_ja: '存在境界論 システムマップ'
+      label_en: 'Scientific Ontology System Map'
+      parser: markdown_map
+    concept_network:
+      document_id: 'scientific_ontology_concept_network'
+      path: '00_Overview/Scientific_Ontology_Concept_Network.ja.md'
+      parser: concept_network
+
+
+  observed_markdown:
+    enabled: true
+    roots:
+      - '00_Overview'
+      - '01_Sat_Truth'
+      - '02_Raj_Beauty'
+      - '03_Tam_Goodness'
+      - '04_Applications'
+      - '05_Research_Notes'
+      - '06_Visual_Materials'
+      - '90_Repository_Governance'
+    root_files:
+      - 'README.md'
+      - 'Roadmap.md'
+    exclude_prefixes:
+      - '000'
+      - '99_Private_Core_Not_Included'
+    note: 'Observed documents preserve public link topology without granting manifest ownership, discovery metadata, or canonical identity.'
+
+  markdown_links:
+    enabled: true
+    indexed_documents_only: true
+
+  derived_metrics:
+    enabled: false
+    note: 'Centrality and importance scores are intentionally deferred. The typed relation graph is the primary artifact in DN-4.'

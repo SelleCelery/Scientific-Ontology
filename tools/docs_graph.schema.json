@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/scientific-ontology/docs_graph.schema.json",
+  "title": "Scientific Ontology Typed Relation Graph",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "source",
+    "principles",
+    "relation_types",
+    "nodes",
+    "edges",
+    "diagnostics"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "manifest_sha256",
+        "search_config_sha256",
+        "graph_config_sha256",
+        "visibility_profile"
+      ],
+      "properties": {
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "search_config_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "graph_config_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "visibility_profile": {
+          "enum": [
+            "preview",
+            "public"
+          ]
+        },
+        "glossary_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "system_map_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "concept_network_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relation_types": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "class",
+          "description"
+        ],
+        "properties": {
+          "class": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z_]+:.+"
+          },
+          "type": {
+            "enum": [
+              "document",
+              "observed_document",
+              "concept",
+              "topic",
+              "layer",
+              "glossary_term",
+              "source_artifact"
+            ]
+          },
+          "key": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "title": {
+            "type": "object"
+          },
+          "label": {
+            "type": "object"
+          },
+          "layer": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "role": {
+            "type": "object"
+          },
+          "browse": {
+            "type": "object"
+          },
+          "canonical_owner": {
+            "type": "string"
+          },
+          "source_path": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "relation",
+          "to",
+          "provenance"
+        ],
+        "properties": {
+          "from": {
+            "type": "string"
+          },
+          "relation": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "source_type",
+                "source_path"
+              ],
+              "properties": {
+                "source_type": {
+                  "type": "string"
+                },
+                "source_path": {
+                  "type": "string"
+                },
+                "locator": {
+                  "type": "string"
+                },
+                "detail": {
+                  "type": "object"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "diagnostics": {
+      "type": "object",
+      "required": [
+        "unresolved_document_references",
+        "unresolved_concept_references",
+        "observed_unregistered_documents",
+        "excluded_references"
+      ],
+      "properties": {
+        "unresolved_document_references": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "unresolved_concept_references": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "observed_unregistered_documents": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "excluded_references": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
