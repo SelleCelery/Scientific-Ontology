@@ -2223,7 +2223,7 @@ def write_contract_json_log(report: Dict[str, Any], issues: List[Issue], path: P
     payload = dict(report)
     payload["issues"] = [issue.as_dict() for issue in issues]
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_contract_markdown_log(report: Dict[str, Any], issues: List[Issue], path: Path) -> None:
@@ -2251,7 +2251,7 @@ def write_contract_markdown_log(report: Dict[str, Any], issues: List[Issue], pat
             if issue.suggestion:
                 lines.append(f"  - Suggested fix: {issue.suggestion}")
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
 def run_checks(args: argparse.Namespace) -> CheckResult:
     root = Path(args.root).resolve()
@@ -2345,7 +2345,7 @@ def write_json_log(result: CheckResult, path: Path) -> None:
         "issues": [issue.as_dict() for issue in result.issues],
     }
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_markdown_log(result: CheckResult, path: Path) -> None:
@@ -2382,7 +2382,7 @@ def write_markdown_log(result: CheckResult, path: Path) -> None:
             if issue.suggestion:
                 lines.append(f"  - Suggested fix: {issue.suggestion}")
         lines.append("")
-    path.write_text("\n".join(lines), encoding="utf-8")
+    path.write_text("\n".join(lines), encoding="utf-8", newline="\n")
 
 
 def print_console_summary(result: CheckResult) -> None:
