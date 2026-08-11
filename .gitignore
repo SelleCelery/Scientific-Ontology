@@ -95,3 +95,4 @@ desktop.ini
 _build/!navigator/
 !navigator/**
 !scripts/check_docs_web_parity.mjs
+!scripts/serve_navigator.py

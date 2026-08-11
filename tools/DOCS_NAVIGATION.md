@@ -423,17 +423,19 @@ Parity means implementation equivalence for the current contract and corpus. It 
 
 ### 14.5 Local preview
 
-Because the client fetches the generated JSON rather than embedding a copy, open it over HTTP from the repository root:
+Because the client fetches generated JSON and source Markdown rather than embedding copies, open it over HTTP. The preferred server is the repository helper that declares UTF-8 explicitly for text resources:
 
 ```bash
-python -m http.server 8000
+python scripts/serve_navigator.py
 ```
 
 Then open:
 
 ```text
-http://localhost:8000/navigator/
+http://127.0.0.1:8000/navigator/
 ```
+
+`python -m http.server 8000` remains usable for the Navigator shell, and the DN-5.1 Reader still performs strict byte-level UTF-8 decoding, but raw Markdown tabs may depend on browser charset inference because the generic server does not guarantee an explicit UTF-8 charset for every Markdown response.
 
 Opening `navigator/index.html` directly through `file://` is not supported because browser fetch restrictions vary.
 
@@ -449,3 +451,50 @@ DN-5 does not:
 - modify theory prose to make the UI look cleaner.
 
 The UI is intentionally an inspection surface. Data defects or incomplete navigation metadata revealed by the UI should be corrected upstream in the manifest, search config, graph source, Glossary, Map, or theory document that owns them.
+
+## 15. DN-5.1 Reader Boundary
+
+DN-5.1 adds an in-Navigator Markdown Reader so ordinary reading does not depend on a browser guessing the encoding of a raw `.md` response.
+
+The standard path is:
+
+```text
+Navigator link
+  -> fetch source bytes
+  -> TextDecoder("utf-8", { fatal: true })
+  -> safe local Markdown rendering
+```
+
+The Reader does not silently replacement-decode invalid bytes. A strict UTF-8 failure is presented as an error and the source must be inspected upstream. This preserves the distinction between a readable document and a damaged or incorrectly encoded source.
+
+The Reader accepts only Markdown paths already exposed as `document` or `observed_document` nodes by the current public index/graph boundary. It does not turn an arbitrary repository path into a browser-readable document and it rejects known private/pending path markers.
+
+Document cards now separate:
+
+```text
+Read       = Navigator Reader; normal reading path
+Raw file   = direct source response; diagnostic/authoring path
+```
+
+Internal Markdown links that resolve to another currently exposed document stay inside the Reader. External links remain external. The renderer constructs DOM nodes rather than trusting raw Markdown as HTML.
+
+The local server helper provides explicit text media types such as:
+
+```text
+.md    -> text/markdown; charset=utf-8
+.html  -> text/html; charset=utf-8
+.css   -> text/css; charset=utf-8
+.js    -> text/javascript; charset=utf-8
+.json  -> application/json; charset=utf-8
+.yml   -> text/yaml; charset=utf-8
+```
+
+Run the Reader/source-boundary check with:
+
+```bash
+python scripts/serve_navigator.py --check
+```
+
+This strict-decodes every Markdown document currently exposed by `docs_index.json` / `docs_graph.json` and validates the explicit UTF-8 MIME mappings. It is a source-integrity check for the Reader boundary, not a substitute for the repository's broader public-format/mojibake checker.
+
+DN-5.1 intentionally does not edit theory prose, promote observed documents, add application registries, or treat visual rendering as evidence that source content is correct. UI-discovered content defects still return to the owning data/document layer.

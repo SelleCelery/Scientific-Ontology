@@ -25,6 +25,59 @@ function button(label, className = "button") {
 function encodePath(path) {
     return "../" + path.split("/").map(encodeURIComponent).join("/");
 }
+function isBlockedRepoPath(path) {
+    const clean = path.replace(/\\/g, "/").replace(/^\/+/, "");
+    return (clean.split("/").some((part) => part.startsWith("000")) ||
+        clean.startsWith("99_Private_Core") ||
+        clean.includes("/99_Private_Core") ||
+        clean.includes("private-core") ||
+        clean.includes("Private_Core") ||
+        clean.includes("/Gate") ||
+        clean.includes("/U5"));
+}
+function readerAllowedPaths() {
+    const allowed = new Set();
+    for (const doc of docsIndex.documents ?? []) {
+        const path = String(doc.path ?? "");
+        if (path.endsWith(".md") && !isBlockedRepoPath(path))
+            allowed.add(path);
+    }
+    for (const node of docsGraph.nodes ?? []) {
+        if (node.type !== "document" && node.type !== "observed_document")
+            continue;
+        const path = String(node.path ?? "");
+        if (path.endsWith(".md") && !isBlockedRepoPath(path))
+            allowed.add(path);
+    }
+    return allowed;
+}
+function normalizeRepoPath(basePath, target) {
+    const raw = target.trim();
+    if (!raw || raw.startsWith("#"))
+        return null;
+    if (/^[a-z][a-z0-9+.-]*:/i.test(raw))
+        return null;
+    let pathPart = raw.split("#", 1)[0].split("?", 1)[0];
+    try {
+        pathPart = decodeURIComponent(pathPart);
+    }
+    catch { /* keep original */ }
+    const parts = pathPart.startsWith("/") ? [] : basePath.split("/").slice(0, -1);
+    for (const part of pathPart.replace(/^\/+/, "").split("/")) {
+        if (!part || part === ".")
+            continue;
+        if (part === "..") {
+            if (!parts.length)
+                return null;
+            parts.pop();
+        }
+        else {
+            parts.push(part);
+        }
+    }
+    const resolved = parts.join("/");
+    return resolved && !isBlockedRepoPath(resolved) ? resolved : null;
+}
 function localized(value, fallback = "") {
     return localizedValue(value, displayLang, fallback);
 }
@@ -58,6 +111,24 @@ function roleForDoc(doc) {
 }
 function docById(docId) {
     return (docsIndex.documents ?? []).find((doc) => String(doc.id) === docId);
+}
+function docByPath(path) {
+    return (docsIndex.documents ?? []).find((doc) => String(doc.path ?? "") === path);
+}
+function graphNodeByPath(path) {
+    return (docsGraph.nodes ?? []).find((node) => (node.type === "document" || node.type === "observed_document") && String(node.path ?? "") === path);
+}
+function readerButton(path, className = "text-button") {
+    const read = button(displayLang === "ja" ? "読む" : "Read", className);
+    read.addEventListener("click", () => setRoute({ read: path }));
+    return read;
+}
+function rawFileLink(path, className = "text-link") {
+    const raw = el("a", className, displayLang === "ja" ? "元ファイル" : "Raw file");
+    raw.href = encodePath(path);
+    raw.target = "_blank";
+    raw.rel = "noopener";
+    return raw;
 }
 function graphNodeForDocument(doc) {
     const direct = `doc:${doc.id}`;
@@ -188,13 +259,8 @@ function docCard(doc) {
     const id = String(doc.doc_id ?? doc.id ?? "");
     detail.addEventListener("click", () => setRoute({ doc: id }));
     actions.append(detail);
-    if (path) {
-        const open = el("a", "text-link", displayLang === "ja" ? "ファイルを開く" : "Open file");
-        open.href = encodePath(path);
-        open.target = "_blank";
-        open.rel = "noopener";
-        actions.append(open);
-    }
+    if (path)
+        actions.append(readerButton(path), rawFileLink(path));
     item.append(actions);
     return item;
 }
@@ -280,13 +346,11 @@ function renderLayer(layerId) {
             const row = el("div", "observed-row");
             const main = el("div", "observed-main");
             main.append(el("strong", "", graphNodeLabel(node, displayLang)), el("div", "path", String(node.path ?? "")));
-            const open = el("a", "text-link", displayLang === "ja" ? "開く" : "Open");
-            open.href = encodePath(String(node.path ?? ""));
-            open.target = "_blank";
-            open.rel = "noopener";
+            const path = String(node.path ?? "");
+            const read = readerButton(path);
             const relation = button(displayLang === "ja" ? "関係を見る" : "Relations", "text-button");
             relation.addEventListener("click", () => setRoute({ graph: String(node.id) }));
-            row.append(main, open, relation);
+            row.append(main, read, relation);
             list.append(row);
         }
         section.append(list);
@@ -328,11 +392,9 @@ function renderSearch(query) {
         const detail = button(displayLang === "ja" ? "文書と関係を見る" : "Document and relations", "text-button");
         detail.addEventListener("click", () => setRoute({ doc: String(result.doc_id) }));
         actions.append(detail);
-        const open = el("a", "text-link", displayLang === "ja" ? "ファイルを開く" : "Open file");
-        open.href = encodePath(String(result.path ?? ""));
-        open.target = "_blank";
-        open.rel = "noopener";
-        actions.append(open);
+        const path = String(result.path ?? "");
+        if (path)
+            actions.append(readerButton(path), rawFileLink(path));
         card.append(actions);
         results.append(card);
     }
@@ -359,11 +421,9 @@ function renderDocument(docId) {
     if (role)
         header.append(el("p", "hero-copy", role));
     header.append(el("div", "path", String(doc.path)));
-    const open = el("a", "button secondary", displayLang === "ja" ? "文書ファイルを開く" : "Open document file");
-    open.href = encodePath(String(doc.path));
-    open.target = "_blank";
-    open.rel = "noopener";
-    header.append(open);
+    const headerActions = el("div", "reader-actions");
+    headerActions.append(readerButton(String(doc.path), "button primary"), rawFileLink(String(doc.path), "button secondary"));
+    header.append(headerActions);
     page.append(header);
     const infoGrid = el("div", "info-grid");
     const topicPanel = el("section", "info-panel");
@@ -396,6 +456,302 @@ function renderDocument(docId) {
     const graphId = graphNodeForDocument(doc);
     if (graphId)
         page.append(relationSection(graphId));
+    return page;
+}
+function appendInlineMarkdown(parent, text, sourcePath) {
+    const token = /(!?\[[^\]]*\]\([^)]+\)|`[^`]+`|\*\*[^*]+\*\*|\*[^*]+\*)/g;
+    let cursor = 0;
+    for (const match of text.matchAll(token)) {
+        const index = match.index ?? 0;
+        if (index > cursor)
+            parent.append(document.createTextNode(text.slice(cursor, index)));
+        const value = match[0];
+        if (value.startsWith("![")) {
+            const parsed = value.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+            if (parsed) {
+                const alt = parsed[1];
+                const href = parsed[2].trim();
+                const resolved = normalizeRepoPath(sourcePath, href);
+                if (resolved) {
+                    const img = document.createElement("img");
+                    img.className = "reader-image";
+                    img.alt = alt;
+                    img.loading = "lazy";
+                    img.src = encodePath(resolved);
+                    parent.append(img);
+                }
+                else {
+                    parent.append(document.createTextNode(alt ? `[${alt}]` : "[image]"));
+                }
+            }
+        }
+        else if (value.startsWith("[")) {
+            const parsed = value.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+            if (parsed) {
+                const label = parsed[1];
+                const href = parsed[2].trim();
+                const a = document.createElement("a");
+                a.textContent = label;
+                if (href.startsWith("#")) {
+                    a.href = href;
+                }
+                else if (/^(https?:|mailto:)/i.test(href)) {
+                    a.href = href;
+                    a.target = "_blank";
+                    a.rel = "noopener noreferrer";
+                }
+                else {
+                    const resolved = normalizeRepoPath(sourcePath, href);
+                    if (resolved?.endsWith(".md") && readerAllowedPaths().has(resolved)) {
+                        a.href = `#${new URLSearchParams({ read: resolved }).toString()}`;
+                        a.addEventListener("click", (event) => {
+                            event.preventDefault();
+                            setRoute({ read: resolved });
+                        });
+                    }
+                    else if (resolved) {
+                        a.href = encodePath(resolved);
+                        a.target = "_blank";
+                        a.rel = "noopener";
+                    }
+                    else {
+                        a.removeAttribute("href");
+                    }
+                }
+                parent.append(a);
+            }
+        }
+        else if (value.startsWith("`")) {
+            parent.append(el("code", "reader-inline-code", value.slice(1, -1)));
+        }
+        else if (value.startsWith("**")) {
+            const strong = el("strong");
+            appendInlineMarkdown(strong, value.slice(2, -2), sourcePath);
+            parent.append(strong);
+        }
+        else if (value.startsWith("*")) {
+            const em = el("em");
+            appendInlineMarkdown(em, value.slice(1, -1), sourcePath);
+            parent.append(em);
+        }
+        cursor = index + value.length;
+    }
+    if (cursor < text.length)
+        parent.append(document.createTextNode(text.slice(cursor)));
+}
+function markdownCells(line) {
+    let value = line.trim();
+    if (value.startsWith("|"))
+        value = value.slice(1);
+    if (value.endsWith("|"))
+        value = value.slice(0, -1);
+    return value.split("|").map((cell) => cell.trim());
+}
+function isTableSeparator(line) {
+    const cells = markdownCells(line);
+    return cells.length > 0 && cells.every((cell) => /^:?-{3,}:?$/.test(cell));
+}
+function headingId(text, seen) {
+    const base = text
+        .normalize("NFKC")
+        .toLowerCase()
+        .replace(/[`*_~[\](){}<>]/g, "")
+        .replace(/[^\p{Letter}\p{Number}]+/gu, "-")
+        .replace(/^-+|-+$/g, "") || "section";
+    const count = seen.get(base) ?? 0;
+    seen.set(base, count + 1);
+    return count ? `${base}-${count + 1}` : base;
+}
+function renderMarkdown(text, sourcePath) {
+    const article = el("article", "reader-article");
+    const lines = text.replace(/\r\n?/g, "\n").split("\n");
+    const headingIds = new Map();
+    let i = 0;
+    while (i < lines.length) {
+        const line = lines[i];
+        if (!line.trim()) {
+            i += 1;
+            continue;
+        }
+        const fence = line.match(/^\s*```\s*([^\s`]*)\s*$/);
+        if (fence) {
+            const language = fence[1];
+            const codeLines = [];
+            i += 1;
+            while (i < lines.length && !/^\s*```\s*$/.test(lines[i])) {
+                codeLines.push(lines[i]);
+                i += 1;
+            }
+            if (i < lines.length)
+                i += 1;
+            const pre = el("pre", "reader-code");
+            const code = el("code", language ? `language-${language}` : "", codeLines.join("\n"));
+            pre.append(code);
+            article.append(pre);
+            continue;
+        }
+        const heading = line.match(/^(#{1,6})\s+(.+?)\s*#*\s*$/);
+        if (heading) {
+            const level = Math.min(6, heading[1].length);
+            const h = el(`h${level}`, `reader-h reader-h${level}`);
+            appendInlineMarkdown(h, heading[2], sourcePath);
+            h.id = headingId(heading[2], headingIds);
+            article.append(h);
+            i += 1;
+            continue;
+        }
+        if (/^\s*(---+|\*\*\*+)\s*$/.test(line)) {
+            article.append(document.createElement("hr"));
+            i += 1;
+            continue;
+        }
+        if (line.includes("|") && i + 1 < lines.length && isTableSeparator(lines[i + 1])) {
+            const table = el("table", "reader-table");
+            const thead = document.createElement("thead");
+            const headRow = document.createElement("tr");
+            for (const cell of markdownCells(line)) {
+                const th = document.createElement("th");
+                appendInlineMarkdown(th, cell, sourcePath);
+                headRow.append(th);
+            }
+            thead.append(headRow);
+            table.append(thead);
+            i += 2;
+            const tbody = document.createElement("tbody");
+            while (i < lines.length && lines[i].trim() && lines[i].includes("|")) {
+                const tr = document.createElement("tr");
+                for (const cell of markdownCells(lines[i])) {
+                    const td = document.createElement("td");
+                    appendInlineMarkdown(td, cell, sourcePath);
+                    tr.append(td);
+                }
+                tbody.append(tr);
+                i += 1;
+            }
+            table.append(tbody);
+            article.append(table);
+            continue;
+        }
+        if (/^\s*>/.test(line)) {
+            const quote = el("blockquote", "reader-quote");
+            const quoteLines = [];
+            while (i < lines.length && /^\s*>/.test(lines[i])) {
+                quoteLines.push(lines[i].replace(/^\s*>\s?/, ""));
+                i += 1;
+            }
+            for (const [index, quoteLine] of quoteLines.entries()) {
+                if (index)
+                    quote.append(document.createElement("br"));
+                appendInlineMarkdown(quote, quoteLine, sourcePath);
+            }
+            article.append(quote);
+            continue;
+        }
+        const listMatch = line.match(/^\s*([-*+] |\d+[.)] )(.+)$/);
+        if (listMatch) {
+            const ordered = /^\d/.test(listMatch[1]);
+            const list = ordered ? document.createElement("ol") : document.createElement("ul");
+            list.className = "reader-list";
+            while (i < lines.length) {
+                const current = lines[i].match(/^\s*([-*+] |\d+[.)] )(.+)$/);
+                if (!current || /^\d/.test(current[1]) !== ordered)
+                    break;
+                const li = document.createElement("li");
+                appendInlineMarkdown(li, current[2], sourcePath);
+                list.append(li);
+                i += 1;
+            }
+            article.append(list);
+            continue;
+        }
+        const paragraphLines = [];
+        while (i < lines.length && lines[i].trim()) {
+            const candidate = lines[i];
+            if (paragraphLines.length && (/^#{1,6}\s+/.test(candidate) ||
+                /^\s*```/.test(candidate) ||
+                /^\s*>/.test(candidate) ||
+                /^\s*([-*+] |\d+[.)] )/.test(candidate) ||
+                /^\s*(---+|\*\*\*+)\s*$/.test(candidate) ||
+                (candidate.includes("|") && i + 1 < lines.length && isTableSeparator(lines[i + 1]))))
+                break;
+            paragraphLines.push(candidate.trim());
+            i += 1;
+        }
+        const paragraph = el("p", "reader-paragraph");
+        appendInlineMarkdown(paragraph, paragraphLines.join("\n"), sourcePath);
+        article.append(paragraph);
+    }
+    return article;
+}
+async function fetchUtf8Strict(path) {
+    if (!readerAllowedPaths().has(path))
+        throw new Error(`Reader path is not in the public document graph: ${path}`);
+    const response = await fetch(encodePath(path), { cache: "no-store" });
+    if (!response.ok)
+        throw new Error(`${path}: HTTP ${response.status}`);
+    const bytes = await response.arrayBuffer();
+    let text;
+    try {
+        text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+    }
+    catch {
+        throw new Error(displayLang === "ja"
+            ? `${path}: UTF-8として厳密にデコードできません。表示で代替せず、原ファイルのバイト列を点検してください。`
+            : `${path}: strict UTF-8 decoding failed. Inspect the source bytes instead of displaying a replacement-decoded document.`);
+    }
+    return { text, contentType: response.headers.get("content-type") ?? "" };
+}
+function renderReader(path) {
+    const page = el("main", "page reader-page");
+    page.append(navBar("reader"), dataBanner());
+    const back = button(displayLang === "ja" ? "← 戻る" : "← Back", "back-button");
+    back.addEventListener("click", () => history.length > 1 ? history.back() : setRoute({}));
+    page.append(back);
+    if (!readerAllowedPaths().has(path)) {
+        page.append(el("p", "error", displayLang === "ja" ? `Reader対象外のパスです: ${path}` : `Path is outside the Reader boundary: ${path}`));
+        return page;
+    }
+    const doc = docByPath(path);
+    const graphNode = graphNodeByPath(path);
+    const title = doc ? titleForDoc(doc) : graphNode ? graphNodeLabel(graphNode, displayLang) : path.split("/").at(-1) ?? path;
+    const header = el("section", "reader-header");
+    const decodeState = badge(displayLang === "ja" ? "UTF-8 strict 読込中" : "UTF-8 strict loading", "warn");
+    decodeState.id = "reader-decode-state";
+    header.append(eyebrow("READER · UTF-8 STRICT"), el("h1", "hero-title", title), el("div", "path", path), decodeState);
+    const actions = el("div", "reader-actions");
+    if (doc) {
+        const inspect = button(displayLang === "ja" ? "文書情報" : "Document info", "button secondary");
+        inspect.addEventListener("click", () => setRoute({ doc: String(doc.doc_id ?? doc.id) }));
+        actions.append(inspect);
+    }
+    if (graphNode) {
+        const relations = button(displayLang === "ja" ? "関係を見る" : "Relations", "button secondary");
+        relations.addEventListener("click", () => setRoute({ graph: String(graphNode.id) }));
+        actions.append(relations);
+    }
+    actions.append(rawFileLink(path, "button ghost"));
+    header.append(actions);
+    page.append(header);
+    const notice = el("div", "reader-boundary-note", displayLang === "ja"
+        ? "ReaderはHTTPレスポンスの文字コード推測に依存せず、受信バイト列をUTF-8として厳密に復号します。失敗時は文字化け表示へフォールバックしません。"
+        : "The Reader does not rely on browser charset guessing. It strictly decodes response bytes as UTF-8 and does not fall back to replacement-decoded text.");
+    page.append(notice);
+    const shell = el("section", "reader-shell");
+    shell.append(el("p", "reader-loading", displayLang === "ja" ? "文書を読み込んでいます…" : "Loading document…"));
+    page.append(shell);
+    void fetchUtf8Strict(path)
+        .then(({ text, contentType }) => {
+        decodeState.textContent = "UTF-8 strict PASS";
+        decodeState.className = "badge pass";
+        const meta = el("div", "reader-http-meta");
+        meta.append(el("span", "muted", `Content-Type: ${contentType || "(not declared)"}`), el("span", "muted", `${new TextEncoder().encode(text).length.toLocaleString()} bytes decoded`));
+        shell.replaceChildren(meta, renderMarkdown(text, path));
+    })
+        .catch((error) => {
+        decodeState.textContent = "UTF-8 strict FAIL";
+        decodeState.className = "badge danger";
+        shell.replaceChildren(el("p", "error", String(error.message)));
+    });
     return page;
 }
 function relationSection(rootId) {
@@ -586,6 +942,10 @@ function renderRelations(nodeQuery = "") {
             const root = graphNodeMap(docsGraph).get(rootId);
             const current = el("div", "graph-current");
             current.append(el("h2", "section-title small", graphNodeLabel(root, displayLang)), badge(String(root.type)), el("div", "path", String(root.path ?? root.id)));
+            const rootPath = String(root.path ?? "");
+            if ((root.type === "document" || root.type === "observed_document") && readerAllowedPaths().has(rootPath)) {
+                current.append(readerButton(rootPath));
+            }
             section.append(current, relationMap(rootId));
         }
         catch (error) {
@@ -692,6 +1052,8 @@ function render() {
             content = renderTopic(String(params.get("topic")));
         else if (params.get("layer"))
             content = renderLayer(String(params.get("layer")));
+        else if (params.get("read"))
+            content = renderReader(String(params.get("read")));
         else if (params.get("doc"))
             content = renderDocument(String(params.get("doc")));
         else if (params.get("graph"))
