@@ -125,3 +125,8 @@ _build/
 !tools/DN6_RELEASE_INTEGRATION.ja.md
 !tools/DN6_RELEASE_GATE_REPORT.ja.md
 !tools/DN_PROGRESS_AND_RESULTS.ja.md
+!scripts/public_site_common.py
+!scripts/build_public_site.py
+!scripts/check_public_site.py
+!tools/public_site.yml
+!tools/PUBLIC_SITE_BUILD.ja.md

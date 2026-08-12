@@ -1,0 +1,82 @@
+schema_version: "0.1"
+
+site:
+  output_dir: "_build/pages"
+  root_redirect_target: "navigator/"
+  source_ref: "main"
+
+sources:
+  release_state: "90_Repository_Governance/Release_Update/release_state.yml"
+  public_catalog: "tools/docs_public_catalog.json"
+  public_graph: "tools/docs_public_graph.json"
+  navigator_public_files:
+    - "navigator/index.html"
+    - "navigator/styles.css"
+    - "navigator/public-content.json"
+  navigator_public_globs:
+    - "navigator/dist/*.js"
+
+public_data_targets:
+  catalog: "tools/docs_public_catalog.json"
+  graph: "tools/docs_public_graph.json"
+
+assets:
+  copy_extensions:
+    - ".png"
+    - ".jpg"
+    - ".jpeg"
+    - ".webp"
+    - ".gif"
+    - ".svg"
+
+safety:
+  forbidden_path_segments:
+    - ".git"
+    - ".github"
+    - ".venv"
+    - "__pycache__"
+    - "node_modules"
+    - "scripts"
+    - "src"
+  forbidden_path_prefixes:
+    - "99_Private_Core_Not_Included/"
+  forbidden_exact_paths:
+    - "navigator/dev.html"
+    - "tools/docs_manifest.yml"
+    - "tools/docs_graph.json"
+    - "tools/docs_index.json"
+    - "tools/docs_registration_candidates.yml"
+    - "tools/docs_registration_candidates.preview.json"
+    - "tools/docs_registered_reader_question_review.yml"
+    - "tools/docs_registered_reader_question_review.preview.json"
+  forbidden_filename_prefixes:
+    - "000"
+  forbidden_public_catalog_keys:
+    - "confidence"
+    - "evidence"
+    - "needs_human_judgment"
+    - "reviewer_note"
+    - "review_state"
+    - "source_sha256"
+  forbidden_public_graph_keys:
+    - "confidence"
+    - "needs_human_judgment"
+    - "reviewer_note"
+    - "review_state"
+    - "source_sha256"
+
+artifact:
+  manifest_path: "public_site_manifest.json"
+  nojekyll_path: ".nojekyll"
+  required_files:
+    - "index.html"
+    - ".nojekyll"
+    - "navigator/index.html"
+    - "navigator/styles.css"
+    - "navigator/public-content.json"
+    - "navigator/dist/app.js"
+    - "navigator/dist/search-core.js"
+    - "navigator/dist/graph-core.js"
+    - "navigator/dist/language-core.js"
+    - "tools/docs_public_catalog.json"
+    - "tools/docs_public_graph.json"

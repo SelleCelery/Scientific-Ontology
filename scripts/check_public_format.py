@@ -78,6 +78,7 @@ DEFAULT_EXCLUDED_DIR_NAMES = {
     ".ruff_cache",
     ".checker_reports",
     "checker_reports",
+    "_build",
 }
 
 DEFAULT_EXCLUDED_MARKDOWN_DIRS = {
