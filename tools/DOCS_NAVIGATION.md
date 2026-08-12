@@ -541,7 +541,7 @@ python scripts/build_registration_candidates_preview.py --check
 
 `--check` also blocks when the candidate ledger was generated against a different manifest or graph hash. This prevents a stale candidate UI from being silently treated as a current review surface.
 
-The Candidate review tab is a review interface, not an approval workflow. Acceptance still requires an explicit later promotion into `tools/docs_manifest.yml` and regeneration of the normal search and graph read models.
+The Candidate review tab remains non-canonical, but DN-5.4B adds explicit approve / edit / hold / reject transactions. Browser decisions are exported and still require repository-side validation plus explicit manifest application before they become public registration.
 
 ## 17. DN-5.4A Public / Developer Interface Contract
 
@@ -614,7 +614,18 @@ Candidate Review
 Data Audit
 ```
 
-Candidate and audit data are loaded only in developer mode. DN-5.4A does not yet add manifest-writing controls; those belong to the later registration workbench.
+Candidate and audit data are loaded only in developer mode. DN-5.4B adds the registration workbench on this same shell:
+
+```text
+approve / approve with edits / hold / reject
+local progress persistence
+review JSON export / import
+manual candidate queue
+registered-document revision queue
+validation / dry-run / explicit manifest application
+```
+
+The browser still does not write `docs_manifest.yml` directly. See `tools/DOCS_REGISTRATION_WORKBENCH.md`.
 
 ### 17.3 Public presentation rules
 

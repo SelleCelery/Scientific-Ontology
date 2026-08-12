@@ -2,7 +2,7 @@
 
 > Status: Repository governance contract
 > Track: Document Navigation Infrastructure
-> Stage: DN-5.4A
+> Stage: DN-5.4A / DN-5.4B
 > Scope: public Navigator / developer Navigator / data boundaries / release handoff
 
 ## 1. Purpose
@@ -80,7 +80,7 @@ Development entry during DN-5.x:
 
 The developer surface may add maintenance information and controls on top of the same reader/search/relation base.
 
-Current DN-5.4A developer additions are limited to the already existing inspection surfaces:
+DN-5.4A established the inspection surfaces:
 
 ```text
 Candidate Review
@@ -90,7 +90,19 @@ candidate evidence and confidence
 search / graph maintenance diagnostics
 ```
 
-DN-5.4A does not yet add manifest-writing controls. The later Developer Registration Workbench may add review transactions, import/export, dry-run apply, revision candidates, and manual candidate creation.
+DN-5.4B adds the Developer Registration Workbench on that surface:
+
+```text
+approve / approve-with-edits / hold / reject
+local review progress
+review JSON export / import
+manual candidate queue
+registered-document revision queue
+stale-source refusal
+Python validation and manifest dry-run / explicit apply
+```
+
+The browser itself still has no manifest write API. It produces an explicit review transaction. Canonical manifest application occurs only through repository-side tooling after validation.
 
 ## 4. Data boundary
 
@@ -111,7 +123,8 @@ Developer-only runtime inputs may additionally include:
 
 ```text
 tools/docs_registration_candidates.preview.json
-registration review transactions
+browser-local registration review state
+imported / exported registration review transactions
 candidate / audit diagnostics
 ```
 

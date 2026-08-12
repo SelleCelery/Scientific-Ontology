@@ -93,16 +93,24 @@ desktop.ini
 ~$*.*
 
 # Build outputs for docs
-_build/!navigator/
+_build/
+!navigator/
 !navigator/**
 !scripts/check_docs_web_parity.mjs
 !scripts/serve_navigator.py
 !scripts/validate_registration_candidates.py
 !scripts/build_registration_candidates_preview.py
 !scripts/check_navigator_interface.py
+!scripts/check_registration_workbench.py
+!scripts/validate_registration_review.py
+!scripts/apply_registration_review.py
 !tools/docs_registration_candidates.yml
 !tools/docs_registration_candidates.schema.json
 !tools/docs_registration_candidates.preview.json
 !tools/DOCS_REGISTRATION_CANDIDATES.md
 !tools/REGISTRATION_CANDIDATES_FULL_REVIEW.md
 !tools/REGISTRATION_CANDIDATES_REPORT.md
+!tools/docs_registration_review.schema.json
+!tools/DOCS_REGISTRATION_WORKBENCH.md
+!tools/READER_QUESTION_POLICY.md
+!tools/docs_registered_reader_question_review.yml

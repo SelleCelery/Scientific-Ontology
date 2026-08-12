@@ -662,3 +662,43 @@ body[data-interface="public"] .svg-node.type-observed_document rect { stroke-das
   .guide-section { border-radius: 20px; padding: 36px 18px; }
   .public-preview-note { border-radius: 14px; align-items: flex-start; }
 }
+
+/* DN-5.4B developer registration workbench */
+.workbench-toolbar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 22px 0 8px;
+}
+.workbench-file-button { position: relative; }
+.workbench-editor { margin-top: 18px; }
+.workbench-field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0 12px;
+}
+.workbench-field { display: grid; gap: 7px; margin: 12px 0; min-width: 0; }
+.workbench-label { color: var(--muted); font-size: .82rem; font-weight: 760; }
+.workbench-hint { color: var(--muted); font-size: .76rem; }
+.workbench-input, .workbench-textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 11px 12px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.workbench-textarea { resize: vertical; line-height: 1.55; }
+.workbench-input:focus, .workbench-textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.workbench-decision-bar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); }
+.danger-button { color: var(--danger); border-color: var(--danger); }
+.badge.ok { background: var(--accent-soft); color: var(--accent); }
+.workbench-queues { margin-top: 22px; }
+.queue-line { padding: 8px 0; border-bottom: 1px solid var(--line); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .86rem; overflow-wrap: anywhere; }
+@media (max-width: 720px) { .workbench-field-grid { grid-template-columns: 1fr; } }
+.queue-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 12px; align-items: center; border-bottom: 1px solid var(--line); }
+.queue-row .queue-line { border-bottom: 0; }

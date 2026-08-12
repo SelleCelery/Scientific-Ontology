@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientific-ontology.local/schemas/docs_registration_review.schema.json",
+  "title": "Scientific Ontology registration review transaction",
+  "type": "object",
+  "required": ["registration_review"],
+  "additionalProperties": false,
+  "properties": {
+    "registration_review": {
+      "type": "object",
+      "required": ["schema_version", "status", "source", "decisions", "manual_candidates", "revision_candidates"],
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {"const": "0.1"},
+        "status": {"enum": ["in_progress", "complete"]},
+        "exported_at": {"type": "string"},
+        "source": {
+          "type": "object",
+          "required": ["candidate_source_sha256", "manifest_sha256", "graph_sha256", "candidate_count"],
+          "properties": {
+            "candidate_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "graph_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "candidate_count": {"type": "integer", "minimum": 0}
+          },
+          "additionalProperties": true
+        },
+        "summary": {"type": "object"},
+        "decisions": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/decision"}
+        },
+        "manual_candidates": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/manualCandidate"}
+        },
+        "revision_candidates": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/revisionCandidate"}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "decision": {
+      "type": "object",
+      "required": ["path", "doc_id", "decision", "reviewed_at", "before", "after"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "doc_id": {"type": "string", "minLength": 1},
+        "decision": {"enum": ["approve", "approve_with_edits", "hold", "reject"]},
+        "reviewed_at": {"type": "string"},
+        "reviewer_note": {"type": "string"},
+        "before": {"type": "object"},
+        "after": {"type": "object"}
+      },
+      "additionalProperties": true
+    },
+    "manualCandidate": {
+      "type": "object",
+      "required": ["id", "created_at", "decision", "proposed"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "created_at": {"type": "string"},
+        "reviewer_note": {"type": "string"},
+        "decision": {"enum": ["approve", "hold", "reject"]},
+        "proposed": {"type": "object"}
+      },
+      "additionalProperties": true
+    },
+    "revisionCandidate": {
+      "type": "object",
+      "required": ["doc_id", "path", "created_at", "decision", "before"],
+      "properties": {
+        "doc_id": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "minLength": 1},
+        "created_at": {"type": "string"},
+        "reviewer_note": {"type": "string"},
+        "decision": {"enum": ["approve", "hold", "reject"]},
+        "before": {"type": "object"},
+        "after": {"type": "object"}
+      },
+      "additionalProperties": true
+    }
+  }
+}

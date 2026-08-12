@@ -806,6 +806,9 @@ function renderDocument(docId) {
     header.append(el("div", "path", String(doc.path)));
     const headerActions = el("div", "reader-actions");
     headerActions.append(readerButton(String(doc.path), "button primary"), rawFileLink(String(doc.path), "button secondary"));
+    const revision = button(displayLang === "ja" ? "改訂候補にする" : "Request revision", "button secondary");
+    revision.addEventListener("click", () => addRevisionCandidate(doc));
+    headerActions.append(revision);
     header.append(headerActions);
     page.append(header);
     const infoGrid = el("div", "info-grid");
@@ -1453,13 +1456,147 @@ function renderRelations(nodeQuery = "") {
     page.append(section);
     return page;
 }
+const REVIEW_STORAGE_PREFIX = "scientific-ontology-registration-review:";
+let registrationReviewState = { decisions: {}, manual_candidates: [], revision_candidates: [] };
+function deepClone(value) {
+    return JSON.parse(JSON.stringify(value));
+}
+function reviewStorageKey() {
+    const hash = String(candidatePayload()?.source?.candidate_source_sha256 ?? "unbound");
+    return `${REVIEW_STORAGE_PREFIX}${hash}`;
+}
+function loadRegistrationReviewState() {
+    if (!isDeveloper() || !candidatePayload())
+        return;
+    try {
+        const raw = localStorage.getItem(reviewStorageKey());
+        const parsed = raw ? JSON.parse(raw) : null;
+        registrationReviewState = parsed && typeof parsed === "object"
+            ? parsed
+            : { decisions: {}, manual_candidates: [], revision_candidates: [] };
+    }
+    catch {
+        registrationReviewState = { decisions: {}, manual_candidates: [], revision_candidates: [] };
+    }
+    registrationReviewState.decisions ??= {};
+    registrationReviewState.manual_candidates ??= [];
+    registrationReviewState.revision_candidates ??= [];
+}
+function saveRegistrationReviewState() {
+    if (!isDeveloper() || !candidatePayload())
+        return;
+    localStorage.setItem(reviewStorageKey(), JSON.stringify(registrationReviewState));
+}
+function decisionForCandidate(candidate) {
+    return registrationReviewState.decisions?.[String(candidate.path ?? "")] ?? null;
+}
+function reviewDecisionLabel(value) {
+    const labels = {
+        approve: ["承認", "Approved"],
+        approve_with_edits: ["修正承認", "Approved with edits"],
+        hold: ["保留", "On hold"],
+        reject: ["却下", "Rejected"],
+        unreviewed: ["未確認", "Unreviewed"],
+    };
+    const pair = labels[value] ?? [value, value];
+    return pair[displayLang === "ja" ? 0 : 1];
+}
+function decisionTone(value) {
+    if (value === "approve" || value === "approve_with_edits")
+        return "ok";
+    if (value === "hold")
+        return "warn";
+    if (value === "reject")
+        return "danger";
+    return "";
+}
+function decisionCounts() {
+    const counts = { unreviewed: 0, approve: 0, approve_with_edits: 0, hold: 0, reject: 0 };
+    for (const candidate of candidateList()) {
+        const decision = decisionForCandidate(candidate);
+        const key = String(decision?.decision ?? "unreviewed");
+        counts[key] = (counts[key] ?? 0) + 1;
+    }
+    return counts;
+}
+function reviewExportPayload() {
+    const source = candidatePayload()?.source ?? {};
+    const decisions = Object.values(registrationReviewState.decisions ?? {}).sort((a, b) => String(a.path ?? "").localeCompare(String(b.path ?? ""), "en"));
+    const counts = decisionCounts();
+    return {
+        registration_review: {
+            schema_version: "0.1",
+            status: counts.unreviewed === 0 ? "complete" : "in_progress",
+            exported_at: new Date().toISOString(),
+            source: {
+                candidate_source_sha256: String(source.candidate_source_sha256 ?? ""),
+                manifest_sha256: String(source.manifest_sha256 ?? ""),
+                graph_sha256: String(source.graph_sha256 ?? ""),
+                candidate_count: candidateList().length,
+            },
+            summary: {
+                total_candidates: candidateList().length,
+                reviewed: candidateList().length - counts.unreviewed,
+                ...counts,
+                manual_candidates: (registrationReviewState.manual_candidates ?? []).length,
+                revision_candidates: (registrationReviewState.revision_candidates ?? []).length,
+            },
+            decisions,
+            manual_candidates: registrationReviewState.manual_candidates ?? [],
+            revision_candidates: registrationReviewState.revision_candidates ?? [],
+        },
+    };
+}
+function downloadReviewExport() {
+    const data = JSON.stringify(reviewExportPayload(), null, 2) + "\n";
+    const blob = new Blob([data], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "docs_registration_review.json";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+}
+async function importReviewExport(file) {
+    const text = await file.text();
+    const parsed = JSON.parse(text);
+    const payload = parsed?.registration_review;
+    if (!payload || payload.schema_version !== "0.1")
+        throw new Error("registration_review schema_version 0.1 が必要です。");
+    const current = candidatePayload()?.source ?? {};
+    for (const key of ["candidate_source_sha256", "manifest_sha256", "graph_sha256"]) {
+        if (String(payload.source?.[key] ?? "") !== String(current[key] ?? "")) {
+            throw new Error(`古いレビューです: ${key} が現在の候補セットと一致しません。`);
+        }
+    }
+    const decisions = {};
+    for (const item of payload.decisions ?? []) {
+        const path = String(item.path ?? "");
+        if (!path || !candidateByPath(path))
+            throw new Error(`現在の候補セットに存在しないdecisionです: ${path}`);
+        decisions[path] = item;
+    }
+    registrationReviewState = {
+        decisions,
+        manual_candidates: Array.isArray(payload.manual_candidates) ? payload.manual_candidates : [],
+        revision_candidates: Array.isArray(payload.revision_candidates) ? payload.revision_candidates : [],
+    };
+    saveRegistrationReviewState();
+}
+function nextUnreviewedCandidate(afterPath = "") {
+    const candidates = candidateList().slice().sort((a, b) => String(a.path).localeCompare(String(b.path), "en"));
+    const start = Math.max(0, candidates.findIndex((candidate) => candidate.path === afterPath) + 1);
+    return [...candidates.slice(start), ...candidates.slice(0, start)].find((candidate) => !decisionForCandidate(candidate));
+}
 function candidateStateBanner() {
     const payload = candidatePayload();
     const banner = el("div", "candidate-boundary-note");
-    banner.append(badge("CANDIDATE PREVIEW", "warn"));
+    banner.append(badge("DEVELOPER WORKBENCH", "warn"));
     banner.append(el("span", "", displayLang === "ja"
-        ? "これはmanifest登録前のレビュー面です。表示中のrole・topic・問い・doc_idは候補であり、canonical ownershipや検索順位を変更しません。"
-        : "This is a pre-manifest review surface. Proposed roles, topics, questions, and doc IDs are candidates only; they do not change canonical ownership or search ranking."));
+        ? "候補への判断はブラウザ内に保存され、明示的なreview JSONとして書き出します。manifestはこの画面から直接変更しません。"
+        : "Judgments are saved locally in the browser and exported as an explicit review JSON. This screen does not write the manifest directly."));
     if (!payload)
         banner.append(badge(displayLang === "ja" ? "候補データ未読込" : "Candidate data unavailable", "danger"));
     return banner;
@@ -1469,19 +1606,49 @@ function candidateMetric(label, value) {
     box.append(el("span", "stat-value", value), el("span", "stat-label", label));
     return box;
 }
+function textInput(value = "", className = "workbench-input") {
+    const input = el("input", className);
+    input.type = "text";
+    input.value = value;
+    return input;
+}
+function textArea(value = "", rows = 3) {
+    const input = el("textarea", "workbench-textarea");
+    input.value = value;
+    input.rows = rows;
+    return input;
+}
+function reviewField(label, control, hint = "") {
+    const wrap = el("label", "workbench-field");
+    wrap.append(el("span", "workbench-label", label), control);
+    if (hint)
+        wrap.append(el("span", "workbench-hint", hint));
+    return wrap;
+}
+function lines(value) {
+    return value.split(/\r?\n/).map((item) => item.trim()).filter(Boolean);
+}
+function commaValues(value) {
+    return value.split(/[,、\n]/).map((item) => item.trim()).filter(Boolean);
+}
 function candidateDetail(candidate) {
     const page = el("main", "page");
     page.append(navBar("candidates"), dataBanner(), candidateStateBanner());
     const back = button(displayLang === "ja" ? "← 候補一覧" : "← Candidate list", "back-button");
     back.addEventListener("click", () => setRoute({ view: "candidates" }));
     page.append(back);
-    const proposed = candidate.proposed ?? {};
-    const discovery = proposed.discovery ?? {};
+    const baseline = deepClone(candidate.proposed ?? {});
+    const existing = decisionForCandidate(candidate);
+    const working = deepClone(existing?.after ?? baseline);
+    const discovery = working.discovery ??= {};
+    discovery.aliases ??= { ja: [], en: [] };
+    discovery.reader_questions ??= { ja: [], en: [] };
+    discovery.topics ??= [];
     const review = candidate.review ?? {};
     const hero = el("section", "doc-header candidate-detail-header");
     const meta = el("div", "doc-meta-line");
-    meta.append(badge(String(candidate.recommended_action ?? "candidate"), "warn"), badge(String(review.confidence ?? "unknown")), badge(String(candidate.navigation?.visibility ?? "unclassified")), badge(String(discovery.entry_level ?? "unclassified")));
-    hero.append(eyebrow(`REGISTRATION CANDIDATE · ${String(proposed.doc_id ?? "")}`), el("h1", "hero-title", candidateTitle(candidate)), meta);
+    meta.append(badge(String(candidate.recommended_action ?? "candidate"), "warn"), badge(String(review.confidence ?? "unknown")), badge(String(candidate.navigation?.visibility ?? "unclassified")), badge(reviewDecisionLabel(String(existing?.decision ?? "unreviewed")), decisionTone(String(existing?.decision ?? "unreviewed"))));
+    hero.append(eyebrow(`REGISTRATION CANDIDATE · ${String(working.doc_id ?? "")}`), el("h1", "hero-title", candidateTitle(candidate)), meta);
     const role = candidateRole(candidate);
     if (role)
         hero.append(el("p", "hero-copy", role));
@@ -1496,93 +1663,114 @@ function candidateDetail(candidate) {
         relations.addEventListener("click", () => setRoute({ graph: graphId }));
         actions.append(relations);
     }
-    if (path)
-        actions.append(rawFileLink(path, "button ghost"));
     hero.append(actions);
     page.append(hero);
-    const info = el("div", "candidate-detail-grid");
-    const identity = el("section", "info-panel");
-    identity.append(el("h2", "minor-title", displayLang === "ja" ? "提案された登録情報" : "Proposed registration"));
-    const identityRows = [
-        ["doc_id", String(proposed.doc_id ?? "")],
-        [displayLang === "ja" ? "文書型" : "Document type", String(proposed.document_type ?? "")],
-        [displayLang === "ja" ? "体系層" : "Layer", String(proposed.layer ?? "")],
-        ["status", String(proposed.status ?? "")],
-        ["public_profile", String(proposed.public_profile ?? "")],
-        ["state", String(proposed.state ?? "")],
-    ];
-    for (const [label, value] of identityRows) {
-        if (!value)
-            continue;
-        const row = el("div", "candidate-kv");
-        row.append(el("span", "candidate-k", label), el("span", "candidate-v", value));
-        identity.append(row);
-    }
-    if (proposed.scope) {
-        identity.append(el("h3", "candidate-subtitle", "scope"), el("p", "card-copy", String(proposed.scope)));
-    }
-    const discoveryPanel = el("section", "info-panel");
-    discoveryPanel.append(el("h2", "minor-title", displayLang === "ja" ? "探索メタデータ案" : "Discovery metadata proposal"));
-    const topicWrap = el("div", "chip-wrap");
-    for (const topic of discovery.topics ?? [])
-        topicWrap.append(badge(String(topic)));
-    if (!topicWrap.childElementCount)
-        topicWrap.append(el("span", "muted", displayLang === "ja" ? "topicなし" : "No topics"));
-    discoveryPanel.append(el("h3", "candidate-subtitle", "topics"), topicWrap);
-    const questions = candidateQuestionList(candidate);
-    discoveryPanel.append(el("h3", "candidate-subtitle", displayLang === "ja" ? "reader questions" : "reader questions"));
-    const qList = el("ul", "plain-list");
-    for (const question of questions)
-        qList.append(el("li", "", question));
-    if (!questions.length)
-        qList.append(el("li", "muted", displayLang === "ja" ? "この言語では未設定" : "Not set for this language"));
-    discoveryPanel.append(qList);
-    const aliases = candidateAliases(candidate);
-    if (aliases.length) {
-        discoveryPanel.append(el("h3", "candidate-subtitle", "aliases"));
-        const aliasWrap = el("div", "chip-wrap");
-        for (const alias of aliases)
-            aliasWrap.append(badge(alias));
-        discoveryPanel.append(aliasWrap);
-    }
-    info.append(identity, discoveryPanel);
-    page.append(info);
-    const language = proposed.language_relation ?? {};
-    const languagePanel = el("section", "audit-panel candidate-review-panel");
-    languagePanel.append(el("h2", "section-title small", displayLang === "ja" ? "言語関係" : "Language relation"));
-    const langRows = [
-        ["family_id", String(language.family_id ?? "")],
-        ["language", String(language.language ?? "")],
-        ["role", String(language.role ?? "")],
-        ["counterpart_path", String(language.counterpart_path ?? "")],
-    ];
-    for (const [label, value] of langRows) {
-        if (!value)
-            continue;
-        const row = el("div", "candidate-kv");
-        row.append(el("span", "candidate-k", label), el("span", "candidate-v path", value));
-        languagePanel.append(row);
-    }
-    page.append(languagePanel);
-    const reviewPanel = el("section", "audit-panel candidate-review-panel");
-    reviewPanel.append(el("h2", "section-title small", displayLang === "ja" ? "人間レビューが必要な点" : "Human review points"));
+    const needsPanel = el("section", "audit-panel candidate-review-panel");
+    needsPanel.append(el("h2", "section-title small", displayLang === "ja" ? "今回、人間が見るべき点" : "Human review points"));
     const needs = (review.needs_human_judgment ?? []).map((value) => String(value));
-    if (needs.length) {
-        const needsWrap = el("div", "chip-wrap");
-        for (const item of needs)
-            needsWrap.append(badge(item, "warn"));
-        reviewPanel.append(needsWrap);
+    const needsWrap = el("div", "chip-wrap");
+    for (const item of needs)
+        needsWrap.append(badge(item, "warn"));
+    if (!needs.length)
+        needsWrap.append(el("span", "muted", displayLang === "ja" ? "追加判断項目なし" : "No additional judgment item"));
+    needsPanel.append(needsWrap);
+    if (candidate.notes)
+        needsPanel.append(el("p", "card-copy", String(candidate.notes)));
+    page.append(needsPanel);
+    const form = el("section", "audit-panel candidate-review-panel workbench-editor");
+    form.append(el("h2", "section-title small", displayLang === "ja" ? "登録案を確認・修正" : "Review and edit proposal"), el("p", "section-copy", displayLang === "ja"
+        ? "候補値を編集できます。変更したうえで承認すると before / after の両方がreviewファイルへ残ります。"
+        : "Edit candidate values here. Approval after edits records both before and after values in the review file."));
+    const controls = {};
+    controls.doc_id = textInput(String(working.doc_id ?? ""));
+    controls.title_ja = textInput(String(working.title_ja ?? ""));
+    controls.title_en = textInput(String(working.title_en ?? ""));
+    controls.document_type = textInput(String(working.document_type ?? ""));
+    controls.layer = textInput(String(working.layer ?? ""));
+    controls.status = textInput(String(working.status ?? ""));
+    controls.public_profile = textInput(String(working.public_profile ?? ""));
+    controls.state = textInput(String(working.state ?? ""));
+    controls.scope = textArea(String(working.scope ?? ""), 2);
+    controls.role_ja = textArea(String(working.role_ja ?? ""), 3);
+    controls.role_en = textArea(String(working.role_en ?? ""), 3);
+    controls.topics = textInput((discovery.topics ?? []).join(", "));
+    controls.aliases_ja = textArea((discovery.aliases?.ja ?? []).join("\n"), 3);
+    controls.aliases_en = textArea((discovery.aliases?.en ?? []).join("\n"), 3);
+    controls.questions_ja = textArea((discovery.reader_questions?.ja ?? []).join("\n"), 4);
+    controls.questions_en = textArea((discovery.reader_questions?.en ?? []).join("\n"), 4);
+    const entrySelect = el("select", "candidate-select");
+    for (const value of ["foundation", "intermediate", "advanced"]) {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = value;
+        option.selected = String(discovery.entry_level ?? "") === value;
+        entrySelect.append(option);
     }
-    else {
-        reviewPanel.append(el("p", "muted", displayLang === "ja" ? "明示された追加判断項目はありません。" : "No additional human-judgment item is explicitly listed."));
+    controls.entry_level = entrySelect;
+    const fieldGrid = el("div", "workbench-field-grid");
+    for (const [label, key] of [
+        ["doc_id", "doc_id"], [displayLang === "ja" ? "日本語タイトル" : "Japanese title", "title_ja"],
+        [displayLang === "ja" ? "英語タイトル" : "English title", "title_en"], ["document_type", "document_type"],
+        [displayLang === "ja" ? "体系層" : "Layer", "layer"], ["status", "status"], ["public_profile", "public_profile"], ["state", "state"],
+    ])
+        fieldGrid.append(reviewField(label, controls[key]));
+    form.append(fieldGrid, reviewField("scope", controls.scope), reviewField("role_ja", controls.role_ja), reviewField("role_en", controls.role_en), reviewField("topics", controls.topics, displayLang === "ja" ? "カンマ区切り" : "Comma-separated"), reviewField("aliases · ja", controls.aliases_ja, displayLang === "ja" ? "1行1件" : "One per line"), reviewField("aliases · en", controls.aliases_en, displayLang === "ja" ? "1行1件" : "One per line"), reviewField("reader questions · ja", controls.questions_ja, displayLang === "ja" ? "1行1件" : "One per line"), reviewField("reader questions · en", controls.questions_en, displayLang === "ja" ? "1行1件" : "One per line"), reviewField("entry_level", controls.entry_level));
+    const note = textArea(String(existing?.reviewer_note ?? ""), 2);
+    form.append(reviewField(displayLang === "ja" ? "レビュー注記" : "Reviewer note", note));
+    const readForm = () => {
+        const after = deepClone(baseline);
+        for (const key of ["doc_id", "title_ja", "title_en", "document_type", "layer", "status", "public_profile", "state", "scope", "role_ja", "role_en"]) {
+            after[key] = controls[key].value.trim();
+        }
+        after.discovery ??= {};
+        after.discovery.topics = commaValues(controls.topics.value);
+        after.discovery.aliases = { ja: lines(controls.aliases_ja.value), en: lines(controls.aliases_en.value) };
+        after.discovery.reader_questions = { ja: lines(controls.questions_ja.value), en: lines(controls.questions_en.value) };
+        after.discovery.entry_level = controls.entry_level.value;
+        return after;
+    };
+    const saveDecision = (kind) => {
+        const after = readForm();
+        const changed = JSON.stringify(after) !== JSON.stringify(baseline);
+        const decision = kind === "approve" ? (changed ? "approve_with_edits" : "approve") : kind;
+        registrationReviewState.decisions[String(candidate.path)] = {
+            path: String(candidate.path), doc_id: String(after.doc_id ?? baseline.doc_id ?? ""), decision,
+            reviewed_at: new Date().toISOString(), reviewer_note: note.value.trim(), before: baseline, after,
+        };
+        saveRegistrationReviewState();
+        const next = nextUnreviewedCandidate(String(candidate.path));
+        if (kind === "approve" && next)
+            setRoute({ view: "candidates", candidate: String(next.path) });
+        else
+            render();
+    };
+    const decisionBar = el("div", "workbench-decision-bar");
+    const approve = button(displayLang === "ja" ? "この内容で承認して次へ" : "Approve and next", "button primary");
+    approve.addEventListener("click", () => saveDecision("approve"));
+    const hold = button(displayLang === "ja" ? "保留" : "Hold", "button");
+    hold.addEventListener("click", () => saveDecision("hold"));
+    const reject = button(displayLang === "ja" ? "却下" : "Reject", "button danger-button");
+    reject.addEventListener("click", () => saveDecision("reject"));
+    const clear = button(displayLang === "ja" ? "この判断を未確認に戻す" : "Reset to unreviewed", "text-button");
+    clear.addEventListener("click", () => { delete registrationReviewState.decisions[String(candidate.path)]; saveRegistrationReviewState(); render(); });
+    decisionBar.append(approve, hold, reject, clear);
+    form.append(decisionBar);
+    page.append(form);
+    const language = baseline.language_relation ?? {};
+    if (Object.keys(language).length) {
+        const languagePanel = el("section", "audit-panel candidate-review-panel");
+        languagePanel.append(el("h2", "section-title small", displayLang === "ja" ? "言語関係（候補生成時）" : "Language relation (candidate baseline)"));
+        for (const [label, value] of Object.entries(language)) {
+            const row = el("div", "candidate-kv");
+            row.append(el("span", "candidate-k", label), el("span", "candidate-v path", String(value ?? "")));
+            languagePanel.append(row);
+        }
+        page.append(languagePanel);
     }
-    if (review.notes || candidate.notes)
-        reviewPanel.append(el("p", "card-copy", String(review.notes ?? candidate.notes)));
-    page.append(reviewPanel);
     const evidencePanel = el("section", "audit-panel candidate-review-panel");
     evidencePanel.append(el("h2", "section-title small", displayLang === "ja" ? "この候補の根拠" : "Evidence for this candidate"), el("p", "section-copy", displayLang === "ja"
         ? "候補生成時に参照した現在本文の箇所です。ここにない意味を補って登録案を強めてはいません。"
-        : "These are locations in the current text used when generating the candidate. The proposal is not strengthened by adding meanings absent from this evidence."));
+        : "These are locations in the current text used when generating the candidate. The proposal is not strengthened by meanings absent from this evidence."));
     const evidenceList = el("div", "candidate-evidence-list");
     for (const evidence of review.evidence ?? []) {
         const row = el("div", "candidate-evidence");
@@ -1591,10 +1779,124 @@ function candidateDetail(candidate) {
         row.append(head, el("p", "candidate-evidence-text", String(evidence.text ?? "")));
         evidenceList.append(row);
     }
-    if (!evidenceList.childElementCount)
-        evidenceList.append(el("p", "muted", displayLang === "ja" ? "根拠抜粋なし" : "No evidence excerpt"));
     evidencePanel.append(evidenceList);
     page.append(evidencePanel);
+    return page;
+}
+function renderManualCandidate() {
+    const page = el("main", "page");
+    page.append(navBar("candidates"), dataBanner(), candidateStateBanner());
+    const back = button(displayLang === "ja" ? "← 候補一覧" : "← Candidate list", "back-button");
+    back.addEventListener("click", () => setRoute({ view: "candidates" }));
+    page.append(back);
+    const section = el("section", "audit-panel workbench-editor");
+    section.append(eyebrow("MANUAL CANDIDATE"), el("h1", "section-title", displayLang === "ja" ? "候補を手動で追加" : "Create a manual candidate"));
+    const fields = {
+        path: textInput(), doc_id: textInput(), title_ja: textInput(), title_en: textInput(), layer: textInput(), document_type: textInput("assertion_document"),
+        status: textInput(), public_profile: textInput(), scope: textArea("", 2), role_ja: textArea("", 3), role_en: textArea("", 3), topics: textInput(), questions_ja: textArea("", 3), questions_en: textArea("", 3), note: textArea("", 2),
+    };
+    const grid = el("div", "workbench-field-grid");
+    for (const key of ["path", "doc_id", "title_ja", "title_en", "layer", "document_type", "status", "public_profile"])
+        grid.append(reviewField(key, fields[key]));
+    section.append(grid, reviewField("scope", fields.scope), reviewField("role_ja", fields.role_ja), reviewField("role_en", fields.role_en), reviewField("topics", fields.topics), reviewField("reader questions · ja", fields.questions_ja), reviewField("reader questions · en", fields.questions_en), reviewField(displayLang === "ja" ? "注記" : "Note", fields.note));
+    const storeManual = (decision) => {
+        const path = fields.path.value.trim();
+        const docId = fields.doc_id.value.trim();
+        if (!path || !docId) {
+            alert(displayLang === "ja" ? "path と doc_id は必須です。" : "path and doc_id are required.");
+            return;
+        }
+        const item = {
+            id: `manual:${docId}:${Date.now()}`, created_at: new Date().toISOString(), reviewer_note: fields.note.value.trim(), decision,
+            proposed: {
+                path, doc_id: docId, title_ja: fields.title_ja.value.trim(), title_en: fields.title_en.value.trim(), layer: fields.layer.value.trim(), document_type: fields.document_type.value.trim(), status: fields.status.value.trim(), public_profile: fields.public_profile.value.trim(), state: "public-candidate", scope: fields.scope.value.trim(), role_ja: fields.role_ja.value.trim(), role_en: fields.role_en.value.trim(),
+                discovery: { topics: commaValues(fields.topics.value), aliases: { ja: [], en: [] }, reader_questions: { ja: lines(fields.questions_ja.value), en: lines(fields.questions_en.value) }, entry_level: "intermediate" },
+            },
+        };
+        registrationReviewState.manual_candidates.push(item);
+        saveRegistrationReviewState();
+        setRoute({ view: "candidates" });
+    };
+    const bar = el("div", "workbench-decision-bar");
+    const approve = button(displayLang === "ja" ? "この手動候補を承認" : "Approve manual candidate", "button primary");
+    approve.addEventListener("click", () => storeManual("approve"));
+    const hold = button(displayLang === "ja" ? "候補として保留" : "Save on hold", "button");
+    hold.addEventListener("click", () => storeManual("hold"));
+    bar.append(approve, hold);
+    section.append(bar);
+    page.append(section);
+    return page;
+}
+function addRevisionCandidate(doc) {
+    const docId = String(doc.id ?? doc.doc_id ?? "");
+    if ((registrationReviewState.revision_candidates ?? []).some((item) => String(item.doc_id) === docId)) {
+        alert(displayLang === "ja" ? "この文書はすでに改訂候補へ入っています。" : "This document is already in the revision queue.");
+        return;
+    }
+    const note = prompt(displayLang === "ja" ? "改訂候補にする理由・メモ（空でも可）" : "Reason/note for revision candidate (optional)") ?? "";
+    const before = {
+        path: String(doc.path ?? ""), doc_id: docId, document_type: String(doc.document_type ?? ""), title_ja: String(doc.title?.ja ?? ""), title_en: String(doc.title?.en ?? ""), layer: String(doc.layer ?? ""), status: String(doc.status ?? ""), state: String(doc.state ?? ""), scope: String(doc.scope ?? ""), role_ja: String(doc.role?.ja ?? ""), role_en: String(doc.role?.en ?? ""), discovery: deepClone(doc.discovery ?? {}),
+    };
+    registrationReviewState.revision_candidates.push({ doc_id: docId, path: String(doc.path ?? ""), created_at: new Date().toISOString(), reviewer_note: note.trim(), decision: "hold", before, after: {} });
+    saveRegistrationReviewState();
+    setRoute({ view: "revision-candidate", revision: docId });
+}
+function renderRevisionCandidate(docId) {
+    const item = (registrationReviewState.revision_candidates ?? []).find((entry) => String(entry.doc_id ?? "") === docId);
+    if (!item)
+        return errorPage(`Unknown revision candidate: ${docId}`);
+    const page = el("main", "page");
+    page.append(navBar("candidates"), dataBanner(), candidateStateBanner());
+    const back = button(displayLang === "ja" ? "← 候補一覧" : "← Candidate list", "back-button");
+    back.addEventListener("click", () => setRoute({ view: "candidates" }));
+    page.append(back);
+    const baseline = deepClone(item.before ?? {});
+    const working = Object.keys(item.after ?? {}).length ? deepClone(item.after) : deepClone(baseline);
+    working.discovery ??= {};
+    working.discovery.aliases ??= { ja: [], en: [] };
+    working.discovery.reader_questions ??= { ja: [], en: [] };
+    working.discovery.topics ??= [];
+    const section = el("section", "audit-panel workbench-editor");
+    section.append(eyebrow("REVISION CANDIDATE"), el("h1", "section-title", String(working.title_ja || working.title_en || docId)), el("p", "section-copy", displayLang === "ja" ? "現在の公開登録は維持したまま、次のmanifest改訂候補を編集します。" : "Edit a future manifest revision while the current public registration remains active."));
+    const controls = {};
+    for (const key of ["doc_id", "title_ja", "title_en", "document_type", "layer", "status", "public_profile", "state"])
+        controls[key] = textInput(String(working[key] ?? ""));
+    controls.scope = textArea(String(working.scope ?? ""), 2);
+    controls.role_ja = textArea(String(working.role_ja ?? ""), 3);
+    controls.role_en = textArea(String(working.role_en ?? ""), 3);
+    controls.topics = textInput((working.discovery.topics ?? []).join(", "));
+    controls.aliases_ja = textArea((working.discovery.aliases?.ja ?? []).join("\n"), 3);
+    controls.aliases_en = textArea((working.discovery.aliases?.en ?? []).join("\n"), 3);
+    controls.questions_ja = textArea((working.discovery.reader_questions?.ja ?? []).join("\n"), 4);
+    controls.questions_en = textArea((working.discovery.reader_questions?.en ?? []).join("\n"), 4);
+    const entry = el("select", "candidate-select");
+    for (const value of ["foundation", "intermediate", "advanced"]) {
+        const o = document.createElement("option");
+        o.value = value;
+        o.textContent = value;
+        o.selected = String(working.discovery.entry_level ?? "") === value;
+        entry.append(o);
+    }
+    controls.entry_level = entry;
+    const grid = el("div", "workbench-field-grid");
+    for (const key of ["doc_id", "title_ja", "title_en", "document_type", "layer", "status", "public_profile", "state"])
+        grid.append(reviewField(key, controls[key]));
+    section.append(grid, reviewField("scope", controls.scope), reviewField("role_ja", controls.role_ja), reviewField("role_en", controls.role_en), reviewField("topics", controls.topics), reviewField("aliases · ja", controls.aliases_ja), reviewField("aliases · en", controls.aliases_en), reviewField("reader questions · ja", controls.questions_ja), reviewField("reader questions · en", controls.questions_en), reviewField("entry_level", controls.entry_level));
+    const note = textArea(String(item.reviewer_note ?? ""), 2);
+    section.append(reviewField(displayLang === "ja" ? "レビュー注記" : "Reviewer note", note));
+    const read = () => { const after = deepClone(baseline); for (const key of ["doc_id", "title_ja", "title_en", "document_type", "layer", "status", "public_profile", "state", "scope", "role_ja", "role_en"])
+        after[key] = controls[key].value.trim(); after.discovery ??= {}; after.discovery.topics = commaValues(controls.topics.value); after.discovery.aliases = { ja: lines(controls.aliases_ja.value), en: lines(controls.aliases_en.value) }; after.discovery.reader_questions = { ja: lines(controls.questions_ja.value), en: lines(controls.questions_en.value) }; after.discovery.entry_level = controls.entry_level.value; return after; };
+    const save = (decision) => { item.after = read(); item.decision = decision; item.reviewer_note = note.value.trim(); item.reviewed_at = new Date().toISOString(); saveRegistrationReviewState(); setRoute({ view: "candidates" }); };
+    const bar = el("div", "workbench-decision-bar");
+    const approve = button(displayLang === "ja" ? "改訂内容を承認" : "Approve revision", "button primary");
+    approve.addEventListener("click", () => save("approve"));
+    const hold = button(displayLang === "ja" ? "保留" : "Hold", "button");
+    hold.addEventListener("click", () => save("hold"));
+    const reject = button(displayLang === "ja" ? "却下" : "Reject", "button danger-button");
+    reject.addEventListener("click", () => save("reject"));
+    bar.append(approve, hold, reject);
+    section.append(bar);
+    page.append(section);
     return page;
 }
 function renderCandidates(candidatePath = "") {
@@ -1606,116 +1908,146 @@ function renderCandidates(candidatePath = "") {
     page.append(navBar("candidates"), dataBanner(), candidateStateBanner());
     const payload = candidatePayload();
     const section = el("section", "section candidate-page");
-    section.append(eyebrow("REGISTRATION CANDIDATES"), el("h1", "hero-title", displayLang === "ja" ? "未登録文書を、登録前にUIで読む" : "Review unregistered documents before manifest registration"), el("p", "hero-copy", displayLang === "ja"
-        ? "100文書の暫定地図です。本文を改稿せず、提案されたrole・topic・問い・言語関係・確認事項をReaderと現在の関係グラフに照らして点検します。"
-        : "This is a provisional map of 100 documents. Review proposed roles, topics, questions, language relations, and judgment points against the Reader and current relation graph without rewriting the documents."));
+    section.append(eyebrow("REGISTRATION WORKBENCH"), el("h1", "hero-title", displayLang === "ja" ? "候補を読み、判断を返す" : "Review candidates and return explicit decisions"));
     if (!payload) {
         section.append(el("p", "error", displayLang === "ja" ? "候補preview JSONを読み込めませんでした。" : "Candidate preview JSON could not be loaded."));
         page.append(section);
         return page;
     }
-    const summary = payload.summary ?? {};
+    const counts = decisionCounts();
     const stats = el("div", "audit-stats candidate-stats");
-    stats.append(candidateMetric(displayLang === "ja" ? "候補" : "Candidates", String(summary.total_candidates ?? candidateList().length)), candidateMetric(displayLang === "ja" ? "高信頼" : "High confidence", String(summary.by_confidence?.high ?? 0)), candidateMetric(displayLang === "ja" ? "要確認" : "Medium confidence", String(summary.by_confidence?.medium ?? 0)), candidateMetric(displayLang === "ja" ? "主要表示候補" : "Primary navigation", String(summary.by_navigation_visibility?.primary ?? 0)));
+    stats.append(candidateMetric(displayLang === "ja" ? "未確認" : "Unreviewed", String(counts.unreviewed)), candidateMetric(displayLang === "ja" ? "承認" : "Approved", String(counts.approve + counts.approve_with_edits)), candidateMetric(displayLang === "ja" ? "保留" : "On hold", String(counts.hold)), candidateMetric(displayLang === "ja" ? "却下" : "Rejected", String(counts.reject)), candidateMetric(displayLang === "ja" ? "手動候補" : "Manual", String((registrationReviewState.manual_candidates ?? []).length)), candidateMetric(displayLang === "ja" ? "改訂候補" : "Revision", String((registrationReviewState.revision_candidates ?? []).length)));
     section.append(stats);
+    const toolbar = el("div", "workbench-toolbar");
+    const next = button(displayLang === "ja" ? "次の未確認へ" : "Next unreviewed", "button primary");
+    next.addEventListener("click", () => { const item = nextUnreviewedCandidate(); if (item)
+        setRoute({ view: "candidates", candidate: String(item.path) }); });
+    const exportButton = button(displayLang === "ja" ? "レビュー結果を書き出す" : "Export review", "button");
+    exportButton.addEventListener("click", downloadReviewExport);
+    const importLabel = el("label", "button workbench-file-button", displayLang === "ja" ? "レビュー結果を読み込む" : "Import review");
+    const importInput = document.createElement("input");
+    importInput.type = "file";
+    importInput.accept = "application/json,.json";
+    importInput.hidden = true;
+    importInput.addEventListener("change", async () => { const file = importInput.files?.[0]; if (!file)
+        return; try {
+        await importReviewExport(file);
+        render();
+    }
+    catch (error) {
+        alert(String(error.message));
+    }
+    finally {
+        importInput.value = "";
+    } });
+    importLabel.append(importInput);
+    const manual = button(displayLang === "ja" ? "＋ 手動候補" : "+ Manual candidate", "button");
+    manual.addEventListener("click", () => setRoute({ view: "manual-candidate" }));
+    const clearAll = button(displayLang === "ja" ? "レビュー状態を消去" : "Clear review state", "text-button");
+    clearAll.addEventListener("click", () => { if (confirm(displayLang === "ja" ? "この候補セットのローカルレビュー状態を消去しますか？" : "Clear local review state for this candidate set?")) {
+        registrationReviewState = { decisions: {}, manual_candidates: [], revision_candidates: [] };
+        saveRegistrationReviewState();
+        render();
+    } });
+    toolbar.append(next, exportButton, importLabel, manual, clearAll);
+    section.append(toolbar);
     const filters = el("div", "candidate-filters");
     const queryLabel = el("label", "candidate-filter");
     queryLabel.append(el("span", "candidate-filter-label", displayLang === "ja" ? "候補内検索" : "Filter candidates"));
-    const queryInput = el("input", "search-input");
-    queryInput.type = "search";
-    queryInput.placeholder = displayLang === "ja" ? "タイトル・role・問い・path" : "Title, role, question, or path";
+    const queryInput = textInput();
+    queryInput.placeholder = displayLang === "ja" ? "タイトル・role・問い・path" : "Title, role, question, path";
     queryLabel.append(queryInput);
-    function makeSelect(label, values, allLabel) {
-        const wrap = el("label", "candidate-filter");
-        wrap.append(el("span", "candidate-filter-label", label));
-        const select = document.createElement("select");
-        select.className = "candidate-select";
-        const all = document.createElement("option");
-        all.value = "";
-        all.textContent = allLabel;
-        select.append(all);
-        for (const value of values) {
-            const option = document.createElement("option");
-            option.value = value;
-            option.textContent = value;
-            select.append(option);
-        }
-        wrap.append(select);
-        return { wrap, select };
-    }
-    const allCandidates = candidateList().slice().sort((a, b) => String(a.proposed?.layer ?? "").localeCompare(String(b.proposed?.layer ?? ""), "en") ||
-        candidateTitle(a).localeCompare(candidateTitle(b), displayLang === "ja" ? "ja" : "en"));
-    const layers = Array.from(new Set(allCandidates.map((candidate) => String(candidate.proposed?.layer ?? "")).filter(Boolean))).sort();
-    const actions = Array.from(new Set(allCandidates.map((candidate) => String(candidate.recommended_action ?? "")).filter(Boolean))).sort();
-    const confidences = Array.from(new Set(allCandidates.map((candidate) => String(candidate.review?.confidence ?? "")).filter(Boolean))).sort();
-    const visibilities = Array.from(new Set(allCandidates.map((candidate) => String(candidate.navigation?.visibility ?? "")).filter(Boolean))).sort();
-    const layerFilter = makeSelect(displayLang === "ja" ? "体系層" : "Layer", layers, displayLang === "ja" ? "すべて" : "All");
-    const actionFilter = makeSelect(displayLang === "ja" ? "推奨処理" : "Recommended action", actions, displayLang === "ja" ? "すべて" : "All");
-    const confidenceFilter = makeSelect(displayLang === "ja" ? "confidence" : "Confidence", confidences, displayLang === "ja" ? "すべて" : "All");
-    const visibilityFilter = makeSelect(displayLang === "ja" ? "表示役割" : "Visibility", visibilities, displayLang === "ja" ? "すべて" : "All");
-    filters.append(queryLabel, layerFilter.wrap, actionFilter.wrap, confidenceFilter.wrap, visibilityFilter.wrap);
+    filters.append(queryLabel);
+    const makeSelect = (label, values) => { const wrap = el("label", "candidate-filter"); wrap.append(el("span", "candidate-filter-label", label)); const select = el("select", "candidate-select"); const all = document.createElement("option"); all.value = ""; all.textContent = displayLang === "ja" ? "すべて" : "All"; select.append(all); for (const value of values) {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = value;
+        select.append(option);
+    } wrap.append(select); filters.append(wrap); return select; };
+    const allCandidates = candidateList().slice().sort((a, b) => String(a.path).localeCompare(String(b.path), "en"));
+    const layerSelect = makeSelect(displayLang === "ja" ? "体系層" : "Layer", Array.from(new Set(allCandidates.map((c) => String(c.proposed?.layer ?? "")).filter(Boolean))).sort());
+    const confidenceSelect = makeSelect("confidence", Array.from(new Set(allCandidates.map((c) => String(c.review?.confidence ?? "")).filter(Boolean))).sort());
+    const reviewSelect = makeSelect(displayLang === "ja" ? "レビュー状態" : "Review state", ["unreviewed", "approve", "approve_with_edits", "hold", "reject"]);
+    const visibilitySelect = makeSelect("visibility", Array.from(new Set(allCandidates.map((c) => String(c.navigation?.visibility ?? "")).filter(Boolean))).sort());
     section.append(filters);
     const summaryLine = el("div", "candidate-result-summary");
     const grid = el("div", "candidate-grid");
     section.append(summaryLine, grid);
     const draw = () => {
+        grid.replaceChildren();
         const query = queryInput.value.trim().normalize("NFKC").toLocaleLowerCase("ja-JP");
         const filtered = allCandidates.filter((candidate) => {
-            if (layerFilter.select.value && candidate.proposed?.layer !== layerFilter.select.value)
+            if (layerSelect.value && candidate.proposed?.layer !== layerSelect.value)
                 return false;
-            if (actionFilter.select.value && candidate.recommended_action !== actionFilter.select.value)
+            if (confidenceSelect.value && candidate.review?.confidence !== confidenceSelect.value)
                 return false;
-            if (confidenceFilter.select.value && candidate.review?.confidence !== confidenceFilter.select.value)
+            if (visibilitySelect.value && candidate.navigation?.visibility !== visibilitySelect.value)
                 return false;
-            if (visibilityFilter.select.value && candidate.navigation?.visibility !== visibilityFilter.select.value)
+            const state = String(decisionForCandidate(candidate)?.decision ?? "unreviewed");
+            if (reviewSelect.value && state !== reviewSelect.value)
                 return false;
             return !query || candidateSearchText(candidate).includes(query);
         });
         summaryLine.textContent = `${filtered.length} / ${allCandidates.length} ${displayLang === "ja" ? "候補を表示" : "candidates shown"}`;
-        grid.replaceChildren();
         for (const candidate of filtered) {
             const card = el("article", "candidate-card card");
-            const top = el("div", "card-meta");
-            top.append(badge(String(candidate.recommended_action ?? "candidate"), "warn"), badge(String(candidate.review?.confidence ?? "unknown")), badge(String(candidate.navigation?.visibility ?? "")));
-            card.append(top, el("h2", "card-title", candidateTitle(candidate)));
+            const decision = String(decisionForCandidate(candidate)?.decision ?? "unreviewed");
+            const meta = el("div", "doc-meta-line");
+            meta.append(badge(reviewDecisionLabel(decision), decisionTone(decision)), badge(String(candidate.review?.confidence ?? "")), badge(String(candidate.navigation?.visibility ?? "")));
+            card.append(meta, el("h2", "card-title", candidateTitle(candidate)));
             const role = candidateRole(candidate);
             if (role)
                 card.append(el("p", "card-copy", role));
-            const topics = el("div", "chip-wrap candidate-topic-wrap");
-            for (const topic of candidate.proposed?.discovery?.topics ?? [])
-                topics.append(badge(String(topic)));
-            if (topics.childElementCount)
-                card.append(topics);
             const questions = candidateQuestionList(candidate);
             if (questions.length)
                 card.append(el("div", "question-line", `Q. ${questions[0]}`));
-            const needs = (candidate.review?.needs_human_judgment ?? []).map((value) => String(value));
+            const needs = (candidate.review?.needs_human_judgment ?? []).map((v) => String(v));
             if (needs.length)
                 card.append(el("div", "candidate-review-hint", `${displayLang === "ja" ? "確認" : "Review"}: ${needs.join(" · ")}`));
             card.append(el("div", "path", String(candidate.path ?? "")));
-            const actionsRow = el("div", "card-actions");
-            const inspect = button(displayLang === "ja" ? "候補詳細" : "Candidate detail", "text-button");
+            const row = el("div", "card-actions");
+            const inspect = button(displayLang === "ja" ? "レビューする" : "Review", "button compact-button");
             inspect.addEventListener("click", () => setRoute({ view: "candidates", candidate: String(candidate.path ?? "") }));
-            actionsRow.append(inspect);
-            const path = String(candidate.path ?? "");
-            if (path && readerAllowedPaths().has(path))
-                actionsRow.append(readerButton(path));
-            const graphId = String(candidate.observed_node_id ?? "");
-            if (graphId && graphNodeMap(docsGraph).has(graphId)) {
-                const relations = button(displayLang === "ja" ? "関係" : "Relations", "text-button");
-                relations.addEventListener("click", () => setRoute({ graph: graphId }));
-                actionsRow.append(relations);
-            }
-            card.append(actionsRow);
+            row.append(inspect);
+            if (candidate.path && readerAllowedPaths().has(String(candidate.path)))
+                row.append(readerButton(String(candidate.path)));
+            card.append(row);
             grid.append(card);
         }
         if (!filtered.length)
             grid.append(el("p", "empty", displayLang === "ja" ? "条件に合う候補はありません。" : "No candidate matches the filters."));
     };
-    queryInput.addEventListener("input", draw);
-    for (const select of [layerFilter.select, actionFilter.select, confidenceFilter.select, visibilityFilter.select])
-        select.addEventListener("change", draw);
+    for (const control of [queryInput, layerSelect, confidenceSelect, reviewSelect, visibilitySelect])
+        control.addEventListener(control === queryInput ? "input" : "change", draw);
     draw();
+    if ((registrationReviewState.manual_candidates ?? []).length || (registrationReviewState.revision_candidates ?? []).length) {
+        const queues = el("section", "audit-panel workbench-queues");
+        queues.append(el("h2", "section-title small", displayLang === "ja" ? "追加キュー" : "Additional queues"));
+        for (const item of registrationReviewState.manual_candidates ?? []) {
+            const row = el("div", "queue-row");
+            const label = el("div", "queue-line", `MANUAL · ${String(item.proposed?.path ?? item.proposed?.doc_id ?? "")}`);
+            label.prepend(badge(reviewDecisionLabel(String(item.decision ?? "hold")), decisionTone(String(item.decision ?? "hold"))));
+            row.append(label);
+            const remove = button(displayLang === "ja" ? "削除" : "Remove", "text-button");
+            remove.addEventListener("click", () => { registrationReviewState.manual_candidates = registrationReviewState.manual_candidates.filter((entry) => entry.id !== item.id); saveRegistrationReviewState(); render(); });
+            row.append(remove);
+            queues.append(row);
+        }
+        for (const item of registrationReviewState.revision_candidates ?? []) {
+            const row = el("div", "queue-row");
+            const label = el("div", "queue-line", `REVISION · ${String(item.path ?? item.doc_id ?? "")}`);
+            label.prepend(badge(reviewDecisionLabel(String(item.decision ?? "hold")), decisionTone(String(item.decision ?? "hold"))));
+            row.append(label);
+            const edit = button(displayLang === "ja" ? "編集" : "Edit", "text-button");
+            edit.addEventListener("click", () => setRoute({ view: "revision-candidate", revision: String(item.doc_id ?? "") }));
+            row.append(edit);
+            const remove = button(displayLang === "ja" ? "削除" : "Remove", "text-button");
+            remove.addEventListener("click", () => { registrationReviewState.revision_candidates = registrationReviewState.revision_candidates.filter((entry) => entry.doc_id !== item.doc_id); saveRegistrationReviewState(); render(); });
+            row.append(remove);
+            queues.append(row);
+        }
+        section.append(queues);
+    }
     page.append(section);
     return page;
 }
@@ -1826,6 +2158,10 @@ function render() {
             content = renderRelations();
         else if (isDeveloper() && params.get("view") === "candidates")
             content = renderCandidates(params.get("candidate") ?? "");
+        else if (isDeveloper() && params.get("view") === "manual-candidate")
+            content = renderManualCandidate();
+        else if (isDeveloper() && params.get("view") === "revision-candidate")
+            content = renderRevisionCandidate(params.get("revision") ?? "");
         else if (isDeveloper() && params.get("view") === "audit")
             content = renderAudit();
         else
@@ -1858,8 +2194,10 @@ async function load() {
         docsIndex = await indexResponse.json();
         docsGraph = await graphResponse.json();
         publicContent = await publicContentResponse.json();
-        if (isDeveloper() && candidateResponse?.ok)
+        if (isDeveloper() && candidateResponse?.ok) {
             registrationCandidates = await candidateResponse.json();
+            loadRegistrationReviewState();
+        }
         else
             registrationCandidates = null;
         status.textContent = "";
