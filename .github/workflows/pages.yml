@@ -1,0 +1,83 @@
+name: Public Navigator Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build and verify public site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-public-check.txt
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Verify TypeScript build
+        run: |
+          npx --yes --package=typescript@5.8.3 -- \
+            tsc -p navigator/tsconfig.json
+          git diff --exit-code -- navigator/dist
+
+      - name: Run DN-6 release gate
+        run: |
+          python scripts/check_dn6_release_gate.py
+
+      - name: Build public Pages artifact
+        run: |
+          python scripts/build_public_site.py
+
+      - name: Check public Pages artifact
+        run: |
+          python scripts/check_public_site.py
+
+      - name: Check deterministic public build
+        run: |
+          python scripts/build_public_site.py --check
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _build/pages
+
+  deploy:
+    name: Deploy Public Navigator
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
