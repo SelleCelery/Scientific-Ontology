@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the DN-5.4A public/developer Navigator interface boundary."""
-
+"""Validate the Public / Developer Navigator interface and data boundary."""
 from __future__ import annotations
 
 import json
@@ -13,8 +12,20 @@ PUBLIC_HTML = ROOT / "navigator" / "index.html"
 DEV_HTML = ROOT / "navigator" / "dev.html"
 APP_SOURCE = ROOT / "navigator" / "src" / "app.ts"
 GRAPH = ROOT / "tools" / "docs_graph.json"
+PUBLIC_CATALOG = ROOT / "tools" / "docs_public_catalog.json"
+CANDIDATE_PREVIEW = ROOT / "tools" / "docs_registration_candidates.preview.json"
+REGISTERED_REVIEW_PREVIEW = ROOT / "tools" / "docs_registered_reader_question_review.preview.json"
 
 BLOCKED_MARKERS = ("99_Private_Core", "private-core", "Private_Core", "/Gate", "/U5")
+DEVELOPER_ONLY_KEYS = {
+    "review",
+    "evidence",
+    "needs_human_judgment",
+    "confidence",
+    "recommended_action",
+    "observed_node_id",
+}
+HEADER_CONTROLS = ("header-menu", "header-back", "header-top", "header-bottom")
 
 
 def fail(message: str) -> int:
@@ -23,7 +34,17 @@ def fail(message: str) -> int:
 
 
 def main() -> int:
-    for path in (PUBLIC_CONTENT, PUBLIC_HTML, DEV_HTML, APP_SOURCE, GRAPH):
+    required_files = (
+        PUBLIC_CONTENT,
+        PUBLIC_HTML,
+        DEV_HTML,
+        APP_SOURCE,
+        GRAPH,
+        PUBLIC_CATALOG,
+        CANDIDATE_PREVIEW,
+        REGISTERED_REVIEW_PREVIEW,
+    )
+    for path in required_files:
         if not path.is_file():
             return fail(f"missing {path.relative_to(ROOT)}")
         try:
@@ -86,6 +107,26 @@ def main() -> int:
         if relative.endswith(".md") and relative not in exposed:
             return fail(f"public-content Markdown is outside Reader graph boundary: {relative}")
 
+    catalog = json.loads(PUBLIC_CATALOG.read_text(encoding="utf-8"))
+    catalog_docs = catalog.get("documents") or []
+    registered = [doc for doc in catalog_docs if doc.get("registration_state") == "registered"]
+    provisional = [doc for doc in catalog_docs if doc.get("registration_state") == "provisional"]
+    if not registered:
+        return fail("public catalog has no canonical registered documents")
+    if not provisional:
+        return fail("public catalog has no public provisional documents")
+    for doc in provisional:
+        path = str(doc.get("path") or "")
+        if path not in exposed:
+            return fail(f"public provisional document is outside Reader/graph boundary: {path}")
+        leaked = sorted(DEVELOPER_ONLY_KEYS.intersection(doc.keys()))
+        if leaked:
+            return fail(f"public provisional document leaks developer-only key(s) {leaked}: {doc.get('path')}")
+        if any((doc.get("concepts") or {}).get(key) for key in ("owned", "imports", "exports")):
+            return fail(f"provisional document invents concept contract: {doc.get('path')}")
+        if any((doc.get("relations") or {}).get(key) for key in ("related", "tests", "returns_to", "delegates")):
+            return fail(f"provisional document invents typed relation contract: {doc.get('path')}")
+
     public_html = PUBLIC_HTML.read_text(encoding="utf-8")
     dev_html = DEV_HTML.read_text(encoding="utf-8")
     app_source = APP_SOURCE.read_text(encoding="utf-8")
@@ -93,12 +134,19 @@ def main() -> int:
         return fail("navigator/index.html must declare data-interface=public")
     if 'data-interface="developer"' not in dev_html:
         return fail("navigator/dev.html must declare data-interface=developer")
+    for html_name, html in (("public", public_html), ("developer", dev_html)):
+        for control in HEADER_CONTROLS:
+            if f'id="{control}"' not in html:
+                return fail(f"{html_name} shell missing fixed header control: {control}")
     for marker in ("Candidate review", "Data audit", "docs_registration_candidates"):
         if marker in public_html:
             return fail(f"public shell exposes developer marker: {marker}")
+
     required_source_fragments = (
         'document.body.dataset.interface === "developer"',
+        'fetch(PUBLIC_CATALOG_URL)',
         'isDeveloper()\n      ? fetch(CANDIDATES_URL)',
+        'isDeveloper()\n      ? fetch(REGISTERED_REVIEW_URL)',
         'fetch(PUBLIC_CONTENT_URL)',
     )
     for fragment in required_source_fragments:
@@ -107,7 +155,9 @@ def main() -> int:
 
     print(
         "NAVIGATOR INTERFACE CHECK PASS: "
-        f"{len(layers)} public layers, {len(guides)} guide entrances, public/developer shells separated"
+        f"{len(layers)} public layers, {len(guides)} guide entrances, "
+        f"{len(registered)} registered + {len(provisional)} provisional public documents, "
+        "developer review data isolated"
     )
     return 0
 

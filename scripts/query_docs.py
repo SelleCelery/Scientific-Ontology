@@ -305,6 +305,8 @@ def search_documents(
                 "title": doc["title"],
                 "role": doc["role"],
                 "state": doc["state"],
+                "registration_state": doc.get("registration_state") or doc.get("publication", {}).get("registration_state") or "registered",
+                "publication": dict(doc.get("publication", {})),
                 "entry_level": doc.get("discovery", {}).get("entry_level", ""),
                 "matches": matches,
                 "active_expansion_groups": active_groups,
@@ -470,6 +472,8 @@ def document_browse_summary(doc: Mapping[str, Any]) -> Dict[str, Any]:
         "title": dict(doc.get("title", {})),
         "path": str(doc.get("path", "")),
         "role": dict(doc.get("role", {})),
+        "registration_state": str(doc.get("registration_state") or doc.get("publication", {}).get("registration_state") or "registered"),
+        "publication": dict(doc.get("publication", {})),
         "entry_level": str(doc.get("discovery", {}).get("entry_level", "")),
         "reader_questions": dict(doc.get("discovery", {}).get("reader_questions", {})),
     }

@@ -1,0 +1,806 @@
+{
+  "registered_reader_question_review": {
+    "schema_version": "0.1",
+    "status": "proposal_only",
+    "source": {
+      "manifest_path": "tools/docs_manifest.yml",
+      "manifest_sha256": "9b86a5bfb157135c464b14933132935d97a8d95938f7df95d9070c7d8fe1ac4f",
+      "index_path": "tools/docs_index.json",
+      "index_sha256": "2871b3340fcacffed1bcd968dbb05ddeb6696298f0e742c2253862637567a5de",
+      "indexed_document_count": 28,
+      "review_seed_sha256": "a0bdf3fab355ad41ddc40abe41d99ed9560d1510a970a5ad7b4c5195405ab3a8",
+      "preview_contract": "developer-only revision seed; not canonical manifest"
+    },
+    "policy": "one_concept_or_one_relation",
+    "apply_to_manifest": false,
+    "note": "Audit proposal only. No registered reader_questions were changed in docs_manifest.yml.",
+    "documents": [
+      {
+        "path": "README.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "存在境界論とは何か",
+            "v5系は何を始めるか",
+            "公開範囲はどこまでか",
+            "どこから読み始めるか"
+          ],
+          "en": [
+            "What is Scientific Ontology?",
+            "What does the v5 series begin?",
+            "What is within the public scope?",
+            "Where should I start reading?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "境界実在性の原則とは何か",
+            "境界とは何か",
+            "存在の留保とは何か",
+            "AMPはどう再配置されるか",
+            "クオリアはどこに位置づくか"
+          ],
+          "en": [
+            "What is the Boundary Realism Principle?",
+            "What is a boundary?",
+            "What is ontological reserve?",
+            "How is AMP repositioned?",
+            "Where are qualia positioned?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "current": {
+          "ja": [
+            "知識はどうやって成立するのか",
+            "主観と客観をどう照合するのか",
+            "観測から漏れる残差をどう扱うのか"
+          ],
+          "en": [
+            "How does knowledge become possible?",
+            "How can subjective and objective descriptions be collated?",
+            "How should residuals outside observation be retained?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "知はどの条件で成立するか",
+            "感性とは何か",
+            "悟性とは何か",
+            "同期と照合はどう違うか",
+            "残差はどう保持するか"
+          ],
+          "en": [
+            "Under what conditions does knowledge form?",
+            "What is sensibility?",
+            "What is understanding?",
+            "How do synchronization and collation differ?",
+            "How are residuals retained?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "01_Sat_Truth/Meaning_Generation_Model.md",
+        "current": {
+          "ja": [
+            "意味はどうやって成立するのか",
+            "情報と意味は何が違うのか",
+            "履歴は意味にどう作用するのか"
+          ],
+          "en": [
+            "How does meaning form?",
+            "What distinguishes information from meaning?",
+            "How does history participate in meaning?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "意味はどう成立するか",
+            "情報と意味はどう違うか",
+            "クオリアとは何か",
+            "意味ループとは何か",
+            "履歴質量密度とは何か"
+          ],
+          "en": [
+            "How does meaning form?",
+            "How do information and meaning differ?",
+            "What is qualia?",
+            "What is a meaning loop?",
+            "What is history mass density?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "current": {
+          "ja": [
+            "存在境界論の全体像を知りたい",
+            "文書や概念はどうつながっているのか",
+            "どこから読み始めればよいのか"
+          ],
+          "en": [
+            "What is the overall structure of Scientific Ontology?",
+            "How are the documents and concepts connected?",
+            "Where should I start reading?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "存在境界論の全体構造は何か",
+            "文書と概念はどうつながるか",
+            "どこから読み始めるか",
+            "境界実在論と応用形而上学はどう関係するか"
+          ],
+          "en": [
+            "What is the overall structure of Scientific Ontology?",
+            "How are documents and concepts connected?",
+            "Where should I start reading?",
+            "How are boundary realism and applied metaphysics related?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "差分とは何か",
+            "関心とは何か",
+            "捨象とは何か",
+            "認識軸はどう形成されるか",
+            "認識軸はどう変形するか"
+          ],
+          "en": [
+            "What is a difference in this model?",
+            "What is attention?",
+            "What is abstraction?",
+            "How is a cognitive axis formed?",
+            "How can a cognitive axis transform?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
+        "current": {
+          "ja": [
+            "違う世界観を壊さずに比較するにはどうすればよいか",
+            "同じ言葉で中核が違うときどう照合するのか",
+            "翻訳できない残差をどう保持するのか"
+          ],
+          "en": [
+            "How can different worldviews be compared without erasing them?",
+            "How should the same word with different cores be collated?",
+            "How should untranslatable residuals be retained?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "選択公理とは何か",
+            "認識ブリッジとは何か",
+            "異なる世界観はどう比較するか",
+            "翻訳不能残差はどう保持するか",
+            "コア不変量と運用ドリフトはどう違うか"
+          ],
+          "en": [
+            "What is an optional axiom?",
+            "What is a cognitive bridge?",
+            "How can different worldviews be compared?",
+            "How are untranslatable residuals retained?",
+            "How do core invariants differ from operational drift?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "第一義とは何か",
+            "共有は何を形成するか",
+            "境界CAとは何か",
+            "PDCAはどう再定義されるか"
+          ],
+          "en": [
+            "What is first purpose?",
+            "What does sharing form?",
+            "What is Boundary CA?",
+            "How is PDCA redefined?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "認識場とは何か",
+            "認識相とは何か",
+            "なぜ離散化が必要か",
+            "ポートとは何か",
+            "切断残差はどう返すか"
+          ],
+          "en": [
+            "What is a cognitive field?",
+            "What is a cognitive phase?",
+            "Why is discretization necessary?",
+            "What is a port?",
+            "How are cutoff residuals returned?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "存在相とは何か",
+            "存在相の圧縮とは何か",
+            "必要な圧縮と破壊的圧縮はどう違うか",
+            "圧縮の利益は何か",
+            "圧縮の損失は何か"
+          ],
+          "en": [
+            "What is an existence phase?",
+            "What is existence-phase compression?",
+            "How does necessary compression differ from destructive compression?",
+            "What are the gains of compression?",
+            "What are the losses of compression?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "ポートとは何か",
+            "ポート配分は何で決まるか",
+            "複数ポート潜在状態とは何か",
+            "境界外交とは何か",
+            "ゲートウェイ捕捉とは何か"
+          ],
+          "en": [
+            "What is a port?",
+            "What determines port allocation?",
+            "What is multi-port potentiality?",
+            "What is boundary diplomacy?",
+            "What is gateway capture?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "組織境界とは何か",
+            "責任境界とは何か",
+            "組織ポートとは何か",
+            "プロトコルと監査は何をするか",
+            "目的はどう実装されるか"
+          ],
+          "en": [
+            "What is an organizational boundary?",
+            "What is a responsibility boundary?",
+            "What is an organizational port?",
+            "What do protocols and audits do?",
+            "How is purpose implemented?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md",
+        "current": {
+          "ja": [
+            "すべてを開かずに平和を作るにはどうすればよいか",
+            "違いを消さずに接触を続けるには何が必要か",
+            "拒否や停止を残した平和は設計できるか"
+          ],
+          "en": [
+            "How can peace be designed without opening every channel?",
+            "How can contact continue without erasing difference?",
+            "Can peace preserve refusal and stopping conditions?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "生存競争の本質とは何か",
+            "生存競争の非本質とは何か",
+            "意味・経験場とは何か",
+            "境界外交とは何か",
+            "平和仕様とは何か"
+          ],
+          "en": [
+            "What is essential to the struggle for survival?",
+            "What is non-essential to the struggle for survival?",
+            "What is the meaning-experience field?",
+            "What is boundary diplomacy?",
+            "What is the peace specification?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "current": {
+          "ja": [
+            "存在境界論は何のために使うのか",
+            "自分の責任と外部の責任をどう見分けるのか",
+            "理論を正しさではなく資材として使うとは何か"
+          ],
+          "en": [
+            "What is Scientific Ontology for?",
+            "How can responsibility be partitioned between self and world?",
+            "What does it mean to use theory as material rather than authority?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "境界事件とは何か",
+            "可動性とは何か",
+            "責任分界とは何か",
+            "理論を資材として使うとは何か",
+            "存在境界論の運用核は何か"
+          ],
+          "en": [
+            "What is a boundary event?",
+            "What is mobility?",
+            "What is responsibility partition?",
+            "What does it mean to use theory as material?",
+            "What is the operational core of Scientific Ontology?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "00_Overview/Scientific_Ontology_Operational_Outline.en.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "境界事件とは何か",
+            "可動性とは何か",
+            "責任分界とは何か",
+            "理論を資材として使うとは何か",
+            "存在境界論の運用核は何か"
+          ],
+          "en": [
+            "What is a boundary event?",
+            "What is mobility?",
+            "What is responsibility partition?",
+            "What does it mean to use theory as material?",
+            "What is the operational core of Scientific Ontology?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
+        "current": {
+          "ja": [
+            "言語・意味・通信位相研究の全体を見たい",
+            "発話から意味までの研究文書を探したい",
+            "この研究線の文書はどう分かれているのか"
+          ],
+          "en": [
+            "What does the language, meaning, and communication phase research line contain?",
+            "Where can I read from speech to meaning?",
+            "How are the documents in this research line divided?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "言語・意味・通信位相研究は何を扱うか",
+            "全体圧とは何か",
+            "この研究線はどこから読むか",
+            "変更はどう正本へ反映するか"
+          ],
+          "en": [
+            "What does the Language, Meaning, and Communication Phase research cover?",
+            "What is whole pressure?",
+            "Where should I start in this research line?",
+            "How are changes propagated into the living canonical set?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Grammar_as_a_Meaning_Pressure_Channel.ja.md",
+        "current": {
+          "ja": [
+            "文法は語順や統語だけなのか",
+            "文法は意味圧をどう切り出すのか",
+            "身振りや制度も文法として扱えるのか"
+          ],
+          "en": [
+            "Is grammar more than syntax and word order?",
+            "How does grammar channel meaning pressure?",
+            "Can gesture and institutional form operate grammatically?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "文法枠とは何か",
+            "文法の五層とは何か",
+            "文法枠は意味圧をどう切るか",
+            "枠誘導残差とは何か",
+            "身振りと制度は文法になりうるか"
+          ],
+          "en": [
+            "What is a grammatical frame?",
+            "What are the five layers of grammar?",
+            "How does a grammatical frame segment meaning pressure?",
+            "What is a frame-induced residual?",
+            "Can gestures and institutions function as grammar?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md",
+        "current": {
+          "ja": [
+            "意味が分かるとはどういうことか",
+            "返路が閉じるとなぜ意味になるのか",
+            "感情と思考は返路によってどう違うのか"
+          ],
+          "en": [
+            "What does it mean to understand meaning?",
+            "Why does return-path closure matter for meaning?",
+            "How do emotion and thought differ through return paths?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "意味が分かるとは何か",
+            "意味循環は循環論法か",
+            "局所閉鎖とは何か",
+            "偽閉鎖とは何か",
+            "感情と思考は返路でどう違うか"
+          ],
+          "en": [
+            "What does it mean to understand meaning?",
+            "Is the meaning cycle circular reasoning?",
+            "What is local closure?",
+            "What is false closure?",
+            "How do emotion and thought differ by return path?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "圧縮経験とは何か",
+            "クオリア差分接触とは何か",
+            "読者は経験を複製するか",
+            "文章形式は何を圧縮するか",
+            "読書と世界制作はどう関係するか"
+          ],
+          "en": [
+            "What is compressed experience?",
+            "What is qualia-difference contact?",
+            "Does the reader replicate an experience?",
+            "What does literary form compress?",
+            "How are reading and worldmaking related?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.ja.md",
+        "current": {
+          "ja": [
+            "AIはどのように文法枠を選ぶのか",
+            "言語が変わるとAIの応答はどう変わるのか",
+            "AIの出力が早く閉じるとはどういうことか"
+          ],
+          "en": [
+            "How does AI select grammatical frames?",
+            "How does language choice change AI responses?",
+            "What does premature closure in AI output mean?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "分布的制約状態とは何か",
+            "逐次生成とは何か",
+            "文法枠は生成経路をどう変えるか",
+            "言語選択はAI応答をどう変えるか",
+            "AI生成と人間の全体圧は同じか"
+          ],
+          "en": [
+            "What is a distributionally constrained state?",
+            "What is sequential generation?",
+            "How do grammatical frames change generation paths?",
+            "How does language choice change AI responses?",
+            "Is AI generation the same as human whole pressure?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "全体圧とは何か",
+            "逐次的除圧とは何か",
+            "残差保持切断とは何か",
+            "破壊的切断とは何か",
+            "発話はどう逐次生成されるか"
+          ],
+          "en": [
+            "What is whole pressure?",
+            "What is sequential decompression?",
+            "What is residual-preserving segmentation?",
+            "What is destructive cutoff?",
+            "How is speech generated sequentially?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "照合的内包とは何か",
+            "返路ある外延とは何か",
+            "外延返路テストとは何か",
+            "偽外延とは何か",
+            "内包と外延はどう関係するか"
+          ],
+          "en": [
+            "What is collational intension?",
+            "What is return-path extension?",
+            "What is the extension return-path test?",
+            "What is false extension?",
+            "How are intension and extension related?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
+        "current": {
+          "ja": [
+            "同じ言葉なのに分野が違うと話が噛み合わないのはなぜか",
+            "概念間の距離や帯域をどう考えるのか",
+            "返り期待値や通信重力圏とは何か",
+            "違う分野で同じ言葉なのに話が噛み合わない"
+          ],
+          "en": [
+            "Why can the same word fail across different fields?",
+            "How can distance and bandwidth between concepts be described?",
+            "What are return expectancy and communication gravity domains?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "通信位相とは何か",
+            "通約帯域とは何か",
+            "返り期待値とは何か",
+            "通信重力圏とは何か",
+            "同じ言葉で話が噛み合わないのはなぜか"
+          ],
+          "en": [
+            "What is a communication phase?",
+            "What is commensuration bandwidth?",
+            "What is return expectancy?",
+            "What is a communication gravity domain?",
+            "Why can the same words fail across fields?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+        "current": {
+          "ja": [
+            "異なる言語や分野を同一化せず通約するにはどうすればよいか",
+            "翻訳で何を保持し何を残差として残すのか",
+            "偽通約とは何か"
+          ],
+          "en": [
+            "How can languages or fields be commensurated without identification?",
+            "What should translation preserve and retain as residual?",
+            "What is false commensuration?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "通約とは何か",
+            "交差文法照合とは何か",
+            "通約保存契約とは何か",
+            "偽通約とは何か",
+            "翻訳残差はどう保持するか"
+          ],
+          "en": [
+            "What is commensuration?",
+            "What is cross-grammatical collation?",
+            "What is the commensuration preservation contract?",
+            "What is false commensuration?",
+            "How are translation residuals retained?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md",
+        "current": {
+          "ja": [],
+          "en": []
+        },
+        "proposed": {
+          "ja": [
+            "日本語と英語の文法枠はどう違うか",
+            "主題と主体はどう違うか",
+            "文末は意味確定をどう変えるか",
+            "省略は共有履歴にどう依存するか",
+            "責任配置は言語でどう変わるか"
+          ],
+          "en": [
+            "How do Japanese and English grammatical frames differ?",
+            "How do topic and agent differ?",
+            "How does sentence ending affect semantic commitment?",
+            "How does omission depend on shared history?",
+            "How does language change responsibility allocation?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md",
+        "current": {
+          "ja": [
+            "長い規約に一ビットで同意する構造は何を落とすのか",
+            "同意するしかない状況をどう記録するのか",
+            "同意の留保を返すにはどんなポートが必要か"
+          ],
+          "en": [
+            "What is lost when long terms receive a one-bit answer?",
+            "How can acceptance under constraint be recorded?",
+            "What response port is needed for consent reservations?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "センテンス／ビット非対称とは何か",
+            "制約下受諾とは何か",
+            "同意ビットは何を圧縮するか",
+            "同意の留保はどう記録するか",
+            "応答権をどう返すか"
+          ],
+          "en": [
+            "What is sentence/bit asymmetry?",
+            "What is constrained acceptance?",
+            "What does a consent bit compress?",
+            "How can reservations in consent be recorded?",
+            "How can the right of response be returned?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md",
+        "current": {
+          "ja": [
+            "文学は何を制作しているのか",
+            "作品世界と現実世界はどう橋渡しされるのか",
+            "文学で真・美・善・無をどう読むのか"
+          ],
+          "en": [
+            "What does literature make?",
+            "How can a literary world connect with the actual world?",
+            "How can truth, beauty, goodness, and null be read in literature?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "世界制作とは何か",
+            "文学は何を制作するか",
+            "作者・作品・読者はどう関係するか",
+            "真・美・善・無はどう働くか",
+            "作品世界と現実世界はどう接触するか"
+          ],
+          "en": [
+            "What is worldmaking?",
+            "What does literature make?",
+            "How are author, work, and reader related?",
+            "How do truth, beauty, goodness, and null operate?",
+            "How do fictional and actual worlds come into contact?"
+          ]
+        },
+        "decision": "review_required"
+      },
+      {
+        "path": "05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md",
+        "current": {
+          "ja": [
+            "AIやインターフェースに判断を任せすぎないためにはどうすればよいか",
+            "観測と判断をどう分離するのか",
+            "利用者へ判断責任をどう返すのか",
+            "AIに判断を任せたくない"
+          ],
+          "en": [
+            "How can AI or interfaces avoid taking over judgment?",
+            "How should observation be separated from judgment?",
+            "How can responsibility be returned to the user?"
+          ]
+        },
+        "proposed": {
+          "ja": [
+            "観測とは何か",
+            "判断主権とは何か",
+            "責任返還とは何か",
+            "ログは何を支援するか",
+            "同意と実質的選択肢はどう違うか"
+          ],
+          "en": [
+            "What is observation in DSSI?",
+            "What is judgment sovereignty?",
+            "What is responsibility return?",
+            "What do logs support?",
+            "How does consent differ from substantive choice?"
+          ]
+        },
+        "decision": "review_required"
+      }
+    ]
+  }
+}

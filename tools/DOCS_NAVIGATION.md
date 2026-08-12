@@ -21,7 +21,13 @@ scripts/build_docs_index.py
   = deterministic compiler
 
 tools/docs_index.json
-  = generated read model; never hand-edited
+  = canonical manifest-derived read model; never hand-edited
+
+scripts/build_public_catalog.py
+  = public projection compiler combining canonical index + public-safe provisional candidates
+
+tools/docs_public_catalog.json
+  = generated Public Navigator document/search read model; never hand-edited
 
 scripts/query_docs.py
   = Python reference client, browse client, and regression runner
@@ -248,7 +254,7 @@ multiple provenance records != automatic trust score
 - `glossary_term`: human-facing lexical entry from `GLOSSARY.md`.
 - `source_artifact`: structural source such as the Glossary or System Map when it is not represented as a manifest document.
 
-`observed_document` exists so that the graph can preserve actual public Markdown link topology before manifest coverage becomes complete. Promotion into the searchable public ledger still requires explicit manifest work.
+`observed_document` exists so that the graph can preserve actual public Markdown link topology before manifest coverage becomes complete. Promotion into canonical manifest identity still requires explicit manifest work. DN-5.4C may nevertheless expose a public-safe provisional metadata projection for search and reading without changing that graph identity.
 
 ### 13.2 Typed edges
 
@@ -510,7 +516,7 @@ tools/docs_registration_candidates.yml
   -> Navigator / Candidate review
 ```
 
-This surface is deliberately outside `docs_manifest.yml` and outside direct search ranking. It exists so observed-only documents can be reviewed before canonical registration.
+This surface is deliberately outside `docs_manifest.yml`. Its full preview remains Developer-only. From DN-5.4C onward, searchable candidates may also contribute a sanitized provisional projection to the Public catalog and direct search before canonical registration.
 
 The browser exposes:
 
@@ -541,7 +547,7 @@ python scripts/build_registration_candidates_preview.py --check
 
 `--check` also blocks when the candidate ledger was generated against a different manifest or graph hash. This prevents a stale candidate UI from being silently treated as a current review surface.
 
-The Candidate review tab remains non-canonical, but DN-5.4B adds explicit approve / edit / hold / reject transactions. Browser decisions are exported and still require repository-side validation plus explicit manifest application before they become public registration.
+The Candidate review tab remains non-canonical. DN-5.4B added explicit approve / edit / hold / reject transactions, and DN-5.4C adds registered revision proposals to the same review pool. Browser decisions are exported only by explicit user action and still require repository-side validation plus explicit manifest application before they become canonical registration changes.
 
 ## 17. DN-5.4A Public / Developer Interface Contract
 
@@ -595,12 +601,12 @@ That file is presentation metadata only. It may summarize the role already state
 The public runtime loads:
 
 ```text
-tools/docs_index.json
+tools/docs_public_catalog.json
 tools/docs_graph.json
 navigator/public-content.json
 ```
 
-It does not fetch `tools/docs_registration_candidates.preview.json`.
+`docs_public_catalog.json` combines canonical index entries with sanitized searchable candidate metadata. The public shell does not fetch `tools/docs_registration_candidates.preview.json` or `tools/docs_registered_reader_question_review.preview.json`.
 
 ### 17.2 Developer Navigator
 
@@ -614,14 +620,16 @@ Candidate Review
 Data Audit
 ```
 
-Candidate and audit data are loaded only in developer mode. DN-5.4B adds the registration workbench on this same shell:
+Full candidate/audit data are loaded only in developer mode. DN-5.4C presents a unified review pool on this same shell:
 
 ```text
+provisional unregistered candidates
+registered revision proposals
 approve / approve with edits / hold / reject
 local progress persistence
-review JSON export / import
+explicit review JSON export / import
 manual candidate queue
-registered-document revision queue
+ad-hoc registered-document revision queue
 validation / dry-run / explicit manifest application
 ```
 
@@ -629,7 +637,7 @@ The browser still does not write `docs_manifest.yml` directly. See `tools/DOCS_R
 
 ### 17.3 Public presentation rules
 
-Public document cards suppress maintenance fields such as state, raw path, candidate status, and internal IDs. They foreground:
+Public document cards suppress maintenance fields such as raw candidate evidence, confidence, review state, source hashes, and internal maintenance IDs. They may show the reader-relevant registration state `仮登録 / Provisional`. They foreground:
 
 ```text
 title
@@ -648,4 +656,47 @@ The public relation map renders human-facing relation and node-type labels while
 
 During release preparation the public shell may run against `visibility_profile: preview`. In that case it shows only a compact release-preparation notice. Manifest hashes, candidate counts, and registration diagnostics remain developer-only.
 
-DN-6 must generate/check a public visibility profile and must reject a public release artifact that depends on candidate-preview data or exposes developer-maintenance surfaces as the default entry.
+DN-6 must generate/check a public visibility profile and must reject a public release artifact that depends on Developer preview data or exposes developer-maintenance surfaces as the default entry. The sanitized `docs_public_catalog.json` is an allowed Public runtime artifact.
+
+
+## 18. DN-5.4C Public Provisional Catalog and Unified Review
+
+DN-5.4C separates canonical registration from provisional public usefulness. Searchable candidates may participate in Public Read/Search before human review is complete, while their maintenance metadata stays Developer-only.
+
+```text
+docs_index.json + docs_registration_candidates.yml
+  -> scripts/build_public_catalog.py
+  -> docs_public_catalog.json
+  -> Public Navigator
+```
+
+The current public catalog marks every entry as either `registered` or `provisional`. The provisional projection may carry title, role, scope, topics, aliases, reader questions, and entry level. It carries no inferred concept ownership or typed logical relations. Relation traversal still resolves through `docs_graph.json`, including existing `observed_document` nodes.
+
+Developer review uses a second revision-seed path for already registered documents:
+
+```text
+docs_registered_reader_question_review.yml
+  -> scripts/build_registered_reader_question_review_preview.py
+  -> docs_registered_reader_question_review.preview.json
+  -> unified Developer review pool
+```
+
+The review pool therefore distinguishes state rather than using separate workflows:
+
+```text
+provisional candidate -> approval may add canonical manifest entry
+registered revision   -> approval may update canonical manifest entry
+```
+
+Browser local state may autosave, but file export is explicit only. The browser has no repository write API.
+
+Public and Developer shells share fixed header controls for Menu, Back, Top, Bottom, and language selection. These are navigation affordances only and do not alter document or review state.
+
+Build/check the new read models with:
+
+```bash
+python scripts/build_public_catalog.py
+python scripts/build_public_catalog.py --check
+python scripts/build_registered_reader_question_review_preview.py
+python scripts/build_registered_reader_question_review_preview.py --check
+```

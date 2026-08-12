@@ -258,6 +258,8 @@ export function searchDocuments(query, index, mode = "auto", limit = 10, lang = 
                 title: doc.title,
                 role: doc.role,
                 state: doc.state,
+                registration_state: doc.registration_state ?? doc.publication?.registration_state ?? "registered",
+                publication: { ...(doc.publication ?? {}) },
                 entry_level: doc.discovery?.entry_level ?? "",
                 matches,
                 active_expansion_groups: activeGroups,
@@ -345,6 +347,8 @@ export function documentBrowseSummary(doc) {
         title: { ...(doc.title ?? {}) },
         path: String(doc.path ?? ""),
         role: { ...(doc.role ?? {}) },
+        registration_state: String(doc.registration_state ?? doc.publication?.registration_state ?? "registered"),
+        publication: { ...(doc.publication ?? {}) },
         entry_level: String(doc.discovery?.entry_level ?? ""),
         reader_questions: { ...(doc.discovery?.reader_questions ?? {}) },
     };

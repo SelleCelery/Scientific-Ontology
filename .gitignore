@@ -114,3 +114,7 @@ _build/
 !tools/DOCS_REGISTRATION_WORKBENCH.md
 !tools/READER_QUESTION_POLICY.md
 !tools/docs_registered_reader_question_review.yml
+!scripts/build_public_catalog.py
+!tools/docs_public_catalog.json
+!scripts/build_registered_reader_question_review_preview.py
+!tools/docs_registered_reader_question_review.preview.json

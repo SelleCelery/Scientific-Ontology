@@ -11,7 +11,7 @@
       "required": ["schema_version", "status", "source", "decisions", "manual_candidates", "revision_candidates"],
       "additionalProperties": false,
       "properties": {
-        "schema_version": {"const": "0.1"},
+        "schema_version": {"enum": ["0.1", "0.2"]},
         "status": {"enum": ["in_progress", "complete"]},
         "exported_at": {"type": "string"},
         "source": {
@@ -21,7 +21,9 @@
             "candidate_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
             "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
             "graph_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-            "candidate_count": {"type": "integer", "minimum": 0}
+            "candidate_count": {"type": "integer", "minimum": 0},
+            "registered_review_seed_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "registered_review_seed_count": {"type": "integer", "minimum": 0}
           },
           "additionalProperties": true
         },
@@ -77,6 +79,8 @@
         "created_at": {"type": "string"},
         "reviewer_note": {"type": "string"},
         "decision": {"enum": ["approve", "hold", "reject"]},
+        "source_kind": {"type": "string"},
+        "seed_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
         "before": {"type": "object"},
         "after": {"type": "object"}
       },

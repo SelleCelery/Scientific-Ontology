@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "tools" / "docs_registration_candidates.yml"
 MANIFEST = ROOT / "tools" / "docs_manifest.yml"
 GRAPH = ROOT / "tools" / "docs_graph.json"
+REGISTERED_REVIEW_SEED = ROOT / "tools" / "docs_registered_reader_question_review.yml"
 DECISIONS = {"approve", "approve_with_edits", "hold", "reject"}
 
 
@@ -41,13 +42,22 @@ def candidate_payload() -> dict[str, Any]:
     return payload
 
 
+def registered_review_seed_payload() -> dict[str, Any]:
+    data = yaml.safe_load(REGISTERED_REVIEW_SEED.read_text(encoding="utf-8"))
+    payload = data.get("registered_reader_question_review") if isinstance(data, dict) else None
+    if not isinstance(payload, dict):
+        raise ValueError("registered review seed missing registered_reader_question_review root")
+    return payload
+
+
 def validate(data: dict[str, Any], *, allow_stale: bool = False) -> list[str]:
     errors: list[str] = []
     payload = data.get("registration_review")
     if not isinstance(payload, dict):
         return ["registration_review root object is required"]
-    if payload.get("schema_version") != "0.1":
-        errors.append("schema_version must be 0.1")
+    schema_version = str(payload.get("schema_version") or "")
+    if schema_version not in {"0.1", "0.2"}:
+        errors.append("schema_version must be 0.1 or 0.2")
     if payload.get("status") not in {"in_progress", "complete"}:
         errors.append("status must be in_progress or complete")
     source = payload.get("source")
@@ -60,11 +70,25 @@ def validate(data: dict[str, Any], *, allow_stale: bool = False) -> list[str]:
             "manifest_sha256": sha256(MANIFEST),
             "graph_sha256": sha256(GRAPH),
         }
+        if schema_version == "0.2":
+            expected["registered_review_seed_sha256"] = sha256(REGISTERED_REVIEW_SEED)
         for key, current in expected.items():
             if str(source.get(key) or "") != current:
                 errors.append(f"stale source: {key} review={source.get(key)!r} current={current}")
     ledger = candidate_payload()
     candidates = {str(c.get("path") or ""): c for c in ledger.get("candidates", []) if isinstance(c, dict)}
+    registered_seed = registered_review_seed_payload() if REGISTERED_REVIEW_SEED.is_file() else {"documents": []}
+    seeded_revisions = {
+        str(item.get("path") or ""): item
+        for item in registered_seed.get("documents", [])
+        if isinstance(item, dict) and str(item.get("path") or "")
+    }
+    if schema_version == "0.2":
+        if int(source.get("registered_review_seed_count") or -1) != len(seeded_revisions):
+            errors.append(
+                "registered_review_seed_count does not match current registered review seed: "
+                f"review={source.get('registered_review_seed_count')!r} current={len(seeded_revisions)}"
+            )
     decisions = payload.get("decisions")
     if not isinstance(decisions, list):
         errors.append("decisions must be an array")
@@ -151,6 +175,13 @@ def validate(data: dict[str, Any], *, allow_stale: bool = False) -> list[str]:
         after = item.get("after")
         if after is not None and not isinstance(after, dict):
             errors.append(f"revision candidate after must be an object when present: {path or idx}")
+        if item.get("source_kind") == "registered_reader_question_seed":
+            if path not in seeded_revisions:
+                errors.append(f"seeded revision path is not in current registered review seed: {path or idx}")
+            seed_hash = str(item.get("seed_source_sha256") or "")
+            current_seed_hash = sha256(REGISTERED_REVIEW_SEED)
+            if seed_hash != current_seed_hash:
+                errors.append(f"seeded revision source hash is stale: {path or idx}")
     return errors
 
 
@@ -160,13 +191,15 @@ def self_test() -> int:
     proposed = first["proposed"]
     data = {
         "registration_review": {
-            "schema_version": "0.1",
+            "schema_version": "0.2",
             "status": "in_progress",
             "source": {
                 "candidate_source_sha256": sha256(CANDIDATES),
                 "manifest_sha256": sha256(MANIFEST),
                 "graph_sha256": sha256(GRAPH),
                 "candidate_count": len(ledger.get("candidates", [])),
+                "registered_review_seed_sha256": sha256(REGISTERED_REVIEW_SEED),
+                "registered_review_seed_count": len(registered_review_seed_payload().get("documents", [])),
             },
             "decisions": [{
                 "path": first["path"], "doc_id": proposed.get("doc_id", ""), "decision": "approve",
