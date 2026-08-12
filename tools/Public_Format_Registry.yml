@@ -81,6 +81,7 @@ format_registry:
       - "Citation"
       - "License"
       - "Release notes"
+      - "Repository governance specification"
       - "Public Overview Candidate / cross-series operational orientation"
     rule: "Status describes document role, not claim strength."
 

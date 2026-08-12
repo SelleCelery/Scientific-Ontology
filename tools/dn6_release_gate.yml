@@ -1,0 +1,85 @@
+schema_version: "1.0"
+
+gate:
+  id: "DN-6"
+  name: "Release Integration / Release Gate"
+  target_release: "v5.0.0"
+  default_mode: "release_candidate"
+  principle: >-
+    DN-6 closes the public navigation/release-integration line for v5.0. It blocks on
+    broken generated artifacts, public/private boundary violations, search/graph/reader
+    regressions, unknown or increased public-format warning debt, and release metadata
+    inconsistency. Developer-workbench completion is not a v5.0 release blocker.
+
+expected_public_state:
+  catalog_documents: 128
+  registered_documents: 28
+  provisional_documents: 100
+  language_pair_families: 39
+  logical_entries_per_ui_language: 89
+  graph_nodes: 305
+  graph_edges: 1810
+  observed_unregistered_documents: 0
+  exposed_markdown_files: 128
+  search_tests: 11
+  browse_tests: 8
+  graph_tests: 9
+
+public_boundary:
+  public_catalog_forbidden_keys:
+    - candidate_source_sha256
+    - manifest_sha256
+    - search_config_sha256
+    - canonical_index_sha256
+    - graph_sha256
+    - confidence
+    - evidence
+    - needs_human_judgment
+    - reviewer_note
+    - reviewed_at
+    - decisions
+    - manual_candidates
+    - revision_candidates
+  public_graph_forbidden_top_level_keys:
+    - source
+    - diagnostics
+  strong_relation_types_forbidden_from_provisional_documents:
+    - owns
+    - imports
+    - exports
+    - tests
+    - returns_to
+    - delegates
+
+public_format_warning_ceiling:
+  # These warnings are explicitly carried as known v5.0 documentation debt.
+  # Counts may decrease. New warning codes or counts above these ceilings block DN-6.
+  NON_CLAIM_BOUNDARY_SUGGESTED: 36
+  MANIFEST_DOCUMENT_TYPE_MISMATCH: 17
+  README_DOCUMENT_LIST_STALE: 13
+  CAUTION_TERM_BOUNDARY_MISSING: 12
+  CONTRACT_EXPORT_WITHOUT_CONSUMER: 13
+  DOCUMENT_LOCAL_CONCEPT_INFERRED: 9
+  MANIFEST_STATUS_HEADER_MISMATCH: 7
+  CLAIM_STRENGTH_SUGGESTED: 4
+  PRIVATE_CORE_TERM_REVIEW: 3
+  MANIFEST_PUBLIC_PROFILE_MISMATCH: 2
+  PROFILE_LABEL_DRIFT: 1
+  ASSERTION_PUBLIC_PROFILE_WITHOUT_CLAIM_STRENGTH: 1
+  MANIFEST_PUBLIC_MARKDOWN_UNLISTED: 1
+
+v5_1_deferred_developer_work:
+  - "conditional stale-source validation for apply_registration_review.py"
+  - "candidate-only / registered-revision-only / mixed review transaction tests"
+  - "ruamel.yaml development dependency declaration"
+  - "partial-apply candidate/revision reconciliation"
+  - "unified metadata editing and canonical apply workflow"
+  - "machine-generated/synchronized Markdown metadata headers"
+  - "content-hash / body-hash based metadata synchronization"
+
+publication_mode_requirements:
+  note: >-
+    Release-candidate readiness and actual publication are separate. Publication mode
+    additionally requires release_state.yml to be published, publication_date to be fixed,
+    and the version-specific DOI to be assigned. Those facts must not be inferred.
+  command: "python 90_Repository_Governance/Release_Update/release_update.py --release-check"

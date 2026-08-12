@@ -1,21 +1,21 @@
 {
   "registration_candidates": {
     "schema_version": "0.1",
-    "status": "review_candidate",
+    "status": "promoted_to_manifest_provisional",
     "source": {
       "repository_root_name": "Scientific-Ontology",
       "manifest_path": "tools/docs_manifest.yml",
       "graph_path": "tools/docs_graph.json",
-      "manifest_sha256": "9b86a5bfb157135c464b14933132935d97a8d95938f7df95d9070c7d8fe1ac4f",
-      "graph_sha256": "ac04d7aa65164f7e9e07dc6f170cd49d95044683ffafb01c94d49af1b7ecd688",
-      "registered_document_count": 29,
-      "observed_unregistered_count": 100,
-      "candidate_source_sha256": "e9d3bca991ac3e3495ecd7ee50dc903d8c3861cddd80bae5dd25478d52accbc8",
-      "preview_contract": "candidate-only; not manifest; not search ranking"
+      "manifest_sha256": "c70844b6629678b4716135d2a7fb0e896c47fd9ac4ffe6b4819e89da80e1315f",
+      "graph_sha256": "7ea3075da488d6acdf1b7453c2eb3a1d25863791a8b397c0784cb130c5b0a476",
+      "registered_document_count": 129,
+      "observed_unregistered_count": 0,
+      "candidate_source_sha256": "d144501655fdeaf7f4f6ed39223e85e1730646b6b6972a9c78460bf4591efa2e",
+      "preview_contract": "review/audit source; provisional entries are now canonical manifest records; not search ranking"
     },
     "policy": {
-      "candidate_only": true,
-      "manifest_is_not_modified": true,
+      "candidate_only": false,
+      "manifest_is_not_modified": false,
       "concept_ownership_is_not_inferred": true,
       "typed_relations_require_separate_review": true,
       "search_metadata_is_bounded_to_current_text": true,
@@ -24,7 +24,8 @@
       "reader_questions_short_single_intent": true,
       "reader_questions_are_not_search_synonym_lists": true,
       "reader_questions_avoid_generic_document_meta_prompts": true,
-      "reader_questions_one_concept_or_one_relation": true
+      "reader_questions_one_concept_or_one_relation": true,
+      "promoted_as_provisional_registration": true
     },
     "summary": {
       "total_candidates": 100,

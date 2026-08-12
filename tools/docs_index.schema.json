@@ -107,6 +107,7 @@
         "document_type",
         "status",
         "state",
+        "registration_state",
         "scope",
         "role",
         "discovery",
@@ -142,6 +143,9 @@
         },
         "state": {
           "type": "string"
+        },
+        "registration_state": {
+          "enum": ["registered", "provisional"]
         },
         "scope": {
           "type": "string"

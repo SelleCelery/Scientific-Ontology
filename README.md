@@ -495,6 +495,28 @@ The README may open the question widely because the repository already contains 
 
 **READMEでは大きく問いを置き、説明文書がその問いを様々に分析します。**
 
+### Public Navigator / 公開ナビゲータ
+
+The README is the editorial entrance. The **Public Navigator** is the operational reading entrance: it reads the single canonical document manifest and lets a reader browse, search, open documents, and traverse typed relations without knowing repository filenames in advance.
+
+The v5.0 release-candidate inventory contains **128 manifest-backed public documents**: 28 registered entries and 100 entries canonically marked `registration_state: provisional`. `Provisional` describes metadata-review state; it is not a quality, truth, or confidence score. Japanese/English counterpart families are resolved to the current UI language when a counterpart exists.
+
+Local launch from the repository root:
+
+```text
+python scripts/serve_navigator.py
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000/navigator/
+```
+
+日本語では、READMEを「何を読む体系なのか」を示す編集的入口、Public Navigatorを「実際に読む・探す・関係を辿る」運用入口として分けています。v5.0公開候補では、28登録済み文書と100仮登録文書を単一manifestから扱います。仮登録表示はメタデータ監査が継続中であることだけを示し、内容品質の評価には使いません。
+
+Developer Navigator とレビュー内部情報は既定のPublic入口から分離されています。
+
 ---
 
 ## 10. Current release, citation, and public boundary

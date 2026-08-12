@@ -54,10 +54,13 @@ def validate_alignment(root: Path, payload: dict) -> list[str]:
         expected = str(source.get("graph_sha256") or "")
         if expected and actual != expected:
             errors.append(f"graph hash mismatch: candidate={expected} current={actual}")
-    if payload.get("policy", {}).get("candidate_only") is not True:
-        errors.append("candidate_only policy must be true")
-    if payload.get("policy", {}).get("manifest_is_not_modified") is not True:
-        errors.append("manifest_is_not_modified policy must be true")
+    policy = payload.get("policy", {})
+    promoted = bool(policy.get("promoted_as_provisional_registration"))
+    if not promoted:
+        if policy.get("candidate_only") is not True:
+            errors.append("candidate_only policy must be true before promotion")
+        if policy.get("manifest_is_not_modified") is not True:
+            errors.append("manifest_is_not_modified policy must be true before promotion")
     candidates = payload.get("candidates", [])
     if not isinstance(candidates, list):
         errors.append("candidates must be an array")
@@ -74,7 +77,7 @@ def build_document(source_data: dict, source_raw: bytes) -> dict:
     root = json.loads(json.dumps(source_data, ensure_ascii=False))
     payload = root["registration_candidates"]
     payload.setdefault("source", {})["candidate_source_sha256"] = sha256_bytes(source_raw)
-    payload["source"]["preview_contract"] = "candidate-only; not manifest; not search ranking"
+    payload["source"]["preview_contract"] = "review/audit source; provisional entries are now canonical manifest records; not search ranking"
     return root
 
 

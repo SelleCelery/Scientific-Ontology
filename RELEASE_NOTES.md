@@ -40,6 +40,7 @@ v5.0.0 is the opening release of the v5 living series, not the completion of v5.
 - Introduce the DSSI research note on observation, judgment, sovereignty, and responsibility return; the DSSI application itself is not included in v5.0.
 - Introduce the research note on consent boundaries and sentence/bit asymmetry.
 - Introduce Literature as Worldmaking as a public research note.
+- Introduce the manifest-backed Public Navigator for reading, search, typed relation traversal, and Japanese/English counterpart resolution across 128 public documents.
 
 ### Explicit public boundary
 
@@ -66,6 +67,7 @@ v5.0はv5系の完成版ではなく、以後のv5.xで研究・実装・外部�
 - DSSIの観測・判断・主権・責任返還に関する研究ノートを公開研究線へ導入する。DSSIアプリ本体はv5.0に含めない。
 - 同意境界とセンテンス／ビット非対称の研究ノートを公開研究線へ導入する。
 - 世界制作としての文学を公開研究ノートとして導入する。
+- 128公開文書を単一manifestから読み込み、読解・検索・型付き関係探索・日英対文書解決を行うPublic Navigatorを導入する。
 
 ### 公開境界
 

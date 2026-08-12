@@ -24,7 +24,7 @@ tools/docs_index.json
   = canonical manifest-derived read model; never hand-edited
 
 scripts/build_public_catalog.py
-  = public projection compiler combining canonical index + public-safe provisional candidates
+  = public projection compiler reading the single manifest-derived index
 
 tools/docs_public_catalog.json
   = generated Public Navigator document/search read model; never hand-edited
@@ -254,7 +254,7 @@ multiple provenance records != automatic trust score
 - `glossary_term`: human-facing lexical entry from `GLOSSARY.md`.
 - `source_artifact`: structural source such as the Glossary or System Map when it is not represented as a manifest document.
 
-`observed_document` exists so that the graph can preserve actual public Markdown link topology before manifest coverage becomes complete. Promotion into canonical manifest identity still requires explicit manifest work. DN-5.4C may nevertheless expose a public-safe provisional metadata projection for search and reading without changing that graph identity.
+`observed_document` exists so that the graph can preserve public Markdown topology before manifest coverage becomes complete. DN-5.5 promotes the 100 reviewed candidate records into the canonical manifest as `registration_state: provisional`, so those paths now resolve as manifest-backed `document` nodes while typed relation provenance remains unchanged.
 
 ### 13.2 Typed edges
 
@@ -389,9 +389,9 @@ The relation map renders actual typed edges. It does not calculate centrality or
 
 ### 14.2 Data alignment
 
-At runtime the client compares the manifest hash embedded in `docs_index.json` with the manifest hash embedded in `docs_graph.json`. A mismatch is shown as a browser warning rather than silently merging stale artifacts.
+The initial DN-5 client compared manifest hashes in browser runtime. DN-6 moves that integrity check back to repository-side release validation so Public runtime does not need source hashes. Developer Data Audit may still inspect the canonical graph and its diagnostics; Public receives sanitized catalog/graph projections.
 
-The `Data audit` surface exists specifically so that UI inspection can return to the underlying data contract. It exposes registered vs observed-only documents by layer and the graph diagnostics without promoting observed files into canonical document identity.
+The `Data audit` surface exists specifically so that Developer UI inspection can return to the underlying data contract. It exposes registration coverage and graph diagnostics without placing those diagnostics on the Public surface.
 
 ### 14.3 TypeScript source and tracked JavaScript
 
@@ -516,7 +516,7 @@ tools/docs_registration_candidates.yml
   -> Navigator / Candidate review
 ```
 
-This surface is deliberately outside `docs_manifest.yml`. Its full preview remains Developer-only. From DN-5.4C onward, searchable candidates may also contribute a sanitized provisional projection to the Public catalog and direct search before canonical registration.
+This surface is retained as a Developer review/audit source. From DN-5.5 onward, the same 100 documents are also canonical manifest entries with `registration_state: provisional`; the candidate preview no longer supplies the Public runtime catalog.
 
 The browser exposes:
 
@@ -530,9 +530,9 @@ The browser exposes:
 The preview must preserve these boundaries:
 
 ```text
-candidate != manifest registration
+candidate ledger record != completed human review
 candidate topic != ontological classification
-candidate doc_id != canonical identity until accepted
+provisional manifest doc_id = canonical ledger identity while review remains open
 candidate role != theory rewrite
 candidate evidence != proof of concept ownership
 ```
@@ -602,11 +602,13 @@ The public runtime loads:
 
 ```text
 tools/docs_public_catalog.json
-tools/docs_graph.json
+tools/docs_public_graph.json
 navigator/public-content.json
 ```
 
-`docs_public_catalog.json` combines canonical index entries with sanitized searchable candidate metadata. The public shell does not fetch `tools/docs_registration_candidates.preview.json` or `tools/docs_registered_reader_question_review.preview.json`.
+`docs_public_graph.json` is a semantic projection of the canonical `docs_graph.json`: nodes, typed edges, relation labels, and graph principles are retained, while source hashes and Developer diagnostics are removed.
+
+`docs_public_catalog.json` is generated from the single manifest-derived `docs_index.json` and carries both registered and provisional manifest entries. The public shell does not fetch `tools/docs_registration_candidates.preview.json` or `tools/docs_registered_reader_question_review.preview.json`.
 
 ### 17.2 Developer Navigator
 
@@ -623,7 +625,7 @@ Data Audit
 Full candidate/audit data are loaded only in developer mode. DN-5.4C presents a unified review pool on this same shell:
 
 ```text
-provisional unregistered candidates
+provisionally registered documents
 registered revision proposals
 approve / approve with edits / hold / reject
 local progress persistence
@@ -650,7 +652,7 @@ Relations
 
 Search still exposes score reasons, but the public rendering translates field and method names into reader-facing labels. The underlying numeric contributions remain inspectable.
 
-The public relation map renders human-facing relation and node-type labels while preserving the exact typed relation in `docs_graph.json`. Relation count remains distinct from importance.
+The public relation map renders human-facing relation and node-type labels while preserving the exact typed relation from canonical `docs_graph.json` through sanitized `docs_public_graph.json`. Relation count remains distinct from importance.
 
 ### 17.4 Development preview
 
@@ -661,7 +663,7 @@ DN-6 must generate/check a public visibility profile and must reject a public re
 
 ## 18. DN-5.4C Public Provisional Catalog and Unified Review
 
-DN-5.4C separates canonical registration from provisional public usefulness. Searchable candidates may participate in Public Read/Search before human review is complete, while their maintenance metadata stays Developer-only.
+DN-5.5 records provisional public usefulness directly in the canonical manifest. Public Read/Search can use those entries before human metadata review is complete, while candidate evidence and review metadata stay Developer-only.
 
 ```text
 docs_index.json + docs_registration_candidates.yml
@@ -670,7 +672,7 @@ docs_index.json + docs_registration_candidates.yml
   -> Public Navigator
 ```
 
-The current public catalog marks every entry as either `registered` or `provisional`. The provisional projection may carry title, role, scope, topics, aliases, reader questions, and entry level. It carries no inferred concept ownership or typed logical relations. Relation traversal still resolves through `docs_graph.json`, including existing `observed_document` nodes.
+The current public catalog marks every manifest entry as either `registered` or `provisional`. Provisional entries may carry title, role, scope, topics, aliases, reader questions, entry level, visibility, and searchability. They carry no inferred concept ownership or typed logical relations. Relation traversal resolves through the Public semantic projection of `docs_graph.json` using manifest-backed document nodes.
 
 Developer review uses a second revision-seed path for already registered documents:
 
@@ -684,7 +686,7 @@ docs_registered_reader_question_review.yml
 The review pool therefore distinguishes state rather than using separate workflows:
 
 ```text
-provisional candidate -> approval may add canonical manifest entry
+provisional registration -> later review may change registration_state to registered and revise metadata
 registered revision   -> approval may update canonical manifest entry
 ```
 

@@ -118,3 +118,10 @@ _build/
 !tools/docs_public_catalog.json
 !scripts/build_registered_reader_question_review_preview.py
 !tools/docs_registered_reader_question_review.preview.json
+!scripts/build_public_graph.py
+!scripts/check_dn6_release_gate.py
+!tools/docs_public_graph.json
+!tools/dn6_release_gate.yml
+!tools/DN6_RELEASE_INTEGRATION.ja.md
+!tools/DN6_RELEASE_GATE_REPORT.ja.md
+!tools/DN_PROGRESS_AND_RESULTS.ja.md

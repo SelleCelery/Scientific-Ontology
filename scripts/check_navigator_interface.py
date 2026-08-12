@@ -11,7 +11,9 @@ PUBLIC_CONTENT = ROOT / "navigator" / "public-content.json"
 PUBLIC_HTML = ROOT / "navigator" / "index.html"
 DEV_HTML = ROOT / "navigator" / "dev.html"
 APP_SOURCE = ROOT / "navigator" / "src" / "app.ts"
+LANGUAGE_CORE = ROOT / "navigator" / "src" / "language-core.ts"
 GRAPH = ROOT / "tools" / "docs_graph.json"
+PUBLIC_GRAPH = ROOT / "tools" / "docs_public_graph.json"
 PUBLIC_CATALOG = ROOT / "tools" / "docs_public_catalog.json"
 CANDIDATE_PREVIEW = ROOT / "tools" / "docs_registration_candidates.preview.json"
 REGISTERED_REVIEW_PREVIEW = ROOT / "tools" / "docs_registered_reader_question_review.preview.json"
@@ -24,6 +26,16 @@ DEVELOPER_ONLY_KEYS = {
     "confidence",
     "recommended_action",
     "observed_node_id",
+    "candidate_source_sha256",
+    "manifest_sha256",
+    "search_config_sha256",
+    "canonical_index_sha256",
+    "graph_sha256",
+    "reviewer_note",
+    "reviewed_at",
+    "decisions",
+    "manual_candidates",
+    "revision_candidates",
 }
 HEADER_CONTROLS = ("header-menu", "header-back", "header-top", "header-bottom")
 
@@ -33,13 +45,26 @@ def fail(message: str) -> int:
     return 1
 
 
+def forbidden_keys(value, forbidden: set[str], found: set[str]) -> None:
+    if isinstance(value, dict):
+        for key, child in value.items():
+            if str(key) in forbidden:
+                found.add(str(key))
+            forbidden_keys(child, forbidden, found)
+    elif isinstance(value, list):
+        for child in value:
+            forbidden_keys(child, forbidden, found)
+
+
 def main() -> int:
     required_files = (
         PUBLIC_CONTENT,
         PUBLIC_HTML,
         DEV_HTML,
         APP_SOURCE,
+        LANGUAGE_CORE,
         GRAPH,
+        PUBLIC_GRAPH,
         PUBLIC_CATALOG,
         CANDIDATE_PREVIEW,
         REGISTERED_REVIEW_PREVIEW,
@@ -91,9 +116,14 @@ def main() -> int:
         configured_paths.extend(paths)
 
     graph = json.loads(GRAPH.read_text(encoding="utf-8"))
+    public_graph = json.loads(PUBLIC_GRAPH.read_text(encoding="utf-8"))
+    if "source" in public_graph or "diagnostics" in public_graph:
+        return fail("public graph exposes canonical source hashes or developer diagnostics")
+    if public_graph.get("nodes") != graph.get("nodes") or public_graph.get("edges") != graph.get("edges"):
+        return fail("public graph semantic projection differs from canonical graph nodes/edges")
     exposed = {
         str(node.get("path") or "")
-        for node in graph.get("nodes", [])
+        for node in public_graph.get("nodes", [])
         if node.get("type") in {"document", "observed_document"}
     }
     for relative in configured_paths:
@@ -108,7 +138,31 @@ def main() -> int:
             return fail(f"public-content Markdown is outside Reader graph boundary: {relative}")
 
     catalog = json.loads(PUBLIC_CATALOG.read_text(encoding="utf-8"))
+    leaked_catalog_keys: set[str] = set()
+    forbidden_keys(catalog, DEVELOPER_ONLY_KEYS, leaked_catalog_keys)
+    if leaked_catalog_keys:
+        return fail(f"public catalog leaks developer-only key(s): {sorted(leaked_catalog_keys)}")
+    if str(catalog.get("catalog_contract_version") or "") != "0.4":
+        return fail("public catalog contract_version must be 0.4 for language-resolved presentation")
     catalog_docs = catalog.get("documents") or []
+    catalog_paths = {str(doc.get("path") or "") for doc in catalog_docs}
+    pair_keys: set[str] = set()
+    for doc in catalog_docs:
+        presentation = doc.get("presentation") or {}
+        language = str(presentation.get("language") or "")
+        family_key = str(presentation.get("family_key") or "")
+        if language not in {"ja", "en", "bilingual", "und"}:
+            return fail(f"invalid public presentation language {language!r}: {doc.get('path')}")
+        if not family_key:
+            return fail(f"missing public presentation family_key: {doc.get('path')}")
+        counterpart = str(presentation.get("counterpart_path") or "")
+        if counterpart:
+            if counterpart not in catalog_paths:
+                return fail(f"public presentation counterpart missing from catalog: {counterpart}")
+            pair_keys.add(family_key)
+    expected_pairs = int((catalog.get("source") or {}).get("language_pair_families") or 0)
+    if len(pair_keys) != expected_pairs:
+        return fail(f"language pair family count mismatch: metadata={expected_pairs} actual={len(pair_keys)}")
     registered = [doc for doc in catalog_docs if doc.get("registration_state") == "registered"]
     provisional = [doc for doc in catalog_docs if doc.get("registration_state") == "provisional"]
     if not registered:
@@ -145,9 +199,13 @@ def main() -> int:
     required_source_fragments = (
         'document.body.dataset.interface === "developer"',
         'fetch(PUBLIC_CATALOG_URL)',
+        'isDeveloper() ? DEVELOPER_GRAPH_URL : PUBLIC_GRAPH_URL',
         'isDeveloper()\n      ? fetch(CANDIDATES_URL)',
         'isDeveloper()\n      ? fetch(REGISTERED_REVIEW_URL)',
         'fetch(PUBLIC_CONTENT_URL)',
+        'collapseDocumentsForLanguage',
+        'collapseSearchResultsForLanguage',
+        'preferredPathForLanguage',
     )
     for fragment in required_source_fragments:
         if fragment not in app_source:
@@ -157,7 +215,7 @@ def main() -> int:
         "NAVIGATOR INTERFACE CHECK PASS: "
         f"{len(layers)} public layers, {len(guides)} guide entrances, "
         f"{len(registered)} registered + {len(provisional)} provisional public documents, "
-        "developer review data isolated"
+        f"{len(pair_keys)} JA/EN presentation pairs, developer review data isolated"
     )
     return 0
 

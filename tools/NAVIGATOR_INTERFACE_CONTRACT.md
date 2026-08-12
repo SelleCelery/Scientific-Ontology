@@ -2,7 +2,7 @@
 
 > Status: Repository governance specification
 > Track: Document Navigation Infrastructure
-> Stage: DN-5.4C
+> Stage: DN-5.5A
 
 ## 1. Responsibility split
 
@@ -16,7 +16,7 @@ Developer Navigator
   = inspect, review, revise, and maintain the metadata feeding that public surface
 ```
 
-`provisional` does not mean private. It means the document may participate in public navigation before its metadata has been promoted into the canonical manifest.
+`provisional` does not mean private. From DN-5.5 onward it means the document is already present in the canonical manifest, while metadata review remains open.
 
 ## 2. Public Navigator contract
 
@@ -64,48 +64,75 @@ The public surface must not expose developer review state, confidence, evidence 
 
 A provisional document may show a compact `仮登録 / Provisional` badge. That badge reports registration state only; it is not a quality or truth score.
 
-## 3. Public provisional catalog
+## 3. Single-manifest public catalog
 
-Public runtime document/search metadata is generated into:
+Public runtime document/search metadata is generated from the single manifest-derived index:
 
 ```text
+tools/docs_manifest.yml
+        ↓
 tools/docs_index.json
-  canonical manifest-derived read model
-
-                 +
-
-tools/docs_registration_candidates.yml
-  candidate source ledger
-
-                 ↓ sanitize / project
-
+        ↓ public-safe projection
 scripts/build_public_catalog.py
-                 ↓
-
+        ↓
 tools/docs_public_catalog.json
 ```
+
+`tools/docs_registration_candidates.yml` remains a Developer/audit source after DN-5.5. It is not merged into the Public runtime catalog.
 
 The public catalog contains:
 
 - every document in the canonical index as `registration_state: registered`;
-- every candidate explicitly marked searchable as `registration_state: provisional`;
+- every manifest document included by the active visibility profile, carrying `registration_state: registered|provisional`;
 - no candidate confidence, evidence, review notes, human-judgment flags, or maintenance diagnostics.
 
-Support candidates marked non-searchable remain outside default public discovery.
+Provisional support documents may remain readable in the catalog while `discovery.searchable: false` keeps them out of default search ranking.
 
 Provisional projection may supply reader-facing title, role, scope, topics, aliases, reader questions, entry level, and display state. It must not create canonical concept ownership or typed logical relations.
 
+### 3.1 UI-language document resolution
+
+Canonical JA and EN documents remain separate manifest entries. The Public presentation layer groups counterpart files only for display/navigation.
+
 ```text
-provisional discovery metadata != canonical registration
+canonical identity != presentation grouping
+```
+
+`build_public_catalog.py` adds presentation-only metadata:
+
+```text
+presentation.language
+presentation.family_key
+presentation.counterpart_path
+```
+
+The Public Navigator must apply the following resolution rule consistently in Read, Search, layer/topic listings, relation traversal, related-document links, and Reader language switching:
+
+```text
+UI = JA
+  JA counterpart -> JA
+  bilingual/und  -> same document
+  JA unavailable -> EN/single-language fallback
+
+UI = EN
+  EN counterpart -> EN
+  bilingual/und  -> same document
+  EN unavailable -> JA/single-language fallback
+```
+
+When both JA and EN variants exist, Public lists/search results collapse the pair to one logical presentation entry. Developer mode may continue to expose both canonical entries for audit. Changing the UI language while reading a paired document should resolve to the counterpart rather than merely translating chrome labels.
+
+```text
+provisional registration != completed human metadata review
 provisional topic != ontological classification
-provisional doc_id proposal != canonical document identity
+provisional doc_id = canonical ledger identity with review still open
 provisional role != theory rewrite
 candidate evidence != public proof
 ```
 
 ## 4. Graph boundary
 
-`tools/docs_graph.json` remains the relation source of truth.
+`tools/docs_graph.json` remains the canonical relation source of truth. Public runtime receives a sanitized semantic projection in `tools/docs_public_graph.json`; Developer mode may load the canonical graph with source hashes and diagnostics.
 
 Provisional catalog metadata may improve the human-facing title/role of an existing `observed_document`, but it must not synthesize edges such as:
 
@@ -118,7 +145,7 @@ returns_to
 delegates
 ```
 
-A provisional search result can therefore open the relation map through its existing path-backed `observed_document` node. What appears there comes from the graph's declared/observed provenance, not from inferred candidate relations.
+A provisional search result opens the relation map through its manifest-backed `document` node. Promotion does not invent typed logical relations: relation content still comes only from declared or observed graph provenance.
 
 ## 5. Developer Navigator contract
 
@@ -132,7 +159,7 @@ Developer mode uses the same Public catalog/search/graph base and adds:
 
 ```text
 Unified Review Pool
-  - provisional unregistered candidates
+  - provisionally registered documents
   - registered revision proposals
 
 Data Audit
@@ -186,10 +213,10 @@ docs_registration_candidates.yml
   UI write: forbidden
 
 docs_index.json / docs_graph.json
-  generated; hand edit forbidden
+  canonical/generated Developer read models; hand edit forbidden
 
-docs_public_catalog.json
-  generated public read model; hand edit forbidden
+docs_public_catalog.json / docs_public_graph.json
+  generated Public read models; source hashes, diagnostics, and review internals removed; hand edit forbidden
 
 docs_registration_candidates.preview.json
   generated Developer read model; hand edit forbidden
@@ -225,13 +252,14 @@ Public runtime:
 
 ```text
 tools/docs_public_catalog.json
-tools/docs_graph.json
+tools/docs_public_graph.json
 navigator/public-content.json
 ```
 
 Developer runtime additionally loads:
 
 ```text
+tools/docs_graph.json
 tools/docs_registration_candidates.preview.json
 tools/docs_registered_reader_question_review.preview.json
 browser-local review state
@@ -242,23 +270,25 @@ The default public shell must not fetch either Developer preview artifact.
 ## 10. Canonical flow
 
 ```text
-Observed public Markdown
+Public Markdown
       ↓
-Candidate ledger
-      ├──────────── sanitize ────────────→ Public provisional catalog
-      │                                      ↓
-      │                                Public Navigator
-      │
-      └─ Developer review ─→ review transaction
-                                ↓ explicit validate/apply
-                         canonical docs_manifest.yml
-                                ↓
-                     docs_index.json + docs_graph.json
-                                ↓
-                         next Public catalog
+canonical docs_manifest.yml
+  registered + provisional
+      ↓
+docs_index.json + docs_graph.json
+      ↓
+Public catalog + sanitized public graph + language presentation projection
+      ↓
+Public Navigator
+
+Candidate/revision ledgers
+      ↓
+Developer review (v5.1+ completion path)
+      ↓ explicit validate/apply
+canonical docs_manifest.yml
 ```
 
-This separates public usefulness from human-audit throughput without pretending provisional metadata is canonical.
+This separates public usefulness from human-audit throughput while recording the provisional status canonically in the manifest.
 
 ## 11. DN-6 release boundary
 
@@ -268,7 +298,8 @@ DN-6 should verify at minimum:
 public catalog is fresh
 canonical index is fresh
 graph is fresh
-public catalog contains no developer-only candidate metadata
+public graph is fresh and contains no source hashes or diagnostics
+public catalog contains no developer-only candidate metadata or source hashes
 provisional entries invent no concept ownership or typed logical relations
 public shell has no Developer preview dependency
 private/process paths do not leak
@@ -276,6 +307,7 @@ UTF-8 Reader boundary passes
 search regression passes
 relation graph regression passes
 public-content paths exist and are readable
+JA/EN counterpart resolution passes and Public does not surface the opposite-language variant when a requested-language counterpart exists
 ```
 
 The Developer Navigator is repository-maintenance tooling. It may exist in the repository distribution while remaining clearly separated from the default public entry.
@@ -287,6 +319,6 @@ reader-friendly copy != canonical definition
 search score != truth
 relation map != evidence ranking
 layer placement != ontological proof
-provisional publication != canonical registration
+provisional registration != completed metadata review
 review approval != automatic manifest write
 ```

@@ -30,11 +30,19 @@ def main() -> int:
         errors.append('duplicate candidate path')
     if len(ids) != len(set(ids)):
         errors.append('duplicate proposed doc_id')
-    if set(paths) != observed:
-        errors.append(f'candidate/observed mismatch: candidates={len(set(paths))}, observed={len(observed)}')
+    promoted = bool(data.get('policy', {}).get('promoted_as_provisional_registration'))
     overlap = set(paths) & registered
-    if overlap:
-        errors.append(f'already registered paths included: {sorted(overlap)[:5]}')
+    if promoted:
+        provisional = {str(d['path']) for d in manifest.get('documents', []) if d.get('registration_state') == 'provisional'}
+        if set(paths) != provisional:
+            errors.append(f'candidate/provisional-manifest mismatch: candidates={len(set(paths))}, provisional={len(provisional)}')
+        if observed:
+            errors.append(f'promoted candidate set should have no observed-unregistered graph nodes: {len(observed)}')
+    else:
+        if set(paths) != observed:
+            errors.append(f'candidate/observed mismatch: candidates={len(set(paths))}, observed={len(observed)}')
+        if overlap:
+            errors.append(f'already registered paths included: {sorted(overlap)[:5]}')
     for c in candidates:
         rel = c['path']
         if not (root / rel).is_file():
@@ -52,8 +60,10 @@ def main() -> int:
             if len(c['proposed']['discovery'].get('reader_questions', {}).get(lang, [])) > 5:
                 errors.append(f'too many reader questions {lang}: {rel}')
 
-    if len(candidates) != data['source']['observed_unregistered_count']:
+    if not promoted and len(candidates) != data['source']['observed_unregistered_count']:
         errors.append('summary observed count mismatch')
+    if promoted and int(data['source'].get('observed_unregistered_count') or 0) != 0:
+        errors.append('promoted candidate source must report observed_unregistered_count: 0')
 
     if errors:
         print('REGISTRATION CANDIDATE CHECK FAILED')

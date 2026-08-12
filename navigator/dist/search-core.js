@@ -222,6 +222,8 @@ export function searchDocuments(query, index, mode = "auto", limit = 10, lang = 
     const minimum = Number(index.search_profile?.thresholds?.minimum_result_score ?? 2.5);
     const results = [];
     for (const doc of index.documents ?? []) {
+        if (doc.discovery?.searchable === false)
+            continue;
         let score = 0;
         const matches = [];
         let directCount = 0;

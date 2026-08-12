@@ -271,6 +271,7 @@ def build_document(
         "document_type": str(raw.get("document_type", "")),
         "status": str(raw.get("status", "")),
         "state": str(raw.get("state", "")),
+        "registration_state": str(raw.get("registration_state") or "registered"),
         "scope": str(raw.get("scope", "")),
         "role": {
             "ja": str(raw.get("role_ja", "")),
@@ -279,6 +280,8 @@ def build_document(
         "language_relation": raw.get("language_relation"),
         "discovery": {
             "topics": discovery_topics,
+            "searchable": bool(discovery.get("searchable", True)),
+            "visibility": str(discovery.get("visibility") or "canonical"),
             "aliases": {
                 "ja": [str(v) for v in as_list(aliases.get("ja"))],
                 "en": [str(v) for v in as_list(aliases.get("en"))],

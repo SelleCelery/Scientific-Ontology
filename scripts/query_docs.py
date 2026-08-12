@@ -267,6 +267,8 @@ def search_documents(
     results: List[Dict[str, Any]] = []
 
     for doc in index.get("documents", []):
+        if not bool(doc.get("discovery", {}).get("searchable", True)):
+            continue
         score = 0.0
         matches: List[Dict[str, Any]] = []
         direct_count = 0

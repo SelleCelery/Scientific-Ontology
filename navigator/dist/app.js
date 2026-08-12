@@ -1,7 +1,9 @@
 import { browsePayload, browseTopics, localizedValue, searchDocuments, } from "./search-core.js";
 import { graphNodeLabel, graphNodeMap, graphSubgraph, layerSummaries, resolveGraphNode, } from "./graph-core.js";
+import { collapseDocumentsForLanguage, collapseSearchResultsForLanguage, documentLanguage, preferredDocumentForLanguage, preferredPathForLanguage, presentationKeyForDocument, } from "./language-core.js";
 const PUBLIC_CATALOG_URL = "../tools/docs_public_catalog.json";
-const GRAPH_URL = "../tools/docs_graph.json";
+const PUBLIC_GRAPH_URL = "../tools/docs_public_graph.json";
+const DEVELOPER_GRAPH_URL = "../tools/docs_graph.json";
 const CANDIDATES_URL = "../tools/docs_registration_candidates.preview.json";
 const REGISTERED_REVIEW_URL = "../tools/docs_registered_reader_question_review.preview.json";
 const PUBLIC_CONTENT_URL = "./public-content.json";
@@ -151,7 +153,7 @@ function displayGraphNodeLabel(node) {
     if (node.type === "document" || node.type === "observed_document") {
         const doc = docByPath(String(node.path ?? ""));
         if (doc)
-            return titleForDoc(doc);
+            return titleForDoc(preferredDoc(doc));
     }
     return graphNodeLabel(node, displayLang);
 }
@@ -230,6 +232,28 @@ function setLanguage(lang) {
     langButton.textContent = lang === "ja" ? "EN" : "日本語";
     document.documentElement.lang = lang;
     updateHeaderControls();
+    if (!isDeveloper() && docsIndex && docsGraph) {
+        const params = route();
+        let changed = false;
+        const readPath = params.get("read");
+        if (readPath) {
+            const target = preferredPathForLanguage(readPath, allDocuments(), lang);
+            if (target && target !== readPath) {
+                params.set("read", target);
+                changed = true;
+            }
+        }
+        const graphId = params.get("graph");
+        if (graphId) {
+            const target = preferredGraphNodeId(graphId);
+            if (target && target !== graphId) {
+                params.set("graph", target);
+                changed = true;
+            }
+        }
+        if (changed)
+            history.replaceState(null, "", `#${params.toString()}`);
+    }
     render();
 }
 function eyebrow(text) {
@@ -249,6 +273,31 @@ function docById(docId) {
 }
 function docByPath(path) {
     return (docsIndex.documents ?? []).find((doc) => String(doc.path ?? "") === path);
+}
+function allDocuments() {
+    return docsIndex.documents ?? [];
+}
+function preferredDoc(doc) {
+    return isDeveloper() ? doc : preferredDocumentForLanguage(doc, allDocuments(), displayLang);
+}
+function preferredPath(path) {
+    return isDeveloper() ? path : preferredPathForLanguage(path, allDocuments(), displayLang);
+}
+function preferredGraphNode(node) {
+    if (isDeveloper() || (node.type !== "document" && node.type !== "observed_document"))
+        return node;
+    const path = String(node.path ?? "");
+    const doc = docByPath(path);
+    if (!doc)
+        return node;
+    const target = preferredDoc(doc);
+    return graphNodeByPath(String(target.path ?? "")) ?? node;
+}
+function preferredGraphNodeId(nodeId) {
+    if (isDeveloper())
+        return nodeId;
+    const node = graphNodeMap(docsGraph).get(nodeId);
+    return node ? String(preferredGraphNode(node).id ?? nodeId) : nodeId;
 }
 function graphNodeByPath(path) {
     return (docsGraph.nodes ?? []).find((node) => (node.type === "document" || node.type === "observed_document") && String(node.path ?? "") === path);
@@ -276,6 +325,18 @@ function registrationStateForDoc(doc) {
 }
 function isProvisionalDoc(doc) {
     return registrationStateForDoc(doc) === "provisional";
+}
+function languageFallbackLabel(doc) {
+    if (isDeveloper())
+        return "";
+    const language = documentLanguage(doc);
+    if (language !== "ja" && language !== "en")
+        return "";
+    if (language === displayLang)
+        return "";
+    if (doc.presentation?.counterpart_path)
+        return "";
+    return language === "ja" ? (displayLang === "ja" ? "日本語のみ" : "JA only") : (displayLang === "ja" ? "ENのみ" : "EN only");
 }
 function candidateTitle(candidate) {
     const proposed = candidate.proposed ?? {};
@@ -321,7 +382,7 @@ function candidateSearchText(candidate) {
 }
 function readerButton(path, className = "text-button") {
     const read = button(displayLang === "ja" ? "読む" : "Read", className);
-    read.addEventListener("click", () => setRoute({ read: path }));
+    read.addEventListener("click", () => setRoute({ read: preferredPath(path) }));
     return read;
 }
 function rawFileLink(path, className = "text-link") {
@@ -332,6 +393,7 @@ function rawFileLink(path, className = "text-link") {
     return raw;
 }
 function graphNodeForDocument(doc) {
+    doc = preferredDoc(doc);
     const direct = `doc:${doc.id}`;
     if (graphNodeMap(docsGraph).has(direct))
         return direct;
@@ -368,21 +430,14 @@ function dataBanner() {
         const notice = el("div", "public-preview-note");
         notice.append(badge(displayLang === "ja" ? "公開準備プレビュー" : "Release-preparation preview", "warn"), el("span", "", displayLang === "ja"
             ? "登録済み文書と公開可能な仮登録候補を同じ読解面で利用しています。仮登録はcanonical登録ではなく、レビュー情報や診断情報は公開面へ出しません。"
-            : "Registered documents and public-safe provisional candidates share this reading surface. Provisional status is not canonical registration, and review/diagnostic data stays off the public surface."));
+            : "Registered and provisionally registered documents share this reading surface. Provisional entries are already in the canonical document ledger, while metadata review remains open; review/diagnostic data stays off the public surface."));
         return notice;
     }
     const wrap = el("div", "data-banner");
     wrap.append(badge(profile === "preview" ? "PREVIEW" : profile.toUpperCase(), profile === "preview" ? "warn" : ""));
-    const indexHash = String(docsIndex.source?.manifest_sha256 ?? "");
-    const graphHash = String(docsGraph.source?.manifest_sha256 ?? "");
-    const aligned = indexHash && graphHash && indexHash === graphHash;
-    wrap.append(el("span", "data-banner-text", aligned
-        ? displayLang === "ja"
-            ? "Public catalog のcanonical基底と関係グラフは同じ manifest から生成されています。"
-            : "The Public catalog canonical base and relation graph were built from the same manifest."
-        : displayLang === "ja"
-            ? "Public catalog のcanonical基底と関係グラフの manifest hash が一致していません。"
-            : "The Public catalog canonical base and relation graph manifest hashes do not match."));
+    wrap.append(el("span", "data-banner-text", displayLang === "ja"
+        ? "Public catalog とcanonical関係グラフをDeveloper監査面で読み込んでいます。整合性はDN-6 release gateで検証します。"
+        : "Developer audit mode is using the Public catalog and canonical relation graph. DN-6 release gate verifies their consistency."));
     return wrap;
 }
 function searchBox(initial = "") {
@@ -517,6 +572,9 @@ function docCard(doc) {
         top.append(badge(isDeveloper() ? level : entryLevelLabel(level)));
     if (isProvisionalDoc(doc))
         top.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"));
+    const languageFallback = languageFallbackLabel(doc);
+    if (languageFallback)
+        top.append(badge(languageFallback, "warn"));
     if (isDeveloper() && state)
         top.append(badge(state, state === "public-candidate" ? "warn" : ""));
     if (top.childElementCount)
@@ -577,8 +635,11 @@ function renderTopic(topicId) {
     hero.append(questions);
     page.append(hero);
     const groups = { foundation: [], intermediate: [], advanced: [], unspecified: [] };
-    for (const doc of payload.documents ?? []) {
-        const level = String(doc.entry_level ?? "");
+    const topicDocs = isDeveloper()
+        ? (payload.documents ?? [])
+        : collapseDocumentsForLanguage(payload.documents ?? [], allDocuments(), displayLang);
+    for (const doc of topicDocs) {
+        const level = String(doc.entry_level ?? doc.discovery?.entry_level ?? "");
         (groups[level] ?? groups.unspecified).push(doc);
     }
     const labels = {
@@ -602,13 +663,14 @@ function renderTopic(topicId) {
 }
 function publicDocsForLayer(layerPath) {
     const normalized = layerPath.replace(/\\/g, "/").replace(/\/$/, "");
-    return (docsIndex.documents ?? [])
+    const matched = (docsIndex.documents ?? [])
         .filter((doc) => {
         const path = String(doc.path ?? "");
         if (normalized === ".")
             return !path.includes("/");
         return path === normalized || path.startsWith(`${normalized}/`);
-    })
+    });
+    return collapseDocumentsForLanguage(matched, allDocuments(), displayLang)
         .slice()
         .sort((a, b) => {
         const levelOrder = { foundation: 0, intermediate: 1, advanced: 2, "": 3 };
@@ -652,8 +714,8 @@ function renderPublicLayer(layerId) {
         const section = el("section", "section public-section");
         const provisionalCount = layerDocs.filter((doc) => isProvisionalDoc(doc)).length;
         section.append(eyebrow(displayLang === "ja" ? "DOCUMENTS" : "DOCUMENTS"), el("h2", "section-title", displayLang === "ja" ? "この層で読む" : "Read in this layer"), el("p", "section-copy", displayLang === "ja"
-            ? `登録済みと公開可能な仮登録を合わせて ${layerDocs.length} 件です。うち仮登録 ${provisionalCount} 件。仮登録は読解・検索の暫定入口で、canonical登録を意味しません。`
-            : `${layerDocs.length} registered or public-safe provisional documents are available here, including ${provisionalCount} provisional. Provisional items are reading/search entrances, not canonical registrations.`));
+            ? `登録済みと公開可能な仮登録を合わせて ${layerDocs.length} 件です。うち仮登録 ${provisionalCount} 件。仮登録もcanonical文書台帳に収録されていますが、メタデータの人間レビューは未完了です。`
+            : `${layerDocs.length} registered or public-safe provisional documents are available here, including ${provisionalCount} provisional. Provisional items are canonical ledger entries whose metadata review remains open.`));
         const grid = el("div", "doc-grid");
         for (const doc of layerDocs)
             grid.append(docCard(doc));
@@ -773,7 +835,12 @@ function renderSearch(query) {
         page.append(section);
         return page;
     }
-    const found = searchDocuments(query, docsIndex, "auto", 12, "both");
+    let rawFound = searchDocuments(query, docsIndex, "auto", isDeveloper() ? 12 : 32, isDeveloper() ? "both" : displayLang);
+    if (!isDeveloper() && !rawFound.results.length)
+        rawFound = searchDocuments(query, docsIndex, "auto", 32, "both");
+    const found = isDeveloper()
+        ? rawFound
+        : { ...rawFound, results: collapseSearchResultsForLanguage(rawFound.results, allDocuments(), displayLang, 12) };
     section.append(el("div", "search-summary", isDeveloper()
         ? `${displayLang === "ja" ? "判定モード" : "Resolved mode"}: ${found.mode} · ${found.results.length} ${displayLang === "ja" ? "件" : "results"}`
         : `${found.results.length} ${displayLang === "ja" ? "件見つかりました" : "results"}`));
@@ -784,6 +851,9 @@ function renderSearch(query) {
         const headingMeta = el("div", "result-heading-meta");
         if (isProvisionalDoc(result))
             headingMeta.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"));
+        const languageFallback = languageFallbackLabel(result);
+        if (languageFallback)
+            headingMeta.append(badge(languageFallback, "warn"));
         headingMeta.append(badge(result.score.toFixed(2), "score"));
         heading.append(el("h2", "card-title", titleForDoc(result)), headingMeta);
         card.append(heading);
@@ -1160,11 +1230,16 @@ function publicRelatedDocuments(rootId, limit = 6) {
         const node = nodeMap.get(otherId);
         if (!node || (node.type !== "document" && node.type !== "observed_document"))
             continue;
-        const path = String(node.path ?? "");
+        const projectedNode = preferredGraphNode(node);
+        const path = String(projectedNode.path ?? "");
         if (!path || !readerAllowedPaths().has(path))
             continue;
-        seen.add(otherId);
-        rows.push({ node, relation: String(edge.relation), direction: outgoing ? "outgoing" : "incoming" });
+        const projectedDoc = docByPath(path);
+        const dedupeKey = projectedDoc ? presentationKeyForDocument(projectedDoc) : String(projectedNode.id ?? otherId);
+        if (seen.has(dedupeKey))
+            continue;
+        seen.add(dedupeKey);
+        rows.push({ node: projectedNode, relation: String(edge.relation), direction: outgoing ? "outgoing" : "incoming" });
         if (rows.length >= limit)
             break;
     }
@@ -1199,6 +1274,7 @@ function publicReaderRelatedSection(graphNode) {
     return section;
 }
 function renderReader(path) {
+    path = preferredPath(path);
     const page = el("main", `page reader-page ${isDeveloper() ? "developer-reader" : "public-reader"}`);
     page.append(navBar(isDeveloper() ? "reader" : "home"), dataBanner());
     const back = button(displayLang === "ja" ? "← 戻る" : "← Back", "back-button");
@@ -1221,8 +1297,16 @@ function renderReader(path) {
         header.append(eyebrow(displayLang === "ja" ? "READ" : "READ"), el("h1", "reader-public-title", title));
         if (doc && isProvisionalDoc(doc)) {
             const stateLine = el("div", "reader-public-state");
-            stateLine.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"), el("span", "muted", displayLang === "ja" ? "公開読解用の暫定メタデータです。canonical登録ではありません。" : "Public reading metadata is provisional and not a canonical registration."));
+            stateLine.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"), el("span", "muted", displayLang === "ja" ? "canonical文書台帳に仮登録済みです。メタデータの人間レビューは未完了です。" : "This is a canonical provisional registration; metadata review remains open."));
             header.append(stateLine);
+        }
+        if (doc) {
+            const languageFallback = languageFallbackLabel(doc);
+            if (languageFallback) {
+                const languageLine = el("div", "reader-public-state");
+                languageLine.append(badge(languageFallback, "warn"), el("span", "muted", displayLang === "ja" ? "選択中のUI言語に対応する対訳文書がないため、この言語版を表示しています。" : "No counterpart exists for the selected UI language, so this single-language document is shown as a fallback."));
+                header.append(languageLine);
+            }
         }
         const role = doc ? roleForDoc(doc) : "";
         if (role)
@@ -1299,11 +1383,12 @@ function relationSection(rootId) {
     const map = relationMap(rootId);
     section.append(map);
     const full = button(displayLang === "ja" ? "関係マップで広げる" : "Open the relation map", "button secondary");
-    full.addEventListener("click", () => setRoute({ graph: rootId }));
+    full.addEventListener("click", () => setRoute({ graph: preferredGraphNodeId(rootId) }));
     section.append(full);
     return section;
 }
 function relationMap(rootId) {
+    rootId = preferredGraphNodeId(rootId);
     const payload = graphSubgraph(docsGraph, rootId, 1);
     const nodeMap = new Map((payload.nodes ?? []).map((node) => [String(node.id), node]));
     const root = nodeMap.get(rootId);
@@ -1314,6 +1399,28 @@ function relationMap(rootId) {
     }
     let edges = (payload.edges ?? []).filter((edge) => edge.from === rootId || edge.to === rootId);
     edges = edges.sort((a, b) => String(a.relation).localeCompare(String(b.relation), "en") || String(a.from).localeCompare(String(b.from), "en") || String(a.to).localeCompare(String(b.to), "en"));
+    if (!isDeveloper()) {
+        const seen = new Set();
+        edges = edges.flatMap((edge) => {
+            const outgoing = edge.from === rootId;
+            const otherId = String(outgoing ? edge.to : edge.from);
+            const other = nodeMap.get(otherId) ?? graphNodeMap(docsGraph).get(otherId);
+            if (!other)
+                return [];
+            const projected = preferredGraphNode(other);
+            let logicalKey = String(projected.id ?? otherId);
+            if (projected.type === "document" || projected.type === "observed_document") {
+                const projectedDoc = docByPath(String(projected.path ?? ""));
+                if (projectedDoc)
+                    logicalKey = presentationKeyForDocument(projectedDoc);
+            }
+            const key = `${outgoing ? "out" : "in"}|${String(edge.relation)}|${logicalKey}`;
+            if (seen.has(key))
+                return [];
+            seen.add(key);
+            return [{ ...edge, display_other_id: String(projected.id ?? otherId) }];
+        });
+    }
     const clipped = edges.slice(0, MAX_MAP_EDGES);
     const incoming = clipped.filter((edge) => edge.to === rootId);
     const outgoing = clipped.filter((edge) => edge.from === rootId);
@@ -1344,7 +1451,8 @@ function relationMap(rootId) {
     const center = { x: 500, y: centerY };
     drawGraphNode(svg, root, center.x, center.y, true);
     incoming.forEach((edge, index) => {
-        const node = nodeMap.get(String(edge.from));
+        const nodeId = String(edge.display_other_id ?? edge.from);
+        const node = nodeMap.get(nodeId) ?? graphNodeMap(docsGraph).get(nodeId);
         if (!node)
             return;
         const y = 70 + index * 74;
@@ -1352,7 +1460,8 @@ function relationMap(rootId) {
         drawGraphNode(svg, node, 180, y, false);
     });
     outgoing.forEach((edge, index) => {
-        const node = nodeMap.get(String(edge.to));
+        const nodeId = String(edge.display_other_id ?? edge.to);
+        const node = nodeMap.get(nodeId) ?? graphNodeMap(docsGraph).get(nodeId);
         if (!node)
             return;
         const y = 70 + index * 74;
@@ -1368,13 +1477,13 @@ function relationMap(rootId) {
     const list = el("div", "relation-list");
     for (const edge of edges) {
         const outgoingEdge = edge.from === rootId;
-        const otherId = String(outgoingEdge ? edge.to : edge.from);
+        const otherId = String(edge.display_other_id ?? (outgoingEdge ? edge.to : edge.from));
         const other = nodeMap.get(otherId) ?? graphNodeMap(docsGraph).get(otherId);
         if (!other)
             continue;
         const row = el("button", "relation-row");
         row.type = "button";
-        row.addEventListener("click", () => setRoute({ graph: otherId }));
+        row.addEventListener("click", () => setRoute({ graph: preferredGraphNodeId(otherId) }));
         const direction = el("span", "relation-direction", outgoingEdge ? "→" : "←");
         const rel = el("span", "relation-type", isDeveloper() ? String(edge.relation) : relationLabel(String(edge.relation)));
         const label = el("span", "relation-target", displayGraphNodeLabel(other));
@@ -1416,7 +1525,7 @@ function drawGraphNode(svg, node, x, y, root) {
     type.textContent = isDeveloper() ? String(node.type) : nodeTypeLabel(String(node.type));
     group.append(rect, text, type);
     if (!root) {
-        const activate = () => setRoute({ graph: String(node.id) });
+        const activate = () => setRoute({ graph: preferredGraphNodeId(String(node.id)) });
         group.addEventListener("click", activate);
         group.addEventListener("keydown", (event) => {
             if (event.key === "Enter" || event.key === " ")
@@ -1487,7 +1596,7 @@ function renderRelations(nodeQuery = "") {
     }
     if (nodeQuery) {
         try {
-            const rootId = resolveGraphNode(docsGraph, nodeQuery);
+            const rootId = preferredGraphNodeId(resolveGraphNode(docsGraph, nodeQuery));
             const root = graphNodeMap(docsGraph).get(rootId);
             const current = el("div", "graph-current");
             current.append(el("h2", "section-title small", displayGraphNodeLabel(root)), badge(isDeveloper() ? String(root.type) : nodeTypeLabel(String(root.type))));
@@ -1514,7 +1623,7 @@ function renderRelations(nodeQuery = "") {
             if (!node)
                 continue;
             const b = button(displayGraphNodeLabel(node), "starter-node");
-            b.addEventListener("click", () => setRoute({ graph: id }));
+            b.addEventListener("click", () => setRoute({ graph: preferredGraphNodeId(id) }));
             starters.append(b);
         }
         section.append(el("h2", "minor-title", displayLang === "ja" ? "例から開く" : "Open an example"), starters);
@@ -2180,7 +2289,7 @@ function renderCandidates(candidatePath = "") {
     const section = el("section", "section candidate-page");
     section.append(eyebrow("REGISTRATION WORKBENCH"), el("h1", "hero-title", displayLang === "ja" ? "仮登録と改訂案を同じ土俵でレビューする" : "Review provisional and registered revisions in one pool"), el("p", "hero-copy", displayLang === "ja"
         ? "未登録文書の仮登録候補と、登録済み文書の改訂案を一つのレビュー面で扱います。Public側の仮登録表示はレビュー完了を待たず利用できます。"
-        : "Unregistered provisional candidates and registered-document revision proposals share one review pool. Public provisional discovery can operate before canonical review is complete."));
+        : "Provisionally registered documents and registered-document revision proposals share one review pool. Public discovery can operate while canonical metadata review remains open."));
     if (!payload) {
         section.append(el("p", "error", displayLang === "ja" ? "候補preview JSONを読み込めませんでした。" : "Candidate preview JSON could not be loaded."));
         page.append(section);
@@ -2420,7 +2529,7 @@ function renderAudit() {
         const candidateAudit = el("section", "audit-panel");
         candidateAudit.append(el("h2", "section-title small", displayLang === "ja" ? "登録候補preview" : "Registration candidate preview"), el("p", "section-copy", displayLang === "ja"
             ? "候補台帳はcanonical manifestとは分離したままです。searchableな候補だけを開発情報を除いたPublic catalogへ投影し、検索・読解・関係探索の暫定入口として利用します。confidence、evidence、人間レビュー状態はDeveloper側だけに残ります。"
-            : "The candidate ledger remains separate from the canonical manifest. Searchable candidates are projected into the Public catalog after developer-only review metadata is stripped, so they can serve as provisional search, reading, and relation entrances. Confidence, evidence, and human-review state remain Developer-only."));
+            : "The candidate ledger is retained as a review/audit source, while provisional entries now live in the canonical manifest. The Public catalog is generated from that single manifest-derived index. Confidence, evidence, and human-review state remain Developer-only."));
         const candidateOpen = button(displayLang === "ja" ? "候補レビューを開く" : "Open candidate review", "button secondary");
         candidateOpen.addEventListener("click", () => setRoute({ view: "candidates" }));
         candidateAudit.append(candidateOpen);
@@ -2506,9 +2615,10 @@ async function load() {
         const registeredReviewPromise = isDeveloper()
             ? fetch(REGISTERED_REVIEW_URL).catch(() => null)
             : Promise.resolve(null);
+        const graphUrl = isDeveloper() ? DEVELOPER_GRAPH_URL : PUBLIC_GRAPH_URL;
         const [catalogResponse, graphResponse, publicContentResponse, candidateResponse, registeredReviewResponse] = await Promise.all([
             fetch(PUBLIC_CATALOG_URL),
-            fetch(GRAPH_URL),
+            fetch(graphUrl),
             fetch(PUBLIC_CONTENT_URL),
             candidatePromise,
             registeredReviewPromise,
@@ -2516,7 +2626,7 @@ async function load() {
         if (!catalogResponse.ok)
             throw new Error(`docs_public_catalog.json: HTTP ${catalogResponse.status}`);
         if (!graphResponse.ok)
-            throw new Error(`docs_graph.json: HTTP ${graphResponse.status}`);
+            throw new Error(`${graphUrl}: HTTP ${graphResponse.status}`);
         if (!publicContentResponse.ok)
             throw new Error(`public-content.json: HTTP ${publicContentResponse.status}`);
         docsIndex = await catalogResponse.json();

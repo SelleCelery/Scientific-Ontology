@@ -237,6 +237,7 @@ export function searchDocuments(
   const results: JsonObject[] = [];
 
   for (const doc of index.documents ?? []) {
+    if (doc.discovery?.searchable === false) continue;
     let score = 0;
     const matches: JsonObject[] = [];
     let directCount = 0;

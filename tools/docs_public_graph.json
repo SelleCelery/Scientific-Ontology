@@ -1,14 +1,6 @@
 {
   "schema_version": "0.1",
-  "source": {
-    "manifest_sha256": "c70844b6629678b4716135d2a7fb0e896c47fd9ac4ffe6b4819e89da80e1315f",
-    "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
-    "graph_config_sha256": "e373fb45a782c8c0d0a3ae3998b757552b32053a3d67a5ac803776677721b4a7",
-    "visibility_profile": "preview",
-    "glossary_sha256": "175b466022ff18f2f87cb92d6e8dd2b0342bf8f7df8ceb87bea8886a131a85b4",
-    "system_map_sha256": "38912a119cddda89d1998cd8aa978d605661c2841aee3b0331c6251fcded64b8",
-    "concept_network_sha256": "857555356a7f73bd2e909f24b645dab9bb29c6bfa9e626060f9b3121552ece3a"
-  },
+  "public_graph_contract_version": "1.0",
   "principles": [
     "The graph stores inspectable relations first; numeric metrics are derived views, not the graph itself.",
     "A relation keeps its provenance. Agreement across sources is visible as multiple provenance records, not collapsed into a trust score.",
@@ -29076,60 +29068,5 @@
         }
       ]
     }
-  ],
-  "diagnostics": {
-    "unresolved_document_references": [],
-    "unresolved_concept_references": [],
-    "observed_unregistered_documents": [],
-    "excluded_references": [
-      {
-        "source_path": "GLOSSARY.md",
-        "relation": "definition_owner_reference",
-        "reason": "private_or_process_boundary",
-        "locator": "L1347"
-      },
-      {
-        "source_path": "GLOSSARY.md",
-        "relation": "links_to",
-        "reason": "private_or_process_boundary",
-        "locator": "L1347"
-      },
-      {
-        "source_path": "GLOSSARY.md",
-        "relation": "definition_owner_reference",
-        "reason": "private_or_process_boundary",
-        "locator": "L1368"
-      },
-      {
-        "source_path": "GLOSSARY.md",
-        "relation": "links_to",
-        "reason": "private_or_process_boundary",
-        "locator": "L1368"
-      },
-      {
-        "source_path": "README.md",
-        "relation": "links_to",
-        "reason": "private_or_process_boundary",
-        "locator": "L536"
-      },
-      {
-        "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-        "relation": "concept_network_reference",
-        "reason": "private_or_process_boundary",
-        "locator": "L706"
-      },
-      {
-        "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-        "relation": "links_to",
-        "reason": "private_or_process_boundary",
-        "locator": "L706"
-      },
-      {
-        "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-        "relation": "links_to",
-        "reason": "private_or_process_boundary",
-        "locator": "L708"
-      }
-    ]
-  }
+  ]
 }

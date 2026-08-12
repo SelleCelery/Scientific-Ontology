@@ -78,6 +78,11 @@ release:
       ja: "世界制作としての文学を公開研究ノートとして導入する。"
       status: "included"
 
+    - id: "public_navigator"
+      en: "Introduce the manifest-backed Public Navigator for reading, search, typed relation traversal, and Japanese/English counterpart resolution across 128 public documents."
+      ja: "128公開文書を単一manifestから読み込み、読解・検索・型付き関係探索・日英対文書解決を行うPublic Navigatorを導入する。"
+      status: "included"
+
   zenodo_description_en: >-
     Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0 opens the v5 living research series.
     It carries the framework outward from its internal vocabulary into language, literature, consent,

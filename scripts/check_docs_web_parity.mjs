@@ -13,12 +13,25 @@ const index = JSON.parse(fs.readFileSync(path.join(root, "tools/docs_index.json"
 const graph = JSON.parse(fs.readFileSync(path.join(root, "tools/docs_graph.json"), "utf8"));
 
 function run(command, args) {
-  const result = spawnSync(command, args, { cwd: root, encoding: "utf8" });
+  const result = spawnSync(command, args, {
+    cwd: root,
+    encoding: "utf8",
+    windowsHide: true,
+    env: {
+      ...process.env,
+      PYTHONUTF8: "1",
+      PYTHONIOENCODING: "utf-8",
+    },
+  });
+
   if (result.status !== 0) {
     process.stderr.write(result.stdout || "");
     process.stderr.write(result.stderr || "");
-    throw new Error(`${command} ${args.join(" ")} failed with exit ${result.status}`);
+    throw new Error(
+      `${command} ${args.join(" ")} failed with exit ${result.status}`,
+    );
   }
+
   return result.stdout;
 }
 
