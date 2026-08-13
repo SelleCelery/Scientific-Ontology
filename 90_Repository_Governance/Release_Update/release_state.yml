@@ -26,8 +26,8 @@ release:
   display_version: "v5.0.0"
   series: "v5"
   role: "opening_release"
-  status: "release_candidate" # preparation | release_candidate | published | superseded
-  publication_date: null # YYYY-MM-DD; set only when fixed
+  status: "published"
+  publication_date: "2026-08-13"
   title: "Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0"
   completion_claim: "series_opening_not_series_completion"
 
@@ -174,12 +174,12 @@ previous_release:
   publication_date: "2026-07-16"
 
 zenodo:
-  record_resource_type: "publication-report"
+  record_resource_type: "publication-other"
   version_family_doi: "10.5281/zenodo.19222394"
   version_doi:
-    status: "pending" # pending | assigned
-    value: null
-    url: null
+    status: "assigned" # pending | assigned
+    value: "10.5281/zenodo.21909382"
+    url: "https://doi.org/10.5281/zenodo.21909382"
   related_identifiers:
     previous_release_relation: "isNewVersionOf"
     repository_relation: "isSupplementedBy"
@@ -214,7 +214,7 @@ zenodo:
 citation:
   type_cff: "dataset"
   preferred_citation_type: "report"
-  publication_type_zenodo: "report"
+  publication_type_zenodo: "other"
   year: 2026
   publisher: "Zenodo"
   author_name_policy: "preserve_unicode_public_name"

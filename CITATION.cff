@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: This file describes the v5.0.0 release candidate. The version-specific Zenodo DOI is pending; update release_state.yml after Zenodo assigns it and rerun the release update tool.
+message: If you use or refer to this public edition, please cite the version-specific Zenodo DOI.
 title: 'Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0'
 type: dataset
 authors:
@@ -9,7 +9,7 @@ authors:
 version: 5.0.0
 license: CC-BY-4.0
 repository-code: https://github.com/SelleCelery/Scientific-Ontology
-url: https://github.com/SelleCelery/Scientific-Ontology
+url: https://doi.org/10.5281/zenodo.21909382
 keywords:
 - Scientific Ontology
 - 存在境界論
@@ -31,6 +31,8 @@ keywords:
 - Boundary Ethics
 - Claim Strength Management
 - Conceptual Framework
+date-released: '2026-08-13'
+doi: 10.5281/zenodo.21909382
 preferred-citation:
   type: report
   authors:
@@ -40,4 +42,5 @@ preferred-citation:
   title: 'Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0'
   year: 2026
   version: 5.0.0
-  url: https://github.com/SelleCelery/Scientific-Ontology
+  doi: 10.5281/zenodo.21909382
+  url: https://doi.org/10.5281/zenodo.21909382

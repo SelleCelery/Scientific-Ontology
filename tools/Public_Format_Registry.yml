@@ -188,10 +188,12 @@ format_registry:
             Claim strength: "not_required"
           body:
             required_sections:
-              - "The world is already being made"
-              - "Enter through the question that catches you"
-              - "Two Public Front Doors, One Research System"
+              - "Here, at the boundary"
+              - "Open the dangerous question, then cut it back"
+              - "From metaphysical roots to boundary cognition"
+              - "Research dynamics: go far, keep the return path"
               - "Current release, citation, and public boundary"
+              - "Public Navigator / 公開ナビゲータ"
           document_list_policy:
             mode: "navigation_only"
             require_all_same_directory_files: false

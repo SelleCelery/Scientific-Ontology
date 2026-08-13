@@ -77,6 +77,7 @@
 !scripts/public_site_common.py
 !scripts/build_public_site.py
 !scripts/check_public_site.py
+!scripts/check_navigator_language_resolution.mjs
 
 # ----------------------------------------------------------------------
 # Repository metadata / generated read models / developer contracts
@@ -97,6 +98,7 @@
 !tools/docs_manifest.yml
 !tools/maintenance_rules.yml
 !tools/DOCS_NAVIGATION.md
+!tools/DOCS_NAVIGATION_HISTORY.md
 !tools/NAVIGATOR_INTERFACE_CONTRACT.md
 !tools/CHECKER_USAGE.md
 

@@ -4,8 +4,6 @@
 
 ## 物理・認識・倫理・組織・AI・平和は、一つの境界面で読めるか
 
-
-
 > Layer: Repository root
 > Status: Public interface README / promotional entry
 > Scope: conceptual invitation / international orientation / reading routes / repository navigation
@@ -16,10 +14,31 @@
 
 ---
 
-## 0. v5 opening line / v5系の開始線
+## 0. Here, at the boundary / 「ここ」という境界
 
 > **Events happen at boundaries.**
+>
 > **Neither simply subjective nor simply objective, but where different modes of description come into contact.**
+
+### A foothold called “here”
+
+Descartes’s cogito—“I think, therefore I am”—remains a major philosophical foothold.
+
+Scientific Ontology, however, shifts the emphasis from “I am” toward “here.”
+
+The one who asks is already here.
+
+Yet this “here” is not an isolated point cut off from the world. It is inseparably connected with body, history, other people, environments, and language. What comes into contact here changes what can be received, questioned, and done next.
+
+We can test another foothold or climb another ladder. We can move into a different language, theory, culture, belief, or mode of description.
+
+But if the living line back to “here” is lost, we may no longer be able to return with what we encountered and collate it again.
+
+The point is therefore to keep a return path open while we explore.
+
+Scientific Ontology reads this “here” neither as the inside of a subject nor as a position outside the world, but as a **boundary** through which contact, history, and return pass.
+
+### Comparison without collapse
 
 There are theories that place greater weight on subjective experience, theories that privilege objective description, and research traditions that attempt to work across those domains.
 
@@ -29,33 +48,45 @@ Science should not be used as evidence for religion merely because the two share
 
 But neither should we discard the possibility that each may be touching the world from a different angle.
 
-What is genuinely shared?
-What remains different?
-What can be commensurated?
-Where does structural comparison end and metaphor begin?
-What remains unknown?
+What is genuinely shared? What remains different? What can be commensurated? Where does structural comparison end and metaphor begin? What remains unknown?
 
 Scientific Ontology treats the boundary at which such comparisons become possible—and the rules required to make them without silently collapsing one domain into another—as an object of research in its own right.
 
 > **事象は境界で起きている。**
+>
 > **主観でも客観でもなく、それらが混ざり合うところで。**
+
+### 日本語｜「ここ」という足場
+
+デカルトの「我思う、ゆえに我あり」は、大きな足場です。
+
+けれど、存在境界論で主役になるのは、「我あり」よりも、まず「ここ」です。
+
+問うている自分が、現にここにいる。
+
+ただし、その「ここ」は、世界から切り離された孤立点ではありません。身体、履歴、他者、環境、言葉と断ちがたく結びつき、それらとの接触によって、次に何を受け取り、どう問い、どう動けるかが変わる場所です。
+
+私たちは、別の足場を試すことも、別の梯子を登ることもできます。自分とは違う言語、理論、文化、信念、記述形式へ移ることもできます。
+
+けれど、「ここ」との呼吸路を失えば、試したものを持って戻り、もう一度照合することができなくなる。
+
+だから、帰り道を残したまま遊ぶ。
+
+存在境界論は、この「ここ」を、自己の内側でも世界の外側でもなく、自己と世界が接触し、履歴と返りが通る**境界**として読みます。
+
+### 日本語｜同一化せず、照合する
 
 世の中には、主観に重心を置く理論も、客観に重心を置く理論も、その境界を横断しようとする研究もあります。
 
 存在境界論は、それらのどれか一つを最終的な正しさとして選ぶのではなく、それぞれの言語ゲームが持つ成立条件、観測範囲、主張強度、限界を保ったまま、境界へ持ち寄って照合できる場を整えようとします。
 
-科学を宗教の証拠にしない。
-宗教を科学の代用品にしない。
-文学を事実報告にしない。
-しかし、それぞれが別の角度から世界へ触れている可能性まで切り捨てない。
+科学を宗教の証拠にしない。宗教を科学の代用品にしない。文学を事実報告にしない。しかし、それぞれが別の角度から世界へ触れている可能性まで切り捨てない。
 
-何が同じなのか。
-何が違うのか。
-どこまで通約できるのか。
-どこから先は比喩なのか。
-何がまだ分からないのか。
+何が同じなのか。何が違うのか。どこまで通約できるのか。どこから先は比喩なのか。何がまだ分からないのか。
 
 存在境界論は、その照合の場そのものを研究対象として扱います。
+
+### From “here” into the v5 series
 
 This same boundary orientation also applies within a single event.
 
@@ -63,7 +94,7 @@ Scientific Ontology does not need to choose the subjective side against the obje
 
 An event becomes operationally important where external conditions, prior history, bodily and cognitive reception, action, resistance, and return meet. The boundary is therefore not a decorative line around already completed objects. It is a contact surface on which differences are produced, interpreted, acted upon, and returned into later conditions.
 
-The v5 series carries this orientation out of the theory's internal vocabulary and into language, literature, consent, accounting, institutions, AI, and interfaces. The point is not to declare the framework complete and then apply it. The point is to let implementation, criticism, failure, and residuals return to the framework and change what can still be claimed.
+The v5 series carries this orientation out of the theory’s internal vocabulary and into language, literature, consent, accounting, institutions, AI, and interfaces. The framework is not first declared complete and only then applied. Implementation, criticism, failure, and residuals must be able to return to it and change what can still be claimed.
 
 v5.0 is the opening release of that living series, not the completion of v5.
 
@@ -75,9 +106,9 @@ v5.0 is the opening release of that living series, not the completion of v5.
 
 The DSSI item above is a research and implementation-boundary note. The DSSI application itself is **not** part of v5.0.
 
-### 日本語｜理論を、境界の外へ持ち出す
+### 日本語｜「ここ」からv5系へ
 
-この一文は、新しい上位公理ではありません。
+この開始線は、新しい上位公理ではありません。
 
 v4系までに積み上げてきた境界、接触、履歴、通信、返路を、いちばん短い運用語へ圧縮したv5系の開始線です。
 
@@ -91,440 +122,217 @@ DSSIについてv5.0に含まれるのは研究ノートと実装境界です。
 
 ---
 
-## 1. The world is already being made
+## 1. Open the dangerous question, then cut it back / 危ない問いを開き、自分で切り戻す
 
-We often speak as though everyday life takes place on top of a world that has already been completed.
+The repository sometimes begins with a deliberately provocative comparison.
 
-But the world in which we actually live has already been cut, named, measured, classified, permitted, prohibited, priced, diagnosed, archived, and made communicable.
+A Feynman diagram lets physics write a process as particles, interactions, and arrows. Could a boundary-oriented conceptual system ask whether cognition, communication, institutions, or ethical action also exhibit describable structures of contact, transformation, and return?
 
-Time. Space. Body. Responsibility. Money. Illness. Organization. Nation. Science. Good and evil.
+The provocation is useful only if the cut follows immediately.
 
-This does not mean that humans simply invented everything by attaching arbitrary labels to nothing.
+### The firebreak
 
-It means that something may exist before classification, while classification itself changes what can be perceived, communicated, acted upon, protected, or destroyed afterward.
+Scientific Ontology does **not** claim:
 
-A diagnosis changes the possible future of a body. A contract changes the possible future of a relationship. A scientific model changes what may count as an observable. An interface changes what a user can notice or decide. A border changes which movements become ordinary, exceptional, illegal, or invisible.
+- to be a replacement for standard physics;
+- that one metaphysical relation maps one-to-one onto one physical interaction;
+- that suggestive vocabulary establishes empirical identity;
+- that diagrammatic resemblance proves ontological equivalence;
+- or that mathematical symmetry can be presumed where none has been demonstrated.
 
-**Scientific Ontology｜存在境界論** begins at this threshold.
-
-It asks what happens where something appears, where different histories come into contact, where an event becomes a difference, where a difference becomes meaning, and where the consequences return to bodies, institutions, environments, and later cognition.
-
-It does not begin by assuming that physics, cognition, ethics, organizations, AI, narrative, and peace are the same subject.
-
-It asks whether they may nevertheless expose related boundary structures.
-
-### 日本語｜世界は、すでに制作されている
-
-私たちは、完成した世界の上で日常を送っていると思いがちです。
-
-しかし実際には、誰かが切り分け、名づけ、測り、制度にし、通信可能にした世界の上で暮らしています。
-
-時間、空間、身体、責任、貨幣、病気、組織、国家、科学、善悪。
-
-これは、何もないところへ人間が勝手に名前を貼った、という意味ではありません。
-
-名前を貼る前にも何かがあり、貼った後には、見えるもの、伝えられるもの、守られるもの、壊されるものが変わる、ということです。
-
-**存在境界論｜Scientific Ontology**は、その境目から始まります。
-
-物理、認識、倫理、組織、AI、物語、平和を同じものだとは言いません。
-
-それでも、そこに似た境界構造が現れていないかを問います。
-
----
-
-## 2. A deliberately provocative question from physics
-
-Consider a deliberately dangerous question.
-
-**Do Feynman diagrams already show that relativistic quantum interactions can be grasped, provisionally, through a topology-like pattern of connectivity—vertices, lines, propagators, and loops—before one commits to a literal picture of what is happening?**
-
-The question matters here because a Feynman diagram does not become useful by reproducing the visible shape of the world.
-
-Its force lies in disciplined compression: what interacts with what, which terms connect, where interaction vertices occur, which paths return as loops, and how a calculational contribution is organized.
-
-If physics can gain explanatory and calculational power by representing interaction through structured connectivity, another question follows.
-
-Could cognition be read through contacts, filters, histories, and returns?
-
-Could ethics be read through permissions, capacities, stopping conditions, and reopening conditions?
-
-Could organizations be read through ports, authority, responsibility, residuals, and blocked return paths?
-
-Could AI be evaluated not only by whether an answer is correct, but by whether the surrounding judgment field remains alive?
-
-Could peace be specified not as the unconditional opening of every channel, but as a protocol for limited contact, refusal, objection, return, and possible reopening?
-
-These are large claims only if they are asserted as completed identities.
-
-As questions, they open a shared descriptive surface.
-
-### 日本語｜物理学から、わざと危ない問いを開く
-
-少し煽ってみます。
-
-**ファインマンダイアグラムは、相対論的な量子相互作用を、まず線、頂点、伝播、ループという接続構造でつかむ装置ではないのでしょうか。**
-
-目に見える世界の形をそのまま描くのではなく、何と何がつながり、どこで相互作用し、どこにループが生まれるかを読む。
-
-もし物理学が、そのような圧縮された接続構造から世界へ近づけるなら、認識、倫理、組織、AI、平和もまた、境界、通信、履歴、切断、返路として読めるのではないか。
-
-存在境界論は、そこまで問いを広げます。
-
----
-
-## 3. Then comes the firebreak
-
-The preceding question is intentionally provocative. It is not a physics claim disguised as publicity.
-
-Scientific Ontology does **not** claim that:
-
-- Feynman diagrams unify quantum mechanics with general relativity;
-- a Feynman diagram is a literal picture of particles traveling through spacetime;
-- graph connectivity is identical to mathematical topology in every relevant sense;
-- cognition, ethics, institutions, or peace can be reduced to quantum field theory;
-- structural resemblance establishes physical identity;
-- Scientific Ontology replaces modern physics or any established empirical discipline.
-
-In standard physics, Feynman diagrams are calculational representations associated with terms in perturbative quantum field theory. Their lines, vertices, and loops carry formal meanings governed by the theory and its rules. Scientific Ontology does not appropriate that authority.
-
-The operation proposed here is **commensuration**, not identification.
-
-Commensuration places structures beside one another and asks:
-
-- What correspondence is real enough to be useful?
-- Where does the correspondence stop?
-- What claim strength belongs to the comparison?
-- What residual remains after the analogy is cut back?
-- Which document owns the definition?
-- Where must a failed application return?
-
-The firebreak is not an apology placed outside the inquiry.
-
-It is part of the inquiry itself.
-
-A large question is opened, its collisions are exposed, its illegitimate identities are cut away, and whatever survives the cut becomes available for more careful research.
+Physics-adjacent language enters because the framework studies the conditions under which observation, distinction, interaction, and return become possible. Any stronger correspondence claim must be separately defined, formalized, and tested.
 
 - [`Physics Correspondence Policy`](00_Overview/Physics_Correspondence_Policy.en.md)
-- [`Claim Strength and Publication Layer Table`](00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md)
-- [`Scientific Ontology and Science`](02_Raj_Beauty/Scientific_Ontology_and_Science.md)
+- [`Physical and Cosmological Research Notes`](05_Research_Notes/Physical_Cosmological_Notes/README.md)
 
-### 日本語｜そして、自分で火を消す
+### What survives the cut
 
-もちろん、存在境界論は、量子論と一般相対論を統一したとは主張しません。
+Once substitution, proof-by-metaphor, and one-to-one correspondence are removed, a narrower research question remains:
 
-ファインマンダイアグラムを独自物理学へ置き換えるものでも、認識や倫理を量子場理論へ還元するものでもありません。
+- What enters a boundary?
+- What difference is produced there?
+- What is retained as history?
+- What can be communicated across a cut?
+- What returns, to whom, and under what conditions?
+- Which similarities remain structural, and which remain only heuristic?
 
-ここで行うのは、同一化ではなく**通約**です。
+These questions can travel across domains without pretending that the domains are identical. Their value lies in disciplined comparison, not in flattening different objects of knowledge into one vocabulary.
 
-似ている構造を並べ、どこまで対応し、どこで対応しなくなり、何が残るかを見る。
+### 日本語｜問い、防火帯、切ったあとに残るもの
 
-大ぶろしきを広げたあと、自分で切り分ける。
+存在境界論は、ときに意図的に危ない問いから始めます。
 
-それでも残ったものを、次の研究対象にする。
+ファインマン・ダイアグラムが粒子、相互作用、矢印によって過程を記述するなら、認識、通信、制度、倫理的行為にも、接触、変化、返りとして読める構造があるのではないか。
 
-この火消しまで含めて、存在境界論です。
+ただし、この問いは直後に自分で切り戻さなければなりません。
 
----
+存在境界論は、標準物理学の代替ではありません。形而上の関係と物理現象の一対一対応を主張しません。似た語彙や図式があることを、経験的同一性や存在論的等価性の証明として扱いません。
 
-## 4. What remains after the cut
+物理に隣接する語彙と接触するのは、観測、区別、相互作用、返りが可能になる条件を扱うからです。それ以上の対応を主張するなら、個別に定義し、形式化し、検証する必要があります。
 
-After physical identity, universal reduction, and premature closure are removed, several recurring structures remain visible.
+その防火帯を置いたあとにも、問いは残ります。
 
-- Something encounters something else.
-- A difference appears at a boundary.
-- The receiving side is not empty; it already bears history.
-- Reception changes later perception, judgment, action, and capacity.
-- Some differences are integrated, some are suspended, some are rejected, and some remain as residuals or residues.
-- Consequences return, sometimes immediately and sometimes through delayed institutional, bodily, environmental, or narrative paths.
-- The return alters downstream conditions.
+- 何が境界へ入ったのか。
+- そこで何が差として生じたのか。
+- 何が履歴として残ったのか。
+- 切断を越えて何が通信できるのか。
+- 何が、誰へ、どの条件で返るのか。
+- どこまでが構造比較で、どこからが発見的な比喩なのか。
 
-Scientific Ontology therefore treats the following as central public objects:
-
-**boundary, contact, history, return, downstream conditions, residual, residue, provisional closure, false closure, re-collatability, meaning loops, history-bearing fields, and ports.**
-
-The framework is not trying to explain everything with one word.
-
-It is trying to preserve a common descriptive surface without erasing the boundaries among domains.
-
-For the current placement of concepts, owners, open aporia, and return paths, see the [`Scientific Ontology Concept Network`](00_Overview/Scientific_Ontology_Concept_Network.en.md).
-
-### 日本語｜切り分けたあとに残るもの
-
-物理学との同一性や、万能理論としての断言を切り落としても、残る構造があります。
-
-何かが何かに触れる。境界に差分が現れる。受け取る側には、すでに履歴がある。その接触が、次の認識、判断、行為、責任を変える。処理しきれなかったものは残差や残渣になり、結果は身体、制度、環境、物語へ返る。
-
-存在境界論が扱う中心は、**境界、接触、履歴、返り、後続条件**です。
-
-すべてを同じものへ還元するためではありません。
-
-違うものを違うまま、同じ記述面へ置けるかを試すためです。
+異なる領域を同一化せずに、この残った問いを持ち運ぶこと。それが存在境界論の比較方法です。
 
 ---
 
-## 5. From metaphysical roots to boundary cognition
+## 2. From metaphysical roots to boundary cognition / 形而上の根から境界認識へ
 
-Scientific Ontology has highly compressed roots, including AMP, ITS, and HFC.
+Scientific Ontology has metaphysical roots, but its public work does not stop at declaring what reality ultimately is.
 
-Those roots make large-scale conceptual generation possible, but they do not automatically provide public observational conditions, falsification criteria, or safe correspondence with established disciplines.
+Its operational movement is more modest and more demanding:
 
-The public system therefore moves toward boundaries.
+1. begin from a contact that has occurred;
+2. identify the boundary on which a difference became available;
+3. retain the history by which that difference was received;
+4. distinguish observation, interpretation, judgment, and action;
+5. preserve a route by which the result can return for later collation.
 
-It asks not only what existence ultimately is, but what can be observed when an event reaches a boundary, how a receiving history changes the event, how a cognitive direction is formed, and how different cognitive forms may be operated without erasure or forced identity.
+This movement turns metaphysical questions into problems of boundary cognition. It asks not only “what exists?” but also:
 
-The three core layers divide that movement structurally.
+- from where did this become observable?
+- under what conditions did it become meaningful?
+- what was excluded by the cut?
+- what authority does the resulting statement actually have?
+- what would allow another reader or another domain to compare it without inheriting hidden premises?
 
-| Layer | Structural role | Current boundary-cognition role |
-|---|---|---|
-| [`01_Sat_Truth`](01_Sat_Truth/README.md) | Network architecture and conditions under which contact, cognition, and meaning can occur | Critique of boundary cognition |
-| [`02_Raj_Beauty`](02_Raj_Beauty/README.md) | What moves through the network: event-flow, differences, history, and modes of reading | Formation of boundary cognition |
-| [`03_Tam_Goodness`](03_Tam_Goodness/README.md) | Protocols governing admission, suspension, transformation, closure, reopening, and return | Operation of boundary cognition |
+The result is not a view from nowhere. It is a disciplined account of how a view becomes possible somewhere.
 
-This is why metaphysics, axioms, and epistemic critique tend to appear in `01`; boundary dynamics, history-fields, and cognitive-axis formation in `02`; and ethics, commensuration, closure, and return paths in `03`.
+- [`Boundary Epistemological Critique`](01_Sat_Truth/Boundary_Epistemological_Critique.en.md)
+- [`Entropy-Attributed Difference and Cognitive Axis Formation`](02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
+- [`Optional Axiom Modules as Cognitive Bridge`](03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
+- [`Meaning as Collation and Return Path`](05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.en.md)
 
-The sequence is not a hierarchy in which ethics is added after truth.
+### 日本語｜形而上の根を、境界認識へ運ぶ
 
-It is a communication architecture:
+存在境界論には形而上の根があります。しかし、公開体系の仕事は「実在とは最終的に何か」を宣言することでは終わりません。
 
-```
-conditions of possible connection
-        ↓
-what enters and how it is read
-        ↓
-how contact is governed and returned
+接触が起きたところから始める。差が読めるようになった境界を特定する。その差を受け取った履歴を残す。観測、解釈、判断、行為を分ける。そして、結果を後から照合し直せる返路を確保する。
 
-```
+この運動によって、形而上の問いは境界認識の問題になります。
 
-### 日本語｜形而上学的な根から、境界認識へ
+何が存在するかだけでなく、どこから観測できたのか。どの条件で意味になったのか。その切断は何を落としたのか。その発言はどこまでの権限を持つのか。別の読者や別の領域が、隠れた前提まで引き受けずに比較するには何が必要か。
 
-存在境界論には、AMP、ITS、HFCなど、高圧縮な根があります。
-
-しかし、根が深いことと、公開上の観測条件や反証条件が整っていることは同じではありません。
-
-そこで公開体系は、境界へ寄りました。
-
-| 層 | 通信構造上の役割 | 境界認識上の働き |
-|---|---|---|
-| [`01_Sat_Truth`](01_Sat_Truth/README.md) | 接触と認識を可能にするネットワーク構造 | 境界認識批判 |
-| [`02_Raj_Beauty`](02_Raj_Beauty/README.md) | そこを流れる差分、履歴、読み方 | 境界認識生成 |
-| [`03_Tam_Goodness`](03_Tam_Goodness/README.md) | 通信を開閉、保留、変換、返送する規約 | 境界認識運用 |
-
-だから、`01`には形而上学や公理が、`02`には境界論や認識生成が、`03`には倫理や管理が置かれやすくなります。
+それは、どこにも属さない視点ではありません。ある場所で視点が成立した条件を、追跡可能にする試みです。
 
 ---
 
-## 6. Why this becomes AI, organizations, and peace
+## 3. Where metaphysical roots meet operational surfaces / 形而上と形而下が接触するところ
 
-Cognition is not confined to an interior mind.
+The world presented to us is already being made.
 
-It appears in interfaces, classifications, access rules, institutional procedures, role assignments, evaluation systems, and the distribution of responsibility.
+Interfaces, organizations, laws, accounting systems, AI models, archives, and everyday language do not merely report a finished reality. They cut, name, rank, permit, refuse, remember, and forget. Each creates operational boundaries that alter what can happen next.
 
-Communication may be continuous in principle, but bodies, organizations, AI systems, and institutions possess finite capacity. Operation therefore requires ports.
+This is where metaphysical roots meet practical surfaces.
 
-A port is not merely an opening. It implies conditions:
+Questions about existence, difference, causality, responsibility, and return become concrete when a form accepts only one answer, an institution assigns authority, an AI system turns observations into recommendations, or an interface makes one action visible and another unreachable.
 
-- what may enter;
-- who may connect;
-- what authority is granted;
-- what transformation occurs;
-- how much load can be accepted;
-- who may stop the connection;
-- what remains unresolved;
-- where consequences are returned; and
-- under what conditions contact may reopen.
+Scientific Ontology therefore moves into applications without treating them as secondary illustrations. Applications are contact surfaces that test the framework.
 
-This is why an inquiry that begins with cognition can develop into boundary ethics, organizational boundaries, responsibility boundaries, AI adoption, audit design, asymmetry stabilization, retaliation conversion, and peace specifications.
+- In **AI**, the issue is how usefulness can remain bounded without transferring ownership of judgment.
+- In **organizations**, the issue is how observation, decision, and responsibility can remain distinguishable.
+- In **consent**, the issue is what a binary response preserves and what it compresses away.
+- In **accounting and institutions**, the issue is what becomes legible, allocable, auditable, or invisible.
+- In **peace and social design**, the issue is how a normative aim can become an operational specification without being reduced to procedure alone.
+- In **literature**, the issue is how a made world can preserve compressed experience that factual reporting cannot carry in the same form.
 
-Peace, in this framework, is not the unconditional opening of all ports and not the permanent severance of hostile systems.
+The framework does not descend from a completed metaphysics to passive examples. The surface pushes back. Failed implementations, exclusions, resistance, and residuals become evidence about the limits of the original framing.
 
-It is investigated as a protocol through which different existence-phases may maintain limited contact while preserving refusal, stopping, objection, return, and possible reopening.
-
-- [`Cognitive Dynamics Communication Model`](05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md)
-- [`Organizational Boundary and Port Model`](05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md)
+- [`AI Usefulness as a Boundary Function`](04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
 - [`AI Adoption Collation Checklist`](04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
 - [`Specification for Peace`](04_Applications/Social_Boundary_Design/Specification_for_Peace.en.md)
+- [`Consent Boundary and Sentence/Bit Asymmetry`](05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.en.md)
+- [`Literature as Worldmaking`](05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.en.md)
 
-### 日本語｜なぜAI・組織・平和まで行くのか
+### 日本語｜形而上と形而下は、実装面で出会う
 
-認識は、頭の中だけにあるものではありません。
+私たちの前にある世界は、すでに誰かの切断によって作られています。
 
-画面、制度、権限、役割、評価、責任の置き方へ現れます。
+インターフェイス、組織、法、会計、AI、アーカイブ、日常言語は、完成済みの現実を報告するだけではありません。名づけ、順位づけ、許可し、拒否し、記憶し、忘れることで、次に可能な行為そのものを変えます。
 
-身体、組織、AI、制度には容量があるため、通信にはポートが必要です。
+ここで、形而上の根と形而下の運用面が接触します。
 
-何を受け入れるか。誰がつなぐか。いつ止めるか。何を未解決として残すか。どこへ返すか。どう再開するか。
+存在、差、因果、責任、返りをめぐる問いは、入力欄が一つの答えしか受け付けないとき、制度が権限を配分するとき、AIが観測を推奨へ変えるとき、画面が一つの行為だけを見えるようにするとき、具体的な境界問題になります。
 
-ここから、境界倫理、組織境界、責任境界、AI導入、監査、非対称性、報復変換、平和仕様が出てきます。
+したがって応用は、理論のあとに添える例ではありません。理論を試し、押し返し、作り替える接触面です。
 
-平和も、すべてを開くことではありません。
+AIでは判断の所有権を渡さずに有用性を保てるか。組織では観測、決定、責任を分けられるか。同意では一ビット化によって何が落ちるか。会計と制度では何が可視化され、配分され、監査され、不可視になるか。平和では規範を手続だけへ還元せずに運用仕様へ書けるか。文学では事実報告と異なる仕方で圧縮経験を保持できるか。
 
-拒否、停止、異議、返送、再開を残したまま、限定的に接続するための仕様として考えます。
+実装の失敗、排除、抵抗、残差は、理論の外に捨てるノイズではありません。元の枠がどこまでしか語れなかったかを示す返りです。
 
 ---
 
-## 7. Research dynamics: deeper roots, richer surfaces
+## 4. Research dynamics: go far, keep the return path / 研究動態――遠くへ行き、帰路を残す
 
-The development of Scientific Ontology does not proceed by adding unrelated topics to an expanding archive.
+Scientific Ontology develops through two coupled movements.
 
-It proceeds by extending inquiry into the conditions that make cognition, communication, and responsibility possible. As those roots deepen, a richer operational surface becomes describable.
+One moves downward toward deeper roots: definitions, axioms, boundary conditions, histories, and hidden assumptions.
 
-What first appears as a metaphysical question may later become expressible as:
+The other moves outward toward richer surfaces: language, literature, physics-adjacent comparison, consent, organizations, accounting, AI, institutions, and interfaces.
 
-- a cognitive axis;
-- a communication port;
-- a responsibility boundary;
-- a stopping or reopening condition;
-- an audit relation;
-- a claim-strength classification;
-- a falsification problem;
-- an AI-adoption control; or
-- a peace specification.
+Depth without return can become a closed metaphysics. Breadth without return can become an accumulation of attractive analogies.
 
-```
-compressed roots
-    ↓
-boundary-level critique
-    ↓
-formation of cognitive direction
-    ↓
-operation across cognitive forms
-    ↓
-implementation in communication, organizations, AI, and society
-    ↓
-residuals, objections, failures, and unexpected returns
-    ↓
-re-collation with upstream concepts
+The research dynamic requires both movements to remain connected to “here.” A new domain must preserve enough of its own validity conditions to resist being absorbed. A new abstraction must return with consequences that can be tested against documents, practices, implementations, criticism, and residuals.
 
+```mermaid
+flowchart TD
+    A["Here: contact at a boundary"] --> B["Deepen: terms, conditions, histories"]
+    A --> C["Extend: domains, practices, implementations"]
+    B --> D["Collate without collapse"]
+    C --> D
+    D --> E["Return: revise claims and boundaries"]
+    E --> A
 ```
 
-This circulation is called **research dynamics**.
-
-Research dynamics does not guarantee that the framework is correct.
-
-It specifies how expansion should remain answerable to critique, implementation, residuals, failed correspondence, and future falsification conditions.
-
-Ethics drives this movement because non-destructive contact requires greater descriptive resolution than either total openness or total severance.
-
-In v5, research dynamics becomes explicitly metabolic: a concept is carried into another domain, the application exposes residuals or failure, and those returns are permitted to revise the research note that produced the application. The Language, Meaning, and Communication Phase Studies are the first research line to adopt this living-canonical maintenance model explicitly.
-
-- [`Roadmap`](Roadmap.md)
-- [`Truth Management and Boundary PDCA`](00_Overview/Truth_Management_and_Boundary_PDCA.en.md)
-
-### 日本語｜根を伸ばすと、表層が豊かになる
-
-存在境界論は、無関係な主題を増やしているわけではありません。
-
-認識や通信が成立する根へ降りた結果、以前は抽象的にしか語れなかったものが、認識軸、通信ポート、責任境界、停止条件、再開条件、監査、AI導入、平和仕様として書けるようになります。
-
-この循環を、**研究動態**と呼びます。
-
-研究動態は、体系が正しいことを保証しません。
-
-批判、失敗、残差、実装結果を上流へ返しながら、反証可能性へ開いていくための運動です。
-
-v5系では、この往復をさらに明示的な代謝として扱います。別領域へ持ち出した概念が失敗や残差を返したなら、その返りは研究ノートの更新理由になりえます。言語・意味・通信位相研究は、その更新履歴と返り受付を最初から正本運用へ組み込んだ研究線です。
-
----
-
-## 8. Enter through the question that catches you
-
-| Question | Suggested entrance |
-|---|---|
-| Can a conceptual system approach physics without pretending to replace it? | [`Physics Correspondence Policy`](00_Overview/Physics_Correspondence_Policy.en.md) → [`Physical and Cosmological Research Notes`](05_Research_Notes/Physical_Cosmological_Notes/README.md) |
-| How does a difference become a stable direction of cognition? | [`Boundary Epistemological Critique`](01_Sat_Truth/Boundary_Epistemological_Critique.en.md) → [`Cognitive Axis Formation`](02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md) |
-| How can incompatible worldviews be compared without forced agreement? | [`Optional Axiom Modules`](03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md) |
-| Can AI support judgment without becoming the owner of judgment? | [`AI Usefulness as a Boundary Function`](04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md) → [`AI Adoption Collation Checklist`](04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md) |
-| Can peace be written as an operational specification? | [`Cognitive Dynamics Communication Studies`](05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md) → [`Specification for Peace`](04_Applications/Social_Boundary_Design/Specification_for_Peace.en.md) |
-| How do language, meaning, and return paths form across different grammatical frames? | [`Language, Meaning, and Communication Phase Studies`](05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md) |
-| What happens when consent is compressed into a one-bit response? | [`Consent Boundary and Sentence/Bit Asymmetry`](05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.en.md) |
-| How can an interface separate observation from judgment and return responsibility to the user? | [`DSSI Research Note`](05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md) |
-| How is the whole system connected? | [`Concept Network`](00_Overview/Scientific_Ontology_Concept_Network.en.md) → [`System Map`](00_Overview/Scientific_Ontology_System_Map.md) → [`Roadmap`](Roadmap.md) |
-
-### 日本語｜気になる問いから入る
-
-- 科学と衝突せず、大きな問いを維持できるか：[`Physics Correspondence Policy`](00_Overview/Physics_Correspondence_Policy.ja.md)
-- 認識の方向はどう作られるか：[`Boundary Epistemological Critique`](01_Sat_Truth/Boundary_Epistemological_Critique.ja.md) → [`Cognitive Axis Formation`](02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
-- 違う世界観を、無理に一致させず比較できるか：[`Optional Axiom Modules`](03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
-- AIに判断を渡さず、AIを使えるか：[`AI Usefulness as a Boundary Function`](04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md) → [`AI Adoption Collation Checklist`](04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
-- 平和を仕様書として書けるか：[`Cognitive Dynamics Communication Studies`](05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md) → [`Specification for Peace`](04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
-- 言語・意味・返路がどう形成されるか：[`Language, Meaning, and Communication Phase Studies`](05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md)
-- 一ビットの同意が何を落とすか：[`Consent Boundary and Sentence/Bit Asymmetry`](05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md)
-- 観測と判断を分け、利用者へ責任を返せるか：[`DSSI Research Note`](05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md)
-- 世界制作として文学を読む：[`Literature as Worldmaking`](05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md)
-- 全体像を見たい：[`Concept Network`](00_Overview/Scientific_Ontology_Concept_Network.ja.md) → [`System Map`](00_Overview/Scientific_Ontology_System_Map.md) → [`Roadmap`](Roadmap.md)
-
----
-
-## 9. Two Public Front Doors, One Research System
-
-This root README is an intentional exception to the repository's default language relation.
-
-For this README only:
-
-- English and Japanese are co-authoritative public-interface texts;
-- English appears first and carries the more technically explicit international formulation;
-- Japanese carries a more accessible, rhetorically direct formulation;
-- sentence-level symmetry is not required;
-- neither text is subordinate to the other as a translation;
-- both must preserve the same public invitation, non-claims, reading routes, and release metadata.
-
-This exception does **not** make the README a definition owner.
-
-Where a wording difference affects a concept's technical meaning, claim strength, non-claim boundary, public scope, or lineage, the linked canonical owner document governs.
-
-The README may open the question widely because the repository already contains the documents that cut, classify, test, and route the question more carefully.
+This is why the repository contains stable overview documents, application notes, exploratory research notes, policies, indexes, and operational tools side by side. They do different jobs and carry different claim strengths, but they remain part of one return-bearing research system.
 
 - [`Scientific Ontology Concept Network`](00_Overview/Scientific_Ontology_Concept_Network.en.md)
 - [`Scientific Ontology System Map`](00_Overview/Scientific_Ontology_System_Map.md)
-- [`GLOSSARY`](GLOSSARY.md)
 - [`Research Notes Index`](05_Research_Notes/Research_Notes_Index.md)
 - [`Publication and Commensuration Policy`](90_Repository_Governance/Publication_and_Commensuration_Policy.md)
+- [`Roadmap`](Roadmap.md)
 
-### 日本語｜二つの正本、一つの入口
+### 日本語｜深く潜り、遠くへ行き、帰路を残す
 
-このルートREADMEだけは、通常の「日本語正本・英語通約」という運用とは別扱いとし、日本語版と英語版の双方を、広報上の正本として扱います。
+存在境界論の研究は、二つの運動を結びます。
 
-日本語版は導入性と読みやすさを、英語版は国際的な通約可能性と主張境界の精度を優先し、それぞれの言語で保持すべき内容を照合しながら構成しています。
+一つは、定義、公理、境界条件、履歴、隠れた前提へ向かって深く潜る運動です。
 
-そのため、両者は文章量、構文、言い回しを意図的に一致させていません。
+もう一つは、言語、文学、物理に隣接する比較、同意、組織、会計、AI、制度、インターフェイスへ向かって接触面を広げる運動です。
 
-また、このREADME自体が概念の定義を所有するわけではありません。
+深さだけを求めて帰路を失えば、閉じた形而上学になりうる。広さだけを求めて帰路を失えば、魅力的な類似の収集になりうる。
 
-厳密な意味、主張強度、非主張境界、概念系譜は、リンク先の正本文書が管理します。
+だから、どちらの運動も「ここ」とつながっていなければなりません。新しい領域は、自分の成立条件を保ったまま理論へ抵抗できる必要がある。新しい抽象は、文書、実践、実装、批判、残差と照合できる結果を持って戻る必要がある。
 
-**READMEでは大きく問いを置き、説明文書がその問いを様々に分析します。**
-
-### Public Navigator / 公開ナビゲータ
-
-The README is the editorial entrance. The **Public Navigator** is the operational reading entrance: it reads the single canonical document manifest and lets a reader browse, search, open documents, and traverse typed relations without knowing repository filenames in advance.
-
-The v5.0 release-candidate inventory contains **128 manifest-backed public documents**: 28 registered entries and 100 entries canonically marked `registration_state: provisional`. `Provisional` describes metadata-review state; it is not a quality, truth, or confidence score. Japanese/English counterpart families are resolved to the current UI language when a counterpart exists.
-
-Local launch from the repository root:
-
-```text
-python scripts/serve_navigator.py
-```
-
-Then open:
-
-```text
-http://127.0.0.1:8000/navigator/
-```
-
-日本語では、READMEを「何を読む体系なのか」を示す編集的入口、Public Navigatorを「実際に読む・探す・関係を辿る」運用入口として分けています。v5.0公開候補では、28登録済み文書と100仮登録文書を単一manifestから扱います。仮登録表示はメタデータ監査が継続中であることだけを示し、内容品質の評価には使いません。
-
-Developer Navigator とレビュー内部情報は既定のPublic入口から分離されています。
+公開体系に、概説、応用文書、探索的研究ノート、方針、索引、運用ツールが並んでいるのはそのためです。役割も主張強度も違いますが、いずれも返路を持つ一つの研究系を構成します。
 
 ---
 
-## 10. Current release, citation, and public boundary
+## About this README / このREADMEについて
 
-- Current public version: **v4.3.0**
-- Next public release candidate: **v5.0.0 — opening release of the v5 series**
-- v5.0.0 version-specific DOI: **pending**
-- Version-specific DOI for the current public release: [10.5281/zenodo.21394190](https://doi.org/10.5281/zenodo.21394190)
+This root README is an intentional exception to the repository’s default language relation.
+
+English and Japanese are co-authoritative public-interface texts here. English appears first and carries the more technically explicit international formulation. Japanese carries a more accessible and rhetorically direct formulation. Sentence-level symmetry is not required, and neither text is subordinate to the other as a translation.
+
+This exception does **not** make the README a definition owner. Where wording affects technical meaning, claim strength, non-claim boundaries, public scope, or lineage, the linked canonical document governs.
+
+このルートREADMEだけは、通常の「日本語正本・英語通約」とは別に、日本語と英語の双方を広報上の正本として扱います。文章量、構文、言い回しを機械的に一致させるのではなく、同じ公開上の招待、非主張境界、読解経路、版情報を、それぞれの言語で保持します。
+
+ただし、README自体が概念の定義を所有するわけではありません。厳密な意味、主張強度、非主張境界、公開範囲、概念系譜は、リンク先の正本文書が管理します。
+
+---
+
+## Current release, citation, and public boundary / 現行版・引用・公開境界
+
+- Current public version: **v5.0.0 — opening release of the v5 series**
+- Version-specific DOI for the current public release: [10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382)
 - All versions DOI: [10.5281/zenodo.19222394](https://doi.org/10.5281/zenodo.19222394)
 - [`RELEASE_NOTES.md`](RELEASE_NOTES.md)
 - [`CITATION.md`](CITATION.md)
@@ -537,12 +345,28 @@ For document placement and public exclusions, see the [`System Map`](00_Overview
 
 ### 日本語｜現行版・引用・公開境界
 
-- 現行公開版：**v4.3.0**
-- 次期公開候補：**v5.0.0 — v5系開幕版**
-- v5.0.0版固有DOI：**未発行**
-- 現行公開版の版固有DOI：[10.5281/zenodo.21394190](https://doi.org/10.5281/zenodo.21394190)
+- 現行公開版：**v5.0.0 — v5系開幕版**
+- v5.0.0版固有DOI：[10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382)
 - 全版DOI：[10.5281/zenodo.19222394](https://doi.org/10.5281/zenodo.19222394)
 
 このリポジトリは公開インターフェースです。AMP Core、ITS全体系、非公開公理原典、私的ランタイムや人格仕様は含みません。
 
 ---
+
+## Public Navigator / 公開ナビゲータ
+
+The README is the editorial entrance. The [**Public Navigator**](https://sellecelery.github.io/Scientific-Ontology/navigator/) is the operational reading entrance: it reads the canonical public catalog and lets a reader browse by layer, search, open documents, switch to available Japanese or English counterparts, and traverse typed relations without knowing repository filenames in advance.
+
+The Navigator begins with this root README as **START HERE**. If this README is already open inside the Navigator’s Reader, the link above returns to the operational reading surface. That recursion is intentional: the README establishes the question and the public boundary; the Navigator carries the reader into the corpus and back again.
+
+The v5.0 public inventory contains **128 catalog-backed documents**: 28 registered entries and 100 entries marked `registration_state: provisional`. `Provisional` describes metadata-review state; it is not a quality, truth, or confidence score. Japanese/English counterpart families follow the current interface language when a counterpart exists.
+
+Developer Navigator and internal review data remain outside the default public entrance.
+
+READMEは「何を読む体系なのか」を示す編集的入口、[**Public Navigator**](https://sellecelery.github.io/Scientific-Ontology/navigator/)は「実際に読む・探す・関係を辿る」運用入口です。体系の層から辿ることも、語から検索することも、文書を開いて関係線を移動することもできます。
+
+Navigatorの先頭には、このルートREADMEが**START HERE**として置かれています。NavigatorのReaderでこのREADMEを読んでいる場合、上のリンクは再び運用上の読解面へ戻ります。この回帰は意図したものです。READMEが問いと公開境界を置き、Navigatorが文書群へ運び、また入口へ返します。
+
+v5.0の公開目録は、登録済み28文書と`registration_state: provisional`の100文書、計**128文書**で構成されます。`provisional`はメタデータ監査の状態であり、内容の品質、真偽、確信度の評価ではありません。日本語・英語の対文書がある場合は、現在の表示言語に合わせて解決されます。
+
+Developer Navigatorとレビュー内部情報は、既定の公開入口から分離されています。

@@ -369,7 +369,26 @@ ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し�
 
 ---
 """
-
+    if assigned:
+        citation_guidance_en = (
+            "If you use, discuss, or refer to this published public edition, "
+            f"cite its version-specific Zenodo DOI: {doi['value']}."
+        )
+        citation_guidance_ja = (
+            "この公開版を利用・参照・論評する場合は、"
+            f"版固有のZenodo DOI（{doi['value']}）を使用してください。"
+        )
+    else:
+        citation_guidance_en = (
+            "If you use, discuss, or refer to a published public edition, cite its "
+            "version-specific Zenodo DOI. For this release candidate, use the version "
+            "and repository URL until the v5.0.0 DOI is assigned."
+        )
+        citation_guidance_ja = (
+            "公開済みPublic Editionを利用・参照・論評する場合は、版固有のZenodo DOIを"
+            "使用してください。このリリース候補については、v5.0.0のDOIが確定するまで"
+            "版番号とリポジトリURLを使用します。"
+        )
     return f"""# Citation
 
 > Status: Citation / {release['status']}
@@ -378,9 +397,9 @@ ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し�
 > Target version: {release['display_version']}
 > Version-specific DOI: {doi_value}
 
-If you use, discuss, or refer to a published public edition, cite its version-specific Zenodo DOI. For this release candidate, use the version and repository URL until the v5.0.0 DOI is assigned.
+{citation_guidance_en}
 
-公開済みPublic Editionを利用・参照・論評する場合は、版固有のZenodo DOIを使用してください。このリリース候補については、v5.0.0のDOIが確定するまで版番号とリポジトリURLを使用します。
+{citation_guidance_ja}
 
 ---
 
@@ -504,7 +523,19 @@ def render_release_notes(state: dict[str, Any]) -> str:
         else "Version-specific DOI: **pending**. Do not reuse the v4.3.0 DOI or the version-family DOI as the v5.0.0 DOI."
     )
 
+    included_heading = (
+        "Included in this release"
+        if release["status"] in {"published", "superseded"}
+        else "Included in this release candidate"
+    )
+    included_heading_ja = (
+        "今回の公開版に含むもの"
+        if release["status"] in {"published", "superseded"}
+        else "今回の公開候補に含むもの"
+    )
+
     return f"""# Release Notes: Scientific Ontology (SO) / 存在境界論 Public Edition {release['display_version']}
+
 
 > Status: Release notes / {release['status']}
 > Scope: Public release metadata / research transition / repository change log
@@ -538,7 +569,7 @@ Previous release: **{previous['display_version']}** — <https://doi.org/{previo
 
 {release['display_version']} is the opening release of the v5 living series, not the completion of v5. The release deliberately carries the framework into additional domains while preserving the return path by which criticism, failed correspondence, implementation problems, and residuals can revise later v5.x work.
 
-### Included in this release candidate
+### {included_heading}
 
 {en_items}
 
@@ -556,7 +587,7 @@ Files whose basenames retain the local/internal `000` prefix and non-public core
 
 {release['purpose']['ja']}
 
-### 今回の公開候補に含むもの
+### {included_heading_ja}
 
 {ja_items}
 

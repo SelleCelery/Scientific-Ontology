@@ -264,9 +264,28 @@ def main() -> int:
         return 1
     cfg = load_yaml(config_path)
 
+    visibility = "public" if args.mode == "publication" else "preview"
     commands = [
-        ("index-fresh", [sys.executable, "scripts/build_docs_index.py", "--check"]),
-        ("graph-fresh", [sys.executable, "scripts/build_docs_graph.py", "--check"]),
+        (
+            "index-fresh",
+            [
+                sys.executable,
+                "scripts/build_docs_index.py",
+                "--visibility",
+                visibility,
+                "--check",
+            ],
+        ),
+        (
+            "graph-fresh",
+            [
+                sys.executable,
+                "scripts/build_docs_graph.py",
+                "--visibility",
+                visibility,
+                "--check",
+            ],
+        ),
         ("public-graph-fresh", [sys.executable, "scripts/build_public_graph.py", "--check"]),
         ("public-catalog-fresh", [sys.executable, "scripts/build_public_catalog.py", "--check"]),
         ("search-browse-regression", [sys.executable, "scripts/query_docs.py", "test"]),

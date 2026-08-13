@@ -611,6 +611,36 @@ function renderPublicHome(): HTMLElement {
   hero.append(quick);
   page.append(hero);
 
+  const repositoryEntry = publicGuides().find(
+    (guide: JsonObject) => String(guide.id ?? "") === "repository_entry",
+  );
+
+  if (repositoryEntry) {
+    const entrySection = el("section", "section guide-section");
+    entrySection.append(
+      eyebrow("START HERE"),
+      el(
+        "h2",
+        "section-title",
+        displayLang === "ja"
+          ? "まず、存在境界論とは何かを読む"
+          : "Start with what Scientific Ontology is",
+      ),
+      el(
+        "p",
+        "section-copy",
+        displayLang === "ja"
+          ? "体系の層を選ぶ前に、ルートREADMEから全体の開始線、公開上の姿勢、v5系の進行方向を確認できます。"
+          : "Before choosing a system layer, read the root README for the framework’s opening line, public stance, and direction of the v5 series.",
+      ),
+    );
+
+    const entryGrid = el("div", "guide-grid");
+    entryGrid.append(publicGuideCard(repositoryEntry));
+    entrySection.append(entryGrid);
+    page.append(entrySection);
+  }
+
   const layerSection = el("section", "section public-section");
   layerSection.append(
     eyebrow(displayLang === "ja" ? "READ BY LAYER" : "READ BY LAYER"),
@@ -641,7 +671,10 @@ function renderPublicHome(): HTMLElement {
     ),
   );
   const guideGrid = el("div", "guide-grid");
-  for (const guide of publicGuides()) guideGrid.append(publicGuideCard(guide));
+  for (const guide of publicGuides()) {
+    if (String(guide.id ?? "") === "repository_entry") continue;
+    guideGrid.append(publicGuideCard(guide));
+  }
   guideSection.append(guideGrid);
   page.append(guideSection);
 

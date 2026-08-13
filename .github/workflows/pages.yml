@@ -42,7 +42,7 @@ jobs:
 
       - name: Run DN-6 release gate
         run: |
-          python scripts/check_dn6_release_gate.py
+          python scripts/check_dn6_release_gate.py --mode publication
 
       - name: Build public Pages artifact
         run: |

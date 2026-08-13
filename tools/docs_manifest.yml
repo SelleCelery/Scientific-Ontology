@@ -301,7 +301,7 @@ documents:
       E: "E1-E2"
       U: "U0-U1"
       V: "V0-V1"
-    state: "public-candidate"
+    state: "public"
     role_ja: "Sat層の基底配置文書"
     role_en: "Foundational positioning document for the Sat layer"
     related:
@@ -341,7 +341,7 @@ documents:
       U: "U1"
       R: "R0-R2"
       V: "V0-V1"
-    state: "public-candidate"
+    state: "public"
     role_ja: "知の成立条件と失敗条件の定義所有者"
     role_en: "Canonical owner of epistemic validity and failure conditions"
 
@@ -386,7 +386,7 @@ documents:
       U: "U1"
       R: "R1-R3"
       V: "V0-V1"
-    state: "public-candidate"
+    state: "public"
     role_ja: "情報が意味として成立する条件の定義所有者"
     role_en: "Canonical owner of meaning-generation conditions"
 
@@ -430,7 +430,7 @@ documents:
       U: "U1"
       R: "R0-R5 map"
       V: "V0-V1"
-    state: "public-candidate"
+    state: "public"
     role_ja: "理論間の位置関係、返路、アポリアを管理する全体地図"
     role_en: "System map for conceptual positions, return paths, and aporia"
     coordination_group: "core_document_responsibility_contract"
@@ -542,7 +542,7 @@ documents:
       U: "U1"
       R: "R1-R2"
       V: "V0-V1"
-    state: "public-candidate"
+    state: "public"
     role_ja: "認識方向の生成、安定、変形の定義所有者"
     role_en: "Canonical owner of cognitive-direction formation, stabilization, and transformation"
     coordination_group: "core_document_responsibility_contract"
@@ -624,7 +624,7 @@ documents:
       U: "U1"
       R: "R2-R3"
       V: "V0-V1"
-    state: "public-candidate"
+    state: "public"
     role_ja: "異なる認識形式を比較・通約・保留する境界プロトコル"
     role_en: "Boundary protocol for comparing, commensurating, and suspending cognitive frameworks"
     coordination_group: "core_document_responsibility_contract"
@@ -729,7 +729,7 @@ documents:
       U: "U1-U2"
       R: "R2-R3"
       V: "V0-V1"
-    state: "public-candidate"
+    state: "public"
     role_ja: "候補目的を第一義として選び、共有後の世界を境界CAで再照合する運用モデル"
     role_en: "Operational model for purpose commitment, shared world formation, and boundary CA"
     coordination_group: "core_document_responsibility_contract"
@@ -817,7 +817,7 @@ documents:
       U: "U1"
       R: "R2-R3"
       V: "V0-V1"
-    state: "public-candidate"
+    state: "public"
     role_ja: "連続する認識と離散的運用の間の操作構造を所有するメタモデル"
     role_en: "Metamodel owning the operational mapping between seamless cognition and discrete operation"
 
@@ -836,7 +836,7 @@ documents:
       U: "U1"
       R: "R2-R3"
       V: "V0-V2"
-    state: "public-candidate"
+    state: "public"
     role_ja: "存在相圧縮の利益、損失、外部化、再開条件の診断所有者"
     role_en: "Canonical diagnostic owner for the gains, losses, externalization, and reopening conditions of existence-phase
       compression"
@@ -856,7 +856,7 @@ documents:
       U: "U1-U2"
       R: "R2-R3"
       V: "V0-V2"
-    state: "public-candidate"
+    state: "public"
     role_ja: "ポート配分、通約、保留、再開、ゲートウェイ捕捉の動態所有者"
     role_en: "Canonical owner of the dynamics of port allocation, commensuration, holding, reopening, and gateway capture"
 
@@ -875,7 +875,7 @@ documents:
       U: "U1-U2"
       R: "R3"
       V: "V1-V4"
-    state: "public-candidate"
+    state: "public"
     role_ja: "目的を責任、通信、監査、停止、返路へ変換する横断実装モデル"
     role_en: "Cross-domain model converting purpose into responsibility, communication, audit, stop conditions, and return
       paths"
@@ -968,7 +968,7 @@ documents:
       U: "U1"
       R: "R2-R4"
       V: "V0-V1"
-    state: "public-candidate"
+    state: "public"
     role_ja: "存在相、意味容量、境界外交を平和仕様へ接続する公開応用文書"
     role_en: "Public application connecting existence phases, meaning capacity, and boundary diplomacy to a peace specification"
 
@@ -1008,7 +1008,7 @@ documents:
     status: "Public Overview Candidate / cross-series operational orientation"
     scope: "boundary events, agency, responsibility partition, mobility, cost terrain, justice, theory use, open future"
     public_profile: "P0-P1"
-    state: "public-candidate"
+    state: "public"
     language_relation: "japanese_authoritative_with_separate_english_commensuration"
     related:
       - "00_Overview/Scientific_Ontology_Operational_Outline.en.md"
@@ -1050,7 +1050,7 @@ documents:
     status: "Public Overview Candidate / cross-series operational orientation"
     scope: "English commensuration of the cross-series operational orientation"
     public_profile: "P0-P1"
-    state: "public-candidate"
+    state: "public"
     language_relation: "english_commensuration_of_japanese_authoritative_source"
     related:
       - "00_Overview/Scientific_Ontology_Operational_Outline.ja.md"
@@ -1064,7 +1064,7 @@ documents:
     status: "README"
     scope: "living-canonical research line navigation, maintenance, and return intake"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     doc_id: language_meaning_communication_phase_studies
     discovery:
@@ -1100,7 +1100,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     doc_id: grammar_meaning_pressure_channel
     discovery:
@@ -1135,7 +1135,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     doc_id: meaning_collation_return_path
     discovery:
@@ -1171,7 +1171,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     registration_state: registered
   - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.ja.md"
@@ -1181,7 +1181,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     doc_id: ai_language_generation_grammatical_frames
     discovery:
@@ -1217,7 +1217,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     registration_state: registered
   - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md"
@@ -1227,7 +1227,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     registration_state: registered
   - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md"
@@ -1237,7 +1237,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     doc_id: semantic_network_topology_commensuration_bandwidth
     discovery:
@@ -1275,7 +1275,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     doc_id: commensuration_cross_grammatical_collation
     discovery:
@@ -1311,7 +1311,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     registration_state: registered
   - path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md"
@@ -1321,7 +1321,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research note"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     doc_id: consent_boundary_sentence_bit_asymmetry
     discovery:
@@ -1358,7 +1358,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research note"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     doc_id: literature_worldmaking
     discovery:
@@ -1393,7 +1393,7 @@ documents:
     layer: "05_Research_Notes"
     status: "Research note"
     public_profile: "P2"
-    state: "public-candidate"
+    state: "public"
 
     doc_id: dssi_observation_judgment_sovereignty
     discovery:
@@ -1433,7 +1433,7 @@ documents:
     status: Public control table
     scope: claim strength / epistemic risk / use and safety risk / publication layer / verification / rendering distance
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表
     role_en: Public control table separating claim strength, empirical support, use risk, publication layer, and
@@ -1479,7 +1479,7 @@ documents:
     status: Public control table
     scope: claim strength / epistemic risk / application risk / publication layer / verification / rendering distance
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表
     role_en: Public control table separating claim strength, empirical support, use risk, publication layer, and
@@ -1525,7 +1525,7 @@ documents:
     status: Policy
     scope: physical correspondence, physical-adjacent terminology, boundary realism, observation conditions
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論が物理近接語彙を扱う条件、標準物理学との非同一性、公開上の制限を定める方針
     role_en: Policy governing the use of physics-adjacent vocabulary, non-identity with standard physics, and public
@@ -1566,7 +1566,7 @@ documents:
     status: Policy
     scope: physical correspondence, physical-adjacent terminology, boundary realism, observation conditions
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論が物理近接語彙を扱う条件、標準物理学との非同一性、公開上の制限を定める方針
     role_en: Policy governing the use of physics-adjacent vocabulary, non-identity with standard physics, and public
@@ -1608,7 +1608,7 @@ documents:
     scope: public orientation / operational outline / concept network / system map / research dynamics / claim control /
       physics correspondence
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 公開体系の全体像、概念配置、主張管理、物理対応へ案内するOverview層の入口
     role_en: Entry point to the Overview layer for system orientation, concept placement, claim control, and physics
@@ -1646,7 +1646,7 @@ documents:
     scope: ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness /
       aporia / research method
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 理論間の位置関係、返路、アポリアを管理する全体地図
     role_en: System map for conceptual positions, return paths, and aporia
@@ -1690,7 +1690,7 @@ documents:
     scope: repository architecture / operational orientation / conceptual layers / public boundary / governance /
       research dynamics
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 公開リポジトリの層、責務、公開境界、研究動態を示す人間向け体系マップ
     role_en: Human-readable system map of repository layers, responsibilities, public boundaries, and research dynamics
@@ -1727,7 +1727,7 @@ documents:
     status: Methodological and operational note
     scope: truth / purpose / management / organization / AI / state / international order / historical interpretation
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 候補目的を第一義として選び、共有後の世界を境界CAで再照合する運用モデル
     role_en: Operational model for purpose commitment, shared world formation, and boundary CA
@@ -1769,7 +1769,7 @@ documents:
     status: Introduction
     scope: AMP
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論｜Scientific Ontology の形而上学的基礎として AMP を紹介する公開用入門である
     role_en: It is a conceptual foundation for asking how existence, observation, meaning, ethics, and boundary become
@@ -1815,7 +1815,7 @@ documents:
     status: Draft
     scope: boundary-epistemology
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 知の成立条件と失敗条件の定義所有者
     role_en: Canonical owner of epistemic validity and failure conditions
@@ -1857,7 +1857,7 @@ documents:
     status: Annotation
     scope: boundary-epistemology
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 境界認識批判が扱う運動、すなわち感性・悟性・理性・同期・照合・残差保持・残渣化・再照合・論理-深度軸を、既存思想の問題圏と照合するための地形図である
     role_en: It is a terrain map for comparing the movement treated by Boundary Epistemological Critique with existing
@@ -1903,7 +1903,7 @@ documents:
     status: Annotation
     scope: boundary-epistemology
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 境界認識批判が扱う運動、すなわち感性・悟性・理性・同期・照合・残差保持・残渣化・再照合・論理-深度軸を、既存思想の問題圏と照合するための地形図である
     role_en: It is a terrain map for comparing the movement treated by Boundary Epistemological Critique with existing
@@ -1949,7 +1949,7 @@ documents:
     status: Foundation
     scope: four-axioms
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論｜Scientific Ontology における「存在の四大表公理」を公開向けに説明するための概念整理である
     role_en: The four axioms are an entrance into the public foundation
@@ -1991,7 +1991,7 @@ documents:
     scope: network structure / conditions of existence, observation, meaning, and knowledge / boundary epistemological
       critique
     public_profile: P0-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在・観測・意味・知識の成立条件を扱うSat／真理層の入口
     role_en: Entry point to the Sat/Truth layer on conditions of existence, observation, meaning, and knowledge
@@ -2028,7 +2028,7 @@ documents:
     status: Cross-domain ontological note
     scope: cognition / attention / abstraction / sensibility / understanding / cognitive-axis formation
     public_profile: P1-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 認識方向の生成、安定、変形の定義所有者
     role_en: Canonical owner of cognitive-direction formation, stabilization, and transformation
@@ -2070,7 +2070,7 @@ documents:
     status: Introduction
     scope: HFC
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 接触履歴を保持する場と通信の関係を紹介する履歴場通信論の公開入門
     role_en: Public introduction to History-Field Communication and the relation between communication and fields that
@@ -2114,7 +2114,7 @@ documents:
     status: Frame
     scope: history-field-topology
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 履歴場トポロジーは、Raj / Beauty / 激・美 に属する
     role_en: It is a constructive and interpretive layer that extends the foundational concepts of Scientific
@@ -2162,7 +2162,7 @@ documents:
     scope: communication content / event-streams / history-field dynamics / cognitive-axis formation / science
       commensuration
     public_profile: P0-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 差分、履歴、通信内容、認識軸生成を扱うRaj／美層の入口
     role_en: Entry point to the Raj/Beauty layer on differences, history, communication content, and cognitive-axis
@@ -2200,7 +2200,7 @@ documents:
     status: Position
     scope: science-commensuration
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論｜Scientific Ontology が現代科学とどのように関係するかを明確にするための公開用立場表明である
     role_en: It is also not an uncritical acceptance of the current institutional self-understanding of science
@@ -2242,7 +2242,7 @@ documents:
     status: Model
     scope: boundary-ethics
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 境界を越える作用、相手の後続条件、返り、責任を扱う倫理モデル
     role_en: Ethical model of boundary-crossing action, downstream conditions, return, and responsibility
@@ -2282,7 +2282,7 @@ documents:
     status: Application note
     scope: return-orbit
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 意味を、接触から履歴へ戻る返路軌道として読む応用ノート
     role_en: Application note reading meaning as a return orbit from contact into history
@@ -2322,7 +2322,7 @@ documents:
     status: Protocol
     scope: cognitive bridge / axiom selection / worldview comparison / commensuration / ethics / boundary protocol
     public_profile: P1-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 異なる認識形式を比較・通約・保留する境界プロトコル
     role_en: Boundary protocol for comparing, commensurating, and suspending cognitive frameworks
@@ -2366,7 +2366,7 @@ documents:
     status: README
     scope: communication protocols / boundary ethics / commensuration / closure and reopening / return management
     public_profile: P0-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 通信の開閉、倫理、通約、返路管理を扱うTam／善層の入口
     role_en: Entry point to the Tam/Goodness layer on communication governance, ethics, commensuration, and return paths
@@ -2404,7 +2404,7 @@ documents:
     status: Application note
     scope: AI-boundary-interface
     public_profile: P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: AIを、利用者の履歴と判断場を同期させる境界インターフェースとして扱う応用ノート
     role_en: Application note treating AI as a boundary interface that synchronizes user history and judgment fields
@@ -2448,7 +2448,7 @@ documents:
     status: Application note
     scope: AI-personality
     public_profile: P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: AI人格を内面実体ではなく、履歴・制約・返りを持つ応答構造として扱う公開ゲート
     role_en: Public gateway treating AI personality as a response structure with history, constraints, and returns
@@ -2488,7 +2488,7 @@ documents:
     status: Application note
     scope: AI-usefulness
     public_profile: P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: AIの有用性を、利用者の判断可能性を維持・拡張する境界機能として評価する応用ノート
     role_en: Application note evaluating AI usefulness as a boundary function that preserves and extends user judgment
@@ -2528,7 +2528,7 @@ documents:
     status: Application core
     scope: application-boundary
     public_profile: P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: アプリケーション境界論とは、システムの実用的価値は内部の複雑さだけにあるのではなく、その複雑さをどのような境界面として外部へ提示するかにある、という見方である
     role_en: Application Boundary Theory is the view that the practical value of a system does not lie only in its
@@ -2568,7 +2568,7 @@ documents:
     status: README
     scope: AI boundary function / response structure / judgment preservation / application boundary theory
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: AI_Adaptationは、AIを判断代行装置ではなく、利用者の判断可能性を維持する境界インターフェースとして扱う
     role_en: AI_Adaptation treats AI not as a substitute decision-maker but as a boundary interface preserving the
@@ -2605,7 +2605,7 @@ documents:
     status: README
     scope: public applications / design interfaces / checklists / specifications / non-operational implementation
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 基礎理論を設計インターフェース、チェックリスト、仕様へ接続する応用層の入口
     role_en: Entry point to applications connecting foundational theory to interfaces, checklists, and specifications
@@ -2640,7 +2640,7 @@ documents:
     scope: AI adoption, Japanese administrative contexts, municipal DX, procurement, certification, responsibility
       boundaries, re-collation
     public_profile: P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: AI導入の目的、責任境界、観測可能性、停止・修正・再照合条件を確認する実務チェックリスト
     role_en: Practical checklist for AI-adoption purpose, responsibility boundaries, observability, stopping,
@@ -2685,7 +2685,7 @@ documents:
     status: README
     scope: AI adoption / institutional responsibility / collation / peace protocols / social boundary specifications
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: Social_Boundary_Designは、AI、制度、組織、平和を、社会側の境界設計として扱う
     role_en: Social_Boundary_Design treats AI, institutions, organizations, and peace as problems of boundary design on
@@ -2725,7 +2725,7 @@ documents:
     status: Application Note / First Draft
     scope: peace / society / boundary ethics / meaning-experience field / social boundary design
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在相、意味容量、境界外交を平和仕様へ接続する公開応用文書
     role_en: Public application connecting existence phases, meaning capacity, and boundary diplomacy to a peace
@@ -2770,7 +2770,7 @@ documents:
     status: Research note
     scope: history-loop
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 意味生成と人格的連続性を、スケールに応じた履歴ループの帰還安定性として捉えるモデルを提案する
     role_en: This note proposes a scale-based model of meaning formation and personality continuity
@@ -2811,7 +2811,7 @@ documents:
     status: Research note
     scope: logical-sandbox
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: AI人格を支える局所論理空間と、そこでのネゲントロピー配分を検討する研究ノート
     role_en: Research note on local logical sandboxes supporting AI personality and the allocation of negentropy within
@@ -2854,7 +2854,7 @@ documents:
     status: README
     scope: AI personality / logical sandbox / history loops / return stability / negentropy allocation
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: AI人格を履歴保持、注意、境界判断、残差処理、帰還安定性を持つ応答構造として研究する小分類の入口
     role_en: Entry point to research on AI personality as response structure with history, attention, boundary judgment,
@@ -2893,7 +2893,7 @@ documents:
     status: Cross-domain Ontological Note / First Draft
     scope: boundary diplomacy / port allocation / cognitive axes / commensuration / peace / AI
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: ポート配分、通約、保留、再開、ゲートウェイ捕捉の動態所有者
     role_en: Canonical owner of the dynamics of port allocation, commensuration, holding, reopening, and gateway capture
@@ -2940,7 +2940,7 @@ documents:
     scope: cognitive dynamics / communication / operational discretization / commensuration / logical depth / return
       paths
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 連続する認識と離散的運用の間の操作構造を所有するメタモデル
     role_en: Metamodel owning the operational mapping between seamless cognition and discrete operation
@@ -2984,7 +2984,7 @@ documents:
     status: Research Note / First Draft
     scope: existence phases / compression / cognition / society / economy / AI / peace
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在相圧縮の利益、損失、外部化、再開条件の診断所有者
     role_en: Canonical diagnostic owner for the gains, losses, externalization, and reopening conditions of
@@ -3028,7 +3028,7 @@ documents:
     status: Cross-domain Ontological Note / First Draft
     scope: organization / responsibility / communication / protocol / audit / AI / social design
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 目的を責任、通信、監査、停止、返路へ変換する横断実装モデル
     role_en: Cross-domain model converting purpose into responsibility, communication, audit, stop conditions, and
@@ -3074,7 +3074,7 @@ documents:
     status: README
     scope: cognitive dynamics / seamless communication / existence-phase compression / ports / organizational boundaries
     public_profile: P1-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 認識が通信的にはシームレスである一方、実際の運用では、存在相、分類、ポート、容量、権限、責任へ離散化される構造を扱う
     role_en: This subdirectory studies how cognition may be seamless as communication while practical operation
@@ -3111,7 +3111,7 @@ documents:
     status: Research note
     scope: asymmetry stabilization, cosmological analogy, life, civilization, culture, re-collation
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 宇宙の形成から生命、文明、文化に至るまでの過程を、「非対称性の発生」と「その仮安定化」の連鎖として読むための存在論的モデルである
     role_en: an ontological model for reading the processes from cosmic formation to life, civilization, and culture as
@@ -3154,7 +3154,7 @@ documents:
     status: Research note
     scope: asymmetry stabilization, cosmological analogy, life, civilization, culture, recollation
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 宇宙の形成から生命、文明、文化に至るまでの過程を、「非対称性の発生」と「その仮安定化」の連鎖として読むための存在論的モデルである
     role_en: an ontological model for reading the processes from cosmic formation to life, civilization, and culture as
@@ -3197,7 +3197,7 @@ documents:
     status: Research Note / Application Bridge
     scope: Consent Boundary and Sentence/Bit Asymmetry / 同意境界とセンテンス／ビット非対称
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 利用規約、プライバシーポリシー、医療説明、各種許諾画面などに見られる、提示側と応答側の構造的非対称を扱う
     role_en: a structural asymmetry between the presenting side and the responding side that appears in terms of
@@ -3242,7 +3242,7 @@ documents:
     status: Cross-domain ontological note / Literary ontology note
     scope: narrative truth, structural reading, reality fantasy, power, responsibility, return ethics
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 物語を真実から逃げるための代用品ではなく、事実だけでは届きにくい真実層へ触れるための構造読解装置として扱う
     role_en: This note treats narrative not as a substitute for escaping from truth, but as a structural reading device
@@ -3287,7 +3287,7 @@ documents:
     status: Cross-domain ontological note / Literary ontology note
     scope: narrative truth, structural reading, reality fantasy, power, responsibility, return ethics
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 物語を真実から逃げるための代用品ではなく、事実だけでは届きにくい真実層へ触れるための構造読解装置として扱う
     role_en: This note treats narrative not as a substitute for escaping from truth, but as a structural reading device
@@ -3332,7 +3332,7 @@ documents:
     status: README
     scope: asymmetry / re-collation / return ethics / retaliation conversion / narrative truth / structural reading
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 単一分野へ閉じない存在論的構造を、倫理、文化、文明、経済、文学、権力、責任へ横断的に展開する
     role_en: This subdirectory extends ontological structures across ethics, culture, civilization, economy, literature,
@@ -3373,7 +3373,7 @@ documents:
     scope: boundary ethics, return, retaliation, responsibility processing, maturation, negentropy economy, Kantian
       commensuration
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 平和を人間関係の道徳としてではなく、境界接触における返りの処理として扱う
     role_en: This note treats peace not as a morality of human relations, but as the processing of return in boundary
@@ -3420,7 +3420,7 @@ documents:
     scope: boundary ethics, return, retaliation, responsibility processing, maturation, negentropy economy, Kantian
       commensuration
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 平和を人間関係の道徳としてではなく、境界接触における返りの処理として扱う
     role_en: This note treats peace not as a morality of human relations, but as the processing of return in boundary
@@ -3468,7 +3468,7 @@ documents:
     scope: autoregressive generation / distributional constraints / grammar / multilinguality / residuals / false
       closure / response structure
     public_profile: P1-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: AI言語生成における分布制約、逐次生成、文法枠、生成経路残差、偽閉鎖を扱う操作モデル
     role_en: Operational model of distributional constraints, sequential generation, grammatical frames, generation-path
@@ -3513,7 +3513,7 @@ documents:
     status: Release notes
     scope: research-line-wide conceptual changes / version history / propagation history
     public_profile: P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 言語・意味・通信位相研究の変更理由、波及文書、正本更新を記録する研究代謝履歴
     role_en: Research-metabolism history recording reasons for change, affected documents, and canonical updates in the
@@ -3553,7 +3553,7 @@ documents:
     status: Research Note / Conceptual Model / Metamodel
     scope: commensuration / translation / grammatical frames / local-use transfer / residual preservation / return paths
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 異なる文法枠間で中心命題、概念所有、主張強度、残差、返路を保持する通約モデル
     role_en: Model of cross-grammatical commensuration preserving central claims, concept ownership, claim strength,
@@ -3600,7 +3600,7 @@ documents:
     scope: compressed experience / literature / reading / history redeployment / qualia difference / sensitivity /
       worldmaking interface
     public_profile: P1-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 文学は、世界制作の公開場としても、別世界への一時居住装置としても、物語的真実へ触れる構造読解としても扱える
     role_en: Literature can be treated as a public site of worldmaking, as a device for temporarily inhabiting another
@@ -3646,7 +3646,7 @@ documents:
     status: Research Note / Conceptual Model / Metamodel
     scope: grammar / discourse / relation / gesture / media / institutional form / meaning-pressure channel
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 発話以前の全体圧は、そのまま外部へ移送されない
     role_en: Whole pressure before speech is not transferred outward unchanged
@@ -3690,7 +3690,7 @@ documents:
     status: Research Note / Conceptual Model / Metamodel
     scope: intension / extension / false extension / semantic return test / citation audit / AI association audit
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 意味を語の内側にある属性集合として固定すると、意味形成の履歴と返路が見えにくくなる
     role_en: If meaning is fixed as a set of attributes located inside a word, the history and return paths of meaning
@@ -3738,7 +3738,7 @@ documents:
     scope: Japanese / English / grammar / discourse / commitment timing / omission / modality / responsibility /
       commensuration residuals
     public_profile: P1-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 同じ内容を日本語と英語で述べても、同じ意味運動がそのまま再現されるとは限らない
     role_en: Stating the same content in Japanese and English does not necessarily reproduce the same semantic movement
@@ -3784,7 +3784,7 @@ documents:
     scope: linguistic meaning / collation / return path / apperception / felt closure / emotion / thought / false
       closure
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 言語的意味を照合運動、言語的統覚、自己内部返路の局所閉鎖として扱うモデル
     role_en: Model of linguistic meaning as collation, linguistic apperception, and local closure of a return path
@@ -3830,7 +3830,7 @@ documents:
     status: Registry
     scope: external and internal returns / disposition / recollation conditions
     public_profile: P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 返りを採用する際は、最低限次を確認する
     role_en: Disposition of returns must not be decided by popularity, emotional impact, character authority, or AI
@@ -3871,7 +3871,7 @@ documents:
     status: Registry
     scope: external and internal returns / disposition / recollation conditions
     public_profile: P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 返りを採用する際は、最低限次を確認する
     role_en: Disposition of returns must not be decided by popularity, emotional impact, character authority, or AI
@@ -3914,7 +3914,7 @@ documents:
     scope: semantic network topology / communication phase / multilayer-temporal-higher-order networks / distance /
       bandwidth / return expectancy / logical-depth
     public_profile: P1-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 語が近いのに通じないことがある
     role_en: Words can be close and still fail to communicate
@@ -3961,7 +3961,7 @@ documents:
     scope: speech production / whole pressure / sequential decompression / non-destructive segmentation /
       self-monitoring / residual pressure
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 発話を全体圧からスピーチを逐次的に切り出し、残差を保持する除圧過程として扱うモデル
     role_en: Model of speech as sequential decompression that cuts speech from whole pressure while retaining residuals
@@ -4007,7 +4007,7 @@ documents:
       that world. It does not reduce literary value in general to a single criterion, nor does it provide a scoring
       system for judging individual works.
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論は、世界が制作されているという認識から出発する
     role_en: Scientific Ontology begins from the recognition that worlds are made
@@ -4052,7 +4052,7 @@ documents:
     status: Literary ontology note
     scope: reincarnation, belief-gravity domain, Buddhist-inspired fictional cosmology
     public_profile: P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 『冥府局転生課へようこそ！』の転生、輪廻、解脱、信念重力圏を存在境界論の語彙で整理する文学的存在論ノート
     role_en: Literary-ontology note rendering reincarnation, samsara, liberation, and belief-gravity domains in the
@@ -4095,7 +4095,7 @@ documents:
     status: README
     scope: literary ontology / structural reading / history / meaning / belief-gravity / fictional cosmology
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 文学作品と創作宇宙を、境界、履歴、自己、光、信念、意味、返りの構造として読む
     role_en: This subdirectory reads literary works and fictional cosmologies through structures of boundary, history,
@@ -4133,7 +4133,7 @@ documents:
     status: Research note
     scope: literary-ontology
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: ――宮沢賢治『春と修羅』序と履歴場トポロジー
     role_en: Miyazawa Kenji’s _Spring and Asura_ and History-Field Topology
@@ -4175,7 +4175,7 @@ documents:
     status: Research note
     scope: literary-ontology
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: ――宮沢賢治『春と修羅』序と履歴場トポロジー
     role_en: Miyazawa Kenji’s _Spring and Asura_ and History-Field Topology
@@ -4218,7 +4218,7 @@ documents:
     scope: chaos theory, nonlinear determinism, internal count-time, intrinsic time, logical-depth axis, residuals,
       residues, history-field correspondence, history-gravity domain
     public_profile: P2-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: カオス理論を存在境界論の観点から読み直すための研究ノート草稿である
     role_en: a research-note draft for rereading chaos theory from the perspective of Scientific Ontology
@@ -4263,7 +4263,7 @@ documents:
     scope: chaos theory, nonlinear determinism, internal count-time, intrinsic time, logical-depth axis, residuals,
       residues, history-field correspondence, history-gravity domain
     public_profile: P2-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: カオス理論を存在境界論の観点から読み直すための研究ノート草稿である
     role_en: a research-note draft for rereading chaos theory from the perspective of Scientific Ontology
@@ -4307,7 +4307,7 @@ documents:
     status: Research note
     scope: cosmological-topology
     public_profile: P2-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 本論説は、物理的宇宙の加速膨張（ダークエネルギー）と、観測者の認識境界における客観化・主観化の変遷を、同一の通信場における張力モデルとして記述する試論である
     role_en: This essay is a trial account that describes the accelerated expansion of the physical universe, often
@@ -4351,7 +4351,7 @@ documents:
     status: Research note
     scope: cosmological-topology
     public_profile: P2-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 本論説は、物理的宇宙の加速膨張（ダークエネルギー）と、観測者の認識境界における客観化・主観化の変遷を、同一の通信場における張力モデルとして記述する試論である
     role_en: This essay is a trial account that describes the accelerated expansion of the physical universe, often
@@ -4395,7 +4395,7 @@ documents:
     status: Research table
     scope: intrinsic-time
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 内在時間概念と標準模型の粒子・相互作用語彙の対応可能性と非同一性を整理する研究表
     role_en: Research table organizing possible correspondences and non-identity between intrinsic time and Standard
@@ -4437,7 +4437,7 @@ documents:
     status: Research table
     scope: intrinsic-time
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 内在時間概念と標準模型の粒子・相互作用語彙の対応可能性と非同一性を整理する研究表
     role_en: Research table organizing possible correspondences and non-identity between intrinsic time and Standard
@@ -4479,7 +4479,7 @@ documents:
     status: Research note
     scope: ontological-cosmology
     public_profile: P2-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 本稿の高密度モデルは、精神と自然が照合しながら展開する宇宙史を扱う
     role_en: Modern science describes the history of the universe as a vast material process that began with the Big
@@ -4522,7 +4522,7 @@ documents:
     status: Research note
     scope: ontological-cosmology
     public_profile: P2-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 本稿の高密度モデルは、精神と自然が照合しながら展開する宇宙史を扱う
     role_en: Modern science describes the history of the universe as a vast material process that began with the Big
@@ -4565,7 +4565,7 @@ documents:
     status: Research Note
     scope: Physical / Cosmological Notes
     public_profile: Research Note / P2-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論において boson field、intrinsic time、entropy communication、history-field、entanglement、Feynman
       diagram、BlackHole といった物理近接語彙を用いる理由を整理する Research Note である
@@ -4610,7 +4610,7 @@ documents:
     status: Research Note
     scope: Physical / Cosmological Notes
     public_profile: Research Note / P2-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論において boson field、intrinsic time、entropy communication、history-field、entanglement、Feynman
       diagram、BlackHole といった物理近接語彙を用いる理由を整理する Research Note である
@@ -4656,7 +4656,7 @@ documents:
     scope: intrinsic time / cosmological topology / history-field projection / chaos / logical depth / physics-adjacent
       hypotheses
     public_profile: P1-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論の概念を物理・宇宙論近接語彙と照合する高強度研究線の入口
     role_en: Entry point for high-intensity research collating Scientific Ontology with physics- and cosmology-adjacent
@@ -4699,7 +4699,7 @@ documents:
     scope: exploratory research / stronger hypotheses / guarded cross-domain correspondence / return to public
       foundations
     public_profile: P1-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 強い仮説と分野横断研究を公開基礎へ直結させず保持するResearch Notes層の入口
     role_en: Entry point to Research Notes holding strong and cross-domain hypotheses without directly promoting them to
@@ -4735,7 +4735,7 @@ documents:
     status: Index
     scope: research lines / reading routes / claim profiles / public boundaries / return paths
     public_profile: P0-P2.5
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 研究線、読解順、主張強度、公開境界、返路を横断して案内する統合索引
     role_en: Integrated index across research lines, reading order, claim profiles, public boundaries, and return paths
@@ -4777,7 +4777,7 @@ documents:
     scope: AI adoption, institutional synchronization, boundary design, collation, institutional procurement,
       public-sector case studies
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: AI導入を、単なる技術導入ではなく、制度における同期閉鎖の観点から読むための研究ノートである
     role_en: AI adoption as a possible form of synchronization closure within institutions
@@ -4823,7 +4823,7 @@ documents:
     scope: DSSI, digital sovereignty, browser observability, judgment-field maintenance, responsibility boundary,
       evidentiary boundary, public implementation
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: DSSIを、ブラウザ通信を可視化する単独の技術ツールとしてではなく、存在境界論における境界、観測、履歴、照合、判断場、責任返路を、デジタル環境へ実装する試みとして位置づけるための研究ノートである
     role_en: This note positions DSSI not merely as a technical tool for visualizing browser communications, but as an
@@ -4872,7 +4872,7 @@ documents:
     status: Draft
     scope: negentropy-economy
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: ネゲントロピー経済とは、交換、所有、価格、制度が、場の秩序生成能力をどのように増減させ、どの残差を残渣として外部化しているかを査定するための境界経済論である
     role_en: A negentropy economy is a boundary-economic framework for assessing how exchange, ownership, price, and
@@ -4916,7 +4916,7 @@ documents:
     status: Draft
     scope: negentropy-economy
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: ネゲントロピー経済とは、交換、所有、価格、制度が、場の秩序生成能力をどのように増減させ、どの残差を残渣として外部化しているかを査定するための境界経済論である
     role_en: A negentropy economy is a boundary-economic framework for assessing how exchange, ownership, price, and
@@ -4960,7 +4960,7 @@ documents:
     status: Research note
     scope: negentropy-economy
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 経済的価値と意味生成の関係を、境界、履歴、秩序生成能力、残差外部化から照合する研究ノート
     role_en: Research note collating economic value and meaning generation through boundaries, history, order-generating
@@ -5006,7 +5006,7 @@ documents:
     status: Research note
     scope: negentropy-economy
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 経済的価値と意味生成の関係を、境界、履歴、秩序生成能力、残差外部化から照合する研究ノート
     role_en: Research note collating economic value and meaning generation through boundaries, history, order-generating
@@ -5053,7 +5053,7 @@ documents:
     scope: social systems / institutional boundaries / AI adoption / DSSI / digital sovereignty / value / residue /
       negentropy economy
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 社会制度、責任配分、価値、貨幣、残差、AI導入を境界と履歴から研究する小分類の入口
     role_en: Entry point to research on institutions, responsibility allocation, value, money, residuals, and AI
@@ -5094,7 +5094,7 @@ documents:
     status: README
     scope: public visual aids / conceptual posters / visual reading notes
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 概念ポスターなどの視覚資料へ案内する補助層の入口
     role_en: Entry point to visual aids such as conceptual posters
@@ -5128,7 +5128,7 @@ documents:
     status: Visual note
     scope: conceptual-poster
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 本注記は、Scientific Ontology Conceptual Poster の読み方を説明するための補助文書である
     role_en: This note explains how to read the Scientific Ontology Conceptual Poster
@@ -5168,7 +5168,7 @@ documents:
     status: Policy
     scope: publication / commensuration / terminology / concept ownership / public boundary
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論｜Scientific Ontology における公開、通約、言語別ファイル、用語変更、概念所有、主張強度、非主張境界、未解決残差、既存タームとの衝突管理を定める
     role_en: This document governs publication, commensuration, language-specific files, terminology revision, concept
@@ -5212,7 +5212,7 @@ documents:
     status: README
     scope: publication / commensuration / language authority / concept ownership / terminology governance
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 正本、通約、概念所有、用語、公開境界を維持するリポジトリ統治層の入口
     role_en: Entry point to repository governance for authority, commensuration, concept ownership, terminology, and
@@ -5254,7 +5254,7 @@ documents:
     status: Repository governance specification
     scope: Release-level synchronization for Scientific Ontology / 存在境界論
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 版番号、著者、ORCID、DOI、公開日などのリリース事実を複数ファイルへ同期する更新契約
     role_en: Update contract synchronizing release facts such as version, author, ORCID, DOI, and publication date
@@ -5296,7 +5296,7 @@ documents:
     status: README
     scope: scientific terminology / canonical terms / English renderings / terminology collisions / public handling
     public_profile: P0-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 存在境界論の語が既存の学術語、一般語、英語表現と接触するときの公開上の扱いを管理する
     role_en: This subdirectory governs the public handling of Scientific Ontology terms when they contact established
@@ -5334,7 +5334,7 @@ documents:
     status: Protocol
     scope: terminology-control
     public_profile: P1-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 既存科学から借りる語彙の定義、類比、読み替え、非主張境界を管理する科学語彙接続プロトコル
     role_en: Protocol governing definitions, analogy, reinterpretation, and non-claim boundaries for terminology
@@ -5378,7 +5378,7 @@ documents:
     status: Terminology Registry
     scope: English renderings / terminology collision / commensuration risk / claim-strength caution
     public_profile: P0-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 日本語正本語、英語通約語、既存学術語の衝突と誤読リスクを記録する用語管理表
     role_en: Terminology registry recording collisions and misreading risks among Japanese authoritative terms, English
@@ -5420,7 +5420,7 @@ documents:
     status: Terminology Registry
     scope: Japanese canonical terms / public terminology collision / commensuration risk / claim-strength caution
     public_profile: P0-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 日本語正本語、英語通約語、既存学術語の衝突と誤読リスクを記録する用語管理表
     role_en: Terminology registry recording collisions and misreading risks among Japanese authoritative terms, English
@@ -5462,7 +5462,7 @@ documents:
     status: Working Note
     scope: translation, commensuration, authoritative text, terminology control
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 日本語正本と英語通約の関係、翻訳時の保持対象、用語管理を示す運用注記
     role_en: Operational note on Japanese authority, English commensuration, preservation targets, and terminology
@@ -5502,10 +5502,10 @@ documents:
     title_ja: 引用案内
     title_en: Citation
     layer: root
-    status: Citation / release_candidate
+    status: Citation / published
     scope: Human-readable citation guidance
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 版固有DOIと公開版を人間が引用するための案内
     role_en: Human-readable guidance for citing version-specific public editions and DOIs
@@ -5543,7 +5543,7 @@ documents:
     status: Glossary
     scope: canonical public terminology / commensuration interface
     public_profile: P0-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 公開語彙を人間向けに正規化し、各概念の定義所有者へ返す語彙入口
     role_en: Human-readable lexical entry point normalizing public terms and routing them to definition owners
@@ -5584,7 +5584,7 @@ documents:
     status: License
     scope: License / ライセンス
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: リポジトリ内容の利用許諾条件を示すライセンス文書
     role_en: License document stating the reuse conditions for repository contents
@@ -5617,10 +5617,10 @@ documents:
     title_ja: リリースノート
     title_en: Release Notes
     layer: root
-    status: Release notes / release_candidate
+    status: Release notes / published
     scope: Public release metadata / research transition / repository change log
     public_profile: P0-P1
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 公開版ごとの研究上の移行、追加文書、メタデータ変更を記録するリリース履歴
     role_en: Release history recording research transitions, added documents, and metadata changes for each public
@@ -5659,7 +5659,7 @@ documents:
     status: Roadmap
     scope: research dynamics / publication stages / future validation
     public_profile: P0-P2
-    state: public-candidate
+    state: public
     registration_state: provisional
     role_ja: 研究動態、公開段階、検証課題、将来の分岐を示す公開ロードマップ
     role_en: Public roadmap of research dynamics, publication stages, validation tasks, and future branches

@@ -2,10 +2,10 @@
   "schema_version": "0.2",
   "search_spec_version": "0.2",
   "source": {
-    "manifest_sha256": "c70844b6629678b4716135d2a7fb0e896c47fd9ac4ffe6b4819e89da80e1315f",
+    "manifest_sha256": "b2fa188bf4bd47414815dc7eb932faec468217af501d6026d712a8f4f1388b63",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "coverage": "full-public-inventory-with-provisional-registration",
-    "visibility_profile": "preview"
+    "visibility_profile": "public"
   },
   "search_profile": {
     "normalization": {
@@ -468,7 +468,7 @@
       "layer": "00_Overview",
       "document_type": "layer_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "public orientation / operational outline / concept network / system map / research dynamics / claim control / physics correspondence",
       "role": {
@@ -650,7 +650,7 @@
       "layer": "00_Overview",
       "document_type": "assertion_document",
       "status": "Public Overview Candidate / cross-series operational orientation",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "English commensuration of the cross-series operational orientation",
       "role": {
@@ -726,7 +726,7 @@
       "layer": "00_Overview",
       "document_type": "common_fixed_explanation",
       "status": "Map",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "repository architecture / operational orientation / conceptual layers / public boundary / governance / research dynamics",
       "role": {
@@ -903,7 +903,7 @@
       "layer": "00_Overview",
       "document_type": "assertion_document",
       "status": "Methodological note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "purpose, sharing, world formation, boundary CA, PDCA reinterpretation, historical and organizational application",
       "role": {
@@ -1043,7 +1043,7 @@
       "layer": "01_Sat_Truth",
       "document_type": "assertion_document",
       "status": "Introduction",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "AMP",
       "role": {
@@ -1303,7 +1303,7 @@
       "layer": "01_Sat_Truth",
       "document_type": "assertion_document",
       "status": "Foundational principle",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "boundary realism, ontological reserve, AMP repositioning",
       "role": {
@@ -1393,7 +1393,7 @@
       "layer": "01_Sat_Truth",
       "document_type": "assertion_document",
       "status": "Foundation",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "four-axioms",
       "role": {
@@ -1598,7 +1598,7 @@
       "layer": "01_Sat_Truth",
       "document_type": "layer_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "network structure / conditions of existence, observation, meaning, and knowledge / boundary epistemological critique",
       "role": {
@@ -1799,7 +1799,7 @@
       "layer": "02_Raj_Beauty",
       "document_type": "assertion_document",
       "status": "Model",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "difference, attention, abstraction, sensibility, understanding, value, cost, residual, cognitive-axis formation",
       "role": {
@@ -1941,7 +1941,7 @@
       "layer": "02_Raj_Beauty",
       "document_type": "assertion_document",
       "status": "Introduction",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "HFC",
       "role": {
@@ -2163,7 +2163,7 @@
       "layer": "02_Raj_Beauty",
       "document_type": "assertion_document",
       "status": "Frame",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "history-field-topology",
       "role": {
@@ -2444,7 +2444,7 @@
       "layer": "02_Raj_Beauty",
       "document_type": "layer_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "communication content / event-streams / history-field dynamics / cognitive-axis formation / science commensuration",
       "role": {
@@ -2645,7 +2645,7 @@
       "layer": "02_Raj_Beauty",
       "document_type": "assertion_document",
       "status": "Position",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "science-commensuration",
       "role": {
@@ -2893,7 +2893,7 @@
       "layer": "03_Tam_Goodness",
       "document_type": "assertion_document",
       "status": "Model",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "boundary-ethics",
       "role": {
@@ -3103,7 +3103,7 @@
       "layer": "03_Tam_Goodness",
       "document_type": "assertion_document",
       "status": "Application note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "return-orbit",
       "role": {
@@ -3313,7 +3313,7 @@
       "layer": "03_Tam_Goodness",
       "document_type": "layer_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "communication protocols / boundary ethics / commensuration / closure and reopening / return management",
       "role": {
@@ -3533,7 +3533,7 @@
       "layer": "04_Applications/AI_Adaptation",
       "document_type": "assertion_document",
       "status": "Application note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "AI-boundary-interface",
       "role": {
@@ -3795,7 +3795,7 @@
       "layer": "04_Applications/AI_Adaptation",
       "document_type": "assertion_document",
       "status": "Application note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "AI-personality",
       "role": {
@@ -3986,7 +3986,7 @@
       "layer": "04_Applications/AI_Adaptation",
       "document_type": "assertion_document",
       "status": "Application note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "AI-usefulness",
       "role": {
@@ -4196,7 +4196,7 @@
       "layer": "04_Applications/AI_Adaptation",
       "document_type": "assertion_document",
       "status": "Application core",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "application-boundary",
       "role": {
@@ -4387,7 +4387,7 @@
       "layer": "04_Applications/AI_Adaptation",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "AI boundary function / response structure / judgment preservation / application boundary theory",
       "role": {
@@ -4569,7 +4569,7 @@
       "layer": "04_Applications",
       "document_type": "layer_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "public applications / design interfaces / checklists / specifications / non-operational implementation",
       "role": {
@@ -4713,7 +4713,7 @@
       "layer": "04_Applications/Social_Boundary_Design",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "AI adoption / institutional responsibility / collation / peace protocols / social boundary specifications",
       "role": {
@@ -4952,7 +4952,7 @@
       "layer": "05_Research_Notes/AI_Personality_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "history-loop",
       "role": {
@@ -5157,7 +5157,7 @@
       "layer": "05_Research_Notes/AI_Personality_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "logical-sandbox",
       "role": {
@@ -5381,7 +5381,7 @@
       "layer": "05_Research_Notes/AI_Personality_Notes",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "AI personality / logical sandbox / history loops / return stability / negentropy allocation",
       "role": {
@@ -5601,7 +5601,7 @@
       "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
       "document_type": "assertion_document",
       "status": "Cross-domain Ontological Note / First Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "boundary diplomacy, port allocation, cognitive axes, commensuration, peace, AI",
       "role": {
@@ -5725,7 +5725,7 @@
       "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "cognitive field, cognitive phase, operational discretization, port, commensuration, logical depth, return paths",
       "role": {
@@ -5842,7 +5842,7 @@
       "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / First Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "existence phases, compression, cognition, society, economy, AI, peace",
       "role": {
@@ -5952,7 +5952,7 @@
       "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
       "document_type": "assertion_document",
       "status": "Cross-domain ontological note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "organization, responsibility boundary, ports, protocols, audit, abnormality, externalization, AI, peace",
       "role": {
@@ -6106,7 +6106,7 @@
       "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "cognitive dynamics / seamless communication / existence-phase compression / ports / organizational boundaries",
       "role": {
@@ -6288,7 +6288,7 @@
       "layer": "05_Research_Notes/Cross_Domain_Ontological_Notes",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "asymmetry / re-collation / return ethics / retaliation conversion / narrative truth / structural reading",
       "role": {
@@ -6527,7 +6527,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -6594,7 +6594,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -6661,7 +6661,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -6728,7 +6728,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -6795,7 +6795,7 @@
       "layer": "05_Research_Notes/Literary_Ontological_Notes",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "literary ontology / structural reading / history / meaning / belief-gravity / fictional cosmology",
       "role": {
@@ -6996,7 +6996,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "intrinsic time / cosmological topology / history-field projection / chaos / logical depth / physics-adjacent hypotheses",
       "role": {
@@ -7249,7 +7249,7 @@
       "layer": "05_Research_Notes",
       "document_type": "layer_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "exploratory research / stronger hypotheses / guarded cross-domain correspondence / return to public foundations",
       "role": {
@@ -7386,7 +7386,7 @@
       "layer": "05_Research_Notes",
       "document_type": "index",
       "status": "Index",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "research lines / reading routes / claim profiles / public boundaries / return paths",
       "role": {
@@ -7591,7 +7591,7 @@
       "layer": "05_Research_Notes/Social_Boundary_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "AI adoption, institutional synchronization, boundary design, collation, institutional procurement, public-sector case studies",
       "role": {
@@ -7872,7 +7872,7 @@
       "layer": "05_Research_Notes/Social_Boundary_Notes",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "social systems / institutional boundaries / AI adoption / DSSI / digital sovereignty / value / residue / negentropy economy",
       "role": {
@@ -8106,7 +8106,7 @@
       "layer": "06_Visual_Materials",
       "document_type": "layer_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "public visual aids / conceptual posters / visual reading notes",
       "role": {
@@ -8250,7 +8250,7 @@
       "layer": "06_Visual_Materials",
       "document_type": "visual_material",
       "status": "Visual note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "conceptual-poster",
       "role": {
@@ -8436,7 +8436,7 @@
       "layer": "90_Repository_Governance",
       "document_type": "assertion_document",
       "status": "Policy",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "publication / commensuration / terminology / concept ownership / public boundary",
       "role": {
@@ -8679,7 +8679,7 @@
       "layer": "90_Repository_Governance",
       "document_type": "layer_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "publication / commensuration / language authority / concept ownership / terminology governance",
       "role": {
@@ -8908,7 +8908,7 @@
       "layer": "90_Repository_Governance/Terminology",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "scientific terminology / canonical terms / English renderings / terminology collisions / public handling",
       "role": {
@@ -9109,7 +9109,7 @@
       "layer": "90_Repository_Governance/Terminology",
       "document_type": "assertion_document",
       "status": "Protocol",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "terminology-control",
       "role": {
@@ -9352,7 +9352,7 @@
       "layer": "90_Repository_Governance",
       "document_type": "common_fixed_explanation",
       "status": "Working Note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "translation, commensuration, authoritative text, terminology control",
       "role": {
@@ -9576,7 +9576,7 @@
       "layer": "04_Applications/Social_Boundary_Design",
       "document_type": "assertion_document",
       "status": "Application note / Practical checklist",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "AI adoption, Japanese administrative contexts, municipal DX, procurement, certification, responsibility boundaries, re-collation",
       "role": {
@@ -9838,7 +9838,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -10073,7 +10073,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "autoregressive generation / distributional constraints / grammar / multilinguality / residuals / false closure / response structure",
       "role": {
@@ -10316,7 +10316,7 @@
       "layer": "05_Research_Notes/Cross_Domain_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "asymmetry stabilization, cosmological analogy, life, civilization, culture, recollation",
       "role": {
@@ -10540,7 +10540,7 @@
       "layer": "05_Research_Notes/Cross_Domain_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "asymmetry stabilization, cosmological analogy, life, civilization, culture, re-collation",
       "role": {
@@ -10764,7 +10764,7 @@
       "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
       "document_type": "assertion_document",
       "status": "Cross-domain Ontological Note / First Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "boundary diplomacy / port allocation / cognitive axes / commensuration / peace / AI",
       "role": {
@@ -11045,7 +11045,7 @@
       "layer": "01_Sat_Truth",
       "document_type": "assertion_document",
       "status": "Foundational principle",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "epistemic boundary conditions, synchronization, collation, residual preservation, false closure",
       "role": {
@@ -11309,7 +11309,7 @@
       "layer": "01_Sat_Truth",
       "document_type": "assertion_document",
       "status": "Annotation",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "boundary-epistemology",
       "role": {
@@ -11590,7 +11590,7 @@
       "layer": "01_Sat_Truth",
       "document_type": "assertion_document",
       "status": "Annotation",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "boundary-epistemology",
       "role": {
@@ -11871,7 +11871,7 @@
       "layer": "01_Sat_Truth",
       "document_type": "assertion_document",
       "status": "Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "boundary-epistemology",
       "role": {
@@ -12095,7 +12095,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "common_fixed_explanation",
       "status": "Release notes",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "research-line-wide conceptual changes / version history / propagation history",
       "role": {
@@ -12291,7 +12291,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "assertion_document",
       "status": "Research note draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "chaos theory, nonlinear determinism, internal count-time, intrinsic time, logical-depth axis, residuals, residues, history-field correspondence, history-gravity domain",
       "role": {
@@ -12553,7 +12553,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "assertion_document",
       "status": "Research note draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "chaos theory, nonlinear determinism, internal count-time, intrinsic time, logical-depth axis, residuals, residues, history-field correspondence, history-gravity domain",
       "role": {
@@ -12814,8 +12814,8 @@
       },
       "layer": "root",
       "document_type": "root_document",
-      "status": "Citation / release_candidate",
-      "state": "public-candidate",
+      "status": "Citation / published",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "Human-readable citation guidance",
       "role": {
@@ -12987,7 +12987,7 @@
       "layer": "00_Overview",
       "document_type": "common_fixed_explanation",
       "status": "Public control table",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "claim strength / epistemic risk / application risk / publication layer / verification / rendering distance",
       "role": {
@@ -13247,7 +13247,7 @@
       "layer": "00_Overview",
       "document_type": "common_fixed_explanation",
       "status": "Public control table",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "claim strength / epistemic risk / use and safety risk / publication layer / verification / rendering distance",
       "role": {
@@ -13507,7 +13507,7 @@
       "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "cognitive dynamics / communication / operational discretization / commensuration / logical depth / return paths",
       "role": {
@@ -13750,7 +13750,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -13985,7 +13985,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "commensuration / translation / grammatical frames / local-use transfer / residual preservation / return paths",
       "role": {
@@ -14228,7 +14228,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "compressed experience / literature / reading / history redeployment / qualia difference / sensitivity / worldmaking interface",
       "role": {
@@ -14490,7 +14490,7 @@
       "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / First Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "existence phases / compression / cognition / society / economy / AI / peace",
       "role": {
@@ -14733,7 +14733,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -14987,7 +14987,7 @@
       "layer": "05_Research_Notes/Cross_Domain_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Application Bridge",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "Consent Boundary and Sentence/Bit Asymmetry / 同意境界とセンテンス／ビット非対称",
       "role": {
@@ -15230,7 +15230,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "cosmological-topology",
       "role": {
@@ -15478,7 +15478,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "cosmological-topology",
       "role": {
@@ -15726,7 +15726,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -15987,7 +15987,7 @@
       "layer": "05_Research_Notes/Social_Boundary_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "DSSI, digital sovereignty, browser observability, judgment-field maintenance, responsibility boundary, evidentiary boundary, public implementation",
       "role": {
@@ -16285,7 +16285,7 @@
       "layer": "02_Raj_Beauty",
       "document_type": "assertion_document",
       "status": "Cross-domain ontological note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "cognition / attention / abstraction / sensibility / understanding / cognitive-axis formation",
       "role": {
@@ -16509,7 +16509,7 @@
       "layer": "root",
       "document_type": "common_fixed_explanation",
       "status": "Glossary",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "canonical public terminology / commensuration interface",
       "role": {
@@ -16714,7 +16714,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -16930,7 +16930,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "grammar / discourse / relation / gesture / media / institutional form / meaning-pressure channel",
       "role": {
@@ -17154,7 +17154,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "intension / extension / false extension / semantic return test / citation audit / AI association audit",
       "role": {
@@ -17416,7 +17416,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "common_fixed_explanation",
       "status": "Research table",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "intrinsic-time",
       "role": {
@@ -17621,7 +17621,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "common_fixed_explanation",
       "status": "Research table",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "intrinsic-time",
       "role": {
@@ -17826,7 +17826,7 @@
       "layer": "05_Research_Notes",
       "document_type": "subdirectory_readme",
       "status": "README",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "living-canonical research line navigation, maintenance, and return intake",
       "role": {
@@ -18068,7 +18068,7 @@
       "layer": "root",
       "document_type": "root_document",
       "status": "License",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "License / ライセンス",
       "role": {
@@ -18226,7 +18226,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "Japanese / English / grammar / discourse / commitment timing / omission / modality / responsibility / commensuration residuals",
       "role": {
@@ -18488,7 +18488,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -18704,7 +18704,7 @@
       "layer": "05_Research_Notes/Literary_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Public Research Note / Living Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "This document describes how literary works make and present the conditions under which a world can arise, and how they make observable the consequences of causality, communication, history, responsibility, and meaning within that world. It does not reduce literary value in general to a single criterion, nor does it provide a scoring system for judging individual works.",
       "role": {
@@ -18985,7 +18985,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -19220,7 +19220,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "linguistic meaning / collation / return path / apperception / felt closure / emotion / thought / false closure",
       "role": {
@@ -19482,7 +19482,7 @@
       "layer": "01_Sat_Truth",
       "document_type": "assertion_document",
       "status": "Model",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "meaning loop, qualia, history, intrinsic time, meaning formation",
       "role": {
@@ -19727,7 +19727,7 @@
       "layer": "05_Research_Notes/Literary_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Literary ontology note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "reincarnation, belief-gravity domain, Buddhist-inspired fictional cosmology",
       "role": {
@@ -19951,7 +19951,7 @@
       "layer": "05_Research_Notes/Cross_Domain_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Cross-domain ontological note / Literary ontology note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "narrative truth, structural reading, reality fantasy, power, responsibility, return ethics",
       "role": {
@@ -20213,7 +20213,7 @@
       "layer": "05_Research_Notes/Cross_Domain_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Cross-domain ontological note / Literary ontology note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "narrative truth, structural reading, reality fantasy, power, responsibility, return ethics",
       "role": {
@@ -20475,7 +20475,7 @@
       "layer": "05_Research_Notes/Social_Boundary_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "negentropy-economy",
       "role": {
@@ -20756,7 +20756,7 @@
       "layer": "05_Research_Notes/Social_Boundary_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "negentropy-economy",
       "role": {
@@ -21037,7 +21037,7 @@
       "layer": "05_Research_Notes/Social_Boundary_Notes",
       "document_type": "assertion_document",
       "status": "Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "negentropy-economy",
       "role": {
@@ -21280,7 +21280,7 @@
       "layer": "05_Research_Notes/Social_Boundary_Notes",
       "document_type": "assertion_document",
       "status": "Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "negentropy-economy",
       "role": {
@@ -21523,7 +21523,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "ontological-cosmology",
       "role": {
@@ -21747,7 +21747,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "ontological-cosmology",
       "role": {
@@ -21971,7 +21971,7 @@
       "layer": "03_Tam_Goodness",
       "document_type": "assertion_document",
       "status": "Protocol",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "worldview comparison, commensuration, core invariant, operational drift, translation residual, boundary protocol",
       "role": {
@@ -22274,7 +22274,7 @@
       "layer": "03_Tam_Goodness",
       "document_type": "assertion_document",
       "status": "Protocol",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "cognitive bridge / axiom selection / worldview comparison / commensuration / ethics / boundary protocol",
       "role": {
@@ -22536,7 +22536,7 @@
       "layer": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies",
       "document_type": "assertion_document",
       "status": "Cross-domain Ontological Note / First Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "organization / responsibility / communication / protocol / audit / AI / social design",
       "role": {
@@ -22798,7 +22798,7 @@
       "layer": "00_Overview",
       "document_type": "assertion_document",
       "status": "Policy",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "physical correspondence, physical-adjacent terminology, boundary realism, observation conditions",
       "role": {
@@ -23008,7 +23008,7 @@
       "layer": "00_Overview",
       "document_type": "assertion_document",
       "status": "Policy",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "physical correspondence, physical-adjacent terminology, boundary realism, observation conditions",
       "role": {
@@ -23218,7 +23218,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "assertion_document",
       "status": "Research Note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "Physical / Cosmological Notes",
       "role": {
@@ -23461,7 +23461,7 @@
       "layer": "05_Research_Notes/Physical_Cosmological_Notes",
       "document_type": "assertion_document",
       "status": "Research Note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "Physical / Cosmological Notes",
       "role": {
@@ -23704,7 +23704,7 @@
       "layer": "05_Research_Notes/Literary_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "literary-ontology",
       "role": {
@@ -23928,7 +23928,7 @@
       "layer": "05_Research_Notes/Literary_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Research note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "literary-ontology",
       "role": {
@@ -24238,8 +24238,8 @@
       },
       "layer": "root",
       "document_type": "root_document",
-      "status": "Release notes / release_candidate",
-      "state": "public-candidate",
+      "status": "Release notes / published",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "Public release metadata / research transition / repository change log",
       "role": {
@@ -24411,7 +24411,7 @@
       "layer": "05_Research_Notes/Cross_Domain_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Cross-domain ontological note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "boundary ethics, return, retaliation, responsibility processing, maturation, negentropy economy, Kantian commensuration",
       "role": {
@@ -24692,7 +24692,7 @@
       "layer": "05_Research_Notes/Cross_Domain_Ontological_Notes",
       "document_type": "assertion_document",
       "status": "Cross-domain ontological note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "boundary ethics, return, retaliation, responsibility processing, maturation, negentropy economy, Kantian commensuration",
       "role": {
@@ -24973,7 +24973,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "common_fixed_explanation",
       "status": "Registry",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "external and internal returns / disposition / recollation conditions",
       "role": {
@@ -25207,7 +25207,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "common_fixed_explanation",
       "status": "Registry",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "external and internal returns / disposition / recollation conditions",
       "role": {
@@ -25441,7 +25441,7 @@
       "layer": "root",
       "document_type": "root_document",
       "status": "Roadmap",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "research dynamics / publication stages / future validation",
       "role": {
@@ -25627,7 +25627,7 @@
       "layer": "00_Overview",
       "document_type": "assertion_document",
       "status": "Methodological note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "concept topology, reading routes, non-closure, aporia management, document relations",
       "role": {
@@ -25928,7 +25928,7 @@
       "layer": "00_Overview",
       "document_type": "assertion_document",
       "status": "Methodological note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness / aporia / research method",
       "role": {
@@ -26195,7 +26195,7 @@
       "layer": "00_Overview",
       "document_type": "assertion_document",
       "status": "Public Overview Candidate / cross-series operational orientation",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "boundary events, agency, responsibility partition, mobility, cost terrain, justice, theory use, open future",
       "role": {
@@ -26441,7 +26441,7 @@
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "",
       "role": {
@@ -26702,7 +26702,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "semantic network topology / communication phase / multilayer-temporal-higher-order networks / distance / bandwidth / return expectancy / logical-depth",
       "role": {
@@ -26983,7 +26983,7 @@
       "layer": "04_Applications/Social_Boundary_Design",
       "document_type": "assertion_document",
       "status": "Application Note / First Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "registered",
       "scope": "peace, society, boundary ethics, meaning-experience field, social boundary design",
       "role": {
@@ -27268,7 +27268,7 @@
       "layer": "04_Applications/Social_Boundary_Design",
       "document_type": "assertion_document",
       "status": "Application Note / First Draft",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "peace / society / boundary ethics / meaning-experience field / social boundary design",
       "role": {
@@ -27530,7 +27530,7 @@
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
       "status": "Research Note / Conceptual Model / Metamodel",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "speech production / whole pressure / sequential decompression / non-destructive segmentation / self-monitoring / residual pressure",
       "role": {
@@ -27754,7 +27754,7 @@
       "layer": "90_Repository_Governance/Terminology",
       "document_type": "common_fixed_explanation",
       "status": "Terminology Registry",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "Japanese canonical terms / public terminology collision / commensuration risk / claim-strength caution",
       "role": {
@@ -27959,7 +27959,7 @@
       "layer": "90_Repository_Governance/Terminology",
       "document_type": "common_fixed_explanation",
       "status": "Terminology Registry",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "English renderings / terminology collision / commensuration risk / claim-strength caution",
       "role": {
@@ -28164,7 +28164,7 @@
       "layer": "00_Overview",
       "document_type": "assertion_document",
       "status": "Methodological and operational note",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "truth / purpose / management / organization / AI / state / international order / historical interpretation",
       "role": {
@@ -28412,7 +28412,7 @@
       "layer": "90_Repository_Governance/Release_Update",
       "document_type": "common_fixed_explanation",
       "status": "Repository governance specification",
-      "state": "public-candidate",
+      "state": "public",
       "registration_state": "provisional",
       "scope": "Release-level synchronization for Scientific Ontology / 存在境界論",
       "role": {

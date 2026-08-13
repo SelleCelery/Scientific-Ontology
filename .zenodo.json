@@ -1,7 +1,7 @@
 {
   "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0",
   "upload_type": "publication",
-  "publication_type": "report",
+  "publication_type": "other",
   "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0 opens the v5 living research series. It carries the framework outward from its internal vocabulary into language, literature, consent, institutions, AI, interfaces, and other application surfaces, while treating criticism, failure, residuals, and unexpected returns from those contacts as inputs for re-collation rather than as post-publication noise. The release adds the Scientific Ontology Operational Outline; the nine Language, Meaning, and Communication Phase research documents and their living-canonical return structure; Consent Boundary and Sentence/Bit Asymmetry; Literature as Worldmaking; and the DSSI research note on observation, judgment, sovereignty, and responsibility return. The DSSI application itself is not part of v5.0. Scientific Ontology does not claim that cross-domain structural resemblance establishes physical identity, nor that the framework replaces established empirical disciplines.",
   "creators": [
     {
@@ -47,5 +47,6 @@
       "scheme": "url"
     }
   ],
-  "notes": "v5.0.0 is the opening release of the v5 series, not the completion of v5. The series is intended to continue through v5.x while research, implementation, and external collation can be absorbed without reorganizing the framework's basic descriptive surface or core structure. A transition to v6 would be considered only if such a structural reorganization becomes necessary. The DSSI application is excluded from this release; only its public research and implementation-boundary note is included."
+  "notes": "v5.0.0 is the opening release of the v5 series, not the completion of v5. The series is intended to continue through v5.x while research, implementation, and external collation can be absorbed without reorganizing the framework's basic descriptive surface or core structure. A transition to v6 would be considered only if such a structural reorganization becomes necessary. The DSSI application is excluded from this release; only its public research and implementation-boundary note is included.",
+  "publication_date": "2026-08-13"
 }

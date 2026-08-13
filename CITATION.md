@@ -1,14 +1,14 @@
 # Citation
 
-> Status: Citation / release_candidate
+> Status: Citation / published
 > Scope: Human-readable citation guidance
 > Language: English and Japanese
 > Target version: v5.0.0
-> Version-specific DOI: pending
+> Version-specific DOI: 10.5281/zenodo.21909382
 
-If you use, discuss, or refer to a published public edition, cite its version-specific Zenodo DOI. For this release candidate, use the version and repository URL until the v5.0.0 DOI is assigned.
+If you use, discuss, or refer to this published public edition, cite its version-specific Zenodo DOI: 10.5281/zenodo.21909382.
 
-公開済みPublic Editionを利用・参照・論評する場合は、版固有のZenodo DOIを使用してください。このリリース候補については、v5.0.0のDOIが確定するまで版番号とリポジトリURLを使用します。
+この公開版を利用・参照・論評する場合は、版固有のZenodo DOI（10.5281/zenodo.21909382）を使用してください。
 
 ---
 
@@ -27,22 +27,10 @@ Unicodeの著者名表記を維持します。本公開版ではローマ字表�
 
 ## Recommended citation
 
-万土華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0*. Release candidate, 2026. Version-specific Zenodo DOI pending. Repository: <https://github.com/SelleCelery/Scientific-Ontology>.
+万土華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0*. Zenodo, 2026. DOI: [10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382).
 
 ---
 
-
-## Pre-publication DOI state / 公開前DOI状態
-
-The version-specific DOI for v5.0.0 has not yet been assigned. Do not reuse the v4.3.0 DOI or the version-family DOI as the v5.0.0 version DOI.
-
-v5.0.0の版固有DOIは、まだ発行されていません。v4.3.0のDOIまたは全版DOIを、v5.0.0の版固有DOIとして流用しないでください。
-
-After Zenodo assigns the DOI, update only `release_state.yml` first and rerun the release update tool.
-
-ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し、その後Release Updateを再実行します。
-
----
 ## BibTeX
 
 ```bibtex
@@ -52,7 +40,8 @@ ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し�
   year         = {2026},
   version      = {5.0.0},
   publisher    = {Zenodo},
-  url          = {https://github.com/SelleCelery/Scientific-Ontology},
+  doi          = {10.5281/zenodo.21909382},
+  url          = {https://doi.org/10.5281/zenodo.21909382},
   note         = {Public conceptual research archive and documentation release for Scientific Ontology / 存在境界論}
 }
 ```
@@ -63,7 +52,7 @@ ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し�
 
 - [`CITATION.cff`](./CITATION.cff)
 - [Zenodo version family](https://doi.org/10.5281/zenodo.19222394)
-- v5.0.0 version-specific Zenodo record: pending
+- [Zenodo version-specific record](https://doi.org/10.5281/zenodo.21909382)
 
 ---
 

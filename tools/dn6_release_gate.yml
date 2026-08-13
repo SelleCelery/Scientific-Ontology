@@ -18,7 +18,7 @@ expected_public_state:
   language_pair_families: 39
   logical_entries_per_ui_language: 89
   graph_nodes: 305
-  graph_edges: 1810
+  graph_edges: 1795
   observed_unregistered_documents: 0
   exposed_markdown_files: 128
   search_tests: 11

@@ -1,17 +1,18 @@
 # Release Notes: Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0
 
-> Status: Release notes / release_candidate
+
+> Status: Release notes / published
 > Scope: Public release metadata / research transition / repository change log
 > Language: English-first with Japanese release summary
-> Version-specific DOI: Pending
+> Version-specific DOI: 10.5281/zenodo.21909382
 
-Release date: Pending
+Release date: 2026-08-13
 
 ---
 
 ## Citation state
 
-Version-specific DOI: **pending**. Do not reuse the v4.3.0 DOI or the version-family DOI as the v5.0.0 DOI.
+Version-specific DOI: <https://doi.org/10.5281/zenodo.21909382>
 
 Public author: **万土華凜**
 ORCID: <https://orcid.org/0009-0001-5709-2669>
@@ -32,7 +33,7 @@ Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0 opens the v5 li
 
 v5.0.0 is the opening release of the v5 living series, not the completion of v5. The release deliberately carries the framework into additional domains while preserving the return path by which criticism, failed correspondence, implementation problems, and residuals can revise later v5.x work.
 
-### Included in this release candidate
+### Included in this release
 
 - Open the v5 series as a living research series centered on implementation, generalization, external collation, and revision through return.
 - Publish the Scientific Ontology Operational Outline as a cross-series operational orientation articulated during preparation for v5.
@@ -59,7 +60,7 @@ v4系までに積み上げた境界・履歴・通信・返路の理論を体系
 外部との接触から返る残差によって理論自身を再照合するv5系を開始する。
 v5.0はv5系の完成版ではなく、以後のv5.xで研究・実装・外部照合の成果を追加するための開幕版である。
 
-### 今回の公開候補に含むもの
+### 今回の公開版に含むもの
 
 - v5系を、実装・汎用化・外部照合・返りによる再更新を行う生きた研究系列として開始する。
 - v5系開始にあたって自覚された存在境界論の全体運用方針としてScientific Ontology Operational Outlineを公開する。
