@@ -20,7 +20,7 @@ ORCID: <https://orcid.org/0009-0001-5709-2669>
 For machine-readable citation metadata, see [`CITATION.cff`](./CITATION.cff).
 For human-readable citation guidance, see [`CITATION.md`](./CITATION.md).
 
-Version-family DOI: <https://doi.org/10.5281/zenodo.19222394>
+Version-family DOI: <https://doi.org/10.5281/zenodo.20065197>
 Previous release: **v4.3.0** — <https://doi.org/10.5281/zenodo.21394190>
 
 ---
