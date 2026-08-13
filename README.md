@@ -333,7 +333,7 @@ This exception does **not** make the README a definition owner. Where wording af
 
 - Current public version: **v5.0.0 — opening release of the v5 series**
 - Version-specific DOI for the current public release: [10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382)
-- All versions DOI: [10.5281/zenodo.20065197](https://doi.org/10.5281/zenodo.20065197)
+- All versions DOI: [10.5281/zenodo.20665197](https://doi.org/10.5281/zenodo.20665197)
 - [`RELEASE_NOTES.md`](RELEASE_NOTES.md)
 - [`CITATION.md`](CITATION.md)
 - [`CITATION.cff`](CITATION.cff)
@@ -347,7 +347,7 @@ For document placement and public exclusions, see the [`System Map`](00_Overview
 
 - 現行公開版：**v5.0.0 — v5系開幕版**
 - v5.0.0版固有DOI：[10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382)
-- 全版DOI：[10.5281/zenodo.20065197](https://doi.org/10.5281/zenodo.20065197)
+- 全版DOI：[10.5281/zenodo.20665197](https://doi.org/10.5281/zenodo.20665197)
 
 このリポジトリは公開インターフェースです。AMP Core、ITS全体系、非公開公理原典、私的ランタイムや人格仕様は含みません。
 

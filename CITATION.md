@@ -51,7 +51,7 @@ Unicodeの著者名表記を維持します。本公開版ではローマ字表�
 ## Machine-readable metadata
 
 - [`CITATION.cff`](./CITATION.cff)
-- [Zenodo version family](https://doi.org/10.5281/zenodo.20065197)
+- [Zenodo version family](https://doi.org/10.5281/zenodo.20665197)
 - [Zenodo version-specific record](https://doi.org/10.5281/zenodo.21909382)
 
 ---

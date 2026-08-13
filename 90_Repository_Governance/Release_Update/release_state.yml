@@ -175,7 +175,7 @@ previous_release:
 
 zenodo:
   record_resource_type: "publication-other"
-  version_family_doi: "10.5281/zenodo.20065197"
+  version_family_doi: "10.5281/zenodo.20665197"
   version_doi:
     status: "assigned" # pending | assigned
     value: "10.5281/zenodo.21909382"
