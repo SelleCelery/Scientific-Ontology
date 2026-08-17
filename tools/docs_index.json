@@ -2,10 +2,10 @@
   "schema_version": "0.2",
   "search_spec_version": "0.2",
   "source": {
-    "manifest_sha256": "b2fa188bf4bd47414815dc7eb932faec468217af501d6026d712a8f4f1388b63",
+    "manifest_sha256": "98c573a8a45a95891bff037cd7532a660cf82560958b994ed0216f1b3b111da5",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "coverage": "full-public-inventory-with-provisional-registration",
-    "visibility_profile": "public"
+    "visibility_profile": "preview"
   },
   "search_profile": {
     "normalization": {
@@ -5631,14 +5631,28 @@
           "port_allocation",
           "scoped_port_operation"
         ],
-        "imports": [],
+        "imports": [
+          "cognitive_axis_formation",
+          "cross_grammatical_commensuration",
+          "existence_phase_compression",
+          "operational_discretization",
+          "operational_port",
+          "worldview_commensuration_protocol"
+        ],
         "exports": []
       },
       "relations": {
         "related": [],
-        "tests": [],
-        "returns_to": [],
-        "delegates": []
+        "tests": [
+          "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+        ],
+        "returns_to": [
+          "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+        ],
+        "delegates": [
+          "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+        ]
       },
       "search_fields": {
         "title": [
@@ -5754,14 +5768,25 @@
           "operational_discretization",
           "operational_port"
         ],
-        "imports": [],
+        "imports": [
+          "cognitive_axis_formation",
+          "cross_grammatical_commensuration",
+          "worldview_commensuration_protocol"
+        ],
         "exports": []
       },
       "relations": {
         "related": [],
-        "tests": [],
-        "returns_to": [],
-        "delegates": []
+        "tests": [
+          "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
+        ],
+        "returns_to": [
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        ],
+        "delegates": [
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+          "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+        ]
       },
       "search_fields": {
         "title": [
@@ -5870,14 +5895,25 @@
           "existence_phase_compression",
           "single_metric_compression"
         ],
-        "imports": [],
+        "imports": [
+          "cognitive_axis_formation",
+          "operational_discretization",
+          "operational_port"
+        ],
         "exports": []
       },
       "relations": {
         "related": [],
-        "tests": [],
-        "returns_to": [],
-        "delegates": []
+        "tests": [
+          "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+        ],
+        "returns_to": [
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        ],
+        "delegates": [
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+          "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+        ]
       },
       "search_fields": {
         "title": [
@@ -5985,7 +6021,12 @@
         ],
         "imports": [
           "boundary_ca_requirements",
+          "boundary_diplomacy",
+          "existence_phase_compression",
           "forbidden_externalizations",
+          "operational_discretization",
+          "operational_port",
+          "port_allocation",
           "preserved_history_requirements",
           "purpose_contract",
           "stop_conditions"
@@ -6588,8 +6629,8 @@
       "id_source": "fallback",
       "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
       "title": {
-        "ja": "内包・外延・偽外延",
-        "en": "Intension, Extension, and False Extension"
+        "ja": "照合的内包・返路ある外延・偽外延",
+        "en": "Collational Intension, Return-Path Extension, and False Extension"
       },
       "layer": "05_Research_Notes",
       "document_type": "assertion_document",
@@ -6631,15 +6672,15 @@
         "title": [
           {
             "lang": "ja",
-            "text": "内包・外延・偽外延",
-            "normalized": "内包 外延 偽外延",
-            "compact": "内包外延偽外延"
+            "text": "照合的内包・返路ある外延・偽外延",
+            "normalized": "照合的内包 返路ある外延 偽外延",
+            "compact": "照合的内包返路ある外延偽外延"
           },
           {
             "lang": "en",
-            "text": "Intension, Extension, and False Extension",
-            "normalized": "intension extension and false extension",
-            "compact": "intensionextensionandfalseextension"
+            "text": "Collational Intension, Return-Path Extension, and False Extension",
+            "normalized": "collational intension return path extension and false extension",
+            "compact": "collationalintensionreturnpathextensionandfalseextension"
           }
         ],
         "owned_concept": [],
@@ -13794,15 +13835,25 @@
         "entry_level": "intermediate"
       },
       "concepts": {
-        "owned": [],
-        "imports": [],
+        "owned": [
+          "cross_grammatical_commensuration"
+        ],
+        "imports": [
+          "worldview_commensuration_protocol"
+        ],
         "exports": []
       },
       "relations": {
         "related": [],
-        "tests": [],
-        "returns_to": [],
-        "delegates": []
+        "tests": [
+          "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md"
+        ],
+        "returns_to": [
+          "90_Repository_Governance/Publication_and_Commensuration_Policy.md"
+        ],
+        "delegates": [
+          "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+        ]
       },
       "search_fields": {
         "title": [
@@ -13819,7 +13870,14 @@
             "compact": "commensurationascrossgrammaticalcollation"
           }
         ],
-        "owned_concept": [],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "cross_grammatical_commensuration",
+            "normalized": "cross grammatical commensuration",
+            "compact": "crossgrammaticalcommensuration"
+          }
+        ],
         "aliases": [
           {
             "lang": "ja",
@@ -17148,8 +17206,8 @@
       "id_source": "explicit",
       "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
       "title": {
-        "ja": "内包・外延・偽外延",
-        "en": "Intension, Extension, and False Extension"
+        "ja": "照合的内包・返路ある外延・偽外延",
+        "en": "Collational Intension, Return-Path Extension, and False Extension"
       },
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "document_type": "assertion_document",
@@ -17214,15 +17272,15 @@
         "title": [
           {
             "lang": "ja",
-            "text": "内包・外延・偽外延",
-            "normalized": "内包 外延 偽外延",
-            "compact": "内包外延偽外延"
+            "text": "照合的内包・返路ある外延・偽外延",
+            "normalized": "照合的内包 返路ある外延 偽外延",
+            "compact": "照合的内包返路ある外延偽外延"
           },
           {
             "lang": "en",
-            "text": "Intension, Extension, and False Extension",
-            "normalized": "intension extension and false extension",
-            "compact": "intensionextensionandfalseextension"
+            "text": "Collational Intension, Return-Path Extension, and False Extension",
+            "normalized": "collational intension return path extension and false extension",
+            "compact": "collationalintensionreturnpathextensionandfalseextension"
           }
         ],
         "owned_concept": [],
@@ -26488,14 +26546,24 @@
       },
       "concepts": {
         "owned": [],
-        "imports": [],
+        "imports": [
+          "cross_grammatical_commensuration",
+          "operational_discretization",
+          "worldview_commensuration_protocol"
+        ],
         "exports": []
       },
       "relations": {
         "related": [],
-        "tests": [],
-        "returns_to": [],
-        "delegates": []
+        "tests": [
+          "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+        ],
+        "returns_to": [
+          "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+        ],
+        "delegates": [
+          "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+        ]
       },
       "search_fields": {
         "title": [

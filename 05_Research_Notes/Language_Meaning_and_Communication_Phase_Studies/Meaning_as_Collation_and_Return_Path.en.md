@@ -7,11 +7,11 @@
 > Language: English commensurated rendering
 > Japanese authoritative source: ./Meaning_as_Collation_and_Return_Path.ja.md
 > Claim strength: S3-S4 / E2 / U1 / P1-P2 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: local model of linguistically mediated meaning formation, return-path closure, return-path states of emotion/thought, and love as thought
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
-> Public handling: This note does not redefine meaning in general, emotion in general, or thought in general. Taking the upstream Meaning Generation Model as given, it describes an operational surface on which collation through propositions and speech groups forms linguistic apperception, and the local closure of a return path is felt as meaning. Felt resolution does not guarantee truth; it is the qualitative texture of return-path closure.
+> Public handling: This note does not redefine meaning in general and does not provide a comprehensive definition of emotion or thought in psychology or neuroscience. Taking the upstream Meaning Generation Model as given, it describes an operational surface on which collation through propositions and speech groups forms linguistic apperception, and the local closure of a return path is felt as meaning. Within that scope, it proposes an operational distinction between emotion and thought as return-path states. Felt resolution does not guarantee truth; it is the qualitative texture of return-path closure.
 
 ---
 
@@ -173,7 +173,7 @@ Reopening does not necessarily mean that the previous meaning was worthless. A c
 
 ## 8. Return-Path States of Emotion, Thought, and Love
 
-This section is not a psychological definition of emotion in general, thought in general, or love in general. It is an operational hypothesis within research on language, meaning, and communication phases.
+This section does not offer a comprehensive psychological or neuroscientific definition of emotion in general, thought in general, or love in general. What follows is an operational hypothesis for distinguishing return-path states within Scientific Ontology's research on language, meaning, and communication phases.
 
 > Emotion is a state in which a directional difference remains as pressure because a return path has not closed.
 >
@@ -333,7 +333,7 @@ The context in this note, however, includes not only a formal discourse state bu
 
 - Meaning in general is not reduced to linguistic meaning.
 - Felt resolution is not claimed to be a psychological indicator of truth.
-- Emotion in general, thought in general, mental illness, or neural mechanisms are not defined.
+- Emotion or thought in psychology and neuroscience, mental illness, and neural mechanisms are not comprehensively defined. The definitions of emotion and thought here are limited to an operational hypothesis internal to Scientific Ontology.
 - Love in general, empathy in general, attachment, or relationship formation are not reduced to one return-path model.
 - Internally closed thought is not treated as self-contained truth independent of external facts.
 - Not all understanding is claimed to require explicit propositions.
@@ -372,6 +372,10 @@ The context in this note, however, includes not only a formal discourse state bu
 - Heim, I. (1983). “File Change Semantics and the Familiarity Theory of Definiteness.”
 
 ## Revision History
+
+### 1.0.0-rc.2 — 2026-08-17
+- Clarified that the emotion/thought definitions are operational hypotheses internal to Scientific Ontology and do not compete with general definitions in psychology or neuroscience.
+- Preserved relief, joy, non-directional pleasure, and release after closure as unresolved items in the Return Intake Log.
 
 ### 1.0.0-rc.1 — 2026-08-08
 - Clarified that the return path of thought closes within the self.

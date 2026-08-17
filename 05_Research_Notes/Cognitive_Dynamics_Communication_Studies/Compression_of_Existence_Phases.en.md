@@ -6,6 +6,8 @@
 > Language: English commensurated rendering  
 > Japanese authoritative source: [`Compression_of_Existence_Phases.ja.md`](./Compression_of_Existence_Phases.ja.md)  
 > Claim strength: S2-S3 / E1-E2 / U1 / P1-P2 / V0-V2  
+> Version: 0.1.1
+> Last updated: 2026-08-17
 > Public handling: This document is a conceptual model. It does not replace established theories in information theory, economics, psychology, the social sciences, or thermodynamics.
 
 ---
@@ -20,9 +22,11 @@ This document owns one question:
 
 This document does not define the generation of cognitive axes themselves. The question of what is felt, what becomes intelligible, and what is foregrounded as value or cost is handled by [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md).
 
-This document also does not determine which ports should be opened, held, translated, or reopened after compression. Those dynamics are handled by [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md).
+The common structure that provisionally cuts a Cognitive Field into operable units is imported from the upstream intermediate model [`Cognitive_Dynamics_Communication_Model.en.md`](Cognitive_Dynamics_Communication_Model.en.md).
 
-The implementation of selected ports as responsibility, authority, protocols, and audit is handled by [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md).
+This document also does not determine which ports should be opened, held, translated, or reopened after compression. Those dynamics are handled by [`Boundary_Diplomacy_and_Port_Allocation.en.md`](Boundary_Diplomacy_and_Port_Allocation.en.md).
+
+The implementation of selected ports as responsibility, authority, protocols, and audit is handled by [`Organizational_Boundary_and_Port_Model.en.md`](Organizational_Boundary_and_Port_Model.en.md).
 
 The output of this document is a diagnostic vocabulary for describing compressed evaluative spaces, existence phases rendered invisible, externalized residuals, and boundaries that should be reopened.
 
@@ -94,7 +98,7 @@ Existence phases are multidimensional. Handling all of them at once requires tim
 
 Neither individuals nor organizations possess infinite processing capacity.
 
-As social scale increases, common metrics, standard procedures, classifications, qualifications, prices, and rankings become necessary. These are means of reducing entropy for the operation of large societies.
+As social scale increases, common metrics, standard procedures, classifications, qualifications, prices, and rankings become necessary. Within the internal processing of large social operations, these are means of locally reducing branching, comparison load, and explanatory load.
 
 The principal reasons compression occurs include:
 
@@ -164,26 +168,28 @@ The losses of compression alter downstream conditions while remaining unseen.
 
 ---
 
-## 6. Compression as Entropy Relocation
+## 6. Compression as Redistribution of Unprocessed Difference
 
-Compression reduces information entropy within an internal system.
+Through classification, standardization, and metricization, compression locally reduces the branching and comparison load that must be handled at once inside an operation.
 
-If the differences that were not handled are sent to a boundary, however, boundary entropy increases.
+The differences not handled in that operation do not thereby disappear. They can remain at boundaries, in histories, and along return paths as residuals, re-collation costs, or processing responsibilities.
 
 ```text
 inside
-  organized through classification, standardization, and metricization
+  branching and comparison load reduced through classification, standardization, and metricization
         ↓
 boundary
-  differences that did not enter accumulate as residuals
+  excluded differences remain as residuals and re-collation costs
         ↓
 outside
-  residue is transferred to bodies, regions, nature, and the future
+  processing responsibility and burden may be externalized to bodies, regions, nature, and the future
 ```
 
-Compression does not eliminate entropy.
+Compression does not eliminate differences.
 
-It changes its allocation.
+It changes where, by whom, and when they are processed.
+
+This redistribution is not a claim that thermodynamic entropy or Shannon information is physically transferred or conserved across a boundary. The operational objects of this note are unprocessed difference, re-collation cost, and processing responsibility under finite operation.
 
 From this perspective, social dissatisfaction, cultural loss, regional decline, environmental problems, breaks in technical succession, and workplace exhaustion may be read not only as separate failures, but as existence phases excluded from an evaluative space and returned at another boundary.
 
@@ -349,6 +355,7 @@ This document does not claim that:
 - metricization, prices, qualifications, or statistics are inherently evil;
 - existence phases can be completely and objectively enumerated;
 - entropy can be directly applied to society as a thermodynamic measured quantity;
+- thermodynamic entropy or Shannon information is transferred or conserved from an interior to a boundary or exterior through compression;
 - logical depth can be identified with `logical depth` in an established theory of computation;
 - three-dimensional spatial cognition is erroneous; or
 - this document alone can determine policy, organizational design, personnel evaluation, or educational evaluation.
@@ -372,7 +379,7 @@ Compression of existence phases is a natural processing method of large societie
 
 Compression enables comparison, statistics, institutions, markets, and automation.
 
-The histories, contexts, responsibilities, bodies, and time horizons dropped through compression do not disappear. They move to boundaries and alter downstream conditions as residuals or residue.
+The histories, contexts, responsibilities, bodies, and time horizons dropped through compression do not disappear. Responsibility and burden for processing them are redistributed toward boundaries, where they alter downstream conditions as residuals or residue.
 
 The question is therefore not whether compression should occur.
 
@@ -384,7 +391,8 @@ Controlling existence-phase compression requires collation of cognitive axes, bo
 
 ## 18. Related Documents
 
-- [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
-- [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md)
-- [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md)
-- [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
+- imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
+- imports_from: [`Cognitive_Dynamics_Communication_Model.en.md`](Cognitive_Dynamics_Communication_Model.en.md)
+- returns_to: [`Boundary_Diplomacy_and_Port_Allocation.en.md`](Boundary_Diplomacy_and_Port_Allocation.en.md)
+- returns_to: [`Organizational_Boundary_and_Port_Model.en.md`](Organizational_Boundary_and_Port_Model.en.md)
+- applied_by: [`Specification_for_Peace.en.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.en.md)

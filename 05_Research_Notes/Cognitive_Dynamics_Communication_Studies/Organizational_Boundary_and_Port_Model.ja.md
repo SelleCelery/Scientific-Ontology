@@ -4,8 +4,10 @@
 
 > Status: Cross-domain Ontological Note / First Draft  
 > Scope: organization / responsibility / communication / protocol / audit / AI / social design  
-> Language: Japanese authoritative; English commensuration pending  
+> Language: Japanese authoritative; English commensuration available
 > Claim strength: S3-S4 / E2 / U1-U2 / P1-P2 / V1-V4  
+> Version: 0.1.1
+> Last updated: 2026-08-17
 > Public handling: 本稿は概念モデルであり、経営学、法学、行政学、医療、ネットワーク工学、セキュリティ標準、専門判断を置き換えない。
 
 ---
@@ -19,6 +21,8 @@
 > 目的が組織へ共有されたとき、その目的を、誰が、どの境界で、どの通信を受け取り、どの手続で変換し、どの責任境界へ返す構造として実装できるか。
 
 本稿は、認識軸を生成しない。認識方向の生成は [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md) が扱う。
+
+認識場、操作的離散化、一般ポートの定義は、上流の中間モデル [`Cognitive_Dynamics_Communication_Model.ja.md`](Cognitive_Dynamics_Communication_Model.ja.md) から受け取る。
 
 本稿は、存在相圧縮を定義しない。単一指標圧縮の診断は [`Compression_of_Existence_Phases.ja.md`](Compression_of_Existence_Phases.ja.md) が扱う。
 
@@ -655,8 +659,9 @@ Receive
 
 ## 23. 関連文書
 
-- [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
-- [`Compression_of_Existence_Phases.ja.md`](Compression_of_Existence_Phases.ja.md)
-- [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md)
-- [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
-- [`AI_Adoption_Collation_Checklist.md`](../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
+- imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
+- imports_from: [`Cognitive_Dynamics_Communication_Model.ja.md`](Cognitive_Dynamics_Communication_Model.ja.md)
+- imports_from: [`Compression_of_Existence_Phases.ja.md`](Compression_of_Existence_Phases.ja.md)
+- imports_from: [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md)
+- applied_by: [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
+- tested_by: [`AI_Adoption_Collation_Checklist.md`](../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)

@@ -3,9 +3,10 @@
 
 > Status: Research Note / Conceptual Model / Metamodel  
 > Scope: cognitive dynamics / communication / operational discretization / commensuration / logical depth / return paths  
-> Language: Japanese authoritative; English commensuration pending  
+> Language: Japanese authoritative; English commensuration available
 > Claim strength: S2-S3 / E1 / U1 / P1-P2 / V0-V1  
-> Version: 0.1.0  
+> Version: 0.1.1
+> Last updated: 2026-08-17
 > Public handling: 本稿は、認識を離散的モジュールへ還元する理論ではない。シームレスな認識と意味経験を、有限な主体が通信・責任・記録・再照合のために暫定的に切り出す操作的中間モデルである。
 
 ---
@@ -647,7 +648,9 @@
 
 ### 10.2 通約
 
-通約とは、異なる離散化体系を一つへ統一することではない。
+本稿は通約一般を独自に定義しない。その正本は [`Commensuration_as_Cross_Grammatical_Collation.ja.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md) が所有する。
+
+その正本定義を本モデルへ適用すると、通約は異なる離散化体系を一つへ統一することではない。
 
 それぞれの認識軸、履歴、言語ゲームを保持しながら、相互に到達可能な写像を形成することである。
 
@@ -1003,20 +1006,20 @@ DSSIは、入力前警告、送信制御、保留、停止、履歴保持、責�
 
 ### 上流
 
-- `../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`
-- `../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`
-- `Meaning_As_Return_Orbit.md`
+- imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
+- imports_from: [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
+- imports_from: [`Commensuration_as_Cross_Grammatical_Collation.ja.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md)
+- collates_with: [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 
 ### 同一研究軸
 
-- `./Compression_of_Existence_Phases.ja.md`
-- `./Boundary_Diplomacy_and_Port_Allocation.ja.md`
-- `./Organizational_Boundary_and_Port_Model.ja.md`
+- abstracts_common_operations_of: [`Compression_of_Existence_Phases.ja.md`](Compression_of_Existence_Phases.ja.md)
+- abstracts_common_operations_of: [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md)
+- abstracts_common_operations_of: [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md)
 
 ### 応用
 
-- `../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md`
-- `../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md`
-- `../../04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md`
-- `../../04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md`
-
+- applied_by: [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
+- tested_by: [`AI_Adoption_Collation_Checklist.md`](../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
+- applied_by: [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../../04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- applied_by: [`AI_Usefulness_as_a_Boundary_Function.md`](../../04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)

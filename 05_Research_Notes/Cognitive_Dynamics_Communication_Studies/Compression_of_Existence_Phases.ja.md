@@ -3,8 +3,10 @@
 
 > Status: Research Note / First Draft  
 > Scope: existence phases / compression / cognition / society / economy / AI / peace  
-> Language: Japanese authoritative; English commensuration pending  
+> Language: Japanese authoritative; English commensuration available
 > Claim strength: S2-S3 / E1-E2 / U1 / P1-P2 / V0-V2  
+> Version: 0.1.1
+> Last updated: 2026-08-17
 > Public handling: 本稿は概念モデルであり、情報理論、経済学、心理学、社会科学、熱力学の既存理論を置き換えない。
 
 ---
@@ -18,6 +20,8 @@
 > 本来は複数の役割、意味、責任、履歴、時間射程を持つ存在が、なぜ一つまたは少数の評価軸へ圧縮され、その圧縮によって何が見えなくなるのか。
 
 本稿は、認識軸そのものの生成を定義しない。何が感じられ、何が理解可能になり、何が価値またはコストとして前景化するかは、[`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md) が扱う。
+
+認識場を操作可能な単位へ暫定的に切り出す共通構造は、上流の中間モデル [`Cognitive_Dynamics_Communication_Model.ja.md`](Cognitive_Dynamics_Communication_Model.ja.md) から受け取る。
 
 本稿は、圧縮後にどのポートを開き、保留し、翻訳し、再開するかも決定しない。その動態は、[`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md) が扱う。
 
@@ -93,7 +97,7 @@
 
 個人も組織も、無限の処理能力を持たない。
 
-社会規模が大きくなるほど、共通指標、標準手続、分類、資格、価格、ランキングが必要になる。これらは、巨大な社会を運用するためのエントロピー削減手段である。
+社会規模が大きくなるほど、共通指標、標準手続、分類、資格、価格、ランキングが必要になる。これらは、巨大な社会を運用する際の内部処理において、分岐数、比較負荷、説明負荷を局所的に減らす手段である。
 
 圧縮が生じる主な理由は次の通りである。
 
@@ -163,26 +167,28 @@
 
 ---
 
-## 6. エントロピー移動としての圧縮
+## 6. 未処理差分の再配置としての圧縮
 
-圧縮は、内部の情報エントロピーを減らす。
+圧縮は、分類・標準化・指標化によって、内部で同時に扱う分岐と比較の負荷を局所的に減らす。
 
-しかし、そのとき扱われなかった差分が境界へ送られるなら、境界エントロピーは増える。
+しかし、そのとき扱われなかった差分は消えない。境界、履歴、返路に、残差、再照合コスト、または処理責任として残りうる。
 
 ```text
 内部
-  分類・標準化・指標化によって整理される
+  分類・標準化・指標化によって分岐と比較負荷が下がる
         ↓
 境界
-  入らなかった差分が残差として蓄積する
+  入らなかった差分が残差・再照合コストとして残る
         ↓
 外部
-  身体・地域・自然・未来へ残渣が移される
+  処理責任や負荷が身体・地域・自然・未来へ外部化されうる
 ```
 
-圧縮は、エントロピーを消していない。
+圧縮は、差分を消去しない。
 
-その配置を変えている。
+どの差分をどこで、誰が、いつ処理するかという配置を変える。
+
+ここでいう再配置は、熱力学的エントロピーまたはShannon情報量が境界を越えて物理的に移送・保存されるという主張ではない。本稿が扱うのは、有限な運用における未処理差分、再照合コスト、処理責任の配置である。
 
 この観点からは、社会的不満、文化消失、地域衰退、環境問題、技術継承断絶、現場疲弊は、個別の失敗であるだけでなく、評価空間から外された存在相が別の境界へ返ったものとして読める。
 
@@ -348,6 +354,7 @@ AIは、目的関数、損失関数、ラベル、ベンチマークへ対象を
 - 指標化、価格、資格、統計が本質的に悪である。
 - 存在相を客観的に完全列挙できる。
 - エントロピーを熱力学的測定量として社会へ直接適用できる。
+- 熱力学的エントロピーまたはShannon情報量が、圧縮によって内部から境界・外部へ移送または保存される。
 - 論理-深度を既存の計算理論上の logical depth と同一視できる。
 - 三次元空間認識が誤りである。
 - 本稿だけで政策、組織、人事、教育評価を決定できる。
@@ -371,7 +378,7 @@ AIは、目的関数、損失関数、ラベル、ベンチマークへ対象を
 
 圧縮は、比較、統計、制度、市場、自動化を可能にする。
 
-しかし、圧縮によって落とされた履歴、文脈、責任、身体、時間は消えない。それらは境界へ移動し、残差または残渣として後続条件を変える。
+しかし、圧縮によって落とされた履歴、文脈、責任、身体、時間は消えない。それらへの処理責任と負荷は境界側へ再配置され、残差または残渣として後続条件を変える。
 
 したがって、問題は圧縮するか否かではない。
 
@@ -383,7 +390,8 @@ AIは、目的関数、損失関数、ラベル、ベンチマークへ対象を
 
 ## 18. 関連文書
 
-- [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
-- [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md)
-- [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md)
-- [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
+- imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
+- imports_from: [`Cognitive_Dynamics_Communication_Model.ja.md`](Cognitive_Dynamics_Communication_Model.ja.md)
+- returns_to: [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md)
+- returns_to: [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md)
+- applied_by: [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)

@@ -5,9 +5,9 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: semantic network topology / communication phase / multilayer-temporal-higher-order networks / distance / bandwidth / return expectancy / logical-depth
 > Language: Japanese authoritative; English commensuration available
-> Claim strength: S3-S4 / E2-E3 / U0-U1 / P1-P2.5 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Claim strength: S2-S3（公開操作層）/ S4-S5（存在論深度仮説層）/ 私的レンダリング（AMP・神学層）; E2-E3 / U0-U1 / P1-P2.5 / V0-V2
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: 意味ネットワークの型、距離、帯域、返り期待値、履歴変形、三つの主張位相を統合する中央照合面
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
 > Public handling: 本稿は、意味・認識・言語ゲーム間通信を配置する統合中核である。責務集中は意図的だが、公開操作層、存在論深度仮説層、AMP・神学レンダリング層を混同しない。単一の数理ネットワーク、標準物理学、経験科学的宇宙論として証明したものではない。
@@ -625,6 +625,7 @@ Shannonの情報理論は、可能なメッセージの分布、選択、不確�
 ## 27. 関連文書・返路
 
 - imports_from: [`Cognitive_Dynamics_Communication_Model.ja.md`](../Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md)
+- imports_from: [`Commensuration_as_Cross_Grammatical_Collation.ja.md`](./Commensuration_as_Cross_Grammatical_Collation.ja.md)
 - imports_from: [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
 - imports_from: [`Chaos_Theory_and_Logical_Depth_Axis.ja.md`](../Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md)
 - integrates_without_owning: [`Speech_as_Sequential_Decompression.ja.md`](./Speech_as_Sequential_Decompression.ja.md)
@@ -647,6 +648,10 @@ Shannonの情報理論は、可能なメッセージの分布、選択、不確�
 - Gödel, K. (1931). “Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I.” DOI: 10.1007/BF01700692.
 
 ## Revision History / 改訂履歴
+
+### 1.0.0-rc.2 — 2026-08-17
+- ヘッダの主張強度を本文の三位相へ一致させ、公開操作層 `S2-S3` と存在論深度仮説層 `S4-S5` を分離。
+- 通約定義を通約正本から `imports_from` し、Network文書の中央照合責務と定義所有を分離。
 
 ### 1.0.0-rc.1 — 2026-08-08
 - Network文書を九文書間の代謝を監視する中央照合面として明確化。

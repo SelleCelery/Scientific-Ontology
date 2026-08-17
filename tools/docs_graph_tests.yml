@@ -37,6 +37,36 @@ tests:
       - links_to
     to: 'doc:meaning_generation_model'
 
+  - id: cross-grammatical-commensuration-owner
+    from: 'doc:commensuration_cross_grammatical_collation'
+    relation: owns
+    to: 'concept:cross_grammatical_commensuration'
+
+  - id: cognitive-dynamics-imports-commensuration
+    from: 'doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja'
+    relation: imports
+    to: 'concept:cross_grammatical_commensuration'
+
+  - id: boundary-diplomacy-imports-commensuration
+    from: 'doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja'
+    relation: imports
+    to: 'concept:cross_grammatical_commensuration'
+
+  - id: network-imports-commensuration
+    from: 'doc:semantic_network_topology_commensuration_bandwidth'
+    relation: imports
+    to: 'concept:cross_grammatical_commensuration'
+
+  - id: compression-imports-operational-port
+    from: 'doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja'
+    relation: imports
+    to: 'concept:operational_port'
+
+  - id: organization-imports-operational-port
+    from: 'doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja'
+    relation: imports
+    to: 'concept:operational_port'
+
 path_tests:
   - id: meaning-topic-to-owner
     from: 'topic:meaning'

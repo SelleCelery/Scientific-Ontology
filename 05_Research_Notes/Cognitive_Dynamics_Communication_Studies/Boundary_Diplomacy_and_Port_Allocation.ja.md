@@ -3,8 +3,10 @@
 
 > Status: Cross-domain Ontological Note / First Draft  
 > Scope: boundary diplomacy / port allocation / cognitive axes / commensuration / peace / AI  
-> Language: Japanese authoritative; English commensuration pending  
+> Language: Japanese authoritative; English commensuration available
 > Claim strength: S3 / E2 / U1-U2 / P1-P2 / V0-V2  
+> Version: 0.1.1
+> Last updated: 2026-08-17
 > Public handling: 本稿は境界制御の概念モデルであり、外交政策、心理診断、組織統治、ネットワーク工学の完成理論ではない。
 
 ---
@@ -18,6 +20,8 @@
 > 複数の認識軸、存在相、言語ゲーム、目的が接触するとき、それらを単一軸へ潰さず、しかも無限処理を要求せずに、通信可能性をどう維持するか。
 
 本稿は、認識軸の生成そのものを定義しない。それは [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md) に委ねる。
+
+認識場を操作的なポートへ切り出す共通構造は、上流の中間モデル [`Cognitive_Dynamics_Communication_Model.ja.md`](Cognitive_Dynamics_Communication_Model.ja.md) から受け取る。
 
 本稿は、存在相圧縮そのものの診断を所有しない。それは [`Compression_of_Existence_Phases.ja.md`](Compression_of_Existence_Phases.ja.md) が扱う。
 
@@ -210,9 +214,9 @@ Open Marker
 
 異なる文化、専門、制度、組織、人格は、異なる言語ゲームを持つ。
 
-通約とは、それらを一つの語彙へ揃えることではない。
+本稿は通約一般を独自に定義しない。その正本は [`Commensuration_as_Cross_Grammatical_Collation.ja.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md) が所有し、Core Invariant と Operational Drift の上流契約は [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md) から受け取る。
 
-通約とは、中核構造を保存したまま、別の認識ネットワークへ到達可能な形に変換することである。
+その正本定義を境界外交へ適用すると、通約は、それらを一つの語彙へ揃えることではなく、中核構造を保存したまま別の認識ネットワークへ到達可能な形に変換し、変換残差と返路を保持することである。
 
 本稿では、次を区別する。
 
@@ -517,7 +521,10 @@ Boundary Update
 
 ## 20. 関連文書
 
-- [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
-- [`Compression_of_Existence_Phases.ja.md`](Compression_of_Existence_Phases.ja.md)
-- [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md)
-- [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
+- imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
+- imports_from: [`Cognitive_Dynamics_Communication_Model.ja.md`](Cognitive_Dynamics_Communication_Model.ja.md)
+- imports_from: [`Commensuration_as_Cross_Grammatical_Collation.ja.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md)
+- imports_from: [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
+- imports_from: [`Compression_of_Existence_Phases.ja.md`](Compression_of_Existence_Phases.ja.md)
+- implemented_by: [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md)
+- applied_by: [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)

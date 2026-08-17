@@ -6,9 +6,10 @@
 > Scope: commensuration / translation / grammatical frames / local-use transfer / residual preservation / return paths
 > Language: Japanese authoritative; English commensuration available
 > Claim strength: S2-S3 / E2 / U0-U1 / P1-P2 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: 差分・残差・非主張境界・返路を保持する文法枠間通約の局所プロトコル
+> Definition ownership: `cross_grammatical_commensuration`
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
 > Public handling: 本稿は存在境界論全体の通約方針を再定義しない。既存の公開・通約方針を輸入し、異なる言語・文法枠のあいだで意味構造を再構成する局所操作を扱う。
 
@@ -278,6 +279,8 @@ Return path if conflict arises:
 - imports_from: [`Meaning_as_Collation_and_Return_Path.ja.md`](./Meaning_as_Collation_and_Return_Path.ja.md)
 - tests_with: [`Linguistic_Frame_Differences_between_Japanese_and_English.ja.md`](./Linguistic_Frame_Differences_between_Japanese_and_English.ja.md)
 - tests_with: [`AI_Language_Generation_and_Grammatical_Frames.ja.md`](./AI_Language_Generation_and_Grammatical_Frames.ja.md)
+- applied_by: [`Cognitive_Dynamics_Communication_Model.ja.md`](../Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md)
+- applied_by: [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](../Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md)
 - returns_to: [`Translation_Note.md`](../../90_Repository_Governance/Translation_Note.md)
 - returns_to: [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
 
@@ -289,6 +292,10 @@ Return path if conflict arises:
 - Gadamer, H.-G. (1960). *Truth and Method*.
 
 ## Revision History / 改訂履歴
+
+### 1.0.0-rc.2 — 2026-08-17
+- 文法枠間通約の定義所有を `cross_grammatical_commensuration` として明示。
+- 認識動態コミュニケーションモデルと境界外交を下流適用として接続。
 
 ### 1.0.0-rc.1 — 2026-08-08
 - Gate 4でPublic Living Canonical Candidateへ昇格。

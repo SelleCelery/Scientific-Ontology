@@ -7,8 +7,8 @@
 > Language: English commensurated rendering
 > Japanese authoritative source: ./Compressed_Experience_Qualia_and_Literature.ja.md
 > Claim strength: S3 / E2-E3 / U0-U1 / P1-P2.5 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: one operational phase of compressed experience, history redeployment, and qualia-difference contact in literary contact
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
 > Public handling: This note does not uniquely define literature in general. It does not subsume existing literary research on worldmaking, narrative truth, or temporary inhabitation by readers. It addresses only one operational phase in which another's compressed history is redeployed within the reader's history-field and forms qualia accompanied by difference.
@@ -86,7 +86,9 @@ These need not be additions to propositional understanding. They can be one form
 
 Strong emotion alone, however, does not guarantee understanding of the work or contact with truth.
 
-## 5. Qualia Require History
+## 5. History Participates in the Formation of the Qualia Differences Addressed Here
+
+The claim here is limited to the phase in which compressed experience forms a difference within the reader's history-field through literary contact. It does not impose history as a universal necessary condition for qualia in general.
 
 A passage that once produced little response can become intensely present years later.
 
@@ -255,6 +257,9 @@ These sources are not grounds for literary experience. They are used to identify
 - Derrida, J. (1972/1988). “Signature Event Context.”
 
 ## Revision History
+
+### 1.0.0-rc.2 — 2026-08-17
+- Limited the participation of history to the formation of literary qualia differences addressed here, removing the appearance of a universal necessary condition for qualia in general.
 
 ### 1.0.0-rc.1 — 2026-08-08
 - Promoted to Public Living Canonical Candidate at Gate 4.

@@ -7,9 +7,10 @@
 > Language: English commensurated rendering
 > Japanese authoritative source: ./Commensuration_as_Cross_Grammatical_Collation.ja.md
 > Claim strength: S2-S3 / E2 / U0-U1 / P1-P2 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: local protocol for commensuration across grammatical frames that preserves differences, residuals, non-claim boundaries, and return paths
+> Definition ownership: `cross_grammatical_commensuration`
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
 > Public handling: This note does not redefine the repository-wide policy of commensuration in Scientific Ontology. It imports the existing Publication and Commensuration Policy and addresses the local operation of reconstructing semantic structure across different languages and grammatical frames.
 
@@ -279,6 +280,8 @@ These sources do not prove Scientific Ontology. They are used to collate what ki
 - imports_from: [`Meaning_as_Collation_and_Return_Path.en.md`](./Meaning_as_Collation_and_Return_Path.en.md)
 - tests_with: [`Linguistic_Frame_Differences_between_Japanese_and_English.en.md`](./Linguistic_Frame_Differences_between_Japanese_and_English.en.md)
 - tests_with: [`AI_Language_Generation_and_Grammatical_Frames.en.md`](./AI_Language_Generation_and_Grammatical_Frames.en.md)
+- applied_by: [`Cognitive_Dynamics_Communication_Model.en.md`](../Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md)
+- applied_by: [`Boundary_Diplomacy_and_Port_Allocation.en.md`](../Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md)
 - returns_to: [`Translation_Note.md`](../../90_Repository_Governance/Translation_Note.md)
 - returns_to: [`Optional_Axiom_Modules_as_Cognitive_Bridge.en.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
 
@@ -290,6 +293,10 @@ These sources do not prove Scientific Ontology. They are used to collate what ki
 - Gadamer, H.-G. (1960). *Truth and Method*.
 
 ## Revision History
+
+### 1.0.0-rc.2 — 2026-08-17
+- Made definition ownership explicit as `cross_grammatical_commensuration`.
+- Connected the Cognitive Dynamics Communication Model and Boundary Diplomacy as downstream applications.
 
 ### 1.0.0-rc.1 — 2026-08-08
 - Promoted to Public Living Canonical Candidate at Gate 4.

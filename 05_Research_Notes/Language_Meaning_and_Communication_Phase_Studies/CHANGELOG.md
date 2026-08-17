@@ -11,6 +11,31 @@
 > This log records research-line-wide conceptual metabolism.
 > 文書ごとの細部は各文書末尾の`Revision History`を参照する。
 
+## [1.0.0-rc.2] — 2026-08-17
+### Cross-Document Consistency Patch / 横断整合パッチ
+
+#### Changed
+
+- Return Intakeの判定区分と受理条件を分離し、`LOCAL-SCOPE LIMIT` と `CLAIM-PHASE SEPARATION` を判定値から受理条件へ移した。
+- Network文書の主張強度を、公開操作層 `S2-S3`、存在論深度仮説層 `S4-S5`、私的レンダリング層へ一致させた。
+- Meaning文書の感情／思考定義を、心理学・神経科学上の一般定義ではなく存在境界論内部の操作仮説として明示した。
+- 「照合的内包」「返路ある外延」を正式名とし、文献の経験的・歴史的根拠としての役割と、存在境界論固有の概念照合点としての役割を分離した。
+- 文学文書の履歴主張を、本稿が扱うクオリア差分の形成へ限定した。
+- Speech文書で「安全」を独自定義せず、「非破壊的分節」を正式名とした。
+- 通約正本から認識動態コミュニケーションモデル、Network、境界外交への定義依存を明示した。
+
+#### Preserved
+
+- 安心、喜び、無方向の快感、閉鎖後の解放感は未解決のままReturn Intakeに保持する。
+- 公開操作層と存在論深度仮説層のあいだで証明力を自動移送しない。
+- 日本語を定義正本、英語を意味中心の通約として維持する。
+
+#### Propagated
+
+- `docs_manifest.yml` の概念所有・論理契約へ変更を伝播。
+- `docs_graph_tests.yml` へ通約所有と下流importsの回帰テストを追加。
+- 用語衝突レジストリへ、照合的内包、返路ある外延、非破壊的分節を追加。
+
 ## [1.0.0-rc.1] — 2026-08-08
 ### Gate 4 — Living Canonicalization / 代謝型正本化
 

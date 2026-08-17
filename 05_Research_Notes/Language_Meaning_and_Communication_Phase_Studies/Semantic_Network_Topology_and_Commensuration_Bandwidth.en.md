@@ -6,9 +6,9 @@
 > Scope: semantic network topology / communication phase / multilayer-temporal-higher-order networks / distance / bandwidth / return expectancy / logical-depth
 > Language: English commensurated rendering
 > Japanese authoritative source: ./Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md
-> Claim strength: S3-S4 / E2-E3 / U0-U1 / P1-P2.5 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Claim strength: S2-S3 (public operational layer) / S4-S5 (ontological-depth hypothesis layer) / private rendering (AMP/theological layer); E2-E3 / U0-U1 / P1-P2.5 / V0-V2
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: central collational surface integrating semantic-network types, distance, bandwidth, return expectancy, historical transformation, and three claim phases
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
 > Public handling: This note is an integrative core for placing communication among meaning, cognition, and language games. Concentration of responsibility is intentional, but the public operational layer, ontological-depth hypothesis layer, and AMP/theological rendering layer must not be conflated. The model is not claimed to be a proven single mathematical network, standard physics, or empirical cosmology.
@@ -625,6 +625,7 @@ Delay, feedback, stability, and bandwidth contact the design of return paths. Se
 ## 27. Related Documents and Return Paths
 
 - imports_from: [`Cognitive_Dynamics_Communication_Model.en.md`](../Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md)
+- imports_from: [`Commensuration_as_Cross_Grammatical_Collation.en.md`](./Commensuration_as_Cross_Grammatical_Collation.en.md)
 - imports_from: [`Optional_Axiom_Modules_as_Cognitive_Bridge.en.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
 - imports_from: [`Chaos_Theory_and_Logical_Depth_Axis.ja.md`](../Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md)
 - integrates_without_owning: [`Speech_as_Sequential_Decompression.en.md`](./Speech_as_Sequential_Decompression.en.md)
@@ -647,6 +648,10 @@ Delay, feedback, stability, and bandwidth contact the design of return paths. Se
 - Gödel, K. (1931). “Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I.” DOI: 10.1007/BF01700692.
 
 ## Revision History
+
+### 1.0.0-rc.2 — 2026-08-17
+- Aligned the header with the document's three claim phases, separating the `S2-S3` public operational layer from the `S4-S5` ontological-depth hypothesis layer.
+- Imported the definition of commensuration from its canonical owner, separating the Network document's integrative role from definition ownership.
 
 ### 1.0.0-rc.1 — 2026-08-08
 - Clarified the Network document as a central collational surface monitoring metabolism among the nine documents.

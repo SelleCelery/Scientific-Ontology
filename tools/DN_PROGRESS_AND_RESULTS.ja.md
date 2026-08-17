@@ -472,10 +472,12 @@ Graphも100 observed_documentをmanifest-backed documentへ昇格した。
 Current graph:
 
 ```text
-305 nodes
-1810 edges
+306 nodes
+1862 edges
 observed_unregistered_documents = 0
 ```
+
+2026-08-17の横断整合パッチで、`cross_grammatical_commensuration` の概念所有と、認識動態・Network・境界外交からの型付き依存を追加した。
 
 ただし、provisional promotionから`owns / imports / exports / tests / returns_to / delegates`は生成していない。
 

@@ -11,8 +11,8 @@ v5.0 のこのモードに必要な機械検証は通過した。既知 warning 
 
 ## 2. Required checks
 
-- **PASS** `index-fresh` — `python scripts/build_docs_index.py --check`
-- **PASS** `graph-fresh` — `python scripts/build_docs_graph.py --check`
+- **PASS** `index-fresh` — `python scripts/build_docs_index.py --visibility preview --check`
+- **PASS** `graph-fresh` — `python scripts/build_docs_graph.py --visibility preview --check`
 - **PASS** `public-graph-fresh` — `python scripts/build_public_graph.py --check`
 - **PASS** `public-catalog-fresh` — `python scripts/build_public_catalog.py --check`
 - **PASS** `search-browse-regression` — `python scripts/query_docs.py test`
@@ -30,12 +30,12 @@ v5.0 のこのモードに必要な機械検証は通過した。既知 warning 
 - **PASS** `expected:registered_documents` — actual=28, expected=28
 - **PASS** `expected:provisional_documents` — actual=100, expected=100
 - **PASS** `expected:language_pair_families` — actual=39, expected=39
-- **PASS** `expected:graph_nodes` — actual=305, expected=305
-- **PASS** `expected:graph_edges` — actual=1810, expected=1810
+- **PASS** `expected:graph_nodes` — actual=306, expected=306
+- **PASS** `expected:graph_edges` — actual=1862, expected=1862
 - **PASS** `expected:observed_unregistered_documents` — actual=0, expected=0
 - **PASS** `public-catalog-no-developer-fields` — none
 - **PASS** `public-graph-no-developer-top-level-data` — none
-- **PASS** `public-graph-semantic-parity` — public=305/1810, canonical=305/1810
+- **PASS** `public-graph-semantic-parity` — public=306/1862, canonical=306/1862
 - **PASS** `provisional-no-invented-strong-relations` — none
 - **PASS** `public-format-errors-zero` — errors=0
 - **PASS** `public-format-warning-codes-known` — none
@@ -45,7 +45,7 @@ v5.0 のこのモードに必要な機械検証は通過した。既知 warning 
 
 - Errors: 0
 - Warnings: 119
-- Info: 93
+- Info: 100
 
 - `ASSERTION_PUBLIC_PROFILE_WITHOUT_CLAIM_STRENGTH`: 1 / ceiling 1
 - `CAUTION_TERM_BOUNDARY_MISSING`: 12 / ceiling 12

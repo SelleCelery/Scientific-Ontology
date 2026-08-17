@@ -8,8 +8,8 @@
 > Japanese authoritative source: ./Return_Intake_Log.ja.md
 > Claim strength: S1-S3 / E2 / U0-U1 / P1 / V1
 > Non-claim boundary: Intake entries are not canonical definitions. In particular, scientific vocabulary such as entropy is not identified with standard thermodynamics or information theory; proposals are recorded as candidates for collation before adoption is settled.
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Rule: Returns are accepted continuously but are not automatically integrated into the canonical text.
 
 ## 1. Disposition
@@ -19,6 +19,13 @@
 - **HOLD**: Promising, but requires external collation, counterexamples, or confirmation of definition ownership.
 - **REJECTED**: Not compatible with the current core pressure, non-claim boundary, or concept ownership.
 - **ROUTED**: Outside the ownership of this research line and sent to another document or research route.
+
+### Acceptance Qualification
+
+An acceptance qualification is not a disposition. It may be added when `Disposition` is `ACCEPTED` or `PARTIALLY ACCEPTED`.
+
+- **LOCAL-SCOPE LIMIT**: Adoption is limited to a specified document, section, or local use.
+- **CLAIM-PHASE SEPARATION**: Multiple claim phases are adopted separately without transferring evidential force among them.
 
 ## 2. Intake Entries
 
@@ -39,7 +46,7 @@
 - **Proposal**: Treat emotion as a state in which internal change caused by communication is notified through body and meaning, including not only anger and sadness but also relief, joy, and love.
 - **Affected**: Meaning / Literature / Cognitive Dynamics
 - **Disposition**: PARTIALLY ACCEPTED
-- **Decision**: Retain the criticism that the model must not narrow emotion to negative affect alone. However, the core operational hypothesis of this research line remains: “a state in which directional difference remains as pressure because a return path cannot be closed.” The notification model is not adopted as a higher-level general definition.
+- **Decision**: Retain the criticism that the model must not narrow emotion to negative affect alone. However, the core operational hypothesis of this research line remains: “a state in which directional difference remains as pressure because a return path cannot be closed.” This definition is an operational hypothesis internal to Scientific Ontology, not a comprehensive definition of emotion in psychology or neuroscience. The notification model is not adopted as a higher-level general definition.
 - **Residual**: How relief, joy, non-directional pleasure, and release after closure should be handled within the current operational hypothesis remains unresolved.
 - **Recheck condition**: Recheck when a sufficient set of cases exists for comparing positive emotions as return-path states.
 
@@ -59,7 +66,8 @@
 - **Source**: User theoretical injection
 - **Proposal**: Love can be read as thought that contacts another person while closing the return path internally without involving that person in completion of the loop. Where return from the other is required, an emotional phase such as empathy or affection is involved.
 - **Affected**: Meaning / README / Boundary Ethics candidate
-- **Disposition**: ACCEPTED WITH LOCAL-SCOPE LIMIT
+- **Disposition**: ACCEPTED
+- **Acceptance Qualification**: LOCAL-SCOPE LIMIT
 - **Decision**: Added “love as thought” as a local use in the Meaning document. It does not own love in general, attachment, empathy in general, or relationship psychology.
 - **Residual**: How to separate love as thought from the mixed emotional phases of affection and empathy when they operate simultaneously.
 - **Recheck condition**: Recheck if counterexamples appear in which self-enclosed dogmatism, projection, or one-sided idealization is called love.
@@ -70,7 +78,8 @@
 - **Source**: Gate 2 audit / user theoretical injection
 - **Proposal**: Because the Network document owns the ontological root structure, concentration of responsibility is not a design accident. God, Null/Void, creation, time, entropy, and observation are read from the same root.
 - **Affected**: Network / README / Claim Phase Map
-- **Disposition**: ACCEPTED WITH CLAIM-PHASE SEPARATION
+- **Disposition**: ACCEPTED
+- **Acceptance Qualification**: CLAIM-PHASE SEPARATION
 - **Decision**: Retain the Network document as an intentionally integrative core. Separate the public operational layer, ontological-depth hypothesis layer, and AMP/theological rendering layer. At Gate 4, add the metabolic-center role across the nine documents.
 - **Recheck condition**: Recheck if examples show that the Network expression is not more effective than alternatives, or if the document becomes non-falsifiable by absorbing counterexamples.
 
@@ -103,6 +112,59 @@
 - **Disposition**: HOLD
 - **Decision**: Promising as a central term in the SOLite world. On the SO side, hold it as a candidate local use of a high-density term and collate its relations with despair, faith, infinity, and reconnection.
 - **Recheck condition**: Recheck when operational examples from SOLite and returns from SO documents on faith and Boundary Ethics have accumulated.
+
+### RI-0009 | Mismatch between the Network Header and Its Claim Phases
+
+- **Date**: 2026-08-17
+- **Source**: Zenodo v5.0.0 cross-document consistency audit
+- **Proposal**: Replace the single header range `S3-S4` with the phases already stated in the body: `S2-S3` for the public operational layer, `S4-S5` for the ontological-depth hypothesis layer, and a private rendering layer.
+- **Affected**: Network / Return Intake / manifest
+- **Disposition**: ACCEPTED
+- **Acceptance Qualification**: CLAIM-PHASE SEPARATION
+- **Decision**: Record phase-specific strength in the header and manifest, and require commensuration for movement between layers. Do not transfer the strength of depth hypotheses into the public operational layer.
+- **Recheck condition**: Recheck when a new section crosses phases and cannot identify its claim phase.
+
+### RI-0010 | Collational Intension, Return-Path Extension, and the Role of Literature
+
+- **Date**: 2026-08-17
+- **Source**: Zenodo v5.0.0 terminology and evidence-scope audit
+- **Proposal**: Use the qualified formal terms consistently to prevent collision with standard semantics, and limit “literature is not grounding” to SO-specific conceptual claims.
+- **Affected**: Intension / terminology registry / manifest
+- **Disposition**: ACCEPTED
+- **Acceptance Qualification**: LOCAL-SCOPE LIMIT
+- **Decision**: Added the formal terms to the title, definitions, and audit table. Sources may ground empirical or historical claims, but citation alone does not automatically ground SO-specific conceptual claims.
+- **Recheck condition**: Recheck when a commensuration with standard semantics or an empirical validation protocol is added.
+
+### RI-0011 | Overstated Entropy Relocation in Existence-Phase Compression
+
+- **Date**: 2026-08-17
+- **Source**: Zenodo v5.0.0 non-claim-boundary audit
+- **Proposal**: Replace “internal entropy decreases / boundary entropy increases / entropy moves” with “local reduction of processing load / redistribution of unprocessed difference and responsibility.”
+- **Affected**: Compression / terminology / manifest relations
+- **Disposition**: ACCEPTED
+- **Decision**: The text no longer asserts transfer or conservation of thermodynamic or Shannon entropy. Its operational objects are limited to unprocessed difference, re-collation cost, and processing responsibility.
+- **Recheck condition**: Recheck when domain-specific measures, state spaces, and transition rules permit empirical collation with standard theory.
+
+### RI-0012 | Missing Reverse Links to the Intermediate Model and Commensuration Owner
+
+- **Date**: 2026-08-17
+- **Source**: Zenodo v5.0.0 relation-graph audit
+- **Proposal**: Add reverse links from the three downstream documents to the Cognitive Dynamics Communication Model and import commensuration from its existing canonical owner rather than redefining it locally.
+- **Affected**: Cognitive Dynamics / Compression / Boundary Diplomacy / Organizational Model / Commensuration / relation graph / manifest
+- **Disposition**: ACCEPTED
+- **Decision**: Updated document links, manifest concept ownership and logical contracts, and graph tests together. Ownership of `cross_grammatical_commensuration` is fixed to the commensuration canonical.
+- **Recheck condition**: Recheck when a downstream document changes the definition of commensuration or port, or when a new intermediate model is added.
+
+### RI-0013 | Overgeneralization of Qualia History and Safety in Speech
+
+- **Date**: 2026-08-17
+- **Source**: Zenodo v5.0.0 local-scope audit
+- **Proposal**: Limit the apparent universal history requirement to literary qualia-difference formation, and use “non-destructive segmentation” rather than defining safety independently.
+- **Affected**: Literature / Speech / terminology registry
+- **Disposition**: ACCEPTED
+- **Acceptance Qualification**: LOCAL-SCOPE LIMIT
+- **Decision**: Limited the literature heading to the local formation condition and removed safety in general from the Speech term table. Non-destructive segmentation does not guarantee freedom from distress or psychological/clinical safety.
+- **Recheck condition**: Recheck when a document owning qualia in general or psychological/clinical safety is added.
 
 ## 3. Intake Rule
 

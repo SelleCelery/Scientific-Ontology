@@ -6,6 +6,8 @@
 > Language: English commensurated rendering  
 > Japanese authoritative source: [`Organizational_Boundary_and_Port_Model.ja.md`](./Organizational_Boundary_and_Port_Model.ja.md)  
 > Claim strength: S3-S4 / E2 / U1-U2 / P1-P2 / V1-V4  
+> Version: 0.1.1
+> Last updated: 2026-08-17
 > Public handling: This document presents a conceptual model. It does not replace management studies, law, public administration, medicine, network engineering, security standards, or professional judgment.
 
 ---
@@ -19,6 +21,8 @@ This document owns one question:
 > Once a purpose has been shared within an organization, how can it be implemented as a structure that specifies who receives which communication at which boundary, transforms it through which procedure, and returns it to which responsibility boundary?
 
 This document does not generate cognitive axes. The generation of cognitive direction is handled by [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md).
+
+Definitions of the Cognitive Field, Operational Discretization, and the general Port are imported from the upstream intermediate model [`Cognitive_Dynamics_Communication_Model.en.md`](Cognitive_Dynamics_Communication_Model.en.md).
 
 This document does not define existence-phase compression. The diagnosis of single-metric compression is handled by [`Compression_of_Existence_Phases.en.md`](Compression_of_Existence_Phases.en.md).
 
@@ -659,8 +663,9 @@ It is measured by whether the organization can receive anomalies, return them to
 
 ## 23. Related Documents
 
-- [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
-- [`Compression_of_Existence_Phases.en.md`](Compression_of_Existence_Phases.en.md)
-- [`Boundary_Diplomacy_and_Port_Allocation.en.md`](Boundary_Diplomacy_and_Port_Allocation.en.md)
-- [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
-- [`AI_Adoption_Collation_Checklist.md`](../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
+- imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
+- imports_from: [`Cognitive_Dynamics_Communication_Model.en.md`](Cognitive_Dynamics_Communication_Model.en.md)
+- imports_from: [`Compression_of_Existence_Phases.en.md`](Compression_of_Existence_Phases.en.md)
+- imports_from: [`Boundary_Diplomacy_and_Port_Allocation.en.md`](Boundary_Diplomacy_and_Port_Allocation.en.md)
+- applied_by: [`Specification_for_Peace.en.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.en.md)
+- tested_by: [`AI_Adoption_Collation_Checklist.md`](../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)

@@ -201,6 +201,9 @@ concept_ownership:
   core_invariant_and_operational_drift:
     canonical_owner: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
     other_documents: "reference_or_apply_only"
+  cross_grammatical_commensuration:
+    canonical_owner: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+    other_documents: "import_and_apply_without_redefining"
   first_shared_and_world_forming_purpose:
     canonical_owner: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
     other_documents: "reference_or_operationalize_only"
@@ -820,6 +823,43 @@ documents:
     state: "public"
     role_ja: "連続する認識と離散的運用の間の操作構造を所有するメタモデル"
     role_en: "Metamodel owning the operational mapping between seamless cognition and discrete operation"
+    logical_contract:
+      contract_id: "cognitive_dynamics_intermediate_model"
+      owns:
+        - "cognitive_field"
+        - "cognitive_phase"
+        - "operational_discretization"
+        - "operational_port"
+      imports:
+        - "cognitive_axis_formation"
+        - "worldview_commensuration_protocol"
+        - "cross_grammatical_commensuration"
+      exports: []
+      tests:
+        - target: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
+          relation: "downstream_abstraction_test"
+          evidence: "The downstream model imports operational discretization and Port without redefining their owners."
+      returns_to:
+        - target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+          payload:
+            - "discretization residual that changes cognitive-axis assumptions"
+      depth_interface:
+        entry_signals:
+          - "a seamless cognitive field cannot be represented by the current operational cut"
+        retains:
+          - "cutoff residuals and unrepresented overlap"
+        delegates_to:
+          - "cognitive-axis formation and aporia research"
+        return_path:
+          - "revised Port boundary or reopened cognitive-axis assumption"
+        closure_policy: "Operational discretization remains provisional and may not be projected back as an ontological division."
+      delegates:
+        - concept: "cognitive_axis_formation"
+          target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        - concept: "cross_grammatical_commensuration"
+          target: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+      explicit_open_questions:
+        - "What minimum residual record keeps an operational cut reopenable without requiring infinite processing?"
 
     registration_state: registered
   - path: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md"
@@ -840,6 +880,42 @@ documents:
     role_ja: "存在相圧縮の利益、損失、外部化、再開条件の診断所有者"
     role_en: "Canonical diagnostic owner for the gains, losses, externalization, and reopening conditions of existence-phase
       compression"
+    logical_contract:
+      contract_id: "existence_phase_compression_diagnostics"
+      owns:
+        - "existence_phase"
+        - "existence_phase_compression"
+        - "single_metric_compression"
+      imports:
+        - "cognitive_axis_formation"
+        - "operational_discretization"
+        - "operational_port"
+      exports: []
+      tests:
+        - target: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
+          relation: "reopening_test"
+          evidence: "Excluded existence phases remain available for holding, reallocation, and reopening."
+      returns_to:
+        - target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+          payload:
+            - "compression loss that exposes a hidden cognitive-axis selection"
+      depth_interface:
+        entry_signals:
+          - "compressed differences exceed the current evaluation space"
+        retains:
+          - "invisible existence phases, historical burden, and re-collation cost"
+        delegates_to:
+          - "cognitive-axis formation and boundary diplomacy"
+        return_path:
+          - "revised evaluation axis or reopened existence phase"
+        closure_policy: "A compression may close locally only while its scope, losses, and reopening conditions remain explicit."
+      delegates:
+        - concept: "cognitive_axis_formation"
+          target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        - concept: "operational_port"
+          target: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+      explicit_open_questions:
+        - "Which domain-specific observations can distinguish necessary compression from destructive compression without pretending to measure entropy transfer?"
 
     registration_state: registered
   - path: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md"
@@ -859,6 +935,47 @@ documents:
     state: "public"
     role_ja: "ポート配分、通約、保留、再開、ゲートウェイ捕捉の動態所有者"
     role_en: "Canonical owner of the dynamics of port allocation, commensuration, holding, reopening, and gateway capture"
+    logical_contract:
+      contract_id: "boundary_diplomacy_and_port_allocation"
+      owns:
+        - "boundary_diplomacy"
+        - "port_allocation"
+        - "multi_port_potentiality"
+        - "scoped_port_operation"
+        - "gateway_capture"
+      imports:
+        - "cognitive_axis_formation"
+        - "operational_discretization"
+        - "operational_port"
+        - "existence_phase_compression"
+        - "worldview_commensuration_protocol"
+        - "cross_grammatical_commensuration"
+      exports: []
+      tests:
+        - target: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
+          relation: "organizational_implementation_test"
+          evidence: "Allocated Ports retain responsibility, audit, stop conditions, and reopening routes."
+      returns_to:
+        - target: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+          payload:
+            - "translation residual or failed return path exposed by boundary operation"
+      depth_interface:
+        entry_signals:
+          - "no current Port can preserve the relevant difference without destructive overload"
+        retains:
+          - "untranslatable residuals, holding reasons, and intermediary dependence"
+        delegates_to:
+          - "commensuration protocol and cognitive-axis research"
+        return_path:
+          - "reallocated Port, renegotiated protocol, or explicit unresolved state"
+        closure_policy: "Scoped Port Operation must preserve purpose, duration, responsibility, and a route for appeal or reopening."
+      delegates:
+        - concept: "operational_port"
+          target: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+        - concept: "cross_grammatical_commensuration"
+          target: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+      explicit_open_questions:
+        - "How can intermediary power be audited without erasing the capacity required for mediation?"
 
     registration_state: registered
   - path: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md"
@@ -895,6 +1012,11 @@ documents:
         - "forbidden_externalizations"
         - "stop_conditions"
         - "boundary_ca_requirements"
+        - "operational_discretization"
+        - "operational_port"
+        - "existence_phase_compression"
+        - "boundary_diplomacy"
+        - "port_allocation"
       exports:
         - "implementation_specification"
         - "responsibility_map"
@@ -1222,8 +1344,8 @@ documents:
     registration_state: registered
   - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md"
     document_type: "assertion_document"
-    title_ja: "内包・外延・偽外延"
-    title_en: "Intension, Extension, and False Extension"
+    title_ja: "照合的内包・返路ある外延・偽外延"
+    title_en: "Collational Intension, Return-Path Extension, and False Extension"
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
@@ -1237,7 +1359,44 @@ documents:
     layer: "05_Research_Notes"
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
+    internal_profile:
+      S: "S2-S3 public operational / S4-S5 ontological-depth hypothesis / private rendering"
+      E: "E2-E3"
+      U: "U0-U1"
+      R: "R2-R4"
+      V: "V0-V2"
     state: "public"
+    logical_contract:
+      contract_id: "semantic_network_claim_phase_integration"
+      owns: []
+      imports:
+        - "operational_discretization"
+        - "worldview_commensuration_protocol"
+        - "cross_grammatical_commensuration"
+      exports: []
+      tests:
+        - target: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+          relation: "claim_phase_commensuration_test"
+          evidence: "Movement among public operation, depth hypothesis, and private rendering retains phase labels and non-claim boundaries."
+      returns_to:
+        - target: "00_Overview/Scientific_Ontology_Concept_Network.ja.md"
+          payload:
+            - "ownership conflict or unplaced network residual"
+      depth_interface:
+        entry_signals:
+          - "a network claim crosses from public operation into ontological-depth hypothesis"
+        retains:
+          - "claim-phase label, transformation residual, and excluded evidential force"
+        delegates_to:
+          - "concept ownership map and commensuration protocol"
+        return_path:
+          - "phase-separated restatement or explicit suspension"
+        closure_policy: "No claim gains public evidential force merely by moving through the integrative Network document."
+      delegates:
+        - concept: "cross_grammatical_commensuration"
+          target: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+      explicit_open_questions:
+        - "Which sections require finer claim-phase labels when they connect operational and ontological-depth descriptions?"
 
     doc_id: semantic_network_topology_commensuration_bandwidth
     discovery:
@@ -1276,6 +1435,36 @@ documents:
     status: "Research Note / Conceptual Model / Metamodel"
     public_profile: "P2"
     state: "public"
+    logical_contract:
+      contract_id: "cross_grammatical_commensuration"
+      owns:
+        - "cross_grammatical_commensuration"
+      imports:
+        - "worldview_commensuration_protocol"
+      exports: []
+      tests:
+        - target: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md"
+          relation: "cross_grammar_test"
+          evidence: "Core, claim strength, non-claim boundary, residual, and return path survive movement between grammatical frames."
+      returns_to:
+        - target: "90_Repository_Governance/Publication_and_Commensuration_Policy.md"
+          payload:
+            - "policy-level conflict exposed by grammatical transformation"
+      depth_interface:
+        entry_signals:
+          - "a transformation cannot preserve ownership, claim phase, or non-claim boundary in the current grammar"
+        retains:
+          - "untranslatable residuals and transformation history"
+        delegates_to:
+          - "publication governance and worldview commensuration"
+        return_path:
+          - "revised authoritative wording, annotated rendering, or explicit non-commensurability"
+        closure_policy: "A rendering remains provisional wherever residuals or return paths are not preserved."
+      delegates:
+        - concept: "worldview_commensuration_protocol"
+          target: "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+      explicit_open_questions:
+        - "How should non-commensurable residuals be represented across more than two language families?"
 
     doc_id: commensuration_cross_grammatical_collation
     discovery:
@@ -3684,8 +3873,8 @@ documents:
       05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md
     doc_id: intension_extension_and_false_extension_en
     document_type: assertion_document
-    title_ja: 内包・外延・偽外延
-    title_en: Intension, Extension, and False Extension
+    title_ja: 照合的内包・返路ある外延・偽外延
+    title_en: Collational Intension, Return-Path Extension, and False Extension
     layer: 05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies
     status: Research Note / Conceptual Model / Metamodel
     scope: intension / extension / false extension / semantic return test / citation audit / AI association audit

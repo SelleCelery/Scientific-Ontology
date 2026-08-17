@@ -288,8 +288,8 @@ check_public_format.py --release-gate --check-release-metadata
 - registered = 28
 - provisional = 100
 - language-pair families = 39
-- graph nodes = 305
-- graph edges = 1810
+- graph nodes = 306
+- graph edges = 1862
 - observed unregistered documents = 0
 - Public catalogにDeveloper-only keyがない
 - Public graphに`source` / `diagnostics`がない

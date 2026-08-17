@@ -59,6 +59,7 @@
 
 - [`../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 - [`../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
+- [`../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md)
 - [`../../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md`](../../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md)
 
 下流：
@@ -126,6 +127,7 @@ Upstream:
 
 - [`../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 - [`../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
+- [`../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md)
 - [`../../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md`](../../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md)
 
 Downstream:

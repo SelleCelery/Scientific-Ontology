@@ -1,4 +1,4 @@
-# Intension, Extension, and False Extension
+# Collational Intension, Return-Path Extension, and False Extension
 ## Semantic Expansion with Return Paths, and Grounding without Return
 
 > Status: Research Note / Conceptual Model / Metamodel
@@ -7,11 +7,11 @@
 > Language: English commensurated rendering
 > Japanese authoritative source: ./Intension_Extension_and_False_Extension.ja.md
 > Claim strength: S3 / E2-E3 / U0 / P1-P2 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: operational rereading within Scientific Ontology of collational intension, return-path extension, and false extension
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
-> Public handling: This note does not replace intension and extension in formal semantics. It presents an operational rereading for use within Scientific Ontology, centered on collational movement through propositions and on return paths.
+> Public handling: This note does not replace intension and extension in formal semantics. Its formal terms are **collational intension** and **return-path extension**. It presents an operational rereading for use within Scientific Ontology, centered on collational movement through propositions and on return paths.
 
 ---
 
@@ -21,7 +21,7 @@ If meaning is fixed as a set of attributes located inside a word, the history an
 
 Conversely, if related objects and propositions are added to extension without limit, the distinction between association and grounding is lost.
 
-This note redescribes intension and extension as, respectively, the inside of a collational movement and the domain into which that movement expands through other proposition groups while retaining a route back to the original proposition or collating subject.
+This note describes **collational intension** and **return-path extension** as, respectively, the inside of a collational movement and the domain into which that movement expands through other proposition groups while retaining a route back to the original proposition or collating subject.
 
 ## 1. Central Thesis
 
@@ -41,7 +41,7 @@ This note does not reject those technical definitions.
 
 What it provides is an operational rereading for the linguistic research of Scientific Ontology, intended to audit concept understanding, citation, commensuration, and AI association.
 
-The same terms, `intension` and `extension`, are used, but definition ownership is explicitly limited to this local operation.
+The qualifiers `collational` and `return-path` are therefore retained in the formal terms. Where the shorter forms `intension` and `extension` appear below, they are document-local abbreviations and do not replace the terms of standard semantics.
 
 ## 3. Collational Intension
 
@@ -123,7 +123,9 @@ Popularity, price, adoption, or search ranking is transferred into correctness o
 
 ## 7. Literature Is a Point of Collation, Not Automatically Grounding
 
-Within Scientific Ontology, reference to literature or scholarship is closer to proposing a possible reading than to presenting external grounding.
+Sources and scholarship can ground empirical facts, historical facts, or interpretations of a source when used according to the procedures of their respective fields.
+
+For conceptual claims specific to Scientific Ontology, however, citation alone does not automatically provide grounding. Such references are used as points of collation that open possible readings and differences rather than as borrowed authority.
 
 Rather than saying, “this source proves the claim,” the question is:
 
@@ -148,7 +150,7 @@ When auditing AI output, ask:
 - How does it return to the original proposition?
 - How is the original proposition revised by the connection?
 - What residual cannot be connected?
-- Is a source functioning as grounding, a point of collation, or decorative authority?
+- Is a source functioning as evidence for an empirical or historical fact, a conceptual point of collation, or decorative authority?
 
 “Related to” and “explains” are not the same relation.
 
@@ -186,10 +188,10 @@ False extension contacts the condition in which a text or proposition is used on
 
 | Term | Local use in this document | Not identical to | Definitional residual |
 |---|---|---|---|
-| Intension | Relational range of semantic elements preserved within a collational round trip through a proposition | Intension in formal semantics generally, attribute lists | Possible-world semantics, psychological concept representation |
-| Extension | Connected range that expands into other proposition groups and retains a return path to the original proposition | Extension in general, an object set alone | Empirical determination of applicable objects |
+| Collational intension | Relational range of semantic elements preserved within a collational round trip through a proposition | Intension in formal semantics generally, attribute lists | Possible-world semantics, psychological concept representation |
+| Return-path extension | Connected range that expands into other proposition groups and retains a return path to the original proposition | Extension in general, an object set alone | Empirical determination of applicable objects |
 | False extension | Using a related destination as explanation, proof, or authority without a return path | Mere error, all free association | Difference between deliberate manipulation and unconscious conflation |
-| Grounding | In this note, a relation that can withstand collation rather than an external guarantee that settles a proposition | Famous names, citation counts, popularity | Local differences from empirical evidence and legal proof |
+| Grounding of SO-specific claims | A relation that withstands source resistance, difference, return paths, and counterexamples rather than being settled by citation alone | Famous names, citation counts, popularity | Field-specific procedures for empirical, historical, and legal evidence |
 
 ## 12. Definitional Residues
 
@@ -231,6 +233,10 @@ False extension contacts the condition in which a text or proposition is used on
 - Eco, U. et al. *Interpretation and Overinterpretation*.
 
 ## Revision History
+
+### 1.0.0-rc.2 — 2026-08-17
+- Made “collational intension” and “return-path extension” the formal names to reduce collision with standard semantics.
+- Separated the evidential role of sources for empirical or historical claims from their role as points of collation for SO-specific conceptual claims.
 
 ### 1.0.0-rc.1 — 2026-08-08
 - Promoted to Public Living Canonical Candidate at Gate 4.

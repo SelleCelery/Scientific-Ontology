@@ -7,8 +7,8 @@
 > Language: English commensurated rendering
 > Japanese authoritative source: ./Speech_as_Sequential_Decompression.ja.md
 > Claim strength: S2-S3 / E1-E2 / U0 / P1-P2 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: local model of phase-dependent whole pressure, sequential decompression, residual-preserving segmentation, and self-listening in the speech phase
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
 > Public handling: This note does not reduce speech production to a physical quantity. It describes a structure in which a pre-speech, not-yet-segmented state is sequentially segmented through linguistic, bodily, and relational frames, distinguishing what has been expressed from what remains as residual, while updating the speaker's own conditions of recognition.
@@ -110,7 +110,7 @@ There are, however, two forms of cutoff.
 
 This note calls the latter **non-destructive segmentation** or **residual-preserving cutoff**.
 
-To “cut out pressure safely” does not mean avoiding distress. It means preserving what went outward, what remains, and where one can return, without allowing the speech alone to replace the original pressure.
+Non-destructive segmentation here is not a definition of safety in general and does not mean avoiding distress. It preserves what went outward, what remains, and where one can return, without allowing the speech alone to replace the original pressure.
 
 ## 5. The Speaker Is the First Recipient of Their Own Speech
 
@@ -196,7 +196,7 @@ This note nevertheless does not erase the subject's body, injury, or self-listen
 |---|---|---|---|
 | Pressure | Phase-dependent distribution of differences that demands and directs speech | Physical pressure, a single emotion, information quantity | Typing bodily, emotional, semantic, and relational pressure |
 | Whole | A not-yet-segmented state experienced as integrated within the present Cognitive Phase | Cosmic totality, complete observation | Backgrounded pressure, unconscious processes, history on the other side |
-| Safe | Preserving the distinction between speech and residuals and preserving return paths | Psychological harmlessness, risk avoidance | How far the return path has actually been preserved |
+| Non-destructive segmentation | A cutoff that distinguishes speech from residuals while preserving return paths | Absence of distress, a guarantee of psychological or clinical safety | How far the return path has actually been preserved |
 | Speech | An utterance unit externalized through a grammatical frame | Language in general, meaning as a whole | Boundary with gesture, silence, and media |
 
 ## 10.1 Definitional Residues
@@ -239,6 +239,10 @@ This note nevertheless does not erase the subject's body, injury, or self-listen
 - Luhmann, N. (1992). “What Is Communication?” *Communication Theory*, 2(3), 251–259. DOI: 10.1111/j.1468-2885.1992.tb00042.x.
 
 ## Revision History
+
+### 1.0.0-rc.2 — 2026-08-17
+- Replaced an independent definition of “safety” with the formal term “non-destructive segmentation.”
+- Clarified that the term does not mean absence of distress or guarantee psychological or clinical safety.
 
 ### 1.0.0-rc.1 — 2026-08-08
 - Promoted to Public Living Canonical Candidate at Gate 4.

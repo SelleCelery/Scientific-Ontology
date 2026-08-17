@@ -6,8 +6,8 @@
 > Scope: speech production / whole pressure / sequential decompression / non-destructive segmentation / self-monitoring / residual pressure
 > Language: Japanese authoritative; English commensuration available
 > Claim strength: S2-S3 / E1-E2 / U0 / P1-P2 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: 発話位相における位相依存的全体圧、逐次的除圧、残差保持切断、自己聴取の局所モデル
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
 > Public handling: 本稿は発話産出を物理量へ還元する理論ではない。発話以前の未分節状態が、言語・身体・関係の枠を通じて逐次的に分節され、表現済み部分と残差を分け、発話者自身の認識条件を更新する構造を記述する。
@@ -109,7 +109,7 @@
 
 本稿では、後者を**非破壊的分節**または**残差保持切断**と呼ぶ。
 
-「安全に圧を切り出す」とは、苦痛を避けることではない。スピーチだけで元の圧を置換せず、何が外へ出て、何が残り、どこへ戻れるかを保持することである。
+ここでいう非破壊的分節は、苦痛の回避や安全一般の定義ではない。スピーチだけで元の圧を置換せず、何が外へ出て、何が残り、どこへ戻れるかを保持する操作である。
 
 ## 5. 発話者は自分の最初の受け手である
 
@@ -197,7 +197,7 @@ Luhmannは通信を、内面内容の転送ではなく、情報、発話、理�
 |---|---|---|---|
 | 圧 | 発話を要求し、方向づける位相依存的な差分分布 | 物理圧力、単一感情、情報量 | 身体・感情・意味・関係圧の型分離 |
 | 全体 | 現在の認識相で統合的に感じられる未分節状態 | 宇宙的全体性、完全観測 | 背景化された圧、無意識、他者側履歴 |
-| 安全 | スピーチと残差を分け、返路を保存すること | 心理的無負荷、危険回避 | どこまで返路が保存されたかの判定 |
+| 非破壊的分節 | スピーチと残差を分け、返路を保存する切断 | 苦痛の不在、心理・臨床上の安全保証 | どこまで返路が保存されたかの判定 |
 | スピーチ | 文法枠を通じて外部化された発話単位 | 一般言語、意味全体 | 身振り・沈黙・媒体との境界 |
 
 ## 10.1 定義残渣
@@ -240,6 +240,10 @@ Luhmannは通信を、内面内容の転送ではなく、情報、発話、理�
 - Luhmann, N. (1992). “What Is Communication?” *Communication Theory*, 2(3), 251–259. DOI: 10.1111/j.1468-2885.1992.tb00042.x.
 
 ## Revision History / 改訂履歴
+
+### 1.0.0-rc.2 — 2026-08-17
+- 「安全」を独自定義せず、正式名を「非破壊的分節」へ統一。
+- 苦痛回避や心理・臨床上の安全保証ではないことを明記。
 
 ### 1.0.0-rc.1 — 2026-08-08
 - Gate 4でPublic Living Canonical Candidateへ昇格。

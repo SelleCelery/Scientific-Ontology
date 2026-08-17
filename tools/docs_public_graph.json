@@ -208,6 +208,12 @@
       "key": "cross-layer_return_paths"
     },
     {
+      "id": "concept:cross_grammatical_commensuration",
+      "type": "concept",
+      "key": "cross_grammatical_commensuration",
+      "canonical_owner": "doc:commensuration_cross_grammatical_collation"
+    },
+    {
       "id": "concept:document_position_map",
       "type": "concept",
       "key": "document_position_map"
@@ -1016,8 +1022,8 @@
       "key": "05_research_notes_language_meaning_and_communication_phase_studies_intension_extension_and_false_extension_ja",
       "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
       "title": {
-        "ja": "内包・外延・偽外延",
-        "en": "Intension, Extension, and False Extension"
+        "ja": "照合的内包・返路ある外延・偽外延",
+        "en": "Collational Intension, Return-Path Extension, and False Extension"
       },
       "layer": "05_Research_Notes",
       "state": "public",
@@ -1815,8 +1821,8 @@
       "key": "intension_extension_and_false_extension_en",
       "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
       "title": {
-        "ja": "内包・外延・偽外延",
-        "en": "Intension, Extension, and False Extension"
+        "ja": "照合的内包・返路ある外延・偽外延",
+        "en": "Collational Intension, Return-Path Extension, and False Extension"
       },
       "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
       "state": "public",
@@ -9523,18 +9529,137 @@
     },
     {
       "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "delegates",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "operational_port"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "delegates",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "cross_grammatical_commensuration"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "imports",
+      "to": "concept:cognitive_axis_formation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "imports",
+      "to": "concept:cross_grammatical_commensuration",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "imports",
+      "to": "concept:existence_phase_compression",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "imports",
+      "to": "concept:operational_discretization",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "imports",
+      "to": "concept:operational_port",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "imports",
+      "to": "concept:worldview_commensuration_protocol",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
       "relation": "links_to",
       "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
-          "locator": "L20"
+          "locator": "L22"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
-          "locator": "L520"
+          "locator": "L524"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+          "locator": "L24"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+          "locator": "L525"
         }
       ]
     },
@@ -9546,12 +9671,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
-          "locator": "L22"
+          "locator": "L26"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
-          "locator": "L521"
+          "locator": "L528"
         }
       ]
     },
@@ -9563,12 +9688,46 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
-          "locator": "L24"
+          "locator": "L28"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
-          "locator": "L522"
+          "locator": "L529"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "links_to",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+          "locator": "L217"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+          "locator": "L526"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+          "locator": "L217"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+          "locator": "L527"
         }
       ]
     },
@@ -9580,7 +9739,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
-          "locator": "L523"
+          "locator": "L530"
         }
       ]
     },
@@ -9593,6 +9752,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.boundary_diplomacy.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9605,6 +9769,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.gateway_capture.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9617,6 +9786,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.multi_port_potentiality.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9629,6 +9803,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.port_allocation.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9641,6 +9820,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.scoped_port_operation.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9657,6 +9841,153 @@
       ]
     },
     {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "returns_to",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.returns_to",
+          "detail": {
+            "payload": [
+              "translation residual or failed return path exposed by boundary operation"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "tests",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md].logical_contract.tests",
+          "detail": {
+            "relation": "organizational_implementation_test",
+            "evidence": "Allocated Ports retain responsibility, audit, stop conditions, and reopening routes."
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "delegates",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "cognitive_axis_formation"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "delegates",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "cross_grammatical_commensuration"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "imports",
+      "to": "concept:cognitive_axis_formation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "imports",
+      "to": "concept:cross_grammatical_commensuration",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "imports",
+      "to": "concept:worldview_commensuration_protocol",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L1009"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "links_to",
+      "to": "doc:03_tam_goodness_meaning_as_return_orbit",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L1012"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "links_to",
+      "to": "doc:04_applications_ai_adaptation_ai_boundary_interface_and_synchronous_understanding",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L1024"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "links_to",
+      "to": "doc:04_applications_ai_adaptation_ai_usefulness_as_a_boundary_function",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L1025"
+        }
+      ]
+    },
+    {
       "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
       "relation": "links_to",
       "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
@@ -9664,7 +9995,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
-          "locator": "L31"
+          "locator": "L1017"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L32"
         }
       ]
     },
@@ -9676,7 +10012,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
-          "locator": "L27"
+          "locator": "L1016"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L28"
         }
       ]
     },
@@ -9688,7 +10029,65 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
-          "locator": "L35"
+          "locator": "L1018"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L36"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "links_to",
+      "to": "doc:ai_adoption_collation_checklist",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L1023"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "links_to",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L1011"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L651"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L1010"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "links_to",
+      "to": "doc:specification_for_peace",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L1022"
         }
       ]
     },
@@ -9701,6 +10100,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.cognitive_field.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9713,6 +10117,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.cognitive_phase.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9725,6 +10134,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.operational_discretization.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9737,6 +10151,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.operational_port.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9753,6 +10172,105 @@
       ]
     },
     {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "returns_to",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.returns_to",
+          "detail": {
+            "payload": [
+              "discretization residual that changes cognitive-axis assumptions"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "tests",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md].logical_contract.tests",
+          "detail": {
+            "relation": "downstream_abstraction_test",
+            "evidence": "The downstream model imports operational discretization and Port without redefining their owners."
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "relation": "delegates",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "cognitive_axis_formation"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "relation": "delegates",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "operational_port"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "relation": "imports",
+      "to": "concept:cognitive_axis_formation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "relation": "imports",
+      "to": "concept:operational_discretization",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "relation": "imports",
+      "to": "concept:operational_port",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
       "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
       "relation": "links_to",
       "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
@@ -9760,12 +10278,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
-          "locator": "L20"
+          "locator": "L22"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
-          "locator": "L386"
+          "locator": "L393"
         }
       ]
     },
@@ -9777,12 +10295,29 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
-          "locator": "L22"
+          "locator": "L26"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
-          "locator": "L387"
+          "locator": "L395"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
+          "locator": "L24"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
+          "locator": "L394"
         }
       ]
     },
@@ -9794,12 +10329,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
-          "locator": "L24"
+          "locator": "L28"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
-          "locator": "L388"
+          "locator": "L396"
         }
       ]
     },
@@ -9811,7 +10346,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
-          "locator": "L389"
+          "locator": "L397"
         }
       ]
     },
@@ -9824,6 +10359,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.existence_phase.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9836,6 +10376,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.existence_phase_compression.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9848,6 +10393,11 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "concept_ownership.single_metric_compression.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -9860,6 +10410,39 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "relation": "returns_to",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.returns_to",
+          "detail": {
+            "payload": [
+              "compression loss that exposes a hidden cognitive-axis selection"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "relation": "tests",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md].logical_contract.tests",
+          "detail": {
+            "relation": "reopening_test",
+            "evidence": "Excluded existence phases remain available for holding, reallocation, and reopening."
+          }
         }
       ]
     },
@@ -9980,7 +10563,67 @@
     {
       "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
       "relation": "imports",
+      "to": "concept:boundary_diplomacy",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "relation": "imports",
+      "to": "concept:existence_phase_compression",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "relation": "imports",
       "to": "concept:forbidden_externalizations",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "relation": "imports",
+      "to": "concept:operational_discretization",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "relation": "imports",
+      "to": "concept:operational_port",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "relation": "imports",
+      "to": "concept:port_allocation",
       "provenance": [
         {
           "source_type": "manifest",
@@ -10033,12 +10676,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
-          "locator": "L21"
+          "locator": "L23"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
-          "locator": "L658"
+          "locator": "L662"
         }
       ]
     },
@@ -10050,17 +10693,34 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
+          "locator": "L29"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
+          "locator": "L607"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
+          "locator": "L665"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
           "locator": "L25"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
-          "locator": "L603"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
-          "locator": "L660"
+          "locator": "L663"
         }
       ]
     },
@@ -10072,17 +10732,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
-          "locator": "L23"
+          "locator": "L27"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
-          "locator": "L601"
+          "locator": "L605"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
-          "locator": "L659"
+          "locator": "L664"
         }
       ]
     },
@@ -10094,7 +10754,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
-          "locator": "L662"
+          "locator": "L667"
         }
       ]
     },
@@ -10106,7 +10766,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
-          "locator": "L661"
+          "locator": "L666"
         }
       ]
     },
@@ -10350,12 +11010,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L129"
+          "locator": "L131"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L62"
+          "locator": "L63"
         }
       ]
     },
@@ -10367,7 +11027,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L127"
+          "locator": "L128"
         },
         {
           "source_type": "markdown",
@@ -10384,7 +11044,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L120"
+          "locator": "L121"
         },
         {
           "source_type": "markdown",
@@ -10401,7 +11061,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L118"
+          "locator": "L119"
         },
         {
           "source_type": "markdown",
@@ -10418,7 +11078,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L119"
+          "locator": "L120"
         },
         {
           "source_type": "markdown",
@@ -10435,7 +11095,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L121"
+          "locator": "L122"
         },
         {
           "source_type": "markdown",
@@ -10452,12 +11112,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L134"
+          "locator": "L136"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L67"
+          "locator": "L68"
         }
       ]
     },
@@ -10469,7 +11129,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L120"
+          "locator": "L121"
         },
         {
           "source_type": "markdown",
@@ -10486,7 +11146,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L118"
+          "locator": "L119"
         },
         {
           "source_type": "markdown",
@@ -10498,12 +11158,36 @@
     {
       "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_readme",
       "relation": "links_to",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
+          "locator": "L62"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_readme",
+      "relation": "links_to",
+      "to": "doc:commensuration_cross_grammatical_collation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
+          "locator": "L130"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_readme",
+      "relation": "links_to",
       "to": "doc:compression_of_existence_phases_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L119"
+          "locator": "L120"
         },
         {
           "source_type": "markdown",
@@ -10520,7 +11204,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L128"
+          "locator": "L129"
         },
         {
           "source_type": "markdown",
@@ -10537,7 +11221,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L121"
+          "locator": "L122"
         },
         {
           "source_type": "markdown",
@@ -10554,12 +11238,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L133"
+          "locator": "L135"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/README.md",
-          "locator": "L66"
+          "locator": "L67"
         }
       ]
     },
@@ -10871,7 +11555,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L240"
+          "locator": "L242"
         }
       ]
     },
@@ -10883,7 +11567,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L246"
+          "locator": "L248"
         }
       ]
     },
@@ -10895,7 +11579,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L244"
+          "locator": "L246"
         }
       ]
     },
@@ -10907,7 +11591,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L266"
+          "locator": "L271"
         }
       ]
     },
@@ -10919,7 +11603,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L242"
+          "locator": "L244"
         }
       ]
     },
@@ -10931,7 +11615,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L243"
+          "locator": "L245"
         }
       ]
     },
@@ -10943,12 +11627,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L239"
+          "locator": "L241"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L245"
+          "locator": "L247"
         }
       ]
     },
@@ -10960,7 +11644,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L241"
+          "locator": "L243"
         }
       ]
     },
@@ -10972,7 +11656,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
-          "locator": "L266"
+          "locator": "L271"
         }
       ]
     },
@@ -10996,7 +11680,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
-          "locator": "L224"
+          "locator": "L226"
         }
       ]
     },
@@ -11008,7 +11692,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
-          "locator": "L223"
+          "locator": "L225"
         }
       ]
     },
@@ -11020,7 +11704,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
-          "locator": "L244"
+          "locator": "L250"
         }
       ]
     },
@@ -11032,7 +11716,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
-          "locator": "L222"
+          "locator": "L224"
         }
       ]
     },
@@ -11044,7 +11728,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
-          "locator": "L220"
+          "locator": "L222"
         }
       ]
     },
@@ -11056,7 +11740,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
-          "locator": "L225"
+          "locator": "L227"
         }
       ]
     },
@@ -11068,7 +11752,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
-          "locator": "L244"
+          "locator": "L250"
         }
       ]
     },
@@ -11080,7 +11764,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
-          "locator": "L221"
+          "locator": "L223"
         }
       ]
     },
@@ -11229,7 +11913,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md",
-          "locator": "L252"
+          "locator": "L256"
         }
       ]
     },
@@ -11282,7 +11966,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md",
-          "locator": "L252"
+          "locator": "L256"
         }
       ]
     },
@@ -15603,17 +16287,51 @@
     {
       "from": "doc:boundary_diplomacy_and_port_allocation_en",
       "relation": "links_to",
+      "to": "doc:cognitive_dynamics_communication_model_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
+          "locator": "L25"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
+          "locator": "L526"
+        }
+      ]
+    },
+    {
+      "from": "doc:boundary_diplomacy_and_port_allocation_en",
+      "relation": "links_to",
+      "to": "doc:commensuration_cross_grammatical_collation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
+          "locator": "L218"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
+          "locator": "L527"
+        }
+      ]
+    },
+    {
+      "from": "doc:boundary_diplomacy_and_port_allocation_en",
+      "relation": "links_to",
       "to": "doc:compression_of_existence_phases_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
-          "locator": "L23"
+          "locator": "L27"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
-          "locator": "L522"
+          "locator": "L529"
         }
       ]
     },
@@ -15625,12 +16343,29 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
-          "locator": "L21"
+          "locator": "L23"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
-          "locator": "L521"
+          "locator": "L525"
+        }
+      ]
+    },
+    {
+      "from": "doc:boundary_diplomacy_and_port_allocation_en",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
+          "locator": "L218"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
+          "locator": "L528"
         }
       ]
     },
@@ -15642,24 +16377,24 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
-          "locator": "L25"
+          "locator": "L29"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
-          "locator": "L523"
+          "locator": "L530"
         }
       ]
     },
     {
       "from": "doc:boundary_diplomacy_and_port_allocation_en",
       "relation": "links_to",
-      "to": "doc:specification_for_peace",
+      "to": "doc:specification_for_peace_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.en.md",
-          "locator": "L524"
+          "locator": "L531"
         }
       ]
     },
@@ -16079,7 +16814,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/CHANGELOG.md",
-          "locator": "L21"
+          "locator": "L46"
         }
       ]
     },
@@ -16749,7 +17484,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L1009"
+          "locator": "L1013"
         }
       ]
     },
@@ -16761,7 +17496,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L1021"
+          "locator": "L1025"
         }
       ]
     },
@@ -16773,29 +17508,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L1022"
-        }
-      ]
-    },
-    {
-      "from": "doc:cognitive_dynamics_communication_model_en",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L1014"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L32"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L712"
+          "locator": "L1026"
         }
       ]
     },
@@ -16814,34 +17527,51 @@
     {
       "from": "doc:cognitive_dynamics_communication_model_en",
       "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "to": "doc:ai_adoption_collation_checklist",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L1015"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L36"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L718"
+          "locator": "L1024"
         }
       ]
     },
     {
       "from": "doc:cognitive_dynamics_communication_model_en",
       "relation": "links_to",
-      "to": "doc:ai_adoption_collation_checklist",
+      "to": "doc:boundary_diplomacy_and_port_allocation_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L1020"
+          "locator": "L1018"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
+          "locator": "L33"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
+          "locator": "L715"
+        }
+      ]
+    },
+    {
+      "from": "doc:cognitive_dynamics_communication_model_en",
+      "relation": "links_to",
+      "to": "doc:commensuration_cross_grammatical_collation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
+          "locator": "L1012"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
+          "locator": "L652"
         }
       ]
     },
@@ -16853,17 +17583,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L1013"
+          "locator": "L1017"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L28"
+          "locator": "L29"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L698"
+          "locator": "L701"
         }
       ]
     },
@@ -16875,7 +17605,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L1007"
+          "locator": "L1010"
         }
       ]
     },
@@ -16887,19 +17617,41 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
-          "locator": "L1008"
+          "locator": "L1011"
         }
       ]
     },
     {
       "from": "doc:cognitive_dynamics_communication_model_en",
       "relation": "links_to",
-      "to": "doc:specification_for_peace",
+      "to": "doc:organizational_boundary_and_port_model_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
           "locator": "L1019"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
+          "locator": "L37"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
+          "locator": "L721"
+        }
+      ]
+    },
+    {
+      "from": "doc:cognitive_dynamics_communication_model_en",
+      "relation": "links_to",
+      "to": "doc:specification_for_peace_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.en.md",
+          "locator": "L1023"
         }
       ]
     },
@@ -16965,92 +17717,47 @@
     },
     {
       "from": "doc:commensuration_cross_grammatical_collation",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_linguistic_frame_differences_between_japanese_and_english_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
-          "locator": "L279"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation",
-      "relation": "links_to",
-      "to": "doc:90_repository_governance_publication_and_commensuration_policy",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
-          "locator": "L276"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation",
-      "relation": "links_to",
-      "to": "doc:90_repository_governance_translation_note",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
-          "locator": "L281"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation",
-      "relation": "links_to",
-      "to": "doc:ai_language_generation_grammatical_frames",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
-          "locator": "L280"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation",
-      "relation": "links_to",
-      "to": "doc:changelog",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
-          "locator": "L301"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation",
-      "relation": "links_to",
-      "to": "doc:grammar_meaning_pressure_channel",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
-          "locator": "L277"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation",
-      "relation": "links_to",
-      "to": "doc:meaning_collation_return_path",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
-          "locator": "L278"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation",
-      "relation": "links_to",
+      "relation": "delegates",
       "to": "doc:optional_axiom_modules_cognitive_bridge",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "worldview_commensuration_protocol"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "imports",
+      "to": "concept:worldview_commensuration_protocol",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L283"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
       "provenance": [
         {
           "source_type": "markdown",
@@ -17062,12 +17769,125 @@
     {
       "from": "doc:commensuration_cross_grammatical_collation",
       "relation": "links_to",
+      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_linguistic_frame_differences_between_japanese_and_english_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L280"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_publication_and_commensuration_policy",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L277"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_translation_note",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L284"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
+      "to": "doc:ai_language_generation_grammatical_frames",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L281"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
+      "to": "doc:changelog",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L308"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
+      "to": "doc:grammar_meaning_pressure_channel",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L278"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
+      "to": "doc:meaning_collation_return_path",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L279"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L285"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
       "to": "doc:return_intake_log",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
-          "locator": "L301"
+          "locator": "L308"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "owns",
+      "to": "concept:cross_grammatical_commensuration",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "concept_ownership.cross_grammatical_commensuration.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md].logical_contract.owns"
         }
       ]
     },
@@ -17080,6 +17900,39 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "returns_to",
+      "to": "doc:90_repository_governance_publication_and_commensuration_policy",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md].logical_contract.returns_to",
+          "detail": {
+            "payload": [
+              "policy-level conflict exposed by grammatical transformation"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "tests",
+      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_linguistic_frame_differences_between_japanese_and_english_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md].logical_contract.tests",
+          "detail": {
+            "relation": "cross_grammar_test",
+            "evidence": "Core, claim strength, non-claim boundary, residual, and return path survive movement between grammatical frames."
+          }
         }
       ]
     },
@@ -17139,12 +17992,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
-          "locator": "L277"
+          "locator": "L278"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
-          "locator": "L28"
+          "locator": "L29"
         }
       ]
     },
@@ -17156,7 +18009,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
-          "locator": "L282"
+          "locator": "L285"
         }
       ]
     },
@@ -17168,7 +18021,19 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
-          "locator": "L281"
+          "locator": "L282"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation_en",
+      "relation": "links_to",
+      "to": "doc:boundary_diplomacy_and_port_allocation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
+          "locator": "L284"
         }
       ]
     },
@@ -17180,50 +18045,14 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
-          "locator": "L302"
+          "locator": "L309"
         }
       ]
     },
     {
       "from": "doc:commensuration_cross_grammatical_collation_en",
       "relation": "links_to",
-      "to": "doc:grammar_meaning_pressure_channel_en",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
-          "locator": "L278"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation_en",
-      "relation": "links_to",
-      "to": "doc:linguistic_frame_differences_between_japanese_and_english_en",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
-          "locator": "L280"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation_en",
-      "relation": "links_to",
-      "to": "doc:meaning_collation_return_path_en",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
-          "locator": "L279"
-        }
-      ]
-    },
-    {
-      "from": "doc:commensuration_cross_grammatical_collation_en",
-      "relation": "links_to",
-      "to": "doc:optional_axiom_modules_cognitive_bridge_en",
+      "to": "doc:cognitive_dynamics_communication_model_en",
       "provenance": [
         {
           "source_type": "markdown",
@@ -17235,12 +18064,60 @@
     {
       "from": "doc:commensuration_cross_grammatical_collation_en",
       "relation": "links_to",
+      "to": "doc:grammar_meaning_pressure_channel_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
+          "locator": "L279"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation_en",
+      "relation": "links_to",
+      "to": "doc:linguistic_frame_differences_between_japanese_and_english_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
+          "locator": "L281"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation_en",
+      "relation": "links_to",
+      "to": "doc:meaning_collation_return_path_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
+          "locator": "L280"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation_en",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
+          "locator": "L286"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation_en",
+      "relation": "links_to",
       "to": "doc:return_intake_log_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
-          "locator": "L302"
+          "locator": "L309"
         }
       ]
     },
@@ -17324,7 +18201,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L267"
+          "locator": "L272"
         }
       ]
     },
@@ -17336,7 +18213,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L247"
+          "locator": "L249"
         }
       ]
     },
@@ -17348,7 +18225,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L241"
+          "locator": "L243"
         }
       ]
     },
@@ -17360,7 +18237,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L245"
+          "locator": "L247"
         }
       ]
     },
@@ -17372,7 +18249,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L243"
+          "locator": "L245"
         }
       ]
     },
@@ -17384,7 +18261,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L244"
+          "locator": "L246"
         }
       ]
     },
@@ -17396,12 +18273,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L240"
+          "locator": "L242"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L246"
+          "locator": "L248"
         }
       ]
     },
@@ -17413,7 +18290,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L242"
+          "locator": "L244"
         }
       ]
     },
@@ -17425,7 +18302,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
-          "locator": "L267"
+          "locator": "L272"
         }
       ]
     },
@@ -17492,23 +18369,6 @@
     {
       "from": "doc:compression_of_existence_phases_en",
       "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
-          "locator": "L23"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
-          "locator": "L388"
-        }
-      ]
-    },
-    {
-      "from": "doc:compression_of_existence_phases_en",
-      "relation": "links_to",
       "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
       "provenance": [
         {
@@ -17521,7 +18381,24 @@
     {
       "from": "doc:compression_of_existence_phases_en",
       "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "to": "doc:boundary_diplomacy_and_port_allocation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
+          "locator": "L27"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
+          "locator": "L396"
+        }
+      ]
+    },
+    {
+      "from": "doc:compression_of_existence_phases_en",
+      "relation": "links_to",
+      "to": "doc:cognitive_dynamics_communication_model_en",
       "provenance": [
         {
           "source_type": "markdown",
@@ -17531,7 +18408,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
-          "locator": "L389"
+          "locator": "L395"
         }
       ]
     },
@@ -17543,24 +18420,41 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
-          "locator": "L21"
+          "locator": "L23"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
-          "locator": "L387"
+          "locator": "L394"
         }
       ]
     },
     {
       "from": "doc:compression_of_existence_phases_en",
       "relation": "links_to",
-      "to": "doc:specification_for_peace",
+      "to": "doc:organizational_boundary_and_port_model_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
-          "locator": "L390"
+          "locator": "L29"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
+          "locator": "L397"
+        }
+      ]
+    },
+    {
+      "from": "doc:compression_of_existence_phases_en",
+      "relation": "links_to",
+      "to": "doc:specification_for_peace_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.en.md",
+          "locator": "L398"
         }
       ]
     },
@@ -19298,7 +20192,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
-          "locator": "L223"
+          "locator": "L225"
         }
       ]
     },
@@ -19310,7 +20204,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
-          "locator": "L222"
+          "locator": "L224"
         }
       ]
     },
@@ -19322,7 +20216,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
-          "locator": "L243"
+          "locator": "L249"
         }
       ]
     },
@@ -19334,7 +20228,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
-          "locator": "L221"
+          "locator": "L223"
         }
       ]
     },
@@ -19346,7 +20240,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
-          "locator": "L219"
+          "locator": "L221"
         }
       ]
     },
@@ -19358,7 +20252,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
-          "locator": "L224"
+          "locator": "L226"
         }
       ]
     },
@@ -19370,7 +20264,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
-          "locator": "L243"
+          "locator": "L249"
         }
       ]
     },
@@ -19382,7 +20276,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
-          "locator": "L220"
+          "locator": "L222"
         }
       ]
     },
@@ -20259,7 +21153,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md",
-          "locator": "L385"
+          "locator": "L389"
         }
       ]
     },
@@ -20317,7 +21211,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md",
-          "locator": "L385"
+          "locator": "L389"
         }
       ]
     },
@@ -20413,7 +21307,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.en.md",
-          "locator": "L386"
+          "locator": "L390"
         }
       ]
     },
@@ -20495,7 +21389,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.en.md",
-          "locator": "L386"
+          "locator": "L390"
         }
       ]
     },
@@ -22147,7 +23041,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
-          "locator": "L666"
+          "locator": "L671"
         }
       ]
     },
@@ -22159,17 +23053,34 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
+          "locator": "L29"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
+          "locator": "L611"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
+          "locator": "L669"
+        }
+      ]
+    },
+    {
+      "from": "doc:organizational_boundary_and_port_model_en",
+      "relation": "links_to",
+      "to": "doc:cognitive_dynamics_communication_model_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
           "locator": "L25"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
-          "locator": "L607"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
-          "locator": "L664"
+          "locator": "L667"
         }
       ]
     },
@@ -22181,17 +23092,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
-          "locator": "L23"
+          "locator": "L27"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
-          "locator": "L605"
+          "locator": "L609"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
-          "locator": "L663"
+          "locator": "L668"
         }
       ]
     },
@@ -22203,24 +23114,24 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
-          "locator": "L21"
+          "locator": "L23"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
-          "locator": "L662"
+          "locator": "L666"
         }
       ]
     },
     {
       "from": "doc:organizational_boundary_and_port_model_en",
       "relation": "links_to",
-      "to": "doc:specification_for_peace",
+      "to": "doc:specification_for_peace_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.en.md",
-          "locator": "L665"
+          "locator": "L670"
         }
       ]
     },
@@ -23485,7 +24396,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md",
-          "locator": "L116"
+          "locator": "L178"
         }
       ]
     },
@@ -23569,7 +24480,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.en.md",
-          "locator": "L117"
+          "locator": "L179"
         }
       ]
     },
@@ -26349,13 +27260,64 @@
     },
     {
       "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "delegates",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "cross_grammatical_commensuration"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "imports",
+      "to": "concept:cross_grammatical_commensuration",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "imports",
+      "to": "concept:operational_discretization",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "imports",
+      "to": "concept:worldview_commensuration_protocol",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
       "relation": "links_to",
       "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L634"
+          "locator": "L635"
         }
       ]
     },
@@ -26379,7 +27341,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L630"
+          "locator": "L631"
         }
       ]
     },
@@ -26391,12 +27353,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L636"
+          "locator": "L637"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L660"
+          "locator": "L665"
         },
         {
           "source_type": "markdown",
@@ -26413,38 +27375,14 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L629"
+          "locator": "L630"
         }
       ]
     },
     {
       "from": "doc:semantic_network_topology_commensuration_bandwidth",
       "relation": "links_to",
-      "to": "doc:grammar_meaning_pressure_channel",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L631"
-        }
-      ]
-    },
-    {
-      "from": "doc:semantic_network_topology_commensuration_bandwidth",
-      "relation": "links_to",
-      "to": "doc:meaning_collation_return_path",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L632"
-        }
-      ]
-    },
-    {
-      "from": "doc:semantic_network_topology_commensuration_bandwidth",
-      "relation": "links_to",
-      "to": "doc:optional_axiom_modules_cognitive_bridge",
+      "to": "doc:commensuration_cross_grammatical_collation",
       "provenance": [
         {
           "source_type": "markdown",
@@ -26456,17 +27394,53 @@
     {
       "from": "doc:semantic_network_topology_commensuration_bandwidth",
       "relation": "links_to",
+      "to": "doc:grammar_meaning_pressure_channel",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
+          "locator": "L632"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "links_to",
+      "to": "doc:meaning_collation_return_path",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
+          "locator": "L633"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
+          "locator": "L629"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "links_to",
       "to": "doc:return_intake_log",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L637"
+          "locator": "L638"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L660"
+          "locator": "L665"
         },
         {
           "source_type": "markdown",
@@ -26483,7 +27457,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
-          "locator": "L633"
+          "locator": "L634"
         }
       ]
     },
@@ -26496,6 +27470,39 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "returns_to",
+      "to": "doc:scientific_ontology_concept_network",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md].logical_contract.returns_to",
+          "detail": {
+            "payload": [
+              "ownership conflict or unplaced network residual"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "tests",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md].logical_contract.tests",
+          "detail": {
+            "relation": "claim_phase_commensuration_test",
+            "evidence": "Movement among public operation, depth hypothesis, and private rendering retains phase labels and non-claim boundaries."
+          }
         }
       ]
     },
@@ -26579,7 +27586,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L634"
+          "locator": "L635"
         }
       ]
     },
@@ -26591,12 +27598,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L636"
+          "locator": "L637"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L660"
+          "locator": "L665"
         },
         {
           "source_type": "markdown",
@@ -26613,7 +27620,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L629"
+          "locator": "L630"
         }
       ]
     },
@@ -26632,31 +27639,7 @@
     {
       "from": "doc:semantic_network_topology_commensuration_bandwidth_en",
       "relation": "links_to",
-      "to": "doc:grammar_meaning_pressure_channel_en",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L631"
-        }
-      ]
-    },
-    {
-      "from": "doc:semantic_network_topology_commensuration_bandwidth_en",
-      "relation": "links_to",
-      "to": "doc:meaning_collation_return_path_en",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L632"
-        }
-      ]
-    },
-    {
-      "from": "doc:semantic_network_topology_commensuration_bandwidth_en",
-      "relation": "links_to",
-      "to": "doc:optional_axiom_modules_cognitive_bridge_en",
+      "to": "doc:commensuration_cross_grammatical_collation_en",
       "provenance": [
         {
           "source_type": "markdown",
@@ -26668,17 +27651,53 @@
     {
       "from": "doc:semantic_network_topology_commensuration_bandwidth_en",
       "relation": "links_to",
+      "to": "doc:grammar_meaning_pressure_channel_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
+          "locator": "L632"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth_en",
+      "relation": "links_to",
+      "to": "doc:meaning_collation_return_path_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
+          "locator": "L633"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth_en",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
+          "locator": "L629"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth_en",
+      "relation": "links_to",
       "to": "doc:return_intake_log_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L637"
+          "locator": "L638"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L660"
+          "locator": "L665"
         },
         {
           "source_type": "markdown",
@@ -26695,7 +27714,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L633"
+          "locator": "L634"
         }
       ]
     },
@@ -26707,7 +27726,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
-          "locator": "L630"
+          "locator": "L631"
         }
       ]
     },
@@ -27129,7 +28148,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.en.md",
-          "locator": "L251"
+          "locator": "L255"
         }
       ]
     },
@@ -27206,7 +28225,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.en.md",
-          "locator": "L251"
+          "locator": "L255"
         }
       ]
     },
