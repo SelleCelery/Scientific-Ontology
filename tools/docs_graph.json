@@ -4,7 +4,7 @@
     "manifest_sha256": "98c573a8a45a95891bff037cd7532a660cf82560958b994ed0216f1b3b111da5",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "graph_config_sha256": "e373fb45a782c8c0d0a3ae3998b757552b32053a3d67a5ac803776677721b4a7",
-    "visibility_profile": "preview",
+    "visibility_profile": "public",
     "glossary_sha256": "175b466022ff18f2f87cb92d6e8dd2b0342bf8f7df8ceb87bea8886a131a85b4",
     "system_map_sha256": "38912a119cddda89d1998cd8aa978d605661c2841aee3b0331c6251fcded64b8",
     "concept_network_sha256": "857555356a7f73bd2e909f24b645dab9bb29c6bfa9e626060f9b3121552ece3a"

@@ -3,7 +3,7 @@
   "search_spec_version": "0.2",
   "source": {
     "coverage": "full-public-inventory-with-provisional-registration",
-    "visibility_profile": "preview",
+    "visibility_profile": "public",
     "catalog_mode": "single_manifest_registered_plus_provisional",
     "registered_documents": 28,
     "provisional_documents": 100,
