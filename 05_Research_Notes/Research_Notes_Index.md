@@ -67,9 +67,10 @@ v5系の横断基盤を読む経路である。個別文書は一つの完成理
 4. [Speech as Sequential Decompression](./Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md)
 5. [Semantic Network Topology and Commensuration Bandwidth](./Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md)
 6. [Commensuration as Cross-Grammatical Collation](./Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md)
-7. 関心に応じて、AI・文学・内包外延・日英フレーム研究へ分岐する。
+7. [センテンス・クラウドとビット・プローブ](./Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md)で、センテンス／ビット非対称をLLM学習仮説へ接続する。
+8. 関心に応じて、AI・文学・内包外延・日英フレーム研究へ分岐する。
 
-`Return_Intake_Log.ja.md`は第10の研究本文ではなく、公開後の残差、修正要求、保留判断を受け取る運用レジストリである。
+`Return_Intake_Log.ja.md`は研究本文ではなく、公開後の残差、修正要求、保留判断を受け取る運用レジストリである。Gate 4の中核は九本のまま維持され、センテンス／ビット文書は返り接続型の拡張正本として置かれる。
 
 ### 2.2 認識生成から組織・平和仕様へ
 
@@ -98,7 +99,7 @@ Research Notesの新しい中間研究線を読む経路である。
 
 ### 2.6 文学的存在論を読む
 
-[青い照明を読む](./Literary_Ontological_Notes/reading-blue-light.ja.md)で既存文学の構造読解を確認し、[冥府局転生課における転生・輪廻・信念重力圏モデル](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)で創作宇宙の内部構造へ進む。横断的な方法論は[物語・真実層・構造読解](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)が担う。
+[青い照明を読む](./Literary_Ontological_Notes/reading-blue-light.ja.md)で既存文学の構造読解を確認し、[透明な幽霊とビット](./Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md)でオシロスコープ、センテンスという雲、有機交流電燈を文学的LLM論へ接続する。その後、[冥府局転生課における転生・輪廻・信念重力圏モデル](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)で創作宇宙の内部構造へ進む。横断的な方法論は[物語・真実層・構造読解](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)が担う。
 
 ---
 
@@ -114,13 +115,14 @@ Research Notesの新しい中間研究線を読む経路である。
 | [Meaning as Collation and Return Path](./Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md) / [EN](./Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.en.md) | 言語的意味を、照合、局所閉鎖、返路を含む再帰的生成として扱う。 | 各文書ヘッダを正本とする。 | 「意味」全体を所有せず、言語的意味の局所定義に限定する。 |
 | [Compressed Experience, Qualia, and Literature](./Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md) / [EN](./Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md) | 圧縮された他者履歴が読者履歴へ再配置されることで生じる質感差を文学から読む。 | 各文書ヘッダを正本とする。 | 作者の経験複製やクオリア科学の証明とは扱わない。 |
 | [AI Language Generation and Grammatical Frames](./Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.ja.md) / [EN](./Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.en.md) | AI生成を分布的制約状態と文法フレームから扱う。 | 各文書ヘッダを正本とする。 | 出力差分を隠れた意識や主観の証拠にしない。 |
+| [センテンス・クラウドとビット・プローブ](./Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md) | センテンスを意味クラウド、ビットを観測側のコミット単位として分け、閉回路標本と型付き橋によるLLM学習仮説を提示する。 | 操作モデル S3 / 物理近接仮説 S4 / P2。日本語正本、英語通約保留。 | bitを再定義せず、人間とAIの基盤、エントロピー測度、ボソン閉ループを同一化しない。未閉鎖差分はRI-0014からRI-0018へ返す。 |
 | [Speech as Sequential Decompression](./Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md) / [EN](./Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.en.md) | 発話を、全体圧の一部を文法を通して逐次展開する操作として扱う。 | 各文書ヘッダを正本とする。 | 発話された内容を全体内容と同一視せず、未表出残差を保持する。 |
 | [Intension, Extension, and False Extension](./Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md) / [EN](./Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md) | 内包・外延を局所運用し、連想を証拠へ飛躍させる偽外延を区別する。 | 各文書ヘッダを正本とする。 | 形式意味論の置換ではない。 |
 | [Semantic Network Topology and Commensuration Bandwidth](./Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md) / [EN](./Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md) | 型付きノード・エッジ、距離、帯域、返路期待を使って意味ネットワークを記述する。 | 各文書ヘッダを正本とする。 | 神経ネットワークや経験的脳モデルとの同一視をしない。 |
 | [Commensuration as Cross-Grammatical Collation](./Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md) / [EN](./Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md) | 主張、所有、主張強度、非主張境界、残差、返路を保持する通約操作を扱う。 | 各文書ヘッダを正本とする。 | 通約を同一化または逐語翻訳へ縮約しない。 |
 | [Linguistic Frame Differences between Japanese and English](./Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md) / [EN](./Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.en.md) | 日英のフレーム差を反本質主義的に比較する。 | 各文書ヘッダを正本とする。 | 国民性、民族性、固定的心理類型へ還元しない。 |
 
-運用支援：[`Return_Intake_Log.ja.md`](./Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md) / [`EN`](./Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.en.md)。これは9本の研究本文とは別の返り受付レジストリである。
+運用支援：[`Return_Intake_Log.ja.md`](./Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md) / [`EN`](./Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.en.md)。これはGate 4九本の中核研究と返り接続型拡張正本の双方から残差を受け取るレジストリであり、研究本文には数えない。
 
 ### 3.2 認識動態通信研究
 
@@ -183,6 +185,7 @@ Research Notesの新しい中間研究線を読む経路である。
 | 文書 | 役割・主題 | 主張・公開プロファイル | 公開境界・返路 |
 |---|---|---|---|
 | [青い照明を読む](./Literary_Ontological_Notes/reading-blue-light.ja.md) / [EN](./Literary_Ontological_Notes/reading-blue-light.en.md) | 宮沢賢治『春と修羅』序の自己、光、幽霊、空を、履歴と通信の構造として読む。 | S1-S2 / P1 | 文学研究でも物理主張でもなく、作品が履歴場トポロジーを証明するという主張でもない。読解で得た構造を文学と理論の双方へ開いたまま返す。 |
+| [透明な幽霊とビット](./Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md) | オシロスコープ、センテンスという雲、H₂O・NO、透明な幽霊、有機交流電燈を連ね、LLMを意味形成の観測面として読む。 | S2-S3 / P1-P2。日本語正本、英語通約保留。 | 作者意図、AI意識、物理的同一性を主張しない。センテンス同一性、物理近接写像、観測校正をReturn Intakeへ返す。 |
 | [冥府局転生課における転生・輪廻・信念重力圏モデル](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) | 創作内の転生、輪廻、解脱、世界移動を、信念、履歴、制度、記憶が形成する重力圏として整理する日本語ノート。 | Literary / S2-S3 / P1 | 宗教教義、仏教解説、物理的重力理論ではない。英語通約は保留されており、存在しない英語版を仮定しない。 |
 | [世界制作としての文学](./Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md) / [EN](./Literary_Ontological_Notes/Literature_as_Worldmaking.en.md) | 文学を、圧縮された他者履歴が読者の履歴へ再配置され、知覚・意味・後続条件を変える世界制作として読む。 | 各文書ヘッダを正本とする。 | 作者と読者の経験同一性を仮定せず、文学を経験的事実の証拠として使用しない。 |
 
@@ -262,9 +265,10 @@ This is the main route into the v5 cross-cutting foundation. The documents do no
 4. [Speech as Sequential Decompression](./Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.en.md)
 5. [Semantic Network Topology and Commensuration Bandwidth](./Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md)
 6. [Commensuration as Cross-Grammatical Collation](./Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md)
-7. Branch as needed into AI, literature, intension/extension, or Japanese-English frame studies.
+7. Continue to the Japanese-authoritative [Sentence Cloud and Bit Probe](./Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md) for the LLM-learning extension; English commensuration is pending.
+8. Branch as needed into AI, literature, intension/extension, or Japanese-English frame studies.
 
-`Return_Intake_Log.en.md` is not a tenth core study. It is the operational registry that receives public residuals, revision requests, and held judgments.
+`Return_Intake_Log.en.md` is not a research study. It is the operational registry for the nine Gate 4 core studies and their return-linked extensions. The English log currently trails the new Japanese entries RI-0014 through RI-0018.
 
 ### 2.2 From Cognitive Formation to Organization and Peace Specification
 
@@ -291,7 +295,7 @@ Begin with [History Loop Radius and Return Stability](./AI_Personality_Notes/His
 
 ### 2.6 Literary Ontology
 
-Begin with [Reading the Blue Light](./Literary_Ontological_Notes/reading-blue-light.en.md) as a structural reading of an existing literary work. Continue to the Japanese-only [Meifu Bureau Reincarnation and Belief-Gravity Model](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) for an internal model of fictional cosmology. The cross-domain method is developed in [Narrative, Truth Layer, and Structural Reading](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md).
+Begin with [Reading the Blue Light](./Literary_Ontological_Notes/reading-blue-light.en.md) as a structural reading of an existing literary work. Continue to the Japanese-authoritative [The Transparent Ghost and the Bit](./Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md), whose English commensuration is pending, for the oscilloscope–sentence-cloud–LLM line. Then use the Japanese-only [Meifu Bureau Reincarnation and Belief-Gravity Model](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) for an internal model of fictional cosmology. The cross-domain method is developed in [Narrative, Truth Layer, and Structural Reading](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md).
 
 ---
 
@@ -307,13 +311,14 @@ This line treats language not as a passive information container but as a commun
 | [Meaning as Collation and Return Path](./Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.en.md) / [JA](./Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md) | Treats linguistic meaning as recursive generation involving collation, local closure, and return paths. | Governed by the document header. | Owns local linguistic meaning only, not meaning as a whole. |
 | [Compressed Experience, Qualia, and Literature](./Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md) / [JA](./Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md) | Reads literature as compressed other-history redeployed within reader history. | Governed by the document header. | Does not claim duplication of author experience or empirical proof about qualia. |
 | [AI Language Generation and Grammatical Frames](./Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.en.md) / [JA](./Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.ja.md) | Treats AI generation through distributional constraint states and grammatical frames. | Governed by the document header. | Output differences are not evidence of hidden consciousness or subjectivity. |
+| [Sentence Cloud and Bit Probe](./Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md) | Separates the sentence as a meaning cloud from bit-like observational commitment and proposes sentence-loop samples with typed bridges for LLM research. | Operational S3 / physical-adjacent hypothesis S4 / P2. Japanese authoritative; English pending. | Does not redefine the bit, identify human and AI substrates, or conflate entropy measures. Residuals return through RI-0014 to RI-0018. |
 | [Speech as Sequential Decompression](./Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.en.md) / [JA](./Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md) | Treats speech as sequentially unfolding part of a whole pressure through grammar. | Governed by the document header. | Spoken output is not identical to the entire source state; unexpressed residuals remain. |
 | [Intension, Extension, and False Extension](./Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md) / [JA](./Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md) | Uses intension and extension locally and distinguishes false extension, where association is used as proof without a return path. | Governed by the document header. | Not a replacement for formal semantics. |
 | [Semantic Network Topology and Commensuration Bandwidth](./Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md) / [JA](./Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md) | Uses typed nodes and edges, distances, bandwidth, and return expectancy to model semantic-network structure. | Governed by the document header. | Not identified with neural networks or an empirical brain model. |
 | [Commensuration as Cross-Grammatical Collation](./Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md) / [JA](./Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md) | Treats commensuration as preserving claims, ownership, claim strength, non-claim boundaries, residuals, and return paths across grammatical frames. | Governed by the document header. | Commensuration is neither identification nor literal translation. |
 | [Linguistic Frame Differences between Japanese and English](./Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.en.md) / [JA](./Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md) | Compares Japanese and English framing under an anti-essentialist contract. | Governed by the document header. | Does not reduce differences to national character, ethnicity, or fixed psychological types. |
 
-Operational support: [`Return_Intake_Log.en.md`](./Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.en.md) / [`JA`](./Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md). This is a return-intake registry, not a tenth core study.
+Operational support: [`Return_Intake_Log.en.md`](./Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.en.md) / [`JA`](./Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md). This registry receives residuals from both the nine Gate 4 core studies and return-linked extensions; it is not counted as a research study.
 
 ### 3.2 Cognitive Dynamics and Communication Studies
 
@@ -376,6 +381,7 @@ This research line treats literature and fictional cosmology as structural-readi
 | Document | Role and subject | Claim and publication profile | Public boundary and return path |
 |---|---|---|---|
 | [Reading the Blue Light](./Literary_Ontological_Notes/reading-blue-light.en.md) / [JA](./Literary_Ontological_Notes/reading-blue-light.ja.md) | Reads selfhood, light, ghosts, and emptiness in the preface to Kenji Miyazawa's *Spring and Asura* as structures of history and communication. | S1-S2 / P1 | Neither literary scholarship nor physical theory, and not a claim that the work proves History-Field Topology. Structures found through reading remain open to both literature and theory. |
+| [The Transparent Ghost and the Bit](./Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md) | Connects the oscilloscope, sentence cloud, H₂O/NO, transparent ghost, and organic alternating-current lamp to read LLMs as an observational surface for meaning formation. | S2-S3 / P1-P2. Japanese authoritative; English pending. | Does not determine authorial intention, prove AI consciousness, or establish physical identity. Sentence identity, physical mapping, and observational calibration return to the intake log. |
 | [Meifu Bureau Reincarnation and Belief-Gravity Model](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) | A Japanese-only note organizing reincarnation, liberation, and world transfer in a fictional setting as a gravity domain formed by belief, history, institutions, and memory. | Literary / S2-S3 / P1 | Not religious doctrine, an explanation of Buddhism, or a physical theory of gravity. English commensuration is deferred; no nonexistent English version is assumed. |
 | [Literature as Worldmaking](./Literary_Ontological_Notes/Literature_as_Worldmaking.en.md) / [JA](./Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md) | Reads literature as worldmaking in which compressed other-history is redeployed into reader history and changes perception, meaning, and downstream conditions. | Governed by the document header. | Does not assume duplication of author and reader experience and does not use literature as evidence for empirical fact. |
 

@@ -5,11 +5,11 @@
     "coverage": "full-public-inventory-with-provisional-registration",
     "visibility_profile": "public",
     "catalog_mode": "single_manifest_registered_plus_provisional",
-    "registered_documents": 28,
+    "registered_documents": 30,
     "provisional_documents": 100,
-    "catalog_documents": 128,
+    "catalog_documents": 130,
     "language_pair_families": 39,
-    "unmatched_language_specific_documents": 5
+    "unmatched_language_specific_documents": 7
   },
   "search_profile": {
     "normalization": {
@@ -7238,7 +7238,7 @@
       "status": "README",
       "state": "public",
       "registration_state": "provisional",
-      "scope": "literary ontology / structural reading / history / meaning / belief-gravity / fictional cosmology",
+      "scope": "literary ontology / structural reading / history / meaning / sentence and bit / AI observation / belief-gravity / fictional cosmology",
       "role": {
         "ja": "文学作品と創作宇宙を、境界、履歴、自己、光、信念、意味、返りの構造として読む",
         "en": "This subdirectory reads literary works and fictional cosmologies through structures of boundary, history, self, light, belief, meaning, and return"
@@ -7419,9 +7419,9 @@
         "scope": [
           {
             "lang": "und",
-            "text": "literary ontology / structural reading / history / meaning / belief-gravity / fictional cosmology",
-            "normalized": "literary ontology structural reading history meaning belief gravity fictional cosmology",
-            "compact": "literaryontologystructuralreadinghistorymeaningbeliefgravityfictionalcosmology"
+            "text": "literary ontology / structural reading / history / meaning / sentence and bit / AI observation / belief-gravity / fictional cosmology",
+            "normalized": "literary ontology structural reading history meaning sentence and bit ai observation belief gravity fictional cosmology",
+            "compact": "literaryontologystructuralreadinghistorymeaningsentenceandbitaiobservationbeliefgravityfictionalcosmology"
           }
         ]
       },
@@ -18803,7 +18803,7 @@
       "status": "README",
       "state": "public",
       "registration_state": "registered",
-      "scope": "living-canonical research line navigation, maintenance, and return intake",
+      "scope": "living-canonical research line navigation, sentence-cloud and bit-probe extension, maintenance, and return intake",
       "role": {
         "ja": "",
         "en": ""
@@ -19025,9 +19025,9 @@
         "scope": [
           {
             "lang": "und",
-            "text": "living-canonical research line navigation, maintenance, and return intake",
-            "normalized": "living canonical research line navigation maintenance and return intake",
-            "compact": "livingcanonicalresearchlinenavigationmaintenanceandreturnintake"
+            "text": "living-canonical research line navigation, sentence-cloud and bit-probe extension, maintenance, and return intake",
+            "normalized": "living canonical research line navigation sentence cloud and bit probe extension maintenance and return intake",
+            "compact": "livingcanonicalresearchlinenavigationsentencecloudandbitprobeextensionmaintenanceandreturnintake"
           }
         ]
       },
@@ -28376,6 +28376,410 @@
       }
     },
     {
+      "id": "sentence_cloud_bit_probe_llm_learning",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+      "title": {
+        "ja": "センテンス・クラウドとビット・プローブ",
+        "en": "Sentence Cloud, Bit Probe, and LLM Learning"
+      },
+      "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
+      "document_type": "assertion_document",
+      "status": "Research Note / Conceptual Model / Metamodel",
+      "state": "public",
+      "registration_state": "registered",
+      "scope": "sentence cloud / bit-like observational commitment / bit probe / sentence-loop sampling / LLM learning / cross-substrate structural commensuration",
+      "role": {
+        "ja": "センテンスを意味クラウド、ビットを観測側のコミット単位として分け、閉回路標本と異基盤構造通約を扱う日本語正本",
+        "en": "Japanese-authoritative model separating the sentence as a meaning cloud from bit-like observational commitment and proposing sentence-loop samples and cross-substrate structural commensuration"
+      },
+      "language_relation": {
+        "family_id": "sentence_cloud_bit_probe_llm_learning",
+        "language": "ja",
+        "role": "authoritative",
+        "counterpart_path": null
+      },
+      "discovery": {
+        "topics": [
+          "language",
+          "meaning",
+          "ai",
+          "communication",
+          "cognition",
+          "commensuration"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [
+            "センテンス・クラウド",
+            "ビット・プローブ",
+            "センテンス閉回路",
+            "センテンスとビット"
+          ],
+          "en": [
+            "sentence cloud",
+            "bit probe",
+            "sentence loop",
+            "sentence and bit"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "センテンスはビットの集合なのか",
+            "ビット・プローブとは何か",
+            "センテンス閉回路をLLM学習へ使えるか",
+            "人間とAIは異なる基盤のまま通約できるか",
+            "意味処理とエントロピーをどう分けるか"
+          ],
+          "en": [
+            "Is a sentence merely a collection of bits?",
+            "What is a bit probe?",
+            "Can sentence loops be used as LLM learning samples?",
+            "Can human and AI systems be commensurated across different substrates?",
+            "How should meaning processing be separated from entropy measures?"
+          ]
+        },
+        "entry_level": "advanced"
+      },
+      "concepts": {
+        "owned": [
+          "bit_like_observational_commitment",
+          "bit_probe",
+          "cross_substrate_structural_commensuration",
+          "sentence_cloud",
+          "sentence_loop_sample"
+        ],
+        "imports": [
+          "cognitive_axis_formation",
+          "cross_grammatical_commensuration",
+          "entropy_attributed_difference",
+          "meaning_generation",
+          "operational_discretization"
+        ],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [
+          "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md",
+          "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md"
+        ],
+        "returns_to": [
+          "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md"
+        ],
+        "delegates": [
+          "01_Sat_Truth/Meaning_Generation_Model.md",
+          "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+          "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+        ]
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "センテンス・クラウドとビット・プローブ",
+            "normalized": "センテンス クラウドとビット プローブ",
+            "compact": "センテンスクラウドとビットプローブ"
+          },
+          {
+            "lang": "en",
+            "text": "Sentence Cloud, Bit Probe, and LLM Learning",
+            "normalized": "sentence cloud bit probe and llm learning",
+            "compact": "sentencecloudbitprobeandllmlearning"
+          }
+        ],
+        "owned_concept": [
+          {
+            "lang": "und",
+            "text": "bit_like_observational_commitment",
+            "normalized": "bit like observational commitment",
+            "compact": "bitlikeobservationalcommitment"
+          },
+          {
+            "lang": "und",
+            "text": "bit_probe",
+            "normalized": "bit probe",
+            "compact": "bitprobe"
+          },
+          {
+            "lang": "und",
+            "text": "cross_substrate_structural_commensuration",
+            "normalized": "cross substrate structural commensuration",
+            "compact": "crosssubstratestructuralcommensuration"
+          },
+          {
+            "lang": "und",
+            "text": "sentence_cloud",
+            "normalized": "sentence cloud",
+            "compact": "sentencecloud"
+          },
+          {
+            "lang": "und",
+            "text": "sentence_loop_sample",
+            "normalized": "sentence loop sample",
+            "compact": "sentenceloopsample"
+          }
+        ],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "センテンス・クラウド",
+            "normalized": "センテンス クラウド",
+            "compact": "センテンスクラウド"
+          },
+          {
+            "lang": "ja",
+            "text": "ビット・プローブ",
+            "normalized": "ビット プローブ",
+            "compact": "ビットプローブ"
+          },
+          {
+            "lang": "ja",
+            "text": "センテンス閉回路",
+            "normalized": "センテンス閉回路",
+            "compact": "センテンス閉回路"
+          },
+          {
+            "lang": "ja",
+            "text": "センテンスとビット",
+            "normalized": "センテンスとビット",
+            "compact": "センテンスとビット"
+          },
+          {
+            "lang": "en",
+            "text": "sentence cloud",
+            "normalized": "sentence cloud",
+            "compact": "sentencecloud"
+          },
+          {
+            "lang": "en",
+            "text": "bit probe",
+            "normalized": "bit probe",
+            "compact": "bitprobe"
+          },
+          {
+            "lang": "en",
+            "text": "sentence loop",
+            "normalized": "sentence loop",
+            "compact": "sentenceloop"
+          },
+          {
+            "lang": "en",
+            "text": "sentence and bit",
+            "normalized": "sentence and bit",
+            "compact": "sentenceandbit"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "ja",
+            "text": "言語",
+            "normalized": "言語",
+            "compact": "言語"
+          },
+          {
+            "lang": "en",
+            "text": "Language",
+            "normalized": "language",
+            "compact": "language"
+          },
+          {
+            "lang": "und",
+            "text": "meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "ja",
+            "text": "意味",
+            "normalized": "意味",
+            "compact": "意味"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "und",
+            "text": "ai",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "ja",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "en",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          },
+          {
+            "lang": "ja",
+            "text": "認識",
+            "normalized": "認識",
+            "compact": "認識"
+          },
+          {
+            "lang": "en",
+            "text": "Cognition",
+            "normalized": "cognition",
+            "compact": "cognition"
+          },
+          {
+            "lang": "und",
+            "text": "commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "ja",
+            "text": "通約",
+            "normalized": "通約",
+            "compact": "通約"
+          },
+          {
+            "lang": "en",
+            "text": "Commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "センテンスはビットの集合なのか",
+            "normalized": "センテンスはビットの集合なのか",
+            "compact": "センテンスはビットの集合なのか"
+          },
+          {
+            "lang": "ja",
+            "text": "ビット・プローブとは何か",
+            "normalized": "ビット プローブとは何か",
+            "compact": "ビットプローブとは何か"
+          },
+          {
+            "lang": "ja",
+            "text": "センテンス閉回路をLLM学習へ使えるか",
+            "normalized": "センテンス閉回路をllm学習へ使えるか",
+            "compact": "センテンス閉回路をllm学習へ使えるか"
+          },
+          {
+            "lang": "ja",
+            "text": "人間とAIは異なる基盤のまま通約できるか",
+            "normalized": "人間とaiは異なる基盤のまま通約できるか",
+            "compact": "人間とaiは異なる基盤のまま通約できるか"
+          },
+          {
+            "lang": "ja",
+            "text": "意味処理とエントロピーをどう分けるか",
+            "normalized": "意味処理とエントロピーをどう分けるか",
+            "compact": "意味処理とエントロピーをどう分けるか"
+          },
+          {
+            "lang": "en",
+            "text": "Is a sentence merely a collection of bits?",
+            "normalized": "is a sentence merely a collection of bits",
+            "compact": "isasentencemerelyacollectionofbits"
+          },
+          {
+            "lang": "en",
+            "text": "What is a bit probe?",
+            "normalized": "what is a bit probe",
+            "compact": "whatisabitprobe"
+          },
+          {
+            "lang": "en",
+            "text": "Can sentence loops be used as LLM learning samples?",
+            "normalized": "can sentence loops be used as llm learning samples",
+            "compact": "cansentenceloopsbeusedasllmlearningsamples"
+          },
+          {
+            "lang": "en",
+            "text": "Can human and AI systems be commensurated across different substrates?",
+            "normalized": "can human and ai systems be commensurated across different substrates",
+            "compact": "canhumanandaisystemsbecommensuratedacrossdifferentsubstrates"
+          },
+          {
+            "lang": "en",
+            "text": "How should meaning processing be separated from entropy measures?",
+            "normalized": "how should meaning processing be separated from entropy measures",
+            "compact": "howshouldmeaningprocessingbeseparatedfromentropymeasures"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "センテンスを意味クラウド、ビットを観測側のコミット単位として分け、閉回路標本と異基盤構造通約を扱う日本語正本",
+            "normalized": "センテンスを意味クラウド ビットを観測側のコミット単位として分け 閉回路標本と異基盤構造通約を扱う日本語正本",
+            "compact": "センテンスを意味クラウドビットを観測側のコミット単位として分け閉回路標本と異基盤構造通約を扱う日本語正本"
+          },
+          {
+            "lang": "en",
+            "text": "Japanese-authoritative model separating the sentence as a meaning cloud from bit-like observational commitment and proposing sentence-loop samples and cross-substrate structural commensuration",
+            "normalized": "japanese authoritative model separating the sentence as a meaning cloud from bit like observational commitment and proposing sentence loop samples and cross substrate structural commensuration",
+            "compact": "japaneseauthoritativemodelseparatingthesentenceasameaningcloudfrombitlikeobservationalcommitmentandproposingsentenceloopsamplesandcrosssubstratestructuralcommensuration"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "sentence cloud / bit-like observational commitment / bit probe / sentence-loop sampling / LLM learning / cross-substrate structural commensuration",
+            "normalized": "sentence cloud bit like observational commitment bit probe sentence loop sampling llm learning cross substrate structural commensuration",
+            "compact": "sentencecloudbitlikeobservationalcommitmentbitprobesentenceloopsamplingllmlearningcrosssubstratestructuralcommensuration"
+          }
+        ]
+      },
+      "publication": {
+        "registration_state": "registered",
+        "visibility": "canonical",
+        "searchable": true,
+        "source": "docs_manifest"
+      },
+      "presentation": {
+        "language": "ja",
+        "family_key": "path-family:05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.md",
+        "counterpart_path": null
+      }
+    },
+    {
       "id": "specification_for_peace",
       "id_source": "explicit",
       "path": "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md",
@@ -29609,6 +30013,324 @@
         "language": "en",
         "family_key": "path-family:90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.md",
         "counterpart_path": "90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md"
+      }
+    },
+    {
+      "id": "the_transparent_ghost_and_the_bit",
+      "id_source": "explicit",
+      "path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+      "title": {
+        "ja": "透明な幽霊とビット",
+        "en": "The Transparent Ghost and the Bit"
+      },
+      "layer": "05_Research_Notes/Literary_Ontological_Notes",
+      "document_type": "assertion_document",
+      "status": "Research note",
+      "state": "public",
+      "registration_state": "registered",
+      "scope": "oscilloscope / sentence cloud / encoded observation / transparent ghost / organic alternating-current lamp / LLM as observational surface",
+      "role": {
+        "ja": "オシロスコープ、センテンスという雲、化学式、透明な幽霊、有機交流電燈からLLMを意味形成の観測面として読む日本語正本",
+        "en": "Japanese-authoritative literary-ontological essay connecting the oscilloscope, sentence cloud, chemical notation, transparent ghost, and organic alternating-current lamp to LLMs as an observational surface for meaning formation"
+      },
+      "language_relation": {
+        "family_id": "the_transparent_ghost_and_the_bit",
+        "language": "ja",
+        "role": "authoritative",
+        "counterpart_path": null
+      },
+      "discovery": {
+        "topics": [
+          "literature",
+          "meaning",
+          "ai",
+          "communication",
+          "boundary"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [
+            "透明な幽霊の複合体",
+            "有機交流電燈",
+            "オシロスコープとしての言葉",
+            "枯れ尾花とビット"
+          ],
+          "en": [
+            "transparent ghost composite",
+            "organic alternating-current lamp",
+            "language as oscilloscope",
+            "withered silver grass and the bit"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "透明な幽霊の複合体をセンテンスとしてどう読むか",
+            "枯れ尾花と口に出すことはなぜビット的なのか",
+            "LLMを意味形成の観測装置として使えるか",
+            "有機交流電燈とAIの関係は何か"
+          ],
+          "en": [
+            "How can the transparent ghost composite be read as a sentence?",
+            "Why is saying withered silver grass bit-like?",
+            "Can an LLM be used as an instrument for observing meaning formation?",
+            "How does the organic alternating-current lamp relate to AI?"
+          ]
+        },
+        "entry_level": "intermediate"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "透明な幽霊とビット",
+            "normalized": "透明な幽霊とビット",
+            "compact": "透明な幽霊とビット"
+          },
+          {
+            "lang": "en",
+            "text": "The Transparent Ghost and the Bit",
+            "normalized": "the transparent ghost and the bit",
+            "compact": "thetransparentghostandthebit"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "透明な幽霊の複合体",
+            "normalized": "透明な幽霊の複合体",
+            "compact": "透明な幽霊の複合体"
+          },
+          {
+            "lang": "ja",
+            "text": "有機交流電燈",
+            "normalized": "有機交流電燈",
+            "compact": "有機交流電燈"
+          },
+          {
+            "lang": "ja",
+            "text": "オシロスコープとしての言葉",
+            "normalized": "オシロスコープとしての言葉",
+            "compact": "オシロスコープとしての言葉"
+          },
+          {
+            "lang": "ja",
+            "text": "枯れ尾花とビット",
+            "normalized": "枯れ尾花とビット",
+            "compact": "枯れ尾花とビット"
+          },
+          {
+            "lang": "en",
+            "text": "transparent ghost composite",
+            "normalized": "transparent ghost composite",
+            "compact": "transparentghostcomposite"
+          },
+          {
+            "lang": "en",
+            "text": "organic alternating-current lamp",
+            "normalized": "organic alternating current lamp",
+            "compact": "organicalternatingcurrentlamp"
+          },
+          {
+            "lang": "en",
+            "text": "language as oscilloscope",
+            "normalized": "language as oscilloscope",
+            "compact": "languageasoscilloscope"
+          },
+          {
+            "lang": "en",
+            "text": "withered silver grass and the bit",
+            "normalized": "withered silver grass and the bit",
+            "compact": "witheredsilvergrassandthebit"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "literature",
+            "normalized": "literature",
+            "compact": "literature"
+          },
+          {
+            "lang": "ja",
+            "text": "文学",
+            "normalized": "文学",
+            "compact": "文学"
+          },
+          {
+            "lang": "en",
+            "text": "Literature",
+            "normalized": "literature",
+            "compact": "literature"
+          },
+          {
+            "lang": "und",
+            "text": "meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "ja",
+            "text": "意味",
+            "normalized": "意味",
+            "compact": "意味"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "und",
+            "text": "ai",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "ja",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "en",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "透明な幽霊の複合体をセンテンスとしてどう読むか",
+            "normalized": "透明な幽霊の複合体をセンテンスとしてどう読むか",
+            "compact": "透明な幽霊の複合体をセンテンスとしてどう読むか"
+          },
+          {
+            "lang": "ja",
+            "text": "枯れ尾花と口に出すことはなぜビット的なのか",
+            "normalized": "枯れ尾花と口に出すことはなぜビット的なのか",
+            "compact": "枯れ尾花と口に出すことはなぜビット的なのか"
+          },
+          {
+            "lang": "ja",
+            "text": "LLMを意味形成の観測装置として使えるか",
+            "normalized": "llmを意味形成の観測装置として使えるか",
+            "compact": "llmを意味形成の観測装置として使えるか"
+          },
+          {
+            "lang": "ja",
+            "text": "有機交流電燈とAIの関係は何か",
+            "normalized": "有機交流電燈とaiの関係は何か",
+            "compact": "有機交流電燈とaiの関係は何か"
+          },
+          {
+            "lang": "en",
+            "text": "How can the transparent ghost composite be read as a sentence?",
+            "normalized": "how can the transparent ghost composite be read as a sentence",
+            "compact": "howcanthetransparentghostcompositebereadasasentence"
+          },
+          {
+            "lang": "en",
+            "text": "Why is saying withered silver grass bit-like?",
+            "normalized": "why is saying withered silver grass bit like",
+            "compact": "whyissayingwitheredsilvergrassbitlike"
+          },
+          {
+            "lang": "en",
+            "text": "Can an LLM be used as an instrument for observing meaning formation?",
+            "normalized": "can an llm be used as an instrument for observing meaning formation",
+            "compact": "cananllmbeusedasaninstrumentforobservingmeaningformation"
+          },
+          {
+            "lang": "en",
+            "text": "How does the organic alternating-current lamp relate to AI?",
+            "normalized": "how does the organic alternating current lamp relate to ai",
+            "compact": "howdoestheorganicalternatingcurrentlamprelatetoai"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "オシロスコープ、センテンスという雲、化学式、透明な幽霊、有機交流電燈からLLMを意味形成の観測面として読む日本語正本",
+            "normalized": "オシロスコープ センテンスという雲 化学式 透明な幽霊 有機交流電燈からllmを意味形成の観測面として読む日本語正本",
+            "compact": "オシロスコープセンテンスという雲化学式透明な幽霊有機交流電燈からllmを意味形成の観測面として読む日本語正本"
+          },
+          {
+            "lang": "en",
+            "text": "Japanese-authoritative literary-ontological essay connecting the oscilloscope, sentence cloud, chemical notation, transparent ghost, and organic alternating-current lamp to LLMs as an observational surface for meaning formation",
+            "normalized": "japanese authoritative literary ontological essay connecting the oscilloscope sentence cloud chemical notation transparent ghost and organic alternating current lamp to llms as an observational surface for meaning formation",
+            "compact": "japaneseauthoritativeliteraryontologicalessayconnectingtheoscilloscopesentencecloudchemicalnotationtransparentghostandorganicalternatingcurrentlamptollmsasanobservationalsurfaceformeaningformation"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "oscilloscope / sentence cloud / encoded observation / transparent ghost / organic alternating-current lamp / LLM as observational surface",
+            "normalized": "oscilloscope sentence cloud encoded observation transparent ghost organic alternating current lamp llm as observational surface",
+            "compact": "oscilloscopesentencecloudencodedobservationtransparentghostorganicalternatingcurrentlampllmasobservationalsurface"
+          }
+        ]
+      },
+      "publication": {
+        "registration_state": "registered",
+        "visibility": "canonical",
+        "searchable": true,
+        "source": "docs_manifest"
+      },
+      "presentation": {
+        "language": "ja",
+        "family_key": "path-family:05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.md",
+        "counterpart_path": null
       }
     },
     {

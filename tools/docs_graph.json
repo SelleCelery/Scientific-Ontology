@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "source": {
-    "manifest_sha256": "98c573a8a45a95891bff037cd7532a660cf82560958b994ed0216f1b3b111da5",
+    "manifest_sha256": "0f217130eb2c8a40d4005994457b416714d832bfe605e5ddb2896d9a2a9a1e2a",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "graph_config_sha256": "e373fb45a782c8c0d0a3ae3998b757552b32053a3d67a5ac803776677721b4a7",
     "visibility_profile": "public",
@@ -128,6 +128,18 @@
       "key": "axis_transformation_conditions"
     },
     {
+      "id": "concept:bit_like_observational_commitment",
+      "type": "concept",
+      "key": "bit_like_observational_commitment",
+      "canonical_owner": "doc:sentence_cloud_bit_probe_llm_learning"
+    },
+    {
+      "id": "concept:bit_probe",
+      "type": "concept",
+      "key": "bit_probe",
+      "canonical_owner": "doc:sentence_cloud_bit_probe_llm_learning"
+    },
+    {
       "id": "concept:boundary_ca",
       "type": "concept",
       "key": "boundary_ca",
@@ -220,6 +232,12 @@
       "type": "concept",
       "key": "cross_grammatical_commensuration",
       "canonical_owner": "doc:commensuration_cross_grammatical_collation"
+    },
+    {
+      "id": "concept:cross_substrate_structural_commensuration",
+      "type": "concept",
+      "key": "cross_substrate_structural_commensuration",
+      "canonical_owner": "doc:sentence_cloud_bit_probe_llm_learning"
     },
     {
       "id": "concept:document_position_map",
@@ -425,6 +443,18 @@
       "type": "concept",
       "key": "scoped_port_operation",
       "canonical_owner": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja"
+    },
+    {
+      "id": "concept:sentence_cloud",
+      "type": "concept",
+      "key": "sentence_cloud",
+      "canonical_owner": "doc:sentence_cloud_bit_probe_llm_learning"
+    },
+    {
+      "id": "concept:sentence_loop_sample",
+      "type": "concept",
+      "key": "sentence_loop_sample",
+      "canonical_owner": "doc:sentence_cloud_bit_probe_llm_learning"
     },
     {
       "id": "concept:single_metric_compression",
@@ -2521,6 +2551,23 @@
       "identity_source": "explicit"
     },
     {
+      "id": "doc:sentence_cloud_bit_probe_llm_learning",
+      "type": "document",
+      "key": "sentence_cloud_bit_probe_llm_learning",
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+      "title": {
+        "ja": "センテンス・クラウドとビット・プローブ",
+        "en": "Sentence Cloud, Bit Probe, and LLM Learning"
+      },
+      "layer": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies",
+      "state": "public",
+      "role": {
+        "ja": "センテンスを意味クラウド、ビットを観測側のコミット単位として分け、閉回路標本と異基盤構造通約を扱う日本語正本",
+        "en": "Japanese-authoritative model separating the sentence as a meaning cloud from bit-like observational commitment and proposing sentence-loop samples and cross-substrate structural commensuration"
+      },
+      "identity_source": "explicit"
+    },
+    {
       "id": "doc:specification_for_peace",
       "type": "document",
       "key": "specification_for_peace",
@@ -2602,6 +2649,23 @@
       "role": {
         "ja": "日本語正本語、英語通約語、既存学術語の衝突と誤読リスクを記録する用語管理表",
         "en": "Terminology registry recording collisions and misreading risks among Japanese authoritative terms, English renderings, and established academic vocabulary"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:the_transparent_ghost_and_the_bit",
+      "type": "document",
+      "key": "the_transparent_ghost_and_the_bit",
+      "path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+      "title": {
+        "ja": "透明な幽霊とビット",
+        "en": "The Transparent Ghost and the Bit"
+      },
+      "layer": "05_Research_Notes/Literary_Ontological_Notes",
+      "state": "public",
+      "role": {
+        "ja": "オシロスコープ、センテンスという雲、化学式、透明な幽霊、有機交流電燈からLLMを意味形成の観測面として読む日本語正本",
+        "en": "Japanese-authoritative literary-ontological essay connecting the oscilloscope, sentence cloud, chemical notation, transparent ghost, and organic alternating-current lamp to LLMs as an observational surface for meaning formation"
       },
       "identity_source": "explicit"
     },
@@ -12046,12 +12110,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L50"
+          "locator": "L105"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L99"
+          "locator": "L53"
         }
       ]
     },
@@ -12063,12 +12127,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L40"
+          "locator": "L41"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L89"
+          "locator": "L93"
         }
       ]
     },
@@ -12080,12 +12144,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L49"
+          "locator": "L104"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L98"
+          "locator": "L52"
         }
       ]
     },
@@ -12097,12 +12161,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L42"
+          "locator": "L45"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L91"
+          "locator": "L97"
         }
       ]
     },
@@ -12114,12 +12178,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L100"
+          "locator": "L106"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L51"
+          "locator": "L54"
         }
       ]
     },
@@ -12131,12 +12195,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L38"
+          "locator": "L39"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L87"
+          "locator": "L91"
         }
       ]
     },
@@ -12148,12 +12212,29 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L38"
+          "locator": "L39"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
-          "locator": "L87"
+          "locator": "L91"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_literary_ontological_notes_readme",
+      "relation": "links_to",
+      "to": "doc:the_transparent_ghost_and_the_bit",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
+          "locator": "L43"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/README.md",
+          "locator": "L95"
         }
       ]
     },
@@ -12756,7 +12837,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L80"
+          "locator": "L81"
         }
       ]
     },
@@ -12768,7 +12849,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L78"
+          "locator": "L79"
         }
       ]
     },
@@ -12780,22 +12861,22 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L176"
+          "locator": "L178"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L290"
+          "locator": "L294"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L369"
+          "locator": "L374"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L97"
+          "locator": "L98"
         }
       ]
     },
@@ -12807,22 +12888,22 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L177"
+          "locator": "L179"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L290"
+          "locator": "L294"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L370"
+          "locator": "L375"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L97"
+          "locator": "L98"
         }
       ]
     },
@@ -12834,7 +12915,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L248"
+          "locator": "L251"
         },
         {
           "source_type": "markdown",
@@ -12851,78 +12932,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L133"
+          "locator": "L135"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L326"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L83"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_research_notes_index",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L131"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L324"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L81"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_research_notes_index",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L132"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L325"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L82"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_research_notes_index",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L134"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L327"
+          "locator": "L331"
         },
         {
           "source_type": "markdown",
@@ -12934,12 +12949,78 @@
     {
       "from": "doc:05_research_notes_research_notes_index",
       "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L133"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L329"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L82"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L134"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L330"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L83"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L136"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L332"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L85"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
       "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L244"
+          "locator": "L247"
         },
         {
           "source_type": "markdown",
@@ -12956,7 +13037,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L245"
+          "locator": "L248"
         },
         {
           "source_type": "markdown",
@@ -12973,12 +13054,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L115"
+          "locator": "L116"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L308"
+          "locator": "L312"
         }
       ]
     },
@@ -12990,12 +13071,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L118"
+          "locator": "L120"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L311"
+          "locator": "L316"
         }
       ]
     },
@@ -13007,12 +13088,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L121"
+          "locator": "L123"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L314"
+          "locator": "L319"
         }
       ]
     },
@@ -13024,12 +13105,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L117"
+          "locator": "L119"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L310"
+          "locator": "L315"
         },
         {
           "source_type": "markdown",
@@ -13046,7 +13127,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L249"
+          "locator": "L252"
         },
         {
           "source_type": "markdown",
@@ -13063,7 +13144,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L246"
+          "locator": "L249"
         },
         {
           "source_type": "markdown",
@@ -13080,7 +13161,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L225"
+          "locator": "L228"
         },
         {
           "source_type": "markdown",
@@ -13097,12 +13178,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L167"
+          "locator": "L169"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L360"
+          "locator": "L365"
         }
       ]
     },
@@ -13114,7 +13195,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L247"
+          "locator": "L250"
         },
         {
           "source_type": "markdown",
@@ -13131,12 +13212,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L116"
+          "locator": "L117"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L309"
+          "locator": "L313"
         }
       ]
     },
@@ -13148,12 +13229,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L116"
+          "locator": "L117"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L309"
+          "locator": "L313"
         }
       ]
     },
@@ -13165,17 +13246,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L142"
+          "locator": "L144"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L335"
+          "locator": "L340"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L93"
+          "locator": "L94"
         }
       ]
     },
@@ -13187,17 +13268,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L142"
+          "locator": "L144"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L286"
+          "locator": "L290"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L335"
+          "locator": "L340"
         }
       ]
     },
@@ -13209,17 +13290,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L133"
+          "locator": "L135"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L276"
+          "locator": "L280"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L326"
+          "locator": "L331"
         }
       ]
     },
@@ -13231,12 +13312,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L157"
+          "locator": "L159"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L350"
+          "locator": "L355"
         }
       ]
     },
@@ -13248,12 +13329,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L157"
+          "locator": "L159"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L350"
+          "locator": "L355"
         }
       ]
     },
@@ -13277,7 +13358,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L226"
+          "locator": "L229"
         }
       ]
     },
@@ -13289,17 +13370,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L131"
+          "locator": "L133"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L274"
+          "locator": "L278"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L324"
+          "locator": "L329"
         }
       ]
     },
@@ -13311,12 +13392,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L120"
+          "locator": "L122"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L313"
+          "locator": "L318"
         },
         {
           "source_type": "markdown",
@@ -13333,17 +13414,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L120"
+          "locator": "L122"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L264"
+          "locator": "L267"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L313"
+          "locator": "L318"
         }
       ]
     },
@@ -13355,12 +13436,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L115"
+          "locator": "L116"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L308"
+          "locator": "L312"
         }
       ]
     },
@@ -13372,17 +13453,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L132"
+          "locator": "L134"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L275"
+          "locator": "L279"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L325"
+          "locator": "L330"
         }
       ]
     },
@@ -13394,12 +13475,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L145"
+          "locator": "L147"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L338"
+          "locator": "L343"
         }
       ]
     },
@@ -13411,12 +13492,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L145"
+          "locator": "L147"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L338"
+          "locator": "L343"
         }
       ]
     },
@@ -13428,12 +13509,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L155"
+          "locator": "L157"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L348"
+          "locator": "L353"
         }
       ]
     },
@@ -13445,12 +13526,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L155"
+          "locator": "L157"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L348"
+          "locator": "L353"
         }
       ]
     },
@@ -13462,12 +13543,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L168"
+          "locator": "L170"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L361"
+          "locator": "L366"
         }
       ]
     },
@@ -13479,12 +13560,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L168"
+          "locator": "L170"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L361"
+          "locator": "L366"
         }
       ]
     },
@@ -13496,7 +13577,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L271"
+          "locator": "L275"
         }
       ]
     },
@@ -13508,7 +13589,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L228"
+          "locator": "L231"
         },
         {
           "source_type": "markdown",
@@ -13525,12 +13606,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L113"
+          "locator": "L114"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L306"
+          "locator": "L310"
         },
         {
           "source_type": "markdown",
@@ -13547,17 +13628,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L113"
+          "locator": "L114"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L260"
+          "locator": "L263"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L306"
+          "locator": "L310"
         }
       ]
     },
@@ -13569,12 +13650,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L118"
+          "locator": "L120"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L311"
+          "locator": "L316"
         }
       ]
     },
@@ -13586,12 +13667,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L153"
+          "locator": "L155"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L346"
+          "locator": "L351"
         }
       ]
     },
@@ -13603,12 +13684,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L153"
+          "locator": "L155"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L346"
+          "locator": "L351"
         }
       ]
     },
@@ -13620,12 +13701,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L243"
+          "locator": "L246"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L259"
+          "locator": "L262"
         },
         {
           "source_type": "markdown",
@@ -13647,12 +13728,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L121"
+          "locator": "L123"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L314"
+          "locator": "L319"
         }
       ]
     },
@@ -13664,12 +13745,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L187"
+          "locator": "L190"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L380"
+          "locator": "L386"
         }
       ]
     },
@@ -13681,12 +13762,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L187"
+          "locator": "L190"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L380"
+          "locator": "L386"
         }
       ]
     },
@@ -13698,12 +13779,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L114"
+          "locator": "L115"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L307"
+          "locator": "L311"
         },
         {
           "source_type": "markdown",
@@ -13720,17 +13801,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L114"
+          "locator": "L115"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L261"
+          "locator": "L264"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L307"
+          "locator": "L311"
         }
       ]
     },
@@ -13742,22 +13823,22 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L101"
+          "locator": "L102"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L186"
+          "locator": "L189"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L294"
+          "locator": "L298"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L379"
+          "locator": "L385"
         }
       ]
     },
@@ -13769,17 +13850,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L101"
+          "locator": "L102"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L144"
+          "locator": "L146"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L337"
+          "locator": "L342"
         }
       ]
     },
@@ -13791,17 +13872,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L144"
+          "locator": "L146"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L294"
+          "locator": "L298"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L337"
+          "locator": "L342"
         }
       ]
     },
@@ -13813,12 +13894,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L165"
+          "locator": "L167"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L358"
+          "locator": "L363"
         }
       ]
     },
@@ -13830,12 +13911,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L165"
+          "locator": "L167"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L358"
+          "locator": "L363"
         }
       ]
     },
@@ -13847,12 +13928,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L166"
+          "locator": "L168"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L359"
+          "locator": "L364"
         }
       ]
     },
@@ -13864,12 +13945,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L166"
+          "locator": "L168"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L359"
+          "locator": "L364"
         }
       ]
     },
@@ -13881,12 +13962,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L154"
+          "locator": "L156"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L347"
+          "locator": "L352"
         }
       ]
     },
@@ -13898,12 +13979,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L154"
+          "locator": "L156"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L347"
+          "locator": "L352"
         }
       ]
     },
@@ -13915,7 +13996,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L79"
+          "locator": "L80"
         }
       ]
     },
@@ -13927,7 +14008,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L272"
+          "locator": "L276"
         }
       ]
     },
@@ -13939,17 +14020,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L134"
+          "locator": "L136"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L277"
+          "locator": "L281"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L327"
+          "locator": "L332"
         }
       ]
     },
@@ -13961,7 +14042,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L198"
+          "locator": "L201"
         },
         {
           "source_type": "markdown",
@@ -13971,7 +14052,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L89"
+          "locator": "L90"
         }
       ]
     },
@@ -13983,17 +14064,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L227"
+          "locator": "L230"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L282"
+          "locator": "L286"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L391"
+          "locator": "L397"
         }
       ]
     },
@@ -14005,12 +14086,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L156"
+          "locator": "L158"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L349"
+          "locator": "L354"
         }
       ]
     },
@@ -14022,12 +14103,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L156"
+          "locator": "L158"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L349"
+          "locator": "L354"
         }
       ]
     },
@@ -14039,17 +14120,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L101"
+          "locator": "L102"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L185"
+          "locator": "L187"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L378"
+          "locator": "L383"
         }
       ]
     },
@@ -14061,17 +14142,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L185"
+          "locator": "L187"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L294"
+          "locator": "L298"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L378"
+          "locator": "L383"
         }
       ]
     },
@@ -14083,17 +14164,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L143"
+          "locator": "L145"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L336"
+          "locator": "L341"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L93"
+          "locator": "L94"
         }
       ]
     },
@@ -14105,17 +14186,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L143"
+          "locator": "L145"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L286"
+          "locator": "L290"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L336"
+          "locator": "L341"
         }
       ]
     },
@@ -14127,12 +14208,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L123"
+          "locator": "L125"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L316"
+          "locator": "L321"
         }
       ]
     },
@@ -14144,12 +14225,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L123"
+          "locator": "L125"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L316"
+          "locator": "L321"
         }
       ]
     },
@@ -14161,12 +14242,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L119"
+          "locator": "L121"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L312"
+          "locator": "L317"
         },
         {
           "source_type": "markdown",
@@ -14183,17 +14264,44 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L119"
+          "locator": "L121"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L263"
+          "locator": "L266"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L312"
+          "locator": "L317"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:sentence_cloud_bit_probe_llm_learning",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L118"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L268"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L314"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L70"
         }
       ]
     },
@@ -14205,7 +14313,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L85"
+          "locator": "L86"
         }
       ]
     },
@@ -14217,7 +14325,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L278"
+          "locator": "L282"
         }
       ]
     },
@@ -14229,17 +14337,44 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L117"
+          "locator": "L119"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L262"
+          "locator": "L265"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L310"
+          "locator": "L315"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:the_transparent_ghost_and_the_bit",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L102"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L188"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L298"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L384"
         }
       ]
     },
@@ -14251,7 +14386,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L273"
+          "locator": "L277"
         }
       ]
     },
@@ -16822,7 +16957,31 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/CHANGELOG.md",
-          "locator": "L46"
+          "locator": "L79"
+        }
+      ]
+    },
+    {
+      "from": "doc:changelog",
+      "relation": "links_to",
+      "to": "doc:sentence_cloud_bit_probe_llm_learning",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/CHANGELOG.md",
+          "locator": "L19"
+        }
+      ]
+    },
+    {
+      "from": "doc:changelog",
+      "relation": "links_to",
+      "to": "doc:the_transparent_ghost_and_the_bit",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/CHANGELOG.md",
+          "locator": "L21"
         }
       ]
     },
@@ -20428,7 +20587,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L173"
+          "locator": "L181"
         }
       ]
     },
@@ -20440,7 +20599,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L174"
+          "locator": "L182"
         }
       ]
     },
@@ -20452,7 +20611,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L104"
+          "locator": "L105"
         }
       ]
     },
@@ -20464,7 +20623,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L92"
+          "locator": "L93"
         }
       ]
     },
@@ -20476,7 +20635,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L98"
+          "locator": "L99"
         }
       ]
     },
@@ -20488,7 +20647,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L80"
+          "locator": "L81"
         }
       ]
     },
@@ -20500,7 +20659,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L175"
+          "locator": "L183"
         }
       ]
     },
@@ -20512,7 +20671,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L176"
+          "locator": "L184"
         }
       ]
     },
@@ -20524,7 +20683,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L101"
+          "locator": "L102"
         }
       ]
     },
@@ -20541,7 +20700,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L128"
+          "locator": "L136"
         }
       ]
     },
@@ -20553,7 +20712,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L95"
+          "locator": "L96"
         }
       ]
     },
@@ -20565,7 +20724,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L83"
+          "locator": "L84"
         }
       ]
     },
@@ -20577,7 +20736,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L86"
+          "locator": "L87"
         }
       ]
     },
@@ -20589,7 +20748,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L172"
+          "locator": "L180"
         }
       ]
     },
@@ -20606,12 +20765,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L128"
+          "locator": "L136"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L164"
+          "locator": "L172"
         }
       ]
     },
@@ -20623,7 +20782,19 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
-          "locator": "L89"
+          "locator": "L90"
+        }
+      ]
+    },
+    {
+      "from": "doc:language_meaning_communication_phase_studies",
+      "relation": "links_to",
+      "to": "doc:sentence_cloud_bit_probe_llm_learning",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md",
+          "locator": "L110"
         }
       ]
     },
@@ -24404,7 +24575,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md",
-          "locator": "L178"
+          "locator": "L238"
         }
       ]
     },
@@ -27751,6 +27922,497 @@
       ]
     },
     {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "belongs_to_topic",
+      "to": "topic:ai",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "belongs_to_topic",
+      "to": "topic:cognition",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "belongs_to_topic",
+      "to": "topic:commensuration",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "belongs_to_topic",
+      "to": "topic:communication",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "belongs_to_topic",
+      "to": "topic:language",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "belongs_to_topic",
+      "to": "topic:meaning",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "delegates",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "entropy_attributed_difference"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "delegates",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "operational_discretization"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "delegates",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "cross_grammatical_commensuration"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "delegates",
+      "to": "doc:meaning_generation_model",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.delegates",
+          "detail": {
+            "concept": "meaning_generation"
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "imports",
+      "to": "concept:cognitive_axis_formation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "imports",
+      "to": "concept:cross_grammatical_commensuration",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "imports",
+      "to": "concept:entropy_attributed_difference",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "imports",
+      "to": "concept:meaning_generation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "imports",
+      "to": "concept:operational_discretization",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.imports"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_hfc_introduction",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L23"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L645"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L653"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_speech_as_sequential_decompression_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L646"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L91"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:ai_language_generation_grammatical_frames",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L648"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:consent_boundary_sentence_bit_asymmetry",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L651"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:meaning_collation_return_path",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L647"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:physics_correspondence_policy",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L21"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L499"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L644"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:return_intake_log",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L638"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L652"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:semantic_network_topology_commensuration_bandwidth",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L649"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "links_to",
+      "to": "doc:the_transparent_ghost_and_the_bit",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L309"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "locator": "L650"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "owns",
+      "to": "concept:bit_like_observational_commitment",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "concept_ownership.bit_like_observational_commitment.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.owns"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "owns",
+      "to": "concept:bit_probe",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "concept_ownership.bit_probe.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.owns"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "owns",
+      "to": "concept:cross_substrate_structural_commensuration",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "concept_ownership.cross_substrate_structural_commensuration.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.owns"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "owns",
+      "to": "concept:sentence_cloud",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "concept_ownership.sentence_cloud.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.owns"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "owns",
+      "to": "concept:sentence_loop_sample",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "concept_ownership.sentence_loop_sample.canonical_owner"
+        },
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.owns"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "returns_to",
+      "to": "doc:return_intake_log",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.returns_to",
+          "detail": {
+            "payload": [
+              "sentence identity or closure-boundary failure",
+              "implementation and evaluation residual",
+              "unresolved physical mapping or entropy measure",
+              "model-observation calibration failure"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "tests",
+      "to": "doc:consent_boundary_sentence_bit_asymmetry",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.tests",
+          "detail": {
+            "relation": "boundary_application_test",
+            "evidence": "The consent case tests the asymmetry between a history-bearing sentence and a narrow committed response."
+          }
+        }
+      ]
+    },
+    {
+      "from": "doc:sentence_cloud_bit_probe_llm_learning",
+      "relation": "tests",
+      "to": "doc:the_transparent_ghost_and_the_bit",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md].logical_contract.tests",
+          "detail": {
+            "relation": "literary_rendering_test",
+            "evidence": "The literary rendering tests whether a sentence can retain polysemy, history, and residuals without being reduced to its encoded representation."
+          }
+        }
+      ]
+    },
+    {
       "from": "doc:specification_for_peace",
       "relation": "belongs_to_topic",
       "to": "topic:boundary",
@@ -28390,6 +29052,184 @@
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.en.md",
           "locator": "L44"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "belongs_to_topic",
+      "to": "topic:ai",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "belongs_to_topic",
+      "to": "topic:boundary",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "belongs_to_topic",
+      "to": "topic:communication",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "belongs_to_topic",
+      "to": "topic:literature",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "belongs_to_topic",
+      "to": "topic:meaning",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_hfc_introduction",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L335"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_compressed_experience_qualia_and_literature_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L333"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "links_to",
+      "to": "doc:ai_language_generation_grammatical_frames",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L334"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "links_to",
+      "to": "doc:literature_worldmaking",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L331"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "links_to",
+      "to": "doc:physics_correspondence_policy",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L336"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "links_to",
+      "to": "doc:reading_blue_light",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L157"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L330"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "links_to",
+      "to": "doc:return_intake_log",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L324"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L337"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "links_to",
+      "to": "doc:sentence_cloud_bit_probe_llm_learning",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+          "locator": "L332"
+        }
+      ]
+    },
+    {
+      "from": "doc:the_transparent_ghost_and_the_bit",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
         }
       ]
     },

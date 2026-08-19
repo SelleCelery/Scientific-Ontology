@@ -134,7 +134,8 @@ public_scope:
       document_count_ja_core: 9
       document_count_exclusions:
         - Return_Intake_Log.ja.md
-      note: "Gate 4を通過した九研究ノートと、その更新・返り管理構造を公開する。"
+        - Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md
+      note: "Gate 4を通過した九研究ノートを固定中核として数える。Return Intakeと、後続の返り接続型拡張正本は中核数から分離する。"
 
     - id: "consent_boundary"
       path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md"

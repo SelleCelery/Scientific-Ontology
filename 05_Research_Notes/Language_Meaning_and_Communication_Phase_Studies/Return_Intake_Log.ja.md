@@ -4,11 +4,11 @@
 > Status: Registry
 > Lifecycle: Public Living Canonical support
 > Scope: external and internal returns / disposition / recollation conditions
-> Language: Japanese authoritative; English commensuration available
+> Language: Japanese authoritative; English commensuration available through RI-0013; RI-0014-RI-0018 pending
 > Claim strength: S1-S3 / E2 / U0-U1 / P1 / V1
 > Non-claim boundary: 受付項目は正本定義ではない。特にエントロピー等の科学語彙は標準熱力学・情報理論と同一視せず、採否確定前の照合候補として記録する。
-> Version: 1.0.0-rc.2
-> Last updated: 2026-08-17
+> Version: 1.1.0-rc.1
+> Last updated: 2026-08-19
 > Rule: 返りは常時受理するが、自動的に正本へ統合しない。
 
 ## 1. Disposition / 判定区分
@@ -164,6 +164,66 @@
 - **Acceptance Qualification**: LOCAL-SCOPE LIMIT
 - **Decision**: 文学文書の見出しを局所形成条件へ限定し、Speech文書から安全一般の定義表を除いた。非破壊的分節は苦痛回避や心理・臨床上の安全保証ではない。
 - **Recheck condition**: クオリア一般または心理・臨床上の安全を所有する文書を追加する場合。
+
+### RI-0014｜センテンス・クラウドとビット・プローブのカテゴリー差
+
+- **Date**: 2026-08-19
+- **Source**: User theoretical injection / Sentence and Bit research line
+- **Proposal**: センテンスをビットの集合としてではなく、複数の表現・声・読解へ展開しうる局所安定な意味の塊として置き、ビットを対象側の構成材ではなく観測・符号化・判断側のコミット単位として区別する。
+- **Affected**: Sentence / Bit / Speech / Meaning / AI Language Generation / Physics Correspondence
+- **Disposition**: ACCEPTED
+- **Acceptance Qualification**: LOCAL-SCOPE LIMIT
+- **Decision**: 既存の「ビットではなくセンテンス」を、センテンス・クラウドとビット的観測コミットのカテゴリー差として精密化した。標準情報理論・計算機科学上のbitは再定義せず、可逆性は選択された符号化面へ限定する。
+- **Residual**: センテンス同一性を誰が、どの時間幅、どの反例条件で判定するか。文法的一文より短い／長い閉回路の境界を再現可能に検出する方法。
+- **Recheck condition**: 異なる表現・翻訳・声色を同一センテンスへ束ねる判定手順と、過剰統合を分ける反例集合が得られた場合。
+
+### RI-0015｜センテンス閉回路をLLM学習の意味標本とする案
+
+- **Date**: 2026-08-19
+- **Source**: User theoretical injection / Sentence and Bit research line
+- **Proposal**: 語またはトークン間の関連だけでなく、起点、履歴、感情遷移、返路、残差を持つセンテンス閉回路を意味標本として蓄積し、閉回路間へ型付きの橋を架ける。
+- **Affected**: AI Language Generation / Semantic Network / Meaning / Literature
+- **Disposition**: PARTIALLY ACCEPTED
+- **Acceptance Qualification**: LOCAL-SCOPE LIMIT
+- **Decision**: トークン生成を否定せず、意味保持・照合・監査へセンテンス閉回路標本を導入する設計仮説として採用した。現在のLLMを単純な語間マップへ還元する説明は採用しない。
+- **Residual**: 標本スキーマの実装、学習目標との接続、閉回路抽出、型付き橋の誤接続検出、既存方式に対する有効性の比較は未検証。
+- **Recheck condition**: 言い換え保持、同形異義分離、感情遷移保持、未閉鎖保持、返路回復を比較できるデータと評価手順が整った場合。
+
+### RI-0016｜人間とAIのエネルギー・ハンドラ・コミット構造の通約
+
+- **Date**: 2026-08-19
+- **Source**: User theoretical injection / physical-near bridge proposal
+- **Proposal**: 人間とAIでエネルギー種と根源論理ハンドラが異なっても、エネルギー、時間順序内のコミット、後続可能性、未処理差分配置の関係構造を媒介として通約する。
+- **Affected**: Sentence and Bit / AI / Cognitive Dynamics / Entropy / Physics Correspondence / Commensuration
+- **Disposition**: PARTIALLY ACCEPTED
+- **Acceptance Qualification**: CLAIM-PHASE SEPARATION
+- **Decision**: 異基盤間の関係順序を比較する操作仮説は採用した。人間とAIのエネルギー、時間、トークン、身体、主観を同一視せず、熱力学的・情報理論的エントロピーと処理上の未閉鎖差分配置を分離する。
+- **Residual**: 根源論理ハンドラの階層と境界、比較可能な状態空間、保存量、尺度変換、コミット前後の測度、反証条件は未構築。
+- **Recheck condition**: 人間系とAI系の双方について、境界条件、測定対象、関係保存、非対応項を明示した形式モデルが得られた場合。
+
+### RI-0017｜透明な幽霊とボソン閉ループの接続
+
+- **Date**: 2026-08-19
+- **Source**: User literary rendering / ontological-depth hypothesis
+- **Proposal**: 「透明な幽霊の複合体」をセンテンス・クラウドとして読み、さらに存在境界論上のボソン閉ループの複合体として接続する。
+- **Affected**: Literary Ontology / Sentence and Bit / Physics Correspondence / History Field
+- **Disposition**: PARTIALLY ACCEPTED
+- **Acceptance Qualification**: CLAIM-PHASE SEPARATION
+- **Decision**: 文学的読解としての透明な幽霊と、媒介履歴が局所閉鎖する存在論深度レンダリングを採用した。標準物理学上のボソン、場、閉ループとの物理的同一性は採用せず、技術側文書の深度インターフェースへ返した。
+- **Residual**: 文学的多義性を保った対応記述、標準物理学との形式的通約、対応不能項、予測差、反証条件。
+- **Recheck condition**: 名称類似ではない構造写像と、対応が成立しない場合を区別する物理対応表が得られた場合。
+
+### RI-0018｜LLMを意味形成の観測装置として使う研究路
+
+- **Date**: 2026-08-19
+- **Source**: User research-program proposal
+- **Proposal**: LLMをAgentまたは実用装置としてだけでなく、条件、言語、声、読解を変えた生成差分から、意味の安定域、分岐、残差、偽閉鎖を観察する理学的・光学的装置として使う。
+- **Affected**: AI Language Generation / Literary Ontology / Research Method / Sentence and Bit
+- **Disposition**: ACCEPTED
+- **Acceptance Qualification**: LOCAL-SCOPE LIMIT
+- **Decision**: LLMを真理の権威または人間と同じ主体とせず、意味形成の境界を可視化する比較観測面として採用した。Agent研究との優劣関係は置かない。
+- **Residual**: 学習データ由来の再現、モデル固有バイアス、プロンプト依存性、生成確率、観測者の読解を分離する校正手順。
+- **Recheck condition**: 複数モデル、複数言語、反復生成、盲検読解を含む観測プロトコルを設計できた場合。
 
 ## 3. Intake Rule / 受付規則
 

@@ -3,12 +3,12 @@
 > Layer: 05_Research_Notes / Language_Meaning_and_Communication_Phase_Studies
 > Status: README
 > Lifecycle: Public Living Canonical Candidate / Gate 4
-> Scope: language / meaning / communication phase / grammar / return paths / commensuration / AI language generation / qualia
+> Scope: language / meaning / communication phase / grammar / return paths / commensuration / AI language generation / sentence cloud / bit probe / qualia
 > Language: Japanese authoritative; English commensuration pending
 > Public profile: P1-P2.5
 > Authority: Directory navigation, living-canonical maintenance, and cross-document collation contract; not a general concept-definition owner
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.1.0-rc.1
+> Last updated: 2026-08-19
 > Maintenance: Living canonical. See [`CHANGELOG.md`](./CHANGELOG.md) and [`Return_Intake_Log.md`](Return_Intake_Log.ja.md).
 
 ---
@@ -60,6 +60,7 @@
 - 文法枠間通約
 - 日本語・英語の対照仮説
 - AI生成経路の運用的監査
+- センテンス・クラウド、ビット的観測コミット、センテンス閉回路標本
 - 文学的圧縮経験とクオリア差分接触
 - 意味ネットワーク、距離、帯域、返り期待値
 - 認識軸依存不可逆性の形式化候補
@@ -104,6 +105,13 @@
 9. [`Compressed_Experience_Qualia_and_Literature.ja.md`](./Compressed_Experience_Qualia_and_Literature.ja.md)
    文学一般を定義せず、圧縮経験、再展開、クオリア差分接触を扱う。
 
+### 3.1 Return Intake-linked Extension / 返り接続型拡張正本
+
+10. [`Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md`](./Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md)
+    センテンスとビットを対象／観測コミットのカテゴリー差として精密化し、センテンス閉回路をLLMの意味標本とする設計仮説、人間とAIの異基盤構造通約を扱う。日本語正本であり、英語通約は保留中である。
+
+この追加は、Gate 4で確立した九本の中核構造を無言で変更しない。新文書は九本から定義を輸入し、未閉鎖差分をReturn Intakeへ返す拡張研究として運用する。
+
 ## 4. Maintenance Notes / 運用メモ
 
 - 高密度語は最低限不変項と局所用法を分ける。
@@ -131,7 +139,7 @@
 
 - **Patch**：誤字、リンク、引用、体裁。概念構造を変更しない。
 - **Minor**：局所定義、反例、外部照合、返路を更新する。中核圧憲章は維持する。
-- **Major**：概念所有、中核圧憲章、九文書構造、意味・返路等の主要不変項を変更する。
+- **Major**：概念所有、中核圧憲章、Gate 4九文書の中核構造、意味・返路等の主要不変項を変更する。
 
 ### 5.2 更新原則
 
@@ -139,7 +147,7 @@
 2. 影響文書と所有者を確認する。
 3. 本文を更新する。
 4. 文書別Revision Historyと全体CHANGELOGを更新する。
-5. 九文書横断の回帰検査を行う。
+5. Gate 4九文書と接続された拡張文書の横断回帰検査を行う。
 6. 採用しなかった案も、理由と再検査条件を残す。
 
 ## 6. SOLiteとの常設照合返路
@@ -195,6 +203,12 @@ SO
 - 保守作業が研究を圧迫するときは、必須更新をRevision History、CHANGELOG、Return Intake、回帰検査へ限定する。
 
 ## Revision History / 改訂履歴
+
+### 1.1.0-rc.1 — 2026-08-19
+
+- センテンス・クラウド、ビット・プローブ、センテンス閉回路標本を扱う日本語正本候補を追加。
+- Gate 4九文書を中核のまま維持し、新文書をReturn Intake-linked extensionとして接続。
+- 英語通約、実装評価、物理近接仮説を未閉鎖差分として保持。
 
 ### 1.0.0-rc.1 — 2026-08-08
 

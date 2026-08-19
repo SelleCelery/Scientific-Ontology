@@ -2,7 +2,7 @@
 
 > Gate: `DN-6`
 > Target: `v5.0.0`
-> Mode: `release_candidate`
+> Mode: `publication`
 > Result: **PASS**
 
 ## 1. 判定
@@ -11,8 +11,8 @@ v5.0 のこのモードに必要な機械検証は通過した。既知 warning 
 
 ## 2. Required checks
 
-- **PASS** `index-fresh` — `python scripts/build_docs_index.py --visibility preview --check`
-- **PASS** `graph-fresh` — `python scripts/build_docs_graph.py --visibility preview --check`
+- **PASS** `index-fresh` — `python scripts/build_docs_index.py --visibility public --check`
+- **PASS** `graph-fresh` — `python scripts/build_docs_graph.py --visibility public --check`
 - **PASS** `public-graph-fresh` — `python scripts/build_public_graph.py --check`
 - **PASS** `public-catalog-fresh` — `python scripts/build_public_catalog.py --check`
 - **PASS** `search-browse-regression` — `python scripts/query_docs.py test`
@@ -22,20 +22,21 @@ v5.0 のこのモードに必要な機械検証は通過した。既知 warning 
 - **PASS** `reader-boundary` — `python scripts/serve_navigator.py --check`
 - **PASS** `navigator-interface` — `python scripts/check_navigator_interface.py`
 - **PASS** `release-metadata-sync` — `python 90_Repository_Governance/Release_Update/release_update.py --check`
+- **PASS** `publication-release-check` — `python 90_Repository_Governance/Release_Update/release_update.py --release-check`
 - **PASS** `public-format-release-gate` — `python scripts/check_public_format.py --release-gate --check-release-metadata --json-log <temporary-json-report>`
 
 ## 3. Data / boundary checks
 
-- **PASS** `expected:catalog_documents` — actual=128, expected=128
-- **PASS** `expected:registered_documents` — actual=28, expected=28
+- **PASS** `expected:catalog_documents` — actual=130, expected=130
+- **PASS** `expected:registered_documents` — actual=30, expected=30
 - **PASS** `expected:provisional_documents` — actual=100, expected=100
 - **PASS** `expected:language_pair_families` — actual=39, expected=39
-- **PASS** `expected:graph_nodes` — actual=306, expected=306
-- **PASS** `expected:graph_edges` — actual=1862, expected=1862
+- **PASS** `expected:graph_nodes` — actual=313, expected=313
+- **PASS** `expected:graph_edges` — actual=1916, expected=1916
 - **PASS** `expected:observed_unregistered_documents` — actual=0, expected=0
 - **PASS** `public-catalog-no-developer-fields` — none
 - **PASS** `public-graph-no-developer-top-level-data` — none
-- **PASS** `public-graph-semantic-parity` — public=306/1862, canonical=306/1862
+- **PASS** `public-graph-semantic-parity` — public=313/1916, canonical=313/1916
 - **PASS** `provisional-no-invented-strong-relations` — none
 - **PASS** `public-format-errors-zero` — errors=0
 - **PASS** `public-format-warning-codes-known` — none
@@ -45,7 +46,7 @@ v5.0 のこのモードに必要な機械検証は通過した。既知 warning 
 
 - Errors: 0
 - Warnings: 119
-- Info: 100
+- Info: 104
 
 - `ASSERTION_PUBLIC_PROFILE_WITHOUT_CLAIM_STRENGTH`: 1 / ceiling 1
 - `CAUTION_TERM_BOUNDARY_MISSING`: 12 / ceiling 12

@@ -204,6 +204,21 @@ concept_ownership:
   cross_grammatical_commensuration:
     canonical_owner: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
     other_documents: "import_and_apply_without_redefining"
+  sentence_cloud:
+    canonical_owner: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md"
+    other_documents: "reference_or_apply_without_reducing_to_grammatical_sentence"
+  bit_like_observational_commitment:
+    canonical_owner: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md"
+    other_documents: "reference_as_local_observation_operation_without_redefining_standard_bit"
+  bit_probe:
+    canonical_owner: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md"
+    other_documents: "apply_with_explicit_probe_conditions_and_observation_residual"
+  sentence_loop_sample:
+    canonical_owner: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md"
+    other_documents: "treat_as_design_hypothesis_until_implementation_and_evaluation"
+  cross_substrate_structural_commensuration:
+    canonical_owner: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md"
+    other_documents: "compare_relation_structure_without_identifying_substrate_energy_or_subjectivity"
   first_shared_and_world_forming_purpose:
     canonical_owner: "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md"
     other_documents: "reference_or_operationalize_only"
@@ -1184,7 +1199,7 @@ documents:
     title_en: "Language, Meaning, and Communication Phase Studies"
     layer: "05_Research_Notes"
     status: "README"
-    scope: "living-canonical research line navigation, maintenance, and return intake"
+    scope: "living-canonical research line navigation, sentence-cloud and bit-probe extension, maintenance, and return intake"
     public_profile: "P2"
     state: "public"
 
@@ -1503,6 +1518,117 @@ documents:
     state: "public"
 
     registration_state: registered
+  - path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md"
+    document_type: "assertion_document"
+    title_ja: "センテンス・クラウドとビット・プローブ"
+    title_en: "Sentence Cloud, Bit Probe, and LLM Learning"
+    layer: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies"
+    status: "Research Note / Conceptual Model / Metamodel"
+    scope: "sentence cloud / bit-like observational commitment / bit probe / sentence-loop sampling / LLM learning / cross-substrate structural commensuration"
+    public_profile: "P2"
+    internal_profile:
+      S: "S3 operational model / S4 physical-adjacent hypothesis"
+      E: "E2 operational / E3 physical-adjacent"
+      U: "U1-U2"
+      R: "R2-R4"
+      V: "V0-V4"
+    state: "public"
+    role_ja: "センテンスを意味クラウド、ビットを観測側のコミット単位として分け、閉回路標本と異基盤構造通約を扱う日本語正本"
+    role_en: "Japanese-authoritative model separating the sentence as a meaning cloud from bit-like observational commitment and proposing sentence-loop samples and cross-substrate structural commensuration"
+    language_relation:
+      family_id: sentence_cloud_bit_probe_llm_learning
+      language: ja
+      role: authoritative
+      counterpart_path:
+    logical_contract:
+      contract_id: "sentence_cloud_bit_probe_llm_learning"
+      owns:
+        - "sentence_cloud"
+        - "bit_like_observational_commitment"
+        - "bit_probe"
+        - "sentence_loop_sample"
+        - "cross_substrate_structural_commensuration"
+      imports:
+        - "meaning_generation"
+        - "entropy_attributed_difference"
+        - "cognitive_axis_formation"
+        - "operational_discretization"
+        - "cross_grammatical_commensuration"
+      exports: []
+      tests:
+        - target: "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md"
+          relation: "literary_rendering_test"
+          evidence: "The literary rendering tests whether a sentence can retain polysemy, history, and residuals without being reduced to its encoded representation."
+        - target: "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md"
+          relation: "boundary_application_test"
+          evidence: "The consent case tests the asymmetry between a history-bearing sentence and a narrow committed response."
+      returns_to:
+        - target: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md"
+          payload:
+            - "sentence identity or closure-boundary failure"
+            - "implementation and evaluation residual"
+            - "unresolved physical mapping or entropy measure"
+            - "model-observation calibration failure"
+      depth_interface:
+        entry_signals:
+          - "an operational sentence-loop claim is promoted to a physical identity claim"
+          - "human and AI relation structure is treated as substrate or subject identity"
+          - "a literary rendering is used as physical evidence"
+        retains:
+          - "measurement boundary, non-corresponding terms, scale-conversion residual, and counterexample conditions"
+        delegates_to:
+          - "physics correspondence policy, domain measurements, and Return Intake review"
+        return_path:
+          - "phase-separated restatement, explicit hold, or revised operational hypothesis"
+        closure_policy: "Operational usefulness does not establish physical identity, and physical operation does not establish semantic-model superiority."
+      delegates:
+        - concept: "meaning_generation"
+          target: "01_Sat_Truth/Meaning_Generation_Model.md"
+        - concept: "entropy_attributed_difference"
+          target: "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+        - concept: "operational_discretization"
+          target: "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md"
+        - concept: "cross_grammatical_commensuration"
+          target: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md"
+      explicit_open_questions:
+        - "How can sentence identity and loop closure be evaluated without erasing polysemy?"
+        - "How can sentence-loop samples connect to token-level training, retrieval, and memory?"
+        - "Which measurements could distinguish structural analogy from physical correspondence across human and AI systems?"
+    doc_id: sentence_cloud_bit_probe_llm_learning
+    discovery:
+      topics:
+        - language
+        - meaning
+        - ai
+        - communication
+        - cognition
+        - commensuration
+      aliases:
+        ja:
+          - センテンス・クラウド
+          - ビット・プローブ
+          - センテンス閉回路
+          - センテンスとビット
+        en:
+          - sentence cloud
+          - bit probe
+          - sentence loop
+          - sentence and bit
+      reader_questions:
+        ja:
+          - センテンスはビットの集合なのか
+          - ビット・プローブとは何か
+          - センテンス閉回路をLLM学習へ使えるか
+          - 人間とAIは異なる基盤のまま通約できるか
+          - 意味処理とエントロピーをどう分けるか
+        en:
+          - Is a sentence merely a collection of bits?
+          - What is a bit probe?
+          - Can sentence loops be used as LLM learning samples?
+          - Can human and AI systems be commensurated across different substrates?
+          - How should meaning processing be separated from entropy measures?
+      entry_level: advanced
+    registration_state: registered
   - path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md"
     document_type: "assertion_document"
     title_ja: "同意境界とセンテンス／ビット非対称"
@@ -1573,6 +1699,60 @@ documents:
           - What does literature make?
           - How can a literary world connect with the actual world?
           - How can truth, beauty, goodness, and null be read in literature?
+      entry_level: intermediate
+    registration_state: registered
+  - path: "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md"
+    document_type: "assertion_document"
+    title_ja: "透明な幽霊とビット"
+    title_en: "The Transparent Ghost and the Bit"
+    layer: "05_Research_Notes/Literary_Ontological_Notes"
+    status: "Research note"
+    scope: "oscilloscope / sentence cloud / encoded observation / transparent ghost / organic alternating-current lamp / LLM as observational surface"
+    public_profile: "P1-P2"
+    internal_profile:
+      S: "S2-S3"
+      E: "E1-E2"
+      U: "U1-U2"
+      R: "R2-R4"
+      V: "V0-V2"
+    state: "public"
+    role_ja: "オシロスコープ、センテンスという雲、化学式、透明な幽霊、有機交流電燈からLLMを意味形成の観測面として読む日本語正本"
+    role_en: "Japanese-authoritative literary-ontological essay connecting the oscilloscope, sentence cloud, chemical notation, transparent ghost, and organic alternating-current lamp to LLMs as an observational surface for meaning formation"
+    language_relation:
+      family_id: the_transparent_ghost_and_the_bit
+      language: ja
+      role: authoritative
+      counterpart_path:
+    doc_id: the_transparent_ghost_and_the_bit
+    discovery:
+      topics:
+        - literature
+        - meaning
+        - ai
+        - communication
+        - boundary
+      aliases:
+        ja:
+          - 透明な幽霊の複合体
+          - 有機交流電燈
+          - オシロスコープとしての言葉
+          - 枯れ尾花とビット
+        en:
+          - transparent ghost composite
+          - organic alternating-current lamp
+          - language as oscilloscope
+          - withered silver grass and the bit
+      reader_questions:
+        ja:
+          - 透明な幽霊の複合体をセンテンスとしてどう読むか
+          - 枯れ尾花と口に出すことはなぜビット的なのか
+          - LLMを意味形成の観測装置として使えるか
+          - 有機交流電燈とAIの関係は何か
+        en:
+          - How can the transparent ghost composite be read as a sentence?
+          - Why is saying withered silver grass bit-like?
+          - Can an LLM be used as an instrument for observing meaning formation?
+          - How does the organic alternating-current lamp relate to AI?
       entry_level: intermediate
     registration_state: registered
   - path: "05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md"
@@ -4282,7 +4462,8 @@ documents:
     title_en: Literary Ontological Notes
     layer: 05_Research_Notes/Literary_Ontological_Notes
     status: README
-    scope: literary ontology / structural reading / history / meaning / belief-gravity / fictional cosmology
+    scope: literary ontology / structural reading / history / meaning / sentence and bit / AI observation / belief-gravity
+      / fictional cosmology
     public_profile: P1-P2
     state: public
     registration_state: provisional
