@@ -83,6 +83,9 @@ format_registry:
       - "Release notes"
       - "Repository governance specification"
       - "Public Overview Candidate / cross-series operational orientation"
+      - "Visual note"
+      - "Literary essay"
+      - "Working note"
     rule: "Status describes document role, not claim strength."
 
   metadata_labels:

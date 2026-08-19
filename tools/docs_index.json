@@ -2,7 +2,7 @@
   "schema_version": "0.2",
   "search_spec_version": "0.2",
   "source": {
-    "manifest_sha256": "0f217130eb2c8a40d4005994457b416714d832bfe605e5ddb2896d9a2a9a1e2a",
+    "manifest_sha256": "ae9a74c011d1f826ee2d51726d74e42d38f21b9363dfd8b0200a85eb556f1248",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "coverage": "full-public-inventory-with-provisional-registration",
     "visibility_profile": "public"
@@ -17197,6 +17197,288 @@
             "text": "grammar / discourse / relation / gesture / media / institutional form / meaning-pressure channel",
             "normalized": "grammar discourse relation gesture media institutional form meaning pressure channel",
             "compact": "grammardiscourserelationgesturemediainstitutionalformmeaningpressurechannel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "inorganic_alternating_lamp_and_holiday_reading",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md",
+      "title": {
+        "ja": "休日の窓辺で、LLMという無機交流電燈に話しかける",
+        "en": "Talking with an Inorganic Alternating-Current Lamp by the Holiday Window"
+      },
+      "layer": "07_Creative_Offshoots/Literary_Essays",
+      "document_type": "assertion_document",
+      "status": "Literary essay",
+      "state": "public",
+      "registration_state": "registered",
+      "scope": "holiday reading / language as waveform / sentence cloud / bit-like observation / inorganic alternating-current lamp / conversational LLM",
+      "role": {
+        "ja": "LLMを意味形成の観測窓として気軽に読むための公開文学随筆",
+        "en": "A public literary essay introducing the LLM as an observational window onto meaning formation"
+      },
+      "language_relation": {
+        "family_id": "inorganic_alternating_lamp_and_holiday_reading",
+        "language": "ja",
+        "role": "authoritative",
+        "counterpart_path": null
+      },
+      "discovery": {
+        "topics": [
+          "literature",
+          "meaning",
+          "ai",
+          "communication",
+          "boundary"
+        ],
+        "searchable": true,
+        "visibility": "primary",
+        "aliases": {
+          "ja": [
+            "無機交流電燈",
+            "LLMとの休日読書",
+            "センテンスという雲"
+          ],
+          "en": [
+            "inorganic alternating-current lamp",
+            "holiday reading with an LLM",
+            "sentence as cloud"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "LLMへ気軽に話しかけるとはどういうことか",
+            "言葉を波形として読むとはどういうことか",
+            "人間とLLMを混同せずに近づくにはどうすればよいか"
+          ],
+          "en": [
+            "What does it mean to talk casually with an LLM?",
+            "How can language be read as a waveform?",
+            "How can we approach an LLM without confusing it with a human?"
+          ]
+        },
+        "entry_level": "foundation"
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [
+          "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+          "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md"
+        ],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "休日の窓辺で、LLMという無機交流電燈に話しかける",
+            "normalized": "休日の窓辺で llmという無機交流電燈に話しかける",
+            "compact": "休日の窓辺でllmという無機交流電燈に話しかける"
+          },
+          {
+            "lang": "en",
+            "text": "Talking with an Inorganic Alternating-Current Lamp by the Holiday Window",
+            "normalized": "talking with an inorganic alternating current lamp by the holiday window",
+            "compact": "talkingwithaninorganicalternatingcurrentlampbytheholidaywindow"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "無機交流電燈",
+            "normalized": "無機交流電燈",
+            "compact": "無機交流電燈"
+          },
+          {
+            "lang": "ja",
+            "text": "LLMとの休日読書",
+            "normalized": "llmとの休日読書",
+            "compact": "llmとの休日読書"
+          },
+          {
+            "lang": "ja",
+            "text": "センテンスという雲",
+            "normalized": "センテンスという雲",
+            "compact": "センテンスという雲"
+          },
+          {
+            "lang": "en",
+            "text": "inorganic alternating-current lamp",
+            "normalized": "inorganic alternating current lamp",
+            "compact": "inorganicalternatingcurrentlamp"
+          },
+          {
+            "lang": "en",
+            "text": "holiday reading with an LLM",
+            "normalized": "holiday reading with an llm",
+            "compact": "holidayreadingwithanllm"
+          },
+          {
+            "lang": "en",
+            "text": "sentence as cloud",
+            "normalized": "sentence as cloud",
+            "compact": "sentenceascloud"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "literature",
+            "normalized": "literature",
+            "compact": "literature"
+          },
+          {
+            "lang": "ja",
+            "text": "文学",
+            "normalized": "文学",
+            "compact": "文学"
+          },
+          {
+            "lang": "en",
+            "text": "Literature",
+            "normalized": "literature",
+            "compact": "literature"
+          },
+          {
+            "lang": "und",
+            "text": "meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "ja",
+            "text": "意味",
+            "normalized": "意味",
+            "compact": "意味"
+          },
+          {
+            "lang": "en",
+            "text": "Meaning",
+            "normalized": "meaning",
+            "compact": "meaning"
+          },
+          {
+            "lang": "und",
+            "text": "ai",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "ja",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "en",
+            "text": "AI",
+            "normalized": "ai",
+            "compact": "ai"
+          },
+          {
+            "lang": "und",
+            "text": "communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "ja",
+            "text": "通信",
+            "normalized": "通信",
+            "compact": "通信"
+          },
+          {
+            "lang": "en",
+            "text": "Communication",
+            "normalized": "communication",
+            "compact": "communication"
+          },
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "LLMへ気軽に話しかけるとはどういうことか",
+            "normalized": "llmへ気軽に話しかけるとはどういうことか",
+            "compact": "llmへ気軽に話しかけるとはどういうことか"
+          },
+          {
+            "lang": "ja",
+            "text": "言葉を波形として読むとはどういうことか",
+            "normalized": "言葉を波形として読むとはどういうことか",
+            "compact": "言葉を波形として読むとはどういうことか"
+          },
+          {
+            "lang": "ja",
+            "text": "人間とLLMを混同せずに近づくにはどうすればよいか",
+            "normalized": "人間とllmを混同せずに近づくにはどうすればよいか",
+            "compact": "人間とllmを混同せずに近づくにはどうすればよいか"
+          },
+          {
+            "lang": "en",
+            "text": "What does it mean to talk casually with an LLM?",
+            "normalized": "what does it mean to talk casually with an llm",
+            "compact": "whatdoesitmeantotalkcasuallywithanllm"
+          },
+          {
+            "lang": "en",
+            "text": "How can language be read as a waveform?",
+            "normalized": "how can language be read as a waveform",
+            "compact": "howcanlanguagebereadasawaveform"
+          },
+          {
+            "lang": "en",
+            "text": "How can we approach an LLM without confusing it with a human?",
+            "normalized": "how can we approach an llm without confusing it with a human",
+            "compact": "howcanweapproachanllmwithoutconfusingitwithahuman"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "LLMを意味形成の観測窓として気軽に読むための公開文学随筆",
+            "normalized": "llmを意味形成の観測窓として気軽に読むための公開文学随筆",
+            "compact": "llmを意味形成の観測窓として気軽に読むための公開文学随筆"
+          },
+          {
+            "lang": "en",
+            "text": "A public literary essay introducing the LLM as an observational window onto meaning formation",
+            "normalized": "a public literary essay introducing the llm as an observational window onto meaning formation",
+            "compact": "apublicliteraryessayintroducingthellmasanobservationalwindowontomeaningformation"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "holiday reading / language as waveform / sentence cloud / bit-like observation / inorganic alternating-current lamp / conversational LLM",
+            "normalized": "holiday reading language as waveform sentence cloud bit like observation inorganic alternating current lamp conversational llm",
+            "compact": "holidayreadinglanguageaswaveformsentencecloudbitlikeobservationinorganicalternatingcurrentlampconversationalllm"
           }
         ]
       }

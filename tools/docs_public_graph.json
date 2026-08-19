@@ -1846,6 +1846,23 @@
       "identity_source": "explicit"
     },
     {
+      "id": "doc:inorganic_alternating_lamp_and_holiday_reading",
+      "type": "document",
+      "key": "inorganic_alternating_lamp_and_holiday_reading",
+      "path": "07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md",
+      "title": {
+        "ja": "休日の窓辺で、LLMという無機交流電燈に話しかける",
+        "en": "Talking with an Inorganic Alternating-Current Lamp by the Holiday Window"
+      },
+      "layer": "07_Creative_Offshoots/Literary_Essays",
+      "state": "public",
+      "role": {
+        "ja": "LLMを意味形成の観測窓として気軽に読むための公開文学随筆",
+        "en": "A public literary essay introducing the LLM as an observational window onto meaning formation"
+      },
+      "identity_source": "explicit"
+    },
+    {
       "id": "doc:intension_extension_and_false_extension_en",
       "type": "document",
       "key": "intension_extension_and_false_extension_en",
@@ -20284,6 +20301,90 @@
       ]
     },
     {
+      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
+      "relation": "belongs_to_topic",
+      "to": "topic:ai",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
+      "relation": "belongs_to_topic",
+      "to": "topic:boundary",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
+      "relation": "belongs_to_topic",
+      "to": "topic:communication",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
+      "relation": "belongs_to_topic",
+      "to": "topic:literature",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
+      "relation": "belongs_to_topic",
+      "to": "topic:meaning",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
+      "relation": "related_to",
+      "to": "doc:sentence_cloud_bit_probe_llm_learning",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].related"
+        }
+      ]
+    },
+    {
+      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
+      "relation": "related_to",
+      "to": "doc:the_transparent_ghost_and_the_bit",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].related"
+        }
+      ]
+    },
+    {
       "from": "doc:intension_extension_and_false_extension_en",
       "relation": "belongs_to_topic",
       "to": "topic:ai",
@@ -29115,7 +29216,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L335"
+          "locator": "L357"
         }
       ]
     },
@@ -29127,7 +29228,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L333"
+          "locator": "L355"
         }
       ]
     },
@@ -29139,7 +29240,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L334"
+          "locator": "L356"
         }
       ]
     },
@@ -29151,7 +29252,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L331"
+          "locator": "L353"
         }
       ]
     },
@@ -29163,7 +29264,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L336"
+          "locator": "L358"
         }
       ]
     },
@@ -29180,7 +29281,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L330"
+          "locator": "L352"
         }
       ]
     },
@@ -29192,12 +29293,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L324"
+          "locator": "L346"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L337"
+          "locator": "L359"
         }
       ]
     },
@@ -29209,7 +29310,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L332"
+          "locator": "L354"
         }
       ]
     },

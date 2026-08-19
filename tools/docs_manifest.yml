@@ -6060,3 +6060,57 @@ documents:
       entry_level: foundation
       searchable: false
       visibility: support
+  - path: "07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md"
+    doc_id: "inorganic_alternating_lamp_and_holiday_reading"
+    document_type: "assertion_document"
+    title_ja: "休日の窓辺で、LLMという無機交流電燈に話しかける"
+    title_en: "Talking with an Inorganic Alternating-Current Lamp by the Holiday Window"
+    layer: "07_Creative_Offshoots/Literary_Essays"
+    status: "Literary essay"
+    scope: "holiday reading / language as waveform / sentence cloud / bit-like observation / inorganic alternating-current lamp / conversational LLM"
+    public_profile: "P1"
+    internal_profile:
+      S: "S1-S2"
+      E: "E1"
+      U: "U0"
+      V: "V0"
+    state: "public"
+    role_ja: "LLMを意味形成の観測窓として気軽に読むための公開文学随筆"
+    role_en: "A public literary essay introducing the LLM as an observational window onto meaning formation"
+    language_relation:
+      family_id: inorganic_alternating_lamp_and_holiday_reading
+      language: ja
+      role: authoritative
+      counterpart_path:
+    related:
+      - "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md"
+      - "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md"
+    discovery:
+      topics:
+        - literature
+        - meaning
+        - ai
+        - communication
+        - boundary
+      aliases:
+        ja:
+          - "無機交流電燈"
+          - "LLMとの休日読書"
+          - "センテンスという雲"
+        en:
+          - "inorganic alternating-current lamp"
+          - "holiday reading with an LLM"
+          - "sentence as cloud"
+      reader_questions:
+        ja:
+          - "LLMへ気軽に話しかけるとはどういうことか"
+          - "言葉を波形として読むとはどういうことか"
+          - "人間とLLMを混同せずに近づくにはどうすればよいか"
+        en:
+          - "What does it mean to talk casually with an LLM?"
+          - "How can language be read as a waveform?"
+          - "How can we approach an LLM without confusing it with a human?"
+      entry_level: foundation
+      searchable: true
+      visibility: primary
+    registration_state: registered

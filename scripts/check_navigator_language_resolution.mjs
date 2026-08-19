@@ -25,7 +25,7 @@ function assert(condition, message) {
   if (!condition) fail(message);
 }
 
-assert(docs.length === 130, `expected 130 public catalog documents, got ${docs.length}`);
+assert(docs.length === 131, `expected 131 public catalog documents, got ${docs.length}`);
 
 const families = new Map();
 for (const doc of docs) {
@@ -57,13 +57,17 @@ for (const [key, members] of families) {
 
 assert(pairedFamilies === 39, `expected 39 JA/EN pair families, got ${pairedFamilies}`);
 assert(Number(catalog.source?.language_pair_families ?? -1) === 39, "catalog source language_pair_families must be 39");
-assert(Number(catalog.source?.unmatched_language_specific_documents ?? -1) === 7, "expected seven intentional single-language fallback documents");
+assert(Number(catalog.source?.unmatched_language_specific_documents ?? -1) === 8, "expected seven intentional single-language fallback documents");
 const unmatchedSuffixed = docs.filter((doc) => /\.(ja|en)\.md$/i.test(String(doc.path ?? "")) && !doc.presentation?.counterpart_path);
 const expectedPendingCommensurations = new Set([
   "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
   "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+  "07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md",
 ]);
-assert(unmatchedSuffixed.length === expectedPendingCommensurations.size, `expected two declared pending commensurations; unmatched=${unmatchedSuffixed.length}`);
+assert(
+  unmatchedSuffixed.length === expectedPendingCommensurations.size,
+  `expected three declared pending commensurations; unmatched=${unmatchedSuffixed.length}`,
+);
 for (const doc of unmatchedSuffixed) {
   assert(expectedPendingCommensurations.has(String(doc.path)), `undeclared unmatched language-specific document: ${doc.path}`);
   assert(doc.language_relation?.role === "authoritative", `pending commensuration must retain Japanese authoritative role: ${doc.path}`);
@@ -73,7 +77,7 @@ for (const lang of ["ja", "en"]) {
   const visible = collapseDocumentsForLanguage(docs, docs, lang);
   const keys = new Set(visible.map(presentationKeyForDocument));
   assert(visible.length === keys.size, `${lang}: duplicate presentation families remain after collapse`);
-  assert(visible.length === 91, `${lang}: expected 91 logical public entries after collapsing 39 pairs, got ${visible.length}`);
+  assert(visible.length === 92, `${lang}: expected 92 logical public entries after collapsing 39 pairs, got ${visible.length}`);
   for (const doc of visible) {
     const docLang = documentLanguage(doc);
     if ((docLang === "ja" || docLang === "en") && docLang !== lang) {
@@ -103,4 +107,4 @@ for (const doc of docs) {
   if (counterpart) assert(byPath.has(String(counterpart)), `counterpart path missing from catalog: ${counterpart}`);
 }
 
-console.log(`NAVIGATOR LANGUAGE RESOLUTION CHECK PASS: 130 documents, ${pairedFamilies} JA/EN pairs, 91 logical entries per UI language`);
+console.log(`NAVIGATOR LANGUAGE RESOLUTION CHECK PASS: 131 documents, ${pairedFamilies} JA/EN pairs, 92 logical entries per UI language`);

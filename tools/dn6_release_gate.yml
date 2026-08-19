@@ -12,15 +12,15 @@ gate:
     inconsistency. Developer-workbench completion is not a v5.0 release blocker.
 
 expected_public_state:
-  catalog_documents: 130
-  registered_documents: 30
+  catalog_documents: 131
+  registered_documents: 31
   provisional_documents: 100
   language_pair_families: 39
-  logical_entries_per_ui_language: 91
-  graph_nodes: 313
-  graph_edges: 1916
+  logical_entries_per_ui_language: 92
+  graph_nodes: 314
+  graph_edges: 1923
   observed_unregistered_documents: 0
-  exposed_markdown_files: 130
+  exposed_markdown_files: 131
   search_tests: 11
   browse_tests: 8
   graph_tests: 9

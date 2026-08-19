@@ -3,16 +3,16 @@
 > Gate: `DN-6`
 > Target: `v5.0.0`
 > Mode: `publication`
-> Result: **PASS**
+> Result: **BLOCKED**
 
 ## 1. 判定
 
-v5.0 のこのモードに必要な機械検証は通過した。既知 warning は解決済みとは扱わず、設定された上限内の技術負債として保持する。
+少なくとも一つの release blocker が残っている。失敗した項目を解消するまで、このモードではリリース可能と判定しない。
 
 ## 2. Required checks
 
 - **PASS** `index-fresh` — `python scripts/build_docs_index.py --visibility public --check`
-- **PASS** `graph-fresh` — `python scripts/build_docs_graph.py --visibility public --check`
+- **FAIL** `graph-fresh` — `python scripts/build_docs_graph.py --visibility public --check`
 - **PASS** `public-graph-fresh` — `python scripts/build_public_graph.py --check`
 - **PASS** `public-catalog-fresh` — `python scripts/build_public_catalog.py --check`
 - **PASS** `search-browse-regression` — `python scripts/query_docs.py test`
@@ -27,16 +27,16 @@ v5.0 のこのモードに必要な機械検証は通過した。既知 warning 
 
 ## 3. Data / boundary checks
 
-- **PASS** `expected:catalog_documents` — actual=130, expected=130
-- **PASS** `expected:registered_documents` — actual=30, expected=30
+- **PASS** `expected:catalog_documents` — actual=131, expected=131
+- **PASS** `expected:registered_documents` — actual=31, expected=31
 - **PASS** `expected:provisional_documents` — actual=100, expected=100
 - **PASS** `expected:language_pair_families` — actual=39, expected=39
-- **PASS** `expected:graph_nodes` — actual=313, expected=313
-- **PASS** `expected:graph_edges` — actual=1916, expected=1916
+- **PASS** `expected:graph_nodes` — actual=314, expected=314
+- **PASS** `expected:graph_edges` — actual=1923, expected=1923
 - **PASS** `expected:observed_unregistered_documents` — actual=0, expected=0
 - **PASS** `public-catalog-no-developer-fields` — none
 - **PASS** `public-graph-no-developer-top-level-data` — none
-- **PASS** `public-graph-semantic-parity` — public=313/1916, canonical=313/1916
+- **PASS** `public-graph-semantic-parity` — public=314/1923, canonical=314/1923
 - **PASS** `provisional-no-invented-strong-relations` — none
 - **PASS** `public-format-errors-zero` — errors=0
 - **PASS** `public-format-warning-codes-known` — none
@@ -46,7 +46,7 @@ v5.0 のこのモードに必要な機械検証は通過した。既知 warning 
 
 - Errors: 0
 - Warnings: 119
-- Info: 104
+- Info: 106
 
 - `ASSERTION_PUBLIC_PROFILE_WITHOUT_CLAIM_STRENGTH`: 1 / ceiling 1
 - `CAUTION_TERM_BOUNDARY_MISSING`: 12 / ceiling 12
