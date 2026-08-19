@@ -38,6 +38,12 @@ DEVELOPER_ONLY_KEYS = {
     "revision_candidates",
 }
 HEADER_CONTROLS = ("header-menu", "header-back", "header-top", "header-bottom")
+PUBLIC_RELEASE_STATUS_MARKERS = (
+    'class="release-status-banner"',
+    "Living Preview",
+    "最新の公開研究面",
+    "https://doi.org/10.5281/zenodo.21909382",
+)
 
 
 def fail(message: str) -> int:
@@ -188,6 +194,9 @@ def main() -> int:
         return fail("navigator/index.html must declare data-interface=public")
     if 'data-interface="developer"' not in dev_html:
         return fail("navigator/dev.html must declare data-interface=developer")
+    for marker in PUBLIC_RELEASE_STATUS_MARKERS:
+        if marker not in public_html:
+            return fail(f"public shell missing release-status marker: {marker}")
     for html_name, html in (("public", public_html), ("developer", dev_html)):
         for control in HEADER_CONTROLS:
             if f'id="{control}"' not in html:
