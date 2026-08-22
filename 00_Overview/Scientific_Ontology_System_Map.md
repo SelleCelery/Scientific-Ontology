@@ -150,12 +150,17 @@
 │  │  ├─ AI_Adoption_Collation_Checklist.md
 │  │  ├─ Specification_for_Peace.ja.md
 │  │  └─ Specification_for_Peace.en.md
-│  └─ DeRegistry_to_Judgment_Transparency/
-│     ├─ README.md
-│     ├─ 01_CHRONICLE.ja.md
-│     ├─ 02_TRANSMISSIONS.ja.md
-│     ├─ 03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md
-│     └─ evidence/
+|  `- SO_Reflexive_Philosophical_Research/
+|     |- README.md
+|     |- 00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md
+|     |- 01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md
+|     `- volumes/
+|        `- Volume_01_SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/
+|           |- README.md
+|           |- 01_CHRONICLE.ja.md
+|           |- 02_TRANSMISSIONS.ja.md
+|           |- 03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md
+|           `- evidence/
 │
 ├─ 05_Research_Notes/
 │  ├─ README.md
@@ -361,7 +366,7 @@ AIや制度を採用する社会側の境界、責任、照合、平和条件を
 - 責任境界と再照合可能性
 - 平和プロトコル・平和仕様
 
-### `DeRegistry_to_Judgment_Transparency`
+### `SO_Reflexive_Philosophical_Research`
 
 De-Registry実験から判断透明性、Topology-first監査、三層変換監査へ至る方法史と公開証跡を扱う。研究履歴を消さず、失敗runと自己監査結果を応用可能な判断透明性インターフェースへ接続する。
 
@@ -696,12 +701,17 @@ The following tree represents the public structure and excludes `000*` working d
 │  │  ├─ AI_Adoption_Collation_Checklist.md
 │  │  ├─ Specification_for_Peace.ja.md
 │  │  └─ Specification_for_Peace.en.md
-│  └─ DeRegistry_to_Judgment_Transparency/
-│     ├─ README.md
-│     ├─ 01_CHRONICLE.ja.md
-│     ├─ 02_TRANSMISSIONS.ja.md
-│     ├─ 03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md
-│     └─ evidence/
+|  `- SO_Reflexive_Philosophical_Research/
+|     |- README.md
+|     |- 00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md
+|     |- 01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md
+|     `- volumes/
+|        `- Volume_01_SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/
+|           |- README.md
+|           |- 01_CHRONICLE.ja.md
+|           |- 02_TRANSMISSIONS.ja.md
+|           |- 03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md
+|           `- evidence/
 │
 ├─ 05_Research_Notes/
 │  ├─ README.md
@@ -905,7 +915,7 @@ Its principal concerns include:
 - responsibility boundaries and re-collatability; and
 - peace protocols and peace specifications.
 
-### `DeRegistry_to_Judgment_Transparency`
+### `SO_Reflexive_Philosophical_Research`
 
 This area preserves the experiment-backed development from De-Registry to judgment transparency, topology-first auditing, and three-layer transformation auditing. It exposes failed runs and self-audit results as a reusable public application interface rather than rewriting them as a linear success story.
 

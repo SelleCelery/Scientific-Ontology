@@ -1,6 +1,10 @@
 # 第一巻 De-Registryから判断透明性へ
 ## Volume I — From De-Registry to Judgment Transparency
 
+> Research program: [`SO Reflexive Philosophical Research`](../../README.md)
+> Research context: [`00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md`](../../00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md)
+> Open philosophical questions: [`01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md`](../../01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md)
+
 > Status: Public Application / Historical Method Record
 > Layer: 04_Applications
 > Role: judgment-transparency method, experiment-backed application history, public evidence interface

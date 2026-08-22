@@ -25,7 +25,7 @@
 04 Applications
   ├─ AI_Adaptation
   ├─ Social_Boundary_Design
-  └─ DeRegistry_to_Judgment_Transparency
+  └─ SO_Reflexive_Philosophical_Research
   ↓
 実装結果・残差・異議を上流へ返送
 ```
@@ -63,10 +63,10 @@
 - [`Social_Boundary_Design/README.md`](./Social_Boundary_Design/README.md)
   AI導入、責任境界、照合可能性、社会設計、平和仕様。
 
-- [`DeRegistry_to_Judgment_Transparency/README.md`](./DeRegistry_to_Judgment_Transparency/README.md)
+- [`SO_Reflexive_Philosophical_Research/README.md`](./SO_Reflexive_Philosophical_Research/README.md)
   De-Registryから判断透明性へ至る実験史、通信トポロジー監査、公開証跡。
 
-AI側の適応と社会側の採用設計を混同しない。`DeRegistry_to_Judgment_Transparency`は両者を横断し、判断生成と監査履歴を公開可能な方法インターフェースとして保持する。
+AI側の適応と社会側の採用設計を混同しない。`SO_Reflexive_Philosophical_Research`は両者を横断し、判断生成と監査履歴を公開可能な方法インターフェースとして保持する。
 
 ## 5. Maintenance Notes / 運用メモ
 
@@ -103,7 +103,7 @@ This is not merely a place for applying theory to examples. It is also a public 
 04 Applications
   ├─ AI_Adaptation
   ├─ Social_Boundary_Design
-  └─ DeRegistry_to_Judgment_Transparency
+  └─ SO_Reflexive_Philosophical_Research
   ↓
 Implementation results, residuals, and objections return upstream
 ```
@@ -137,10 +137,10 @@ Not included:
 - [`Social_Boundary_Design/README.md`](./Social_Boundary_Design/README.md)
   AI adoption, responsibility boundaries, re-collatability, social design, and peace specifications.
 
-- [`DeRegistry_to_Judgment_Transparency/README.md`](./DeRegistry_to_Judgment_Transparency/README.md)
+- [`SO_Reflexive_Philosophical_Research/README.md`](./SO_Reflexive_Philosophical_Research/README.md)
   Experiment-backed history from De-Registry to judgment transparency, topology-first auditing, and a public evidence trail.
 
-Do not collapse AI-side adaptation into social-side adoption design. `DeRegistry_to_Judgment_Transparency` is a cross-cutting application surface for judgment-generation history and public auditability.
+Do not collapse AI-side adaptation into social-side adoption design. `SO_Reflexive_Philosophical_Research` is a cross-cutting application surface for judgment-generation history and public auditability.
 
 ## 4. Return and Maintenance
 
