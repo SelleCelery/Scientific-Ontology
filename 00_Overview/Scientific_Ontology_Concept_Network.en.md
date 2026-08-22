@@ -2,11 +2,11 @@
 
 ## Scientific Ontology as a Discipline for Managing Non-Closure
 
-> Status: Methodological note  
-> Scope: ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness / aporia / research method  
-> Language: English commensurated rendering  
-> Japanese authoritative source: ./Scientific_Ontology_Concept_Network.ja.md  
-> Claim strength: S4-S5 / E3 / U1  
+> Status: Methodological note
+> Scope: ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness / aporia / research method
+> Language: English commensurated rendering
+> Japanese authoritative source: ./Scientific_Ontology_Concept_Network.ja.md
+> Claim strength: S4-S5 / E3 / U1
 > Public handling: Gödelian incompleteness is used as a methodological guide to non-closure, not as a proof of Scientific Ontology.
 
 ---
@@ -65,11 +65,11 @@ When asking what truly exists, we often try to identify directly some ultimate s
 
 What humans can actually confirm, however, is less often the ultimate substance itself than the trace of one thing acting upon another.
 
-A person's words arrive and change another person's judgment.  
-An institution narrows what a person can do.  
-A corporate purpose changes how time is distributed at the operational site.  
-An AI output enters decision-making and destabilizes the location of responsibility.  
-Past experience changes what will later be felt as danger, beauty, rightness, or loss.  
+A person's words arrive and change another person's judgment.
+An institution narrows what a person can do.
+A corporate purpose changes how time is distributed at the operational site.
+An AI output enters decision-making and destabilizes the location of responsibility.
+Past experience changes what will later be felt as danger, beauty, rightness, or loss.
 A burden pushed into the natural environment returns from another place and time.
 
 These are not merely subjective impressions or words alone.
@@ -157,7 +157,7 @@ Applied Metaphysics
   └─ high-strength inquiry
 ```
 
-Metaphysics passes questions to boundary operation.  
+Metaphysics passes questions to boundary operation.
 Boundary operation returns failures, counterexamples, and residuals to metaphysics.
 
 Through this reciprocity, the two correct and develop one another.
@@ -168,11 +168,11 @@ Through this reciprocity, the two correct and develop one another.
 
 When a system attempts completeness, matters appear that cannot be decided from within that system alone.
 
-Exceptions that do not fit a classification.  
-Differences that remain after explanation.  
-Premises that cannot be proven but whose removal would destroy the operating conditions of the system.  
-Aporias whose meaning cannot be closed.  
-Residues that remain in operational sites, bodies, and nature even after institutions declare processing complete.  
+Exceptions that do not fit a classification.
+Differences that remain after explanation.
+Premises that cannot be proven but whose removal would destroy the operating conditions of the system.
+Aporias whose meaning cannot be closed.
+Residues that remain in operational sites, bodies, and nature even after institutions declare processing complete.
 An exterior that theory cannot see, but whose effects return.
 
 Scientific Ontology does not erase these as mere failures.
@@ -181,12 +181,12 @@ At the same time, it does not conclude that anything may be said merely because 
 
 Managing non-closure requires at least the following:
 
-1. State how far closure has been achieved.  
-2. State from where closure has not been achieved.  
-3. Do not retreat unresolved questions into unfalsifiable mystery.  
-4. Distinguish residuals from residues and preserve a route for subsequent collation.  
-5. Do not confuse public claims, research hypotheses, structural analogies, and implementation candidates.  
-6. Retain the reactions produced by implementation as history and return them to the theoretical side.  
+1. State how far closure has been achieved.
+2. State from where closure has not been achieved.
+3. Do not retreat unresolved questions into unfalsifiable mystery.
+4. Distinguish residuals from residues and preserve a route for subsequent collation.
+5. Do not confuse public claims, research hypotheses, structural analogies, and implementation candidates.
+6. Retain the reactions produced by implementation as history and return them to the theoretical side.
 
 ### 4.1 How Gödelian Incompleteness Is Read Here
 
@@ -264,9 +264,9 @@ failure / anomaly / residual / residue / responsibility history
 
 This cycle has no simple top and bottom.
 
-Epistemology forms the conditions for setting purposes.  
-Purposes form organizations and institutions.  
-Organizations and institutions change the world of operational practice.  
+Epistemology forms the conditions for setting purposes.
+Purposes form organizations and institutions.
+Organizations and institutions change the world of operational practice.
 History returned from practice revises epistemology and metaphysics.
 
 Theory in Scientific Ontology does not exist to judge reality unilaterally.
@@ -292,11 +292,11 @@ difference
 
 Some matters, however, cannot be processed within a planar cycle alone.
 
-Different time horizons.  
-Purposes that cannot hold simultaneously.  
-Non-commensurable residuals.  
-Experiences that do not fit the current vocabulary.  
-Residues that continue to act even after institutional processing is declared complete.  
+Different time horizons.
+Purposes that cannot hold simultaneously.
+Non-commensurable residuals.
+Experiences that do not fit the current vocabulary.
+Residues that continue to act even after institutional processing is declared complete.
 Aporias that cannot yet be formalized.
 
 The logical-depth axis is a direction in which these matters are retained as unresolved questions, contradictions, branches, residuals, and semantic pressure without crushing them into the same plane, so that they may be reconstructed at another time and in another form.
@@ -497,9 +497,9 @@ Truth Management in Scientific Ontology does not limit truth to the correctness 
 
 ### First Purpose — Purpose
 
-What is to be protected?  
-What is to be increased?  
-What is to be treated as something that must not be lost?  
+What is to be protected?
+What is to be increased?
+What is to be treated as something that must not be lost?
 For what purpose do we organize, work, build institutions, and use technology?
 
 ### Shared Purpose — Sharing
@@ -516,10 +516,10 @@ Purpose draws a world.
 
 ### Boundary CA — Inspection and Revision
 
-When a shared purpose descends into operational practice, who becomes exhausted?  
-Where has burden moved?  
-What has become invisible?  
-Which fields of judgment have become impoverished?  
+When a shared purpose descends into operational practice, who becomes exhausted?
+Where has burden moved?
+What has become invisible?
+Which fields of judgment have become impoverished?
 Which return paths have been lost?
 
 Check and Act are not completed inside a meeting room.
@@ -570,17 +570,17 @@ Functions can be delegated.
 
 Responsibility cannot be delegated away.
 
-A public administration may contract out front-desk operations, but it cannot erase administrative responsibility.  
-Medical practice may externalize tests or systems, but it cannot erase the duty to explain.  
-Open-source software may distribute work, but it still requires a responsibility boundary for release decisions.  
+A public administration may contract out front-desk operations, but it cannot erase administrative responsibility.
+Medical practice may externalize tests or systems, but it cannot erase the duty to explain.
+Open-source software may distribute work, but it still requires a responsibility boundary for release decisions.
 An organization may delegate classification, summarization, and proposals to AI, but it cannot cast responsibility for the results onto AI and make that responsibility disappear.
 
 Scientific Ontology also holds that the historical record does not permit responsibility to be obscured.
 
-Who authorized the action?  
-Who benefited?  
-Who received the burden?  
-Who could not object?  
+Who authorized the action?
+Who benefited?
+Who received the burden?
+Who could not object?
 Which return paths were closed?
 
 These remain as history that changes downstream conditions.
@@ -601,8 +601,8 @@ Conversely, when an organization pushes burdens it cannot process outward onto c
 
 An organization defines itself by what it receives as entropy and what it returns as negentropy.
 
-A hospital may receive pain, diagnostic uncertainty, and insufficient care, and return recovery, explanation, and care.  
-A school may receive ignorance, isolation, and an inability to learn, and return understanding, learning circuits, and shared inquiry.  
+A hospital may receive pain, diagnostic uncertainty, and insufficient care, and return recovery, explanation, and care.
+A school may receive ignorance, isolation, and an inability to learn, and return understanding, learning circuits, and shared inquiry.
 A court may receive conflict, rights violations, and unclear responsibility, and return legal stability, procedural fairness, and responsibility processing.
 
 An organization's purpose appears not in its slogan, but in what it receives, what it transforms that input into, and what it returns to society.
@@ -713,11 +713,11 @@ Their role is to supply where the public framework remains open, which aporia sh
 
 The shortest reading route is:
 
-1. [`README.md`](../README.md)  
-2. [`Scientific Ontology System Map`](./Scientific_Ontology_System_Map.md)  
-3. [`Boundary Realism Principle`](../01_Sat_Truth/Boundary_Realism_Principle.md)  
-4. This document  
-5. A route selected according to the reader's interest  
+1. [`README.md`](../README.md)
+2. [`Scientific Ontology System Map`](./Scientific_Ontology_System_Map.md)
+3. [`Boundary Realism Principle`](../01_Sat_Truth/Boundary_Realism_Principle.md)
+4. This document
+5. A route selected according to the reader's interest
 
 ### Entering Through Ontology and Realism
 
@@ -760,9 +760,9 @@ The shortest reading route is:
 
 ### Entering Through Physical-Near Concepts
 
-1. [`Physics Correspondence Policy`](./Physics_Correspondence_Policy.en.md)  
-2. [`History-Field Topology`](../02_Raj_Beauty/History_Field_Topology.md)  
-3. [`PINGER Hypothesis and History-Field Topology`](../05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.en.md)  
+1. [`Physics Correspondence Policy`](./Physics_Correspondence_Policy.en.md)
+2. [`History-Field Topology`](../02_Raj_Beauty/History_Field_Topology.md)
+3. [`PINGER Hypothesis and History-Field Topology`](../05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.en.md)
 
 Reading only the physical-near notes first makes it easy to misread the entire framework as a replacement physical theory. Reading Boundary Realism and the Physics Correspondence Policy first is therefore recommended.
 
@@ -852,13 +852,13 @@ Scientific Ontology is not a system for possessing the world completely.
 
 It is a system for responsibly handling what remains, what returns, what does not close, and where the next question arises after contact with the world.
 
-Boundary Realism protects the limits of human handling.  
-Applied Metaphysics extends questions beyond those limits.  
-Epistemology examines what arises as a world.  
-Truth Management follows the process through which purposes form worlds.  
-Organizational-boundary theory implements responsibility and communication.  
-Ethics takes up return and destruction.  
-Implementation tests whether theoretical language functions at real boundaries.  
+Boundary Realism protects the limits of human handling.
+Applied Metaphysics extends questions beyond those limits.
+Epistemology examines what arises as a world.
+Truth Management follows the process through which purposes form worlds.
+Organizational-boundary theory implements responsibility and communication.
+Ethics takes up return and destruction.
+Implementation tests whether theoretical language functions at real boundaries.
 High-strength research extends the next hypotheses toward aporias that remain open.
 
 No layer becomes the final authority.

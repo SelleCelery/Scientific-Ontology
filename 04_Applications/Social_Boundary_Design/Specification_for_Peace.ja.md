@@ -1,10 +1,10 @@
 # 生存競争の本質と非本質
 ## 論理-深度軸・意味経験場・境界外交による平和仕様書
 
-> Status: Application Note / First Draft  
-> Scope: peace / society / boundary ethics / meaning-experience field / social boundary design  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S2 / E1-E2 / U1 / P1-P2 / V0-V1  
+> Status: Application Note / First Draft
+> Scope: peace / society / boundary ethics / meaning-experience field / social boundary design
+> Language: Japanese authoritative; English commensuration pending
+> Claim strength: S2 / E1-E2 / U1 / P1-P2 / V0-V1
 > Public handling: 本稿は公開応用モデルであり、平和政策、国際法、心理学、物理学、熱力学、電気工学の代替ではない。
 
 ---

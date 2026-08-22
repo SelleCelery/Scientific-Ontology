@@ -1,8 +1,8 @@
 # 物理対応方針
 ## なぜ存在境界論は物理語彙に近づくのか
 
-> Status: Policy  
-> Scope: physical correspondence, physical-adjacent terminology, boundary realism, observation conditions  
+> Status: Policy
+> Scope: physical correspondence, physical-adjacent terminology, boundary realism, observation conditions
 > Language: ja
 > Claim strength: S2/S3; conceptual policy, not an empirical physics claim
 
@@ -30,7 +30,7 @@
 
 本方針の中心命題は、次である。
 
-> 存在境界論は、標準物理学を置換しない。  
+> 存在境界論は、標準物理学を置換しない。
 > しかし、存在境界論は観測成立条件を扱うため、境界現象を指す物理語彙と必然的に接触する。
 
 より短く言えば、次のようになる。
@@ -385,10 +385,10 @@ SO上でいう質は、単独で与えられた性質ではない。
 
 必要に応じて、クオリアは次のように言い換えることができる。
 
-> 境界における質感現象  
-> 外部入力と内部履歴の接触摩擦  
-> 境界で発生する経験的エネルギー現象  
-> 履歴依存反応系統が、接触面で質として立ち上がる徴候  
+> 境界における質感現象
+> 外部入力と内部履歴の接触摩擦
+> 境界で発生する経験的エネルギー現象
+> 履歴依存反応系統が、接触面で質として立ち上がる徴候
 > ビットへ還元される前の、センテンスとしての経験的まとまり
 
 これらの言い換えは、理論内容を弱めるためのものではない。

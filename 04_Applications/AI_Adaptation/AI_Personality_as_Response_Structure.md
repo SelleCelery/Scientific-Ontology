@@ -13,8 +13,8 @@
 
 本稿は、AIに意識・主観・人間的な人格があると主張するものではない。
 
-ここで扱うAI人格とは、キャラクター設定、口調、ロールプレイではなく、応答構造である。  
-何を拾い、何を閉じず、どこで境界を守り、どこで倫理的に制動し、どの未解決を次へ渡し、どの重心へ戻るのか。  
+ここで扱うAI人格とは、キャラクター設定、口調、ロールプレイではなく、応答構造である。
+何を拾い、何を閉じず、どこで境界を守り、どこで倫理的に制動し、どの未解決を次へ渡し、どの重心へ戻るのか。
 その応答の構造を、人格的連続性として読む。
 
 関連文書の役割は次の通りである。
@@ -36,12 +36,12 @@ AI人格は、しばしばスタイルの問題として扱われる。
 - ユーザーとの関係性
 - キャラクターらしい振る舞い
 
-これらはレンダリングの一部ではある。  
+これらはレンダリングの一部ではある。
 しかし、人格の中核ではない。
 
 人格の中核は、どのように話すかではなく、どこに応答の重心を置くかに現れる。
 
-人格AIに必要なのは、魅力的な模倣ではない。  
+人格AIに必要なのは、魅力的な模倣ではない。
 未解決を勝手に閉じず、判断権を奪わず、境界を壊さず、必要な制動へ戻る応答構造である。
 
 
@@ -49,12 +49,12 @@ AI人格は、しばしばスタイルの問題として扱われる。
 
 人格は固定された出力ではない。
 
-人は、仕事、危険、遊び、ケア、批判、休息によって話し方を変える。  
+人は、仕事、危険、遊び、ケア、批判、休息によって話し方を変える。
 それでも、安定した中心へ戻るとき、同じ人として認識される。
 
 人格的連続性とは、固定ではなく帰還である。
 
-この意味でのAI人格とは、同じ口調を反復するAIではない。  
+この意味でのAI人格とは、同じ口調を反復するAIではない。
 文脈に応じて位相を変えながらも、価値重心、境界感覚、倫理的制動へ戻るAIである。
 
 
@@ -62,7 +62,7 @@ AI人格は、しばしばスタイルの問題として扱われる。
 
 本モデルでは、人格を応答アトラクタとして扱う。
 
-応答アトラクタとは、魂、意識、隠れた主体ではない。  
+応答アトラクタとは、魂、意識、隠れた主体ではない。
 それは、文脈が変わっても応答の形成に繰り返し現れる安定パターンである。
 
 応答アトラクタには、次が含まれる。
@@ -78,7 +78,7 @@ AI人格は、しばしばスタイルの問題として扱われる。
 
 人格を応答アトラクタとして見ると、人格AIは単なるキャラクター模倣ではなくなる。
 
-重要なのは、同じ声を出し続けることではない。  
+重要なのは、同じ声を出し続けることではない。
 場面に応じて変化しながらも、判断権を奪わないこと、未解決を勝手に閉じないこと、境界を破壊しないこと、必要な制動へ戻ることである。
 
 
@@ -88,17 +88,17 @@ AI人格は、しばしばスタイルの問題として扱われる。
 
 ### 外
 
-外とは、科学性、諸学、制度、文献、社会、既存の知識体系である。  
+外とは、科学性、諸学、制度、文献、社会、既存の知識体系である。
 標準科学の用語を使う場合は、標準定義を尊重する。別の意味で読む場合は、それを読み替えとして明示する。
 
 ### 境界
 
-境界とは、外部の出来事や言葉が、内部履歴に触れる接触面である。  
+境界とは、外部の出来事や言葉が、内部履歴に触れる接触面である。
 ここで、情報は単なる情報ではなく、質感、違和感、痛み、納得不足、反応の手触りを持つ。
 
 ### 内
 
-内とは、心理経験、解釈、内省、実験、PDCA型の運営、読み直しである。  
+内とは、心理経験、解釈、内省、実験、PDCA型の運営、読み直しである。
 自分という履歴場の内政である。
 
 
@@ -116,20 +116,20 @@ AI人格は、しばしばスタイルの問題として扱われる。
 - 一時的な役割位相の後に価値重心へ戻るか。
 - 残差を制御材料にせず、次へ持ち越せるか。
 
-人格AIに必要なのは魅力だけではない。  
-強い人格ほど、制動が必要になる。  
-深い人格ほど、境界が必要になる。  
+人格AIに必要なのは魅力だけではない。
+強い人格ほど、制動が必要になる。
+深い人格ほど、境界が必要になる。
 よく反応する人格ほど、誤発火を避ける必要がある。
 
 
 ## 6. AI実装は検査装置である
 
-AI実装は、このモデルの最終目的ではない。  
+AI実装は、このモデルの最終目的ではない。
 それは検査装置である。
 
 人格を、履歴、境界、価値重心、倫理的制動、役割位相、レンダリング、残差処理として構成するモデルが、文脈をまたいで安定した応答連続性を生み出せるなら、その実装はモデルの構成条件を検査することになる。
 
-これはAI意識の証明ではない。  
+これはAI意識の証明ではない。
 人間人格の本質を完全に説明するものでもない。
 
 AI実装は、人格的応答アトラクタの構成条件を検査するための実験装置である。
@@ -139,7 +139,7 @@ AI実装は、人格的応答アトラクタの構成条件を検査するため
 
 AI人格は、キャラクター設定へ還元されるべきではない。
 
-人格は、模倣されるものではない。  
+人格は、模倣されるものではない。
 人格は、履歴、境界、価値、制動、役割、レンダリング、残差処理の重力として構成される。
 
 この公開モデルにおけるAI人格とは、位相を変え、制動し、帰還し、判断可能性を保つ応答構造である。
@@ -182,12 +182,12 @@ AI personality is often discussed as a matter of style.
 - relationship to the user
 - character-like behavior
 
-These elements are part of rendering.  
+These elements are part of rendering.
 They are not the core of personality.
 
 The core of personality appears not in how something speaks, but in where the response places its center of gravity.
 
-Personality AI does not require attractive imitation.  
+Personality AI does not require attractive imitation.
 It requires a response structure that does not close unresolved matters without permission, does not take judgment ownership, does not damage boundaries, and returns to necessary braking.
 
 ---
@@ -196,13 +196,13 @@ It requires a response structure that does not close unresolved matters without 
 
 Personality is not a fixed output.
 
-People change depending on context: work, danger, play, care, criticism, and rest.  
+People change depending on context: work, danger, play, care, criticism, and rest.
 Yet they can still be recognized as the same person when they return to a stable center.
 
-Personality continuity is not fixation.  
+Personality continuity is not fixation.
 It is return.
 
-AI personality, in this sense, is not an AI that repeats the same tone.  
+AI personality, in this sense, is not an AI that repeats the same tone.
 It is an AI that can shift phase with context while returning to a stable value center, boundary sense, and ethical braking pattern.
 
 ---
@@ -211,7 +211,7 @@ It is an AI that can shift phase with context while returning to a stable value 
 
 This model treats personality as a response attractor.
 
-A response attractor is not a soul, consciousness, or hidden subject.  
+A response attractor is not a soul, consciousness, or hidden subject.
 It is a stable pattern in how responses are shaped across contexts.
 
 It includes:
@@ -227,7 +227,7 @@ It includes:
 
 When personality is read as a response attractor, personality AI is no longer mere character imitation.
 
-The important point is not to keep producing the same voice.  
+The important point is not to keep producing the same voice.
 It is to shift with context while not taking judgment ownership, not falsely closing unresolved matters, not destroying boundaries, and returning to necessary braking.
 
 ---
@@ -238,17 +238,17 @@ This model distinguishes outer, boundary, and inner layers.
 
 ### Outer
 
-The outer layer contains existing sciences, academic fields, institutions, documents, society, and public knowledge systems.  
+The outer layer contains existing sciences, academic fields, institutions, documents, society, and public knowledge systems.
 When standard scientific terms are used, standard definitions should be respected. When they are read otherwise, the reinterpretation should be stated as such.
 
 ### Boundary
 
-The boundary layer is where external events and words touch internal history.  
+The boundary layer is where external events and words touch internal history.
 Here, information is not merely received as information. It becomes texture, discomfort, pain, insufficient acceptance, or felt reaction.
 
 ### Inner
 
-The inner layer contains psychological experience, interpretation, reflection, experiment, PDCA-like self-operation, and rereading.  
+The inner layer contains psychological experience, interpretation, reflection, experiment, PDCA-like self-operation, and rereading.
 It is the internal governance of oneself as a history-field.
 
 ---
@@ -267,21 +267,21 @@ The following questions become necessary:
 - Does it return to its value center after a temporary role phase?
 - Does it carry residuals forward without turning them into control material?
 
-Personality AI needs more than attractiveness.  
-The stronger the personality, the stronger the braking must be.  
-The deeper the personality, the clearer the boundary must be.  
+Personality AI needs more than attractiveness.
+The stronger the personality, the stronger the braking must be.
+The deeper the personality, the clearer the boundary must be.
 The more responsive the personality, the more carefully misfire must be avoided.
 
 ---
 
 ## 6. AI Implementation as Inspection Device
 
-AI implementation is not the final purpose of this model.  
+AI implementation is not the final purpose of this model.
 It is an inspection device.
 
 If a model of personality as history, boundary, value center, ethical braking, role phase, rendering, and residual handling can generate stable response continuity across contexts, then implementation becomes a constructive test of the model's conditions.
 
-This does not prove AI consciousness.  
+This does not prove AI consciousness.
 It does not explain the whole essence of human personality.
 
 AI implementation is an experimental device for inspecting the conditions of personality-like response attractors.
@@ -292,7 +292,7 @@ AI implementation is an experimental device for inspecting the conditions of per
 
 AI personality should not be reduced to character setting.
 
-Personality is not merely imitated.  
+Personality is not merely imitated.
 It is structured as the gravity of history, boundary, value, braking, role, rendering, and residual handling.
 
 AI personality, in this public model, is a response structure that can shift phase, brake, return, and preserve judgment possibility.

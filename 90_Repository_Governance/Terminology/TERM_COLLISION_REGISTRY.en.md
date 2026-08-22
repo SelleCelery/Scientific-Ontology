@@ -13,15 +13,15 @@ Scientific Ontology does not define terms in order to narrow thought, freeze inq
 
 The purpose of definition in this project is communicability.
 
-Terms are defined so that readers can understand what is being said, where existing terminology may collide, and which claim-strength level a statement belongs to.  
+Terms are defined so that readers can understand what is being said, where existing terminology may collide, and which claim-strength level a statement belongs to.
 Definitions are public boundary tools. They are not cages for thought.
 
-This project may freely deviate, recombine, and reframe language during inquiry.  
+This project may freely deviate, recombine, and reframe language during inquiry.
 Only when a concept is made public does it require additional care: collision management, claim-strength control, and commensurated rendering.
 
 This distinction is essential.
 
-To use language too strictly can itself become a form of boundary violence.  
+To use language too strictly can itself become a form of boundary violence.
 It may protect precision while narrowing the freedom of thought, both for oneself and for others.
 
 Therefore, terminology management in this repository should be understood as an interface discipline, not as an internal law of thought.
@@ -32,13 +32,13 @@ Therefore, terminology management in this repository should be understood as an 
 
 This file records English renderings in Scientific Ontology that may collide with existing terminology in philosophy, science, AI, social theory, religion, psychology, medicine, literary theory, or other established fields.
 
-Its purpose is not to eliminate all misunderstanding.  
+Its purpose is not to eliminate all misunderstanding.
 Nor is it to submit Scientific Ontology to the terminology of existing disciplines.
 
-This registry exists because public communication takes place inside already occupied language games.  
+This registry exists because public communication takes place inside already occupied language games.
 When an English rendering is likely to be pulled toward an existing disciplinary meaning, flattened by a familiar interpretation, or mistaken for a stronger claim than intended, this file records the collision surface.
 
-This registry does not exist to ask permission from existing disciplines.  
+This registry does not exist to ask permission from existing disciplines.
 It exists to make collision surfaces explicit.
 
 The Japanese authoritative registry is [`TERM_COLLISION_REGISTRY.ja.md`](TERM_COLLISION_REGISTRY.ja.md).

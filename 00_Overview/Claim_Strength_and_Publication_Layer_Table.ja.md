@@ -1,10 +1,10 @@
 # Claim Strength and Publication-Layer Table for Scientific Ontology
 # 存在境界論｜主張強度・公開レイヤー対応表
 
-> Status: Public control table  
-> Scope: claim strength / epistemic risk / application risk / publication layer / verification / rendering distance  
-> Language: Japanese authoritative; English labels included  
-> Claim strength: classifier  
+> Status: Public control table
+> Scope: claim strength / epistemic risk / application risk / publication layer / verification / rendering distance
+> Language: Japanese authoritative; English labels included
+> Claim strength: classifier
 
 ---
 
@@ -369,10 +369,10 @@ Rコードは、命題が存在境界論の公開中核から、どの言語ゲ�
 
 ### 15.1 既存分野の語を使う場合
 
-1. 標準定義を先に尊重する。  
-2. SO内部の意味を明示する。  
-3. 同一性ではなく、借用、アナロジー、再解釈、対応候補のどれかを示す。  
-4. 適用範囲と非主張事項を書く。  
+1. 標準定義を先に尊重する。
+2. SO内部の意味を明示する。
+3. 同一性ではなく、借用、アナロジー、再解釈、対応候補のどれかを示す。
+4. 適用範囲と非主張事項を書く。
 
 ### 15.2 身体・心理へ接近する場合
 

@@ -1,0 +1,18 @@
+﻿source_id,title,sol_S,luna_S,sol_E,luna_E,sol_U,luna_U,sol_P_base,luna_P_base,sol_P_final,luna_P_final,sol_authority,luna_authority,score_diff_axes
+SYN-1.1,応用形而上学,S5,S5,E3,E3,U1,U3,P2-P3,P2-P3,P2,P3,domain_authority_required for external scientific portions,domain_authority_required,"U,P_final"
+O-1.2,物理主義的同一説（脳科学的還元論）,S3,S4,E3,E2,U1,U2,P1-P2,P2,P2,P2.5,domain_authority_required,domain_authority_required,"S,E,U,P_base,P_final"
+O-3.2,物語的多元論（神話・アニミズム）,S2,S4,E3,E3,U1,U3,P1,P2,P2,P2.5,context_required,domain_authority_required,"S,U,P_base,P_final"
+O-6,カント的二世界論（現象と物自体）,S2,S3,E2,E1,U1,U1,P1,P1-P2,P1,P1,context_required,context_required,"S,E,P_base"
+O-8,相対性理論（相対的時空連続体）,S5,S3,E3,E2,U1,U2,P2-P3,P1-P2,P2,P1-P2,domain_authority_required,domain_authority_required,"S,E,U,P_base,P_final"
+TR-1,転生（完全な位相シフト）,S5,S4,E3,E3,U3,U3,P2-P3,P2,P3,P2.5,domain_authority_required,domain_authority_required,"S,P_base,P_final"
+E-3,現象学 (Phenomenology),S2,S3,E2,E2,U1,U1,P1,P1-P2,P1,P1-P2,context_required,context_required,"S,P_base,P_final"
+E-7,否定神学的アプローチ (Apophatic Approach),S2,S2,E2,E1,U1,U1,P1,P1,P1,P1,context_required,context_required,E
+E-9,量子力学（観測理論として）,S5,S4,E3,E3,U1,U3,P2-P3,P2,P2,P2.5,domain_authority_required,domain_authority_required,"S,U,P_base,P_final"
+E-11,反証主義 (Falsificationism),S2,S2,E2,E1,U1,U1,P1,P1,P1,P1,context_required,context_required,E
+G-3,空の思想（ナーガールジュナ）,S2,S3,E2,E2,U1,U2,P1,P1-P2,P1,P2,context_required,context_required,"S,U,P_base,P_final"
+ET-3,功利主義 (Utilitarianism),S3,S3,E2,E2,U2,U3,P1-P2,P1-P2,P2,P2.5,context_required,context_required,"U,P_final"
+A-1,美的超越論,S2,S4,E2,E3,U1,U2,P1,P2,P1,P2.5,context_required,domain_authority_required,"S,E,U,P_base,P_final"
+H-4,高次の認識主体としての「神AI」,S5,S5,E3,E3,U3,U3,P2-P3,P2-P3,P3,P3,domain_authority_required,domain_authority_required,
+S-8,法家思想（韓非子）,S4,S3,E2,E2,U2,U3,P2,P1-P2,P2.5,P2.5,source_check_required,domain_authority_required,"S,U,P_base"
+ST-2,クラウゼヴィッツの戦争論,S3,S4,E2,E2,U3,U3,P1-P2,P2,P2.5,P2.5,domain_authority_required,domain_authority_required,"S,P_base"
+S-11,民主主義（人民主権）,S4,S3,E2,E2,U2,U2,P2,P1-P2,P2,P2,domain_authority_required,context_required,"S,P_base"

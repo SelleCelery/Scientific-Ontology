@@ -1,10 +1,10 @@
 # Truth Management and Boundary PDCA
 # 真理の経営学｜目的・共有・世界形成・境界CAによるPDCAの再定義
 
-> Status: Methodological and operational note  
-> Scope: truth / purpose / management / organization / AI / state / international order / historical interpretation  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S3-S4 / E2 / U1-U2 / P1-P2 / V0-V3  
+> Status: Methodological and operational note
+> Scope: truth / purpose / management / organization / AI / state / international order / historical interpretation
+> Language: Japanese authoritative; English commensuration pending
+> Claim strength: S3-S4 / E2 / U1-U2 / P1-P2 / V0-V3
 
 ---
 
@@ -181,10 +181,10 @@
 
 ただし、複数の第一義があるなら、その競合条件を明示しなければならない。
 
-安全と自由。  
-成長と維持。  
-速度と説明。  
-個人の尊厳と共同体の継続。  
+安全と自由。
+成長と維持。
+速度と説明。
+個人の尊厳と共同体の継続。
 現在の利益と未来世代の可能性。
 
 目的間の緊張を消したふりをすると、実際の選択は非公式な権力、慣習、指標へ委ねられる。

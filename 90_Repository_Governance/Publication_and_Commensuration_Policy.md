@@ -333,19 +333,19 @@ R値が高いほど、差分、残差、非同一性、返路を強く記録す�
 
 したがって、概念関係は少なくとも次のように区別する。
 
-- **Private lineage / 非公開系譜**  
+- **Private lineage / 非公開系譜**
   AMP Core、ITS、その他の非公開資料に遡る概念系譜。非公開系譜は、公開定義権限を意味しない。
 
-- **Public generative source / 公開生成源**  
+- **Public generative source / 公開生成源**
   概念が公開可能な形で導入、分岐、再構成された文書。
 
-- **Public definition owner / 公開定義所有者**  
+- **Public definition owner / 公開定義所有者**
   概念の公開上の定義、射程、非主張境界を管理する正本文書。
 
-- **Operationalized in / 主要実装先**  
+- **Operationalized in / 主要実装先**
   概念を制度、組織、AI、社会設計、チェックリスト、分析モデルとして実装する文書。
 
-- **Commensuration relation / 通約関係**  
+- **Commensuration relation / 通約関係**
   概念を別の言語圏または既存語彙圏へ接続する関係。
 
 概念の起源文書は、必ずしも公開定義所有者ではない。
@@ -935,19 +935,19 @@ A concept may derive from a private core, be generated in publicly accessible fo
 
 Conceptual relations must therefore be distinguished at least as follows.
 
-- **Private lineage**  
+- **Private lineage**
   Conceptual lineage that traces back to AMP Core, ITS, or other non-public materials. Private lineage does not confer public definition authority.
 
-- **Public generative source**  
+- **Public generative source**
   A document in which a concept is introduced, differentiated, or reconstructed into a form suitable for public use.
 
-- **Public definition owner**  
+- **Public definition owner**
   The authoritative public document that governs the definition, scope, and non-claim boundaries of a concept.
 
-- **Operationalized in**  
+- **Operationalized in**
   Documents that implement a concept in institutions, organizations, AI systems, social design, checklists, or analytical models.
 
-- **Commensuration relation**  
+- **Commensuration relation**
   The relation through which a concept is connected to another linguistic field or an established terminological field.
 
 A document in which a concept originated is not necessarily its public definition owner.
@@ -1022,12 +1022,12 @@ Their generative lineage, paired relations, application-level manifestations, an
 
 Where a high-depth identifier functions as an axiomatic identifier or exploratory operator, commensuration must preserve its generative openness while explicitly retaining:
 
-- claim strength;    
-- private lineage and public generative sources, where applicable;    
-- non-identity with established scientific concepts;    
-- application-level scope;    
-- unresolved residuals; and    
-- the applicable non-claim boundary.    
+- claim strength;
+- private lineage and public generative sources, where applicable;
+- non-identity with established scientific concepts;
+- application-level scope;
+- unresolved residuals; and
+- the applicable non-claim boundary.
 
 Fluent English must not convert the generative openness of a high-depth identifier into a falsely completed definition.
 

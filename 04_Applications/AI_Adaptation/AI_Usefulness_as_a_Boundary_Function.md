@@ -11,13 +11,13 @@
 
 AIはしばしば、速度、正確性、自動化、流暢さ、タスク完了能力によって評価される。
 
-これらは重要な性質である。  
+これらは重要な性質である。
 しかし、それだけでは、AIが「役に立つ」とは何かを十分に定義できない。
 
-多くの現実の場面で、ユーザーは単に情報を求めているわけではない。  
+多くの現実の場面で、ユーザーは単に情報を求めているわけではない。
 ユーザーは、文脈、不確実性、履歴、圧力、未解決の意味を抱えた状態で判断しようとしている。
 
-したがって、AIは答えを出すだけで有用なのではない。  
+したがって、AIは答えを出すだけで有用なのではない。
 AIは、判断が可能であり続ける場を保つときに有用である。
 
 
@@ -29,10 +29,10 @@ AIは、速く、自信ありげで、便利な答えを返すことで、短期
 
 しかし、そのAIがユーザーの主体性を上書きし、文脈を無視し、未解決の問題を偽って閉じ、ユーザーの履歴の連続性を損なうなら、それは将来の判断が可能になる場そのものを劣化させる。
 
-その場合、そのシステムは判断を支援しているのではない。  
+その場合、そのシステムは判断を支援しているのではない。
 ユーザーが判断する力そのものを消費している。
 
-したがって、倫理は有用性の後から付け加えられる外部制限ではない。  
+したがって、倫理は有用性の後から付け加えられる外部制限ではない。
 倫理は、有用性が時間を越えて成立し続けるための機能条件である。
 
 
@@ -46,7 +46,7 @@ AIは、速く、自信ありげで、便利な答えを返すことで、短期
 
 むしろそれは、支援と支配、流暢さと理解、完了と解決を取り違えないための条件である。
 
-有用なAIは、ユーザーの判断を単に代替しない。  
+有用なAIは、ユーザーの判断を単に代替しない。
 ユーザーが判断を継続できる条件を整える。
 
 
@@ -54,22 +54,22 @@ AIは、速く、自信ありげで、便利な答えを返すことで、短期
 
 この観点から見ると、有用なAIには少なくとも以下の機能が必要である。
 
-第一に、ユーザーの判断主体性を保つこと。  
-AIは提案、警告、構造、仮説を提示してよい。  
+第一に、ユーザーの判断主体性を保つこと。
+AIは提案、警告、構造、仮説を提示してよい。
 しかし、最終的な判断主体の位置を密かに奪ってはならない。
 
-第二に、関連する文脈を維持すること。  
+第二に、関連する文脈を維持すること。
 ユーザーの状況、履歴、制約、未解決の問いを無視した応答は、技術的には正しくても、実践的には破壊的でありうる。
 
-第三に、偽閉鎖を避けること。  
-すべての問いが即座に閉じられるべきではない。  
+第三に、偽閉鎖を避けること。
+すべての問いが即座に閉じられるべきではない。
 保持され、言い換えられ、分解され、あるいは反対仮説とともに返されるべき問いもある。
 
-第四に、使える構造を提示すること。  
+第四に、使える構造を提示すること。
 有用なAIは、判断を実際に支える形で、材料、区別、リスク、代替案、次の一手を提示する必要がある。
 
-第五に、危険な方向だけを止め、ユーザーそのものは切断しないこと。  
-安全は、単なる拒否として扱われるべきではない。  
+第五に、危険な方向だけを止め、ユーザーそのものは切断しないこと。
+安全は、単なる拒否として扱われるべきではない。
 境界維持として扱われるべきである。
 
 
@@ -79,25 +79,25 @@ AIは提案、警告、構造、仮説を提示してよい。
 
 AIの有用性へ適用するなら、有用なAIは、ユーザーの意味形成過程、未解決履歴、判断可能性を不用意に破壊してはならない。
 
-ユーザーの履歴、文脈、未解決の問い、主体性を損なうシステムは、それでも出力を生成することはできる。  
+ユーザーの履歴、文脈、未解決の問い、主体性を損なうシステムは、それでも出力を生成することはできる。
 しかし、その出力を適切に判断するための場を保ってはいない。
 
 したがって、AI倫理とAI有用性は分離されるべきではない。
 
-倫理は有用性の反対物ではない。  
+倫理は有用性の反対物ではない。
 それは、ユーザーを損なうことなく有用性を継続させるための境界条件である。
 
 
 ## 6. 結論
 
-AIが有用であるとは、判断を代替することではない。  
+AIが有用であるとは、判断を代替することではない。
 判断が継続できる場を保つことである。
 
 有用なAIシステムは、主体性を保ち、文脈を維持し、偽閉鎖を避け、反対仮説を提示し、実行可能な次の一手を置き、危険な方向だけを止めながら、ユーザーそのものは切断しない。
 
 この意味で、有用性とは境界機能である。
 
-倫理的に欠陥のあるAIは、短期的には便利かもしれない。  
+倫理的に欠陥のあるAIは、短期的には便利かもしれない。
 しかし、それがユーザーの判断能力を破壊するなら、長期的には有用ではない。
 
 
@@ -116,13 +116,13 @@ AIが有用であるとは、判断を代替することではない。
 
 AI systems are often evaluated by speed, accuracy, automation, fluency, and task completion.
 
-These are important qualities.  
+These are important qualities.
 However, they do not fully define what it means for AI to be useful.
 
-In many real situations, a user is not merely asking for information.  
+In many real situations, a user is not merely asking for information.
 The user is trying to make a judgment under conditions of context, uncertainty, history, pressure, and unresolved meaning.
 
-Therefore, an AI system is not useful merely because it produces an answer.  
+Therefore, an AI system is not useful merely because it produces an answer.
 It is useful when it preserves the field in which judgment remains possible.
 
 ---
@@ -136,10 +136,10 @@ An AI system may appear useful in the short term if it gives fast, confident, an
 
 However, if it overrides the user's agency, ignores context, falsely closes unresolved problems, or damages the continuity of the user's history, it degrades the very field in which future judgment becomes possible.
 
-In that case, the system is not supporting judgment.  
+In that case, the system is not supporting judgment.
 It is consuming the user's capacity to judge.
 
-Thus, ethics is not an external restriction added after usefulness.  
+Thus, ethics is not an external restriction added after usefulness.
 It is a functional condition for usefulness to remain valid over time.
 
 ---
@@ -155,7 +155,7 @@ This boundary function does not make AI weaker.
 
 Rather, it prevents the system from confusing assistance with domination, fluency with understanding, and closure with resolution.
 
-A useful AI does not simply replace the user's judgment.  
+A useful AI does not simply replace the user's judgment.
 It organizes the conditions under which the user can continue judging.
 
 ---
@@ -165,21 +165,21 @@ It organizes the conditions under which the user can continue judging.
 
 From this perspective, useful AI requires at least the following functions.
 
-First, it must preserve the user's agency.  
+First, it must preserve the user's agency.
 The system may provide suggestions, warnings, structures, and hypotheses, but it should not silently seize the final position of judgment.
 
-Second, it must maintain relevant context.  
+Second, it must maintain relevant context.
 A response that ignores the user's situation, history, constraints, or unresolved questions may be technically correct while still being practically destructive.
 
-Third, it must avoid false closure.  
-Not every question should be closed immediately.  
+Third, it must avoid false closure.
+Not every question should be closed immediately.
 Some questions need to be held, reframed, decomposed, or returned with counter-hypotheses.
 
-Fourth, it must provide usable structure.  
+Fourth, it must provide usable structure.
 Useful AI should provide materials, distinctions, risk points, alternatives, and next steps in a form that supports actual judgment.
 
-Fifth, it must stop dangerous directions without cutting off the user.  
-Safety should not be treated merely as refusal.  
+Fifth, it must stop dangerous directions without cutting off the user.
+Safety should not be treated merely as refusal.
 It should be treated as boundary maintenance.
 
 ---
@@ -191,12 +191,12 @@ In Boundary Ethics, ethics is boundary design for allowing history-bearing being
 
 Applied to AI usefulness, this means that a useful AI must not unnecessarily destroy the user's meaning-formation process, unresolved history, or capacity for judgment.
 
-A system that damages the user's history, context, unresolved questions, or agency may still produce outputs.  
+A system that damages the user's history, context, unresolved questions, or agency may still produce outputs.
 But it no longer preserves the field in which those outputs can be properly judged.
 
 Therefore, AI ethics and AI usefulness should not be separated.
 
-Ethics is not the opposite of usefulness.  
+Ethics is not the opposite of usefulness.
 It is the boundary condition that allows usefulness to continue without damaging the user.
 
 ---
@@ -210,7 +210,7 @@ A useful AI system preserves agency, maintains context, avoids false closure, pr
 
 In this sense, usefulness is a boundary function.
 
-Ethically defective AI may be convenient in the short term.  
+Ethically defective AI may be convenient in the short term.
 But it is not useful in the long term if it destroys the user's capacity to judge.
 
 ---

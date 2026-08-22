@@ -1,11 +1,11 @@
 # Scientific Ontology System Map / 存在境界論 体系マップ
 
-> Layer: 00_Overview  
-> Status: Map  
+> Layer: 00_Overview
+> Status: Map
 > Scope: repository architecture / operational orientation / conceptual layers / public boundary / governance / research dynamics
-> Language: ja+en  
-> Public profile: P0-P1  
-> Claim strength: Repository and concept-architecture map; not an empirical claim  
+> Language: ja+en
+> Public profile: P0-P1
+> Claim strength: Repository and concept-architecture map; not an empirical claim
 > Authority: Human-readable system map; current file relations are maintained in `tools/docs_manifest.yml`
 
 ---
@@ -145,11 +145,17 @@
 │  │  ├─ AI_Usefulness_as_a_Boundary_Function.md
 │  │  ├─ AI_Boundary_Interface_and_Synchronous_Understanding.md
 │  │  └─ AI_Personality_as_Response_Structure.md
-│  └─ Social_Boundary_Design/
+│  ├─ Social_Boundary_Design/
+│  │  ├─ README.md
+│  │  ├─ AI_Adoption_Collation_Checklist.md
+│  │  ├─ Specification_for_Peace.ja.md
+│  │  └─ Specification_for_Peace.en.md
+│  └─ DeRegistry_to_Judgment_Transparency/
 │     ├─ README.md
-│     ├─ AI_Adoption_Collation_Checklist.md
-│     ├─ Specification_for_Peace.ja.md
-│     └─ Specification_for_Peace.en.md
+│     ├─ 01_CHRONICLE.ja.md
+│     ├─ 02_TRANSMISSIONS.ja.md
+│     ├─ 03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md
+│     └─ evidence/
 │
 ├─ 05_Research_Notes/
 │  ├─ README.md
@@ -354,6 +360,10 @@ AIや制度を採用する社会側の境界、責任、照合、平和条件を
 - AI導入照合チェックリスト
 - 責任境界と再照合可能性
 - 平和プロトコル・平和仕様
+
+### `DeRegistry_to_Judgment_Transparency`
+
+De-Registry実験から判断透明性、Topology-first監査、三層変換監査へ至る方法史と公開証跡を扱う。研究履歴を消さず、失敗runと自己監査結果を応用可能な判断透明性インターフェースへ接続する。
 
 この層は、実装コード、製品仕様、法的助言、個別組織の非公開運用手順を含まない。
 
@@ -681,11 +691,17 @@ The following tree represents the public structure and excludes `000*` working d
 │  │  ├─ AI_Usefulness_as_a_Boundary_Function.md
 │  │  ├─ AI_Boundary_Interface_and_Synchronous_Understanding.md
 │  │  └─ AI_Personality_as_Response_Structure.md
-│  └─ Social_Boundary_Design/
+│  ├─ Social_Boundary_Design/
+│  │  ├─ README.md
+│  │  ├─ AI_Adoption_Collation_Checklist.md
+│  │  ├─ Specification_for_Peace.ja.md
+│  │  └─ Specification_for_Peace.en.md
+│  └─ DeRegistry_to_Judgment_Transparency/
 │     ├─ README.md
-│     ├─ AI_Adoption_Collation_Checklist.md
-│     ├─ Specification_for_Peace.ja.md
-│     └─ Specification_for_Peace.en.md
+│     ├─ 01_CHRONICLE.ja.md
+│     ├─ 02_TRANSMISSIONS.ja.md
+│     ├─ 03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md
+│     └─ evidence/
 │
 ├─ 05_Research_Notes/
 │  ├─ README.md
@@ -888,6 +904,10 @@ Its principal concerns include:
 - AI adoption collation checklists;
 - responsibility boundaries and re-collatability; and
 - peace protocols and peace specifications.
+
+### `DeRegistry_to_Judgment_Transparency`
+
+This area preserves the experiment-backed development from De-Registry to judgment transparency, topology-first auditing, and three-layer transformation auditing. It exposes failed runs and self-audit results as a reusable public application interface rather than rewriting them as a linear success story.
 
 This layer does not include implementation code, product specifications, legal advice, or private operational procedures for particular organizations.
 

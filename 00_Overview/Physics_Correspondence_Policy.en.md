@@ -1,10 +1,10 @@
 # Physics Correspondence Policy
 ### Why Scientific Ontology Approaches Physical Terminology
 
-> Status: Policy  
-> Scope: physical correspondence, physical-adjacent terminology, boundary realism, observation conditions  
+> Status: Policy
+> Scope: physical correspondence, physical-adjacent terminology, boundary realism, observation conditions
 > Language: en
-> Claim strength: S2/S3; conceptual policy, not an empirical physics claim  
+> Claim strength: S2/S3; conceptual policy, not an empirical physics claim
 ---
 
 ## 0. Positioning
@@ -29,7 +29,7 @@ Accordingly, this policy defines why Scientific Ontology approaches physical ter
 
 The central thesis of this policy is as follows.
 
-> Scientific Ontology does not replace standard physics.  
+> Scientific Ontology does not replace standard physics.
 > However, because it addresses the conditions under which observation becomes possible, it inevitably comes into contact with physical terminology that names boundary phenomena.
 
 More compactly:
@@ -400,10 +400,10 @@ However, public use should state the limited SO usage.
 
 Where necessary, qualia may be paraphrased as follows.
 
-> Texture phenomena at a boundary  
-> Contact friction between external input and internal history  
-> Experiential energy phenomena arising at a boundary  
-> A sign in which a history-dependent reaction system rises as quality at a contact surface  
+> Texture phenomena at a boundary
+> Contact friction between external input and internal history
+> Experiential energy phenomena arising at a boundary
+> A sign in which a history-dependent reaction system rises as quality at a contact surface
 > An experiential unit as sentence before reduction into bits
 
 These paraphrases do not weaken the theoretical content.

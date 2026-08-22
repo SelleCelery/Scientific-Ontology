@@ -4,10 +4,10 @@
 > Scope: translation, commensuration, authoritative text, terminology control
 > Language: English-centered / Japanese authoritative reference
 
-> **日本語注記**  
-> 本文書は、英語読者および英語通約作業のための補助文書である。  
-> そのため、本文は主に英語で記述する。  
-> ただし、本プロジェクトにおける正本判断は、特に明記がない限り日本語記述を優先する。  
+> **日本語注記**
+> 本文書は、英語読者および英語通約作業のための補助文書である。
+> そのため、本文は主に英語で記述する。
+> ただし、本プロジェクトにおける正本判断は、特に明記がない限り日本語記述を優先する。
 > ここでいう translation は、逐語訳ではなく、日本語正本の概念構造を英語圏の語彙・読解習慣・既存分野へ接続するための commensuration / 通約である。
 
 ## 1. Authoritative text / 正本
@@ -18,7 +18,7 @@ English versions are provided as translation drafts, working equivalents, and in
 
 Where the Japanese and English versions diverge in nuance, the Japanese text should be consulted as the primary source.
 
-However, English translation is not merely a matter of mechanical substitution. 
+However, English translation is not merely a matter of mechanical substitution.
 
 To ensure the text functions as a coherent, systematic discourse that is comprehensible to English-speaking readers, word order, explanatory phrases, and auxiliary words are adjusted as necessary.
 
@@ -68,7 +68,7 @@ Core SO terms should remain stable even when they sound technical. Examples incl
 - non-claim boundary
 - claim strength
 
-However, ordinary Japanese terms should not be mechanically fixed to one English word.  
+However, ordinary Japanese terms should not be mechanically fixed to one English word.
 When a Japanese term has different conceptual roles, English rendering should preserve the boundary between those roles.
 
 Examples:
@@ -78,7 +78,7 @@ Examples:
 - 空: emptiness / undifferentiated emptiness, not automatically Void
 - 閉じる: close / treat as resolved / settle / account for, depending on context
 
-In Research Notes, smoothness should not erase the provisional character of a concept.  
+In Research Notes, smoothness should not erase the provisional character of a concept.
 When a term approaches physics, cosmology, biology, social science, cultural theory, consciousness theory, or other established fields, the English rendering should make clear whether the use is a standard definition, SO definition, structural analogy, ontological rereading, conceptual model, working hypothesis, formalization candidate, or high-strength hypothesis.
 
 Where misreading risk is high, add a non-claim boundary rather than weakening the central thesis.

@@ -24,12 +24,13 @@
   ↓
 04 Applications
   ├─ AI_Adaptation
-  └─ Social_Boundary_Design
+  ├─ Social_Boundary_Design
+  └─ DeRegistry_to_Judgment_Transparency
   ↓
 実装結果・残差・異議を上流へ返送
 ```
 
-`AI_Adaptation`はAI側の応答構造と境界機能を扱う。  
+`AI_Adaptation`はAI側の応答構造と境界機能を扱う。
 `Social_Boundary_Design`はAIや制度を採用する社会側の責任境界、照合、平和条件を扱う。
 
 ## 2. Public Scope and Claim Profile / 公開範囲と主張強度
@@ -56,13 +57,16 @@
 
 ## 4. Documents / 文書一覧
 
-- [`AI_Adaptation/README.md`](./AI_Adaptation/README.md)  
+- [`AI_Adaptation/README.md`](./AI_Adaptation/README.md)
   AI有用性、境界インターフェース、応答構造としての人格、応用境界理論。
 
-- [`Social_Boundary_Design/README.md`](./Social_Boundary_Design/README.md)  
+- [`Social_Boundary_Design/README.md`](./Social_Boundary_Design/README.md)
   AI導入、責任境界、照合可能性、社会設計、平和仕様。
 
-AI側の適応と、社会側の採用設計を混同しないことが基本的な分岐である。
+- [`DeRegistry_to_Judgment_Transparency/README.md`](./DeRegistry_to_Judgment_Transparency/README.md)
+  De-Registryから判断透明性へ至る実験史、通信トポロジー監査、公開証跡。
+
+AI側の適応と社会側の採用設計を混同しない。`DeRegistry_to_Judgment_Transparency`は両者を横断し、判断生成と監査履歴を公開可能な方法インターフェースとして保持する。
 
 ## 5. Maintenance Notes / 運用メモ
 
@@ -98,12 +102,13 @@ This is not merely a place for applying theory to examples. It is also a public 
   ↓
 04 Applications
   ├─ AI_Adaptation
-  └─ Social_Boundary_Design
+  ├─ Social_Boundary_Design
+  └─ DeRegistry_to_Judgment_Transparency
   ↓
 Implementation results, residuals, and objections return upstream
 ```
 
-`AI_Adaptation` addresses response structures and boundary functions on the AI side.  
+`AI_Adaptation` addresses response structures and boundary functions on the AI side.
 `Social_Boundary_Design` addresses responsibility boundaries, collation, and conditions of peace on the social side.
 
 ## 2. Public Scope
@@ -126,13 +131,16 @@ Not included:
 
 ## 3. Subdirectories
 
-- [`AI_Adaptation/README.md`](./AI_Adaptation/README.md)  
+- [`AI_Adaptation/README.md`](./AI_Adaptation/README.md)
   AI usefulness, boundary interfaces, personality as response structure, and application boundary theory.
 
-- [`Social_Boundary_Design/README.md`](./Social_Boundary_Design/README.md)  
+- [`Social_Boundary_Design/README.md`](./Social_Boundary_Design/README.md)
   AI adoption, responsibility boundaries, re-collatability, social design, and peace specifications.
 
-The basic division is between AI-side adaptation and social-side adoption design.
+- [`DeRegistry_to_Judgment_Transparency/README.md`](./DeRegistry_to_Judgment_Transparency/README.md)
+  Experiment-backed history from De-Registry to judgment transparency, topology-first auditing, and a public evidence trail.
+
+Do not collapse AI-side adaptation into social-side adoption design. `DeRegistry_to_Judgment_Transparency` is a cross-cutting application surface for judgment-generation history and public auditability.
 
 ## 4. Return and Maintenance
 
