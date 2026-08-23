@@ -794,3 +794,29 @@ body[data-interface="public"] .svg-node.type-observed_document rect { stroke-das
   font-size: .84rem;
 }
 .assessment-issue-option input { accent-color: var(--accent); }
+
+/* Keep Assessment Lab cards independent when a details section is expanded.
+   CSS Grid stretches siblings in the same row by default; top-aligning the
+   grid items prevents one document review from changing its neighbor height. */
+.assessment-document-grid { margin-top: 12px; align-items: start; }
+.assessment-document-card { display: grid; gap: 12px; align-self: start; }
+.assessment-document-filter { margin-top: 20px; max-width: 760px; }
+.assessment-details {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.assessment-details-summary {
+  cursor: pointer;
+  font-weight: 650;
+  color: var(--ink);
+}
+.assessment-detail-row {
+  margin-top: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel-soft, rgba(255,255,255,.45));
+}
+.assessment-hotspot-row { border-left: 3px solid var(--accent); }
+.assessment-nonclaim-row { opacity: .86; }
+.assessment-detail-title { margin: 8px 0 6px; font-size: 1rem; line-height: 1.45; }

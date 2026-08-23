@@ -201,7 +201,7 @@ tools/assessment/repository_assessment_protocols.yml
   -> Developer Navigator / Claim Assessment Lab
 ```
 
-The Assessment Lab is intentionally non-canonical. A protocol revision is frozen for a run, applied across the complete selected fixture without mid-run repair, and then reviewed. Its transaction model mirrors the existing review surface (`before / after`, `approve / approve_with_edits / hold / reject`) so a mature protocol can later be promoted without making the experimental lab itself authoritative.
+The Assessment Lab is intentionally non-canonical. A protocol revision is frozen for a run, applied across the complete selected fixture without mid-run repair, and then reviewed. The current v0.2 surface separates `document_profile`, `representative_claims`, `claim_hotspots`, and `nonclaim_boundaries`: document profiles are the primary review unit, hotspot classifications are local-only, and explicit nonclaims do not receive S/E. Its transaction model mirrors the existing review surface (`before / after`, `approve / approve_with_edits / hold / reject`) so a mature protocol can later be promoted without making the experimental lab itself authoritative.
 
 ## 6. Review persistence and export
 
@@ -252,7 +252,7 @@ tools/assessment/repository_assessment_protocols.preview.json
   generated Developer read model; hand edit forbidden
 
 repository_assessment_execution.json / repository_assessment_run.json / repository_assessment_review.json
-  experimental claim-assessment execution and review artifacts; non-canonical
+  experimental representative-claim / hotspot assessment artifacts; non-canonical
 ```
 
 Canonical manifest application occurs only through repository-side tooling after validation and dry-run.

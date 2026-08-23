@@ -2569,6 +2569,11 @@ async function fetchAssessmentTarget(path) {
     const content = await response.text();
     return { path, sha256: await sha256Text(content), content };
 }
+function assessmentOutputSchemaVersion(protocol) {
+    const schema = String(protocol.output_contract?.schema ?? "repository_assessment_run/0.2");
+    const match = schema.match(/\/(\d+\.\d+)$/);
+    return match?.[1] ?? "0.2";
+}
 async function buildAssessmentExecution(protocol, paths) {
     if (!paths.length)
         throw new Error(displayLang === "ja" ? "対象文書がありません。" : "No target documents selected.");
@@ -2576,18 +2581,19 @@ async function buildAssessmentExecution(protocol, paths) {
     const targets = await Promise.all(unique.map(fetchAssessmentTarget));
     return {
         repository_assessment_execution: {
-            schema_version: "0.1",
+            schema_version: assessmentOutputSchemaVersion(protocol),
             created_at: new Date().toISOString(),
             protocol: {
                 id: String(protocol.id ?? ""),
                 revision: String(protocol.revision ?? ""),
-                source_sha256: String(protocol.source_sha256 ?? assessmentProtocolPayload()?.source_sha256 ?? ""),
+                source_sha256: String(protocol.source_sha256 ?? ""),
                 prompt: String(protocol.execution_prompt ?? ""),
             },
             fixture: { targets },
             output_contract: {
-                schema: "repository_assessment_run/0.1",
-                schema_path: "tools/assessment/repository_assessment_run.schema.json",
+                schema: String(protocol.output_contract?.schema ?? "repository_assessment_run/0.2"),
+                schema_path: String(protocol.output_contract?.schema_path ?? "tools/assessment/repository_assessment_run.schema.json"),
+                review_schema: String(protocol.output_contract?.review_schema ?? "repository_assessment_review/0.2"),
                 preserve_protocol_binding: true,
                 preserve_fixture_hashes: true,
             },
@@ -2615,25 +2621,57 @@ async function copyText(value) {
 function assessmentRunPayload() {
     return assessmentLabState.run?.repository_assessment_run ?? null;
 }
-function assessmentClaims() {
-    return assessmentRunPayload()?.claims ?? [];
+function assessmentDocuments() {
+    return assessmentRunPayload()?.documents ?? [];
 }
-function assessmentDecisionForClaim(claimId) {
-    return assessmentLabState.decisions?.[claimId] ?? null;
+function assessmentDocument(path) {
+    return assessmentDocuments().find((doc) => String(doc.path ?? "") === path);
 }
-function assessmentReviewDecision(claimId) {
-    return String(assessmentDecisionForClaim(claimId)?.decision ?? "unreviewed");
+function assessmentProfileKey(path) {
+    return `document_profile::${path}`;
 }
-function assessmentReviewCounts() {
+function assessmentRepresentativeKey(claimId) {
+    return `representative_claim::${claimId}`;
+}
+function assessmentHotspotKey(hotspotId) {
+    return `claim_hotspot::${hotspotId}`;
+}
+function assessmentReviewItemByKey(reviewKey) {
+    for (const doc of assessmentDocuments()) {
+        const path = String(doc.path ?? "");
+        if (reviewKey === assessmentProfileKey(path)) {
+            return { review_key: reviewKey, kind: "document_profile", item_id: null, path, value: doc.document_profile ?? {} };
+        }
+        for (const rep of doc.representative_claims ?? []) {
+            if (reviewKey === assessmentRepresentativeKey(String(rep.claim_id ?? ""))) {
+                return { review_key: reviewKey, kind: "representative_claim", item_id: String(rep.claim_id ?? ""), path, value: rep };
+            }
+        }
+        for (const hotspot of doc.claim_hotspots ?? []) {
+            if (reviewKey === assessmentHotspotKey(String(hotspot.hotspot_id ?? ""))) {
+                return { review_key: reviewKey, kind: "claim_hotspot", item_id: String(hotspot.hotspot_id ?? ""), path, value: hotspot };
+            }
+        }
+    }
+    return null;
+}
+function assessmentDecisionForKey(reviewKey) {
+    return assessmentLabState.decisions?.[reviewKey] ?? null;
+}
+function assessmentReviewDecision(reviewKey) {
+    return String(assessmentDecisionForKey(reviewKey)?.decision ?? "unreviewed");
+}
+function assessmentPrimaryReviewCounts() {
     const counts = { unreviewed: 0, approve: 0, approve_with_edits: 0, hold: 0, reject: 0 };
-    for (const claim of assessmentClaims()) {
-        const key = assessmentReviewDecision(String(claim.claim_id ?? ""));
-        counts[key] = (counts[key] ?? 0) + 1;
+    for (const doc of assessmentDocuments()) {
+        const key = assessmentProfileKey(String(doc.path ?? ""));
+        const state = assessmentReviewDecision(key);
+        counts[state] = (counts[state] ?? 0) + 1;
     }
     return counts;
 }
-function assessmentClaimById(claimId) {
-    return assessmentClaims().find((claim) => String(claim.claim_id ?? "") === claimId);
+function assessmentDetailReviewCount() {
+    return Object.values(assessmentLabState.decisions ?? {}).filter((decision) => decision.kind !== "document_profile").length;
 }
 function assessmentProtocolForRun(run) {
     const protocol = run.protocol ?? {};
@@ -2641,27 +2679,64 @@ function assessmentProtocolForRun(run) {
 }
 function validateAssessmentRunBinding(parsed) {
     const run = parsed?.repository_assessment_run;
-    if (!run || String(run.schema_version ?? "") !== "0.1") {
-        throw new Error("repository_assessment_run schema_version 0.1 が必要です。");
+    if (!run || String(run.schema_version ?? "") !== "0.2") {
+        throw new Error("repository_assessment_run schema_version 0.2 が必要です。旧0.1 runはrevision bでは読み込みません。");
     }
+    if (!String(run.run_id ?? "").trim())
+        throw new Error("run_id がありません。");
     const protocol = assessmentProtocolForRun(run);
     if (!protocol)
         throw new Error("このrunのprotocol id/revisionは現在のラボにありません。");
     if (String(run.protocol?.source_sha256 ?? "") !== String(protocol.source_sha256 ?? "")) {
-        throw new Error("protocol source_sha256 が現在のprotocolと一致しません。");
+        throw new Error("protocol source_sha256 が現在のprotocol revisionと一致しません。");
     }
     if (!Array.isArray(run.fixture?.targets) || !run.fixture.targets.length)
         throw new Error("fixture.targets がありません。");
-    if (!Array.isArray(run.claims))
-        throw new Error("claims が配列ではありません。");
+    if (!Array.isArray(run.documents) || !run.documents.length)
+        throw new Error("documents が配列ではありません。");
+    const targetPaths = new Set((run.fixture.targets ?? []).map((item) => String(item.path ?? "")));
+    const documentPaths = new Set();
     const ids = new Set();
-    for (const claim of run.claims) {
-        const id = String(claim?.claim_id ?? "");
-        if (!id)
-            throw new Error("claim_id が空のclaimがあります。");
-        if (ids.has(id))
-            throw new Error(`claim_id が重複しています: ${id}`);
-        ids.add(id);
+    for (const doc of run.documents) {
+        const path = String(doc?.path ?? "");
+        if (!path)
+            throw new Error("path が空のdocumentがあります。");
+        if (documentPaths.has(path))
+            throw new Error(`document path が重複しています: ${path}`);
+        documentPaths.add(path);
+        if (!targetPaths.has(path))
+            throw new Error(`fixtureにないdocumentがあります: ${path}`);
+        if (!doc.document_profile?.classification)
+            throw new Error(`${path}: document_profile.classification がありません。`);
+        if (!Array.isArray(doc.representative_claims) || !doc.representative_claims.length)
+            throw new Error(`${path}: representative_claims がありません。`);
+        if (!Array.isArray(doc.claim_hotspots))
+            throw new Error(`${path}: claim_hotspots が配列ではありません。`);
+        if (!Array.isArray(doc.nonclaim_boundaries))
+            throw new Error(`${path}: nonclaim_boundaries が配列ではありません。`);
+        const localRepIds = new Set();
+        for (const rep of doc.representative_claims) {
+            const id = String(rep?.claim_id ?? "");
+            if (!id || ids.has(id))
+                throw new Error(`representative claim_id が空または重複しています: ${id}`);
+            ids.add(id);
+            localRepIds.add(id);
+        }
+        for (const basis of doc.document_profile?.basis_claim_ids ?? []) {
+            if (!localRepIds.has(String(basis)))
+                throw new Error(`${path}: basis_claim_idsに存在しないclaimがあります: ${String(basis)}`);
+        }
+        for (const hotspot of doc.claim_hotspots) {
+            const id = String(hotspot?.hotspot_id ?? "");
+            if (!id || ids.has(id))
+                throw new Error(`hotspot_id が空または重複しています: ${id}`);
+            ids.add(id);
+            if (String(hotspot.classification_effect ?? "") !== "local_only")
+                throw new Error(`${id}: classification_effectはlocal_onlyである必要があります。`);
+        }
+    }
+    if (documentPaths.size !== targetPaths.size || Array.from(targetPaths).some((path) => !documentPaths.has(path))) {
+        throw new Error("fixture.targets と documents の対象集合が一致しません。");
     }
     return run;
 }
@@ -2678,43 +2753,46 @@ async function installAssessmentRun(parsed, sourceText) {
     saveAssessmentLabState();
 }
 async function importAssessmentRun(file) {
-    const text = await file.text();
+    const raw = await file.text();
+    const text = raw.replace(/^\uFEFF/, "");
     const parsed = JSON.parse(text);
     await installAssessmentRun(parsed, text);
 }
 function assessmentReviewExportPayload() {
-    const counts = assessmentReviewCounts();
-    const decisions = Object.values(assessmentLabState.decisions ?? {}).sort((a, b) => String(a.path ?? "").localeCompare(String(b.path ?? ""), "en") || String(a.claim_id ?? "").localeCompare(String(b.claim_id ?? ""), "en"));
-    const total = assessmentClaims().length;
+    const counts = assessmentPrimaryReviewCounts();
+    const decisions = Object.values(assessmentLabState.decisions ?? {}).sort((a, b) => String(a.path ?? "").localeCompare(String(b.path ?? ""), "en") || String(a.review_key ?? "").localeCompare(String(b.review_key ?? ""), "en"));
+    const total = assessmentDocuments().length;
     return {
         repository_assessment_review: {
-            schema_version: "0.1",
+            schema_version: "0.2",
             source_run_sha256: String(assessmentLabState.source_run_sha256 ?? ""),
             status: counts.unreviewed === 0 ? "complete" : "in_progress",
             exported_at: new Date().toISOString(),
-            summary: { total_claims: total, reviewed: total - counts.unreviewed, ...counts },
+            summary: {
+                total_documents: total,
+                reviewed_document_profiles: total - counts.unreviewed,
+                detail_reviews: assessmentDetailReviewCount(),
+                ...counts,
+            },
             decisions,
         },
     };
 }
-function nextUnreviewedAssessmentClaim(afterId = "") {
-    const claims = assessmentClaims();
-    const start = Math.max(0, claims.findIndex((claim) => String(claim.claim_id ?? "") === afterId) + 1);
-    return [...claims.slice(start), ...claims.slice(0, start)].find((claim) => assessmentReviewDecision(String(claim.claim_id ?? "")) === "unreviewed");
+function nextUnreviewedAssessmentProfile(afterPath = "") {
+    const docs = assessmentDocuments();
+    const start = Math.max(0, docs.findIndex((doc) => String(doc.path ?? "") === afterPath) + 1);
+    return [...docs.slice(start), ...docs.slice(0, start)].find((doc) => assessmentReviewDecision(assessmentProfileKey(String(doc.path ?? ""))) === "unreviewed");
 }
-function assessmentClaimSearchText(claim) {
+function assessmentDocumentSearchText(doc) {
     return [
-        claim.claim_id,
-        claim.path,
-        claim.proposition,
-        claim.source?.text,
-        claim.attribution?.represented_system,
-        claim.attribution?.repository_commitment,
-        claim.attribution?.responsibility,
-        claim.attribution?.scope,
-        claim.classification?.strength,
-        claim.classification?.exposure,
-        claim.rationale,
+        doc.path,
+        doc.document_profile?.title,
+        doc.document_profile?.classification?.strength,
+        doc.document_profile?.classification?.exposure,
+        doc.document_profile?.rationale,
+        ...(doc.representative_claims ?? []).flatMap((claim) => [claim.proposition, claim.rationale, claim.attribution?.represented_system, claim.attribution?.scope]),
+        ...(doc.claim_hotspots ?? []).flatMap((claim) => [claim.proposition, claim.rationale, claim.ground?.owner, ...(claim.hotspot_reasons ?? [])]),
+        ...(doc.nonclaim_boundaries ?? []).map((item) => item.proposition),
     ].join(" ").normalize("NFKC").toLocaleLowerCase("ja-JP");
 }
 function assessmentSelect(values, current, labels = {}) {
@@ -2729,54 +2807,111 @@ function assessmentSelect(values, current, labels = {}) {
     }
     return select;
 }
-function renderAssessmentClaimReview(claimId) {
-    const claim = assessmentClaimById(claimId);
-    if (!claim)
-        return errorPage(`Unknown assessment claim: ${claimId}`);
+function assessmentTriStateSelect(current) {
+    const select = el("select", "candidate-select");
+    for (const [value, label] of [["", "?"], ["true", "true"], ["false", "false"]]) {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = label;
+        option.selected = (current == null && value === "") || (current === true && value === "true") || (current === false && value === "false");
+        select.append(option);
+    }
+    return select;
+}
+function assessmentSourceRefs(value, path) {
+    const panel = el("section", "audit-panel candidate-review-panel");
+    panel.append(el("h2", "section-title small", displayLang === "ja" ? "元の本文" : "Source text"));
+    const refs = value.source_refs ?? (value.source ? [value.source] : []);
+    if (!refs.length) {
+        panel.append(el("p", "empty", displayLang === "ja" ? "source excerptはありません。" : "No source excerpt."));
+        return panel;
+    }
+    for (const ref of refs) {
+        const row = el("div", "candidate-evidence");
+        row.append(el("div", "path", `${path}:${String(ref.line_start ?? "?")}-${String(ref.line_end ?? "?")}`));
+        row.append(el("p", "candidate-evidence-text", String(ref.text ?? "")));
+        panel.append(row);
+    }
+    return panel;
+}
+function renderAssessmentReviewItem(reviewKey) {
+    const item = assessmentReviewItemByKey(reviewKey);
+    if (!item)
+        return errorPage(`Unknown assessment review item: ${reviewKey}`);
     const page = el("main", "page");
     page.append(navBar("assessment"), dataBanner());
     const back = button(displayLang === "ja" ? "← 主張監査ラボ" : "← Claim audit lab", "back-button");
     back.addEventListener("click", () => setRoute({ view: "assessment" }));
     page.append(back);
-    const existing = assessmentDecisionForClaim(claimId);
-    const baseline = deepClone(claim);
+    const existing = assessmentDecisionForKey(reviewKey);
+    const baseline = deepClone(item.value ?? {});
     const working = deepClone(existing?.after ?? baseline);
-    working.attribution ??= {};
     working.classification ??= {};
+    working.attribution ??= {};
+    working.ground ??= {};
+    const kind = String(item.kind ?? "");
+    const path = String(item.path ?? "");
+    const title = kind === "document_profile"
+        ? String(working.title ?? path)
+        : String(working.proposition ?? item.item_id ?? reviewKey);
     const hero = el("section", "doc-header candidate-detail-header");
     const meta = el("div", "doc-meta-line");
-    meta.append(badge(String(working.classification?.strength ?? "S—")), badge(String(working.classification?.exposure ?? "E—")), badge(String(working.attribution?.repository_commitment ?? "indeterminate")), badge(reviewDecisionLabel(assessmentReviewDecision(claimId)), decisionTone(assessmentReviewDecision(claimId))));
-    hero.append(eyebrow(`ASSESSMENT CLAIM · ${claimId}`), el("h1", "section-title", String(working.proposition ?? claimId)), meta, el("div", "path", `${String(claim.path ?? "")}:${String(claim.source?.line_start ?? "?")}-${String(claim.source?.line_end ?? "?")}`));
+    meta.append(badge(kind), badge(String(working.classification?.strength ?? "S—")), badge(String(working.classification?.exposure ?? "E—")), badge(reviewDecisionLabel(assessmentReviewDecision(reviewKey)), decisionTone(assessmentReviewDecision(reviewKey))));
+    if (kind !== "document_profile")
+        meta.append(badge(String(working.attribution?.repository_commitment ?? "indeterminate")));
+    hero.append(eyebrow(`ASSESSMENT REVIEW · ${String(item.item_id ?? "DOCUMENT PROFILE")}`), el("h1", "section-title", title), meta, el("div", "path", path));
     page.append(hero);
-    const sourcePanel = el("section", "audit-panel candidate-review-panel");
-    sourcePanel.append(el("h2", "section-title small", displayLang === "ja" ? "元の本文" : "Source text"), el("p", "candidate-evidence-text", String(claim.source?.text ?? "")));
-    if (claim.references?.length) {
-        for (const ref of claim.references) {
-            const row = el("div", "candidate-evidence");
-            row.append(el("div", "path", `${String(ref.path ?? claim.path ?? "")}:${String(ref.line_start ?? ref.line ?? "")}-${String(ref.line_end ?? "")}`));
-            if (ref.text)
-                row.append(el("p", "candidate-evidence-text", String(ref.text)));
-            sourcePanel.append(row);
-        }
-    }
-    page.append(sourcePanel);
+    if (kind !== "document_profile")
+        page.append(assessmentSourceRefs(working, path));
     const form = el("section", "audit-panel candidate-review-panel workbench-editor");
     form.append(el("h2", "section-title small", displayLang === "ja" ? "分類を確認・修正" : "Review classification"), el("p", "section-copy", displayLang === "ja"
-        ? "runの生出力は変更しません。修正した場合もbefore / afterの両方をreview transactionへ残します。protocol_rule_errorは個別補正ではなく次revisionでの一律再実行候補です。"
-        : "The raw run is immutable. Edits are stored as before/after in the review transaction. protocol_rule_error should trigger a new uniform protocol revision rather than silent local repair."));
-    const proposition = textArea(String(working.proposition ?? ""), 3);
-    const represented = textInput(String(working.attribution?.represented_system ?? ""));
-    const commitment = assessmentSelect(["represented", "endorsed", "derived", "rejected", "suspended", "indeterminate"], String(working.attribution?.repository_commitment ?? "indeterminate"));
-    const responsibility = textInput(String(working.attribution?.responsibility ?? ""));
-    const scope = textArea(String(working.attribution?.scope ?? ""), 2);
-    const strength = assessmentSelect([null, "S0", "S1", "S2", "S3", "S4", "S5"], working.classification?.strength ?? null);
-    const exposure = assessmentSelect([null, "E0", "E1", "E2", "E3"], working.classification?.exposure ?? null);
-    const rationale = textArea(String(working.rationale ?? ""), 5);
-    form.append(reviewField(displayLang === "ja" ? "命題" : "Proposition", proposition), reviewField("represented_system", represented), reviewField("repository_commitment", commitment), reviewField("responsibility", responsibility), reviewField("scope", scope));
-    const classGrid = el("div", "workbench-field-grid");
-    classGrid.append(reviewField("Claim Strength / S", strength), reviewField("Connection Exposure / E", exposure));
-    form.append(classGrid, reviewField(displayLang === "ja" ? "判断理由" : "Rationale", rationale));
-    const issueTypes = ["proposition_error", "attribution_error", "domain_error", "commitment_error", "strength_error", "exposure_error", "evidence_error", "protocol_rule_error", "other"];
+        ? "runの生出力は変更しません。文書profileが第一レビュー単位です。代表主張・hotspotは必要な場合だけ個別に開きます。protocol_rule_errorは次revisionで一律再実行する候補です。"
+        : "The raw run is immutable. Document profile is the primary review unit; representative claims and hotspots are reviewed only when needed. A protocol-rule error should be addressed in a new uniform revision."));
+    const controls = {};
+    if (kind === "document_profile") {
+        controls.title = textInput(String(working.title ?? ""));
+        controls.strength = assessmentSelect([null, "S0", "S1", "S2", "S3", "S4", "S5"], working.classification?.strength ?? null);
+        controls.exposure = assessmentSelect([null, "E0", "E1", "E2", "E3"], working.classification?.exposure ?? null);
+        controls.basis = textArea((working.basis_claim_ids ?? []).join("\n"), 3);
+        controls.rationale = textArea(String(working.rationale ?? ""), 5);
+        form.append(reviewField(displayLang === "ja" ? "文書タイトル" : "Document title", controls.title));
+        const classGrid = el("div", "workbench-field-grid");
+        classGrid.append(reviewField("Representative S", controls.strength), reviewField("Representative E", controls.exposure));
+        form.append(classGrid, reviewField("basis_claim_ids", controls.basis), reviewField(displayLang === "ja" ? "文書分類の理由" : "Profile rationale", controls.rationale));
+    }
+    else {
+        controls.proposition = textArea(String(working.proposition ?? ""), 3);
+        controls.role = assessmentSelect(["central_claim", "core_definition", "conclusion", "supporting_argument", "bridge", "scope_control", "other"], String(working.argument_role ?? "other"));
+        controls.represented = textInput(String(working.attribution?.represented_system ?? ""));
+        controls.commitment = assessmentSelect(["represented", "endorsed", "derived", "suspended", "indeterminate"], String(working.attribution?.repository_commitment ?? "indeterminate"));
+        controls.responsibility = textInput(String(working.attribution?.responsibility ?? ""));
+        controls.scope = textArea(String(working.attribution?.scope ?? ""), 2);
+        controls.strength = assessmentSelect([null, "S0", "S1", "S2", "S3", "S4", "S5"], working.classification?.strength ?? null);
+        controls.exposure = assessmentSelect([null, "E0", "E1", "E2", "E3"], working.classification?.exposure ?? null);
+        controls.rationale = textArea(String(working.rationale ?? ""), 5);
+        form.append(reviewField(displayLang === "ja" ? "命題" : "Proposition", controls.proposition), reviewField("argument_role", controls.role), reviewField("represented_system", controls.represented), reviewField("repository_commitment", controls.commitment), reviewField("responsibility", controls.responsibility), reviewField("scope", controls.scope));
+        const classGrid = el("div", "workbench-field-grid");
+        classGrid.append(reviewField("Claim Strength / S", controls.strength), reviewField("Connection Exposure / E", controls.exposure));
+        form.append(classGrid);
+        if (kind === "claim_hotspot") {
+            controls.groundOwner = textInput(String(working.ground?.owner ?? ""));
+            controls.groundRelation = textInput(String(working.ground?.relation ?? ""));
+            controls.hotspotReasons = textArea((working.hotspot_reasons ?? []).join("\n"), 3);
+            controls.awarenessGround = assessmentTriStateSelect(working.awareness?.ground_linked);
+            controls.awarenessScope = assessmentTriStateSelect(working.awareness?.scope_declared);
+            controls.awarenessNonclaim = assessmentTriStateSelect(working.awareness?.nonclaim_boundary_present);
+            controls.awarenessOwner = assessmentTriStateSelect(working.awareness?.owner_identified);
+            const groundGrid = el("div", "workbench-field-grid");
+            groundGrid.append(reviewField("ground.owner", controls.groundOwner), reviewField("ground.relation", controls.groundRelation));
+            form.append(groundGrid, reviewField("hotspot_reasons", controls.hotspotReasons));
+            const awarenessGrid = el("div", "workbench-field-grid");
+            awarenessGrid.append(reviewField("awareness.ground_linked", controls.awarenessGround), reviewField("awareness.scope_declared", controls.awarenessScope), reviewField("awareness.nonclaim_boundary_present", controls.awarenessNonclaim), reviewField("awareness.owner_identified", controls.awarenessOwner));
+            form.append(awarenessGrid);
+            form.append(el("p", "section-copy", displayLang === "ja" ? "hotspotのS/Eはlocal-onlyであり、文書profileへ自動昇格しません。" : "Hotspot S/E is local-only and does not automatically determine the document profile."));
+        }
+        form.append(reviewField(displayLang === "ja" ? "判断理由" : "Rationale", controls.rationale));
+    }
+    const issueTypes = ["proposition_error", "merge_error", "attribution_error", "domain_error", "commitment_error", "responsibility_error", "scope_error", "document_profile_error", "hotspot_detection_error", "strength_error", "exposure_error", "ground_owner_error", "evidence_error", "protocol_rule_error", "other"];
     const existingIssues = new Set((existing?.issue_types ?? []).map((value) => String(value)));
     const issues = el("fieldset", "assessment-issues");
     issues.append(el("legend", "workbench-label", displayLang === "ja" ? "レビューで見つけた問題" : "Issues found in review"));
@@ -2795,42 +2930,70 @@ function renderAssessmentClaimReview(claimId) {
     form.append(reviewField(displayLang === "ja" ? "レビュー注記" : "Reviewer note", note));
     const readAfter = () => {
         const after = deepClone(baseline);
-        after.proposition = proposition.value.trim();
+        if (kind === "document_profile") {
+            after.title = controls.title.value.trim();
+            after.classification ??= {};
+            after.classification.strength = controls.strength.value || null;
+            after.classification.exposure = controls.exposure.value || null;
+            after.basis_claim_ids = lines(controls.basis.value);
+            after.rationale = controls.rationale.value.trim();
+            return after;
+        }
+        after.proposition = controls.proposition.value.trim();
+        after.argument_role = controls.role.value;
         after.attribution ??= {};
-        after.attribution.represented_system = represented.value.trim();
-        after.attribution.repository_commitment = commitment.value;
-        after.attribution.responsibility = responsibility.value.trim();
-        after.attribution.scope = scope.value.trim();
+        after.attribution.represented_system = controls.represented.value.trim();
+        after.attribution.repository_commitment = controls.commitment.value;
+        after.attribution.responsibility = controls.responsibility.value.trim();
+        after.attribution.scope = controls.scope.value.trim();
         after.classification ??= {};
-        after.classification.strength = strength.value || null;
-        after.classification.exposure = exposure.value || null;
-        after.rationale = rationale.value.trim();
+        after.classification.strength = controls.strength.value || null;
+        after.classification.exposure = controls.exposure.value || null;
+        after.rationale = controls.rationale.value.trim();
+        if (kind === "claim_hotspot") {
+            after.ground ??= {};
+            after.ground.owner = controls.groundOwner.value.trim();
+            after.ground.relation = controls.groundRelation.value.trim();
+            after.hotspot_reasons = lines(controls.hotspotReasons.value);
+            after.awareness ??= {};
+            const parseTri = (control) => control.value === "true" ? true : control.value === "false" ? false : null;
+            after.awareness.ground_linked = parseTri(controls.awarenessGround);
+            after.awareness.scope_declared = parseTri(controls.awarenessScope);
+            after.awareness.nonclaim_boundary_present = parseTri(controls.awarenessNonclaim);
+            after.awareness.owner_identified = parseTri(controls.awarenessOwner);
+            after.classification_effect = "local_only";
+        }
         return after;
     };
-    const save = (kind) => {
+    const save = (decisionKind) => {
         const after = readAfter();
         const changed = JSON.stringify(after) !== JSON.stringify(baseline);
-        const decision = kind === "approve" ? (changed ? "approve_with_edits" : "approve") : kind;
-        const issueTypesSelected = Array.from(issueControls.entries()).filter(([, input]) => input.checked).map(([issue]) => issue);
-        assessmentLabState.decisions[claimId] = {
-            claim_id: claimId,
-            path: String(claim.path ?? ""),
+        const decision = decisionKind === "approve" ? (changed ? "approve_with_edits" : "approve") : decisionKind;
+        const selectedIssues = Array.from(issueControls.entries()).filter(([, input]) => input.checked).map(([issue]) => issue);
+        assessmentLabState.decisions[reviewKey] = {
+            review_key: reviewKey,
+            kind,
+            item_id: item.item_id ?? null,
+            path,
             decision,
-            issue_types: issueTypesSelected,
+            issue_types: selectedIssues,
             reviewed_at: new Date().toISOString(),
             reviewer_note: note.value.trim(),
             before: baseline,
             after,
         };
         saveAssessmentLabState();
-        const next = nextUnreviewedAssessmentClaim(claimId);
-        if (kind === "approve" && next)
-            setRoute({ view: "assessment-claim", claim: String(next.claim_id ?? "") });
-        else
-            setRoute({ view: "assessment" });
+        if (decisionKind === "approve" && kind === "document_profile") {
+            const next = nextUnreviewedAssessmentProfile(path);
+            if (next) {
+                setRoute({ view: "assessment-item", item: assessmentProfileKey(String(next.path ?? "")) });
+                return;
+            }
+        }
+        setRoute({ view: "assessment" });
     };
     const bar = el("div", "workbench-decision-bar");
-    const approve = button(displayLang === "ja" ? "承認して次へ" : "Approve and next", "button primary");
+    const approve = button(displayLang === "ja" ? "承認" : "Approve", "button primary");
     approve.addEventListener("click", () => save("approve"));
     const hold = button(displayLang === "ja" ? "保留" : "Hold", "button");
     hold.addEventListener("click", () => save("hold"));
@@ -2838,7 +3001,7 @@ function renderAssessmentClaimReview(claimId) {
     reject.addEventListener("click", () => save("reject"));
     const reset = button(displayLang === "ja" ? "未確認に戻す" : "Reset to unreviewed", "text-button");
     reset.addEventListener("click", () => {
-        delete assessmentLabState.decisions[claimId];
+        delete assessmentLabState.decisions[reviewKey];
         saveAssessmentLabState();
         render();
     });
@@ -2847,13 +3010,98 @@ function renderAssessmentClaimReview(claimId) {
     page.append(form);
     return page;
 }
+function assessmentClaimRow(doc, item, kind) {
+    const id = kind === "representative_claim" ? String(item.claim_id ?? "") : String(item.hotspot_id ?? "");
+    const reviewKey = kind === "representative_claim" ? assessmentRepresentativeKey(id) : assessmentHotspotKey(id);
+    const row = el("article", `assessment-detail-row ${kind === "claim_hotspot" ? "assessment-hotspot-row" : ""}`);
+    const meta = el("div", "doc-meta-line");
+    meta.append(badge(kind === "representative_claim" ? "REP" : "HOTSPOT", kind === "claim_hotspot" ? "warn" : ""), badge(String(item.classification?.strength ?? "S—")), badge(String(item.classification?.exposure ?? "E—")), badge(String(item.attribution?.repository_commitment ?? "indeterminate")));
+    if (kind === "claim_hotspot") {
+        meta.append(badge(`ground: ${String(item.ground?.owner ?? "unknown")}`));
+        const awareness = item.awareness ?? {};
+        const awarenessFields = [
+            ["ground", awareness.ground_linked],
+            ["scope", awareness.scope_declared],
+            ["nonclaim", awareness.nonclaim_boundary_present],
+            ["owner", awareness.owner_identified],
+        ];
+        for (const [label, state] of awarenessFields) {
+            const mark = state === true ? "✓" : state === false ? "×" : "?";
+            meta.append(badge(`${label}${mark}`, state === false ? "warn" : ""));
+        }
+    }
+    row.append(meta, el("h3", "assessment-detail-title", String(item.proposition ?? id)));
+    if (kind === "claim_hotspot" && item.hotspot_reasons?.length)
+        row.append(el("p", "card-copy", (item.hotspot_reasons ?? []).join(" · ")));
+    row.append(el("p", "card-copy", String(item.rationale ?? "")));
+    const actions = el("div", "card-actions");
+    const review = button(displayLang === "ja" ? "詳細レビュー" : "Review detail", "button compact-button");
+    review.addEventListener("click", () => setRoute({ view: "assessment-item", item: reviewKey }));
+    actions.append(review, badge(reviewDecisionLabel(assessmentReviewDecision(reviewKey)), decisionTone(assessmentReviewDecision(reviewKey))));
+    row.append(actions);
+    return row;
+}
+function renderAssessmentDocumentCard(doc) {
+    const path = String(doc.path ?? "");
+    const profile = doc.document_profile ?? {};
+    const profileKey = assessmentProfileKey(path);
+    const reps = doc.representative_claims ?? [];
+    const hotspots = doc.claim_hotspots ?? [];
+    const nonclaims = doc.nonclaim_boundaries ?? [];
+    const card = el("article", "candidate-card card assessment-document-card");
+    const meta = el("div", "doc-meta-line");
+    meta.append(badge(reviewDecisionLabel(assessmentReviewDecision(profileKey)), decisionTone(assessmentReviewDecision(profileKey))), badge(String(profile.classification?.strength ?? "S—")), badge(String(profile.classification?.exposure ?? "E—")), badge(`${reps.length} REP`), badge(`${hotspots.length} HOT`, hotspots.length ? "warn" : ""), badge(`${nonclaims.length} NON`));
+    card.append(meta, el("h2", "card-title", String(profile.title ?? path)), el("div", "path", path));
+    if (profile.rationale)
+        card.append(el("p", "card-copy", String(profile.rationale)));
+    const actions = el("div", "card-actions");
+    const reviewProfile = button(displayLang === "ja" ? "文書分類をレビュー" : "Review document profile", "button primary compact-button");
+    reviewProfile.addEventListener("click", () => setRoute({ view: "assessment-item", item: profileKey }));
+    actions.append(reviewProfile);
+    if (readerAllowedPaths().has(path))
+        actions.append(readerButton(path));
+    card.append(actions);
+    const repDetails = el("details", "assessment-details");
+    const repSummary = el("summary", "assessment-details-summary", displayLang === "ja" ? `代表主張 ${reps.length}` : `Representative claims ${reps.length}`);
+    repDetails.append(repSummary);
+    for (const rep of reps)
+        repDetails.append(assessmentClaimRow(doc, rep, "representative_claim"));
+    card.append(repDetails);
+    const hotspotDetails = el("details", "assessment-details");
+    const hotspotSummary = el("summary", "assessment-details-summary", displayLang === "ja" ? `局所強度 / Hotspots ${hotspots.length}` : `Claim hotspots ${hotspots.length}`);
+    hotspotDetails.append(hotspotSummary);
+    if (hotspots.length) {
+        for (const hotspot of hotspots)
+            hotspotDetails.append(assessmentClaimRow(doc, hotspot, "claim_hotspot"));
+    }
+    else
+        hotspotDetails.append(el("p", "empty", displayLang === "ja" ? "hotspotは検出されていません。" : "No hotspots detected."));
+    card.append(hotspotDetails);
+    const nonclaimDetails = el("details", "assessment-details");
+    const nonclaimSummary = el("summary", "assessment-details-summary", displayLang === "ja" ? `明示的非主張 ${nonclaims.length}` : `Explicit nonclaims ${nonclaims.length}`);
+    nonclaimDetails.append(nonclaimSummary);
+    if (nonclaims.length) {
+        for (const boundary of nonclaims) {
+            const row = el("article", "assessment-detail-row assessment-nonclaim-row");
+            row.append(badge("S— / E—"), el("h3", "assessment-detail-title", String(boundary.proposition ?? boundary.boundary_id ?? "")));
+            const source = String(boundary.source?.text ?? "");
+            if (source)
+                row.append(el("p", "card-copy assessment-source-preview", source));
+            nonclaimDetails.append(row);
+        }
+    }
+    else
+        nonclaimDetails.append(el("p", "empty", displayLang === "ja" ? "明示的非主張は抽出されていません。" : "No explicit nonclaims extracted."));
+    card.append(nonclaimDetails);
+    return card;
+}
 function renderAssessmentLab() {
     const page = el("main", "page");
     page.append(navBar("assessment"), dataBanner());
     const section = el("section", "section candidate-page");
-    section.append(eyebrow("EXPERIMENTAL ASSESSMENT LAB"), el("h1", "hero-title", displayLang === "ja" ? "凍結した方法を一括実行する" : "Run a frozen method as a batch"), el("p", "hero-copy", displayLang === "ja"
-        ? "ここは監査方法を創造する場所ではありません。選んだrevisionを対象全体へ途中変更なしで貫徹し、生の結果を人間レビューへ渡します。canonical manifestや正本は直接変更しません。"
-        : "This is not where the method is invented. A selected revision is applied unchanged across the full fixture, preserving raw results for human review. Canonical documents and the manifest are not changed here."));
+    section.append(eyebrow("EXPERIMENTAL ASSESSMENT LAB"), el("h1", "hero-title", displayLang === "ja" ? "代表主張と局所強度を分けて見る" : "Separate representative claims from local claim pressure"), el("p", "hero-copy", displayLang === "ja"
+        ? "文書全体の主張分類と、論証途中に現れる強い局所claimを分離します。全命題を一件ずつ承認するのではなく、まず文書profileをレビューし、必要な箇所だけ代表主張・hotspotへ降ります。"
+        : "Document-level classification is separated from locally strong claims inside the argument. Review the document profile first, then inspect representative claims or hotspots only when needed."));
     const protocols = assessmentProtocolList();
     if (!protocols.length) {
         section.append(el("p", "error", displayLang === "ja" ? "assessment protocol previewを読み込めませんでした。" : "Assessment protocol preview is unavailable."));
@@ -2882,34 +3130,19 @@ function renderAssessmentLab() {
         assessmentTargetPaths = (next?.default_targets ?? []).map((value) => String(value));
         render();
     });
+    setup.append(reviewField(displayLang === "ja" ? "Protocol revision" : "Protocol revision", protocolSelect));
     const targets = textArea(assessmentTargetPaths.join("\n"), Math.max(3, assessmentTargetPaths.length + 1));
     targets.addEventListener("input", () => { assessmentTargetPaths = lines(targets.value); });
-    setup.append(reviewField(displayLang === "ja" ? "凍結protocol" : "Frozen protocol", protocolSelect), reviewField(displayLang === "ja" ? "対象文書（1行1件）" : "Target documents (one per line)", targets));
-    const protocolMeta = el("div", "candidate-detail-grid");
-    for (const [key, value] of [
-        ["state", protocol.state],
-        ["revision", protocol.revision],
-        ["source SHA-256", protocol.source_sha256],
-        [displayLang === "ja" ? "昇格先" : "Promotion target", protocol.promotion?.target_surface],
-    ]) {
-        const row = el("div", "candidate-kv");
-        row.append(el("span", "candidate-k", String(key)), el("span", "candidate-v path", String(value ?? "")));
-        protocolMeta.append(row);
-    }
-    setup.append(protocolMeta);
-    const runner = assessmentRunnerStatus?.repository_assessment_runner ?? {};
-    const runnerLine = el("div", "assessment-runner-line");
-    runnerLine.append(badge(runner.available ? (displayLang === "ja" ? "LOCAL RUNNER 接続" : "LOCAL RUNNER READY") : (displayLang === "ja" ? "EXPORT / IMPORT" : "EXPORT / IMPORT"), runner.available ? "ok" : "warn"), el("span", "", runner.available
-        ? (displayLang === "ja" ? "この画面から凍結runを実行できます。" : "The frozen run can be executed from this screen.")
-        : (displayLang === "ja" ? "runner未設定です。実行パックを別セッションへ渡し、結果JSONを戻せます。" : "No runner is configured. Export the execution pack and import the returned JSON.")));
-    setup.append(runnerLine);
+    setup.append(reviewField(displayLang === "ja" ? "対象文書（1行1path）" : "Target documents (one path per line)", targets));
+    setup.append(el("p", "section-copy", displayLang === "ja"
+        ? `protocol hash: ${String(protocol.source_sha256 ?? "")} · output: ${String(protocol.output_contract?.schema ?? "")}`
+        : `protocol hash: ${String(protocol.source_sha256 ?? "")} · output: ${String(protocol.output_contract?.schema ?? "")}`));
     const toolbar = el("div", "workbench-toolbar");
     const exportPack = button(displayLang === "ja" ? "実行パックを書き出す" : "Export execution pack", "button");
     exportPack.addEventListener("click", async () => {
         exportPack.disabled = true;
         try {
-            const execution = await buildAssessmentExecution(protocol, assessmentTargetPaths);
-            downloadJsonFile("repository_assessment_execution.json", execution);
+            downloadJsonFile("repository_assessment_execution.json", await buildAssessmentExecution(protocol, assessmentTargetPaths));
         }
         catch (error) {
             alert(String(error.message));
@@ -2918,7 +3151,7 @@ function renderAssessmentLab() {
             exportPack.disabled = false;
         }
     });
-    const copyPrompt = button(displayLang === "ja" ? "プロンプトをコピー" : "Copy prompt", "button");
+    const copyPrompt = button(displayLang === "ja" ? "プロンプトをコピー" : "Copy frozen prompt", "button");
     copyPrompt.addEventListener("click", async () => {
         copyPrompt.disabled = true;
         try {
@@ -2933,6 +3166,7 @@ function renderAssessmentLab() {
             copyPrompt.disabled = false;
         }
     });
+    const runner = assessmentRunnerStatus?.repository_assessment_runner ?? {};
     const runButton = button(displayLang === "ja" ? "UIから実行" : "Run from UI", "button primary");
     runButton.disabled = !runner.available;
     runButton.addEventListener("click", async () => {
@@ -2983,16 +3217,23 @@ function renderAssessmentLab() {
     const run = assessmentRunPayload();
     if (run) {
         const runProtocol = assessmentProtocolForRun(run);
-        const counts = assessmentReviewCounts();
+        const counts = assessmentPrimaryReviewCounts();
+        const docs = assessmentDocuments();
+        const totalReps = docs.reduce((sum, doc) => sum + (doc.representative_claims?.length ?? 0), 0);
+        const totalHotspots = docs.reduce((sum, doc) => sum + (doc.claim_hotspots?.length ?? 0), 0);
+        const totalNonclaims = docs.reduce((sum, doc) => sum + (doc.nonclaim_boundaries?.length ?? 0), 0);
         const runPanel = el("section", "audit-panel assessment-run-panel");
-        runPanel.append(el("h2", "section-title small", displayLang === "ja" ? "現在のrun" : "Current run"), el("p", "section-copy", `${String(runProtocol?.title_ja ?? run.protocol?.id ?? "")} · ${String(run.protocol?.revision ?? "")} · ${assessmentClaims().length} claims`));
+        runPanel.append(el("h2", "section-title small", displayLang === "ja" ? "現在のrun" : "Current run"), el("p", "section-copy", `${String(runProtocol?.title_ja ?? run.protocol?.id ?? "")} · ${String(run.protocol?.revision ?? "")} · ${docs.length} documents`));
         const stats = el("div", "audit-stats candidate-stats");
-        stats.append(candidateMetric(displayLang === "ja" ? "未確認" : "Unreviewed", String(counts.unreviewed)), candidateMetric(displayLang === "ja" ? "承認" : "Approved", String((counts.approve ?? 0) + (counts.approve_with_edits ?? 0))), candidateMetric(displayLang === "ja" ? "保留" : "On hold", String(counts.hold ?? 0)), candidateMetric(displayLang === "ja" ? "却下" : "Rejected", String(counts.reject ?? 0)), candidateMetric("claims", String(assessmentClaims().length)));
+        stats.append(candidateMetric(displayLang === "ja" ? "未確認文書" : "Unreviewed docs", String(counts.unreviewed)), candidateMetric(displayLang === "ja" ? "代表主張" : "Representative", String(totalReps)), candidateMetric("Hotspots", String(totalHotspots)), candidateMetric(displayLang === "ja" ? "非主張" : "Nonclaims", String(totalNonclaims)), candidateMetric(displayLang === "ja" ? "詳細レビュー" : "Detail reviews", String(assessmentDetailReviewCount())));
         runPanel.append(stats);
         const runToolbar = el("div", "workbench-toolbar");
-        const next = button(displayLang === "ja" ? "次の未確認へ" : "Next unreviewed", "button primary");
-        next.addEventListener("click", () => { const claim = nextUnreviewedAssessmentClaim(); if (claim)
-            setRoute({ view: "assessment-claim", claim: String(claim.claim_id ?? "") }); });
+        const next = button(displayLang === "ja" ? "次の未確認文書へ" : "Next unreviewed document", "button primary");
+        next.addEventListener("click", () => {
+            const doc = nextUnreviewedAssessmentProfile();
+            if (doc)
+                setRoute({ view: "assessment-item", item: assessmentProfileKey(String(doc.path ?? "")) });
+        });
         const exportRun = button(displayLang === "ja" ? "生runを書き出す" : "Export raw run", "button");
         exportRun.addEventListener("click", () => downloadJsonFile("repository_assessment_run.json", assessmentLabState.run));
         const exportReview = button(displayLang === "ja" ? "レビューを書き出す" : "Export review", "button");
@@ -3007,89 +3248,33 @@ function renderAssessmentLab() {
         });
         runToolbar.append(next, exportRun, exportReview, clear);
         runPanel.append(runToolbar);
-        const filters = el("div", "candidate-filters assessment-filters");
-        const queryLabel = el("label", "candidate-filter");
-        queryLabel.append(el("span", "candidate-filter-label", displayLang === "ja" ? "claim検索" : "Filter claims"));
+        const queryLabel = el("label", "candidate-filter assessment-document-filter");
+        queryLabel.append(el("span", "candidate-filter-label", displayLang === "ja" ? "文書・主張を検索" : "Filter documents and claims"));
         const query = textInput();
-        query.placeholder = displayLang === "ja" ? "命題・本文・帰属・path" : "Proposition, source, attribution, path";
+        query.placeholder = displayLang === "ja" ? "タイトル・path・代表主張・hotspot" : "Title, path, representative claim, hotspot";
         queryLabel.append(query);
-        filters.append(queryLabel);
-        const makeFilter = (label, values) => {
-            const wrap = el("label", "candidate-filter");
-            wrap.append(el("span", "candidate-filter-label", label));
-            const select = el("select", "candidate-select");
-            const all = document.createElement("option");
-            all.value = "";
-            all.textContent = displayLang === "ja" ? "すべて" : "All";
-            select.append(all);
-            for (const value of values) {
-                const option = document.createElement("option");
-                option.value = value;
-                option.textContent = value || "—";
-                select.append(option);
-            }
-            wrap.append(select);
-            filters.append(wrap);
-            return select;
-        };
-        const claims = assessmentClaims();
-        const pathFilter = makeFilter("path", Array.from(new Set(claims.map((item) => String(item.path ?? "")))).sort());
-        const commitmentFilter = makeFilter("commitment", Array.from(new Set(claims.map((item) => String(item.attribution?.repository_commitment ?? "")))).filter(Boolean).sort());
-        const strengthFilter = makeFilter("S", ["S0", "S1", "S2", "S3", "S4", "S5"]);
-        const exposureFilter = makeFilter("E", ["E0", "E1", "E2", "E3"]);
-        const reviewFilter = makeFilter(displayLang === "ja" ? "レビュー" : "Review", ["unreviewed", "approve", "approve_with_edits", "hold", "reject"]);
-        runPanel.append(filters);
+        runPanel.append(queryLabel);
         const summary = el("div", "candidate-result-summary");
-        const grid = el("div", "candidate-grid assessment-claim-grid");
+        const grid = el("div", "candidate-grid assessment-document-grid");
         runPanel.append(summary, grid);
         const draw = () => {
             grid.replaceChildren();
             const q = query.value.trim().normalize("NFKC").toLocaleLowerCase("ja-JP");
-            const filtered = claims.filter((claim) => {
-                if (pathFilter.value && String(claim.path ?? "") !== pathFilter.value)
-                    return false;
-                if (commitmentFilter.value && String(claim.attribution?.repository_commitment ?? "") !== commitmentFilter.value)
-                    return false;
-                if (strengthFilter.value && String(claim.classification?.strength ?? "") !== strengthFilter.value)
-                    return false;
-                if (exposureFilter.value && String(claim.classification?.exposure ?? "") !== exposureFilter.value)
-                    return false;
-                if (reviewFilter.value && assessmentReviewDecision(String(claim.claim_id ?? "")) !== reviewFilter.value)
-                    return false;
-                return !q || assessmentClaimSearchText(claim).includes(q);
-            });
-            summary.textContent = `${filtered.length} / ${claims.length} claims`;
-            for (const claim of filtered) {
-                const card = el("article", "candidate-card card assessment-claim-card");
-                const meta = el("div", "doc-meta-line");
-                meta.append(badge(reviewDecisionLabel(assessmentReviewDecision(String(claim.claim_id ?? ""))), decisionTone(assessmentReviewDecision(String(claim.claim_id ?? "")))), badge(String(claim.classification?.strength ?? "S—")), badge(String(claim.classification?.exposure ?? "E—")), badge(String(claim.attribution?.repository_commitment ?? "indeterminate")));
-                card.append(meta, el("h2", "card-title", String(claim.proposition ?? claim.claim_id ?? "")));
-                const source = String(claim.source?.text ?? "");
-                if (source)
-                    card.append(el("p", "card-copy assessment-source-preview", source.length > 260 ? `${source.slice(0, 260)}…` : source));
-                card.append(el("div", "path", `${String(claim.path ?? "")}:${String(claim.source?.line_start ?? "?")}-${String(claim.source?.line_end ?? "?")}`));
-                const actions = el("div", "card-actions");
-                const review = button(displayLang === "ja" ? "レビューする" : "Review", "button compact-button");
-                review.addEventListener("click", () => setRoute({ view: "assessment-claim", claim: String(claim.claim_id ?? "") }));
-                actions.append(review);
-                if (claim.path && readerAllowedPaths().has(String(claim.path)))
-                    actions.append(readerButton(String(claim.path)));
-                card.append(actions);
-                grid.append(card);
-            }
+            const filtered = docs.filter((doc) => !q || assessmentDocumentSearchText(doc).includes(q));
+            summary.textContent = `${filtered.length} / ${docs.length} documents`;
+            for (const doc of filtered)
+                grid.append(renderAssessmentDocumentCard(doc));
             if (!filtered.length)
-                grid.append(el("p", "empty", displayLang === "ja" ? "条件に合うclaimはありません。" : "No claim matches the filters."));
+                grid.append(el("p", "empty", displayLang === "ja" ? "条件に合う文書はありません。" : "No document matches the filter."));
         };
-        for (const control of [query, pathFilter, commitmentFilter, strengthFilter, exposureFilter, reviewFilter]) {
-            control.addEventListener(control === query ? "input" : "change", draw);
-        }
+        query.addEventListener("input", draw);
         draw();
         section.append(runPanel);
     }
     const notes = el("section", "audit-panel assessment-method-note");
-    notes.append(el("h2", "section-title small", displayLang === "ja" ? "このラボがしないこと" : "What this lab does not do"), el("p", "section-copy", displayLang === "ja"
-        ? "途中で診断分岐を開いたり、極端な結果を自然な値へ直したり、個別のprotocol_rule_errorをその場で方法変更して救済したりしません。run完了後のレビューが次revisionの材料になります。"
-        : "It does not branch into diagnostics mid-run, normalize strange results, or repair a protocol-rule error by changing the method locally. Review findings become input to the next protocol revision."));
+    notes.append(el("h2", "section-title small", displayLang === "ja" ? "今回の分類境界" : "Current classification boundary"), el("p", "section-copy", displayLang === "ja"
+        ? "Representative S/Eは文書が代表して引き受ける主張を表します。Hotspot S/Eは論証内部の局所的な主張圧・外部接続を示すlocal-only値です。明示的非主張はS/E対象から除外します。"
+        : "Representative S/E describes what the document itself centrally commits to. Hotspot S/E is a local-only signal for claim pressure or external connection inside the argument. Explicit nonclaims are excluded from S/E classification."));
     section.append(notes);
     page.append(section);
     return page;
@@ -3208,8 +3393,8 @@ function render() {
             content = renderManualCandidate();
         else if (isDeveloper() && params.get("view") === "revision-candidate")
             content = renderRevisionCandidate(params.get("revision") ?? "");
-        else if (isDeveloper() && params.get("view") === "assessment-claim")
-            content = renderAssessmentClaimReview(params.get("claim") ?? "");
+        else if (isDeveloper() && params.get("view") === "assessment-item")
+            content = renderAssessmentReviewItem(params.get("item") ?? "");
         else if (isDeveloper() && params.get("view") === "assessment")
             content = renderAssessmentLab();
         else if (isDeveloper() && params.get("view") === "audit")
