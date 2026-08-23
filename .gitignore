@@ -53,8 +53,11 @@ scripts/*.md
 # Repository tooling / metadata
 !tools/
 !tools/**
-tools/**/*.md
-tools/*.md
+
+# generated / temporary review documents
+tools/*REPORT*.md
+tools/*FULL_REVIEW*.md
+tools/*_NOTES.md
 
 # Optional mirrored documentation
 !docs/CHECKER_USAGE.md
