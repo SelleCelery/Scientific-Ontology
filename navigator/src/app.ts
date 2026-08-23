@@ -27,6 +27,9 @@ const PUBLIC_GRAPH_URL = "../tools/docs_public_graph.json";
 const DEVELOPER_GRAPH_URL = "../tools/docs_graph.json";
 const CANDIDATES_URL = "../tools/docs_registration_candidates.preview.json";
 const REGISTERED_REVIEW_URL = "../tools/docs_registered_reader_question_review.preview.json";
+const ASSESSMENT_PROTOCOLS_URL = "../tools/assessment/repository_assessment_protocols.preview.json";
+const ASSESSMENT_RUNNER_STATUS_URL = "../api/assessment/runner";
+const ASSESSMENT_RUN_URL = "../api/assessment/run";
 const PUBLIC_CONTENT_URL = "./public-content.json";
 const MAX_MAP_EDGES = 24;
 
@@ -37,6 +40,11 @@ let docsGraph: JsonObject;
 let publicContent: JsonObject = {};
 let registrationCandidates: JsonObject | null = null;
 let registeredReviewProposals: JsonObject | null = null;
+let assessmentProtocols: JsonObject | null = null;
+let assessmentRunnerStatus: JsonObject | null = null;
+let assessmentLabState: JsonObject = { run: null, source_run_sha256: "", decisions: {} };
+let assessmentSelectedProtocolKey = "";
+let assessmentTargetPaths: string[] = [];
 let displayLang: "ja" | "en" = "ja";
 
 const app = document.querySelector<HTMLElement>("#app")!;
@@ -470,6 +478,7 @@ function navBar(active: string): HTMLElement {
         ["search", displayLang === "ja" ? "検索" : "Search", { view: "search" }],
         ["relations", displayLang === "ja" ? "関係マップ" : "Relations", { view: "relations" }],
         ["candidates", displayLang === "ja" ? "候補レビュー" : "Candidate review", { view: "candidates" }],
+        ["assessment", displayLang === "ja" ? "主張監査ラボ" : "Claim audit lab", { view: "assessment" }],
         ["audit", displayLang === "ja" ? "データ点検" : "Data audit", { view: "audit" }],
       ]
     : [
@@ -2698,6 +2707,634 @@ function renderCandidates(candidatePath = ""): HTMLElement {
   return page;
 }
 
+function assessmentProtocolPayload(): JsonObject | null {
+  return assessmentProtocols?.repository_assessment_protocols_preview ?? null;
+}
+
+function assessmentProtocolList(): JsonObject[] {
+  return assessmentProtocolPayload()?.protocols ?? [];
+}
+
+function assessmentProtocolKey(protocol: JsonObject): string {
+  return `${String(protocol.id ?? "")}:${String(protocol.revision ?? "")}`;
+}
+
+function selectedAssessmentProtocol(): JsonObject | null {
+  const protocols = assessmentProtocolList();
+  if (!protocols.length) return null;
+  if (!assessmentSelectedProtocolKey) assessmentSelectedProtocolKey = assessmentProtocolKey(protocols[0]);
+  return protocols.find((item: JsonObject) => assessmentProtocolKey(item) === assessmentSelectedProtocolKey) ?? protocols[0];
+}
+
+function assessmentStorageKey(): string {
+  return `so:repository-assessment-lab:${String(assessmentProtocolPayload()?.source_sha256 ?? "unbound")}`;
+}
+
+function loadAssessmentLabState(): void {
+  if (!isDeveloper() || !assessmentProtocolPayload()) return;
+  try {
+    const raw = localStorage.getItem(assessmentStorageKey());
+    const parsed = raw ? JSON.parse(raw) : null;
+    assessmentLabState = parsed && typeof parsed === "object"
+      ? parsed
+      : { run: null, source_run_sha256: "", decisions: {} };
+  } catch {
+    assessmentLabState = { run: null, source_run_sha256: "", decisions: {} };
+  }
+  assessmentLabState.decisions ??= {};
+}
+
+function saveAssessmentLabState(): void {
+  if (!isDeveloper() || !assessmentProtocolPayload()) return;
+  localStorage.setItem(assessmentStorageKey(), JSON.stringify(assessmentLabState));
+}
+
+async function sha256Text(text: string): Promise<string> {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(digest)).map((value) => value.toString(16).padStart(2, "0")).join("");
+}
+
+function downloadJsonFile(filename: string, payload: JsonObject): void {
+  const text = JSON.stringify(payload, null, 2) + "\n";
+  const blob = new Blob([text], { type: "application/json;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+}
+
+async function fetchAssessmentTarget(path: string): Promise<JsonObject> {
+  const response = await fetch(encodePath(path));
+  if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+  const content = await response.text();
+  return { path, sha256: await sha256Text(content), content };
+}
+
+async function buildAssessmentExecution(protocol: JsonObject, paths: string[]): Promise<JsonObject> {
+  if (!paths.length) throw new Error(displayLang === "ja" ? "対象文書がありません。" : "No target documents selected.");
+  const unique = Array.from(new Set(paths.map((path) => path.trim()).filter(Boolean)));
+  const targets = await Promise.all(unique.map(fetchAssessmentTarget));
+  return {
+    repository_assessment_execution: {
+      schema_version: "0.1",
+      created_at: new Date().toISOString(),
+      protocol: {
+        id: String(protocol.id ?? ""),
+        revision: String(protocol.revision ?? ""),
+        source_sha256: String(protocol.source_sha256 ?? assessmentProtocolPayload()?.source_sha256 ?? ""),
+        prompt: String(protocol.execution_prompt ?? ""),
+      },
+      fixture: { targets },
+      output_contract: {
+        schema: "repository_assessment_run/0.1",
+        schema_path: "tools/assessment/repository_assessment_run.schema.json",
+        preserve_protocol_binding: true,
+        preserve_fixture_hashes: true,
+      },
+    },
+  };
+}
+
+function completeAssessmentPrompt(execution: JsonObject): string {
+  const payload = execution.repository_assessment_execution ?? {};
+  return `${String(payload.protocol?.prompt ?? "")}\n\n【固定された実行パック】\n次のJSONを入力fixtureとして扱い、内容やprotocol metadataを書き換えずに実行してください。\n\n${JSON.stringify(execution, null, 2)}`;
+}
+
+async function copyText(value: string): Promise<void> {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(value);
+    return;
+  }
+  const area = document.createElement("textarea");
+  area.value = value;
+  area.style.position = "fixed";
+  area.style.opacity = "0";
+  document.body.append(area);
+  area.select();
+  document.execCommand("copy");
+  area.remove();
+}
+
+function assessmentRunPayload(): JsonObject | null {
+  return assessmentLabState.run?.repository_assessment_run ?? null;
+}
+
+function assessmentClaims(): JsonObject[] {
+  return assessmentRunPayload()?.claims ?? [];
+}
+
+function assessmentDecisionForClaim(claimId: string): JsonObject | null {
+  return assessmentLabState.decisions?.[claimId] ?? null;
+}
+
+function assessmentReviewDecision(claimId: string): string {
+  return String(assessmentDecisionForClaim(claimId)?.decision ?? "unreviewed");
+}
+
+function assessmentReviewCounts(): Record<string, number> {
+  const counts: Record<string, number> = { unreviewed: 0, approve: 0, approve_with_edits: 0, hold: 0, reject: 0 };
+  for (const claim of assessmentClaims()) {
+    const key = assessmentReviewDecision(String(claim.claim_id ?? ""));
+    counts[key] = (counts[key] ?? 0) + 1;
+  }
+  return counts;
+}
+
+function assessmentClaimById(claimId: string): JsonObject | undefined {
+  return assessmentClaims().find((claim: JsonObject) => String(claim.claim_id ?? "") === claimId);
+}
+
+function assessmentProtocolForRun(run: JsonObject): JsonObject | null {
+  const protocol = run.protocol ?? {};
+  return assessmentProtocolList().find((item: JsonObject) =>
+    String(item.id ?? "") === String(protocol.id ?? "") && String(item.revision ?? "") === String(protocol.revision ?? ""),
+  ) ?? null;
+}
+
+function validateAssessmentRunBinding(parsed: JsonObject): JsonObject {
+  const run = parsed?.repository_assessment_run;
+  if (!run || String(run.schema_version ?? "") !== "0.1") {
+    throw new Error("repository_assessment_run schema_version 0.1 が必要です。");
+  }
+  const protocol = assessmentProtocolForRun(run);
+  if (!protocol) throw new Error("このrunのprotocol id/revisionは現在のラボにありません。");
+  if (String(run.protocol?.source_sha256 ?? "") !== String(protocol.source_sha256 ?? "")) {
+    throw new Error("protocol source_sha256 が現在のprotocolと一致しません。");
+  }
+  if (!Array.isArray(run.fixture?.targets) || !run.fixture.targets.length) throw new Error("fixture.targets がありません。");
+  if (!Array.isArray(run.claims)) throw new Error("claims が配列ではありません。");
+  const ids = new Set<string>();
+  for (const claim of run.claims) {
+    const id = String(claim?.claim_id ?? "");
+    if (!id) throw new Error("claim_id が空のclaimがあります。");
+    if (ids.has(id)) throw new Error(`claim_id が重複しています: ${id}`);
+    ids.add(id);
+  }
+  return run;
+}
+
+async function installAssessmentRun(parsed: JsonObject, sourceText?: string): Promise<void> {
+  const run = validateAssessmentRunBinding(parsed);
+  const text = sourceText ?? (JSON.stringify(parsed, null, 2) + "\n");
+  assessmentLabState = {
+    run: parsed,
+    source_run_sha256: await sha256Text(text),
+    decisions: {},
+  };
+  assessmentSelectedProtocolKey = `${String(run.protocol?.id ?? "")}:${String(run.protocol?.revision ?? "")}`;
+  assessmentTargetPaths = (run.fixture?.targets ?? []).map((item: JsonObject) => String(item.path ?? "")).filter(Boolean);
+  saveAssessmentLabState();
+}
+
+async function importAssessmentRun(file: File): Promise<void> {
+  const text = await file.text();
+  const parsed = JSON.parse(text);
+  await installAssessmentRun(parsed, text);
+}
+
+function assessmentReviewExportPayload(): JsonObject {
+  const counts = assessmentReviewCounts();
+  const decisions = Object.values(assessmentLabState.decisions ?? {}).sort((a: any, b: any) =>
+    String(a.path ?? "").localeCompare(String(b.path ?? ""), "en") || String(a.claim_id ?? "").localeCompare(String(b.claim_id ?? ""), "en"),
+  );
+  const total = assessmentClaims().length;
+  return {
+    repository_assessment_review: {
+      schema_version: "0.1",
+      source_run_sha256: String(assessmentLabState.source_run_sha256 ?? ""),
+      status: counts.unreviewed === 0 ? "complete" : "in_progress",
+      exported_at: new Date().toISOString(),
+      summary: { total_claims: total, reviewed: total - counts.unreviewed, ...counts },
+      decisions,
+    },
+  };
+}
+
+function nextUnreviewedAssessmentClaim(afterId = ""): JsonObject | undefined {
+  const claims = assessmentClaims();
+  const start = Math.max(0, claims.findIndex((claim: JsonObject) => String(claim.claim_id ?? "") === afterId) + 1);
+  return [...claims.slice(start), ...claims.slice(0, start)].find((claim: JsonObject) => assessmentReviewDecision(String(claim.claim_id ?? "")) === "unreviewed");
+}
+
+function assessmentClaimSearchText(claim: JsonObject): string {
+  return [
+    claim.claim_id,
+    claim.path,
+    claim.proposition,
+    claim.source?.text,
+    claim.attribution?.represented_system,
+    claim.attribution?.repository_commitment,
+    claim.attribution?.responsibility,
+    claim.attribution?.scope,
+    claim.classification?.strength,
+    claim.classification?.exposure,
+    claim.rationale,
+  ].join(" ").normalize("NFKC").toLocaleLowerCase("ja-JP");
+}
+
+function assessmentSelect(values: Array<string | null>, current: string | null, labels: Record<string, string> = {}): HTMLSelectElement {
+  const select = el("select", "candidate-select") as HTMLSelectElement;
+  for (const raw of values) {
+    const value = raw ?? "";
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = labels[value] ?? (value || "—");
+    option.selected = value === (current ?? "");
+    select.append(option);
+  }
+  return select;
+}
+
+function renderAssessmentClaimReview(claimId: string): HTMLElement {
+  const claim = assessmentClaimById(claimId);
+  if (!claim) return errorPage(`Unknown assessment claim: ${claimId}`);
+  const page = el("main", "page");
+  page.append(navBar("assessment"), dataBanner());
+  const back = button(displayLang === "ja" ? "← 主張監査ラボ" : "← Claim audit lab", "back-button");
+  back.addEventListener("click", () => setRoute({ view: "assessment" }));
+  page.append(back);
+
+  const existing = assessmentDecisionForClaim(claimId);
+  const baseline = deepClone(claim);
+  const working = deepClone(existing?.after ?? baseline);
+  working.attribution ??= {};
+  working.classification ??= {};
+
+  const hero = el("section", "doc-header candidate-detail-header");
+  const meta = el("div", "doc-meta-line");
+  meta.append(
+    badge(String(working.classification?.strength ?? "S—")),
+    badge(String(working.classification?.exposure ?? "E—")),
+    badge(String(working.attribution?.repository_commitment ?? "indeterminate")),
+    badge(reviewDecisionLabel(assessmentReviewDecision(claimId)), decisionTone(assessmentReviewDecision(claimId))),
+  );
+  hero.append(
+    eyebrow(`ASSESSMENT CLAIM · ${claimId}`),
+    el("h1", "section-title", String(working.proposition ?? claimId)),
+    meta,
+    el("div", "path", `${String(claim.path ?? "")}:${String(claim.source?.line_start ?? "?")}-${String(claim.source?.line_end ?? "?")}`),
+  );
+  page.append(hero);
+
+  const sourcePanel = el("section", "audit-panel candidate-review-panel");
+  sourcePanel.append(
+    el("h2", "section-title small", displayLang === "ja" ? "元の本文" : "Source text"),
+    el("p", "candidate-evidence-text", String(claim.source?.text ?? "")),
+  );
+  if (claim.references?.length) {
+    for (const ref of claim.references) {
+      const row = el("div", "candidate-evidence");
+      row.append(el("div", "path", `${String(ref.path ?? claim.path ?? "")}:${String(ref.line_start ?? ref.line ?? "")}-${String(ref.line_end ?? "")}`));
+      if (ref.text) row.append(el("p", "candidate-evidence-text", String(ref.text)));
+      sourcePanel.append(row);
+    }
+  }
+  page.append(sourcePanel);
+
+  const form = el("section", "audit-panel candidate-review-panel workbench-editor");
+  form.append(
+    el("h2", "section-title small", displayLang === "ja" ? "分類を確認・修正" : "Review classification"),
+    el("p", "section-copy", displayLang === "ja"
+      ? "runの生出力は変更しません。修正した場合もbefore / afterの両方をreview transactionへ残します。protocol_rule_errorは個別補正ではなく次revisionでの一律再実行候補です。"
+      : "The raw run is immutable. Edits are stored as before/after in the review transaction. protocol_rule_error should trigger a new uniform protocol revision rather than silent local repair."),
+  );
+
+  const proposition = textArea(String(working.proposition ?? ""), 3);
+  const represented = textInput(String(working.attribution?.represented_system ?? ""));
+  const commitment = assessmentSelect(["represented", "endorsed", "derived", "rejected", "suspended", "indeterminate"], String(working.attribution?.repository_commitment ?? "indeterminate"));
+  const responsibility = textInput(String(working.attribution?.responsibility ?? ""));
+  const scope = textArea(String(working.attribution?.scope ?? ""), 2);
+  const strength = assessmentSelect([null, "S0", "S1", "S2", "S3", "S4", "S5"], working.classification?.strength ?? null);
+  const exposure = assessmentSelect([null, "E0", "E1", "E2", "E3"], working.classification?.exposure ?? null);
+  const rationale = textArea(String(working.rationale ?? ""), 5);
+  form.append(
+    reviewField(displayLang === "ja" ? "命題" : "Proposition", proposition),
+    reviewField("represented_system", represented),
+    reviewField("repository_commitment", commitment),
+    reviewField("responsibility", responsibility),
+    reviewField("scope", scope),
+  );
+  const classGrid = el("div", "workbench-field-grid");
+  classGrid.append(reviewField("Claim Strength / S", strength), reviewField("Connection Exposure / E", exposure));
+  form.append(classGrid, reviewField(displayLang === "ja" ? "判断理由" : "Rationale", rationale));
+
+  const issueTypes = ["proposition_error", "attribution_error", "domain_error", "commitment_error", "strength_error", "exposure_error", "evidence_error", "protocol_rule_error", "other"];
+  const existingIssues = new Set<string>((existing?.issue_types ?? []).map((value: any) => String(value)));
+  const issues = el("fieldset", "assessment-issues");
+  issues.append(el("legend", "workbench-label", displayLang === "ja" ? "レビューで見つけた問題" : "Issues found in review"));
+  const issueControls = new Map<string, HTMLInputElement>();
+  for (const issue of issueTypes) {
+    const label = el("label", "assessment-issue-option");
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.checked = existingIssues.has(issue);
+    issueControls.set(issue, input);
+    label.append(input, el("span", "", issue));
+    issues.append(label);
+  }
+  form.append(issues);
+  const note = textArea(String(existing?.reviewer_note ?? ""), 3);
+  form.append(reviewField(displayLang === "ja" ? "レビュー注記" : "Reviewer note", note));
+
+  const readAfter = (): JsonObject => {
+    const after = deepClone(baseline);
+    after.proposition = proposition.value.trim();
+    after.attribution ??= {};
+    after.attribution.represented_system = represented.value.trim();
+    after.attribution.repository_commitment = commitment.value;
+    after.attribution.responsibility = responsibility.value.trim();
+    after.attribution.scope = scope.value.trim();
+    after.classification ??= {};
+    after.classification.strength = strength.value || null;
+    after.classification.exposure = exposure.value || null;
+    after.rationale = rationale.value.trim();
+    return after;
+  };
+
+  const save = (kind: "approve" | "hold" | "reject"): void => {
+    const after = readAfter();
+    const changed = JSON.stringify(after) !== JSON.stringify(baseline);
+    const decision = kind === "approve" ? (changed ? "approve_with_edits" : "approve") : kind;
+    const issueTypesSelected = Array.from(issueControls.entries()).filter(([, input]) => input.checked).map(([issue]) => issue);
+    assessmentLabState.decisions[claimId] = {
+      claim_id: claimId,
+      path: String(claim.path ?? ""),
+      decision,
+      issue_types: issueTypesSelected,
+      reviewed_at: new Date().toISOString(),
+      reviewer_note: note.value.trim(),
+      before: baseline,
+      after,
+    };
+    saveAssessmentLabState();
+    const next = nextUnreviewedAssessmentClaim(claimId);
+    if (kind === "approve" && next) setRoute({ view: "assessment-claim", claim: String(next.claim_id ?? "") });
+    else setRoute({ view: "assessment" });
+  };
+
+  const bar = el("div", "workbench-decision-bar");
+  const approve = button(displayLang === "ja" ? "承認して次へ" : "Approve and next", "button primary");
+  approve.addEventListener("click", () => save("approve"));
+  const hold = button(displayLang === "ja" ? "保留" : "Hold", "button");
+  hold.addEventListener("click", () => save("hold"));
+  const reject = button(displayLang === "ja" ? "却下" : "Reject", "button danger-button");
+  reject.addEventListener("click", () => save("reject"));
+  const reset = button(displayLang === "ja" ? "未確認に戻す" : "Reset to unreviewed", "text-button");
+  reset.addEventListener("click", () => {
+    delete assessmentLabState.decisions[claimId];
+    saveAssessmentLabState();
+    render();
+  });
+  bar.append(approve, hold, reject, reset);
+  form.append(bar);
+  page.append(form);
+  return page;
+}
+
+function renderAssessmentLab(): HTMLElement {
+  const page = el("main", "page");
+  page.append(navBar("assessment"), dataBanner());
+  const section = el("section", "section candidate-page");
+  section.append(
+    eyebrow("EXPERIMENTAL ASSESSMENT LAB"),
+    el("h1", "hero-title", displayLang === "ja" ? "凍結した方法を一括実行する" : "Run a frozen method as a batch"),
+    el("p", "hero-copy", displayLang === "ja"
+      ? "ここは監査方法を創造する場所ではありません。選んだrevisionを対象全体へ途中変更なしで貫徹し、生の結果を人間レビューへ渡します。canonical manifestや正本は直接変更しません。"
+      : "This is not where the method is invented. A selected revision is applied unchanged across the full fixture, preserving raw results for human review. Canonical documents and the manifest are not changed here."),
+  );
+
+  const protocols = assessmentProtocolList();
+  if (!protocols.length) {
+    section.append(el("p", "error", displayLang === "ja" ? "assessment protocol previewを読み込めませんでした。" : "Assessment protocol preview is unavailable."));
+    page.append(section);
+    return page;
+  }
+  const protocol = selectedAssessmentProtocol() ?? protocols[0];
+  if (!assessmentTargetPaths.length) assessmentTargetPaths = (protocol.default_targets ?? []).map((value: any) => String(value));
+
+  const boundary = el("div", "candidate-boundary-note");
+  boundary.append(badge("FROZEN PILOT", "warn"), el("span", "", String(protocol.freeze_policy?.[displayLang] ?? protocol.freeze_policy?.ja ?? "")));
+  section.append(boundary);
+
+  const setup = el("section", "audit-panel assessment-setup");
+  setup.append(el("h2", "section-title small", displayLang === "ja" ? "実行条件" : "Execution fixture"));
+  const protocolSelect = el("select", "candidate-select") as HTMLSelectElement;
+  for (const item of protocols) {
+    const option = document.createElement("option");
+    option.value = assessmentProtocolKey(item);
+    option.textContent = `${String(item.title_ja ?? item.id)} · ${String(item.revision ?? "")}`;
+    option.selected = option.value === assessmentProtocolKey(protocol);
+    protocolSelect.append(option);
+  }
+  protocolSelect.addEventListener("change", () => {
+    assessmentSelectedProtocolKey = protocolSelect.value;
+    const next = selectedAssessmentProtocol();
+    assessmentTargetPaths = (next?.default_targets ?? []).map((value: any) => String(value));
+    render();
+  });
+  const targets = textArea(assessmentTargetPaths.join("\n"), Math.max(3, assessmentTargetPaths.length + 1));
+  targets.addEventListener("input", () => { assessmentTargetPaths = lines(targets.value); });
+  setup.append(
+    reviewField(displayLang === "ja" ? "凍結protocol" : "Frozen protocol", protocolSelect),
+    reviewField(displayLang === "ja" ? "対象文書（1行1件）" : "Target documents (one per line)", targets),
+  );
+  const protocolMeta = el("div", "candidate-detail-grid");
+  for (const [key, value] of [
+    ["state", protocol.state],
+    ["revision", protocol.revision],
+    ["source SHA-256", protocol.source_sha256],
+    [displayLang === "ja" ? "昇格先" : "Promotion target", protocol.promotion?.target_surface],
+  ]) {
+    const row = el("div", "candidate-kv");
+    row.append(el("span", "candidate-k", String(key)), el("span", "candidate-v path", String(value ?? "")));
+    protocolMeta.append(row);
+  }
+  setup.append(protocolMeta);
+
+  const runner = assessmentRunnerStatus?.repository_assessment_runner ?? {};
+  const runnerLine = el("div", "assessment-runner-line");
+  runnerLine.append(
+    badge(runner.available ? (displayLang === "ja" ? "LOCAL RUNNER 接続" : "LOCAL RUNNER READY") : (displayLang === "ja" ? "EXPORT / IMPORT" : "EXPORT / IMPORT"), runner.available ? "ok" : "warn"),
+    el("span", "", runner.available
+      ? (displayLang === "ja" ? "この画面から凍結runを実行できます。" : "The frozen run can be executed from this screen.")
+      : (displayLang === "ja" ? "runner未設定です。実行パックを別セッションへ渡し、結果JSONを戻せます。" : "No runner is configured. Export the execution pack and import the returned JSON.")),
+  );
+  setup.append(runnerLine);
+
+  const toolbar = el("div", "workbench-toolbar");
+  const exportPack = button(displayLang === "ja" ? "実行パックを書き出す" : "Export execution pack", "button");
+  exportPack.addEventListener("click", async () => {
+    exportPack.disabled = true;
+    try {
+      const execution = await buildAssessmentExecution(protocol, assessmentTargetPaths);
+      downloadJsonFile("repository_assessment_execution.json", execution);
+    } catch (error) { alert(String((error as Error).message)); }
+    finally { exportPack.disabled = false; }
+  });
+  const copyPrompt = button(displayLang === "ja" ? "プロンプトをコピー" : "Copy prompt", "button");
+  copyPrompt.addEventListener("click", async () => {
+    copyPrompt.disabled = true;
+    try {
+      const execution = await buildAssessmentExecution(protocol, assessmentTargetPaths);
+      await copyText(completeAssessmentPrompt(execution));
+      alert(displayLang === "ja" ? "凍結実行プロンプトをコピーしました。" : "Frozen execution prompt copied.");
+    } catch (error) { alert(String((error as Error).message)); }
+    finally { copyPrompt.disabled = false; }
+  });
+  const runButton = button(displayLang === "ja" ? "UIから実行" : "Run from UI", "button primary");
+  runButton.disabled = !runner.available;
+  runButton.addEventListener("click", async () => {
+    runButton.disabled = true;
+    const original = runButton.textContent;
+    runButton.textContent = displayLang === "ja" ? "実行中…" : "Running…";
+    try {
+      const execution = await buildAssessmentExecution(protocol, assessmentTargetPaths);
+      const response = await fetch(ASSESSMENT_RUN_URL, { method: "POST", headers: { "Content-Type": "application/json; charset=utf-8" }, body: JSON.stringify(execution) });
+      const result = await response.json();
+      if (!response.ok) throw new Error(String(result.error ?? `HTTP ${response.status}`));
+      await installAssessmentRun(result);
+      render();
+    } catch (error) { alert(String((error as Error).message)); }
+    finally { runButton.disabled = !runner.available; runButton.textContent = original; }
+  });
+  const importLabel = el("label", "button workbench-file-button", displayLang === "ja" ? "結果JSONを読み込む" : "Import run JSON");
+  const importInput = document.createElement("input");
+  importInput.type = "file";
+  importInput.accept = "application/json,.json";
+  importInput.hidden = true;
+  importInput.addEventListener("change", async () => {
+    const file = importInput.files?.[0];
+    if (!file) return;
+    try { await importAssessmentRun(file); render(); }
+    catch (error) { alert(String((error as Error).message)); }
+    finally { importInput.value = ""; }
+  });
+  importLabel.append(importInput);
+  toolbar.append(exportPack, copyPrompt, runButton, importLabel);
+  setup.append(toolbar);
+  section.append(setup);
+
+  const run = assessmentRunPayload();
+  if (run) {
+    const runProtocol = assessmentProtocolForRun(run);
+    const counts = assessmentReviewCounts();
+    const runPanel = el("section", "audit-panel assessment-run-panel");
+    runPanel.append(
+      el("h2", "section-title small", displayLang === "ja" ? "現在のrun" : "Current run"),
+      el("p", "section-copy", `${String(runProtocol?.title_ja ?? run.protocol?.id ?? "")} · ${String(run.protocol?.revision ?? "")} · ${assessmentClaims().length} claims`),
+    );
+    const stats = el("div", "audit-stats candidate-stats");
+    stats.append(
+      candidateMetric(displayLang === "ja" ? "未確認" : "Unreviewed", String(counts.unreviewed)),
+      candidateMetric(displayLang === "ja" ? "承認" : "Approved", String((counts.approve ?? 0) + (counts.approve_with_edits ?? 0))),
+      candidateMetric(displayLang === "ja" ? "保留" : "On hold", String(counts.hold ?? 0)),
+      candidateMetric(displayLang === "ja" ? "却下" : "Rejected", String(counts.reject ?? 0)),
+      candidateMetric("claims", String(assessmentClaims().length)),
+    );
+    runPanel.append(stats);
+    const runToolbar = el("div", "workbench-toolbar");
+    const next = button(displayLang === "ja" ? "次の未確認へ" : "Next unreviewed", "button primary");
+    next.addEventListener("click", () => { const claim = nextUnreviewedAssessmentClaim(); if (claim) setRoute({ view: "assessment-claim", claim: String(claim.claim_id ?? "") }); });
+    const exportRun = button(displayLang === "ja" ? "生runを書き出す" : "Export raw run", "button");
+    exportRun.addEventListener("click", () => downloadJsonFile("repository_assessment_run.json", assessmentLabState.run));
+    const exportReview = button(displayLang === "ja" ? "レビューを書き出す" : "Export review", "button");
+    exportReview.addEventListener("click", () => downloadJsonFile("repository_assessment_review.json", assessmentReviewExportPayload()));
+    const clear = button(displayLang === "ja" ? "runを外す" : "Clear run", "text-button");
+    clear.addEventListener("click", () => {
+      if (confirm(displayLang === "ja" ? "現在のrunとブラウザ内レビュー状態を外しますか？" : "Clear the current run and browser review state?")) {
+        assessmentLabState = { run: null, source_run_sha256: "", decisions: {} };
+        saveAssessmentLabState();
+        render();
+      }
+    });
+    runToolbar.append(next, exportRun, exportReview, clear);
+    runPanel.append(runToolbar);
+
+    const filters = el("div", "candidate-filters assessment-filters");
+    const queryLabel = el("label", "candidate-filter");
+    queryLabel.append(el("span", "candidate-filter-label", displayLang === "ja" ? "claim検索" : "Filter claims"));
+    const query = textInput();
+    query.placeholder = displayLang === "ja" ? "命題・本文・帰属・path" : "Proposition, source, attribution, path";
+    queryLabel.append(query);
+    filters.append(queryLabel);
+    const makeFilter = (label: string, values: string[]) => {
+      const wrap = el("label", "candidate-filter");
+      wrap.append(el("span", "candidate-filter-label", label));
+      const select = el("select", "candidate-select") as HTMLSelectElement;
+      const all = document.createElement("option"); all.value = ""; all.textContent = displayLang === "ja" ? "すべて" : "All"; select.append(all);
+      for (const value of values) { const option = document.createElement("option"); option.value = value; option.textContent = value || "—"; select.append(option); }
+      wrap.append(select); filters.append(wrap); return select;
+    };
+    const claims = assessmentClaims();
+    const pathFilter = makeFilter("path", Array.from(new Set(claims.map((item: JsonObject) => String(item.path ?? "")))).sort());
+    const commitmentFilter = makeFilter("commitment", Array.from(new Set(claims.map((item: JsonObject) => String(item.attribution?.repository_commitment ?? "")))).filter(Boolean).sort());
+    const strengthFilter = makeFilter("S", ["S0", "S1", "S2", "S3", "S4", "S5"]);
+    const exposureFilter = makeFilter("E", ["E0", "E1", "E2", "E3"]);
+    const reviewFilter = makeFilter(displayLang === "ja" ? "レビュー" : "Review", ["unreviewed", "approve", "approve_with_edits", "hold", "reject"]);
+    runPanel.append(filters);
+
+    const summary = el("div", "candidate-result-summary");
+    const grid = el("div", "candidate-grid assessment-claim-grid");
+    runPanel.append(summary, grid);
+    const draw = () => {
+      grid.replaceChildren();
+      const q = query.value.trim().normalize("NFKC").toLocaleLowerCase("ja-JP");
+      const filtered = claims.filter((claim: JsonObject) => {
+        if (pathFilter.value && String(claim.path ?? "") !== pathFilter.value) return false;
+        if (commitmentFilter.value && String(claim.attribution?.repository_commitment ?? "") !== commitmentFilter.value) return false;
+        if (strengthFilter.value && String(claim.classification?.strength ?? "") !== strengthFilter.value) return false;
+        if (exposureFilter.value && String(claim.classification?.exposure ?? "") !== exposureFilter.value) return false;
+        if (reviewFilter.value && assessmentReviewDecision(String(claim.claim_id ?? "")) !== reviewFilter.value) return false;
+        return !q || assessmentClaimSearchText(claim).includes(q);
+      });
+      summary.textContent = `${filtered.length} / ${claims.length} claims`;
+      for (const claim of filtered) {
+        const card = el("article", "candidate-card card assessment-claim-card");
+        const meta = el("div", "doc-meta-line");
+        meta.append(
+          badge(reviewDecisionLabel(assessmentReviewDecision(String(claim.claim_id ?? ""))), decisionTone(assessmentReviewDecision(String(claim.claim_id ?? "")))),
+          badge(String(claim.classification?.strength ?? "S—")),
+          badge(String(claim.classification?.exposure ?? "E—")),
+          badge(String(claim.attribution?.repository_commitment ?? "indeterminate")),
+        );
+        card.append(meta, el("h2", "card-title", String(claim.proposition ?? claim.claim_id ?? "")));
+        const source = String(claim.source?.text ?? "");
+        if (source) card.append(el("p", "card-copy assessment-source-preview", source.length > 260 ? `${source.slice(0, 260)}…` : source));
+        card.append(el("div", "path", `${String(claim.path ?? "")}:${String(claim.source?.line_start ?? "?")}-${String(claim.source?.line_end ?? "?")}`));
+        const actions = el("div", "card-actions");
+        const review = button(displayLang === "ja" ? "レビューする" : "Review", "button compact-button");
+        review.addEventListener("click", () => setRoute({ view: "assessment-claim", claim: String(claim.claim_id ?? "") }));
+        actions.append(review);
+        if (claim.path && readerAllowedPaths().has(String(claim.path))) actions.append(readerButton(String(claim.path)));
+        card.append(actions);
+        grid.append(card);
+      }
+      if (!filtered.length) grid.append(el("p", "empty", displayLang === "ja" ? "条件に合うclaimはありません。" : "No claim matches the filters."));
+    };
+    for (const control of [query, pathFilter, commitmentFilter, strengthFilter, exposureFilter, reviewFilter]) {
+      control.addEventListener(control === query ? "input" : "change", draw);
+    }
+    draw();
+    section.append(runPanel);
+  }
+
+  const notes = el("section", "audit-panel assessment-method-note");
+  notes.append(
+    el("h2", "section-title small", displayLang === "ja" ? "このラボがしないこと" : "What this lab does not do"),
+    el("p", "section-copy", displayLang === "ja"
+      ? "途中で診断分岐を開いたり、極端な結果を自然な値へ直したり、個別のprotocol_rule_errorをその場で方法変更して救済したりしません。run完了後のレビューが次revisionの材料になります。"
+      : "It does not branch into diagnostics mid-run, normalize strange results, or repair a protocol-rule error by changing the method locally. Review findings become input to the next protocol revision."),
+  );
+  section.append(notes);
+  page.append(section);
+  return page;
+}
+
+
 function renderAudit(): HTMLElement {
   const page = el("main", "page");
   page.append(navBar("audit"), dataBanner());
@@ -2834,6 +3471,8 @@ function render(): void {
     else if (isDeveloper() && params.get("view") === "registered-review") content = renderRegisteredRevisionProposal(params.get("registered") ?? "");
     else if (isDeveloper() && params.get("view") === "manual-candidate") content = renderManualCandidate();
     else if (isDeveloper() && params.get("view") === "revision-candidate") content = renderRevisionCandidate(params.get("revision") ?? "");
+    else if (isDeveloper() && params.get("view") === "assessment-claim") content = renderAssessmentClaimReview(params.get("claim") ?? "");
+    else if (isDeveloper() && params.get("view") === "assessment") content = renderAssessmentLab();
     else if (isDeveloper() && params.get("view") === "audit") content = renderAudit();
     else content = renderExplore();
   } catch (error) {
@@ -2852,13 +3491,21 @@ async function load(): Promise<void> {
     const registeredReviewPromise: Promise<Response | null> = isDeveloper()
       ? fetch(REGISTERED_REVIEW_URL).catch(() => null)
       : Promise.resolve(null);
+    const assessmentProtocolsPromise: Promise<Response | null> = isDeveloper()
+      ? fetch(ASSESSMENT_PROTOCOLS_URL).catch(() => null)
+      : Promise.resolve(null);
+    const assessmentRunnerPromise: Promise<Response | null> = isDeveloper()
+      ? fetch(ASSESSMENT_RUNNER_STATUS_URL).catch(() => null)
+      : Promise.resolve(null);
     const graphUrl = isDeveloper() ? DEVELOPER_GRAPH_URL : PUBLIC_GRAPH_URL;
-    const [catalogResponse, graphResponse, publicContentResponse, candidateResponse, registeredReviewResponse] = await Promise.all([
+    const [catalogResponse, graphResponse, publicContentResponse, candidateResponse, registeredReviewResponse, assessmentProtocolsResponse, assessmentRunnerResponse] = await Promise.all([
       fetch(PUBLIC_CATALOG_URL),
       fetch(graphUrl),
       fetch(PUBLIC_CONTENT_URL),
       candidatePromise,
       registeredReviewPromise,
+      assessmentProtocolsPromise,
+      assessmentRunnerPromise,
     ]);
     if (!catalogResponse.ok) throw new Error(`docs_public_catalog.json: HTTP ${catalogResponse.status}`);
     if (!graphResponse.ok) throw new Error(`${graphUrl}: HTTP ${graphResponse.status}`);
@@ -2870,7 +3517,12 @@ async function load(): Promise<void> {
     else registrationCandidates = null;
     if (isDeveloper() && registeredReviewResponse?.ok) registeredReviewProposals = await registeredReviewResponse.json();
     else registeredReviewProposals = null;
+    if (isDeveloper() && assessmentProtocolsResponse?.ok) assessmentProtocols = await assessmentProtocolsResponse.json();
+    else assessmentProtocols = null;
+    if (isDeveloper() && assessmentRunnerResponse?.ok) assessmentRunnerStatus = await assessmentRunnerResponse.json();
+    else assessmentRunnerStatus = { repository_assessment_runner: { available: false, mode: "export-import" } };
     if (isDeveloper() && registrationCandidates) loadRegistrationReviewState();
+    if (isDeveloper() && assessmentProtocols) loadAssessmentLabState();
     status.textContent = "";
     updateHeaderControls();
     render();

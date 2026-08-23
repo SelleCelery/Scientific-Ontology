@@ -201,7 +201,7 @@ def main() -> int:
         for control in HEADER_CONTROLS:
             if f'id="{control}"' not in html:
                 return fail(f"{html_name} shell missing fixed header control: {control}")
-    for marker in ("Candidate review", "Data audit", "docs_registration_candidates"):
+    for marker in ("Candidate review", "Claim audit lab", "Data audit", "docs_registration_candidates", "repository_assessment_protocols"):
         if marker in public_html:
             return fail(f"public shell exposes developer marker: {marker}")
 

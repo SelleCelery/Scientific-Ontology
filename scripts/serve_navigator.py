@@ -5,6 +5,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import shlex
+import subprocess
 import sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -27,6 +30,9 @@ TEXT_MEDIA_TYPES = {
     ".xml": "application/xml; charset=utf-8",
     ".svg": "image/svg+xml; charset=utf-8",
 }
+
+ASSESSMENT_RUNNER: list[str] | None = None
+ASSESSMENT_TIMEOUT_SECONDS = 180
 
 BLOCKED_MARKERS = (
     "99_Private_Core",
@@ -109,11 +115,76 @@ class Utf8NavigatorHandler(SimpleHTTPRequestHandler):
         normalized = "/".join(parts)
         return any(marker in normalized for marker in BLOCKED_MARKERS)
 
+    def _send_json(self, payload: object, status: int = 200) -> None:
+        data = (json.dumps(payload, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
+
     def do_GET(self) -> None:
+        path = unquote(urlparse(self.path).path)
+        if path == "/api/assessment/runner":
+            self._send_json({
+                "repository_assessment_runner": {
+                    "available": bool(ASSESSMENT_RUNNER),
+                    "mode": "local-command" if ASSESSMENT_RUNNER else "export-import",
+                }
+            })
+            return
         if self._request_path_blocked():
             self.send_error(404)
             return
         super().do_GET()
+
+    def do_POST(self) -> None:
+        path = unquote(urlparse(self.path).path)
+        if path != "/api/assessment/run":
+            self.send_error(404)
+            return
+        if not ASSESSMENT_RUNNER:
+            self._send_json({"error": "assessment runner is not configured"}, status=503)
+            return
+        try:
+            length = int(self.headers.get("Content-Length", "0"))
+        except ValueError:
+            self._send_json({"error": "invalid Content-Length"}, status=400)
+            return
+        if length <= 0 or length > 12 * 1024 * 1024:
+            self._send_json({"error": "assessment execution payload must be between 1 byte and 12 MiB"}, status=413)
+            return
+        try:
+            raw = self.rfile.read(length)
+            payload = json.loads(raw.decode("utf-8"))
+            if not isinstance(payload, dict) or not isinstance(payload.get("repository_assessment_execution"), dict):
+                raise ValueError("repository_assessment_execution is required")
+            completed = subprocess.run(
+                ASSESSMENT_RUNNER,
+                input=json.dumps(payload, ensure_ascii=False),
+                text=True,
+                capture_output=True,
+                cwd=str(ROOT),
+                timeout=ASSESSMENT_TIMEOUT_SECONDS,
+                check=False,
+            )
+            if completed.returncode != 0:
+                self._send_json({
+                    "error": "assessment runner failed",
+                    "returncode": completed.returncode,
+                    "stderr": completed.stderr[-4000:],
+                }, status=502)
+                return
+            result = json.loads(completed.stdout)
+            if not isinstance(result, dict) or not isinstance(result.get("repository_assessment_run"), dict):
+                raise ValueError("runner stdout must contain repository_assessment_run JSON")
+            self._send_json(result)
+        except subprocess.TimeoutExpired:
+            self._send_json({"error": "assessment runner timed out"}, status=504)
+        except (UnicodeDecodeError, json.JSONDecodeError, ValueError) as exc:
+            self._send_json({"error": str(exc)}, status=400)
+        except OSError as exc:
+            self._send_json({"error": f"assessment runner could not start: {exc}"}, status=502)
 
     def do_HEAD(self) -> None:
         if self._request_path_blocked():
@@ -139,7 +210,17 @@ def main() -> int:
     parser.add_argument("--host", default="127.0.0.1", help="Bind host (default: 127.0.0.1).")
     parser.add_argument("--port", type=int, default=8000, help="Bind port (default: 8000).")
     parser.add_argument("--check", action="store_true", help="Strict-decode all Markdown exposed by the index/graph and validate MIME mappings, then exit.")
+    parser.add_argument(
+        "--assessment-runner",
+        default=os.environ.get("SO_ASSESSMENT_RUNNER", ""),
+        help="Optional local command that reads repository_assessment_execution JSON on stdin and returns repository_assessment_run JSON on stdout.",
+    )
+    parser.add_argument("--assessment-timeout", type=int, default=180, help="Local assessment runner timeout in seconds (default: 180).")
     args = parser.parse_args()
+
+    global ASSESSMENT_RUNNER, ASSESSMENT_TIMEOUT_SECONDS
+    ASSESSMENT_RUNNER = shlex.split(args.assessment_runner) if args.assessment_runner.strip() else None
+    ASSESSMENT_TIMEOUT_SECONDS = max(1, args.assessment_timeout)
 
     if args.check:
         return strict_utf8_check()
@@ -148,6 +229,7 @@ def main() -> int:
     print(f"Scientific Ontology Public Navigator: http://{args.host}:{args.port}/navigator/")
     print(f"Scientific Ontology Developer Navigator: http://{args.host}:{args.port}/navigator/dev.html")
     print("Text resources are served with explicit charset=utf-8.")
+    print(f"Repository Assessment runner: {'configured' if ASSESSMENT_RUNNER else 'not configured (export/import mode)'}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

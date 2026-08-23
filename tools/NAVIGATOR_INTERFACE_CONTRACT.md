@@ -162,6 +162,13 @@ Unified Review Pool
   - provisionally registered documents
   - registered revision proposals
 
+Claim Assessment Lab
+  - experimental frozen-protocol execution
+  - export/import execution packs
+  - optional local runner through an explicit server-side adapter
+  - claim-level before/after human review
+  - no direct canonical write
+
 Data Audit
   - catalog / graph / candidate coverage
   - maintenance diagnostics
@@ -184,6 +191,17 @@ tools/docs_registered_reader_question_review.yml
 ```
 
 They are revision seeds only. The current canonical registered document remains active until an approved review transaction is explicitly applied.
+
+Experimental claim assessment is loaded separately from:
+
+```text
+tools/assessment/repository_assessment_protocols.yml
+  -> scripts/build_repository_assessment_protocols_preview.py
+  -> tools/assessment/repository_assessment_protocols.preview.json
+  -> Developer Navigator / Claim Assessment Lab
+```
+
+The Assessment Lab is intentionally non-canonical. A protocol revision is frozen for a run, applied across the complete selected fixture without mid-run repair, and then reviewed. Its transaction model mirrors the existing review surface (`before / after`, `approve / approve_with_edits / hold / reject`) so a mature protocol can later be promoted without making the experimental lab itself authoritative.
 
 ## 6. Review persistence and export
 
@@ -225,7 +243,16 @@ docs_registered_reader_question_review.preview.json
   generated Developer revision-seed read model; hand edit forbidden
 
 localStorage / docs_registration_review.json
-  review transaction state; non-canonical
+  registration review transaction state; non-canonical
+
+tools/assessment/repository_assessment_protocols.yml
+  experimental frozen-protocol ledger; Developer-only input
+
+tools/assessment/repository_assessment_protocols.preview.json
+  generated Developer read model; hand edit forbidden
+
+repository_assessment_execution.json / repository_assessment_run.json / repository_assessment_review.json
+  experimental claim-assessment execution and review artifacts; non-canonical
 ```
 
 Canonical manifest application occurs only through repository-side tooling after validation and dry-run.
@@ -262,10 +289,12 @@ Developer runtime additionally loads:
 tools/docs_graph.json
 tools/docs_registration_candidates.preview.json
 tools/docs_registered_reader_question_review.preview.json
+tools/assessment/repository_assessment_protocols.preview.json
+/api/assessment/runner status (Developer local server only)
 browser-local review state
 ```
 
-The default public shell must not fetch either Developer preview artifact.
+The default public shell must not fetch Developer preview artifacts or the assessment runner endpoint.
 
 ## 10. Canonical flow
 
