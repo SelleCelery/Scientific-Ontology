@@ -1,0 +1,141 @@
+repository_assessment_protocols:
+  schema_version: "0.1"
+  status: experimental
+  purpose_ja: >-
+    正本群へ一括適用できる主張分類法を、創造段階の探索と切り離して凍結実行し、
+    その結果を人間がレビューするための実験用プロトコル台帳。
+  purpose_en: >-
+    Experimental protocol ledger for freezing and running claim-classification methods
+    across canonical documents, then reviewing the unchanged batch output.
+  protocols:
+    - id: claim-classification-pilot
+      revision: "2026-08-23-b"
+      state: frozen-pilot
+      prompt_profile: representative-hotspot-v02
+      title_ja: 代表主張・局所強度パイロット
+      title_en: Representative Claim and Hotspot Pilot
+      authority: experimental_workbench_only
+      methodological_provenance:
+        - path: 04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md
+          relation: formation_history
+        - path: 04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md
+          relation: methodological_context
+      default_targets:
+        - 01_Sat_Truth/Boundary_Realism_Principle.md
+        - 01_Sat_Truth/Boundary_Epistemological_Critique.ja.md
+      freeze_policy:
+        ja: >-
+          一つのrunでは、開始時に選んだ方法を全対象へ同じように適用し、途中で規則を追加・削除・補正しない。
+          不自然な結果もそのまま出力する。方法を直す場合はrun完了後に新revisionを切り、対象全体へ再実行する。
+        en: >-
+          Within one run, apply the selected method uniformly to every target. Do not add,
+          remove, or repair rules mid-run. Preserve strange outputs. Method changes create a
+          new revision and require a fresh batch run.
+      execution_principles:
+        - id: document_first
+          ja: 文書全体を先に読み、その文書がタイトル・目的・中心命題・結論として何を代表的に主張するかを先に把握する。
+        - id: merge_before_projection
+          ja: 同じ帰属、repository commitment、責任主体、scope、論証上の役割を共有し、同一主張の反復・言い換え・展開である記述は一つの代表主張へ統合する。S/Eは統合条件に使わない。
+        - id: nonclaim_separate
+          ja: 「本稿はXを主張しない」等の明示的非主張はS/E分類対象から除外し、nonclaim_boundariesへ別記する。
+        - id: attribution_before_projection
+          ja: S/Eを付ける前に、誰の命題を表象しているか、repositoryがどうcommitしているか、誰が接続責任を持つかを判断する。
+        - id: represented_is_not_endorsed
+          ja: 外部sourceの強い主張を、表象されているだけでSO自身の強い主張として扱わない。
+        - id: representative_profile
+          ja: 文書の代表S/Eは、タイトル・目的・中心命題・結論に関係する代表主張から決める。論証途中の局所的に強い主張の最大値を文書S/Eへ自動昇格しない。
+        - id: hotspot_detection
+          ja: 論証途中で、異なるground ownerへの移動、外部体系とのbridge、scope拡張、同一性・普遍性、因果・機構、強い対応、別責任主体を導入する箇所はclaim_hotspots候補として拾う。
+        - id: hotspot_local_only
+          ja: hotspotには局所S/Eを付けるが、その値はdocument_profileのS/Eを直接決定しない。AMP等の別体系へ根拠が遡及する局所claimも同様にlocal-onlyとして扱う。
+        - id: bridge_owner_responsibility
+          ja: 外部体系とSOを接続するbridge claimは、その接続を提出した主体の責任として扱う。
+        - id: s_projection
+          ja: Sはrepositoryが引き受ける命題のコミットメント強度へ投影する。語彙や分野名だけで決めない。
+        - id: e_projection
+          ja: Eは外部体系との接続状態を読んだ結果として反映する。Eを見るために処理を分岐させない。
+        - id: sparse_output
+          ja: 全定義・全段落を列挙しない。代表主張は通常1〜3件程度を目安とし、hotspotは分類上または責任上意味のある箇所だけを残す。これは上限ではなく冗長列挙を避ける目安である。
+        - id: no_naturalness_repair
+          ja: 評価者・LLMが自然だと思う値へ結果を補正しない。
+        - id: evidence_bound
+          ja: 命題理解・帰属・外部理論理解の根拠となる本文箇所を記録する。本文にない意味を補わない。
+      commitment_values:
+        - represented
+        - endorsed
+        - derived
+        - suspended
+        - indeterminate
+      argument_roles:
+        - central_claim
+        - core_definition
+        - conclusion
+        - supporting_argument
+        - bridge
+        - scope_control
+        - other
+      hotspot_reasons:
+        - different_ground_owner
+        - external_bridge
+        - scope_expansion
+        - identity_or_universality
+        - causal_or_mechanistic
+        - strong_correspondence
+        - separate_responsibility
+        - other
+      strength_scale:
+        S0: 用語、分類、記録、索引、運用上の約束。対象世界について強い実在・因果主張を行わない。
+        S1: 限定された記述、アナロジー、ヒューリスティック。適用範囲を超えた存在論的同一性を要求しない。
+        S2: 宣言された枠内での再解釈・モデル。枠外への一般化を前提にしない。
+        S3: 条件付きの一般構造・関係命題。一定範囲で一般化された構造をrepositoryが引き受ける。
+        S4: 異体系間対応、機構、生成関係、因果候補など、外部対象との強い接続をrepositoryが引き受ける。
+        S5: 同一性、普遍性、強い外部実在、強因果、既存領域の置換・競合を伴う主張をrepositoryが引き受ける。
+      exposure_scale:
+        E0: repository内部の自己所有概念・運用で、外部権限への依存がほぼない。
+        E1: 外部概念をowner、source meaning、非同一性を保持して輸入・参照する。
+        E2: 外部概念を再解釈・通約・構造mappingし、SO側のbridge responsibilityが発生する。
+        E3: 外部権威の流入、同一化、因果化、置換、普遍化、強い実体化など、強いbridge responsibilityを伴う。
+      output_contract:
+        schema: repository_assessment_run/0.2
+        schema_path: tools/assessment/repository_assessment_run.schema.json
+        review_schema: repository_assessment_review/0.2
+        representative_claims_drive_document_profile: true
+        hotspot_classification_effect: local_only
+      review_policy:
+        primary_review_unit: document_profile
+        optional_detail_review:
+          - representative_claim
+          - claim_hotspot
+        decisions:
+          - approve
+          - approve_with_edits
+          - hold
+          - reject
+        issue_types:
+          - proposition_error
+          - merge_error
+          - attribution_error
+          - domain_error
+          - commitment_error
+          - responsibility_error
+          - scope_error
+          - document_profile_error
+          - hotspot_detection_error
+          - strength_error
+          - exposure_error
+          - ground_owner_error
+          - evidence_error
+          - protocol_rule_error
+          - other
+        uniform_revision_issue_types:
+          - protocol_rule_error
+        ja: >-
+          人間レビューの第一対象は文書profileである。代表主張とhotspotは必要な場合だけ個別に開いて確認・修正する。
+          LLMの命題誤解・統合誤り・外部理論誤解と、方法そのものの系統誤差を区別する。
+          方法を直す必要がある場合は個別結果だけを自然に修正せず、新revisionとして一律再実行する。
+      promotion:
+        state: not_promoted
+        target_surface: developer_registration_review
+        ja: >-
+          このプロトコルが安定した場合、同じbefore/afterとapprove/edit/reject/holdモデルを
+          Developer Navigatorの既存レビュー面へ昇格させる。現段階ではcanonical manifestを変更しない。

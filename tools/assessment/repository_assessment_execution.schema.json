@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientific-ontology.local/schemas/repository_assessment_execution.schema.json",
+  "title": "Scientific Ontology repository assessment execution pack",
+  "type": "object",
+  "required": ["repository_assessment_execution"],
+  "additionalProperties": false,
+  "properties": {
+    "repository_assessment_execution": {
+      "type": "object",
+      "required": ["schema_version", "created_at", "protocol", "fixture", "output_contract"],
+      "properties": {
+        "schema_version": {"const": "0.2"},
+        "created_at": {"type": "string"},
+        "protocol": {
+          "type": "object",
+          "required": ["id", "revision", "source_sha256", "prompt"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "revision": {"type": "string", "minLength": 1},
+            "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "prompt": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": true
+        },
+        "fixture": {
+          "type": "object",
+          "required": ["targets"],
+          "properties": {
+            "targets": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["path", "sha256", "content"],
+                "properties": {
+                  "path": {"type": "string", "minLength": 1},
+                  "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+                  "content": {"type": "string"}
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        },
+        "output_contract": {"type": "object"}
+      },
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientific-ontology.local/schemas/repository_assessment_review.schema.json",
+  "title": "Scientific Ontology repository assessment review",
+  "type": "object",
+  "required": ["repository_assessment_review"],
+  "additionalProperties": false,
+  "properties": {
+    "repository_assessment_review": {
+      "type": "object",
+      "required": ["schema_version", "source_run_sha256", "status", "decisions"],
+      "properties": {
+        "schema_version": {"const": "0.2"},
+        "source_run_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "status": {"enum": ["in_progress", "complete"]},
+        "exported_at": {"type": "string"},
+        "summary": {"type": "object"},
+        "decisions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["review_key", "kind", "path", "decision", "reviewed_at", "before", "after"],
+            "properties": {
+              "review_key": {"type": "string", "minLength": 1},
+              "kind": {"enum": ["document_profile", "representative_claim", "claim_hotspot"]},
+              "item_id": {"type": ["string", "null"]},
+              "path": {"type": "string", "minLength": 1},
+              "decision": {"enum": ["approve", "approve_with_edits", "hold", "reject"]},
+              "issue_types": {
+                "type": "array",
+                "items": {"enum": ["proposition_error", "merge_error", "attribution_error", "domain_error", "commitment_error", "responsibility_error", "scope_error", "document_profile_error", "hotspot_detection_error", "strength_error", "exposure_error", "ground_owner_error", "evidence_error", "protocol_rule_error", "other"]},
+                "uniqueItems": true
+              },
+              "reviewed_at": {"type": "string"},
+              "reviewer_note": {"type": "string"},
+              "before": {"type": "object"},
+              "after": {"type": "object"}
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

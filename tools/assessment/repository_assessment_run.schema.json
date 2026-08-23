@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientific-ontology.local/schemas/repository_assessment_run.schema.json",
+  "title": "Scientific Ontology repository assessment run",
+  "type": "object",
+  "required": ["repository_assessment_run"],
+  "additionalProperties": false,
+  "properties": {
+    "repository_assessment_run": {
+      "type": "object",
+      "required": ["schema_version", "run_id", "protocol", "fixture", "documents"],
+      "properties": {
+        "schema_version": {"const": "0.2"},
+        "run_id": {"type": "string", "minLength": 1},
+        "created_at": {"type": "string"},
+        "model": {"type": "object"},
+        "protocol": {
+          "type": "object",
+          "required": ["id", "revision", "source_sha256"],
+          "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "revision": {"type": "string", "minLength": 1},
+            "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+          },
+          "additionalProperties": true
+        },
+        "fixture": {
+          "type": "object",
+          "required": ["targets"],
+          "properties": {
+            "targets": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["path", "sha256"],
+                "properties": {
+                  "path": {"type": "string", "minLength": 1},
+                  "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        },
+        "documents": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/documentAssessment"}
+        },
+        "run_notes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "sourceRef": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "line_start": {"type": ["integer", "null"], "minimum": 1},
+        "line_end": {"type": ["integer", "null"], "minimum": 1},
+        "text": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "attribution": {
+      "type": "object",
+      "required": ["represented_system", "repository_commitment", "responsibility", "scope"],
+      "properties": {
+        "represented_system": {"type": "string"},
+        "repository_commitment": {"enum": ["represented", "endorsed", "derived", "suspended", "indeterminate"]},
+        "responsibility": {"type": "string"},
+        "scope": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "classification": {
+      "type": "object",
+      "required": ["strength", "exposure"],
+      "properties": {
+        "strength": {"enum": ["S0", "S1", "S2", "S3", "S4", "S5", null]},
+        "exposure": {"enum": ["E0", "E1", "E2", "E3", null]}
+      },
+      "additionalProperties": true
+    },
+    "representativeClaim": {
+      "type": "object",
+      "required": ["claim_id", "source_refs", "proposition", "argument_role", "attribution", "classification", "rationale"],
+      "properties": {
+        "claim_id": {"type": "string", "minLength": 1},
+        "source_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sourceRef"}},
+        "proposition": {"type": "string", "minLength": 1},
+        "argument_role": {"enum": ["central_claim", "core_definition", "conclusion", "supporting_argument", "bridge", "scope_control", "other"]},
+        "attribution": {"$ref": "#/$defs/attribution"},
+        "classification": {"$ref": "#/$defs/classification"},
+        "rationale": {"type": "string"},
+        "references": {"type": "array"},
+        "notes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "claimHotspot": {
+      "type": "object",
+      "required": ["hotspot_id", "source", "proposition", "argument_role", "hotspot_reasons", "attribution", "ground", "classification", "classification_effect", "rationale"],
+      "properties": {
+        "hotspot_id": {"type": "string", "minLength": 1},
+        "source": {"$ref": "#/$defs/sourceRef"},
+        "proposition": {"type": "string", "minLength": 1},
+        "argument_role": {"enum": ["central_claim", "core_definition", "conclusion", "supporting_argument", "bridge", "scope_control", "other"]},
+        "hotspot_reasons": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"enum": ["different_ground_owner", "external_bridge", "scope_expansion", "identity_or_universality", "causal_or_mechanistic", "strong_correspondence", "separate_responsibility", "other"]}
+        },
+        "attribution": {"$ref": "#/$defs/attribution"},
+        "ground": {
+          "type": "object",
+          "required": ["owner", "relation"],
+          "properties": {
+            "owner": {"type": "string"},
+            "relation": {"type": "string"},
+            "source_path": {"type": ["string", "null"]},
+            "note": {"type": ["string", "null"]}
+          },
+          "additionalProperties": true
+        },
+        "classification": {"$ref": "#/$defs/classification"},
+        "classification_effect": {"const": "local_only"},
+        "awareness": {
+          "type": "object",
+          "properties": {
+            "ground_linked": {"type": ["boolean", "null"]},
+            "scope_declared": {"type": ["boolean", "null"]},
+            "nonclaim_boundary_present": {"type": ["boolean", "null"]},
+            "owner_identified": {"type": ["boolean", "null"]}
+          },
+          "additionalProperties": true
+        },
+        "rationale": {"type": "string"},
+        "references": {"type": "array"},
+        "notes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "nonclaimBoundary": {
+      "type": "object",
+      "required": ["boundary_id", "source", "proposition"],
+      "properties": {
+        "boundary_id": {"type": "string", "minLength": 1},
+        "source": {"$ref": "#/$defs/sourceRef"},
+        "proposition": {"type": "string", "minLength": 1},
+        "rationale": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "documentAssessment": {
+      "type": "object",
+      "required": ["path", "document_profile", "representative_claims", "claim_hotspots", "nonclaim_boundaries"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "document_profile": {
+          "type": "object",
+          "required": ["title", "classification", "basis_claim_ids", "rationale"],
+          "properties": {
+            "title": {"type": "string"},
+            "classification": {"$ref": "#/$defs/classification"},
+            "basis_claim_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+            "rationale": {"type": "string"}
+          },
+          "additionalProperties": true
+        },
+        "representative_claims": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/representativeClaim"}},
+        "claim_hotspots": {"type": "array", "items": {"$ref": "#/$defs/claimHotspot"}},
+        "nonclaim_boundaries": {"type": "array", "items": {"$ref": "#/$defs/nonclaimBoundary"}},
+        "notes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    }
+  }
+}

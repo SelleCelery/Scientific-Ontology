@@ -4,10 +4,7 @@
 # Allow directories to be traversed
 !*/
 
-# ----------------------------------------------------------------------
-# Repository root files
-# ----------------------------------------------------------------------
-
+# root files
 !.gitattributes
 !.gitignore
 !.zenodo.json
@@ -24,19 +21,13 @@
 !TERM_COLLISION_REGISTRY.en.md
 !requirements-public-check.txt
 
-# ----------------------------------------------------------------------
-# GitHub workflows
-# ----------------------------------------------------------------------
-
+# GitHub
 !.github/
 !.github/workflows/
 !.github/workflows/*.yml
 !.github/workflows/*.yaml
 
-# ----------------------------------------------------------------------
 # Public document trees
-# ----------------------------------------------------------------------
-
 !00_Overview/**
 !01_Sat_Truth/**
 !02_Raj_Beauty/**
@@ -48,98 +39,30 @@
 !90_Repository_Governance/**
 !99_Private_Core_Not_Included/README.md
 
-# ----------------------------------------------------------------------
 # Navigator
-# ----------------------------------------------------------------------
-
 !navigator/
 !navigator/**
 
-# ----------------------------------------------------------------------
 # Repository scripts
-# ----------------------------------------------------------------------
+!scripts/
+!scripts/**
+scripts/**/*.md
+scripts/*.md
 
-!scripts/check_public_format.py
-!scripts/build_docs_index.py
-!scripts/query_docs.py
-!scripts/build_docs_graph.py
-!scripts/check_docs_web_parity.mjs
-!scripts/serve_navigator.py
-!scripts/validate_registration_candidates.py
-!scripts/build_registration_candidates_preview.py
-!scripts/check_navigator_interface.py
-!scripts/check_registration_workbench.py
-!scripts/validate_registration_review.py
-!scripts/apply_registration_review.py
-!scripts/build_public_catalog.py
-!scripts/build_registered_reader_question_review_preview.py
-!scripts/build_public_graph.py
-!scripts/check_dn6_release_gate.py
-!scripts/public_site_common.py
-!scripts/build_public_site.py
-!scripts/check_public_site.py
-!scripts/check_navigator_language_resolution.mjs
 
-# ----------------------------------------------------------------------
-# Repository metadata / generated read models / developer contracts
-# Developer tooling and repository metadata tracked in Git.
-# These files are NOT automatically included in the public Pages artifact.
-# ----------------------------------------------------------------------
-
+# Repository tooling / metadata
 !tools/
-!tools/Public_Format_Registry.yml
-!tools/docs_graph.yml
-!tools/docs_graph_tests.yml
-!tools/docs_graph.json
-!tools/docs_graph.schema.json
-!tools/docs_search.yml
-!tools/docs_search_tests.yml
-!tools/docs_index.json
-!tools/docs_index.schema.json
-!tools/docs_manifest.yml
-!tools/maintenance_rules.yml
-!tools/DOCS_NAVIGATION.md
-!tools/DOCS_NAVIGATION_HISTORY.md
-!tools/NAVIGATOR_INTERFACE_CONTRACT.md
-!tools/CHECKER_USAGE.md
-
-!tools/docs_registration_candidates.yml
-!tools/docs_registration_candidates.schema.json
-!tools/docs_registration_candidates.preview.json
-!tools/DOCS_REGISTRATION_CANDIDATES.md
-!tools/REGISTRATION_CANDIDATES_FULL_REVIEW.md
-!tools/REGISTRATION_CANDIDATES_REPORT.md
-
-!tools/docs_registration_review.schema.json
-!tools/DOCS_REGISTRATION_WORKBENCH.md
-!tools/READER_QUESTION_POLICY.md
-!tools/docs_registered_reader_question_review.yml
-!tools/docs_registered_reader_question_review.preview.json
-
-!tools/docs_public_catalog.json
-!tools/docs_public_graph.json
-
-!tools/dn6_release_gate.yml
-!tools/DN6_RELEASE_INTEGRATION.ja.md
-!tools/DN6_RELEASE_GATE_REPORT.ja.md
-!tools/DN_PROGRESS_AND_RESULTS.ja.md
-
-!tools/public_site.yml
-!tools/PUBLIC_SITE_BUILD.ja.md
+!tools/**
+tools/**/*.md
+tools/*.md
 
 # Optional mirrored documentation
 !docs/CHECKER_USAGE.md
 
-# ----------------------------------------------------------------------
-# Draft / pre-release files
-# ----------------------------------------------------------------------
-
+# Draft / pre-release
 000*
 
-# ----------------------------------------------------------------------
 # Generated reports
-# ----------------------------------------------------------------------
-
 public_format_report*.md
 public_format_report*.json
 public_format_release_report*.md
@@ -147,37 +70,30 @@ public_format_release_report*.json
 concept_contract_report*.md
 concept_contract_report*.json
 
-# ----------------------------------------------------------------------
-# Local / generated build outputs
-# ----------------------------------------------------------------------
+# Local-only assessment outputs
+tools/assessment/runs/
+tools/assessment/local/
+tools/assessment/tmp/
 
+# Build outputs
 _build/
 
-# ----------------------------------------------------------------------
-# Python cache / local environments
-# ----------------------------------------------------------------------
-
+# Python
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
 venv/
 
-# ----------------------------------------------------------------------
 # OS / editor / temporary files
-# ----------------------------------------------------------------------
-
 .DS_Store
 Thumbs.db
 desktop.ini
-
 .vscode/
 .vs/
-
 *.log
 *.tmp
 *.bak
 *.orig
 *~
-
 ~$*.*
