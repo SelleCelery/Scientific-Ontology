@@ -391,23 +391,29 @@ Public catalogは、manifestにある `registered` と `provisional` の両方�
 ```text
 provisional registration
   -> human metadata review
-  -> registered または metadata revision
+  -> explicit review transaction
+  -> repository-side validation / apply
+  -> registered または provisional維持
 ```
 
-Developer reviewは次を利用する。
+仮登録文書のcanonical identityは、すでに `tools/docs_manifest.yml` にある。Developer Navigatorはmanifestをread sourceとして利用してよいが、ブラウザから直接書き込まない。
+
+Developer reviewは次の一つのread modelへ集約する。
 
 ```text
-tools/docs_registration_candidates.yml
-tools/docs_registration_candidates.preview.json
-tools/docs_registered_reader_question_review.yml
-tools/docs_registered_reader_question_review.preview.json
+tools/docs_manifest.yml --------------------┐
+                                             ├─> scripts/build_registration_workbench_preview.py
+tools/docs_revision_proposals.yml ----------┘
+                                                   ↓
+                                  tools/docs_registration_workbench.preview.json
 ```
 
-preview JSONは生成物であり、手編集しない。ブラウザのlocal stateはcanonicalではない。export、repository-side validation、dry-run、明示的manifest適用を経て初めて変更候補となる。
+preview JSONは生成物であり、手編集しない。ブラウザのlocal stateもcanonicalではない。export、repository-side validation、dry-run、明示的manifest適用を経て初めてcanonical変更となる。
+
+登録済み文書の改訂提案はgenericな `docs_revision_proposals.yml` に保持し、一回限りのreview seedを恒久inputにはしない。
 
 詳細は次を参照する。
 
-- [`DOCS_REGISTRATION_CANDIDATES.md`](./DOCS_REGISTRATION_CANDIDATES.md)
 - [`DOCS_REGISTRATION_WORKBENCH.md`](./DOCS_REGISTRATION_WORKBENCH.md)
 - [`READER_QUESTION_POLICY.md`](./READER_QUESTION_POLICY.md)
 
@@ -444,7 +450,6 @@ UIをきれいに見せるために、理論本文やcanonical metadataを下流
 ## 16. Related contracts / 関連文書
 
 - [`NAVIGATOR_INTERFACE_CONTRACT.md`](./NAVIGATOR_INTERFACE_CONTRACT.md)
-- [`DOCS_REGISTRATION_CANDIDATES.md`](./DOCS_REGISTRATION_CANDIDATES.md)
 - [`DOCS_REGISTRATION_WORKBENCH.md`](./DOCS_REGISTRATION_WORKBENCH.md)
 - [`READER_QUESTION_POLICY.md`](./READER_QUESTION_POLICY.md)
 - [`PUBLIC_SITE_BUILD.ja.md`](./PUBLIC_SITE_BUILD.ja.md)

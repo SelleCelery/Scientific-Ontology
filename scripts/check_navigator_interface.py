@@ -15,8 +15,7 @@ LANGUAGE_CORE = ROOT / "navigator" / "src" / "language-core.ts"
 GRAPH = ROOT / "tools" / "docs_graph.json"
 PUBLIC_GRAPH = ROOT / "tools" / "docs_public_graph.json"
 PUBLIC_CATALOG = ROOT / "tools" / "docs_public_catalog.json"
-CANDIDATE_PREVIEW = ROOT / "tools" / "docs_registration_candidates.preview.json"
-REGISTERED_REVIEW_PREVIEW = ROOT / "tools" / "docs_registered_reader_question_review.preview.json"
+REGISTRATION_WORKBENCH_PREVIEW = ROOT / "tools" / "docs_registration_workbench.preview.json"
 
 BLOCKED_MARKERS = ("99_Private_Core", "private-core", "Private_Core", "/Gate", "/U5")
 DEVELOPER_ONLY_KEYS = {
@@ -72,8 +71,7 @@ def main() -> int:
         GRAPH,
         PUBLIC_GRAPH,
         PUBLIC_CATALOG,
-        CANDIDATE_PREVIEW,
-        REGISTERED_REVIEW_PREVIEW,
+        REGISTRATION_WORKBENCH_PREVIEW,
     )
     for path in required_files:
         if not path.is_file():
@@ -173,8 +171,6 @@ def main() -> int:
     provisional = [doc for doc in catalog_docs if doc.get("registration_state") == "provisional"]
     if not registered:
         return fail("public catalog has no canonical registered documents")
-    if not provisional:
-        return fail("public catalog has no public provisional documents")
     for doc in provisional:
         path = str(doc.get("path") or "")
         if path not in exposed:
@@ -201,7 +197,7 @@ def main() -> int:
         for control in HEADER_CONTROLS:
             if f'id="{control}"' not in html:
                 return fail(f"{html_name} shell missing fixed header control: {control}")
-    for marker in ("Candidate review", "Claim audit lab", "Data audit", "docs_registration_candidates", "repository_assessment_protocols"):
+    for marker in ("Candidate review", "Claim audit lab", "Data audit", "docs_registration_workbench", "docs_revision_proposals", "repository_assessment_protocols"):
         if marker in public_html:
             return fail(f"public shell exposes developer marker: {marker}")
 
@@ -209,8 +205,7 @@ def main() -> int:
         'document.body.dataset.interface === "developer"',
         'fetch(PUBLIC_CATALOG_URL)',
         'isDeveloper() ? DEVELOPER_GRAPH_URL : PUBLIC_GRAPH_URL',
-        'isDeveloper()\n      ? fetch(CANDIDATES_URL)',
-        'isDeveloper()\n      ? fetch(REGISTERED_REVIEW_URL)',
+        'isDeveloper()\n      ? fetch(REGISTRATION_WORKBENCH_URL)',
         'fetch(PUBLIC_CONTENT_URL)',
         'collapseDocumentsForLanguage',
         'collapseSearchResultsForLanguage',

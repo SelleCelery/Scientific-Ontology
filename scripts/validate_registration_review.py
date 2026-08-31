@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Validate an exported DN-5.4B registration-review transaction.
+"""Validate an exported Developer Registration Workbench transaction.
 
-The review file is a human judgment transaction, not the canonical manifest.
-Validation refuses stale candidate sets by default.
+Schema 0.3 binds provisional review directly to the current manifest and binds
+registered revision proposals to the current generic proposal ledger. The browser
+never writes canonical YAML; repository-side validation is required before apply.
 """
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import sys
 from pathlib import Path
@@ -16,15 +16,15 @@ from typing import Any
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-CANDIDATES = ROOT / "tools" / "docs_registration_candidates.yml"
+sys.path.insert(0, str(ROOT / "scripts"))
+import build_registration_workbench_preview as workbench  # noqa: E402
+
 MANIFEST = ROOT / "tools" / "docs_manifest.yml"
 GRAPH = ROOT / "tools" / "docs_graph.json"
-REGISTERED_REVIEW_SEED = ROOT / "tools" / "docs_registered_reader_question_review.yml"
+REVISION_PROPOSALS = ROOT / "tools" / "docs_revision_proposals.yml"
 DECISIONS = {"approve", "approve_with_edits", "hold", "reject"}
-
-
-def sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+REVISION_DECISIONS = {"approve", "hold", "reject"}
+REVIEW_FIELD_SET = set(workbench.REVIEW_FIELDS)
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -34,20 +34,26 @@ def load_json(path: Path) -> dict[str, Any]:
     return data
 
 
-def candidate_payload() -> dict[str, Any]:
-    data = yaml.safe_load(CANDIDATES.read_text(encoding="utf-8"))
-    payload = data.get("registration_candidates") if isinstance(data, dict) else None
-    if not isinstance(payload, dict):
-        raise ValueError("candidate ledger missing registration_candidates root")
-    return payload
+def current_workbench() -> dict[str, Any]:
+    return workbench.build_payload(ROOT)["registration_workbench"]
 
 
-def registered_review_seed_payload() -> dict[str, Any]:
-    data = yaml.safe_load(REGISTERED_REVIEW_SEED.read_text(encoding="utf-8"))
-    payload = data.get("registered_reader_question_review") if isinstance(data, dict) else None
-    if not isinstance(payload, dict):
-        raise ValueError("registered review seed missing registered_reader_question_review root")
-    return payload
+def manifest_map() -> dict[str, dict[str, Any]]:
+    data = yaml.safe_load(MANIFEST.read_text(encoding="utf-8"))
+    docs = data.get("documents") if isinstance(data, dict) else None
+    if not isinstance(docs, list):
+        raise ValueError("docs_manifest.yml documents must be an array")
+    return {str(item.get("path") or ""): item for item in docs if isinstance(item, dict) and str(item.get("path") or "")}
+
+
+def safe_review_object(value: Any, label: str, errors: list[str]) -> dict[str, Any]:
+    if not isinstance(value, dict):
+        errors.append(f"{label} must be an object")
+        return {}
+    forbidden = set(value) - REVIEW_FIELD_SET
+    if forbidden:
+        errors.append(f"{label} contains non-workbench field(s): {sorted(forbidden)}")
+    return value
 
 
 def validate(data: dict[str, Any], *, allow_stale: bool = False) -> list[str]:
@@ -55,45 +61,42 @@ def validate(data: dict[str, Any], *, allow_stale: bool = False) -> list[str]:
     payload = data.get("registration_review")
     if not isinstance(payload, dict):
         return ["registration_review root object is required"]
-    schema_version = str(payload.get("schema_version") or "")
-    if schema_version not in {"0.1", "0.2"}:
-        errors.append("schema_version must be 0.1 or 0.2")
+    if str(payload.get("schema_version") or "") != "0.3":
+        errors.append("schema_version must be 0.3")
     if payload.get("status") not in {"in_progress", "complete"}:
         errors.append("status must be in_progress or complete")
+
+    current = current_workbench()
+    expected_source = current.get("source") or {}
     source = payload.get("source")
     if not isinstance(source, dict):
         errors.append("source object is required")
         source = {}
-    if not allow_stale:
-        expected = {
-            "candidate_source_sha256": sha256(CANDIDATES),
-            "manifest_sha256": sha256(MANIFEST),
-            "graph_sha256": sha256(GRAPH),
-        }
-        if schema_version == "0.2":
-            expected["registered_review_seed_sha256"] = sha256(REGISTERED_REVIEW_SEED)
-        for key, current in expected.items():
-            if str(source.get(key) or "") != current:
-                errors.append(f"stale source: {key} review={source.get(key)!r} current={current}")
-    ledger = candidate_payload()
-    candidates = {str(c.get("path") or ""): c for c in ledger.get("candidates", []) if isinstance(c, dict)}
-    registered_seed = registered_review_seed_payload() if REGISTERED_REVIEW_SEED.is_file() else {"documents": []}
-    seeded_revisions = {
-        str(item.get("path") or ""): item
-        for item in registered_seed.get("documents", [])
-        if isinstance(item, dict) and str(item.get("path") or "")
+    expected_counts = {
+        "provisional_count": len(current.get("provisional_documents") or []),
+        "revision_proposal_count": len(current.get("revision_proposals") or []),
     }
-    if schema_version == "0.2":
-        if int(source.get("registered_review_seed_count") or -1) != len(seeded_revisions):
-            errors.append(
-                "registered_review_seed_count does not match current registered review seed: "
-                f"review={source.get('registered_review_seed_count')!r} current={len(seeded_revisions)}"
-            )
+    if not allow_stale:
+        for key in ("manifest_sha256", "graph_sha256", "revision_proposals_sha256"):
+            if str(source.get(key) or "") != str(expected_source.get(key) or ""):
+                errors.append(f"stale source: {key} review={source.get(key)!r} current={expected_source.get(key)!r}")
+        for key, expected in expected_counts.items():
+            try:
+                actual = int(source.get(key))
+            except (TypeError, ValueError):
+                actual = -1
+            if actual != expected:
+                errors.append(f"stale source: {key} review={source.get(key)!r} current={expected}")
+
+    provisional = {str(item.get("path") or ""): item for item in current.get("provisional_documents") or [] if isinstance(item, dict)}
+    proposals_by_id = {str(item.get("proposal_id") or ""): item for item in current.get("revision_proposals") or [] if isinstance(item, dict)}
+    manifest = manifest_map()
+
     decisions = payload.get("decisions")
     if not isinstance(decisions, list):
         errors.append("decisions must be an array")
         decisions = []
-    seen: set[str] = set()
+    seen_decisions: set[str] = set()
     for idx, item in enumerate(decisions):
         if not isinstance(item, dict):
             errors.append(f"decisions[{idx}] must be an object")
@@ -102,115 +105,150 @@ def validate(data: dict[str, Any], *, allow_stale: bool = False) -> list[str]:
         decision = str(item.get("decision") or "")
         if not path:
             errors.append(f"decisions[{idx}] missing path")
-        elif path in seen:
-            errors.append(f"duplicate decision path: {path}")
-        seen.add(path)
-        if path and path not in candidates:
-            errors.append(f"decision does not match current candidate ledger: {path}")
+            continue
+        if path in seen_decisions:
+            errors.append(f"duplicate provisional decision path: {path}")
+        seen_decisions.add(path)
+        current_item = provisional.get(path)
+        if not current_item:
+            errors.append(f"decision path is not currently provisional: {path}")
+            continue
         if decision not in DECISIONS:
-            errors.append(f"invalid decision for {path or idx}: {decision}")
-        before = item.get("before")
-        after = item.get("after")
-        if not isinstance(before, dict) or not isinstance(after, dict):
-            errors.append(f"decision before/after must be objects: {path or idx}")
-        if path in candidates:
-            current = candidates[path].get("proposed") or {}
-            if isinstance(before, dict) and before != current:
-                errors.append(f"candidate baseline changed: {path}")
+            errors.append(f"invalid decision for {path}: {decision}")
+        before = safe_review_object(item.get("before"), f"decision before for {path}", errors)
+        after = safe_review_object(item.get("after"), f"decision after for {path}", errors)
+        baseline = current_item.get("baseline") or {}
+        if before != baseline:
+            errors.append(f"provisional baseline changed: {path}")
+        if str(item.get("doc_id") or "") != str(current_item.get("doc_id") or ""):
+            errors.append(f"provisional doc_id mismatch: {path}")
+        if after and str(after.get("path") or path) != path:
+            errors.append(f"provisional path cannot be edited: {path}")
+        if after and str(after.get("doc_id") or "") != str(current_item.get("doc_id") or ""):
+            errors.append(f"provisional doc_id cannot be edited: {path}")
+        if after and str(after.get("registration_state") or "provisional") != "provisional":
+            errors.append(f"registration_state is promoted only by repository apply: {path}")
         if decision == "approve" and before != after:
-            errors.append(f"approve must not contain edits: {path}")
+            errors.append(f"approve must not contain metadata edits: {path}")
         if decision == "approve_with_edits" and before == after:
             errors.append(f"approve_with_edits has no actual edit: {path}")
+
     manual_candidates = payload.get("manual_candidates")
     if not isinstance(manual_candidates, list):
         errors.append("manual_candidates must be an array")
         manual_candidates = []
-    registered_paths: set[str] = set()
-    try:
-        manifest = yaml.safe_load(MANIFEST.read_text(encoding="utf-8"))
-        registered_paths = {str(item.get("path") or "") for item in (manifest.get("documents") or []) if isinstance(item, dict)}
-    except Exception as exc:
-        errors.append(f"cannot inspect manifest documents for manual/revision validation: {exc}")
-    manual_paths: set[str] = set()
+    seen_manual_paths: set[str] = set()
     for idx, item in enumerate(manual_candidates):
         if not isinstance(item, dict):
             errors.append(f"manual_candidates[{idx}] must be an object")
             continue
-        proposed = item.get("proposed")
-        if not isinstance(proposed, dict):
-            errors.append(f"manual_candidates[{idx}].proposed must be an object")
-            continue
+        if str(item.get("decision") or "") not in REVISION_DECISIONS:
+            errors.append(f"invalid manual candidate decision at index {idx}")
+        proposed = safe_review_object(item.get("proposed"), f"manual candidate proposed[{idx}]", errors)
         path = str(proposed.get("path") or "")
         doc_id = str(proposed.get("doc_id") or "")
-        if item.get("decision") not in {"approve", "hold", "reject"}:
-            errors.append(f"manual candidate has invalid decision: {path or idx}")
         if not path or not doc_id:
-            errors.append(f"manual candidate requires path and doc_id: index {idx}")
-        if path in registered_paths:
-            errors.append(f"manual candidate path is already registered; use revision queue instead: {path}")
-        if path in manual_paths:
+            errors.append(f"manual candidate requires path and doc_id at index {idx}")
+            continue
+        if path in seen_manual_paths:
             errors.append(f"duplicate manual candidate path: {path}")
-        manual_paths.add(path)
-        if path and not (ROOT / path).is_file():
-            errors.append(f"manual candidate path does not exist: {path}")
-    revision_candidates = payload.get("revision_candidates")
-    if not isinstance(revision_candidates, list):
+        seen_manual_paths.add(path)
+        if path in manifest:
+            errors.append(f"manual candidate path is already in manifest: {path}")
+
+    revisions = payload.get("revision_candidates")
+    if not isinstance(revisions, list):
         errors.append("revision_candidates must be an array")
-        revision_candidates = []
-    revision_paths: set[str] = set()
-    for idx, item in enumerate(revision_candidates):
+        revisions = []
+    seen_revision_paths: set[str] = set()
+    for idx, item in enumerate(revisions):
         if not isinstance(item, dict):
             errors.append(f"revision_candidates[{idx}] must be an object")
             continue
         path = str(item.get("path") or "")
-        if item.get("decision") not in {"approve", "hold", "reject"}:
-            errors.append(f"revision candidate has invalid decision: {path or idx}")
-        if not path or path not in registered_paths:
-            errors.append(f"revision candidate must reference a registered path: {path or idx}")
-        if path in revision_paths:
-            errors.append(f"duplicate revision candidate path: {path}")
-        revision_paths.add(path)
-        if not isinstance(item.get("before"), dict):
-            errors.append(f"revision candidate requires before snapshot: {path or idx}")
-        after = item.get("after")
-        if after is not None and not isinstance(after, dict):
-            errors.append(f"revision candidate after must be an object when present: {path or idx}")
-        if item.get("source_kind") == "registered_reader_question_seed":
-            if path not in seeded_revisions:
-                errors.append(f"seeded revision path is not in current registered review seed: {path or idx}")
-            seed_hash = str(item.get("seed_source_sha256") or "")
-            current_seed_hash = sha256(REGISTERED_REVIEW_SEED)
-            if seed_hash != current_seed_hash:
-                errors.append(f"seeded revision source hash is stale: {path or idx}")
+        doc_id = str(item.get("doc_id") or "")
+        decision = str(item.get("decision") or "")
+        source_kind = str(item.get("source_kind") or "")
+        if not path:
+            errors.append(f"revision_candidates[{idx}] missing path")
+            continue
+        if path in seen_revision_paths:
+            errors.append(f"duplicate revision path: {path}")
+        seen_revision_paths.add(path)
+        entry = manifest.get(path)
+        if not entry:
+            errors.append(f"revision path is not in manifest: {path}")
+            continue
+        if str(entry.get("registration_state") or "") != "registered":
+            errors.append(f"revision target is not registered: {path}")
+        expected_doc_id = str(entry.get("doc_id") or workbench.fallback_doc_id(path))
+        if doc_id != expected_doc_id:
+            errors.append(f"revision doc_id mismatch: {path}")
+        if decision not in REVISION_DECISIONS:
+            errors.append(f"invalid revision decision for {path}: {decision}")
+        if source_kind not in {"revision_proposal", "ad_hoc_registered_revision"}:
+            errors.append(f"invalid revision source_kind for {path}: {source_kind}")
+        before = safe_review_object(item.get("before"), f"revision before for {path}", errors)
+        after = safe_review_object(item.get("after"), f"revision after for {path}", errors)
+        baseline = workbench.review_projection(entry)
+        if before != baseline:
+            errors.append(f"registered revision baseline changed: {path}")
+        if after:
+            if str(after.get("path") or path) != path:
+                errors.append(f"revision path cannot be edited: {path}")
+            if str(after.get("doc_id") or expected_doc_id) != expected_doc_id:
+                errors.append(f"revision doc_id cannot be edited: {path}")
+            if str(after.get("registration_state") or "registered") != "registered":
+                errors.append(f"registered revision cannot change registration_state: {path}")
+        if decision == "approve" and (not after or after == before):
+            errors.append(f"approved revision contains no actual change: {path}")
+        if source_kind == "revision_proposal":
+            proposal_id = str(item.get("proposal_id") or "")
+            proposal = proposals_by_id.get(proposal_id)
+            if not proposal or str(proposal.get("path") or "") != path:
+                errors.append(f"revision proposal binding is invalid: {path}")
+            if str(item.get("proposal_source_sha256") or "") != str(expected_source.get("revision_proposals_sha256") or ""):
+                errors.append(f"revision proposal source hash is stale: {path}")
+
     return errors
 
 
 def self_test() -> int:
-    ledger = candidate_payload()
-    first = ledger["candidates"][0]
-    proposed = first["proposed"]
+    current = current_workbench()
+    provisional = current.get("provisional_documents") or []
+    decisions = []
+    if provisional:
+        first = provisional[0]
+        baseline = first["baseline"]
+        decisions.append({
+            "path": first["path"],
+            "doc_id": first["doc_id"],
+            "decision": "approve",
+            "reviewed_at": "self-test",
+            "reviewer_note": "",
+            "before": baseline,
+            "after": baseline,
+        })
     data = {
         "registration_review": {
-            "schema_version": "0.2",
+            "schema_version": "0.3",
             "status": "in_progress",
             "source": {
-                "candidate_source_sha256": sha256(CANDIDATES),
-                "manifest_sha256": sha256(MANIFEST),
-                "graph_sha256": sha256(GRAPH),
-                "candidate_count": len(ledger.get("candidates", [])),
-                "registered_review_seed_sha256": sha256(REGISTERED_REVIEW_SEED),
-                "registered_review_seed_count": len(registered_review_seed_payload().get("documents", [])),
+                "manifest_sha256": current["source"]["manifest_sha256"],
+                "graph_sha256": current["source"]["graph_sha256"],
+                "provisional_count": len(provisional),
+                "revision_proposals_sha256": current["source"]["revision_proposals_sha256"],
+                "revision_proposal_count": len(current.get("revision_proposals") or []),
             },
-            "decisions": [{
-                "path": first["path"], "doc_id": proposed.get("doc_id", ""), "decision": "approve",
-                "reviewed_at": "self-test", "reviewer_note": "", "before": proposed, "after": proposed,
-            }],
-            "manual_candidates": [], "revision_candidates": [],
+            "decisions": decisions,
+            "manual_candidates": [],
+            "revision_candidates": [],
         }
     }
     errors = validate(data)
     if errors:
-        for error in errors: print(f"ERROR {error}", file=sys.stderr)
+        for error in errors:
+            print(f"ERROR {error}", file=sys.stderr)
         return 1
     print("REGISTRATION REVIEW SELF-TEST PASS")
     return 0
@@ -229,18 +267,19 @@ def main() -> int:
     try:
         data = load_json(Path(args.review))
         errors = validate(data, allow_stale=args.allow_stale)
-    except (OSError, UnicodeDecodeError, json.JSONDecodeError, yaml.YAMLError, ValueError) as exc:
+    except Exception as exc:
         print(f"REGISTRATION REVIEW CHECK FAILED: {exc}", file=sys.stderr)
         return 1
     if errors:
         print(f"REGISTRATION REVIEW CHECK FAILED: {len(errors)} issue(s)", file=sys.stderr)
-        for error in errors: print(f"ERROR {error}", file=sys.stderr)
+        for error in errors:
+            print(f"ERROR {error}", file=sys.stderr)
         return 1
     payload = data["registration_review"]
     counts: dict[str, int] = {}
     for item in payload.get("decisions", []):
         counts[item["decision"]] = counts.get(item["decision"], 0) + 1
-    print(f"REGISTRATION REVIEW CHECK PASS: {len(payload.get('decisions', []))} decisions, {counts}")
+    print(f"REGISTRATION REVIEW CHECK PASS: {len(payload.get('decisions', []))} provisional decisions, {counts}")
     return 0
 
 

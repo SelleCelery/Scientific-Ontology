@@ -14,9 +14,13 @@ SCHEMA = ROOT / "tools" / "docs_registration_review.schema.json"
 VALIDATOR = ROOT / "scripts" / "validate_registration_review.py"
 APPLIER = ROOT / "scripts" / "apply_registration_review.py"
 DOC = ROOT / "tools" / "DOCS_REGISTRATION_WORKBENCH.md"
-REGISTERED_REVIEW_SOURCE = ROOT / "tools" / "docs_registered_reader_question_review.yml"
-REGISTERED_REVIEW_PREVIEW = ROOT / "tools" / "docs_registered_reader_question_review.preview.json"
-REGISTERED_REVIEW_BUILDER = ROOT / "scripts" / "build_registered_reader_question_review_preview.py"
+PROPOSALS = ROOT / "tools" / "docs_revision_proposals.yml"
+PROPOSAL_SCHEMA = ROOT / "tools" / "docs_revision_proposals.schema.json"
+WORKBENCH_PREVIEW = ROOT / "tools" / "docs_registration_workbench.preview.json"
+WORKBENCH_BUILDER = ROOT / "scripts" / "build_registration_workbench_preview.py"
+
+sys.path.insert(0, str(ROOT / "scripts"))
+import build_registration_workbench_preview as workbench_builder  # noqa: E402
 
 
 def fail(message: str) -> int:
@@ -33,9 +37,10 @@ def main() -> int:
         VALIDATOR,
         APPLIER,
         DOC,
-        REGISTERED_REVIEW_SOURCE,
-        REGISTERED_REVIEW_PREVIEW,
-        REGISTERED_REVIEW_BUILDER,
+        PROPOSALS,
+        PROPOSAL_SCHEMA,
+        WORKBENCH_PREVIEW,
+        WORKBENCH_BUILDER,
     )
     for path in paths:
         if not path.is_file():
@@ -50,10 +55,10 @@ def main() -> int:
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
     required = (
         'const REVIEW_STORAGE_PREFIX = "scientific-ontology-registration-review:"',
-        'const REGISTERED_REVIEW_URL = "../tools/docs_registered_reader_question_review.preview.json";',
+        'const REGISTRATION_WORKBENCH_URL = "../tools/docs_registration_workbench.preview.json";',
         "function reviewExportPayload()",
-        'schema_version: "0.2"',
-        "registered_review_seed_sha256",
+        'schema_version: "0.3"',
+        "revision_proposals_sha256",
         "function downloadReviewExport()",
         'exportButton.addEventListener("click", downloadReviewExport)',
         "async function importReviewExport(file: File)",
@@ -63,7 +68,6 @@ def main() -> int:
         "function reviewPoolItems()",
         'isDeveloper() && params.get("view") === "manual-candidate"',
         'isDeveloper() && params.get("view") === "registered-review"',
-        "candidate_source_sha256",
         "manifest_sha256",
         "graph_sha256",
         "before: baseline, after",
@@ -72,33 +76,50 @@ def main() -> int:
         if fragment not in app:
             return fail(f"missing workbench runtime fragment: {fragment}")
 
-    versions = (
+    version = (
         schema.get("properties", {})
         .get("registration_review", {})
         .get("properties", {})
         .get("schema_version", {})
-        .get("enum", [])
+        .get("const")
     )
-    if "0.2" not in versions:
-        return fail("review schema does not accept schema_version 0.2")
+    if version != "0.3":
+        return fail("review schema must require schema_version 0.3")
 
     if "docs_registration_review" in public or "Registration Workbench" in public:
         return fail("public HTML exposes workbench marker")
-    for fragment in ('method: "POST"', "method: 'POST'"):
-        if fragment in app:
-            return fail(f"browser workbench contains direct write transport: {fragment}")
 
-    preview = json.loads(REGISTERED_REVIEW_PREVIEW.read_text(encoding="utf-8"))
-    payload = preview.get("registered_reader_question_review") or {}
-    proposals = payload.get("documents") or []
-    if not proposals:
-        return fail("registered revision preview contains no proposals")
-    if not str((payload.get("source") or {}).get("review_seed_sha256") or ""):
-        return fail("registered revision preview lacks review_seed_sha256")
+    # Assessment Lab legitimately uses POST to the local runner.  Only canonical
+    # registration/manifest write transports are forbidden in browser code.
+    forbidden_write_markers = (
+        "REGISTRATION_WRITE_URL",
+        "/api/registration/apply",
+        "/api/manifest/write",
+        "/api/docs_manifest/write",
+    )
+    for marker in forbidden_write_markers:
+        if marker in app:
+            return fail(f"browser workbench contains canonical write transport: {marker}")
+
+    preview = json.loads(WORKBENCH_PREVIEW.read_text(encoding="utf-8"))
+    expected_preview = workbench_builder.build_payload(ROOT)
+    if preview != expected_preview:
+        return fail("docs_registration_workbench.preview.json is stale; rebuild it from current manifest/proposals")
+    payload = preview.get("registration_workbench") or {}
+    provisional = payload.get("provisional_documents") or []
+    registered = payload.get("registered_documents") or []
+    proposals = payload.get("revision_proposals") or []
+    source = payload.get("source") or {}
+    if not isinstance(provisional, list) or not isinstance(registered, list) or not isinstance(proposals, list):
+        return fail("workbench preview review collections must be arrays")
+    for key in ("manifest_sha256", "graph_sha256", "revision_proposals_sha256"):
+        if not str(source.get(key) or ""):
+            return fail(f"workbench preview lacks {key}")
 
     print(
-        "REGISTRATION WORKBENCH CHECK PASS: unified provisional/registered review pool, "
-        f"{len(proposals)} registered revision proposals, explicit export/import, no browser write API"
+        "REGISTRATION WORKBENCH CHECK PASS: manifest-backed provisional review, "
+        f"{len(provisional)} provisional + {len(proposals)} revision proposals, "
+        "explicit export/import/apply boundary, no browser canonical write API"
     )
     return 0
 

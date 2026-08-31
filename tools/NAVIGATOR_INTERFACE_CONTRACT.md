@@ -78,8 +78,6 @@ scripts/build_public_catalog.py
 tools/docs_public_catalog.json
 ```
 
-`tools/docs_registration_candidates.yml` remains a Developer/audit source after DN-5.5. It is not merged into the Public runtime catalog.
-
 The public catalog contains:
 
 - every document in the canonical index as `registration_state: registered`;
@@ -182,15 +180,17 @@ Review operations
   - ad-hoc registered revision
 ```
 
-Registered reader-question audit proposals are projected for Developer use through:
+Registration review uses one Developer-only read model:
 
 ```text
-tools/docs_registered_reader_question_review.yml
-  -> scripts/build_registered_reader_question_review_preview.py
-  -> tools/docs_registered_reader_question_review.preview.json
+tools/docs_manifest.yml --------------------┐
+                                             ├─> scripts/build_registration_workbench_preview.py
+tools/docs_revision_proposals.yml ----------┘
+                                                   ↓
+                                  tools/docs_registration_workbench.preview.json
 ```
 
-They are revision seeds only. The current canonical registered document remains active until an approved review transaction is explicitly applied.
+`provisional` review reads the current manifest state. Registered-document metadata proposals live in the generic revision-proposal source. The browser does not write either source. The current canonical document remains active until an approved review transaction is validated and explicitly applied repository-side.
 
 Experimental claim assessment is loaded separately from:
 
@@ -216,7 +216,7 @@ browser local state
 
 The browser does not automatically download review files and does not write repository files.
 
-The exported review transaction records source hashes, candidate decisions, registered revision decisions, manual candidates, and before/after snapshots. Schema 0.2 binds the transaction to both the candidate ledger and registered revision seed.
+The exported review transaction records source hashes, provisional decisions, registered revision decisions, manual candidates, and before/after snapshots. Schema 0.3 binds the transaction to the current manifest/graph and the generic revision-proposal source.
 
 ## 7. Write authority
 
@@ -226,9 +226,10 @@ docs_manifest.yml
   UI write: forbidden
   repository apply: explicit only
 
-docs_registration_candidates.yml
-  UI read: indirect via preview/public projection
+docs_revision_proposals.yml
+  UI read: indirect via Developer preview
   UI write: forbidden
+  role: partial metadata revision proposals, not a second manifest
 
 docs_index.json / docs_graph.json
   canonical/generated Developer read models; hand edit forbidden
@@ -236,11 +237,8 @@ docs_index.json / docs_graph.json
 docs_public_catalog.json / docs_public_graph.json
   generated Public read models; source hashes, diagnostics, and review internals removed; hand edit forbidden
 
-docs_registration_candidates.preview.json
-  generated Developer read model; hand edit forbidden
-
-docs_registered_reader_question_review.preview.json
-  generated Developer revision-seed read model; hand edit forbidden
+docs_registration_workbench.preview.json
+  generated Developer read model derived from manifest + revision proposals; hand edit forbidden
 
 localStorage / docs_registration_review.json
   registration review transaction state; non-canonical
@@ -255,7 +253,7 @@ repository_assessment_execution.json / repository_assessment_run.json / reposito
   experimental representative-claim / hotspot assessment artifacts; non-canonical
 ```
 
-Canonical manifest application occurs only through repository-side tooling after validation and dry-run.
+Canonical manifest application occurs only through repository-side tooling after validation and dry-run. When a generic revision proposal is explicitly resolved as approve/reject and applied, repository-side tooling also consumes that resolved proposal from the active proposal ledger; `hold` remains active.
 
 ## 8. Public information architecture
 
@@ -287,8 +285,7 @@ Developer runtime additionally loads:
 
 ```text
 tools/docs_graph.json
-tools/docs_registration_candidates.preview.json
-tools/docs_registered_reader_question_review.preview.json
+tools/docs_registration_workbench.preview.json
 tools/assessment/repository_assessment_protocols.preview.json
 /api/assessment/runner status (Developer local server only)
 browser-local review state
@@ -310,9 +307,9 @@ Public catalog + sanitized public graph + language presentation projection
       ↓
 Public Navigator
 
-Candidate/revision ledgers
+manifest-backed provisional set + generic revision proposals
       ↓
-Developer review (v5.1+ completion path)
+Developer review
       ↓ explicit validate/apply
 canonical docs_manifest.yml
 ```

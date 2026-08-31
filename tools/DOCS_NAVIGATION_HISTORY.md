@@ -416,7 +416,7 @@ Public Navigator
 - 「DN-5 may render...」：実装済み。
 - 独立 `Explore` tab：Public `Read` に統合済み。
 - candidate previewがPublic catalogを供給する構成：単一manifest projectionへ移行済み。
-- candidate ledgerを恒久的な現在データとして扱う想定：v5.1整理対象。
+- candidate ledgerを恒久的な現在データとして扱う想定：v5.1 Cleanup 3でactive inputから廃止。
 - preview artifactを正式公開物として扱う想定：publication gateが拒否する。
 - `tsc` が環境に常設されている前提：version-pinned `npx` / `npx.cmd` 手順へ変更。
 - DN-6を恒久的な段階名として扱う想定：release gate機能は残すが、段階番号は将来一般名へ移す。
@@ -429,7 +429,37 @@ v5.0ではPublic読解基盤をrelease対象とし、Developer側のmetadata/CMS
 
 これは現行v5.1の作業指示ではなく、「なぜ管理システム系の課題がv5.1へ残ったか」を示す形成史である。現行のv5.1方針は最新のassessment / governance / workbench契約を優先する。
 
-## 19. Return points / 履歴から現在へ戻る
+## 19. v5.1 Cleanup 3 — Registration Workbench source consolidation
+
+### Problem
+
+DN-5期の100件candidate ledgerは、仮登録文書がmanifestへ昇格した後もDeveloper Workbenchの現行inputとして残っていた。また、登録済みreader questionの見直しに使った一回限りのseedも現行inputとして残り、manifest更新後にstaleになっていた。
+
+### Introduced
+
+- provisional reviewのsourceをcanonical `docs_manifest.yml` へ戻す
+- browserはmanifestを直接読まず、manifest由来のDeveloper read modelを利用
+- 登録済みmetadata改訂案をgenericな `docs_revision_proposals.yml` へ集約
+- provisional / registered revisionを一つのworkbench previewへ統合
+- browser direct-write禁止を維持し、review export → validation → dry-run → explicit applyを継続
+
+### Preserved boundary
+
+```text
+manifest read source       != browser direct write
+provisional identity       != unregistered candidate
+revision proposal          != second canonical manifest
+human approval             != automatic canonical apply
+```
+
+### Current destination
+
+- `DOCS_REGISTRATION_WORKBENCH.md`
+- `NAVIGATOR_INTERFACE_CONTRACT.md`
+- `tools/docs_revision_proposals.yml`
+- `scripts/build_registration_workbench_preview.py`
+
+## 20. Return points / 履歴から現在へ戻る
 
 | Historical question | Current authority |
 |---|---|
@@ -441,7 +471,7 @@ v5.0ではPublic読解基盤をrelease対象とし、Developer側のmetadata/CMS
 | release gateの実装詳細 | 現行release gate config / checker |
 | DN-2〜DN-6の形成理由 | この文書 |
 
-## 20. Invariants carried forward / 形成史から残った不変項
+## 21. Invariants carried forward / 形成史から残った不変項
 
 ```text
 search association != conceptual identity

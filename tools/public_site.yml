@@ -45,10 +45,8 @@ safety:
     - "tools/docs_manifest.yml"
     - "tools/docs_graph.json"
     - "tools/docs_index.json"
-    - "tools/docs_registration_candidates.yml"
-    - "tools/docs_registration_candidates.preview.json"
-    - "tools/docs_registered_reader_question_review.yml"
-    - "tools/docs_registered_reader_question_review.preview.json"
+    - "tools/docs_registration_workbench.preview.json"
+    - "tools/docs_revision_proposals.yml"
   forbidden_filename_prefixes:
     - "000"
   forbidden_public_catalog_keys:
