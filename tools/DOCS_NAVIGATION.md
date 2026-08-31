@@ -323,6 +323,13 @@ python scripts/check_dn6_release_gate.py --mode publication
 
 publication modeは、公開日、版固有DOI、`release.status: published`、公開用read model、Public/Developer境界を追加検査する。
 
+Release gateは既知warningを「解決済み」とは扱わない。既知codeごとの許容上限以内であれば技術負債として明示的に保持し、未知warningまたは既知上限の超過はblockする。warningが減ることは許容する。
+
+```text
+release-candidate ready != publication complete
+known warning debt       != resolved warning
+```
+
 ## 11. Query and inspection / CLI確認
 
 検索：
@@ -440,6 +447,5 @@ UIをきれいに見せるために、理論本文やcanonical metadataを下流
 - [`DOCS_REGISTRATION_CANDIDATES.md`](./DOCS_REGISTRATION_CANDIDATES.md)
 - [`DOCS_REGISTRATION_WORKBENCH.md`](./DOCS_REGISTRATION_WORKBENCH.md)
 - [`READER_QUESTION_POLICY.md`](./READER_QUESTION_POLICY.md)
-- [`DN6_RELEASE_INTEGRATION.ja.md`](./DN6_RELEASE_INTEGRATION.ja.md)
 - [`PUBLIC_SITE_BUILD.ja.md`](./PUBLIC_SITE_BUILD.ja.md)
 - [`DOCS_NAVIGATION_HISTORY.md`](./DOCS_NAVIGATION_HISTORY.md)
