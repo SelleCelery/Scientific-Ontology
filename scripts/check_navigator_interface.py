@@ -12,10 +12,14 @@ PUBLIC_HTML = ROOT / "navigator" / "index.html"
 DEV_HTML = ROOT / "navigator" / "dev.html"
 APP_SOURCE = ROOT / "navigator" / "src" / "app.ts"
 LANGUAGE_CORE = ROOT / "navigator" / "src" / "language-core.ts"
+READING_CORE = ROOT / "navigator" / "src" / "reader-core.ts"
+READING_RUNTIME = ROOT / "navigator" / "dist" / "reader-core.js"
 GRAPH = ROOT / "tools" / "docs_graph.json"
 PUBLIC_GRAPH = ROOT / "tools" / "docs_public_graph.json"
 PUBLIC_CATALOG = ROOT / "tools" / "docs_public_catalog.json"
 REGISTRATION_WORKBENCH_PREVIEW = ROOT / "tools" / "docs_registration_workbench.preview.json"
+EDITORIAL_VALIDATOR = ROOT / "scripts" / "validate_navigator_editorial_selection.py"
+EDITORIAL_APPLIER = ROOT / "scripts" / "apply_navigator_editorial_selection.py"
 
 BLOCKED_MARKERS = ("99_Private_Core", "private-core", "Private_Core", "/Gate", "/U5")
 DEVELOPER_ONLY_KEYS = {
@@ -68,10 +72,14 @@ def main() -> int:
         DEV_HTML,
         APP_SOURCE,
         LANGUAGE_CORE,
+        READING_CORE,
+        READING_RUNTIME,
         GRAPH,
         PUBLIC_GRAPH,
         PUBLIC_CATALOG,
         REGISTRATION_WORKBENCH_PREVIEW,
+        EDITORIAL_VALIDATOR,
+        EDITORIAL_APPLIER,
     )
     for path in required_files:
         if not path.is_file():
@@ -150,6 +158,38 @@ def main() -> int:
         return fail("public catalog contract_version must be 0.4 for language-resolved presentation")
     catalog_docs = catalog.get("documents") or []
     catalog_paths = {str(doc.get("path") or "") for doc in catalog_docs}
+    reading_channels = data.get("reading_channels", [])
+    if not isinstance(reading_channels, list) or not reading_channels:
+        return fail("public-content reading_channels must be a non-empty list")
+    by_id = {str(doc.get("id") or doc.get("doc_id") or ""): doc for doc in catalog_docs}
+    channel_ids: set[str] = set()
+    selected_count = 0
+    for channel in reading_channels:
+        if not isinstance(channel, dict) or not isinstance(channel.get("id"), str) or not channel["id"].strip():
+            return fail("reading channel requires a non-empty id")
+        channel_id = channel["id"]
+        if channel_id in channel_ids:
+            return fail(f"duplicate reading channel id: {channel_id}")
+        channel_ids.add(channel_id)
+        for field in ("title", "description"):
+            values = channel.get(field)
+            if not isinstance(values, dict) or any(not isinstance(values.get(lang), str) or not values[lang].strip() for lang in ("ja", "en")):
+                return fail(f"reading channel requires JA/EN {field}: {channel_id}")
+        document_ids = channel.get("documents", [])
+        if not isinstance(document_ids, list):
+            return fail(f"reading channel documents must be a list: {channel_id}")
+        seen_families: set[str] = set()
+        for document_id in document_ids:
+            doc = by_id.get(str(document_id or ""))
+            if not doc:
+                return fail(f"reading channel references a non-catalog document: {channel_id}: {document_id}")
+            if str(doc.get("path") or "") not in exposed:
+                return fail(f"reading channel document is outside the Reader boundary: {channel_id}: {document_id}")
+            family = str((doc.get("presentation") or {}).get("family_key") or doc.get("id"))
+            if family in seen_families:
+                return fail(f"reading channel duplicates a JA/EN family: {channel_id}: {document_id}")
+            seen_families.add(family)
+            selected_count += 1
     pair_keys: set[str] = set()
     for doc in catalog_docs:
         presentation = doc.get("presentation") or {}
@@ -210,6 +250,10 @@ def main() -> int:
         'collapseDocumentsForLanguage',
         'collapseSearchResultsForLanguage',
         'preferredPathForLanguage',
+        'publicDocumentTitle',
+        'readingChannelEntries',
+        'function renderReadingEditor()',
+        'navigator_editorial_selection',
     )
     for fragment in required_source_fragments:
         if fragment not in app_source:
@@ -217,7 +261,7 @@ def main() -> int:
 
     print(
         "NAVIGATOR INTERFACE CHECK PASS: "
-        f"{len(layers)} public layers, {len(guides)} guide entrances, "
+        f"{len(layers)} public layers, {len(guides)} guide entrances, {len(reading_channels)} editorial channels / {selected_count} selected documents, "
         f"{len(registered)} registered + {len(provisional)} provisional public documents, "
         f"{len(pair_keys)} JA/EN presentation pairs, developer review data isolated"
     )

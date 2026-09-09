@@ -57,7 +57,7 @@ TypeScript/HTMLクライアントは、Python側と同じ生成済みread model�
 | Markdown headers | 読む前に必要な最小の人間向けメタデータ | 所有文書で編集する |
 | `tools/docs_manifest.yml` | 文書identity、公開役割、配置、型付き関係、概念所有、文書別discovery | canonical。生成物から逆編集しない |
 | `tools/docs_search.yml` | controlled topics、検索展開、正規化、重み、閾値、topic入口 | 検索・発見だけを所有する |
-| `navigator/public-content.json` | Public Navigatorの層説明、案内文書カード、入口文 | 理論定義や検索関連を所有しない |
+| `navigator/public-content.json` | Public Navigatorの層説明、案内文書カード、入口文、編集者選択の読書channel | 理論定義・S/E・検索関連・人気指標を所有しない |
 | `tools/docs_index.json` | manifest-derived canonical read model | 生成物。手編集禁止 |
 | `tools/docs_graph.json` | canonical typed relation graph | 生成物。手編集禁止 |
 | `tools/docs_public_catalog.json` | Public用文書・検索projection | 生成物。手編集禁止 |
@@ -77,7 +77,7 @@ TypeScript/HTMLクライアントは、Python側と同じ生成済みread model�
 
 Public Navigatorは次を提供する。
 
-- ルートREADMEを最初に読む入口
+- 編集者が選択できる注目・おすすめ・寄り道の読書channel（READMEを含む全Public文書が候補）
 - 体系層からの読解
 - 目的別の案内文書
 - 問い・トピック・検索からの入口
@@ -101,7 +101,7 @@ Public画面へ次を出してはならない。
 - private/pending path
 - Developer Navigatorを既定入口にする導線
 
-`仮登録 / Provisional` は表示してよい。これはcanonical文書台帳に収録済みで、メタデータの人間レビューが継続中であることだけを示す。
+Publicの初期読書面では、registration state、S/E、Authority、Scope等のrepository metadataを本文より先に表示しない。必要な管理情報はDeveloper側で確認する。
 
 ### 4.2 Developer Navigator
 
@@ -117,6 +117,8 @@ Developer Navigatorは次を扱う。
 - approve / edit / hold / rejectの作業状態
 - 明示的なreview JSON export/import
 - manifest反映前のvalidationとdry-run
+- Public catalog全文書からの注目・おすすめ・寄り道channel編集
+- editorial selection JSONのexport/import（repositoryへは直接書かない）
 
 ブラウザは `tools/docs_manifest.yml` を直接書き換えない。登録作業は [`DOCS_REGISTRATION_WORKBENCH.md`](./DOCS_REGISTRATION_WORKBENCH.md) に従う。
 
@@ -424,7 +426,7 @@ preview JSONは生成物であり、手編集しない。ブラウザのlocal st
 | title、status、scope、role、配置 | owning Markdown / `docs_manifest.yml` |
 | topic、alias、reader question | `docs_manifest.yml` または `docs_search.yml` |
 | concept ownership、typed relation | `docs_manifest.yml`、Glossary、System Map、Concept Network |
-| Public入口文、層説明、guide card | `navigator/public-content.json` |
+| Public入口文、層説明、guide card、読書channel | `navigator/public-content.json`（channel文書選択はDeveloper editor→明示的repository-side applyでも更新可） |
 | Search/graph behavior | `navigator/src/*-core.ts` とPython reference implementation |
 | UI layout、Reader、route | `navigator/src/app.ts` |
 | PublicにDeveloper情報が出る | projection builder / interface boundary |

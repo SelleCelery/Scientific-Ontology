@@ -22,6 +22,12 @@ import {
   presentationKeyForDocument,
 } from "./language-core.js";
 
+import {
+  publicDocumentTitle, publicLinkLabel, readerText, sectionSlug,
+  fragmentFromLink, sourceHeaderLines, documentForEditorialId, documentKey,
+  readingChannelEntries, readingChannels, sameEditorialSelection, type ReadingTextKey,
+} from "./reader-core.js";
+
 const PUBLIC_CATALOG_URL = "../tools/docs_public_catalog.json";
 const PUBLIC_GRAPH_URL = "../tools/docs_public_graph.json";
 const DEVELOPER_GRAPH_URL = "../tools/docs_graph.json";
@@ -43,6 +49,8 @@ let assessmentRunnerStatus: JsonObject | null = null;
 let assessmentLabState: JsonObject = { run: null, source_run_sha256: "", decisions: {} };
 let assessmentSelectedProtocolKey = "";
 let assessmentTargetPaths: string[] = [];
+let editorialState: JsonObject = { before: [], after: [] };
+let editorialMessage = "";
 let displayLang: "ja" | "en" = "ja";
 
 const app = document.querySelector<HTMLElement>("#app")!;
@@ -250,6 +258,7 @@ function matchMethodLabel(method: string): string {
 function setRoute(values: Record<string, string | undefined>): void {
   const params = new URLSearchParams();
   for (const [key, value] of Object.entries(values)) if (value) params.set(key, value);
+  if (!isDeveloper() && !params.has("lang")) params.set("lang", displayLang);
   location.hash = params.toString();
 }
 
@@ -258,6 +267,17 @@ function route(): URLSearchParams {
 }
 
 function updateHeaderControls(): void {
+  if (!isDeveloper()) {
+    const brand = document.querySelector<HTMLAnchorElement>(".brand");
+    const name = brand?.querySelector("strong");
+    const subtitle = brand?.querySelector("small");
+    if (name) name.textContent = readingText("brand");
+    if (subtitle) subtitle.textContent = readingText("subtitle");
+    brand?.setAttribute("aria-label", readingText("homeLabel"));
+    const footer = document.querySelector(".public-site-footer p");
+    if (footer) footer.textContent = readingText("footer");
+  }
+  langButton.setAttribute("aria-label", displayLang === "ja" ? "Switch to English" : "Switch to Japanese");
   headerMenuButton.textContent = displayLang === "ja" ? "メニュー" : "Menu";
   headerBackButton.textContent = displayLang === "ja" ? "← 戻る" : "← Back";
   headerTopButton.textContent = displayLang === "ja" ? "↑ 上" : "↑ Top";
@@ -277,11 +297,17 @@ function setLanguage(lang: "ja" | "en"): void {
   if (!isDeveloper() && docsIndex && docsGraph) {
     const params = route();
     let changed = false;
+    if (params.has("lang")) { params.set("lang", lang); changed = true; }
     const readPath = params.get("read");
     if (readPath) {
       const target = preferredPathForLanguage(readPath, allDocuments(), lang);
       if (target && target !== readPath) {
         params.set("read", target);
+        // JA/EN section identities are not assumed to correspond.
+        if (params.has("section")) {
+          params.delete("section");
+          params.set("editionChanged", "1");
+        }
         changed = true;
       }
     }
@@ -296,6 +322,7 @@ function setLanguage(lang: "ja" | "en"): void {
     if (changed) history.replaceState(null, "", `#${params.toString()}`);
   }
 
+  try { localStorage.setItem("scientific-ontology-reader-language:v1", lang); } catch { /* Reading works without storage. */ }
   render();
 }
 
@@ -307,8 +334,10 @@ function badge(text: string, tone = ""): HTMLElement {
   return el("span", `badge ${tone}`.trim(), text);
 }
 
+function readingText(key: ReadingTextKey): string { return readerText(displayLang, key); }
+
 function titleForDoc(doc: JsonObject): string {
-  return localized(doc.title, String(doc.id ?? doc.doc_id ?? ""));
+  return isDeveloper() ? localized(doc.title, String(doc.id ?? doc.doc_id ?? "")) : publicDocumentTitle(doc, displayLang);
 }
 
 function roleForDoc(doc: JsonObject): string {
@@ -475,6 +504,7 @@ function navBar(active: string): HTMLElement {
   const items: Array<[string, string, Record<string, string>]> = isDeveloper()
     ? [
         ["home", displayLang === "ja" ? "読む" : "Read", {}],
+        ["reading-editor", readingText("editorialEditor"), { view: "reading-editor" }],
         ["search", displayLang === "ja" ? "検索" : "Search", { view: "search" }],
         ["relations", displayLang === "ja" ? "関係マップ" : "Relations", { view: "relations" }],
         ["candidates", displayLang === "ja" ? "候補レビュー" : "Candidate review", { view: "candidates" }],
@@ -496,21 +526,7 @@ function navBar(active: string): HTMLElement {
 
 function dataBanner(): HTMLElement {
   const profile = String(docsIndex.source?.visibility_profile ?? "unknown");
-  if (!isDeveloper()) {
-    if (profile === "public") return el("div", "public-profile-spacer");
-    const notice = el("div", "public-preview-note");
-    notice.append(
-      badge(displayLang === "ja" ? "公開準備プレビュー" : "Release-preparation preview", "warn"),
-      el(
-        "span",
-        "",
-        displayLang === "ja"
-          ? "登録済み文書と公開可能な仮登録文書を同じ読解面で利用しています。仮登録もcanonical ledger上のidentityを持ちますが、metadata reviewは未完了です。レビュー情報や診断情報は公開面へ出しません。"
-          : "Registered and provisionally registered documents share this reading surface. Provisional entries are already in the canonical document ledger, while metadata review remains open; review/diagnostic data stays off the public surface.",
-      ),
-    );
-    return notice;
-  }
+  if (!isDeveloper()) return el("div", "public-profile-spacer");
 
   const wrap = el("div", "data-banner");
   wrap.append(badge(profile === "preview" ? "PREVIEW" : profile.toUpperCase(), profile === "preview" ? "warn" : ""));
@@ -534,6 +550,7 @@ function searchBox(initial = ""): HTMLElement {
   input.value = initial;
   input.placeholder = displayLang === "ja" ? "問い・用語から探す" : "Search by question or term";
   input.autocomplete = "off";
+  input.setAttribute("aria-label", input.placeholder);
   const submit = button(displayLang === "ja" ? "検索" : "Search", "button primary");
   submit.type = "submit";
   form.append(input, submit);
@@ -597,6 +614,33 @@ function publicQuestionEntrances(): Array<{ topicId: string; question: string }>
   return rows.slice(0, 8);
 }
 
+function publicReadingChannelSection(channel: JsonObject): HTMLElement | null {
+  if (channel.enabled === false) return null;
+  const entries = readingChannelEntries(channel, allDocuments(), displayLang);
+  if (!entries.length) return null;
+  const id = String(channel.id ?? "reading");
+  const section = el("section", `section reading-channel reading-channel-${id}`);
+  const eyebrowText = localized(channel.eyebrow, id.toUpperCase());
+  const title = localized(channel.title, id);
+  const description = localized(channel.description, "");
+  if (eyebrowText) section.append(eyebrow(eyebrowText));
+  if (title) section.append(el("h2", "section-title", title));
+  if (description) section.append(el("p", "section-copy", description));
+  const grid = el("div", `reading-channel-grid ${String(channel.layout ?? "cards") === "lead" ? "reading-channel-lead" : ""}`);
+  for (const { document: doc } of entries) {
+    const card = el("article", "reading-channel-card");
+    card.append(el("h3", "reading-channel-title", titleForDoc(doc)));
+    const actions = el("div", "card-actions");
+    const read = readerButton(String(doc.path), "button primary compact-button");
+    read.textContent = readingText("read");
+    actions.append(read);
+    card.append(actions);
+    grid.append(card);
+  }
+  section.append(grid);
+  return section;
+}
+
 function renderPublicHome(): HTMLElement {
   const page = el("main", "page public-home");
   page.append(navBar("home"), dataBanner());
@@ -617,38 +661,12 @@ function renderPublicHome(): HTMLElement {
     q.addEventListener("click", () => setRoute({ view: "search", q: row.question }));
     quick.append(q);
   }
-  hero.append(quick);
   page.append(hero);
-
-  const repositoryEntry = publicGuides().find(
-    (guide: JsonObject) => String(guide.id ?? "") === "repository_entry",
-  );
-
-  if (repositoryEntry) {
-    const entrySection = el("section", "section guide-section");
-    entrySection.append(
-      eyebrow("START HERE"),
-      el(
-        "h2",
-        "section-title",
-        displayLang === "ja"
-          ? "まず、存在境界論とは何かを読む"
-          : "Start with what Scientific Ontology is",
-      ),
-      el(
-        "p",
-        "section-copy",
-        displayLang === "ja"
-          ? "体系の層を選ぶ前に、ルートREADMEから全体の開始線、公開上の姿勢、v5系の進行方向を確認できます。"
-          : "Before choosing a system layer, read the root README for the framework’s opening line, public stance, and direction of the v5 series.",
-      ),
-    );
-
-    const entryGrid = el("div", "guide-grid");
-    entryGrid.append(publicGuideCard(repositoryEntry));
-    entrySection.append(entryGrid);
-    page.append(entrySection);
+  for (const channel of readingChannels(publicContent)) {
+    const section = publicReadingChannelSection(channel);
+    if (section) page.append(section);
   }
+  page.append(quick);
 
   const layerSection = el("section", "section public-section");
   layerSection.append(
@@ -680,10 +698,7 @@ function renderPublicHome(): HTMLElement {
     ),
   );
   const guideGrid = el("div", "guide-grid");
-  for (const guide of publicGuides()) {
-    if (String(guide.id ?? "") === "repository_entry") continue;
-    guideGrid.append(publicGuideCard(guide));
-  }
+  for (const guide of publicGuides()) guideGrid.append(publicGuideCard(guide));
   guideSection.append(guideGrid);
   page.append(guideSection);
 
@@ -719,15 +734,15 @@ function docCard(doc: JsonObject): HTMLElement {
   const level = String(doc.entry_level ?? doc.discovery?.entry_level ?? "");
   const state = String(doc.state ?? "");
   const top = el("div", "card-meta");
-  if (level) top.append(badge(isDeveloper() ? level : entryLevelLabel(level)));
-  if (isProvisionalDoc(doc)) top.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"));
+  if (isDeveloper() && level) top.append(badge(level));
+  if (isDeveloper() && isProvisionalDoc(doc)) top.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"));
   const languageFallback = languageFallbackLabel(doc);
   if (languageFallback) top.append(badge(languageFallback, "warn"));
   if (isDeveloper() && state) top.append(badge(state, state === "public-candidate" ? "warn" : ""));
   if (top.childElementCount) item.append(top);
   item.append(el("h3", "card-title", titleForDoc(doc)));
   const role = roleForDoc(doc);
-  if (role) item.append(el("p", "card-copy", role));
+  if (isDeveloper() && role) item.append(el("p", "card-copy", role));
   const questions = doc.reader_questions ?? doc.discovery?.reader_questions ?? {};
   const qList = questions[displayLang] ?? questions.ja ?? questions.en ?? [];
   if (qList.length) {
@@ -861,17 +876,10 @@ function renderPublicLayer(layerId: string): HTMLElement {
   const layerDocs = publicDocsForLayer(String(layer.path ?? ""));
   if (layerDocs.length) {
     const section = el("section", "section public-section");
-    const provisionalCount = layerDocs.filter((doc: JsonObject) => isProvisionalDoc(doc)).length;
     section.append(
       eyebrow(displayLang === "ja" ? "DOCUMENTS" : "DOCUMENTS"),
       el("h2", "section-title", displayLang === "ja" ? "この層で読む" : "Read in this layer"),
-      el(
-        "p",
-        "section-copy",
-        displayLang === "ja"
-          ? `登録済みと公開可能な仮登録を合わせて ${layerDocs.length} 件です。うち仮登録 ${provisionalCount} 件。仮登録もcanonical文書台帳に収録されていますが、メタデータの人間レビューは未完了です。`
-          : `${layerDocs.length} registered or public-safe provisional documents are available here, including ${provisionalCount} provisional. Provisional items are canonical ledger entries whose metadata review remains open.`,
-      ),
+      el("p", "section-copy", displayLang === "ja" ? `${layerDocs.length} 件の文書から選べます。` : `Choose from ${layerDocs.length} documents.`),
     );
     const grid = el("div", "doc-grid");
     for (const doc of layerDocs) grid.append(docCard(doc));
@@ -1040,14 +1048,14 @@ function renderSearch(query: string): HTMLElement {
     const card = el("article", `search-result card ${isDeveloper() ? "developer-search-result" : "public-search-result"}`);
     const heading = el("div", "result-heading");
     const headingMeta = el("div", "result-heading-meta");
-    if (isProvisionalDoc(result)) headingMeta.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"));
+    if (isDeveloper() && isProvisionalDoc(result)) headingMeta.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"));
     const languageFallback = languageFallbackLabel(result);
     if (languageFallback) headingMeta.append(badge(languageFallback, "warn"));
     headingMeta.append(badge(result.score.toFixed(2), "score"));
     heading.append(el("h2", "card-title", titleForDoc(result)), headingMeta);
     card.append(heading);
     const role = roleForDoc(result);
-    if (role) card.append(el("p", "card-copy", role));
+    if (isDeveloper() && role) card.append(el("p", "card-copy", role));
 
     if (isDeveloper()) {
       const reasons = el("div", "match-reasons");
@@ -1204,7 +1212,13 @@ function appendInlineMarkdown(parent: HTMLElement, text: string, sourcePath: str
         const a = document.createElement("a");
         a.textContent = label;
         if (href.startsWith("#")) {
-          a.href = href;
+          const section = fragmentFromLink(href);
+          a.href = `#${new URLSearchParams({ read: sourcePath, section, lang: displayLang }).toString()}`;
+          a.addEventListener("click", (event) => {
+            if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+            event.preventDefault();
+            scrollToReaderSection(parent.closest(".reader-article"), section, sourcePath);
+          });
         } else if (/^(https?:|mailto:)/i.test(href)) {
           a.href = href;
           a.target = "_blank";
@@ -1212,10 +1226,17 @@ function appendInlineMarkdown(parent: HTMLElement, text: string, sourcePath: str
         } else {
           const resolved = normalizeRepoPath(sourcePath, href);
           if (resolved?.endsWith(".md") && readerAllowedPaths().has(resolved)) {
-            a.href = `#${new URLSearchParams({ read: resolved }).toString()}`;
+            const target = preferredPath(resolved);
+            const targetDoc = docByPath(target);
+            if (!isDeveloper() && targetDoc) a.textContent = publicLinkLabel(label, targetDoc, displayLang);
+            // Keep a fragment only within the same edition, never translate anchors by guesswork.
+            const section = target === resolved ? fragmentFromLink(href) : "";
+            a.href = `#${new URLSearchParams({ read: target, lang: displayLang, ...(section ? { section } : {}) }).toString()}`;
             a.addEventListener("click", (event) => {
+              if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
               event.preventDefault();
-              setRoute({ read: resolved });
+              if (target === sourcePath && section) scrollToReaderSection(parent.closest(".reader-article"), section, sourcePath);
+              else setRoute({ read: target, section });
             });
           } else if (resolved) {
             a.href = encodePath(resolved);
@@ -1256,12 +1277,7 @@ function isTableSeparator(line: string): boolean {
 }
 
 function headingId(text: string, seen: Map<string, number>): string {
-  const base = text
-    .normalize("NFKC")
-    .toLowerCase()
-    .replace(/[`*_~[\](){}<>]/g, "")
-    .replace(/[^\p{Letter}\p{Number}]+/gu, "-")
-    .replace(/^-+|-+$/g, "") || "section";
+  const base = sectionSlug(text);
   const count = seen.get(base) ?? 0;
   seen.set(base, count + 1);
   return count ? `${base}-${count + 1}` : base;
@@ -1347,6 +1363,7 @@ function renderMarkdown(text: string, sourcePath: string): HTMLElement {
         if (index) quote.append(document.createElement("br"));
         appendInlineMarkdown(quote, quoteLine, sourcePath);
       }
+      quote.dataset.sourceHeader = sourceHeaderLines(quoteLines.join("\n")) ? "true" : "false";
       article.append(quote);
       continue;
     }
@@ -1382,6 +1399,7 @@ function renderMarkdown(text: string, sourcePath: string): HTMLElement {
     }
     const paragraph = el("p", "reader-paragraph");
     appendInlineMarkdown(paragraph, paragraphLines.join("\n"), sourcePath);
+    paragraph.dataset.sourceHeader = sourceHeaderLines(paragraphLines.join("\n")) ? "true" : "false";
     article.append(paragraph);
   }
   return article;
@@ -1408,6 +1426,9 @@ async function fetchUtf8Strict(path: string): Promise<{ text: string; contentTyp
 function publicRelatedDocuments(rootId: string, limit = 6): Array<{ node: JsonObject; relation: string; direction: string }> {
   const nodeMap = graphNodeMap(docsGraph);
   const seen = new Set<string>();
+  const root = nodeMap.get(rootId);
+  const rootDoc = root ? docByPath(String(root.path ?? "")) : undefined;
+  if (rootDoc) seen.add(presentationKeyForDocument(rootDoc));
   const rows: Array<{ node: JsonObject; relation: string; direction: string }> = [];
   const edges = (docsGraph.edges ?? [])
     .filter((edge: JsonObject) => edge.from === rootId || edge.to === rootId)
@@ -1443,9 +1464,7 @@ function publicReaderRelatedSection(graphNode: JsonObject): HTMLElement | null {
     el(
       "p",
       "section-copy",
-      displayLang === "ja"
-        ? "重要度順ではなく、現在のtyped relationで直接つながっている文書から表示しています。"
-        : "These are direct typed-relation neighbors, not an importance ranking.",
+      readingText("relatedIntro"),
     ),
   );
   const grid = el("div", "reader-related-grid");
@@ -1471,6 +1490,180 @@ function publicReaderRelatedSection(graphNode: JsonObject): HTMLElement | null {
   return section;
 }
 
+const READING_SIZE_KEY = "scientific-ontology-reader-size:v1";
+const READING_THEME_KEY = "scientific-ontology-reader-theme:v1";
+let readingSize = "standard";
+let readingTheme = "system";
+try {
+  const savedSize = localStorage.getItem(READING_SIZE_KEY);
+  if (savedSize && ["standard", "large", "larger"].includes(savedSize)) readingSize = savedSize;
+  const savedTheme = localStorage.getItem(READING_THEME_KEY);
+  if (savedTheme && ["system", "light", "dark", "paper"].includes(savedTheme)) readingTheme = savedTheme;
+} catch { /* Storage is optional. */ }
+
+function scrollToReaderSection(article: Element | null, section: string, path: string, updateUrl = true): boolean {
+  if (!article || !section) return false;
+  const headings = Array.from(article.querySelectorAll<HTMLElement>(".reader-h"));
+  const target = headings.find((h) => h.id === section)
+    ?? headings.find((h) => sectionSlug(h.textContent ?? "") === sectionSlug(section));
+  if (!target) return false;
+  if (updateUrl) {
+    const params = new URLSearchParams({ read: path, section: target.id, lang: displayLang });
+    history.replaceState(null, "", `#${params.toString()}`);
+  }
+  target.tabIndex = -1;
+  target.focus({ preventScroll: true });
+  target.scrollIntoView({ block: "start", behavior: "instant" });
+  return true;
+}
+
+function readerContents(article: HTMLElement, path: string): HTMLElement | null {
+  const headings = Array.from(article.querySelectorAll<HTMLElement>("h2, h3"));
+  if (!headings.length) return null;
+  const details = el("details", "reader-toc reader-toolbar-popover");
+  details.append(el("summary", "reader-toc-title reader-toolbar-button", readingText("toc")));
+  const nav = el("nav", "reader-toc-links");
+  nav.setAttribute("aria-label", readingText("toc"));
+  for (const heading of headings) {
+    const link = el("a", heading.tagName === "H3" ? "reader-toc-child" : "", heading.textContent ?? "");
+    link.href = `#${new URLSearchParams({ read: path, section: heading.id, lang: displayLang }).toString()}`;
+    link.addEventListener("click", (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      details.open = false;
+      scrollToReaderSection(article, heading.id, path);
+    });
+    nav.append(link);
+  }
+  details.append(nav);
+  return details;
+}
+
+function normalizeVisibleHeading(value: string): string {
+  return value.normalize("NFKC").replace(/\s+/g, " ").trim().toLocaleLowerCase("ja-JP");
+}
+
+function removePublicSourceHeader(article: HTMLElement): void {
+  // Public reading starts with the prose, not repository metadata. Developer mode
+  // keeps source bytes untouched and visible through its own Reader.
+  for (const child of Array.from(article.children).slice(0, 10)) {
+    if (/^H[12]$/.test(child.tagName) || child.tagName === "HR") continue;
+    if (child instanceof HTMLElement && child.dataset.sourceHeader === "true") {
+      child.remove();
+      continue;
+    }
+    break;
+  }
+}
+
+function removeDuplicateReaderTitle(article: HTMLElement, _visibleTitle: string): void {
+  // Public Reader already owns the localized display title. The first source H1
+  // is the document title even when a single-language body is shown under the
+  // other UI language, so repeating it interrupts reading.
+  article.querySelector<HTMLElement>(":scope > h1")?.remove();
+}
+
+function readingPreferences(shell: HTMLElement): HTMLElement {
+  const details = el("details", "reader-preferences reader-toolbar-popover");
+  details.append(el("summary", "reader-toolbar-button", "Aa"));
+  const panel = el("div", "reader-preferences-panel");
+  const state = el("span", "reader-tool-state");
+  state.setAttribute("role", "status");
+
+  const sizeLabel = el("label", "reader-preference-field");
+  sizeLabel.append(el("span", "", readingText("textSize")));
+  const sizeSelect = el("select", "reader-size-select");
+  sizeSelect.setAttribute("aria-label", readingText("textSize"));
+  for (const value of ["standard", "large", "larger"] as const) {
+    const option = el("option", "", readingText(value));
+    option.value = value;
+    sizeSelect.append(option);
+  }
+  sizeSelect.value = readingSize;
+  sizeLabel.append(sizeSelect);
+
+  const themeLabel = el("label", "reader-preference-field");
+  themeLabel.append(el("span", "", readingText("theme")));
+  const themeSelect = el("select", "reader-theme-select");
+  themeSelect.setAttribute("aria-label", readingText("theme"));
+  for (const [value, key] of [["system", "themeSystem"], ["light", "themeLight"], ["dark", "themeDark"], ["paper", "themePaper"]] as const) {
+    const option = el("option", "", readingText(key));
+    option.value = value;
+    themeSelect.append(option);
+  }
+  themeSelect.value = readingTheme;
+  themeLabel.append(themeSelect);
+
+  shell.dataset.textSize = readingSize;
+  shell.dataset.readingTheme = readingTheme;
+  sizeSelect.addEventListener("change", () => {
+    readingSize = sizeSelect.value;
+    shell.dataset.textSize = readingSize;
+    state.textContent = "";
+    try { localStorage.setItem(READING_SIZE_KEY, readingSize); }
+    catch { state.textContent = readingText("settingsNotSaved"); }
+  });
+  themeSelect.addEventListener("change", () => {
+    readingTheme = themeSelect.value;
+    shell.dataset.readingTheme = readingTheme;
+    state.textContent = "";
+    try { localStorage.setItem(READING_THEME_KEY, readingTheme); }
+    catch { state.textContent = readingText("settingsNotSaved"); }
+  });
+  panel.append(sizeLabel, themeLabel, el("p", "reader-selection-hint", readingText("selectionHint")), state);
+  details.append(panel);
+  return details;
+}
+
+function selectionSearchTools(article: HTMLElement): HTMLElement {
+  const tools = el("div", "reader-selection-tools");
+  tools.hidden = true;
+  const quote = el("span", "reader-selection-text");
+  const search = button(readingText("selectedSearchShort"), "button primary compact-button");
+  const close = button(readingText("selectedDismiss"), "button ghost compact-button");
+  let selectedText = "";
+  const hide = () => { tools.hidden = true; selectedText = ""; };
+  const refresh = () => {
+    const selection = window.getSelection();
+    const anchor = selection?.anchorNode;
+    const focus = selection?.focusNode;
+    if (!selection || !anchor || !focus || !article.contains(anchor) || !article.contains(focus)) { hide(); return; }
+    const text = selection.toString().replace(/\s+/g, " ").trim();
+    if (text.length < 2 || text.length > 240) { hide(); return; }
+    selectedText = text;
+    quote.textContent = text.length > 72 ? `“${text.slice(0, 72)}…”` : `“${text}”`;
+    tools.hidden = false;
+  };
+  article.addEventListener("mouseup", () => setTimeout(refresh, 0));
+  article.addEventListener("keyup", () => setTimeout(refresh, 0));
+  search.addEventListener("click", () => { if (selectedText) setRoute({ view: "search", q: selectedText }); });
+  close.addEventListener("click", hide);
+  tools.append(quote, search, close);
+  return tools;
+}
+
+function prepareReaderPresentation(shell: HTMLElement, article: HTMLElement, path: string, visibleTitle: string): HTMLElement[] {
+  removePublicSourceHeader(article);
+  removeDuplicateReaderTitle(article, visibleTitle);
+  const toolbar = el("div", "reader-toolbar");
+  const contents = readerContents(article, path);
+  if (contents) toolbar.append(contents);
+  toolbar.append(readingPreferences(shell));
+  const share = button(readingText("copyLink"), "reader-toolbar-button");
+  const state = el("span", "reader-tool-state");
+  state.setAttribute("role", "status");
+  share.addEventListener("click", () => {
+    const link = new URL(location.href);
+    link.hash = new URLSearchParams({ read: path, lang: displayLang }).toString();
+    if (!navigator.clipboard?.writeText) { state.textContent = readingText("copyFailed"); return; }
+    void navigator.clipboard.writeText(link.href)
+      .then(() => { state.textContent = readingText("copied"); })
+      .catch(() => { state.textContent = readingText("copyFailed"); });
+  });
+  toolbar.append(share, state);
+  return [toolbar, article, selectionSearchTools(article)];
+}
+
 function renderReader(path: string): HTMLElement {
   path = preferredPath(path);
   const page = el("main", `page reader-page ${isDeveloper() ? "developer-reader" : "public-reader"}`);
@@ -1480,38 +1673,32 @@ function renderReader(path: string): HTMLElement {
   page.append(back);
 
   if (!readerAllowedPaths().has(path)) {
-    page.append(el("p", "error", displayLang === "ja" ? `Reader対象外のパスです: ${path}` : `Path is outside the Reader boundary: ${path}`));
+    page.append(el("p", "error", !isDeveloper() ? readingText("unavailable") : displayLang === "ja" ? `Reader対象外のパスです: ${path}` : `Path is outside the Reader boundary: ${path}`));
     return page;
   }
 
   const doc = docByPath(path);
   const graphNode = graphNodeByPath(path);
-  const title = doc ? titleForDoc(doc) : graphNode ? displayGraphNodeLabel(graphNode) : path.split("/").at(-1) ?? path;
+  const title = doc ? titleForDoc(doc) : graphNode ? displayGraphNodeLabel(graphNode) : isDeveloper() ? path : readingText("document");
+  document.title = `${title} | ${isDeveloper() ? "Developer Navigator" : readingText("brand")}`;
   const header = el("section", "reader-header");
   const decodeState = badge(displayLang === "ja" ? "UTF-8 strict 読込中" : "UTF-8 strict loading", "warn");
   decodeState.id = "reader-decode-state";
   if (isDeveloper()) {
     header.append(eyebrow("READER · UTF-8 STRICT"), el("h1", "hero-title", title), el("div", "path", path), decodeState);
   } else {
-    header.append(eyebrow(displayLang === "ja" ? "READ" : "READ"), el("h1", "reader-public-title", title));
-    if (doc && isProvisionalDoc(doc)) {
-      const stateLine = el("div", "reader-public-state");
-      stateLine.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"), el("span", "muted", displayLang === "ja" ? "canonical文書台帳に仮登録済みです。メタデータの人間レビューは未完了です。" : "This is a canonical provisional registration; metadata review remains open."));
-      header.append(stateLine);
-    }
+    header.append(el("h1", "reader-public-title", title));
     if (doc) {
       const languageFallback = languageFallbackLabel(doc);
       if (languageFallback) {
-        const languageLine = el("div", "reader-public-state");
+        const languageLine = el("div", "reader-language-fallback");
         languageLine.append(
           badge(languageFallback, "warn"),
-          el("span", "muted", displayLang === "ja" ? "選択中のUI言語に対応する対訳文書がないため、この言語版を表示しています。" : "No counterpart exists for the selected UI language, so this single-language document is shown as a fallback."),
+          el("span", "muted", displayLang === "ja" ? "このUI言語に対応する本文がないため、利用可能な言語版を表示しています。" : "No body exists in the selected UI language, so the available edition is shown."),
         );
         header.append(languageLine);
       }
     }
-    const role = doc ? roleForDoc(doc) : "";
-    if (role) header.append(el("p", "reader-public-role", role));
   }
   const actions = el("div", "reader-actions");
   if (isDeveloper() && doc) {
@@ -1533,7 +1720,11 @@ function renderReader(path: string): HTMLElement {
     }
     actions.append(rawFileLink(path, "button ghost"));
   } else {
-    actions.append(rawFileLink(path, "text-link reader-source-link"));
+    const more = el("details", "reader-more");
+    more.append(el("summary", "reader-more-summary", "…"));
+    const source = rawFileLink(path, "text-link reader-source-link");
+    more.append(source);
+    actions.append(more);
   }
   header.append(actions);
   page.append(header);
@@ -1555,6 +1746,7 @@ function renderReader(path: string): HTMLElement {
 
   void fetchUtf8Strict(path)
     .then(({ text, contentType }) => {
+      if (!page.isConnected) return;
       decodeState.textContent = "UTF-8 strict PASS";
       decodeState.className = "badge pass";
       if (isDeveloper()) {
@@ -1565,7 +1757,16 @@ function renderReader(path: string): HTMLElement {
         );
         shell.replaceChildren(meta, renderMarkdown(text, path));
       } else {
-        shell.replaceChildren(renderMarkdown(text, path));
+        const article = renderMarkdown(text, path);
+        const sourceLanguage = doc ? documentLanguage(doc) : "und";
+        if (sourceLanguage === "ja" || sourceLanguage === "en") article.lang = sourceLanguage;
+        shell.replaceChildren(...prepareReaderPresentation(shell, article, path, title));
+        const params = route();
+        const section = params.get("section") ?? "";
+        if (section && !scrollToReaderSection(article, section, path, false)) {
+          shell.prepend(el("p", "reader-anchor-note", readingText("chapterNotFound")));
+        }
+        if (params.get("editionChanged")) shell.prepend(el("p", "reader-anchor-note", readingText("sectionAfterLanguage")));
         if (graphNode) {
           const related = publicReaderRelatedSection(graphNode);
           if (related) page.append(related);
@@ -1575,7 +1776,8 @@ function renderReader(path: string): HTMLElement {
     .catch((error) => {
       decodeState.textContent = "UTF-8 strict FAIL";
       decodeState.className = "badge danger";
-      shell.replaceChildren(el("p", "error", String((error as Error).message)));
+      if (!page.isConnected) return;
+      shell.replaceChildren(el("p", "error", isDeveloper() ? String((error as Error).message) : readingText("loadFailed")));
     });
   return page;
 }
@@ -1807,6 +2009,13 @@ function renderRelations(nodeQuery = ""): HTMLElement {
     ? displayLang === "ja" ? "文書名・概念・Glossary語・node ID" : "Document, concept, glossary term, or node ID"
     : displayLang === "ja" ? "文書名・概念・用語から探す" : "Find a document, concept, or term";
   input.value = nodeQuery;
+  if (!isDeveloper() && nodeQuery) {
+    try {
+      const node = graphNodeMap(docsGraph).get(preferredGraphNodeId(resolveGraphNode(docsGraph, nodeQuery)));
+      if (node) input.value = displayGraphNodeLabel(node);
+    } catch { input.value = ""; }
+  }
+  input.setAttribute("aria-label", input.placeholder);
   const submit = button(displayLang === "ja" ? "関係を表示" : "Show relations", "button primary");
   submit.type = "submit";
   form.append(input, submit);
@@ -1817,7 +2026,7 @@ function renderRelations(nodeQuery = ""): HTMLElement {
     try {
       setRoute({ graph: resolveGraphNode(docsGraph, value) });
     } catch (error) {
-      alert(String((error as Error).message));
+      alert(isDeveloper() ? String((error as Error).message) : readingText("graphNotFound"));
     }
   });
   section.append(form);
@@ -1840,14 +2049,14 @@ function renderRelations(nodeQuery = ""): HTMLElement {
       );
       const rootPath = String(root.path ?? "");
       const rootDoc = rootPath ? docByPath(rootPath) : undefined;
-      if (rootDoc && isProvisionalDoc(rootDoc)) current.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"));
+      if (isDeveloper() && rootDoc && isProvisionalDoc(rootDoc)) current.append(badge(displayLang === "ja" ? "仮登録" : "Provisional", "warn"));
       if (isDeveloper()) current.append(el("div", "path", String(root.path ?? root.id)));
       if ((root.type === "document" || root.type === "observed_document") && readerAllowedPaths().has(rootPath)) {
         current.append(readerButton(rootPath, isDeveloper() ? "text-button" : "button quiet-button"));
       }
       section.append(current, relationMap(rootId));
     } catch (error) {
-      section.append(el("p", "error", String((error as Error).message)));
+      section.append(el("p", "error", isDeveloper() ? String((error as Error).message) : readingText("graphNotFound")));
     }
   } else {
     const starters = el("div", "starter-node-grid public-relation-starters");
@@ -1862,6 +2071,268 @@ function renderRelations(nodeQuery = ""): HTMLElement {
     section.append(el("h2", "minor-title", displayLang === "ja" ? "例から開く" : "Open an example"), starters);
   }
   page.append(section);
+  return page;
+}
+
+
+const EDITORIAL_STORAGE_KEY = "scientific-ontology-reading-editor:v1";
+
+function canonicalReadingChannels(): JsonObject[] {
+  return deepClone(readingChannels(publicContent));
+}
+
+function loadEditorialState(): void {
+  if (!isDeveloper()) return;
+  const before = canonicalReadingChannels();
+  editorialState = { before, after: deepClone(before) };
+  try {
+    const raw = localStorage.getItem(EDITORIAL_STORAGE_KEY);
+    const parsed = raw ? JSON.parse(raw) : null;
+    if (parsed && typeof parsed === "object" && sameEditorialSelection(parsed.before, before) && Array.isArray(parsed.after)) {
+      editorialState = { before, after: deepClone(parsed.after) };
+    }
+  } catch { /* Browser-local editor state is optional. */ }
+}
+
+function saveEditorialState(): void {
+  if (!isDeveloper()) return;
+  try { localStorage.setItem(EDITORIAL_STORAGE_KEY, JSON.stringify(editorialState)); }
+  catch { editorialMessage = displayLang === "ja" ? "ブラウザ内保存に失敗しました。JSON出力は利用できます。" : "Browser-local save failed. JSON export remains available."; }
+}
+
+function editorialChannels(): JsonObject[] {
+  return Array.isArray(editorialState.after) ? editorialState.after : [];
+}
+
+function editorialChannelById(id: string): JsonObject | undefined {
+  return editorialChannels().find((channel: JsonObject) => String(channel.id ?? "") === id);
+}
+
+function editorialDocumentLabel(doc: JsonObject): string {
+  const primary = publicDocumentTitle(doc, displayLang);
+  const otherLang = displayLang === "ja" ? "en" : "ja";
+  const other = publicDocumentTitle(doc, otherLang);
+  const type = String(doc.document_type ?? "document");
+  return primary === other ? `${primary} · ${type}` : `${primary} / ${other} · ${type}`;
+}
+
+function editorialSelectionPayload(): JsonObject {
+  return {
+    navigator_editorial_selection: {
+      schema_version: "0.1",
+      target: "navigator/public-content.json",
+      before: deepClone(editorialState.before ?? []),
+      after: deepClone(editorialState.after ?? []),
+    },
+  };
+}
+
+function downloadEditorialSelection(): void {
+  const blob = new Blob([JSON.stringify(editorialSelectionPayload(), null, 2) + "\n"], { type: "application/json;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const link = el("a");
+  link.href = url;
+  link.download = "navigator_editorial_selection.json";
+  link.click();
+  URL.revokeObjectURL(url);
+}
+
+async function importEditorialSelection(file: File): Promise<void> {
+  const parsed = JSON.parse(await file.text());
+  const payload = parsed?.navigator_editorial_selection;
+  if (!payload || payload.schema_version !== "0.1" || !Array.isArray(payload.before) || !Array.isArray(payload.after)) {
+    throw new Error(displayLang === "ja" ? "navigator_editorial_selection/0.1 ではありません。" : "Expected navigator_editorial_selection/0.1.");
+  }
+  const current = canonicalReadingChannels();
+  if (!sameEditorialSelection(payload.before, current)) {
+    throw new Error(displayLang === "ja" ? "公開設定が出力時点から変わっています。現在設定から選び直してください。" : "The published reading configuration changed after this export. Rebase the selection on the current configuration.");
+  }
+  editorialState = { before: current, after: deepClone(payload.after) };
+  editorialMessage = displayLang === "ja" ? "JSONを読み込みました。まだRepositoryへは適用していません。" : "Selection JSON imported. The repository has not been changed.";
+  saveEditorialState();
+  render();
+}
+
+function familyAlreadySelected(channel: JsonObject, candidate: JsonObject): boolean {
+  const family = presentationKeyForDocument(candidate);
+  return (channel.documents ?? []).some((id: unknown) => {
+    const existing = documentForEditorialId(allDocuments(), String(id ?? ""));
+    return existing ? presentationKeyForDocument(existing) === family : false;
+  });
+}
+
+function moveEditorialDocument(channel: JsonObject, index: number, delta: number): void {
+  const docs = [...(channel.documents ?? [])];
+  const target = index + delta;
+  if (target < 0 || target >= docs.length) return;
+  [docs[index], docs[target]] = [docs[target], docs[index]];
+  channel.documents = docs;
+  saveEditorialState();
+  render();
+}
+
+function editorialChannelEditor(channel: JsonObject): HTMLElement {
+  const id = String(channel.id ?? "channel");
+  const card = el("section", "editorial-channel-card");
+  const head = el("div", "editorial-channel-head");
+  const titleWrap = el("div");
+  titleWrap.append(el("div", "eyebrow", localized(channel.eyebrow, id.toUpperCase())), el("h2", "section-title small", localized(channel.title, id)));
+  const enabledLabel = el("label", "editorial-toggle");
+  const enabled = el("input") as HTMLInputElement;
+  enabled.type = "checkbox";
+  enabled.checked = channel.enabled !== false;
+  enabled.addEventListener("change", () => { channel.enabled = enabled.checked; saveEditorialState(); render(); });
+  enabledLabel.append(enabled, el("span", "", displayLang === "ja" ? "公開する" : "Show publicly"));
+  head.append(titleWrap, enabledLabel);
+  card.append(head);
+  const description = localized(channel.description, "");
+  if (description) card.append(el("p", "section-copy", description));
+
+  const selected = el("div", "editorial-selected-list");
+  const ids = [...(channel.documents ?? [])].map((value: unknown) => String(value ?? "")).filter(Boolean);
+  if (!ids.length) selected.append(el("p", "empty", displayLang === "ja" ? "まだ文書を選んでいません。" : "No document selected yet."));
+  ids.forEach((documentId: string, index: number) => {
+    const source = documentForEditorialId(allDocuments(), documentId);
+    const row = el("article", "editorial-selected-row");
+    const main = el("div", "editorial-selected-main");
+    main.append(el("strong", "", source ? editorialDocumentLabel(source) : documentId));
+    if (source) main.append(el("div", "path", String(source.path ?? "")));
+    const actions = el("div", "editorial-row-actions");
+    const up = button(readingText("editorialUp"), "button quiet-button compact-button");
+    up.disabled = index === 0;
+    up.addEventListener("click", () => moveEditorialDocument(channel, index, -1));
+    const down = button(readingText("editorialDown"), "button quiet-button compact-button");
+    down.disabled = index === ids.length - 1;
+    down.addEventListener("click", () => moveEditorialDocument(channel, index, 1));
+    const remove = button(readingText("editorialRemove"), "button ghost compact-button");
+    remove.addEventListener("click", () => {
+      channel.documents = ids.filter((_: string, i: number) => i !== index);
+      saveEditorialState();
+      render();
+    });
+    actions.append(up, down, remove);
+    row.append(main, actions);
+    selected.append(row);
+  });
+  card.append(selected);
+
+  const chooser = el("div", "editorial-chooser");
+  chooser.append(el("h3", "minor-title", readingText("editorialAllDocs")));
+  const filter = el("input", "editorial-filter") as HTMLInputElement;
+  filter.type = "search";
+  filter.placeholder = displayLang === "ja" ? "タイトル・種類・パスで絞り込み" : "Filter by title, type, or path";
+  filter.autocomplete = "off";
+  const select = el("select", "editorial-doc-select") as HTMLSelectElement;
+  select.size = 10;
+  const renderOptions = () => {
+    const q = filter.value.trim().normalize("NFKC").toLocaleLowerCase("ja-JP");
+    select.replaceChildren();
+    for (const doc of allDocuments()) {
+      const haystack = `${editorialDocumentLabel(doc)} ${String(doc.path ?? "")}`.normalize("NFKC").toLocaleLowerCase("ja-JP");
+      if (q && !haystack.includes(q)) continue;
+      const option = el("option") as HTMLOptionElement;
+      option.value = documentKey(doc);
+      option.textContent = `${editorialDocumentLabel(doc)} · ${String(doc.path ?? "")}`;
+      select.append(option);
+    }
+  };
+  filter.addEventListener("input", renderOptions);
+  renderOptions();
+  const add = button(readingText("editorialAdd"), "button primary compact-button");
+  add.addEventListener("click", () => {
+    const source = documentForEditorialId(allDocuments(), select.value);
+    if (!source) return;
+    if (familyAlreadySelected(channel, source)) {
+      editorialMessage = displayLang === "ja" ? "同じ日英文書ファミリーは同じ枠へ重複登録しません。" : "The same JA/EN document family is not duplicated within a channel.";
+      render();
+      return;
+    }
+    channel.documents = [...ids, documentKey(source)];
+    editorialMessage = "";
+    saveEditorialState();
+    render();
+  });
+  chooser.append(filter, select, add);
+  card.append(chooser);
+  return card;
+}
+
+function editorialPublicPreview(): HTMLElement {
+  const preview = el("section", "section editorial-public-preview");
+  preview.append(
+    eyebrow("PUBLIC PREVIEW"),
+    el("h2", "section-title small", readingText("editorialPreview")),
+    el("p", "section-copy", displayLang === "ja"
+      ? "ブラウザ内の未適用選択を、Public側の表示言語解決に近い形で確認します。ここからRepositoryは変更しません。"
+      : "Preview the unapplied browser-local selection with Public-style language resolution. This does not change the repository."),
+  );
+  let count = 0;
+  for (const channel of editorialChannels()) {
+    if (channel.enabled === false) continue;
+    const entries = readingChannelEntries(channel, allDocuments(), displayLang);
+    if (!entries.length) continue;
+    count += entries.length;
+    const block = el("div", "editorial-preview-channel");
+    block.append(el("h3", "minor-title", localized(channel.title, String(channel.id ?? "reading"))));
+    const grid = el("div", `reading-channel-grid ${String(channel.layout ?? "cards") === "lead" ? "reading-channel-lead" : ""}`);
+    for (const { document: doc } of entries) {
+      const card = el("article", "reading-channel-card");
+      card.append(el("h4", "reading-channel-title", publicDocumentTitle(doc, displayLang)));
+      const actions = el("div", "card-actions");
+      const read = readerButton(String(doc.path), "button quiet-button compact-button");
+      read.textContent = readingText("read");
+      actions.append(read);
+      card.append(actions);
+      grid.append(card);
+    }
+    block.append(grid);
+    preview.append(block);
+  }
+  if (!count) preview.append(el("p", "empty", displayLang === "ja" ? "まだ公開プレビューに出す文書を選んでいません。" : "No document is selected for the public preview yet."));
+  return preview;
+}
+
+function renderReadingEditor(): HTMLElement {
+  const page = el("main", "page editorial-page");
+  page.append(navBar("reading-editor"), dataBanner());
+  const section = el("section", "section");
+  section.append(
+    eyebrow("EDITORIAL READING SURFACE"),
+    el("h1", "hero-title", displayLang === "ja" ? "トップとリコメンドを選ぶ" : "Choose top-page reading recommendations"),
+    el("p", "hero-copy", displayLang === "ja"
+      ? "READMEを含むPublic catalogの全文書から選択できます。ここでの選択は主張強度・重要度・人気を自動判定するものではありません。日英ペアはPublic側で表示言語に合わせて解決します。"
+      : "Choose from every document in the Public catalog, including README files. Editorial selection is not an automatic claim-strength, importance, or popularity ranking. JA/EN counterparts resolve to the reader's UI language."),
+    el("p", "reader-boundary-note", readingText("editorialSavedLocal")),
+  );
+  const actions = el("div", "reader-actions");
+  const exportButton = button(readingText("editorialExport"), "button primary");
+  exportButton.addEventListener("click", downloadEditorialSelection);
+  const importLabel = el("label", "button secondary file-button", readingText("editorialImport"));
+  const importInput = el("input") as HTMLInputElement;
+  importInput.type = "file";
+  importInput.accept = "application/json,.json";
+  importInput.hidden = true;
+  importInput.addEventListener("change", () => {
+    const file = importInput.files?.[0];
+    if (!file) return;
+    void importEditorialSelection(file).catch((error) => { editorialMessage = String((error as Error).message); render(); });
+  });
+  importLabel.append(importInput);
+  const reset = button(readingText("editorialReset"), "button quiet-button");
+  reset.addEventListener("click", () => {
+    const before = canonicalReadingChannels();
+    editorialState = { before, after: deepClone(before) };
+    editorialMessage = "";
+    try { localStorage.removeItem(EDITORIAL_STORAGE_KEY); } catch { /* optional */ }
+    render();
+  });
+  actions.append(exportButton, importLabel, reset);
+  section.append(actions);
+  if (editorialMessage) section.append(el("p", "editorial-message", editorialMessage));
+  page.append(section);
+  const grid = el("div", "editorial-channel-grid");
+  for (const channel of editorialChannels()) grid.append(editorialChannelEditor(channel));
+  page.append(grid, editorialPublicPreview());
   return page;
 }
 
@@ -3592,11 +4063,12 @@ function renderAudit(): HTMLElement {
 
 function errorPage(message: string): HTMLElement {
   const page = el("main", "page");
-  page.append(navBar("home"), el("p", "error", message));
+  page.append(navBar("home"), el("p", "error", isDeveloper() ? message : readingText("unavailable")));
   return page;
 }
 
 function render(): void {
+  document.title = isDeveloper() ? "Scientific Ontology | Developer Navigator" : `${readingText("brand")} | Navigator`;
   if (!docsIndex || !docsGraph) return;
   const params = route();
   let content: HTMLElement;
@@ -3608,6 +4080,7 @@ function render(): void {
     else if (params.get("graph")) content = renderRelations(String(params.get("graph")));
     else if (params.get("view") === "search") content = renderSearch(params.get("q") ?? "");
     else if (params.get("view") === "relations") content = renderRelations();
+    else if (isDeveloper() && params.get("view") === "reading-editor") content = renderReadingEditor();
     else if (isDeveloper() && params.get("view") === "candidates") content = renderCandidates(params.get("candidate") ?? "");
     else if (isDeveloper() && params.get("view") === "registered-review") content = renderRegisteredRevisionProposal(params.get("registered") ?? "");
     else if (isDeveloper() && params.get("view") === "manual-candidate") content = renderManualCandidate();
@@ -3650,6 +4123,7 @@ async function load(): Promise<void> {
     docsIndex = await catalogResponse.json();
     docsGraph = await graphResponse.json();
     publicContent = await publicContentResponse.json();
+    if (isDeveloper()) loadEditorialState();
     if (isDeveloper() && registrationWorkbenchResponse?.ok) registrationWorkbench = await registrationWorkbenchResponse.json();
     else registrationWorkbench = null;
     if (isDeveloper() && assessmentProtocolsResponse?.ok) assessmentProtocols = await assessmentProtocolsResponse.json();
@@ -3662,7 +4136,7 @@ async function load(): Promise<void> {
     updateHeaderControls();
     render();
   } catch (error) {
-    status.textContent = String((error as Error).message);
+    status.textContent = isDeveloper() ? String((error as Error).message) : readingText("loadFailed");
     status.className = "load-error";
   }
 }
@@ -3673,5 +4147,13 @@ headerBackButton.addEventListener("click", () => history.length > 1 ? history.ba
 headerTopButton.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 headerBottomButton.addEventListener("click", () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" }));
 window.addEventListener("hashchange", render);
+try {
+  const saved = localStorage.getItem("scientific-ontology-reader-language:v1");
+  if (saved === "ja" || saved === "en") displayLang = saved;
+} catch { /* Optional reader preference. */ }
+const requestedLanguage = route().get("lang");
+if (requestedLanguage === "ja" || requestedLanguage === "en") displayLang = requestedLanguage;
+document.documentElement.lang = displayLang;
+langButton.textContent = displayLang === "ja" ? "EN" : "\u65e5\u672c\u8a9e";
 updateHeaderControls();
 load();

@@ -348,3 +348,164 @@ layer placement != ontological proof
 provisional registration != completed metadata review
 review approval != automatic manifest write
 ```
+
+## Reading-first presentation
+
+Public Navigator is a reading surface, not a repository inspection surface.
+The first visible content of a Reader view is the localized document title and
+then the prose itself. Paths, filenames, document IDs, registration state,
+claim-strength labels, authority labels, scope, and public-handling metadata are
+not part of the initial Public reading surface. Developer inspection retains the
+technical identity and source bytes.
+
+This is presentation masking, not secrecy. Source files and generated public
+catalogs can still contain paths and metadata needed for repository operation.
+The Public UI must not substitute a filename/path/ID when a localized display
+title is unavailable; it uses a neutral Document label instead. A single-language
+document keeps an explicit body-language fallback notice so an English display
+title never implies that an English body exists.
+
+In source Markdown links, a label consisting only of a filename, path, or ID may
+be replaced for display by the localized catalog title. Authored descriptive
+labels, prose, code examples, source bytes, and link identity are not rewritten.
+
+### Reading controls and source metadata
+
+The Public Reader removes a recognized opening repository-metadata quote from
+its rendered prose. The current recognized fields include Document ID, Status,
+State, Scope, Language, Claim strength, Layer, Authority, Public profile, Public
+handling, Primary question, Search terms, Document role, Publication layer, and
+Maturity. This rule applies only when a block consists of repository-header
+fields; ordinary quotations are not hidden. The source Markdown is not edited by
+this presentation step.
+
+Reader controls are intentionally compact. The current surface provides:
+
+- heading-based contents;
+- three text sizes;
+- system, light, dark, and paper reading themes;
+- a copy-link action that retains the UI language;
+- a contextual action for text selected in the article, allowing the reader to
+  send an unfamiliar phrase directly to Navigator search without retyping it.
+
+The selected-text action appears only after a selection. Reading controls must
+not permanently occupy the prose area. Reader preferences use dedicated
+versioned local-storage keys and failure to persist a preference must not block
+reading. No account, analytics, external annotation service, or canonical write
+is introduced by these controls.
+
+When switching language editions, section fragments are cleared rather than
+assuming JA/EN headings are structurally identical. The article `lang` attribute
+follows the body actually shown.
+
+### Editorial reading channels
+
+Top-page reading recommendations are editor-controlled, not hard-coded in the
+application and not inferred from layer 07. `navigator/public-content.json`
+contains `reading_channels`. A channel owns presentation copy, order, layout,
+enabled state, and an ordered list of public-catalog document IDs.
+
+The initial channels are:
+
+- `featured`: documents the editor explicitly wants to put forward now;
+- `recommended`: an editor-curated reading sequence;
+- `explore`: an optional channel for deliberately distant or cross-layer reading.
+
+A channel may be empty. An empty channel renders no fabricated recommendation.
+Any public-catalog document is eligible, including root/layer/subdirectory
+README documents and documents from 07_Creative_Offshoots. Newly cataloged public
+documents become selectable without changing Navigator application code.
+
+The stored selection identifies a public-catalog document. At runtime, its
+JA/EN counterpart is resolved to the reader's UI language when a counterpart
+exists. The same language family cannot be duplicated inside one channel.
+Editorial selection does not change titles, publication eligibility, claim
+strength, authority, registration state, or canonical metadata.
+
+A future `popular` or personalized channel requires real observations, a defined
+measurement, and a privacy/retention decision. Graph centrality, claim strength,
+layer placement, editor choice, or fabricated counters must not be presented as
+popularity.
+
+### Developer editorial transaction
+
+Developer Navigator provides a Reading editor. It lists every document in the
+current Public catalog, including README documents, and lets the developer:
+
+- enable/disable a configured reading channel;
+- select documents;
+- reorder or remove selected documents;
+- filter the full catalog by readable title, document type, or path;
+- export/import `navigator_editorial_selection/0.1` JSON.
+
+Browser state is non-canonical and never writes `navigator/public-content.json`
+directly. The exported transaction contains an exact `before` binding to the
+current `reading_channels` and a proposed `after` value. Repository-side tools
+validate that binding and allow only `enabled` and `documents` to change:
+
+```text
+Developer Reading editor
+  -> navigator_editorial_selection.json
+  -> scripts/validate_navigator_editorial_selection.py
+  -> scripts/apply_navigator_editorial_selection.py       # dry-run
+  -> scripts/apply_navigator_editorial_selection.py --apply
+  -> navigator/public-content.json / reading_channels only
+```
+
+The validator rejects stale `before` state, unknown document IDs, changed channel
+semantics, duplicate document IDs, and duplicate JA/EN families. Apply is
+explicit; build, commit, push, and publication remain separate operations.
+
+### Extension boundaries
+
+Reader annotations/reviews and Developer claim assessment are different data and
+authority surfaces. Future bookmarks, highlights, notes, and reader reviews must
+not mutate canonical metadata or approve S/E. Stable document identity plus
+edition/source context is required before synchronized annotations are added;
+orphaned notes should be preserved when source text changes instead of silently
+reattaching to different prose.
+
+Recommendation sources should remain distinguishable: editor-selected, relation-
+based, intentionally distant, popularity-based, and personalized recommendations
+are not interchangeable. No graph edge is not proof of conceptual unrelatedness.
+Reader notes are not implicit consent for personalized recommendation.
+
+Reader-facing prose in 07 can be used as an entrance, but the recommendation
+system is layer-agnostic. A less formal document does not become a canonical
+definition merely because it is featured.
+
+### Checks
+
+```text
+tsc -p navigator/tsconfig.json
+node scripts/check_navigator_reading.mjs
+python scripts/check_navigator_interface.py
+node scripts/check_navigator_language_resolution.mjs
+python scripts/check_registration_workbench.py
+python scripts/serve_navigator.py --check
+python scripts/build_public_site.py
+python scripts/check_public_site.py
+python scripts/build_public_site.py --check
+```
+
+Repository-side editorial transaction checks:
+
+```text
+python scripts/validate_navigator_editorial_selection.py navigator_editorial_selection.json
+python scripts/apply_navigator_editorial_selection.py navigator_editorial_selection.json
+# explicit apply only after reviewing dry-run:
+python scripts/apply_navigator_editorial_selection.py navigator_editorial_selection.json --apply
+```
+
+Optional local browser fixtures:
+
+```text
+python scripts/check_navigator_reader_browser.py --browser <chromium-executable>
+```
+
+The browser fixture uses the real HTML/CSS/compiled modules with explicit local
+fetch/storage/clipboard test doubles. It verifies Public metadata masking,
+localized title presentation, single-language fallback, reading themes, selected-
+text search, mobile layout, and Developer selection from the complete Public
+catalog. It does not validate HTTP deployment or real browser-storage
+persistence; served-page acceptance remains a separate local check.
