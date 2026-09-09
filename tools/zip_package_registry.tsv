@@ -1,0 +1,13 @@
+# Scientific Ontology incoming ZIP registry
+# Format: sha256<TAB>layout<TAB>filename
+#
+# This file is the local Package Acceptance record.
+# Registration binds exact ZIP bytes by SHA-256 after archive/text-contract inspection.
+# It does not authorize repository mutation; Plan and Apply are separate steps.
+#
+# layout is either:
+#   relative             ZIP entries are repository-relative paths
+#   wrapped:<root-name>  a single accepted repository wrapper was stripped
+#
+# Incoming packages are forbidden from overwriting this registry.
+1258883f084a2c39a7259c39e6cbcac7e74308b778d8104803eeeeadf71171cc	relative	SO_Navigator_Reading_02_changes.zip
