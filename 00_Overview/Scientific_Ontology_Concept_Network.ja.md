@@ -351,6 +351,7 @@ Sat / Truthは、存在、観測、意味、実在性の基底を置く。
 - [`Boundary Realism Principle / 境界実在性の原則`](../01_Sat_Truth/Boundary_Realism_Principle.md)
 - [`Meaning Generation Model / 意味生成モデル`](../01_Sat_Truth/Meaning_Generation_Model.md)
 - [`Boundary Epistemological Critique / 境界認識批判`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
+- [`正しさ・個性・無・切断――論理通信トポロジー`](../01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md)
 - [`Four Axioms of Existence / 存在の四大表公理`](../01_Sat_Truth/Four_Axioms_of_Existence.md)
 
 ### 6.2 Raj / Beauty ― 動態と構築
@@ -727,6 +728,7 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 ### 認識・意味から入る
 
 - [`Meaning Generation Model`](../01_Sat_Truth/Meaning_Generation_Model.md)
+- [`正しさ・個性・無・切断――論理通信トポロジー`](../01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md)
 - [`Entropy-Attributed Difference and Cognitive Axis Formation`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 - [`Optional Axiom Modules as Cognitive Bridge`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
 
