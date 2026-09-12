@@ -6,7 +6,7 @@
 
 > Status: Methodological note
 > Scope: ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness / aporia / research method
-> Language: Japanese authoritative; English commensuration pending
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S4-S5 / E3 / U1
 > Public handling: Gödelian incompleteness is used as a methodological guide to non-closure, not as a proof of Scientific Ontology.
 
@@ -889,3 +889,7 @@ AI・制度・社会への実装
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
+
+---
+
+[英語通約](./Scientific_Ontology_Concept_Network.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

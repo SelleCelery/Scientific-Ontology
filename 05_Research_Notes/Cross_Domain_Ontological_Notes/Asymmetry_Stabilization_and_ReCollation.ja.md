@@ -3,7 +3,7 @@
 
 > Status: Research note
 > Scope: asymmetry stabilization, cosmological analogy, life, civilization, culture, recollation
-> Language: ja
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S2/S3; conceptual model, not a physics claim
 
 ---
@@ -371,3 +371,7 @@ SNS、広告、政治、金融、評価経済は、同期を大量生産する�
 > 存在とは、発生した非対称性をどのように維持し、どのように再照合し続けるかという問題である。
 
 ---
+
+---
+
+[英語通約](./Asymmetry_Stabilization_and_ReCollation.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

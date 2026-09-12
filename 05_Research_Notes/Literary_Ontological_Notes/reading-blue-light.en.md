@@ -4,7 +4,7 @@ Miyazawa Kenji’s _Spring and Asura_ and History-Field Topology
 
 > Status: Research note
 > Scope: literary-ontology
-> Language: en
+> Language: English commensurated rendering; Japanese text is authoritative
 > Claim strength: S1/S2
 
 ## Positioning
@@ -432,3 +432,7 @@ It is not science.
 But it is a non-scientific study for reading self, light, ghosts, emptiness, and connection.
 
 And I will probably continue this kind of study.
+
+---
+
+[Japanese authoritative text](./reading-blue-light.ja.md). This English commensuration is not independently authoritative.

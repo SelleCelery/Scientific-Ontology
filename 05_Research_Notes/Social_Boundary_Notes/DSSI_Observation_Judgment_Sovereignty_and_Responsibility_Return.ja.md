@@ -651,3 +651,7 @@ DSSIが返すべきものは、恐怖でも、安心でも、判決でもない�
 > DSSIは、判断を代行しない。  
 > DSSIは、運営者の説明を代行しない。  
 > DSSIは、判断条件と説明責任を、本来あるべき境界へ返す。
+
+---
+
+[英語通約](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

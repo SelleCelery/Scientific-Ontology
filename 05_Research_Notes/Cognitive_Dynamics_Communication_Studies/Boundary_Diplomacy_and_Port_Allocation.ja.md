@@ -528,3 +528,7 @@ Boundary Update
 - imports_from: [`Compression_of_Existence_Phases.ja.md`](Compression_of_Existence_Phases.ja.md)
 - implemented_by: [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md)
 - applied_by: [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
+
+---
+
+[英語通約](./Boundary_Diplomacy_and_Port_Allocation.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

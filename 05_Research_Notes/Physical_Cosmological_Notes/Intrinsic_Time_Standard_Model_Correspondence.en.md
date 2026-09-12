@@ -144,3 +144,7 @@ Rather, it lies in rereading from the side of intrinsic time and historical oper
 At the present stage, this is not a physical theory, but a correspondence table.
 
 However, a correspondence table can become an entrance to research.
+
+---
+
+[Japanese authoritative text](./Intrinsic_Time_Standard_Model_Correspondence.ja.md). This English commensuration is not independently authoritative.

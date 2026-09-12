@@ -5,7 +5,7 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: linguistic meaning / collation / return path / apperception / felt closure / emotion / thought / false closure
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Meaning_as_Collation_and_Return_Path.ja.md
+> Japanese authoritative source: [Meaning_as_Collation_and_Return_Path.ja.md](./Meaning_as_Collation_and_Return_Path.ja.md)
 > Claim strength: S3-S4 / E2 / U1 / P1-P2 / V0-V2
 > Version: 1.0.0-rc.2
 > Last updated: 2026-08-17

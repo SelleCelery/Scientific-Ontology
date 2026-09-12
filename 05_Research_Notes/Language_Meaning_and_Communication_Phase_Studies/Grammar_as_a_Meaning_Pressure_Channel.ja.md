@@ -229,3 +229,7 @@
 - Gate 2監査回答、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
 更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) を参照。
+
+---
+
+[英語通約](./Grammar_as_a_Meaning_Pressure_Channel.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

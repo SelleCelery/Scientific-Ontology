@@ -4,7 +4,7 @@
 > Status: Cross-domain ontological note  
 > Scope: cognition / attention / abstraction / sensibility / understanding / cognitive-axis formation  
 > Language: English commensurated rendering  
-> Japanese authoritative source: ./Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md  
+> Japanese authoritative source: [Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md](./Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 > Claim strength: S2-S3 / E2-E3 / U1 / P1-P2.5 / V0-V1  
 
 ---

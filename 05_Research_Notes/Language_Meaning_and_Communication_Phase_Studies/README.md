@@ -223,6 +223,6 @@ SO
 - Gate 3 public-collation candidate。
 - 作動的意味再帰、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
-# English Commensurated Rendering
+# English Commensuration Status
 
 English commensurated rendering is pending. The Japanese text is authoritative at this stage.

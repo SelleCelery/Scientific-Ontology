@@ -5,7 +5,7 @@
 > Status: Methodological note
 > Scope: ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness / aporia / research method
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Scientific_Ontology_Concept_Network.ja.md
+> Japanese authoritative source: [Scientific_Ontology_Concept_Network.ja.md](./Scientific_Ontology_Concept_Network.ja.md)
 > Claim strength: S4-S5 / E3 / U1
 > Public handling: Gödelian incompleteness is used as a methodological guide to non-closure, not as a proof of Scientific Ontology.
 

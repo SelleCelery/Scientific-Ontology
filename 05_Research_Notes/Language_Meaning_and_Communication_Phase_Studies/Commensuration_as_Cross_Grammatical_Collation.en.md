@@ -5,7 +5,7 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: commensuration / translation / grammatical frames / local-use transfer / residual preservation / return paths
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Commensuration_as_Cross_Grammatical_Collation.ja.md
+> Japanese authoritative source: [Commensuration_as_Cross_Grammatical_Collation.ja.md](./Commensuration_as_Cross_Grammatical_Collation.ja.md)
 > Claim strength: S2-S3 / E2 / U0-U1 / P1-P2 / V0-V2
 > Version: 1.0.0-rc.2
 > Last updated: 2026-08-17

@@ -665,3 +665,7 @@ Receive
 - imports_from: [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md)
 - applied_by: [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
 - tested_by: [`AI_Adoption_Collation_Checklist.md`](../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
+
+---
+
+[英語通約](./Organizational_Boundary_and_Port_Model.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

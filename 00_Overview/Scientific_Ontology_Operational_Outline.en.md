@@ -246,3 +246,7 @@ It can also be compressed into an operational stance:
 Scientific Ontology is not a theory for avoiding thought.
 
 **It is a theory for making continued thought less likely to destroy the conditions that make further thought possible.**
+
+---
+
+[Japanese authoritative text](./Scientific_Ontology_Operational_Outline.ja.md). This English commensuration is not independently authoritative.

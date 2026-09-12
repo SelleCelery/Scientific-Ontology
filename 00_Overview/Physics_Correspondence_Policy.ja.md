@@ -3,7 +3,7 @@
 
 > Status: Policy
 > Scope: physical correspondence, physical-adjacent terminology, boundary realism, observation conditions
-> Language: ja
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S2/S3; conceptual policy, not an empirical physics claim
 
 ---
@@ -571,3 +571,7 @@ Research Notes は、牙を抜く場所ではない。
 この確認は、理論を弱めるためではない。
 
 公開後も、概念が再照合可能であり続けるための最低限の境界管理である。
+
+---
+
+[英語通約](./Physics_Correspondence_Policy.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

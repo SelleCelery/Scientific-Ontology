@@ -3,7 +3,7 @@
 
 > Status: Methodological and operational note
 > Scope: truth / purpose / management / organization / AI / state / international order / historical interpretation
-> Language: Japanese authoritative; English commensuration pending
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S3-S4 / E2 / U1-U2 / P1-P2 / V0-V3
 
 ---
@@ -622,3 +622,7 @@ AIには目的関数、システム指示、評価指標、利用文脈が与え
 - [`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md)
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
+
+---
+
+[英語通約](./Truth_Management_and_Boundary_PDCA.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

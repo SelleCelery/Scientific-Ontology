@@ -1023,3 +1023,7 @@ DSSIは、入力前警告、送信制御、保留、停止、履歴保持、責�
 - tested_by: [`AI_Adoption_Collation_Checklist.md`](../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
 - applied_by: [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../../04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
 - applied_by: [`AI_Usefulness_as_a_Boundary_Function.md`](../../04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
+
+---
+
+[英語通約](./Cognitive_Dynamics_Communication_Model.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

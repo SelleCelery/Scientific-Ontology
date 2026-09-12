@@ -46,3 +46,7 @@ The expansion of the physical universe and the transition in which Mind either s
 The unresolved problems, or aporias, that we face in daily life and at the frontier of science are signs that this experimental proposition has not yet been completed, or closed.
 
 Nature and Mind, drawn by a common-rooted tension, may be understood as still continuing, on a cosmological scale, the self-re-encoding test of whether to purge existing frameworks or internalize them.
+
+---
+
+[Japanese authoritative text](./Cosmological_Topological_Dynamics.ja.md). This English commensuration is not independently authoritative.

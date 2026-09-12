@@ -5,7 +5,7 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: semantic network topology / communication phase / multilayer-temporal-higher-order networks / distance / bandwidth / return expectancy / logical-depth
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md
+> Japanese authoritative source: [Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md](./Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md)
 > Claim strength: S2-S3 (public operational layer) / S4-S5 (ontological-depth hypothesis layer) / private rendering (AMP/theological layer); E2-E3 / U0-U1 / P1-P2.5 / V0-V2
 > Version: 1.0.0-rc.2
 > Last updated: 2026-08-17

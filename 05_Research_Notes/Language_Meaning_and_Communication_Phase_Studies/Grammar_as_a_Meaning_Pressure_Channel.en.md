@@ -5,7 +5,7 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: grammar / discourse / relation / gesture / media / institutional form / meaning-pressure channel
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Grammar_as_a_Meaning_Pressure_Channel.ja.md
+> Japanese authoritative source: [Grammar_as_a_Meaning_Pressure_Channel.ja.md](./Grammar_as_a_Meaning_Pressure_Channel.ja.md)
 > Claim strength: S2-S3 / E2 / U0 / P1-P2 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08

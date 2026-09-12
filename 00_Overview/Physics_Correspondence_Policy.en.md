@@ -3,7 +3,7 @@
 
 > Status: Policy
 > Scope: physical correspondence, physical-adjacent terminology, boundary realism, observation conditions
-> Language: en
+> Language: English commensurated rendering; Japanese text is authoritative
 > Claim strength: S2/S3; conceptual policy, not an empirical physics claim
 ---
 
@@ -588,3 +588,7 @@ When adding new physical-adjacent terminology to a public document, confirm the 
 This check does not weaken the theory.
 
 It is the minimum boundary management required for the concept to remain recollatable after publication.
+
+---
+
+[Japanese authoritative text](./Physics_Correspondence_Policy.ja.md). This English commensuration is not independently authoritative.

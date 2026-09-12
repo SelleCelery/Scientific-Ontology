@@ -5,7 +5,7 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: compressed experience / literature / reading / history redeployment / qualia difference / sensitivity / worldmaking interface
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Compressed_Experience_Qualia_and_Literature.ja.md
+> Japanese authoritative source: [Compressed_Experience_Qualia_and_Literature.ja.md](./Compressed_Experience_Qualia_and_Literature.ja.md)
 > Claim strength: S3 / E2-E3 / U0-U1 / P1-P2.5 / V0-V2
 > Version: 1.0.0-rc.2
 > Last updated: 2026-08-17

@@ -7,6 +7,24 @@
 
 ---
 
+## Reading Guide: Cosmic History as Provisional Stabilization of Asymmetry
+
+The high-density model in this note concerns a cosmic history that unfolds as Mind and Nature are brought into collation. This structure can also be read more simply as a sequence in which asymmetries arise and are provisionally stabilized.
+
+Fluctuation arises from Null and gives rise to difference. Difference is unstable. At each level, locking mechanisms emerge that retain differences for a period of time.
+
+Gravity retains differences in density. Matter retains structure through bonding. Life retains itself through boundaries and metabolism. Civilization retains experience through records, institutions, law, and money. Culture brings the histories fixed by civilization back into collation with nature, bodies, and meaning.
+
+This reading guide allows the model of collation between cosmic history and the history of Mind to be presented at a lower claim strength.
+
+## Further Reading Guides
+
+This is a high-density research note that reads cosmic history and the history of Mind as an entangled communication process between Mind and Nature.
+
+For an introduction at a lower claim strength, see [Asymmetry Stabilization and Re-Collation](../Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md). It organizes the development from the universe through life, civilization, and culture as a sequence of difference, provisional stabilization, and re-collation.
+
+For an ethical and economic application, see [Return Ethics and Retaliation Conversion](../Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md). It examines a model for transforming returns arising from boundary contact into collation, compensation, and responsibility handling rather than retaliation.
+
 ## 1. Abstract
 Modern science describes the history of the universe as a vast material process that began with the Big Bang and eventually produced human beings as small accidental objects within cosmic space. Scientific Ontology does not simply reject this view, but reinterprets it from another angle.
 
@@ -101,3 +119,7 @@ Only when Mind and Nature are understood as entangled aspects of the same histor
 This document belongs to the Raj / Beauty layer of Scientific Ontology and should be read as a public conceptual essay.
 
 It is part of the public interface of the repository and does not disclose internal specifications, operational parameters, or system-specific implementation materials.
+
+---
+
+[Japanese authoritative text](./Ontological_History_of_the_Universe.ja.md). This English commensuration is not independently authoritative.

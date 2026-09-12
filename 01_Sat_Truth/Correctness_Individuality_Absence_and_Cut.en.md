@@ -1,17 +1,17 @@
 # Correctness, Individuality, Absence, and Cut
 ## An Engineering Definition of “Correct” through Logic and Communication Topology
 
-> **Layer:** 01_Sat_Truth
-> **Status:** Foundational epistemic model / active
-> **Scope:** correctness / finite-resource inquiry / individuality / absence / cut / residual / return / logical and communication topology / engineering formalization
-> **Language:** English commensuration; re-collated against the revised Japanese authoritative text
-> **Japanese authoritative source:** [`正しさ・個性・無・切断_論理通信トポロジー.ja.md`](./正しさ・個性・無・切断_論理通信トポロジー.ja.md)
-> **Claim profile:** S3-S4 / E2 / U1 / P2 / V0-V2 / R1-R3
-> **Authority:** This is the English commensurated rendering of the public canonical document that holds the engineering-operational definition of “correct” within Scientific Ontology. It does not claim authority to define truth in philosophy at large, nor correctness in standard logic, mathematics, physics, or AI theory. In any conflict of meaning, the Japanese authoritative source governs.
-> **Formation provenance:** The Human-side research hypotheses include treating “correct” as search saturation under finite resources, including individuality among its formation conditions, and allowing absence and cuts to induce search pressure. The mathematical formulations, communication model, and terminological organization include AI-side formalization. This formation provenance remains in force even after the text's movement from a private formation draft into the public canon.
-> **Non-claim:** This document is not an established general theory in standard logic, mathematics, physics, or AI. In particular, “pressure,” “absence,” and “cut” are not physical quantities unless an operational meaning is explicitly defined in the relevant section. “Correct” here is not automatically identified with philosophical truth, a mathematical truth value, or correctness in formal verification.
-> **Reading rule:** “Correct” here does not mean “possessing the final truth of the universe.” It is an engineering term for the conditions under which a finite system may continue to hold its present state as tenable.
-> **Commensuration note:** `correct / correctness` deliberately renders 正しい / 正しさ rather than `true / truth`. `absence` renders 無 in its operational sense here and is not intended to assert metaphysical nothingness. `individuality` renders 個性 and should not be read merely as personality style. `Cut` is retained as a technical term for 切断 where the text treats a broken or non-transmitting relation structurally. `undetermined` renders 未判定. `Ingress`, `Traceback`, and `Reopen` are retained as explicit subconditions of Return / Reopening.
+> Layer: 01_Sat_Truth
+> Status: Foundational epistemic model / active
+> Scope: correctness / finite-resource inquiry / individuality / absence / cut / residual / return / logical and communication topology / engineering formalization
+> Language: English commensuration; re-collated against the revised Japanese authoritative text
+> Japanese authoritative source: [`正しさ・個性・無・切断_論理通信トポロジー.ja.md`](./正しさ・個性・無・切断_論理通信トポロジー.ja.md)
+> Claim strength: S3-S4 / E2 / U1 / P2 / V0-V2 / R1-R3
+> Authority: This is the English commensurated rendering of the public canonical document that holds the engineering-operational definition of “correct” within Scientific Ontology. It does not claim authority to define truth in philosophy at large, nor correctness in standard logic, mathematics, physics, or AI theory. In any conflict of meaning, the Japanese authoritative source governs.
+> Formation provenance: The Human-side research hypotheses include treating “correct” as search saturation under finite resources, including individuality among its formation conditions, and allowing absence and cuts to induce search pressure. The mathematical formulations, communication model, and terminological organization include AI-side formalization. This formation provenance remains in force even after the text's movement from a private formation draft into the public canon.
+> Non-claim: This document is not an established general theory in standard logic, mathematics, physics, or AI. In particular, “pressure,” “absence,” and “cut” are not physical quantities unless an operational meaning is explicitly defined in the relevant section. “Correct” here is not automatically identified with philosophical truth, a mathematical truth value, or correctness in formal verification.
+> Reading rule: “Correct” here does not mean “possessing the final truth of the universe.” It is an engineering term for the conditions under which a finite system may continue to hold its present state as tenable.
+> Commensuration note: `correct / correctness` deliberately renders 正しい / 正しさ rather than `true / truth`. `absence` renders 無 in its operational sense here and is not intended to assert metaphysical nothingness. `individuality` renders 個性 and should not be read merely as personality style. `Cut` is retained as a technical term for 切断 where the text treats a broken or non-transmitting relation structurally. `undetermined` renders 未判定. `Ingress`, `Traceback`, and `Reopen` are retained as explicit subconditions of Return / Reopening.
 
 ---
 

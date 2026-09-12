@@ -238,3 +238,7 @@
 7. 文書別Revision Historyと[`CHANGELOG.md`](./CHANGELOG.md)へ何を記録するか。
 
 返りの採否は人気、感動、キャラクター権威、AIの流暢さによって決めない。
+
+---
+
+[英語通約](./Return_Intake_Log.en.md)。英語版はRI-0013までの部分通約である。

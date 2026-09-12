@@ -5,7 +5,7 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: speech production / whole pressure / sequential decompression / non-destructive segmentation / self-monitoring / residual pressure
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Speech_as_Sequential_Decompression.ja.md
+> Japanese authoritative source: [Speech_as_Sequential_Decompression.ja.md](./Speech_as_Sequential_Decompression.ja.md)
 > Claim strength: S2-S3 / E1-E2 / U0 / P1-P2 / V0-V2
 > Version: 1.0.0-rc.2
 > Last updated: 2026-08-17

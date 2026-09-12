@@ -3,7 +3,7 @@
 > Status: Terminology Registry
 > Scope: English renderings / terminology collision / commensuration risk / claim-strength caution
 > Language: English commensurated rendering
-> Japanese authoritative source: ./TERM_COLLISION_REGISTRY.md
+> Japanese authoritative source: [TERM_COLLISION_REGISTRY.ja.md](./TERM_COLLISION_REGISTRY.ja.md)
 > Public profile: P0-P2
 > Authority: Collision registry; not a definition-owner document
 

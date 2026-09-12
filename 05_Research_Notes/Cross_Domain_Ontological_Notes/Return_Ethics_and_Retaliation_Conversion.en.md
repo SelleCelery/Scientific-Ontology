@@ -3,7 +3,7 @@
 
 > Status: Cross-domain ontological note  
 > Scope: boundary ethics, return, retaliation, responsibility processing, maturation, negentropy economy, Kantian commensuration  
-> Language: en
+> Language: English commensurated rendering; Japanese text is authoritative
 > Claim strength: S2/S3; conceptual model, not legal doctrine, political prescription, or empirical economics
 
 ---
@@ -431,3 +431,7 @@ Individuality is the negotiation style specific to each boundary.
 - [`../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md`](../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md)
 - [`../Social_Boundary_Notes/Negentropy_Economy_Principles.en.md`](../Social_Boundary_Notes/Negentropy_Economy_Principles.en.md)
 - [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+
+---
+
+[Japanese authoritative text](./Return_Ethics_and_Retaliation_Conversion.ja.md). This English commensuration is not independently authoritative.

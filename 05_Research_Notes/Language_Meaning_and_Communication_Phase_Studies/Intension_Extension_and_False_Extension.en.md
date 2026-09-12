@@ -5,7 +5,7 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: intension / extension / false extension / semantic return test / citation audit / AI association audit
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Intension_Extension_and_False_Extension.ja.md
+> Japanese authoritative source: [Intension_Extension_and_False_Extension.ja.md](./Intension_Extension_and_False_Extension.ja.md)
 > Claim strength: S3 / E2-E3 / U0 / P1-P2 / V0-V2
 > Version: 1.0.0-rc.2
 > Last updated: 2026-08-17

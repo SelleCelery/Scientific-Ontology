@@ -4,7 +4,7 @@
 
 > Status: Cross-domain ontological note  
 > Scope: cognition / attention / abstraction / sensibility / understanding / cognitive-axis formation  
-> Language: Japanese authoritative; English commensuration pending  
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S2-S3 / E2-E3 / U1 / P1-P2.5 / V0-V1  
 
 ---
@@ -577,3 +577,7 @@
 - [`Scientific_Ontology_Concept_Network.ja.md`](../00_Overview/Scientific_Ontology_Concept_Network.ja.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
 - [`TERM_COLLISION_REGISTRY.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md)
+
+---
+
+[英語通約](./Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

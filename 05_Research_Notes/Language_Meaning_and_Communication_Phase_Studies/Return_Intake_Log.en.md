@@ -4,8 +4,8 @@
 > Status: Registry
 > Lifecycle: Public Living Canonical support
 > Scope: external and internal returns / disposition / recollation conditions
-> Language: English commensurated rendering
-> Japanese authoritative source: ./Return_Intake_Log.ja.md
+> Language: Partial English commensuration through RI-0013; RI-0014-RI-0018 are available only in the Japanese authoritative text
+> Japanese authoritative source: [Return_Intake_Log.ja.md](./Return_Intake_Log.ja.md)
 > Claim strength: S1-S3 / E2 / U0-U1 / P1 / V1
 > Non-claim boundary: Intake entries are not canonical definitions. In particular, scientific vocabulary such as entropy is not identified with standard thermodynamics or information theory; proposals are recorded as candidates for collation before adoption is settled.
 > Version: 1.0.0-rc.2

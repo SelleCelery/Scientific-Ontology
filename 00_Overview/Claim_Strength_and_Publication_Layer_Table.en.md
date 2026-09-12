@@ -3,7 +3,7 @@
 > Status: Public control table
 > Scope: claim strength / epistemic risk / use and safety risk / publication layer / verification / rendering distance
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Claim_Strength_and_Publication_Layer_Table.md
+> Japanese authoritative source: [Claim_Strength_and_Publication_Layer_Table.ja.md](./Claim_Strength_and_Publication_Layer_Table.ja.md)
 > Claim strength: classifier
 
 ---

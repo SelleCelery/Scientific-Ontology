@@ -145,6 +145,6 @@ Prompt / toy model / computational implementation
 - 公開後の反例、実装失敗、異議、残差は研究線へ返すが、自動統合しない。
 - **実体のない将来課題のためにファイルやサブディレクトリを先行作成しない。**
 
-# English Commensurated Rendering
+# English Commensuration Status
 
 English commensurated rendering is pending. The Japanese text is authoritative at this stage.
