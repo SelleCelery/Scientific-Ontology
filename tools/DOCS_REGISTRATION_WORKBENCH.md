@@ -179,3 +179,23 @@ Assessment Labのlocal runnerへのPOSTはcanonical manifest writeではない�
 - 公開可否そのものの自動確定
 
 これらはそれぞれのauthorityへ戻す。
+
+## v5.1 assessment-to-registration adapter
+
+Ordinary metadata review still uses the same preview and registration transaction. `document_role`, `catalog_document` and `assessment` are preserved in before/after rather than being dropped by an older whitelist.
+
+To propose an approved assessment summary, use:
+
+```text
+python scripts/prepare_assessment_registration_review.py --run <raw-run.json> --review <human-assessment-review.json> --output <outside-repository-registration-review.json>
+python scripts/validate_registration_review.py <registration-review.json> --assessment-run <raw-run.json> --assessment-review <human-assessment-review.json>
+python scripts/apply_registration_review.py <registration-review.json> --assessment-run <raw-run.json> --assessment-review <human-assessment-review.json>
+```
+
+The final command defaults to dry-run. After inspection, the author may invoke the same command with `--apply`. Then regenerate current read models. No such approval is supplied by the v5.1 migration package.
+
+The adapter checks exact raw-run bytes, frozen protocol revision/hash, before/path/kind, current source bytes, quoted lines, and edited-item schemas. A missing/hold/reject profile is not promoted. Unreviewed hotspot candidates do not become approved public scores merely because a profile was approved; their existence remains an unresolved note. A hotspot maximum never overwrites the representative profile.
+
+Directly editing an assessment in a generic registration JSON is blocked unless the supplied run/review reconstructs the exact same approved summary. Changing the source requires renewed review. This checks traceability, not the philosophical correctness of a score or the identity/authenticity of the human reviewer.
+
+Raw run, review, reinvestigation and before/after artifacts remain outside the permanent manifest and Public catalog. The manifest stores current approved summary only. Existing reader-question proposals remain pending until their own explicit transaction resolves them.

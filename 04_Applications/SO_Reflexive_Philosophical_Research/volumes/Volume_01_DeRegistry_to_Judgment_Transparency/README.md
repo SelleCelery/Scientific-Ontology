@@ -83,7 +83,7 @@ S/E/U/V/P等のラベルは、この一次観測を上書きする本体では�
 
 ## 4. 原資料と公開境界
 
-旧Optional Axiom全文は、本巻の現行主張ではなく固定テストコーパスである。公開時に現行SOの教義と誤認されるリスクがあるため、この巻には複製せず、ハッシュと研究上の位置だけを公開する。詳細は [`04_PUBLICATION_AND_EVIDENCE_MAP.md`](./04_PUBLICATION_AND_EVIDENCE_MAP.md) を参照する。
+旧Optional Axiom全文は、本巻の現行主張ではなく固定テストコーパスである。現行SOの教義と誤認されるリスクがあるため、本巻内部には複製しない。v5.1では研究プログラム直下の [`sources/`](../../sources/README.md) に、固定fixtureと同一内容の研究原資料を明示的なwrapper付きで配置した。本巻はその原資料への返路を持つが、内容を現在のSOの教義として再承認しない。詳細は [`04_PUBLICATION_AND_EVIDENCE_MAP.md`](./04_PUBLICATION_AND_EVIDENCE_MAP.md) を参照する。
 
 ## 5. 上流・下流の返路
 

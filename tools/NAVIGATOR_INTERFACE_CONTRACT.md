@@ -47,6 +47,7 @@ Relation Map
 
 Reader
   - strict UTF-8 Markdown reading
+  - local KaTeX rendering for supported TeX math
   - reached from Read, Search, or Relations
 ```
 
@@ -394,9 +395,64 @@ versioned local-storage keys and failure to persist a preference must not block
 reading. No account, analytics, external annotation service, or canonical write
 is introduced by these controls.
 
+### TeX math rendering
+
+The Reader recognizes inline `$...$` and `\(...\)` math, plus display `$$...$$`
+and `\[...\]` blocks, outside fenced/inline code. Math is rendered with a
+repository-vendored KaTeX runtime and local font assets; no CDN or runtime
+network request is required. The TeX source remains the Markdown source of
+record. If KaTeX cannot be loaded or rejects an expression, the Reader shows the
+original delimiters and TeX text rather than dropping or silently rewriting the
+expression.
+
+KaTeX output remains `htmlAndMathml` with `trust: false`. The HTML branch is the
+visual representation and is `aria-hidden`; the MathML branch remains available
+to accessibility technology but must be visually clipped by the vendored
+KaTeX stylesheet. The vendor CSS must use KaTeX's ordinary unscoped selector
+semantics and must not inherit a host-specific wrapper such as a Gradio container.
+Because removing a host wrapper lowers selector specificity, browser regression
+tests also verify that KaTeX internal classes do not leak onto similarly named
+Navigator elements, that inline/display layout remains stable, and that print
+media does not reveal the MathML branch as a second visible formula. Local font
+references must resolve inside `navigator/vendor/katex/`; remote font/CDN URLs
+are not allowed.
+
+TeX delimiters are presentation syntax, not metadata. The Reader does not
+reinterpret formulas as stronger claims, and code spans/fences remain literal.
+For subscripts and superscripts, source Markdown should use ordinary TeX syntax
+such as `$\Omega_t$`; `\_` means a literal underscore in TeX and is not a
+subscript operator.
+
 When switching language editions, section fragments are cleared rather than
 assuming JA/EN headings are structurally identical. The article `lang` attribute
 follows the body actually shown.
+
+### Reader home topology
+
+The Public home is organized by reading role, not repository numbering. Repository
+paths keep their numeric prefixes for identity and maintenance, but those numbers
+do not define the reader-facing order and are not presented as a progression.
+
+The v5.1 home order is:
+
+1. **Contact** — `07_Creative_Offshoots`, then `06_Visual_Materials`. These are
+   encounter surfaces: outward expression/operation and visual compression. They
+   are intended to create contact before requiring a sequential theory reading.
+2. **Canonical entrances** — root `README.md` and the System Map. These establish
+   what the repository is and how the whole is arranged.
+3. **Editorial reading channels** — Featured and Recommended remain explicit
+   editorial selections and do not become canonical authority by placement.
+4. **Working domains** — Applications and Research Notes.
+5. **Core system** — Truth, Beauty, and Goodness.
+6. **System guide** — Overview. Overview is a guide to how the system can be read,
+   not a mandatory first chapter.
+
+`navigator/public-content.json` owns this reader-facing grouping through
+`home_group`. The grouping does not rename repository directories, change
+canonical identity, or alter document authority. Public and Developer layer
+pages use the selected UI language to collapse an explicit JA/EN pair into one
+logical document card; Developer mode retains physical paths inside document
+detail/audit surfaces rather than duplicating the pair as two primary cards.
 
 ### Editorial reading channels
 
@@ -507,5 +563,22 @@ The browser fixture uses the real HTML/CSS/compiled modules with explicit local
 fetch/storage/clipboard test doubles. It verifies Public metadata masking,
 localized title presentation, single-language fallback, reading themes, selected-
 text search, mobile layout, and Developer selection from the complete Public
-catalog. It does not validate HTTP deployment or real browser-storage
-persistence; served-page acceptance remains a separate local check.
+catalog. It also runs a self-contained KaTeX CSS/runtime acceptance fixture that
+checks single visual rendering, accessible MathML retention, `trust: false`,
+selector non-leakage, inline/display layout, mobile overflow, and print behavior.
+Font-path closure and absence of remote CSS assets are checked statically by
+`check_navigator_interface.py`. It does not validate HTTP deployment or real
+browser-storage persistence; served-page acceptance remains a separate local
+check.
+
+## v5.1 frozen metadata projection boundary
+
+Metadata flows only as `docs_manifest.yml -> docs_index.json -> public catalog -> Reader`. Source headers may be hidden by recognizing their display keys but are not a runtime metadata source. The body is not rewritten or rescored for display.
+
+Public projection uses allowlists. Unreviewed/hold assessment state may be shown, but candidate scores, raw audit records, evidence hashes, confidence, reviewer notes and reinvestigation prompts are not public fields. Only an explicitly approved, source-bound representative and explicitly reviewed local hotspots may carry S/E. A source's older header S/E is not promoted through this path.
+
+Developer registration remains `preview -> explicit review export -> validation -> dry-run -> explicit apply`. A metadata approval is not an assessment approval. Local runner POST calls are not canonical writes; browser-to-manifest writes remain forbidden. CLI and GUI exports use the same existing review schema; no second metadata owner is introduced.
+
+The optional metadata panel, direct source display and default reading are distinct. Public masking must preserve subtitle and prose. Language switching must follow declared counterpart identity rather than merely identical filenames. `full`, `partial` and `digest` must not collapse into one completion state.
+
+Freeze verification: `check_navigator_interface.py`, `check_navigator_language_resolution.mjs`, `check_navigator_reading.mjs`, `check_navigator_reader_browser.py`, and `check_document_contract.py`. The interface/reading checks also verify the local KaTeX runtime, stylesheet/font closure, delimiter parsing, and raw-TeX fallback contract. Count assertions derive from the current catalog; author-retired fixtures are excluded explicitly. This freeze does not certify every possible user interaction or future browser version.

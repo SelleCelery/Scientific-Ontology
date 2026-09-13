@@ -553,6 +553,18 @@ When DSSI is published, presenting it only as a stand-alone browser extension ma
 
 Its relation to Scientific Ontology should therefore be made explicit at the public interface.
 
+### 13.1 Return path to the released implementation
+
+A public implementation in the DSSI Core A lineage has been released as **ConnectBits v0.5.0 Public Preview**.
+
+- Public product: ConnectBits
+- Development lineage: DSSI Core A
+- Archived release: [Zenodo record 22689146](https://zenodo.org/records/22689146)
+
+This link does not mean that ConnectBits empirically proves Scientific Ontology or that software implementation validates SO propositions. It records an `operationalized in / implemented as` relation: parts of the SO-side account of boundary, observation, history, collation, Judgment Field, and Responsibility Return Path have been carried into an implementation together with explicit stop lines and authority boundaries.
+
+The Scientific-Ontology repository does not contain the ConnectBits implementation code. Versioning, runtime behavior, release artifacts, installation instructions, and security boundaries remain owned by the DSSI / ConnectBits artifacts. This note preserves only a public return path to that external implementation.
+
 DSSI converts abstract concepts into implementation conditions:
 
 | Scientific Ontology | DSSI implementation |

@@ -8,7 +8,7 @@ format_registry:
     canonical_name_en: "Scientific Ontology"
     canonical_name_ja: "存在境界論"
     former_names_ja:
-      - "存在論科学"
+    - "存在論科学"
     repository_role: "public interface"
     strictness: "minimal-by-default"
     principle: >
@@ -24,13 +24,16 @@ format_registry:
     applies_to: "all public Markdown files unless a root metadata format requires otherwise"
     syntax: "Markdown blockquote metadata near the top of the file"
     required_fields:
-      - "Status"
+    - "Status"
     conditional_fields:
-      Layer: "Required for layer and subdirectory README files; optional for root metadata documents; usually omitted for normal claim documents."
+      Layer: "Required for layer and subdirectory README files; optional for root metadata documents; usually omitted
+        for normal claim documents."
       Scope: "Recommended when field, range, or external-domain risk is not obvious from the title."
-      Language: "Required when the document deviates from the default Japanese-authoritative / English-rendering policy."
+      Language: "Required when the document deviates from the default Japanese-authoritative / English-rendering
+        policy."
       Public profile: "Recommended for README, directory overviews, indexes, and navigation documents."
-      Claim strength: "Required when the document makes conceptual, scientific, ethical, AI, institutional, safety, policy, or application-facing claims beyond simple description."
+      Claim strength: "Required when the document makes conceptual, scientific, ethical, AI, institutional, safety,
+        policy, or application-facing claims beyond simple description."
       README type: "Optional override. Prefer path-based classification unless an exception is needed."
     accepted_aliases:
       Claim profile: "Public profile"
@@ -39,85 +42,85 @@ format_registry:
       Readme type: "README type"
       README Type: "README type"
     compatibility:
-      - old: "Claim profile"
-        new: "Public profile"
-        rule: "Treat as equivalent for README, index, map, and navigation documents during transition."
-      - old: "Claim profile"
-        new: "Claim strength"
-        rule: "Do not use for new assertion documents; migrate to Claim strength when S/E/U/P/V codes are intended."
+    - old: "Claim profile"
+      new: "Public profile"
+      rule: "Treat as equivalent for README, index, map, and navigation documents during transition."
+    - old: "Claim profile"
+      new: "Claim strength"
+      rule: "Do not use for new assertion documents; migrate to Claim strength when S/E/U/P/V codes are intended."
 
   status_values:
     core:
-      - "README"
-      - "Introduction"
-      - "Foundation"
-      - "Foundational principle"
-      - "Position"
-      - "Protocol"
-      - "Policy"
-      - "Model"
-      - "Frame"
-      - "Note"
-      - "Research note"
-      - "Research table"
-      - "Application note"
-      - "Application core"
-      - "Cross-domain ontological note"
-      - "Annotation"
-      - "Table"
-      - "Index"
-      - "Registry"
-      - "Glossary"
-      - "Meta"
-      - "Draft"
-      - "Visual note"
-      - "Working note"
-      - "Research Note / Conceptual Model / Metamodel"
-      - "Research Note / First Draft"
-      - "Cross-domain Ontological Note / First Draft"
-      - "Application Note / First Draft"
-      - "Map"
-      - "Roadmap"
-      - "Citation"
-      - "License"
-      - "Release notes"
-      - "Repository governance specification"
-      - "Public Overview Candidate / cross-series operational orientation"
-      - "Visual note"
-      - "Literary essay"
-      - "Working note"
+    - "README"
+    - "Introduction"
+    - "Foundation"
+    - "Foundational principle"
+    - "Position"
+    - "Protocol"
+    - "Policy"
+    - "Model"
+    - "Frame"
+    - "Note"
+    - "Research note"
+    - "Research table"
+    - "Application note"
+    - "Application core"
+    - "Cross-domain ontological note"
+    - "Annotation"
+    - "Table"
+    - "Index"
+    - "Registry"
+    - "Glossary"
+    - "Meta"
+    - "Draft"
+    - "Visual note"
+    - "Working note"
+    - "Research Note / Conceptual Model / Metamodel"
+    - "Research Note / First Draft"
+    - "Cross-domain Ontological Note / First Draft"
+    - "Application Note / First Draft"
+    - "Map"
+    - "Roadmap"
+    - "Citation"
+    - "License"
+    - "Release notes"
+    - "Repository governance specification"
+    - "Public Overview Candidate / cross-series operational orientation"
+    - "Visual note"
+    - "Literary essay"
+    - "Working note"
     rule: "Status describes document role, not claim strength."
 
   metadata_labels:
     public_profile:
       label: "Public profile"
       use_for:
-        - "README"
-        - "directory overview"
-        - "public navigation"
-        - "index"
-        - "system map"
+      - "README"
+      - "directory overview"
+      - "public navigation"
+      - "index"
+      - "system map"
       examples:
-        - "P0"
-        - "P0-P1"
-        - "P2"
-        - "P2.5"
-        - "P3 marker only"
+      - "P0"
+      - "P0-P1"
+      - "P2"
+      - "P2.5"
+      - "P3 marker only"
       note: "Use Public profile for public-layer placement, not detailed S/E/U/V classification."
 
     claim_strength:
       label: "Claim strength"
       canonical_label: "Claim strength"
       use_for:
-        - "assertion_document"
-        - "research_note"
-        - "application_note"
-        - "physics-proximate document"
-        - "AI/safety/institutional/policy-facing document"
+      - "assertion_document"
+      - "research_note"
+      - "application_note"
+      - "physics-proximate document"
+      - "AI/safety/institutional/policy-facing document"
       examples:
-        - "S2/E1/U0"
-        - "S2-S3/E2/U1"
-        - "S4-S5/E3/U0; Research Notes only, not physical proof"
+      - "S2/E1/U0"
+      - "S2-S3/E2/U1"
+      - "S4-S5/E3/U0; Research Notes only, not physical proof"
       components:
         S: "claim strength / conceptual assertion strength"
         E: "epistemic, critical, or external-domain misreading risk"
@@ -146,17 +149,18 @@ format_registry:
         Claim strength: "required when claims exceed simple description"
       body:
         required_order:
-          - "metadata header"
-          - "Japanese authoritative text / 日本語正本"
-          - "English commensurated rendering"
+        - "metadata header"
+        - "Japanese authoritative text / 日本語正本"
+        - "English commensurated rendering"
         conditional_sections:
-          Non-claim boundary: "Required for physics-proximate, policy-proximate, AI-implementation, legal, medical, safety, or literary-evidence risk."
+          Non-claim boundary: "Required for physics-proximate, policy-proximate, AI-implementation, legal, medical,
+            safety, or literary-evidence risk."
       ai_check:
-        - "Header exists and Status is present."
-        - "Language declaration matches actual language structure."
-        - "English rendering exists unless commensuration is marked pending."
-        - "Claim strength matches folder, status, and external-domain risk."
-        - "Standard definitions, SO definitions, analogy, and hypothesis are not silently mixed."
+      - "Header exists and Status is present."
+      - "Language declaration matches actual language structure."
+      - "English rendering exists unless commensuration is marked pending."
+      - "Claim strength matches folder, status, and external-domain risk."
+      - "Standard definitions, SO definitions, analogy, and hypothesis are not silently mixed."
 
     readme:
       label_ja: "README"
@@ -164,19 +168,19 @@ format_registry:
       status: "README"
       classification:
         precedence:
-          - "docs_manifest.document_type"
-          - "explicit_header.README type"
-          - "exact_path"
-          - "path_regex"
-          - "fallback_by_filename"
+        - "docs_manifest.document_type"
+        - "explicit_header.README type"
+        - "exact_path"
+        - "path_regex"
+        - "fallback_by_filename"
       # Backward-compatible default for checker v0.1.
       body:
         required_sections:
-          - "1. Layer Role / 層の位置づけ"
-          - "2. Public Scope and Claim Profile / 公開範囲と主張強度"
-          - "3. Included / Not Included / 含むもの・含まないもの"
-          - "4. Documents / 文書一覧"
-          - "5. Maintenance Notes / 運用メモ"
+        - "1. Layer Role / 層の位置づけ"
+        - "2. Public Scope and Claim Profile / 公開範囲と主張強度"
+        - "3. Included / Not Included / 含むもの・含まないもの"
+        - "4. Documents / 文書一覧"
+        - "5. Maintenance Notes / 運用メモ"
       variants:
         root_readme:
           label_ja: "ルートREADME"
@@ -191,24 +195,25 @@ format_registry:
             Claim strength: "not_required"
           body:
             required_sections:
-              - "Here, at the boundary"
-              - "Open the dangerous question, then cut it back"
-              - "From metaphysical roots to boundary cognition"
-              - "Research dynamics: go far, keep the return path"
-              - "Current release, citation, and public boundary"
-              - "Public Navigator / 公開ナビゲータ"
+            - "Here, at the boundary"
+            - "Open the dangerous question, then cut it back"
+            - "From metaphysical roots to boundary cognition"
+            - "Research dynamics: go far, keep the return path"
+            - "Current release, citation, and public boundary"
+            - "Public Navigator / 公開ナビゲータ"
           document_list_policy:
             mode: "navigation_only"
             require_all_same_directory_files: false
           ai_check:
-            - "Root README links to current governance documents."
-            - "Root README does not need layer README sections."
-            - "Root README does not expose private core inventories."
+          - "Root README links to current governance documents."
+          - "Root README does not need layer README sections."
+          - "Root README does not expose private core inventories."
 
         layer_readme:
           label_ja: "層README"
           match:
-            path_regex: "^(00_Overview|01_Sat_Truth|02_Raj_Beauty|03_Tam_Goodness|04_Applications|05_Research_Notes|06_Visual_Materials|99_Private_Core_Not_Included)/README\\.md$"
+            path_regex: "^(00_Overview|01_Sat_Truth|02_Raj_Beauty|03_Tam_Goodness|04_Applications|05_Research_Notes|06_Visual_Materials|99_Private_Core_Not_Included)/README\\\
+              .md$"
           header:
             Status: "required"
             Layer: "required"
@@ -218,19 +223,19 @@ format_registry:
             Claim strength: "optional"
           body:
             required_sections:
-              - "1. Layer Role / 層の位置づけ"
-              - "2. Public Scope and Claim Profile / 公開範囲と主張強度"
-              - "3. Included / Not Included / 含むもの・含まないもの"
-              - "4. Documents / 文書一覧"
-              - "5. Maintenance Notes / 運用メモ"
+            - "1. Layer Role / 層の位置づけ"
+            - "2. Public Scope and Claim Profile / 公開範囲と主張強度"
+            - "3. Included / Not Included / 含むもの・含まないもの"
+            - "4. Documents / 文書一覧"
+            - "5. Maintenance Notes / 運用メモ"
           document_list_policy:
             mode: "same_directory_public_markdown"
             require_all_same_directory_files: true
             allow_intentionally_excluded: true
           ai_check:
-            - "Documents list matches actual public Markdown files in the same directory."
-            - "Included / Not Included does not contradict the public boundary."
-            - "Maintenance notes do not expose private core materials."
+          - "Documents list matches actual public Markdown files in the same directory."
+          - "Included / Not Included does not contradict the public boundary."
+          - "Maintenance notes do not expose private core materials."
 
         subdirectory_readme:
           label_ja: "下位ディレクトリREADME"
@@ -245,59 +250,61 @@ format_registry:
             Claim strength: "optional unless the README itself makes strong claims"
           body:
             required_sections:
-              - "1. Directory Role / ディレクトリの位置づけ"
-              - "2. Public Scope / 公開範囲"
-              - "3. Documents / 文書一覧"
-              - "4. Maintenance Notes / 運用メモ"
+            - "1. Directory Role / ディレクトリの位置づけ"
+            - "2. Public Scope / 公開範囲"
+            - "3. Documents / 文書一覧"
+            - "4. Maintenance Notes / 運用メモ"
           document_list_policy:
             mode: "same_directory_public_markdown"
             require_all_same_directory_files: true
             allow_intentionally_excluded: true
           ai_check:
-            - "Documents list matches files in the subdirectory."
-            - "Subdirectory README does not need full layer-level explanation."
-            - "Claim strength is summarized as Public profile unless individual documents require S/E/U/P/V."
+          - "Documents list matches files in the subdirectory."
+          - "Subdirectory README does not need full layer-level explanation."
+          - "Claim strength is summarized as Public profile unless individual documents require S/E/U/P/V."
 
     common_fixed_explanation:
       label_ja: "共通固定説明"
       examples:
-        - "Scientific_Terminology_Protocol.md"
-        - "Publication_and_Commensuration_Policy.md"
-        - "Translation_Note.md"
-        - "TERM_COLLISION_REGISTRY.md"
-        - "TERM_COLLISION_REGISTRY.en.md"
+      - "Scientific_Terminology_Protocol.md"
+      - "Publication_and_Commensuration_Policy.md"
+      - "Translation_Note.md"
+      - "TERM_COLLISION_REGISTRY.md"
+      - "TERM_COLLISION_REGISTRY.en.md"
       purpose: "Stable public explanation, protocol, registry, or shared rule."
-      language_priority: "English priority may be higher, but Japanese conceptual authority remains where meanings diverge."
+      language_priority: "English priority may be higher, but Japanese conceptual authority remains where meanings
+        diverge."
       body:
         recommended_sections:
-          - "Purpose"
-          - "Scope"
-          - "Rules or Policy"
-          - "Exceptions"
-          - "Maintenance or Update Policy"
+        - "Purpose"
+        - "Scope"
+        - "Rules or Policy"
+        - "Exceptions"
+        - "Maintenance or Update Policy"
       ai_check:
-        - "Protocol language is stable and not conversational."
-        - "Rules do not overreach into private implementation schemas."
-        - "Terminology policies distinguish standard definitions, SO definitions, analogy, and hypothesis."
+      - "Protocol language is stable and not conversational."
+      - "Rules do not overreach into private implementation schemas."
+      - "Terminology policies distinguish standard definitions, SO definitions, analogy, and hypothesis."
 
     root_document:
       label_ja: "ルート文書"
       examples:
-        - "CITATION.md"
-        - "CITATION.cff"
-        - "RELEASE_NOTES.md"
-        - "Roadmap.md"
-        - ".zenodo.json"
-        - "LICENSE.md"
-        - "GLOSSARY.md"
+      - "CITATION.md"
+      - "CITATION.cff"
+      - "RELEASE_NOTES.md"
+      - "Roadmap.md"
+      - ".zenodo.json"
+      - "LICENSE.md"
+      - "GLOSSARY.md"
       purpose: "Repository-level metadata, navigation, release, citation, licensing, glossary, or governance document."
       language_priority: "English priority is acceptable for external metadata and citation."
       body:
-        rule: "Use the structure required by the document role. Do not force assertion-document or layer-README structure onto metadata files."
+        rule: "Use the structure required by the document role. Do not force assertion-document or layer-README
+          structure onto metadata files."
       ai_check:
-        - "DOI, version, release date, and license are consistent across root metadata."
-        - "Root README links to current DOI and navigation files."
-        - "Roadmap does not duplicate the repository map."
+      - "DOI, version, release date, and license are consistent across root metadata."
+      - "Root README links to current DOI and navigation files."
+      - "Roadmap does not duplicate the repository map."
 
   language_policy:
     default: "Japanese authoritative; English commensurated rendering included where required."
@@ -324,14 +331,14 @@ format_registry:
       integrated_bilingual:
         file: "*.md"
         accepted_language_values:
-          - "ja+en"
-          - "Japanese authoritative; English commensurated rendering included"
+        - "ja+en"
+        - "Japanese authoritative; English commensurated rendering included"
         relation: "Japanese authoritative text and English commensurated rendering in one file."
       root_readme_coauthoritative:
         file: "README.md"
         accepted_language_values:
-          - "en+ja-coauth"
-          - "English-first co-authoritative public interface; Japanese co-authoritative companion"
+        - "en+ja-coauth"
+        - "English-first co-authoritative public interface; Japanese co-authoritative companion"
         relation: >
           English and Japanese are co-authoritative for the root README's
           promotional and navigational role only. English is precision-led;
@@ -341,137 +348,142 @@ format_registry:
         file: "*.md"
         relation: "Governance, metadata, registry, table, or intentionally language-neutral document."
     required_language_header_when:
-      - "Japanese only"
-      - "English only"
-      - "English commensuration pending"
-      - "English version is a separate file"
-      - "English-first public entrance"
-      - "legacy bilingual draft"
+    - "Japanese only"
+    - "English only"
+    - "English commensuration pending"
+    - "English version is a separate file"
+    - "English-first public entrance"
+    - "legacy bilingual draft"
     recommended_values:
-      - "Japanese authoritative; English commensurated rendering included"
-      - "Japanese authoritative; English commensuration pending"
-      - "Japanese only; English commensuration pending"
-      - "English-first public entrance; Japanese remains the primary conceptual reference where meanings diverge"
-      - "English-first co-authoritative public interface; Japanese co-authoritative companion"
-      - "en+ja-coauth"
-      - "English-centered metadata"
-      - "ja+en"
-      - "ja"
-      - "en"
+    - "Japanese authoritative; English commensurated rendering included"
+    - "Japanese authoritative; English commensuration pending"
+    - "Japanese only; English commensuration pending"
+    - "English-first public entrance; Japanese remains the primary conceptual reference where meanings diverge"
+    - "English-first co-authoritative public interface; Japanese co-authoritative companion"
+    - "en+ja-coauth"
+    - "English-centered metadata"
+    - "ja+en"
+    - "ja"
+    - "en"
     validation:
-      - "Treat ja+en and the canonical integrated value as semantically equivalent."
-      - "For ja+en, verify that Japanese authoritative content and an English commensurated section are both present."
-      - "Do not interpret ja+en as two co-equal canonical language texts."
-      - "Treat en+ja-coauth as a root-README-only exception; reject it for other paths unless the Policy is revised."
-      - "For the co-authoritative root README, verify shared core invitation, non-claims, reading routes, and release metadata without requiring sentence-level symmetry."
-      - "Do not require existing integrated bilingual files to split unless a maintenance rule explicitly requires separation."
+    - "Treat ja+en and the canonical integrated value as semantically equivalent."
+    - "For ja+en, verify that Japanese authoritative content and an English commensurated section are both present."
+    - "Do not interpret ja+en as two co-equal canonical language texts."
+    - "Treat en+ja-coauth as a root-README-only exception; reject it for other paths unless the Policy is revised."
+    - "For the co-authoritative root README, verify shared core invitation, non-claims, reading routes, and release
+      metadata without requiring sentence-level symmetry."
+    - "Do not require existing integrated bilingual files to split unless a maintenance rule explicitly requires
+      separation."
 
 
   high_depth_identifiers:
     examples:
-      - "iMass"
-      - "rMass"
+    - "iMass"
+    - "rMass"
     canonical_rule: "Retain the identifier unchanged rather than expanding it into a single fixed English phrase."
     preserve:
-      - "generative lineage"
-      - "paired relations"
-      - "application-level manifestations"
-      - "claim strength"
-      - "non-identity with established scientific concepts"
-      - "unresolved residuals"
-      - "non-claim boundaries"
+    - "generative lineage"
+    - "paired relations"
+    - "application-level manifestations"
+    - "claim strength"
+    - "non-identity with established scientific concepts"
+    - "unresolved residuals"
+    - "non-claim boundaries"
     prohibit:
-      - "Treating one manifestation as an exhaustive lexical expansion."
-      - "Using fluent English to create a falsely completed definition."
+    - "Treating one manifestation as an exhaustive lexical expansion."
+    - "Using fluent English to create a falsely completed definition."
     intrinsic_time_rendering:
       noun: "intrinsic time"
       modifier: "intrinsic-time"
       forbidden:
-        - "Internal Time"
-        - "internal time"
-        - "internal-time"
+      - "Internal Time"
+      - "internal time"
+      - "internal-time"
 
   ai_final_check:
     review_phases:
       identify_document_type:
-        - "Classify as assertion_document, readme/root_readme, readme/layer_readme, readme/subdirectory_readme, common_fixed_explanation, or root_document."
-        - "Do not force one template onto another document type."
+      - "Classify as assertion_document, readme/root_readme, readme/layer_readme, readme/subdirectory_readme, common_fixed_explanation,
+        or root_document."
+      - "Do not force one template onto another document type."
       header_check:
-        - "Status exists."
-        - "Layer README and subdirectory README have Layer."
-        - "Language exists when the language structure is exceptional."
-        - "Claim strength exists when external-domain or application-facing claims are made."
-        - "README and index documents prefer Public profile over detailed Claim strength."
+      - "Status exists."
+      - "Layer README and subdirectory README have Layer."
+      - "Language exists when the language structure is exceptional."
+      - "Claim strength exists when external-domain or application-facing claims are made."
+      - "README and index documents prefer Public profile over detailed Claim strength."
       structure_check:
-        - "README uses the variant-specific structure unless an exception is justified."
-        - "Assertion document has Japanese authoritative text and English rendering, or marks commensuration pending."
-        - "Root metadata documents follow their metadata role."
+      - "README uses the variant-specific structure unless an exception is justified."
+      - "Assertion document has Japanese authoritative text and English rendering, or marks commensuration pending."
+      - "Root metadata documents follow their metadata role."
       link_check:
-        - "All local Markdown links resolve."
-        - "All image links resolve."
-        - "No ChatGPT, sandbox, /mnt/data, local workspace, or private file ID appears in public Markdown."
+      - "All local Markdown links resolve."
+      - "All image links resolve."
+      - "No ChatGPT, sandbox, /mnt/data, local workspace, or private file ID appears in public Markdown."
       public_boundary_check:
-        - "No full AMP Core, full ITS theory, private runtime architecture, soul-core, Role AP, private evaluation functions, or non-public implementation schema is disclosed."
-        - "If private terms are mentioned, they are listed only as excluded materials unless intentionally public."
+      - "No full AMP Core, full ITS theory, private runtime architecture, soul-core, Role AP, private evaluation
+        functions, or non-public implementation schema is disclosed."
+      - "If private terms are mentioned, they are listed only as excluded materials unless intentionally public."
       claim_strength_check:
-        - "Scientific terminology respects standard definitions."
-        - "Reinterpretation, analogy, SO definition, and physical correspondence candidate are distinguished."
-        - "Policy, legal, procurement, audit, medical, and safety interpretations are not overstated."
-        - "Literary readings are not presented as proof."
-        - "High-depth identifiers remain canonical identifiers and are not falsely completed through lexical expansion."
-        - "Meaning Capacity is distinguished from electrical capacitance; Meaning-Experience Capacitor remains a structural analogy."
-        - "General Port and Organizational Port retain separate definition ownership."
+      - "Scientific terminology respects standard definitions."
+      - "Reinterpretation, analogy, SO definition, and physical correspondence candidate are distinguished."
+      - "Policy, legal, procurement, audit, medical, and safety interpretations are not overstated."
+      - "Literary readings are not presented as proof."
+      - "High-depth identifiers remain canonical identifiers and are not falsely completed through lexical expansion."
+      - "Meaning Capacity is distinguished from electrical capacitance; Meaning-Experience Capacitor remains a structural
+        analogy."
+      - "General Port and Organizational Port retain separate definition ownership."
       release_metadata_check:
-        - "Version is consistent."
-        - "DOI is consistent."
-        - "Publication date is consistent."
-        - "License is consistent."
-        - "Related identifiers are consistent."
+      - "Version is consistent."
+      - "DOI is consistent."
+      - "Publication date is consistent."
+      - "License is consistent."
+      - "Related identifiers are consistent."
     severity:
       error:
-        - "missing Status header"
-        - "broken local link"
-        - "README document list omits an actual public file without reason"
-        - "internal or local-only URL in public Markdown"
-        - "DOI/version mismatch across root metadata"
-        - "private core material disclosed in public document"
-        - "standard scientific term overwritten without boundary note"
+      - "missing Status header"
+      - "broken local link"
+      - "README document list omits an actual public file without reason"
+      - "internal or local-only URL in public Markdown"
+      - "DOI/version mismatch across root metadata"
+      - "private core material disclosed in public document"
+      - "standard scientific term overwritten without boundary note"
       warning:
-        - "Language omitted despite non-standard language structure"
-        - "Claim strength omitted despite external-domain claims"
-        - "English rendering missing but not marked pending"
-        - "README maintenance notes absent or stale"
-        - "Roadmap duplicates repository map"
-        - "manifest and repository file list are not synchronized"
+      - "Language omitted despite non-standard language structure"
+      - "Claim strength omitted despite external-domain claims"
+      - "English rendering missing but not marked pending"
+      - "README maintenance notes absent or stale"
+      - "Roadmap duplicates repository map"
+      - "manifest and repository file list are not synchronized"
       info:
-        - "Header field could be shortened"
-        - "Scope could be clarified"
-        - "Document title and Status could be better aligned"
+      - "Header field could be shortened"
+      - "Scope could be clarified"
+      - "Document title and Status could be better aligned"
     forbidden_public_patterns:
-      - "chatgpt.com/g/"
-      - "sandbox:/"
-      - "/mnt/data"
-      - "10_PUBLIC_GITHUB"
-      - "file_000000"
-      - "myfiles_browser"
+    - "chatgpt.com/g/"
+    - "sandbox:/"
+    - "/mnt/data"
+    - "10_PUBLIC_GITHUB"
+    - "file_000000"
+    - "myfiles_browser"
     generated_outputs:
-      - "public_format_report.md"
-      - "public_format_report.json"
-      - "CHECKER_USAGE.md"
-      - "CHECKER_USAGE*.md"
-      - "CHECKER_EXTENSION_REPORT.md"
-      - "CHECKER_EXTENSION_REPORT*.md"
-      - ".checker_reports/"
-      - "checker_reports/"
+    - "public_format_report.md"
+    - "public_format_report.json"
+    - "CHECKER_USAGE.md"
+    - "CHECKER_USAGE*.md"
+    - "CHECKER_EXTENSION_REPORT.md"
+    - "CHECKER_EXTENSION_REPORT*.md"
+    - ".checker_reports/"
+    - "checker_reports/"
     final_review_output:
       recommended_sections:
-        - "Overall judgment"
-        - "Blocking issues"
-        - "Warnings"
-        - "Folder-by-folder check"
-        - "Metadata consistency"
-        - "Recommended fixes"
-        - "Release readiness"
+      - "Overall judgment"
+      - "Blocking issues"
+      - "Warnings"
+      - "Folder-by-folder check"
+      - "Metadata consistency"
+      - "Recommended fixes"
+      - "Release readiness"
 
   exceptions:
     rule: "Exceptions are allowed when the document explains why it deviates."
@@ -479,9 +491,9 @@ format_registry:
       japanese_only:
         language: "Japanese authoritative; English commensuration pending"
         acceptable_when:
-          - "external-domain misreading risk is high"
-          - "application checklist depends on Japanese administrative context"
-          - "draft or note not yet ready for commensuration"
+        - "external-domain misreading risk is high"
+        - "application checklist depends on Japanese administrative context"
+        - "draft or note not yet ready for commensuration"
       legacy_document:
         required_note: "Legacy format retained; public header updated."
       root_metadata:
@@ -492,14 +504,23 @@ format_registry:
   maintenance:
     file_name: "Public_Format_Registry.yml"
     update_policy:
-      - "Update when a new document type is introduced."
-      - "Update when header labels change."
-      - "Update when release-check requirements change."
-      - "Do not update merely to enforce stylistic preference."
+    - "Update when a new document type is introduced."
+    - "Update when header labels change."
+    - "Update when release-check requirements change."
+    - "Do not update merely to enforce stylistic preference."
     companion_files:
       docs_manifest: "tools/docs_manifest.yml"
       maintenance_rules: "tools/maintenance_rules.yml"
     compatibility:
-      - old: "Claim profile"
-        new: "Public profile"
-        rule: "Treat as equivalent for README and navigation documents during transition."
+    - old: "Claim profile"
+      new: "Public profile"
+      rule: "Treat as equivalent for README and navigation documents during transition."
+  metadata_ownership:
+    contract: document-contract/1.0
+    source: tools/docs_manifest.yml
+    schema: tools/docs_manifest.schema.json
+    validator: scripts/validate_docs_manifest.py
+    header_policy: legacy headers retained; metadata is owned by manifest; role-aware records supersede header
+      completeness checks
+    immutable_assets: UTF-8, path/link safety and exact-byte binding; no required Status/Layer/S/E header; no
+      reclassification of historical claims

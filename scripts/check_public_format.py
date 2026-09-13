@@ -1184,181 +1184,186 @@ def check_maintenance_for_file(
     return issues, hits
 
 
+from document_contract import enabled as contract_enabled, record_map, validate_manifest as validate_document_manifest
+
+
 def check_file(
     path: Path,
     root: Path,
     registry: Registry,
     maintenance_rules: Optional[MaintenanceRules],
     args: argparse.Namespace,
+    contract_entry: Optional[Dict[str, Any]] = None,
 ) -> Tuple[List[Issue], int, int, int, Dict[str, Any]]:
     issues: List[Issue] = []
     text = read_text(path)
     relative = relpath(path, root)
     meta_raw, meta_lines, header_start_line = parse_metadata_header(text)
     meta = normalize_metadata(meta_raw, registry)
-    doc_type = classify_document(path, root, registry, meta)
+    doc_type = (contract_entry or {}).get("document_type") or (contract_entry or {}).get("document_role") or classify_document(path, root, registry, meta)
     checked_links = 0
     external_checked = 0
     maintenance_hits = 0
 
-    if not meta:
-        issues.append(
-            Issue(
-                "error",
-                relative,
-                1,
-                "HEADER_MISSING",
-                "Markdown metadata header was not found near the top of the file.",
-                "Add blockquote metadata such as '> Status: Note' near the title.",
-            )
-        )
-    else:
-        if header_start_line > 3:
-            issues.append(
-                Issue(
-                    "info",
-                    relative,
-                    header_start_line,
-                    "HEADER_POSITION",
-                    "Metadata header is not immediately at the top; accepted, but consider keeping it directly under the title.",
-                    "Keep '# Title' followed by '> Status: ...' for consistent public documents.",
-                )
-            )
-        for required in registry.required_header_fields:
-            if required not in meta:
-                issues.append(
-                    Issue(
-                        "error",
-                        relative,
-                        1,
-                        f"HEADER_FIELD_MISSING_{required.upper().replace(' ', '_')}",
-                        f"Required metadata field '{required}' is missing.",
-                        f"Add '> {required}: <document role>'.",
-                    )
-                )
-        status = meta.get("Status")
-        if status and not status_is_accepted(status, registry.status_values):
-            line = meta_lines.get("Status", 1)
-            issues.append(
-                Issue(
-                    "warning",
-                    relative,
-                    line,
-                    "STATUS_VALUE_UNREGISTERED",
-                    f"Status value '{status}' is not registered in Public_Format_Registry.yml.",
-                    "Either use a registered Status value or add this role to the registry.",
-                )
-            )
-
-    if doc_type in {"root_readme", "layer_readme", "subdirectory_readme", "readme"}:
-        if registry.readme_requires_layer(doc_type) and "Layer" not in meta:
+    if not contract_entry:
+        if not meta:
             issues.append(
                 Issue(
                     "error",
                     relative,
                     1,
-                    "README_LAYER_MISSING",
-                    f"{doc_type} files require a Layer metadata field.",
-                    "Add '> Layer: <directory layer name>'.",
+                    "HEADER_MISSING",
+                    "Markdown metadata header was not found near the top of the file.",
+                    "Add blockquote metadata such as '> Status: Note' near the title.",
                 )
             )
-        for section in registry.readme_required_sections(doc_type):
-            if section not in text:
+        else:
+            if header_start_line > 3:
+                issues.append(
+                    Issue(
+                        "info",
+                        relative,
+                        header_start_line,
+                        "HEADER_POSITION",
+                        "Metadata header is not immediately at the top; accepted, but consider keeping it directly under the title.",
+                        "Keep '# Title' followed by '> Status: ...' for consistent public documents.",
+                    )
+                )
+            for required in registry.required_header_fields:
+                if required not in meta:
+                    issues.append(
+                        Issue(
+                            "error",
+                            relative,
+                            1,
+                            f"HEADER_FIELD_MISSING_{required.upper().replace(' ', '_')}",
+                            f"Required metadata field '{required}' is missing.",
+                            f"Add '> {required}: <document role>'.",
+                        )
+                    )
+            status = meta.get("Status")
+            if status and not status_is_accepted(status, registry.status_values):
+                line = meta_lines.get("Status", 1)
                 issues.append(
                     Issue(
                         "warning",
                         relative,
-                        1,
-                        "README_SECTION_MISSING",
-                        f"{doc_type} does not contain required section: {section}",
-                        "Add the missing section or document why this README is an exception.",
+                        line,
+                        "STATUS_VALUE_UNREGISTERED",
+                        f"Status value '{status}' is not registered in Public_Format_Registry.yml.",
+                        "Either use a registered Status value or add this role to the registry.",
                     )
                 )
-        policy = registry.readme_document_list_policy(doc_type)
-        require_all = bool(policy.get("require_all_same_directory_files", doc_type in {"layer_readme", "subdirectory_readme", "readme"}))
-        if require_all:
-            siblings = sorted(
-                sibling.name
-                for sibling in path.parent.glob("*.md")
-                if sibling.name != "README.md"
-                and not is_excluded_path(sibling, root, set())
-            )
-            for sibling in siblings:
-                if sibling not in text:
+
+        if doc_type in {"root_readme", "layer_readme", "subdirectory_readme", "readme"}:
+            if registry.readme_requires_layer(doc_type) and "Layer" not in meta:
+                issues.append(
+                    Issue(
+                        "error",
+                        relative,
+                        1,
+                        "README_LAYER_MISSING",
+                        f"{doc_type} files require a Layer metadata field.",
+                        "Add '> Layer: <directory layer name>'.",
+                    )
+                )
+            for section in registry.readme_required_sections(doc_type):
+                if section not in text:
                     issues.append(
                         Issue(
                             "warning",
                             relative,
                             1,
-                            "README_DOCUMENT_LIST_STALE",
-                            f"README may omit Markdown file in same directory: {sibling}",
-                            "Add it to 'Documents / 文書一覧' or mark it as intentionally excluded.",
+                            "README_SECTION_MISSING",
+                            f"{doc_type} does not contain required section: {section}",
+                            "Add the missing section or document why this README is an exception.",
                         )
                     )
+            policy = registry.readme_document_list_policy(doc_type)
+            require_all = bool(policy.get("require_all_same_directory_files", doc_type in {"layer_readme", "subdirectory_readme", "readme"}))
+            if require_all:
+                siblings = sorted(
+                    sibling.name
+                    for sibling in path.parent.glob("*.md")
+                    if sibling.name != "README.md"
+                    and not is_excluded_path(sibling, root, set())
+                )
+                for sibling in siblings:
+                    if sibling not in text:
+                        issues.append(
+                            Issue(
+                                "warning",
+                                relative,
+                                1,
+                                "README_DOCUMENT_LIST_STALE",
+                                f"README may omit Markdown file in same directory: {sibling}",
+                                "Add it to 'Documents / 文書一覧' or mark it as intentionally excluded.",
+                            )
+                        )
 
-    language = meta.get("Language", "")
-    language_lower = language.lower()
-    if language_lower in {"ja+en", "japanese authoritative; english commensurated rendering included"}:
-        if not has_english_rendering(text):
+        language = meta.get("Language", "")
+        language_lower = language.lower()
+        if language_lower in {"ja+en", "japanese authoritative; english commensurated rendering included"}:
+            if not has_english_rendering(text):
+                issues.append(
+                    Issue(
+                        "warning",
+                        relative,
+                        meta_lines.get("Language", 1),
+                        "ENGLISH_RENDERING_NOT_DETECTED",
+                        "Language metadata indicates ja+en, but an English rendering section was not detected.",
+                        "Add 'English commensurated rendering' or adjust the Language metadata.",
+                    )
+                )
+        if "japanese only" in language_lower and "pending" not in language_lower:
             issues.append(
                 Issue(
-                    "warning",
+                    "info",
                     relative,
                     meta_lines.get("Language", 1),
-                    "ENGLISH_RENDERING_NOT_DETECTED",
-                    "Language metadata indicates ja+en, but an English rendering section was not detected.",
-                    "Add 'English commensurated rendering' or adjust the Language metadata.",
+                    "JAPANESE_ONLY_WITHOUT_PENDING_MARKER",
+                    "Japanese-only language metadata is present without an explicit commensuration-pending marker.",
+                    "Use 'Japanese only; English commensuration pending' if this is temporary.",
                 )
             )
-    if "japanese only" in language_lower and "pending" not in language_lower:
-        issues.append(
-            Issue(
-                "info",
-                relative,
-                meta_lines.get("Language", 1),
-                "JAPANESE_ONLY_WITHOUT_PENDING_MARKER",
-                "Japanese-only language metadata is present without an explicit commensuration-pending marker.",
-                "Use 'Japanese only; English commensuration pending' if this is temporary.",
-            )
-        )
 
-    external_terms = contains_external_domain_claim_terms(text)
-    if external_terms:
-        if doc_type in {"assertion_document", "research_note", "application_note"}:
-            if "Claim strength" not in meta:
+        external_terms = contains_external_domain_claim_terms(text)
+        if external_terms:
+            if doc_type in {"assertion_document", "research_note", "application_note"}:
+                if "Claim strength" not in meta:
+                    issues.append(
+                        Issue(
+                            "warning",
+                            relative,
+                            1,
+                            "CLAIM_STRENGTH_SUGGESTED",
+                            "External-domain or application-facing terms were detected, but Claim strength metadata is absent.",
+                            "Add '> Claim strength: Sx/Ex/Ux'. Use '> Public profile: Px' for directory navigation, not detailed claim classification.",
+                        )
+                    )
+            elif doc_type in {"layer_readme", "subdirectory_readme"}:
+                if "Public profile" not in meta and "Claim strength" not in meta:
+                    issues.append(
+                        Issue(
+                            "warning",
+                            relative,
+                            1,
+                            "PUBLIC_PROFILE_SUGGESTED",
+                            "External-domain or application-facing terms were detected in a README, but Public profile metadata is absent.",
+                            "Add '> Public profile: Px' or use a justified exception note.",
+                        )
+                    )
+            if doc_type not in {"root_readme", "root_document"} and not has_non_claim_boundary(text):
                 issues.append(
                     Issue(
                         "warning",
                         relative,
                         1,
-                        "CLAIM_STRENGTH_SUGGESTED",
-                        "External-domain or application-facing terms were detected, but Claim strength metadata is absent.",
-                        "Add '> Claim strength: Sx/Ex/Ux'. Use '> Public profile: Px' for directory navigation, not detailed claim classification.",
+                        "NON_CLAIM_BOUNDARY_SUGGESTED",
+                        "External-domain terms were detected without an obvious non-claim boundary statement.",
+                        "Add a sentence such as 'This is not a replacement for standard science' where applicable.",
                     )
                 )
-        elif doc_type in {"layer_readme", "subdirectory_readme"}:
-            if "Public profile" not in meta and "Claim strength" not in meta:
-                issues.append(
-                    Issue(
-                        "warning",
-                        relative,
-                        1,
-                        "PUBLIC_PROFILE_SUGGESTED",
-                        "External-domain or application-facing terms were detected in a README, but Public profile metadata is absent.",
-                        "Add '> Public profile: Px' or use a justified exception note.",
-                    )
-                )
-        if doc_type not in {"root_readme", "root_document"} and not has_non_claim_boundary(text):
-            issues.append(
-                Issue(
-                    "warning",
-                    relative,
-                    1,
-                    "NON_CLAIM_BOUNDARY_SUGGESTED",
-                    "External-domain terms were detected without an obvious non-claim boundary statement.",
-                    "Add a sentence such as 'This is not a replacement for standard science' where applicable.",
-                )
-            )
 
     for pattern in registry.forbidden_patterns:
         start = 0
@@ -1378,8 +1383,16 @@ def check_file(
             )
             start = idx + max(len(pattern), 1)
 
-    maint_issues, maintenance_hits = check_maintenance_for_file(path, root, text, meta, doc_type, maintenance_rules, registry, args)
-    issues.extend(maint_issues)
+    asset_role = (contract_entry or {}).get("document_role", "")
+    if asset_role not in {"fixed_research_source", "provenance_asset", "historical_support", "historical_record", "internal_support"}:
+        maint_issues, maintenance_hits = check_maintenance_for_file(path, root, text, meta, doc_type, maintenance_rules, registry, args)
+        if contract_entry:
+            maint_issues = [i for i in maint_issues if i.code not in {
+                "ASSERTION_PUBLIC_PROFILE_WITHOUT_CLAIM_STRENGTH",
+                "README_CLAIM_STRENGTH_USED_WITHOUT_PUBLIC_PROFILE",
+                "PROFILE_LABEL_DRIFT",
+            }]
+        issues.extend(maint_issues)
 
     anchor_cache: Dict[Path, set[str]] = {}
     for target, line, is_image in extract_markdown_links(text):
@@ -1614,6 +1627,8 @@ def check_manifest(
         return issues, 0
     docs_checked = 0
     listed_paths: set[str] = set()
+    if contract_enabled(manifest.data):
+        listed_paths.update(str(a["path"]) for a in manifest.data.get("managed_assets", []))
     release_gate = bool(args.release_gate)
 
     for raw_doc in manifest.documents:
@@ -1652,7 +1667,7 @@ def check_manifest(
         public_profile = str(raw_doc.get("public_profile", "")).strip()
 
         for field in manifest.required_fields:
-            if field not in raw_doc or raw_doc.get(field) in {None, ""}:
+            if field not in raw_doc or raw_doc.get(field) in (None, ""):
                 issues.append(
                     Issue(
                         "warning",
@@ -1725,7 +1740,7 @@ def check_manifest(
             continue
 
         file_info = file_index.get(path_value)
-        if file_info:
+        if file_info and not contract_enabled(manifest.data):
             meta = file_info.get("meta", {})
             actual_doc_type = file_info.get("doc_type", "")
             if doc_type and actual_doc_type and doc_type != actual_doc_type:
@@ -2282,9 +2297,17 @@ def run_checks(args: argparse.Namespace) -> CheckResult:
 
     excluded_paths = build_excluded_paths(root, registry, args)
 
+    contracts = record_map(manifest.data) if manifest and contract_enabled(manifest.data) else {}
+    if contracts:
+        contract_errors, contract_warnings = validate_document_manifest(root, manifest.data)
+        for detail in contract_errors:
+            issues.append(Issue("error", "tools/docs_manifest.yml", 1, "DOCUMENT_CONTRACT_ERROR", detail, "Fix the current metadata contract; do not alter frozen evidence to fit a header."))
+        for detail in contract_warnings:
+            issues.append(Issue("error" if args.release_gate else "warning", "tools/docs_manifest.yml", 1, "HISTORICAL_INTEGRITY_UNRESOLVED", detail, "Review historical provenance separately; do not overwrite the historical checksum manifest."))
+
     for path in iter_markdown_files(root, include_private_marker=args.include_private_marker, excluded_paths=excluded_paths):
         checked_files += 1
-        file_issues, file_links, file_external, file_hits, file_info = check_file(path, root, registry, maintenance_rules, args)
+        file_issues, file_links, file_external, file_hits, file_info = check_file(path, root, registry, maintenance_rules, args, contracts.get(relpath(path, root)))
         issues.extend(file_issues)
         checked_links += file_links
         external_checked += file_external

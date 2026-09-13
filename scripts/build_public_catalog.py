@@ -23,6 +23,11 @@ def _normalized_path(value: Any) -> str:
 
 
 def _language_for_document(doc: dict[str, Any]) -> str:
+    declared = doc.get("language_relation")
+    if isinstance(declared, dict):
+        lang = str(declared.get("language", ""))
+        if lang in {"ja", "en"}: return lang
+        if lang == "ja+en": return "bilingual"
     path = _normalized_path(doc.get("path"))
     if re.search(r"\.ja\.md$", path, re.I):
         return "ja"
@@ -62,6 +67,8 @@ def _path_counterpart(path: str) -> str:
 
 
 def _family_key(path: str, counterpart: str) -> str:
+    if counterpart:
+        return "path-pair:" + "|".join(sorted([path, counterpart]))
     if re.search(r"\.(ja|en)\.md$", path, re.I):
         base = re.sub(r"\.(ja|en)\.md$", ".md", path, flags=re.I)
         return f"path-family:{base}"
@@ -111,7 +118,8 @@ def main() -> int:
         docs: list[dict[str, Any]] = []
         registered = provisional = 0
         for source in index.get("documents") or []:
-            d = copy.deepcopy(source)
+            allowed = {"id", "id_source", "path", "title", "layer", "document_type", "document_role", "status", "state", "registration_state", "scope", "role", "language_relation", "discovery", "concepts", "relations", "search_fields", "assessment_summary", "artifact_relations"}
+            d = {k: copy.deepcopy(v) for k, v in source.items() if k in allowed}
             rs = str(d.get("registration_state") or "registered")
             if rs not in {"registered", "provisional"}:
                 raise ValueError(f'invalid registration_state for {d.get("path")}: {rs}')
@@ -130,7 +138,8 @@ def main() -> int:
 
         language_pairs, unmatched_language_specific = _add_presentation_metadata(docs)
 
-        out = copy.deepcopy(index)
+        public_keys = {"schema_version", "search_spec_version", "search_profile", "topics", "query_expansions", "external_artifacts"}
+        out = {k: copy.deepcopy(v) for k, v in index.items() if k in public_keys}
         out["catalog_contract_version"] = CATALOG_CONTRACT_VERSION
         index_source = copy.deepcopy(index.get("source") or {})
         out["source"] = {

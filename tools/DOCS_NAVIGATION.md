@@ -54,10 +54,10 @@ TypeScript/HTMLクライアントは、Python側と同じ生成済みread model�
 
 | File | Owns | Editing rule |
 |---|---|---|
-| Markdown headers | 読む前に必要な最小の人間向けメタデータ | 所有文書で編集する |
+| Markdown headers | Legacy/source-local descriptive metadata; not the current assessment authority | Preserve existing source; current metadata belongs to manifest |
 | `tools/docs_manifest.yml` | 文書identity、公開役割、配置、型付き関係、概念所有、文書別discovery | canonical。生成物から逆編集しない |
 | `tools/docs_search.yml` | controlled topics、検索展開、正規化、重み、閾値、topic入口 | 検索・発見だけを所有する |
-| `navigator/public-content.json` | Public Navigatorの層説明、案内文書カード、入口文、編集者選択の読書channel | 理論定義・S/E・検索関連・人気指標を所有しない |
+| `navigator/public-content.json` | Public Navigatorの接触面・正式入口・作業領域・体系核・案内面の配置、案内文書カード、入口文、編集者選択の読書channel | 理論定義・S/E・検索関連・人気指標を所有しない |
 | `tools/docs_index.json` | manifest-derived canonical read model | 生成物。手編集禁止 |
 | `tools/docs_graph.json` | canonical typed relation graph | 生成物。手編集禁止 |
 | `tools/docs_public_catalog.json` | Public用文書・検索projection | 生成物。手編集禁止 |
@@ -77,8 +77,10 @@ TypeScript/HTMLクライアントは、Python側と同じ生成済みread model�
 
 Public Navigatorは次を提供する。
 
+Repositoryの数値prefixはidentityと保守のために保持するが、Public Navigatorの読書順序には使わない。v5.1では、外向き表現と視覚資料を最上段の接触面、READMEとSystem Mapを正式入口、Applications/Research Notesを作業領域、Truth/Beauty/Goodnessを体系核、Overviewを体系の読み方案内として配置する。
+
 - 編集者が選択できる注目・おすすめ・寄り道の読書channel（READMEを含む全Public文書が候補）
-- 体系層からの読解
+- 読者役割に応じた入口配置（接触面／正式入口／作業領域／体系核／案内）
 - 目的別の案内文書
 - 問い・トピック・検索からの入口
 - 型付き関係の探索
@@ -456,3 +458,24 @@ UIをきれいに見せるために、理論本文やcanonical metadataを下流
 - [`READER_QUESTION_POLICY.md`](./READER_QUESTION_POLICY.md)
 - [`PUBLIC_SITE_BUILD.ja.md`](./PUBLIC_SITE_BUILD.ja.md)
 - [`DOCS_NAVIGATION_HISTORY.md`](./DOCS_NAVIGATION_HISTORY.md)
+
+## 17. v5.1 metadata ownership and feature freeze
+
+`tools/docs_manifest.yml` with `metadata_contract: document-contract/1.0` is the current owner of identity, placement, document role, language relation, catalog membership and approved assessment summary. `tools/docs_manifest.schema.json` and `scripts/validate_docs_manifest.py` implement this contract.
+
+- `state` remains publication availability, not maturity, validity or assessment approval. `registration_state` remains provisional/registered. `document_role` describes function. None is inferred from the other.
+- `discovery.primary_question` is an explicit language-keyed field; null means not selected. Existing `reader_questions` and 28 active revision proposals are retained, not silently approved. Search terms come from existing `topics` and `aliases`, not a new competing header field.
+- `language_relation` distinguishes authority, full/partial commensuration, integrated bilingual text, digest and support. The joint root-README interface is the only coauthority exception. A paired English document is not independently re-scored.
+- `managed_assets` holds fixed research sources, evidence, historical supports and internal supports. These are not catalog documents and receive no current claim profile. Exact-byte sources are checked against the specified source binding. A current snapshot hash does not repair or certify a historical manifest.
+- `retired_documents` records author retirement and superseded paths. A retired current path cannot be restored merely to pass a build. A moved document keeps its surviving identity.
+- `external_artifacts` and `artifact_relations` provide typed reference edges only: operationalized_in, implemented_as, archived_at. They are not a software launcher, download manager, or proof relation. Live availability is not implied by a supplied URL.
+
+Legacy S/E/P/V labels remain provenance rather than values converted into the new scale. New assessments remain unreviewed or hold until explicitly reviewed. Hotspot values never determine the representative score by maximum or average.
+
+The Public reader hides recognized source header blocks as a presentation operation. It does not parse them into assessment metadata. Optional collapsed metadata after the text is read only from the sanitized generated catalog. The original Markdown and Developer reading remain available; this is not a confidentiality boundary.
+
+The v5.1 UI scope is frozen at existing reading/search/graph/language/theme functions, existing registration/assessment review surfaces, and the optional read-model metadata panel. No new evaluation CMS, automatic claim assessor or forced language translation is part of this freeze.
+
+Rebuild current projections using `python scripts/rebuild_document_read_models.py`. It builds locally from current canonical inputs, verifies the public artifact, and restores derived outputs on failure. Do not copy hash-bound read models from an older AI snapshot. A successful local build is not release approval.
+
+Two Volume I CSV assets had CRLF working-copy bytes but LF blobs already stored in rc004 HEAD. Their metadata preserves the original snapshot digest and an explicitly bound `git_lf_sha256`, verified to differ only in line endings. Only these declared provenance assets accept those two exact representations; other modifications fail. Fixed Optional Axiom source remains strictly exact-byte. Historical MANIFEST values are neither normalized nor reissued.

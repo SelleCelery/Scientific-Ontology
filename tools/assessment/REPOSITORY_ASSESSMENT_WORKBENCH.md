@@ -107,3 +107,11 @@ AI proposal
 ```
 
 昇格はprotocol側の `promotion.state` を変更しただけでは成立しない。schema、apply path、Public projection境界、release gateを明示的に更新してから行う。
+
+## v5.1 registration return path
+
+The frozen `claim-classification-pilot / 2026-08-23-b` protocol and original run schema are not rewritten during metadata migration. The rc004 audit remains a candidate observation, not an approved classification database. Directional boundary pressure is a research residual, not a new scoring axis retroactively applied to the run.
+
+After a human has reviewed a document profile and any local items, `prepare_assessment_registration_review.py` can turn that review into the existing Registration Workbench transaction. See `../DOCS_REGISTRATION_WORKBENCH.md` for the validated dry-run/apply boundary. The adapter is not an autonomous reinvestigator and does not contact a model API. Existing exported review artifacts can be handed to an AI for renewed investigation; only explicit human approval can promote a new result.
+
+Identity is the current manifest doc_id plus the run's bound path and exact source SHA-256. The adapter resolves these without rescoring. Raw historical paths remain part of the frozen evidence; a changed or moved source is not silently rebound. New canonical summaries are never inferred solely from a schema-valid run.

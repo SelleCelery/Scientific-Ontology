@@ -9,6 +9,10 @@
 
 ---
 
+### Distinction from the historical research source
+
+The old Optional Axiom atlas used as a fixed fixture in De-Registry and related SO Reflexive Philosophical Research is preserved under [`04_Applications/SO_Reflexive_Philosophical_Research/sources/`](../04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md). That historical atlas is not the current authoritative source of this protocol, and this document does not re-endorse the atlas as a whole as current Scientific Ontology.
+
 ## 0. Positioning
 
 This document is a boundary protocol for comparing different systems of thought, worldviews, disciplines, institutions, technological designs, and mythic systems as stable patterns of attention, abstraction, value, and cost, and for collating their commensurability and untranslatable residuals.

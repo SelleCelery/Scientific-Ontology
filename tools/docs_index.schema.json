@@ -65,6 +65,9 @@
       "items": {
         "$ref": "#/$defs/document"
       }
+    },
+    "external_artifacts": {
+      "type": "array"
     }
   },
   "$defs": {
@@ -145,7 +148,10 @@
           "type": "string"
         },
         "registration_state": {
-          "enum": ["registered", "provisional"]
+          "enum": [
+            "registered",
+            "provisional"
+          ]
         },
         "scope": {
           "type": "string"
@@ -171,6 +177,15 @@
               "$ref": "#/$defs/search_value"
             }
           }
+        },
+        "document_role": {
+          "type": "string"
+        },
+        "assessment_summary": {
+          "type": "object"
+        },
+        "artifact_relations": {
+          "type": "array"
         }
       },
       "additionalProperties": false

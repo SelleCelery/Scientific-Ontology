@@ -23,6 +23,7 @@
 1. [`00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md`](./00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md) — なぜOptional Axiomから始まったのか、①〜⑤をどう往復させるか。
 2. [`01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md`](./01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md) — 長期運用する哲学的な問いの台帳。
 3. [`Volume I — De-Registryから判断透明性へ`](./volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md) — 最初の実験系列と方法形成の紀伝体記録。
+4. [`sources/README.md`](./sources/README.md) — Volume I等で実際に使用した固定研究原資料への返路。現在のSO正本とは区別する。
 
 ## 2. 研究運動
 

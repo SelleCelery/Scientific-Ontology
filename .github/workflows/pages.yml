@@ -40,6 +40,9 @@ jobs:
             tsc -p navigator/tsconfig.json
           git diff --exit-code -- navigator/dist
 
+      - name: Validate publication provenance boundary
+        run: python scripts/validate_docs_manifest.py --release-gate
+
       - name: Run DN-6 release gate
         run: |
           python scripts/check_dn6_release_gate.py --mode publication

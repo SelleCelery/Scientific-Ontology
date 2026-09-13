@@ -104,7 +104,8 @@
               "topic",
               "layer",
               "glossary_term",
-              "source_artifact"
+              "source_artifact",
+              "external_artifact"
             ]
           },
           "key": {

@@ -34,6 +34,16 @@
 
 このhashは同一入力を確認するためのものであり、内容の妥当性を保証しない。
 
+### v5.1で追加した研究原資料への返路
+
+上表の `Hold / link-by-hash` は、Volume Iを最初に包装した時点の公開判断として残す。その後v5.1で、現行SOの教義ではないことを明示するwrapperを研究プログラム直下へ設置し、同じ固定fixtureを研究原資料として収録した。
+
+- Source index: [`../../sources/README.md`](../../sources/README.md)
+- Fixed source: [`../../sources/Optional_Axiom_Modules.ja.md`](../../sources/Optional_Axiom_Modules.ja.md)
+- Relation: research-source identity / experiment provenance; **not current SO canon**
+
+この追加は過去の実験入力を現在の教義へ昇格させるものではない。Volume Iの当時の判断と入力を保持したまま、Repository内で実際のsourceへ戻れる返路を追加したものである。
+
 ## 3. 外部sourceを含む4-case result
 
 `evidence/05_three_layer/RESULT_4_CASES.md`の外部source ledgerとURLは、Luna runが記録したものをraw experimental evidenceとして保持する。この第一巻のpackaging stepでは外部sourceを再検証・再解釈していない。

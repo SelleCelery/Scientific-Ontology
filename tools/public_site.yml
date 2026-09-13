@@ -15,6 +15,7 @@ sources:
     - "navigator/public-content.json"
   navigator_public_globs:
     - "navigator/dist/*.js"
+    - "navigator/vendor/katex/*"
 
 public_data_targets:
   catalog: "tools/docs_public_catalog.json"
@@ -76,5 +77,8 @@ artifact:
     - "navigator/dist/search-core.js"
     - "navigator/dist/graph-core.js"
     - "navigator/dist/language-core.js"
+    - "navigator/vendor/katex/katex.mjs"
+    - "navigator/vendor/katex/katex.min.css"
+    - "navigator/vendor/katex/LICENSE"
     - "tools/docs_public_catalog.json"
     - "tools/docs_public_graph.json"

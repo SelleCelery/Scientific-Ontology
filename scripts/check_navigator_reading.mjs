@@ -8,6 +8,7 @@ import {
   publicDocumentTitle, publicLinkLabel, isTechnicalLabel,
   readingChannels, readingChannelEntries, documentForEditorialId,
   sectionSlug, fragmentFromLink, sourceHeaderLines, readerText,
+  splitInlineMath, displayMathBlockAt, isDisplayMathStart,
 } from '../navigator/dist/reader-core.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -42,7 +43,7 @@ for (const lang of ['ja', 'en']) {
 }
 
 const rootReadme = docs.find((doc) => doc.path === 'README.md');
-const literaryFixture = docs.find((doc) => doc.id === 'inorganic_alternating_lamp_and_holiday_reading');
+const literaryFixture = docs.find((doc) => String(doc.path).endsWith('/Questions_Boundaries_and_Peace.ja.md'));
 check(Boolean(rootReadme), 'Root README must remain eligible for editorial selection');
 check(Boolean(literaryFixture), '07 literary fixture must remain eligible for editorial selection');
 for (const lang of ['ja', 'en']) {
@@ -65,11 +66,30 @@ check(sourceHeaderLines('Status: Literary essay\nLayer: 07_Creative_Offshoots / 
 check(!sourceHeaderLines('Status: Draft\nThis is not an empirical claim.'), 'Unstructured caveats must not be masked as metadata');
 check(!sourceHeaderLines('A quotation\nwith two lines'), 'Ordinary quotation must not be masked');
 
+
+const inlineMath = splitInlineMath('At $t$, compare $\\Omega_t$ with prose.');
+check(inlineMath.filter((part) => part.kind === 'math').length === 2, 'Inline $...$ math must be detected');
+check(inlineMath.filter((part) => part.kind === 'math')[1].value === '\\Omega_t', 'Inline TeX source must be preserved exactly');
+check(splitInlineMath('Price $100-$200 stays prose.').every((part) => part.kind === 'text'), 'Currency-like text must not be misread as math');
+check(splitInlineMath('Escaped \\$ stays prose.').every((part) => part.kind === 'text'), 'Escaped dollar must not open math');
+check(splitInlineMath('Use \\(x^2 + y^2\\) here.').some((part) => part.kind === 'math' && part.value === 'x^2 + y^2'), '\\(...\\) inline math must be detected');
+const displayFixture = ['$$', '\\Omega_t \\neq \\text{World}', '$$'];
+const displayBlock = displayMathBlockAt(displayFixture, 0);
+check(Boolean(displayBlock), 'Display $$...$$ block must be detected');
+check(displayBlock?.tex === '\\Omega_t \\neq \\text{World}', 'Display TeX source must be preserved');
+check(displayBlock?.nextIndex === 3, 'Display block must consume the closing delimiter');
+check(isDisplayMathStart('$$') && isDisplayMathStart('$$ x = y $$') && isDisplayMathStart('\\['), 'Display math starts must be recognized');
+
 const app = fs.readFileSync(path.join(root,'navigator/src/app.ts'),'utf8');
 check(app.includes('if (!page.isConnected) return;'), 'Detached-reader race protection is required');
 check(app.includes('removePublicSourceHeader(article)'), 'Public source metadata must be removed from the reading surface');
 check(app.includes('selectionSearchTools(article)'), 'Selection-to-search assistance is required');
 check(app.includes('function renderReadingEditor()'), 'Developer reading editor is required');
+check(app.includes('import("../vendor/katex/katex.mjs")'), 'Reader must load vendored KaTeX locally');
+check(app.includes('katex.render(tex, node'), 'Reader must render parsed TeX with KaTeX');
+check(app.includes('trust: false'), 'Reader KaTeX trust boundary must remain false');
+check(app.includes('output: "htmlAndMathml"'), 'Reader must preserve HTML + MathML accessibility output');
+check(app.includes('node.dataset.mathStatus = "fallback"'), 'Reader must preserve raw-TeX fallback state');
 check(app.includes('for (const doc of allDocuments())'), 'Developer editor must enumerate all public-catalog documents');
 check(!fs.readFileSync(path.join(root,'navigator/src/reader-core.ts'),'utf8').includes('fetch('), 'Reader presentation must not add a network/analytics service');
 console.log(`NAVIGATOR READING CHECK PASS: ${docs.length} documents in JA and EN; ${readingChannels(content).length} editorial channels; ${assertions} assertions`);

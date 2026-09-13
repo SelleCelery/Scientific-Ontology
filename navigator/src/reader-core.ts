@@ -94,9 +94,140 @@ export function fragmentFromLink(href: string): string {
   try { return decodeURIComponent(fragment); } catch { return fragment; }
 }
 
+
+export type InlineMathSegment =
+  | { kind: "text"; value: string }
+  | { kind: "math"; value: string; delimiter: "$" | "\\(" };
+
+function isEscaped(text: string, index: number): boolean {
+  let slashes = 0;
+  for (let i = index - 1; i >= 0 && text[i] === "\\"; i -= 1) slashes += 1;
+  return slashes % 2 === 1;
+}
+
+function findInlineDollarClose(text: string, start: number): number {
+  for (let i = start + 1; i < text.length; i += 1) {
+    if (text[i] === "\n") return -1;
+    if (text[i] !== "$" || isEscaped(text, i)) continue;
+    if (text[i - 1]?.trim() === "") continue;
+    // Pandoc-style guard: avoid reading currency such as "$100-$200" as math.
+    if (/\d/.test(text[i + 1] ?? "")) continue;
+    return i;
+  }
+  return -1;
+}
+
+function findInlineParenClose(text: string, start: number): number {
+  for (let i = start + 2; i + 1 < text.length; i += 1) {
+    if (text[i] === "\n") return -1;
+    if (text[i] === "\\" && text[i + 1] === ")" && !isEscaped(text, i)) return i;
+  }
+  return -1;
+}
+
+/** Split prose into raw text and TeX math without interpreting Markdown code spans. */
+export function splitInlineMath(text: string): InlineMathSegment[] {
+  const output: InlineMathSegment[] = [];
+  let cursor = 0;
+  let i = 0;
+  const pushText = (end: number) => {
+    if (end > cursor) output.push({ kind: "text", value: text.slice(cursor, end) });
+  };
+
+  while (i < text.length) {
+    if (text[i] === "\\" && text[i + 1] === "(" && !isEscaped(text, i)) {
+      const close = findInlineParenClose(text, i);
+      if (close >= 0) {
+        const value = text.slice(i + 2, close);
+        if (value.trim()) {
+          pushText(i);
+          output.push({ kind: "math", value, delimiter: "\\(" });
+          cursor = close + 2;
+          i = cursor;
+          continue;
+        }
+      }
+    }
+
+    if (text[i] === "$" && !isEscaped(text, i) && text[i - 1] !== "$" && text[i + 1] !== "$" && text[i + 1] && !/\s/.test(text[i + 1])) {
+      const close = findInlineDollarClose(text, i);
+      if (close >= 0) {
+        const value = text.slice(i + 1, close);
+        if (value.trim()) {
+          pushText(i);
+          output.push({ kind: "math", value, delimiter: "$" });
+          cursor = close + 1;
+          i = cursor;
+          continue;
+        }
+      }
+    }
+    i += 1;
+  }
+
+  if (cursor < text.length) output.push({ kind: "text", value: text.slice(cursor) });
+  if (!output.length) output.push({ kind: "text", value: text });
+  return output;
+}
+
+export interface DisplayMathBlock {
+  tex: string;
+  nextIndex: number;
+  delimiter: "$$" | "\\[";
+}
+
+/** Parse a display-math block beginning at lines[start]. Returns null for ordinary prose. */
+export function displayMathBlockAt(lines: string[], start: number): DisplayMathBlock | null {
+  const line = lines[start] ?? "";
+  const trimmed = line.trim();
+
+  if (trimmed.startsWith("$$")) {
+    if (trimmed.length > 4 && trimmed.endsWith("$$")) {
+      const tex = trimmed.slice(2, -2).trim();
+      return tex ? { tex, nextIndex: start + 1, delimiter: "$$" } : null;
+    }
+    if (trimmed === "$$") {
+      const body: string[] = [];
+      let i = start + 1;
+      while (i < lines.length && lines[i].trim() !== "$$") {
+        body.push(lines[i]);
+        i += 1;
+      }
+      if (i < lines.length && body.join("\n").trim()) {
+        return { tex: body.join("\n").trim(), nextIndex: i + 1, delimiter: "$$" };
+      }
+    }
+  }
+
+  if (trimmed.startsWith("\\[")) {
+    if (trimmed.length > 4 && trimmed.endsWith("\\]")) {
+      const tex = trimmed.slice(2, -2).trim();
+      return tex ? { tex, nextIndex: start + 1, delimiter: "\\[" } : null;
+    }
+    if (trimmed === "\\[") {
+      const body: string[] = [];
+      let i = start + 1;
+      while (i < lines.length && lines[i].trim() !== "\\]") {
+        body.push(lines[i]);
+        i += 1;
+      }
+      if (i < lines.length && body.join("\n").trim()) {
+        return { tex: body.join("\n").trim(), nextIndex: i + 1, delimiter: "\\[" };
+      }
+    }
+  }
+
+  return null;
+}
+
+export function isDisplayMathStart(line: string): boolean {
+  const trimmed = line.trim();
+  return trimmed === "$$" || /^\$\$.+\$\$$/.test(trimmed) || trimmed === "\\[" || /^\\\[.+\\\]$/.test(trimmed);
+}
+
 export function sourceHeaderLines(text: string): boolean {
   const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
-  const field = /^(?:Document ID|Doc ID|Status|State|Scope|Language|Claim strength|Layer|Authority|Public profile|Public handling|Primary question|Search terms|Document role|Publication layer|Maturity)\s*:/i;
+  const field = /^(?:Document ID|Doc ID|Status|State|Scope|Language|Claim strength|Layer|Authority|Public profile|Public handling|Primary question|Search terms|Document role|Publication layer|Maturity|Version|Last updated|Japanese authoritative source|Lifecycle|Maintenance|Canonical scope|Role|Domain|Non-claim boundary|Non-claim|Claim posture|Language relation|Claim boundary|Definition ownership|Related application|Legal status|English commensuration|Rule|Version-specific DOI|Formation provenance|Reading rule|Physical-near handling|Note|Source of release facts|Synchronizer|Target version|Commensuration note|Principle|Research program|Research context|Open philosophical questions|Period covered|Derivation)\s*:/i;
   return lines.length >= 2 && lines.every((line) => field.test(line));
 }
 

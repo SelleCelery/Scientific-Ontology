@@ -47,6 +47,9 @@ FIELDS = (
     "role_en",
     "doc_id",
     "language_relation",
+    "document_role",
+    "catalog_document",
+    "assessment",
     "discovery",
 )
 
@@ -165,7 +168,11 @@ def yaml_bytes(yaml: YAML, data: Any) -> bytes:
 
     buffer = StringIO()
     yaml.dump(data, buffer)
-    return buffer.getvalue().encode("utf-8")
+    rendered = buffer.getvalue()
+    normalized = "\n".join(line.rstrip() for line in rendered.splitlines()) + "\n"
+    if yaml.load(normalized) != data:
+        raise ValueError("Whitespace normalization would alter manifest data")
+    return normalized.encode("utf-8")
 
 
 def write_with_rollback(files: list[tuple[Path, bytes]]) -> None:
@@ -219,11 +226,13 @@ def main() -> int:
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--output", help="Write a reviewed manifest copy instead of changing canonical manifest")
     group.add_argument("--apply", action="store_true", help="Overwrite tools/docs_manifest.yml explicitly")
+    parser.add_argument("--assessment-run", type=Path)
+    parser.add_argument("--assessment-review", type=Path)
     args = parser.parse_args()
     review_path = Path(args.review)
     try:
         review = review_validator.load_json(review_path)
-        errors = review_validator.validate(review)
+        errors = review_validator.validate(review, assessment_run=args.assessment_run, assessment_review=args.assessment_review)
         if errors:
             print("REGISTRATION REVIEW APPLY BLOCKED", file=sys.stderr)
             for error in errors:

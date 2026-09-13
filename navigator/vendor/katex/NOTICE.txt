@@ -1,0 +1,22 @@
+KaTeX runtime vendored for Navigator
+
+Upstream: https://katex.org/
+Runtime version reported by the vendored module: 0.16.27
+License: MIT (see LICENSE)
+Purpose: local/offline TeX rendering in the Scientific Ontology Navigator Reader.
+
+The runtime, stylesheet, and font bytes were taken from the KaTeX 0.16.27 assets
+bundled in the build environment's Gradio frontend. Asset filenames were
+normalized to conventional KaTeX font names and stylesheet URLs were rewritten
+to those local names. The Gradio host-specific selector prefix is deliberately
+removed so the stylesheet restores KaTeX's standard unscoped selector semantics;
+no Navigator-specific selector is added to the vendor stylesheet. No network
+request is required at Reader runtime.
+
+Vendor invariants: CSS and runtime report the same KaTeX version; MathML remains
+in the accessibility tree but is visually clipped by the standard
+`.katex .katex-mathml` rule; non-data CSS URLs resolve inside this directory;
+and host-specific scopes such as `.gradio-container-*` are forbidden.
+
+Update policy: replace this directory as one unit, preserve the upstream license,
+and rerun Navigator/Public Site verification.

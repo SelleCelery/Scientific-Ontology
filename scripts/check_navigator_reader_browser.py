@@ -17,8 +17,9 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGET_ID = "inorganic_alternating_lamp_and_holiday_reading"
+TARGET_PATH = "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md"
 META_MARKERS = [
+    "Japanese authoritative source:",
     "Status: Literary essay",
     "Layer: 07_Creative_Offshoots / Literary_Essays",
     "Claim strength: S1-S2/E1/U0/P1/V0",
@@ -40,10 +41,13 @@ def main() -> None:
 
     catalog = json.loads((ROOT / "tools/docs_public_catalog.json").read_text(encoding="utf-8"))
     docs = catalog["documents"]
-    source = next((doc for doc in docs if doc.get("id") == TARGET_ID), None)
+    source = next((doc for doc in docs if doc.get("path") == TARGET_PATH), None)
     if source is None:
-        raise SystemExit(f"target fixture document missing: {TARGET_ID}")
+        raise SystemExit(f"target fixture document missing: {TARGET_PATH}")
 
+    target_id = source["id"]
+    content = json.loads((ROOT / "navigator/public-content.json").read_text(encoding="utf-8"))
+    expected_cards = sum(len(c.get("documents", [])) for c in content.get("reading_channels", []) if c.get("enabled", True))
     checks = 0
     page_errors: list[str] = []
 
@@ -141,23 +145,123 @@ def main() -> None:
             if args.screenshots:
                 page.screenshot(path=str(args.screenshots / f"{name}.png"), full_page=False)
 
+        # KaTeX CSS/runtime acceptance: the standard unscoped stylesheet must hide
+        # the accessibility MathML visually without suppressing it from the tree.
+        # This fixture also guards against selector leakage, specificity regressions,
+        # print duplication, and accidental widening of the trust boundary.
+        math_page = browser.new_page(viewport={"width": 390, "height": 844}, device_scale_factor=1)
+        math_errors: list[str] = []
+        math_page.on("pageerror", lambda error: math_errors.append(str(error)))
+        math_page.set_content(
+            '<!doctype html><html><head><meta charset="utf-8"></head><body>'
+            '<div id="control-base" class="base">control</div>'
+            '<div id="control-rule" class="rule">control</div>'
+            '<p>inline <span id="math-inline" class="reader-math reader-math-inline"></span> prose</p>'
+            '<div id="math-block" class="reader-math reader-math-block"></div>'
+            '<div id="math-trust"></div>'
+            '</body></html>'
+        )
+        navigator_css = (ROOT / "navigator/styles.css").read_text(encoding="utf-8")
+        katex_css = (ROOT / "navigator/vendor/katex/katex.min.css").read_text(encoding="utf-8")
+        katex_runtime = (ROOT / "navigator/vendor/katex/katex.mjs").read_text(encoding="utf-8")
+        math_page.add_style_tag(content=navigator_css)
+        control_before = math_page.evaluate(
+            """() => Object.fromEntries(['control-base','control-rule'].map(id => {
+                const s = getComputedStyle(document.getElementById(id));
+                return [id, {display:s.display, position:s.position, width:s.width, height:s.height, overflow:s.overflow}];
+            }))"""
+        )
+        math_page.add_style_tag(content=katex_css)
+        control_after = math_page.evaluate(
+            """() => Object.fromEntries(['control-base','control-rule'].map(id => {
+                const s = getComputedStyle(document.getElementById(id));
+                return [id, {display:s.display, position:s.position, width:s.width, height:s.height, overflow:s.overflow}];
+            }))"""
+        )
+        check(control_after == control_before, "unscoped KaTeX CSS leaked onto non-KaTeX .base/.rule controls")
+        math_page.evaluate(
+            r"""async ({source}) => {
+                const url = URL.createObjectURL(new Blob([source], {type:'text/javascript'}));
+                const module = await import(url);
+                const katex = module.default;
+                window.__katexVersion = katex.version || '';
+                katex.render('\\Omega_t', document.getElementById('math-inline'), {
+                    displayMode:false, throwOnError:true, strict:'warn', trust:false, output:'htmlAndMathml'
+                });
+                katex.render('\\Omega_t \\neq \\text{World}', document.getElementById('math-block'), {
+                    displayMode:true, throwOnError:true, strict:'warn', trust:false, output:'htmlAndMathml'
+                });
+                katex.render('\\href{https://example.com}{x}', document.getElementById('math-trust'), {
+                    displayMode:false, throwOnError:true, strict:'warn', trust:false, output:'htmlAndMathml'
+                });
+            }""",
+            {"source": katex_runtime},
+        )
+        check(not math_errors, f"KaTeX smoke page raised browser errors: {math_errors}")
+        check(math_page.evaluate("window.__katexVersion") == "0.16.27", "unexpected vendored KaTeX runtime version")
+        check(math_page.locator("#math-inline .katex").count() == 1, "inline KaTeX root missing")
+        check(math_page.locator("#math-block .katex-display").count() == 1, "display KaTeX root missing")
+        check(math_page.locator("#math-trust a, #math-trust img").count() == 0, "trust:false allowed link/image output")
+
+        mathml_nodes = math_page.locator("#math-inline .katex-mathml, #math-block .katex-mathml")
+        html_nodes = math_page.locator("#math-inline .katex-html, #math-block .katex-html")
+        check(mathml_nodes.count() == 2 and html_nodes.count() == 2, "HTML + MathML output pair missing")
+        for index in range(mathml_nodes.count()):
+            mathml_state = mathml_nodes.nth(index).evaluate(
+                """el => { const s=getComputedStyle(el), r=el.getBoundingClientRect(); return {
+                    position:s.position, width:r.width, height:r.height, overflow:s.overflow, clip:s.clip,
+                    display:s.display, visibility:s.visibility
+                }; }"""
+            )
+            check(mathml_state["position"] == "absolute", "MathML accessibility layer is not visually removed from flow")
+            check(mathml_state["width"] <= 1.1 and mathml_state["height"] <= 1.1, "MathML layer is visibly occupying layout space")
+            check(mathml_state["overflow"] == "hidden" and mathml_state["clip"] != "auto", "MathML visual clipping is inactive")
+            check(mathml_state["display"] != "none" and mathml_state["visibility"] != "hidden", "MathML was hidden from accessibility via display/visibility")
+            html_state = html_nodes.nth(index).evaluate(
+                """el => { const s=getComputedStyle(el), r=el.getBoundingClientRect(); return {
+                    display:s.display, visibility:s.visibility, width:r.width, height:r.height, aria:el.getAttribute('aria-hidden')
+                }; }"""
+            )
+            check(html_state["display"] != "none" and html_state["visibility"] == "visible", "KaTeX HTML visual layer is hidden")
+            check(html_state["width"] > 1 and html_state["height"] > 1, "KaTeX HTML visual layer has no visible box")
+            check(html_state["aria"] == "true", "KaTeX visual HTML layer must remain aria-hidden")
+
+        annotation = math_page.locator("#math-block .katex-mathml annotation[encoding='application/x-tex']")
+        check(annotation.count() == 1, "MathML TeX annotation missing")
+        check(annotation.text_content() == r"\Omega_t \neq \text{World}", "MathML annotation lost the source TeX")
+        check(math_page.locator("#math-block .katex-mathml math").get_attribute("aria-hidden") is None, "MathML accessibility tree was aria-hidden")
+        check(math_page.locator("#math-inline").evaluate("el => getComputedStyle(el).display") == "inline", "inline math became block-level")
+        check(math_page.locator("#math-block").evaluate("el => getComputedStyle(el).overflowX") == "auto", "display math lost horizontal overflow protection")
+        check(math_page.evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), "KaTeX fixture introduced mobile horizontal overflow")
+
+        math_page.emulate_media(media="print")
+        print_mathml = math_page.locator("#math-block .katex-mathml").evaluate(
+            """el => { const s=getComputedStyle(el), r=el.getBoundingClientRect(); return {
+                position:s.position, width:r.width, height:r.height, overflow:s.overflow, clip:s.clip
+            }; }"""
+        )
+        check(print_mathml["position"] == "absolute" and print_mathml["width"] <= 1.1 and print_mathml["height"] <= 1.1, "print media exposes duplicate MathML")
+        check(print_mathml["overflow"] == "hidden" and print_mathml["clip"] != "auto", "print media disables MathML clipping")
+        math_page.close()
+
         # Public: no arbitrary recommendation is displayed before an editor selects one.
         for width in [1440, 390, 320]:
             for lang in ["ja", "en"]:
                 page = launch(lang, width=width)
                 check(page.locator("html").get_attribute("lang") == lang, f"home {lang}: wrong UI language")
-                check(page.locator(".reading-channel-card").count() == 0, "unselected reading channel should not fabricate cards")
+                check(page.locator(".reading-channel-card").count() == expected_cards, "unselected reading channel should not fabricate cards")
                 check(page.locator(".path").count() == 0, "public home exposes a repository path")
                 no_overflow(page, f"home {lang} {width}")
                 shot(page, f"home-{lang}-{width}")
 
                 route(page, lang=lang, read=source["path"])
                 page.wait_for_selector(".reader-article")
-                expected_title = source["title"][lang]
+                selected_source = next((d for d in docs if d["path"] == source.get("presentation", {}).get("counterpart_path")), source) if lang == "en" else source
+                expected_title = selected_source["title"].get(lang) or selected_source["title"]["ja"]
                 check(page.locator(".reader-public-title").inner_text() == expected_title, f"reader {lang}: title not localized")
-                check(page.locator(".reader-article").get_attribute("lang") == "ja", f"reader {lang}: single-language source mislabeled")
+                check(page.locator(".reader-article").get_attribute("lang") == lang, f"reader {lang}: single-language source mislabeled")
                 if lang == "en":
-                    check(page.locator(".reader-language-fallback").count() == 1, "English UI did not disclose Japanese-body fallback")
+                    check(page.locator(".reader-language-fallback").count() == 0, "paired English body should not be a fallback")
                 else:
                     check(page.locator(".reader-language-fallback").count() == 0, "Japanese body incorrectly marked as fallback")
 
@@ -216,17 +320,17 @@ def main() -> None:
         options = dev.locator(".editorial-channel-card").first.locator(".editorial-doc-select option")
         check(options.count() == len(docs), f"Developer reading editor does not expose all public docs: {options.count()}/{len(docs)}")
         option_values = options.evaluate_all("els => els.map(el => el.value)")
-        check(TARGET_ID in option_values, "07 fixture document not selectable in Developer reading editor")
+        check(target_id in option_values, "07 fixture document not selectable in Developer reading editor")
         readme_ids = {doc["id"] for doc in docs if str(doc.get("path", "")).endswith("README.md")}
         check(readme_ids.issubset(set(option_values)), "README documents are not all selectable in Developer reading editor")
 
         first_channel = dev.locator(".editorial-channel-card").first
-        first_channel.locator(".editorial-doc-select").select_option(TARGET_ID)
+        first_channel.locator(".editorial-doc-select").select_option(target_id)
         first_channel.locator(".editorial-chooser .button.primary").click()
-        check(first_channel.locator(".editorial-selected-row").count() == 1, "Developer editor did not add selected document")
-        check("休日の窓辺" in first_channel.locator(".editorial-selected-row").inner_text(), "Developer selected row lost readable title")
-        check(dev.locator(".editorial-public-preview .reading-channel-card").count() == 1, "Developer public preview did not reflect the local selection")
-        check("休日の窓辺" in dev.locator(".editorial-public-preview .reading-channel-title").inner_text(), "Developer preview lost the public display title")
+        check(first_channel.locator(".editorial-selected-row").count() == len(content["reading_channels"][0].get("documents", [])) + 1, "Developer editor did not add selected document")
+        check(source["title"]["ja"] in " ".join(first_channel.locator(".editorial-selected-row").all_inner_texts()), "Developer selected row lost readable title")
+        check(dev.locator(".editorial-public-preview .reading-channel-card").count() == expected_cards + 1, "Developer public preview did not reflect the local selection")
+        check(source["title"]["ja"] in " ".join(dev.locator(".editorial-public-preview .reading-channel-title").all_inner_texts()), "Developer preview lost the public display title")
         check(dev.locator(".path").count() > 0, "Developer editor unexpectedly masks repository paths")
         check(dev.locator("a[href*='view=candidates'], button").count() >= 0, "Developer shell failed after editorial selection")
         no_overflow(dev, "developer editorial")

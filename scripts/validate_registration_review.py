@@ -56,7 +56,7 @@ def safe_review_object(value: Any, label: str, errors: list[str]) -> dict[str, A
     return value
 
 
-def validate(data: dict[str, Any], *, allow_stale: bool = False) -> list[str]:
+def validate(data: dict[str, Any], *, allow_stale: bool = False, assessment_run: Path | None = None, assessment_review: Path | None = None) -> list[str]:
     errors: list[str] = []
     payload = data.get("registration_review")
     if not isinstance(payload, dict):
@@ -210,6 +210,29 @@ def validate(data: dict[str, Any], *, allow_stale: bool = False) -> list[str]:
             if str(item.get("proposal_source_sha256") or "") != str(expected_source.get("revision_proposals_sha256") or ""):
                 errors.append(f"revision proposal source hash is stale: {path}")
 
+    # A generic metadata edit is not an assessment approval.
+    changed_assessments = {}
+    for item in [*decisions, *revisions]:
+        if item.get("decision") not in {"approve", "approve_with_edits"}:
+            continue
+        before, after = item.get("before") or {}, item.get("after") or {}
+        if before.get("assessment") != after.get("assessment"):
+            changed_assessments[str(item.get("path"))] = after.get("assessment")
+    for item in manual_candidates:
+        if (item.get("proposed") or {}).get("assessment", {}).get("review_state") == "approved":
+            errors.append("Manual registration cannot introduce an already-approved assessment")
+    if changed_assessments:
+        if not assessment_run or not assessment_review:
+            errors.append("Assessment changes require --assessment-run and --assessment-review; metadata approval is not score approval")
+        else:
+            try:
+                from assessment_registration import summaries_from_review
+                expected = summaries_from_review(ROOT, assessment_run, assessment_review)
+                for path, summary in changed_assessments.items():
+                    if summary != expected.get(path):
+                        errors.append("Assessment summary does not match explicitly reviewed evidence: " + path)
+            except Exception as exc:
+                errors.append(str(exc))
     return errors
 
 
@@ -259,6 +282,8 @@ def main() -> int:
     parser.add_argument("review", nargs="?", help="Path to exported review JSON.")
     parser.add_argument("--allow-stale", action="store_true", help="Validate structure without current-source hash equality.")
     parser.add_argument("--self-test", action="store_true")
+    parser.add_argument("--assessment-run", type=Path)
+    parser.add_argument("--assessment-review", type=Path)
     args = parser.parse_args()
     if args.self_test:
         return self_test()
@@ -266,7 +291,7 @@ def main() -> int:
         parser.error("review path is required unless --self-test is used")
     try:
         data = load_json(Path(args.review))
-        errors = validate(data, allow_stale=args.allow_stale)
+        errors = validate(data, allow_stale=args.allow_stale, assessment_run=args.assessment_run, assessment_review=args.assessment_review)
     except Exception as exc:
         print(f"REGISTRATION REVIEW CHECK FAILED: {exc}", file=sys.stderr)
         return 1

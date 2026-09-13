@@ -39,6 +39,9 @@ REVIEW_FIELDS = (
     "role_ja",
     "role_en",
     "language_relation",
+    "document_role",
+    "catalog_document",
+    "assessment",
     "discovery",
 )
 REVISION_PATCH_FIELDS = {
@@ -53,6 +56,9 @@ REVISION_PATCH_FIELDS = {
     "role_ja",
     "role_en",
     "language_relation",
+    "document_role",
+    "catalog_document",
+    "assessment",
     "discovery",
 }
 

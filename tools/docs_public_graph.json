@@ -75,6 +75,18 @@
     "concept_network_reference": {
       "class": "structural",
       "description": "Concept Network explicitly links to an indexed document."
+    },
+    "implemented_as": {
+      "class": "declared",
+      "description": "Typed external artifact relation; not empirical proof or theory endorsement."
+    },
+    "operationalized_in": {
+      "class": "declared",
+      "description": "Typed external artifact relation; not empirical proof or theory endorsement."
+    },
+    "archived_at": {
+      "class": "declared",
+      "description": "Typed external artifact relation; not empirical proof or theory endorsement."
     }
   },
   "nodes": [
@@ -517,7 +529,7 @@
         "ja": "",
         "en": ""
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:00_overview_scientific_ontology_system_map",
@@ -551,7 +563,7 @@
         "ja": "候補目的を第一義として選び、共有後の世界を境界CAで再照合する運用モデル",
         "en": "Operational model for purpose commitment, shared world formation, and boundary CA"
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:01_sat_truth_amp_introduction",
@@ -585,7 +597,24 @@
         "ja": "Sat層の基底配置文書",
         "en": "Foundational positioning document for the Sat layer"
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "type": "document",
+      "key": "01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "path": "01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md",
+      "title": {
+        "ja": "正しさ・個性・無・切断",
+        "en": "Correctness, Individuality, Absence, and Cut"
+      },
+      "layer": "01_Sat_Truth",
+      "state": "public",
+      "role": {
+        "ja": "Correctness, Individuality, Absence, and Cut",
+        "en": "Correctness, Individuality, Absence, and Cut"
+      },
+      "identity_source": "explicit"
     },
     {
       "id": "doc:01_sat_truth_four_axioms_of_existence",
@@ -636,7 +665,7 @@
         "ja": "認識方向の生成、安定、変形の定義所有者",
         "en": "Canonical owner of cognitive-direction formation, stabilization, and transformation"
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:02_raj_beauty_hfc_introduction",
@@ -860,6 +889,142 @@
       "identity_source": "explicit"
     },
     {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+      "title": {
+        "ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
+        "en": ""
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md",
+      "title": {
+        "ja": "哲学的研究の問い台帳 — LLM・通信・通約",
+        "en": ""
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "哲学的研究の問い台帳 — LLM・通信・通約",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_readme",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/README.md",
+      "title": {
+        "ja": "SO再帰的哲学研究",
+        "en": "SO Reflexive Philosophical Research"
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "SO再帰的哲学研究",
+        "en": "SO Reflexive Philosophical Research"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_sources_readme",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_sources_readme",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
+      "title": {
+        "ja": "Research Sources / 研究原資料",
+        "en": ""
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "Research Sources / 研究原資料",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_01_chronicle_ja",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_01_chronicle_ja",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/01_CHRONICLE.ja.md",
+      "title": {
+        "ja": "紀 — De-Registryから判断透明性へ",
+        "en": ""
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "紀 — De-Registryから判断透明性へ",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_03_judgment_transparency_topology_ja",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_03_judgment_transparency_topology_ja",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md",
+      "title": {
+        "ja": "判断透明性トポロジー — 現行アプリケーション・インターフェース",
+        "en": ""
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "判断透明性トポロジー — 現行アプリケーション・インターフェース",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_05_residuals_and_next_tests_ja",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_05_residuals_and_next_tests_ja",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/05_RESIDUALS_AND_NEXT_TESTS.ja.md",
+      "title": {
+        "ja": "残差と次の返り先",
+        "en": ""
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "残差と次の返り先",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md",
+      "title": {
+        "ja": "第一巻 De-Registryから判断透明性へ",
+        "en": "Volume I — From De-Registry to Judgment Transparency"
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "第一巻 De-Registryから判断透明性へ",
+        "en": "Volume I — From De-Registry to Judgment Transparency"
+      },
+      "identity_source": "explicit"
+    },
+    {
       "id": "doc:04_applications_social_boundary_design_readme",
       "type": "document",
       "key": "04_applications_social_boundary_design_readme",
@@ -942,7 +1107,7 @@
         "ja": "ポート配分、通約、保留、再開、ゲートウェイ捕捉の動態所有者",
         "en": "Canonical owner of the dynamics of port allocation, commensuration, holding, reopening, and gateway capture"
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
@@ -959,7 +1124,7 @@
         "ja": "連続する認識と離散的運用の間の操作構造を所有するメタモデル",
         "en": "Metamodel owning the operational mapping between seamless cognition and discrete operation"
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
@@ -976,7 +1141,7 @@
         "ja": "存在相圧縮の利益、損失、外部化、再開条件の診断所有者",
         "en": "Canonical diagnostic owner for the gains, losses, externalization, and reopening conditions of existence-phase compression"
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
@@ -993,7 +1158,7 @@
         "ja": "目的を責任、通信、監査、停止、返路へ変換する横断実装モデル",
         "en": "Cross-domain model converting purpose into responsibility, communication, audit, stop conditions, and return paths"
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:05_research_notes_cognitive_dynamics_communication_studies_readme",
@@ -1009,6 +1174,23 @@
       "role": {
         "ja": "認識が通信的にはシームレスである一方、実際の運用では、存在相、分類、ポート、容量、権限、責任へ離散化される構造を扱う",
         "en": "This subdirectory studies how cognition may be seamless as communication while practical operation discretizes it into existence phases, classifications, ports, capacity, authority, and responsibility"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "type": "document",
+      "key": "05_research_notes_correctness_logic_and_structural_studies_readme",
+      "path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
+      "title": {
+        "ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
+        "en": ""
+      },
+      "layer": "05_Research_Notes",
+      "state": "public",
+      "role": {
+        "ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
+        "en": ""
       },
       "identity_source": "explicit"
     },
@@ -1044,7 +1226,7 @@
         "ja": "",
         "en": ""
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:05_research_notes_language_meaning_and_communication_phase_studies_intension_extension_and_false_extension_ja",
@@ -1061,7 +1243,7 @@
         "ja": "",
         "en": ""
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:05_research_notes_language_meaning_and_communication_phase_studies_linguistic_frame_differences_between_japanese_and_english_ja",
@@ -1078,7 +1260,7 @@
         "ja": "",
         "en": ""
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:05_research_notes_language_meaning_and_communication_phase_studies_speech_as_sequential_decompression_ja",
@@ -1095,7 +1277,7 @@
         "ja": "",
         "en": ""
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:05_research_notes_literary_ontological_notes_readme",
@@ -1230,6 +1412,57 @@
       "role": {
         "ja": "本注記は、Scientific Ontology Conceptual Poster の読み方を説明するための補助文書である",
         "en": "This note explains how to read the Scientific Ontology Conceptual Poster"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "type": "document",
+      "key": "07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md",
+      "title": {
+        "ja": "問いを閉じず、境界を踏まないために",
+        "en": "Keeping Questions Open Without Trampling Boundaries"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "Keeping Questions Open Without Trampling Boundaries",
+        "en": "Keeping Questions Open Without Trampling Boundaries"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "type": "document",
+      "key": "07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
+      "title": {
+        "ja": "問いを閉じず、境界を踏まないために",
+        "en": "Keeping Questions Open Without Trampling Boundaries"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "問いを閉じず、境界を踏まないために",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "type": "document",
+      "key": "90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md",
+      "title": {
+        "ja": "リポジトリ監査原則",
+        "en": "Repository Assessment Protocol"
+      },
+      "layer": "90_Repository_Governance",
+      "state": "public",
+      "role": {
+        "ja": "リポジトリ監査原則",
+        "en": "Repository Assessment Protocol"
       },
       "identity_source": "explicit"
     },
@@ -1710,6 +1943,23 @@
       "identity_source": "explicit"
     },
     {
+      "id": "doc:correctness_individuality_absence_and_cut",
+      "type": "document",
+      "key": "correctness_individuality_absence_and_cut",
+      "path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+      "title": {
+        "ja": "正しさ・個性・無・切断",
+        "en": "Correctness, Individuality, Absence, and Cut"
+      },
+      "layer": "01_Sat_Truth",
+      "state": "public",
+      "role": {
+        "ja": "正しさ・個性・無・切断",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
       "id": "doc:cosmological_topological_dynamics",
       "type": "document",
       "key": "cosmological_topological_dynamics",
@@ -1842,23 +2092,6 @@
       "role": {
         "ja": "発話以前の全体圧は、そのまま外部へ移送されない",
         "en": "Whole pressure before speech is not transferred outward unchanged"
-      },
-      "identity_source": "explicit"
-    },
-    {
-      "id": "doc:inorganic_alternating_lamp_and_holiday_reading",
-      "type": "document",
-      "key": "inorganic_alternating_lamp_and_holiday_reading",
-      "path": "07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md",
-      "title": {
-        "ja": "休日の窓辺で、LLMという無機交流電燈に話しかける",
-        "en": "Talking with an Inorganic Alternating-Current Lamp by the Holiday Window"
-      },
-      "layer": "07_Creative_Offshoots/Literary_Essays",
-      "state": "public",
-      "role": {
-        "ja": "LLMを意味形成の観測窓として気軽に読むための公開文学随筆",
-        "en": "A public literary essay introducing the LLM as an observational window onto meaning formation"
       },
       "identity_source": "explicit"
     },
@@ -2370,7 +2603,7 @@
         "ja": "英語先行・日英共同正本による公開リポジトリの入口",
         "en": "English-first, English–Japanese co-authoritative public entry point for the repository"
       },
-      "identity_source": "fallback"
+      "identity_source": "explicit"
     },
     {
       "id": "doc:release_notes",
@@ -2713,6 +2946,25 @@
       "identity_source": "explicit"
     },
     {
+      "id": "external:connectbits_v0_5_0",
+      "type": "external_artifact",
+      "key": "connectbits_v0_5_0",
+      "label": {
+        "ja": "ConnectBits v0.5.0 Public Preview",
+        "en": "ConnectBits v0.5.0 Public Preview"
+      },
+      "url": "https://zenodo.org/records/22689146"
+    },
+    {
+      "id": "external:dssi_core_a",
+      "type": "external_artifact",
+      "key": "dssi_core_a",
+      "label": {
+        "ja": "DSSI Core A",
+        "en": "DSSI Core A"
+      }
+    },
+    {
       "id": "layer:applications",
       "type": "layer",
       "key": "applications",
@@ -2720,6 +2972,16 @@
       "label": {
         "ja": "応用",
         "en": "Applications"
+      }
+    },
+    {
+      "id": "layer:creative_offshoots",
+      "type": "layer",
+      "key": "creative_offshoots",
+      "path": "07_Creative_Offshoots",
+      "label": {
+        "ja": "外界との表現・運用実験",
+        "en": "Creative Offshoots"
       }
     },
     {
@@ -2740,6 +3002,16 @@
       "label": {
         "ja": "激・美",
         "en": "Raj / Beauty"
+      }
+    },
+    {
+      "id": "layer:repository_governance",
+      "type": "layer",
+      "key": "repository_governance",
+      "path": "90_Repository_Governance",
+      "label": {
+        "ja": "管理原則",
+        "en": "Repository Governance"
       }
     },
     {
@@ -5111,7 +5383,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L583"
+          "locator": "L598"
         }
       ]
     },
@@ -5123,12 +5395,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L294"
+          "locator": "L305"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L828"
+          "locator": "L854"
         }
       ]
     },
@@ -5140,7 +5412,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L295"
+          "locator": "L306"
         }
       ]
     },
@@ -5152,12 +5424,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L1054"
+          "locator": "L1084"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L522"
+          "locator": "L537"
         }
       ]
     },
@@ -5169,12 +5441,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L1054"
+          "locator": "L1084"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L522"
+          "locator": "L537"
         }
       ]
     },
@@ -5186,12 +5458,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L398"
+          "locator": "L413"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L932"
+          "locator": "L962"
         }
       ]
     },
@@ -5203,12 +5475,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L416"
+          "locator": "L431"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L950"
+          "locator": "L980"
         }
       ]
     },
@@ -5220,12 +5492,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L418"
+          "locator": "L433"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L952"
+          "locator": "L982"
         }
       ]
     },
@@ -5237,12 +5509,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L417"
+          "locator": "L432"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L951"
+          "locator": "L981"
         }
       ]
     },
@@ -5254,12 +5526,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L269"
+          "locator": "L280"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L805"
+          "locator": "L831"
         }
       ]
     },
@@ -5271,7 +5543,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L296"
+          "locator": "L307"
         }
       ]
     },
@@ -5283,7 +5555,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L830"
+          "locator": "L856"
         }
       ]
     },
@@ -5300,17 +5572,17 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L266"
+          "locator": "L277"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L559"
+          "locator": "L574"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L802"
+          "locator": "L828"
         }
       ]
     },
@@ -5322,7 +5594,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L524"
+          "locator": "L539"
         }
       ]
     },
@@ -5334,12 +5606,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L270"
+          "locator": "L281"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L806"
+          "locator": "L832"
         }
       ]
     },
@@ -5351,7 +5623,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L297"
+          "locator": "L308"
         }
       ]
     },
@@ -5363,7 +5635,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L831"
+          "locator": "L857"
         }
       ]
     },
@@ -5375,85 +5647,17 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L1053"
+          "locator": "L1083"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L265"
+          "locator": "L276"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L521"
-        },
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L801"
-        }
-      ]
-    },
-    {
-      "from": "artifact:system_map",
-      "relation": "map_reference",
-      "to": "doc:release_notes",
-      "provenance": [
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L268"
-        },
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L804"
-        }
-      ]
-    },
-    {
-      "from": "artifact:system_map",
-      "relation": "map_reference",
-      "to": "doc:roadmap",
-      "provenance": [
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L267"
-        },
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L803"
-        }
-      ]
-    },
-    {
-      "from": "artifact:system_map",
-      "relation": "map_reference",
-      "to": "doc:scientific_ontology_concept_network",
-      "provenance": [
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L293"
-        },
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L521"
-        }
-      ]
-    },
-    {
-      "from": "artifact:system_map",
-      "relation": "map_reference",
-      "to": "doc:scientific_ontology_concept_network_en",
-      "provenance": [
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L1053"
+          "locator": "L536"
         },
         {
           "source_type": "system_map",
@@ -5465,12 +5669,80 @@
     {
       "from": "artifact:system_map",
       "relation": "map_reference",
+      "to": "doc:release_notes",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L279"
+        },
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L830"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:roadmap",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L278"
+        },
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L829"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:scientific_ontology_concept_network",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L304"
+        },
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L536"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:scientific_ontology_concept_network_en",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L1083"
+        },
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L853"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
       "to": "doc:scientific_ontology_operational_outline",
       "provenance": [
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L292"
+          "locator": "L303"
         },
         {
           "source_type": "system_map",
@@ -5480,7 +5752,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L521"
+          "locator": "L536"
         }
       ]
     },
@@ -5492,12 +5764,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L419"
+          "locator": "L434"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L953"
+          "locator": "L983"
         }
       ]
     },
@@ -5509,12 +5781,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L420"
+          "locator": "L435"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L954"
+          "locator": "L984"
         }
       ]
     },
@@ -5526,7 +5798,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L829"
+          "locator": "L855"
         }
       ]
     },
@@ -5784,6 +6056,18 @@
     },
     {
       "from": "doc:00_overview_scientific_ontology_operational_outline_en",
+      "relation": "links_to",
+      "to": "doc:scientific_ontology_operational_outline",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Operational_Outline.en.md",
+          "locator": "L252"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_operational_outline_en",
       "relation": "placed_in",
       "to": "layer:overview",
       "provenance": [
@@ -5838,7 +6122,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L583"
+          "locator": "L598"
         }
       ]
     },
@@ -5850,12 +6134,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L294"
+          "locator": "L305"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L828"
+          "locator": "L854"
         }
       ]
     },
@@ -5867,7 +6151,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L295"
+          "locator": "L306"
         }
       ]
     },
@@ -5879,12 +6163,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L1054"
+          "locator": "L1084"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L522"
+          "locator": "L537"
         }
       ]
     },
@@ -5896,12 +6180,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L1054"
+          "locator": "L1084"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L522"
+          "locator": "L537"
         }
       ]
     },
@@ -5913,12 +6197,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L398"
+          "locator": "L413"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L932"
+          "locator": "L962"
         }
       ]
     },
@@ -5930,12 +6214,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L416"
+          "locator": "L431"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L950"
+          "locator": "L980"
         }
       ]
     },
@@ -5947,12 +6231,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L418"
+          "locator": "L433"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L952"
+          "locator": "L982"
         }
       ]
     },
@@ -5964,12 +6248,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L417"
+          "locator": "L432"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L951"
+          "locator": "L981"
         }
       ]
     },
@@ -5981,12 +6265,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L269"
+          "locator": "L280"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L805"
+          "locator": "L831"
         }
       ]
     },
@@ -5998,7 +6282,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L296"
+          "locator": "L307"
         }
       ]
     },
@@ -6010,7 +6294,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L830"
+          "locator": "L856"
         }
       ]
     },
@@ -6027,17 +6311,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L266"
+          "locator": "L277"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L559"
+          "locator": "L574"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L802"
+          "locator": "L828"
         }
       ]
     },
@@ -6049,7 +6333,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L524"
+          "locator": "L539"
         }
       ]
     },
@@ -6061,12 +6345,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L270"
+          "locator": "L281"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L806"
+          "locator": "L832"
         }
       ]
     },
@@ -6078,7 +6362,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L297"
+          "locator": "L308"
         }
       ]
     },
@@ -6090,7 +6374,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L831"
+          "locator": "L857"
         }
       ]
     },
@@ -6102,85 +6386,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L1053"
+          "locator": "L1083"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L265"
+          "locator": "L276"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L521"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L801"
-        }
-      ]
-    },
-    {
-      "from": "doc:00_overview_scientific_ontology_system_map",
-      "relation": "links_to",
-      "to": "doc:release_notes",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L268"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L804"
-        }
-      ]
-    },
-    {
-      "from": "doc:00_overview_scientific_ontology_system_map",
-      "relation": "links_to",
-      "to": "doc:roadmap",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L267"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L803"
-        }
-      ]
-    },
-    {
-      "from": "doc:00_overview_scientific_ontology_system_map",
-      "relation": "links_to",
-      "to": "doc:scientific_ontology_concept_network",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L293"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L521"
-        }
-      ]
-    },
-    {
-      "from": "doc:00_overview_scientific_ontology_system_map",
-      "relation": "links_to",
-      "to": "doc:scientific_ontology_concept_network_en",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L1053"
+          "locator": "L536"
         },
         {
           "source_type": "markdown",
@@ -6192,12 +6408,80 @@
     {
       "from": "doc:00_overview_scientific_ontology_system_map",
       "relation": "links_to",
+      "to": "doc:release_notes",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L279"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L830"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:roadmap",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L278"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L829"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:scientific_ontology_concept_network",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L304"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L536"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:scientific_ontology_concept_network_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L1083"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L853"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
       "to": "doc:scientific_ontology_operational_outline",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L292"
+          "locator": "L303"
         },
         {
           "source_type": "markdown",
@@ -6207,7 +6491,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L521"
+          "locator": "L536"
         }
       ]
     },
@@ -6219,12 +6503,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L419"
+          "locator": "L434"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L953"
+          "locator": "L983"
         }
       ]
     },
@@ -6236,12 +6520,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L420"
+          "locator": "L435"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L954"
+          "locator": "L984"
         }
       ]
     },
@@ -6253,7 +6537,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L829"
+          "locator": "L855"
         }
       ]
     },
@@ -6547,6 +6831,18 @@
     },
     {
       "from": "doc:00_overview_truth_management_and_boundary_pdca_ja",
+      "relation": "links_to",
+      "to": "doc:truth_management_and_boundary_pdca_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+          "locator": "L628"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_truth_management_and_boundary_pdca_ja",
       "relation": "owns",
       "to": "concept:boundary_ca",
       "provenance": [
@@ -6822,6 +7118,30 @@
       ]
     },
     {
+      "from": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md",
+          "locator": "L8"
+        }
+      ]
+    },
+    {
+      "from": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "relation": "placed_in",
+      "to": "layer:sat_truth",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:01_sat_truth_four_axioms_of_existence",
       "relation": "belongs_to_topic",
       "to": "topic:boundary",
@@ -6913,12 +7233,12 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L137"
+          "locator": "L142"
         },
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L65"
+          "locator": "L67"
         }
       ]
     },
@@ -6930,24 +7250,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L136"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "01_Sat_Truth/README.md",
-          "locator": "L64"
-        }
-      ]
-    },
-    {
-      "from": "doc:01_sat_truth_readme",
-      "relation": "links_to",
-      "to": "doc:01_sat_truth_four_axioms_of_existence",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "01_Sat_Truth/README.md",
-          "locator": "L138"
+          "locator": "L141"
         },
         {
           "source_type": "markdown",
@@ -6959,17 +7262,34 @@
     {
       "from": "doc:01_sat_truth_readme",
       "relation": "links_to",
+      "to": "doc:01_sat_truth_four_axioms_of_existence",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/README.md",
+          "locator": "L143"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/README.md",
+          "locator": "L68"
+        }
+      ]
+    },
+    {
+      "from": "doc:01_sat_truth_readme",
+      "relation": "links_to",
       "to": "doc:02_raj_beauty_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L147"
+          "locator": "L153"
         },
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L75"
+          "locator": "L78"
         }
       ]
     },
@@ -6981,12 +7301,12 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L148"
+          "locator": "L154"
         },
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L76"
+          "locator": "L79"
         }
       ]
     },
@@ -6998,12 +7318,12 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L149"
+          "locator": "L155"
         },
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L77"
+          "locator": "L80"
         }
       ]
     },
@@ -7015,12 +7335,12 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L140"
+          "locator": "L145"
         },
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L68"
+          "locator": "L70"
         }
       ]
     },
@@ -7032,12 +7352,12 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L141"
+          "locator": "L147"
         },
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L69"
+          "locator": "L72"
         }
       ]
     },
@@ -7049,12 +7369,12 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L141"
+          "locator": "L147"
         },
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L69"
+          "locator": "L72"
         }
       ]
     },
@@ -7066,12 +7386,29 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L140"
+          "locator": "L145"
         },
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L68"
+          "locator": "L70"
+        }
+      ]
+    },
+    {
+      "from": "doc:01_sat_truth_readme",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/README.md",
+          "locator": "L146"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/README.md",
+          "locator": "L71"
         }
       ]
     },
@@ -7083,12 +7420,12 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L139"
+          "locator": "L144"
         },
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/README.md",
-          "locator": "L67"
+          "locator": "L69"
         }
       ]
     },
@@ -7259,6 +7596,18 @@
           "source_type": "markdown",
           "source_path": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
           "locator": "L573"
+        }
+      ]
+    },
+    {
+      "from": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "relation": "links_to",
+      "to": "doc:entropy_attributed_difference_and_cognitive_axis_formation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+          "locator": "L583"
         }
       ]
     },
@@ -8873,12 +9222,12 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L141"
+          "locator": "L161"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L71"
+          "locator": "L81"
         }
       ]
     },
@@ -8890,12 +9239,12 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L142"
+          "locator": "L162"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L72"
+          "locator": "L82"
         }
       ]
     },
@@ -8907,12 +9256,12 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L143"
+          "locator": "L163"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L73"
+          "locator": "L83"
         }
       ]
     },
@@ -8924,12 +9273,29 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L129"
+          "locator": "L140"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L59"
+          "locator": "L60"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L146"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L66"
         }
       ]
     },
@@ -8941,12 +9307,12 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L132"
+          "locator": "L143"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L62"
+          "locator": "L63"
         }
       ]
     },
@@ -8958,17 +9324,380 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L145"
+          "locator": "L165"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L75"
+          "locator": "L85"
         }
       ]
     },
     {
       "from": "doc:04_applications_readme",
+      "relation": "links_to",
+      "to": "doc:dssi_observation_judgment_sovereignty",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L71"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_readme",
+      "relation": "links_to",
+      "to": "doc:dssi_observation_judgment_sovereignty_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L151"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_readme",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+          "locator": "L134"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+          "locator": "L306"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_01_chronicle_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+          "locator": "L308"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_03_judgment_transparency_topology_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+          "locator": "L310"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_05_residuals_and_next_tests_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+          "locator": "L312"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+          "locator": "L307"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/README.md",
+          "locator": "L23"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/README.md",
+          "locator": "L24"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_sources_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/README.md",
+          "locator": "L26"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/README.md",
+          "locator": "L25"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/README.md",
+          "locator": "L67"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_sources_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
+          "locator": "L103"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
+          "locator": "L43"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_sources_readme",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
+          "locator": "L44"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_sources_readme",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
+          "locator": "L104"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_sources_readme",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_01_chronicle_ja",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_03_judgment_transparency_topology_ja",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_05_residuals_and_next_tests_ja",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md",
+          "locator": "L5"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md",
+          "locator": "L6"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md",
+          "locator": "L4"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_sources_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md",
+          "locator": "L86"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_01_chronicle_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md",
+          "locator": "L30"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_03_judgment_transparency_topology_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md",
+          "locator": "L32"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_05_residuals_and_next_tests_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md",
+          "locator": "L34"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
       "relation": "placed_in",
       "to": "layer:applications",
       "provenance": [
@@ -9781,6 +10510,18 @@
     {
       "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
       "relation": "links_to",
+      "to": "doc:boundary_diplomacy_and_port_allocation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+          "locator": "L534"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_boundary_diplomacy_and_port_allocation_ja",
+      "relation": "links_to",
       "to": "doc:commensuration_cross_grammatical_collation",
       "provenance": [
         {
@@ -10134,6 +10875,18 @@
     {
       "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
       "relation": "links_to",
+      "to": "doc:cognitive_dynamics_communication_model_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+          "locator": "L1029"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_cognitive_dynamics_communication_model_ja",
+      "relation": "links_to",
       "to": "doc:commensuration_cross_grammatical_collation",
       "provenance": [
         {
@@ -10416,6 +11169,18 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
           "locator": "L396"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_compression_of_existence_phases_ja",
+      "relation": "links_to",
+      "to": "doc:compression_of_existence_phases_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
+          "locator": "L401"
         }
       ]
     },
@@ -10836,6 +11601,18 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
           "locator": "L667"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "relation": "links_to",
+      "to": "doc:organizational_boundary_and_port_model_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
+          "locator": "L671"
         }
       ]
     },
@@ -11341,6 +12118,114 @@
       ]
     },
     {
+      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "relation": "links_to",
+      "to": "doc:00_overview_truth_management_and_boundary_pdca_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
+          "locator": "L112"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_boundary_realism_principle",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
+          "locator": "L103"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
+          "locator": "L106"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_history_field_topology",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
+          "locator": "L109"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
+          "locator": "L121"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_intension_extension_and_false_extension_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
+          "locator": "L118"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "relation": "links_to",
+      "to": "doc:boundary_epistemological_critique",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
+          "locator": "L100"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "relation": "links_to",
+      "to": "doc:meaning_collation_return_path",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
+          "locator": "L115"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:05_research_notes_cross_domain_ontological_notes_readme",
       "relation": "belongs_to_topic",
       "to": "topic:boundary",
@@ -11679,6 +12564,18 @@
     {
       "from": "doc:05_research_notes_language_meaning_and_communication_phase_studies_compressed_experience_qualia_and_literature_ja",
       "relation": "links_to",
+      "to": "doc:compressed_experience_qualia_and_literature_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
+          "locator": "L275"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_language_meaning_and_communication_phase_studies_compressed_experience_qualia_and_literature_ja",
+      "relation": "links_to",
       "to": "doc:literature_worldmaking",
       "provenance": [
         {
@@ -11798,6 +12695,18 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
           "locator": "L224"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_language_meaning_and_communication_phase_studies_intension_extension_and_false_extension_ja",
+      "relation": "links_to",
+      "to": "doc:intension_extension_and_false_extension_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
+          "locator": "L254"
         }
       ]
     },
@@ -11941,6 +12850,18 @@
     {
       "from": "doc:05_research_notes_language_meaning_and_communication_phase_studies_linguistic_frame_differences_between_japanese_and_english_ja",
       "relation": "links_to",
+      "to": "doc:linguistic_frame_differences_between_japanese_and_english_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md",
+          "locator": "L279"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_language_meaning_and_communication_phase_studies_linguistic_frame_differences_between_japanese_and_english_ja",
+      "relation": "links_to",
       "to": "doc:return_intake_log",
       "provenance": [
         {
@@ -12048,6 +12969,18 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md",
           "locator": "L256"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_language_meaning_and_communication_phase_studies_speech_as_sequential_decompression_ja",
+      "relation": "links_to",
+      "to": "doc:speech_as_sequential_decompression_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md",
+          "locator": "L260"
         }
       ]
     },
@@ -14660,6 +15593,23 @@
     {
       "from": "doc:05_research_notes_social_boundary_notes_readme",
       "relation": "links_to",
+      "to": "doc:dssi_observation_judgment_sovereignty_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Social_Boundary_Notes/README.md",
+          "locator": "L100"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Social_Boundary_Notes/README.md",
+          "locator": "L45"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_social_boundary_notes_readme",
+      "relation": "links_to",
       "to": "doc:negentropy_economy_and_meaning_generation",
       "provenance": [
         {
@@ -15136,6 +16086,90 @@
       ]
     },
     {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md",
+          "locator": "L334"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md",
+          "locator": "L1210"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
+          "locator": "L1242"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
+          "locator": "L338"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:90_repository_governance_publication_and_commensuration_policy",
       "relation": "belongs_to_topic",
       "to": "topic:boundary",
@@ -15320,6 +16354,18 @@
       ]
     },
     {
+      "from": "doc:90_repository_governance_publication_and_commensuration_policy",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:90_repository_governance_readme",
       "relation": "belongs_to_topic",
       "to": "topic:boundary",
@@ -15466,6 +16512,18 @@
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/README.md",
           "locator": "L61"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_readme",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
         }
       ]
     },
@@ -15630,6 +16688,18 @@
       ]
     },
     {
+      "from": "doc:90_repository_governance_terminology_readme",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
       "relation": "belongs_to_topic",
       "to": "topic:boundary",
@@ -15712,6 +16782,18 @@
       ]
     },
     {
+      "from": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:90_repository_governance_translation_note",
       "relation": "belongs_to_topic",
       "to": "topic:commensuration",
@@ -15744,6 +16826,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=90_Repository_Governance/Translation_Note.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_translation_note",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
         }
       ]
     },
@@ -15983,6 +17077,18 @@
     {
       "from": "doc:ai_language_generation_grammatical_frames",
       "relation": "links_to",
+      "to": "doc:ai_language_generation_grammatical_frames_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.ja.md",
+          "locator": "L290"
+        }
+      ]
+    },
+    {
+      "from": "doc:ai_language_generation_grammatical_frames",
+      "relation": "links_to",
       "to": "doc:changelog",
       "provenance": [
         {
@@ -16121,6 +17227,18 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.en.md",
           "locator": "L266"
+        }
+      ]
+    },
+    {
+      "from": "doc:ai_language_generation_grammatical_frames_en",
+      "relation": "links_to",
+      "to": "doc:ai_language_generation_grammatical_frames",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.en.md",
+          "locator": "L8"
         }
       ]
     },
@@ -16271,6 +17389,18 @@
     {
       "from": "doc:asymmetry_stabilization_and_recollation",
       "relation": "links_to",
+      "to": "doc:asymmetry_stabilization_and_recollation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md",
+          "locator": "L377"
+        }
+      ]
+    },
+    {
+      "from": "doc:asymmetry_stabilization_and_recollation",
+      "relation": "links_to",
       "to": "doc:physics_correspondence_policy",
       "provenance": [
         {
@@ -16325,6 +17455,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:asymmetry_stabilization_and_recollation_en",
+      "relation": "links_to",
+      "to": "doc:asymmetry_stabilization_and_recollation",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md",
+          "locator": "L391"
         }
       ]
     },
@@ -16636,6 +17778,18 @@
     },
     {
       "from": "doc:boundary_epistemological_critique",
+      "relation": "links_to",
+      "to": "doc:boundary_epistemological_critique_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+          "locator": "L750"
+        }
+      ]
+    },
+    {
+      "from": "doc:boundary_epistemological_critique",
       "relation": "owns",
       "to": "concept:epistemic_boundary_conditions",
       "provenance": [
@@ -16744,6 +17898,18 @@
     },
     {
       "from": "doc:boundary_epistemological_critique_annotations",
+      "relation": "links_to",
+      "to": "doc:boundary_epistemological_critique_annotations_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md",
+          "locator": "L251"
+        }
+      ]
+    },
+    {
+      "from": "doc:boundary_epistemological_critique_annotations",
       "relation": "placed_in",
       "to": "layer:sat_truth",
       "provenance": [
@@ -16829,6 +17995,18 @@
     {
       "from": "doc:boundary_epistemological_critique_annotations_en",
       "relation": "links_to",
+      "to": "doc:boundary_epistemological_critique_annotations",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.en.md",
+          "locator": "L251"
+        }
+      ]
+    },
+    {
+      "from": "doc:boundary_epistemological_critique_annotations_en",
+      "relation": "links_to",
       "to": "doc:boundary_epistemological_critique_en",
       "provenance": [
         {
@@ -16907,6 +18085,18 @@
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/Boundary_Epistemological_Critique.en.md",
           "locator": "L13"
+        }
+      ]
+    },
+    {
+      "from": "doc:boundary_epistemological_critique_en",
+      "relation": "links_to",
+      "to": "doc:boundary_epistemological_critique",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/Boundary_Epistemological_Critique.en.md",
+          "locator": "L750"
         }
       ]
     },
@@ -17069,6 +18259,18 @@
     {
       "from": "doc:chaos_theory_and_logical_depth_axis",
       "relation": "links_to",
+      "to": "doc:chaos_theory_and_logical_depth_axis_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md",
+          "locator": "L424"
+        }
+      ]
+    },
+    {
+      "from": "doc:chaos_theory_and_logical_depth_axis",
+      "relation": "links_to",
       "to": "doc:physics_correspondence_policy_en",
       "provenance": [
         {
@@ -17147,6 +18349,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:chaos_theory_and_logical_depth_axis_en",
+      "relation": "links_to",
+      "to": "doc:chaos_theory_and_logical_depth_axis",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.en.md",
+          "locator": "L490"
         }
       ]
     },
@@ -17333,6 +18547,18 @@
     {
       "from": "doc:claim_strength_and_publication_layer_table",
       "relation": "links_to",
+      "to": "doc:claim_strength_and_publication_layer_table_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+          "locator": "L489"
+        }
+      ]
+    },
+    {
+      "from": "doc:claim_strength_and_publication_layer_table",
+      "relation": "links_to",
       "to": "doc:meaning_generation_model",
       "provenance": [
         {
@@ -17500,6 +18726,18 @@
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
           "locator": "L479"
+        }
+      ]
+    },
+    {
+      "from": "doc:claim_strength_and_publication_layer_table_en",
+      "relation": "links_to",
+      "to": "doc:claim_strength_and_publication_layer_table",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
+          "locator": "L6"
         }
       ]
     },
@@ -18005,6 +19243,18 @@
     {
       "from": "doc:commensuration_cross_grammatical_collation",
       "relation": "links_to",
+      "to": "doc:commensuration_cross_grammatical_collation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+          "locator": "L312"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation",
+      "relation": "links_to",
       "to": "doc:grammar_meaning_pressure_channel",
       "provenance": [
         {
@@ -18240,6 +19490,18 @@
     {
       "from": "doc:commensuration_cross_grammatical_collation_en",
       "relation": "links_to",
+      "to": "doc:commensuration_cross_grammatical_collation",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md",
+          "locator": "L8"
+        }
+      ]
+    },
+    {
+      "from": "doc:commensuration_cross_grammatical_collation_en",
+      "relation": "links_to",
       "to": "doc:grammar_meaning_pressure_channel_en",
       "provenance": [
         {
@@ -18366,6 +19628,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:compressed_experience_qualia_and_literature_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_compressed_experience_qualia_and_literature_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.en.md",
+          "locator": "L8"
         }
       ]
     },
@@ -18708,6 +19982,18 @@
     },
     {
       "from": "doc:consent_boundary_sentence_bit_asymmetry",
+      "relation": "links_to",
+      "to": "doc:consent_boundary_sentence_bit_asymmetry_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md",
+          "locator": "L581"
+        }
+      ]
+    },
+    {
+      "from": "doc:consent_boundary_sentence_bit_asymmetry",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -18791,6 +20077,30 @@
       ]
     },
     {
+      "from": "doc:correctness_individuality_absence_and_cut",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+          "locator": "L1154"
+        }
+      ]
+    },
+    {
+      "from": "doc:correctness_individuality_absence_and_cut",
+      "relation": "placed_in",
+      "to": "layer:sat_truth",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:cosmological_topological_dynamics",
       "relation": "belongs_to_topic",
       "to": "topic:boundary",
@@ -18847,6 +20157,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:cosmological_topological_dynamics",
+      "relation": "links_to",
+      "to": "doc:cosmological_topological_dynamics_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.ja.md",
+          "locator": "L50"
         }
       ]
     },
@@ -18919,6 +20241,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:cosmological_topological_dynamics_en",
+      "relation": "links_to",
+      "to": "doc:cosmological_topological_dynamics",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.en.md",
+          "locator": "L52"
         }
       ]
     },
@@ -18996,6 +20330,17 @@
     },
     {
       "from": "doc:dssi_observation_judgment_sovereignty",
+      "relation": "implemented_as",
+      "to": "external:connectbits_v0_5_0",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml"
+        }
+      ]
+    },
+    {
+      "from": "doc:dssi_observation_judgment_sovereignty",
       "relation": "links_to",
       "to": "doc:00_overview_truth_management_and_boundary_pdca_ja",
       "provenance": [
@@ -19063,6 +20408,29 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md",
           "locator": "L40"
+        }
+      ]
+    },
+    {
+      "from": "doc:dssi_observation_judgment_sovereignty",
+      "relation": "links_to",
+      "to": "doc:dssi_observation_judgment_sovereignty_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md",
+          "locator": "L669"
+        }
+      ]
+    },
+    {
+      "from": "doc:dssi_observation_judgment_sovereignty",
+      "relation": "operationalized_in",
+      "to": "external:dssi_core_a",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml"
         }
       ]
     },
@@ -19147,6 +20515,17 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:dssi_observation_judgment_sovereignty_en",
+      "relation": "implemented_as",
+      "to": "external:connectbits_v0_5_0",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml"
         }
       ]
     },
@@ -19236,6 +20615,17 @@
     },
     {
       "from": "doc:dssi_observation_judgment_sovereignty_en",
+      "relation": "operationalized_in",
+      "to": "external:dssi_core_a",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml"
+        }
+      ]
+    },
+    {
+      "from": "doc:dssi_observation_judgment_sovereignty_en",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -19279,6 +20669,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:entropy_attributed_difference_and_cognitive_axis_formation_en",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md",
+          "locator": "L7"
         }
       ]
     },
@@ -20123,6 +21525,18 @@
     {
       "from": "doc:grammar_meaning_pressure_channel",
       "relation": "links_to",
+      "to": "doc:grammar_meaning_pressure_channel_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Grammar_as_a_Meaning_Pressure_Channel.ja.md",
+          "locator": "L235"
+        }
+      ]
+    },
+    {
+      "from": "doc:grammar_meaning_pressure_channel",
+      "relation": "links_to",
       "to": "doc:meaning_collation_return_path",
       "provenance": [
         {
@@ -20243,6 +21657,18 @@
     {
       "from": "doc:grammar_meaning_pressure_channel_en",
       "relation": "links_to",
+      "to": "doc:grammar_meaning_pressure_channel",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Grammar_as_a_Meaning_Pressure_Channel.en.md",
+          "locator": "L8"
+        }
+      ]
+    },
+    {
+      "from": "doc:grammar_meaning_pressure_channel_en",
+      "relation": "links_to",
       "to": "doc:linguistic_frame_differences_between_japanese_and_english_en",
       "provenance": [
         {
@@ -20297,90 +21723,6 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "layer placement"
-        }
-      ]
-    },
-    {
-      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
-      "relation": "belongs_to_topic",
-      "to": "topic:ai",
-      "provenance": [
-        {
-          "source_type": "manifest",
-          "source_path": "tools/docs_manifest.yml",
-          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
-        }
-      ]
-    },
-    {
-      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
-      "relation": "belongs_to_topic",
-      "to": "topic:boundary",
-      "provenance": [
-        {
-          "source_type": "manifest",
-          "source_path": "tools/docs_manifest.yml",
-          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
-        }
-      ]
-    },
-    {
-      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
-      "relation": "belongs_to_topic",
-      "to": "topic:communication",
-      "provenance": [
-        {
-          "source_type": "manifest",
-          "source_path": "tools/docs_manifest.yml",
-          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
-        }
-      ]
-    },
-    {
-      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
-      "relation": "belongs_to_topic",
-      "to": "topic:literature",
-      "provenance": [
-        {
-          "source_type": "manifest",
-          "source_path": "tools/docs_manifest.yml",
-          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
-        }
-      ]
-    },
-    {
-      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
-      "relation": "belongs_to_topic",
-      "to": "topic:meaning",
-      "provenance": [
-        {
-          "source_type": "manifest",
-          "source_path": "tools/docs_manifest.yml",
-          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].discovery.topics"
-        }
-      ]
-    },
-    {
-      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
-      "relation": "related_to",
-      "to": "doc:sentence_cloud_bit_probe_llm_learning",
-      "provenance": [
-        {
-          "source_type": "manifest",
-          "source_path": "tools/docs_manifest.yml",
-          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].related"
-        }
-      ]
-    },
-    {
-      "from": "doc:inorganic_alternating_lamp_and_holiday_reading",
-      "relation": "related_to",
-      "to": "doc:the_transparent_ghost_and_the_bit",
-      "provenance": [
-        {
-          "source_type": "manifest",
-          "source_path": "tools/docs_manifest.yml",
-          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md].related"
         }
       ]
     },
@@ -20441,6 +21783,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intension_extension_and_false_extension_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_intension_extension_and_false_extension_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.en.md",
+          "locator": "L8"
         }
       ]
     },
@@ -20578,6 +21932,18 @@
     },
     {
       "from": "doc:intrinsic_time_standard_model_correspondence",
+      "relation": "links_to",
+      "to": "doc:intrinsic_time_standard_model_correspondence_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.ja.md",
+          "locator": "L139"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_standard_model_correspondence",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -20609,6 +21975,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_standard_model_correspondence_en",
+      "relation": "links_to",
+      "to": "doc:intrinsic_time_standard_model_correspondence",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.en.md",
+          "locator": "L150"
         }
       ]
     },
@@ -20990,6 +22368,18 @@
     {
       "from": "doc:linguistic_frame_differences_between_japanese_and_english_en",
       "relation": "links_to",
+      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_linguistic_frame_differences_between_japanese_and_english_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.en.md",
+          "locator": "L8"
+        }
+      ]
+    },
+    {
+      "from": "doc:linguistic_frame_differences_between_japanese_and_english_en",
+      "relation": "links_to",
       "to": "doc:90_repository_governance_publication_and_commensuration_policy",
       "provenance": [
         {
@@ -21121,6 +22511,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:literature_worldmaking",
+      "relation": "links_to",
+      "to": "doc:literature_worldmaking_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md",
+          "locator": "L484"
         }
       ]
     },
@@ -21456,6 +22858,18 @@
     {
       "from": "doc:meaning_collation_return_path",
       "relation": "links_to",
+      "to": "doc:meaning_collation_return_path_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md",
+          "locator": "L393"
+        }
+      ]
+    },
+    {
+      "from": "doc:meaning_collation_return_path",
+      "relation": "links_to",
       "to": "doc:meaning_generation_model",
       "provenance": [
         {
@@ -21628,6 +23042,18 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.en.md",
           "locator": "L360"
+        }
+      ]
+    },
+    {
+      "from": "doc:meaning_collation_return_path_en",
+      "relation": "links_to",
+      "to": "doc:meaning_collation_return_path",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.en.md",
+          "locator": "L8"
         }
       ]
     },
@@ -21896,6 +23322,18 @@
     {
       "from": "doc:narrative_truth_and_structural_reading",
       "relation": "links_to",
+      "to": "doc:narrative_truth_and_structural_reading_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md",
+          "locator": "L366"
+        }
+      ]
+    },
+    {
+      "from": "doc:narrative_truth_and_structural_reading",
+      "relation": "links_to",
       "to": "doc:negentropy_economy_and_meaning_generation",
       "provenance": [
         {
@@ -22034,6 +23472,18 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md",
           "locator": "L357"
+        }
+      ]
+    },
+    {
+      "from": "doc:narrative_truth_and_structural_reading_en",
+      "relation": "links_to",
+      "to": "doc:narrative_truth_and_structural_reading",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md",
+          "locator": "L366"
         }
       ]
     },
@@ -22243,6 +23693,18 @@
     },
     {
       "from": "doc:negentropy_economy_and_meaning_generation",
+      "relation": "links_to",
+      "to": "doc:negentropy_economy_and_meaning_generation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md",
+          "locator": "L392"
+        }
+      ]
+    },
+    {
+      "from": "doc:negentropy_economy_and_meaning_generation",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -22411,6 +23873,18 @@
     },
     {
       "from": "doc:negentropy_economy_and_meaning_generation_en",
+      "relation": "links_to",
+      "to": "doc:negentropy_economy_and_meaning_generation",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md",
+          "locator": "L388"
+        }
+      ]
+    },
+    {
+      "from": "doc:negentropy_economy_and_meaning_generation_en",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -22471,6 +23945,18 @@
     },
     {
       "from": "doc:negentropy_economy_principles",
+      "relation": "links_to",
+      "to": "doc:negentropy_economy_principles_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md",
+          "locator": "L532"
+        }
+      ]
+    },
+    {
+      "from": "doc:negentropy_economy_principles",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -22531,6 +24017,18 @@
     },
     {
       "from": "doc:negentropy_economy_principles_en",
+      "relation": "links_to",
+      "to": "doc:negentropy_economy_principles",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.en.md",
+          "locator": "L532"
+        }
+      ]
+    },
+    {
+      "from": "doc:negentropy_economy_principles_en",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -22579,6 +24077,18 @@
     },
     {
       "from": "doc:ontological_history_of_the_universe",
+      "relation": "links_to",
+      "to": "doc:ontological_history_of_the_universe_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Ontological_History_of_the_Universe.ja.md",
+          "locator": "L136"
+        }
+      ]
+    },
+    {
+      "from": "doc:ontological_history_of_the_universe",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -22622,6 +24132,42 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/Ontological_History_of_the_Universe.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:ontological_history_of_the_universe_en",
+      "relation": "links_to",
+      "to": "doc:asymmetry_stabilization_and_recollation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Ontological_History_of_the_Universe.en.md",
+          "locator": "L24"
+        }
+      ]
+    },
+    {
+      "from": "doc:ontological_history_of_the_universe_en",
+      "relation": "links_to",
+      "to": "doc:ontological_history_of_the_universe",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Ontological_History_of_the_Universe.en.md",
+          "locator": "L125"
+        }
+      ]
+    },
+    {
+      "from": "doc:ontological_history_of_the_universe_en",
+      "relation": "links_to",
+      "to": "doc:return_ethics_and_retaliation_conversion_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Ontological_History_of_the_Universe.en.md",
+          "locator": "L26"
         }
       ]
     },
@@ -22807,12 +24353,12 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L30"
+          "locator": "L34"
         },
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L824"
+          "locator": "L828"
         }
       ]
     },
@@ -22824,12 +24370,24 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L26"
+          "locator": "L30"
         },
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L821"
+          "locator": "L825"
+        }
+      ]
+    },
+    {
+      "from": "doc:optional_axiom_modules_cognitive_bridge",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_sources_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
+          "locator": "L14"
         }
       ]
     },
@@ -22841,7 +24399,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L827"
+          "locator": "L831"
         }
       ]
     },
@@ -22853,7 +24411,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L822"
+          "locator": "L826"
         }
       ]
     },
@@ -22865,7 +24423,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L826"
+          "locator": "L830"
         }
       ]
     },
@@ -22877,7 +24435,19 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L823"
+          "locator": "L827"
+        }
+      ]
+    },
+    {
+      "from": "doc:optional_axiom_modules_cognitive_bridge",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
+          "locator": "L836"
         }
       ]
     },
@@ -22889,7 +24459,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L825"
+          "locator": "L829"
         }
       ]
     },
@@ -22901,7 +24471,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
-          "locator": "L828"
+          "locator": "L832"
         }
       ]
     },
@@ -23106,12 +24676,24 @@
     {
       "from": "doc:optional_axiom_modules_cognitive_bridge_en",
       "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_sources_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
+          "locator": "L14"
+        }
+      ]
+    },
+    {
+      "from": "doc:optional_axiom_modules_cognitive_bridge_en",
+      "relation": "links_to",
       "to": "doc:90_repository_governance_publication_and_commensuration_policy",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L826"
+          "locator": "L830"
         }
       ]
     },
@@ -23123,7 +24705,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L821"
+          "locator": "L825"
         }
       ]
     },
@@ -23135,7 +24717,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L825"
+          "locator": "L829"
         }
       ]
     },
@@ -23147,12 +24729,12 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L26"
+          "locator": "L30"
         },
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L820"
+          "locator": "L824"
         }
       ]
     },
@@ -23164,7 +24746,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L822"
+          "locator": "L826"
         }
       ]
     },
@@ -23188,7 +24770,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L824"
+          "locator": "L828"
         }
       ]
     },
@@ -23200,7 +24782,7 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L827"
+          "locator": "L831"
         }
       ]
     },
@@ -23212,12 +24794,12 @@
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L30"
+          "locator": "L34"
         },
         {
           "source_type": "markdown",
           "source_path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md",
-          "locator": "L823"
+          "locator": "L827"
         }
       ]
     },
@@ -23494,6 +25076,18 @@
     {
       "from": "doc:physics_correspondence_policy",
       "relation": "links_to",
+      "to": "doc:physics_correspondence_policy_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Physics_Correspondence_Policy.ja.md",
+          "locator": "L577"
+        }
+      ]
+    },
+    {
+      "from": "doc:physics_correspondence_policy",
+      "relation": "links_to",
       "to": "doc:pinger_hypothesis_and_history_field_topology",
       "provenance": [
         {
@@ -23626,6 +25220,18 @@
     {
       "from": "doc:physics_correspondence_policy_en",
       "relation": "links_to",
+      "to": "doc:physics_correspondence_policy",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Physics_Correspondence_Policy.en.md",
+          "locator": "L594"
+        }
+      ]
+    },
+    {
+      "from": "doc:physics_correspondence_policy_en",
+      "relation": "links_to",
       "to": "doc:pinger_hypothesis_and_history_field_topology_en",
       "provenance": [
         {
@@ -23745,6 +25351,18 @@
     },
     {
       "from": "doc:pinger_hypothesis_and_history_field_topology",
+      "relation": "links_to",
+      "to": "doc:pinger_hypothesis_and_history_field_topology_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md",
+          "locator": "L686"
+        }
+      ]
+    },
+    {
+      "from": "doc:pinger_hypothesis_and_history_field_topology",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -23817,6 +25435,18 @@
     },
     {
       "from": "doc:pinger_hypothesis_and_history_field_topology_en",
+      "relation": "links_to",
+      "to": "doc:pinger_hypothesis_and_history_field_topology",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.en.md",
+          "locator": "L687"
+        }
+      ]
+    },
+    {
+      "from": "doc:pinger_hypothesis_and_history_field_topology_en",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -23865,6 +25495,18 @@
     },
     {
       "from": "doc:reading_blue_light",
+      "relation": "links_to",
+      "to": "doc:reading_blue_light_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/reading-blue-light.ja.md",
+          "locator": "L435"
+        }
+      ]
+    },
+    {
+      "from": "doc:reading_blue_light",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -23908,6 +25550,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=05_Research_Notes/Literary_Ontological_Notes/reading-blue-light.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:reading_blue_light_en",
+      "relation": "links_to",
+      "to": "doc:reading_blue_light",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Literary_Ontological_Notes/reading-blue-light.en.md",
+          "locator": "L438"
         }
       ]
     },
@@ -23943,12 +25597,12 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L297"
+          "locator": "L299"
         },
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L344"
+          "locator": "L346"
         }
       ]
     },
@@ -23961,6 +25615,30 @@
           "source_type": "markdown",
           "source_path": "README.md",
           "locator": "L248"
+        }
+      ]
+    },
+    {
+      "from": "doc:readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "README.md",
+          "locator": "L251"
+        }
+      ]
+    },
+    {
+      "from": "doc:readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "README.md",
+          "locator": "L252"
         }
       ]
     },
@@ -23984,7 +25662,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L298"
+          "locator": "L300"
         }
       ]
     },
@@ -23996,7 +25674,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L299"
+          "locator": "L301"
         }
       ]
     },
@@ -24032,7 +25710,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L338"
+          "locator": "L340"
         }
       ]
     },
@@ -24056,7 +25734,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L251"
+          "locator": "L253"
         }
       ]
     },
@@ -24104,7 +25782,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L340"
+          "locator": "L342"
         }
       ]
     },
@@ -24128,7 +25806,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L252"
+          "locator": "L254"
         }
       ]
     },
@@ -24176,7 +25854,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L337"
+          "locator": "L339"
         }
       ]
     },
@@ -24188,7 +25866,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L300"
+          "locator": "L302"
         }
       ]
     },
@@ -24200,7 +25878,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L296"
+          "locator": "L298"
         }
       ]
     },
@@ -24422,6 +26100,18 @@
     },
     {
       "from": "doc:return_ethics_and_retaliation_conversion",
+      "relation": "links_to",
+      "to": "doc:return_ethics_and_retaliation_conversion_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md",
+          "locator": "L395"
+        }
+      ]
+    },
+    {
+      "from": "doc:return_ethics_and_retaliation_conversion",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -24590,6 +26280,18 @@
     },
     {
       "from": "doc:return_ethics_and_retaliation_conversion_en",
+      "relation": "links_to",
+      "to": "doc:return_ethics_and_retaliation_conversion",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.en.md",
+          "locator": "L437"
+        }
+      ]
+    },
+    {
+      "from": "doc:return_ethics_and_retaliation_conversion_en",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -24674,6 +26376,18 @@
     },
     {
       "from": "doc:return_intake_log",
+      "relation": "links_to",
+      "to": "doc:return_intake_log_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md",
+          "locator": "L244"
+        }
+      ]
+    },
+    {
+      "from": "doc:return_intake_log",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -24753,6 +26467,18 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.en.md",
           "locator": "L179"
+        }
+      ]
+    },
+    {
+      "from": "doc:return_intake_log_en",
+      "relation": "links_to",
+      "to": "doc:return_intake_log",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.en.md",
+          "locator": "L8"
         }
       ]
     },
@@ -25225,7 +26951,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L716"
+          "locator": "L717"
         }
       ]
     },
@@ -25237,17 +26963,17 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L492"
+          "locator": "L493"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L742"
+          "locator": "L744"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L880"
+          "locator": "L882"
         }
       ]
     },
@@ -25259,7 +26985,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L705"
+          "locator": "L706"
         }
       ]
     },
@@ -25276,17 +27002,17 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L717"
+          "locator": "L718"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L723"
+          "locator": "L724"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L882"
+          "locator": "L884"
         }
       ]
     },
@@ -25298,12 +27024,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L354"
+          "locator": "L355"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L725"
+          "locator": "L726"
         }
       ]
     },
@@ -25315,167 +27041,17 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L364"
-        },
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L419"
-        },
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L730"
-        },
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L885"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:02_raj_beauty_hfc_introduction",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L363"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:02_raj_beauty_history_field_topology",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L362"
-        },
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L763"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:02_raj_beauty_scientific_ontology_and_science",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
           "locator": "L365"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:03_tam_goodness_boundary_ethics_model",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L373"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L735"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:03_tam_goodness_meaning_as_return_orbit",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L374"
+          "locator": "L420"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L736"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:04_applications_ai_adaptation_ai_boundary_interface_and_synchronous_understanding",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L631"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:04_applications_ai_adaptation_ai_personality_as_response_structure",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L632"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:04_applications_ai_adaptation_ai_usefulness_as_a_boundary_function",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L630"
-        },
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L749"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:04_applications_ai_adaptation_application_boundary_theory_core",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L748"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L555"
-        },
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L743"
+          "locator": "L732"
         },
         {
           "source_type": "concept_network",
@@ -25487,12 +27063,162 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "concept_network_reference",
+      "to": "doc:02_raj_beauty_hfc_introduction",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L364"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:02_raj_beauty_history_field_topology",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L363"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L765"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:02_raj_beauty_scientific_ontology_and_science",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L366"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:03_tam_goodness_boundary_ethics_model",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L374"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L737"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:03_tam_goodness_meaning_as_return_orbit",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L375"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L738"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:04_applications_ai_adaptation_ai_boundary_interface_and_synchronous_understanding",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L632"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:04_applications_ai_adaptation_ai_personality_as_response_structure",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L633"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:04_applications_ai_adaptation_ai_usefulness_as_a_boundary_function",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L631"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L751"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:04_applications_ai_adaptation_application_boundary_theory_core",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L750"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L556"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L745"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L889"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
       "to": "doc:05_research_notes_literary_ontological_notes_readme",
       "provenance": [
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L757"
+          "locator": "L759"
         }
       ]
     },
@@ -25504,7 +27230,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L640"
+          "locator": "L641"
         }
       ]
     },
@@ -25516,7 +27242,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L889"
+          "locator": "L891"
         }
       ]
     },
@@ -25528,12 +27254,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L641"
+          "locator": "L642"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L750"
+          "locator": "L752"
         }
       ]
     },
@@ -25545,7 +27271,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L755"
+          "locator": "L757"
         }
       ]
     },
@@ -25562,12 +27288,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L724"
+          "locator": "L725"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L883"
+          "locator": "L885"
         }
       ]
     },
@@ -25579,12 +27305,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L409"
+          "locator": "L410"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L881"
+          "locator": "L883"
         }
       ]
     },
@@ -25596,7 +27322,24 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L738"
+          "locator": "L740"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L354"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L731"
         }
       ]
     },
@@ -25608,12 +27351,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L642"
+          "locator": "L643"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L751"
+          "locator": "L753"
         }
       ]
     },
@@ -25625,12 +27368,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L486"
+          "locator": "L487"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L879"
+          "locator": "L881"
         }
       ]
     },
@@ -25642,7 +27385,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L758"
+          "locator": "L760"
         }
       ]
     },
@@ -25659,58 +27402,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L729"
-        },
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L884"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:narrative_truth_and_structural_reading",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L756"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:negentropy_economy_and_meaning_generation",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L744"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:optional_axiom_modules_cognitive_bridge",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L375"
-        },
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L449"
-        },
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L731"
+          "locator": "L730"
         },
         {
           "source_type": "concept_network",
@@ -25722,17 +27414,46 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "concept_network_reference",
-      "to": "doc:physics_correspondence_policy",
+      "to": "doc:narrative_truth_and_structural_reading",
       "provenance": [
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L690"
+          "locator": "L758"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:negentropy_economy_and_meaning_generation",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L746"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:optional_axiom_modules_cognitive_bridge",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L376"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L762"
+          "locator": "L450"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L733"
         },
         {
           "source_type": "concept_network",
@@ -25744,7 +27465,7 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "concept_network_reference",
-      "to": "doc:pinger_hypothesis_and_history_field_topology",
+      "to": "doc:physics_correspondence_policy",
       "provenance": [
         {
           "source_type": "concept_network",
@@ -25755,6 +27476,28 @@
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
           "locator": "L764"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L890"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:pinger_hypothesis_and_history_field_topology",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L692"
+        },
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L766"
         }
       ]
     },
@@ -25766,7 +27509,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L714"
+          "locator": "L715"
         }
       ]
     },
@@ -25778,12 +27521,24 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L376"
+          "locator": "L377"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L737"
+          "locator": "L739"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:scientific_ontology_concept_network_en",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L895"
         }
       ]
     },
@@ -25795,12 +27550,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L715"
+          "locator": "L716"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L878"
+          "locator": "L880"
         }
       ]
     },
@@ -25992,7 +27747,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L716"
+          "locator": "L717"
         }
       ]
     },
@@ -26004,17 +27759,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L492"
+          "locator": "L493"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L742"
+          "locator": "L744"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L880"
+          "locator": "L882"
         }
       ]
     },
@@ -26026,7 +27781,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L705"
+          "locator": "L706"
         }
       ]
     },
@@ -26043,17 +27798,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L717"
+          "locator": "L718"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L723"
+          "locator": "L724"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L882"
+          "locator": "L884"
         }
       ]
     },
@@ -26065,12 +27820,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L354"
+          "locator": "L355"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L725"
+          "locator": "L726"
         }
       ]
     },
@@ -26082,167 +27837,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L364"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L419"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L730"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L885"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:02_raj_beauty_hfc_introduction",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L363"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:02_raj_beauty_history_field_topology",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L362"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L763"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:02_raj_beauty_scientific_ontology_and_science",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
           "locator": "L365"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:03_tam_goodness_boundary_ethics_model",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L373"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L735"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:03_tam_goodness_meaning_as_return_orbit",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L374"
+          "locator": "L420"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L736"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:04_applications_ai_adaptation_ai_boundary_interface_and_synchronous_understanding",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L631"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:04_applications_ai_adaptation_ai_personality_as_response_structure",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L632"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:04_applications_ai_adaptation_ai_usefulness_as_a_boundary_function",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L630"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L749"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:04_applications_ai_adaptation_application_boundary_theory_core",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L748"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L555"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L743"
+          "locator": "L732"
         },
         {
           "source_type": "markdown",
@@ -26254,12 +27859,162 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "links_to",
+      "to": "doc:02_raj_beauty_hfc_introduction",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L364"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_history_field_topology",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L363"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L765"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_scientific_ontology_and_science",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L366"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:03_tam_goodness_boundary_ethics_model",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L374"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L737"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:03_tam_goodness_meaning_as_return_orbit",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L375"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L738"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:04_applications_ai_adaptation_ai_boundary_interface_and_synchronous_understanding",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L632"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:04_applications_ai_adaptation_ai_personality_as_response_structure",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L633"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:04_applications_ai_adaptation_ai_usefulness_as_a_boundary_function",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L631"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L751"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:04_applications_ai_adaptation_application_boundary_theory_core",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L750"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_organizational_boundary_and_port_model_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L556"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L745"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L889"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
       "to": "doc:05_research_notes_literary_ontological_notes_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L757"
+          "locator": "L759"
         }
       ]
     },
@@ -26271,7 +28026,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L640"
+          "locator": "L641"
         }
       ]
     },
@@ -26283,7 +28038,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L889"
+          "locator": "L891"
         }
       ]
     },
@@ -26295,12 +28050,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L641"
+          "locator": "L642"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L750"
+          "locator": "L752"
         }
       ]
     },
@@ -26312,7 +28067,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L755"
+          "locator": "L757"
         }
       ]
     },
@@ -26329,12 +28084,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L724"
+          "locator": "L725"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L883"
+          "locator": "L885"
         }
       ]
     },
@@ -26346,12 +28101,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L409"
+          "locator": "L410"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L881"
+          "locator": "L883"
         }
       ]
     },
@@ -26363,7 +28118,24 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L738"
+          "locator": "L740"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L354"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L731"
         }
       ]
     },
@@ -26375,12 +28147,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L642"
+          "locator": "L643"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L751"
+          "locator": "L753"
         }
       ]
     },
@@ -26392,12 +28164,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L486"
+          "locator": "L487"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L879"
+          "locator": "L881"
         }
       ]
     },
@@ -26409,7 +28181,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L758"
+          "locator": "L760"
         }
       ]
     },
@@ -26426,58 +28198,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L729"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L884"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:narrative_truth_and_structural_reading",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L756"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:negentropy_economy_and_meaning_generation",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L744"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:optional_axiom_modules_cognitive_bridge",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L375"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L449"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L731"
+          "locator": "L730"
         },
         {
           "source_type": "markdown",
@@ -26489,17 +28210,46 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "links_to",
-      "to": "doc:physics_correspondence_policy",
+      "to": "doc:narrative_truth_and_structural_reading",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L690"
+          "locator": "L758"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:negentropy_economy_and_meaning_generation",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L746"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:optional_axiom_modules_cognitive_bridge",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L376"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L762"
+          "locator": "L450"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L733"
         },
         {
           "source_type": "markdown",
@@ -26511,7 +28261,7 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "links_to",
-      "to": "doc:pinger_hypothesis_and_history_field_topology",
+      "to": "doc:physics_correspondence_policy",
       "provenance": [
         {
           "source_type": "markdown",
@@ -26522,6 +28272,28 @@
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
           "locator": "L764"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L890"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:pinger_hypothesis_and_history_field_topology",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L692"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L766"
         }
       ]
     },
@@ -26533,7 +28305,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L714"
+          "locator": "L715"
         }
       ]
     },
@@ -26545,12 +28317,24 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L376"
+          "locator": "L377"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L737"
+          "locator": "L739"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:scientific_ontology_concept_network_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L895"
         }
       ]
     },
@@ -26562,12 +28346,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L715"
+          "locator": "L716"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L878"
+          "locator": "L880"
         }
       ]
     },
@@ -27343,6 +29127,18 @@
     {
       "from": "doc:scientific_ontology_concept_network_en",
       "relation": "links_to",
+      "to": "doc:scientific_ontology_concept_network",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
+          "locator": "L8"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network_en",
+      "relation": "links_to",
       "to": "doc:truth_management_and_boundary_pdca_en",
       "provenance": [
         {
@@ -27419,6 +29215,18 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=00_Overview/Scientific_Ontology_Operational_Outline.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_operational_outline",
+      "relation": "links_to",
+      "to": "doc:00_overview_scientific_ontology_operational_outline_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+          "locator": "L395"
         }
       ]
     },
@@ -27735,6 +29543,18 @@
     },
     {
       "from": "doc:semantic_network_topology_commensuration_bandwidth",
+      "relation": "links_to",
+      "to": "doc:semantic_network_topology_commensuration_bandwidth_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
+          "locator": "L669"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -27987,6 +29807,18 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
           "locator": "L634"
+        }
+      ]
+    },
+    {
+      "from": "doc:semantic_network_topology_commensuration_bandwidth_en",
+      "relation": "links_to",
+      "to": "doc:semantic_network_topology_commensuration_bandwidth",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.en.md",
+          "locator": "L8"
         }
       ]
     },
@@ -28640,6 +30472,18 @@
     },
     {
       "from": "doc:specification_for_peace",
+      "relation": "links_to",
+      "to": "doc:specification_for_peace_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md",
+          "locator": "L543"
+        }
+      ]
+    },
+    {
+      "from": "doc:specification_for_peace",
       "relation": "owns",
       "to": "concept:existence_strength",
       "provenance": [
@@ -28906,6 +30750,18 @@
     {
       "from": "doc:speech_as_sequential_decompression_en",
       "relation": "links_to",
+      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_speech_as_sequential_decompression_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.en.md",
+          "locator": "L8"
+        }
+      ]
+    },
+    {
+      "from": "doc:speech_as_sequential_decompression_en",
+      "relation": "links_to",
       "to": "doc:changelog",
       "provenance": [
         {
@@ -29077,6 +30933,18 @@
       ]
     },
     {
+      "from": "doc:term_collision_registry",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:term_collision_registry_en",
       "relation": "belongs_to_topic",
       "to": "topic:commensuration",
@@ -29145,6 +31013,23 @@
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.en.md",
           "locator": "L44"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.en.md",
+          "locator": "L6"
+        }
+      ]
+    },
+    {
+      "from": "doc:term_collision_registry_en",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
         }
       ]
     },
@@ -29216,7 +31101,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L357"
+          "locator": "L341"
         }
       ]
     },
@@ -29228,7 +31113,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L355"
+          "locator": "L339"
         }
       ]
     },
@@ -29240,7 +31125,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L356"
+          "locator": "L340"
         }
       ]
     },
@@ -29252,7 +31137,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L353"
+          "locator": "L337"
         }
       ]
     },
@@ -29264,7 +31149,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L358"
+          "locator": "L342"
         }
       ]
     },
@@ -29281,7 +31166,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L352"
+          "locator": "L336"
         }
       ]
     },
@@ -29293,12 +31178,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L346"
+          "locator": "L330"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L359"
+          "locator": "L343"
         }
       ]
     },
@@ -29310,7 +31195,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
-          "locator": "L354"
+          "locator": "L338"
         }
       ]
     },
@@ -29566,6 +31451,29 @@
           "source_type": "manifest",
           "source_path": "tools/docs_manifest.yml",
           "locator": "documents[path=90_Repository_Governance/Release_Update/UPDATE_PACK.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:update_pack",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "external:dssi_core_a",
+      "relation": "implemented_as",
+      "to": "external:connectbits_v0_5_0",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml"
         }
       ]
     },

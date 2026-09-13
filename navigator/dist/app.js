@@ -1,7 +1,15 @@
 import { browsePayload, browseTopics, localizedValue, searchDocuments, } from "./search-core.js";
 import { graphNodeLabel, graphNodeMap, graphSubgraph, layerSummaries, resolveGraphNode, } from "./graph-core.js";
 import { collapseDocumentsForLanguage, collapseSearchResultsForLanguage, documentLanguage, preferredDocumentForLanguage, preferredPathForLanguage, presentationKeyForDocument, } from "./language-core.js";
-import { publicDocumentTitle, publicLinkLabel, readerText, sectionSlug, fragmentFromLink, sourceHeaderLines, documentForEditorialId, documentKey, readingChannelEntries, readingChannels, sameEditorialSelection, } from "./reader-core.js";
+import { publicDocumentTitle, publicLinkLabel, readerText, sectionSlug, fragmentFromLink, sourceHeaderLines, documentForEditorialId, documentKey, readingChannelEntries, readingChannels, sameEditorialSelection, splitInlineMath, displayMathBlockAt, isDisplayMathStart, } from "./reader-core.js";
+let katex = null;
+try {
+    // @ts-expect-error Vendored KaTeX ESM is shipped as JavaScript without a local declaration file.
+    katex = (await import("../vendor/katex/katex.mjs")).default;
+}
+catch {
+    // Reader remains usable offline or if a vendor asset is missing; TeX is shown verbatim instead.
+}
 const PUBLIC_CATALOG_URL = "../tools/docs_public_catalog.json";
 const PUBLIC_GRAPH_URL = "../tools/docs_public_graph.json";
 const DEVELOPER_GRAPH_URL = "../tools/docs_graph.json";
@@ -111,6 +119,23 @@ function publicLayerConfigs() {
 }
 function publicLayerConfig(layerKey) {
     return publicLayerConfigs().find((item) => String(item.id ?? "") === layerKey);
+}
+function publicLayersForHomeGroup(group) {
+    return publicLayerConfigs().filter((item) => String(item.home_group ?? "") === group);
+}
+function publicGuideById(id) {
+    return publicGuides().find((item) => String(item.id ?? "") === id);
+}
+function surfaceEyebrow(config) {
+    const group = String(config?.home_group ?? "");
+    const labels = {
+        contact: ["CONTACT", "CONTACT"],
+        working: ["WORKING DOMAIN", "WORKING DOMAIN"],
+        core: ["CORE SYSTEM", "CORE SYSTEM"],
+        guide: ["SYSTEM GUIDE", "SYSTEM GUIDE"],
+    };
+    const pair = labels[group] ?? ["READ", "READ"];
+    return pair[displayLang === "ja" ? 0 : 1];
 }
 function publicGuides() {
     return [...(publicContent.guides ?? [])].sort((a, b) => Number(a.order ?? 999) - Number(b.order ?? 999) || String(a.id ?? "").localeCompare(String(b.id ?? ""), "en"));
@@ -500,6 +525,7 @@ function publicLayerCard(config) {
     const label = localized(config.label, String(config.id ?? ""));
     const subtitle = localized(config.subtitle, "");
     const description = localized(config.description, "");
+    const group = String(config.home_group ?? "");
     const top = el("div", "public-layer-card-top");
     top.append(el("span", "public-layer-code", label));
     if (subtitle)
@@ -508,13 +534,20 @@ function publicLayerCard(config) {
     if (description)
         item.append(el("p", "public-layer-description", description));
     const actions = el("div", "card-actions");
-    const open = button(displayLang === "ja" ? "この層を見る" : "Open this layer", "button primary compact-button");
+    const actionLabels = {
+        contact: ["この入口を見る", "Open this entrance"],
+        working: ["この領域を見る", "Open this domain"],
+        core: ["この体系を読む", "Read this part"],
+        guide: ["案内を見る", "Open the guide"],
+    };
+    const actionLabel = actionLabels[group] ?? ["見る", "Open"];
+    const open = button(actionLabel[displayLang === "ja" ? 0 : 1], "button primary compact-button");
     open.addEventListener("click", () => setRoute({ layer: `layer:${String(config.id ?? "")}` }));
     actions.append(open);
     const readmePath = String(config.readme_path ?? "");
     if (readmePath && readerAllowedPaths().has(readmePath)) {
         const readme = readerButton(readmePath, "button quiet-button");
-        readme.textContent = displayLang === "ja" ? "層の案内を読む" : "Read layer guide";
+        readme.textContent = displayLang === "ja" ? "案内文書を読む" : "Read guide document";
         actions.append(readme);
     }
     item.append(actions);
@@ -586,6 +619,33 @@ function renderPublicHome() {
     const home = publicContent.home ?? {};
     const hero = el("section", "public-hero");
     hero.append(eyebrow(localized(home.eyebrow, "SCIENTIFIC ONTOLOGY")), el("h1", "public-hero-title", localized(home.title, displayLang === "ja" ? "存在境界論を読む" : "Read Scientific Ontology")), el("p", "public-hero-copy", localized(home.description, "")), searchBox());
+    page.append(hero);
+    const contactSection = el("section", "section public-section");
+    contactSection.append(eyebrow("CONTACT"), el("h2", "section-title", displayLang === "ja" ? "まず、触れる" : "Begin with contact"), el("p", "section-copy", displayLang === "ja"
+        ? "理論を順に読む前に、外へ持ち出された表現や図像から『なんだこれ？』という圧を受ける入口です。"
+        : "Before reading the theory in sequence, encounter it through outward expression or visual compression and let the initial pressure arrive first."));
+    const contactGrid = el("div", "public-layer-grid");
+    for (const config of publicLayersForHomeGroup("contact"))
+        contactGrid.append(publicLayerCard(config));
+    contactSection.append(contactGrid);
+    page.append(contactSection);
+    const entranceSection = el("section", "section guide-section");
+    entranceSection.append(eyebrow(displayLang === "ja" ? "CANONICAL ENTRANCES" : "CANONICAL ENTRANCES"), el("h2", "section-title", displayLang === "ja" ? "正式な入口から入る" : "Enter through the canonical guides"), el("p", "section-copy", displayLang === "ja"
+        ? "Repositoryの開始線と体系地図から、何を読んでいるのかを確認できます。"
+        : "Use the repository entry and system map to establish what you are reading and how the parts are arranged."));
+    const entranceGrid = el("div", "guide-grid");
+    for (const id of ["repository_entry", "system_map"]) {
+        const guide = publicGuideById(id);
+        if (guide)
+            entranceGrid.append(publicGuideCard(guide));
+    }
+    entranceSection.append(entranceGrid);
+    page.append(entranceSection);
+    for (const channel of readingChannels(publicContent)) {
+        const section = publicReadingChannelSection(channel);
+        if (section)
+            page.append(section);
+    }
     const quick = el("div", "public-quick-questions");
     quick.append(el("span", "quick-label", displayLang === "ja" ? "問いから入る" : "Start with a question"));
     for (const row of publicQuestionEntrances().slice(0, 5)) {
@@ -593,31 +653,46 @@ function renderPublicHome() {
         q.addEventListener("click", () => setRoute({ view: "search", q: row.question }));
         quick.append(q);
     }
-    page.append(hero);
-    for (const channel of readingChannels(publicContent)) {
-        const section = publicReadingChannelSection(channel);
-        if (section)
-            page.append(section);
-    }
     page.append(quick);
-    const layerSection = el("section", "section public-section");
-    layerSection.append(eyebrow(displayLang === "ja" ? "READ BY LAYER" : "READ BY LAYER"), el("h2", "section-title", displayLang === "ja" ? "体系の層から読む" : "Read through the system layers"), el("p", "section-copy", displayLang === "ja"
-        ? "各層のREADMEが持つ役割を短くほどき、いま読みたい場所へ直接入れるようにしています。層は重要度の順位ではなく、体系上の役割です。"
-        : "Each layer README is condensed into a reader-facing entrance. Layers express roles in the system, not an importance ranking."));
-    const layerGrid = el("div", "public-layer-grid");
-    for (const config of publicLayerConfigs())
-        layerGrid.append(publicLayerCard(config));
-    layerSection.append(layerGrid);
-    page.append(layerSection);
-    const guideSection = el("section", "section guide-section");
-    guideSection.append(eyebrow(displayLang === "ja" ? "GUIDE DOCUMENTS" : "GUIDE DOCUMENTS"), el("h2", "section-title", displayLang === "ja" ? "目的から案内文書を選ぶ" : "Choose a guide by what you need"), el("p", "section-copy", displayLang === "ja"
-        ? "ファイル名ではなく、『何を知りたいときに読むか』から選べます。"
-        : "Choose by what you want to understand, rather than by filename."));
-    const guideGrid = el("div", "guide-grid");
-    for (const guide of publicGuides())
-        guideGrid.append(publicGuideCard(guide));
-    guideSection.append(guideGrid);
-    page.append(guideSection);
+    const workingSection = el("section", "section public-section");
+    workingSection.append(eyebrow("WORKING DOMAINS"), el("h2", "section-title", displayLang === "ja" ? "使う・研究する" : "Apply and investigate"), el("p", "section-copy", displayLang === "ja"
+        ? "理論を設計へ接続する応用と、まだ閉じない研究線を読む領域です。"
+        : "Read applications that connect theory to design and research lines that remain deliberately open."));
+    const workingGrid = el("div", "public-layer-grid");
+    for (const config of publicLayersForHomeGroup("working"))
+        workingGrid.append(publicLayerCard(config));
+    workingSection.append(workingGrid);
+    page.append(workingSection);
+    const coreSection = el("section", "section public-section");
+    coreSection.append(eyebrow("CORE SYSTEM"), el("h2", "section-title", displayLang === "ja" ? "体系そのものを読む" : "Read the core system"), el("p", "section-copy", displayLang === "ja"
+        ? "構造と成立条件、認識と秩序、倫理と責任という三つの中核から読む場所です。"
+        : "Enter through the three core domains: structure and conditions, recognition and order, and ethics and responsibility."));
+    const coreGrid = el("div", "public-layer-grid");
+    for (const config of publicLayersForHomeGroup("core"))
+        coreGrid.append(publicLayerCard(config));
+    coreSection.append(coreGrid);
+    page.append(coreSection);
+    const overviewSection = el("section", "section public-section");
+    overviewSection.append(eyebrow("SYSTEM GUIDE"), el("h2", "section-title", displayLang === "ja" ? "体系の読み方を読む" : "Read how the system is organized"), el("p", "section-copy", displayLang === "ja"
+        ? "全体像は最初に読む義務ではなく、体系をどう読むかを確認し直すための案内です。"
+        : "The overview is not a mandatory first chapter; it is a guide for rechecking how the system can be read."));
+    const overviewGrid = el("div", "public-layer-grid");
+    for (const config of publicLayersForHomeGroup("guide"))
+        overviewGrid.append(publicLayerCard(config));
+    overviewSection.append(overviewGrid);
+    page.append(overviewSection);
+    const remainingGuides = publicGuides().filter((guide) => !["repository_entry", "system_map"].includes(String(guide.id ?? "")));
+    if (remainingGuides.length) {
+        const guideSection = el("section", "section guide-section");
+        guideSection.append(eyebrow(displayLang === "ja" ? "MORE GUIDES" : "MORE GUIDES"), el("h2", "section-title", displayLang === "ja" ? "必要に応じて案内を深める" : "Use a more specific guide when needed"), el("p", "section-copy", displayLang === "ja"
+            ? "運用、概念ネットワーク、用語など、目的が決まっているときの補助入口です。"
+            : "Additional entrances for operational orientation, concept relations, terminology, and other specific needs."));
+        const guideGrid = el("div", "guide-grid");
+        for (const guide of remainingGuides)
+            guideGrid.append(publicGuideCard(guide));
+        guideSection.append(guideGrid);
+        page.append(guideSection);
+    }
     const topicSection = el("section", "section topic-strip-section");
     topicSection.append(eyebrow(displayLang === "ja" ? "INTERESTS" : "INTERESTS"), el("h2", "section-title", displayLang === "ja" ? "関心から寄り道する" : "Take a route through an interest"), el("p", "section-copy", displayLang === "ja"
         ? "トピックは厳密な分類ではなく、別の入口です。同じ文書が複数の関心から見つかることがあります。"
@@ -760,14 +835,14 @@ function renderPublicLayer(layerId) {
     if (!layer)
         return errorPage(`Unknown layer: ${layerId}`);
     const config = publicLayerConfig(String(layer.key));
-    const back = button(displayLang === "ja" ? "← 体系から読む" : "← Read by layer", "back-button");
+    const back = button(displayLang === "ja" ? "← 読書トップ" : "← Reading home", "back-button");
     back.addEventListener("click", () => setRoute({}));
     page.append(back);
     const hero = el("section", "public-layer-hero");
     const label = config ? localized(config.label, localized(layer.label, String(layer.key))) : localized(layer.label, String(layer.key));
     const subtitle = config ? localized(config.subtitle, "") : "";
     const description = config ? localized(config.description, "") : "";
-    hero.append(eyebrow(displayLang === "ja" ? "SYSTEM LAYER" : "SYSTEM LAYER"), el("h1", "public-layer-title", label));
+    hero.append(eyebrow(surfaceEyebrow(config)), el("h1", "public-layer-title", label));
     if (subtitle)
         hero.append(el("p", "public-layer-lead", subtitle));
     if (description)
@@ -776,7 +851,7 @@ function renderPublicLayer(layerId) {
     const readmePath = String(config?.readme_path ?? "");
     if (readmePath && readerAllowedPaths().has(readmePath)) {
         const readme = readerButton(readmePath, "button primary");
-        readme.textContent = displayLang === "ja" ? "この層の案内を読む" : "Read this layer guide";
+        readme.textContent = displayLang === "ja" ? "案内文書を読む" : "Read guide document";
         heroActions.append(readme);
     }
     hero.append(heroActions);
@@ -784,7 +859,7 @@ function renderPublicLayer(layerId) {
     const layerDocs = publicDocsForLayer(String(layer.path ?? ""));
     if (layerDocs.length) {
         const section = el("section", "section public-section");
-        section.append(eyebrow(displayLang === "ja" ? "DOCUMENTS" : "DOCUMENTS"), el("h2", "section-title", displayLang === "ja" ? "この層で読む" : "Read in this layer"), el("p", "section-copy", displayLang === "ja" ? `${layerDocs.length} 件の文書から選べます。` : `Choose from ${layerDocs.length} documents.`));
+        section.append(eyebrow(displayLang === "ja" ? "DOCUMENTS" : "DOCUMENTS"), el("h2", "section-title", displayLang === "ja" ? "ここで読む" : "Read here"), el("p", "section-copy", displayLang === "ja" ? `${layerDocs.length} 件の文書から選べます。` : `Choose from ${layerDocs.length} documents.`));
         const grid = el("div", "doc-grid");
         for (const doc of layerDocs)
             grid.append(docCard(doc));
@@ -793,9 +868,9 @@ function renderPublicLayer(layerId) {
     }
     else {
         const empty = el("section", "section public-section");
-        empty.append(el("h2", "section-title small", displayLang === "ja" ? "この層の案内から始める" : "Start with the layer guide"), el("p", "section-copy", displayLang === "ja"
-            ? "この層の個別文書カードは現在整備中です。READMEから層の役割と収録内容を確認できます。"
-            : "Individual document cards for this layer are still being prepared. The README explains the layer role and included materials."));
+        empty.append(el("h2", "section-title small", displayLang === "ja" ? "案内から始める" : "Start with the guide"), el("p", "section-copy", displayLang === "ja"
+            ? "個別文書カードは現在整備中です。案内文書から役割と収録内容を確認できます。"
+            : "Individual document cards are still being prepared. The guide document explains the role and included materials."));
         page.append(empty);
     }
     const topicIds = new Set();
@@ -805,7 +880,7 @@ function renderPublicLayer(layerId) {
     }
     if (topicIds.size) {
         const topicSection = el("section", "section compact-section");
-        topicSection.append(el("h2", "section-title small", displayLang === "ja" ? "この層から広がる関心" : "Interests reachable from this layer"));
+        topicSection.append(el("h2", "section-title small", displayLang === "ja" ? "ここから広がる関心" : "Interests reachable from here"));
         const strip = el("div", "topic-strip");
         for (const topicId of Array.from(topicIds).sort()) {
             const topic = docsIndex.topics?.[topicId] ?? {};
@@ -826,25 +901,29 @@ function renderLayer(layerId) {
     const layer = layerSummaries(docsGraph).find((row) => String(row.id) === layerId);
     if (!layer)
         return errorPage(`Unknown layer: ${layerId}`);
-    const back = button(displayLang === "ja" ? "← 全体へ" : "← Overview", "back-button");
+    const back = button(displayLang === "ja" ? "← 読書トップ" : "← Reading home", "back-button");
     back.addEventListener("click", () => setRoute({}));
     page.append(back);
-    page.append(eyebrow(`LAYER · ${String(layer.path)}`), el("h1", "hero-title", localized(layer.label, String(layer.key))), el("p", "hero-copy", displayLang === "ja"
-        ? `manifest 登録 ${layer.registered.length}件、リポジトリ上で観測のみ ${layer.observed.length}件。観測のみは検索対象資格やcanonical identityを意味しません。`
-        : `${layer.registered.length} manifest-registered documents and ${layer.observed.length} repository-observed-only documents. Observed-only does not imply search eligibility or canonical identity.`));
+    const config = publicLayerConfig(String(layer.key));
+    const registeredDocs = layer.registered
+        .map((node) => docById(String(node.key)))
+        .filter((doc) => Boolean(doc));
+    const visibleRegisteredDocs = collapseDocumentsForLanguage(registeredDocs, allDocuments(), displayLang);
+    page.append(eyebrow(surfaceEyebrow(config)), el("h1", "hero-title", config ? localized(config.label, localized(layer.label, String(layer.key))) : localized(layer.label, String(layer.key))), el("p", "hero-copy", displayLang === "ja"
+        ? `manifest 登録 ${layer.registered.length}ファイル／表示 ${visibleRegisteredDocs.length}文書、リポジトリ上で観測のみ ${layer.observed.length}件。言語通約ペアはUI言語ごとに1文書へ畳みます。`
+        : `${layer.registered.length} manifest files / ${visibleRegisteredDocs.length} displayed documents, plus ${layer.observed.length} repository-observed-only items. Language-paired files collapse to one document for the selected UI language.`));
     if (layer.registered.length) {
         const section = el("section", "section compact-section");
         section.append(el("h2", "section-title small", displayLang === "ja" ? "manifest登録文書" : "Manifest-registered documents"));
         const grid = el("div", "doc-grid");
+        for (const doc of visibleRegisteredDocs)
+            grid.append(docCard(doc));
         for (const node of layer.registered) {
-            const doc = docById(String(node.key));
-            if (doc)
-                grid.append(docCard(doc));
-            else {
-                const card = el("article", "doc-card card");
-                card.append(el("h3", "card-title", displayGraphNodeLabel(node)), el("div", "path", String(node.path ?? "")));
-                grid.append(card);
-            }
+            if (docById(String(node.key)))
+                continue;
+            const card = el("article", "doc-card card");
+            card.append(el("h3", "card-title", displayGraphNodeLabel(node)), el("div", "path", String(node.path ?? "")));
+            grid.append(card);
         }
         section.append(grid);
         page.append(section);
@@ -1041,7 +1120,32 @@ function renderDocument(docId) {
         page.append(relationSection(graphId));
     return page;
 }
-function appendInlineMarkdown(parent, text, sourcePath) {
+function appendMath(parent, tex, displayMode, delimiter) {
+    const node = document.createElement(displayMode ? "div" : "span");
+    node.className = displayMode ? "reader-math reader-math-block" : "reader-math reader-math-inline";
+    node.dataset.mathDelimiter = delimiter;
+    node.dataset.mathSource = tex;
+    try {
+        if (!katex)
+            throw new Error("KaTeX runtime unavailable");
+        katex.render(tex, node, {
+            displayMode,
+            throwOnError: true,
+            strict: "warn",
+            trust: false,
+            output: "htmlAndMathml",
+        });
+        node.dataset.mathStatus = "rendered";
+    }
+    catch (error) {
+        node.dataset.mathStatus = "fallback";
+        node.classList.add("reader-math-fallback");
+        node.textContent = displayMode ? `${delimiter}\n${tex}\n${delimiter === "$$" ? "$$" : "\\]"}` : `${delimiter}${tex}${delimiter === "$" ? "$" : "\\)"}`;
+        node.title = error instanceof Error ? error.message : "TeX rendering failed";
+    }
+    parent.append(node);
+}
+function appendInlineMarkdownText(parent, text, sourcePath) {
     const token = /(!?\[[^\]]*\]\([^)]+\)|`[^`]+`|\*\*[^*]+\*\*|\*[^*]+\*)/g;
     let cursor = 0;
     for (const match of text.matchAll(token)) {
@@ -1140,6 +1244,14 @@ function appendInlineMarkdown(parent, text, sourcePath) {
     if (cursor < text.length)
         parent.append(document.createTextNode(text.slice(cursor)));
 }
+function appendInlineMarkdown(parent, text, sourcePath) {
+    for (const segment of splitInlineMath(text)) {
+        if (segment.kind === "math")
+            appendMath(parent, segment.value, false, segment.delimiter);
+        else
+            appendInlineMarkdownText(parent, segment.value, sourcePath);
+    }
+}
 function markdownCells(line) {
     let value = line.trim();
     if (value.startsWith("|"))
@@ -1167,6 +1279,12 @@ function renderMarkdown(text, sourcePath) {
         const line = lines[i];
         if (!line.trim()) {
             i += 1;
+            continue;
+        }
+        const mathBlock = displayMathBlockAt(lines, i);
+        if (mathBlock) {
+            appendMath(article, mathBlock.tex, true, mathBlock.delimiter);
+            i = mathBlock.nextIndex;
             continue;
         }
         const fence = line.match(/^\s*```\s*([^\s`]*)\s*$/);
@@ -1269,6 +1387,7 @@ function renderMarkdown(text, sourcePath) {
                 /^\s*>/.test(candidate) ||
                 /^\s*([-*+] |\d+[.)] )/.test(candidate) ||
                 /^\s*(---+|\*\*\*+)\s*$/.test(candidate) ||
+                isDisplayMathStart(candidate) ||
                 (candidate.includes("|") && i + 1 < lines.length && isTableSeparator(lines[i + 1]))))
                 break;
             paragraphLines.push(candidate.trim());
@@ -1421,6 +1540,10 @@ function removePublicSourceHeader(article) {
     for (const child of Array.from(article.children).slice(0, 10)) {
         if (/^H[12]$/.test(child.tagName) || child.tagName === "HR")
             continue;
+        // A subtitle paragraph may sit between the source title and its header.
+        // Keep the subtitle itself; only hide recognized structured metadata.
+        if (child.tagName === "P" && child.previousElementSibling?.tagName === "H1")
+            continue;
         if (child instanceof HTMLElement && child.dataset.sourceHeader === "true") {
             child.remove();
             continue;
@@ -1548,6 +1671,51 @@ function prepareReaderPresentation(shell, article, path, visibleTitle) {
     toolbar.append(share, state);
     return [toolbar, article, selectionSearchTools(article)];
 }
+function readModelMetadata(doc) {
+    const details = el("details", "reader-metadata-summary info-panel");
+    details.append(el("summary", "minor-title", displayLang === "ja" ? "文書の位置づけ・通約・監査状態" : "Document role, commensuration and assessment"));
+    const relation = doc.language_relation ?? {};
+    const assessment = doc.assessment_summary ?? {};
+    const state = String(assessment.status ?? "unreviewed");
+    const labels = {
+        unreviewed: ["監査値は未承認です。", "Assessment values have not been approved."],
+        hold: ["監査判断は保留中です。", "Assessment remains on hold."],
+        not_applicable: ["この役割は代表S/Eの採点対象ではありません。", "A representative S/E score does not apply to this role."],
+        approved: ["明示的なレビューを経て登録された監査要約です。", "This summary was registered after explicit review."]
+    };
+    details.append(el("p", "", roleForDoc(doc)));
+    const languageNote = String(relation.role) === "commensuration"
+        ? (displayLang === "ja" ? "英語は通約。日本語正本へ戻って照合します。" : "English commensuration; the Japanese authoritative text governs discrepancies.")
+        : String(relation.role) === "coauthoritative_root_interface"
+            ? (displayLang === "ja" ? "入口・案内に限定した日英共同正本です。" : "Co-authority is limited to this root invitation and navigation interface.")
+            : (displayLang === "ja" ? "言語・役割は文書台帳に従います。" : "Language and role follow the current document ledger.");
+    details.append(el("p", "", languageNote));
+    if (relation.coverage === "partial" || relation.coverage === "digest") {
+        details.append(el("p", "reader-anchor-note", displayLang === "ja" ? "部分通約または要約です。全文対応ではありません。" : "Partial commensuration or digest; not a full-text counterpart."));
+        if (relation.coverage_note)
+            details.append(el("p", "", String(relation.coverage_note)));
+    }
+    details.append(el("p", "", (labels[state] ?? labels.unreviewed)[displayLang === "ja" ? 0 : 1]));
+    if (state === "approved" && assessment.representative) {
+        details.append(el("p", "", `${assessment.representative.strength} / ${assessment.representative.exposure}`));
+        for (const hotspot of assessment.hotspots ?? [])
+            details.append(el("p", "", `${hotspot.label}: ${hotspot.strength} / ${hotspot.exposure} (${hotspot.locator})`));
+        for (const note of assessment.nonclaim_boundaries ?? [])
+            details.append(el("p", "", String(note)));
+    }
+    for (const note of assessment.unresolved ?? [])
+        details.append(el("p", "", String(note)));
+    for (const rel of doc.artifact_relations ?? []) {
+        const external = (docsIndex.external_artifacts ?? []).find((x) => x.artifact_id === rel.target_artifact);
+        if (external?.locator && String(external.locator).startsWith("https://")) {
+            const link = el("a", "text-link", String(external.title));
+            link.href = String(external.locator);
+            link.rel = "noopener noreferrer";
+            details.append(link);
+        }
+    }
+    return details;
+}
 function renderReader(path) {
     path = preferredPath(path);
     const page = el("main", `page reader-page ${isDeveloper() ? "developer-reader" : "public-reader"}`);
@@ -1634,6 +1802,8 @@ function renderReader(path) {
             if (sourceLanguage === "ja" || sourceLanguage === "en")
                 article.lang = sourceLanguage;
             shell.replaceChildren(...prepareReaderPresentation(shell, article, path, title));
+            if (doc)
+                page.append(readModelMetadata(doc));
             const params = route();
             const section = params.get("section") ?? "";
             if (section && !scrollToReaderSection(article, section, path, false)) {

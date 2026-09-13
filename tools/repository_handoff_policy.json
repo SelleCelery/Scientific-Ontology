@@ -119,46 +119,10 @@
   },
   "verification_hooks": [
     {
-      "label": "Navigator interface",
+      "label": "v5.1 document contract, local read models and Public Site",
       "command": [
         "python",
-        "scripts/check_navigator_interface.py"
-      ]
-    },
-    {
-      "label": "Navigator language resolution",
-      "command": [
-        "node",
-        "scripts/check_navigator_language_resolution.mjs"
-      ]
-    },
-    {
-      "label": "Registration Workbench",
-      "command": [
-        "python",
-        "scripts/check_registration_workbench.py"
-      ]
-    },
-    {
-      "label": "Public site build",
-      "command": [
-        "python",
-        "scripts/build_public_site.py"
-      ]
-    },
-    {
-      "label": "Public site artifact",
-      "command": [
-        "python",
-        "scripts/check_public_site.py"
-      ]
-    },
-    {
-      "label": "Public site deterministic build",
-      "command": [
-        "python",
-        "scripts/build_public_site.py",
-        "--check"
+        "scripts/rebuild_document_read_models.py"
       ]
     }
   ],

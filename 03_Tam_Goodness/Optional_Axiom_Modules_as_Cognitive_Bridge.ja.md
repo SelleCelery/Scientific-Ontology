@@ -9,6 +9,10 @@
 
 ---
 
+### 研究原資料との区別
+
+SO再帰的哲学研究でDe-Registry等の固定fixtureとして使用した旧Optional Axiom atlasは、[`04_Applications/SO_Reflexive_Philosophical_Research/sources/`](../04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md) に研究原資料として保存する。旧atlasは本稿の現行正本ではなく、本稿も旧atlas全体を現在のSOの主張として再承認するものではない。
+
 ## 0. 位置づけ
 
 本文書は、異なる思想、世界観、学問、制度、技術設計、神話的体系を、関心、捨象、価値、コストの安定パターンとして比較し、通約可能性と翻訳不能残差を照合するための境界プロトコルである。
