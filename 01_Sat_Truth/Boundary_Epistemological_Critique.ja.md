@@ -3,7 +3,7 @@
 
 > Status: Draft
 > Scope: boundary-epistemology
-> Language: ja
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S2/S3
 
 本稿は、知の成立条件を、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持・再照合可能性から再定義するための基幹命題列である。
@@ -744,3 +744,7 @@ A.6　本文の骨格は、境界・履歴・内部ヒューリスティック�
 注意: `re-collation` は体系語としてはよいが硬い。意味・判断・学問制度の文脈では `re-examinability` または `capacity for re-examination` を併用する。
 
 補足: 再照合可能性とは、一度閉じた命題・判断・分類・制度的処理を、残差や残渣へのアクセス経路を保ったまま、再び照合可能にする条件である。
+
+---
+
+[英語通約](./Boundary_Epistemological_Critique.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

@@ -3,7 +3,7 @@
 
 > Status: Research note
 > Scope: asymmetry stabilization, cosmological analogy, life, civilization, culture, re-collation
-> Language: en
+> Language: English commensurated rendering; Japanese text is authoritative
 > Claim strength: S2/S3; conceptual model, not a physics claim
 
 ---
@@ -385,3 +385,7 @@ It does not claim that the locks described here are identical mechanisms across 
 The claim of this note is limited to an ontological rereading: within Scientific Ontology, these domains can be read as layered mechanisms by which asymmetry is provisionally retained and later reopened to collation.
 
 ---
+
+---
+
+[Japanese authoritative text](./Asymmetry_Stabilization_and_ReCollation.ja.md). This English commensuration is not independently authoritative.

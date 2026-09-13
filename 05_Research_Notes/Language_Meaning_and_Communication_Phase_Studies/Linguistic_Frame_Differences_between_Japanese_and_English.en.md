@@ -5,7 +5,7 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: Japanese / English / grammar / discourse / commitment timing / omission / modality / responsibility / commensuration residuals
 > Language: English commensurated rendering
-> Japanese authoritative source: ./Linguistic_Frame_Differences_between_Japanese_and_English.ja.md
+> Japanese authoritative source: [Linguistic_Frame_Differences_between_Japanese_and_English.ja.md](./Linguistic_Frame_Differences_between_Japanese_and_English.ja.md)
 > Claim strength: S2-S3 / E3 / U0 / P1-P2.5 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08

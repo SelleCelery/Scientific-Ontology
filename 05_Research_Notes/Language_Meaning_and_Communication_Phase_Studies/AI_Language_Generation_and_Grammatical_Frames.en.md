@@ -5,7 +5,7 @@
 > Lifecycle: Public Living Canonical Candidate / Gate 4
 > Scope: autoregressive generation / distributional constraints / grammar / multilinguality / residuals / false closure / response structure
 > Language: English commensurated rendering
-> Japanese authoritative source: ./AI_Language_Generation_and_Grammatical_Frames.ja.md
+> Japanese authoritative source: [AI_Language_Generation_and_Grammatical_Frames.ja.md](./AI_Language_Generation_and_Grammatical_Frames.ja.md)
 > Claim strength: S3-S4 / E3 / U0-U1 / P1-P2.5 / V0-V2
 > Version: 1.0.0-rc.1
 > Last updated: 2026-08-08

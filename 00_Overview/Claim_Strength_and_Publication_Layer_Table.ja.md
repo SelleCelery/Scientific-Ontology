@@ -1,10 +1,10 @@
 # Claim Strength and Publication-Layer Table for Scientific Ontology
 # 存在境界論｜主張強度・公開レイヤー対応表
 
-> Status: Public control table  
-> Scope: claim strength / epistemic risk / application risk / publication layer / verification / rendering distance  
-> Language: Japanese authoritative; English labels included  
-> Claim strength: classifier  
+> Status: Public control table
+> Scope: claim strength / epistemic risk / application risk / publication layer / verification / rendering distance
+> Language: Japanese authoritative; English commensuration in a separate file
+> Claim strength: classifier
 
 ---
 
@@ -369,10 +369,10 @@ Rコードは、命題が存在境界論の公開中核から、どの言語ゲ�
 
 ### 15.1 既存分野の語を使う場合
 
-1. 標準定義を先に尊重する。  
-2. SO内部の意味を明示する。  
-3. 同一性ではなく、借用、アナロジー、再解釈、対応候補のどれかを示す。  
-4. 適用範囲と非主張事項を書く。  
+1. 標準定義を先に尊重する。
+2. SO内部の意味を明示する。
+3. 同一性ではなく、借用、アナロジー、再解釈、対応候補のどれかを示す。
+4. 適用範囲と非主張事項を書く。
 
 ### 15.2 身体・心理へ接近する場合
 
@@ -483,3 +483,7 @@ AMP / ITSはR5、S5、P3を基本とし、公開体系の第一主張へ直接�
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
 - [`TERM_COLLISION_REGISTRY.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md)
+
+---
+
+[英語通約](./Claim_Strength_and_Publication_Layer_Table.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

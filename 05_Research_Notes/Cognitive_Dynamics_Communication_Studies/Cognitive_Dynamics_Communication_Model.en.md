@@ -6,7 +6,8 @@
 > Language: English commensurated rendering  
 > Japanese authoritative source: [`Cognitive_Dynamics_Communication_Model.ja.md`](./Cognitive_Dynamics_Communication_Model.ja.md)  
 > Claim strength: S2-S3 / E1 / U1 / P1-P2 / V0-V1  
-> Version: 0.1.0  
+> Version: 0.1.1
+> Last updated: 2026-08-17
 > Public handling: This document is not a theory that reduces cognition to discrete modules. It is an operational intermediate model that provisionally cuts out seamless cognition and meaning experience so that finite agents can communicate, assign responsibility, record history, and perform re-collation.
 
 ---
@@ -29,11 +30,11 @@ The phenomenon in which multiple roles, meanings, responsibilities, histories, a
 
 This document does not separately determine how multiple communication pathways should be allocated to particular purposes, what should be held, or which differences should be commensurated into another form.
 
-Those dynamics are handled by [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md).
+Those dynamics are handled by [`Boundary_Diplomacy_and_Port_Allocation.en.md`](Boundary_Diplomacy_and_Port_Allocation.en.md).
 
 This document does not implement communication pathways as organizational responsibility, authority, protocols, audit, or stop conditions.
 
-That institutional implementation is handled by [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md).
+That institutional implementation is handled by [`Organizational_Boundary_and_Port_Model.en.md`](Organizational_Boundary_and_Port_Model.en.md).
 
 This document abstracts the operational structure common to those three documents.
 
@@ -648,7 +649,9 @@ Even where the object is the same, different cut surfaces foreground different d
 
 ### 10.2 Commensuration
 
-Commensuration does not unify different systems of discretization into one.
+This document does not independently define commensuration in general. Its canonical owner is [`Commensuration_as_Cross_Grammatical_Collation.en.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md).
+
+Applied to the present model, that canonical definition means that commensuration does not unify different systems of discretization into one.
 
 It forms mutually reachable mappings while retaining each cognitive axis, history, and language game.
 
@@ -709,13 +712,13 @@ The compression model diagnoses:
 
 ### 11.2 Diplomacy and Allocation Model
 
-[`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md) addresses how multiple Ports are allocated across purposes, time, responsibility, and processing capacity.
+[`Boundary_Diplomacy_and_Port_Allocation.en.md`](Boundary_Diplomacy_and_Port_Allocation.en.md) addresses how multiple Ports are allocated across purposes, time, responsibility, and processing capacity.
 
 Where this model defines the operational character of a Port, the allocation model addresses the dynamics through which Ports are actually selected, held, transformed, and reopened.
 
 ### 11.3 Organizational Boundary and Port Model
 
-[`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md) implements selected Ports as responsible actors, authority, protocols, history, audit, appeal, and stop conditions.
+[`Organizational_Boundary_and_Port_Model.en.md`](Organizational_Boundary_and_Port_Model.en.md) implements selected Ports as responsible actors, authority, protocols, history, audit, appeal, and stop conditions.
 
 Where this model addresses mapping from the continuous layer into the discrete operational layer, the organizational model fixes the discrete operational layer into institutions and technology.
 
@@ -1004,19 +1007,20 @@ Its role is to preserve incompletion while making movement between continuous co
 
 ### Upstream
 
-- [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
-- [`Optional_Axiom_Modules_as_Cognitive_Bridge.en.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
-- [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
+- imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
+- imports_from: [`Optional_Axiom_Modules_as_Cognitive_Bridge.en.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
+- imports_from: [`Commensuration_as_Cross_Grammatical_Collation.en.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md)
+- collates_with: [`Meaning_as_Return_Orbit.md`](../../03_Tam_Goodness/Meaning_as_Return_Orbit.md)
 
 ### Same Research Axis
 
-- [`Compression_of_Existence_Phases.en.md`](Compression_of_Existence_Phases.en.md)
-- [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](Boundary_Diplomacy_and_Port_Allocation.ja.md)
-- [`Organizational_Boundary_and_Port_Model.ja.md`](Organizational_Boundary_and_Port_Model.ja.md)
+- abstracts_common_operations_of: [`Compression_of_Existence_Phases.en.md`](Compression_of_Existence_Phases.en.md)
+- abstracts_common_operations_of: [`Boundary_Diplomacy_and_Port_Allocation.en.md`](Boundary_Diplomacy_and_Port_Allocation.en.md)
+- abstracts_common_operations_of: [`Organizational_Boundary_and_Port_Model.en.md`](Organizational_Boundary_and_Port_Model.en.md)
 
 ### Applications
 
-- [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
-- [`AI_Adoption_Collation_Checklist.md`](../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
-- [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../../04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
-- [`AI_Usefulness_as_a_Boundary_Function.md`](../../04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
+- applied_by: [`Specification_for_Peace.en.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.en.md)
+- tested_by: [`AI_Adoption_Collation_Checklist.md`](../../04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
+- applied_by: [`AI_Boundary_Interface_and_Synchronous_Understanding.md`](../../04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md)
+- applied_by: [`AI_Usefulness_as_a_Boundary_Function.md`](../../04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)

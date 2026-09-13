@@ -6,8 +6,8 @@
 > Scope: compressed experience / literature / reading / history redeployment / qualia difference / sensitivity / worldmaking interface
 > Language: Japanese authoritative; English commensuration available
 > Claim strength: S3 / E2-E3 / U0-U1 / P1-P2.5 / V0-V2
-> Version: 1.0.0-rc.1
-> Last updated: 2026-08-08
+> Version: 1.0.0-rc.2
+> Last updated: 2026-08-17
 > Canonical scope: 文学的接触における圧縮経験、履歴再展開、クオリア差分接触の一作動面
 > Maintenance: Living canonical. Conceptual changes require document Revision History, directory CHANGELOG, Return Intake disposition, and cross-document regression review.
 > Public handling: 本稿は文学一般を一意に定義しない。世界制作、物語的真実、読者の一時居住など既存の文学研究を包摂せず、圧縮された他者履歴が読者の履歴場で再展開され、差分を伴うクオリアを形成する一作動面だけを扱う。
@@ -85,7 +85,9 @@
 
 ただし、強い感情が生じたことだけで、作品理解や真理接触が保証されるわけではない。
 
-## 5. クオリアには履歴が必要である
+## 5. 本稿で扱うクオリア差分の形成には履歴が参与する
+
+ここで述べるのは、文学的接触において圧縮された経験が読者の履歴場で差分を形成する局面であり、クオリア一般の成立に履歴を普遍的必要条件として課すものではない。
 
 同じ作品でも、以前は何も感じなかった箇所が、後年になって強く立ち上がることがある。
 
@@ -255,6 +257,9 @@
 
 ## Revision History / 改訂履歴
 
+### 1.0.0-rc.2 — 2026-08-17
+- 履歴の参与を、本稿が扱う文学的クオリア差分の形成へ限定し、クオリア一般への普遍的必要条件と読まれる表現を修正。
+
 ### 1.0.0-rc.1 — 2026-08-08
 - Gate 4でPublic Living Canonical Candidateへ昇格。
 - 文学・SOLiteからの返りを自動正本化せず、常時照合する運用を追加。
@@ -264,3 +269,7 @@
 - Gate 2監査回答、返路統一、Network三位相、認識軸依存不可逆性候補を反映。
 
 更新の全体履歴は [`CHANGELOG.md`](./CHANGELOG.md)、外部・内部からの返りは [`Return_Intake_Log.md`](Return_Intake_Log.ja.md) を参照。
+
+---
+
+[英語通約](./Compressed_Experience_Qualia_and_Literature.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

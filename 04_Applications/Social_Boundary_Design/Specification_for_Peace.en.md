@@ -1,11 +1,11 @@
 # The Essential and Non-Essential Aspects of the Struggle for Survival
 ## A Specification for Peace through the Logical-Depth Axis, the Meaning-Experience Field, and Boundary Diplomacy
 
-> Status: Application Note / First Draft  
-> Scope: peace / society / boundary ethics / meaning-experience field / social boundary design  
-> Language: English commensurated rendering  
-> Japanese authoritative source: [`Specification_for_Peace.ja.md`](./Specification_for_Peace.ja.md)  
-> Claim strength: S2 / E1-E2 / U1 / P1-P2 / V0-V1  
+> Status: Application Note / First Draft
+> Scope: peace / society / boundary ethics / meaning-experience field / social boundary design
+> Language: English commensurated rendering
+> Japanese authoritative source: [`Specification_for_Peace.ja.md`](./Specification_for_Peace.ja.md)
+> Claim strength: S2 / E1-E2 / U1 / P1-P2 / V0-V1
 > Public handling: This document presents a public application model. It does not replace peace policy, international law, psychology, physics, thermodynamics, or electrical engineering.
 
 ---

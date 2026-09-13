@@ -51,10 +51,10 @@ AI側の応答構造は[`../AI_Adaptation/README.md`](../AI_Adaptation/README.md
 
 ## 3. Documents / 文書一覧
 
-- [`AI_Adoption_Collation_Checklist.md`](./AI_Adoption_Collation_Checklist.md)  
+- [`AI_Adoption_Collation_Checklist.md`](./AI_Adoption_Collation_Checklist.md)
   AI導入を目的、責任、調達、認証、異議、停止、再照合から検査する日本語限定チェックリスト。
 
-- [`Specification_for_Peace.ja.md`](./Specification_for_Peace.ja.md) / [`en`](./Specification_for_Peace.en.md)  
+- [`Specification_for_Peace.ja.md`](./Specification_for_Peace.ja.md) / [`en`](./Specification_for_Peace.en.md)
   平和を全接続または全切断ではなく、意味容量、限定ポート、停止条件、再開可能性を持つ仕様として扱う。
 
 ## 4. Maintenance Notes / 運用メモ
@@ -119,10 +119,10 @@ Not included:
 
 ## 3. Documents
 
-- [`AI_Adoption_Collation_Checklist.md`](./AI_Adoption_Collation_Checklist.md)  
+- [`AI_Adoption_Collation_Checklist.md`](./AI_Adoption_Collation_Checklist.md)
   Japanese-only checklist examining AI adoption through purpose, responsibility, procurement, certification, objection, stopping, and re-collation.
 
-- [`Specification_for_Peace.ja.md`](./Specification_for_Peace.ja.md) / [`en`](./Specification_for_Peace.en.md)  
+- [`Specification_for_Peace.ja.md`](./Specification_for_Peace.ja.md) / [`en`](./Specification_for_Peace.en.md)
   Treats peace not as total connection or total cutoff, but as a specification with meaning capacity, limited ports, stop conditions, and reopening possibility.
 
 ## 4. Return and Maintenance

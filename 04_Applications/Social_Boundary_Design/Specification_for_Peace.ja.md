@@ -1,10 +1,10 @@
 # 生存競争の本質と非本質
 ## 論理-深度軸・意味経験場・境界外交による平和仕様書
 
-> Status: Application Note / First Draft  
-> Scope: peace / society / boundary ethics / meaning-experience field / social boundary design  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S2 / E1-E2 / U1 / P1-P2 / V0-V1  
+> Status: Application Note / First Draft
+> Scope: peace / society / boundary ethics / meaning-experience field / social boundary design
+> Language: Japanese authoritative; English commensuration in a separate file
+> Claim strength: S2 / E1-E2 / U1 / P1-P2 / V0-V1
 > Public handling: 本稿は公開応用モデルであり、平和政策、国際法、心理学、物理学、熱力学、電気工学の代替ではない。
 
 ---
@@ -537,3 +537,7 @@ AI出力を判断そのものとせず、根拠、不確実性、異議、停止
 - [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](../../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md)
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`AI_Adoption_Collation_Checklist.md`](./AI_Adoption_Collation_Checklist.md)
+
+---
+
+[英語通約](./Specification_for_Peace.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

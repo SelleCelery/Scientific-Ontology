@@ -3,7 +3,7 @@
 
 > Status: Cross-domain ontological note
 > Scope: boundary ethics, return, retaliation, responsibility processing, maturation, negentropy economy, Kantian commensuration
-> Language: ja
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S2/S3; conceptual model, not legal doctrine, political prescription, or empirical economics
 
 ## 0. 位置づけ
@@ -389,3 +389,7 @@
 - [`../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md`](../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md)
 - [`../Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md`](../Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md)
 - [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+
+---
+
+[英語通約](./Return_Ethics_and_Retaliation_Conversion.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

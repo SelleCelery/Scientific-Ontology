@@ -6,6 +6,8 @@
 > Language: English commensurated rendering  
 > Japanese authoritative source: [`Boundary_Diplomacy_and_Port_Allocation.ja.md`](./Boundary_Diplomacy_and_Port_Allocation.ja.md)  
 > Claim strength: S3 / E2 / U1-U2 / P1-P2 / V0-V2  
+> Version: 0.1.1
+> Last updated: 2026-08-17
 > Public handling: This document presents a conceptual model of boundary control. It is not a completed theory of foreign policy, psychological diagnosis, organizational governance, or network engineering.
 
 ---
@@ -19,6 +21,8 @@ This document owns one question:
 > When multiple cognitive axes, existence phases, language games, and purposes come into contact, how can communicability be maintained without collapsing them into a single axis and without demanding infinite processing?
 
 This document does not define the generation of cognitive axes themselves. That question is delegated to [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md).
+
+The common structure that cuts a Cognitive Field into operational Ports is imported from the upstream intermediate model [`Cognitive_Dynamics_Communication_Model.en.md`](Cognitive_Dynamics_Communication_Model.en.md).
 
 This document does not own the diagnosis of existence-phase compression itself. That question is handled by [`Compression_of_Existence_Phases.en.md`](Compression_of_Existence_Phases.en.md).
 
@@ -211,9 +215,9 @@ A Depth Port requires a reason for holding, a responsible actor, conditions for 
 
 Different cultures, disciplines, institutions, organizations, and personalities operate through different language games.
 
-Commensuration does not mean aligning them within a single vocabulary.
+This document does not independently define commensuration in general. Its canonical owner is [`Commensuration_as_Cross_Grammatical_Collation.en.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md), while the upstream contract for Core Invariant and Operational Drift is imported from [`Optional_Axiom_Modules_as_Cognitive_Bridge.en.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md).
 
-Commensuration means transforming a structure into a form reachable from another cognitive network while preserving its core structure.
+Applied to Boundary Diplomacy, the canonical definition means that commensuration does not align different systems within a single vocabulary. It transforms a structure into a form reachable from another cognitive network while preserving its core structure, transformation residuals, and return paths.
 
 This document distinguishes:
 
@@ -518,7 +522,10 @@ The intermediary is also a boundary and must therefore remain subject to audit a
 
 ## 20. Related Documents
 
-- [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
-- [`Compression_of_Existence_Phases.en.md`](Compression_of_Existence_Phases.en.md)
-- [`Organizational_Boundary_and_Port_Model.en.md`](Organizational_Boundary_and_Port_Model.en.md)
-- [`Specification_for_Peace.ja.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md)
+- imports_from: [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
+- imports_from: [`Cognitive_Dynamics_Communication_Model.en.md`](Cognitive_Dynamics_Communication_Model.en.md)
+- imports_from: [`Commensuration_as_Cross_Grammatical_Collation.en.md`](../Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.en.md)
+- imports_from: [`Optional_Axiom_Modules_as_Cognitive_Bridge.en.md`](../../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
+- imports_from: [`Compression_of_Existence_Phases.en.md`](Compression_of_Existence_Phases.en.md)
+- implemented_by: [`Organizational_Boundary_and_Port_Model.en.md`](Organizational_Boundary_and_Port_Model.en.md)
+- applied_by: [`Specification_for_Peace.en.md`](../../04_Applications/Social_Boundary_Design/Specification_for_Peace.en.md)

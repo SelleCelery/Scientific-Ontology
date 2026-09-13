@@ -3,20 +3,24 @@ graph:
   default_visibility: preview
 
   principles:
-    - 'The graph stores inspectable relations first; numeric metrics are derived views, not the graph itself.'
-    - 'A relation keeps its provenance. Agreement across sources is visible as multiple provenance records, not collapsed into a trust score.'
-    - 'Structural relation does not imply truth, evidence, conceptual identity, or direct search relevance.'
-    - 'DN-4 does not rerank DN-3 search results.'
+  - 'The graph stores inspectable relations first; numeric metrics are derived views, not the graph itself.'
+  - 'A relation keeps its provenance. Agreement across sources is visible as multiple provenance records, not collapsed
+    into a trust score.'
+  - 'Structural relation does not imply truth, evidence, conceptual identity, or direct search relevance.'
+  - 'DN-4 does not rerank DN-3 search results.'
 
   node_types:
     document: 'Public or public-candidate document represented by the manifest-derived index.'
-    observed_document: 'Existing public Markdown observed in the repository but not yet registered in the manifest-derived search index.'
+    observed_document: 'Existing public Markdown observed in the repository but not yet registered in the manifest-derived
+      search index.'
     concept: 'Machine-readable concept identifier appearing in ownership or logical contracts.'
     topic: 'Controlled navigation topic from docs_search.yml; not an ontological class.'
     layer: 'Top-level repository layer used for public navigation.'
     glossary_term: 'Human-facing lexical entry extracted from GLOSSARY.md.'
-    source_artifact: 'Public structural source that participates in graph construction but is not yet a manifest document.'
+    source_artifact: 'Public structural source that participates in graph construction but is not yet a manifest
+      document.'
 
+    external_artifact: Separately owned software or archive; not a document or evidence of theoretical truth.
   relation_types:
     owns:
       class: declared
@@ -70,6 +74,15 @@ graph:
       class: structural
       description: 'Concept Network explicitly links to an indexed document.'
 
+    implemented_as:
+      class: declared
+      description: Typed external artifact relation; not empirical proof or theory endorsement.
+    operationalized_in:
+      class: declared
+      description: Typed external artifact relation; not empirical proof or theory endorsement.
+    archived_at:
+      class: declared
+      description: Typed external artifact relation; not empirical proof or theory endorsement.
   source_artifacts:
     glossary:
       node_id: 'artifact:glossary'
@@ -92,21 +105,22 @@ graph:
   observed_markdown:
     enabled: true
     roots:
-      - '00_Overview'
-      - '01_Sat_Truth'
-      - '02_Raj_Beauty'
-      - '03_Tam_Goodness'
-      - '04_Applications'
-      - '05_Research_Notes'
-      - '06_Visual_Materials'
-      - '90_Repository_Governance'
+    - '00_Overview'
+    - '01_Sat_Truth'
+    - '02_Raj_Beauty'
+    - '03_Tam_Goodness'
+    - '04_Applications'
+    - '05_Research_Notes'
+    - '06_Visual_Materials'
+    - '90_Repository_Governance'
     root_files:
-      - 'README.md'
-      - 'Roadmap.md'
+    - 'README.md'
+    - 'Roadmap.md'
     exclude_prefixes:
-      - '000'
-      - '99_Private_Core_Not_Included'
-    note: 'Observed documents preserve public link topology without granting manifest ownership, discovery metadata, or canonical identity.'
+    - '000'
+    - '99_Private_Core_Not_Included'
+    note: 'Observed documents preserve public link topology without granting manifest ownership, discovery metadata,
+      or canonical identity.'
 
   markdown_links:
     enabled: true
@@ -114,4 +128,5 @@ graph:
 
   derived_metrics:
     enabled: false
-    note: 'Centrality and importance scores are intentionally deferred. The typed relation graph is the primary artifact in DN-4.'
+    note: 'Centrality and importance scores are intentionally deferred. The typed relation graph is the primary
+      artifact in DN-4.'

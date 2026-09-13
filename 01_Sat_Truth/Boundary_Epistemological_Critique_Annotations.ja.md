@@ -3,7 +3,7 @@
 
 > Status: Annotation
 > Scope: boundary-epistemology
-> Language: ja
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S2/S3
 
 本注解は、本文命題列を哲学者名で権威づけるためのものではない。[境界認識批判](./Boundary_Epistemological_Critique.ja.md)が扱う運動、すなわち感性・悟性・理性・同期・照合・残差保持・残渣化・再照合・論理-深度軸を、既存思想の問題圏と照合するための地形図である。
@@ -245,3 +245,7 @@
 この再配置によって、境界認識批判は「未踏の新説」を名乗る必要がなくなる。むしろ、既存思想の複数の問題圏が、境界・履歴・ヒューリスティック・同期・照合・残差保持という語彙で、同じ地形上に再配置される。
 
 その地形図を先に読むと、本文命題列は読みやすくなる。本文は定義を固定するための骨格であり、本注解はその骨格がどのような球世界・内面運動・論理-深度軸の上で動いているかを示す地図である。
+
+---
+
+[英語通約](./Boundary_Epistemological_Critique_Annotations.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

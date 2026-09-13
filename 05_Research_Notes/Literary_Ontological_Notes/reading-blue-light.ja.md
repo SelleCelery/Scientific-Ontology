@@ -4,7 +4,7 @@
 
 > Status: Research note
 > Scope: literary-ontology
-> Language: ja
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S1/S2
 
 ## 位置づけ
@@ -429,3 +429,7 @@
 しかし、自己・光・幽霊・空・接続を読むための、ひとつの非科学研究ではある。
 
 そして私は、たぶん、こういう研究をまだ続ける。
+
+---
+
+[英語通約](./reading-blue-light.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

@@ -15,6 +15,7 @@ sources:
     - "navigator/public-content.json"
   navigator_public_globs:
     - "navigator/dist/*.js"
+    - "navigator/vendor/katex/*"
 
 public_data_targets:
   catalog: "tools/docs_public_catalog.json"
@@ -45,10 +46,8 @@ safety:
     - "tools/docs_manifest.yml"
     - "tools/docs_graph.json"
     - "tools/docs_index.json"
-    - "tools/docs_registration_candidates.yml"
-    - "tools/docs_registration_candidates.preview.json"
-    - "tools/docs_registered_reader_question_review.yml"
-    - "tools/docs_registered_reader_question_review.preview.json"
+    - "tools/docs_registration_workbench.preview.json"
+    - "tools/docs_revision_proposals.yml"
   forbidden_filename_prefixes:
     - "000"
   forbidden_public_catalog_keys:
@@ -78,5 +77,8 @@ artifact:
     - "navigator/dist/search-core.js"
     - "navigator/dist/graph-core.js"
     - "navigator/dist/language-core.js"
+    - "navigator/vendor/katex/katex.mjs"
+    - "navigator/vendor/katex/katex.min.css"
+    - "navigator/vendor/katex/LICENSE"
     - "tools/docs_public_catalog.json"
     - "tools/docs_public_graph.json"

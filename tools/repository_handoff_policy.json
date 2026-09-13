@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "repository_id": "scientific-ontology",
+  "repository_markers": [
+    ".gitattributes",
+    "README.md",
+    "tools/docs_manifest.yml",
+    "navigator/index.html"
+  ],
+  "accepted_wrapper_roots": [
+    "Scientific-Ontology",
+    "Scientific-OntologyPE"
+  ],
+  "forbidden_exact_paths": [
+    "tools/zip_package_registry.tsv"
+  ],
+  "forbidden_prefixes": [
+    ".git",
+    ".venv",
+    "_build"
+  ],
+  "boundary_exact_paths": [
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    "tools/docs_manifest.yml",
+    "tools/Public_Format_Registry.yml",
+    "tools/maintenance_rules.yml",
+    "tools/repository_handoff_policy.json",
+    "scripts/manage_zip_package.py"
+  ],
+  "boundary_prefixes": [
+    ".github",
+    "90_Repository_Governance"
+  ],
+  "archive_limits": {
+    "max_files": 5000,
+    "max_total_uncompressed_bytes": 268435456,
+    "max_single_file_bytes": 67108864,
+    "max_compression_ratio": 250.0
+  },
+  "text_contract": {
+    "exact_paths": {
+      ".editorconfig": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".gitattributes": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".gitignore": {
+        "eol": "lf",
+        "final_newline": true
+      }
+    },
+    "suffixes": {
+      ".md": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".txt": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".yml": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".yaml": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".cff": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".json": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".py": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".js": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".mjs": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".ts": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".css": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".html": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".sh": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".sha256": {
+        "eol": "lf",
+        "final_newline": true
+      },
+      ".ps1": {
+        "eol": "crlf",
+        "final_newline": true
+      }
+    }
+  },
+  "verification_hooks": [
+    {
+      "label": "v5.1 document contract, local read models and Public Site",
+      "command": [
+        "python",
+        "scripts/rebuild_document_read_models.py"
+      ]
+    }
+  ],
+  "forbidden_segments": [
+    ".git",
+    ".venv",
+    "__pycache__"
+  ]
+}

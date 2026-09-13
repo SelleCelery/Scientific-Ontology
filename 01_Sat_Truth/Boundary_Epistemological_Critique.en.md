@@ -3,7 +3,7 @@
 
 > Status: Draft
 > Scope: boundary-epistemology
-> Language: en
+> Language: English commensurated rendering; Japanese text is authoritative
 > Claim strength: S2/S3
 
 This text redefines the conditions under which knowledge forms through boundary, history, internal and external heuristics, operational correspondence, collation, residual retention, and re-collatability.
@@ -744,3 +744,7 @@ Candidates: **re-examinability / capacity for re-examination**
 Note: `Re-collation` works well as a system term, but is stiff. In contexts of meaning, judgment, and scholarly institutions, use `re-examinability` or `capacity for re-examination` as needed.
 
 Additional note: Capacity for re-collation is the condition under which once-closed propositions, judgments, classifications, or institutional processes can be collated again while preserving access paths to residuals and residues.
+
+---
+
+[Japanese authoritative text](./Boundary_Epistemological_Critique.ja.md). This English commensuration is not independently authoritative.

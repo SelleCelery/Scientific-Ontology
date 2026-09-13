@@ -2,7 +2,7 @@
 
 > Status: Draft
 > Scope: negentropy-economy
-> Language: ja
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: U/E -> S
 
 ---
@@ -526,3 +526,7 @@ AI監査は、以下の用途に用いてはならない。
 そのとき問われるべきは、単に「違反したか」ではない。
 
 それでもやったのか、である。
+
+---
+
+[英語通約](./Negentropy_Economy_Principles.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

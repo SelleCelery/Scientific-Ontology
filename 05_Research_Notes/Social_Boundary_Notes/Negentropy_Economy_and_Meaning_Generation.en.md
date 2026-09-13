@@ -2,7 +2,7 @@
 
 > Status: Research note
 > Scope: negentropy-economy
-> Language: en
+> Language: English commensurated rendering; Japanese text is authoritative
 > Claim strength: U/E -> S
 
 ---
@@ -382,3 +382,7 @@ It should not be used as a direct policy proposal, economic doctrine, or empiric
 
 - [`GLOSSARY.md`](../../GLOSSARY.md)  
     Glossary of core Scientific Ontology terms.
+
+---
+
+[Japanese authoritative text](./Negentropy_Economy_and_Meaning_Generation.ja.md). This English commensuration is not independently authoritative.

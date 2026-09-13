@@ -3,7 +3,7 @@
 
 > Status: Annotation
 > Scope: boundary-epistemology
-> Language: en
+> Language: English commensurated rendering; Japanese text is authoritative
 > Claim strength: S2/S3
 
 This annotation does not authorize the main text by invoking philosopher names. It is a terrain map for comparing the movement treated by [Boundary Epistemological Critique with existing philosophical problem-fields](./Boundary_Epistemological_Critique.en.md).
@@ -245,3 +245,7 @@ Boundary Epistemological Critique does not absorb these into a single history of
 Through this re-placement, Boundary Epistemological Critique need not present itself as an unexplored new doctrine. Instead, multiple existing philosophical problem-fields are reconfigured on the same terrain through the vocabulary of boundary, history, heuristic, operational correspondence, collation, and residual retention.
 
 When this terrain map is read first, the propositional main text becomes easier to read. The main text is the skeleton that fixes definitions. This annotation is the map that shows how that skeleton moves across the spherical world, inner motion, and the logical-depth axis.
+
+---
+
+[Japanese authoritative text](./Boundary_Epistemological_Critique_Annotations.ja.md). This English commensuration is not independently authoritative.

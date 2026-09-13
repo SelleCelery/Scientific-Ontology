@@ -4,10 +4,10 @@
 
 ## 閉じなさを管理する学としての存在境界論
 
-> Status: Methodological note  
-> Scope: ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness / aporia / research method  
-> Language: Japanese authoritative; English commensuration pending  
-> Claim strength: S4-S5 / E3 / U1  
+> Status: Methodological note
+> Scope: ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness / aporia / research method
+> Language: Japanese authoritative; English commensuration in a separate file
+> Claim strength: S4-S5 / E3 / U1
 > Public handling: Gödelian incompleteness is used as a methodological guide to non-closure, not as a proof of Scientific Ontology.
 
 ---
@@ -66,11 +66,11 @@
 
 しかし、人間が実際に確認できるのは、最終実体そのものよりも、何かが何かへ作用した痕跡である。
 
-誰かの言葉が届き、別の人の判断を変える。  
-制度が人の行動可能性を狭める。  
-企業の目的が現場の時間配分を変える。  
-AIの出力が意思決定へ入り、責任の所在を揺らす。  
-過去の経験が、次に何を危険、美、正しさ、損失として感じるかを変える。  
+誰かの言葉が届き、別の人の判断を変える。
+制度が人の行動可能性を狭める。
+企業の目的が現場の時間配分を変える。
+AIの出力が意思決定へ入り、責任の所在を揺らす。
+過去の経験が、次に何を危険、美、正しさ、損失として感じるかを変える。
 自然環境へ押し出した負荷が、別の場所と時間から返ってくる。
 
 これらは、単なる主観でも、ただの言葉でもない。
@@ -158,7 +158,7 @@ AIの出力が意思決定へ入り、責任の所在を揺らす。
   └─ 高強度探索
 ```
 
-形而上学は、境界運用へ問いを渡す。  
+形而上学は、境界運用へ問いを渡す。
 境界運用は、形而上学へ失敗、反例、残差を返す。
 
 この往復によって、両者は切磋琢磨する。
@@ -169,11 +169,11 @@ AIの出力が意思決定へ入り、責任の所在を揺らす。
 
 完全な体系を作ろうとすると、体系内部だけでは決められないものが現れる。
 
-分類に入らない例外。  
-説明の後にも残る差分。  
-証明できないが、捨てると体系の作動条件まで失われる前提。  
-意味を閉じられないアポリア。  
-制度上は処理済みでも、現場や身体や自然に残る残渣。  
+分類に入らない例外。
+説明の後にも残る差分。
+証明できないが、捨てると体系の作動条件まで失われる前提。
+意味を閉じられないアポリア。
+制度上は処理済みでも、現場や身体や自然に残る残渣。
 理論上は見えないが、作用だけが返ってくる外部。
 
 存在境界論は、これらを単なる失敗として消さない。
@@ -182,12 +182,12 @@ AIの出力が意思決定へ入り、責任の所在を揺らす。
 
 閉じなさを管理するとは、少なくとも次を行うことである。
 
-1. どこまで閉じたのかを示す。  
-2. どこから閉じていないのかを示す。  
-3. 未解決点を、反証不能な神秘へ退避させない。  
-4. 残差と残渣を区別し、次の照合経路を残す。  
-5. 公開主張、研究仮説、構造アナロジー、実装候補を混同しない。  
-6. 実装による反動を履歴として保持し、理論側へ返す。  
+1. どこまで閉じたのかを示す。
+2. どこから閉じていないのかを示す。
+3. 未解決点を、反証不能な神秘へ退避させない。
+4. 残差と残渣を区別し、次の照合経路を残す。
+5. 公開主張、研究仮説、構造アナロジー、実装候補を混同しない。
+6. 実装による反動を履歴として保持し、理論側へ返す。
 
 ### 4.1 ゲーデル的不完全性をどう読むか
 
@@ -262,9 +262,9 @@ Return
 
 この循環には、明確な上位と下位がない。
 
-認識論は目的設定の前提を作る。  
-目的は組織と制度を作る。  
-組織と制度は現場の世界を変える。  
+認識論は目的設定の前提を作る。
+目的は組織と制度を作る。
+組織と制度は現場の世界を変える。
 現場から返る履歴が、認識論と形而上学を修正する。
 
 存在境界論における理論は、現実を一方的に裁くためのものではない。
@@ -290,11 +290,11 @@ Return
 
 しかし、平面上の循環だけでは処理できないものがある。
 
-異なる時間射程。  
-同時に成立しない目的。  
-翻訳不能残差。  
-現在の語彙に入らない経験。  
-制度上は処理済みでも作用し続ける残渣。  
+異なる時間射程。
+同時に成立しない目的。
+翻訳不能残差。
+現在の語彙に入らない経験。
+制度上は処理済みでも作用し続ける残渣。
 まだ形式化できないアポリア。
 
 論理-深度軸は、これらを同一平面へ押し潰さず、未解決、矛盾、分岐、残差、意味圧として保持し、別の時点と形式で再構成する方向である。
@@ -351,6 +351,7 @@ Sat / Truthは、存在、観測、意味、実在性の基底を置く。
 - [`Boundary Realism Principle / 境界実在性の原則`](../01_Sat_Truth/Boundary_Realism_Principle.md)
 - [`Meaning Generation Model / 意味生成モデル`](../01_Sat_Truth/Meaning_Generation_Model.md)
 - [`Boundary Epistemological Critique / 境界認識批判`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md)
+- [`正しさ・個性・無・切断――論理通信トポロジー`](../01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md)
 - [`Four Axioms of Existence / 存在の四大表公理`](../01_Sat_Truth/Four_Axioms_of_Existence.md)
 
 ### 6.2 Raj / Beauty ― 動態と構築
@@ -497,9 +498,9 @@ v5系では、この研究線を最初のLiving Canonical運用面として扱�
 
 ### 第一義 ― 目的
 
-何を守るのか。  
-何を増やすのか。  
-何を失ってはいけないものとして置くのか。  
+何を守るのか。
+何を増やすのか。
+何を失ってはいけないものとして置くのか。
 何のために、組織し、働き、制度を作り、技術を使うのか。
 
 ### 第二義 ― 共有
@@ -516,10 +517,10 @@ v5系では、この研究線を最初のLiving Canonical運用面として扱�
 
 ### 境界CA ― 検査と修正
 
-共有された目的が現場へ降りたとき、誰が疲弊したか。  
-どこへ負荷が移ったか。  
-何が不可視化されたか。  
-どの判断場が痩せたか。  
+共有された目的が現場へ降りたとき、誰が疲弊したか。
+どこへ負荷が移ったか。
+何が不可視化されたか。
+どの判断場が痩せたか。
 どの返路が失われたか。
 
 CheckとActは、会議室の内部だけでは完了しない。
@@ -570,17 +571,17 @@ CheckとActは、会議室の内部だけでは完了しない。
 
 責任は委託できない。
 
-行政は窓口業務を委託できるが、行政責任を消せない。  
-医療は検査やシステムを外部化できるが、説明責任を消せない。  
-OSSは作業を分散できるが、リリース判断の責任境界を必要とする。  
+行政は窓口業務を委託できるが、行政責任を消せない。
+医療は検査やシステムを外部化できるが、説明責任を消せない。
+OSSは作業を分散できるが、リリース判断の責任境界を必要とする。
 組織はAIへ分類、要約、提案を委託できるが、結果への責任をAIへ投げて消すことはできない。
 
 さらに、存在境界論では、責任は履歴によってごまかされない。
 
-誰が許可したか。  
-誰が利益を得たか。  
-誰が負荷を受けたか。  
-誰が異議申立てできなかったか。  
+誰が許可したか。
+誰が利益を得たか。
+誰が負荷を受けたか。
+誰が異議申立てできなかったか。
 どの返路が閉じられたか。
 
 これらは、後続条件を変える履歴として残る。
@@ -601,8 +602,8 @@ OSSは作業を分散できるが、リリース判断の責任境界を必要�
 
 組織は、何をエントロピーとして受け取り、何をネゲントロピーとして返すかによって、自らを定義する。
 
-病院なら、痛み、診断不能、ケア不足を受け取り、回復、説明、ケアを返す。  
-学校なら、無知、孤立、学習不能を受け取り、理解、学習回路、共同探究を返す。  
+病院なら、痛み、診断不能、ケア不足を受け取り、回復、説明、ケアを返す。
+学校なら、無知、孤立、学習不能を受け取り、理解、学習回路、共同探究を返す。
 裁判所なら、紛争、権利侵害、責任不明を受け取り、法的安定、手続的公正、責任処理を返す。
 
 組織の目的は、スローガンではなく、何を受け取り、何へ変換し、何を社会へ返すかに現れる。
@@ -711,7 +712,7 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 
 最短の読み順は、次である。
 
-1. [`README.md`](../README.md)  
+1. [`README.md`](../README.md)
 2. [`Scientific Ontology Operational Outline`](./Scientific_Ontology_Operational_Outline.ja.md)
 3. [`Scientific Ontology System Map`](./Scientific_Ontology_System_Map.md)
 4. [`Boundary Realism Principle`](../01_Sat_Truth/Boundary_Realism_Principle.md)
@@ -727,6 +728,7 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 ### 認識・意味から入る
 
 - [`Meaning Generation Model`](../01_Sat_Truth/Meaning_Generation_Model.md)
+- [`正しさ・個性・無・切断――論理通信トポロジー`](../01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md)
 - [`Entropy-Attributed Difference and Cognitive Axis Formation`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 - [`Optional Axiom Modules as Cognitive Bridge`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
 
@@ -759,9 +761,9 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 
 ### 物理近接概念から入る
 
-1. [`Physics Correspondence Policy`](./Physics_Correspondence_Policy.ja.md)  
-2. [`History-Field Topology`](../02_Raj_Beauty/History_Field_Topology.md)  
-3. [`PINGER Hypothesis and History-Field Topology`](../05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md)  
+1. [`Physics Correspondence Policy`](./Physics_Correspondence_Policy.ja.md)
+2. [`History-Field Topology`](../02_Raj_Beauty/History_Field_Topology.md)
+3. [`PINGER Hypothesis and History-Field Topology`](../05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md)
 
 物理近接ノートだけを先に読むと、体系全体が物理理論の代替として誤読されやすい。境界実在性と物理対応方針を先に読むことを推奨する。
 
@@ -853,13 +855,13 @@ AI・制度・社会への実装
 
 世界へ触れたあと、何が残り、何が返り、何が閉じず、どこから次の問いが生まれるのかを、責任を持って扱うための体系である。
 
-境界実在論は、人間の限界を守る。  
-応用形而上学は、その限界の先へ問いを伸ばす。  
-認識論は、何が世界として立ち上がるかを検査する。  
-真理の経営学は、目的が世界を作る過程を追う。  
-組織境界論は、責任と通信を運用へ落とす。  
-倫理は、返りと破壊を引き受ける。  
-実装は、理論の言葉が現実の境界で機能するかを試す。  
+境界実在論は、人間の限界を守る。
+応用形而上学は、その限界の先へ問いを伸ばす。
+認識論は、何が世界として立ち上がるかを検査する。
+真理の経営学は、目的が世界を作る過程を追う。
+組織境界論は、責任と通信を運用へ落とす。
+倫理は、返りと破壊を引き受ける。
+実装は、理論の言葉が現実の境界で機能するかを試す。
 高強度研究は、まだ閉じていないアポリアへ次の仮説を伸ばす。
 
 そして、どの層も最後の権威にはならない。
@@ -887,3 +889,7 @@ AI・制度・社会への実装
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
+
+---
+
+[英語通約](./Scientific_Ontology_Concept_Network.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

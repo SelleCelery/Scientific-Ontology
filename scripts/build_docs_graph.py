@@ -26,6 +26,8 @@ except Exception as exc:  # pragma: no cover
 
 from build_docs_index import compile_index, fallback_doc_id
 
+from document_contract import asset_paths, retired_paths
+
 SCHEMA_VERSION = "0.1"
 FORBIDDEN_TEXT = (
     "sandbox:/",
@@ -123,6 +125,7 @@ def markdown_title(path: Path) -> Dict[str, str]:
 class GraphBuilder:
     def __init__(self, root: Path) -> None:
         self.root = root
+        self.non_catalog_paths: set[str] = set()
         self.nodes: Dict[str, Dict[str, Any]] = {}
         self.edges: Dict[Tuple[str, str, str], Dict[str, Any]] = {}
         self.diagnostics: Dict[str, List[Dict[str, Any]]] = {
@@ -235,6 +238,9 @@ def resolve_target_node(
     relation: str,
     locator: str = "",
 ) -> str | None:
+    if target_path in builder.non_catalog_paths:
+        builder.add_diag("excluded_references", {"source_path": source_path, "relation": relation, "reason": "managed_asset_or_retired_identity"})
+        return None
     if target_path in path_to_node:
         return path_to_node[target_path]
     if is_excluded_graph_path(target_path):
@@ -332,6 +338,7 @@ def build_graph(root: Path, manifest_path: Path, search_path: Path, graph_config
 
     index = compile_index(root, manifest_path, search_path, visibility)
     builder = GraphBuilder(root)
+    builder.non_catalog_paths = asset_paths(manifest) | retired_paths(manifest)
     documents = index.get("documents", [])
     raw_docs = {str(raw.get("path", "")): raw for raw in manifest.get("documents", []) if isinstance(raw, Mapping)}
     path_to_doc_id = {str(doc["path"]): str(doc["id"]) for doc in documents}
@@ -343,13 +350,23 @@ def build_graph(root: Path, manifest_path: Path, search_path: Path, graph_config
         path_to_node[str(doc["path"])] = node_id
         builder.add_node(node_id, "document", key=doc["id"], path=doc["path"], title=doc.get("title", {}), layer=doc.get("layer", ""), state=doc.get("state", ""), role=doc.get("role", {}), identity_source=doc.get("id_source", ""))
 
+    # External implementation edges are relationships, never evidence-of-truth edges.
+    for external in manifest.get("external_artifacts", []):
+        builder.add_node("external:" + external["artifact_id"], "external_artifact", key=external["artifact_id"], label={"ja": external["title"], "en": external["title"]}, url=external.get("locator", ""))
+    for external in manifest.get("external_artifacts", []):
+        for rel in external.get("relationships", []):
+            builder.add_edge("external:" + external["artifact_id"], rel["type"], "external:" + rel["target_artifact"], "manifest", "tools/docs_manifest.yml")
+    for doc in documents:
+        for rel in raw_docs[doc["path"]].get("artifact_relations", []):
+            builder.add_edge("doc:" + doc["id"], rel["type"], "external:" + rel["target_artifact"], "manifest", "tools/docs_manifest.yml")
+
     artifacts = config.get("source_artifacts", {}) if isinstance(config.get("source_artifacts"), Mapping) else {}
     dedicated_paths = {
         str(raw.get("path")) for raw in artifacts.values() if isinstance(raw, Mapping) and raw.get("path") and raw.get("parser") in {"glossary", "markdown_map"}
     }
 
     # Existing public Markdown not yet registered in the manifest-derived search index.
-    for path_value in observed_markdown_paths(root, config, dedicated_paths):
+    for path_value in observed_markdown_paths(root, config, dedicated_paths | builder.non_catalog_paths):
         if path_value in path_to_node:
             continue
         path_to_node[path_value] = make_observed_node(builder, root, path_value)

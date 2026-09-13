@@ -1,126 +1,140 @@
-# Developer Registration Workbench
+# Registration Workbench / 登録・改訂レビュー
 
-> Status: Repository maintenance tooling
-> Track: Document Navigation Infrastructure
-> Stage: DN-5.4C
+> Status: current Developer contract
+> Scope: `docs_manifest.yml` の仮登録文書レビューと、登録済み文書のmetadata改訂提案
 
-The Developer Navigator turns document-registration and registered-metadata revision into explicit review transactions instead of direct YAML editing.
+## 1. 目的
 
-## 1. Unified review pool
+Developer Navigatorは、`docs_manifest.yml` をブラウザから直接編集しない。
 
-Two states share one Developer review surface:
-
-```text
-Provisional candidate
-  = public-readable/searchable candidate not yet canonical in docs_manifest.yml
-
-Registered revision proposal
-  = proposed metadata change to an already canonical document
-```
-
-The current candidate ledger supplies provisional candidates. Registered reader-question audit proposals are loaded as revision seeds through the Developer-only preview artifact.
-
-A registered document remains registered while its revision proposal is pending.
-
-## 2. Review flow
+現在の境界は次のとおり。
 
 ```text
-candidate preview --------------------┐
-                                      ├─> unified review pool
-registered revision seed preview -----┘
-                                      ↓
-approve / approve with edits / hold / reject
-                                      ↓
-browser local review state
-                                      ↓ explicit user action
-export docs_registration_review.json
-                                      ↓
-validate_registration_review.py
-                                      ↓
-apply_registration_review.py --dry-run
-                                      ↓ explicit apply
-canonical docs_manifest.yml
-                                      ↓
-rebuild index / graph / public catalog
+canonical manifest
+  ↓ read only
+Developer read model
+  ↓
+human review
+  ↓
+review transaction JSON
+  ↓ repository-side validation
+  ↓ dry-run
+  ↓ explicit apply
+canonical manifest
 ```
 
-The browser does not write `docs_manifest.yml` directly.
+ここで重要なのは、**manifestを読むこと**と**manifestへ書くこと**を分けること。
 
-## 3. Public provisional use is separate from canonical approval
+仮登録文書はすでにmanifestのcanonical ledgerに存在するため、過去のcandidate ledgerを別の現行入力として維持しない。人間レビュー中であることは `registration_state: provisional` が表す。
 
-Searchable candidate metadata may already be projected into `tools/docs_public_catalog.json` for public Read/Search while review is pending.
+## 2. 現在の入力
 
-That public projection is sanitized. Developer-only confidence, evidence, judgment flags, and review state are not exported to the public catalog. Candidate metadata never creates concept ownership or typed logical relations.
+### 仮登録文書
 
-Therefore:
+`tools/docs_manifest.yml` の `registration_state: provisional` を直接のsourceとする。
+
+ブラウザはYAMLを直接読むのではなく、builderが作るDeveloper専用read modelを読む。
 
 ```text
-public provisional availability != canonical registration
-human review != prerequisite for provisional discoverability
-manifest approval != automatic browser action
+tools/docs_manifest.yml --------------------┐
+                                             ├─> scripts/build_registration_workbench_preview.py
+tools/docs_revision_proposals.yml ----------┘
+                                                   ↓
+                                  tools/docs_registration_workbench.preview.json
 ```
 
-## 4. Review decisions
+`docs_registration_workbench.preview.json` は生成物であり、手編集しない。
 
-For provisional candidates:
+### 登録済み文書の改訂提案
 
-- `approve`: accept candidate metadata as shown for canonical registration.
-- `approve_with_edits`: accept after explicit field edits; export records `before` and `after`.
-- `hold`: leave unresolved without changing the manifest.
-- `reject`: reject the canonical registration proposal.
-
-For registered revision proposals:
-
-- `approve`: apply the proposed revision on the next explicit repository apply.
-- `hold`: keep the current canonical metadata and leave the proposal unresolved.
-- `reject`: keep the current canonical metadata and reject the proposal.
-
-`concept_ownership` and typed logical relations are not inferred or added by this workbench.
-
-## 5. Local autosave vs file export
-
-In-progress review state is automatically kept in browser `localStorage` so a page reload does not discard ordinary review work.
-
-No review file is created automatically.
-
-A file is produced only when the user explicitly chooses **レビュー結果を書き出す / Export review**.
-
-The exported transaction uses schema 0.2 and binds itself to:
+一回限りのreader-question専用seedではなく、genericな提案sourceを使う。
 
 ```text
-candidate ledger SHA-256
-canonical manifest SHA-256
-graph SHA-256
-registered revision-seed SHA-256
+tools/docs_revision_proposals.yml
 ```
 
-This protects against applying a decision to a materially different source set.
+初期28件は、旧reader-question review seedの提案内容を変更せず移行したもの。
 
-## 6. Export and resume
+提案はpartial patchとして保存し、現在manifestに適用した完全なbefore/afterはpreview builderが生成する。これによりproposal source自体が第二のmanifestにならないようにする。
 
-Use **レビュー結果を書き出す** in Developer Navigator to create:
+## 3. レビュー対象
+
+Developer Navigatorのreview poolは次をまとめて扱う。
+
+```text
+provisional document
+  = manifestに存在するがmetadata reviewが未完了
+
+registered revision proposal
+  = 登録済み文書に対する明示的metadata改訂提案
+
+manual candidate
+  = manifestにまだ存在しない新規登録案
+
+ad-hoc registered revision
+  = Navigator上で人間が開始した登録済み文書の改訂案
+```
+
+concept ownershipやtyped logical relationは、このworkbenchから推測・追加しない。
+
+## 4. 判定
+
+仮登録文書には次を使う。
+
+- `approve`: 現在metadataを承認し、apply時に `registration_state: registered` へ昇格する。
+- `approve_with_edits`: 人間編集後のmetadataを承認し、apply時にregisteredへ昇格する。
+- `hold`: manifestのprovisional状態を維持する。
+- `reject`: このレビューtransactionでは削除しない。provisional状態を維持し、削除・非公開化が必要なら別の明示操作とする。
+
+登録済みrevisionは、承認されたものだけmetadataを更新する。reviewを開始しただけでは現行登録文書を無効化しない。
+
+## 5. ブラウザ保存とexport
+
+途中状態はブラウザ `localStorage` に保存する。
+
+ファイルは自動生成しない。人間が **レビュー結果を書き出す / Export review** を押したときだけ、次を生成する。
 
 ```text
 docs_registration_review.json
 ```
 
-Use **レビュー結果を読み込む** to resume from an explicitly exported transaction. Source-hash mismatch is refused rather than silently merged.
+schemaは `tools/docs_registration_review.schema.json` の `0.3`。
 
-## 7. Validate
+transactionは少なくとも次へbindingする。
+
+```text
+manifest_sha256
+graph_sha256
+provisional_count
+revision_proposals_sha256
+revision_proposal_count
+```
+
+古いsourceへ対するreviewを現在manifestへ誤適用しないためのbindingである。
+
+## 6. repository-side validation
 
 ```powershell
 python scripts/validate_registration_review.py "$HOME\Downloads\docs_registration_review.json"
 ```
 
-## 8. Dry-run manifest application
+validatorは、source hash、現在のprovisional baseline、proposal binding、編集可能field、doc_id/path境界を検査する。
+
+簡易self-test:
+
+```powershell
+python scripts/validate_registration_review.py --self-test
+```
+
+## 7. manifest apply
+
+既定はdry-runで、ファイルを書かない。
 
 ```powershell
 python scripts/apply_registration_review.py "$HOME\Downloads\docs_registration_review.json"
 ```
 
-Default mode writes nothing. The proposed manifest is compiled through the current index and graph builders before the dry-run is accepted.
-
-To produce a separate reviewed manifest:
+別manifestへ出力する場合:
 
 ```powershell
 python scripts/apply_registration_review.py `
@@ -128,7 +142,7 @@ python scripts/apply_registration_review.py `
   --output tools/docs_manifest.reviewed.yml
 ```
 
-Only after inspection should canonical application be considered:
+canonical manifestを変更する場合だけ明示的に:
 
 ```powershell
 python scripts/apply_registration_review.py `
@@ -136,24 +150,52 @@ python scripts/apply_registration_review.py `
   --apply
 ```
 
-After an actual manifest change, rebuild and validate all downstream read models, including the Public catalog.
+`--apply` で承認または却下されたgeneric revision proposalはactive proposal sourceから消費される。`hold` は残る。これにより、適用後に旧proposalがstale inputとして残らない。
 
-## 9. Generated Developer inputs
+apply後はworkbench preview、index / graph等の通常build/checkを再生成する。
+
+## 8. write authority
 
 ```text
-tools/docs_registration_candidates.yml
-  -> scripts/build_registration_candidates_preview.py
-  -> tools/docs_registration_candidates.preview.json
+Browser
+  read:  docs_registration_workbench.preview.json
+  write: localStorage / exported review JSON only
 
-tools/docs_registered_reader_question_review.yml
-  -> scripts/build_registered_reader_question_review_preview.py
-  -> tools/docs_registered_reader_question_review.preview.json
+Repository scripts
+  read:  manifest + revision proposals + review JSON
+  write: manifest only after explicit apply
 ```
 
-Both JSON files are generated read models and must not be edited by hand.
+Assessment Labのlocal runnerへのPOSTはcanonical manifest writeではない。checkerはPOST一般を禁止せず、registration/manifestへのbrowser direct-writeだけを禁止する。
 
-## 10. Manual and ad-hoc revision candidates
+## 9. 現時点の非目的
 
-The Developer Navigator may also export manually created candidates and ad-hoc revision requests. Each carries an explicit approve/hold/reject state.
+このworkbenchは次を自動決定しない。
 
-Only approved items are eligible for repository-side application. A revision request never unregisters an existing public document merely because review has begun.
+- SO概念のowner
+- typed logical relation
+- 文書本文の改稿
+- rejectされたprovisional文書の自動削除
+- 公開可否そのものの自動確定
+
+これらはそれぞれのauthorityへ戻す。
+
+## v5.1 assessment-to-registration adapter
+
+Ordinary metadata review still uses the same preview and registration transaction. `document_role`, `catalog_document` and `assessment` are preserved in before/after rather than being dropped by an older whitelist.
+
+To propose an approved assessment summary, use:
+
+```text
+python scripts/prepare_assessment_registration_review.py --run <raw-run.json> --review <human-assessment-review.json> --output <outside-repository-registration-review.json>
+python scripts/validate_registration_review.py <registration-review.json> --assessment-run <raw-run.json> --assessment-review <human-assessment-review.json>
+python scripts/apply_registration_review.py <registration-review.json> --assessment-run <raw-run.json> --assessment-review <human-assessment-review.json>
+```
+
+The final command defaults to dry-run. After inspection, the author may invoke the same command with `--apply`. Then regenerate current read models. No such approval is supplied by the v5.1 migration package.
+
+The adapter checks exact raw-run bytes, frozen protocol revision/hash, before/path/kind, current source bytes, quoted lines, and edited-item schemas. A missing/hold/reject profile is not promoted. Unreviewed hotspot candidates do not become approved public scores merely because a profile was approved; their existence remains an unresolved note. A hotspot maximum never overwrites the representative profile.
+
+Directly editing an assessment in a generic registration JSON is blocked unless the supplied run/review reconstructs the exact same approved summary. Changing the source requires renewed review. This checks traceability, not the philosophical correctness of a score or the identity/authenticity of the human reviewer.
+
+Raw run, review, reinvestigation and before/after artifacts remain outside the permanent manifest and Public catalog. The manifest stores current approved summary only. Existing reader-question proposals remain pending until their own explicit transaction resolves them.

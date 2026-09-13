@@ -4,10 +4,14 @@
 
 > Status: Protocol  
 > Scope: cognitive bridge / axiom selection / worldview comparison / commensuration / ethics / boundary protocol  
-> Language: Japanese authoritative; English commensuration pending  
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: S2-S3 / E1-E2 / U1-U2 / P1-P2.5 / V0-V1  
 
 ---
+
+### 研究原資料との区別
+
+SO再帰的哲学研究でDe-Registry等の固定fixtureとして使用した旧Optional Axiom atlasは、[`04_Applications/SO_Reflexive_Philosophical_Research/sources/`](../04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md) に研究原資料として保存する。旧atlasは本稿の現行正本ではなく、本稿も旧atlas全体を現在のSOの主張として再承認するものではない。
 
 ## 0. 位置づけ
 
@@ -826,3 +830,7 @@ AIに何を最適化させるかだけでなく、どの差分を捨象させ、
 - [`Claim_Strength_and_Publication_Layer_Table.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
 - [`TERM_COLLISION_REGISTRY.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md)
+
+---
+
+[英語通約](./Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

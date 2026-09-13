@@ -54,10 +54,10 @@ TypeScript/HTMLクライアントは、Python側と同じ生成済みread model�
 
 | File | Owns | Editing rule |
 |---|---|---|
-| Markdown headers | 読む前に必要な最小の人間向けメタデータ | 所有文書で編集する |
+| Markdown headers | Legacy/source-local descriptive metadata; not the current assessment authority | Preserve existing source; current metadata belongs to manifest |
 | `tools/docs_manifest.yml` | 文書identity、公開役割、配置、型付き関係、概念所有、文書別discovery | canonical。生成物から逆編集しない |
 | `tools/docs_search.yml` | controlled topics、検索展開、正規化、重み、閾値、topic入口 | 検索・発見だけを所有する |
-| `navigator/public-content.json` | Public Navigatorの層説明、案内文書カード、入口文 | 理論定義や検索関連を所有しない |
+| `navigator/public-content.json` | Public Navigatorの接触面・正式入口・作業領域・体系核・案内面の配置、案内文書カード、入口文、編集者選択の読書channel | 理論定義・S/E・検索関連・人気指標を所有しない |
 | `tools/docs_index.json` | manifest-derived canonical read model | 生成物。手編集禁止 |
 | `tools/docs_graph.json` | canonical typed relation graph | 生成物。手編集禁止 |
 | `tools/docs_public_catalog.json` | Public用文書・検索projection | 生成物。手編集禁止 |
@@ -77,8 +77,10 @@ TypeScript/HTMLクライアントは、Python側と同じ生成済みread model�
 
 Public Navigatorは次を提供する。
 
-- ルートREADMEを最初に読む入口
-- 体系層からの読解
+Repositoryの数値prefixはidentityと保守のために保持するが、Public Navigatorの読書順序には使わない。v5.1では、外向き表現と視覚資料を最上段の接触面、READMEとSystem Mapを正式入口、Applications/Research Notesを作業領域、Truth/Beauty/Goodnessを体系核、Overviewを体系の読み方案内として配置する。
+
+- 編集者が選択できる注目・おすすめ・寄り道の読書channel（READMEを含む全Public文書が候補）
+- 読者役割に応じた入口配置（接触面／正式入口／作業領域／体系核／案内）
 - 目的別の案内文書
 - 問い・トピック・検索からの入口
 - 型付き関係の探索
@@ -101,7 +103,7 @@ Public画面へ次を出してはならない。
 - private/pending path
 - Developer Navigatorを既定入口にする導線
 
-`仮登録 / Provisional` は表示してよい。これはcanonical文書台帳に収録済みで、メタデータの人間レビューが継続中であることだけを示す。
+Publicの初期読書面では、registration state、S/E、Authority、Scope等のrepository metadataを本文より先に表示しない。必要な管理情報はDeveloper側で確認する。
 
 ### 4.2 Developer Navigator
 
@@ -117,6 +119,8 @@ Developer Navigatorは次を扱う。
 - approve / edit / hold / rejectの作業状態
 - 明示的なreview JSON export/import
 - manifest反映前のvalidationとdry-run
+- Public catalog全文書からの注目・おすすめ・寄り道channel編集
+- editorial selection JSONのexport/import（repositoryへは直接書かない）
 
 ブラウザは `tools/docs_manifest.yml` を直接書き換えない。登録作業は [`DOCS_REGISTRATION_WORKBENCH.md`](./DOCS_REGISTRATION_WORKBENCH.md) に従う。
 
@@ -323,6 +327,13 @@ python scripts/check_dn6_release_gate.py --mode publication
 
 publication modeは、公開日、版固有DOI、`release.status: published`、公開用read model、Public/Developer境界を追加検査する。
 
+Release gateは既知warningを「解決済み」とは扱わない。既知codeごとの許容上限以内であれば技術負債として明示的に保持し、未知warningまたは既知上限の超過はblockする。warningが減ることは許容する。
+
+```text
+release-candidate ready != publication complete
+known warning debt       != resolved warning
+```
+
 ## 11. Query and inspection / CLI確認
 
 検索：
@@ -384,23 +395,29 @@ Public catalogは、manifestにある `registered` と `provisional` の両方�
 ```text
 provisional registration
   -> human metadata review
-  -> registered または metadata revision
+  -> explicit review transaction
+  -> repository-side validation / apply
+  -> registered または provisional維持
 ```
 
-Developer reviewは次を利用する。
+仮登録文書のcanonical identityは、すでに `tools/docs_manifest.yml` にある。Developer Navigatorはmanifestをread sourceとして利用してよいが、ブラウザから直接書き込まない。
+
+Developer reviewは次の一つのread modelへ集約する。
 
 ```text
-tools/docs_registration_candidates.yml
-tools/docs_registration_candidates.preview.json
-tools/docs_registered_reader_question_review.yml
-tools/docs_registered_reader_question_review.preview.json
+tools/docs_manifest.yml --------------------┐
+                                             ├─> scripts/build_registration_workbench_preview.py
+tools/docs_revision_proposals.yml ----------┘
+                                                   ↓
+                                  tools/docs_registration_workbench.preview.json
 ```
 
-preview JSONは生成物であり、手編集しない。ブラウザのlocal stateはcanonicalではない。export、repository-side validation、dry-run、明示的manifest適用を経て初めて変更候補となる。
+preview JSONは生成物であり、手編集しない。ブラウザのlocal stateもcanonicalではない。export、repository-side validation、dry-run、明示的manifest適用を経て初めてcanonical変更となる。
+
+登録済み文書の改訂提案はgenericな `docs_revision_proposals.yml` に保持し、一回限りのreview seedを恒久inputにはしない。
 
 詳細は次を参照する。
 
-- [`DOCS_REGISTRATION_CANDIDATES.md`](./DOCS_REGISTRATION_CANDIDATES.md)
 - [`DOCS_REGISTRATION_WORKBENCH.md`](./DOCS_REGISTRATION_WORKBENCH.md)
 - [`READER_QUESTION_POLICY.md`](./READER_QUESTION_POLICY.md)
 
@@ -411,7 +428,7 @@ preview JSONは生成物であり、手編集しない。ブラウザのlocal st
 | title、status、scope、role、配置 | owning Markdown / `docs_manifest.yml` |
 | topic、alias、reader question | `docs_manifest.yml` または `docs_search.yml` |
 | concept ownership、typed relation | `docs_manifest.yml`、Glossary、System Map、Concept Network |
-| Public入口文、層説明、guide card | `navigator/public-content.json` |
+| Public入口文、層説明、guide card、読書channel | `navigator/public-content.json`（channel文書選択はDeveloper editor→明示的repository-side applyでも更新可） |
 | Search/graph behavior | `navigator/src/*-core.ts` とPython reference implementation |
 | UI layout、Reader、route | `navigator/src/app.ts` |
 | PublicにDeveloper情報が出る | projection builder / interface boundary |
@@ -437,9 +454,28 @@ UIをきれいに見せるために、理論本文やcanonical metadataを下流
 ## 16. Related contracts / 関連文書
 
 - [`NAVIGATOR_INTERFACE_CONTRACT.md`](./NAVIGATOR_INTERFACE_CONTRACT.md)
-- [`DOCS_REGISTRATION_CANDIDATES.md`](./DOCS_REGISTRATION_CANDIDATES.md)
 - [`DOCS_REGISTRATION_WORKBENCH.md`](./DOCS_REGISTRATION_WORKBENCH.md)
 - [`READER_QUESTION_POLICY.md`](./READER_QUESTION_POLICY.md)
-- [`DN6_RELEASE_INTEGRATION.ja.md`](./DN6_RELEASE_INTEGRATION.ja.md)
 - [`PUBLIC_SITE_BUILD.ja.md`](./PUBLIC_SITE_BUILD.ja.md)
 - [`DOCS_NAVIGATION_HISTORY.md`](./DOCS_NAVIGATION_HISTORY.md)
+
+## 17. v5.1 metadata ownership and feature freeze
+
+`tools/docs_manifest.yml` with `metadata_contract: document-contract/1.0` is the current owner of identity, placement, document role, language relation, catalog membership and approved assessment summary. `tools/docs_manifest.schema.json` and `scripts/validate_docs_manifest.py` implement this contract.
+
+- `state` remains publication availability, not maturity, validity or assessment approval. `registration_state` remains provisional/registered. `document_role` describes function. None is inferred from the other.
+- `discovery.primary_question` is an explicit language-keyed field; null means not selected. Existing `reader_questions` and 28 active revision proposals are retained, not silently approved. Search terms come from existing `topics` and `aliases`, not a new competing header field.
+- `language_relation` distinguishes authority, full/partial commensuration, integrated bilingual text, digest and support. The joint root-README interface is the only coauthority exception. A paired English document is not independently re-scored.
+- `managed_assets` holds fixed research sources, evidence, historical supports and internal supports. These are not catalog documents and receive no current claim profile. Exact-byte sources are checked against the specified source binding. A current snapshot hash does not repair or certify a historical manifest.
+- `retired_documents` records author retirement and superseded paths. A retired current path cannot be restored merely to pass a build. A moved document keeps its surviving identity.
+- `external_artifacts` and `artifact_relations` provide typed reference edges only: operationalized_in, implemented_as, archived_at. They are not a software launcher, download manager, or proof relation. Live availability is not implied by a supplied URL.
+
+Legacy S/E/P/V labels remain provenance rather than values converted into the new scale. New assessments remain unreviewed or hold until explicitly reviewed. Hotspot values never determine the representative score by maximum or average.
+
+The Public reader hides recognized source header blocks as a presentation operation. It does not parse them into assessment metadata. Optional collapsed metadata after the text is read only from the sanitized generated catalog. The original Markdown and Developer reading remain available; this is not a confidentiality boundary.
+
+The v5.1 UI scope is frozen at existing reading/search/graph/language/theme functions, existing registration/assessment review surfaces, and the optional read-model metadata panel. No new evaluation CMS, automatic claim assessor or forced language translation is part of this freeze.
+
+Rebuild current projections using `python scripts/rebuild_document_read_models.py`. It builds locally from current canonical inputs, verifies the public artifact, and restores derived outputs on failure. Do not copy hash-bound read models from an older AI snapshot. A successful local build is not release approval.
+
+Two Volume I CSV assets had CRLF working-copy bytes but LF blobs already stored in rc004 HEAD. Their metadata preserves the original snapshot digest and an explicitly bound `git_lf_sha256`, verified to differ only in line endings. Only these declared provenance assets accept those two exact representations; other modifications fail. Fixed Optional Axiom source remains strictly exact-byte. Historical MANIFEST values are neither normalized nor reissued.

@@ -1,0 +1,96 @@
+repository_assessment_run:
+  schema_version: "0.2"
+  run_id: "<unique-run-id>"
+  created_at: "<ISO-8601>"
+  model:
+    name: "<model-or-runner>"
+
+  protocol:
+    id: claim-classification-pilot
+    revision: "2026-08-23-b"
+    source_sha256: "<copied-from-protocol-preview>"
+
+  fixture:
+    targets:
+      - path: 01_Sat_Truth/Boundary_Realism_Principle.md
+        sha256: "<target-bytes-sha256>"
+      - path: 01_Sat_Truth/Boundary_Epistemological_Critique.ja.md
+        sha256: "<target-bytes-sha256>"
+
+  documents:
+    - path: "<source-path>"
+      document_profile:
+        title: "<document title>"
+        classification:
+          strength: null # S0|S1|S2|S3|S4|S5|null
+          exposure: null # E0|E1|E2|E3|null
+        basis_claim_ids:
+          - "REP-001"
+        rationale: "<why these representative claims determine the document profile>"
+
+      representative_claims:
+        - claim_id: "REP-001"
+          source_refs:
+            - line_start: 1
+              line_end: 3
+              text: "<verbatim source excerpt>"
+          proposition: "<central proposition; merge repetitions/paraphrases>"
+          argument_role: central_claim
+          attribution:
+            represented_system: "<speaker/system being represented>"
+            repository_commitment: endorsed # represented|endorsed|derived|suspended|indeterminate
+            responsibility: "<claim or bridge responsibility>"
+            scope: "<declared or inferred bounded scope>"
+          classification:
+            strength: null
+            exposure: null
+          rationale: "<reason for attribution, commitment, S/E>"
+          references: []
+          notes: null
+
+      claim_hotspots:
+        - hotspot_id: "HOT-001"
+          source:
+            line_start: 10
+            line_end: 12
+            text: "<verbatim source excerpt>"
+          proposition: "<locally strong or separately responsible claim>"
+          argument_role: bridge
+          hotspot_reasons:
+            - external_bridge
+            - different_ground_owner
+          attribution:
+            represented_system: "<speaker/system being represented>"
+            repository_commitment: endorsed
+            responsibility: "<owner of this local bridge/claim>"
+            scope: "<local scope>"
+          ground:
+            owner: "<SO|AMP|external domain|unknown>"
+            relation: "<supports|source lineage|derived from|unknown>"
+            source_path: null
+            note: null
+          classification:
+            strength: null
+            exposure: null
+          classification_effect: local_only
+          awareness:
+            ground_linked: null
+            scope_declared: null
+            nonclaim_boundary_present: null
+            owner_identified: null
+          rationale: "<why this is a hotspot and why its local S/E is assigned>"
+          references: []
+          notes: null
+
+      nonclaim_boundaries:
+        - boundary_id: "NON-001"
+          source:
+            line_start: 20
+            line_end: 21
+            text: "<verbatim nonclaim statement>"
+          proposition: "<what the document explicitly says it does not claim>"
+          rationale: "<optional scope-control note>"
+
+      notes: null
+
+  run_notes: "<batch-level notes; do not rewrite strange outputs>"

@@ -1,10 +1,10 @@
 # Claim Strength and Publication-Layer Table for Scientific Ontology
 
-> Status: Public control table  
-> Scope: claim strength / epistemic risk / use and safety risk / publication layer / verification / rendering distance  
-> Language: English commensurated rendering  
-> Japanese authoritative source: ./Claim_Strength_and_Publication_Layer_Table.md  
-> Claim strength: classifier  
+> Status: Public control table
+> Scope: claim strength / epistemic risk / use and safety risk / publication layer / verification / rendering distance
+> Language: English commensurated rendering
+> Japanese authoritative source: [Claim_Strength_and_Publication_Layer_Table.ja.md](./Claim_Strength_and_Publication_Layer_Table.ja.md)
+> Claim strength: classifier
 
 ---
 
@@ -369,10 +369,10 @@ A classification of the file as a whole does not replace section-level classific
 
 ### 15.1 When Using Terms from Established Fields
 
-1. Respect the standard definition first.  
-2. State the SO-internal meaning.  
-3. Indicate whether the relation is borrowing, analogy, reinterpretation, or a correspondence candidate rather than identity.  
-4. State the scope of application and non-claims.  
+1. Respect the standard definition first.
+2. State the SO-internal meaning.
+3. Indicate whether the relation is borrowing, analogy, reinterpretation, or a correspondence candidate rather than identity.
+4. State the scope of application and non-claims.
 
 ### 15.2 When Approaching the Body or Psychology
 

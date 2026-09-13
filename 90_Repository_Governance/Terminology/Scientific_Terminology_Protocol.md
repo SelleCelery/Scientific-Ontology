@@ -7,8 +7,8 @@
 
 本文書は、**存在境界論｜Scientific Ontology** が既存科学から借りる語彙をどのように扱うかを定める。
 
-標準科学の定義を無断で上書きしない。  
-標準科学の定義を置き換えるものではない。  
+標準科学の定義を無断で上書きしない。
+標準科学の定義を置き換えるものではない。
 存在境界論内で異なる意味で用いる場合は、その差異を明示する。
 
 ## 1. 定義は公開境界の道具である
@@ -145,8 +145,8 @@ Scientific Ontology は、既存科学を否定したり置き換えたりする
 
 This document defines how **存在境界論｜Scientific Ontology** uses terms borrowed from established sciences.
 
-It does not redefine scientific terms without notice.  
-It does not claim to replace standard scientific definitions.  
+It does not redefine scientific terms without notice.
+It does not claim to replace standard scientific definitions.
 When Scientific Ontology uses a term differently, the difference must be stated explicitly.
 
 ## 1. Definitions Are Boundary Tools

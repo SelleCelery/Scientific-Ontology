@@ -15,6 +15,7 @@
 *.css  text eol=lf
 *.html text eol=lf
 *.sh   text eol=lf
+*.sha256 text eol=lf
 
 .gitignore    text eol=lf
 .gitattributes text eol=lf

@@ -681,3 +681,7 @@ In this note, `particle`, `boson field`, `intrinsic time`, `entanglement`, `Feyn
 ## Index Note / Research Notes Index
 
 `PINGER_Hypothesis_and_History_Field_Topology.md` — A research note organizing the PINGER Hypothesis as a projective relation among PINGER particle, communication pathway, intrinsic time, cosmic outer shell, return path, `BlackHole`, null / void, history-field topology, and physical-adjacent vocabulary. It treats a PINGER particle not as an entity-particle, but as a state in which a communication pathway connecting an occurrence phase and a present section appears particle-like on an observational section. In Feynman-diagrammatic reading, spacetime is abstracted once, and interaction, exchange, mediation, communication pathway, vertex, loop, disconnection, and return path are read. When history-field topology is restricted to physical diagrams, a Feynman-diagrammatic structure appears; when non-separable correspondence between history-fields is restricted to separability in spacetime coordinates, a structure close to `entanglement` appears. These are treated not as replacements for standard physics, but as conceptual models.
+
+---
+
+[Japanese authoritative text](./PINGER_Hypothesis_and_History_Field_Topology.ja.md). This English commensuration is not independently authoritative.

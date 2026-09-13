@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scientific-ontology.local/schemas/docs_revision_proposals.schema.json",
+  "title": "Scientific Ontology registered-document revision proposals",
+  "type": "object",
+  "required": ["revision_proposals"],
+  "additionalProperties": false,
+  "properties": {
+    "revision_proposals": {
+      "type": "object",
+      "required": ["schema_version", "status", "policy", "proposals"],
+      "additionalProperties": true,
+      "properties": {
+        "schema_version": {"const": "0.1"},
+        "status": {"enum": ["active", "empty"]},
+        "policy": {"type": "object"},
+        "note": {"type": "string"},
+        "proposals": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["proposal_id", "path", "source_kind", "before", "after"],
+            "additionalProperties": true,
+            "properties": {
+              "proposal_id": {"type": "string", "minLength": 1},
+              "path": {"type": "string", "pattern": "^[^/].*\\.md$"},
+              "source_kind": {"type": "string", "minLength": 1},
+              "review_note": {"type": "string"},
+              "before": {"type": "object"},
+              "after": {"type": "object"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

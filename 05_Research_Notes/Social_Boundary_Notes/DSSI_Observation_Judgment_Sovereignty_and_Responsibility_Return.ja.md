@@ -552,6 +552,18 @@ DSSIが公開されるとき、単体のブラウザ拡張としてだけ提示�
 
 そのため、公開上は、存在境界論との接続を明示する必要がある。
 
+### 13.1 公開済み実装への返路
+
+DSSI Core Aの公開実装系列として、**ConnectBits v0.5.0 Public Preview** が公開されている。
+
+- Public product: ConnectBits
+- Development lineage: DSSI Core A
+- Archived release: [Zenodo record 22689146](https://zenodo.org/records/22689146)
+
+この接続は、ConnectBitsが存在境界論を実証した、またはSOの命題がソフトウェアによって証明されたという意味ではない。SO側で記述した境界、観測、履歴、照合、判断場、責任返路の一部が、どの停止線と権限境界を伴って実装へ移されたかを追跡するための `operationalized in / implemented as` 関係である。
+
+Scientific-Ontology RepositoryはConnectBitsの実装コードを内包しない。実装の版、動作、配布物、導入方法、セキュリティ上の境界はDSSI / ConnectBits側の成果物が所有する。本稿は、その外部実装へ戻れる公開上の返路だけを保持する。
+
 DSSIは、次の抽象概念を、実装上の条件へ変換する。
 
 | 存在境界論 | DSSI上の実装 |
@@ -651,3 +663,7 @@ DSSIが返すべきものは、恐怖でも、安心でも、判決でもない�
 > DSSIは、判断を代行しない。  
 > DSSIは、運営者の説明を代行しない。  
 > DSSIは、判断条件と説明責任を、本来あるべき境界へ返す。
+
+---
+
+[英語通約](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

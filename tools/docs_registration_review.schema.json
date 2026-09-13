@@ -11,35 +11,25 @@
       "required": ["schema_version", "status", "source", "decisions", "manual_candidates", "revision_candidates"],
       "additionalProperties": false,
       "properties": {
-        "schema_version": {"enum": ["0.1", "0.2"]},
+        "schema_version": {"const": "0.3"},
         "status": {"enum": ["in_progress", "complete"]},
         "exported_at": {"type": "string"},
         "source": {
           "type": "object",
-          "required": ["candidate_source_sha256", "manifest_sha256", "graph_sha256", "candidate_count"],
+          "required": ["manifest_sha256", "graph_sha256", "provisional_count", "revision_proposals_sha256", "revision_proposal_count"],
+          "additionalProperties": false,
           "properties": {
-            "candidate_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
             "manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
             "graph_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-            "candidate_count": {"type": "integer", "minimum": 0},
-            "registered_review_seed_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-            "registered_review_seed_count": {"type": "integer", "minimum": 0}
-          },
-          "additionalProperties": true
+            "provisional_count": {"type": "integer", "minimum": 0},
+            "revision_proposals_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "revision_proposal_count": {"type": "integer", "minimum": 0}
+          }
         },
         "summary": {"type": "object"},
-        "decisions": {
-          "type": "array",
-          "items": {"$ref": "#/$defs/decision"}
-        },
-        "manual_candidates": {
-          "type": "array",
-          "items": {"$ref": "#/$defs/manualCandidate"}
-        },
-        "revision_candidates": {
-          "type": "array",
-          "items": {"$ref": "#/$defs/revisionCandidate"}
-        }
+        "decisions": {"type": "array", "items": {"$ref": "#/$defs/decision"}},
+        "manual_candidates": {"type": "array", "items": {"$ref": "#/$defs/manualCandidate"}},
+        "revision_candidates": {"type": "array", "items": {"$ref": "#/$defs/revisionCandidate"}}
       }
     }
   },
@@ -47,6 +37,7 @@
     "decision": {
       "type": "object",
       "required": ["path", "doc_id", "decision", "reviewed_at", "before", "after"],
+      "additionalProperties": true,
       "properties": {
         "path": {"type": "string", "minLength": 1},
         "doc_id": {"type": "string", "minLength": 1},
@@ -55,36 +46,36 @@
         "reviewer_note": {"type": "string"},
         "before": {"type": "object"},
         "after": {"type": "object"}
-      },
-      "additionalProperties": true
+      }
     },
     "manualCandidate": {
       "type": "object",
       "required": ["id", "created_at", "decision", "proposed"],
+      "additionalProperties": true,
       "properties": {
         "id": {"type": "string", "minLength": 1},
         "created_at": {"type": "string"},
         "reviewer_note": {"type": "string"},
         "decision": {"enum": ["approve", "hold", "reject"]},
         "proposed": {"type": "object"}
-      },
-      "additionalProperties": true
+      }
     },
     "revisionCandidate": {
       "type": "object",
-      "required": ["doc_id", "path", "created_at", "decision", "before"],
+      "required": ["doc_id", "path", "created_at", "decision", "source_kind", "before", "after"],
+      "additionalProperties": true,
       "properties": {
         "doc_id": {"type": "string", "minLength": 1},
         "path": {"type": "string", "minLength": 1},
         "created_at": {"type": "string"},
         "reviewer_note": {"type": "string"},
         "decision": {"enum": ["approve", "hold", "reject"]},
-        "source_kind": {"type": "string"},
-        "seed_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_kind": {"enum": ["revision_proposal", "ad_hoc_registered_revision"]},
+        "proposal_id": {"type": "string"},
+        "proposal_source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
         "before": {"type": "object"},
         "after": {"type": "object"}
-      },
-      "additionalProperties": true
+      }
     }
   }
 }

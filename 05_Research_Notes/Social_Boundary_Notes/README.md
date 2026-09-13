@@ -42,7 +42,7 @@
 1. [`AI_Adoption_as_Synchronization_Closure.md`](./AI_Adoption_as_Synchronization_Closure.md)
 2. [`Negentropy_Economy_and_Meaning_Generation.ja.md`](./Negentropy_Economy_and_Meaning_Generation.ja.md) / [`en`](./Negentropy_Economy_and_Meaning_Generation.en.md)
 3. [`Negentropy_Economy_Principles.ja.md`](./Negentropy_Economy_Principles.ja.md) / [`en`](./Negentropy_Economy_Principles.en.md)
-4. [`DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md`](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md) — English commensuration pending
+4. [`DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md`](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md) / [`en`](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md) — DSSI Core Aの公開実装系列は [ConnectBits v0.5.0 Public Preview](https://zenodo.org/records/22689146) へ接続する。
 
 ## 4. Maintenance Notes / 運用メモ
 
@@ -97,7 +97,7 @@ Not included:
 1. [`AI_Adoption_as_Synchronization_Closure.md`](./AI_Adoption_as_Synchronization_Closure.md)
 2. [`Negentropy_Economy_and_Meaning_Generation.ja.md`](./Negentropy_Economy_and_Meaning_Generation.ja.md) / [`en`](./Negentropy_Economy_and_Meaning_Generation.en.md)
 3. [`Negentropy_Economy_Principles.ja.md`](./Negentropy_Economy_Principles.ja.md) / [`en`](./Negentropy_Economy_Principles.en.md)
-4. [`DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md`](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md) — English commensuration pending
+4. [`DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md`](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md) / [`JA`](./DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md) — the DSSI Core A public implementation lineage connects to [ConnectBits v0.5.0 Public Preview](https://zenodo.org/records/22689146).
 
 ## 3. Return and Maintenance
 

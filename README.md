@@ -248,6 +248,8 @@ The framework does not descend from a completed metaphysics to passive examples.
 - [`AI Usefulness as a Boundary Function`](04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md)
 - [`AI Adoption Collation Checklist`](04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md)
 - [`Specification for Peace`](04_Applications/Social_Boundary_Design/Specification_for_Peace.en.md)
+- [`SO Reflexive Philosophical Research`](04_Applications/SO_Reflexive_Philosophical_Research/README.md)
+  - [`Volume I: From De-Registry to Judgment Transparency`](04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md)
 - [`Consent Boundary and Sentence/Bit Asymmetry`](05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.en.md)
 - [`Literature as Worldmaking`](05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.en.md)
 

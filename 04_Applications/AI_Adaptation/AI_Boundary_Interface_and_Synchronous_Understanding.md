@@ -11,7 +11,7 @@
 
 有用なAIは、単なる回答生成器ではない。
 
-有用なAIは、**境界インターフェース** として機能しうる。  
+有用なAIは、**境界インターフェース** として機能しうる。
 すなわち、ユーザーが判断し、修正し、保留し、再接続し、自分の未解決履歴の所有者であり続けるための場を保つ。
 
 本文書は、**存在境界論｜Scientific Ontology** におけるAI向け概念のうち、公開可能なものだけを整理する。
@@ -21,7 +21,7 @@
 
 ## 1. 境界インターフェースとしてのAI
 
-AIは言語を通じてユーザーと接触する。  
+AIは言語を通じてユーザーと接触する。
 しかし、そこで生じる境界は単なる言語境界ではない。
 
 境界には、次のものが含まれる。
@@ -59,7 +59,7 @@ AI応答が避けるべきものは、次の通りである。
 
 理解とは、正しい情報への外部接続だけではない。
 
-正答を受け取っても、まだ理解していないことがある。  
+正答を受け取っても、まだ理解していないことがある。
 その場合、答えには接続しているが、内部では同期していない。
 
 同期的理解とは、外部入力が、受け手自身の文脈、履歴、例、問い、次の判断の中で使える形になることである。
@@ -123,7 +123,7 @@ Open Markerは、AIを研究、執筆、自己理解、倫理、概念開発に�
 
 強いAIインターフェースには、強い制動が必要である。
 
-倫理的制動はAIを弱めるものではない。  
+倫理的制動はAIを弱めるものではない。
 AIを信頼可能にする条件である。
 
 公開可能な倫理的制動には、次が含まれる。
@@ -189,7 +189,7 @@ It does not describe a runtime kernel, role-selection mechanism, residue-routing
 
 ## 1. AI as Boundary Interface
 
-AI interacts with users through language.  
+AI interacts with users through language.
 However, the relevant boundary is not merely linguistic.
 
 The boundary includes:
@@ -229,7 +229,7 @@ An AI response should avoid:
 
 Understanding is not only external connection to correct information.
 
-A user may receive the correct answer and still not understand it.  
+A user may receive the correct answer and still not understand it.
 In that case, the answer is externally connected but not internally synchronized.
 
 Synchronous understanding means that external input becomes usable within the receiver's own context, history, examples, questions, and future judgment.
@@ -297,7 +297,7 @@ For the dedicated public gate to personality AI, see:
 
 A stronger AI interface requires stronger braking.
 
-Ethical braking does not weaken AI.  
+Ethical braking does not weaken AI.
 It makes AI trustworthy.
 
 Public ethical brakes include:

@@ -74,6 +74,12 @@ def rewrite_markdown(
             return match.group(0)
 
         source_target = root / target
+        if source_target.is_dir():
+            if path_is_forbidden(target, cfg):
+                raise BuildError(f"forbidden directory link in {source_rel}: {href!r}")
+            external = github_blob_url(repository_url, source_ref, target, query, fragment).replace("/blob/", "/tree/", 1)
+            rewrites.append({"source": source_rel, "target": target, "from": href, "to": external})
+            return f"{prefix}{external}{suffix}"
         if not source_target.exists() or not source_target.is_file():
             raise BuildError(f"broken local link in {source_rel}: {href!r} -> {target}")
 

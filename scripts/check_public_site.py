@@ -72,6 +72,55 @@ def collect_public_content_paths(value: Any, found: set[str]) -> None:
             collect_public_content_paths(child, found)
 
 
+
+def check_built_katex_bundle(site: Path) -> tuple[int, int]:
+    """Verify that the Pages artifact preserves the KaTeX CSS/runtime/font closure."""
+    vendor = site / "navigator" / "vendor" / "katex"
+    css_path = vendor / "katex.min.css"
+    runtime_path = vendor / "katex.mjs"
+    fail_if(not css_path.is_file(), "built KaTeX stylesheet is missing")
+    fail_if(not runtime_path.is_file(), "built KaTeX runtime is missing")
+
+    css = strict_utf8(css_path)
+    runtime = strict_utf8(runtime_path)
+    fail_if("gradio-container-" in css, "built KaTeX stylesheet carries a host-specific Gradio selector scope")
+
+    mathml_rule = re.search(r"\.katex \.katex-mathml\{([^}]*)\}", css)
+    fail_if(mathml_rule is None, "built KaTeX stylesheet is missing .katex .katex-mathml")
+    normalized = mathml_rule.group(1).replace(" ", "") if mathml_rule else ""
+    for declaration in (
+        "clip:rect(1px,1px,1px,1px)",
+        "height:1px",
+        "overflow:hidden",
+        "position:absolute",
+        "width:1px",
+    ):
+        fail_if(declaration not in normalized, f"built KaTeX MathML visual-hiding rule is incomplete: {declaration}")
+    fail_if("display:none" in normalized or "visibility:hidden" in normalized, "built KaTeX MathML is hidden from accessibility")
+
+    version_match = re.search(r'\.katex \.katex-version:after\{content:"([^"]+)"\}', css)
+    fail_if(version_match is None, "built KaTeX stylesheet version marker is missing")
+    if version_match is not None:
+        fail_if(version_match.group(1) not in runtime, f"built KaTeX CSS/runtime version mismatch: CSS={version_match.group(1)}")
+
+    local_assets = 0
+    data_assets = 0
+    for raw_url in re.findall(r"url\(([^)]+)\)", css):
+        ref = raw_url.strip().strip("'\"")
+        if not ref:
+            continue
+        if ref.startswith("data:"):
+            data_assets += 1
+            continue
+        fail_if(bool(re.match(r"^(?:https?:)?//", ref, flags=re.I)), f"built KaTeX stylesheet introduces a network asset: {ref}")
+        fail_if(ref.startswith(("/", "\\")) or bool(re.match(r"^[A-Za-z]:", ref)), f"built KaTeX stylesheet contains a non-relative asset path: {ref}")
+        resolved = (vendor / ref).resolve()
+        fail_if(not resolved.is_relative_to(vendor.resolve()), f"built KaTeX stylesheet escapes its vendor directory: {ref}")
+        fail_if(not resolved.is_file(), f"built KaTeX stylesheet references a missing local asset: {ref}")
+        local_assets += 1
+    fail_if(local_assets == 0, "built KaTeX stylesheet contains no local font references")
+    return local_assets, data_assets
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", default=str(ROOT), help="repository root")
@@ -163,6 +212,8 @@ def main() -> int:
         fail_if((site / "navigator/dev.html").exists(), "developer shell is present in Pages artifact")
         fail_if((site / "navigator/src").exists(), "TypeScript source directory is present in Pages artifact")
 
+        katex_local_assets, katex_data_assets = check_built_katex_bundle(site)
+
         public_content = load_json(site / "navigator/public-content.json")
         public_content_paths: set[str] = set()
         collect_public_content_paths(public_content, public_content_paths)
@@ -181,7 +232,8 @@ def main() -> int:
             "PUBLIC SITE ARTIFACT CHECK PASS: "
             f"{len(documents)} documents, {len(graph.get('nodes', []))} graph nodes, "
             f"{len(graph.get('edges', []))} graph edges, {local_links} local links, "
-            f"{external_links} external links, {len(actual_paths)} files"
+            f"{external_links} external links, {len(actual_paths)} files, "
+            f"KaTeX assets={katex_local_assets} local + {katex_data_assets} data"
         )
         return 0
     except (CheckFailure, ValueError, KeyError, json.JSONDecodeError, UnicodeDecodeError) as exc:

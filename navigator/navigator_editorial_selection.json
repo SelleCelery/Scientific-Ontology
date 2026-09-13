@@ -1,0 +1,132 @@
+{
+  "navigator_editorial_selection": {
+    "schema_version": "0.1",
+    "target": "navigator/public-content.json",
+    "before": [
+      {
+        "id": "featured",
+        "order": 10,
+        "enabled": true,
+        "layout": "lead",
+        "eyebrow": {
+          "ja": "FEATURED",
+          "en": "FEATURED"
+        },
+        "title": {
+          "ja": "注目の記事",
+          "en": "Featured reading"
+        },
+        "description": {
+          "ja": "いま前に出して読んでもらいたい文書を、編集者が選ぶ枠です。",
+          "en": "An editor-selected space for the documents to put forward now."
+        },
+        "documents": []
+      },
+      {
+        "id": "recommended",
+        "order": 20,
+        "enabled": true,
+        "layout": "cards",
+        "eyebrow": {
+          "ja": "RECOMMENDED",
+          "en": "RECOMMENDED"
+        },
+        "title": {
+          "ja": "おすすめ",
+          "en": "Recommended"
+        },
+        "description": {
+          "ja": "読書の流れを作るために、任意の文書を並べられます。",
+          "en": "A curated sequence of documents for shaping a reading route."
+        },
+        "documents": []
+      },
+      {
+        "id": "explore",
+        "order": 30,
+        "enabled": false,
+        "layout": "cards",
+        "eyebrow": {
+          "ja": "EXPLORE",
+          "en": "EXPLORE"
+        },
+        "title": {
+          "ja": "別のところから読む",
+          "en": "Read from somewhere else"
+        },
+        "description": {
+          "ja": "近い概念だけを巡回しないために、離れた文書を意図的に置ける枠です。",
+          "en": "A place for deliberately distant documents so reading does not stay inside one conceptual neighborhood."
+        },
+        "documents": []
+      }
+    ],
+    "after": [
+      {
+        "id": "featured",
+        "order": 10,
+        "enabled": true,
+        "layout": "lead",
+        "eyebrow": {
+          "ja": "FEATURED",
+          "en": "FEATURED"
+        },
+        "title": {
+          "ja": "注目の記事",
+          "en": "Featured reading"
+        },
+        "description": {
+          "ja": "いま前に出して読んでもらいたい文書を、編集者が選ぶ枠です。",
+          "en": "An editor-selected space for the documents to put forward now."
+        },
+        "documents": [
+          "meaning_collation_return_path",
+          "02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja"
+        ]
+      },
+      {
+        "id": "recommended",
+        "order": 20,
+        "enabled": true,
+        "layout": "cards",
+        "eyebrow": {
+          "ja": "RECOMMENDED",
+          "en": "RECOMMENDED"
+        },
+        "title": {
+          "ja": "おすすめ",
+          "en": "Recommended"
+        },
+        "description": {
+          "ja": "読書の流れを作るために、任意の文書を並べられます。",
+          "en": "A curated sequence of documents for shaping a reading route."
+        },
+        "documents": [
+          "boundary_epistemological_critique",
+          "boundary_epistemological_critique_annotations"
+        ]
+      },
+      {
+        "id": "explore",
+        "order": 30,
+        "enabled": false,
+        "layout": "cards",
+        "eyebrow": {
+          "ja": "EXPLORE",
+          "en": "EXPLORE"
+        },
+        "title": {
+          "ja": "別のところから読む",
+          "en": "Read from somewhere else"
+        },
+        "description": {
+          "ja": "近い概念だけを巡回しないために、離れた文書を意図的に置ける枠です。",
+          "en": "A place for deliberately distant documents so reading does not stay inside one conceptual neighborhood."
+        },
+        "documents": [
+          "negentropy_economy_and_meaning_generation"
+        ]
+      }
+    ]
+  }
+}

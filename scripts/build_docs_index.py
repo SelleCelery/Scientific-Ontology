@@ -22,6 +22,8 @@ try:
 except Exception as exc:  # pragma: no cover
     raise SystemExit("PyYAML is required: python -m pip install pyyaml") from exc
 
+from document_contract import enabled, validate_manifest, catalog_entry, public_assessment
+
 SCHEMA_VERSION = "0.2"
 DOC_ID_RE = re.compile(r"^[a-z0-9]+(?:_[a-z0-9]+)*$")
 PROCESS_MARKER_RE = re.compile(r"^(?:gate[_-]?\d+|u\d+(?:[_-][a-z0-9]+)?)$", re.IGNORECASE)
@@ -278,6 +280,9 @@ def build_document(
             "en": str(raw.get("role_en", "")),
         },
         "language_relation": raw.get("language_relation"),
+        "document_role": raw.get("document_role", ""),
+        "assessment_summary": public_assessment(raw),
+        "artifact_relations": raw.get("artifact_relations", []),
         "discovery": {
             "topics": discovery_topics,
             "searchable": bool(discovery.get("searchable", True)),
@@ -346,6 +351,10 @@ def compile_index(root: Path, manifest_path: Path, search_path: Path, visibility
     manifest_bytes = manifest_path.read_bytes()
     search_bytes = search_path.read_bytes()
     manifest = load_yaml(manifest_path)
+    if enabled(manifest):
+        errors, _warnings = validate_manifest(root, manifest)
+        if errors:
+            raise ValueError("Manifest contract: " + "; ".join(errors[:20]))
     search_data = load_yaml(search_path)
     search = search_data.get("search", {}) if isinstance(search_data.get("search"), dict) else {}
     topics = search.get("navigation_topics", {}) if isinstance(search.get("navigation_topics"), dict) else {}
@@ -359,6 +368,8 @@ def compile_index(root: Path, manifest_path: Path, search_path: Path, visibility
     concept_ownership = manifest.get("concept_ownership", {}) if isinstance(manifest.get("concept_ownership"), dict) else {}
     for raw in manifest.get("documents", []):
         if not isinstance(raw, dict):
+            continue
+        if raw.get("catalog_document", True) is not True:
             continue
         if str(raw.get("state", "")) not in allowed_states:
             continue
@@ -384,6 +395,7 @@ def compile_index(root: Path, manifest_path: Path, search_path: Path, visibility
         },
         "topics": topics,
         "query_expansions": expansions,
+        "external_artifacts": [{k: a[k] for k in ("artifact_id", "kind", "title", "version", "locator", "relationships") if k in a} for a in manifest.get("external_artifacts", [])],
         "documents": documents,
     }
     validate_index(index)

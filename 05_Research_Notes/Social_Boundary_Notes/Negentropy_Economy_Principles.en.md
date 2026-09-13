@@ -2,7 +2,7 @@
 
 > Status: Draft
 > Scope: negentropy-economy
-> Language: en
+> Language: English commensurated rendering; Japanese text is authoritative
 > Claim strength: U/E -> S
 
 ---
@@ -526,3 +526,7 @@ If, contrary to these principles, residue assessment is used as a circulation ga
 At that point, what should be asked is not merely whether there was a violation.
 
 The question is: even then, did you still do it?
+
+---
+
+[Japanese authoritative text](./Negentropy_Economy_Principles.ja.md). This English commensuration is not independently authoritative.

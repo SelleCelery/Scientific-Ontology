@@ -10,19 +10,19 @@
       "en": "Read Scientific Ontology"
     },
     "description": {
-      "ja": "境界、接触、履歴、返りから、認識・意味・倫理・AI・社会へ。体系の層、案内文書、問い、検索、関係から、いま読みたい場所へ入れます。",
-      "en": "Move from boundaries, contact, history, and return toward cognition, meaning, ethics, AI, and society. Enter through system layers, guide documents, questions, search, or relations."
+      "ja": "境界、接触、履歴、返りから、認識・意味・倫理・AI・社会へ。まず表現面に触れることも、正式な入口から入ることも、体系・応用・研究から読むこともできます。",
+      "en": "Move from boundaries, contact, history, and return toward cognition, meaning, ethics, AI, and society. You may begin with an expressive encounter, a canonical entrance, the core system, applications, or research."
     }
   },
   "layers": [
     {
       "id": "overview",
-      "order": 10,
+      "order": 70,
       "path": "00_Overview",
       "readme_path": "00_Overview/README.md",
       "label": {
-        "ja": "00｜Overview",
-        "en": "00 | Overview"
+        "ja": "全体像と読み方",
+        "en": "Overview"
       },
       "subtitle": {
         "ja": "全体の地図と読み方",
@@ -31,16 +31,17 @@
       "description": {
         "ja": "個別理論へ入る前に、概念と文書の接続、体系図、運用方針、研究動態、主張強度、物理近接語彙の接続条件を見渡す案内層。",
         "en": "An orientation layer for seeing concept-document connections, system maps, operational policy, research dynamics, claim strength, and conditions for physics-adjacent terminology before entering individual theories."
-      }
+      },
+      "home_group": "guide"
     },
     {
       "id": "sat_truth",
-      "order": 20,
+      "order": 50,
       "path": "01_Sat_Truth",
       "readme_path": "01_Sat_Truth/README.md",
       "label": {
-        "ja": "01｜Sat / Truth",
-        "en": "01 | Sat / Truth"
+        "ja": "真——構造と成立条件",
+        "en": "Truth: structure and conditions"
       },
       "subtitle": {
         "ja": "構造と成立条件",
@@ -49,16 +50,17 @@
       "description": {
         "ja": "ネットワーク構造そのものと、存在・接触・観測・意味・知がどのように成立しうるかを扱う基礎層。",
         "en": "The foundation layer for network structure itself and for the conditions under which existence, contact, observation, meaning, and knowledge can arise."
-      }
+      },
+      "home_group": "core"
     },
     {
       "id": "raj_beauty",
-      "order": 30,
+      "order": 60,
       "path": "02_Raj_Beauty",
       "readme_path": "02_Raj_Beauty/README.md",
       "label": {
-        "ja": "02｜Raj / Beauty",
-        "en": "02 | Raj / Beauty"
+        "ja": "美——認識と秩序",
+        "en": "Beauty: recognition and order"
       },
       "subtitle": {
         "ja": "履歴・差分・読みの生成",
@@ -67,16 +69,17 @@
       "description": {
         "ja": "ネットワークを流れる通信内容と、その受け取られ方・読み方の生成を扱う。事象流、履歴、差分、注意、抽象化、認識軸形成へ進む層。",
         "en": "The layer for communication content moving through the network and for how reception and reading are generated, including event streams, history, difference, attention, abstraction, and cognitive-axis formation."
-      }
+      },
+      "home_group": "core"
     },
     {
       "id": "tam_goodness",
-      "order": 40,
+      "order": 70,
       "path": "03_Tam_Goodness",
       "readme_path": "03_Tam_Goodness/README.md",
       "label": {
-        "ja": "03｜Tam / Goodness",
-        "en": "03 | Tam / Goodness"
+        "ja": "善——倫理と責任",
+        "en": "Goodness: ethics and responsibility"
       },
       "subtitle": {
         "ja": "規約・通約・返送",
@@ -85,34 +88,36 @@
       "description": {
         "ja": "通信を成立させる規約と、その管理を扱う。受容・保留・停止、通約、仮閉鎖、残差、異議、責任、返送を読む層。",
         "en": "The layer for protocols that make communication possible and for their management: acceptance, suspension, stopping, commensuration, provisional closure, residuals, objections, responsibility, and return."
-      }
+      },
+      "home_group": "core"
     },
     {
       "id": "applications",
-      "order": 50,
+      "order": 30,
       "path": "04_Applications",
       "readme_path": "04_Applications/README.md",
       "label": {
-        "ja": "04｜Applications",
-        "en": "04 | Applications"
+        "ja": "応用",
+        "en": "Applications"
       },
       "subtitle": {
         "ja": "理論を設計へ接続する",
         "en": "Connect theory to design"
       },
       "description": {
-        "ja": "01–03で形成された構造・認識・規約を、公開可能な設計インターフェース、評価枠、チェックリスト、仕様へ接続し、実装からの残差を上流へ返す層。",
-        "en": "Connects the structures, cognition, and protocols formed in 01–03 to public design interfaces, evaluation frames, checklists, and specifications, while returning implementation residuals upstream."
-      }
+        "ja": "中核領域で形成された構造・認識・規約を、公開可能な設計インターフェース、評価枠、チェックリスト、仕様へ接続し、実装からの残差を上流へ返す領域。",
+        "en": "Connects structures, cognition, and protocols from the core system to public design interfaces, evaluation frames, checklists, and specifications, while returning implementation residuals upstream."
+      },
+      "home_group": "working"
     },
     {
       "id": "research_notes",
-      "order": 60,
+      "order": 40,
       "path": "05_Research_Notes",
       "readme_path": "05_Research_Notes/README.md",
       "label": {
-        "ja": "05｜Research Notes",
-        "en": "05 | Research Notes"
+        "ja": "研究ノート",
+        "en": "Research notes"
       },
       "subtitle": {
         "ja": "未確定な発展を、捨てずに保持する",
@@ -121,24 +126,44 @@
       "description": {
         "ja": "公開基礎へ直ちに統合するには距離やリスクが大きい研究線を、非主張境界・反例・残差・検証段階とともに保持する探索層。",
         "en": "An exploratory layer that keeps research lines too distant or risky for immediate integration into the public foundations together with non-claim boundaries, counterexamples, residuals, and validation stages."
-      }
+      },
+      "home_group": "working"
     },
     {
       "id": "visual_materials",
-      "order": 70,
+      "order": 20,
       "path": "06_Visual_Materials",
       "readme_path": "06_Visual_Materials/README.md",
       "label": {
-        "ja": "06｜Visual Materials",
-        "en": "06 | Visual Materials"
+        "ja": "図で見る",
+        "en": "Visual materials"
       },
       "subtitle": {
-        "ja": "図から入り、本文へ戻る",
-        "en": "Enter visually, return to the text"
+        "ja": "図から圧を受け、本文へ戻る",
+        "en": "Encounter the structure visually, then return to the text"
       },
       "description": {
-        "ja": "概念配置へ視覚的に入るための補助層。図を理論本文の代替にせず、圧縮で失われた条件を確認しながら本文へ戻る入口として扱う。",
-        "en": "A supporting layer for entering the conceptual arrangement visually. Images are not substitutes for theory texts; they are entrances that return readers to conditions compressed by visualization."
+        "ja": "概念配置へ視覚的に接触するための面。図を理論本文の代替にせず、「なんだこれ？」という圧を入口にして、圧縮で失われた条件を本文へ戻って確認する。",
+        "en": "A surface for visual contact with the conceptual arrangement. Images do not replace theory texts; they create an initial pressure of encounter and return the reader to conditions lost in compression."
+      },
+      "home_group": "contact"
+    },
+    {
+      "id": "creative_offshoots",
+      "order": 10,
+      "home_group": "contact",
+      "path": "07_Creative_Offshoots",
+      "label": {
+        "ja": "外界との表現・運用実験",
+        "en": "Creative offshoots"
+      },
+      "subtitle": {
+        "ja": "理論を外へ持ち出し、反応と残差を受け取る",
+        "en": "Take the theory outward and receive reactions and residuals"
+      },
+      "description": {
+        "ja": "読み物、創作、可読化、運用実験を通して、理論そのものを説明する前にまず接触を起こす外向きの実験面。ここでの表現は自動的に概念定義の正本にはならない。",
+        "en": "An outward experimental surface for making contact through readable prose, creative work, public-facing expression, and operational trials before formal explanation. Material here does not automatically become a canonical concept definition."
       }
     }
   ],
@@ -213,6 +238,73 @@
         "ja": "標準表記、英語通約、公開上の注意を確認し、詳細定義を所有する文書へ戻る。",
         "en": "Check standard forms, English commensurations, and public-handling notes, then return to the documents that own detailed definitions."
       }
+    }
+  ],
+  "reading_channels": [
+    {
+      "id": "featured",
+      "order": 10,
+      "enabled": true,
+      "layout": "lead",
+      "eyebrow": {
+        "ja": "FEATURED",
+        "en": "FEATURED"
+      },
+      "title": {
+        "ja": "注目の記事",
+        "en": "Featured reading"
+      },
+      "description": {
+        "ja": "いま前に出して読んでもらいたい文書を、編集者が選ぶ枠です。",
+        "en": "An editor-selected space for the documents to put forward now."
+      },
+      "documents": [
+        "meaning_collation_return_path",
+        "02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja"
+      ]
+    },
+    {
+      "id": "recommended",
+      "order": 20,
+      "enabled": true,
+      "layout": "cards",
+      "eyebrow": {
+        "ja": "RECOMMENDED",
+        "en": "RECOMMENDED"
+      },
+      "title": {
+        "ja": "おすすめ",
+        "en": "Recommended"
+      },
+      "description": {
+        "ja": "読書の流れを作るために、任意の文書を並べられます。",
+        "en": "A curated sequence of documents for shaping a reading route."
+      },
+      "documents": [
+        "boundary_epistemological_critique",
+        "boundary_epistemological_critique_annotations"
+      ]
+    },
+    {
+      "id": "explore",
+      "order": 30,
+      "enabled": false,
+      "layout": "cards",
+      "eyebrow": {
+        "ja": "EXPLORE",
+        "en": "EXPLORE"
+      },
+      "title": {
+        "ja": "別のところから読む",
+        "en": "Read from somewhere else"
+      },
+      "description": {
+        "ja": "近い概念だけを巡回しないために、離れた文書を意図的に置ける枠です。",
+        "en": "A place for deliberately distant documents so reading does not stay inside one conceptual neighborhood."
+      },
+      "documents": [
+        "negentropy_economy_and_meaning_generation"
+      ]
     }
   ]
 }

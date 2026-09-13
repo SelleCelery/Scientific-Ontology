@@ -1,11 +1,11 @@
 # Truth Management and Boundary PDCA
 ## Redefining PDCA through First Purpose, Sharing, World Formation, and Boundary CA
 
-> Status: Methodological and operational note  
-> Scope: truth / purpose / management / organization / AI / state / international order / historical interpretation  
-> Language: English commensurated rendering  
-> Japanese authoritative source: [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md)  
-> Claim strength: S3-S4 / E2 / U1-U2 / P1-P2 / V0-V3  
+> Status: Methodological and operational note
+> Scope: truth / purpose / management / organization / AI / state / international order / historical interpretation
+> Language: English commensurated rendering
+> Japanese authoritative source: [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md)
+> Claim strength: S3-S4 / E2 / U1-U2 / P1-P2 / V0-V3
 
 ---
 
@@ -182,10 +182,10 @@ There need not always be only one First Purpose.
 
 However, where multiple First Purposes exist, their conditions of conflict must be made explicit.
 
-Safety and freedom.  
-Growth and maintenance.  
-Speed and explanation.  
-Individual dignity and community continuity.  
+Safety and freedom.
+Growth and maintenance.
+Speed and explanation.
+Individual dignity and community continuity.
 Present benefit and the possibilities of future generations.
 
 When tensions between purposes are treated as though they do not exist, actual choices are delegated to informal power, custom, and metrics.

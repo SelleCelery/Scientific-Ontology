@@ -3,7 +3,7 @@
 
 > Status: Cross-domain ontological note / Literary ontology note  
 > Scope: narrative truth, structural reading, reality fantasy, power, responsibility, return ethics  
-> Language: en  
+> Language: English commensurated rendering; Japanese text is authoritative
 > Claim strength: Literary/S2-S3; conceptual reading model, not literary canon or empirical social theory
 
 ## 0. Positioning
@@ -360,3 +360,7 @@ However, that truth is not factual agreement. It is truth in the sense that the 
 - [`../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md`](../Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.en.md)
 - [`../Social_Boundary_Notes/Negentropy_Economy_Principles.en.md`](../Social_Boundary_Notes/Negentropy_Economy_Principles.en.md)
 - [`../../03_Tam_Goodness/Boundary_Ethics_Model.md`](../../03_Tam_Goodness/Boundary_Ethics_Model.md)
+
+---
+
+[Japanese authoritative text](./Narrative_Truth_and_Structural_Reading.ja.md). This English commensuration is not independently authoritative.

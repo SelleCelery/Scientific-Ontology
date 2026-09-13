@@ -2,7 +2,7 @@
 
 > Layer: 05_Research_Notes / Literary_Ontological_Notes
 > Status: README
-> Scope: literary ontology / structural reading / history / meaning / belief-gravity / fictional cosmology
+> Scope: literary ontology / structural reading / history / meaning / sentence and bit / AI observation / belief-gravity / fictional cosmology
 > Language: ja+en
 > Public profile: P1-P2
 > Authority: Directory navigation and maintenance contract; not a concept-definition owner
@@ -25,6 +25,7 @@
 - 自己、光、通信、履歴、空の構造
 - 転生、輪廻、信念重力圏の創作モデル
 - 日本語限定または日英ペアの読解ノート
+- オシロスコープ、センテンス・クラウド、透明な幽霊、有機交流電燈を通じた文学的LLM論
 
 含まないもの：
 
@@ -39,6 +40,8 @@
   既存文学への構造読解。
 - [`Literature_as_Worldmaking.ja.md`](./Literature_as_Worldmaking.ja.md) / `en`
   文学を、世界制作発表として読む。
+- [`The_Transparent_Ghost_and_the_Bit.ja.md`](./The_Transparent_Ghost_and_the_Bit.ja.md)
+  オシロスコープ、センテンスという雲、ビット的コミット、透明な幽霊、有機交流電燈を接続し、LLMを意味形成の観測面として読む日本語正本。英語通約は保留中。
 - [`Meifu_Bureau_Reincarnation_and_Belief_Gravity.md`](./Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)  
   創作宇宙を用いた転生、輪廻、信念重力圏、履歴保持の概念試験。
 
@@ -74,6 +77,7 @@ Included:
 - structures of self, light, communication, history, and emptiness;
 - fictional models of reincarnation, cyclic return, and belief-gravity domains;
 - Japanese-only or paired Japanese-English reading notes.
+- a literary LLM inquiry through the oscilloscope, sentence cloud, transparent ghost, and organic alternating-current lamp.
 
 Not included:
 
@@ -88,6 +92,8 @@ Not included:
   Structural reading of an existing literary work.
 -  [`Literature_as_Worldmaking.ja.md`](./Literature_as_Worldmaking.ja.md) / `en`
    Literature does not merely describe a world; it presents a world that has been made.
+- [`The_Transparent_Ghost_and_the_Bit.ja.md`](./The_Transparent_Ghost_and_the_Bit.ja.md)
+  Japanese-authoritative note connecting the oscilloscope, sentence cloud, bit-like commitment, transparent ghost, and organic alternating-current lamp. English commensuration is pending.
 - [`Meifu_Bureau_Reincarnation_and_Belief_Gravity.md`](./Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)  
   Conceptual testing of reincarnation, cyclic return, belief-gravity domains, and history retention through a fictional cosmology.
 

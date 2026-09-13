@@ -2,7 +2,7 @@
 
 > Status: Research note
 > Scope: negentropy-economy
-> Language: ja
+> Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: U/E -> S
 
 ---
@@ -386,3 +386,7 @@ Scientific Ontologyにおいては、意味が基底に置かれる。
     Scientific Ontologyの主要語彙集。
 
 ---
+
+---
+
+[英語通約](./Negentropy_Economy_and_Meaning_Generation.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。

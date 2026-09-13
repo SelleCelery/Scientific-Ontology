@@ -2,7 +2,7 @@
 
 > Layer: 01_Sat_Truth
 > Status: README
-> Scope: network structure / conditions of existence, observation, meaning, and knowledge / boundary epistemological critique
+> Scope: network structure / conditions of existence, observation, meaning, knowledge, and provisional correctness / boundary epistemological critique
 > Language: ja+en
 > Public profile: P0-P2
 > Authority: Directory navigation and maintenance contract; not a concept-definition owner
@@ -26,7 +26,8 @@
   ├─ 境界実在性
   ├─ 公開用公理
   ├─ 意味成立条件
-  └─ 境界認識批判
+  ├─ 境界認識批判
+  └─ 正しさの成立・失効・再照合条件
   ↓
 02 Raj / Beauty：通信内容と読みの生成
   ↓
@@ -50,6 +51,7 @@
 - 存在の四大表公理
 - 意味生成モデル
 - 境界認識批判と注解
+- 有限資源下の「正しい」の成立・保持・失効・再照合条件
 
 含まないもの：
 
@@ -66,7 +68,8 @@
 3. [`Four_Axioms_of_Existence.md`](./Four_Axioms_of_Existence.md)
 4. [`Meaning_Generation_Model.md`](./Meaning_Generation_Model.md)
 5. [`Boundary_Epistemological_Critique.ja.md`](./Boundary_Epistemological_Critique.ja.md) / [`en`](./Boundary_Epistemological_Critique.en.md)
-6. [`Boundary_Epistemological_Critique_Annotations.ja.md`](./Boundary_Epistemological_Critique_Annotations.ja.md) / [`en`](./Boundary_Epistemological_Critique_Annotations.en.md)
+6. [`正しさ・個性・無・切断_論理通信トポロジー.ja.md`](./正しさ・個性・無・切断_論理通信トポロジー.ja.md)
+7. [`Boundary_Epistemological_Critique_Annotations.ja.md`](./Boundary_Epistemological_Critique_Annotations.ja.md) / [`en`](./Boundary_Epistemological_Critique_Annotations.en.md)
 
 ## 5. Maintenance Notes / 運用メモ
 
@@ -76,7 +79,7 @@
 - [`../03_Tam_Goodness/README.md`](../03_Tam_Goodness/README.md)
 - [`../05_Research_Notes/README.md`](../05_Research_Notes/README.md)
 
-反例、応用結果、認識生成モデル上の不整合は、境界実在性、公理、意味生成、境界認識批判の該当文書へ返す。
+反例、応用結果、認識生成モデル上の不整合は、境界実在性、公理、意味生成、境界認識批判、または「正しい」の成立条件を所有する該当文書へ返す。
 
 - 形而上学的根と公開定義を同一視しない。
 - 応用文書が基礎定義を暗黙に変更しないようにする。
@@ -102,7 +105,8 @@ Private origins and highly compressed roots
   ├─ Boundary Realism
   ├─ Public axioms
   ├─ Conditions of meaning
-  └─ Boundary Epistemological Critique
+  ├─ Boundary Epistemological Critique
+  └─ conditions of provisional correctness and reopening
   ↓
 02 Raj / Beauty: communication content and generation of reading
   ↓
@@ -121,7 +125,8 @@ Included:
 - public positioning of AMP;
 - Four Axioms of Existence;
 - Meaning Generation Model;
-- Boundary Epistemological Critique and annotations.
+- Boundary Epistemological Critique and annotations;
+- the conditions under which finite systems may provisionally treat a state as correct while remaining reopenable.
 
 Not included:
 
@@ -138,7 +143,8 @@ Not included:
 3. [`Four_Axioms_of_Existence.md`](./Four_Axioms_of_Existence.md)
 4. [`Meaning_Generation_Model.md`](./Meaning_Generation_Model.md)
 5. [`Boundary_Epistemological_Critique.ja.md`](./Boundary_Epistemological_Critique.ja.md) / [`en`](./Boundary_Epistemological_Critique.en.md)
-6. [`Boundary_Epistemological_Critique_Annotations.ja.md`](./Boundary_Epistemological_Critique_Annotations.ja.md) / [`en`](./Boundary_Epistemological_Critique_Annotations.en.md)
+6. [`正しさ・個性・無・切断_論理通信トポロジー.ja.md`](./正しさ・個性・無・切断_論理通信トポロジー.ja.md) — Japanese authoritative; English commensuration pending
+7. [`Boundary_Epistemological_Critique_Annotations.ja.md`](./Boundary_Epistemological_Critique_Annotations.ja.md) / [`en`](./Boundary_Epistemological_Critique_Annotations.en.md)
 
 ## 4. Return and Maintenance
 
@@ -148,7 +154,7 @@ Downstream:
 - [`../03_Tam_Goodness/README.md`](../03_Tam_Goodness/README.md)
 - [`../05_Research_Notes/README.md`](../05_Research_Notes/README.md)
 
-Counterexamples, application results, and inconsistencies in cognitive-formation models return to the relevant documents on Boundary Realism, axioms, meaning generation, or Boundary Epistemological Critique.
+Counterexamples, application results, and inconsistencies in cognitive-formation models return to the relevant documents on Boundary Realism, axioms, meaning generation, Boundary Epistemological Critique, or the conditions of provisional correctness.
 
 - Do not identify metaphysical roots with public definition ownership.
 - Do not allow applications to alter foundational definitions silently.

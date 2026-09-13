@@ -484,3 +484,7 @@ However, when viewed from the history-field, intrinsic time, and the logical-dep
 This view is not chaos theory itself.
 
 Yet the “coexistence of deterministic structure and unpredictability” shown by chaos theory becomes an important entrance, within Scientific Ontology, for thinking about historical structures that cannot be seen through external chronological sequence alone.
+
+---
+
+[Japanese authoritative text](./Chaos_Theory_and_Logical_Depth_Axis.ja.md). This English commensuration is not independently authoritative.
