@@ -11,7 +11,7 @@
 
 ### 研究原資料との区別
 
-SO再帰的哲学研究でDe-Registry等の固定fixtureとして使用した旧Optional Axiom atlasは、[`04_Applications/SO_Reflexive_Philosophical_Research/sources/`](../04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md) に研究原資料として保存する。旧atlasは本稿の現行正本ではなく、本稿も旧atlas全体を現在のSOの主張として再承認するものではない。
+SO再帰的哲学研究でDe-Registry等の固定fixtureとして使用した旧Optional Axiom atlasは、[`04_Applications/SO_Reflexive_Philosophical_Research/sources/`](../04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md) にsource identity、SHA-256、研究利用関係を記録する。private lineageを含むhistorical sourceのexact bytesは公開Repositoryには収録しない。旧atlasは本稿の現行正本ではなく、本稿も旧atlas全体を現在のSOの主張として再承認するものではない。
 
 ## 0. 位置づけ
 

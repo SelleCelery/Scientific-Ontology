@@ -5,7 +5,7 @@
 > Layer: 04_Applications
 > Role: long-running philosophical research interface, SO self-audit return path, historical-volume index
 > Authority: Application-level. This program does not redefine SO canon by itself.
-> Language: Japanese authoritative; English commensuration may be added selectively
+> Language: Japanese authoritative; full English commensurations are available for the research context and question ledger; historical record languages are preserved as recorded
 > Maturity: Open / evolving research program
 
 ## 0. この研究プログラムの役割
@@ -20,8 +20,8 @@
 
 ## 1. まず読む文書
 
-1. [`00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md`](./00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md) — なぜOptional Axiomから始まったのか、①〜⑤をどう往復させるか。
-2. [`01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md`](./01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md) — 長期運用する哲学的な問いの台帳。
+1. [`00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md`](./00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md) — なぜOptional Axiomから始まったのか、①〜⑤をどう往復させるか。英語通約: [`00_RESEARCH_CONTEXT_AND_ROADMAP.en.md`](./00_RESEARCH_CONTEXT_AND_ROADMAP.en.md)
+2. [`01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md`](./01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md) — 長期運用する哲学的な問いの台帳。英語通約: [`01_PHILOSOPHICAL_RESEARCH_QUESTIONS.en.md`](./01_PHILOSOPHICAL_RESEARCH_QUESTIONS.en.md)
 3. [`Volume I — De-Registryから判断透明性へ`](./volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md) — 最初の実験系列と方法形成の紀伝体記録。
 4. [`sources/README.md`](./sources/README.md) — Volume I等で実際に使用した固定研究原資料への返路。現在のSO正本とは区別する。
 
@@ -91,8 +91,8 @@ Navigatorでは、このREADMEを研究プログラムの第一入口とする�
 
 ## 7. 正本・通約・記録言語の区別
 
-研究文脈と問いの台帳は日本語正本であり、現在の収録範囲に全文の英語通約は含まれていない。
+研究文脈と問いの台帳は日本語正本であり、それぞれに全文の英語通約を備える。英語通約は独立した正本ではなく、解釈が衝突した場合は日本語正本へ戻る。
 
-[第一巻の英語要約](./volumes/Volume_01_DeRegistry_to_Judgment_Transparency/DIGEST.en.md)は案内用の要約であり、日本語全文の通約や独立した正本ではない。
+[第一巻の英語要約](./volumes/Volume_01_DeRegistry_to_Judgment_Transparency/DIGEST.en.md)は案内用の要約であり、Volume I日本語全文の通約や独立した正本ではない。
 
 `evidence/`の文書は、日本語、英語、両言語混在を含む当時の記録として扱う。後から表記を統一するために、当時の出力や判定を書き直さない。記録に命題が含まれることと、SOがそれを採用したことは別である。

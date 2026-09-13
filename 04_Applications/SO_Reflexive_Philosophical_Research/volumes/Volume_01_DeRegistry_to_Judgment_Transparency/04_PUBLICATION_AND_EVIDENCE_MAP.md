@@ -34,15 +34,19 @@
 
 このhashは同一入力を確認するためのものであり、内容の妥当性を保証しない。
 
-### v5.1で追加した研究原資料への返路
+### v5.1で再確認したsource identityと公開境界
 
-上表の `Hold / link-by-hash` は、Volume Iを最初に包装した時点の公開判断として残す。その後v5.1で、現行SOの教義ではないことを明示するwrapperを研究プログラム直下へ設置し、同じ固定fixtureを研究原資料として収録した。
+上表の `Hold / link-by-hash` は、Volume Iを最初に包装した時点の公開判断として残す。v5.1公開準備では、当時記録されたSHA-256と保持されていたsource copyを再照合し、同一fixtureであることを確認した。
+
+その後のprivate/source監査では、固定fixtureがprivate lineageの断片を含むことを確認したため、**exact bytesを公開Repositoryへ収録せず、source identity・hash・研究利用関係だけを公開する**方針を採用した。
 
 - Source index: [`../../sources/README.md`](../../sources/README.md)
-- Fixed source: [`../../sources/Optional_Axiom_Modules.ja.md`](../../sources/Optional_Axiom_Modules.ja.md)
+- Historical filename: `0001Optional_Axiom_Modules.md`
+- SHA-256: `20c3fa4f3c82719cf3716b4a52974b433c945143434ffb1a5a47b779fa8ae136`
 - Relation: research-source identity / experiment provenance; **not current SO canon**
+- Public handling: identity-and-hash only; **exact source bytes are private and are not included in this repository**
 
-この追加は過去の実験入力を現在の教義へ昇格させるものではない。Volume Iの当時の判断と入力を保持したまま、Repository内で実際のsourceへ戻れる返路を追加したものである。
+この判断は過去の実験入力を否定または改変するものではない。むしろ、実験で使用した入力のidentityを保持しつつ、現在のpublic/private boundaryを明示する。公開Repositoryだけではfixture全文を再配布・再構成しない。
 
 ## 3. 外部sourceを含む4-case result
 
@@ -68,3 +72,11 @@
 `evidence/`は「現在の結論だけ」を選別したフォルダではない。後の方法によって問題が判明したrunも、失敗理由を含めて保存する。
 
 ただし、raw artifactを置いたことはその内容へのendorsementを意味しない。各runは、その時点のProtocol・モデル・入力に対する履歴証拠である。
+
+## 6. Historical attestation / 現在からの歴史的受理
+
+2026-09-13、`MANIFEST.sha256`の45 pathを現在Repositoryへ照合し、**19 exact match / 26 current divergence / 0 missing / 0 invalid** を確認した。historical hashは更新しない。26件は、24件のformatting-level divergenceと、2件のlater wrapper / provenance evolutionへ分類した。
+
+この関係を、真理承認ではなくprovenance / method historyの受理として [`HISTORICAL_ATTESTATION_2026-09-13.ja.md`](./HISTORICAL_ATTESTATION_2026-09-13.ja.md) に固定する。受理時点の現在bytesは別の [`ATTESTED_CURRENT_2026-09-13.sha256`](./ATTESTED_CURRENT_2026-09-13.sha256) に記録する。
+
+したがって、`MANIFEST.sha256`はhistorical checksum record、`ATTESTED_CURRENT_2026-09-13.sha256`はpresent-day audit snapshotとして役割を分ける。後者から現在bytesが変化した場合、このhistorical integrity acceptanceは再検査対象へ戻る。

@@ -33,7 +33,8 @@
 5. [`04_PUBLICATION_AND_EVIDENCE_MAP.md`](./04_PUBLICATION_AND_EVIDENCE_MAP.md) — 公開した証拠とHoldした証拠。
 6. [`05_RESIDUALS_AND_NEXT_TESTS.ja.md`](./05_RESIDUALS_AND_NEXT_TESTS.ja.md) — 未解決差分と次の返り先。
 7. [`DIGEST.en.md`](./DIGEST.en.md) — English digest / commensurated overview.
-8. [`evidence/`](./evidence/) — 実験プロトコル、結果、比較、失敗runを含む公開証跡。
+8. [`HISTORICAL_ATTESTATION_2026-09-13.ja.md`](./HISTORICAL_ATTESTATION_2026-09-13.ja.md) — 2026-09-13時点のhistorical evidence受理範囲、45件のchecksum関係、再開条件。
+9. [`evidence/`](./evidence/) — 実験プロトコル、結果、比較、失敗runを含む公開証跡。
 
 ## 2. 現時点の方法核
 
@@ -83,7 +84,9 @@ S/E/U/V/P等のラベルは、この一次観測を上書きする本体では�
 
 ## 4. 原資料と公開境界
 
-旧Optional Axiom全文は、本巻の現行主張ではなく固定テストコーパスである。現行SOの教義と誤認されるリスクがあるため、本巻内部には複製しない。v5.1では研究プログラム直下の [`sources/`](../../sources/README.md) に、固定fixtureと同一内容の研究原資料を明示的なwrapper付きで配置した。本巻はその原資料への返路を持つが、内容を現在のSOの教義として再承認しない。詳細は [`04_PUBLICATION_AND_EVIDENCE_MAP.md`](./04_PUBLICATION_AND_EVIDENCE_MAP.md) を参照する。
+旧Optional Axiom全文は、本巻の現行主張ではなく固定テストコーパスである。現行SOの教義と誤認されるリスクに加え、private lineageの断片を含むため、exact bytesは公開Repositoryへ収録しない。v5.1では研究プログラム直下の [`sources/`](../../sources/README.md) に、historical filename、SHA-256、研究利用関係、公開境界を記録するsource indexを置く。本巻はsource identityへの返路を持つが、内容を現在のSOの教義として再承認しない。詳細は [`04_PUBLICATION_AND_EVIDENCE_MAP.md`](./04_PUBLICATION_AND_EVIDENCE_MAP.md) を参照する。
+
+2026-09-13のhistorical evidence監査では、`MANIFEST.sha256`を変更せず、現在との関係を `19 exact / 26 diverged / 0 missing / 0 invalid` として正式受理した。受理範囲と、現在bytesを別snapshotへ固定する理由は [`HISTORICAL_ATTESTATION_2026-09-13.ja.md`](./HISTORICAL_ATTESTATION_2026-09-13.ja.md) を参照する。
 
 ## 5. 上流・下流の返路
 

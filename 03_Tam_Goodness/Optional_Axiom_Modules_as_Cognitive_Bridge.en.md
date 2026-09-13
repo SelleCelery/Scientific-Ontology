@@ -11,7 +11,7 @@
 
 ### Distinction from the historical research source
 
-The old Optional Axiom atlas used as a fixed fixture in De-Registry and related SO Reflexive Philosophical Research is preserved under [`04_Applications/SO_Reflexive_Philosophical_Research/sources/`](../04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md). That historical atlas is not the current authoritative source of this protocol, and this document does not re-endorse the atlas as a whole as current Scientific Ontology.
+The old Optional Axiom atlas used as a fixed fixture in De-Registry and related SO Reflexive Philosophical Research is identified in [`04_Applications/SO_Reflexive_Philosophical_Research/sources/`](../04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md) by source identity, SHA-256, and research-use provenance. The exact bytes of the historical source, which contains private-lineage material, are not included in the public repository. That historical atlas is not the current authoritative source of this protocol, and this document does not re-endorse the atlas as a whole as current Scientific Ontology.
 
 ## 0. Positioning
 

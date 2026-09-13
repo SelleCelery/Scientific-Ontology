@@ -8238,7 +8238,7 @@ documents:
   document_type: assertion_document
   document_role: research_note
   title_ja: 研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ
-  title_en: ''
+  title_en: Research Context and Roadmap — From the Optional Axiom Tests to Judgment Transparency, and Beyond
   layer: 04_Applications
   status: Public Application / Research Context and Roadmap
   scope: ''
@@ -8246,13 +8246,56 @@ documents:
   state: public
   registration_state: provisional
   role_ja: 研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ
-  role_en: ''
+  role_en: Research context, roadmap, and public entry point for SO Reflexive Philosophical Research
   catalog_document: true
   language_relation:
     language: ja
     role: authoritative
-    counterpart_path:
-    coverage: not_applicable
+    counterpart_path: 04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md
+    coverage: full
+    authoritative_path:
+      04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+    protocol:
+      id: claim-classification-pilot
+      revision: 2026-08-23-b
+  discovery:
+    primary_question:
+      ja:
+      en:
+    topics: []
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+  legacy_metadata:
+    internal_profile_semantics: pre-document-contract labels; not approved assessment results
+- path: 04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md
+  doc_id: 04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en
+  document_type: assertion_document
+  document_role: research_note
+  title_ja: 研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ
+  title_en: Research Context and Roadmap — From the Optional Axiom Tests to Judgment Transparency, and Beyond
+  layer: 04_Applications
+  status: Public Application / Research Context and Roadmap
+  scope: ''
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ
+  role_en: Research context, roadmap, and public entry point for SO Reflexive Philosophical Research
+  catalog_document: true
+  language_relation:
+    language: en
+    role: commensuration
+    counterpart_path: 04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md
+    coverage: full
     authoritative_path:
       04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md
   assessment:
@@ -8281,7 +8324,7 @@ documents:
   document_type: index
   document_role: reference_index
   title_ja: 哲学的研究の問い台帳 — LLM・通信・通約
-  title_en: ''
+  title_en: Philosophical Research Question Ledger — LLMs, Communication, and Commensuration
   layer: 04_Applications
   status: Open Research Question Ledger
   scope: ''
@@ -8289,13 +8332,53 @@ documents:
   state: public
   registration_state: provisional
   role_ja: 哲学的研究の問い台帳 — LLM・通信・通約
-  role_en: ''
+  role_en: Long-running philosophical question ledger and return-point interface
   catalog_document: true
   language_relation:
     language: ja
     role: authoritative
-    counterpart_path:
-    coverage: not_applicable
+    counterpart_path: 04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.en.md
+    coverage: full
+    authoritative_path:
+      04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md
+  assessment:
+    applicability: not_applicable
+    review_state: not_applicable
+  discovery:
+    primary_question:
+      ja:
+      en:
+    topics: []
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+  legacy_metadata:
+    internal_profile_semantics: pre-document-contract labels; not approved assessment results
+- path: 04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.en.md
+  doc_id: 04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_en
+  document_type: index
+  document_role: reference_index
+  title_ja: 哲学的研究の問い台帳 — LLM・通信・通約
+  title_en: Philosophical Research Question Ledger — LLMs, Communication, and Commensuration
+  layer: 04_Applications
+  status: Open Research Question Ledger
+  scope: ''
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 哲学的研究の問い台帳 — LLM・通信・通約
+  role_en: Long-running philosophical question ledger and return-point interface
+  catalog_document: true
+  language_relation:
+    language: en
+    role: commensuration
+    counterpart_path: 04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md
+    coverage: full
     authoritative_path:
       04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md
   assessment:
@@ -8362,7 +8445,7 @@ documents:
   document_type: research_record
   document_role: historical_record
   title_ja: 紀 — De-Registryから判断透明性へ
-  title_en: ''
+  title_en: Chronicle — From De-Registry to Judgment Transparency
   layer: 04_Applications
   status: Public application history
   scope: ''
@@ -8370,7 +8453,7 @@ documents:
   state: public
   registration_state: provisional
   role_ja: 紀 — De-Registryから判断透明性へ
-  role_en: ''
+  role_en: Chronicle — From De-Registry to Judgment Transparency
   catalog_document: true
   language_relation:
     language: ja
@@ -8404,7 +8487,7 @@ documents:
   document_type: research_record
   document_role: historical_record
   title_ja: 判断透明性トポロジー — 現行アプリケーション・インターフェース
-  title_en: ''
+  title_en: Judgment Transparency Topology — Current Application Interface
   layer: 04_Applications
   status: Application method / experimental but reusable
   scope: ''
@@ -8412,7 +8495,7 @@ documents:
   state: public
   registration_state: provisional
   role_ja: 判断透明性トポロジー — 現行アプリケーション・インターフェース
-  role_en: ''
+  role_en: Judgment Transparency Topology — Current Application Interface
   catalog_document: true
   language_relation:
     language: ja
@@ -8446,7 +8529,7 @@ documents:
   document_type: research_record
   document_role: historical_record
   title_ja: 残差と次の返り先
-  title_en: ''
+  title_en: Residuals and Next Return Points
   layer: 04_Applications
   status: Open residual ledger
   scope: ''
@@ -8454,7 +8537,7 @@ documents:
   state: public
   registration_state: provisional
   role_ja: 残差と次の返り先
-  role_en: ''
+  role_en: Residuals and Next Return Points
   catalog_document: true
   language_relation:
     language: ja
@@ -8528,7 +8611,7 @@ documents:
   document_type: subdirectory_readme
   document_role: navigation
   title_ja: Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究
-  title_en: ''
+  title_en: Correctness, Logic, and Structural Studies
   layer: 05_Research_Notes
   status: README
   scope: ''
@@ -8536,7 +8619,7 @@ documents:
   state: public
   registration_state: provisional
   role_ja: Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究
-  role_en: ''
+  role_en: Correctness, Logic, and Structural Studies
   catalog_document: true
   language_relation:
     language: ja
@@ -8690,7 +8773,7 @@ documents:
   document_type: subdirectory_readme
   document_role: navigation
   title_ja: Research Sources / 研究原資料
-  title_en: ''
+  title_en: Research Source Index
   layer: 04_Applications
   status: README
   scope: ''
@@ -8698,7 +8781,7 @@ documents:
   state: public
   registration_state: provisional
   role_ja: Research Sources / 研究原資料
-  role_en: ''
+  role_en: Research Source Index
   language_relation:
     language: ja+en
     role: integrated_japanese_authoritative
@@ -9457,22 +9540,6 @@ managed_assets:
     counterpart_path:
     coverage: not_applicable
     authoritative_path: tools/assessment/REPOSITORY_ASSESSMENT_WORKBENCH.md
-- asset_id: optional_axiom_modules_fixed_source
-  path: 04_Applications/SO_Reflexive_Philosophical_Research/sources/Optional_Axiom_Modules.ja.md
-  document_role: fixed_research_source
-  catalog_document: false
-  access: repository
-  owner_document: 04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md
-  language_relation:
-    language: ja
-    role: fixed_source
-    counterpart_path:
-    authoritative_path:
-      04_Applications/SO_Reflexive_Philosophical_Research/sources/Optional_Axiom_Modules.ja.md
-    coverage: not_applicable
-  integrity:
-    sha256: 20c3fa4f3c82719cf3716b4a52974b433c945143434ffb1a5a47b779fa8ae136
-    basis: exact_historical_fixture
 - asset_id:
     04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_manifest_sha256
   path:
@@ -9517,6 +9584,33 @@ managed_assets:
   integrity:
     sha256: 7113442b58d23178662b81c70328e4cd245f079856b4499b5ec6b179e524b2a7
     basis: rc004_snapshot_not_historical_certification
+- asset_id:
+    04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_historical_attestation_2026_09_13_ja
+  path:
+    04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/HISTORICAL_ATTESTATION_2026-09-13.ja.md
+  document_role: historical_support
+  catalog_document: false
+  access: repository
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path:
+    coverage: not_applicable
+    authoritative_path:
+      04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/HISTORICAL_ATTESTATION_2026-09-13.ja.md
+  integrity:
+    sha256: 71469b730c58b5087a1346e8d18c4d9227142c13ea24c879e9e4842ee29b1319
+    basis: historical_attestation_record
+- asset_id:
+    04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_attested_current_2026_09_13_sha256
+  path:
+    04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/ATTESTED_CURRENT_2026-09-13.sha256
+  document_role: provenance_asset
+  catalog_document: false
+  access: repository
+  integrity:
+    sha256: 59041800ff5d8b956c98ca002c9e5deae782f29a4a5d39ad2b4f1c1c0ad8f0af
+    basis: attested_current_snapshot
 retired_documents:
 - doc_id: "inorganic_alternating_lamp_and_holiday_reading"
   path: 07_Creative_Offshoots/Literary_Essays/Inorganic_Alternating_Lamp_and_Holiday_Reading.ja.md
@@ -9558,8 +9652,21 @@ provenance_sets:
     04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/MANIFEST.sha256
   root:
     04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency
-  integrity_claim: unverified_historical_manifest
-  known_issue: 'rc004: 20/45 matched and 25 differed. Approved A/B added a later wrapper note to 04_PUBLICATION_AND_EVIDENCE_MAP.md,
-    producing 19/45 matched and 26 differed. The historical manifest and raw evidence are unchanged; current wrapper
-    edits are not historical certification.'
-  release_review_required: true
+  integrity_claim: attested_historical_manifest_with_current_divergence
+  release_review_required: false
+  attestation:
+    status: accepted_as_historical_method_record
+    attested_at: '2026-09-13'
+    acceptance_scope: provenance_and_method_history_not_truth_or_model_validation
+    attestation_path:
+      04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/HISTORICAL_ATTESTATION_2026-09-13.ja.md
+    current_snapshot_path:
+      04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/ATTESTED_CURRENT_2026-09-13.sha256
+    expected_historical_relation:
+      matched: 19
+      mismatched: 26
+      missing: 0
+      invalid: 0
+    mismatch_classification:
+      formatting_level: 24
+      later_wrapper_or_provenance_evolution: 2

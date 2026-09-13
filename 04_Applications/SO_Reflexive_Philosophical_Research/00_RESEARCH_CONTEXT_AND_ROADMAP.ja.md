@@ -4,7 +4,7 @@
 > Layer: 04_Applications
 > Role: research context, roadmap, public entry point
 > Authority: Application-level. This document does not redefine SO canon or establish the truth of the research hypotheses it describes.
-> Language: Japanese authoritative
+> Language: Japanese authoritative; English commensuration available
 > Maturity: Provisional roadmap
 > Claim posture: project history + research program; unresolved branches remain open
 
@@ -156,9 +156,9 @@ AI、評価プロトコル、Metadata Assessment、通約手順などが、そ�
 
 外部体系との接続に不備があった場合も、SO全体の失敗、外部体系の失敗、研究者の失敗を直結させない。どの接続点、どの変換、どの責務に問題があったかを局在化する。
 
-この作業はDeveloper Navigator上で、AIが監査候補を生成し、人間が`approve / edit / reject / hold`できる運用へ接続する予定である。
+この作業は現在、Developer Navigator上のAssessment LabとRegistration Workbenchへ接続されている。AIが監査候補を生成し、人間が`approve / approve_with_edits / hold / reject`を選び、canonical manifestへの反映は別の明示的なtransactionとして行う。
 
-AIは正本を書き換える主体にはならない。
+AIは正本を書き換える主体にはならない。ブラウザーからcanonical manifestへ直接書き込む経路も置かない。
 
 ---
 
@@ -263,15 +263,17 @@ Judgment Transparency、Transformation Audit、Attribution / Authority、Boundar
 
 ## 9. 現在地
 
-第一巻の時点では、主に①から②が立ち上がったところにいる。
+第一巻の時点では、主に①から②が立ち上がったところにいた。
 
 De-Registry、Sol/Luna比較、帰属問題、Topology-first、三層変換監査を通じて、判断生成の透明性を監査する方法が形成された。
 
-次の主作業は②である。
+v5.1準備時点では、②を支えるdocument contract、assessment review、registration transaction、Developer Navigator上のreview interfaceまで実装された。これは監査結果が正しいことを自動保証するものではなく、候補生成、レビュー、承認、正本反映を分離して追跡可能にするための基盤である。
 
-- SO正本群への自己監査をDeveloper Navigatorへ接続する。
-- AIの監査提案と人間の承認を分離する。
-- 正本変更より前に、主張責務と接続の強さを可視化する。
+次の主作業は、②を実際の監査運用として積み上げ、その結果を③へ返すことである。
+
+- SO正本群への自己監査候補を生成し、人間のreviewを通す。
+- 承認された結果だけを明示的なregistration transactionから反映する。
+- 正本変更より前に、主張責務、帰属、接続の強さ、残差を可視化する。
 - 監査で露出した根拠や前提を③へ返す。
 
 ①は並行して問いを蓄積し続ける。

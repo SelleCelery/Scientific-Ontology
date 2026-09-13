@@ -13,7 +13,8 @@ import unittest
 import yaml
 from jsonschema import Draft202012Validator
 
-from document_contract import load_manifest, validate_manifest, public_assessment, resolve_repo_path, sha256, asset_bytes_match
+from document_contract import (load_manifest, validate_manifest, public_assessment, resolve_repo_path, sha256, asset_bytes_match,
+                               historical_manifest_status, historical_attestation_errors)
 from assessment_registration import summaries_from_review
 from rebuild_document_read_models import transactional_rebuild, GENERATED_FILES, BUILD_DIRECTORY
 
@@ -53,7 +54,57 @@ class ContractTests(unittest.TestCase):
     def test_retired_registration_rejected(self):
         m=copy.deepcopy(self.manifest);m['documents'][0]['path']=m['retired_documents'][0]['path'];self.assertTrue(self.errors(m))
     def test_fixed_source_bound(self):
-        m=copy.deepcopy(self.manifest);a=next(x for x in m['managed_assets'] if x['document_role']=='fixed_research_source');a['integrity']['sha256']='0'*64;self.assertTrue(self.errors(m))
+        # A fixed research source may be intentionally withheld from the public repository.
+        # Test the role contract with a synthetic repository asset instead of requiring
+        # a real private-lineage fixture to be present in the canonical manifest.
+        m=copy.deepcopy(self.manifest)
+        template=next(x for x in m['managed_assets'] if x['document_role']=='provenance_asset')
+        a=copy.deepcopy(template)
+        a['asset_id']='synthetic_fixed_source_contract_test'
+        a['document_role']='fixed_research_source'
+        a['integrity']={'sha256':'0'*64,'basis':'synthetic_contract_test'}
+        m['managed_assets'].append(a)
+        self.assertTrue(self.errors(m))
+    def test_current_historical_attestation_resolves_exact_declared_state(self):
+        spec=next(x for x in self.manifest['provenance_sets'] if x['id']=='volume_01_historical_manifest')
+        status=historical_manifest_status(ROOT,spec)
+        self.assertEqual({k:status[k] for k in ('matched','mismatched','missing','invalid')},
+                         {'matched':19,'mismatched':26,'missing':0,'invalid':0})
+        records={str(e['path']):e for e in [*self.manifest['documents'],*self.manifest['managed_assets']]}
+        self.assertEqual(historical_attestation_errors(ROOT,spec,status,records=records),[])
+
+    def test_historical_attestation_reopens_on_current_snapshot_drift(self):
+        import hashlib
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);base=root/'volume';base.mkdir()
+            current=base/'record.md';current.write_bytes(b'current\n')
+            old_digest=hashlib.sha256(b'historical\n').hexdigest()
+            current_digest=hashlib.sha256(current.read_bytes()).hexdigest()
+            (base/'MANIFEST.sha256').write_text(f'{old_digest}  record.md\n',encoding='utf-8')
+            (base/'CURRENT.sha256').write_text(f'{current_digest}  record.md\n',encoding='utf-8')
+            (base/'ATTESTATION.md').write_text('# synthetic attestation\n',encoding='utf-8')
+            spec={
+                'id':'synthetic_historical_set','root':'volume','path':'volume/MANIFEST.sha256',
+                'integrity_claim':'attested_historical_manifest_with_current_divergence',
+                'release_review_required':False,
+                'attestation':{
+                    'status':'accepted_as_historical_method_record','attested_at':'2026-09-13',
+                    'acceptance_scope':'synthetic_test','attestation_path':'volume/ATTESTATION.md',
+                    'current_snapshot_path':'volume/CURRENT.sha256',
+                    'expected_historical_relation':{'matched':0,'mismatched':1,'missing':0,'invalid':0},
+                    'mismatch_classification':{'formatting_level':1,'later_wrapper_or_provenance_evolution':0},
+                },
+            }
+            records={
+                'volume/ATTESTATION.md':{'document_role':'historical_support'},
+                'volume/CURRENT.sha256':{'document_role':'provenance_asset'},
+            }
+            status=historical_manifest_status(root,spec)
+            self.assertEqual(historical_attestation_errors(root,spec,status,records=records),[])
+            current.write_bytes(b'drifted\n')
+            status=historical_manifest_status(root,spec)
+            errors=historical_attestation_errors(root,spec,status,records=records)
+            self.assertTrue(any('snapshot drift detected' in e for e in errors))
     def test_unapproved_scores_rejected(self):
         m=copy.deepcopy(self.manifest);m['documents'][0]['assessment']['representative']={'strength':'S5','exposure':'E3'};self.assertTrue(self.errors(m))
     def test_nonclaim_role_not_forced_into_scoring(self):

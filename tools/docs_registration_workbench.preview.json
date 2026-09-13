@@ -3,15 +3,15 @@
     "schema_version": "0.3",
     "source": {
       "manifest_path": "tools/docs_manifest.yml",
-      "manifest_sha256": "21616480170258e1f68b6aafb97bc64856689bf288083c22052f5fa2b83cd812",
+      "manifest_sha256": "da7c7b6f458d3d6b9fe7da73ad005f021362e87dd3ce3b5570a10f605926eb97",
       "graph_path": "tools/docs_graph.json",
-      "graph_sha256": "f645f2f62d8c8b539b76bb1ff0fd56abd26d4cfece0e7900aaae09edb2dc63bb",
+      "graph_sha256": "0ef919ce870c47dbe566b78f655e0548e112d30449721d606ef693aefd0eb150",
       "revision_proposals_path": "tools/docs_revision_proposals.yml",
       "revision_proposals_sha256": "e3854091b43f8f84de454861a30c69a6a10185d87652f6a905c5f3d166e3d564",
       "preview_contract": "manifest-backed Developer read model; browser writes no canonical YAML"
     },
     "summary": {
-      "provisional_documents": 114,
+      "provisional_documents": 116,
       "registered_documents": 30,
       "registered_revision_proposals": 28
     },
@@ -2070,14 +2070,14 @@
         }
       },
       {
-        "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
-        "doc_id": "04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+        "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+        "doc_id": "04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
         "baseline": {
-          "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
-          "doc_id": "04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+          "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+          "doc_id": "04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
           "document_type": "assertion_document",
           "title_ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
-          "title_en": "",
+          "title_en": "Research Context and Roadmap — From the Optional Axiom Tests to Judgment Transparency, and Beyond",
           "layer": "04_Applications",
           "status": "Public Application / Research Context and Roadmap",
           "scope": "",
@@ -2085,12 +2085,12 @@
           "state": "public",
           "registration_state": "provisional",
           "role_ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
-          "role_en": "",
+          "role_en": "Research context, roadmap, and public entry point for SO Reflexive Philosophical Research",
           "language_relation": {
-            "language": "ja",
-            "role": "authoritative",
-            "counterpart_path": null,
-            "coverage": "not_applicable",
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+            "coverage": "full",
             "authoritative_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md"
           },
           "document_role": "research_note",
@@ -2124,14 +2124,68 @@
         }
       },
       {
-        "path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md",
-        "doc_id": "04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+        "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+        "doc_id": "04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
         "baseline": {
-          "path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md",
-          "doc_id": "04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+          "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+          "doc_id": "04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+          "document_type": "assertion_document",
+          "title_ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
+          "title_en": "Research Context and Roadmap — From the Optional Axiom Tests to Judgment Transparency, and Beyond",
+          "layer": "04_Applications",
+          "status": "Public Application / Research Context and Roadmap",
+          "scope": "",
+          "public_profile": "",
+          "state": "public",
+          "registration_state": "provisional",
+          "role_ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
+          "role_en": "Research context, roadmap, and public entry point for SO Reflexive Philosophical Research",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+            "coverage": "full",
+            "authoritative_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed",
+            "protocol": {
+              "id": "claim-classification-pilot",
+              "revision": "2026-08-23-b"
+            }
+          },
+          "discovery": {
+            "primary_question": {
+              "ja": null,
+              "en": null
+            },
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "searchable": true,
+            "visibility": "canonical",
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.en.md",
+        "doc_id": "04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_en",
+        "baseline": {
+          "path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.en.md",
+          "doc_id": "04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_en",
           "document_type": "index",
           "title_ja": "哲学的研究の問い台帳 — LLM・通信・通約",
-          "title_en": "",
+          "title_en": "Philosophical Research Question Ledger — LLMs, Communication, and Commensuration",
           "layer": "04_Applications",
           "status": "Open Research Question Ledger",
           "scope": "",
@@ -2139,12 +2193,62 @@
           "state": "public",
           "registration_state": "provisional",
           "role_ja": "哲学的研究の問い台帳 — LLM・通信・通約",
-          "role_en": "",
+          "role_en": "Long-running philosophical question ledger and return-point interface",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md",
+            "coverage": "full",
+            "authoritative_path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md"
+          },
+          "document_role": "reference_index",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "not_applicable",
+            "review_state": "not_applicable"
+          },
+          "discovery": {
+            "primary_question": {
+              "ja": null,
+              "en": null
+            },
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "searchable": true,
+            "visibility": "canonical",
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md",
+        "doc_id": "04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+        "baseline": {
+          "path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md",
+          "doc_id": "04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+          "document_type": "index",
+          "title_ja": "哲学的研究の問い台帳 — LLM・通信・通約",
+          "title_en": "Philosophical Research Question Ledger — LLMs, Communication, and Commensuration",
+          "layer": "04_Applications",
+          "status": "Open Research Question Ledger",
+          "scope": "",
+          "public_profile": "",
+          "state": "public",
+          "registration_state": "provisional",
+          "role_ja": "哲学的研究の問い台帳 — LLM・通信・通約",
+          "role_en": "Long-running philosophical question ledger and return-point interface",
           "language_relation": {
             "language": "ja",
             "role": "authoritative",
-            "counterpart_path": null,
-            "coverage": "not_applicable",
+            "counterpart_path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.en.md",
+            "coverage": "full",
             "authoritative_path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md"
           },
           "document_role": "reference_index",
@@ -2231,7 +2335,7 @@
           "doc_id": "04_applications_so_reflexive_philosophical_research_sources_readme",
           "document_type": "subdirectory_readme",
           "title_ja": "Research Sources / 研究原資料",
-          "title_en": "",
+          "title_en": "Research Source Index",
           "layer": "04_Applications",
           "status": "README",
           "scope": "",
@@ -2239,7 +2343,7 @@
           "state": "public",
           "registration_state": "provisional",
           "role_ja": "Research Sources / 研究原資料",
-          "role_en": "",
+          "role_en": "Research Source Index",
           "language_relation": {
             "language": "ja+en",
             "role": "integrated_japanese_authoritative",
@@ -2281,7 +2385,7 @@
           "doc_id": "04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_01_chronicle_ja",
           "document_type": "research_record",
           "title_ja": "紀 — De-Registryから判断透明性へ",
-          "title_en": "",
+          "title_en": "Chronicle — From De-Registry to Judgment Transparency",
           "layer": "04_Applications",
           "status": "Public application history",
           "scope": "",
@@ -2289,7 +2393,7 @@
           "state": "public",
           "registration_state": "provisional",
           "role_ja": "紀 — De-Registryから判断透明性へ",
-          "role_en": "",
+          "role_en": "Chronicle — From De-Registry to Judgment Transparency",
           "language_relation": {
             "language": "ja",
             "role": "authoritative",
@@ -2331,7 +2435,7 @@
           "doc_id": "04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_03_judgment_transparency_topology_ja",
           "document_type": "research_record",
           "title_ja": "判断透明性トポロジー — 現行アプリケーション・インターフェース",
-          "title_en": "",
+          "title_en": "Judgment Transparency Topology — Current Application Interface",
           "layer": "04_Applications",
           "status": "Application method / experimental but reusable",
           "scope": "",
@@ -2339,7 +2443,7 @@
           "state": "public",
           "registration_state": "provisional",
           "role_ja": "判断透明性トポロジー — 現行アプリケーション・インターフェース",
-          "role_en": "",
+          "role_en": "Judgment Transparency Topology — Current Application Interface",
           "language_relation": {
             "language": "ja",
             "role": "authoritative",
@@ -2381,7 +2485,7 @@
           "doc_id": "04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_05_residuals_and_next_tests_ja",
           "document_type": "research_record",
           "title_ja": "残差と次の返り先",
-          "title_en": "",
+          "title_en": "Residuals and Next Return Points",
           "layer": "04_Applications",
           "status": "Open residual ledger",
           "scope": "",
@@ -2389,7 +2493,7 @@
           "state": "public",
           "registration_state": "provisional",
           "role_ja": "残差と次の返り先",
-          "role_en": "",
+          "role_en": "Residuals and Next Return Points",
           "language_relation": {
             "language": "ja",
             "role": "authoritative",
@@ -3216,7 +3320,7 @@
           "doc_id": "05_research_notes_correctness_logic_and_structural_studies_readme",
           "document_type": "subdirectory_readme",
           "title_ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
-          "title_en": "",
+          "title_en": "Correctness, Logic, and Structural Studies",
           "layer": "05_Research_Notes",
           "status": "README",
           "scope": "",
@@ -3224,7 +3328,7 @@
           "state": "public",
           "registration_state": "provisional",
           "role_ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
-          "role_en": "",
+          "role_en": "Correctness, Logic, and Structural Studies",
           "language_relation": {
             "language": "ja",
             "role": "authoritative",

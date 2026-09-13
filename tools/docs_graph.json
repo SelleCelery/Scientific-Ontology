@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "source": {
-    "manifest_sha256": "21616480170258e1f68b6aafb97bc64856689bf288083c22052f5fa2b83cd812",
+    "manifest_sha256": "da7c7b6f458d3d6b9fe7da73ad005f021362e87dd3ce3b5570a10f605926eb97",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "graph_config_sha256": "e714e8fa7c87f8b108367d0ee280758fb3bd984f4964b9867c2685a47ebeec78",
     "visibility_profile": "public",
@@ -897,19 +897,53 @@
       "identity_source": "explicit"
     },
     {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+      "title": {
+        "ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
+        "en": "Research Context and Roadmap — From the Optional Axiom Tests to Judgment Transparency, and Beyond"
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
+        "en": "Research context, roadmap, and public entry point for SO Reflexive Philosophical Research"
+      },
+      "identity_source": "explicit"
+    },
+    {
       "id": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
       "type": "document",
       "key": "04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
       "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
       "title": {
         "ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
-        "en": ""
+        "en": "Research Context and Roadmap — From the Optional Axiom Tests to Judgment Transparency, and Beyond"
       },
       "layer": "04_Applications",
       "state": "public",
       "role": {
         "ja": "研究文脈とロードマップ — Optional Axiom試験から判断透明性へ、その先へ",
-        "en": ""
+        "en": "Research context, roadmap, and public entry point for SO Reflexive Philosophical Research"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_en",
+      "type": "document",
+      "key": "04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_en",
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.en.md",
+      "title": {
+        "ja": "哲学的研究の問い台帳 — LLM・通信・通約",
+        "en": "Philosophical Research Question Ledger — LLMs, Communication, and Commensuration"
+      },
+      "layer": "04_Applications",
+      "state": "public",
+      "role": {
+        "ja": "哲学的研究の問い台帳 — LLM・通信・通約",
+        "en": "Long-running philosophical question ledger and return-point interface"
       },
       "identity_source": "explicit"
     },
@@ -920,13 +954,13 @@
       "path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md",
       "title": {
         "ja": "哲学的研究の問い台帳 — LLM・通信・通約",
-        "en": ""
+        "en": "Philosophical Research Question Ledger — LLMs, Communication, and Commensuration"
       },
       "layer": "04_Applications",
       "state": "public",
       "role": {
         "ja": "哲学的研究の問い台帳 — LLM・通信・通約",
-        "en": ""
+        "en": "Long-running philosophical question ledger and return-point interface"
       },
       "identity_source": "explicit"
     },
@@ -954,13 +988,13 @@
       "path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
       "title": {
         "ja": "Research Sources / 研究原資料",
-        "en": ""
+        "en": "Research Source Index"
       },
       "layer": "04_Applications",
       "state": "public",
       "role": {
         "ja": "Research Sources / 研究原資料",
-        "en": ""
+        "en": "Research Source Index"
       },
       "identity_source": "explicit"
     },
@@ -971,13 +1005,13 @@
       "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/01_CHRONICLE.ja.md",
       "title": {
         "ja": "紀 — De-Registryから判断透明性へ",
-        "en": ""
+        "en": "Chronicle — From De-Registry to Judgment Transparency"
       },
       "layer": "04_Applications",
       "state": "public",
       "role": {
         "ja": "紀 — De-Registryから判断透明性へ",
-        "en": ""
+        "en": "Chronicle — From De-Registry to Judgment Transparency"
       },
       "identity_source": "explicit"
     },
@@ -988,13 +1022,13 @@
       "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md",
       "title": {
         "ja": "判断透明性トポロジー — 現行アプリケーション・インターフェース",
-        "en": ""
+        "en": "Judgment Transparency Topology — Current Application Interface"
       },
       "layer": "04_Applications",
       "state": "public",
       "role": {
         "ja": "判断透明性トポロジー — 現行アプリケーション・インターフェース",
-        "en": ""
+        "en": "Judgment Transparency Topology — Current Application Interface"
       },
       "identity_source": "explicit"
     },
@@ -1005,13 +1039,13 @@
       "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/05_RESIDUALS_AND_NEXT_TESTS.ja.md",
       "title": {
         "ja": "残差と次の返り先",
-        "en": ""
+        "en": "Residuals and Next Return Points"
       },
       "layer": "04_Applications",
       "state": "public",
       "role": {
         "ja": "残差と次の返り先",
-        "en": ""
+        "en": "Residuals and Next Return Points"
       },
       "identity_source": "explicit"
     },
@@ -1192,13 +1226,13 @@
       "path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
       "title": {
         "ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
-        "en": ""
+        "en": "Correctness, Logic, and Structural Studies"
       },
       "layer": "05_Research_Notes",
       "state": "public",
       "role": {
         "ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
-        "en": ""
+        "en": "Correctness, Logic, and Structural Studies"
       },
       "identity_source": "explicit"
     },
@@ -9378,6 +9412,95 @@
       ]
     },
     {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+          "locator": "L8"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+          "locator": "L135"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+          "locator": "L307"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_01_chronicle_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+          "locator": "L309"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_03_judgment_transparency_topology_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+          "locator": "L311"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_05_residuals_and_next_tests_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+          "locator": "L313"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
+          "locator": "L308"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
       "relation": "links_to",
       "to": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
@@ -9390,7 +9513,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
-          "locator": "L306"
+          "locator": "L308"
         }
       ]
     },
@@ -9402,7 +9525,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
-          "locator": "L308"
+          "locator": "L310"
         }
       ]
     },
@@ -9414,7 +9537,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
-          "locator": "L310"
+          "locator": "L312"
         }
       ]
     },
@@ -9426,7 +9549,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
-          "locator": "L312"
+          "locator": "L314"
         }
       ]
     },
@@ -9438,12 +9561,36 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
-          "locator": "L307"
+          "locator": "L309"
         }
       ]
     },
     {
       "from": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
+      "relation": "placed_in",
+      "to": "layer:applications",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_en",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/01_PHILOSOPHICAL_RESEARCH_QUESTIONS.en.md",
+          "locator": "L8"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_en",
       "relation": "placed_in",
       "to": "layer:applications",
       "provenance": [
@@ -9469,12 +9616,36 @@
     {
       "from": "doc:04_applications_so_reflexive_philosophical_research_readme",
       "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/README.md",
+          "locator": "L23"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "relation": "links_to",
       "to": "doc:04_applications_so_reflexive_philosophical_research_00_research_context_and_roadmap_ja",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/README.md",
           "locator": "L23"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_01_philosophical_research_questions_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/README.md",
+          "locator": "L24"
         }
       ]
     },
@@ -9539,12 +9710,12 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
-          "locator": "L103"
+          "locator": "L110"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
-          "locator": "L43"
+          "locator": "L46"
         }
       ]
     },
@@ -9556,7 +9727,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
-          "locator": "L44"
+          "locator": "L48"
         }
       ]
     },
@@ -9568,7 +9739,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md",
-          "locator": "L104"
+          "locator": "L112"
         }
       ]
     },
@@ -9664,7 +9835,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/README.md",
-          "locator": "L86"
+          "locator": "L87"
         }
       ]
     },
@@ -32687,6 +32858,11 @@
       },
       {
         "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "relation": "links_to",
+        "reason": "managed_asset_or_retired_identity"
+      },
+      {
+        "source_path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.en.md",
         "relation": "links_to",
         "reason": "managed_asset_or_retired_identity"
       },

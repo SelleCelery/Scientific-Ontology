@@ -472,7 +472,9 @@
               "basis": {
                 "enum": [
                   "exact_historical_fixture",
-                  "rc004_snapshot_not_historical_certification"
+                  "rc004_snapshot_not_historical_certification",
+                  "historical_attestation_record",
+                  "attested_current_snapshot"
                 ]
               },
               "git_lf_sha256": {

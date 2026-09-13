@@ -4,7 +4,7 @@
 > Layer: 04_Applications
 > Role: long-running philosophical question interface
 > Authority: None. Questions in this file are not SO canon and do not imply that their presuppositions are true.
-> Language: Japanese authoritative
+> Language: Japanese authoritative; English commensuration available
 > Maturity: Open / exploratory
 > Claim posture: questions, observations, and return points only
 
@@ -378,10 +378,10 @@ Return point:
 
 ## 8. 現在の再開点
 
-当面の再開点は次である。
+現在の再開点は次である。
 
-1. 研究プログラムと第一巻をNavigatorへ登録し、研究文脈・問い・履歴へ到達できるようにする。
-2. Developer Navigatorで②の監査候補をAIが提案し、人間が承認できるようにする。
+1. 研究プログラム、問い台帳、第一巻へのNavigator上の到達経路は実装済みである。以後は、入口の存在ではなく、そこからどの研究履歴へ戻れるかを運用で検査する。
+2. Developer Navigatorには②の監査候補生成と人間reviewのinterfaceが実装された。次は、実際のreview transactionを積み、承認・保留・棄却・再調査がどのような差分を生むかを記録する。
 3. 正本監査から露出した前提を③へ返す。
 4. ①の問いを並行して継続し、②・③から戻ってきた差分で書き換える。
 5. その往復履歴を④の素材として凍結する。
