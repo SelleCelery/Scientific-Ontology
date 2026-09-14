@@ -52,6 +52,7 @@ Research Notesは、公開基礎へ直ちに統合するには主張強度、分
 | [社会境界系ノート](./Social_Boundary_Notes/README.md) | 価値、貨幣、制度、AI導入、残差・残渣を、境界と責任からどう読むか。 | 社会批評を、公開可能な概念モデルと制度境界の分析へ減速する。 | 境界倫理、Truth Management、AI導入設計、社会境界応用。 |
 | [AI人格研究ノート](./AI_Personality_Notes/README.md) | AI応答の連続性、人格らしさ、帰還安定性を、履歴と境界からどう記述するか。 | AI人格を人間的本質ではなく、応答構造、履歴ループ、共有論理場として扱う。 | AI適応文書、意味の返路、判断場、将来の実装検証。 |
 | [文学的存在論ノート](./Literary_Ontological_Notes/README.md) | 文学と創作が、理論を証明せずに、どの境界構造を可視化できるか。 | 物語を構造読解装置として用い、自己、履歴、信念、返りを観測する。 | 物語・真実層・構造読解、意味生成、創作応用。 |
+| [正しさ・論理・構造研究](./Correctness_Logic_and_Structural_Studies/README.md) | 正しさ、閉鎖、冗長性、Frontier、認識軸、可能性空間を、有限資源下の論理・構造・計算へどう写せるか。 | 既存SO概念を再定義せず、計算可能な表現へ通約した際に何が保持・喪失されるかを検査する研究線。 | 境界認識批判、認識軸生成、履歴場、Truth Management、関連Research Notes。 |
 
 ---
 
@@ -100,6 +101,10 @@ Research Notesの新しい中間研究線を読む経路である。
 ### 2.6 文学的存在論を読む
 
 [青い照明を読む](./Literary_Ontological_Notes/reading-blue-light.ja.md)で既存文学の構造読解を確認し、[透明な幽霊とビット](./Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md)でオシロスコープ、センテンスという雲、有機交流電燈を文学的LLM論へ接続する。その後、[冥府局転生課における転生・輪廻・信念重力圏モデル](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)で創作宇宙の内部構造へ進む。横断的な方法論は[物語・真実層・構造読解](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)が担う。
+
+### 2.7 正しさ・論理・構造研究を読む
+
+最初に[研究線README](./Correctness_Logic_and_Structural_Studies/README.md)だけを読む。現時点では個別研究文書を先行登録していない。ここで扱うのは、SOの基礎概念を論理学・計算機科学へ置換することではなく、既存の境界、履歴、閉鎖、残差、返路、認識軸を計算可能な構造へ写したときの保持と喪失を検査することである。`Spine`は研究候補であり、現時点では正規語彙ではない。
 
 ---
 
@@ -189,6 +194,19 @@ Research Notesの新しい中間研究線を読む経路である。
 | [冥府局転生課における転生・輪廻・信念重力圏モデル](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) | 創作内の転生、輪廻、解脱、世界移動を、信念、履歴、制度、記憶が形成する重力圏として整理する日本語ノート。 | Literary / S2-S3 / P1 | 宗教教義、仏教解説、物理的重力理論ではない。英語通約は保留されており、存在しない英語版を仮定しない。 |
 | [世界制作としての文学](./Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md) / [EN](./Literary_Ontological_Notes/Literature_as_Worldmaking.en.md) | 文学を、圧縮された他者履歴が読者の履歴へ再配置され、知覚・意味・後続条件を変える世界制作として読む。 | 各文書ヘッダを正本とする。 | 作者と読者の経験同一性を仮定せず、文学を経験的事実の証拠として使用しない。 |
 
+### 3.8 正しさ・論理・構造研究
+
+この研究線は、正しさ、論理、構造表現、閉鎖、冗長性、Frontier、認識軸、有限資源計算を、既存SO概念を再定義しないまま形式化・実装へ通約する研究面である。
+
+現時点の公開文書は[研究線README](./Correctness_Logic_and_Structural_Studies/README.md)のみである。個別研究文書、実験記録、英語通約は、実体が成立した時点で追加する。空の将来課題を先に文書化しない。
+
+公開境界は次の通りである。
+
+- 実装成功をSO概念の存在論的妥当性や経験科学的真理の証明へ昇格させない。
+- 標準論理学、数学、計算機科学、物理学の定義を上書きしない。
+- `Spine`は研究上の構造表現候補であり、基礎語彙またはdefinition ownerではない。
+- 実装、toy model、prompt実験から生じた差分は、上流の定義所有文書へ自動逆流させず、返路を通して再照合する。
+
 ---
 
 ## 4. 共通保守契約
@@ -250,6 +268,7 @@ This index does not independently determine conceptual definitions, authoritativ
 | [Social Boundary Notes](./Social_Boundary_Notes/README.md) | How can value, money, institutions, AI adoption, residuals, and residues be read through boundaries and responsibility? | Slows social criticism into public conceptual models and analyses of institutional boundaries. | Boundary ethics, Truth Management, AI-adoption design, and social-boundary applications. |
 | [AI Personality Notes](./AI_Personality_Notes/README.md) | How can continuity, personality-like response, and return stability in AI be described through history and boundary? | Treats AI personality as response structure, history loop, and shared logical field rather than human essence. | AI adaptation documents, return-oriented meaning, judgment fields, and future implementation tests. |
 | [Literary Ontological Notes](./Literary_Ontological_Notes/README.md) | Which boundary structures can literature and fictional cosmology make visible without serving as proof? | Uses narrative as a structural-reading surface for observing selfhood, history, belief, and return. | Narrative truth and structural reading, meaning generation, and creative applications. |
+| [Correctness, Logic, and Structural Studies](./Correctness_Logic_and_Structural_Studies/README.md) | How can correctness, closure, redundancy, frontier, cognitive axes, and possibility spaces be mapped into finite-resource logical, structural, and computational forms? | Tests what is preserved and lost when existing SO relations are commensurated into computable representations without redefining the foundational concepts. | Boundary epistemology, cognitive-axis formation, History-Field Topology, Truth Management, and adjacent Research Notes. |
 
 ---
 
@@ -296,6 +315,10 @@ Begin with [History Loop Radius and Return Stability](./AI_Personality_Notes/His
 ### 2.6 Literary Ontology
 
 Begin with [Reading the Blue Light](./Literary_Ontological_Notes/reading-blue-light.en.md) as a structural reading of an existing literary work. Continue to the Japanese-authoritative [The Transparent Ghost and the Bit](./Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md), whose English commensuration is pending, for the oscilloscope–sentence-cloud–LLM line. Then use the Japanese-only [Meifu Bureau Reincarnation and Belief-Gravity Model](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) for an internal model of fictional cosmology. The cross-domain method is developed in [Narrative, Truth Layer, and Structural Reading](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md).
+
+### 2.7 Correctness, Logic, and Structural Studies
+
+Begin with the [research-line README](./Correctness_Logic_and_Structural_Studies/README.md) only. No individual research documents are pre-registered at present. The line does not replace SO foundations with logic or computer science; it tests preservation and loss when existing relations among boundary, history, closure, residuals, return paths, and cognitive axes are mapped into computable structures. `Spine` remains a research candidate rather than canonical vocabulary.
 
 ---
 
@@ -384,6 +407,19 @@ This research line treats literature and fictional cosmology as structural-readi
 | [The Transparent Ghost and the Bit](./Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md) | Connects the oscilloscope, sentence cloud, H₂O/NO, transparent ghost, and organic alternating-current lamp to read LLMs as an observational surface for meaning formation. | S2-S3 / P1-P2. Japanese authoritative; English pending. | Does not determine authorial intention, prove AI consciousness, or establish physical identity. Sentence identity, physical mapping, and observational calibration return to the intake log. |
 | [Meifu Bureau Reincarnation and Belief-Gravity Model](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) | A Japanese-only note organizing reincarnation, liberation, and world transfer in a fictional setting as a gravity domain formed by belief, history, institutions, and memory. | Literary / S2-S3 / P1 | Not religious doctrine, an explanation of Buddhism, or a physical theory of gravity. English commensuration is deferred; no nonexistent English version is assumed. |
 | [Literature as Worldmaking](./Literary_Ontological_Notes/Literature_as_Worldmaking.en.md) / [JA](./Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md) | Reads literature as worldmaking in which compressed other-history is redeployed into reader history and changes perception, meaning, and downstream conditions. | Governed by the document header. | Does not assume duplication of author and reader experience and does not use literature as evidence for empirical fact. |
+
+### 3.8 Correctness, Logic, and Structural Studies
+
+This line commensurates correctness, logic, structural representation, closure, redundancy, frontier, cognitive axes, and finite-resource computation into formal and implementation-facing surfaces without redefining existing SO concepts.
+
+At present, the only public document is the [research-line README](./Correctness_Logic_and_Structural_Studies/README.md). Individual research documents, experiment records, and English commensurations are added only when substantive work exists; empty future categories are not pre-created.
+
+Public boundaries are:
+
+- implementation success does not establish ontological validity or empirical truth for SO concepts;
+- definitions in standard logic, mathematics, computer science, and physics are not overwritten;
+- `Spine` is a research representation candidate, not foundational vocabulary or a definition owner;
+- differences produced by implementations, toy models, or prompt experiments return through explicit re-collation paths rather than silently back-projecting into upstream theory.
 
 ---
 

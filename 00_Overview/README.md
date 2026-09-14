@@ -33,6 +33,8 @@
 01–03 中核三層
   ↓
 04 Applications / 05 Research Notes / 06 Visual Materials
+  ↓
+07 Creative Offshoots / outward contact and expressive experiments
 ```
 
 ## 2. Public Scope and Claim Profile / 公開範囲と主張強度
@@ -88,6 +90,7 @@
 - 文書関係の機械可読な正本は`tools/docs_manifest.yml`で管理する。
 - 日本語正本と英語通約の射程を一致させる。
 - 全体運用方針が変わる場合は、ルートREADME、Roadmap、Concept Network、System Map、Glossaryをまとめてレビューする。
+- `SO_Reflexive_Philosophical_Research`、`Correctness_Logic_and_Structural_Studies`、`07_Creative_Offshoots`のように公開入口や返路を変える面が構造的に有効になった場合、単独ファイル追加として処理せず、Overviewの地図群へ戻して位置づけを同期する。
 
 # English Commensurated Rendering
 
@@ -115,6 +118,8 @@ Root README, Glossary, and Roadmap
 Core layers 01–03
   ↓
 04 Applications / 05 Research Notes / 06 Visual Materials
+  ↓
+07 Creative Offshoots / outward contact and expressive experiments
 ```
 
 ## 2. Public Scope
@@ -166,3 +171,4 @@ Applications, counterexamples, commensuration residuals, and implementation resu
 - Maintain machine-readable document relations in `tools/docs_manifest.yml`.
 - Keep the Japanese authoritative scope aligned with the English commensuration.
 - When the whole-system operational orientation changes, review the root README, Roadmap, Concept Network, System Map, and Glossary together.
+- When a surface such as `SO_Reflexive_Philosophical_Research`, `Correctness_Logic_and_Structural_Studies`, or `07_Creative_Offshoots` becomes structurally active enough to change public entrances or return paths, do not treat it as an isolated file addition; return to the Overview maps and synchronize its placement.

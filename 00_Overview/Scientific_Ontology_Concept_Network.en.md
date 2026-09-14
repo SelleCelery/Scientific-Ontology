@@ -342,7 +342,9 @@ Through this division of responsibility, documents do not fill one another in. T
 
 ## 6. The Three-Phase Structure and Cross-Cutting Layers
 
-The public repository consists of three phases—Sat / Truth, Raj / Beauty, and Tam / Goodness—together with Applications, Research Notes, and Visual Materials.
+The public repository uses three phases—Sat / Truth, Raj / Beauty, and Tam / Goodness—as its major organizing axes, together with Applications, Research Notes, Visual Materials, and the outward-facing `07_Creative_Offshoots` surface. The reflexive-audit surface in 04, formalization and commensuration research in 05, and expressive contact in 07 are cross-cutting return layers rather than replacements for the three phases.
+
+`07_Creative_Offshoots` is not a definition-owning public foundation. Through literary essays, comparative worldmaking, and related forms, it observes what becomes visible, what is lost, and what returns when the framework contacts external expression.
 
 ### 6.1 Sat / Truth — Fundamental Arrangement
 
@@ -404,6 +406,8 @@ The documents of Scientific Ontology do not fit into a single philosophical clas
 | Philosophy of science and technology | How should standard science be distinguished from internal concepts, and how should technological reactions be tested? | Scientific vocabulary protocols, Physics Correspondence Policy, AI applications |
 | Philosophy of history | How should the worlds produced by shared purposes and their boundary failures be read? | Truth Management, asymmetry and re-collation |
 | Literary ontology | How can narrative be read as a field of experimentation for existence and history without treating it as proof? | Literary and ontological notes |
+| Judgment transparency and reflexive audit | How can the contacts, phases, paths, return paths, and open ends of judgment formation remain reconstructable? | SO Reflexive Philosophical Research, Judgment Transparency Topology |
+| Logical, structural, and computational commensuration | What is preserved or lost when existing SO concepts are mapped into computable representations without redefining them? | Correctness, Logic, and Structural Studies |
 
 This classification does not exist to imprison documents in boxes.
 
@@ -659,6 +663,16 @@ Designing peace does not mean erasing differences.
 
 It means creating ports, protocols, diplomacy, and return paths so that differences are not immediately converted into exclusion or total competition.
 
+### 11.4 Judgment Transparency and SO Reflexive Philosophical Research
+
+SO applies its framework not only to external objects but also to how it has itself judged, classified, published, and revised.
+
+[`SO_Reflexive_Philosophical_Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md) retains the methodological path from De-Registry to judgment transparency as a historical method record that does not compress failures into a success narrative. Failed runs, transformation paths, return paths, and unresolved differences remain inspectable.
+
+Volume I historical attestation separates contemporaneous execution records from present-day acceptance in 2026 and does not rewrite historical checksums to current values. Auditability is not a guarantee of truth, validity, or objectivity; it is a condition under which objection and re-evaluation can return to actual points of judgment formation.
+
+Repository assessment is one candidate surface for implementing this return path. The existence of a candidate protocol does not itself confer automatic evaluation or registration authority.
+
 ---
 
 ## 12. Physical-Near Rendering and the High-Strength Research Layer
@@ -758,6 +772,18 @@ The shortest reading route is:
 - [`Literary / Ontological Notes`](../05_Research_Notes/Literary_Ontological_Notes/README.md)
 - [`Literature as Worldmaking`](../05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.en.md)
 
+### Entering Through Judgment, Audit, and Correctness
+
+- [`SO Reflexive Philosophical Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md)
+- [`Judgment Transparency Topology`](../04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md)
+- [`Correctness, Logic, and Structural Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+
+### Entering Through Expressive and Creative Contact
+
+- [`Questions, Boundaries, and Peace`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md)
+
+Read `07_Creative_Offshoots` not as a definition-owning layer but as a surface for observing visibility, misreading, residuals, and return when public concepts contact expression and creative work.
+
 ### Entering Through Physical-Near Concepts
 
 1. [`Physics Correspondence Policy`](./Physics_Correspondence_Policy.en.md)
@@ -774,10 +800,12 @@ Through the v4 series, the public framework presented Boundary Realism, history-
 
 At the opening of the v5 series, that circulation is carried beyond the framework's internal vocabulary into language, literature, consent, institutions, AI, and interfaces. Criticism, failure, residuals, and unresolved conditions returned from those contacts are explicitly allowed to revise upstream documents.
 
-Two additional features therefore come into the foreground:
+Four additional features therefore come into the foreground:
 
-1. a field for collating different language games while preserving their conditions and claim boundaries; and
-2. a living-canonical operation in which research documents may be revised by what returns from public use, implementation, and criticism.
+1. a field for collating different language games while preserving their conditions and claim boundaries;
+2. a living-canonical operation in which research documents may be revised by what returns from public use, implementation, and criticism;
+3. judgment transparency and reflexive audit, which keep judgments reconstructable while separating contemporaneous records from present acceptance; and
+4. the Creative Offshoots contact surface, which carries the framework beyond definition owners and receives residuals from expression, creative work, and comparative worldmaking.
 
 The following connections become especially visible:
 
@@ -884,4 +912,7 @@ What Scientific Ontology manages is not a completed world.
 - [`Optional_Axiom_Modules_as_Cognitive_Bridge.en.md`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`Physics_Correspondence_Policy.en.md`](./Physics_Correspondence_Policy.en.md)
+- [`SO Reflexive Philosophical Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md)
+- [`Correctness, Logic, and Structural Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+- [`Questions, Boundaries, and Peace`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)

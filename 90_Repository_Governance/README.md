@@ -18,7 +18,7 @@
 ### 構造上の位置
 
 ```text
-研究本文 00–06
+公開文書 00–07
   ↔
 90 Repository Governance
   ↔
@@ -37,6 +37,8 @@ tools / scripts / .github
 - 翻訳・通約注記
 - 用語接続プロトコル
 - 用語衝突管理表
+- repository assessment候補プロトコルと、その非権威境界
+- 版固有release metadataを同期するRelease Update面
 
 含まないもの：
 
@@ -51,6 +53,8 @@ tools / scripts / .github
 1. [`Publication_and_Commensuration_Policy.md`](./Publication_and_Commensuration_Policy.md)
 2. [`Translation_Note.md`](./Translation_Note.md)
 3. [`Terminology/README.md`](./Terminology/README.md)
+4. [`Assessment/Repository_Assessment_Protocol.ja.md`](./Assessment/Repository_Assessment_Protocol.ja.md) — repository assessmentの候補プロトコル。明示的採用までは自動的な定義権限・登録権限を持たない。
+5. [`Release_Update/UPDATE_PACK.md`](./Release_Update/UPDATE_PACK.md) — release-facing metadataを同期する版固有更新面。恒久統治原則のdefinition ownerではない。
 
 ## 4. Maintenance Notes / 運用メモ
 
@@ -83,7 +87,7 @@ Governance here does not freeze thought. It is a public-interface discipline all
 ## 1. Structural Position
 
 ```text
-Research texts 00–06
+Public documents 00–07
   ↔
 90 Repository Governance
   ↔
@@ -101,7 +105,9 @@ Included:
 - Publication and Commensuration Policy;
 - Translation and Commensuration Note;
 - terminology-connection protocol;
-- terminology collision registries.
+- terminology collision registries;
+- candidate repository-assessment protocols with explicit non-authority boundaries;
+- the Release Update surface for synchronizing version-specific release metadata.
 
 Not included:
 
@@ -116,6 +122,8 @@ Not included:
 1. [`Publication_and_Commensuration_Policy.md`](./Publication_and_Commensuration_Policy.md)
 2. [`Translation_Note.md`](./Translation_Note.md)
 3. [`Terminology/README.md`](./Terminology/README.md)
+4. [`Assessment/Repository_Assessment_Protocol.ja.md`](./Assessment/Repository_Assessment_Protocol.ja.md) — a candidate repository-assessment protocol; it has no automatic definition or registration authority until explicitly adopted.
+5. [`Release_Update/UPDATE_PACK.md`](./Release_Update/UPDATE_PACK.md) — the version-specific surface for synchronizing release-facing metadata, not a definition owner for durable governance principles.
 
 ## 4. Return and Maintenance
 

@@ -46,6 +46,7 @@ Research Notesは基礎層を暗黙に更新しない。昇格には、定義所
 ネゲントロピー経済は経験的経済理論ではなく、熱力学的証明ではなく、政策提案ではない。
 - AI人格と帰還安定性
 - 文学的存在論読解
+- 正しさ、閉鎖、冗長性、Frontier、認識軸、有限資源計算を論理・構造・計算へ通約する研究
 
 含まないもの：
 
@@ -66,6 +67,7 @@ Research Notesは基礎層を暗黙に更新しない。昇格には、定義所
 - [`Social_Boundary_Notes/README.md`](./Social_Boundary_Notes/README.md)：AI導入、社会境界、ネゲントロピー経済
 - [`AI_Personality_Notes/README.md`](./AI_Personality_Notes/README.md)：論理サンドボックス、履歴ループ、帰還安定性
 - [`Literary_Ontological_Notes/README.md`](./Literary_Ontological_Notes/README.md)：文学作品と創作宇宙の構造読解
+- [`Correctness_Logic_and_Structural_Studies/README.md`](./Correctness_Logic_and_Structural_Studies/README.md)：正しさ、閉鎖、冗長性、Frontier、認識軸、可能性空間、計算資源を論理・構造・計算へ通約する研究線。現時点ではREADMEのみを公開境界とし、`Spine`等を基礎語彙へ昇格させない。
 
 ## 5. Maintenance Notes / 運用メモ
 
@@ -118,7 +120,8 @@ Included:
 
 Negentropy Economy is not an empirical economic theory, not a thermodynamic proof, and not a policy proposal.
 - AI personality and return stability;
-- literary ontological readings.
+- literary ontological readings;
+- logical, structural, and computational commensuration of correctness, closure, redundancy, frontier, cognitive axes, and finite-resource computation.
 
 Not included:
 
@@ -139,6 +142,7 @@ Begin with [`Research_Notes_Index.md`](./Research_Notes_Index.md).
 - [`Social_Boundary_Notes/README.md`](./Social_Boundary_Notes/README.md): AI adoption, social boundaries, and Negentropy Economy
 - [`AI_Personality_Notes/README.md`](./AI_Personality_Notes/README.md): logical sandboxes, history loops, and return stability
 - [`Literary_Ontological_Notes/README.md`](./Literary_Ontological_Notes/README.md): structural reading of literature and fictional cosmologies
+- [`Correctness_Logic_and_Structural_Studies/README.md`](./Correctness_Logic_and_Structural_Studies/README.md): a research line for commensurating correctness, closure, redundancy, frontier, cognitive axes, possibility spaces, and computational resources into logical, structural, and computational forms. At present the README alone defines the public boundary; terms such as `Spine` are not promoted into foundational vocabulary.
 
 ## 4. Return and Maintenance
 

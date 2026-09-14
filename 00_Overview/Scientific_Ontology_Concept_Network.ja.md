@@ -340,7 +340,9 @@ Return
 
 ## 6. 三相構造と横断レイヤー
 
-公開リポジトリは、Sat / Truth、Raj / Beauty、Tam / Goodness という三相と、Applications、Research Notes、Visual Materialsによって構成される。
+公開リポジトリは、Sat / Truth、Raj / Beauty、Tam / Goodness という三相を主要な整理軸とし、Applications、Research Notes、Visual Materialsに加えて、`07_Creative_Offshoots`の外向き表現面を持つ。04の再帰的監査面、05の形式化・通約研究、07の表現接触面は、三相を置き換えない横断・返路レイヤーとして扱う。
+
+`07_Creative_Offshoots`は公開基礎のdefinition ownerではない。文学、エッセイ、比較的世界制作などを通じて、理論が外部表現へ接触したときに何が見え、何が失われ、何が返るかを観測する面である。
 
 ### 6.1 Sat / Truth ― 根本配置
 
@@ -402,6 +404,8 @@ Tam / Goodnessは、暗さや失敗を排除する層ではない。
 | 科学・技術哲学 | 標準科学と内部概念をどう区別し、技術の反動をどう検査するか。 | 科学語彙プロトコル、物理対応方針、AI応用 |
 | 歴史哲学 | 目的の共有が作った世界と、その境界破綻をどう読むか。 | 真理の経営学、非対称性と再照合 |
 | 文学的存在論 | 物語を証明にせず、存在と履歴の実験場としてどう読むか。 | 文学的・存在論的ノート |
+| 判断透明性・再帰監査 | 判断形成の接点・位相・経路・返路・開放端をどう再構成可能にするか。 | SO再帰的哲学研究、判断透明性トポロジー |
+| 論理・構造・計算通約 | 既存SO概念を再定義せず、計算可能な表現へ写したとき何が保持・喪失されるか。 | 正しさ・論理・構造研究 |
 
 この分類は、文書を箱へ閉じ込めるためのものではない。
 
@@ -660,6 +664,16 @@ DSSIのような実装は、「安全に技術を使う」という抽象語を�
 
 差異が直ちに排除や全面競争へ変換されないポート、プロトコル、外交、返路を作ることである。
 
+### 11.4 判断透明性とSO再帰的哲学研究
+
+SOは、外部対象だけでなく、自身がどのように判断・分類・公開・修正してきたかも応用対象にする。
+
+[`SO_Reflexive_Philosophical_Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md)では、De-Registry実験から判断透明性へ至る方法史を、成功物語へ圧縮せず、失敗run、変換経路、返路、未解決差分を含むhistorical method recordとして保持する。
+
+Volume Iのhistorical attestationは、当時の実行記録と2026年現在の受理判断を分離し、historical checksumを現在値で上書きしない。監査可能性は真理・妥当性・客観性の保証ではなく、異議と再評価が実際の判断形成点へ戻れる条件である。
+
+repository assessmentはこの返路を実装する候補面の一つであり、候補プロトコルが存在すること自体を自動的な評価権限または登録権限とは扱わない。
+
 ---
 
 ## 12. 物理近接レンダリングと高強度研究層
@@ -759,6 +773,18 @@ AMPとITSは、境界実在論が留保した先を、あえて記述する非�
 - [`Literary / Ontological Notes`](../05_Research_Notes/Literary_Ontological_Notes/README.md)
 - [`Literature as Worldmaking`](../05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md)
 
+### 判断・監査・正しさから入る
+
+- [`SO再帰的哲学研究`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md)
+- [`判断透明性トポロジー`](../04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md)
+- [`Correctness, Logic, and Structural Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+
+### 表現・創作の接触面から入る
+
+- [`問いを閉じず、境界を踏まないために`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md)
+
+`07_Creative_Offshoots`は定義所有層ではなく、公開概念が表現・創作へ接触したときの可視性、誤読、残差、返りを観測する面として読む。
+
 ### 物理近接概念から入る
 
 1. [`Physics Correspondence Policy`](./Physics_Correspondence_Policy.ja.md)
@@ -775,10 +801,12 @@ v4系までの公開体系は、境界実在性、履歴場、意味生成、境
 
 v5系の開始では、その循環を理論内部に留めず、言語、文学、同意、制度、AI、インターフェイスへ持ち出し、そこで返る批判、失敗、残差、未解決点によって上流文書を更新できる代謝へ明示的に開く。
 
-現行公開体系では、さらに次の二つが前景化する。
+現行公開体系では、さらに次の四つが前景化する。
 
 1. 異なる言語ゲームを、成立条件と主張境界を保ったまま照合する場。
 2. 研究ノートを外へ持ち出し、返りによって正本を更新するLiving Canonical運用。
+3. 判断・分類・監査そのものを再構成可能にし、当時の記録と現在の受理判断を分離する判断透明性と再帰監査。
+4. 理論をdefinition ownerの外へ持ち出し、表現・創作・比較的世界制作から戻る残差を受け取るCreative Offshootsの接触面。
 
 特に、次の接続が見えるようになる。
 
@@ -888,6 +916,9 @@ AI・制度・社会への実装
 - [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md)
+- [`SO Reflexive Philosophical Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md)
+- [`Correctness, Logic, and Structural Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+- [`問いを閉じず、境界を踏まないために`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
 
 ---

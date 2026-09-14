@@ -68,212 +68,95 @@
 
 ## 2. リポジトリ全体の構造
 
-公開リポジトリは、次の四領域に分かれる。
+公開リポジトリは、現在、次の五領域として読むのが最も安定している。
 
 | 領域 | 主な場所 | 役割 |
 |---|---|---|
-| 公開入口 | ルート、`00_Overview` | 全体説明、読解経路、概念地図、Roadmap、Glossary |
-| 理論・応用本文 | `01`–`06` | 基礎構造、通信内容、規約、応用、研究ノート、視覚資料 |
-| リポジトリ統治 | `90_Repository_Governance`、`tools`、`scripts`、`.github` | 通約、用語衝突、形式、文書関係、検査 |
-| 公開境界 | `99_Private_Core_Not_Included`、`.gitignore` | 非公開中核と公開除外対象の境界表示 |
+| 公開入口 | ルート、`00_Overview` | 全体説明、概念地図、運用方針、Roadmap、Glossary、読解経路 |
+| 中核・応用・研究本文 | `01`–`06` | 基礎三層、応用、研究ノート、視覚資料 |
+| 外部接触・表現実験 | `07_Creative_Offshoots` | 文学・創作・比較的世界制作など、定義所有の外側で起きる接触と残差の観測 |
+| リポジトリ統治 | `90_Repository_Governance`、`tools`、`scripts`、`.github`、`navigator` | 通約、用語衝突、文書契約、登録、検査、公開投影 |
+| 公開境界 | `99_Private_Core_Not_Included`、`.gitignore` | 非公開資料、作業草稿、公開除外対象との境界表示 |
+
+ここで`navigator`は公開文書を読むための投影面であり、概念定義や登録判断の所有者ではない。現在の文書同一性、正本・通約関係、概念所有、imports / exports / returnsなどの機械可読な関係は[`tools/docs_manifest.yml`](../tools/docs_manifest.yml)を基準とする。
 
 ---
 
 ## 3. 公開リポジトリ構造
 
-以下は、`.gitignore`で除外される000系草稿、ローカル環境、キャッシュ、検査出力、作業メモを含まない公開構造である。
+System Mapは、個別ファイルを一つずつ固定する目録ではなく、**どの領域が何を担当し、どこへ返すか**を示す。正確な文書一覧はmanifestと各READMEへ委ね、ここでは変化しにくい構造だけを示す。
 
 ```text
 .
-├─ README.md
-├─ GLOSSARY.md
-├─ Roadmap.md
-├─ RELEASE_NOTES.md
-├─ CITATION.md
-├─ CITATION.cff
-├─ LICENSE.md
-├─ .zenodo.json
-├─ .gitattributes
-├─ .gitignore
-├─ requirements-public-check.txt
+├─ README.md / GLOSSARY.md / Roadmap.md / RELEASE_NOTES.md
+├─ CITATION.md / CITATION.cff / LICENSE.md / .zenodo.json
 │
 ├─ 00_Overview/
-│  ├─ README.md
-│  ├─ Scientific_Ontology_Operational_Outline.ja.md
-│  ├─ Scientific_Ontology_Operational_Outline.en.md
-│  ├─ Scientific_Ontology_System_Map.md
-│  ├─ Scientific_Ontology_Concept_Network.ja.md
-│  ├─ Scientific_Ontology_Concept_Network.en.md
-│  ├─ Truth_Management_and_Boundary_PDCA.ja.md
-│  ├─ Truth_Management_and_Boundary_PDCA.en.md
-│  ├─ Claim_Strength_and_Publication_Layer_Table.ja.md
-│  ├─ Claim_Strength_and_Publication_Layer_Table.en.md
-│  ├─ Physics_Correspondence_Policy.ja.md
-│  └─ Physics_Correspondence_Policy.en.md
+│  ├─ Operational Outline
+│  ├─ Concept Network
+│  ├─ System Map
+│  ├─ Truth Management and Boundary PDCA
+│  ├─ Claim Strength and Publication-Layer Table
+│  └─ Physics Correspondence Policy
 │
-├─ 01_Sat_Truth/
-│  ├─ README.md
-│  ├─ AMP_Introduction.md
-│  ├─ Four_Axioms_of_Existence.md
-│  ├─ Meaning_Generation_Model.md
-│  ├─ Boundary_Realism_Principle.md
-│  ├─ Boundary_Epistemological_Critique.ja.md
-│  ├─ Boundary_Epistemological_Critique.en.md
-│  ├─ Boundary_Epistemological_Critique_Annotations.ja.md
-│  └─ Boundary_Epistemological_Critique_Annotations.en.md
-│
-├─ 02_Raj_Beauty/
-│  ├─ README.md
-│  ├─ HFC_Introduction.md
-│  ├─ History_Field_Topology.md
-│  ├─ Scientific_Ontology_and_Science.md
-│  ├─ Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md
-│  └─ Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md
-│
-├─ 03_Tam_Goodness/
-│  ├─ README.md
-│  ├─ Boundary_Ethics_Model.md
-│  ├─ Meaning_as_Return_Orbit.md
-│  ├─ Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md
-│  └─ Optional_Axiom_Modules_as_Cognitive_Bridge.en.md
+├─ 01_Sat_Truth/                 # 成立条件、存在・意味・実在性
+├─ 02_Raj_Beauty/               # 履歴、差異、認識生成、通信
+├─ 03_Tam_Goodness/             # 返り、責任、倫理、条件付き接続
 │
 ├─ 04_Applications/
-│  ├─ README.md
 │  ├─ AI_Adaptation/
-│  │  ├─ README.md
-│  │  ├─ Application_Boundary_Theory_Core.md
-│  │  ├─ AI_Usefulness_as_a_Boundary_Function.md
-│  │  ├─ AI_Boundary_Interface_and_Synchronous_Understanding.md
-│  │  └─ AI_Personality_as_Response_Structure.md
 │  ├─ Social_Boundary_Design/
-│  │  ├─ README.md
-│  │  ├─ AI_Adoption_Collation_Checklist.md
-│  │  ├─ Specification_for_Peace.ja.md
-│  │  └─ Specification_for_Peace.en.md
-|  `- SO_Reflexive_Philosophical_Research/
-|     |- README.md
-|     |- 00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md
-|     |- 01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md
-|     `- volumes/
-|        `- Volume_01_SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/
-|           |- README.md
-|           |- 01_CHRONICLE.ja.md
-|           |- 02_TRANSMISSIONS.ja.md
-|           |- 03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md
-|           `- evidence/
+│  └─ SO_Reflexive_Philosophical_Research/
+│     ├─ research context / open questions (ja + en)
+│     ├─ sources/README.md
+│     │    # 公開するのはsource identity / hash / provenance / role。
+│     │    # exact historical bytesは公開リポジトリに含めない。
+│     └─ volumes/Volume_01_DeRegistry_to_Judgment_Transparency/
+│          # timeline / chronicle / transmissions / topology
+│          # evidence map / residuals / digest
+│          # historical attestation / current attested checksum / evidence
 │
 ├─ 05_Research_Notes/
-│  ├─ README.md
-│  ├─ Research_Notes_Index.md
-│  ├─ Cognitive_Dynamics_Communication_Studies/
-│  │  ├─ README.md
-│  │  ├─ Cognitive_Dynamics_Communication_Model.ja.md
-│  │  ├─ Cognitive_Dynamics_Communication_Model.en.md
-│  │  ├─ Compression_of_Existence_Phases.ja.md
-│  │  ├─ Compression_of_Existence_Phases.en.md
-│  │  ├─ Boundary_Diplomacy_and_Port_Allocation.ja.md
-│  │  ├─ Boundary_Diplomacy_and_Port_Allocation.en.md
-│  │  ├─ Organizational_Boundary_and_Port_Model.ja.md
-│  │  └─ Organizational_Boundary_and_Port_Model.en.md
-│  ├─ Cross_Domain_Ontological_Notes/
-│  │  ├─ README.md
-│  │  ├─ Asymmetry_Stabilization_and_ReCollation.ja.md
-│  │  ├─ Asymmetry_Stabilization_and_ReCollation.en.md
-│  │  ├─ Return_Ethics_and_Retaliation_Conversion.ja.md
-│  │  ├─ Return_Ethics_and_Retaliation_Conversion.en.md
-│  │  ├─ Narrative_Truth_and_Structural_Reading.ja.md
-│  │  ├─ Narrative_Truth_and_Structural_Reading.en.md
-│  │  ├─ Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md
-│  │  └─ Consent_Boundary_and_Sentence_Bit_Asymmetry.en.md
 │  ├─ Language_Meaning_and_Communication_Phase_Studies/
-│  │  ├─ README.md
-│  │  ├─ Grammar_as_a_Meaning_Pressure_Channel.ja.md / .en.md
-│  │  ├─ Meaning_as_Collation_and_Return_Path.ja.md / .en.md
-│  │  ├─ Compressed_Experience_Qualia_and_Literature.ja.md / .en.md
-│  │  ├─ AI_Language_Generation_and_Grammatical_Frames.ja.md / .en.md
-│  │  ├─ Speech_as_Sequential_Decompression.ja.md / .en.md
-│  │  ├─ Intension_Extension_and_False_Extension.ja.md / .en.md
-│  │  ├─ Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md / .en.md
-│  │  ├─ Commensuration_as_Cross_Grammatical_Collation.ja.md / .en.md
-│  │  ├─ Linguistic_Frame_Differences_between_Japanese_and_English.ja.md / .en.md
-│  │  └─ Return_Intake_Log.ja.md / .en.md
+│  ├─ Cognitive_Dynamics_Communication_Studies/
+│  ├─ Correctness_Logic_and_Structural_Studies/
+│  ├─ Cross_Domain_Ontological_Notes/
 │  ├─ Physical_Cosmological_Notes/
-│  │  ├─ README.md
-│  │  ├─ Intrinsic_Time_Standard_Model_Correspondence.ja.md
-│  │  ├─ Intrinsic_Time_Standard_Model_Correspondence.en.md
-│  │  ├─ Ontological_History_of_the_Universe.ja.md
-│  │  ├─ Ontological_History_of_the_Universe.en.md
-│  │  ├─ Cosmological_Topological_Dynamics.ja.md
-│  │  ├─ Cosmological_Topological_Dynamics.en.md
-│  │  ├─ PINGER_Hypothesis_and_History_Field_Topology.ja.md
-│  │  ├─ PINGER_Hypothesis_and_History_Field_Topology.en.md
-│  │  ├─ Chaos_Theory_and_Logical_Depth_Axis.ja.md
-│  │  └─ Chaos_Theory_and_Logical_Depth_Axis.en.md
 │  ├─ Social_Boundary_Notes/
-│  │  ├─ README.md
-│  │  ├─ AI_Adoption_as_Synchronization_Closure.md
-│  │  ├─ DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md
-│  │  ├─ DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md
-│  │  ├─ Negentropy_Economy_Principles.ja.md
-│  │  ├─ Negentropy_Economy_Principles.en.md
-│  │  ├─ Negentropy_Economy_and_Meaning_Generation.ja.md
-│  │  └─ Negentropy_Economy_and_Meaning_Generation.en.md
 │  ├─ AI_Personality_Notes/
-│  │  ├─ README.md
-│  │  ├─ History_Loop_Radius_and_Return_Stability.md
-│  │  └─ Logical_Sandbox_and_Negentropy_Model.md
 │  └─ Literary_Ontological_Notes/
-│     ├─ README.md
-│     ├─ reading-blue-light.ja.md
-│     ├─ reading-blue-light.en.md
-│     ├─ Meifu_Bureau_Reincarnation_and_Belief_Gravity.md
-│     ├─ Literature_as_Worldmaking.ja.md
-│     └─ Literature_as_Worldmaking.en.md
 │
 ├─ 06_Visual_Materials/
-│  ├─ README.md
-│  ├─ Scientific_Ontology_Conceptual_Poster.ja.png
-│  ├─ Scientific_Ontology_Conceptual_Poster.en.png
-│  └─ Scientific_Ontology_Conceptual_Poster_Note.md
+│
+├─ 07_Creative_Offshoots/
+│  └─ Literary_Essays/
 │
 ├─ 90_Repository_Governance/
-│  ├─ README.md
-│  ├─ Publication_and_Commensuration_Policy.md
-│  ├─ Translation_Note.md
-│  ├─ Release_Update/
-│  │  ├─ UPDATE_PACK.md
-│  │  ├─ release_state.yml
-│  │  ├─ release_update.py
-│  │  └─ requirements.txt
-│  └─ Terminology/
-│     ├─ README.md
-│     ├─ Scientific_Terminology_Protocol.md
-│     ├─ TERM_COLLISION_REGISTRY.ja.md
-│     └─ TERM_COLLISION_REGISTRY.en.md
+│  ├─ Publication and Commensuration Policy
+│  ├─ Translation Note
+│  ├─ Terminology/
+│  ├─ Assessment/                 # candidate protocol; public authorityではない
+│  └─ Release_Update/
 │
 ├─ 99_Private_Core_Not_Included/
-│  └─ README.md
 │
-├─ tools/
-│  ├─ Public_Format_Registry.yml
-│  ├─ docs_manifest.yml
-│  ├─ maintenance_rules.yml
-│  └─ CHECKER_USAGE.md
-├─ scripts/
-│  └─ check_public_format.py
-└─ .github/workflows/
-   └─ public-format-check.yml
+├─ navigator/                     # public/developer projection surface
+├─ tools/                         # manifest / registry / maintenance / generated read models
+├─ scripts/                       # validators / builders / release helpers
+└─ .github/workflows/             # automated checks and deployment
 ```
+
+この図に個別文書が現れないことは、公開対象外であることを意味しない。文書の現在状態はmanifest、各層のREADME、Navigatorのread modelで照合する。逆に、System Mapへ名前があることだけで、定義所有や公開登録が成立するわけでもない。
 
 ---
 
 ## 4. ルート直下の役割
 
-ルートは、理論本文の置き場ではなく、リポジトリ全体へ入るための公開インターフェースである。
+ルートは理論本文の置き場ではなく、リポジトリ全体へ入るための公開インターフェースである。
 
 | 文書 | 役割 |
 |---|---|
-| [`README.md`](../README.md) | 初見読者向けの入口、体系の中心的な研究運動、目的別読解経路 |
+| [`README.md`](../README.md) | 初見読者向けの入口、体系の要約、目的別読解経路 |
 | [`GLOSSARY.md`](../GLOSSARY.md) | 標準語、英語通約、概念系譜、公開定義所有者の人間可読インターフェース |
 | [`Roadmap.md`](../Roadmap.md) | 研究動態、現在地、次の反証・実装課題 |
 | [`RELEASE_NOTES.md`](../RELEASE_NOTES.md) | 版ごとの変更記録 |
@@ -281,287 +164,241 @@
 | [`LICENSE.md`](../LICENSE.md) | 利用条件 |
 | [`.zenodo.json`](../.zenodo.json) | Zenodo向けメタデータ |
 
-Glossaryは統治文書の一種でもあるが、公開概念の横断入口として発見可能性が高いため、ルートに置く。
+Glossaryは統治文書の一種でもあるが、公開概念の横断入口として発見可能性が高いためルートに置く。README、Release Notes、Citation類はリリース面でもあるため、体系内部の構造変更が固まってから最終同期する。
 
 ---
 
 ## 5. `00_Overview` — 公開体系の地図と研究動態
 
-`00_Overview`は、理論本文より前に、現在の公開体系をどのように読むかを示す層である。
+`00_Overview`は、個別概念を上書きする上位理論ではない。既存文書の責務、接続、読解順序、主張強度、外部実装への運用方向を横断的に示す。
 
-中心的な役割は次である。
+主な役割は次の通りである。
 
-- 存在境界論全体の運用方針を示す。
-- 概念体系の入口を示す。
-- リポジトリ構造を示す。
-- 研究動態と目的循環を示す。
-- 主張強度、公開層、未確定性を管理する。
-- 物理近接語彙との接続条件を示す。
+- Operational Outline：境界事件、作用、返り、責任分界、可動性という運用方向。
+- Concept Network：概念所有者を横断した関係、読解経路、返路。
+- System Map：リポジトリと公開体系の構造。
+- Truth Management：目的、共有、世界形成、Boundary CA。
+- Claim Strength Table：主張強度、公開層、検証責任。
+- Physics Correspondence Policy：物理近接語彙との接触条件と誤読防止。
 
-主要文書：
-
-- [`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md)：v5系開始時に自覚された全体運用方針。新しい上位公理ではなく、外部実装へ向けた運用方向を示す。
-- [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md)：概念配置、読解経路、定義所有、返路、アポリアの入口。
-- [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)：リポジトリと概念層の体系配置。
-- [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md)：第一義、共有、世界形成、Boundary PDCAを通じた研究・運用循環。
-- [`Claim_Strength_and_Publication_Layer_Table.ja.md`](./Claim_Strength_and_Publication_Layer_Table.ja.md)：主張強度、証拠強度、未確定性、公開層の管理。
-- [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md)：物理近接語彙と標準物理学の非同一性を管理する方針。
-
-`00_Overview`は単なるメタ説明ではない。基礎概念がどのように認識、研究動態、実装へ展開するかを示す上位の読解面として機能する。
+SO自身の判断履歴を監査する`04_Applications/SO_Reflexive_Philosophical_Research`、形式化候補を扱う`05_Research_Notes/Correctness_Logic_and_Structural_Studies`、外部表現との接触を扱う`07_Creative_Offshoots`が構造的に活動し始めた場合、Overviewはそれらを定義し直すのではなく、接続と返路を更新する。
 
 ---
 
 ## 6. `01`–`03` — 中核三層の構造的役割
 
-`01_Sat_Truth`、`02_Raj_Beauty`、`03_Tam_Goodness`は、主題別フォルダというより、通信体系における異なる責務を持つ。
+三層は固定的な学問区分ではなく、同じ問題を異なる位相から読むための主要軸である。
 
-| 層 | 通信構造上の役割 | 公開体系で前景化する役割 | 文書が置かれやすい理由 |
-|---|---|---|---|
-| `01_Sat_Truth` | ネットワーク構造と成立条件 | 境界認識批判 | 形而上学、公理、存在・観測・意味・知の成立条件を扱うため |
-| `02_Raj_Beauty` | 通信内容、事象流、受容と読み方 | 境界認識生成 | 履歴、差分、注意、抽象化、同期、認識軸の形成を扱うため |
-| `03_Tam_Goodness` | 通信規約、管理、閉鎖、再開、返送 | 境界認識運用 | 倫理、通約、保留、偽閉鎖回避、非破壊的管理を扱うため |
+### 6.1 `01_Sat_Truth` — 成立条件と実在性
 
-### 6.1 `01_Sat_Truth` — ネットワーク構造と成立条件
+存在、観測、意味、境界実在論、認識批判など、何を出発点として扱えるかを担当する。
 
-この層は、何が流れるかより前に、接触、観測、意味、知が成立しうる構造を扱う。
+### 6.2 `02_Raj_Beauty` — 履歴・差異・認識生成
 
-形而上学的根を直接前景化するだけでなく、境界実在性と境界認識批判を通じて、観測可能な境界条件へ記述を寄せる。
+履歴場、通信、差異、認識軸形成、科学との接触など、関係がどう動き、形を得るかを担当する。
 
-### 6.2 `02_Raj_Beauty` — 通信内容と読みの生成
+### 6.3 `03_Tam_Goodness` — 返り・責任・条件付き接続
 
-この層は、構造を流れる履歴、差分、意味圧、同期・非同期と、それらがどのように受け取られ、認識方向として安定するかを扱う。
+境界倫理、意味の返還軌道、異なる認識形式の条件付き接続など、接触後に何を返し、どう壊さずに接続を維持するかを担当する。
 
-`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation`は、境界認識批判の後に、認識軸がどのように生成・安定・変形するかを記述する。
-
-### 6.3 `03_Tam_Goodness` — 通信規約と管理
-
-この層は、通信内容の正しさだけでなく、何を受け入れ、保留し、閉じ、再開し、返送するかを扱う。
-
-`Optional_Axiom_Modules_as_Cognitive_Bridge`は、異なる認識形式を同一化も切断もせず、比較、通約、条件付き接続するための運用構造を提供する。
+`Optional_Axiom_Modules_as_Cognitive_Bridge`は公開された橋渡し構造を扱う。歴史的sourceの同一性・hash・研究上の役割は公開できるが、撤退判断されたexact source bytesを公開定義の根拠として再配置しない。
 
 ---
 
 ## 7. `04_Applications` — 公開応用インターフェース
 
-`04_Applications`は、中核三層の概念を、公開可能な設計思想、評価枠、チェックリスト、仕様書へ接続する。
+`04_Applications`は、中核三層の概念を公開可能な設計思想、評価枠、チェックリスト、仕様、自己監査へ接続する。
 
 ### `AI_Adaptation`
 
-AIを、判断代行主体ではなく、判断可能性を維持する境界インターフェースとして扱う。
-
-主な対象：
-
-- AI有用性
-- AI境界インターフェース
-- 応答構造としてのAI人格
-- 応用境界理論
+AIを判断代行主体として固定するのではなく、判断可能性、履歴、境界、返路をどう保つかという応用面を扱う。
 
 ### `Social_Boundary_Design`
 
-AIや制度を採用する社会側の境界、責任、照合、平和条件を扱う。
-
-主な対象：
-
-- AI導入照合チェックリスト
-- 責任境界と再照合可能性
-- 平和プロトコル・平和仕様
+AIや制度を採用する社会側の責任境界、再照合可能性、平和条件を扱う。
 
 ### `SO_Reflexive_Philosophical_Research`
 
-De-Registry実験から判断透明性、Topology-first監査、三層変換監査へ至る方法史と公開証跡を扱う。研究履歴を消さず、失敗runと自己監査結果を応用可能な判断透明性インターフェースへ接続する。
+SOが外部だけでなく、**自らの研究判断・分類・公開判断へ同じ境界監査を返す**ための再帰的応用面である。
 
-この層は、実装コード、製品仕様、法的助言、個別組織の非公開運用手順を含まない。
+Volume Iは、De-Registryから判断透明性、Topology-first監査、三層変換監査へ至る方法史を、成功だけに整形せず保持する。historical checksumは当時の記録として保持し、2026年現在の受理判断とは別にattestationを置く。旧sourceはidentity、historical filename、SHA-256、provenance、実験上の役割を公開できるが、exact bytesはprivateに保持し、公開Repositoryには含めない。
+
+ここでいう**判断透明性**は、判断の正しさを保証する概念ではない。接触、位相、経路、返路、open endを再構成可能にし、異議、再評価、修正が実際の変更点へ届く状態を指す。
 
 ---
 
-## 8. `05_Research_Notes` — 強い命題を境界条件つきで保持する層
+## 8. `05_Research_Notes` — 強い命題と発展中の研究線
 
-`05_Research_Notes`は、公開基礎層へ直接入れるには主張強度または誤読リスクが高いが、捨てずに保持すべき研究線を置く。
+`05_Research_Notes`は、公開基礎層へ直接入れるには主張強度、専門依存、誤読リスク、成熟度のいずれかが十分に安定していないが、返路を保ったまま研究すべき線を置く。
 
-### `Language_Meaning_and_Communication_Phase_Studies`
+### 8.1 `Language_Meaning_and_Communication_Phase_Studies`
 
-言語、意味、文法、発話、通約、意味ネットワーク、AI言語生成を、返路を含む通信位相として扱う横断研究線。v5系では最初のLiving Canonical運用線として、変更履歴とReturn Intakeを明示的に持つ。
+言語、意味、文法、発話、通約、意味ネットワーク、AI言語生成を、返路を含む通信位相として扱う横断研究線。意味生成モデルを置換せず、言語的意味に局所責任を持つ。
 
-この研究線は、意味生成モデルを置換しない。言語的意味を局所所有し、既存の意味、HFC、認識論、AI応用へ残差を返す。
+### 8.2 `Cognitive_Dynamics_Communication_Studies`
 
-### `Cognitive_Dynamics_Communication_Studies`
+連続的な認識と、実運用で必要になる存在相、ポート、容量、責任への離散化を扱い、組織境界、境界外交、平和仕様へ接続する。
 
-認識が通信的にはシームレスでありながら、実際の運用では存在相、ポート、容量、責任へ離散化される構造を扱う。
+### 8.3 `Correctness_Logic_and_Structural_Studies`
 
-この研究線は、認識動態から組織境界、責任境界、境界外交、平和仕様へ接続する。
+正しさ、論理、構造表現、閉包、冗長性、frontier、認識軸、有限資源計算などを、既存SO概念を**再定義せず**形式・計算表現へ通約できるか検討する研究線である。
 
-### `Cross_Domain_Ontological_Notes`
+現時点ではREADMEが研究入口であり、`Spine`を含む形式化候補はcanonical definitionではない。形式化が有用でも、その写像で失われた条件や残差は元の概念所有者へ返す。
 
-非対称性、返りの倫理、報復変換、物語的真理、同意境界とsentence/bit非対称など、複数分野を横断する存在論的読解を置く。
+### 8.4 その他の研究線
 
-### `Physical_Cosmological_Notes`
+- `Cross_Domain_Ontological_Notes`：非対称性、返りの倫理、物語、同意境界などの横断読解。
+- `Physical_Cosmological_Notes`：物理・宇宙論近接の高強度仮説と対応候補。
+- `Social_Boundary_Notes`：AI導入、社会境界、価値循環、DSSIに関する研究。
+- `AI_Personality_Notes`：AI人格、履歴ループ、帰還安定性、論理サンドボックス。
+- `Literary_Ontological_Notes`：文学を証拠化せず、世界制作、履歴、信念、境界の研究面として読む。
 
-内在時間、宇宙史、PINGER仮説、カオス理論、論理-深度軸など、物理・宇宙論近接の高強度仮説を置く。
+DSSIの実装コードはSOリポジトリへ同梱しない。外部公開されたConnectBits / DSSI実装から得られる結果は、SO側では応用の証明としてではなく、観測・責任・返路に関する研究入力として受け取る。
 
-### `Social_Boundary_Notes`
-
-AI導入、ネゲントロピー経済、意味生成、社会境界、DSSIの観測・判断主権・責任返還に関する研究ノートを置く。DSSIアプリケーション本体はv5.0には含まれない。
-
-### `AI_Personality_Notes`
-
-AI人格、履歴ループ、帰還安定性、論理サンドボックスを研究ノートとして扱う。
-
-### `Literary_Ontological_Notes`
-
-文学を証拠として使用するのではなく、境界、履歴、意味、信念重力、世界制作としての文学を読む存在論的読解として扱う。
-
-各文書の詳細は、[`Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md)を参照する。
+文書単位の詳細は[`Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md)を参照する。
 
 ---
 
 ## 9. `06_Visual_Materials` — 視覚的公開入口
 
-この層は、概念ポスターと読解注記を置く。
+この層は概念ポスターと読解注記を置く。
 
-視覚資料は、理論本文、実証資料、形式的証明の代替ではない。概念体系へ複数方向から入るための補助インターフェースである。
+視覚資料は理論本文、実証資料、形式的証明の代替ではない。概念体系へ複数方向から入るための補助インターフェースである。
 
 ---
 
-## 10. `90_Repository_Governance` — リポジトリ統治
+## 10. `07_Creative_Offshoots` — 外部接触と表現実験
 
-この領域は研究本文ではなく、公開・通約・用語・概念所有・衝突管理を統治する。
+`07_Creative_Offshoots`は、中核概念の新しい定義所有者ではない。文学、創作、比較的世界制作その他の表現面で、SOの公開概念が外部の語彙・形式・感性と接触したとき、何が見え、何が失われ、どの残差が返るかを観測する層である。
 
-| 文書 | 役割 |
+現在は`Literary_Essays`が公開接触面として置かれている。この層の正式なREADME、公開境界、返送規約は次の構造整理で確定する。したがって本System Mapは07の存在と役割だけを先に可視化し、未確定の定義権限を先取りしない。
+
+---
+
+## 11. `90_Repository_Governance` — リポジトリ統治
+
+この領域は研究本文ではなく、公開、通約、用語、概念所有、評価、リリース整合を統治する。
+
+| 文書・領域 | 役割 |
 |---|---|
-| [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md) | 正本関係、通約保存契約、言語形式、概念所有と系譜 |
+| [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md) | 正本関係、通約保存契約、言語形式、概念所有、系譜 |
 | [`Translation_Note.md`](../90_Repository_Governance/Translation_Note.md) | 文書横断で反復する英語通約判断 |
-| [`Scientific_Terminology_Protocol.md`](../90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md) | 科学語彙、SO定義、標準定義、限定条件の運用規約 |
-| [`TERM_COLLISION_REGISTRY.ja.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md) | 日本語正本語の衝突面 |
-| [`TERM_COLLISION_REGISTRY.en.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.en.md) | 英語通約語の衝突面 |
+| [`Scientific_Terminology_Protocol.md`](../90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md) | 科学語彙とSO内部語彙の接触規約 |
+| `Terminology/TERM_COLLISION_REGISTRY.*` | 成立済み語彙の衝突面と誤読候補 |
+| [`Repository_Assessment_Commensuration_and_Navigator_Design.ja.md`](../90_Repository_Governance/Repository_Assessment_Commensuration_and_Navigator_Design.ja.md) | assessment、通約、Navigatorを一つの設計面として読む統治上の設計記録 |
+| [`Assessment/Repository_Assessment_Protocol.ja.md`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md) | repository assessmentの候補protocol。候補であり、公開概念の定義権限を自動取得しない |
+| `Release_Update/` | release factsの集中管理とrelease-facing metadataの同期 |
 
-役割分担は次である。
-
-```text
-GLOSSARY.md
-  現在の標準語と人間可読な概念系譜
-
-Publication and Commensuration Policy
-  正本・通約・所有・公開境界の原則
-
-Term Collision Registries
-  既存語彙との衝突面と誤読方向
-
-Translation Note
-  反復的な通約判断
-
-tools/*.yml
-  機械可読な形式・関係・保守規則
-```
+`GLOSSARY.md`は現在の標準語と公開定義所有を人間可読に示し、`docs_manifest.yml`は文書契約を機械可読に示す。両者の差は一方を自動的に正解とみなして隠すのではなく、照合対象とする。
 
 ---
 
-### Release Update / リリース更新
+## 12. `tools`・`scripts`・`.github`・`navigator` — 機械可読統治と公開投影
 
-`90_Repository_Governance/Release_Update`は、版ごとの公開事実を`release_state.yml`へ集約し、`release_update.py`によって`RELEASE_NOTES.md`、`CITATION.cff`、`CITATION.md`、`.zenodo.json`を同期する。README、Roadmap、Concept Network、System Map、Glossary等の意味内容は自動生成せず、人間所有の構造文書としてレビューする。
-
-## 11. `tools`・`scripts`・`.github` — 機械可読統治と検査
-
-| ファイル | 役割 |
+| 領域 | 役割 |
 |---|---|
-| [`tools/Public_Format_Registry.yml`](../tools/Public_Format_Registry.yml) | 文書種別、メタデータ、言語形式、公開チェック構造 |
-| [`tools/docs_manifest.yml`](../tools/docs_manifest.yml) | 文書一覧、概念所有、imports、exports、tests、returns、delegates |
-| [`tools/maintenance_rules.yml`](../tools/maintenance_rules.yml) | 用語置換、競合防止、公開境界、警告条件 |
-| [`scripts/check_public_format.py`](../scripts/check_public_format.py) | Markdown、リンク、メタデータ、関係の公開前検査 |
-| [`.github/workflows/public-format-check.yml`](../.github/workflows/public-format-check.yml) | push・pull request時の自動検査 |
+| [`tools/Public_Format_Registry.yml`](../tools/Public_Format_Registry.yml) | 文書型、metadata、language format、公開検査構造 |
+| [`tools/docs_manifest.yml`](../tools/docs_manifest.yml) | 文書inventory、正本・通約関係、概念所有、imports / exports / returns / delegations |
+| [`tools/maintenance_rules.yml`](../tools/maintenance_rules.yml) | 用語置換、衝突防止、公開境界、warning条件 |
+| `tools/docs_index.json` / `docs_graph.json` / public projections | manifest等から生成されるread model |
+| [`scripts/check_public_format.py`](../scripts/check_public_format.py) | Markdown、リンク、metadata、文書関係の公開前検査 |
+| `scripts/validate_docs_manifest.py` / contract / Navigator checks | manifest契約、文書契約、UI投影の回帰検査 |
+| `.github/workflows/` | push / pull request / deployment時の自動検査 |
+| `navigator/` | Public / Developer readerの投影面。定義所有・登録承認を行うauthorityではない |
 
-機械可読ファイルは理論本文を置き換えない。本文と機械可読記録に差異が生じた場合、その差異自体を照合対象とする。
-
----
-
-## 12. `99_Private_Core_Not_Included` — 非公開境界の標識
-
-このディレクトリは、非公開中核の内容を説明する場所ではない。
-
-公開リポジトリが、AMP Core全文、ITS理論全文、非公開ランタイム、人格Core、内部評価、詳細な実装・運用パラメータを含まないことを示す境界標識である。
-
-非公開素材の題名、パス、対応表、索引を増やしてはならない。
+生成read modelとNavigatorは、公開体系を読みやすくするための投影である。表示上の便利さから理論権限を逆流させない。
 
 ---
 
-## 13. 研究動態と返路
+## 13. `99_Private_Core_Not_Included` — 非公開境界の標識
+
+このディレクトリは、非公開中核を説明する場所ではない。
+
+公開リポジトリに含めないsource body、private runtime、人格中核、内部評価、詳細な実装・運用パラメータ等が存在しうることと、公開体系がそれらへ依存して読者に不可視の権威を要求してはならないことを示す。
+
+ここへ非公開資料の詳細なタイトル、path、対応表、索引を蓄積しない。
+
+---
+
+## 14. 研究動態と返路
 
 この体系は、上から下へ一方向に適用される階層ではない。
 
 ```text
-01 構造と成立条件
+01–03  中核三層
   ↓
-02 差分・履歴・認識方向
+04     公開応用・自己監査
   ↓
-05 横断基盤：言語・意味・通信位相
+05     発展研究・形式化候補
   ↓
-03 規約・倫理・通約・管理
+06     視覚的公開入口
   ↓
-04 公開応用
+07     外部表現・創作との接触
   ↓
-05 高強度研究・横断研究
+実装結果・批判・誤読・残差・異議
   ↓
-実装結果・批判・残差
+00     Concept Network / Truth Management / System Map
   ↓
-00 概念ネットワーク・Truth Management
-  ↓
-01–03の正本所有文書へ返送
+各canonical owner、応用、研究線へ返送
 ```
 
-研究動態とは、根拠へ深く降りることで、表層において記述、比較、実装、再照合できる領域を増やす運動である。v5系では、この循環を代謝型に明示し、研究ノートを他領域へ持ち出した結果、批判、失敗、残差、実装上の盲点が返れば、その返りを上流文書の更新理由として扱う。
+返路は「下位の結果を上位理論へ取り込んで同化する」ためだけにあるのではない。既存定義を変更しない、局所仮説として保持する、公開層へ移さない、といった判断も返りの一種である。
 
-倫理は、その運動の外部に置かれた応用ではない。壊さずに接触し、全面切断せずに停止し、差異を同一化せずに通信する必要が、認識、ポート、責任、組織の記述解像度を引き上げる。
-
----
-
-## 14. 公開除外規則
-
-`.gitignore`に従い、次は公開構造へ含めない。
-
-- basenameが`000`で始まる草稿・作業ファイル
-- `.venv/`、`venv/`
-- `__pycache__/`、`*.pyc`等のキャッシュ
-- `public_format_report.md`、`public_format_report.json`
-- ローカルIDE・OS・一時ファイル
-- checker拡張作業メモ、YAMLリファクタリング作業メモ
-- 非公開中核、内部ログ、詳細な実装・運用資料
-
-000系ファイルが配布前ZIPに一時的に含まれていても、公開追跡・公開アーカイブへは含めない。
+SO Reflexive Philosophical Researchは、この返路をSO自身の判断へ適用する。Correctness / Logic / Structural Studiesは、形式化が原概念を取りこぼす地点を返す。Creative Offshootsは、表現へ出たときに発生する可視性、誤読、創造的変形、残差を返す。
 
 ---
 
-## 15. 読解入口
+## 15. 公開除外規則
 
-目的別の入口は次である。
+`.gitignore`その他の公開境界規則により、少なくとも次を公開release対象から除外する。
 
-- 全体を短時間で把握する：[`README.md`](../README.md) → [`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md) → [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md)
-- 基底を読む：[`Four_Axioms_of_Existence.md`](../01_Sat_Truth/Four_Axioms_of_Existence.md) → [`Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md)
-- 境界認識を読む：境界認識批判 → 認識軸生成 → 選択公理モジュール → Truth Management
-- 言語・意味・通信位相を読む：[`Language, Meaning, and Communication Phase Studies`](../05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md) → 個別9研究 → Return Intake
-- 倫理・組織・平和を読む：Cognitive Dynamics → Port Allocation → Organizational Boundary → Specification for Peace
-- 物理近接研究を読む：Physics Correspondence Policy → Physical Cosmological Notes
-- 公開・通約規則を確認する：Glossary → Publication and Commensuration Policy → Term Collision Registries
+- basenameが`000`で始まる草稿・作業ファイル。
+- `.venv/`、`venv/`その他のlocal environment。
+- `__pycache__/`、`*.pyc`その他のcache。
+- checker output、local IDE / OS / temporary / backup files。
+- private source body、internal log、非公開中核、詳細な運用資料。
+- private-bearingなpre-withdrawal snapshotやGit backup。
+
+作業ZIPに存在すること、ローカルに保存されること、公開releaseへ含まれることは別の状態である。公開可否はmanifest、ignore規則、release packaging、human reviewを合わせて判定する。
 
 ---
 
-## 16. 保守原則
+## 16. 読解入口
 
-このSystem Mapは、文書を追加するたびに完全な理論説明を書き換えるための一覧ではない。
+目的別の入口は次の通りである。
 
-更新が必要なのは、次の場合である。
+- 全体像：[`README.md`](../README.md) → [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md)
+- 基礎概念：`Four_Axioms_of_Existence` → `Boundary_Realism_Principle`
+- 認識と意味：Boundary Epistemological Critique → Cognitive Axis Formation → Optional Axiom Modules → Truth Management
+- 倫理・組織・平和：Cognitive Dynamics → Port Allocation → Organizational Boundary → Specification for Peace
+- 判断・自己監査：[`SO_Reflexive_Philosophical_Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md) → Judgment Transparency Topology → Historical Attestation
+- 正しさ・形式化：[`Correctness_Logic_and_Structural_Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+- 表現・創作接触：[`Questions, Boundaries, and Peace`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md)
+- 物理近接研究：Physics Correspondence Policy → Physical Cosmological Notes
+- 公開・通約規則：Glossary → Publication and Commensuration Policy → Term Collision Registries
+
+---
+
+## 17. 保守原則
+
+System Mapは、個別文書を追加するたびに完全な一覧を書き換えるための文書ではない。
+
+更新が必要なのは、主として次の場合である。
 
 - ディレクトリの構造的責務が変わる。
 - 公開入口または読解経路が変わる。
-- 新しい研究領域が独立ディレクトリになる。
-- 統治文書または機械可読メタファイルの配置が変わる。
-- 公開境界または`.gitignore`の公開許可構造が変わる。
+- 新しい研究線・応用面・外部接触面が独立した責務を持つ。
+- governance、machine-readable metadata、Navigatorの責務が変わる。
+- public/private boundaryまたはrelease packagingの規則が変わる。
 
-個別ファイルの追加・削除は、各README、manifest、Release Notesで管理する。
+個別ファイルの追加・削除は各README、`docs_manifest.yml`、generated read model、Release Notesで管理する。
 
 ただし、全体運用方針、新しい横断研究線、公開入口の変更が生じた場合は、ルートREADME、Roadmap、`00_Overview/README.md`、Concept Network、System Map、Glossary、Research Notes Indexを一つの構造更新単位としてレビューする。
 
 ---
 
 # English Commensurated Version
+
 
 ## 0. Role of This System Map
 
@@ -619,347 +456,194 @@ return of residuals, objections, and implementation results
 
 ## 2. Overall Repository Architecture
 
-The public repository is divided into four broad regions.
+The public repository is currently most stable when read as five regions.
 
 | Region | Main location | Responsibility |
 |---|---|---|
-| Public entrance | Root and `00_Overview` | General orientation, reading routes, concept maps, Roadmap, and Glossary |
-| Theory and application body | `01`–`06` | Foundational structure, communicative content, protocols, applications, research notes, and visual materials |
-| Repository governance | `90_Repository_Governance`, `tools`, `scripts`, and `.github` | Commensuration, terminology collision, format, document relations, and validation |
-| Public boundary | `99_Private_Core_Not_Included` and `.gitignore` | Boundary marking excluded and private materials |
+| Public entrance | root, `00_Overview` | whole-system explanation, concept maps, operational orientation, Roadmap, Glossary, reading routes |
+| Core, application, and research body | `01`–`06` | three core layers, applications, research notes, visual materials |
+| Outward contact and expressive experiments | `07_Creative_Offshoots` | observing contact and residuals in literature, creative work, comparative worldmaking, and related forms outside definition ownership |
+| Repository governance | `90_Repository_Governance`, `tools`, `scripts`, `.github`, `navigator` | commensuration, terminology collision, document contracts, registration, validation, public projection |
+| Public boundary | `99_Private_Core_Not_Included`, `.gitignore` | marking the boundary against non-public material, working drafts, and excluded artifacts |
+
+`navigator` is a projection surface for reading public documents; it does not own conceptual definitions or registration decisions. Current machine-readable document identity, authoritative/commensurated relations, concept ownership, and imports / exports / returns are governed through [`tools/docs_manifest.yml`](../tools/docs_manifest.yml).
 
 ---
 
 ## 3. Public Repository Structure
 
-The following tree represents the public structure and excludes `000*` working drafts, local environments, caches, generated validation output, and maintenance notes excluded through `.gitignore`.
+The System Map is not a frozen file-by-file inventory. It shows **which region performs which responsibility and where its results return**. Exact document inventory is delegated to the manifest and directory READMEs; this map keeps only the more stable topology.
 
 ```text
 .
-├─ README.md
-├─ GLOSSARY.md
-├─ Roadmap.md
-├─ RELEASE_NOTES.md
-├─ CITATION.md
-├─ CITATION.cff
-├─ LICENSE.md
-├─ .zenodo.json
-├─ .gitattributes
-├─ .gitignore
-├─ requirements-public-check.txt
+├─ README.md / GLOSSARY.md / Roadmap.md / RELEASE_NOTES.md
+├─ CITATION.md / CITATION.cff / LICENSE.md / .zenodo.json
 │
 ├─ 00_Overview/
-│  ├─ README.md
-│  ├─ Scientific_Ontology_Operational_Outline.ja.md
-│  ├─ Scientific_Ontology_Operational_Outline.en.md
-│  ├─ Scientific_Ontology_System_Map.md
-│  ├─ Scientific_Ontology_Concept_Network.ja.md
-│  ├─ Scientific_Ontology_Concept_Network.en.md
-│  ├─ Truth_Management_and_Boundary_PDCA.ja.md
-│  ├─ Truth_Management_and_Boundary_PDCA.en.md
-│  ├─ Claim_Strength_and_Publication_Layer_Table.ja.md
-│  ├─ Claim_Strength_and_Publication_Layer_Table.en.md
-│  ├─ Physics_Correspondence_Policy.ja.md
-│  └─ Physics_Correspondence_Policy.en.md
+│  ├─ Operational Outline
+│  ├─ Concept Network
+│  ├─ System Map
+│  ├─ Truth Management and Boundary PDCA
+│  ├─ Claim Strength and Publication-Layer Table
+│  └─ Physics Correspondence Policy
 │
-├─ 01_Sat_Truth/
-│  ├─ README.md
-│  ├─ AMP_Introduction.md
-│  ├─ Four_Axioms_of_Existence.md
-│  ├─ Meaning_Generation_Model.md
-│  ├─ Boundary_Realism_Principle.md
-│  ├─ Boundary_Epistemological_Critique.ja.md
-│  ├─ Boundary_Epistemological_Critique.en.md
-│  ├─ Boundary_Epistemological_Critique_Annotations.ja.md
-│  └─ Boundary_Epistemological_Critique_Annotations.en.md
-│
-├─ 02_Raj_Beauty/
-│  ├─ README.md
-│  ├─ HFC_Introduction.md
-│  ├─ History_Field_Topology.md
-│  ├─ Scientific_Ontology_and_Science.md
-│  ├─ Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md
-│  └─ Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md
-│
-├─ 03_Tam_Goodness/
-│  ├─ README.md
-│  ├─ Boundary_Ethics_Model.md
-│  ├─ Meaning_as_Return_Orbit.md
-│  ├─ Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md
-│  └─ Optional_Axiom_Modules_as_Cognitive_Bridge.en.md
+├─ 01_Sat_Truth/                 # conditions of formation, existence, meaning, reality
+├─ 02_Raj_Beauty/               # history, difference, cognitive formation, communication
+├─ 03_Tam_Goodness/             # return, responsibility, ethics, conditional connection
 │
 ├─ 04_Applications/
-│  ├─ README.md
 │  ├─ AI_Adaptation/
-│  │  ├─ README.md
-│  │  ├─ Application_Boundary_Theory_Core.md
-│  │  ├─ AI_Usefulness_as_a_Boundary_Function.md
-│  │  ├─ AI_Boundary_Interface_and_Synchronous_Understanding.md
-│  │  └─ AI_Personality_as_Response_Structure.md
 │  ├─ Social_Boundary_Design/
-│  │  ├─ README.md
-│  │  ├─ AI_Adoption_Collation_Checklist.md
-│  │  ├─ Specification_for_Peace.ja.md
-│  │  └─ Specification_for_Peace.en.md
-|  `- SO_Reflexive_Philosophical_Research/
-|     |- README.md
-|     |- 00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md
-|     |- 01_PHILOSOPHICAL_RESEARCH_QUESTIONS.ja.md
-|     `- volumes/
-|        `- Volume_01_SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/
-|           |- README.md
-|           |- 01_CHRONICLE.ja.md
-|           |- 02_TRANSMISSIONS.ja.md
-|           |- 03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md
-|           `- evidence/
+│  └─ SO_Reflexive_Philosophical_Research/
+│     ├─ research context / open questions (ja + en)
+│     ├─ sources/README.md
+│     │    # public: source identity / hash / provenance / role
+│     │    # exact historical bytes are not included in the public repository
+│     └─ volumes/Volume_01_DeRegistry_to_Judgment_Transparency/
+│          # timeline / chronicle / transmissions / topology
+│          # evidence map / residuals / digest
+│          # historical attestation / current attested checksum / evidence
 │
 ├─ 05_Research_Notes/
-│  ├─ README.md
-│  ├─ Research_Notes_Index.md
-│  ├─ Cognitive_Dynamics_Communication_Studies/
-│  │  ├─ README.md
-│  │  ├─ Cognitive_Dynamics_Communication_Model.ja.md
-│  │  ├─ Cognitive_Dynamics_Communication_Model.en.md
-│  │  ├─ Compression_of_Existence_Phases.ja.md
-│  │  ├─ Compression_of_Existence_Phases.en.md
-│  │  ├─ Boundary_Diplomacy_and_Port_Allocation.ja.md
-│  │  ├─ Boundary_Diplomacy_and_Port_Allocation.en.md
-│  │  ├─ Organizational_Boundary_and_Port_Model.ja.md
-│  │  └─ Organizational_Boundary_and_Port_Model.en.md
-│  ├─ Cross_Domain_Ontological_Notes/
-│  │  ├─ README.md
-│  │  ├─ Asymmetry_Stabilization_and_ReCollation.ja.md
-│  │  ├─ Asymmetry_Stabilization_and_ReCollation.en.md
-│  │  ├─ Return_Ethics_and_Retaliation_Conversion.ja.md
-│  │  ├─ Return_Ethics_and_Retaliation_Conversion.en.md
-│  │  ├─ Narrative_Truth_and_Structural_Reading.ja.md
-│  │  ├─ Narrative_Truth_and_Structural_Reading.en.md
-│  │  ├─ Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md
-│  │  └─ Consent_Boundary_and_Sentence_Bit_Asymmetry.en.md
 │  ├─ Language_Meaning_and_Communication_Phase_Studies/
-│  │  ├─ README.md
-│  │  ├─ Grammar_as_a_Meaning_Pressure_Channel.ja.md / .en.md
-│  │  ├─ Meaning_as_Collation_and_Return_Path.ja.md / .en.md
-│  │  ├─ Compressed_Experience_Qualia_and_Literature.ja.md / .en.md
-│  │  ├─ AI_Language_Generation_and_Grammatical_Frames.ja.md / .en.md
-│  │  ├─ Speech_as_Sequential_Decompression.ja.md / .en.md
-│  │  ├─ Intension_Extension_and_False_Extension.ja.md / .en.md
-│  │  ├─ Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md / .en.md
-│  │  ├─ Commensuration_as_Cross_Grammatical_Collation.ja.md / .en.md
-│  │  ├─ Linguistic_Frame_Differences_between_Japanese_and_English.ja.md / .en.md
-│  │  └─ Return_Intake_Log.ja.md / .en.md
+│  ├─ Cognitive_Dynamics_Communication_Studies/
+│  ├─ Correctness_Logic_and_Structural_Studies/
+│  ├─ Cross_Domain_Ontological_Notes/
 │  ├─ Physical_Cosmological_Notes/
-│  │  ├─ README.md
-│  │  ├─ Intrinsic_Time_Standard_Model_Correspondence.ja.md
-│  │  ├─ Intrinsic_Time_Standard_Model_Correspondence.en.md
-│  │  ├─ Ontological_History_of_the_Universe.ja.md
-│  │  ├─ Ontological_History_of_the_Universe.en.md
-│  │  ├─ Cosmological_Topological_Dynamics.ja.md
-│  │  ├─ Cosmological_Topological_Dynamics.en.md
-│  │  ├─ PINGER_Hypothesis_and_History_Field_Topology.ja.md
-│  │  ├─ PINGER_Hypothesis_and_History_Field_Topology.en.md
-│  │  ├─ Chaos_Theory_and_Logical_Depth_Axis.ja.md
-│  │  └─ Chaos_Theory_and_Logical_Depth_Axis.en.md
 │  ├─ Social_Boundary_Notes/
-│  │  ├─ README.md
-│  │  ├─ AI_Adoption_as_Synchronization_Closure.md
-│  │  ├─ DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md
-│  │  ├─ DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.en.md
-│  │  ├─ Negentropy_Economy_Principles.ja.md
-│  │  ├─ Negentropy_Economy_Principles.en.md
-│  │  ├─ Negentropy_Economy_and_Meaning_Generation.ja.md
-│  │  └─ Negentropy_Economy_and_Meaning_Generation.en.md
 │  ├─ AI_Personality_Notes/
-│  │  ├─ README.md
-│  │  ├─ History_Loop_Radius_and_Return_Stability.md
-│  │  └─ Logical_Sandbox_and_Negentropy_Model.md
 │  └─ Literary_Ontological_Notes/
-│     ├─ README.md
-│     ├─ reading-blue-light.ja.md
-│     ├─ reading-blue-light.en.md
-│     ├─ Meifu_Bureau_Reincarnation_and_Belief_Gravity.md
-│     ├─ Literature_as_Worldmaking.ja.md
-│     └─ Literature_as_Worldmaking.en.md
 │
 ├─ 06_Visual_Materials/
-│  ├─ README.md
-│  ├─ Scientific_Ontology_Conceptual_Poster.ja.png
-│  ├─ Scientific_Ontology_Conceptual_Poster.en.png
-│  └─ Scientific_Ontology_Conceptual_Poster_Note.md
+│
+├─ 07_Creative_Offshoots/
+│  └─ Literary_Essays/
 │
 ├─ 90_Repository_Governance/
-│  ├─ README.md
-│  ├─ Publication_and_Commensuration_Policy.md
-│  ├─ Translation_Note.md
-│  ├─ Release_Update/
-│  │  ├─ UPDATE_PACK.md
-│  │  ├─ release_state.yml
-│  │  ├─ release_update.py
-│  │  └─ requirements.txt
-│  └─ Terminology/
-│     ├─ README.md
-│     ├─ Scientific_Terminology_Protocol.md
-│     ├─ TERM_COLLISION_REGISTRY.ja.md
-│     └─ TERM_COLLISION_REGISTRY.en.md
+│  ├─ Publication and Commensuration Policy
+│  ├─ Translation Note
+│  ├─ Terminology/
+│  ├─ Assessment/                 # candidate protocol; not automatic public authority
+│  └─ Release_Update/
 │
 ├─ 99_Private_Core_Not_Included/
-│  └─ README.md
 │
-├─ tools/
-│  ├─ Public_Format_Registry.yml
-│  ├─ docs_manifest.yml
-│  ├─ maintenance_rules.yml
-│  └─ CHECKER_USAGE.md
-├─ scripts/
-│  └─ check_public_format.py
-└─ .github/workflows/
-   └─ public-format-check.yml
+├─ navigator/                     # public/developer projection surface
+├─ tools/                         # manifest / registry / maintenance / generated read models
+├─ scripts/                       # validators / builders / release helpers
+└─ .github/workflows/             # automated checks and deployment
 ```
+
+The absence of an individual document from this diagram does not mean that it is excluded from publication. Current document state is collated through the manifest, layer READMEs, and Navigator read models. Conversely, being named in this System Map does not by itself grant definition ownership or registration status.
 
 ---
 
 ## 4. Role of Root-Level Files
 
-The repository root is not the primary location of theoretical documents. It is the public interface through which readers enter the repository as a whole.
+The root is a public interface into the repository rather than a location for substantive theory documents.
 
 | Document | Responsibility |
 |---|---|
-| [`README.md`](../README.md) | Entry point for new readers, the system's central research movement, and purpose-specific reading routes |
-| [`GLOSSARY.md`](../GLOSSARY.md) | Human-readable interface for canonical terms, English commensurations, conceptual lineage, and Public definition owners |
-| [`Roadmap.md`](../Roadmap.md) | Research dynamics, current position, and future falsification and implementation tasks |
-| [`RELEASE_NOTES.md`](../RELEASE_NOTES.md) | Version-specific change record |
-| [`CITATION.md`](../CITATION.md) / [`CITATION.cff`](../CITATION.cff) | Human-readable and machine-readable citation information |
-| [`LICENSE.md`](../LICENSE.md) | Terms of use |
+| [`README.md`](../README.md) | first public entrance, whole-system summary, purpose-specific reading routes |
+| [`GLOSSARY.md`](../GLOSSARY.md) | human-readable interface for standard terms, English commensuration, conceptual lineage, and public definition ownership |
+| [`Roadmap.md`](../Roadmap.md) | research dynamics, current position, next falsification and implementation tasks |
+| [`RELEASE_NOTES.md`](../RELEASE_NOTES.md) | release-by-release change record |
+| [`CITATION.md`](../CITATION.md) / [`CITATION.cff`](../CITATION.cff) | human-readable and machine-readable citation information |
+| [`LICENSE.md`](../LICENSE.md) | terms of use |
 | [`.zenodo.json`](../.zenodo.json) | Zenodo metadata |
 
-The Glossary is also a governance document, but it remains at the root because it is a highly discoverable cross-repository entrance to the public conceptual vocabulary.
+The Glossary is also a governance document, but remains at the root because it is a high-discoverability cross-system entrance. The README, Release Notes, and citation files are release-facing surfaces and should receive their final synchronization after internal structural alignment has stabilized.
 
 ---
 
 ## 5. `00_Overview` — Map of the Public System and Research Dynamics
 
-`00_Overview` explains how the current public system should be read before readers enter the main theoretical body.
+`00_Overview` is not a superior theory that overwrites local concept owners. It shows responsibilities, connections, reading order, claim strength, and operational orientation across existing documents.
 
-Its central responsibilities are to:
+Its primary responsibilities are:
 
-- provide an entrance to the conceptual system;
-- map the repository structure;
-- show research dynamics and purpose-return cycles;
-- govern claim strength, publication layer, and uncertainty; and
-- state the conditions under which physics-adjacent vocabulary is used.
+- Operational Outline: boundary events, action, return, responsibility partition, and mobility.
+- Concept Network: cross-owner relations, reading routes, and return paths.
+- System Map: repository and publication architecture.
+- Truth Management: purpose, sharing, world formation, and Boundary CA.
+- Claim Strength Table: claim strength, publication layer, and validation responsibility.
+- Physics Correspondence Policy: conditions and safeguards for contact with physics-adjacent vocabulary.
 
-Principal documents include:
-
-- [`Scientific_Ontology_Concept_Network.en.md`](./Scientific_Ontology_Concept_Network.en.md): concept placement, reading routes, definition ownership, return paths, and aporia entry points.
-- [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md): architecture of the repository and conceptual layers.
-- [`Truth_Management_and_Boundary_PDCA.en.md`](./Truth_Management_and_Boundary_PDCA.en.md): research and operational cycles through First Purpose, sharing, world formation, and Boundary PDCA.
-- [`Claim_Strength_and_Publication_Layer_Table.en.md`](./Claim_Strength_and_Publication_Layer_Table.en.md): claim strength, evidence strength, uncertainty, and publication-layer governance.
-- [`Physics_Correspondence_Policy.en.md`](./Physics_Correspondence_Policy.en.md): policy governing the non-identity between physics-adjacent vocabulary and standard physics.
-
-`00_Overview` is not merely metadata. It serves as the higher-order reading surface that shows how foundational concepts expand into cognition, research dynamics, and implementation.
+When `04_Applications/SO_Reflexive_Philosophical_Research`, `05_Research_Notes/Correctness_Logic_and_Structural_Studies`, or `07_Creative_Offshoots` becomes structurally active, Overview documents should update the connections and return paths rather than redefining the local material.
 
 ---
 
 ## 6. `01`–`03` — Structural Responsibilities of the Three Core Layers
 
-`01_Sat_Truth`, `02_Raj_Beauty`, and `03_Tam_Goodness` are not primarily topical folders. They have distinct responsibilities within a communication architecture.
+The three layers are not fixed academic compartments. They are major axes for reading the same problem through different phases.
 
-| Layer | Role in the communication structure | Role foregrounded in the public system | Why these documents tend to be placed here |
-|---|---|---|---|
-| `01_Sat_Truth` | Network structure and conditions of formation | Critique of boundary cognition | It addresses metaphysics, axioms, and the conditions under which existence, observation, meaning, and knowledge become possible |
-| `02_Raj_Beauty` | Communicative content, event-flow, reception, and modes of reading | Formation of boundary cognition | It addresses history, difference, attention, abstraction, synchronization, and the formation of cognitive axes |
-| `03_Tam_Goodness` | Communication protocols, governance, closure, reopening, and return | Operation of boundary cognition | It addresses ethics, commensuration, suspension, prevention of false closure, and non-destructive governance |
+### 6.1 `01_Sat_Truth` — Conditions of Formation and Reality
 
-### 6.1 `01_Sat_Truth` — Network Structure and Conditions of Formation
+This layer addresses existence, observation, meaning, Boundary Realism, and epistemological critique: what may be treated as a starting condition and under what limits.
 
-This layer addresses the structure within which contact, observation, meaning, and knowledge can occur, prior to asking what content flows through that structure.
+### 6.2 `02_Raj_Beauty` — History, Difference, and Cognitive Formation
 
-It does not merely foreground metaphysical roots. Through Boundary Realism and Boundary Epistemological Critique, it moves public description toward boundary conditions that can be observed, challenged, and compared.
+This layer addresses history-fields, communication, difference, cognitive-axis formation, and contact with science: how relations move and acquire form.
 
-### 6.2 `02_Raj_Beauty` — Communicative Content and the Formation of Reading
+### 6.3 `03_Tam_Goodness` — Return, Responsibility, and Conditional Connection
 
-This layer addresses histories, differences, meaning pressure, synchronization and asynchrony, and the ways in which these are received and stabilized as directions of cognition.
+This layer addresses boundary ethics, meaning as return orbit, and conditional connection among different cognitive forms: what must be returned after contact and how connection can continue without destructive identification.
 
-`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation` describes how cognitive axes are formed, stabilized, and transformed after boundary critique has exposed the conditions of cognition.
-
-### 6.3 `03_Tam_Goodness` — Communication Protocols and Governance
-
-This layer addresses not only whether communicative content is correct, but also what may be admitted, suspended, closed, reopened, transformed, and returned.
-
-`Optional_Axiom_Modules_as_Cognitive_Bridge` provides an operational structure for comparing, commensurating, and conditionally connecting distinct cognitive forms without forcing identity or total severance.
+`Optional_Axiom_Modules_as_Cognitive_Bridge` is the public bridge document. Historical source identity, hash, and research role may remain public, but exact source bytes withdrawn from the public repository are not reintroduced as an invisible definition authority.
 
 ---
 
 ## 7. `04_Applications` — Public Application Interfaces
 
-`04_Applications` connects the concepts of the three core layers to publicly usable design principles, evaluation frames, checklists, and specifications.
+`04_Applications` connects the three core layers to publicly usable design ideas, evaluation frames, checklists, specifications, and reflexive audit.
 
 ### `AI_Adaptation`
 
-This area treats AI not as a substitute decision-maker, but as a boundary interface that preserves the possibility of human judgment.
-
-Its principal concerns include:
-
-- AI usefulness;
-- AI boundary interfaces;
-- AI personality as response structure; and
-- application-boundary theory.
+This area treats AI not as a fixed substitute for human judgment but as an application surface for preserving conditions of judgment, history, boundaries, and return paths.
 
 ### `Social_Boundary_Design`
 
-This area addresses the boundaries, responsibilities, collation procedures, and peace conditions of the social systems that adopt AI and other institutional technologies.
-
-Its principal concerns include:
-
-- AI adoption collation checklists;
-- responsibility boundaries and re-collatability; and
-- peace protocols and peace specifications.
+This area addresses responsibility boundaries, re-collatability, and peace conditions on the social side of AI and institutional adoption.
 
 ### `SO_Reflexive_Philosophical_Research`
 
-This area preserves the experiment-backed development from De-Registry to judgment transparency, topology-first auditing, and three-layer transformation auditing. It exposes failed runs and self-audit results as a reusable public application interface rather than rewriting them as a linear success story.
+This is the recursive application surface through which SO returns the same boundary audit to **its own research judgments, classifications, and publication decisions**.
 
-This layer does not include implementation code, product specifications, legal advice, or private operational procedures for particular organizations.
+Volume I preserves the methodological history from De-Registry to judgment transparency, topology-first auditing, and three-layer transformation auditing without rewriting it as a linear success story. Historical checksums remain records of their period, while a separate attestation records present acceptance. For the old source, identity, historical filename, SHA-256, provenance, and experimental role may remain public; exact bytes are retained privately and are not included in the public repository.
+
+**Judgment Transparency** does not guarantee correctness. It means keeping contacts, phases, paths, return paths, and open ends reconstructable so that objection, reassessment, and correction can reach the actual points of change.
 
 ---
 
-## 8. `05_Research_Notes` — Retaining Stronger Propositions under Explicit Boundary Conditions
+## 8. `05_Research_Notes` — Stronger Propositions and Developing Research Lines
 
-`05_Research_Notes` retains research lines whose claim strength or misreading risk is too high for direct placement in the public foundational layers, but which should not be discarded.
+`05_Research_Notes` retains lines whose claim strength, specialist dependence, misreading risk, or maturity is not yet stable enough for direct placement in the public foundational layers, while preserving return paths for continued work.
 
-### `Language_Meaning_and_Communication_Phase_Studies`
+### 8.1 `Language_Meaning_and_Communication_Phase_Studies`
 
-A cross-cutting research line treating language, meaning, grammar, speech, commensuration, semantic networks, and AI language generation as communication phases with return paths. In the v5 series it is the first line to operate explicitly as a living-canonical research surface with change history and Return Intake.
+A cross-cutting line treating language, meaning, grammar, speech, commensuration, semantic networks, and AI language generation as communication phases with return paths. It does not replace the Meaning Generation Model and owns only local linguistic questions.
 
-It does not replace the Meaning Generation Model. It owns only local linguistic-meaning questions and returns residuals to meaning, HFC, epistemology, and AI application documents.
+### 8.2 `Cognitive_Dynamics_Communication_Studies`
 
-### `Cognitive_Dynamics_Communication_Studies`
+This line studies the relation between communicatively continuous cognition and the practical discretization into phases, ports, capacities, and responsibilities, connecting cognition to organizational boundaries, boundary diplomacy, and peace specification.
 
-This area examines how cognition can be communicatively seamless while practical operation requires discretization into phases, ports, capacities, and responsibilities.
+### 8.3 `Correctness_Logic_and_Structural_Studies`
 
-It connects cognitive dynamics to organizational boundaries, responsibility boundaries, boundary diplomacy, and peace specifications.
+This line asks how correctness, logic, structural representation, closure, redundancy, frontiers, cognitive axes, and finite-resource computation can be commensurated into formal or computational representations **without redefining existing SO concepts**.
 
-### `Cross_Domain_Ontological_Notes`
+At present its README is the research entrance. Formalization candidates including `Spine` are not canonical definitions. Even when a formalization proves useful, conditions or residuals lost in the mapping must be returned to the original concept owners.
 
-This area contains cross-domain ontological readings of asymmetry, return ethics, retaliation conversion, narrative truth, and the consent boundary under sentence/bit asymmetry.
+### 8.4 Other Research Lines
 
-### `Physical_Cosmological_Notes`
+- `Cross_Domain_Ontological_Notes`: asymmetry, return ethics, narrative, consent boundaries, and other cross-domain readings.
+- `Physical_Cosmological_Notes`: higher-claim-strength physics- and cosmology-adjacent hypotheses and correspondence candidates.
+- `Social_Boundary_Notes`: AI adoption, social boundaries, value circulation, and DSSI-related research.
+- `AI_Personality_Notes`: AI personality, history loops, return stability, and logical sandboxes.
+- `Literary_Ontological_Notes`: literature read as worldmaking, history, belief, and boundary rather than empirical proof.
 
-This area contains higher-claim-strength, physics- and cosmology-adjacent hypotheses involving intrinsic time, cosmic history, the PINGER hypothesis, chaos theory, and the Logical-Depth Axis.
+DSSI implementation code is not bundled in the SO repository. Results returned from the externally released ConnectBits / DSSI implementation are treated on the SO side as research input about observation, responsibility, and return paths, not as proof of the theory.
 
-### `Social_Boundary_Notes`
-
-This area contains research notes on AI adoption, negentropy economy, meaning generation, social boundaries, and DSSI research on observation, judgment sovereignty, and responsibility return. The DSSI application itself is not included in v5.0.
-
-### `AI_Personality_Notes`
-
-This area treats AI personality, history loops, return stability, and logical sandboxes as research-note subjects.
-
-### `Literary_Ontological_Notes`
-
-This area does not use literature as empirical proof. It uses ontological reading to examine boundaries, history, meaning, belief gravity, and literature as worldmaking.
-
-For document-level details, see [`Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md).
+See [`Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md) for document-level detail.
 
 ---
 
@@ -967,138 +651,134 @@ For document-level details, see [`Research_Notes_Index.md`](../05_Research_Notes
 
 This area contains conceptual posters and reading notes.
 
-Visual materials are not substitutes for theoretical documents, empirical evidence, or formal proof. They are supplementary interfaces that provide multiple points of entry into the conceptual system.
+Visual materials are not substitutes for theoretical documents, empirical evidence, or formal proof. They provide supplementary points of entry into the conceptual system.
 
 ---
 
-## 10. `90_Repository_Governance` — Repository Governance
+## 10. `07_Creative_Offshoots` — Outward Contact and Expressive Experiments
 
-This area contains governance documents rather than research-body documents. It governs publication, commensuration, terminology, concept ownership, and collision management.
+`07_Creative_Offshoots` is not a new definition owner for core concepts. It observes what becomes visible, what is lost, and which residuals return when SO's public concepts contact external vocabularies, forms, and sensibilities through literature, creative work, comparative worldmaking, and related expression.
 
-| Document | Responsibility |
+`Literary_Essays` is currently present as the public contact surface. A formal README, publication boundary, and return protocol for this layer will be settled in the next structural pass. This System Map therefore makes the existence and function of 07 visible without pre-empting authority that has not yet been assigned.
+
+---
+
+## 11. `90_Repository_Governance` — Repository Governance
+
+This region contains governance rather than substantive research. It governs publication, commensuration, terminology, concept ownership, assessment, and release alignment.
+
+| Document or area | Responsibility |
 |---|---|
-| [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md) | Authoritative-language relations, preservation contract, language formats, concept ownership, and lineage |
-| [`Translation_Note.md`](../90_Repository_Governance/Translation_Note.md) | Recurring cross-document English commensuration decisions |
-| [`Scientific_Terminology_Protocol.md`](../90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md) | Operational protocol for scientific vocabulary, SO definitions, standard definitions, and limiting conditions |
-| [`TERM_COLLISION_REGISTRY.ja.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md) | Collision surfaces involving Japanese authoritative terms |
-| [`TERM_COLLISION_REGISTRY.en.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.en.md) | Collision surfaces involving English commensurated terms |
+| [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md) | authoritative-language relations, preservation contract, language formats, concept ownership, lineage |
+| [`Translation_Note.md`](../90_Repository_Governance/Translation_Note.md) | recurring cross-document English commensuration decisions |
+| [`Scientific_Terminology_Protocol.md`](../90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md) | contact protocol between scientific vocabulary and SO-internal vocabulary |
+| `Terminology/TERM_COLLISION_REGISTRY.*` | collision surfaces and misreading candidates in established vocabulary |
+| [`Repository_Assessment_Commensuration_and_Navigator_Design.ja.md`](../90_Repository_Governance/Repository_Assessment_Commensuration_and_Navigator_Design.ja.md) | governance design record connecting assessment, commensuration, and Navigator |
+| [`Assessment/Repository_Assessment_Protocol.ja.md`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md) | candidate repository-assessment protocol; candidacy does not automatically grant public conceptual authority |
+| `Release_Update/` | centralized release facts and synchronization of release-facing metadata |
 
-Their responsibilities are separated as follows.
+`GLOSSARY.md` gives a human-readable view of current standard terms and public definition ownership; `docs_manifest.yml` gives a machine-readable view of document contracts. A disagreement between them is itself a collation target rather than a reason to silently treat either representation as infallible.
+
+---
+
+## 12. `tools`, `scripts`, `.github`, and `navigator` — Machine-Readable Governance and Public Projection
+
+| Area | Responsibility |
+|---|---|
+| [`tools/Public_Format_Registry.yml`](../tools/Public_Format_Registry.yml) | document types, metadata, language formats, public-validation structure |
+| [`tools/docs_manifest.yml`](../tools/docs_manifest.yml) | inventory, authoritative/commensurated relations, concept ownership, imports / exports / returns / delegations |
+| [`tools/maintenance_rules.yml`](../tools/maintenance_rules.yml) | terminology replacement, collision prevention, publication boundaries, warning conditions |
+| `tools/docs_index.json` / `docs_graph.json` / public projections | generated read models derived from governance sources |
+| [`scripts/check_public_format.py`](../scripts/check_public_format.py) | pre-publication validation of Markdown, links, metadata, and document relations |
+| `scripts/validate_docs_manifest.py` / contract / Navigator checks | regression checks for manifest contracts, document contracts, and UI projection |
+| `.github/workflows/` | automated checks and deployment on repository events |
+| `navigator/` | Public / Developer reader projection; not an authority for definition ownership or registration approval |
+
+Generated read models and Navigator make the public system easier to inspect. Presentation convenience must not be allowed to flow backward into theoretical authority.
+
+---
+
+## 13. `99_Private_Core_Not_Included` — Marker of the Private Boundary
+
+This directory is not a place for explaining non-public core material.
+
+It marks both that non-public source bodies, private runtimes, personality-core material, internal evaluation, and detailed implementation or operational parameters may exist, and that the public system must not require readers to accept invisible authority derived from them.
+
+Detailed private titles, paths, correspondence tables, or indexes should not accumulate here.
+
+---
+
+## 14. Research Dynamics and Return Paths
+
+This system is not a one-way hierarchy applied from top to bottom.
 
 ```text
-GLOSSARY.md
-  current canonical vocabulary and human-readable conceptual lineage
-
-Publication and Commensuration Policy
-  principles governing authoritative texts, commensuration, ownership, and public boundaries
-
-Term Collision Registries
-  collision surfaces and likely misreadings in established vocabulary
-
-Translation Note
-  recurring commensuration decisions
-
-tools/*.yml
-  machine-readable format, relationship, and maintenance rules
+01–03  three core layers
+  ↓
+04     public applications and reflexive audit
+  ↓
+05     developing research and formalization candidates
+  ↓
+06     visual public entrance
+  ↓
+07     contact with external expression and creative work
+  ↓
+implementation results / criticism / misreading / residuals / objections
+  ↓
+00     Concept Network / Truth Management / System Map
+  ↓
+return to canonical owners, applications, and research lines
 ```
 
----
+A return path does not exist only to assimilate lower-layer results into a higher theory. Deciding not to change an existing definition, retaining a result as a local hypothesis, or keeping material outside the public layer are also legitimate outcomes of return.
 
-### Release Update
-
-`90_Repository_Governance/Release_Update` centralizes release facts in `release_state.yml`. `release_update.py` synchronizes `RELEASE_NOTES.md`, `CITATION.cff`, `CITATION.md`, and `.zenodo.json`. It does not generate the substantive meaning of the README, Roadmap, Concept Network, System Map, or Glossary; those remain human-owned structural documents.
-
-## 11. `tools`, `scripts`, and `.github` — Machine-Readable Governance and Validation
-
-| File | Responsibility |
-|---|---|
-| [`tools/Public_Format_Registry.yml`](../tools/Public_Format_Registry.yml) | Document types, metadata, language formats, and public-validation structure |
-| [`tools/docs_manifest.yml`](../tools/docs_manifest.yml) | Document inventory, concept ownership, imports, exports, tests, returns, and delegations |
-| [`tools/maintenance_rules.yml`](../tools/maintenance_rules.yml) | Terminology replacement, conflict prevention, publication boundaries, and warning conditions |
-| [`scripts/check_public_format.py`](../scripts/check_public_format.py) | Pre-publication validation of Markdown, links, metadata, and document relations |
-| [`.github/workflows/public-format-check.yml`](../.github/workflows/public-format-check.yml) | Automated validation on pushes and pull requests |
-
-Machine-readable files do not replace theoretical documents. If prose and machine-readable records diverge, the divergence itself becomes an object of collation.
+SO Reflexive Philosophical Research applies the return path to SO's own judgments. Correctness / Logic / Structural Studies returns points where formalization loses conditions present in the original concepts. Creative Offshoots returns visibility, misreading, creative transformation, and residuals produced when concepts leave their definition-owning contexts.
 
 ---
 
-## 12. `99_Private_Core_Not_Included` — Marker of the Private Boundary
+## 15. Public Exclusion Rules
 
-This directory is not a place for explaining the private core.
+Public releases exclude at least the following under `.gitignore` and related boundary rules:
 
-It marks that the public repository does not include the full AMP Core, the full ITS Theory, private runtimes, personality cores, internal evaluation, or detailed implementation and operational parameters.
-
-It must not accumulate titles, paths, correspondence tables, or indexes of private materials.
-
----
-
-## 13. Research Dynamics and Return Paths
-
-This system is not a hierarchy applied in only one direction from top to bottom.
-
-```text
-01 structure and conditions of formation
-  ↓
-02 difference, history, and cognitive direction
-  ↓
-03 protocols, ethics, commensuration, and governance
-  ↓
-04 public applications
-  ↓
-05 stronger and cross-domain research
-  ↓
-implementation results, criticism, and residuals
-  ↓
-00 concept network and Truth Management
-  ↓
-return to canonical owner documents in 01–03
-```
-
-Research dynamics is the movement through which inquiry descends into the grounds of cognition and thereby expands what can be described, compared, implemented, and re-collated at the public surface.
-
-Ethics is not an external application added after the theory. The need to make contact without destruction, stop without total severance, and communicate across difference without forced identity drives higher-resolution descriptions of cognition, ports, responsibility, and organization.
-
----
-
-## 14. Public Exclusion Rules
-
-Under `.gitignore`, the public structure excludes:
-
-- draft and work files whose basename begins with `000`;
-- `.venv/`, `venv/`, and other local virtual environments;
+- drafts and working files whose basename begins with `000`;
+- `.venv/`, `venv/`, and other local environments;
 - `__pycache__/`, `*.pyc`, and other caches;
-- `public_format_report.md` and `public_format_report.json`;
-- local IDE, OS, temporary, and backup files;
-- checker-extension and YAML-refactoring work notes; and
-- private cores, internal logs, and detailed implementation or operational materials.
+- checker output and local IDE / OS / temporary / backup files;
+- private source bodies, internal logs, non-public core material, and detailed operational material; and
+- private-bearing pre-withdrawal snapshots and Git backups.
 
-A `000*` file may temporarily appear in a working ZIP, but it is not part of the publicly tracked repository or release archive.
+Presence in a working ZIP, local preservation, and inclusion in a public release are different states. Publication is determined through the manifest, ignore rules, release packaging, and human review together.
 
 ---
 
-## 15. Reading Entrances
+## 16. Reading Entrances
 
 Purpose-specific entrances are as follows.
 
-- For a rapid overview: [`README.md`](../README.md) → [`Scientific_Ontology_Concept_Network.en.md`](./Scientific_Ontology_Concept_Network.en.md)
-- For foundational concepts: [`Four_Axioms_of_Existence.md`](../01_Sat_Truth/Four_Axioms_of_Existence.md) → [`Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md)
-- For boundary cognition: Boundary Epistemological Critique → Cognitive Axis Formation → Optional Axiom Modules → Truth Management
-- For ethics, organization, and peace: Cognitive Dynamics → Port Allocation → Organizational Boundary → Specification for Peace
-- For physics-adjacent research: Physics Correspondence Policy → Physical Cosmological Notes
-- For publication and commensuration rules: Glossary → Publication and Commensuration Policy → Term Collision Registries
+- Whole-system orientation: [`README.md`](../README.md) → [`Scientific_Ontology_Concept_Network.en.md`](./Scientific_Ontology_Concept_Network.en.md)
+- Foundational concepts: `Four_Axioms_of_Existence` → `Boundary_Realism_Principle`
+- Cognition and meaning: Boundary Epistemological Critique → Cognitive Axis Formation → Optional Axiom Modules → Truth Management
+- Ethics, organization, and peace: Cognitive Dynamics → Port Allocation → Organizational Boundary → Specification for Peace
+- Judgment and reflexive audit: [`SO_Reflexive_Philosophical_Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md) → Judgment Transparency Topology → Historical Attestation
+- Correctness and formalization: [`Correctness_Logic_and_Structural_Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+- Expressive and creative contact: [`Questions, Boundaries, and Peace`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md)
+- Physics-adjacent research: Physics Correspondence Policy → Physical Cosmological Notes
+- Publication and commensuration rules: Glossary → Publication and Commensuration Policy → Term Collision Registries
 
 ---
 
-## 16. Maintenance Principles
+## 17. Maintenance Principles
 
-This System Map is not a file-by-file inventory that must be conceptually rewritten whenever an individual document is added.
+The System Map is not intended to be rewritten as a complete inventory whenever an individual document is added.
 
-It should be revised when:
+It should be revised primarily when:
 
-- the structural responsibility of a directory changes;
+- a directory's structural responsibility changes;
 - public entrances or reading routes change;
-- a research line becomes an independent directory;
-- the location of governance documents or machine-readable metadata changes; or
-- public-boundary or `.gitignore` inclusion rules change.
+- a research line, application surface, or outward-contact surface acquires an independent responsibility;
+- responsibilities of governance, machine-readable metadata, or Navigator change; or
+- the public/private boundary or release-packaging rules change.
 
-Ordinary additions and removals of individual files should be maintained in directory READMEs, `docs_manifest.yml`, and release notes.
+Ordinary additions and removals of individual files should be managed in directory READMEs, `docs_manifest.yml`, generated read models, and release notes.
+
+When a whole-system operating policy, cross-cutting research line, or public entrance changes, the root README, Roadmap, `00_Overview/README.md`, Concept Network, System Map, Glossary, and Research Notes Index should be reviewed as one structural update unit.

@@ -916,6 +916,22 @@ A field in which an agent can encounter information, history, objections, altern
 
 ---
 
+## Judgment Transparency / 判断透明性
+
+**Canonical Japanese:** 判断透明性
+**English commensuration:** Judgment Transparency
+**Public definition owner:** [`04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md`](./04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md)
+
+判断がどの接点、位相、経路、返路、開放端を通って成立したかを後から追跡可能にし、異議、再評価、比較、後続修正が実際の変更点へ到達できる状態。
+
+A condition in which the contacts, phases, paths, return paths, and open ends through which a judgment formed remain traceable, so that objection, re-evaluation, comparison, and later correction can reach the points where the judgment may actually change.
+
+判断透明性は、真理、妥当性、客観性を保証しない。透明な判断も誤り得る。公開上の目的は、判断生成を再構成可能にし、異議の返路を保持することである。
+
+Judgment transparency does not guarantee truth, validity, or objectivity. A transparent judgment may still be wrong; the public purpose is reconstructability of judgment formation and preservation of effective return paths for objection.
+
+---
+
 ## AI Usefulness as Boundary Function / 境界機能としてのAI有用性
 
 **Canonical Japanese:** 境界機能としてのAI有用性  
@@ -1551,6 +1567,10 @@ A former or non-preferred term retained for traceability to earlier documents.
 ### v5開始時点でGlossaryへ昇格しない運用語
 
 [`Scientific_Ontology_Operational_Outline.ja.md`](00_Overview/Scientific_Ontology_Operational_Outline.ja.md)で使用する`境界事件`、`可動性`、`責任分界`、`作用経路の地形`は、現時点では全体系の正規語彙として固定しない。運用アウトライン内の局所語として保持し、他文書で定義所有が必要になった時点でGlossary昇格を再検討する。
+
+`De-Registry`、`Topology-first`、`三層変換監査 / three-layer transformation audit`、`Historical Attestation`は、SO再帰的哲学研究またはrepository governanceで用いる方法・記録語である。判断透明性そのものは複数の監査・応用面へ再利用されるためGlossaryへ置くが、これらの形成手順を中核概念へ自動昇格させない。
+
+`Spine`は、`05_Research_Notes/Correctness_Logic_and_Structural_Studies`で検査中の研究候補語であり、現時点では公開基礎の正規語彙へ昇格させない。
 
 `Living Canonical`および`Return Intake`も、現時点では言語・意味・通信位相研究の保守運用語であり、存在境界論の中核概念とは扱わない。
 

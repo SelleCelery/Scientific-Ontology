@@ -32,6 +32,7 @@
 
 `AI_Adaptation`はAI側の応答構造と境界機能を扱う。
 `Social_Boundary_Design`はAIや制度を採用する社会側の責任境界、照合、平和条件を扱う。
+`SO_Reflexive_Philosophical_Research`は、SO自身の判断生成、監査、失敗、履歴受理を公開可能な方法面へ返す再帰的応用面である。
 
 ## 2. Public Scope and Claim Profile / 公開範囲と主張強度
 
@@ -46,6 +47,8 @@
 - 判断可能性を守るインターフェース
 - 社会導入時の責任・照合チェック
 - 平和のプロトコルと仕様
+- 判断透明性、自己監査、historical method recordを再利用可能な方法面として保持するための公開インターフェース
+- historical sourceのidentity、filename、SHA-256、provenance、研究上の役割を公開しつつ、exact bytesを非公開に保持するsource境界
 
 含まないもの：
 
@@ -64,7 +67,7 @@
   AI導入、責任境界、照合可能性、社会設計、平和仕様。
 
 - [`SO_Reflexive_Philosophical_Research/README.md`](./SO_Reflexive_Philosophical_Research/README.md)
-  De-Registryから判断透明性へ至る実験史、通信トポロジー監査、公開証跡。
+  De-Registryから判断透明性へ至る実験史、通信トポロジー監査、公開証跡。Volume Iはhistorical attestationによって当時の実行記録と現在の受理判断を分離し、historical checksumを上書きしない。sourceはidentity・hash・provenanceを公開するが、exact historical bytesは公開Repositoryへ含めない。
 
 ### 外部実装への返路
 
@@ -116,6 +119,7 @@ Implementation results, residuals, and objections return upstream
 
 `AI_Adaptation` addresses response structures and boundary functions on the AI side.
 `Social_Boundary_Design` addresses responsibility boundaries, collation, and conditions of peace on the social side.
+`SO_Reflexive_Philosophical_Research` is the recursive application surface through which SO returns its own judgment formation, auditing, failure, and historical acceptance to a public method interface.
 
 ## 2. Public Scope
 
@@ -125,7 +129,9 @@ Included:
 - design principles and evaluation frames;
 - interfaces preserving judgment capability;
 - responsibility and collation checks for social adoption;
-- peace protocols and specifications.
+- peace protocols and specifications;
+- public interfaces for retaining judgment transparency, self-audit, and historical method records as reusable method surfaces;
+- source boundaries that publish historical source identity, filename, SHA-256, provenance, and experimental role while retaining exact bytes privately.
 
 Not included:
 
@@ -144,7 +150,7 @@ Not included:
   AI adoption, responsibility boundaries, re-collatability, social design, and peace specifications.
 
 - [`SO_Reflexive_Philosophical_Research/README.md`](./SO_Reflexive_Philosophical_Research/README.md)
-  Experiment-backed history from De-Registry to judgment transparency, topology-first auditing, and a public evidence trail.
+  Experiment-backed history from De-Registry to judgment transparency, topology-first auditing, and a public evidence trail. Volume I uses historical attestation to separate contemporaneous execution records from present acceptance without rewriting historical checksums. Source identity, hash, and provenance are public while exact historical bytes remain outside the public repository.
 
 ### Return path to an external implementation
 

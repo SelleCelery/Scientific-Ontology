@@ -96,13 +96,12 @@ v4.3.0では、その境界への移動を引き継ぎ、境界認識の批判�
 
 ## 2. 現在地
 
-v4.3.0までに、Stage Cの公開基礎として、境界認識の批判、生成、運用、研究動態、組織・倫理・平和仕様への接続が成立した。
-
-v5.0は、その上でStage Dを開く。
+v4.3.0までにStage Cの公開基礎が形成され、v5.0.0でStage Dが開いた。現在は**v5.1準備段階**として、外部へ持ち出した理論が、判断・監査・実装・創作・計算通約から何を返してきたかを、公開構造へ再接続している。
 
 - **v4.2.0**：境界実在性、境界認識批判、物理対応方針、主張強度管理を整備した。
 - **v4.3.0**：境界認識生成、境界認識運用、研究動態、組織・倫理・平和仕様への接続を整備した。
-- **v5.0.0**：理論を体系内部から外へ持ち出し、言語・意味・通信位相、文学、同意境界、DSSI研究面などを、返りを受ける公開研究線として開始する。
+- **v5.0.0**：Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、返りを受けるStage Dを開始した。
+- **v5.1準備**：SO再帰的哲学研究、Volume Iのhistorical attestation、判断透明性、公開／非公開source境界、文書contractとNavigator投影、正しさ・論理・構造研究、`07_Creative_Offshoots`の外向き接触面を公開体系へ再配置している。
 - **v5.x**：研究・実装・外部照合を順次追加し、各応用から返る残差によって上流概念を再照合する。
 
 v5系の開始線は、次である。
@@ -111,11 +110,11 @@ v5系の開始線は、次である。
 
 これは主観と客観を曖昧に混同する宣言ではない。外部条件と内部履歴が接触し、差分、意味、判断、作用、返りが生じる境界を、運用上の中心記述面として扱うという宣言である。
 
-v5.0では、とくに言語・意味・通信位相研究が横断基盤として立ち上がる。この研究線は九本のLiving Canonical研究ノートを持ち、変更履歴と返り受付を正本運用へ含める。SOLiteを含む外部からの返りは自動統合しないが、常設の照合候補として受理する。
+v5.1準備では、公開後に生じた研究履歴そのものも返りとして扱う。SO再帰的哲学研究では、De-Registryから判断透明性へ至る実験史を、当時の実行記録と現在の受理判断を分離したhistorical recordとして保持する。historical checksumを現在値へ上書きせず、現在受理したbytesは別のattestationとして固定する。
 
-DSSIは、v5.0では観測・判断・主権・責任返還を扱う研究ノートとして公開する。アプリケーション本体はv5.0の公開範囲外である。
+また、公開sourceの同一性、filename、SHA-256、provenance、研究上の役割を公開しても、exact historical bytesまで公開Repositoryへ保持する必要はない。公開に必要な根拠経路と、非公開に保持すべきsource実体を分離する。
 
----
+DSSIについては、SO内では観測・判断・主権・責任返還を扱う研究面と実装境界を保持する。その後、DSSI Core A系列の`ConnectBits v0.5.0 Public Preview`がSO外部で公開された。SOはその返路を保持するが、製品コードをRepositoryへ取り込まず、実装成功を理論の証明として扱わない。
 
 ## 3. Stage A — Public Foundation / 公開基盤
 
@@ -368,7 +367,7 @@ v5系では、少なくとも次の境界へ研究を持ち出す。
 - 組織境界、制度、教育、調整、規制
 - インターフェイスによる観測境界の返却
 
-DSSIのアプリケーション本体はv5.0には含めない。v5.1以降で、観測限界、プライバシー、解除可能性、表示の粘性、公開条件が整った場合に別途判断する。
+DSSIのアプリケーション本体はSO Repositoryへ同梱しない。DSSI Core A系列の`ConnectBits v0.5.0 Public Preview`は外部成果物として公開されており、SO側は研究ノートと実装境界からその成果物への返路を保持する。実装結果は、観測限界、プライバシー、解除可能性、表示の粘性、責任返還などを再照合する入力にはなるが、SO理論の実証証拠へ自動昇格しない。
 
 ### D3. 反証・失敗・観測条件
 
@@ -441,6 +440,7 @@ Stage Eへ進む条件は、概念が実装可能になったことだけでは�
 | v4.2.0 | Stage C1 | 境界実在性、境界認識批判、物理対応方針、主張強度管理 |
 | v4.3.0 | Stage C2-C4 | 認識生成、認識運用、研究動態、組織・倫理・平和仕様 |
 | v5.0.0 | Stage D opening | Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、代謝型の外部照合を開始 |
+| v5.1 preparation | Stage D / reflexive audit | SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contract・Navigator、正しさ／論理／構造研究、Creative Offshootsを整合 |
 | v5.x | Stage D-E | 実装・汎用化・外部照合・反証条件・アプリケーション・会計・AI比較を順次追加 |
 | v6 candidate | Structural transition | v5系の基礎記述面、概念所有、中核不変項、説明本拠地そのものの再編が必要になった場合に検討 |
 
@@ -538,18 +538,19 @@ v4.3.0 continues that movement by connecting critique, formation, and operation 
 
 ## 2. Current Position
 
-v4.3.0 established a public basis for Stage C: critique, formation, and operation of boundary cognition, research dynamics, and connections to organizational, ethical, and peace specifications.
-
-v5.0 opens Stage D by carrying the framework outward into language, literature, consent, AI, and interfaces, while treating the return from those contacts as research input rather than post-publication noise.
+v4.3.0 established the public basis of Stage C, and v5.0.0 opened Stage D. The project is now in **v5.1 preparation**, reconnecting what returned from judgment, audit, implementation, creative contact, and computational commensuration to the public structure.
 
 - **v4.2.0:** Boundary Realism, Boundary Epistemological Critique, Physics Correspondence Policy, and claim-strength governance.
 - **v4.3.0:** boundary-cognition formation and operation, research dynamics, and organizational, ethical, and peace specifications.
-- **v5.0.0:** opening release of the v5 living series, including the Operational Outline, the Language/Meaning/Communication Phase research line, Literature as Worldmaking, Consent Boundary, and the DSSI research note.
+- **v5.0.0:** opening of Stage D through the Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, and the DSSI research surface.
+- **v5.1 preparation:** alignment of SO Reflexive Philosophical Research, Volume I historical attestation, judgment transparency, the public/private source boundary, document contracts and Navigator projection, Correctness/Logic/Structural Studies, and the outward-facing `07_Creative_Offshoots` surface.
 - **v5.x:** continued addition of research, implementation, external collation, and returns into upstream concepts.
 
-The DSSI application itself is not part of v5.0. Only its research and implementation-boundary note is included at this stage.
+In v5.1 preparation, research history itself is treated as a return. SO Reflexive Philosophical Research retains the path from De-Registry to judgment transparency as a historical method record that separates contemporaneous execution records from present-day acceptance. Historical checksums are not rewritten to current bytes; current accepted bytes are bound separately by attestation.
 
----
+Likewise, public source identity, filename, SHA-256, provenance, and experimental role do not require exact historical source bytes to remain in the public repository. The public return path and the privately retained source body are kept distinct.
+
+On the DSSI side, SO retains the research surface and implementation boundary for observation, judgment, sovereignty, and responsibility return. The DSSI Core A lineage has since produced the externally released `ConnectBits v0.5.0 Public Preview`. SO preserves a return path to that artifact without bundling product code or treating implementation success as proof of the theory.
 
 ## 3. Stage A — Public Foundation
 
@@ -664,7 +665,7 @@ Primary directions include:
 
 Public updates should preserve revision history and intake decisions. Returns from readers, applications, AI experiments, literature, institutions, or SOLite may be considered continuously, but none are automatically imported into the canonical research line.
 
-The DSSI application is not included in v5.0; a later v5.x release may include it only if its public-release conditions are satisfied.
+The DSSI application is not bundled into the SO repository. The DSSI Core A lineage has an externally released `ConnectBits v0.5.0 Public Preview`, and SO keeps a return path from its research note and implementation boundary to that artifact. Implementation results may return as evidence about observation limits, privacy, reversibility, display viscosity, and responsibility return, but they do not automatically become empirical proof of SO.
 
 ---
 
@@ -690,6 +691,7 @@ Stage E requires not only implementable concepts but functioning routes through 
 | v4.2.0 | Stage C1 | Boundary Realism, Boundary Epistemological Critique, Physics Correspondence Policy, and claim-strength governance |
 | v4.3.0 | Stage C2-C4 | Cognitive formation, cognitive operation, research dynamics, and organizational, ethical, and peace specifications |
 | v5.0.0 | Stage D opening | Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, DSSI research, and living-canonical return structures |
+| v5.1 preparation | Stage D / reflexive audit | Aligns SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, Correctness/Logic/Structural Studies, and Creative Offshoots |
 | v5.x | Stage D-E | Implementation, generalization, external collation, falsification conditions, applications, accounting, and AI comparison |
 | v6 candidate | Structural transition | Considered when the explanatory base, core invariants, or concept-ownership structure itself requires reorganization |
 
