@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "source": {
-    "manifest_sha256": "da7c7b6f458d3d6b9fe7da73ad005f021362e87dd3ce3b5570a10f605926eb97",
+    "manifest_sha256": "4f25c5e45b0ccf9250473f793641632c79334ec4e539ffecdeb4c82b71a575eb",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "graph_config_sha256": "e714e8fa7c87f8b108367d0ee280758fb3bd984f4964b9867c2685a47ebeec78",
     "visibility_profile": "public",
@@ -1458,6 +1458,108 @@
       "identity_source": "explicit"
     },
     {
+      "id": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "type": "document",
+      "key": "07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
+      "title": {
+        "ja": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+        "en": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+        "en": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "type": "document",
+      "key": "07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+      "title": {
+        "ja": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+        "en": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+        "en": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "type": "document",
+      "key": "07_creative_offshoots_adversarial_exposure_readme_en",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+      "title": {
+        "ja": "異質な対象への曝露と監査",
+        "en": "Exposure to Heterogeneous Subjects and Audit"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "異質な対象への曝露と監査",
+        "en": "Exposure to Heterogeneous Subjects and Audit"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "type": "document",
+      "key": "07_creative_offshoots_adversarial_exposure_readme_ja",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+      "title": {
+        "ja": "異質な対象への曝露と監査",
+        "en": "Exposure to Heterogeneous Subjects and Audit"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "異質な対象への曝露と監査",
+        "en": "Exposure to Heterogeneous Subjects and Audit"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "type": "document",
+      "key": "07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md",
+      "title": {
+        "ja": "自動運転された正しさを止めるために",
+        "en": "Stopping Correctness on Autopilot"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "自動運転された正しさを止めるために",
+        "en": "Stopping Correctness on Autopilot"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "type": "document",
+      "key": "07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+      "title": {
+        "ja": "自動運転された正しさを止めるために",
+        "en": "Stopping Correctness on Autopilot"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "自動運転された正しさを止めるために",
+        "en": "Stopping Correctness on Autopilot"
+      },
+      "identity_source": "explicit"
+    },
+    {
       "id": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
       "type": "document",
       "key": "07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
@@ -1488,6 +1590,74 @@
       "role": {
         "ja": "問いを閉じず、境界を踏まないために",
         "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "type": "document",
+      "key": "07_creative_offshoots_literary_essays_readme_en",
+      "path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+      "title": {
+        "ja": "読み物から、境界へ",
+        "en": "From Reading to the Boundary"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "読み物から、境界へ",
+        "en": "From Reading to the Boundary"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "type": "document",
+      "key": "07_creative_offshoots_literary_essays_readme_ja",
+      "path": "07_Creative_Offshoots/Literary_Essays/README.md",
+      "title": {
+        "ja": "読み物から、境界へ",
+        "en": "From Reading to the Boundary"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "読み物から、境界へ",
+        "en": "From Reading to the Boundary"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_readme_en",
+      "type": "document",
+      "key": "07_creative_offshoots_readme_en",
+      "path": "07_Creative_Offshoots/README.en.md",
+      "title": {
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:07_creative_offshoots_readme_ja",
+      "type": "document",
+      "key": "07_creative_offshoots_readme_ja",
+      "path": "07_Creative_Offshoots/README.md",
+      "title": {
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
+      },
+      "layer": "07_Creative_Offshoots",
+      "state": "public",
+      "role": {
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
       },
       "identity_source": "explicit"
     },
@@ -16114,6 +16284,668 @@
       ]
     },
     {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:boundary",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
+          "locator": "L8"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
+          "locator": "L1344"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
+          "locator": "L7"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
+          "locator": "L1344"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
+          "locator": "L1344"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
+          "locator": "L9"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:boundary",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+          "locator": "L11"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+          "locator": "L1562"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+          "locator": "L1562"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+          "locator": "L1562"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+          "locator": "L5"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+          "locator": "L4"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:overview",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Adversarial_Exposure/README.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L33"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:04_applications_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L43"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L43"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L31"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L31"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L33"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L33"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L6"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L30"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L30"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L43"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L10"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+          "locator": "L33"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:overview",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Adversarial_Exposure/README.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L32"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:04_applications_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L42"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L42"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L30"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L30"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L32"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L9"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L29"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L29"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L42"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L9"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+          "locator": "L32"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:ethics",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md",
+          "locator": "L11"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md",
+          "locator": "L10"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md",
+          "locator": "L355"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md",
+          "locator": "L355"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md",
+          "locator": "L355"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md",
+          "locator": "L7"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:ethics",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+          "locator": "L10"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+          "locator": "L355"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+          "locator": "L355"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+          "locator": "L355"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+          "locator": "L9"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+          "locator": "L11"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
       "relation": "links_to",
       "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
@@ -16121,7 +16953,19 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md",
-          "locator": "L334"
+          "locator": "L336"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md",
+          "locator": "L1215"
         }
       ]
     },
@@ -16133,7 +16977,19 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md",
-          "locator": "L1210"
+          "locator": "L1212"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md",
+          "locator": "L1215"
         }
       ]
     },
@@ -16152,12 +17008,36 @@
     {
       "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
       "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
+          "locator": "L1247"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "relation": "links_to",
       "to": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
-          "locator": "L1242"
+          "locator": "L1244"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
+          "locator": "L1247"
         }
       ]
     },
@@ -16169,12 +17049,584 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
-          "locator": "L338"
+          "locator": "L340"
         }
       ]
     },
     {
       "from": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:literature",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/README.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L36"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L34"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L30"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L28"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L28"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L30"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L30"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L6"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L10"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+          "locator": "L36"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:literature",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/Literary_Essays/README.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+          "locator": "L35"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+          "locator": "L33"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+          "locator": "L29"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+          "locator": "L27"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_questions_boundaries_and_peace_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+          "locator": "L27"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+          "locator": "L29"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+          "locator": "L9"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+          "locator": "L9"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+          "locator": "L35"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:overview",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/README.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:00_overview_scientific_ontology_system_map",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L59"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L38"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:04_applications_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L59"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L59"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:06_visual_materials_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L59"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L47"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L47"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L46"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L46"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L49"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L49"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.en.md",
+          "locator": "L6"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_en",
+      "relation": "placed_in",
+      "to": "layer:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:overview",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=07_Creative_Offshoots/README.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:00_overview_scientific_ontology_system_map",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L60"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:04_applications_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L60"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L60"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:06_visual_materials_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L60"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L48"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L48"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L47"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_literary_essays_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L47"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L50"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L9"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "07_Creative_Offshoots/README.md",
+          "locator": "L39"
+        }
+      ]
+    },
+    {
+      "from": "doc:07_creative_offshoots_readme_ja",
       "relation": "placed_in",
       "to": "layer:creative_offshoots",
       "provenance": [

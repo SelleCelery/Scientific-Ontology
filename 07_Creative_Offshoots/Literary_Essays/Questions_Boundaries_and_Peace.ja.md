@@ -4,6 +4,8 @@
 
 > Status: Literary essay
 > Language: Japanese authoritative; English commensuration in a separate file
+> Layer: 07_Creative_Offshoots / Literary_Essays
+> Authority: 読み物による通約と接触の面。概念定義ownerではない。
 
 ## 1. 間違った問いを、捨てないために
 ### ――存在境界論は何をしているのか
@@ -1240,3 +1242,6 @@ AIに質問すると、かなり整った答えが返ってくる。
 ---
 
 [English commensuration](Questions_Boundaries_and_Peace.en.md)
+
+
+[ディレクトリの案内](README.md)・[異質な対象への曝露と監査](../Adversarial_Exposure/README.md)

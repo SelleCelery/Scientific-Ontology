@@ -2,7 +2,7 @@
   "schema_version": "0.2",
   "search_spec_version": "0.2",
   "source": {
-    "manifest_sha256": "da7c7b6f458d3d6b9fe7da73ad005f021362e87dd3ce3b5570a10f605926eb97",
+    "manifest_sha256": "4f25c5e45b0ccf9250473f793641632c79334ec4e539ffecdeb4c82b71a575eb",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "coverage": "role-aware-current-inventory",
     "visibility_profile": "public"
@@ -10017,6 +10017,732 @@
       }
     },
     {
+      "id": "07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
+      "title": {
+        "ja": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+        "en": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "assertion_document",
+      "status": "Appendix / audit record / non-canonical extension candidate",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "correctness / action closure / authority / return / actuation / individuality / provenance / proxy return / irreversible residual",
+      "role": {
+        "ja": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+        "en": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals"
+      },
+      "language_relation": {
+        "language": "en",
+        "role": "commensuration",
+        "counterpart_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md"
+      },
+      "document_role": "research_note",
+      "assessment_summary": {
+        "status": "unreviewed",
+        "applicability": "commensuration_only",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "boundary"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+            "normalized": "付録a 監査記録 三論点統合論考との相互照合と残差集積",
+            "compact": "付録a監査記録三論点統合論考との相互照合と残差集積"
+          },
+          {
+            "lang": "en",
+            "text": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals",
+            "normalized": "appendix a audit record cross collation with the integrated essay and accumulation of residuals",
+            "compact": "appendixaauditrecordcrosscollationwiththeintegratedessayandaccumulationofresiduals"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+            "normalized": "付録a 監査記録 三論点統合論考との相互照合と残差集積",
+            "compact": "付録a監査記録三論点統合論考との相互照合と残差集積"
+          },
+          {
+            "lang": "en",
+            "text": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals",
+            "normalized": "appendix a audit record cross collation with the integrated essay and accumulation of residuals",
+            "compact": "appendixaauditrecordcrosscollationwiththeintegratedessayandaccumulationofresiduals"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "correctness / action closure / authority / return / actuation / individuality / provenance / proxy return / irreversible residual",
+            "normalized": "correctness action closure authority return actuation individuality provenance proxy return irreversible residual",
+            "compact": "correctnessactionclosureauthorityreturnactuationindividualityprovenanceproxyreturnirreversibleresidual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+      "title": {
+        "ja": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+        "en": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "assertion_document",
+      "status": "Appendix / audit record / non-canonical extension candidate",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "correctness / action closure / authority / return / actuation / individuality / provenance / proxy return / irreversible residual",
+      "role": {
+        "ja": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+        "en": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals"
+      },
+      "language_relation": {
+        "language": "ja",
+        "role": "authoritative",
+        "counterpart_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md"
+      },
+      "document_role": "research_note",
+      "assessment_summary": {
+        "status": "unreviewed",
+        "applicability": "current_claim",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "boundary"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+            "normalized": "付録a 監査記録 三論点統合論考との相互照合と残差集積",
+            "compact": "付録a監査記録三論点統合論考との相互照合と残差集積"
+          },
+          {
+            "lang": "en",
+            "text": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals",
+            "normalized": "appendix a audit record cross collation with the integrated essay and accumulation of residuals",
+            "compact": "appendixaauditrecordcrosscollationwiththeintegratedessayandaccumulationofresiduals"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "付録A　監査記録――三論点統合論考との相互照合と残差集積",
+            "normalized": "付録a 監査記録 三論点統合論考との相互照合と残差集積",
+            "compact": "付録a監査記録三論点統合論考との相互照合と残差集積"
+          },
+          {
+            "lang": "en",
+            "text": "Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals",
+            "normalized": "appendix a audit record cross collation with the integrated essay and accumulation of residuals",
+            "compact": "appendixaauditrecordcrosscollationwiththeintegratedessayandaccumulationofresiduals"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "correctness / action closure / authority / return / actuation / individuality / provenance / proxy return / irreversible residual",
+            "normalized": "correctness action closure authority return actuation individuality provenance proxy return irreversible residual",
+            "compact": "correctnessactionclosureauthorityreturnactuationindividualityprovenanceproxyreturnirreversibleresidual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "07_creative_offshoots_adversarial_exposure_readme_en",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+      "title": {
+        "ja": "異質な対象への曝露と監査",
+        "en": "Exposure to Heterogeneous Subjects and Audit"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "subdirectory_readme",
+      "status": "README",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "external contact / commensuration / return paths",
+      "role": {
+        "ja": "異質な対象への曝露と監査",
+        "en": "Exposure to Heterogeneous Subjects and Audit"
+      },
+      "language_relation": {
+        "language": "en",
+        "role": "commensuration",
+        "counterpart_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md"
+      },
+      "document_role": "navigation",
+      "assessment_summary": {
+        "status": "not_applicable",
+        "applicability": "not_applicable",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "overview"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "異質な対象への曝露と監査",
+            "normalized": "異質な対象への曝露と監査",
+            "compact": "異質な対象への曝露と監査"
+          },
+          {
+            "lang": "en",
+            "text": "Exposure to Heterogeneous Subjects and Audit",
+            "normalized": "exposure to heterogeneous subjects and audit",
+            "compact": "exposuretoheterogeneoussubjectsandaudit"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "overview",
+            "normalized": "overview",
+            "compact": "overview"
+          },
+          {
+            "lang": "ja",
+            "text": "全体像",
+            "normalized": "全体像",
+            "compact": "全体像"
+          },
+          {
+            "lang": "en",
+            "text": "Overview",
+            "normalized": "overview",
+            "compact": "overview"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "異質な対象への曝露と監査",
+            "normalized": "異質な対象への曝露と監査",
+            "compact": "異質な対象への曝露と監査"
+          },
+          {
+            "lang": "en",
+            "text": "Exposure to Heterogeneous Subjects and Audit",
+            "normalized": "exposure to heterogeneous subjects and audit",
+            "compact": "exposuretoheterogeneoussubjectsandaudit"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "external contact / commensuration / return paths",
+            "normalized": "external contact commensuration return paths",
+            "compact": "externalcontactcommensurationreturnpaths"
+          }
+        ]
+      }
+    },
+    {
+      "id": "07_creative_offshoots_adversarial_exposure_readme_ja",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/README.md",
+      "title": {
+        "ja": "異質な対象への曝露と監査",
+        "en": "Exposure to Heterogeneous Subjects and Audit"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "subdirectory_readme",
+      "status": "README",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "external contact / commensuration / return paths",
+      "role": {
+        "ja": "異質な対象への曝露と監査",
+        "en": "Exposure to Heterogeneous Subjects and Audit"
+      },
+      "language_relation": {
+        "language": "ja",
+        "role": "authoritative",
+        "counterpart_path": "07_Creative_Offshoots/Adversarial_Exposure/README.en.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/Adversarial_Exposure/README.md"
+      },
+      "document_role": "navigation",
+      "assessment_summary": {
+        "status": "not_applicable",
+        "applicability": "not_applicable",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "overview"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "異質な対象への曝露と監査",
+            "normalized": "異質な対象への曝露と監査",
+            "compact": "異質な対象への曝露と監査"
+          },
+          {
+            "lang": "en",
+            "text": "Exposure to Heterogeneous Subjects and Audit",
+            "normalized": "exposure to heterogeneous subjects and audit",
+            "compact": "exposuretoheterogeneoussubjectsandaudit"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "overview",
+            "normalized": "overview",
+            "compact": "overview"
+          },
+          {
+            "lang": "ja",
+            "text": "全体像",
+            "normalized": "全体像",
+            "compact": "全体像"
+          },
+          {
+            "lang": "en",
+            "text": "Overview",
+            "normalized": "overview",
+            "compact": "overview"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "異質な対象への曝露と監査",
+            "normalized": "異質な対象への曝露と監査",
+            "compact": "異質な対象への曝露と監査"
+          },
+          {
+            "lang": "en",
+            "text": "Exposure to Heterogeneous Subjects and Audit",
+            "normalized": "exposure to heterogeneous subjects and audit",
+            "compact": "exposuretoheterogeneoussubjectsandaudit"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "external contact / commensuration / return paths",
+            "normalized": "external contact commensuration return paths",
+            "compact": "externalcontactcommensurationreturnpaths"
+          }
+        ]
+      }
+    },
+    {
+      "id": "07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md",
+      "title": {
+        "ja": "自動運転された正しさを止めるために",
+        "en": "Stopping Correctness on Autopilot"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "assertion_document",
+      "status": "Literary essay",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "Business / withdrawal / bodily finitude / inheritance of judgment / provenance / self-critique",
+      "role": {
+        "ja": "自動運転された正しさを止めるために",
+        "en": "Stopping Correctness on Autopilot"
+      },
+      "language_relation": {
+        "language": "en",
+        "role": "commensuration",
+        "counterpart_path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md"
+      },
+      "document_role": "creative_reading",
+      "assessment_summary": {
+        "status": "unreviewed",
+        "applicability": "commensuration_only",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "ethics"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "自動運転された正しさを止めるために",
+            "normalized": "自動運転された正しさを止めるために",
+            "compact": "自動運転された正しさを止めるために"
+          },
+          {
+            "lang": "en",
+            "text": "Stopping Correctness on Autopilot",
+            "normalized": "stopping correctness on autopilot",
+            "compact": "stoppingcorrectnessonautopilot"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          },
+          {
+            "lang": "ja",
+            "text": "倫理",
+            "normalized": "倫理",
+            "compact": "倫理"
+          },
+          {
+            "lang": "en",
+            "text": "Ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "自動運転された正しさを止めるために",
+            "normalized": "自動運転された正しさを止めるために",
+            "compact": "自動運転された正しさを止めるために"
+          },
+          {
+            "lang": "en",
+            "text": "Stopping Correctness on Autopilot",
+            "normalized": "stopping correctness on autopilot",
+            "compact": "stoppingcorrectnessonautopilot"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "Business / withdrawal / bodily finitude / inheritance of judgment / provenance / self-critique",
+            "normalized": "business withdrawal bodily finitude inheritance of judgment provenance self critique",
+            "compact": "businesswithdrawalbodilyfinitudeinheritanceofjudgmentprovenanceselfcritique"
+          }
+        ]
+      }
+    },
+    {
+      "id": "07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+      "title": {
+        "ja": "自動運転された正しさを止めるために",
+        "en": "Stopping Correctness on Autopilot"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "assertion_document",
+      "status": "Literary essay",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "Business / withdrawal / bodily finitude / inheritance of judgment / provenance / self-critique",
+      "role": {
+        "ja": "自動運転された正しさを止めるために",
+        "en": "Stopping Correctness on Autopilot"
+      },
+      "language_relation": {
+        "language": "ja",
+        "role": "authoritative",
+        "counterpart_path": "07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md"
+      },
+      "document_role": "creative_reading",
+      "assessment_summary": {
+        "status": "unreviewed",
+        "applicability": "current_claim",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "ethics"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "自動運転された正しさを止めるために",
+            "normalized": "自動運転された正しさを止めるために",
+            "compact": "自動運転された正しさを止めるために"
+          },
+          {
+            "lang": "en",
+            "text": "Stopping Correctness on Autopilot",
+            "normalized": "stopping correctness on autopilot",
+            "compact": "stoppingcorrectnessonautopilot"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          },
+          {
+            "lang": "ja",
+            "text": "倫理",
+            "normalized": "倫理",
+            "compact": "倫理"
+          },
+          {
+            "lang": "en",
+            "text": "Ethics",
+            "normalized": "ethics",
+            "compact": "ethics"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "自動運転された正しさを止めるために",
+            "normalized": "自動運転された正しさを止めるために",
+            "compact": "自動運転された正しさを止めるために"
+          },
+          {
+            "lang": "en",
+            "text": "Stopping Correctness on Autopilot",
+            "normalized": "stopping correctness on autopilot",
+            "compact": "stoppingcorrectnessonautopilot"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "Business / withdrawal / bodily finitude / inheritance of judgment / provenance / self-critique",
+            "normalized": "business withdrawal bodily finitude inheritance of judgment provenance self critique",
+            "compact": "businesswithdrawalbodilyfinitudeinheritanceofjudgmentprovenanceselfcritique"
+          }
+        ]
+      }
+    },
+    {
       "id": "07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en",
       "id_source": "explicit",
       "path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md",
@@ -10194,6 +10920,490 @@
           }
         ],
         "scope": []
+      }
+    },
+    {
+      "id": "07_creative_offshoots_literary_essays_readme_en",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+      "title": {
+        "ja": "読み物から、境界へ",
+        "en": "From Reading to the Boundary"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "subdirectory_readme",
+      "status": "README",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "external contact / commensuration / return paths",
+      "role": {
+        "ja": "読み物から、境界へ",
+        "en": "From Reading to the Boundary"
+      },
+      "language_relation": {
+        "language": "en",
+        "role": "commensuration",
+        "counterpart_path": "07_Creative_Offshoots/Literary_Essays/README.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/Literary_Essays/README.md"
+      },
+      "document_role": "navigation",
+      "assessment_summary": {
+        "status": "not_applicable",
+        "applicability": "not_applicable",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "literature"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "読み物から、境界へ",
+            "normalized": "読み物から 境界へ",
+            "compact": "読み物から境界へ"
+          },
+          {
+            "lang": "en",
+            "text": "From Reading to the Boundary",
+            "normalized": "from reading to the boundary",
+            "compact": "fromreadingtotheboundary"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "literature",
+            "normalized": "literature",
+            "compact": "literature"
+          },
+          {
+            "lang": "ja",
+            "text": "文学",
+            "normalized": "文学",
+            "compact": "文学"
+          },
+          {
+            "lang": "en",
+            "text": "Literature",
+            "normalized": "literature",
+            "compact": "literature"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "読み物から、境界へ",
+            "normalized": "読み物から 境界へ",
+            "compact": "読み物から境界へ"
+          },
+          {
+            "lang": "en",
+            "text": "From Reading to the Boundary",
+            "normalized": "from reading to the boundary",
+            "compact": "fromreadingtotheboundary"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "external contact / commensuration / return paths",
+            "normalized": "external contact commensuration return paths",
+            "compact": "externalcontactcommensurationreturnpaths"
+          }
+        ]
+      }
+    },
+    {
+      "id": "07_creative_offshoots_literary_essays_readme_ja",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/Literary_Essays/README.md",
+      "title": {
+        "ja": "読み物から、境界へ",
+        "en": "From Reading to the Boundary"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "subdirectory_readme",
+      "status": "README",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "external contact / commensuration / return paths",
+      "role": {
+        "ja": "読み物から、境界へ",
+        "en": "From Reading to the Boundary"
+      },
+      "language_relation": {
+        "language": "ja",
+        "role": "authoritative",
+        "counterpart_path": "07_Creative_Offshoots/Literary_Essays/README.en.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/Literary_Essays/README.md"
+      },
+      "document_role": "navigation",
+      "assessment_summary": {
+        "status": "not_applicable",
+        "applicability": "not_applicable",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "literature"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "読み物から、境界へ",
+            "normalized": "読み物から 境界へ",
+            "compact": "読み物から境界へ"
+          },
+          {
+            "lang": "en",
+            "text": "From Reading to the Boundary",
+            "normalized": "from reading to the boundary",
+            "compact": "fromreadingtotheboundary"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "literature",
+            "normalized": "literature",
+            "compact": "literature"
+          },
+          {
+            "lang": "ja",
+            "text": "文学",
+            "normalized": "文学",
+            "compact": "文学"
+          },
+          {
+            "lang": "en",
+            "text": "Literature",
+            "normalized": "literature",
+            "compact": "literature"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "読み物から、境界へ",
+            "normalized": "読み物から 境界へ",
+            "compact": "読み物から境界へ"
+          },
+          {
+            "lang": "en",
+            "text": "From Reading to the Boundary",
+            "normalized": "from reading to the boundary",
+            "compact": "fromreadingtotheboundary"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "external contact / commensuration / return paths",
+            "normalized": "external contact commensuration return paths",
+            "compact": "externalcontactcommensurationreturnpaths"
+          }
+        ]
+      }
+    },
+    {
+      "id": "07_creative_offshoots_readme_en",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/README.en.md",
+      "title": {
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "layer_readme",
+      "status": "README",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "external contact / commensuration / return paths",
+      "role": {
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
+      },
+      "language_relation": {
+        "language": "en",
+        "role": "commensuration",
+        "counterpart_path": "07_Creative_Offshoots/README.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/README.md"
+      },
+      "document_role": "navigation",
+      "assessment_summary": {
+        "status": "not_applicable",
+        "applicability": "not_applicable",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "overview"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "外部との接触・表現・再照合",
+            "normalized": "外部との接触 表現 再照合",
+            "compact": "外部との接触表現再照合"
+          },
+          {
+            "lang": "en",
+            "text": "External Contact, Expression, and Re-Collation",
+            "normalized": "external contact expression and re collation",
+            "compact": "externalcontactexpressionandrecollation"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "overview",
+            "normalized": "overview",
+            "compact": "overview"
+          },
+          {
+            "lang": "ja",
+            "text": "全体像",
+            "normalized": "全体像",
+            "compact": "全体像"
+          },
+          {
+            "lang": "en",
+            "text": "Overview",
+            "normalized": "overview",
+            "compact": "overview"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "外部との接触・表現・再照合",
+            "normalized": "外部との接触 表現 再照合",
+            "compact": "外部との接触表現再照合"
+          },
+          {
+            "lang": "en",
+            "text": "External Contact, Expression, and Re-Collation",
+            "normalized": "external contact expression and re collation",
+            "compact": "externalcontactexpressionandrecollation"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "external contact / commensuration / return paths",
+            "normalized": "external contact commensuration return paths",
+            "compact": "externalcontactcommensurationreturnpaths"
+          }
+        ]
+      }
+    },
+    {
+      "id": "07_creative_offshoots_readme_ja",
+      "id_source": "explicit",
+      "path": "07_Creative_Offshoots/README.md",
+      "title": {
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
+      },
+      "layer": "07_Creative_Offshoots",
+      "document_type": "layer_readme",
+      "status": "README",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "external contact / commensuration / return paths",
+      "role": {
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
+      },
+      "language_relation": {
+        "language": "ja",
+        "role": "authoritative",
+        "counterpart_path": "07_Creative_Offshoots/README.en.md",
+        "coverage": "full",
+        "authoritative_path": "07_Creative_Offshoots/README.md"
+      },
+      "document_role": "navigation",
+      "assessment_summary": {
+        "status": "not_applicable",
+        "applicability": "not_applicable",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "overview"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [],
+          "en": []
+        },
+        "reader_questions": {
+          "ja": [],
+          "en": []
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
+          {
+            "lang": "ja",
+            "text": "外部との接触・表現・再照合",
+            "normalized": "外部との接触 表現 再照合",
+            "compact": "外部との接触表現再照合"
+          },
+          {
+            "lang": "en",
+            "text": "External Contact, Expression, and Re-Collation",
+            "normalized": "external contact expression and re collation",
+            "compact": "externalcontactexpressionandrecollation"
+          }
+        ],
+        "owned_concept": [],
+        "aliases": [],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "overview",
+            "normalized": "overview",
+            "compact": "overview"
+          },
+          {
+            "lang": "ja",
+            "text": "全体像",
+            "normalized": "全体像",
+            "compact": "全体像"
+          },
+          {
+            "lang": "en",
+            "text": "Overview",
+            "normalized": "overview",
+            "compact": "overview"
+          }
+        ],
+        "reader_questions": [],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "外部との接触・表現・再照合",
+            "normalized": "外部との接触 表現 再照合",
+            "compact": "外部との接触表現再照合"
+          },
+          {
+            "lang": "en",
+            "text": "External Contact, Expression, and Re-Collation",
+            "normalized": "external contact expression and re collation",
+            "compact": "externalcontactexpressionandrecollation"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "external contact / commensuration / return paths",
+            "normalized": "external contact commensuration return paths",
+            "compact": "externalcontactcommensurationreturnpaths"
+          }
+        ]
       }
     },
     {

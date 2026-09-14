@@ -4,6 +4,8 @@ An introduction to Scientific Ontology, from inquiry to peace
 
 > Status: Literary essay
 > Language: English commensurated rendering; Japanese text is authoritative
+> Layer: 07_Creative_Offshoots / Literary_Essays
+> Authority: A literary commensuration and contact surface, not a concept-definition owner.
 
 ## 1. Keeping Mistaken Questions Alive
 ### What is Scientific Ontology trying to do?
@@ -1208,3 +1210,6 @@ Perhaps that is where Scientific Ontology's account of peace should begin.
 ---
 
 [Japanese authoritative text](Questions_Boundaries_and_Peace.ja.md). This English commensuration is not an independently authoritative version.
+
+
+[Directory guide](README.en.md) | [Exposure and audit](../Adversarial_Exposure/README.en.md)

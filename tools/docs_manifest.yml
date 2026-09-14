@@ -8805,6 +8805,395 @@ documents:
       en:
     searchable: true
     visibility: canonical
+- path: 07_Creative_Offshoots/README.md
+  doc_id: 07_creative_offshoots_readme_ja
+  document_type: layer_readme
+  document_role: navigation
+  title_ja: 外部との接触・表現・再照合
+  title_en: External Contact, Expression, and Re-Collation
+  layer: 07_Creative_Offshoots
+  status: README
+  scope: external contact / commensuration / return paths
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 外部との接触・表現・再照合
+  role_en: External Contact, Expression, and Re-Collation
+  catalog_document: true
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: 07_Creative_Offshoots/README.en.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/README.md
+  assessment:
+    applicability: not_applicable
+    review_state: not_applicable
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - overview
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+- path: 07_Creative_Offshoots/README.en.md
+  doc_id: 07_creative_offshoots_readme_en
+  document_type: layer_readme
+  document_role: navigation
+  title_ja: 外部との接触・表現・再照合
+  title_en: External Contact, Expression, and Re-Collation
+  layer: 07_Creative_Offshoots
+  status: README
+  scope: external contact / commensuration / return paths
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 外部との接触・表現・再照合
+  role_en: External Contact, Expression, and Re-Collation
+  catalog_document: true
+  language_relation:
+    language: en
+    role: commensuration
+    counterpart_path: 07_Creative_Offshoots/README.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/README.md
+  assessment:
+    applicability: not_applicable
+    review_state: not_applicable
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - overview
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+- path: 07_Creative_Offshoots/Adversarial_Exposure/README.md
+  doc_id: 07_creative_offshoots_adversarial_exposure_readme_ja
+  document_type: subdirectory_readme
+  document_role: navigation
+  title_ja: 異質な対象への曝露と監査
+  title_en: Exposure to Heterogeneous Subjects and Audit
+  layer: 07_Creative_Offshoots
+  status: README
+  scope: external contact / commensuration / return paths
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 異質な対象への曝露と監査
+  role_en: Exposure to Heterogeneous Subjects and Audit
+  catalog_document: true
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: 07_Creative_Offshoots/Adversarial_Exposure/README.en.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/Adversarial_Exposure/README.md
+  assessment:
+    applicability: not_applicable
+    review_state: not_applicable
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - overview
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+- path: 07_Creative_Offshoots/Adversarial_Exposure/README.en.md
+  doc_id: 07_creative_offshoots_adversarial_exposure_readme_en
+  document_type: subdirectory_readme
+  document_role: navigation
+  title_ja: 異質な対象への曝露と監査
+  title_en: Exposure to Heterogeneous Subjects and Audit
+  layer: 07_Creative_Offshoots
+  status: README
+  scope: external contact / commensuration / return paths
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 異質な対象への曝露と監査
+  role_en: Exposure to Heterogeneous Subjects and Audit
+  catalog_document: true
+  language_relation:
+    language: en
+    role: commensuration
+    counterpart_path: 07_Creative_Offshoots/Adversarial_Exposure/README.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/Adversarial_Exposure/README.md
+  assessment:
+    applicability: not_applicable
+    review_state: not_applicable
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - overview
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+- path: 07_Creative_Offshoots/Literary_Essays/README.md
+  doc_id: 07_creative_offshoots_literary_essays_readme_ja
+  document_type: subdirectory_readme
+  document_role: navigation
+  title_ja: 読み物から、境界へ
+  title_en: From Reading to the Boundary
+  layer: 07_Creative_Offshoots
+  status: README
+  scope: external contact / commensuration / return paths
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 読み物から、境界へ
+  role_en: From Reading to the Boundary
+  catalog_document: true
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: 07_Creative_Offshoots/Literary_Essays/README.en.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/Literary_Essays/README.md
+  assessment:
+    applicability: not_applicable
+    review_state: not_applicable
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - literature
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+- path: 07_Creative_Offshoots/Literary_Essays/README.en.md
+  doc_id: 07_creative_offshoots_literary_essays_readme_en
+  document_type: subdirectory_readme
+  document_role: navigation
+  title_ja: 読み物から、境界へ
+  title_en: From Reading to the Boundary
+  layer: 07_Creative_Offshoots
+  status: README
+  scope: external contact / commensuration / return paths
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 読み物から、境界へ
+  role_en: From Reading to the Boundary
+  catalog_document: true
+  language_relation:
+    language: en
+    role: commensuration
+    counterpart_path: 07_Creative_Offshoots/Literary_Essays/README.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/Literary_Essays/README.md
+  assessment:
+    applicability: not_applicable
+    review_state: not_applicable
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - literature
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+- path: 07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md
+  doc_id: 07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja
+  document_type: assertion_document
+  document_role: creative_reading
+  title_ja: 自動運転された正しさを止めるために
+  title_en: Stopping Correctness on Autopilot
+  layer: 07_Creative_Offshoots
+  status: Literary essay
+  scope: Business / withdrawal / bodily finitude / inheritance of judgment / provenance / self-critique
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 自動運転された正しさを止めるために
+  role_en: Stopping Correctness on Autopilot
+  catalog_document: true
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: 07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+    protocol:
+      id: claim-classification-pilot
+      revision: 2026-08-23-b
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - ethics
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+- path: 07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md
+  doc_id: 07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en
+  document_type: assertion_document
+  document_role: creative_reading
+  title_ja: 自動運転された正しさを止めるために
+  title_en: Stopping Correctness on Autopilot
+  layer: 07_Creative_Offshoots
+  status: Literary essay
+  scope: Business / withdrawal / bodily finitude / inheritance of judgment / provenance / self-critique
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 自動運転された正しさを止めるために
+  role_en: Stopping Correctness on Autopilot
+  catalog_document: true
+  language_relation:
+    language: en
+    role: commensuration
+    counterpart_path: 07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md
+  assessment:
+    applicability: commensuration_only
+    review_state: unreviewed
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - ethics
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+- path: 07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md
+  doc_id: 07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_ja
+  document_type: assertion_document
+  document_role: research_note
+  title_ja: 付録A　監査記録――三論点統合論考との相互照合と残差集積
+  title_en: 'Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals'
+  layer: 07_Creative_Offshoots
+  status: Appendix / audit record / non-canonical extension candidate
+  scope: correctness / action closure / authority / return / actuation / individuality / provenance / proxy return
+    / irreversible residual
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 付録A　監査記録――三論点統合論考との相互照合と残差集積
+  role_en: 'Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals'
+  catalog_document: true
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: 07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+    protocol:
+      id: claim-classification-pilot
+      revision: 2026-08-23-b
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - boundary
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+- path: 07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md
+  doc_id: 07_creative_offshoots_adversarial_exposure_correctness_exposure_audit_en
+  document_type: assertion_document
+  document_role: research_note
+  title_ja: 付録A　監査記録――三論点統合論考との相互照合と残差集積
+  title_en: 'Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals'
+  layer: 07_Creative_Offshoots
+  status: Appendix / audit record / non-canonical extension candidate
+  scope: correctness / action closure / authority / return / actuation / individuality / provenance / proxy return
+    / irreversible residual
+  public_profile: ''
+  state: public
+  registration_state: provisional
+  role_ja: 付録A　監査記録――三論点統合論考との相互照合と残差集積
+  role_en: 'Appendix A: Audit Record -- Cross-Collation with the Integrated Essay and Accumulation of Residuals'
+  catalog_document: true
+  language_relation:
+    language: en
+    role: commensuration
+    counterpart_path: 07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md
+    coverage: full
+    authoritative_path: 07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md
+  assessment:
+    applicability: commensuration_only
+    review_state: unreviewed
+  discovery:
+    primary_question:
+      ja: null
+      en: null
+    topics:
+    - boundary
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja: []
+      en: []
+    searchable: true
+    visibility: canonical
+
 managed_assets:
 - asset_id:
     04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_00_timeline

@@ -94,6 +94,7 @@ format_registry:
     - "Public Overview Candidate / cross-series operational orientation"
     - "Visual note"
     - "Literary essay"
+    - "Appendix / audit record / non-canonical extension candidate"
     - "Working note"
     rule: "Status describes document role, not claim strength."
 
