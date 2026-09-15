@@ -15,6 +15,8 @@
 
 この層は完成理論を宣言する場所でも、根拠の弱い主張を自由に置く場所でもない。仮説、対応、構造読解を公開可能な鞘へ入れ、非主張境界、反例、残差、検証段階を保持する。
 
+ここでいう「仮説」は、外部分野で未確立であるという理由だけで停止させる対象ではない。Research Notes は、未確立な根拠仮説を**未確立のまま能動状態で保持し、壊れた場所を特定できるようにする層**である。借用した事実・定義・測定記述に誤りがあればその箇所を局所訂正するが、「外部体系から導出されない」と「反証された」を同一視しない。
+
 ### 構造上の位置
 
 ```text
@@ -93,6 +95,8 @@ Research Notesは基礎層を暗黙に更新しない。昇格には、定義所
 `05_Research_Notes` contains research lines whose claim strength, collision risk, or cross-domain distance is too high for immediate integration into the public foundations, but which should be retained under explicit boundary conditions.
 
 This is neither a place for declaring completed theories nor a free zone for weakly grounded claims. It places hypotheses, correspondences, and structural readings in a public sheath while retaining non-claim boundaries, counterexamples, residuals, and verification stages.
+
+A hypothesis here is not suspended merely because it remains unestablished in an external field. Research Notes keep unestablished ground hypotheses **active as unestablished hypotheses while preserving the ability to identify where they break**. If a borrowed fact, definition, or measurement description is wrong, that local statement is corrected. “Not derivable from an external system” is not treated as synonymous with “falsified.”
 
 ## 1. Structural Position
 

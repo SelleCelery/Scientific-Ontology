@@ -40,45 +40,38 @@
 - 後続条件
 - 再照合可能性
 
-これらを通じて、存在がどのように現れ、認識され、意味を持ち、他の存在、制度、環境、未来へ作用するかを記述する。
+ここで境界は、隔てる線や壁だけではない。異なる履歴、主体、制度、意味、環境が接触し、通過、拒否、変換、保持、返送を起こす**通路・緩衝地帯**でもある。存在境界論は、この緩衝地帯を主要な観測面として扱う。
+
+この観測には、公開体系上の広い意味での**応用形而上学**を主に用いる。応用形而上学は、存在、時間、可能性、認識、意味、物質、非存在などを最初から別々の専門領域へ閉じず、必要なかぎり最も大きな境界を取って構造を問う方向である。一方、[`Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md)は、その広がりをそのまま確認済み実在へ昇格させないための公開上の責任境界を置く。
+
+したがって、応用形而上学と境界実在論は競合する二体系ではない。前者が問いの境界を広く取り、後者が人間側の確認可能性と主張責任を制約する。この往復が、Sat / Truthを中心とする中核三相の構造規定へつながる。
 
 存在境界論は、主観側、客観側、横断研究、その他の異なる言語ゲームのどれか一つを最終言語として選ぶことから始めない。それぞれの成立条件、観測範囲、主張強度、限界を保持したまま、境界へ持ち寄って照合できる場を整えること自体を研究対象とする。通約は同一化ではなく、差異、非同一性、残差、返路を追跡可能にする操作である。
 
 また、v5系開始時に追加された[`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md)は、境界事件、作用、返り、責任分界、可動性という運用方向を提示する。これは新しい上位公理ではなく、既存概念を外部実装へ持ち出すための全体方針である。
 
-公開体系では、境界認識批判から認識生成、言語・意味・通信位相の横断基盤、認識運用、実装、返送へ至る次の連続を明示する。
-
-```text
-境界認識批判
-  ↓
-境界認識生成
-  ↓
-言語・意味・通信位相の横断基盤
-  ↓
-境界認識運用
-  ↓
-目的・通信・組織への実装
-  ↓
-倫理・社会設計・平和仕様
-  ↓
-残差・異議・実装結果の返送
-```
+公開体系では、元型、内在的批判・拡張、応用、レンダリング、外部曝露を一方向の階段にせず、相互に返路を持つ異なる機能として分ける。
 
 ---
 
 ## 2. リポジトリ全体の構造
 
-公開リポジトリは、現在、次の五領域として読むのが最も安定している。
+公開リポジトリは、現在、次の領域として読むのが最も安定している。
 
 | 領域 | 主な場所 | 役割 |
 |---|---|---|
 | 公開入口 | ルート、`00_Overview` | 全体説明、概念地図、運用方針、Roadmap、Glossary、読解経路 |
-| 中核・応用・研究本文 | `01`–`06` | 基礎三層、応用、研究ノート、視覚資料 |
-| 外部接触・表現実験 | `07_Creative_Offshoots` | 文学・創作・比較的世界制作など、定義所有の外側で起きる接触と残差の観測 |
+| 元型・生成核 | `01_Sat_Truth`–`03_Tam_Goodness` | 最広域の構造規定、通信動態、規約・意味構築を三相として扱う中核 |
+| スピンアウト・応用 | `04_Applications` | 01–03と必要に応じて05を、心理・経済・政治・AI・制度・設計・実践へ持ち出す |
+| 内在的批判・拡張 | `05_Research_Notes` | SOの共有文法の内側から元型を批判・拡張し、強い仮説や分野横断研究を保持する |
+| レンダリング研究 | `06_Visual_Materials` | 01–05を別の知覚・表現形式へ写し、保持と損失を照合する |
+| 外部・異質系への曝露 | `07_Creative_Offshoots` | とくに01–03を共有文法の外へ晒し、通約失敗、反論、反証候補、残差を受け取る |
 | リポジトリ統治 | `90_Repository_Governance`、`tools`、`scripts`、`.github`、`navigator` | 通約、用語衝突、文書契約、登録、検査、公開投影 |
 | 公開境界 | `99_Private_Core_Not_Included`、`.gitignore` | 非公開資料、作業草稿、公開除外対象との境界表示 |
 
 ここで`navigator`は公開文書を読むための投影面であり、概念定義や登録判断の所有者ではない。現在の文書同一性、正本・通約関係、概念所有、imports / exports / returnsなどの機械可読な関係は[`tools/docs_manifest.yml`](../tools/docs_manifest.yml)を基準とする。
+
+この区分は成熟度や重要度の序列ではない。04–07は、01–03からの**距離と機能**の違いを表す。v5.1では既存配置の全面移動を行わず、役割境界を先に固定する。
 
 ---
 
@@ -91,17 +84,11 @@ System Mapは、個別ファイルを一つずつ固定する目録ではなく�
 ├─ README.md / GLOSSARY.md / Roadmap.md / RELEASE_NOTES.md
 ├─ CITATION.md / CITATION.cff / LICENSE.md / .zenodo.json
 │
-├─ 00_Overview/
-│  ├─ Operational Outline
-│  ├─ Concept Network
-│  ├─ System Map
-│  ├─ Truth Management and Boundary PDCA
-│  ├─ Claim Strength and Publication-Layer Table
-│  └─ Physics Correspondence Policy
+├─ 00_Overview/                  # 公開地図・運用・主張強度・対応方針
 │
-├─ 01_Sat_Truth/                 # 成立条件、存在・意味・実在性
-├─ 02_Raj_Beauty/               # 履歴、差異、認識生成、通信
-├─ 03_Tam_Goodness/             # 返り、責任、倫理、条件付き接続
+├─ 01_Sat_Truth/                # 構造規定・応用形而上学・実在性・認識/真理条件
+├─ 02_Raj_Beauty/               # 通信・履歴・差分・動態・エネルギー的対応語彙
+├─ 03_Tam_Goodness/             # 公理・規約・通約・意味構築・返路・倫理
 │
 ├─ 04_Applications/
 │  ├─ AI_Adaptation/
@@ -112,9 +99,7 @@ System Mapは、個別ファイルを一つずつ固定する目録ではなく�
 │     │    # 公開するのはsource identity / hash / provenance / role。
 │     │    # exact historical bytesは公開リポジトリに含めない。
 │     └─ volumes/Volume_01_DeRegistry_to_Judgment_Transparency/
-│          # timeline / chronicle / transmissions / topology
-│          # evidence map / residuals / digest
-│          # historical attestation / current attested checksum / evidence
+│          # historical method record / attestation / evidence / residuals
 │
 ├─ 05_Research_Notes/
 │  ├─ Language_Meaning_and_Communication_Phase_Studies/
@@ -126,24 +111,25 @@ System Mapは、個別ファイルを一つずつ固定する目録ではなく�
 │  ├─ AI_Personality_Notes/
 │  └─ Literary_Ontological_Notes/
 │
-├─ 06_Visual_Materials/
+├─ 06_Visual_Materials/          # 01–05のレンダリング研究
 │
 ├─ 07_Creative_Offshoots/
-│  └─ Literary_Essays/
+│  ├─ Literary_Essays/          # 読み物・表現からの外部接触
+│  └─ Adversarial_Exposure/     # 異質な対象への曝露・監査・残差返送
 │
 ├─ 90_Repository_Governance/
 │  ├─ Publication and Commensuration Policy
 │  ├─ Translation Note
 │  ├─ Terminology/
-│  ├─ Assessment/                 # candidate protocol; public authorityではない
+│  ├─ Assessment/               # candidate protocol; public authorityではない
 │  └─ Release_Update/
 │
 ├─ 99_Private_Core_Not_Included/
 │
-├─ navigator/                     # public/developer projection surface
-├─ tools/                         # manifest / registry / maintenance / generated read models
-├─ scripts/                       # validators / builders / release helpers
-└─ .github/workflows/             # automated checks and deployment
+├─ navigator/                   # public/developer projection surface
+├─ tools/                       # manifest / registry / maintenance / generated read models
+├─ scripts/                     # validators / builders / release helpers
+└─ .github/workflows/           # automated checks and deployment
 ```
 
 この図に個別文書が現れないことは、公開対象外であることを意味しない。文書の現在状態はmanifest、各層のREADME、Navigatorのread modelで照合する。逆に、System Mapへ名前があることだけで、定義所有や公開登録が成立するわけでもない。
@@ -185,41 +171,41 @@ SO自身の判断履歴を監査する`04_Applications/SO_Reflexive_Philosophica
 
 ---
 
-## 6. `01`–`03` — 中核三層の構造的役割
+## 6. `01`–`03` — 元型三相の構造的役割
 
-三層は固定的な学問区分ではなく、同じ問題を異なる位相から読むための主要軸である。
+三層は固定的な学問区分ではなく、存在境界論が境界を読むための**元型的な三相**である。同じ文書・問題が複数相へ接触しうるため、ディレクトリ配置を排他的な分類として読まない。
 
-### 6.1 `01_Sat_Truth` — 成立条件と実在性
+### 6.1 `01_Sat_Truth` — 構造規定と最広域境界
 
-存在、観測、意味、境界実在論、認識批判など、何を出発点として扱えるかを担当する。
+Sat / Truthは、存在境界論が最も大きく境界を取り、構造そのものを規定する位相である。公開上は応用形而上学を主要な探索姿勢とし、Boundary Realismによってその主張可能域を制約する。
 
-### 6.2 `02_Raj_Beauty` — 履歴・差異・認識生成
+存在・実在性だけでなく、認識が成立する条件、真理条件、意味成立、観測、正しさの暫定的成立と再開可能性がここへ派生する。これは「形而上学なら何でも01」という意味ではなく、構造を何によって成立させるかという問いが中心である。
 
-履歴場、通信、差異、認識軸形成、科学との接触など、関係がどう動き、形を得るかを担当する。
+### 6.2 `02_Raj_Beauty` — 通信・差分・動態
 
-### 6.3 `03_Tam_Goodness` — 返り・責任・条件付き接続
+Raj / Beautyは、境界を横断して何が動き、どの履歴と差分を作り、どの方向へ認識を形成するかを扱う位相である。通信、履歴場、差分、同期・非同期、認識軸形成が中心になる。
 
-境界倫理、意味の返還軌道、異なる認識形式の条件付き接続など、接触後に何を返し、どう壊さずに接続を維持するかを担当する。
+エントロピー、エネルギー、エクセルギー、熱、圧などの語彙は、境界での移動・散逸・利用可能性を読む接触語彙としてこの位相へ寄る。ただし、個別文書で形式的対応を明示しない限り、SO内部の用法を標準物理量と同一視しない。強い物理・宇宙論仮説の本体は05へ隔離する。
 
-`Optional_Axiom_Modules_as_Cognitive_Bridge`は公開された橋渡し構造を扱う。歴史的sourceの同一性・hash・研究上の役割は公開できるが、撤退判断されたexact source bytesを公開定義の根拠として再配置しない。
+### 6.3 `03_Tam_Goodness` — 公理・規約・意味構築
+
+Tam / Goodnessは、認識された差分を、何を受け入れ、保留し、接続し、閉じ、再び開くかという規約へ組織する位相である。認識形式から生じる公理、通信規約、通約、意味構築、仮閉鎖、返路、責任、境界倫理がここへ寄る。
+
+倫理は後付けの道徳装飾ではない。異なる認識形式や履歴を接触させたあと、破壊的同一化や切断へ崩さず、意味と責任をどのように運用するかというプロトコル条件として現れる。
+
+三相は、真・美・善を固定的に分割する序列でも、専門分野の棚でもない。**Satが構造を規定し、Rajが境界横断の運動を扱い、Tamがその運動を公理・規約・意味として運用可能にする**、という主たる機能差として読む。
 
 ---
 
-## 7. `04_Applications` — 公開応用インターフェース
+## 7. `04_Applications` — スピンアウトと公開応用
 
-`04_Applications`は、中核三層の概念を公開可能な設計思想、評価枠、チェックリスト、仕様、自己監査へ接続する。
+`04_Applications`は、01–03の元型と、必要に応じて05で育った批判・拡張を、心理、経済、政治、AI、組織、制度、社会設計、インターフェースなどへスピンアウトさせる。
 
-### `AI_Adaptation`
+ここでは、存在の根源性そのものより、理論を別の対象領域へ持ち出したときに、どの判断・設計・責任・返路が必要になるかが主題になる。したがって、04は05より「完成している」層でも、05の単純な下流でもない。安定した元型から直接応用する場合と、05の拡張を受けて応用する場合がある。
 
-AIを判断代行主体として固定するのではなく、判断可能性、履歴、境界、返路をどう保つかという応用面を扱う。
-
-### `Social_Boundary_Design`
-
-AIや制度を採用する社会側の責任境界、再照合可能性、平和条件を扱う。
-
-### `SO_Reflexive_Philosophical_Research`
-
-SOが外部だけでなく、**自らの研究判断・分類・公開判断へ同じ境界監査を返す**ための再帰的応用面である。
+- `AI_Adaptation`：AI側の応答構造と境界機能。
+- `Social_Boundary_Design`：社会側の責任境界、照合、制度、平和条件。
+- `SO_Reflexive_Philosophical_Research`：SO自身の判断生成・分類・公開判断へ境界監査を返す再帰的応用面。
 
 Volume Iは、De-Registryから判断透明性、Topology-first監査、三層変換監査へ至る方法史を、成功だけに整形せず保持する。historical checksumは当時の記録として保持し、2026年現在の受理判断とは別にattestationを置く。旧sourceはidentity、historical filename、SHA-256、provenance、実験上の役割を公開できるが、exact bytesはprivateに保持し、公開Repositoryには含めない。
 
@@ -227,9 +213,11 @@ Volume Iは、De-Registryから判断透明性、Topology-first監査、三層�
 
 ---
 
-## 8. `05_Research_Notes` — 強い命題と発展中の研究線
+## 8. `05_Research_Notes` — 元型への内在的批判と拡張
 
-`05_Research_Notes`は、公開基礎層へ直接入れるには主張強度、専門依存、誤読リスク、成熟度のいずれかが十分に安定していないが、返路を保ったまま研究すべき線を置く。
+`05_Research_Notes`は、01–03の元型をSOの共有文法の内側から批判し、拡張する研究面である。公開基礎へ直ちに統合するには主張強度、専門依存、誤読リスク、成熟度のいずれかに距離がある研究線を、返路を保ったまま置く。
+
+Research Notesへの配置は、重要度が低いことや未成熟であることを意味しない。基礎性、成熟度、主張強度、公開層は別軸である。05で育った研究は、定義ownerへ返ることも、04へスピンアウトすることも、06でレンダリングを試すこともある。また07から返った外部残差が継続研究になる場合の主要な受け皿でもある。
 
 ### 8.1 `Language_Meaning_and_Communication_Phase_Studies`
 
@@ -259,19 +247,30 @@ DSSIの実装コードはSOリポジトリへ同梱しない。外部公開さ�
 
 ---
 
-## 9. `06_Visual_Materials` — 視覚的公開入口
+## 9. `06_Visual_Materials` — レンダリング研究
 
-この層は概念ポスターと読解注記を置く。
+`06_Visual_Materials`は、01–05までの概念・研究を別の知覚・表現形式へ写すレンダリング研究面である。現在の公開成果物は概念ポスターと読解注記を中心とする。
 
-視覚資料は理論本文、実証資料、形式的証明の代替ではない。概念体系へ複数方向から入るための補助インターフェースである。
+視覚資料は理論本文、実証資料、形式的証明の代替ではない。図にしたことで何が見えやすくなり、何が圧縮され、どの条件・留保・主張強度を本文へ戻さなければならないかまでを扱う。
+
+06は原文書との対応を維持することを主目的とし、共有文法そのものを外す07とは区別する。
 
 ---
 
-## 10. `07_Creative_Offshoots` — 外部接触と表現実験
+## 10. `07_Creative_Offshoots` — 外部・異質系への曝露
 
-`07_Creative_Offshoots`は、中核概念の新しい定義所有者ではない。文学、創作、比較的世界制作その他の表現面で、SOの公開概念が外部の語彙・形式・感性と接触したとき、何が見え、何が失われ、どの残差が返るかを観測する層である。
+`07_Creative_Offshoots`は、中核概念の新しい定義所有者ではない。とくに01–03の元型を、SOの共有文法を前提にしない異質な語彙、価値体系、世界観、生活上の問い、反論、表現形式へ曝露する外部接触面である。
 
-現在は`Literary_Essays`が公開接触面として置かれている。この層の正式なREADME、公開境界、返送規約は次の構造整理で確定する。したがって本System Mapは07の存在と役割だけを先に可視化し、未確定の定義権限を先取りしない。
+05が共有文法の内側から元型を批判・拡張するのに対し、07は共有そのものを仮定しない。そのため、理解不能、通約失敗、前提衝突、理解後の反論、反例・反証候補、適用限界、価値衝突を可能な範囲で分けて保持し、区別できないものは未分類の残差として残す。
+
+現在は二つの接触面を持つ。
+
+- `Literary_Essays`：読み物・表現から入り、理論を先に要求せず接触を起こす。
+- `Adversarial_Exposure`：公開元型をBusiness、対人関係、履歴継承などの異質な対象へ持ち出し、監査と残差返送を行う。
+
+外部通約は普及だけのためではなく、SO内部では生成しにくいdefeaterや摩擦を受け取るIngressでもある。ただし、外部から来たという理由だけで優先せず、05または該当definition ownerで再照合する。
+
+07から生じた研究が独自の語彙・方法・対象を持って自立した場合、将来別領域へスピンアウトする可能性は残すが、08という層を現時点では作らない。
 
 ---
 
@@ -322,29 +321,27 @@ DSSIの実装コードはSOリポジトリへ同梱しない。外部公開さ�
 
 ## 14. 研究動態と返路
 
-この体系は、上から下へ一方向に適用される階層ではない。
+この体系は、上から下へ一方向に適用される階層ではない。01–03を元型的な生成核とし、その周囲に異なる機能の接触面を置く。
 
 ```text
-01–03  中核三層
-  ↓
-04     公開応用・自己監査
-  ↓
-05     発展研究・形式化候補
-  ↓
-06     視覚的公開入口
-  ↓
-07     外部表現・創作との接触
-  ↓
-実装結果・批判・誤読・残差・異議
-  ↓
-00     Concept Network / Truth Management / System Map
-  ↓
-各canonical owner、応用、研究線へ返送
+                         ┌────────────→ 07 外部・異質系への曝露
+                         │                  │
+01–03 元型・生成核 ─────┼→ 05 内在的批判・拡張 ──┐
+     │                   │          │              │
+     │                   └──────────┴→ 04 応用・スピンアウト
+     │                                      │
+     └──────────── 01–05 ───────────────→ 06 レンダリング研究
+                                                │
+                 反論・失敗・圧縮損失・残差・異議
+                                                ↓
+                              05 / canonical owner / 04へ返送
 ```
 
-返路は「下位の結果を上位理論へ取り込んで同化する」ためだけにあるのではない。既存定義を変更しない、局所仮説として保持する、公開層へ移さない、といった判断も返りの一種である。
+返路は「下位の結果を上位理論へ取り込んで同化する」ためだけにあるのではない。既存定義を変更しない、局所仮説として保持する、公開層へ移さない、理解不能と反証を分離したまま保留する、といった判断も返りの一種である。
 
-SO Reflexive Philosophical Researchは、この返路をSO自身の判断へ適用する。Correctness / Logic / Structural Studiesは、形式化が原概念を取りこぼす地点を返す。Creative Offshootsは、表現へ出たときに発生する可視性、誤読、創造的変形、残差を返す。
+SO Reflexive Philosophical Researchは、この返路をSO自身の判断へ適用する。Correctness / Logic / Structural Studiesは、形式化が原概念を取りこぼす地点を返す。Visual Materialsは、レンダリングで失われた条件をsourceへ返す。Creative Offshootsは、共有文法の外へ出たときに発生する通約失敗、反論、反証候補、創造的変形、残差を返す。
+
+v5.1では役割境界を明示するが、既存文書の全面的な再配置は行わない。カテゴリー混在の監査は後続の独立工程とする。
 
 ---
 
@@ -373,7 +370,7 @@ SO Reflexive Philosophical Researchは、この返路をSO自身の判断へ適�
 - 倫理・組織・平和：Cognitive Dynamics → Port Allocation → Organizational Boundary → Specification for Peace
 - 判断・自己監査：[`SO_Reflexive_Philosophical_Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md) → Judgment Transparency Topology → Historical Attestation
 - 正しさ・形式化：[`Correctness_Logic_and_Structural_Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
-- 表現・創作接触：[`Questions, Boundaries, and Peace`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md)
+- 外部接触・異質系への曝露：[`07_Creative_Offshoots`](../07_Creative_Offshoots/README.md) → [`自動運転された正しさを止めるために`](../07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md) / [`問いを閉じず、境界を踏まないために`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md)
 - 物理近接研究：Physics Correspondence Policy → Physical Cosmological Notes
 - 公開・通約規則：Glossary → Publication and Commensuration Policy → Term Collision Registries
 
@@ -416,80 +413,67 @@ Public inclusion is governed in principle by the root [`.gitignore`](../.gitigno
 
 ## 1. Central Public Position
 
-Scientific Ontology does not claim to possess existence itself or to describe it exhaustively and finally.
+Scientific Ontology does not claim to possess existence itself or exhaustively describe its final nature.
 
-Its central public objects are:
+Its principal public objects include:
 
-- boundary;
+- boundaries;
 - contact;
 - history;
 - return;
-- residual and residue;
-- downstream condition; and
+- residuals and residue;
+- downstream conditions; and
 - re-collatability.
 
-Through these concepts, the system describes how existence appears, becomes recognized, acquires meaning, and affects other existences, institutions, environments, and futures.
+A boundary is not only a dividing line or wall. It is also a **passage and buffer zone** where distinct histories, agents, institutions, meanings, and environments meet and where admission, rejection, transformation, retention, and return occur. Scientific Ontology treats this buffer zone as a principal surface of observation.
 
-Scientific Ontology does not begin by selecting a subjective account, an objective account, cross-domain research, or any other language game as the final language. It attempts to maintain a field in which different language games can be brought to the boundary while preserving their conditions of validity, observational scope, claim strength, and limits. Commensuration is not identification; it keeps difference, non-identity, residuals, and return paths traceable.
+For that purpose it primarily uses **applied metaphysics** in a broad public sense: a direction of inquiry that takes the widest workable boundary across existence, time, possibility, cognition, meaning, matter, and nonexistence before closing them into separate specialist domains. [`Boundary_Realism_Principle.md`](../01_Sat_Truth/Boundary_Realism_Principle.md), however, places the public responsibility boundary that prevents this reach from being silently promoted into confirmed reality.
 
-The [`Scientific_Ontology_Operational_Outline.en.md`](./Scientific_Ontology_Operational_Outline.en.md), added at the opening of the v5 series, presents an operational direction through boundary events, action, return, responsibility partition, and mobility. It is not a new superior axiom but a whole-system orientation for carrying existing concepts into external implementation.
+Applied metaphysics and Boundary Realism are therefore not competing systems. The former takes a wide boundary for inquiry; the latter constrains what humans may responsibly claim to have confirmed. Their movement back and forth informs the structural determination expressed through the three core phases, centered on Sat / Truth.
 
-The public architecture makes the following continuity explicit:
+Scientific Ontology does not begin by selecting the subjective, objective, cross-disciplinary, religious, literary, institutional, or scientific language game as its final language. It attempts to retain the conditions, observational range, claim strength, and limits of each while creating a boundary surface on which they can be collated. Commensuration is not identity; it makes transformation, difference, residuals, and return paths traceable.
 
-```text
-critique of boundary cognition
-  ↓
-formation of boundary cognition
-  ↓
-cross-cutting foundation: language / meaning / communication phase
-  ↓
-operation of boundary cognition
-  ↓
-implementation in purpose, communication, and organization
-  ↓
-ethics, social design, and peace specification
-  ↓
-return of residuals, objections, and implementation results
-```
+The [`Scientific Ontology Operational Outline`](./Scientific_Ontology_Operational_Outline.en.md) provides a high-level orientation around boundary events, effects, return, responsibility boundaries, and mobility. It is not a new superior axiom but a way of carrying existing concepts toward external operation.
+
+The public system therefore distinguishes the archetypal core, internal critique and extension, application, rendering, and external exposure as different functions with return paths rather than as a one-way ladder.
 
 ---
 
 ## 2. Overall Repository Architecture
 
-The public repository is currently most stable when read as five regions.
+The public repository is most stably read through the following regions.
 
 | Region | Main location | Responsibility |
 |---|---|---|
-| Public entrance | root, `00_Overview` | whole-system explanation, concept maps, operational orientation, Roadmap, Glossary, reading routes |
-| Core, application, and research body | `01`–`06` | three core layers, applications, research notes, visual materials |
-| Outward contact and expressive experiments | `07_Creative_Offshoots` | observing contact and residuals in literature, creative work, comparative worldmaking, and related forms outside definition ownership |
-| Repository governance | `90_Repository_Governance`, `tools`, `scripts`, `.github`, `navigator` | commensuration, terminology collision, document contracts, registration, validation, public projection |
-| Public boundary | `99_Private_Core_Not_Included`, `.gitignore` | marking the boundary against non-public material, working drafts, and excluded artifacts |
+| Public entrance | root, `00_Overview` | overall explanation, maps, operating orientation, Roadmap, Glossary, reading routes |
+| Archetypal / generative core | `01_Sat_Truth`–`03_Tam_Goodness` | the three phases of broad structural determination, communication dynamics, and protocol / meaning construction |
+| Spinout and application | `04_Applications` | carries 01–03 and, where needed, 05 into psychology, economics, politics, AI, institutions, design, and practice |
+| Internal critique and extension | `05_Research_Notes` | critiques and extends the archetype within a shared SO grammar while retaining strong hypotheses and cross-domain research |
+| Rendering research | `06_Visual_Materials` | projects 01–05 into other perceptual and expressive forms and collates what is retained or lost |
+| External / heterogeneous exposure | `07_Creative_Offshoots` | exposes especially 01–03 outside the shared grammar and receives failed commensuration, objections, candidate refutations, and residuals |
+| Repository governance | `90_Repository_Governance`, `tools`, `scripts`, `.github`, `navigator` | commensuration, terminology collision, document contracts, registration, checking, public projection |
+| Public boundary | `99_Private_Core_Not_Included`, `.gitignore` | marks the boundary against private material, working drafts, and excluded public-release content |
 
-`navigator` is a projection surface for reading public documents; it does not own conceptual definitions or registration decisions. Current machine-readable document identity, authoritative/commensurated relations, concept ownership, and imports / exports / returns are governed through [`tools/docs_manifest.yml`](../tools/docs_manifest.yml).
+`navigator` is a projection surface for reading the public documents, not an owner of definitions or registration judgments. Machine-readable document identity, language relations, concept ownership, imports, exports, returns, and delegations are governed by [`tools/docs_manifest.yml`](../tools/docs_manifest.yml).
+
+These regions are not ranks of maturity or importance. Layers 04–07 differ mainly by **distance and function** relative to the archetypal core. v5.1 fixes these role boundaries without performing a comprehensive migration of existing documents.
 
 ---
 
 ## 3. Public Repository Structure
 
-The System Map is not a frozen file-by-file inventory. It shows **which region performs which responsibility and where its results return**. Exact document inventory is delegated to the manifest and directory READMEs; this map keeps only the more stable topology.
+The System Map is not a fixed inventory of every file. It shows **which region is responsible for what and where results return**. Exact inventories belong to the manifest and directory READMEs.
 
 ```text
 .
 ├─ README.md / GLOSSARY.md / Roadmap.md / RELEASE_NOTES.md
 ├─ CITATION.md / CITATION.cff / LICENSE.md / .zenodo.json
 │
-├─ 00_Overview/
-│  ├─ Operational Outline
-│  ├─ Concept Network
-│  ├─ System Map
-│  ├─ Truth Management and Boundary PDCA
-│  ├─ Claim Strength and Publication-Layer Table
-│  └─ Physics Correspondence Policy
+├─ 00_Overview/                  # public maps, operation, claim strength, correspondence policy
 │
-├─ 01_Sat_Truth/                 # conditions of formation, existence, meaning, reality
-├─ 02_Raj_Beauty/               # history, difference, cognitive formation, communication
-├─ 03_Tam_Goodness/             # return, responsibility, ethics, conditional connection
+├─ 01_Sat_Truth/                # structural determination, applied metaphysics, reality, cognition/truth conditions
+├─ 02_Raj_Beauty/               # communication, history, difference, dynamics, energetic correspondence vocabulary
+├─ 03_Tam_Goodness/             # axioms, protocols, commensuration, meaning construction, return, ethics
 │
 ├─ 04_Applications/
 │  ├─ AI_Adaptation/
@@ -498,11 +482,9 @@ The System Map is not a frozen file-by-file inventory. It shows **which region p
 │     ├─ research context / open questions (ja + en)
 │     ├─ sources/README.md
 │     │    # public: source identity / hash / provenance / role
-│     │    # exact historical bytes are not included in the public repository
+│     │    # exact historical bytes remain outside the public repository
 │     └─ volumes/Volume_01_DeRegistry_to_Judgment_Transparency/
-│          # timeline / chronicle / transmissions / topology
-│          # evidence map / residuals / digest
-│          # historical attestation / current attested checksum / evidence
+│          # historical method record / attestation / evidence / residuals
 │
 ├─ 05_Research_Notes/
 │  ├─ Language_Meaning_and_Communication_Phase_Studies/
@@ -514,27 +496,28 @@ The System Map is not a frozen file-by-file inventory. It shows **which region p
 │  ├─ AI_Personality_Notes/
 │  └─ Literary_Ontological_Notes/
 │
-├─ 06_Visual_Materials/
+├─ 06_Visual_Materials/          # rendering research over 01–05
 │
 ├─ 07_Creative_Offshoots/
-│  └─ Literary_Essays/
+│  ├─ Literary_Essays/          # outward contact through readable expression
+│  └─ Adversarial_Exposure/     # heterogeneous exposure, audit, residual return
 │
 ├─ 90_Repository_Governance/
 │  ├─ Publication and Commensuration Policy
 │  ├─ Translation Note
 │  ├─ Terminology/
-│  ├─ Assessment/                 # candidate protocol; not automatic public authority
+│  ├─ Assessment/               # candidate protocol; not public authority
 │  └─ Release_Update/
 │
 ├─ 99_Private_Core_Not_Included/
 │
-├─ navigator/                     # public/developer projection surface
-├─ tools/                         # manifest / registry / maintenance / generated read models
-├─ scripts/                       # validators / builders / release helpers
-└─ .github/workflows/             # automated checks and deployment
+├─ navigator/                   # public/developer projection surface
+├─ tools/                       # manifest / registry / maintenance / generated read models
+├─ scripts/                     # validators / builders / release helpers
+└─ .github/workflows/           # automated checks and deployment
 ```
 
-The absence of an individual document from this diagram does not mean that it is excluded from publication. Current document state is collated through the manifest, layer READMEs, and Navigator read models. Conversely, being named in this System Map does not by itself grant definition ownership or registration status.
+Absence from this diagram does not imply exclusion from publication. Current document state is checked through the manifest, directory READMEs, and Navigator read models. Conversely, mention here does not itself establish definition ownership or registration.
 
 ---
 
@@ -573,70 +556,72 @@ When `04_Applications/SO_Reflexive_Philosophical_Research`, `05_Research_Notes/C
 
 ---
 
-## 6. `01`–`03` — Structural Responsibilities of the Three Core Layers
+## 6. `01`–`03` — Structural Responsibilities of the Three Archetypal Phases
 
-The three layers are not fixed academic compartments. They are major axes for reading the same problem through different phases.
+The three layers are not fixed academic disciplines but **archetypal phases** through which Scientific Ontology reads boundaries. A document or problem may touch more than one phase; directory placement is not an exclusive classification.
 
-### 6.1 `01_Sat_Truth` — Conditions of Formation and Reality
+### 6.1 `01_Sat_Truth` — Structural Determination and the Widest Boundary
 
-This layer addresses existence, observation, meaning, Boundary Realism, and epistemological critique: what may be treated as a starting condition and under what limits.
+Sat / Truth is the phase in which Scientific Ontology takes its widest boundary and asks what structure is being posited. Publicly, applied metaphysics provides the main exploratory orientation while Boundary Realism constrains the range of responsible claims.
 
-### 6.2 `02_Raj_Beauty` — History, Difference, and Cognitive Formation
+Questions of existence and reality therefore sit alongside the conditions of cognition, truth, meaning, observation, and provisional correctness. This does not mean that every metaphysical speculation belongs in 01; the central question is what makes a structure count as formed and publicly assertable.
 
-This layer addresses history-fields, communication, difference, cognitive-axis formation, and contact with science: how relations move and acquire form.
+### 6.2 `02_Raj_Beauty` — Communication, Difference, and Dynamics
 
-### 6.3 `03_Tam_Goodness` — Return, Responsibility, and Conditional Connection
+Raj / Beauty asks what moves across a boundary, what histories and differences are produced, and how cognitive direction forms. Communication, history-fields, difference, synchronization and desynchronization, and cognitive-axis formation are central.
 
-This layer addresses boundary ethics, meaning as return orbit, and conditional connection among different cognitive forms: what must be returned after contact and how connection can continue without destructive identification.
+Entropy, energy, exergy, heat, and pressure may appear here as contact vocabulary for movement, dissipation, and availability. Unless a local document explicitly establishes a formal correspondence, SO usage is not identified with standard physical quantities. Stronger physical and cosmological hypotheses remain isolated in 05.
 
-`Optional_Axiom_Modules_as_Cognitive_Bridge` is the public bridge document. Historical source identity, hash, and research role may remain public, but exact source bytes withdrawn from the public repository are not reintroduced as an invisible definition authority.
+### 6.3 `03_Tam_Goodness` — Axioms, Protocols, and Meaning Construction
 
----
+Tam / Goodness organizes recognized differences into rules for what may be admitted, suspended, connected, closed, reopened, or returned. Cognitive axioms, communication protocols, commensuration, meaning construction, provisional closure, return paths, responsibility, and boundary ethics gather here.
 
-## 7. `04_Applications` — Public Application Interfaces
+Ethics is not a moral ornament added afterward. It appears as a protocol condition for operating across distinct cognitive forms and histories without collapsing into destructive identity or severance.
 
-`04_Applications` connects the three core layers to publicly usable design ideas, evaluation frames, checklists, specifications, and reflexive audit.
-
-### `AI_Adaptation`
-
-This area treats AI not as a fixed substitute for human judgment but as an application surface for preserving conditions of judgment, history, boundaries, and return paths.
-
-### `Social_Boundary_Design`
-
-This area addresses responsibility boundaries, re-collatability, and peace conditions on the social side of AI and institutional adoption.
-
-### `SO_Reflexive_Philosophical_Research`
-
-This is the recursive application surface through which SO returns the same boundary audit to **its own research judgments, classifications, and publication decisions**.
-
-Volume I preserves the methodological history from De-Registry to judgment transparency, topology-first auditing, and three-layer transformation auditing without rewriting it as a linear success story. Historical checksums remain records of their period, while a separate attestation records present acceptance. For the old source, identity, historical filename, SHA-256, provenance, and experimental role may remain public; exact bytes are retained privately and are not included in the public repository.
-
-**Judgment Transparency** does not guarantee correctness. It means keeping contacts, phases, paths, return paths, and open ends reconstructable so that objection, reassessment, and correction can reach the actual points of change.
+The three phases are neither a ranking of Truth, Beauty, and Goodness nor a set of disciplinary shelves. Their principal distinction is functional: **Sat determines structure, Raj treats boundary-crossing movement, and Tam makes that movement operable as axiom, protocol, and meaning**.
 
 ---
 
-## 8. `05_Research_Notes` — Stronger Propositions and Developing Research Lines
+## 7. `04_Applications` — Spinout and Public Application
 
-`05_Research_Notes` retains lines whose claim strength, specialist dependence, misreading risk, or maturity is not yet stable enough for direct placement in the public foundational layers, while preserving return paths for continued work.
+`04_Applications` carries the archetype of 01–03 and, where needed, critiques or extensions developed in 05 into psychology, economics, politics, AI, organizations, institutions, social design, and interfaces.
+
+Its main question is no longer ontological fundamentality itself but what conditions of judgment, design, responsibility, and return are required when the theory enters another domain. Layer 04 is therefore neither “more complete” than 05 nor simply downstream from it. Stable core concepts may spin out directly, while other applications may depend on extensions developed in 05.
+
+- `AI_Adaptation`: response structures and boundary functions on the AI side.
+- `Social_Boundary_Design`: responsibility boundaries, collation, institutions, and conditions of peace on the social side.
+- `SO_Reflexive_Philosophical_Research`: a recursive application surface returning boundary audit to SO's own judgments, classifications, and publication decisions.
+
+Volume I preserves the methodological history from De-Registry through judgment transparency, topology-first auditing, and three-layer transformation audit without rewriting it as an uninterrupted success. Historical checksums remain historical; present acceptance is separately attested. Source identity, historical filename, SHA-256, provenance, and experimental role may be public while exact historical bytes remain private.
+
+**Judgment transparency** does not guarantee correct judgment. It means that contact, phase, route, return path, and open ends remain reconstructable so that objections and revisions can reach the actual point of change.
+
+---
+
+## 8. `05_Research_Notes` — Internal Critique and Extension of the Archetype
+
+`05_Research_Notes` is the research surface for critiquing and extending the archetype of 01–03 from within enough of SO's shared grammar to make the disagreement traceable. It retains research lines whose claim strength, specialist dependence, misreading risk, or maturity makes immediate integration into the public foundations inappropriate.
+
+Placement in Research Notes does not imply low importance or immaturity. Fundamentality, maturity, claim strength, and publication layer are separate axes. Work developed in 05 may return to a concept owner, spin out into 04, be tested through rendering in 06, or receive residuals first exposed in 07.
 
 ### 8.1 `Language_Meaning_and_Communication_Phase_Studies`
 
-A cross-cutting line treating language, meaning, grammar, speech, commensuration, semantic networks, and AI language generation as communication phases with return paths. It does not replace the Meaning Generation Model and owns only local linguistic questions.
+A cross-cutting research line treating language, meaning, grammar, speech, commensuration, semantic networks, and AI language generation as communication phases with return paths. It does not replace the Meaning Generation Model and holds local responsibility for linguistic meaning.
 
 ### 8.2 `Cognitive_Dynamics_Communication_Studies`
 
-This line studies the relation between communicatively continuous cognition and the practical discretization into phases, ports, capacities, and responsibilities, connecting cognition to organizational boundaries, boundary diplomacy, and peace specification.
+Studies continuous cognition together with the operational discretization needed for existence phases, ports, capacity, and responsibility, connecting to organizational boundaries, boundary diplomacy, and peace specifications.
 
 ### 8.3 `Correctness_Logic_and_Structural_Studies`
 
-This line asks how correctness, logic, structural representation, closure, redundancy, frontiers, cognitive axes, and finite-resource computation can be commensurated into formal or computational representations **without redefining existing SO concepts**.
+Studies whether correctness, logic, structural representation, closure, redundancy, frontier, cognitive axes, and finite-resource computation can be commensurated into formal and computational expressions **without redefining existing SO concepts**.
 
-At present its README is the research entrance. Formalization candidates including `Spine` are not canonical definitions. Even when a formalization proves useful, conditions or residuals lost in the mapping must be returned to the original concept owners.
+At present the README is the research entrance. Formalization candidates including `Spine` are not canonical definitions. Even useful formalization must return conditions and residuals lost in the mapping to the original concept owners.
 
-### 8.4 Other Research Lines
+### 8.4 Other research lines
 
 - `Cross_Domain_Ontological_Notes`: asymmetry, return ethics, narrative, consent boundaries, and other cross-domain readings.
-- `Physical_Cosmological_Notes`: higher-claim-strength physics- and cosmology-adjacent hypotheses and correspondence candidates.
+- `Physical_Cosmological_Notes`: stronger physics- and cosmology-adjacent hypotheses and correspondence candidates.
 - `Social_Boundary_Notes`: AI adoption, social boundaries, value circulation, and DSSI-related research.
 - `AI_Personality_Notes`: AI personality, history loops, return stability, and logical sandboxes.
 - `Literary_Ontological_Notes`: literature read as worldmaking, history, belief, and boundary rather than empirical proof.
@@ -647,19 +632,30 @@ See [`Research_Notes_Index.md`](../05_Research_Notes/Research_Notes_Index.md) fo
 
 ---
 
-## 9. `06_Visual_Materials` — Visual Public Entrance
+## 9. `06_Visual_Materials` — Rendering Research
 
-This area contains conceptual posters and reading notes.
+`06_Visual_Materials` is the rendering-research surface for projecting concepts and research from 01–05 into other perceptual and expressive forms. Its current public artifacts are primarily conceptual posters and reading notes.
 
-Visual materials are not substitutes for theoretical documents, empirical evidence, or formal proof. They provide supplementary points of entry into the conceptual system.
+Visual materials are not substitutes for theoretical texts, empirical evidence, or formal proof. The task includes asking what becomes visible through rendering, what is compressed away, and which conditions, reservations, and claim-strength information must return to the source text.
+
+Layer 06 primarily preserves correspondence with its sources and is therefore distinct from 07, which intentionally removes the assumption of shared grammar.
 
 ---
 
-## 10. `07_Creative_Offshoots` — Outward Contact and Expressive Experiments
+## 10. `07_Creative_Offshoots` — External and Heterogeneous Exposure
 
-`07_Creative_Offshoots` is not a new definition owner for core concepts. It observes what becomes visible, what is lost, and which residuals return when SO's public concepts contact external vocabularies, forms, and sensibilities through literature, creative work, comparative worldmaking, and related expression.
+`07_Creative_Offshoots` is not a new definition owner for core concepts. It is an external-contact surface that exposes especially the archetype of 01–03 to vocabularies, value systems, worldviews, practical questions, objections, and expressive forms that do not presuppose SO's shared grammar.
 
-`Literary_Essays` is currently present as the public contact surface. A formal README, publication boundary, and return protocol for this layer will be settled in the next structural pass. This System Map therefore makes the existence and function of 07 visible without pre-empting authority that has not yet been assigned.
+Where 05 critiques and extends the archetype from inside a shared grammar, 07 does not assume that sharing. It therefore retains, as far as possible, distinctions among incomprehension, failed commensuration, premise collision, objection after understanding, counterexample or candidate refutation, limits of application, and value conflict. Differences that cannot yet be classified remain residuals.
+
+It currently contains two contact surfaces:
+
+- `Literary_Essays`: contact through readable expression without requiring prior mastery of the theory.
+- `Adversarial_Exposure`: exposure of public archetypes to heterogeneous subjects such as Business, interpersonal relations, and inherited histories, followed by audit and residual return.
+
+Outward commensuration is not only dissemination. It is also an Ingress for defeaters and friction that are difficult to generate inside SO's own grammar. External origin gives such input no automatic priority; it returns to 05 or the relevant definition owner for re-collation.
+
+A line born in 07 may eventually spin out into an independent region if it develops its own stable vocabulary, method, and object domain. No layer called 08 is established at present.
 
 ---
 
@@ -710,29 +706,27 @@ Detailed private titles, paths, correspondence tables, or indexes should not acc
 
 ## 14. Research Dynamics and Return Paths
 
-This system is not a one-way hierarchy applied from top to bottom.
+This system is not a one-way hierarchy. Layers 01–03 form an archetypal generative core around which several distinct contact functions operate.
 
 ```text
-01–03  three core layers
-  ↓
-04     public applications and reflexive audit
-  ↓
-05     developing research and formalization candidates
-  ↓
-06     visual public entrance
-  ↓
-07     contact with external expression and creative work
-  ↓
-implementation results / criticism / misreading / residuals / objections
-  ↓
-00     Concept Network / Truth Management / System Map
-  ↓
-return to canonical owners, applications, and research lines
+                         ┌────────────→ 07 external / heterogeneous exposure
+                         │                  │
+01–03 archetypal core ───┼→ 05 internal critique / extension ──┐
+     │                   │          │                           │
+     │                   └──────────┴→ 04 application / spinout
+     │                                      │
+     └──────────── 01–05 ───────────────→ 06 rendering research
+                                                │
+                   objections / failures / rendering loss / residuals
+                                                ↓
+                                return to 05 / canonical owner / 04
 ```
 
-A return path does not exist only to assimilate lower-layer results into a higher theory. Deciding not to change an existing definition, retaining a result as a local hypothesis, or keeping material outside the public layer are also legitimate outcomes of return.
+A return path is not only a mechanism for absorbing lower-layer results into higher theory. Non-revision, local retention as a hypothesis, continued exclusion from the public layer, or suspension while incomprehension is distinguished from refutation can all be legitimate return outcomes.
 
-SO Reflexive Philosophical Research applies the return path to SO's own judgments. Correctness / Logic / Structural Studies returns points where formalization loses conditions present in the original concepts. Creative Offshoots returns visibility, misreading, creative transformation, and residuals produced when concepts leave their definition-owning contexts.
+SO Reflexive Philosophical Research applies return to SO's own judgment process. Correctness / Logic / Structural Studies returns points where formalization loses conditions from source concepts. Visual Materials returns conditions lost through rendering. Creative Offshoots returns failed commensuration, objections, candidate refutations, creative deformation, and residuals exposed outside the shared grammar.
+
+v5.1 makes these role boundaries explicit without performing a comprehensive migration of existing documents. Category-mixing audit remains a later independent task.
 
 ---
 
@@ -761,7 +755,7 @@ Purpose-specific entrances are as follows.
 - Ethics, organization, and peace: Cognitive Dynamics → Port Allocation → Organizational Boundary → Specification for Peace
 - Judgment and reflexive audit: [`SO_Reflexive_Philosophical_Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md) → Judgment Transparency Topology → Historical Attestation
 - Correctness and formalization: [`Correctness_Logic_and_Structural_Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
-- Expressive and creative contact: [`Questions, Boundaries, and Peace`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md)
+- External contact and heterogeneous exposure: [`07_Creative_Offshoots`](../07_Creative_Offshoots/README.en.md) → [`Stopping Correctness on Autopilot`](../07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md) / [`Questions, Boundaries, and Peace`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md)
 - Physics-adjacent research: Physics Correspondence Policy → Physical Cosmological Notes
 - Publication and commensuration rules: Glossary → Publication and Commensuration Policy → Term Collision Registries
 

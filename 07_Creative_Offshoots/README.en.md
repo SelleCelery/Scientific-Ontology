@@ -4,24 +4,38 @@
 > Layer: 07_Creative_Offshoots
 > Language: English commensurated rendering; README.md is authoritative
 > Japanese authoritative source: [Japanese guide](README.md)
-> Public profile: Public interface / outward exposure and commensuration
+> Public profile: Public interface / heterogeneous and adversarial exposure / outward commensuration
 > Authority: A guide to the role of 07 and its reading routes. It does not replace the definition authority of 01–03 or the claims of individual essays and audit records.
 
 ## 1. Layer Role
 
-A boundary is not only a dividing line. It can also be a passage and a buffer zone where different things meet. This directory takes Scientific Ontology's archetypal structures, especially the structures, cognition, and protocols placed in 01–03, into different practical questions, vocabularies, value systems, and expressive forms. Its task is not only easier explanation: it opens routes through which objections, failures of understanding, limits of application, and residuals can return that were less likely to appear inside the original formulation.
+A boundary is not only a dividing line. It can also be a passage and a buffer zone where different things meet. Layer 07 takes Scientific Ontology's archetype—especially the structures, cognition, and protocols placed in `01`–`03`—into **heterogeneous conditions that do not presuppose SO's shared grammar**.
 
-Readers may begin with an essay without first learning the theory. They may agree, encounter friction, or stop reading. These reactions must not all be absorbed as confirmation of the theory. Failure to understand and objection after understanding should be distinguished; reactions that cannot yet be distinguished remain unclassified. Agreement with SO and mastery of its vocabulary are not qualifications for raising an objection.
+Its primary task is not to make the theory easier to explain. It asks where the archetype communicates, where it breaks, and where no connection can yet be established when it encounters different practical questions, value systems, disciplinary vocabularies, cultures, narratives, worldviews, objections, and expressive forms. Creative writing and essays are means of producing such contact; they do not make 07 a shelf reserved for creative work.
+
+The difference from `05_Research_Notes` is not the severity of criticism but the **presence or absence of shared grammar**. Layer 05 is internal critique and extension after enough of SO's vocabulary and structure has been accepted to work within it. Layer 07 does not assume that sharing. It opens routes by which external or heterogeneous systems can attempt to break the archetype. What returns should therefore be retained under distinctions such as:
+
+- incomprehension or unreadability;
+- failure of commensuration or translation;
+- collision of premises, axioms, or value systems;
+- objection after understanding;
+- counterexample or candidate refutation;
+- limit of application; and
+- simple disagreement or value conflict.
+
+This is not an automatic adjudication scheme. Reactions that cannot yet be distinguished remain unclassified. Failure to understand is neither victory nor defeat for the theory, and an objection must not be absorbed as evidence that the reader simply failed to understand.
 
 | Region | Principal function distinguished in this guide |
 |---|---|
 | 01–03 | The archetypal and generative core for reading boundaries: structural determination and the conditions of cognition, communication, meaning, and protocols. |
-| 05 | Research developing critiques and extensions of that core. |
-| 04 | Spinouts into psychology, economics, politics, AI, institutions, and applications, drawing on 01–03 and, where needed, 05. |
-| 06 | Rendering research that projects 01–05 into other perceptual and expressive forms, including what is retained and lost. |
-| 07 | Contact surfaces exposing the core to heterogeneous conditions for commensuration, objection, and re-collation. |
+| 05 | Research that critiques and extends the archetype from within a shared grammar. |
+| 04 | Spinout into psychology, economics, politics, AI, institutions, and applications, drawing on 01–03 and, where needed, 05. |
+| 06 | Rendering research that projects 01–05 into other perceptual and expressive forms and tracks what is retained or lost. |
+| 07 | An external-contact surface that exposes the archetype to heterogeneous conditions without presupposing a shared grammar, receiving failed commensuration, objections, candidate refutations, and residuals. |
 
-These are differences of principal function, not ranks of maturity or merit. A document can perform several functions. In v5.1, the boundary description and examples are established without large-scale movement of existing documents. Comprehensive placement auditing is a later, separate task. Work arising here may eventually spin out into an independent region, but no directory or system called 08 is created now.
+These are differences of principal function, not ranks of maturity or merit. A document can perform several functions. In v5.1, the boundary description and examples are established without large-scale movement of existing documents. Comprehensive placement auditing is a later, separate task.
+
+If a research line born in 07 acquires its own stable vocabulary, method, and object domain and becomes more than an exposure surface inside SO, it may eventually spin out into another independent region. No directory or system called 08 is created now.
 
 ## 2. Public Scope and Claim Profile
 
@@ -50,10 +64,17 @@ There is no required reading order. Begin where your interests lie and return to
 
 ## 5. Maintenance Notes
 
-What returns from contact can include incomprehension, failed commensuration, objections from different premises, candidate refutations, limits of application, and clashes of value judgments. This is neither an exhaustive classification nor an automatic adjudication procedure. Incomprehension alone does not refute the core, but neither is it dismissed as a defect in the person who does not understand.
+Returns from contact are routed according to what they expose.
 
-Residuals return to research in 05, design or practice in 04, or re-collation with an existing definition owner, according to their content. Nothing is silently promoted from 07 into the authoritative core. A working story or metaphor, a formalizable description, and a true theory are not identical.
+- a deficiency or formalization problem in the archetype requiring sustained research → `05_Research_Notes`;
+- a design or practice condition in an application domain → `04_Applications`;
+- loss introduced by expressive compression or visualization → `06_Visual_Materials` or the source text;
+- a difference that directly reopens an existing definition → the relevant canonical owner.
 
-The mathematical text in this batch uses inline single-dollar inline expressions and standalone double-dollar display blocks. Literal code and formulas remain distinct. Commensuration preserves mathematical relations; uncertainties in notation are recorded in the relevant directory guide rather than silently resolved by changing definitions.
+Nothing is silently promoted from 07 into the authoritative core. A working story or metaphor, a formalizable description, reader comprehension, and a true theory are not identical.
+
+Outward commensuration is not only a dissemination mechanism. It is also an Ingress for defeaters, objections, friction, and residuals that are difficult to generate inside the framework's own grammar. External origin does not give such input automatic priority. The task is to identify what the difference actually breaks and, where needed, reconstruct it in 05 or at the relevant definition owner.
+
+The mathematical text in this batch uses inline single-dollar expressions and standalone double-dollar display blocks. Literal code and formulas remain distinct. Commensuration preserves mathematical relations; uncertainties in notation are recorded in the relevant directory guide rather than silently resolved by changing definitions.
 
 Return to the [system map](../00_Overview/Scientific_Ontology_System_Map.md), [applications](../04_Applications/README.md), [research notes](../05_Research_Notes/README.md), or the [rendering-research entrance](../06_Visual_Materials/README.md).

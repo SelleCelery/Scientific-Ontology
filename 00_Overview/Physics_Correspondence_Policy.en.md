@@ -163,6 +163,18 @@ Scientific Ontology asks what rises as an observable world and through what kind
 
 Because of this difference, Scientific Ontology does not merely compete with physics. It collates, from another layer, concepts presupposed by physics: observation, object, boundary, measurement, interaction, and reachability.
 
+### 5.1 Physics as a Strong Destructive Test, Not an Admission Court for Hypotheses
+
+When Scientific Ontology borrows definitions, measurements, observations, or established theoretical descriptions from standard physics, they act as hard external constraints on SO. If SO states “standard physics defines this as ...” or “this observation has been established” and that statement is wrong, the SO-side description should be corrected locally.
+
+It does not follow, however, that an SO hypothesis may not be posed merely because standard physics does not require it. Being unestablished in a standard theory, being non-derivable from that theory, and being falsified by observation are different states.
+
+In this sense, physics functions as a **strong destructive test** for high-strength SO hypotheses. Misused definitions, collision with known facts, mathematical failure, and contradiction with existing observations can break a claim at a specific point. But standard physics is not made the final court that automatically deletes an explicitly marked metaphysical or ontological hypothesis merely because that hypothesis lies outside the standard theory.
+
+Different language games also do not have equal powers of proof. Literature cannot empirically establish a physical law, and metaphysics cannot replace measured values. Conversely, measurements in physics do not by themselves yield the final definition of ethical value or meaning. SO collates these domains at their boundaries while preserving their conditions of establishment and their differing evidential force.
+
+The same applies to reduction. SO does not decide in advance that the world is ultimately reducible to physical description or that it is irreducible to it. It accepts the ranges in which physical reduction succeeds without identifying that local success with a completed reduction of the whole world.
+
 ---
 
 ## 6. Relation to Boundary Realism
@@ -495,6 +507,8 @@ At the same time, it avoids overasserting them in the public base layer.
 Research Notes are not a place to remove the fangs.
 
 They are a place to sheath the fangs and indicate from which angles they should be examined.
+
+Accordingly, a hypothesis placed in Research Notes is not sent into suspension merely because it remains unestablished in standard physics. Suspension or local correction requires an identifiable failure: a borrowed fact or definition has been misstated, an internal contradiction has appeared, a declared failure condition has been met, the hypothesis has been falsified, or a publication boundary has been violated. What is merely unestablished remains marked as unestablished.
 
 ---
 

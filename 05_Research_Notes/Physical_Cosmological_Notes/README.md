@@ -15,6 +15,10 @@
 
 ここで行うのは標準物理学の置換ではない。共通して見えている境界現象を探し、構造アナロジー、存在論的再解釈、形式化候補、物理主張候補を区別し、観測・反証可能性への開けを管理する。
 
+この小分類では、**事実と根拠仮説を分ける**。標準物理学から借用する定義、測定、観測事実、理論記述は、対応する範囲で硬い外部制約として扱い、誤記があれば局所訂正する。一方、SOがそれらをどう説明し、別位相へどう接続するかは根拠仮説であり、標準物理学で未確立であるというだけでは反証扱いにしない。
+
+AMP / ITS は、こうした仮説の形成起源または高強度モデルとして参照され得るが、経験的証拠そのものとしては扱わない。物理学は強い破壊試験として用いるが、SO仮説の存在を許可する最終審級にはしない。
+
 ## 2. Public Scope / 公開範囲
 
 含むもの：
@@ -65,6 +69,10 @@
 This subdirectory contains higher-claim research notes collating Scientific Ontology concepts with physics- and cosmology-adjacent vocabulary.
 
 It does not replace standard physics. It seeks shared boundary phenomena, distinguishes structural analogy, ontological reinterpretation, formalization candidates, and physical-claim candidates, and manages openness to observation and falsification.
+
+This subdirectory **separates facts from ground hypotheses**. Definitions, measurements, observational facts, and theoretical descriptions borrowed from standard physics are treated as hard external constraints within their relevant scope, and local misstatements are corrected. By contrast, SO explanations of those facts and proposed connections across other phases are ground hypotheses; mere lack of establishment in standard physics is not treated as falsification.
+
+AMP / ITS may be referenced as formation provenance or as high-strength models for such hypotheses, but not as empirical evidence in themselves. Physics is used as a strong destructive test, not as the final court deciding whether an SO hypothesis is allowed to exist.
 
 ## 1. Public Scope
 

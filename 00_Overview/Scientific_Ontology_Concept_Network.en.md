@@ -21,7 +21,7 @@ This document presents Scientific Ontology not as a list of concepts, but as a s
 
 Its central proposition can be stated in one sentence:
 
-> **Scientific Ontology is a discipline that protects the limit of reality that humans can responsibly handle through Boundary Realism, explores the aporias beyond that limit through Applied Metaphysics, and repeatedly tests both through the history returned from boundary operation and implementation.**
+> **Scientific Ontology is a discipline that preserves conditionally confirmed facts and the range humans can responsibly treat as real through Boundary Realism, constructs hypotheses about the grounds that may explain them through Applied Metaphysics, and repeatedly tests both those hypotheses and the conditions of cognition through counterexamples and residuals returned from external fields, boundary operation, and implementation.**
 
 In this sense, Scientific Ontology is not a closed system.
 
@@ -98,6 +98,26 @@ re-collation
 
 This minimum structure crosses individuals, organizations, AI, society, history, narrative, and physical-near models.
 
+### 2.1 What Is Hypothetical Is Not the Boundary but the Ground
+
+Scientific Ontology does not begin by treating boundary as an arbitrarily posited hypothesis. Boundary traces such as contact, record, action, history, and return are handled as hard inputs to present collation, while still retaining their observation and classification conditions.
+
+Yet the hardness of a fact does not make its meaning, scope, or final explanation equally hard. What was measured, which time span was cut out, and through which coordinates, instruments, classifications, and language an object was formed all condition how a fact becomes available as a fact.
+
+What Scientific Ontology doubts most strongly is the **ground** that comes after this point. Why does the boundary hold? Why does an action return? Can the same structure be read across another phase? Because metaphysics cannot directly possess such grounds, it constructs them as ground hypotheses.
+
+Scientific Ontology therefore preserves the following distinction:
+
+```text
+conditioned fact / boundary trace
+  !=
+meaning and scope of the fact
+  !=
+ground hypothesis proposed to explain the fact
+```
+
+If a factual description is wrong, correct that description. If a ground hypothesis is not established in an external field, retain it as unestablished. Do not silently convert “unestablished” into “falsified.”
+
 ---
 
 ## 3. Boundary Realism and Applied Metaphysics
@@ -120,9 +140,9 @@ It is a responsibility boundary that prevents metaphysics from confusing its own
 
 ### 3.2 Applied Metaphysics
 
-Applied Metaphysics extends inquiry beyond what Boundary Realism has reserved.
+Applied Metaphysics extends inquiry from the facts and reserves maintained by Boundary Realism toward the **grounds proposed to explain them**.
 
-It describes, as hypotheses, the origin of existence, what precedes time, possibility, observation, meaning, matter, fields, non-existence, cutoff, and cosmic totality. AMP and ITS belong to the high-strength research layer that advances in this direction.
+It describes, as ground hypotheses, the origin of existence, what precedes time, possibility, observation, meaning, matter, fields, non-existence, cutoff, and cosmic totality. AMP and ITS belong to the high-strength research layer that advances in this direction.
 
 High strength does not mean empirical establishment.
 
@@ -161,6 +181,18 @@ Metaphysics passes questions to boundary operation.
 Boundary operation returns failures, counterexamples, and residuals to metaphysics.
 
 Through this reciprocity, the two correct and develop one another.
+
+### 3.4 Do Not Close Reducibility in Advance
+
+Scientific Ontology does not decide in advance that the world is ultimately reducible or irreducible.
+
+Where current scientific, spacetime, or linguistic descriptions successfully reduce a specified range, that achievement is accepted. But SO does not move from such local success to the claim that the world as a whole has already been completely reduced. Conversely, it does not infer essential irreducibility merely from the existence of residuals.
+
+Its methodological position is weaker:
+
+> **Do not yet treat complete reduction as established.**
+
+This reserve is not a refusal of reduction. It preserves differences not yet captured by current descriptions as searchable rather than deleting them in advance.
 
 ---
 
@@ -226,10 +258,10 @@ The documents of Scientific Ontology do not form a one-way hierarchy stacked fro
 Thing-in-Itself Reservation / Aporia
         ↑↓
 Applied Metaphysics
-AMP / ITS / high-strength hypotheses
+ground hypotheses / AMP / ITS / high-strength hypotheses
         ↑↓
 Boundary Realism and Epistemological Critique
-boundary / contact / history / return / conditions for the formation of knowledge
+conditioned facts / boundary traces / history / return / conditions for the formation of knowledge
         ↓
 ┌────────────────────────────────────────────┐
 │ Cognitive-Axis Formation                  │

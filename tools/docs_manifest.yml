@@ -174,8 +174,8 @@ layers:
 
   creative_offshoots:
     path: 07_Creative_Offshoots
-    label_ja: 外界との表現・運用実験
-    label_en: Creative Offshoots
+    label_ja: 外部との接触・表現・再照合
+    label_en: External Contact, Expression, and Re-Collation
   repository_governance:
     path: 90_Repository_Governance
     label_ja: 管理原則
@@ -4131,14 +4131,12 @@ documents:
   title_en: Applications
   layer: 04_Applications
   status: README
-  scope: public applications / design interfaces / checklists / specifications / non-operational
-    implementation
+  scope: spinout applications / cross-domain practice / design interfaces / specifications / non-operational implementation / return from use
   public_profile: P1-P2
   state: public
   registration_state: provisional
-  role_ja: 基礎理論を設計インターフェース、チェックリスト、仕様へ接続する応用層の入口
-  role_en: Entry point to applications connecting foundational theory to interfaces, checklists, and
-    specifications
+  role_ja: 01–03と必要に応じて05の批判・拡張を、AI・心理・経済・政治・制度・設計へスピンアウトし、実践残差を返す応用層の入口
+  role_en: Entry point to the application layer that spins out 01–03, and where useful critiques or extensions from 05, into AI, psychology, economics, politics, institutions, and design, then returns residuals from use
   language_relation:
     language: ja+en
     role: integrated_japanese_authoritative
@@ -4155,9 +4153,11 @@ documents:
       ja:
       - Applications層は何を扱うか
       - Applications層はどこから読むか
+      - 04と05の違いは何か
       en:
       - What does the Applications layer cover?
       - Where should I start in the Applications layer?
+      - How does 04 differ from 05?
     entry_level: foundation
     searchable: true
     visibility: primary
@@ -6857,14 +6857,12 @@ documents:
   title_en: Research Notes
   layer: 05_Research_Notes
   status: README
-  scope: exploratory research / stronger hypotheses / guarded cross-domain correspondence / return to public
-    foundations
+  scope: internal critique and extension of archetypal core / exploratory research / stronger hypotheses / guarded cross-domain correspondence / return to public foundations
   public_profile: P1-P2.5
   state: public
   registration_state: provisional
-  role_ja: 強い仮説と分野横断研究を公開基礎へ直結させず保持するResearch Notes層の入口
-  role_en: Entry point to Research Notes holding strong and cross-domain hypotheses without directly promoting
-    them to public foundations
+  role_ja: 01–03の元型を共有文法の内側から批判・拡張し、強い仮説と未確定研究を返路付きで保持する研究層の入口
+  role_en: Entry point to the research layer that critiques and extends the 01–03 archetype from within the shared grammar while retaining strong hypotheses and unresolved research with return paths
   language_relation:
     language: ja+en
     role: integrated_japanese_authoritative
@@ -6881,10 +6879,12 @@ documents:
       - Research Notesは何を扱うか
       - 研究ノートはいつ上流へ返るか
       - Research Notesはどこから読むか
+      - 05は04や07とどう違うか
       en:
       - What do the Research Notes cover?
       - When should a research note return upstream?
       - Where should I start in the Research Notes?
+      - How does 05 differ from 04 and 07?
     entry_level: foundation
     searchable: true
     visibility: primary
@@ -7374,12 +7374,12 @@ documents:
   title_en: Visual Materials
   layer: 06_Visual_Materials
   status: README
-  scope: public visual aids / conceptual posters / visual reading notes
+  scope: rendering research / visual-perceptual projection / conceptual posters / loss tracking / return to source texts
   public_profile: P0-P1
   state: public
   registration_state: provisional
-  role_ja: 概念ポスターなどの視覚資料へ案内する補助層の入口
-  role_en: Entry point to visual aids such as conceptual posters
+  role_ja: 01–05を別の知覚形式へレンダリングし、保持された構造と失われた条件をsourceへ返す研究面の入口
+  role_en: Entry point to the rendering-research surface that projects 01–05 into other perceptual forms and returns preserved structure and lost conditions to source texts
   language_relation:
     language: ja+en
     role: integrated_japanese_authoritative
@@ -7396,9 +7396,11 @@ documents:
       ja:
       - 視覚資料には何があるか
       - 視覚資料はどこから読むか
+      - 06のレンダリングと07の外部曝露はどう違うか
       en:
       - What visual materials are available?
       - Where should I start with the visual materials?
+      - How does rendering in 06 differ from external exposure in 07?
     entry_level: foundation
     searchable: true
     visibility: primary
@@ -8813,12 +8815,12 @@ documents:
   title_en: External Contact, Expression, and Re-Collation
   layer: 07_Creative_Offshoots
   status: README
-  scope: external contact / commensuration / return paths
+  scope: external and adversarial exposure / heterogeneous commensuration / expressive contact / residual return
   public_profile: ''
   state: public
   registration_state: provisional
-  role_ja: 外部との接触・表現・再照合
-  role_en: External Contact, Expression, and Re-Collation
+  role_ja: とくに01–03を共有文法の外へ曝露し、通約失敗・反論・反証候補・適用限界・残差を受け取る外部接触面
+  role_en: External-contact surface that exposes especially 01–03 outside the shared grammar and receives failed commensuration, objections, candidate refutations, limits of application, and residuals
   catalog_document: true
   language_relation:
     language: ja
@@ -8839,8 +8841,12 @@ documents:
       ja: []
       en: []
     reader_questions:
-      ja: []
-      en: []
+      ja:
+      - 07は05とどう違うか
+      - 外部曝露から返る残差はどこへ送るか
+      en:
+      - How does 07 differ from 05?
+      - Where do residuals from external exposure return?
     searchable: true
     visibility: canonical
 - path: 07_Creative_Offshoots/README.en.md
@@ -8851,12 +8857,12 @@ documents:
   title_en: External Contact, Expression, and Re-Collation
   layer: 07_Creative_Offshoots
   status: README
-  scope: external contact / commensuration / return paths
+  scope: external and adversarial exposure / heterogeneous commensuration / expressive contact / residual return
   public_profile: ''
   state: public
   registration_state: provisional
-  role_ja: 外部との接触・表現・再照合
-  role_en: External Contact, Expression, and Re-Collation
+  role_ja: とくに01–03を共有文法の外へ曝露し、通約失敗・反論・反証候補・適用限界・残差を受け取る外部接触面
+  role_en: External-contact surface that exposes especially 01–03 outside the shared grammar and receives failed commensuration, objections, candidate refutations, limits of application, and residuals
   catalog_document: true
   language_relation:
     language: en
@@ -8877,8 +8883,12 @@ documents:
       ja: []
       en: []
     reader_questions:
-      ja: []
-      en: []
+      ja:
+      - 07は05とどう違うか
+      - 外部曝露から返る残差はどこへ送るか
+      en:
+      - How does 07 differ from 05?
+      - Where do residuals from external exposure return?
     searchable: true
     visibility: canonical
 - path: 07_Creative_Offshoots/Adversarial_Exposure/README.md

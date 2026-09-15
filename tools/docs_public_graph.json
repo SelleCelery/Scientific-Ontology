@@ -883,8 +883,8 @@
       "layer": "04_Applications",
       "state": "public",
       "role": {
-        "ja": "基礎理論を設計インターフェース、チェックリスト、仕様へ接続する応用層の入口",
-        "en": "Entry point to applications connecting foundational theory to interfaces, checklists, and specifications"
+        "ja": "01–03と必要に応じて05の批判・拡張を、AI・心理・経済・政治・制度・設計へスピンアウトし、実践残差を返す応用層の入口",
+        "en": "Entry point to the application layer that spins out 01–03, and where useful critiques or extensions from 05, into AI, psychology, economics, politics, institutions, and design, then returns residuals from use"
       },
       "identity_source": "explicit"
     },
@@ -1359,8 +1359,8 @@
       "layer": "05_Research_Notes",
       "state": "public",
       "role": {
-        "ja": "強い仮説と分野横断研究を公開基礎へ直結させず保持するResearch Notes層の入口",
-        "en": "Entry point to Research Notes holding strong and cross-domain hypotheses without directly promoting them to public foundations"
+        "ja": "01–03の元型を共有文法の内側から批判・拡張し、強い仮説と未確定研究を返路付きで保持する研究層の入口",
+        "en": "Entry point to the research layer that critiques and extends the 01–03 archetype from within the shared grammar while retaining strong hypotheses and unresolved research with return paths"
       },
       "identity_source": "explicit"
     },
@@ -1427,8 +1427,8 @@
       "layer": "06_Visual_Materials",
       "state": "public",
       "role": {
-        "ja": "概念ポスターなどの視覚資料へ案内する補助層の入口",
-        "en": "Entry point to visual aids such as conceptual posters"
+        "ja": "01–05を別の知覚形式へレンダリングし、保持された構造と失われた条件をsourceへ返す研究面の入口",
+        "en": "Entry point to the rendering-research surface that projects 01–05 into other perceptual forms and returns preserved structure and lost conditions to source texts"
       },
       "identity_source": "explicit"
     },
@@ -1631,8 +1631,8 @@
       "layer": "07_Creative_Offshoots",
       "state": "public",
       "role": {
-        "ja": "外部との接触・表現・再照合",
-        "en": "External Contact, Expression, and Re-Collation"
+        "ja": "とくに01–03を共有文法の外へ曝露し、通約失敗・反論・反証候補・適用限界・残差を受け取る外部接触面",
+        "en": "External-contact surface that exposes especially 01–03 outside the shared grammar and receives failed commensuration, objections, candidate refutations, limits of application, and residuals"
       },
       "identity_source": "explicit"
     },
@@ -1648,8 +1648,8 @@
       "layer": "07_Creative_Offshoots",
       "state": "public",
       "role": {
-        "ja": "外部との接触・表現・再照合",
-        "en": "External Contact, Expression, and Re-Collation"
+        "ja": "とくに01–03を共有文法の外へ曝露し、通約失敗・反論・反証候補・適用限界・残差を受け取る外部接触面",
+        "en": "External-contact surface that exposes especially 01–03 outside the shared grammar and receives failed commensuration, objections, candidate refutations, limits of application, and residuals"
       },
       "identity_source": "explicit"
     },
@@ -3184,8 +3184,8 @@
       "key": "creative_offshoots",
       "path": "07_Creative_Offshoots",
       "label": {
-        "ja": "外界との表現・運用実験",
-        "en": "Creative Offshoots"
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
       }
     },
     {
@@ -3507,6 +3507,17 @@
         "raw": "Core Invariant / 中核不変項",
         "ja": "中核不変項",
         "en": "Core Invariant"
+      },
+      "source_path": "GLOSSARY.md"
+    },
+    {
+      "id": "term:creative_offshoots",
+      "type": "glossary_term",
+      "key": "creative_offshoots",
+      "label": {
+        "raw": "Creative Offshoots / 外部との接触・表現・再照合",
+        "ja": "外部との接触・表現・再照合",
+        "en": "Creative Offshoots"
       },
       "source_path": "GLOSSARY.md"
     },
@@ -4215,6 +4226,17 @@
       "source_path": "GLOSSARY.md"
     },
     {
+      "id": "term:visual_materials",
+      "type": "glossary_term",
+      "key": "visual_materials",
+      "label": {
+        "raw": "Visual Materials / 視覚資料",
+        "ja": "視覚資料",
+        "en": "Visual Materials"
+      },
+      "source_path": "GLOSSARY.md"
+    },
+    {
       "id": "topic:ai",
       "type": "topic",
       "key": "ai",
@@ -4602,7 +4624,7 @@
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1534"
+          "locator": "L1568"
         }
       ]
     },
@@ -4614,7 +4636,7 @@
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1474"
+          "locator": "L1478"
         }
       ]
     },
@@ -4710,7 +4732,7 @@
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1518"
+          "locator": "L1552"
         }
       ]
     },
@@ -4794,7 +4816,7 @@
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1496"
+          "locator": "L1530"
         }
       ]
     },
@@ -4837,12 +4859,24 @@
     {
       "from": "artifact:glossary",
       "relation": "contains_term",
+      "to": "term:creative_offshoots",
+      "provenance": [
+        {
+          "source_type": "glossary",
+          "source_path": "GLOSSARY.md",
+          "locator": "L1510"
+        }
+      ]
+    },
+    {
+      "from": "artifact:glossary",
+      "relation": "contains_term",
       "to": "term:deprecated_term",
       "provenance": [
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1542"
+          "locator": "L1576"
         }
       ]
     },
@@ -5214,7 +5248,7 @@
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1526"
+          "locator": "L1560"
         }
       ]
     },
@@ -5370,7 +5404,7 @@
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1508"
+          "locator": "L1542"
         }
       ]
     },
@@ -5394,7 +5428,7 @@
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1458"
+          "locator": "L1462"
         }
       ]
     },
@@ -5430,7 +5464,7 @@
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1482"
+          "locator": "L1490"
         }
       ]
     },
@@ -5574,7 +5608,7 @@
         {
           "source_type": "glossary",
           "source_path": "GLOSSARY.md",
-          "locator": "L1466"
+          "locator": "L1470"
         }
       ]
     },
@@ -5603,6 +5637,18 @@
       ]
     },
     {
+      "from": "artifact:glossary",
+      "relation": "contains_term",
+      "to": "term:visual_materials",
+      "provenance": [
+        {
+          "source_type": "glossary",
+          "source_path": "GLOSSARY.md",
+          "locator": "L1502"
+        }
+      ]
+    },
+    {
       "from": "artifact:system_map",
       "relation": "map_reference",
       "to": "doc:00_overview_scientific_ontology_operational_outline_en",
@@ -5610,7 +5656,24 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L435"
+          "locator": "L436"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:01_sat_truth_boundary_realism_principle",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L430"
+        },
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L45"
         }
       ]
     },
@@ -5622,12 +5685,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L374"
+          "locator": "L371"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L762"
+          "locator": "L756"
         }
       ]
     },
@@ -5639,12 +5702,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L375"
+          "locator": "L372"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L763"
+          "locator": "L757"
         }
       ]
     },
@@ -5656,12 +5719,36 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L258"
+          "locator": "L246"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L646"
+          "locator": "L631"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L758"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L373"
         }
       ]
     },
@@ -5673,7 +5760,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L764"
+          "locator": "L758"
         }
       ]
     },
@@ -5685,7 +5772,31 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L376"
+          "locator": "L373"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:07_creative_offshoots_readme_en",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L758"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:07_creative_offshoots_readme_ja",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L373"
         }
       ]
     },
@@ -5697,58 +5808,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L289"
-        },
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L677"
-        }
-      ]
-    },
-    {
-      "from": "artifact:system_map",
-      "relation": "map_reference",
-      "to": "doc:90_repository_governance_publication_and_commensuration_policy",
-      "provenance": [
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L284"
-        },
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L672"
-        }
-      ]
-    },
-    {
-      "from": "artifact:system_map",
-      "relation": "map_reference",
-      "to": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
-      "provenance": [
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L286"
-        },
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L674"
-        }
-      ]
-    },
-    {
-      "from": "artifact:system_map",
-      "relation": "map_reference",
-      "to": "doc:90_repository_governance_translation_note",
-      "provenance": [
-        {
-          "source_type": "system_map",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L285"
+          "locator": "L288"
         },
         {
           "source_type": "system_map",
@@ -5760,17 +5820,68 @@
     {
       "from": "artifact:system_map",
       "relation": "map_reference",
+      "to": "doc:90_repository_governance_publication_and_commensuration_policy",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L283"
+        },
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L668"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L285"
+        },
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L670"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
+      "to": "doc:90_repository_governance_translation_note",
+      "provenance": [
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L284"
+        },
+        {
+          "source_type": "system_map",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L669"
+        }
+      ]
+    },
+    {
+      "from": "artifact:system_map",
+      "relation": "map_reference",
       "to": "doc:citation",
       "provenance": [
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L163"
+          "locator": "L149"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L551"
+          "locator": "L534"
         }
       ]
     },
@@ -5782,7 +5893,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L160"
+          "locator": "L146"
         },
         {
           "source_type": "system_map",
@@ -5792,12 +5903,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L411"
+          "locator": "L408"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L548"
+          "locator": "L531"
         }
       ]
     },
@@ -5809,12 +5920,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L164"
+          "locator": "L150"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L552"
+          "locator": "L535"
         }
       ]
     },
@@ -5826,22 +5937,22 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L159"
+          "locator": "L145"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L370"
+          "locator": "L367"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L547"
+          "locator": "L530"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L758"
+          "locator": "L752"
         }
       ]
     },
@@ -5853,12 +5964,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L162"
+          "locator": "L148"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L550"
+          "locator": "L533"
         }
       ]
     },
@@ -5870,12 +5981,12 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L161"
+          "locator": "L147"
         },
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L549"
+          "locator": "L532"
         }
       ]
     },
@@ -5887,7 +5998,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L370"
+          "locator": "L367"
         }
       ]
     },
@@ -5899,7 +6010,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L758"
+          "locator": "L752"
         }
       ]
     },
@@ -5911,7 +6022,7 @@
         {
           "source_type": "system_map",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L47"
+          "locator": "L51"
         }
       ]
     },
@@ -6235,7 +6346,24 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L435"
+          "locator": "L436"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_boundary_realism_principle",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L430"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L45"
         }
       ]
     },
@@ -6247,12 +6375,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L374"
+          "locator": "L371"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L762"
+          "locator": "L756"
         }
       ]
     },
@@ -6264,12 +6392,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L375"
+          "locator": "L372"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L763"
+          "locator": "L757"
         }
       ]
     },
@@ -6281,12 +6409,36 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L258"
+          "locator": "L246"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L646"
+          "locator": "L631"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L758"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_adversarial_exposure_stopping_correctness_on_autopilot_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L373"
         }
       ]
     },
@@ -6298,7 +6450,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L764"
+          "locator": "L758"
         }
       ]
     },
@@ -6310,7 +6462,31 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L376"
+          "locator": "L373"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L758"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L373"
         }
       ]
     },
@@ -6322,58 +6498,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L289"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L677"
-        }
-      ]
-    },
-    {
-      "from": "doc:00_overview_scientific_ontology_system_map",
-      "relation": "links_to",
-      "to": "doc:90_repository_governance_publication_and_commensuration_policy",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L284"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L672"
-        }
-      ]
-    },
-    {
-      "from": "doc:00_overview_scientific_ontology_system_map",
-      "relation": "links_to",
-      "to": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L286"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L674"
-        }
-      ]
-    },
-    {
-      "from": "doc:00_overview_scientific_ontology_system_map",
-      "relation": "links_to",
-      "to": "doc:90_repository_governance_translation_note",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L285"
+          "locator": "L288"
         },
         {
           "source_type": "markdown",
@@ -6385,17 +6510,68 @@
     {
       "from": "doc:00_overview_scientific_ontology_system_map",
       "relation": "links_to",
+      "to": "doc:90_repository_governance_publication_and_commensuration_policy",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L283"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L668"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L285"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L670"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_translation_note",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L284"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
+          "locator": "L669"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_scientific_ontology_system_map",
+      "relation": "links_to",
       "to": "doc:citation",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L163"
+          "locator": "L149"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L551"
+          "locator": "L534"
         }
       ]
     },
@@ -6407,7 +6583,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L160"
+          "locator": "L146"
         },
         {
           "source_type": "markdown",
@@ -6417,12 +6593,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L411"
+          "locator": "L408"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L548"
+          "locator": "L531"
         }
       ]
     },
@@ -6434,12 +6610,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L164"
+          "locator": "L150"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L552"
+          "locator": "L535"
         }
       ]
     },
@@ -6451,22 +6627,22 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L159"
+          "locator": "L145"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L370"
+          "locator": "L367"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L547"
+          "locator": "L530"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L758"
+          "locator": "L752"
         }
       ]
     },
@@ -6478,12 +6654,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L162"
+          "locator": "L148"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L550"
+          "locator": "L533"
         }
       ]
     },
@@ -6495,12 +6671,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L161"
+          "locator": "L147"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L549"
+          "locator": "L532"
         }
       ]
     },
@@ -6512,7 +6688,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L370"
+          "locator": "L367"
         }
       ]
     },
@@ -6524,7 +6700,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L758"
+          "locator": "L752"
         }
       ]
     },
@@ -6536,7 +6712,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_System_Map.md",
-          "locator": "L47"
+          "locator": "L51"
         }
       ]
     },
@@ -7064,7 +7240,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/Boundary_Realism_Principle.md",
-          "locator": "L226"
+          "locator": "L256"
         }
       ]
     },
@@ -7076,7 +7252,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/Boundary_Realism_Principle.md",
-          "locator": "L227"
+          "locator": "L257"
         }
       ]
     },
@@ -9221,12 +9397,12 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L167"
+          "locator": "L184"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L84"
+          "locator": "L90"
         }
       ]
     },
@@ -9238,12 +9414,12 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L168"
+          "locator": "L185"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L85"
+          "locator": "L91"
         }
       ]
     },
@@ -9255,12 +9431,12 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L169"
+          "locator": "L186"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L86"
+          "locator": "L92"
         }
       ]
     },
@@ -9272,24 +9448,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L146"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "04_Applications/README.md",
-          "locator": "L63"
-        }
-      ]
-    },
-    {
-      "from": "doc:04_applications_readme",
-      "relation": "links_to",
-      "to": "doc:04_applications_so_reflexive_philosophical_research_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "04_Applications/README.md",
-          "locator": "L152"
+          "locator": "L163"
         },
         {
           "source_type": "markdown",
@@ -9301,17 +9460,34 @@
     {
       "from": "doc:04_applications_readme",
       "relation": "links_to",
+      "to": "doc:04_applications_so_reflexive_philosophical_research_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L169"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L75"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_readme",
+      "relation": "links_to",
       "to": "doc:04_applications_social_boundary_design_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L149"
+          "locator": "L166"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L66"
+          "locator": "L72"
         }
       ]
     },
@@ -9323,12 +9499,53 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L171"
+          "locator": "L188"
         },
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L88"
+          "locator": "L94"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_readme",
+      "relation": "links_to",
+      "to": "doc:06_visual_materials_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L189"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L95"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_readme",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L190"
+        }
+      ]
+    },
+    {
+      "from": "doc:04_applications_readme",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "04_Applications/README.md",
+          "locator": "L96"
         }
       ]
     },
@@ -9340,7 +9557,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L74"
+          "locator": "L80"
         }
       ]
     },
@@ -9352,7 +9569,7 @@
         {
           "source_type": "markdown",
           "source_path": "04_Applications/README.md",
-          "locator": "L157"
+          "locator": "L174"
         }
       ]
     },
@@ -13408,12 +13625,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L101"
+          "locator": "L109"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L50"
+          "locator": "L54"
         }
       ]
     },
@@ -13425,12 +13642,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L102"
+          "locator": "L110"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L51"
+          "locator": "L55"
         }
       ]
     },
@@ -13442,12 +13659,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L103"
+          "locator": "L111"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L52"
+          "locator": "L56"
         }
       ]
     },
@@ -13459,12 +13676,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L44"
+          "locator": "L103"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L95"
+          "locator": "L48"
         }
       ]
     },
@@ -13476,12 +13693,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L44"
+          "locator": "L103"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L95"
+          "locator": "L48"
         }
       ]
     },
@@ -13493,12 +13710,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L104"
+          "locator": "L112"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L53"
+          "locator": "L57"
         }
       ]
     },
@@ -13510,12 +13727,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L42"
+          "locator": "L101"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L93"
+          "locator": "L46"
         }
       ]
     },
@@ -13527,12 +13744,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L42"
+          "locator": "L101"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L93"
+          "locator": "L46"
         }
       ]
     },
@@ -13544,12 +13761,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L40"
+          "locator": "L44"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L91"
+          "locator": "L99"
         }
       ]
     },
@@ -13561,12 +13778,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L40"
+          "locator": "L44"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L91"
+          "locator": "L99"
         }
       ]
     },
@@ -13578,12 +13795,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L41"
+          "locator": "L100"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L92"
+          "locator": "L45"
         }
       ]
     },
@@ -13595,12 +13812,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L41"
+          "locator": "L100"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L92"
+          "locator": "L45"
         }
       ]
     },
@@ -13612,12 +13829,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L38"
+          "locator": "L42"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L89"
+          "locator": "L97"
         }
       ]
     },
@@ -13629,12 +13846,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L43"
+          "locator": "L102"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L94"
+          "locator": "L47"
         }
       ]
     },
@@ -13646,12 +13863,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L43"
+          "locator": "L102"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L94"
+          "locator": "L47"
         }
       ]
     },
@@ -13675,12 +13892,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L155"
+          "locator": "L159"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L80"
+          "locator": "L82"
         }
       ]
     },
@@ -13692,41 +13909,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L143"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L68"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_readme",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L139"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L64"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_readme",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L145"
+          "locator": "L147"
         },
         {
           "source_type": "markdown",
@@ -13738,46 +13921,12 @@
     {
       "from": "doc:05_research_notes_readme",
       "relation": "links_to",
-      "to": "doc:05_research_notes_cross_domain_ontological_notes_readme",
+      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L140"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L65"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_readme",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_literary_ontological_notes_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L144"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L69"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_readme",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_physical_cosmological_notes_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L141"
+          "locator": "L143"
         },
         {
           "source_type": "markdown",
@@ -13789,29 +13938,29 @@
     {
       "from": "doc:05_research_notes_readme",
       "relation": "links_to",
-      "to": "doc:05_research_notes_research_notes_index",
+      "to": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L136"
+          "locator": "L149"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L61"
+          "locator": "L72"
         }
       ]
     },
     {
       "from": "doc:05_research_notes_readme",
       "relation": "links_to",
-      "to": "doc:05_research_notes_social_boundary_notes_readme",
+      "to": "doc:05_research_notes_cross_domain_ontological_notes_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L142"
+          "locator": "L144"
         },
         {
           "source_type": "markdown",
@@ -13823,46 +13972,46 @@
     {
       "from": "doc:05_research_notes_readme",
       "relation": "links_to",
-      "to": "doc:claim_strength_and_publication_layer_table",
+      "to": "doc:05_research_notes_literary_ontological_notes_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L151"
+          "locator": "L148"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L76"
+          "locator": "L71"
         }
       ]
     },
     {
       "from": "doc:05_research_notes_readme",
       "relation": "links_to",
-      "to": "doc:glossary",
+      "to": "doc:05_research_notes_physical_cosmological_notes_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L153"
+          "locator": "L145"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L78"
+          "locator": "L68"
         }
       ]
     },
     {
       "from": "doc:05_research_notes_readme",
       "relation": "links_to",
-      "to": "doc:language_meaning_communication_phase_studies",
+      "to": "doc:05_research_notes_research_notes_index",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L138"
+          "locator": "L140"
         },
         {
           "source_type": "markdown",
@@ -13874,17 +14023,85 @@
     {
       "from": "doc:05_research_notes_readme",
       "relation": "links_to",
+      "to": "doc:05_research_notes_social_boundary_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L146"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L69"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_readme",
+      "relation": "links_to",
+      "to": "doc:claim_strength_and_publication_layer_table",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L155"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L78"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_readme",
+      "relation": "links_to",
+      "to": "doc:glossary",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L157"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L80"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_readme",
+      "relation": "links_to",
+      "to": "doc:language_meaning_communication_phase_studies",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L142"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L65"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_readme",
+      "relation": "links_to",
       "to": "doc:physics_correspondence_policy",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L152"
+          "locator": "L156"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
-          "locator": "L77"
+          "locator": "L79"
         }
       ]
     },
@@ -15897,12 +16114,97 @@
         {
           "source_type": "markdown",
           "source_path": "06_Visual_Materials/README.md",
-          "locator": "L50"
+          "locator": "L116"
         },
         {
           "source_type": "markdown",
           "source_path": "06_Visual_Materials/README.md",
-          "locator": "L95"
+          "locator": "L56"
+        }
+      ]
+    },
+    {
+      "from": "doc:06_visual_materials_readme",
+      "relation": "links_to",
+      "to": "doc:01_sat_truth_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L117"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L57"
+        }
+      ]
+    },
+    {
+      "from": "doc:06_visual_materials_readme",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L118"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L58"
+        }
+      ]
+    },
+    {
+      "from": "doc:06_visual_materials_readme",
+      "relation": "links_to",
+      "to": "doc:03_tam_goodness_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L119"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L59"
+        }
+      ]
+    },
+    {
+      "from": "doc:06_visual_materials_readme",
+      "relation": "links_to",
+      "to": "doc:04_applications_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L120"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L60"
+        }
+      ]
+    },
+    {
+      "from": "doc:06_visual_materials_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L121"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "06_Visual_Materials/README.md",
+          "locator": "L61"
         }
       ]
     },
@@ -15914,29 +16216,36 @@
         {
           "source_type": "markdown",
           "source_path": "06_Visual_Materials/README.md",
-          "locator": "L41"
+          "locator": "L107"
         },
         {
           "source_type": "markdown",
           "source_path": "06_Visual_Materials/README.md",
-          "locator": "L86"
+          "locator": "L47"
         }
       ]
     },
     {
       "from": "doc:06_visual_materials_readme",
       "relation": "links_to",
-      "to": "doc:glossary",
+      "to": "doc:07_creative_offshoots_readme_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "06_Visual_Materials/README.md",
-          "locator": "L51"
-        },
+          "locator": "L123"
+        }
+      ]
+    },
+    {
+      "from": "doc:06_visual_materials_readme",
+      "relation": "links_to",
+      "to": "doc:07_creative_offshoots_readme_ja",
+      "provenance": [
         {
           "source_type": "markdown",
           "source_path": "06_Visual_Materials/README.md",
-          "locator": "L96"
+          "locator": "L63"
         }
       ]
     },
@@ -15948,12 +16257,19 @@
         {
           "source_type": "markdown",
           "source_path": "06_Visual_Materials/README.md",
-          "locator": "L49"
-        },
+          "locator": "L55"
+        }
+      ]
+    },
+    {
+      "from": "doc:06_visual_materials_readme",
+      "relation": "links_to",
+      "to": "doc:scientific_ontology_concept_network_en",
+      "provenance": [
         {
           "source_type": "markdown",
           "source_path": "06_Visual_Materials/README.md",
-          "locator": "L94"
+          "locator": "L115"
         }
       ]
     },
@@ -17339,7 +17655,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L59"
+          "locator": "L80"
         }
       ]
     },
@@ -17351,7 +17667,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L38"
+          "locator": "L52"
         }
       ]
     },
@@ -17363,7 +17679,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L59"
+          "locator": "L80"
         }
       ]
     },
@@ -17375,7 +17691,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L59"
+          "locator": "L80"
         }
       ]
     },
@@ -17387,7 +17703,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L59"
+          "locator": "L80"
         }
       ]
     },
@@ -17399,7 +17715,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L47"
+          "locator": "L61"
         }
       ]
     },
@@ -17411,7 +17727,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L47"
+          "locator": "L61"
         }
       ]
     },
@@ -17423,7 +17739,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L46"
+          "locator": "L60"
         }
       ]
     },
@@ -17435,7 +17751,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L46"
+          "locator": "L60"
         }
       ]
     },
@@ -17447,7 +17763,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L49"
+          "locator": "L63"
         }
       ]
     },
@@ -17459,12 +17775,12 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L49"
+          "locator": "L6"
         },
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.en.md",
-          "locator": "L6"
+          "locator": "L63"
         }
       ]
     },
@@ -17500,7 +17816,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L60"
+          "locator": "L81"
         }
       ]
     },
@@ -17512,7 +17828,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L60"
+          "locator": "L81"
         }
       ]
     },
@@ -17524,7 +17840,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L60"
+          "locator": "L81"
         }
       ]
     },
@@ -17536,7 +17852,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L60"
+          "locator": "L81"
         }
       ]
     },
@@ -17548,7 +17864,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L48"
+          "locator": "L62"
         }
       ]
     },
@@ -17560,7 +17876,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L48"
+          "locator": "L62"
         }
       ]
     },
@@ -17572,7 +17888,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L47"
+          "locator": "L61"
         }
       ]
     },
@@ -17584,7 +17900,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L47"
+          "locator": "L61"
         }
       ]
     },
@@ -17596,7 +17912,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L50"
+          "locator": "L64"
         },
         {
           "source_type": "markdown",
@@ -17613,7 +17929,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/README.md",
-          "locator": "L39"
+          "locator": "L53"
         }
       ]
     },
@@ -21590,7 +21906,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
-          "locator": "L1154"
+          "locator": "L1182"
         }
       ]
     },
@@ -22763,7 +23079,7 @@
         {
           "source_type": "markdown",
           "source_path": "GLOSSARY.md",
-          "locator": "L1514"
+          "locator": "L1548"
         }
       ]
     },
@@ -22860,7 +23176,7 @@
         {
           "source_type": "markdown",
           "source_path": "GLOSSARY.md",
-          "locator": "L1569"
+          "locator": "L1603"
         }
       ]
     },
@@ -22899,7 +23215,7 @@
         {
           "source_type": "markdown",
           "source_path": "GLOSSARY.md",
-          "locator": "L1548"
+          "locator": "L1582"
         },
         {
           "source_type": "markdown",
@@ -26563,7 +26879,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.ja.md",
-          "locator": "L548"
+          "locator": "L562"
         }
       ]
     },
@@ -26575,7 +26891,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.ja.md",
-          "locator": "L547"
+          "locator": "L561"
         }
       ]
     },
@@ -26587,7 +26903,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.ja.md",
-          "locator": "L552"
+          "locator": "L566"
         }
       ]
     },
@@ -26599,7 +26915,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.ja.md",
-          "locator": "L577"
+          "locator": "L591"
         }
       ]
     },
@@ -26611,7 +26927,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.ja.md",
-          "locator": "L549"
+          "locator": "L563"
         }
       ]
     },
@@ -26623,7 +26939,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.ja.md",
-          "locator": "L546"
+          "locator": "L560"
         }
       ]
     },
@@ -26635,7 +26951,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.ja.md",
-          "locator": "L550"
+          "locator": "L564"
         }
       ]
     },
@@ -26647,7 +26963,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.ja.md",
-          "locator": "L551"
+          "locator": "L565"
         }
       ]
     },
@@ -26707,7 +27023,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.en.md",
-          "locator": "L565"
+          "locator": "L579"
         }
       ]
     },
@@ -26719,7 +27035,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.en.md",
-          "locator": "L564"
+          "locator": "L578"
         }
       ]
     },
@@ -26731,7 +27047,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.en.md",
-          "locator": "L569"
+          "locator": "L583"
         }
       ]
     },
@@ -26743,7 +27059,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.en.md",
-          "locator": "L594"
+          "locator": "L608"
         }
       ]
     },
@@ -26755,7 +27071,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.en.md",
-          "locator": "L566"
+          "locator": "L580"
         }
       ]
     },
@@ -26767,7 +27083,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.en.md",
-          "locator": "L563"
+          "locator": "L577"
         }
       ]
     },
@@ -26779,7 +27095,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.en.md",
-          "locator": "L567"
+          "locator": "L581"
         }
       ]
     },
@@ -26791,7 +27107,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Physics_Correspondence_Policy.en.md",
-          "locator": "L568"
+          "locator": "L582"
         }
       ]
     },
@@ -28032,7 +28348,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L292"
+          "locator": "L293"
         }
       ]
     },
@@ -28044,7 +28360,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L218"
+          "locator": "L219"
         }
       ]
     },
@@ -28056,7 +28372,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L185"
+          "locator": "L186"
         }
       ]
     },
@@ -28068,7 +28384,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L241"
+          "locator": "L242"
         }
       ]
     },
@@ -28080,7 +28396,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L187"
+          "locator": "L188"
         }
       ]
     },
@@ -28092,7 +28408,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L188"
+          "locator": "L189"
         }
       ]
     },
@@ -28104,7 +28420,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L189"
+          "locator": "L190"
         }
       ]
     },
@@ -28116,7 +28432,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L296"
+          "locator": "L297"
         }
       ]
     },
@@ -28128,7 +28444,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L294"
+          "locator": "L295"
         }
       ]
     },
@@ -28140,7 +28456,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L295"
+          "locator": "L296"
         }
       ]
     },
@@ -28152,7 +28468,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L297"
+          "locator": "L298"
         }
       ]
     },
@@ -28164,7 +28480,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L146"
+          "locator": "L147"
         }
       ]
     },
@@ -28176,7 +28492,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L219"
+          "locator": "L220"
         }
       ]
     },
@@ -28188,7 +28504,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L221"
+          "locator": "L222"
         }
       ]
     },
@@ -28200,7 +28516,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L220"
+          "locator": "L221"
         }
       ]
     },
@@ -28212,7 +28528,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L150"
+          "locator": "L151"
         }
       ]
     },
@@ -28248,7 +28564,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L242"
+          "locator": "L243"
         }
       ]
     },
@@ -28260,7 +28576,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L147"
+          "locator": "L148"
         }
       ]
     },
@@ -28296,7 +28612,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L186"
+          "locator": "L187"
         }
       ]
     },
@@ -28308,7 +28624,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L262"
+          "locator": "L263"
         }
       ]
     },
@@ -28320,7 +28636,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L263"
+          "locator": "L264"
         }
       ]
     },
@@ -28332,7 +28648,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L222"
+          "locator": "L223"
         }
       ]
     },
@@ -28344,7 +28660,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L328"
+          "locator": "L329"
         },
         {
           "source_type": "markdown",
@@ -28361,7 +28677,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L298"
+          "locator": "L299"
         }
       ]
     },
@@ -28373,7 +28689,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L148"
+          "locator": "L149"
         }
       ]
     },
@@ -28385,7 +28701,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L149"
+          "locator": "L150"
         }
       ]
     },
@@ -28397,7 +28713,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L293"
+          "locator": "L294"
         }
       ]
     },
@@ -28469,7 +28785,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L731"
+          "locator": "L763"
         }
       ]
     },
@@ -28481,17 +28797,17 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L497"
+          "locator": "L529"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L758"
+          "locator": "L790"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L910"
+          "locator": "L942"
         }
       ]
     },
@@ -28503,7 +28819,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L720"
+          "locator": "L752"
         }
       ]
     },
@@ -28515,22 +28831,22 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L353"
+          "locator": "L385"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L732"
+          "locator": "L764"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L738"
+          "locator": "L770"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L912"
+          "locator": "L944"
         }
       ]
     },
@@ -28542,12 +28858,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L357"
+          "locator": "L389"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L740"
+          "locator": "L772"
         }
       ]
     },
@@ -28559,22 +28875,22 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L367"
+          "locator": "L399"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L424"
+          "locator": "L456"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L746"
+          "locator": "L778"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L915"
+          "locator": "L947"
         }
       ]
     },
@@ -28586,7 +28902,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L366"
+          "locator": "L398"
         }
       ]
     },
@@ -28598,12 +28914,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L365"
+          "locator": "L397"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L791"
+          "locator": "L823"
         }
       ]
     },
@@ -28615,7 +28931,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L368"
+          "locator": "L400"
         }
       ]
     },
@@ -28627,12 +28943,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L376"
+          "locator": "L408"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L751"
+          "locator": "L783"
         }
       ]
     },
@@ -28644,12 +28960,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L377"
+          "locator": "L409"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L752"
+          "locator": "L784"
         }
       ]
     },
@@ -28661,7 +28977,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L636"
+          "locator": "L668"
         }
       ]
     },
@@ -28673,7 +28989,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L637"
+          "locator": "L669"
         }
       ]
     },
@@ -28685,12 +29001,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L635"
+          "locator": "L667"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L765"
+          "locator": "L797"
         }
       ]
     },
@@ -28702,7 +29018,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L764"
+          "locator": "L796"
         }
       ]
     },
@@ -28714,17 +29030,17 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L671"
+          "locator": "L703"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L778"
+          "locator": "L810"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L919"
+          "locator": "L951"
         }
       ]
     },
@@ -28736,7 +29052,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L779"
+          "locator": "L811"
         }
       ]
     },
@@ -28748,17 +29064,17 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L560"
+          "locator": "L592"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L759"
+          "locator": "L791"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L917"
+          "locator": "L949"
         }
       ]
     },
@@ -28770,12 +29086,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L780"
+          "locator": "L812"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L920"
+          "locator": "L952"
         }
       ]
     },
@@ -28787,7 +29103,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L773"
+          "locator": "L805"
         }
       ]
     },
@@ -28799,7 +29115,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L645"
+          "locator": "L677"
         }
       ]
     },
@@ -28811,12 +29127,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L784"
+          "locator": "L816"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L921"
+          "locator": "L953"
         }
       ]
     },
@@ -28828,7 +29144,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L922"
+          "locator": "L954"
         }
       ]
     },
@@ -28840,12 +29156,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L646"
+          "locator": "L678"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L766"
+          "locator": "L798"
         }
       ]
     },
@@ -28857,7 +29173,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L771"
+          "locator": "L803"
         }
       ]
     },
@@ -28869,17 +29185,17 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L355"
+          "locator": "L387"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L739"
+          "locator": "L771"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L913"
+          "locator": "L945"
         }
       ]
     },
@@ -28891,12 +29207,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L414"
+          "locator": "L446"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L911"
+          "locator": "L943"
         }
       ]
     },
@@ -28908,7 +29224,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L754"
+          "locator": "L786"
         }
       ]
     },
@@ -28920,12 +29236,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L356"
+          "locator": "L388"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L745"
+          "locator": "L777"
         }
       ]
     },
@@ -28937,12 +29253,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L647"
+          "locator": "L679"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L767"
+          "locator": "L799"
         }
       ]
     },
@@ -28954,12 +29270,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L491"
+          "locator": "L523"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L909"
+          "locator": "L941"
         }
       ]
     },
@@ -28971,7 +29287,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L774"
+          "locator": "L806"
         }
       ]
     },
@@ -28983,17 +29299,17 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L354"
+          "locator": "L386"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L744"
+          "locator": "L776"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L914"
+          "locator": "L946"
         }
       ]
     },
@@ -29005,7 +29321,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L772"
+          "locator": "L804"
         }
       ]
     },
@@ -29017,7 +29333,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L760"
+          "locator": "L792"
         }
       ]
     },
@@ -29029,22 +29345,22 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L378"
+          "locator": "L410"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L454"
+          "locator": "L486"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L747"
+          "locator": "L779"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L916"
+          "locator": "L948"
         }
       ]
     },
@@ -29056,17 +29372,17 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L705"
+          "locator": "L737"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L790"
+          "locator": "L822"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L918"
+          "locator": "L950"
         }
       ]
     },
@@ -29078,12 +29394,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L706"
+          "locator": "L738"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L792"
+          "locator": "L824"
         }
       ]
     },
@@ -29095,7 +29411,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L729"
+          "locator": "L761"
         }
       ]
     },
@@ -29107,12 +29423,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L379"
+          "locator": "L411"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L753"
+          "locator": "L785"
         }
       ]
     },
@@ -29124,7 +29440,7 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L926"
+          "locator": "L958"
         }
       ]
     },
@@ -29136,12 +29452,12 @@
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L730"
+          "locator": "L762"
         },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L908"
+          "locator": "L940"
         }
       ]
     },
@@ -29333,7 +29649,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L731"
+          "locator": "L763"
         }
       ]
     },
@@ -29345,17 +29661,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L497"
+          "locator": "L529"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L758"
+          "locator": "L790"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L910"
+          "locator": "L942"
         }
       ]
     },
@@ -29367,7 +29683,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L720"
+          "locator": "L752"
         }
       ]
     },
@@ -29379,22 +29695,22 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L353"
+          "locator": "L385"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L732"
+          "locator": "L764"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L738"
+          "locator": "L770"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L912"
+          "locator": "L944"
         }
       ]
     },
@@ -29406,12 +29722,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L357"
+          "locator": "L389"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L740"
+          "locator": "L772"
         }
       ]
     },
@@ -29423,22 +29739,22 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L367"
+          "locator": "L399"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L424"
+          "locator": "L456"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L746"
+          "locator": "L778"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L915"
+          "locator": "L947"
         }
       ]
     },
@@ -29450,7 +29766,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L366"
+          "locator": "L398"
         }
       ]
     },
@@ -29462,12 +29778,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L365"
+          "locator": "L397"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L791"
+          "locator": "L823"
         }
       ]
     },
@@ -29479,7 +29795,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L368"
+          "locator": "L400"
         }
       ]
     },
@@ -29491,12 +29807,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L376"
+          "locator": "L408"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L751"
+          "locator": "L783"
         }
       ]
     },
@@ -29508,12 +29824,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L377"
+          "locator": "L409"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L752"
+          "locator": "L784"
         }
       ]
     },
@@ -29525,7 +29841,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L636"
+          "locator": "L668"
         }
       ]
     },
@@ -29537,7 +29853,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L637"
+          "locator": "L669"
         }
       ]
     },
@@ -29549,12 +29865,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L635"
+          "locator": "L667"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L765"
+          "locator": "L797"
         }
       ]
     },
@@ -29566,7 +29882,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L764"
+          "locator": "L796"
         }
       ]
     },
@@ -29578,17 +29894,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L671"
+          "locator": "L703"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L778"
+          "locator": "L810"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L919"
+          "locator": "L951"
         }
       ]
     },
@@ -29600,7 +29916,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L779"
+          "locator": "L811"
         }
       ]
     },
@@ -29612,17 +29928,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L560"
+          "locator": "L592"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L759"
+          "locator": "L791"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L917"
+          "locator": "L949"
         }
       ]
     },
@@ -29634,12 +29950,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L780"
+          "locator": "L812"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L920"
+          "locator": "L952"
         }
       ]
     },
@@ -29651,7 +29967,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L773"
+          "locator": "L805"
         }
       ]
     },
@@ -29663,7 +29979,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L645"
+          "locator": "L677"
         }
       ]
     },
@@ -29675,12 +29991,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L784"
+          "locator": "L816"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L921"
+          "locator": "L953"
         }
       ]
     },
@@ -29692,7 +30008,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L922"
+          "locator": "L954"
         }
       ]
     },
@@ -29704,12 +30020,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L646"
+          "locator": "L678"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L766"
+          "locator": "L798"
         }
       ]
     },
@@ -29721,7 +30037,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L771"
+          "locator": "L803"
         }
       ]
     },
@@ -29733,17 +30049,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L355"
+          "locator": "L387"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L739"
+          "locator": "L771"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L913"
+          "locator": "L945"
         }
       ]
     },
@@ -29755,12 +30071,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L414"
+          "locator": "L446"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L911"
+          "locator": "L943"
         }
       ]
     },
@@ -29772,7 +30088,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L754"
+          "locator": "L786"
         }
       ]
     },
@@ -29784,12 +30100,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L356"
+          "locator": "L388"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L745"
+          "locator": "L777"
         }
       ]
     },
@@ -29801,12 +30117,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L647"
+          "locator": "L679"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L767"
+          "locator": "L799"
         }
       ]
     },
@@ -29818,12 +30134,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L491"
+          "locator": "L523"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L909"
+          "locator": "L941"
         }
       ]
     },
@@ -29835,7 +30151,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L774"
+          "locator": "L806"
         }
       ]
     },
@@ -29847,17 +30163,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L354"
+          "locator": "L386"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L744"
+          "locator": "L776"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L914"
+          "locator": "L946"
         }
       ]
     },
@@ -29869,7 +30185,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L772"
+          "locator": "L804"
         }
       ]
     },
@@ -29881,7 +30197,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L760"
+          "locator": "L792"
         }
       ]
     },
@@ -29893,22 +30209,22 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L378"
+          "locator": "L410"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L454"
+          "locator": "L486"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L747"
+          "locator": "L779"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L916"
+          "locator": "L948"
         }
       ]
     },
@@ -29920,17 +30236,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L705"
+          "locator": "L737"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L790"
+          "locator": "L822"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L918"
+          "locator": "L950"
         }
       ]
     },
@@ -29942,12 +30258,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L706"
+          "locator": "L738"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L792"
+          "locator": "L824"
         }
       ]
     },
@@ -29959,7 +30275,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L729"
+          "locator": "L761"
         }
       ]
     },
@@ -29971,12 +30287,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L379"
+          "locator": "L411"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L753"
+          "locator": "L785"
         }
       ]
     },
@@ -29988,7 +30304,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L926"
+          "locator": "L958"
         }
       ]
     },
@@ -30000,12 +30316,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L730"
+          "locator": "L762"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L908"
+          "locator": "L940"
         }
       ]
     },
@@ -30216,7 +30532,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L904"
+          "locator": "L936"
         }
       ]
     },
@@ -30228,7 +30544,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L731"
+          "locator": "L763"
         }
       ]
     },
@@ -30240,7 +30556,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L721"
+          "locator": "L753"
         }
       ]
     },
@@ -30252,22 +30568,22 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L355"
+          "locator": "L387"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L732"
+          "locator": "L764"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L738"
+          "locator": "L770"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L908"
+          "locator": "L940"
         }
       ]
     },
@@ -30279,12 +30595,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L358"
+          "locator": "L390"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L740"
+          "locator": "L772"
         }
       ]
     },
@@ -30296,7 +30612,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L367"
+          "locator": "L399"
         }
       ]
     },
@@ -30308,12 +30624,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L366"
+          "locator": "L398"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L790"
+          "locator": "L822"
         }
       ]
     },
@@ -30325,7 +30641,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L369"
+          "locator": "L401"
         }
       ]
     },
@@ -30337,12 +30653,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L377"
+          "locator": "L409"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L750"
+          "locator": "L782"
         }
       ]
     },
@@ -30354,12 +30670,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L378"
+          "locator": "L410"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L751"
+          "locator": "L783"
         }
       ]
     },
@@ -30371,7 +30687,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L635"
+          "locator": "L667"
         }
       ]
     },
@@ -30383,7 +30699,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L636"
+          "locator": "L668"
         }
       ]
     },
@@ -30395,12 +30711,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L634"
+          "locator": "L666"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L764"
+          "locator": "L796"
         }
       ]
     },
@@ -30412,7 +30728,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L763"
+          "locator": "L795"
         }
       ]
     },
@@ -30424,17 +30740,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L670"
+          "locator": "L702"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L777"
+          "locator": "L809"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L915"
+          "locator": "L947"
         }
       ]
     },
@@ -30446,7 +30762,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L778"
+          "locator": "L810"
         }
       ]
     },
@@ -30458,17 +30774,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L559"
+          "locator": "L591"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L758"
+          "locator": "L790"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L913"
+          "locator": "L945"
         }
       ]
     },
@@ -30480,12 +30796,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L779"
+          "locator": "L811"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L916"
+          "locator": "L948"
         }
       ]
     },
@@ -30497,7 +30813,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L772"
+          "locator": "L804"
         }
       ]
     },
@@ -30509,7 +30825,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L644"
+          "locator": "L676"
         }
       ]
     },
@@ -30521,12 +30837,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L783"
+          "locator": "L815"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L917"
+          "locator": "L949"
         }
       ]
     },
@@ -30538,7 +30854,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L918"
+          "locator": "L950"
         }
       ]
     },
@@ -30550,12 +30866,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L645"
+          "locator": "L677"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L765"
+          "locator": "L797"
         }
       ]
     },
@@ -30567,7 +30883,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L770"
+          "locator": "L802"
         }
       ]
     },
@@ -30579,17 +30895,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L357"
+          "locator": "L389"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L739"
+          "locator": "L771"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L909"
+          "locator": "L941"
         }
       ]
     },
@@ -30601,12 +30917,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L416"
+          "locator": "L448"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L907"
+          "locator": "L939"
         }
       ]
     },
@@ -30618,12 +30934,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L381"
+          "locator": "L413"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L753"
+          "locator": "L785"
         }
       ]
     },
@@ -30635,12 +30951,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L646"
+          "locator": "L678"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L766"
+          "locator": "L798"
         }
       ]
     },
@@ -30652,22 +30968,22 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L368"
+          "locator": "L400"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L425"
+          "locator": "L457"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L745"
+          "locator": "L777"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L911"
+          "locator": "L943"
         }
       ]
     },
@@ -30679,12 +30995,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L490"
+          "locator": "L522"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L905"
+          "locator": "L937"
         }
       ]
     },
@@ -30696,7 +31012,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L773"
+          "locator": "L805"
         }
       ]
     },
@@ -30708,17 +31024,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L356"
+          "locator": "L388"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L744"
+          "locator": "L776"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L910"
+          "locator": "L942"
         }
       ]
     },
@@ -30730,7 +31046,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L771"
+          "locator": "L803"
         }
       ]
     },
@@ -30742,7 +31058,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L759"
+          "locator": "L791"
         }
       ]
     },
@@ -30754,22 +31070,22 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L379"
+          "locator": "L411"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L455"
+          "locator": "L487"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L746"
+          "locator": "L778"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L912"
+          "locator": "L944"
         }
       ]
     },
@@ -30781,22 +31097,22 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L688"
+          "locator": "L720"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L706"
+          "locator": "L738"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L789"
+          "locator": "L821"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L914"
+          "locator": "L946"
         }
       ]
     },
@@ -30808,12 +31124,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L707"
+          "locator": "L739"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L791"
+          "locator": "L823"
         }
       ]
     },
@@ -30825,7 +31141,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L730"
+          "locator": "L762"
         }
       ]
     },
@@ -30837,12 +31153,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L380"
+          "locator": "L412"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L752"
+          "locator": "L784"
         }
       ]
     },
@@ -30866,17 +31182,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L496"
+          "locator": "L528"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L757"
+          "locator": "L789"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L906"
+          "locator": "L938"
         }
       ]
     },

@@ -101,12 +101,12 @@
         "en": "Applications"
       },
       "subtitle": {
-        "ja": "理論を設計へ接続する",
-        "en": "Connect theory to design"
+        "ja": "理論をスピンアウトし、実践から残差を返す",
+        "en": "Spin out theory and return residuals from practice"
       },
       "description": {
-        "ja": "中核領域で形成された構造・認識・規約を、公開可能な設計インターフェース、評価枠、チェックリスト、仕様へ接続し、実装からの残差を上流へ返す領域。",
-        "en": "Connects structures, cognition, and protocols from the core system to public design interfaces, evaluation frames, checklists, and specifications, while returning implementation residuals upstream."
+        "ja": "01–03の元型と、必要に応じて05の批判・拡張を、AI・心理・経済・政治・制度・設計へ持ち出す応用層。実践で生じた残差は05または該当する正本所有文書へ返す。",
+        "en": "The application layer that carries the 01–03 archetype, and where useful critiques or extensions from 05, into AI, psychology, economics, politics, institutions, and design. Residuals from practice return to 05 or the relevant concept owner."
       },
       "home_group": "working"
     },
@@ -120,12 +120,12 @@
         "en": "Research notes"
       },
       "subtitle": {
-        "ja": "未確定な発展を、捨てずに保持する",
-        "en": "Keep unresolved developments inspectable"
+        "ja": "元型を共有文法の内側から批判・拡張する",
+        "en": "Critique and extend the archetype from within"
       },
       "description": {
-        "ja": "公開基礎へ直ちに統合するには距離やリスクが大きい研究線を、非主張境界・反例・残差・検証段階とともに保持する探索層。",
-        "en": "An exploratory layer that keeps research lines too distant or risky for immediate integration into the public foundations together with non-claim boundaries, counterexamples, residuals, and validation stages."
+        "ja": "01–03を存在境界論の共有文法の内側から批判・拡張し、強い仮説、分野横断対応、形式化候補、未解決残差を返路付きで保持する研究層。配置は重要性や成熟度の低さを意味しない。",
+        "en": "The research layer that critiques and extends 01–03 from within Scientific Ontology’s shared grammar, retaining stronger hypotheses, cross-domain correspondences, formalization candidates, and unresolved residuals with return paths. Placement here does not imply lower importance or maturity."
       },
       "home_group": "working"
     },
@@ -139,12 +139,12 @@
         "en": "Visual materials"
       },
       "subtitle": {
-        "ja": "図から圧を受け、本文へ戻る",
-        "en": "Encounter the structure visually, then return to the text"
+        "ja": "01–05をレンダリングし、保持と損失を測る",
+        "en": "Render 01–05 and track what is preserved or lost"
       },
       "description": {
-        "ja": "概念配置へ視覚的に接触するための面。図を理論本文の代替にせず、「なんだこれ？」という圧を入口にして、圧縮で失われた条件を本文へ戻って確認する。",
-        "en": "A surface for visual contact with the conceptual arrangement. Images do not replace theory texts; they create an initial pressure of encounter and return the reader to conditions lost in compression."
+        "ja": "01–05の構造を図・配置・知覚的表現へレンダリングする研究面。図を理論本文の代替にせず、変換で保持されたものと失われた条件を本文へ返して照合する。",
+        "en": "A rendering-research surface that projects structures from 01–05 into diagrams, layouts, and perceptual forms. It does not replace source texts; it returns what the transformation preserved or lost for re-collation."
       },
       "home_group": "contact"
     },
@@ -155,16 +155,16 @@
       "path": "07_Creative_Offshoots",
       "readme_path": "07_Creative_Offshoots/README.md",
       "label": {
-        "ja": "外界との表現・運用実験",
-        "en": "Creative offshoots"
+        "ja": "外部との接触・表現・再照合",
+        "en": "External Contact, Expression, and Re-Collation"
       },
       "subtitle": {
-        "ja": "理論を外へ持ち出し、反応と残差を受け取る",
-        "en": "Take the theory outward and receive reactions and residuals"
+        "ja": "共有文法の外へ曝露し、反論と残差を受け取る",
+        "en": "Expose the archetype beyond the shared grammar and receive objections and residuals"
       },
       "description": {
-        "ja": "読み物、創作、可読化、運用実験を通して、理論そのものを説明する前にまず接触を起こす外向きの実験面。ここでの表現は自動的に概念定義の正本にはならない。",
-        "en": "An outward experimental surface for making contact through readable prose, creative work, public-facing expression, and operational trials before formal explanation. Material here does not automatically become a canonical concept definition."
+        "ja": "とくに01–03を、存在境界論の共有文法を前提としない異質な対象・価値体系・言語・表現形式・反論へ曝露する外部接触面。理解不能、通約失敗、前提衝突、反論、反証候補、適用限界を区別して受け取り、05・04・06または正本所有文書へ返す。",
+        "en": "An external-contact surface that exposes especially 01–03 to heterogeneous subjects, values, languages, expressive forms, and objections that do not presuppose Scientific Ontology’s shared grammar. It distinguishes incomprehension, failed commensuration, premise conflict, objections, candidate refutations, and limits of application, then returns residuals to 05, 04, 06, or the relevant concept owner."
       }
     }
   ],

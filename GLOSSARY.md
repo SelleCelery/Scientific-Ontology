@@ -1449,45 +1449,79 @@ rMass is retained as the paired real-time-side identifier through which the rend
 
 ## Sat / Truth / 純・真
 
-原理、認識成立条件、境界実在性、意味成立条件を扱う層。
+01–03の元型三相のうち、境界を最も広く取り、何を構造として規定し得るかを問う相。応用形而上学は、この最大境界を探索する主要な向きとしてSatに最も近く、境界実在性、認識成立条件、真理条件、意味成立条件へ派生する。
 
-The layer concerned with principles, epistemic conditions, boundary realism, and conditions of meaning formation.
+Sat is the archetypal phase that takes the broadest boundary and asks what may be structurally determined. Applied Metaphysics is the principal exploratory orientation closest to Sat, from which Boundary Realism, epistemic conditions, truth conditions, and conditions of meaning formation may be developed.
+
+Satへの配置は、経験的確実性や主張強度が最も高いことを意味しない。
+
+Placement near Sat does not mean the highest empirical certainty or claim strength.
 
 ---
 
 ## Raj / Beauty / 激・美
 
-差分、注意、抽象化、認識方向、構築、動態を扱う層。
+境界を横断する差分、通信、履歴、注意、認識方向、構築、動態を扱う元型相。エントロピー、エネルギー、エクセルギー、熱、圧などの語彙は、この動態へ接触するための対応・レンダリング語彙として現れ得るが、個別文書が明示的に形式化しない限り、標準物理学上の量との同一性を主張しない。
 
-The layer concerned with difference, attention, abstraction, cognitive direction, construction, and dynamics.
+Raj is the archetypal phase concerned with difference, communication, history, attention, cognitive direction, construction, and dynamics across boundaries. Terms such as entropy, energy, exergy, heat, and pressure may appear as correspondence or rendering vocabulary for these dynamics; unless a document explicitly formalizes the relation, this does not claim identity with quantities in standard physics.
 
 ---
 
 ## Tam / Goodness / 暗・善
 
-通約、倫理、制御、プロトコル、実装境界、排熱、返路を扱う層。
+認識による公理、通信規約、通約、意味構築、仮閉鎖、再開、返路、倫理的運用条件を扱う元型相。異なる認識形式が、何を受け取り、何を保留し、どこで閉じ、どの差分によって再び開くかを記述する。
 
-The layer concerned with commensuration, ethics, control, protocols, implementation boundaries, exhaust handling, and return paths.
+Tam is the archetypal phase concerned with cognition-derived axioms, communication protocols, commensuration, meaning construction, provisional closure, reopening, return paths, and ethical operating conditions. It asks what distinct cognitive forms receive, suspend, close, and reopen in response to difference.
 
 ---
 
 ## Applications / 応用
 
-公開概念を、AI、組織、社会境界、制度、チェックリスト、運用モデルへ実装する層。
+01–03の元型と、必要に応じて05で得られた批判・拡張を、心理、経済、政治、AI、組織、制度、社会設計、インターフェースなどへスピンアウトする層。実践で得られた残差は、05または該当する正本所有文書へ返す。
 
-The layer that operationalizes public concepts in AI, organizations, social boundaries, institutions, checklists, and implementation models.
+The spinout layer that carries the 01–03 archetype, and where useful critiques or extensions developed in 05, into psychology, economics, politics, AI, organizations, institutions, social design, interfaces, and related practices. Residuals from use return to 05 or to the relevant concept owner.
+
+04への配置は、05より成熟していることを意味しない。両者の差は主に文書の機能である。
+
+Placement in 04 does not imply greater maturity than placement in 05. Their distinction is primarily functional.
 
 ---
 
 ## Research Notes / 研究ノート
 
-主張強度の高い概念応用、試論的対応、物理・宇宙論的再解釈、文学的・社会的横断研究を置く層。
+01–03の元型を、存在境界論の共有文法の内側から批判・拡張する研究層。強い仮説、分野横断対応、形式化候補、未解決残差を、上流へ自動昇格させず、返路を保ったまま保持する。
 
-The layer for higher-claim-strength conceptual applications, speculative correspondences, physical or cosmological reinterpretations, and literary or social cross-domain research.
+The research layer that critiques and extends the 01–03 archetype from within Scientific Ontology's shared grammar. It retains stronger hypotheses, cross-domain correspondences, formalization candidates, and unresolved residuals with return paths, without automatically promoting them upstream.
 
-Research Notesの文書は、それ自体によって経験的証明または現代科学の代替になるわけではない。
+Research Notesへの配置は、重要性、成熟度、基礎性、経験的妥当性のいずれかを単独で示すものではない。
 
-Placement in Research Notes does not itself make a document empirical proof or a replacement for modern science.
+Placement in Research Notes does not by itself indicate importance, maturity, foundational status, or empirical validity.
+
+---
+
+## Visual Materials / 視覚資料
+
+01–05の構造を図・配置・知覚的表現へレンダリングし、その変換で何が保持され、何が失われたかを本文へ返す研究面。現在の公開成果物は主に視覚資料だが、役割は単なる画像保管ではない。
+
+The rendering-research surface that projects structures from 01–05 into diagrams, layouts, and perceptual forms, then returns what was preserved or lost in that transformation to the source texts. Its current public artifacts are mainly visual, but its role is not merely image storage.
+
+---
+
+## Creative Offshoots / 外部との接触・表現・再照合
+
+とくに01–03の元型を、存在境界論の共有文法を前提としない異質な対象、価値体系、言語、表現形式、反論へ曝露し、理解不能、通約失敗、前提衝突、理解後の異議、反例・反証候補、適用限界などを残差として受け取る外部接触面。07は定義所有層ではなく、得られた残差は05、04、06、または該当する正本所有文書へ返す。
+
+The external-contact surface that exposes especially the 01–03 archetype to heterogeneous subjects, values, languages, expressive forms, and objections that do not presuppose Scientific Ontology's shared grammar. It receives incomprehension, failed commensuration, premise conflict, objection after understanding, counterexamples or candidate refutations, and limits of application as residuals. 07 is not a definition-owning layer; returned residuals go to 05, 04, 06, or the relevant concept owner.
+
+Creative Offshootsが将来独立した研究線を生む可能性はあるが、そのことだけで新しい層や正本権限は発生しない。
+
+Creative Offshoots may generate a future autonomous research line, but that fact alone creates neither a new layer nor canonical authority.
+
+---
+
+04–07は主張強度や成熟度の序列ではなく、元型に対して文書がどの機能と距離を持つかを示す配置語である。
+
+Layers 04–07 are not a hierarchy of claim strength or maturity. They are placement terms describing a document's function and distance from the archetypal core.
 
 ---
 

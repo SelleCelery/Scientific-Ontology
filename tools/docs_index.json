@@ -2,7 +2,7 @@
   "schema_version": "0.2",
   "search_spec_version": "0.2",
   "source": {
-    "manifest_sha256": "4f25c5e45b0ccf9250473f793641632c79334ec4e539ffecdeb4c82b71a575eb",
+    "manifest_sha256": "ebf9c7354c2af6b4536875f0db5941469bf3ef3fe2e9caa33ed7a792e8e40a08",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "coverage": "role-aware-current-inventory",
     "visibility_profile": "public"
@@ -4874,10 +4874,10 @@
       "status": "README",
       "state": "public",
       "registration_state": "provisional",
-      "scope": "public applications / design interfaces / checklists / specifications / non-operational implementation",
+      "scope": "spinout applications / cross-domain practice / design interfaces / specifications / non-operational implementation / return from use",
       "role": {
-        "ja": "基礎理論を設計インターフェース、チェックリスト、仕様へ接続する応用層の入口",
-        "en": "Entry point to applications connecting foundational theory to interfaces, checklists, and specifications"
+        "ja": "01–03と必要に応じて05の批判・拡張を、AI・心理・経済・政治・制度・設計へスピンアウトし、実践残差を返す応用層の入口",
+        "en": "Entry point to the application layer that spins out 01–03, and where useful critiques or extensions from 05, into AI, psychology, economics, politics, institutions, and design, then returns residuals from use"
       },
       "language_relation": {
         "language": "ja+en",
@@ -4906,11 +4906,13 @@
         "reader_questions": {
           "ja": [
             "Applications層は何を扱うか",
-            "Applications層はどこから読むか"
+            "Applications層はどこから読むか",
+            "04と05の違いは何か"
           ],
           "en": [
             "What does the Applications layer cover?",
-            "Where should I start in the Applications layer?"
+            "Where should I start in the Applications layer?",
+            "How does 04 differ from 05?"
           ]
         },
         "entry_level": "foundation"
@@ -4977,6 +4979,12 @@
             "compact": "applications層はどこから読むか"
           },
           {
+            "lang": "ja",
+            "text": "04と05の違いは何か",
+            "normalized": "04と05の違いは何か",
+            "compact": "04と05の違いは何か"
+          },
+          {
             "lang": "en",
             "text": "What does the Applications layer cover?",
             "normalized": "what does the applications layer cover",
@@ -4987,28 +4995,34 @@
             "text": "Where should I start in the Applications layer?",
             "normalized": "where should i start in the applications layer",
             "compact": "whereshouldistartintheapplicationslayer"
+          },
+          {
+            "lang": "en",
+            "text": "How does 04 differ from 05?",
+            "normalized": "how does 04 differ from 05",
+            "compact": "howdoes04differfrom05"
           }
         ],
         "role": [
           {
             "lang": "ja",
-            "text": "基礎理論を設計インターフェース、チェックリスト、仕様へ接続する応用層の入口",
-            "normalized": "基礎理論を設計インターフェース チェックリスト 仕様へ接続する応用層の入口",
-            "compact": "基礎理論を設計インターフェースチェックリスト仕様へ接続する応用層の入口"
+            "text": "01–03と必要に応じて05の批判・拡張を、AI・心理・経済・政治・制度・設計へスピンアウトし、実践残差を返す応用層の入口",
+            "normalized": "01 03と必要に応じて05の批判 拡張を ai 心理 経済 政治 制度 設計へスピンアウトし 実践残差を返す応用層の入口",
+            "compact": "0103と必要に応じて05の批判拡張をai心理経済政治制度設計へスピンアウトし実践残差を返す応用層の入口"
           },
           {
             "lang": "en",
-            "text": "Entry point to applications connecting foundational theory to interfaces, checklists, and specifications",
-            "normalized": "entry point to applications connecting foundational theory to interfaces checklists and specifications",
-            "compact": "entrypointtoapplicationsconnectingfoundationaltheorytointerfaceschecklistsandspecifications"
+            "text": "Entry point to the application layer that spins out 01–03, and where useful critiques or extensions from 05, into AI, psychology, economics, politics, institutions, and design, then returns residuals from use",
+            "normalized": "entry point to the application layer that spins out 01 03 and where useful critiques or extensions from 05 into ai psychology economics politics institutions and design then returns residuals from use",
+            "compact": "entrypointtotheapplicationlayerthatspinsout0103andwhereusefulcritiquesorextensionsfrom05intoaipsychologyeconomicspoliticsinstitutionsanddesignthenreturnsresidualsfromuse"
           }
         ],
         "scope": [
           {
             "lang": "und",
-            "text": "public applications / design interfaces / checklists / specifications / non-operational implementation",
-            "normalized": "public applications design interfaces checklists specifications non operational implementation",
-            "compact": "publicapplicationsdesigninterfaceschecklistsspecificationsnonoperationalimplementation"
+            "text": "spinout applications / cross-domain practice / design interfaces / specifications / non-operational implementation / return from use",
+            "normalized": "spinout applications cross domain practice design interfaces specifications non operational implementation return from use",
+            "compact": "spinoutapplicationscrossdomainpracticedesigninterfacesspecificationsnonoperationalimplementationreturnfromuse"
           }
         ]
       }
@@ -8794,10 +8808,10 @@
       "status": "README",
       "state": "public",
       "registration_state": "provisional",
-      "scope": "exploratory research / stronger hypotheses / guarded cross-domain correspondence / return to public foundations",
+      "scope": "internal critique and extension of archetypal core / exploratory research / stronger hypotheses / guarded cross-domain correspondence / return to public foundations",
       "role": {
-        "ja": "強い仮説と分野横断研究を公開基礎へ直結させず保持するResearch Notes層の入口",
-        "en": "Entry point to Research Notes holding strong and cross-domain hypotheses without directly promoting them to public foundations"
+        "ja": "01–03の元型を共有文法の内側から批判・拡張し、強い仮説と未確定研究を返路付きで保持する研究層の入口",
+        "en": "Entry point to the research layer that critiques and extends the 01–03 archetype from within the shared grammar while retaining strong hypotheses and unresolved research with return paths"
       },
       "language_relation": {
         "language": "ja+en",
@@ -8825,12 +8839,14 @@
           "ja": [
             "Research Notesは何を扱うか",
             "研究ノートはいつ上流へ返るか",
-            "Research Notesはどこから読むか"
+            "Research Notesはどこから読むか",
+            "05は04や07とどう違うか"
           ],
           "en": [
             "What do the Research Notes cover?",
             "When should a research note return upstream?",
-            "Where should I start in the Research Notes?"
+            "Where should I start in the Research Notes?",
+            "How does 05 differ from 04 and 07?"
           ]
         },
         "entry_level": "foundation"
@@ -8884,6 +8900,12 @@
             "compact": "researchnotesはどこから読むか"
           },
           {
+            "lang": "ja",
+            "text": "05は04や07とどう違うか",
+            "normalized": "05は04や07とどう違うか",
+            "compact": "05は04や07とどう違うか"
+          },
+          {
             "lang": "en",
             "text": "What do the Research Notes cover?",
             "normalized": "what do the research notes cover",
@@ -8900,28 +8922,34 @@
             "text": "Where should I start in the Research Notes?",
             "normalized": "where should i start in the research notes",
             "compact": "whereshouldistartintheresearchnotes"
+          },
+          {
+            "lang": "en",
+            "text": "How does 05 differ from 04 and 07?",
+            "normalized": "how does 05 differ from 04 and 07",
+            "compact": "howdoes05differfrom04and07"
           }
         ],
         "role": [
           {
             "lang": "ja",
-            "text": "強い仮説と分野横断研究を公開基礎へ直結させず保持するResearch Notes層の入口",
-            "normalized": "強い仮説と分野横断研究を公開基礎へ直結させず保持するresearch notes層の入口",
-            "compact": "強い仮説と分野横断研究を公開基礎へ直結させず保持するresearchnotes層の入口"
+            "text": "01–03の元型を共有文法の内側から批判・拡張し、強い仮説と未確定研究を返路付きで保持する研究層の入口",
+            "normalized": "01 03の元型を共有文法の内側から批判 拡張し 強い仮説と未確定研究を返路付きで保持する研究層の入口",
+            "compact": "0103の元型を共有文法の内側から批判拡張し強い仮説と未確定研究を返路付きで保持する研究層の入口"
           },
           {
             "lang": "en",
-            "text": "Entry point to Research Notes holding strong and cross-domain hypotheses without directly promoting them to public foundations",
-            "normalized": "entry point to research notes holding strong and cross domain hypotheses without directly promoting them to public foundations",
-            "compact": "entrypointtoresearchnotesholdingstrongandcrossdomainhypotheseswithoutdirectlypromotingthemtopublicfoundations"
+            "text": "Entry point to the research layer that critiques and extends the 01–03 archetype from within the shared grammar while retaining strong hypotheses and unresolved research with return paths",
+            "normalized": "entry point to the research layer that critiques and extends the 01 03 archetype from within the shared grammar while retaining strong hypotheses and unresolved research with return paths",
+            "compact": "entrypointtotheresearchlayerthatcritiquesandextendsthe0103archetypefromwithinthesharedgrammarwhileretainingstronghypothesesandunresolvedresearchwithreturnpaths"
           }
         ],
         "scope": [
           {
             "lang": "und",
-            "text": "exploratory research / stronger hypotheses / guarded cross-domain correspondence / return to public foundations",
-            "normalized": "exploratory research stronger hypotheses guarded cross domain correspondence return to public foundations",
-            "compact": "exploratoryresearchstrongerhypothesesguardedcrossdomaincorrespondencereturntopublicfoundations"
+            "text": "internal critique and extension of archetypal core / exploratory research / stronger hypotheses / guarded cross-domain correspondence / return to public foundations",
+            "normalized": "internal critique and extension of archetypal core exploratory research stronger hypotheses guarded cross domain correspondence return to public foundations",
+            "compact": "internalcritiqueandextensionofarchetypalcoreexploratoryresearchstrongerhypothesesguardedcrossdomaincorrespondencereturntopublicfoundations"
           }
         ]
       }
@@ -9683,10 +9711,10 @@
       "status": "README",
       "state": "public",
       "registration_state": "provisional",
-      "scope": "public visual aids / conceptual posters / visual reading notes",
+      "scope": "rendering research / visual-perceptual projection / conceptual posters / loss tracking / return to source texts",
       "role": {
-        "ja": "概念ポスターなどの視覚資料へ案内する補助層の入口",
-        "en": "Entry point to visual aids such as conceptual posters"
+        "ja": "01–05を別の知覚形式へレンダリングし、保持された構造と失われた条件をsourceへ返す研究面の入口",
+        "en": "Entry point to the rendering-research surface that projects 01–05 into other perceptual forms and returns preserved structure and lost conditions to source texts"
       },
       "language_relation": {
         "language": "ja+en",
@@ -9715,11 +9743,13 @@
         "reader_questions": {
           "ja": [
             "視覚資料には何があるか",
-            "視覚資料はどこから読むか"
+            "視覚資料はどこから読むか",
+            "06のレンダリングと07の外部曝露はどう違うか"
           ],
           "en": [
             "What visual materials are available?",
-            "Where should I start with the visual materials?"
+            "Where should I start with the visual materials?",
+            "How does rendering in 06 differ from external exposure in 07?"
           ]
         },
         "entry_level": "foundation"
@@ -9786,6 +9816,12 @@
             "compact": "視覚資料はどこから読むか"
           },
           {
+            "lang": "ja",
+            "text": "06のレンダリングと07の外部曝露はどう違うか",
+            "normalized": "06のレンダリングと07の外部曝露はどう違うか",
+            "compact": "06のレンダリングと07の外部曝露はどう違うか"
+          },
+          {
             "lang": "en",
             "text": "What visual materials are available?",
             "normalized": "what visual materials are available",
@@ -9796,28 +9832,34 @@
             "text": "Where should I start with the visual materials?",
             "normalized": "where should i start with the visual materials",
             "compact": "whereshouldistartwiththevisualmaterials"
+          },
+          {
+            "lang": "en",
+            "text": "How does rendering in 06 differ from external exposure in 07?",
+            "normalized": "how does rendering in 06 differ from external exposure in 07",
+            "compact": "howdoesrenderingin06differfromexternalexposurein07"
           }
         ],
         "role": [
           {
             "lang": "ja",
-            "text": "概念ポスターなどの視覚資料へ案内する補助層の入口",
-            "normalized": "概念ポスターなどの視覚資料へ案内する補助層の入口",
-            "compact": "概念ポスターなどの視覚資料へ案内する補助層の入口"
+            "text": "01–05を別の知覚形式へレンダリングし、保持された構造と失われた条件をsourceへ返す研究面の入口",
+            "normalized": "01 05を別の知覚形式へレンダリングし 保持された構造と失われた条件をsourceへ返す研究面の入口",
+            "compact": "0105を別の知覚形式へレンダリングし保持された構造と失われた条件をsourceへ返す研究面の入口"
           },
           {
             "lang": "en",
-            "text": "Entry point to visual aids such as conceptual posters",
-            "normalized": "entry point to visual aids such as conceptual posters",
-            "compact": "entrypointtovisualaidssuchasconceptualposters"
+            "text": "Entry point to the rendering-research surface that projects 01–05 into other perceptual forms and returns preserved structure and lost conditions to source texts",
+            "normalized": "entry point to the rendering research surface that projects 01 05 into other perceptual forms and returns preserved structure and lost conditions to source texts",
+            "compact": "entrypointtotherenderingresearchsurfacethatprojects0105intootherperceptualformsandreturnspreservedstructureandlostconditionstosourcetexts"
           }
         ],
         "scope": [
           {
             "lang": "und",
-            "text": "public visual aids / conceptual posters / visual reading notes",
-            "normalized": "public visual aids conceptual posters visual reading notes",
-            "compact": "publicvisualaidsconceptualpostersvisualreadingnotes"
+            "text": "rendering research / visual-perceptual projection / conceptual posters / loss tracking / return to source texts",
+            "normalized": "rendering research visual perceptual projection conceptual posters loss tracking return to source texts",
+            "compact": "renderingresearchvisualperceptualprojectionconceptualposterslosstrackingreturntosourcetexts"
           }
         ]
       }
@@ -11177,10 +11219,10 @@
       "status": "README",
       "state": "public",
       "registration_state": "provisional",
-      "scope": "external contact / commensuration / return paths",
+      "scope": "external and adversarial exposure / heterogeneous commensuration / expressive contact / residual return",
       "role": {
-        "ja": "外部との接触・表現・再照合",
-        "en": "External Contact, Expression, and Re-Collation"
+        "ja": "とくに01–03を共有文法の外へ曝露し、通約失敗・反論・反証候補・適用限界・残差を受け取る外部接触面",
+        "en": "External-contact surface that exposes especially 01–03 outside the shared grammar and receives failed commensuration, objections, candidate refutations, limits of application, and residuals"
       },
       "language_relation": {
         "language": "en",
@@ -11207,8 +11249,14 @@
           "en": []
         },
         "reader_questions": {
-          "ja": [],
-          "en": []
+          "ja": [
+            "07は05とどう違うか",
+            "外部曝露から返る残差はどこへ送るか"
+          ],
+          "en": [
+            "How does 07 differ from 05?",
+            "Where do residuals from external exposure return?"
+          ]
         },
         "entry_level": ""
       },
@@ -11260,27 +11308,52 @@
             "compact": "overview"
           }
         ],
-        "reader_questions": [],
-        "role": [
+        "reader_questions": [
           {
             "lang": "ja",
-            "text": "外部との接触・表現・再照合",
-            "normalized": "外部との接触 表現 再照合",
-            "compact": "外部との接触表現再照合"
+            "text": "07は05とどう違うか",
+            "normalized": "07は05とどう違うか",
+            "compact": "07は05とどう違うか"
+          },
+          {
+            "lang": "ja",
+            "text": "外部曝露から返る残差はどこへ送るか",
+            "normalized": "外部曝露から返る残差はどこへ送るか",
+            "compact": "外部曝露から返る残差はどこへ送るか"
           },
           {
             "lang": "en",
-            "text": "External Contact, Expression, and Re-Collation",
-            "normalized": "external contact expression and re collation",
-            "compact": "externalcontactexpressionandrecollation"
+            "text": "How does 07 differ from 05?",
+            "normalized": "how does 07 differ from 05",
+            "compact": "howdoes07differfrom05"
+          },
+          {
+            "lang": "en",
+            "text": "Where do residuals from external exposure return?",
+            "normalized": "where do residuals from external exposure return",
+            "compact": "wheredoresidualsfromexternalexposurereturn"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "とくに01–03を共有文法の外へ曝露し、通約失敗・反論・反証候補・適用限界・残差を受け取る外部接触面",
+            "normalized": "とくに01 03を共有文法の外へ曝露し 通約失敗 反論 反証候補 適用限界 残差を受け取る外部接触面",
+            "compact": "とくに0103を共有文法の外へ曝露し通約失敗反論反証候補適用限界残差を受け取る外部接触面"
+          },
+          {
+            "lang": "en",
+            "text": "External-contact surface that exposes especially 01–03 outside the shared grammar and receives failed commensuration, objections, candidate refutations, limits of application, and residuals",
+            "normalized": "external contact surface that exposes especially 01 03 outside the shared grammar and receives failed commensuration objections candidate refutations limits of application and residuals",
+            "compact": "externalcontactsurfacethatexposesespecially0103outsidethesharedgrammarandreceivesfailedcommensurationobjectionscandidaterefutationslimitsofapplicationandresiduals"
           }
         ],
         "scope": [
           {
             "lang": "und",
-            "text": "external contact / commensuration / return paths",
-            "normalized": "external contact commensuration return paths",
-            "compact": "externalcontactcommensurationreturnpaths"
+            "text": "external and adversarial exposure / heterogeneous commensuration / expressive contact / residual return",
+            "normalized": "external and adversarial exposure heterogeneous commensuration expressive contact residual return",
+            "compact": "externalandadversarialexposureheterogeneouscommensurationexpressivecontactresidualreturn"
           }
         ]
       }
@@ -11298,10 +11371,10 @@
       "status": "README",
       "state": "public",
       "registration_state": "provisional",
-      "scope": "external contact / commensuration / return paths",
+      "scope": "external and adversarial exposure / heterogeneous commensuration / expressive contact / residual return",
       "role": {
-        "ja": "外部との接触・表現・再照合",
-        "en": "External Contact, Expression, and Re-Collation"
+        "ja": "とくに01–03を共有文法の外へ曝露し、通約失敗・反論・反証候補・適用限界・残差を受け取る外部接触面",
+        "en": "External-contact surface that exposes especially 01–03 outside the shared grammar and receives failed commensuration, objections, candidate refutations, limits of application, and residuals"
       },
       "language_relation": {
         "language": "ja",
@@ -11328,8 +11401,14 @@
           "en": []
         },
         "reader_questions": {
-          "ja": [],
-          "en": []
+          "ja": [
+            "07は05とどう違うか",
+            "外部曝露から返る残差はどこへ送るか"
+          ],
+          "en": [
+            "How does 07 differ from 05?",
+            "Where do residuals from external exposure return?"
+          ]
         },
         "entry_level": ""
       },
@@ -11381,27 +11460,52 @@
             "compact": "overview"
           }
         ],
-        "reader_questions": [],
-        "role": [
+        "reader_questions": [
           {
             "lang": "ja",
-            "text": "外部との接触・表現・再照合",
-            "normalized": "外部との接触 表現 再照合",
-            "compact": "外部との接触表現再照合"
+            "text": "07は05とどう違うか",
+            "normalized": "07は05とどう違うか",
+            "compact": "07は05とどう違うか"
+          },
+          {
+            "lang": "ja",
+            "text": "外部曝露から返る残差はどこへ送るか",
+            "normalized": "外部曝露から返る残差はどこへ送るか",
+            "compact": "外部曝露から返る残差はどこへ送るか"
           },
           {
             "lang": "en",
-            "text": "External Contact, Expression, and Re-Collation",
-            "normalized": "external contact expression and re collation",
-            "compact": "externalcontactexpressionandrecollation"
+            "text": "How does 07 differ from 05?",
+            "normalized": "how does 07 differ from 05",
+            "compact": "howdoes07differfrom05"
+          },
+          {
+            "lang": "en",
+            "text": "Where do residuals from external exposure return?",
+            "normalized": "where do residuals from external exposure return",
+            "compact": "wheredoresidualsfromexternalexposurereturn"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "とくに01–03を共有文法の外へ曝露し、通約失敗・反論・反証候補・適用限界・残差を受け取る外部接触面",
+            "normalized": "とくに01 03を共有文法の外へ曝露し 通約失敗 反論 反証候補 適用限界 残差を受け取る外部接触面",
+            "compact": "とくに0103を共有文法の外へ曝露し通約失敗反論反証候補適用限界残差を受け取る外部接触面"
+          },
+          {
+            "lang": "en",
+            "text": "External-contact surface that exposes especially 01–03 outside the shared grammar and receives failed commensuration, objections, candidate refutations, limits of application, and residuals",
+            "normalized": "external contact surface that exposes especially 01 03 outside the shared grammar and receives failed commensuration objections candidate refutations limits of application and residuals",
+            "compact": "externalcontactsurfacethatexposesespecially0103outsidethesharedgrammarandreceivesfailedcommensurationobjectionscandidaterefutationslimitsofapplicationandresiduals"
           }
         ],
         "scope": [
           {
             "lang": "und",
-            "text": "external contact / commensuration / return paths",
-            "normalized": "external contact commensuration return paths",
-            "compact": "externalcontactcommensurationreturnpaths"
+            "text": "external and adversarial exposure / heterogeneous commensuration / expressive contact / residual return",
+            "normalized": "external and adversarial exposure heterogeneous commensuration expressive contact residual return",
+            "compact": "externalandadversarialexposureheterogeneouscommensurationexpressivecontactresidualreturn"
           }
         ]
       }

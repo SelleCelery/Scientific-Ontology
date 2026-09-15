@@ -96,6 +96,34 @@ $$
 \Omega_t \neq \text{World}
 $$
 
+### 1.1 Separating Fact Candidates, Support Paths, and Ground Hypotheses
+
+Calling $E_t$ a set of “fact candidates” does not make facts disposable. In a finite system, records and observations remain reopenable because sources, conditions, measurements, and classifications can later be re-collated and corrected.
+
+Yet once a fact candidate's provenance and conditions withstand the present audit, a later hypothesis may not rewrite it for convenience. **Facts are treated as conditionally hard constraints.**
+
+At least three things should be distinguished:
+
+- **fact candidate**: an observation, record, measurement, or input available together with its conditions and provenance;
+- **support path**: the traceable route showing which inputs, transformations, sources, histories, and scopes support the present judgment;
+- **ground hypothesis**: a model proposed to explain why a fact or structure holds, with metaphysical grounds placed especially in this layer.
+
+Where this document has used the expression “return to the grounds,” its operational meaning is primarily **return to support paths and formation conditions**. It does not mean that a finite system can possess the ultimate ground of the universe.
+
+Likewise, failure to derive a hypothesis $H$ from a model $M$ may establish
+
+$$
+M \nvdash H
+$$
+
+without establishing
+
+$$
+\neg H.
+$$
+
+Non-derivability, unverified status, lack of establishment in an external field, and falsification are different states. If SO misstates a borrowed definition, measurement, or factual claim from an established field, that local error should be corrected. But the mere fact that a standard theory does not require an explicitly marked SO ground hypothesis does not automatically defeat that hypothesis.
+
 ## 2. Internal Tenability
 
 The mere fact that search has stopped is not enough to call a state “correct.”
@@ -232,9 +260,9 @@ A new observation, objection, frontier, or invalidation of support capable of ch
 
 This does not require every port to remain open at all times. Ports may be closed for safety, authority, abstraction, or dormancy. What is required is **not to exclude in principle every class of difference that could change one's own validity and then treat the resulting quiet as correctness**.
 
-### Traceback — The system can return to its grounds
+### Traceback — The system can return to support paths and formation conditions
 
-From the present judgment, it must be possible, to the required extent, to return to support, transformations, formation history, input grounds, and scope of application.
+From the present judgment, it must be possible, to the required extent, to return to support, transformations, formation history, input sources and observation conditions, and scope of application. What must be recoverable here is the traceable support structure that established the judgment, not possession of an ultimate metaphysical ground.
 
 If only the conclusion remains and the conditions of its establishment cannot be recovered, then even when a new difference enters the system cannot know what must be re-examined.
 
@@ -280,7 +308,7 @@ Likewise, as defined in §4, $R(S_t)$ includes the ability for a difference to e
 
 The three conditions can therefore be read as follows:
 
-> **The internal structure is tenable. The system has actually performed the search presently available to it and, after reaching search saturation, has found no defeater that changes validity. And if a future difference capable of breaking that correctness arrives, the system can receive it, return to its grounds, and reopen the judgment.**
+> **The internal structure is tenable. The system has actually performed the search presently available to it and, after reaching search saturation, has found no defeater that changes validity. And if a future difference capable of breaking that correctness arrives, the system can receive it, return to its support paths and formation conditions, and reopen the judgment.**
 
 When these three conditions hold, the state is treated as “correct under the present conditions of resources, search operators, and formation history.”
 
@@ -1072,7 +1100,7 @@ Compress the core of this document onto one page.
 
 ### Correct
 
-> **A state in which the internal support structure holds; contact with the outside remains possible; under the resources, search operators, and formation history presently available, search is actually performed and reaches a saturated stop without finding a defeater that changes validity; and when a new difference arrives, the system can receive it, return to its grounds, and reopen the judgment.**
+> **A state in which the internal support structure holds; contact with the outside remains possible; under the resources, search operators, and formation history presently available, search is actually performed and reaches a saturated stop without finding a defeater that changes validity; and when a new difference arrives, the system can receive it, return to its support paths and formation conditions, and reopen the judgment.**
 
 ### Individuality
 

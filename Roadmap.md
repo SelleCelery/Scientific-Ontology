@@ -101,7 +101,8 @@ v4.3.0までにStage Cの公開基礎が形成され、v5.0.0でStage Dが開い
 - **v4.2.0**：境界実在性、境界認識批判、物理対応方針、主張強度管理を整備した。
 - **v4.3.0**：境界認識生成、境界認識運用、研究動態、組織・倫理・平和仕様への接続を整備した。
 - **v5.0.0**：Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、返りを受けるStage Dを開始した。
-- **v5.1準備**：SO再帰的哲学研究、Volume Iのhistorical attestation、判断透明性、公開／非公開source境界、文書contractとNavigator投影、正しさ・論理・構造研究、`07_Creative_Offshoots`の外向き接触面を公開体系へ再配置している。
+- **v5.1準備**：SO再帰的哲学研究、Volume Iのhistorical attestation、判断透明性、公開／非公開source境界、文書contractとNavigator投影、`正しさ・個性・無・切断`、および`07_Creative_Offshoots`の外部曝露面を公開体系へ再配置している。01–03の元型、05の内在的批判・拡張、04のスピンアウト、06のレンダリング、07の外部曝露という機能差も公開構造として明示する。
+- **v5.1.1候補**：v5.1公開後の短い観測周期で、Navigatorの公開入口、Public / Developer間の表示・言語挙動、ローカル起動の摩擦、境界語matcherなど、公開面を実際に使って初めて見えるUX・保守残差を小さく修正する。新しい大規模理論展開は既定目的にしない。
 - **v5.x**：研究・実装・外部照合を順次追加し、各応用から返る残差によって上流概念を再照合する。
 
 v5系の開始線は、次である。
@@ -355,7 +356,7 @@ Stage Dはv5系の主な作業面である。
 
 この研究線はLiving Canonicalとして更新履歴を持つ。公開後の批判、AI比較、文学、制度、DSSI、SOLiteなどから返る案は常設の照合対象とするが、自動的には正本へ統合しない。
 
-### D2. 実装・応用面
+### D2. 境界横断の実装・接触面
 
 v5系では、少なくとも次の境界へ研究を持ち出す。
 
@@ -368,6 +369,19 @@ v5系では、少なくとも次の境界へ研究を持ち出す。
 - インターフェイスによる観測境界の返却
 
 DSSIのアプリケーション本体はSO Repositoryへ同梱しない。DSSI Core A系列の`ConnectBits v0.5.0 Public Preview`は外部成果物として公開されており、SO側は研究ノートと実装境界からその成果物への返路を保持する。実装結果は、観測限界、プライバシー、解除可能性、表示の粘性、責任返還などを再照合する入力にはなるが、SO理論の実証証拠へ自動昇格しない。
+
+### D2.1 04–07の機能境界
+
+Stage Dでは、04–07を成熟度や主張強度の順序として扱わない。01–03の元型に対して、何をする文書かによって機能を分ける。
+
+- `05_Research_Notes`：共有文法の内側から01–03を批判・拡張し、仮説・対応・未解決残差を育てる。
+- `04_Applications`：01–03と必要に応じて05を、心理、経済、政治、AI、制度、設計などへスピンアウトし、実践から残差を返す。
+- `06_Visual_Materials`：01–05を別の知覚形式へレンダリングし、圧縮によって保持・損失した条件をsourceへ返す。
+- `07_Creative_Offshoots`：とくに01–03を共有文法の外へ曝露し、理解不能、通約失敗、前提衝突、反論、反証候補、適用限界を区別して受け取る。
+
+この区別は、現在の全ファイル配置がすでに完全であるという宣言ではない。v5.1では役割境界を固定し、大規模な04 / 05 / 06 / 07再配置は独立した配置監査へ送る。
+
+07で生じた異議や残差は、それだけで01–03を書き換えない。共有文法内の研究命題へ変換できるものは05へ、実装・制度上の残差は04へ、表現変換の問題は06へ、定義そのものを変更し得るものは該当する正本所有文書へ返す。
 
 ### D3. 反証・失敗・観測条件
 
@@ -440,7 +454,8 @@ Stage Eへ進む条件は、概念が実装可能になったことだけでは�
 | v4.2.0 | Stage C1 | 境界実在性、境界認識批判、物理対応方針、主張強度管理 |
 | v4.3.0 | Stage C2-C4 | 認識生成、認識運用、研究動態、組織・倫理・平和仕様 |
 | v5.0.0 | Stage D opening | Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、代謝型の外部照合を開始 |
-| v5.1 preparation | Stage D / reflexive audit | SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contract・Navigator、正しさ／論理／構造研究、Creative Offshootsを整合 |
+| v5.1 preparation | Stage D / reflexive audit and external exposure | SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contract・Navigator、`正しさ・個性・無・切断`、04–07の機能境界、Creative Offshootsの外部曝露面を整合 |
+| v5.1.1 candidate | Stage D / short-cycle maintenance | v5.1公開後の観測から、Navigator入口、Public / Developer parity、ローカル起動摩擦、境界語matcher等のUX・保守残差を小さく修正 |
 | v5.x | Stage D-E | 実装・汎用化・外部照合・反証条件・アプリケーション・会計・AI比較を順次追加 |
 | v6 candidate | Structural transition | v5系の基礎記述面、概念所有、中核不変項、説明本拠地そのものの再編が必要になった場合に検討 |
 
@@ -543,7 +558,8 @@ v4.3.0 established the public basis of Stage C, and v5.0.0 opened Stage D. The p
 - **v4.2.0:** Boundary Realism, Boundary Epistemological Critique, Physics Correspondence Policy, and claim-strength governance.
 - **v4.3.0:** boundary-cognition formation and operation, research dynamics, and organizational, ethical, and peace specifications.
 - **v5.0.0:** opening of Stage D through the Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, and the DSSI research surface.
-- **v5.1 preparation:** alignment of SO Reflexive Philosophical Research, Volume I historical attestation, judgment transparency, the public/private source boundary, document contracts and Navigator projection, Correctness/Logic/Structural Studies, and the outward-facing `07_Creative_Offshoots` surface.
+- **v5.1 preparation:** alignment of SO Reflexive Philosophical Research, Volume I historical attestation, judgment transparency, the public/private source boundary, document contracts and Navigator projection, *Correctness, Individuality, Absence, and Cut*, and the external-exposure surface of `07_Creative_Offshoots`. The public structure also makes explicit the functional distinction among the 01–03 archetype, internal critique and extension in 05, spinout in 04, rendering in 06, and external exposure in 07.
+- **v5.1.1 candidate:** a short post-v5.1 observation cycle for small UX and maintenance residuals that become visible only in actual use, such as Navigator entry points, Public / Developer language and presentation parity, local-launch friction, and boundary-term matching. Large theoretical expansion is not its default purpose.
 - **v5.x:** continued addition of research, implementation, external collation, and returns into upstream concepts.
 
 In v5.1 preparation, research history itself is treated as a return. SO Reflexive Philosophical Research retains the path from De-Registry to judgment transparency as a historical method record that separates contemporaneous execution records from present-day acceptance. Historical checksums are not rewritten to current bytes; current accepted bytes are bound separately by attestation.
@@ -667,6 +683,19 @@ Public updates should preserve revision history and intake decisions. Returns fr
 
 The DSSI application is not bundled into the SO repository. The DSSI Core A lineage has an externally released `ConnectBits v0.5.0 Public Preview`, and SO keeps a return path from its research note and implementation boundary to that artifact. Implementation results may return as evidence about observation limits, privacy, reversibility, display viscosity, and responsibility return, but they do not automatically become empirical proof of SO.
 
+### Functional Boundaries of 04–07
+
+Stage D does not treat Layers 04–07 as an ordering of maturity or claim strength. They are distinguished by what a document does in relation to the 01–03 archetype.
+
+- `05_Research_Notes`: critique and extension of 01–03 from within the shared grammar, retaining hypotheses, correspondences, and unresolved residuals for further research.
+- `04_Applications`: spinout of 01–03, and where useful 05, into psychology, economics, politics, AI, institutions, design, and related practice, with residuals returning from use.
+- `06_Visual_Materials`: rendering of 01–05 into another perceptual form, returning what the compression preserved or lost to source texts.
+- `07_Creative_Offshoots`: exposure of especially 01–03 outside the shared grammar, distinguishing incomprehension, failed commensuration, premise conflict, objections, candidate refutations, and limits of application.
+
+This distinction does not claim that every current file is already placed perfectly. v5.1 fixes the role boundary; large-scale migration among 04 / 05 / 06 / 07 is deferred to a separate placement audit.
+
+Residuals from 07 do not rewrite 01–03 by themselves. Those that can be reformulated as research propositions within the shared grammar return to 05; implementation or institutional residuals return to 04; rendering problems return to 06; and issues capable of changing a definition return to the relevant concept owner.
+
 ---
 
 ## 7. Stage E — Empirical and Cross-Domain Collation
@@ -691,7 +720,8 @@ Stage E requires not only implementable concepts but functioning routes through 
 | v4.2.0 | Stage C1 | Boundary Realism, Boundary Epistemological Critique, Physics Correspondence Policy, and claim-strength governance |
 | v4.3.0 | Stage C2-C4 | Cognitive formation, cognitive operation, research dynamics, and organizational, ethical, and peace specifications |
 | v5.0.0 | Stage D opening | Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, DSSI research, and living-canonical return structures |
-| v5.1 preparation | Stage D / reflexive audit | Aligns SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, Correctness/Logic/Structural Studies, and Creative Offshoots |
+| v5.1 preparation | Stage D / reflexive audit and external exposure | Aligns SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, *Correctness, Individuality, Absence, and Cut*, the 04–07 functional boundary, and the external-exposure role of Creative Offshoots |
+| v5.1.1 candidate | Stage D / short-cycle maintenance | Small UX and maintenance repairs observed after v5.1, including Navigator entry, Public / Developer parity, local-launch friction, and boundary-term matching |
 | v5.x | Stage D-E | Implementation, generalization, external collation, falsification conditions, applications, accounting, and AI comparison |
 | v6 candidate | Structural transition | Considered when the explanatory base, core invariants, or concept-ownership structure itself requires reorganization |
 

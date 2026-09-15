@@ -68,7 +68,37 @@
 
 これは、カント的な意味での物自体を直接把握しない態度に近い。ただし、本稿はカント哲学の解釈文書ではない。ここで行うのは、存在境界論の公開基底を安全に置くための操作である。
 
-###  境界痕跡としてのコギト｜Cogito as Boundary Trace
+### 3.1 事実・根拠・還元
+
+存在境界論で強く仮説性がかかるのは、境界活動そのものよりも、その境界活動がなぜ成立しているのかを説明する**根拠の側**である。
+
+接触があった。記録が残った。測定値が得られた。作用の後に別の状態が生じた。返りが観測された。こうした事実は、観測条件、記録条件、時間幅、分類、装置、言語などの条件を伴うとしても、現在の照合に対して硬い拘束を与える。
+
+ここで「硬い」とは、事実が認識条件から独立した裸の世界そのものである、という意味ではない。条件を明示して得られた記録や観測を、後続の理論が都合に合わせて無視したり書き換えたりしてよいわけではない、という意味である。事実の訂正が必要なら、記録、測定、出典、観測条件の再照合によって行う。
+
+一方、その事実が**なぜ**生じるのか、何がその成立を支えているのか、別の位相でも同じ構造が成り立つのかという問いは、根拠仮説を要求する。とくに形而上学的な根拠は、事実と同じ仕方では直接把握できない。したがってAMPやITSを含む応用形而上学は、最終根拠の保管庫ではなく、境界で確認された事実や残差を説明するための根拠仮説を生成し、比較し、更新する高強度のモデル層として扱う。
+
+```text
+条件付きで確認された事実 / boundary trace
+  ↓
+根拠仮説 / explanatory ground hypothesis
+  ↓
+他位相・外部体系との照合
+  ↓
+一致 / 反例 / 残差
+  ↓
+局所仮説またはAMP側の再検査
+```
+
+存在境界論は、世界が究極的に還元可能であるとも、還元不可能であるとも先に決めない。ただし、現在用いている時空間的・物理的・言語的・認識的記述のいずれかへ、世界がすでに完全に還元できているとは仮定しない。
+
+これは反還元主義ではない。特定の範囲で還元が成立するなら、その成立は局所的な成果として受け取る。留保するのは、**その局所的成功が世界全体の完全還元をすでに保証した、という追加主張**である。
+
+存在境界論の作業姿勢を圧縮すれば、次のようになる。
+
+> **事実は条件付きで硬く扱う。根拠は仮説として疑う。完全に還元できているとは、まだ扱わない。**
+
+### 3.2 境界痕跡としてのコギト｜Cogito as Boundary Trace
 
 「われ思うゆえにわれあり」という言葉は、本稿では主体実体の証明としては扱わない。
 
@@ -100,7 +130,7 @@
 
 これはAMPの弱体化ではない。
 
-AMPは、存在そのものを支配する公理系ではなく、境界実在性の原則を前提として、観測、履歴、意味、倫理がどのように立ち上がるかを記述するための形而上学的OSとして再配置される。
+AMPは、存在そのものを支配する公理系ではなく、境界実在性の原則を前提として、観測、履歴、意味、倫理がどのように立ち上がるかについて根拠仮説を生成・比較・更新するための形而上学的OSとして再配置される。AMPは経験的証拠そのものではなく、境界事実と残差によって再検査される側にある。
 
 ```text
 境界実在性の原則
@@ -315,7 +345,37 @@ What this system handles is where boundaries arise when such terms come into con
 
 This attitude is close to the Kantian refusal to directly grasp the thing-in-itself. However, this document is not an interpretation of Kantian philosophy. Its purpose is to place the public foundation of Scientific Ontology in a stable and safe form.
 
-### Cogito as Boundary Trace
+### 3.1 Facts, Grounds, and Reduction
+
+Within Scientific Ontology, hypothesis bears most strongly not on boundary activity itself, but on the **grounds proposed to explain why that boundary activity occurs**.
+
+Contact occurred. A record remained. A measured value was obtained. A later state followed an action. A return was observed. Such facts still arise under conditions of observation, recording, time span, classification, instrumentation, and language, yet they impose hard constraints on present collation.
+
+“Hard” here does not mean that a fact is the naked world independent of every condition of cognition. It means that observations and records obtained under stated conditions may not be ignored or rewritten merely because a later theory would prefer another result. When a factual correction is required, it should proceed through re-collation of records, measurements, sources, and observation conditions.
+
+By contrast, questions of **why** those facts arise, what sustains their occurrence, and whether the same structure holds across another phase require hypotheses about grounds. Metaphysical grounds in particular are not directly graspable in the same manner as factual records. Applied Metaphysics, including AMP and ITS, is therefore treated not as a repository of final grounds but as a high-strength model layer for generating, comparing, and revising explanatory ground hypotheses in response to boundary facts and residuals.
+
+```text
+conditioned fact / boundary trace
+  ↓
+explanatory ground hypothesis
+  ↓
+collation with other phases and external systems
+  ↓
+correspondence / counterexample / residual
+  ↓
+reinspection of the local hypothesis or AMP-side model
+```
+
+Scientific Ontology does not decide in advance that the world is ultimately reducible or irreducible. It does, however, refuse to assume that the world has already been completely reduced to any one of the spacetime, physical, linguistic, or cognitive descriptions presently available.
+
+This is not anti-reductionism. Where reduction succeeds within a specified range, that success is accepted locally. What remains reserved is the additional claim that a local success has already established the complete reduction of the world as a whole.
+
+The working stance can be compressed as follows:
+
+> **Treat facts as conditionally hard. Doubt grounds as hypotheses. Do not yet treat complete reduction as established.**
+
+### 3.2 Cogito as Boundary Trace
 
 The phrase “I think, therefore I am” is not treated here as proof of a substantial subject.
 
@@ -347,7 +407,7 @@ In the arrangement proposed here, AMP steps down from the position of final axio
 
 This does not weaken AMP.
 
-AMP is repositioned not as an axiomatic system that governs existence itself, but as a metaphysical operating system for describing how observation, history, meaning, and ethics arise on the basis of the Boundary Realism Principle.
+AMP is repositioned not as an axiomatic system that governs existence itself, but as a metaphysical operating system for generating, comparing, and revising ground hypotheses about how observation, history, meaning, and ethics arise on the basis of the Boundary Realism Principle. AMP is not empirical evidence in itself; it is among the models to be re-examined when boundary facts and residuals return.
 
 ```text
 Boundary Realism Principle
