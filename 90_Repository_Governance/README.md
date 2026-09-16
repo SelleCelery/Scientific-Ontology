@@ -53,8 +53,9 @@ tools / scripts / .github
 1. [`Publication_and_Commensuration_Policy.md`](./Publication_and_Commensuration_Policy.md)
 2. [`Translation_Note.md`](./Translation_Note.md)
 3. [`Terminology/README.md`](./Terminology/README.md)
-4. [`Assessment/Repository_Assessment_Protocol.ja.md`](./Assessment/Repository_Assessment_Protocol.ja.md) — repository assessmentの候補プロトコル。明示的採用までは自動的な定義権限・登録権限を持たない。
-5. [`Release_Update/UPDATE_PACK.md`](./Release_Update/UPDATE_PACK.md) — release-facing metadataを同期する版固有更新面。恒久統治原則のdefinition ownerではない。
+4. [`Assessment/Repository_Assessment_Protocol.ja.md`](./Assessment/Repository_Assessment_Protocol.ja.md) — repository assessmentの日本語正本。Candidateのまま、finding / bridge / commensuration intake / engagement-capacity boundaryを含む。
+5. [`Assessment/Repository_Assessment_Protocol.en.md`](./Assessment/Repository_Assessment_Protocol.en.md) — 上記の英語全文commensuration。独立正本ではない。
+6. [`Release_Update/UPDATE_PACK.md`](./Release_Update/UPDATE_PACK.md) — release-facing metadataを同期する版固有更新面。恒久統治原則のdefinition ownerではない。
 
 ## 4. Maintenance Notes / 運用メモ
 
@@ -122,8 +123,9 @@ Not included:
 1. [`Publication_and_Commensuration_Policy.md`](./Publication_and_Commensuration_Policy.md)
 2. [`Translation_Note.md`](./Translation_Note.md)
 3. [`Terminology/README.md`](./Terminology/README.md)
-4. [`Assessment/Repository_Assessment_Protocol.ja.md`](./Assessment/Repository_Assessment_Protocol.ja.md) — a candidate repository-assessment protocol; it has no automatic definition or registration authority until explicitly adopted.
-5. [`Release_Update/UPDATE_PACK.md`](./Release_Update/UPDATE_PACK.md) — the version-specific surface for synchronizing release-facing metadata, not a definition owner for durable governance principles.
+4. [`Assessment/Repository_Assessment_Protocol.ja.md`](./Assessment/Repository_Assessment_Protocol.ja.md) — the Japanese authoritative candidate repository-assessment protocol, including finding, bridge, commensuration-intake, and engagement-capacity boundaries.
+5. [`Assessment/Repository_Assessment_Protocol.en.md`](./Assessment/Repository_Assessment_Protocol.en.md) — the full English commensurated rendering; it is not an independent authority.
+6. [`Release_Update/UPDATE_PACK.md`](./Release_Update/UPDATE_PACK.md) — the version-specific surface for synchronizing release-facing metadata, not a definition owner for durable governance principles.
 
 ## 4. Return and Maintenance
 

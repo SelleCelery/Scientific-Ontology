@@ -1654,6 +1654,23 @@
       "identity_source": "explicit"
     },
     {
+      "id": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "type": "document",
+      "key": "90_repository_governance_assessment_repository_assessment_protocol_en",
+      "path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md",
+      "title": {
+        "ja": "リポジトリ監査原則",
+        "en": "Repository Assessment Protocol"
+      },
+      "layer": "90_Repository_Governance",
+      "state": "public",
+      "role": {
+        "ja": "命題帰属、相互外部接続、finding、妥当性体系、関与能力境界を分離するCandidate Assessment Contract",
+        "en": "Candidate Assessment Contract separating proposition attribution, reciprocal external contact, findings, validity regimes, and engagement-capacity boundaries"
+      },
+      "identity_source": "explicit"
+    },
+    {
       "id": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
       "type": "document",
       "key": "90_repository_governance_assessment_repository_assessment_protocol_ja",
@@ -1665,8 +1682,8 @@
       "layer": "90_Repository_Governance",
       "state": "public",
       "role": {
-        "ja": "リポジトリ監査原則",
-        "en": "Repository Assessment Protocol"
+        "ja": "命題帰属、相互外部接続、finding、妥当性体系、関与能力境界を分離するCandidate Assessment Contract",
+        "en": "Candidate Assessment Contract separating proposition attribution, reciprocal external contact, findings, validity regimes, and engagement-capacity boundaries"
       },
       "identity_source": "explicit"
     },
@@ -2005,8 +2022,8 @@
       "layer": "00_Overview",
       "state": "public",
       "role": {
-        "ja": "主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表",
-        "en": "Public control table separating claim strength, empirical support, use risk, publication layer, and verification stage"
+        "ja": "旧S/E/U/P/V/R統合分類を保持し、現行Assessment / Publication / Terminology責務へ案内するmigration reference",
+        "en": "Migration reference preserving the legacy S/E/U/P/V/R classifier while routing current responsibility to Assessment / Publication / Terminology governance"
       },
       "identity_source": "explicit"
     },
@@ -2022,8 +2039,8 @@
       "layer": "00_Overview",
       "state": "public",
       "role": {
-        "ja": "主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表",
-        "en": "Public control table separating claim strength, empirical support, use risk, publication layer, and verification stage"
+        "ja": "旧S/E/U/P/V/R統合分類を保持し、現行Assessment / Publication / Terminology責務へ案内するmigration reference",
+        "en": "Migration reference preserving the legacy S/E/U/P/V/R classifier while routing current responsibility to Assessment / Publication / Terminology governance"
       },
       "identity_source": "explicit"
     },
@@ -17946,6 +17963,126 @@
       ]
     },
     {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:boundary",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:commensuration",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:judgment",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:responsibility",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md",
+          "locator": "L9"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "relation": "placed_in",
+      "to": "layer:repository_governance",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:boundary",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:commensuration",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:judgment",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:responsibility",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
       "from": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
       "relation": "placed_in",
       "to": "layer:repository_governance",
@@ -18008,17 +18145,51 @@
     {
       "from": "doc:90_repository_governance_publication_and_commensuration_policy",
       "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
+          "locator": "L1074"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
+          "locator": "L455"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_publication_and_commensuration_policy",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
+          "locator": "L1073"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
+          "locator": "L454"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_publication_and_commensuration_policy",
+      "relation": "links_to",
       "to": "doc:90_repository_governance_translation_note",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1079"
+          "locator": "L1117"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L480"
+          "locator": "L499"
         }
       ]
     },
@@ -18030,12 +18201,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L322"
+          "locator": "L334"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L442"
+          "locator": "L461"
         }
       ]
     },
@@ -18047,7 +18218,7 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1042"
+          "locator": "L1080"
         }
       ]
     },
@@ -18059,17 +18230,17 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1070"
+          "locator": "L1108"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L321"
+          "locator": "L333"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L471"
+          "locator": "L490"
         }
       ]
     },
@@ -18081,7 +18252,7 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L446"
+          "locator": "L465"
         }
       ]
     },
@@ -18093,12 +18264,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1046"
+          "locator": "L1084"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L447"
+          "locator": "L466"
         }
       ]
     },
@@ -18110,17 +18281,17 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1074"
+          "locator": "L1112"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L323"
+          "locator": "L335"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L475"
+          "locator": "L494"
         }
       ]
     },
@@ -18132,12 +18303,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1075"
+          "locator": "L1113"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L476"
+          "locator": "L495"
         }
       ]
     },
@@ -18204,12 +18375,29 @@
     {
       "from": "doc:90_repository_governance_readme",
       "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/README.md",
+          "locator": "L127"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/README.md",
+          "locator": "L57"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_readme",
+      "relation": "links_to",
       "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/README.md",
-          "locator": "L125"
+          "locator": "L126"
         },
         {
           "source_type": "markdown",
@@ -18226,7 +18414,7 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/README.md",
-          "locator": "L122"
+          "locator": "L123"
         },
         {
           "source_type": "markdown",
@@ -18243,7 +18431,7 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/README.md",
-          "locator": "L124"
+          "locator": "L125"
         },
         {
           "source_type": "markdown",
@@ -18260,7 +18448,7 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/README.md",
-          "locator": "L123"
+          "locator": "L124"
         },
         {
           "source_type": "markdown",
@@ -18277,41 +18465,7 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/README.md",
-          "locator": "L133"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "90_Repository_Governance/README.md",
-          "locator": "L64"
-        }
-      ]
-    },
-    {
-      "from": "doc:90_repository_governance_readme",
-      "relation": "links_to",
-      "to": "doc:readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "90_Repository_Governance/README.md",
-          "locator": "L132"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "90_Repository_Governance/README.md",
-          "locator": "L63"
-        }
-      ]
-    },
-    {
-      "from": "doc:90_repository_governance_readme",
-      "relation": "links_to",
-      "to": "doc:scientific_ontology_concept_network",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "90_Repository_Governance/README.md",
-          "locator": "L134"
+          "locator": "L135"
         },
         {
           "source_type": "markdown",
@@ -18323,17 +18477,51 @@
     {
       "from": "doc:90_repository_governance_readme",
       "relation": "links_to",
+      "to": "doc:readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/README.md",
+          "locator": "L134"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/README.md",
+          "locator": "L64"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_readme",
+      "relation": "links_to",
+      "to": "doc:scientific_ontology_concept_network",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/README.md",
+          "locator": "L136"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/README.md",
+          "locator": "L66"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_readme",
+      "relation": "links_to",
       "to": "doc:update_pack",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/README.md",
-          "locator": "L126"
+          "locator": "L128"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/README.md",
-          "locator": "L57"
+          "locator": "L58"
         }
       ]
     },
@@ -18572,17 +18760,68 @@
     {
       "from": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
       "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
+          "locator": "L130"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
+          "locator": "L291"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
+          "locator": "L129"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
+          "locator": "L290"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_publication_and_commensuration_policy",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
+          "locator": "L131"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
+          "locator": "L292"
+        }
+      ]
+    },
+    {
+      "from": "doc:90_repository_governance_terminology_scientific_terminology_protocol",
+      "relation": "links_to",
       "to": "doc:term_collision_registry",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
-          "locator": "L279"
+          "locator": "L302"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
-          "locator": "L282"
+          "locator": "L305"
         }
       ]
     },
@@ -18594,12 +18833,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
-          "locator": "L280"
+          "locator": "L303"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
-          "locator": "L283"
+          "locator": "L306"
         }
       ]
     },
@@ -20302,7 +20541,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L476"
+          "locator": "L487"
         }
       ]
     },
@@ -20314,7 +20553,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L478"
+          "locator": "L489"
         }
       ]
     },
@@ -20326,7 +20565,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L481"
+          "locator": "L492"
         }
       ]
     },
@@ -20338,7 +20577,46 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L483"
+          "locator": "L494"
+        }
+      ]
+    },
+    {
+      "from": "doc:claim_strength_and_publication_layer_table",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+          "locator": "L496"
+        }
+      ]
+    },
+    {
+      "from": "doc:claim_strength_and_publication_layer_table",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+          "locator": "L32"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+          "locator": "L33"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+          "locator": "L34"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+          "locator": "L495"
         }
       ]
     },
@@ -20350,7 +20628,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L484"
+          "locator": "L35"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+          "locator": "L36"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+          "locator": "L497"
         }
       ]
     },
@@ -20362,7 +20650,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L479"
+          "locator": "L490"
         }
       ]
     },
@@ -20374,7 +20662,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L489"
+          "locator": "L502"
         }
       ]
     },
@@ -20386,7 +20674,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L480"
+          "locator": "L491"
         }
       ]
     },
@@ -20398,7 +20686,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L482"
+          "locator": "L493"
         }
       ]
     },
@@ -20410,12 +20698,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L318"
+          "locator": "L329"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L477"
+          "locator": "L488"
         }
       ]
     },
@@ -20427,7 +20715,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L475"
+          "locator": "L486"
         }
       ]
     },
@@ -20439,7 +20727,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
-          "locator": "L485"
+          "locator": "L498"
         }
       ]
     },
@@ -20511,7 +20799,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L478"
+          "locator": "L473"
         }
       ]
     },
@@ -20523,7 +20811,46 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L483"
+          "locator": "L478"
+        }
+      ]
+    },
+    {
+      "from": "doc:claim_strength_and_publication_layer_table_en",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
+          "locator": "L23"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
+          "locator": "L24"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
+          "locator": "L25"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
+          "locator": "L480"
+        }
+      ]
+    },
+    {
+      "from": "doc:claim_strength_and_publication_layer_table_en",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
+          "locator": "L479"
         }
       ]
     },
@@ -20535,7 +20862,17 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L484"
+          "locator": "L26"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
+          "locator": "L27"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
+          "locator": "L481"
         }
       ]
     },
@@ -20547,7 +20884,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L479"
+          "locator": "L474"
         }
       ]
     },
@@ -20571,7 +20908,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L481"
+          "locator": "L476"
         }
       ]
     },
@@ -20583,7 +20920,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L480"
+          "locator": "L475"
         }
       ]
     },
@@ -20595,7 +20932,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L482"
+          "locator": "L477"
         }
       ]
     },
@@ -20607,12 +20944,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L318"
+          "locator": "L313"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L477"
+          "locator": "L472"
         }
       ]
     },
@@ -20624,7 +20961,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L475"
+          "locator": "L470"
         }
       ]
     },
@@ -20636,7 +20973,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L485"
+          "locator": "L482"
         }
       ]
     },
@@ -20648,7 +20985,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
-          "locator": "L476"
+          "locator": "L471"
         }
       ]
     },
@@ -29139,8 +29476,25 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "concept_network_reference",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L446"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
       "to": "doc:90_repository_governance_publication_and_commensuration_policy",
       "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L446"
+        },
         {
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
@@ -30003,8 +30357,25 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L446"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
       "to": "doc:90_repository_governance_publication_and_commensuration_policy",
       "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L446"
+        },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
@@ -30849,8 +31220,25 @@
     {
       "from": "doc:scientific_ontology_concept_network_en",
       "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
+          "locator": "L448"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network_en",
+      "relation": "links_to",
       "to": "doc:90_repository_governance_publication_and_commensuration_policy",
       "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
+          "locator": "L448"
+        },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",

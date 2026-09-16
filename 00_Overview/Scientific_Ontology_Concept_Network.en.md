@@ -6,7 +6,7 @@
 > Scope: ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness / aporia / research method
 > Language: English commensurated rendering
 > Japanese authoritative source: [Scientific_Ontology_Concept_Network.ja.md](./Scientific_Ontology_Concept_Network.ja.md)
-> Claim strength: S4-S5 / E3 / U1
+> Claim strength: S4-S5
 > Public handling: Gödelian incompleteness is used as a methodological guide to non-closure, not as a proof of Scientific Ontology.
 
 ---
@@ -445,7 +445,7 @@ This classification does not exist to imprison documents in boxes.
 
 It makes visible which questions pass through which documents and where they connect to other fields.
 
-The claim strength, risks of misreading and application, publication layer, and verification stage of each proposition are managed in the [`Claim Strength and Publication-Layer Table`](./Claim_Strength_and_Publication_Layer_Table.en.md). Its labels do not confer authority upon readers. They are public controls indicating which language games a document approaches and where deceleration, abstraction, or non-public handling becomes necessary.
+Claim Strength, external connection, findings, and bridge responsibility are governed by the [`Repository Assessment Protocol`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md). Publication layer, deceleration, abstraction, and non-public handling belong to the [`Publication and Commensuration Policy`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md). The legacy integrated `S/E/U/P/V/R` classifier remains in the [`Claim Strength and Publication-Layer Table`](./Claim_Strength_and_Publication_Layer_Table.en.md) as a migration reference.
 
 ---
 ## 8. Epistemology Connects the Fields

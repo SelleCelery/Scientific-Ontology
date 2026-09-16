@@ -4,8 +4,8 @@
 > Status: Policy Draft / Candidate
 > Layer: `90_Repository_Governance/Assessment`
 > Role: repository-wide assessment protocol / judgment-transparency control
-> Scope: proposition attribution / repository commitment / responsibility / claim scope / warrant and ground-search path / topology audit / reciprocal external connection / evaluation history / residual and return management / audit-capture prevention / reconstruction drills
-> Language: Japanese authoritative; English commensuration pending
+> Scope: proposition attribution / repository commitment / responsibility / claim scope / warrant and ground-search path / topology audit / reciprocal external connection / assessment finding contract / validity-regime preservation / engagement-capacity boundary / evaluation history / residual and return management / audit-capture prevention / reconstruction drills
+> Language: Japanese authoritative; English commensuration available
 > Authority: Candidate governance document. It does not become repository-wide authority until explicitly adopted.
 > Derivation: distilled from the De-Registry, protocol-variance, sufficiency, topology-first, and three-layer transformation experiments recorded under `04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/`.
 > Non-claim: this protocol does not define truth, prove Scientific Ontology, replace domain-specific standards, or automate final human judgment.
@@ -592,7 +592,163 @@ Aは絶対真理層ではない。
 
 相互修正可能性は、相互同意や共栄の成立を要求しない。共栄は結果として成立し得るが、監査条件はまず、双方が修正・拒否・再接続可能であることである。
 
-### 9.1 Connection Exposure / E
+### 9.1 Assessment Contact Contract / 接触評価契約
+
+異体系の接触では、最初から「どちらが正しいか」を一つの尺度で判定しない。
+
+まず、各体系が何を仕事としているか、その体系内で何が成立・妥当・正当とされるか、比較可能な接触面をどこまで共有できるかを確認する。
+
+本Protocolでは、この入口を次の三つの操作名で呼ぶ。
+
+- `SYSTEM-ROLE-IDENTIFICATION` — 対象体系が何を仕事としているかを同定する。
+- `VALIDITY-REGIME-IDENTIFICATION` — その体系が何をもって成立・妥当・正当とするかを同定する。
+- `COMMENSURATION-INTAKE` — claim / fact / interpretation / derivation / bridge claimを区別できる接触面を共有できるか確認する。
+
+`VALIDITY-REGIME-PRESERVATION`を横断原則とする。
+
+> 評価対象体系の妥当性条件を、別体系の妥当性条件へ無標識に置換しない。
+
+体系`X`におけるclaim `c`の妥当性条件を`V_X(c)`と書くとき、`V_X(c) != V_Y(c)`であるにもかかわらず、`V_Y(c)`だけを用いて`X`のclaimを失効させてはならない。
+
+ただし、妥当性体系が異なることは、事実衝突、参照誤記、安全上の制約、法的権限、測定上の制約を無効化しない。異なるのは「何をどう判定するか」であり、相互接触を免除する理由ではない。
+
+外部接続を裁定する前に、可能な範囲で次を接触面へ出す。
+
+```yaml
+contact_surface:
+  system_role: ""
+  validity_regime: ""
+  claim: ""
+  scope: ""
+  warrant: []
+  target: ""
+  fact_set: []
+  interpretation: "optional"
+  bridge_claim: "optional"
+```
+
+原則として、通約可能な接触面が成立していない状態から、対象命題の勝敗判定へ飛ばない。
+
+> **No object-level adjudication before a commensurable contact surface has been established.**
+
+これは、すべての体系が同じ価値・証拠形式・目的を採用しなければならないという意味ではない。`COMMENSURATION-INTAKE`の成功は同意ではなく、差分を差分として比較できる最低限の接触成立を意味する。
+
+#### 9.1.1 Canonical Finding Types / 基本finding型
+
+以下は序列ではない。一つのclaimに複数findingが同時に成立し得る。
+
+記号は次を用いる。
+
+- `H` — 評価対象のSO claim / hypothesis
+- `X` — 接触している外部体系
+- `Γ_X` — 外部体系`X`の前提・理論・導出系
+- `F_X` — `X`において当該scopeで確立している事実集合
+- `Γ_SO` — SO内部の前提・モデル・導出系
+- `Est_X(H)` — `X`が`H`をestablishedとしている
+- `Def_SO(H)` — SO内部で`H`に対する有効なdefeaterへ到達している
+- `I_phi(F)` — 同じ事実集合`F`を位相・座標`phi`から読むinterpretation
+- `B_{A->B}` — 体系`A`から体系`B`へ伸びるbridge claim
+
+| Canonical code | machine key | 日本語名 | 関係表記 | 標準初手 |
+|---|---|---|---|---|
+| `EXT-UNESTABLISHED` | `external_unestablished` | 外部未確立 | `not Est_X(H)` | `KEEP-OPEN` |
+| `EXT-NONDERIVABLE` | `external_nonderivable` | 外部非導出 | `Γ_X ⊬ H` | `KEEP-OPEN` |
+| `EXT-FACT-CONFLICT` | `external_fact_conflict` | 外部既知事実衝突 | `Cons(F_X ∪ {H}) = false` | `BOUNDARY-AUDIT` |
+| `SO-NONDERIVABLE` | `so_nonderivable` | SO内部非導出 | `Γ_SO ⊬ H` | `INTERNAL-TRACE` / `BOUNDARY-AUDIT` |
+| `SO-DEFEATER` | `so_defeater` | SO内部defeater到達 | `Def_SO(H)` | `REOPEN-SO` |
+| `EXT-REFERENCE-MISSTATEMENT` | `external_reference_misstatement` | 外部参照誤記 | `Rep_SO(q_X) ≢ q_X` | `CORRECT-REFERENCE` |
+| `SAME-FACT-ALT-INTERPRETATION` | `same_fact_alternate_interpretation` | 同一事実・異位相解釈 | `I_{phi_SO}(F) != I_{phi_X}(F)` | `COMMENSURATION-INTAKE` |
+| `RECIPROCAL-BRIDGE-DISPUTE` | `reciprocal_bridge_dispute` | 相互bridge係争 | `Dispute(B_{SO->X}, B_{X->SO})` | `COMMENSURATION-INTAKE` |
+
+旧A–H表記は会話・移行参照に使用できるが、公開本文・machine keyでは上記canonical nameを用いる。
+
+#### 9.1.2 禁止する短絡
+
+`EXT-UNESTABLISHED`は「外部体系で現在確立していない」ことを示す。これはfalsifiedを意味しない。
+
+```text
+not Est_X(H)
+  != Γ_X ⊢ ¬H
+  != falsified(H)
+```
+
+`EXT-NONDERIVABLE`と`SO-NONDERIVABLE`は非導出であり、否定ではない。
+
+```text
+Γ_X ⊬ H  !=  Γ_X ⊢ ¬H
+Γ_SO ⊬ H !=  Γ_SO ⊢ ¬H
+```
+
+`SO-NONDERIVABLE`が問題となる強さは、SO自身が「導出済み」と主張していたかどうかで変わる。Research Notes上の明示されたhypothesisがSO内部から未導出であることだけを理由に、撤回・非公開・反証済みへ移さない。
+
+`SO-DEFEATER`は最優先の再検討triggerであるが、即時の全面撤回と同義ではない。scope、前提、undercutter、rebutter、局所修正可能性を再検査する。
+
+`EXT-REFERENCE-MISSTATEMENT`は、外部体系の事実・定義をSOが誤記した場合である。これはまずSO側の参照表現を局所修正し、その後にbridge claimまたはSO hypothesisを再評価する。
+
+`SAME-FACT-ALT-INTERPRETATION`は、標準定義または共有事実を保持したうえでinterpretive phaseが異なる場合である。`EXT-REFERENCE-MISSTATEMENT`と同一視しない。
+
+#### 9.1.3 First Response Modes / 標準初手
+
+findingとresponseを同じ軸にしない。findingは何が観測されたか、responseは最初にどの処理へ進むかを示す。
+
+| Response mode | 役割 |
+|---|---|
+| `KEEP-OPEN` | 未確立・非導出を残差として保持し、否定や撤回へ飛ばない。 |
+| `BOUNDARY-AUDIT` | referent、scope、measurement condition、semantic phase、bridge responsibilityを再確認する。 |
+| `INTERNAL-TRACE` | SOがどの前提・履歴・生成経路からclaimを提出したかを追跡する。 |
+| `REOPEN-SO` | SO側claim、scope、前提、上流モデルを再検討対象へ戻す。 |
+| `CORRECT-REFERENCE` | 借用した外部事実・定義のSO側表現を先に修正する。 |
+| `COMMENSURATION-INTAKE` | fact / interpretation / derivation / bridge claimを区別できる比較面の成立を確認する。 |
+
+標準初手は最終dispositionではない。同じfindingでも、監査後に`local correction / keep open / scope revision / bridge return / unresolved / withdrawal`等へ分岐し得る。
+
+#### 9.1.4 Bridge Overreach / 被越境検知
+
+`EXT-FACT-CONFLICT`または`SO-NONDERIVABLE`を検知しただけで、どちらか一方の体系全体を失効させない。
+
+まず、そのfindingから相手体系へ伸びる追加のbridge claimが存在するかを確認する。
+
+例：`F_X`が局所事実として成立していても、`F_X => not H`をSO全体へ伸ばすには別のbridge warrantが必要である。
+
+bridge claimの越境候補は、少なくとも次を区別する。
+
+- `SCOPE-OVERREACH` — 局所scopeを超えて結論を伸ばす。
+- `CRITERION-OVERREACH` — 一方のvalidity regimeを他方の唯一の成立条件として置換する。
+- `WARRANT-OVERREACH` — sourceまたはauthorityが支える範囲を超えてwarrantを流入させる。
+- `DEFINITION-OVERREACH` — 一方の内部定義を相手体系の定義所有へ無標識に拡張する。
+
+これらは、外部体系を自動的に誤りとするためのラベルではない。SO側から外部へ伸びるbridgeにも同じ監査を適用する。
+
+#### 9.1.5 Engagement Capacity / 関与能力境界
+
+評価、反論、探索、通約には有限の時間、注意、計算、身体、制度、アクセス、権限等を要する。
+
+必要資源を`K_A(q)`、時点`t`で主体または体系`A`が利用可能な関与資源を`C_A(t)`とすると、`C_A(t) < K_A(q)`であるために非関与が生じることがある。
+
+この状態を`ENGAGEMENT-CAPACITY-LIMIT`と呼び、その標準応答を`NONADJUDICATIVE-NONENGAGEMENT`とする。
+
+```text
+not Engage_A(q, t)
+  != A ⊢ ¬q
+  != A ⊢ q
+  != Def_A(q)
+```
+
+したがって、応答不能、探索停止、議論打切りを、同意・否定・敗北・defeaterとして自動記録しない。
+
+理由は次のように記録できるが、説明を強制しない。`unspecified`を有効値として認める。
+
+```yaml
+engagement:
+  condition: "engagement_capacity_limit / none / unresolved"
+  response: "nonadjudicative_nonengagement / continue / other"
+  reason: "resource_limit / time_limit / attention_limit / competence_boundary / access_limit / safety_boundary / role_boundary / voluntary_decline / unspecified"
+  duration: "temporary / indefinite / terminal / unspecified"
+```
+
+このexit boundaryは監査のどの段階でも発生し得る。非関与が再開可能かどうかも、無理に確定しない。
+
+### 9.2 Connection Exposure / E
 
 Eは「批判されやすさ」や「真理性」を表す尺度ではない。
 
@@ -609,7 +765,7 @@ Eは外部source自身の強さではなく、repositoryが作る接続の性質
 
 Eが高いことは、外部体系よりSOが弱いこと、またはSOが強いことを意味しない。Eは、接続命題がより強い変換責任と相互修正可能性を必要とすることを示す。
 
-### 9.2 接続成立と統合を分ける
+### 9.3 接続成立と統合を分ける
 
 接続候補を提示することは、外部体系をSOへ統合することではない。
 
@@ -623,7 +779,7 @@ Eが高いことは、外部体系よりSOが弱いこと、またはSOが強い
 - 双方の拒否・修正可能性
 - 未変換残差
 
-### 9.3 外部語彙の詳細責任
+### 9.4 外部語彙の詳細責任
 
 既存専門語を借用する場合の詳細な「なぜ使うか」「どう使うか」「どこが違うか」「なぜ保持するか」「借り元へ何を返せるか」は、Terminology Connection / Return governanceへ委ねる。
 
@@ -812,16 +968,24 @@ findingは、対象を即時に有罪・無効とする判決ではない。
 ```yaml
 finding:
   id: ""
-  severity: "blocking / structural / terminological / editorial / unresolved"
+  type: "optional canonical finding type"
+  impact_class: "blocking / structural / terminological / editorial / unresolved"
   target: ""
   observation: ""
   affected_topology: []
   primitive_deviation: "Cut / False Link / Both / Unresolved / none"
   assessment: ""
   evidence: []
+  response:
+    first_action: "keep_open / boundary_audit / internal_trace / reopen_so / correct_reference / commensuration_intake / other"
+    note: ""
   recommendation: ""
   return_point: ""
 ```
+
+`type`は9.1のcanonical finding typeを必要な場合に記録する。すべてのfindingをA–H型へ押し込まない。
+
+`impact_class`は真理性や誤りの序列ではなく、repository運用上どの責務・境界へ影響するかを表す処理分類である。`SO-DEFEATER`や`EXT-REFERENCE-MISSTATEMENT`のように標準初手が優先されるfindingがあっても、それを「より悪い誤り」という単一順位へ変換しない。
 
 ### 13.1 Blocking
 
@@ -1072,31 +1236,35 @@ represented / endorsed / derived / rejected / suspended / indeterminateを記録
 
 根拠、外部権限依存、現在の停止点を記録する。
 
-### Step 6: Topology
+### Step 6: Contact Contract
+
+外部接続がある場合、system role / validity regime / commensuration intakeを確認し、必要なら9.1のcanonical finding typeを付与する。関与能力境界が生じた場合は、非判定的非関与として記録する。
+
+### Step 7: Topology
 
 Anchor / Phase / Path / Return / Open-Endを監査する。
 
-### Step 7: Raw anomaly
+### Step 8: Raw anomaly
 
 異常があれば、生ログを先に残す。
 
-### Step 8: Primitive deviation
+### Step 9: Primitive deviation
 
 必要ならCut / False Link / Both / Unresolvedを付与する。
 
-### Step 9: Downstream projection
+### Step 10: Downstream projection
 
 必要な場合だけS / E、use/safety、publication、metadata等へ投影する。
 
-### Step 10: Recommendation
+### Step 11: Recommendation
 
 修正、保持、分割、移動、追加検証、外部照合、hold等を提案する。
 
-### Step 11: Human decision
+### Step 12: Human decision
 
 approve / edit / reject / holdを人間が決定する。
 
-### Step 12: Return
+### Step 13: Return
 
 変更結果、異議、反例、失敗、運用結果を後続評価へ返せるよう記録する。
 
@@ -1151,6 +1319,23 @@ repository_assessment:
     return: "intact / strained / failed / unresolved"
     open_end: "intact / strained / failed / unresolved"
 
+  contact_contract:
+    system_role: "optional"
+    validity_regime: "optional"
+    commensuration_intake: "not_applicable / established / partial / failed / unresolved"
+    bridge_claims: []
+
+  findings:
+    - type: "optional"
+      observation: ""
+      first_action: "optional"
+
+  engagement:
+    condition: "none / engagement_capacity_limit / unresolved"
+    response: "continue / nonadjudicative_nonengagement / other"
+    reason: "optional / unspecified"
+    duration: "temporary / indefinite / terminal / unspecified"
+
   anomaly:
     observed: ""
     affected_nodes: []
@@ -1169,7 +1354,7 @@ repository_assessment:
     publication: "defer / optional"
 
   assessment:
-    finding_severity: ""
+    impact_class: ""
     interpretation: ""
     recommendation: ""
     residuals: []
@@ -1307,6 +1492,9 @@ pilot auditによって冗長、欠落、誤分類が見つかった場合、Pol
 | attribution / commitment | 本Protocol |
 | Claim Strength S | 本Protocol |
 | external connection exposure E | 本Protocol |
+| A–H canonical finding types / response modes | 本Protocol |
+| validity-regime preservation / commensuration intake | 本Protocol |
+| engagement-capacity / nonadjudicative nonengagement | 本Protocol |
 | use / safety risk | Publication / Safety governance |
 | publication layer P | `Publication_and_Commensuration_Policy.md` |
 | Verification V | Evaluation Historyへ分解 |
@@ -1388,6 +1576,9 @@ pilotでProtocol不足が露出した場合、正本監査を拡大する前に�
 > **異なる名前でも同じ根拠系列なら、独立した支持として二重計上しない。**
 > **外部領域とSOを上下化せず、接続を提出した側がbridgeの責任を持つ。**
 > **接続は、双方が訂正・拒否・再接続できる状態を保つ。**
+> **体系の仕事と妥当性体系を同定し、通約可能な接触面が成立する前に対象命題の勝敗判定へ飛ばない。**
+> **未確立、非導出、事実衝突、内部defeater、外部参照誤記、異位相解釈、相互bridge係争を同じ状態へ潰さない。**
+> **非関与は肯定・否定・敗北・defeaterではない。関与能力境界を非判定的非関与として保持する。**
 > **接点・位相・経路・返路・開放端を監査する。**
 > **異常を分類より先に保存する。**
 > **S/E等は最後に投影する。**

@@ -7,7 +7,7 @@
 > Status: Methodological note
 > Scope: ontology / boundary realism / metaphysics / epistemology / ethics / organization / AI / incompleteness / aporia / research method
 > Language: Japanese authoritative; English commensuration in a separate file
-> Claim strength: S4-S5 / E3 / U1
+> Claim strength: S4-S5
 > Public handling: Gödelian incompleteness is used as a methodological guide to non-closure, not as a proof of Scientific Ontology.
 
 ---
@@ -443,7 +443,7 @@ Tam / Goodnessは、暗さや失敗を排除する層ではない。
 
 どの問いがどの文書を通過し、どこで別の分野へ接続するかを見えるようにするためのものである。
 
-各命題の主張強度、誤読・応用リスク、公開レイヤー、検証段階は、[`Claim Strength and Publication-Layer Table`](Claim_Strength_and_Publication_Layer_Table.ja.md)で管理する。ラベルは読者への権威づけではなく、文書がどの言語ゲームへ接近し、どこで減速・抽象化・非公開化を必要とするかを示す公開制御である。
+各命題のClaim Strength、外部接続、finding、bridge responsibilityは[`Repository Assessment Protocol`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md)で扱う。公開レイヤー、減速、抽象化、非公開判断は[`Publication and Commensuration Policy`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)が担う。旧`S/E/U/P/V/R`統合表は[`Claim Strength and Publication-Layer Table`](Claim_Strength_and_Publication_Layer_Table.ja.md)にmigration referenceとして残す。
 
 ---
 

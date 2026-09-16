@@ -2,7 +2,7 @@
   "schema_version": "0.2",
   "search_spec_version": "0.2",
   "source": {
-    "manifest_sha256": "ebf9c7354c2af6b4536875f0db5941469bf3ef3fe2e9caa33ed7a792e8e40a08",
+    "manifest_sha256": "ed2213a883d63ae1a32c5b6e5ef8064fbfc6e04389f4b812a8c780bb7bc6481c",
     "search_config_sha256": "3f1b70ee2b530582a0d636ec3479c3774df18ff632b98b5d33d756d4253ac616",
     "coverage": "role-aware-current-inventory",
     "visibility_profile": "public"
@@ -11511,9 +11511,9 @@
       }
     },
     {
-      "id": "90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "id": "90_repository_governance_assessment_repository_assessment_protocol_en",
       "id_source": "explicit",
-      "path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md",
+      "path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md",
       "title": {
         "ja": "リポジトリ監査原則",
         "en": "Repository Assessment Protocol"
@@ -11523,36 +11523,57 @@
       "status": "Policy Draft / Candidate",
       "state": "public",
       "registration_state": "provisional",
-      "scope": "",
+      "scope": "proposition attribution / reciprocal external connection / finding types / validity-regime preservation / engagement-capacity boundary / judgment transparency",
       "role": {
-        "ja": "リポジトリ監査原則",
-        "en": "Repository Assessment Protocol"
+        "ja": "命題帰属、相互外部接続、finding、妥当性体系、関与能力境界を分離するCandidate Assessment Contract",
+        "en": "Candidate Assessment Contract separating proposition attribution, reciprocal external contact, findings, validity regimes, and engagement-capacity boundaries"
       },
       "language_relation": {
-        "language": "ja",
-        "role": "authoritative",
-        "counterpart_path": null,
-        "coverage": "not_applicable",
+        "language": "en",
+        "role": "commensuration",
+        "counterpart_path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md",
+        "coverage": "full",
         "authoritative_path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md"
       },
       "document_role": "methodological_governance",
       "assessment_summary": {
         "status": "unreviewed",
-        "applicability": "current_claim",
+        "applicability": "commensuration_only",
         "unresolved": []
       },
       "artifact_relations": [],
       "discovery": {
-        "topics": [],
+        "topics": [
+          "boundary",
+          "commensuration",
+          "judgment",
+          "responsibility"
+        ],
         "searchable": true,
-        "visibility": "canonical",
+        "visibility": "paired",
         "aliases": {
-          "ja": [],
-          "en": []
+          "ja": [
+            "Assessment Contract",
+            "リポジトリ監査原則"
+          ],
+          "en": [
+            "Assessment Contract",
+            "Repository Assessment Protocol"
+          ]
         },
         "reader_questions": {
-          "ja": [],
-          "en": []
+          "ja": [
+            "外部未確立と反証はどう区別するか",
+            "非導出と否定はどう区別するか",
+            "相互bridge係争をどう監査するか",
+            "関与不能を否定や敗北と混同しないためにはどうするか"
+          ],
+          "en": [
+            "How is external non-establishment distinguished from falsification?",
+            "How is non-derivability distinguished from negation?",
+            "How are reciprocal bridge disputes audited?",
+            "How is inability to engage kept separate from denial or defeat?"
+          ]
         },
         "entry_level": ""
       },
@@ -11583,10 +11604,260 @@
           }
         ],
         "owned_concept": [],
-        "aliases": [],
-        "topics": [],
-        "reader_questions": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "Assessment Contract",
+            "normalized": "assessment contract",
+            "compact": "assessmentcontract"
+          },
+          {
+            "lang": "ja",
+            "text": "リポジトリ監査原則",
+            "normalized": "リポジトリ監査原則",
+            "compact": "リポジトリ監査原則"
+          },
+          {
+            "lang": "en",
+            "text": "Assessment Contract",
+            "normalized": "assessment contract",
+            "compact": "assessmentcontract"
+          },
+          {
+            "lang": "en",
+            "text": "Repository Assessment Protocol",
+            "normalized": "repository assessment protocol",
+            "compact": "repositoryassessmentprotocol"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "und",
+            "text": "commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "ja",
+            "text": "通約",
+            "normalized": "通約",
+            "compact": "通約"
+          },
+          {
+            "lang": "en",
+            "text": "Commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "und",
+            "text": "judgment",
+            "normalized": "judgment",
+            "compact": "judgment"
+          },
+          {
+            "lang": "ja",
+            "text": "判断",
+            "normalized": "判断",
+            "compact": "判断"
+          },
+          {
+            "lang": "en",
+            "text": "Judgment",
+            "normalized": "judgment",
+            "compact": "judgment"
+          },
+          {
+            "lang": "und",
+            "text": "responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          },
+          {
+            "lang": "ja",
+            "text": "責任",
+            "normalized": "責任",
+            "compact": "責任"
+          },
+          {
+            "lang": "en",
+            "text": "Responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "外部未確立と反証はどう区別するか",
+            "normalized": "外部未確立と反証はどう区別するか",
+            "compact": "外部未確立と反証はどう区別するか"
+          },
+          {
+            "lang": "ja",
+            "text": "非導出と否定はどう区別するか",
+            "normalized": "非導出と否定はどう区別するか",
+            "compact": "非導出と否定はどう区別するか"
+          },
+          {
+            "lang": "ja",
+            "text": "相互bridge係争をどう監査するか",
+            "normalized": "相互bridge係争をどう監査するか",
+            "compact": "相互bridge係争をどう監査するか"
+          },
+          {
+            "lang": "ja",
+            "text": "関与不能を否定や敗北と混同しないためにはどうするか",
+            "normalized": "関与不能を否定や敗北と混同しないためにはどうするか",
+            "compact": "関与不能を否定や敗北と混同しないためにはどうするか"
+          },
+          {
+            "lang": "en",
+            "text": "How is external non-establishment distinguished from falsification?",
+            "normalized": "how is external non establishment distinguished from falsification",
+            "compact": "howisexternalnonestablishmentdistinguishedfromfalsification"
+          },
+          {
+            "lang": "en",
+            "text": "How is non-derivability distinguished from negation?",
+            "normalized": "how is non derivability distinguished from negation",
+            "compact": "howisnonderivabilitydistinguishedfromnegation"
+          },
+          {
+            "lang": "en",
+            "text": "How are reciprocal bridge disputes audited?",
+            "normalized": "how are reciprocal bridge disputes audited",
+            "compact": "howarereciprocalbridgedisputesaudited"
+          },
+          {
+            "lang": "en",
+            "text": "How is inability to engage kept separate from denial or defeat?",
+            "normalized": "how is inability to engage kept separate from denial or defeat",
+            "compact": "howisinabilitytoengagekeptseparatefromdenialordefeat"
+          }
+        ],
         "role": [
+          {
+            "lang": "ja",
+            "text": "命題帰属、相互外部接続、finding、妥当性体系、関与能力境界を分離するCandidate Assessment Contract",
+            "normalized": "命題帰属 相互外部接続 finding 妥当性体系 関与能力境界を分離するcandidate assessment contract",
+            "compact": "命題帰属相互外部接続finding妥当性体系関与能力境界を分離するcandidateassessmentcontract"
+          },
+          {
+            "lang": "en",
+            "text": "Candidate Assessment Contract separating proposition attribution, reciprocal external contact, findings, validity regimes, and engagement-capacity boundaries",
+            "normalized": "candidate assessment contract separating proposition attribution reciprocal external contact findings validity regimes and engagement capacity boundaries",
+            "compact": "candidateassessmentcontractseparatingpropositionattributionreciprocalexternalcontactfindingsvalidityregimesandengagementcapacityboundaries"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "proposition attribution / reciprocal external connection / finding types / validity-regime preservation / engagement-capacity boundary / judgment transparency",
+            "normalized": "proposition attribution reciprocal external connection finding types validity regime preservation engagement capacity boundary judgment transparency",
+            "compact": "propositionattributionreciprocalexternalconnectionfindingtypesvalidityregimepreservationengagementcapacityboundaryjudgmenttransparency"
+          }
+        ]
+      }
+    },
+    {
+      "id": "90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "id_source": "explicit",
+      "path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md",
+      "title": {
+        "ja": "リポジトリ監査原則",
+        "en": "Repository Assessment Protocol"
+      },
+      "layer": "90_Repository_Governance",
+      "document_type": "assertion_document",
+      "status": "Policy Draft / Candidate",
+      "state": "public",
+      "registration_state": "provisional",
+      "scope": "proposition attribution / reciprocal external connection / finding types / validity-regime preservation / engagement-capacity boundary / judgment transparency",
+      "role": {
+        "ja": "命題帰属、相互外部接続、finding、妥当性体系、関与能力境界を分離するCandidate Assessment Contract",
+        "en": "Candidate Assessment Contract separating proposition attribution, reciprocal external contact, findings, validity regimes, and engagement-capacity boundaries"
+      },
+      "language_relation": {
+        "language": "ja",
+        "role": "authoritative",
+        "counterpart_path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md",
+        "coverage": "full",
+        "authoritative_path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md"
+      },
+      "document_role": "methodological_governance",
+      "assessment_summary": {
+        "status": "unreviewed",
+        "applicability": "current_claim",
+        "unresolved": []
+      },
+      "artifact_relations": [],
+      "discovery": {
+        "topics": [
+          "boundary",
+          "commensuration",
+          "judgment",
+          "responsibility"
+        ],
+        "searchable": true,
+        "visibility": "canonical",
+        "aliases": {
+          "ja": [
+            "Assessment Contract",
+            "リポジトリ監査原則"
+          ],
+          "en": [
+            "Assessment Contract",
+            "Repository Assessment Protocol"
+          ]
+        },
+        "reader_questions": {
+          "ja": [
+            "外部未確立と反証はどう区別するか",
+            "非導出と否定はどう区別するか",
+            "相互bridge係争をどう監査するか",
+            "関与不能を否定や敗北と混同しないためにはどうするか"
+          ],
+          "en": [
+            "How is external non-establishment distinguished from falsification?",
+            "How is non-derivability distinguished from negation?",
+            "How are reciprocal bridge disputes audited?",
+            "How is inability to engage kept separate from denial or defeat?"
+          ]
+        },
+        "entry_level": ""
+      },
+      "concepts": {
+        "owned": [],
+        "imports": [],
+        "exports": []
+      },
+      "relations": {
+        "related": [],
+        "tests": [],
+        "returns_to": [],
+        "delegates": []
+      },
+      "search_fields": {
+        "title": [
           {
             "lang": "ja",
             "text": "リポジトリ監査原則",
@@ -11600,7 +11871,179 @@
             "compact": "repositoryassessmentprotocol"
           }
         ],
-        "scope": []
+        "owned_concept": [],
+        "aliases": [
+          {
+            "lang": "ja",
+            "text": "Assessment Contract",
+            "normalized": "assessment contract",
+            "compact": "assessmentcontract"
+          },
+          {
+            "lang": "ja",
+            "text": "リポジトリ監査原則",
+            "normalized": "リポジトリ監査原則",
+            "compact": "リポジトリ監査原則"
+          },
+          {
+            "lang": "en",
+            "text": "Assessment Contract",
+            "normalized": "assessment contract",
+            "compact": "assessmentcontract"
+          },
+          {
+            "lang": "en",
+            "text": "Repository Assessment Protocol",
+            "normalized": "repository assessment protocol",
+            "compact": "repositoryassessmentprotocol"
+          }
+        ],
+        "topics": [
+          {
+            "lang": "und",
+            "text": "boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "ja",
+            "text": "境界",
+            "normalized": "境界",
+            "compact": "境界"
+          },
+          {
+            "lang": "en",
+            "text": "Boundary",
+            "normalized": "boundary",
+            "compact": "boundary"
+          },
+          {
+            "lang": "und",
+            "text": "commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "ja",
+            "text": "通約",
+            "normalized": "通約",
+            "compact": "通約"
+          },
+          {
+            "lang": "en",
+            "text": "Commensuration",
+            "normalized": "commensuration",
+            "compact": "commensuration"
+          },
+          {
+            "lang": "und",
+            "text": "judgment",
+            "normalized": "judgment",
+            "compact": "judgment"
+          },
+          {
+            "lang": "ja",
+            "text": "判断",
+            "normalized": "判断",
+            "compact": "判断"
+          },
+          {
+            "lang": "en",
+            "text": "Judgment",
+            "normalized": "judgment",
+            "compact": "judgment"
+          },
+          {
+            "lang": "und",
+            "text": "responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          },
+          {
+            "lang": "ja",
+            "text": "責任",
+            "normalized": "責任",
+            "compact": "責任"
+          },
+          {
+            "lang": "en",
+            "text": "Responsibility",
+            "normalized": "responsibility",
+            "compact": "responsibility"
+          }
+        ],
+        "reader_questions": [
+          {
+            "lang": "ja",
+            "text": "外部未確立と反証はどう区別するか",
+            "normalized": "外部未確立と反証はどう区別するか",
+            "compact": "外部未確立と反証はどう区別するか"
+          },
+          {
+            "lang": "ja",
+            "text": "非導出と否定はどう区別するか",
+            "normalized": "非導出と否定はどう区別するか",
+            "compact": "非導出と否定はどう区別するか"
+          },
+          {
+            "lang": "ja",
+            "text": "相互bridge係争をどう監査するか",
+            "normalized": "相互bridge係争をどう監査するか",
+            "compact": "相互bridge係争をどう監査するか"
+          },
+          {
+            "lang": "ja",
+            "text": "関与不能を否定や敗北と混同しないためにはどうするか",
+            "normalized": "関与不能を否定や敗北と混同しないためにはどうするか",
+            "compact": "関与不能を否定や敗北と混同しないためにはどうするか"
+          },
+          {
+            "lang": "en",
+            "text": "How is external non-establishment distinguished from falsification?",
+            "normalized": "how is external non establishment distinguished from falsification",
+            "compact": "howisexternalnonestablishmentdistinguishedfromfalsification"
+          },
+          {
+            "lang": "en",
+            "text": "How is non-derivability distinguished from negation?",
+            "normalized": "how is non derivability distinguished from negation",
+            "compact": "howisnonderivabilitydistinguishedfromnegation"
+          },
+          {
+            "lang": "en",
+            "text": "How are reciprocal bridge disputes audited?",
+            "normalized": "how are reciprocal bridge disputes audited",
+            "compact": "howarereciprocalbridgedisputesaudited"
+          },
+          {
+            "lang": "en",
+            "text": "How is inability to engage kept separate from denial or defeat?",
+            "normalized": "how is inability to engage kept separate from denial or defeat",
+            "compact": "howisinabilitytoengagekeptseparatefromdenialordefeat"
+          }
+        ],
+        "role": [
+          {
+            "lang": "ja",
+            "text": "命題帰属、相互外部接続、finding、妥当性体系、関与能力境界を分離するCandidate Assessment Contract",
+            "normalized": "命題帰属 相互外部接続 finding 妥当性体系 関与能力境界を分離するcandidate assessment contract",
+            "compact": "命題帰属相互外部接続finding妥当性体系関与能力境界を分離するcandidateassessmentcontract"
+          },
+          {
+            "lang": "en",
+            "text": "Candidate Assessment Contract separating proposition attribution, reciprocal external contact, findings, validity regimes, and engagement-capacity boundaries",
+            "normalized": "candidate assessment contract separating proposition attribution reciprocal external contact findings validity regimes and engagement capacity boundaries",
+            "compact": "candidateassessmentcontractseparatingpropositionattributionreciprocalexternalcontactfindingsvalidityregimesandengagementcapacityboundaries"
+          }
+        ],
+        "scope": [
+          {
+            "lang": "und",
+            "text": "proposition attribution / reciprocal external connection / finding types / validity-regime preservation / engagement-capacity boundary / judgment transparency",
+            "normalized": "proposition attribution reciprocal external connection finding types validity regime preservation engagement capacity boundary judgment transparency",
+            "compact": "propositionattributionreciprocalexternalconnectionfindingtypesvalidityregimepreservationengagementcapacityboundaryjudgmenttransparency"
+          }
+        ]
       }
     },
     {
@@ -16326,13 +16769,13 @@
       },
       "layer": "00_Overview",
       "document_type": "common_fixed_explanation",
-      "status": "Public control table",
+      "status": "Table",
       "state": "public",
       "registration_state": "provisional",
-      "scope": "claim strength / epistemic risk / application risk / publication layer / verification / rendering distance",
+      "scope": "legacy S/E/U/P/V/R migration reference; current responsibility routes to Assessment / Publication / Terminology governance",
       "role": {
-        "ja": "主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表",
-        "en": "Public control table separating claim strength, empirical support, use risk, publication layer, and verification stage"
+        "ja": "旧S/E/U/P/V/R統合分類を保持し、現行Assessment / Publication / Terminology責務へ案内するmigration reference",
+        "en": "Migration reference preserving the legacy S/E/U/P/V/R classifier while routing current responsibility to Assessment / Publication / Terminology governance"
       },
       "language_relation": {
         "language": "ja",
@@ -16368,14 +16811,14 @@
         "reader_questions": {
           "ja": [
             "主張強度とは何か",
-            "認識・批判リスクとは何か",
+            "旧E / Epistemic Riskと現行E / Connection Exposureはどう違うか",
             "応用・安全リスクとは何か",
             "公開レイヤーとは何か",
             "主張強度と公開レイヤーはどう関係するか"
           ],
           "en": [
             "What is claim strength?",
-            "What is epistemic risk?",
+            "How does legacy E / Epistemic Risk differ from current E / Connection Exposure?",
             "What is use and safety risk?",
             "What is a publication layer?",
             "How does claim strength relate to publication layer?"
@@ -16507,9 +16950,9 @@
           },
           {
             "lang": "ja",
-            "text": "認識・批判リスクとは何か",
-            "normalized": "認識 批判リスクとは何か",
-            "compact": "認識批判リスクとは何か"
+            "text": "旧E / Epistemic Riskと現行E / Connection Exposureはどう違うか",
+            "normalized": "旧e epistemic riskと現行e connection exposureはどう違うか",
+            "compact": "旧eepistemicriskと現行econnectionexposureはどう違うか"
           },
           {
             "lang": "ja",
@@ -16537,9 +16980,9 @@
           },
           {
             "lang": "en",
-            "text": "What is epistemic risk?",
-            "normalized": "what is epistemic risk",
-            "compact": "whatisepistemicrisk"
+            "text": "How does legacy E / Epistemic Risk differ from current E / Connection Exposure?",
+            "normalized": "how does legacy e epistemic risk differ from current e connection exposure",
+            "compact": "howdoeslegacyeepistemicriskdifferfromcurrenteconnectionexposure"
           },
           {
             "lang": "en",
@@ -16563,23 +17006,23 @@
         "role": [
           {
             "lang": "ja",
-            "text": "主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表",
-            "normalized": "主張強度 経験的支持 利用リスク 公開レイヤー 検証段階を区別する公開制御表",
-            "compact": "主張強度経験的支持利用リスク公開レイヤー検証段階を区別する公開制御表"
+            "text": "旧S/E/U/P/V/R統合分類を保持し、現行Assessment / Publication / Terminology責務へ案内するmigration reference",
+            "normalized": "旧s e u p v r統合分類を保持し 現行assessment publication terminology責務へ案内するmigration reference",
+            "compact": "旧seupvr統合分類を保持し現行assessmentpublicationterminology責務へ案内するmigrationreference"
           },
           {
             "lang": "en",
-            "text": "Public control table separating claim strength, empirical support, use risk, publication layer, and verification stage",
-            "normalized": "public control table separating claim strength empirical support use risk publication layer and verification stage",
-            "compact": "publiccontroltableseparatingclaimstrengthempiricalsupportuseriskpublicationlayerandverificationstage"
+            "text": "Migration reference preserving the legacy S/E/U/P/V/R classifier while routing current responsibility to Assessment / Publication / Terminology governance",
+            "normalized": "migration reference preserving the legacy s e u p v r classifier while routing current responsibility to assessment publication terminology governance",
+            "compact": "migrationreferencepreservingthelegacyseupvrclassifierwhileroutingcurrentresponsibilitytoassessmentpublicationterminologygovernance"
           }
         ],
         "scope": [
           {
             "lang": "und",
-            "text": "claim strength / epistemic risk / application risk / publication layer / verification / rendering distance",
-            "normalized": "claim strength epistemic risk application risk publication layer verification rendering distance",
-            "compact": "claimstrengthepistemicriskapplicationriskpublicationlayerverificationrenderingdistance"
+            "text": "legacy S/E/U/P/V/R migration reference; current responsibility routes to Assessment / Publication / Terminology governance",
+            "normalized": "legacy s e u p v r migration reference current responsibility routes to assessment publication terminology governance",
+            "compact": "legacyseupvrmigrationreferencecurrentresponsibilityroutestoassessmentpublicationterminologygovernance"
           }
         ]
       }
@@ -16594,13 +17037,13 @@
       },
       "layer": "00_Overview",
       "document_type": "common_fixed_explanation",
-      "status": "Public control table",
+      "status": "Table",
       "state": "public",
       "registration_state": "provisional",
-      "scope": "claim strength / epistemic risk / use and safety risk / publication layer / verification / rendering distance",
+      "scope": "legacy S/E/U/P/V/R migration reference; current responsibility routes to Assessment / Publication / Terminology governance",
       "role": {
-        "ja": "主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表",
-        "en": "Public control table separating claim strength, empirical support, use risk, publication layer, and verification stage"
+        "ja": "旧S/E/U/P/V/R統合分類を保持し、現行Assessment / Publication / Terminology責務へ案内するmigration reference",
+        "en": "Migration reference preserving the legacy S/E/U/P/V/R classifier while routing current responsibility to Assessment / Publication / Terminology governance"
       },
       "language_relation": {
         "language": "en",
@@ -16636,14 +17079,14 @@
         "reader_questions": {
           "ja": [
             "主張強度とは何か",
-            "認識・批判リスクとは何か",
+            "旧E / Epistemic Riskと現行E / Connection Exposureはどう違うか",
             "応用・安全リスクとは何か",
             "公開レイヤーとは何か",
             "主張強度と公開レイヤーはどう関係するか"
           ],
           "en": [
             "What is claim strength?",
-            "What is epistemic risk?",
+            "How does legacy E / Epistemic Risk differ from current E / Connection Exposure?",
             "What is use and safety risk?",
             "What is a publication layer?",
             "How does claim strength relate to publication layer?"
@@ -16775,9 +17218,9 @@
           },
           {
             "lang": "ja",
-            "text": "認識・批判リスクとは何か",
-            "normalized": "認識 批判リスクとは何か",
-            "compact": "認識批判リスクとは何か"
+            "text": "旧E / Epistemic Riskと現行E / Connection Exposureはどう違うか",
+            "normalized": "旧e epistemic riskと現行e connection exposureはどう違うか",
+            "compact": "旧eepistemicriskと現行econnectionexposureはどう違うか"
           },
           {
             "lang": "ja",
@@ -16805,9 +17248,9 @@
           },
           {
             "lang": "en",
-            "text": "What is epistemic risk?",
-            "normalized": "what is epistemic risk",
-            "compact": "whatisepistemicrisk"
+            "text": "How does legacy E / Epistemic Risk differ from current E / Connection Exposure?",
+            "normalized": "how does legacy e epistemic risk differ from current e connection exposure",
+            "compact": "howdoeslegacyeepistemicriskdifferfromcurrenteconnectionexposure"
           },
           {
             "lang": "en",
@@ -16831,23 +17274,23 @@
         "role": [
           {
             "lang": "ja",
-            "text": "主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表",
-            "normalized": "主張強度 経験的支持 利用リスク 公開レイヤー 検証段階を区別する公開制御表",
-            "compact": "主張強度経験的支持利用リスク公開レイヤー検証段階を区別する公開制御表"
+            "text": "旧S/E/U/P/V/R統合分類を保持し、現行Assessment / Publication / Terminology責務へ案内するmigration reference",
+            "normalized": "旧s e u p v r統合分類を保持し 現行assessment publication terminology責務へ案内するmigration reference",
+            "compact": "旧seupvr統合分類を保持し現行assessmentpublicationterminology責務へ案内するmigrationreference"
           },
           {
             "lang": "en",
-            "text": "Public control table separating claim strength, empirical support, use risk, publication layer, and verification stage",
-            "normalized": "public control table separating claim strength empirical support use risk publication layer and verification stage",
-            "compact": "publiccontroltableseparatingclaimstrengthempiricalsupportuseriskpublicationlayerandverificationstage"
+            "text": "Migration reference preserving the legacy S/E/U/P/V/R classifier while routing current responsibility to Assessment / Publication / Terminology governance",
+            "normalized": "migration reference preserving the legacy s e u p v r classifier while routing current responsibility to assessment publication terminology governance",
+            "compact": "migrationreferencepreservingthelegacyseupvrclassifierwhileroutingcurrentresponsibilitytoassessmentpublicationterminologygovernance"
           }
         ],
         "scope": [
           {
             "lang": "und",
-            "text": "claim strength / epistemic risk / use and safety risk / publication layer / verification / rendering distance",
-            "normalized": "claim strength epistemic risk use and safety risk publication layer verification rendering distance",
-            "compact": "claimstrengthepistemicriskuseandsafetyriskpublicationlayerverificationrenderingdistance"
+            "text": "legacy S/E/U/P/V/R migration reference; current responsibility routes to Assessment / Publication / Terminology governance",
+            "normalized": "legacy s e u p v r migration reference current responsibility routes to assessment publication terminology governance",
+            "compact": "legacyseupvrmigrationreferencecurrentresponsibilityroutestoassessmentpublicationterminologygovernance"
           }
         ]
       }

@@ -1,73 +1,84 @@
 # Claim Strength and Publication-Layer Table for Scientific Ontology
 # 存在境界論｜主張強度・公開レイヤー対応表
 
-> Status: Public control table
-> Scope: claim strength / epistemic risk / application risk / publication layer / verification / rendering distance
+> Status: Table
+> Scope: migration reference for legacy S/E/U/P/V/R labels; current ownership routes to Assessment / Publication / Terminology governance
 > Language: Japanese authoritative; English commensuration in a separate file
 > Claim strength: classifier
 
 ---
 
-## 0. この表は何を管理するのか
+## 0. この表の現在位置
 
-本表は、存在境界論の命題、文書、語彙について、次を区別して管理するための公開制御表である。
+本表は、v5.1以前から用いられてきた`S / E / U / P / V / R`統合分類を追跡するための**公開migration reference**である。
 
-- 命題そのものの強さ
-- 誤読・批判の起こりやすさ
-- 応用・転用による危険
-- 公開時に必要な減速
-- 今後の検証・形式化段階
-- 中核語彙から各分野の言語ゲームへの距離
+現在のrepository-wide assessmentを一括支配するcontrol tableではない。
 
-これらは、同じ尺度ではない。
+旧表は、一つの文書で次を同時に管理していた。
 
-主張が強いことは、実証済みであることを意味しない。
+- claim strength
+- epistemic / criticism risk
+- use / safety risk
+- publication layer
+- verification stage
+- rendering distance
 
-誤読リスクが高いことは、命題が誤りであることを意味しない。
+しかし、これらは責務も判断根拠も異なる。現行v5.1では、旧表を削除して履歴を失うのではなく、責務をそれぞれのownerへ分解する。
 
-応用可能性が高いことは、公開すべきであることを意味しない。
+### 0.1 現行責務owner
 
-公開レイヤーが低いことは、重要性が低いことを意味しない。
+| 項目 | 現行owner | 現在の扱い |
+|---|---|---|
+| Claim Strength `S` | [`Repository Assessment Protocol`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md) | repositoryが自ら引き受けるclaim commitmentの補助投影。 |
+| Connection Exposure `E` | [`Repository Assessment Protocol`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md) | 外部体系への接続強度・bridge responsibilityの補助投影。旧`Epistemic Risk E`とは別概念。 |
+| A–H finding types | [`Repository Assessment Protocol`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md) | 未確立・非導出・事実衝突・内部defeater・参照誤記・異位相解釈・相互bridge係争等を非順序findingとして記録する。 |
+| Use / Safety | [`Publication and Commensuration Policy`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)および個別safety governance | 公開・運用上の危険として扱う。 |
+| Publication Layer `P` | [`Publication and Commensuration Policy`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md) | 公開・減速・抽象化・非公開を決める。 |
+| Verification `V` | AssessmentのEvaluation History | 一本道の段階尺度ではなく、実施したevaluation modeの履歴として保持する。 |
+| Rendering Distance `R` | Publication / Terminology / local interface | 固定距離による序列ではなく、通約・language game・用語接続として扱う。 |
+| document state / language relation | [`tools/docs_manifest.yml`](../tools/docs_manifest.yml) | canonical current metadata ledger。 |
 
-本表のラベルは、読者への権威づけや順位づけではない。
+### 0.2 旧`E / Epistemic Risk`の扱い
 
-何をどの文脈で語り、どこで限定し、どこを留保し、どこから別文書へ委ねるかを管理するためのものである。
+本ファイル後半に残る`E0-E3 / Epistemic Risk`は**legacy classification**であり、現行Assessment Protocolの`E / Connection Exposure`へ機械的に読み替えない。
+
+旧Eが担っていた問題は、現在は少なくとも次へ分解される。
+
+- assessment finding type
+- bridge / validity-regime audit
+- terminology connection
+- publication / use / safety handling
+
+したがって、`E3`という旧ラベルだけを理由に、Research Notesを非公開化、停止、反証済み扱いしてはならない。
+
+### 0.3 この表を残す理由
+
+既存文書には旧`S/E/U/P/V/R` headerや表記が残る。これらを一括書換えすると、過去の公開意味、比較可能性、Navigator履歴を不必要に破壊する。
+
+本表は、旧ラベルを読める状態に保ちつつ、現在のdefinition ownerへ読者を返すために残す。
+
+旧ラベルは本文の代わりではない。現行判断では、各owner文書の定義を優先する。
 
 ---
 
-## 1. 判定順序 / Evaluation Order
+## 1. Legacy Evaluation Order / 旧統合判定順序
 
-S / E / U / P / V / R は、横並びの評価点ではない。
-
-- **S / Claim Strength**：命題そのものが、どこまで強い存在論的・理論的主張を行うか。
-- **E / Epistemic Risk**：既存分野との衝突、疑似科学化、過剰一般化など、誤読・批判上のリスク。
-- **U / Use Risk**：診断、操作、統治、安全回避などへ転用されるリスク。
-- **P / Publication Layer**：S・E・Uを踏まえた最終的な公開レイヤー。
-- **V / Verification Stage**：今後どの検証・形式化段階へ進めるか。
-- **R / Rendering Distance**：公開中核語彙から、どの言語ゲーム・応用・物理近接・形而上学層へ射影されているか。
-
-判定は、次の順で行う。
+以下は旧統合表が用いていた判定順序であり、**現行Assessment Contractの実行順序ではない**。
 
 ```text
-1. 命題の責務と適用範囲を確認する。
-2. Sコードで主張強度を判定する。
-3. Sコードから暫定公開レイヤー P_base を置く。
-4. Eコードで認識・批判リスクによる減速を行う。
-5. Uコードで応用・安全リスクによる抽象化または非公開化を行う。
-6. Rコードで、どの言語ゲームへ射影されているかを確認する。
-7. 最終公開レイヤー P_final を決定する。
-8. Vコードで今後の検証・形式化段階を別途管理する。
+legacy:
+  S -> P_base -> E -> U -> R -> P_final -> V
 ```
 
-簡易式で表せば、次の通りである。
+旧簡易式：
 
 ```text
 P_final = decelerate(P_base(S), E, U, context(R))
 ```
 
-Rは、単独で公開可否を決めない。
+この式はmigration referenceとして保持するが、現行公開判断を自動生成する規則として使用しない。
 
-ただし、R4またはR5の語彙は、同じ文面でもE3へ接近しやすいため、通常より強い限定と非主張境界を必要とする。
+現行では、まず命題帰属・scope・warrant・体系のroleとvalidity regime・commensuration intake・finding・bridge auditを分け、その後に必要なS/E projectionとPublication判断を行う。
 
 ---
 
@@ -95,7 +106,7 @@ Rは、単独で公開可否を決めない。
 
 ---
 
-## 3. Eコード――認識・批判リスク / Epistemic Risk
+## 3. Legacy Eコード――認識・批判リスク / Epistemic Risk
 
 | Code | 名称 / Label | 主な危険 | 必要な処理 |
 |---|---|---|---|
@@ -115,7 +126,7 @@ Rは、単独で公開可否を決めない。
 
 ---
 
-## 4. Uコード――応用・安全リスク / Use and Safety Risk
+## 4. Legacy Uコード――応用・安全リスク / Use and Safety Risk
 
 | Code | 名称 / Label | 主な危険 | 公開判断 |
 |---|---|---|---|
@@ -137,7 +148,7 @@ Rは、単独で公開可否を決めない。
 
 ---
 
-## 5. Pコード――公開レイヤー / Publication Layer
+## 5. Legacy Pコード――公開レイヤー / Publication Layer
 
 | Code | 名称 / Label | 意味 |
 |---|---|---|
@@ -153,7 +164,7 @@ Rは、単独で公開可否を決めない。
 
 ---
 
-## 6. Vコード――検証・形式化段階 / Verification Stage
+## 6. Legacy Vコード――検証・形式化段階 / Verification Stage
 
 | Code | 名称 / Label | 意味 |
 |---|---|---|
@@ -170,7 +181,7 @@ Vが高いことは、命題が正しいことを意味しない。
 
 ---
 
-## 7. Rコード――中核語彙からのレンダリング距離 / Rendering Distance
+## 7. Legacy Rコード――中核語彙からのレンダリング距離 / Rendering Distance
 
 Rコードは、命題が存在境界論の公開中核から、どの言語ゲームへ射影されているかを示す補助軸である。
 
@@ -426,9 +437,13 @@ Claim strength
 
 ---
 
-## 17. 総合判定
+## 17. 現行体系への移行上の読み方
 
-現行公開体系では、個別概念の追加よりも、次の循環が明示される。
+以下の循環図と概念表は、旧統合分類がどのような公開上の減速を意図していたかを読むためのreferenceとして保持する。
+
+現行Assessment Contractでは、`S/E/U/P/V/R`を一つの自動判定式へ戻さない。特に、科学的に未確立であること、外部体系から導出されないこと、同じ事実群への別位相解釈であること、相互bridge係争があることを、旧`E3`や`P3`へ自動変換しない。
+
+概念ネットワークとしては、個別概念の追加よりも、次の循環が明示される。
 
 ```text
 差分接触
@@ -452,11 +467,7 @@ AI・制度・社会への実装
 認識論・存在論・形而上学の再照合
 ```
 
-この循環の公開中核は、R0-R3、S2-S4を中心とする。
-
-物理近接レンダリングはR4、S4-S5、E3として減速する。
-
-AMP / ITSはR5、S5、P3を基本とし、公開体系の第一主張へ直接持ち込まない。
+旧ラベル上では、この循環の公開中核をR0-R3、S2-S4として記述していた。物理近接レンダリングやAMP / ITSについても旧R/E/Pラベルが残るが、現行の公開・研究継続判断はAssessment / Publication / Physics Correspondence Policyの現行責務に従う。Research Notes上の高強度仮説を、旧E/Rラベルだけで停止・非公開へ移さない。
 
 認識軸生成と認識ブリッジは、人物分類、思想診断、身体診断へ転用しない。
 
@@ -481,6 +492,8 @@ AMP / ITSはR5、S5、P3を基本とし、公開体系の第一主張へ直接�
 - [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md)
 - [`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md)
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
+- [`Repository_Assessment_Protocol.ja.md`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md)
+- [`Repository_Assessment_Protocol.en.md`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
 - [`TERM_COLLISION_REGISTRY.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.ja.md)
 

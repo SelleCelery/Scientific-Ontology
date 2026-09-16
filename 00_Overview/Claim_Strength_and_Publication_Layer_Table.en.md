@@ -1,73 +1,68 @@
 # Claim Strength and Publication-Layer Table for Scientific Ontology
 
-> Status: Public control table
-> Scope: claim strength / epistemic risk / use and safety risk / publication layer / verification / rendering distance
+> Status: Table
+> Scope: migration reference for legacy S/E/U/P/V/R labels; current ownership routes to Assessment / Publication / Terminology governance
 > Language: English commensurated rendering
 > Japanese authoritative source: [Claim_Strength_and_Publication_Layer_Table.ja.md](./Claim_Strength_and_Publication_Layer_Table.ja.md)
 > Claim strength: classifier
 
 ---
 
-## 0. What This Table Governs
+## 0. Current Position of This Table
 
-This table is a public control table for distinguishing and managing the following dimensions of propositions, documents, and terminology in Scientific Ontology:
+This file is a **public migration reference** for the integrated `S / E / U / P / V / R` classifier used in earlier v5.1 work.
 
-- The strength of the proposition itself
-- The likelihood of misreading or criticism
-- Risks arising from application or transfer
-- The degree of deceleration required for publication
-- Future stages of verification and formalization
-- The distance from core vocabulary to the language games of other fields
+It is no longer the single control table governing repository-wide assessment.
 
-These are not the same scale.
+The legacy table combined claim strength, epistemic/criticism risk, use/safety risk, publication layer, verification stage, and rendering distance. These dimensions have different owners and different decision grounds. Current v5.1 therefore preserves the legacy table for traceability while routing responsibilities to their present owners.
 
-A strong claim is not necessarily empirically established.
+### 0.1 Current Responsibility Owners
 
-A high risk of misreading does not mean that the proposition is false.
+| Item | Current owner | Current treatment |
+|---|---|---|
+| Claim Strength `S` | [`Repository Assessment Protocol`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md) | Auxiliary projection of the strength of the repository's own claim commitment. |
+| Connection Exposure `E` | [`Repository Assessment Protocol`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md) | Auxiliary projection of cross-system connection strength and bridge responsibility. It is not the legacy `Epistemic Risk E`. |
+| A-H finding types | [`Repository Assessment Protocol`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md) | Non-ordinal findings for unestablished status, non-derivability, fact conflict, internal defeaters, reference misstatement, alternate interpretation, and reciprocal bridge dispute. |
+| Use / Safety | [`Publication and Commensuration Policy`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md) and local safety governance | Public and operational risk handling. |
+| Publication Layer `P` | [`Publication and Commensuration Policy`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md) | Public, decelerated, abstracted, or non-public handling. |
+| Verification `V` | Assessment Evaluation History | Retained as a history of evaluation modes rather than a single staircase. |
+| Rendering Distance `R` | Publication / Terminology / local interfaces | Treated through commensuration, language games, and terminology connections rather than a fixed distance ranking. |
+| document state / language relation | [`tools/docs_manifest.yml`](../tools/docs_manifest.yml) | Canonical current metadata ledger. |
 
-High applicability does not mean that something should be published.
+### 0.2 Treatment of Legacy `E / Epistemic Risk`
 
-A lower publication layer does not mean lower importance.
+The `E0-E3 / Epistemic Risk` table retained later in this file is a **legacy classification**. It must not be mechanically converted into the current Assessment Protocol's `E / Connection Exposure`.
 
-The labels in this table do not confer authority or establish rankings for readers.
+The concerns formerly carried by legacy E are now decomposed across assessment finding types, bridge and validity-regime audit, terminology connection, and publication/use/safety handling.
 
-They are used to manage what may be stated in which context, where qualification is required, what must remain reserved, and from which point responsibility should be delegated to another document.
+A legacy `E3` label by itself is therefore not a reason to make a Research Note non-public, inactive, or falsified.
+
+### 0.3 Why the Table Is Retained
+
+Existing documents still contain legacy `S/E/U/P/V/R` headers and tables. Bulk rewriting them would unnecessarily damage historical public meaning and comparability.
+
+This file remains available so legacy labels can be read while readers are routed to the current definition owners. Current owner documents take precedence over these legacy labels.
 
 ---
 
-## 1. Evaluation Order
+## 1. Legacy Evaluation Order
 
-S / E / U / P / V / R are not parallel scores.
-
-- **S / Claim Strength:** How strong an ontological or theoretical claim the proposition itself makes.
-- **E / Epistemic Risk:** Risks of misreading or criticism, including collision with established fields, pseudoscientific interpretation, and overgeneralization.
-- **U / Use Risk:** Risks of transfer into diagnosis, manipulation, governance, safety avoidance, or other applications.
-- **P / Publication Layer:** The final publication layer determined in light of S, E, and U.
-- **V / Verification Stage:** The stage of verification or formalization that may be pursued next.
-- **R / Rendering Distance:** The distance through which public core vocabulary is projected into another language game, application field, physical-near vocabulary, or metaphysical layer.
-
-Evaluation proceeds in the following order.
+The following sequence records the former integrated classifier. It is **not** the execution order of the current Assessment Contract.
 
 ```text
-1. Confirm the proposition's claim responsibility and scope of application.
-2. Determine claim strength using the S code.
-3. Assign a provisional publication layer, P_base, from the S code.
-4. Apply deceleration for epistemic and critical risk using the E code.
-5. Apply abstraction or non-public handling for use and safety risk using the U code.
-6. Use the R code to identify the language game into which the proposition is projected.
-7. Determine the final publication layer, P_final.
-8. Manage the future verification or formalization stage separately using the V code.
+legacy:
+  S -> P_base -> E -> U -> R -> P_final -> V
 ```
 
-In simplified form:
+Legacy shorthand:
 
 ```text
 P_final = decelerate(P_base(S), E, U, context(R))
 ```
 
-R does not independently determine whether publication is permitted.
+The formula is retained for migration reference, not as an automatic current publication rule.
 
-However, R4 or R5 vocabulary is more likely to approach E3 even where the wording is otherwise unchanged. It therefore requires stronger qualification and more explicit non-claim boundaries than ordinary public vocabulary.
+Current assessment separates attribution, scope, warrant, system role, validity regime, commensuration intake, findings, and bridge audit before any necessary S/E projection or publication decision.
 
 ---
 
@@ -95,7 +90,7 @@ However, R4 or R5 vocabulary is more likely to approach E3 even where the wordin
 
 ---
 
-## 3. E Code — Epistemic Risk
+## 3. Legacy E Code — Epistemic Risk
 
 | Code | Label | Primary risk | Required handling |
 |---|---|---|---|
@@ -115,7 +110,7 @@ However, R4 or R5 vocabulary is more likely to approach E3 even where the wordin
 
 ---
 
-## 4. U Code — Use and Safety Risk
+## 4. Legacy U Code — Use and Safety Risk
 
 | Code | Label | Primary risk | Publication decision |
 |---|---|---|---|
@@ -137,7 +132,7 @@ However, R4 or R5 vocabulary is more likely to approach E3 even where the wordin
 
 ---
 
-## 5. P Code — Publication Layer
+## 5. Legacy P Code — Publication Layer
 
 | Code | Label | Meaning |
 |---|---|---|
@@ -153,7 +148,7 @@ For example, the public core of a cognitive-axis formation model may be P1, whil
 
 ---
 
-## 6. V Code — Verification Stage
+## 6. Legacy V Code — Verification Stage
 
 | Code | Label | Meaning |
 |---|---|---|
@@ -170,7 +165,7 @@ It indicates which form of examination may be pursued next.
 
 ---
 
-## 7. R Code — Rendering Distance from Core Vocabulary
+## 7. Legacy R Code — Rendering Distance from Core Vocabulary
 
 The R code is a supplementary axis indicating the language game into which a proposition has been projected from the public core of Scientific Ontology.
 
@@ -481,5 +476,7 @@ It exists to make explicit how far a strong question may close as a public claim
 - [`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)
 - [`Optional_Axiom_Modules_as_Cognitive_Bridge.en.md`](../03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
+- [`Repository_Assessment_Protocol.ja.md`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md)
+- [`Repository_Assessment_Protocol.en.md`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)
 - [`TERM_COLLISION_REGISTRY.en.md`](../90_Repository_Governance/Terminology/TERM_COLLISION_REGISTRY.en.md)

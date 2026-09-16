@@ -105,6 +105,18 @@ Japanese authoritative text
 
 用語変更、定義変更、旧表記との関係が重要な場合、その履歴を保存する。
 
+### 3.9 通約入口は裁定を強制しない
+
+異なる体系・規範・分野を通約する場合、最初の目的を「どちらが正しいかの決着」に固定しない。
+
+まず、各体系が何を仕事としているか、どの妥当性条件を持つか、何を共有事実・解釈・導出・bridge claimとして比較できるかを確認する。
+
+この入口はRepository Assessment Protocolの`COMMENSURATION-INTAKE`へ接続する。
+
+通約可能な接触面が成立したことは、同意、同一性、統合、真理判定を意味しない。逆に、接触面を共有できないことだけを理由に、どちらか一方を反証済み・非合理・無効と扱わない。
+
+分野によっては、相互に異なるvalidity regimeを保持したまま接触可能性を維持すること自体が、通約の主要目的になり得る。
+
 ---
 
 ## 4. 通約で変更できるもの
@@ -437,9 +449,16 @@ Glossaryはその人間可読な投影として扱う。
 
 通約は、主張強度を変更しない。
 
-主張強度、証拠強度、未確定性、公開層、検証段階については、次を参照する。
+現行のClaim Strength `S`、Connection Exposure `E`、A–H finding type、bridge auditについては、次を参照する。
 
-- [`00_Overview/Claim_Strength_and_Publication_Layer_Table.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md)
+- [`Assessment/Repository_Assessment_Protocol.ja.md`](./Assessment/Repository_Assessment_Protocol.ja.md)
+- [`Assessment/Repository_Assessment_Protocol.en.md`](./Assessment/Repository_Assessment_Protocol.en.md)
+
+公開層、減速、抽象化、非公開判断は本文書が責務を持つ。
+
+旧`S/E/U/P/V/R`表記を読む必要がある場合は、migration referenceとして次を参照する。
+
+- [`00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md)
 
 物理近接語彙については、次を参照する。
 
@@ -719,6 +738,18 @@ The rendering must preserve where application failures, review findings, or comm
 ### 3.8 History and Revision Rationale
 
 Where terminological or conceptual history matters, the rendering must preserve former terms, changes, and reasons for revision.
+
+### 3.9 Commensuration Intake Does Not Force Adjudication
+
+When different systems, normative orders, or disciplines are commensurated, the first objective is not automatically to decide which one is correct.
+
+First identify what each system is doing, which validity conditions it uses, and what can be compared as shared facts, interpretations, derivations, or bridge claims.
+
+This entry point connects to `COMMENSURATION-INTAKE` in the Repository Assessment Protocol.
+
+Establishing a commensurable contact surface does not imply agreement, identity, integration, or a truth verdict. Conversely, failure to establish such a surface does not by itself falsify or invalidate either side.
+
+In some domains, maintaining contact while preserving different validity regimes may itself be a primary purpose of commensuration.
 
 ---
 
@@ -1037,7 +1068,14 @@ Fluent English must not convert the generative openness of a high-depth identifi
 
 Commensuration does not alter claim strength.
 
-For claim strength, evidence strength, uncertainty, publication layer, and verification stage, see:
+For current Claim Strength `S`, Connection Exposure `E`, A-H finding types, and bridge audit, see:
+
+- [`Assessment/Repository_Assessment_Protocol.ja.md`](./Assessment/Repository_Assessment_Protocol.ja.md)
+- [`Assessment/Repository_Assessment_Protocol.en.md`](./Assessment/Repository_Assessment_Protocol.en.md)
+
+This policy owns publication-layer, deceleration, abstraction, and non-public handling decisions.
+
+For legacy `S/E/U/P/V/R` notation, use the following only as a migration reference:
 
 - [`00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md`](../00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md)
 

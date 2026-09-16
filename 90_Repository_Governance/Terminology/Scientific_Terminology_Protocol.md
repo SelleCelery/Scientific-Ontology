@@ -27,7 +27,7 @@
 
 エントロピー、因果、質量、スピン、CPT、ファインマンダイアグラム、時空、エンタングルメントなどは、既存科学内で強い定義・計算体系・検証文脈を持つ。
 
-存在境界論は、それを勝手に上書きしない。
+存在境界論は、それを勝手に上書きしない。SO側で非標準な「エンタングルメント」表現を用いる場合は、量子論上のエンタングルメントと同一視しない。
 
 ### 読み替えは明示する
 
@@ -84,40 +84,51 @@ Scientific Ontology は、既存科学を否定したり置き換えたりする
 
 それらは、外的時空の因果順序だけでは記述しきれない履歴対応、意味変化、責任、価値、未解決残差の再浮上を扱うための存在論的タームである。
 
-## 5. 公開リスクの二分類
+## 5. 外部参照と別位相解釈を分ける
 
-主張強度が高い命題には、少なくとも二種類の公開リスクがある。
+科学語彙接続では、標準定義の誤記と、標準定義を保持したうえでの別位相解釈を同じ問題として扱わない。
 
-### A. 認識・批判リスク
+### 5.1 EXT-REFERENCE-MISSTATEMENT / 外部参照誤記
 
-これは、命題が強いために、誤読、批判、専門領域からの圧迫、疑似科学扱い、過剰な単純化を受けやすいリスクである。
+外部体系`X`の事実・定義`q_X`をSOが表現したものを`Rep_SO(q_X)`とすると、
 
-この場合、必要なのは非公開化ではなく、減速である。
+```text
+Rep_SO(q_X) ≢ q_X
+```
 
-用いるべき処理：
+である場合、`EXT-REFERENCE-MISSTATEMENT`である。
 
-- 主張範囲を明記する。
-- 証明ではなく提案と書く。
-- 標準理論を置き換えないと明記する。
-- 比喩、構造アナロジー、存在論的再解釈、物理接続候補を分ける。
-- 未解決点を明示する。
+標準初手は`CORRECT-REFERENCE`とする。まずSO側の借用表現を局所修正し、その後にSO hypothesis、対応、bridge claimを再評価する。
 
-このリスクは、それ自体では公開を妨げる理由ではない。適切な鞘をつけて公開することで、先取権、議論可能性、批判可能性を確保できる。
+これは、外部体系がSO全体を自動的に反証したという意味ではない。同時に、SO独自解釈を理由に借用元の定義誤記を温存してよいという意味でもない。
 
-### B. 応用・安全リスク
+### 5.2 SAME-FACT-ALT-INTERPRETATION / 同一事実・異位相解釈
 
-これは、命題や手順が公開された場合に、本来公開すべきでない運用上の介入能力、境界情報、または実装詳細を読み手に与えてしまうリスクである。
+共有している事実集合を`F`とし、外部体系とSOがそれぞれ`I_{phi_X}(F)`、`I_{phi_SO}(F)`として読む場合、
 
-この場合、単なる減速では足りない。非公開化、または非操作的な概念説明への抽象化が必要になる。
+```text
+I_{phi_SO}(F) != I_{phi_X}(F)
+```
 
-用いるべき処理：
+であっても、事実集合と標準定義が保持されているなら、直ちに参照誤記ではない。
 
-- 公開版では、具体手順・条件・運用粒度を出さない。
-- 公開版では、再現可能な実装情報を出さない。
-- 公開する場合は、概念説明または非操作的な分類に留める。
-- 非公開境界に属する情報は、公開資料とは別管理にする。
+この場合の標準初手は`COMMENSURATION-INTAKE`であり、fact / interpretation / derivation / bridge claimを区別できる接触面を共有できるか確認する。
 
-このリスクは、公開可否そのものを左右する。
+非標準であることだけを理由に撤回しない。逆に「別位相だから」という理由で既知事実との真正な衝突を無効化しない。
+
+### 5.3 AssessmentとPublicationを分ける
+
+外部未確立、外部非導出、外部既知事実衝突、SO内部非導出、SO内部defeater、外部参照誤記、別位相解釈、相互bridge係争は、Repository Assessment Protocolのfinding typeとして扱う。
+
+公開上の誤読、操作、安全、保全性、private boundaryはPublication / Safety governanceで扱う。
+
+したがって、旧`E / Epistemic Risk`を科学語彙の真偽判定や公開可否の単一尺度として使用しない。
+
+参照先：
+
+- [`../Assessment/Repository_Assessment_Protocol.ja.md`](../Assessment/Repository_Assessment_Protocol.ja.md)
+- [`../Assessment/Repository_Assessment_Protocol.en.md`](../Assessment/Repository_Assessment_Protocol.en.md)
+- [`../Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
 
 ## 6. 用語衝突管理表との関係
 
@@ -137,7 +148,8 @@ Scientific Ontology は、既存科学を否定したり置き換えたりする
 4. 既存語が誤読を招く場合は新語を作る。
 5. 限定条件を提示する。
 6. 物理・情報・認識・倫理・創作の主張領域を混同しない。
-7. 認識・批判リスクと、応用・安全リスクを区別する。
+7. 外部参照誤記と、同一事実への別位相解釈を区別する。
+8. Assessment findingとPublication / Safety handlingを区別する。
 
 ---
 
@@ -165,7 +177,7 @@ Definitions are public boundary tools. They are not cages for thought.
 
 Terms such as entropy, causality, mass, spin, CPT, Feynman diagram, spacetime, and entanglement have strong definitions, mathematical systems, and verification contexts within established sciences.
 
-Scientific Ontology does not overwrite those definitions.
+Scientific Ontology does not overwrite those definitions. Where SO uses non-standard "entanglement" language, it must not be identified with quantum entanglement.
 
 ### 2.2 Mark Reinterpretation Explicitly
 
@@ -233,40 +245,51 @@ Therefore, terms such as “beyond spacetime,” “negentropy,” “history-fi
 
 They are ontological terms for history correspondence, meaning change, responsibility, value, and unresolved residuals that cannot be fully described by external spacetime causal order alone.
 
-## 5. Two Publication Risks
+## 5. Separate External Reference Integrity from Alternate Interpretation
 
-High-claim-strength propositions have at least two kinds of publication risk.
+Scientific terminology contact must not collapse a misstatement of a standard definition into a different interpretation that preserves the standard definition.
 
-### A. Epistemic and Critical Risk
+### 5.1 EXT-REFERENCE-MISSTATEMENT
 
-This is the risk that a strong proposition may be misread, criticized, flattened, treated as pseudoscience, or pressured by established domains.
+Let `q_X` be a fact or definition owned by external system `X`, and `Rep_SO(q_X)` be Scientific Ontology's representation of it.
 
-In this case, what is needed is not secrecy but deceleration.
+```text
+Rep_SO(q_X) ≢ q_X
+```
 
-Use:
+When this holds, record `EXT-REFERENCE-MISSTATEMENT`.
 
-- clear claim scope;
-- explicit statement that the document is proposal, not proof;
-- explicit statement that standard theory is not being replaced;
-- separation among metaphor, structural analogy, ontological reinterpretation, and physical correspondence candidate;
-- visible unresolved points.
+The default first action is `CORRECT-REFERENCE`: locally correct SO's borrowed representation first, then reassess the SO hypothesis, correspondence, or bridge claim.
 
-This risk does not by itself prohibit publication. With the right sheath, publication can secure priority, discussion, and criticism.
+This does not mean that the external system has automatically falsified Scientific Ontology as a whole. It also does not permit SO to preserve a borrowed-definition error by appealing to its own interpretation.
 
-### B. Application and Safety Risk
+### 5.2 SAME-FACT-ALT-INTERPRETATION
 
-This is the risk that a proposition or procedure may expose operational intervention capacity, boundary information, or implementation detail that should not be public.
+Let `F` be a shared fact set, read by the external system and SO as `I_{phi_X}(F)` and `I_{phi_SO}(F)`.
 
-In this case, deceleration is not enough. The material may need to remain private or be abstracted into non-operational description.
+```text
+I_{phi_SO}(F) != I_{phi_X}(F)
+```
 
-Use:
+If the fact set and standard definitions are preserved, this difference is not automatically a reference misstatement.
 
-- no concrete procedures, conditions, or operational grain size in public versions;
-- no reproducible implementation information;
-- conceptual explanation or non-operational classification only;
-- separate management for non-public boundary material.
+The default first action is `COMMENSURATION-INTAKE`: establish whether fact, interpretation, derivation, and bridge claim can be distinguished on a shared contact surface.
 
-This risk may determine whether publication is allowed at all.
+Do not withdraw a hypothesis merely because its interpretation is non-standard. Conversely, do not use "alternate interpretation" to erase a genuine conflict with established facts.
+
+### 5.3 Separate Assessment from Publication
+
+External non-establishment, external non-derivability, external fact conflict, SO non-derivability, SO defeaters, external reference misstatement, alternate interpretation, and reciprocal bridge dispute are finding types owned by the Repository Assessment Protocol.
+
+Risks of public misreading, operational misuse, safety, integrity, and private-boundary exposure belong to Publication / Safety governance.
+
+The legacy `E / Epistemic Risk` must therefore not be used as a single truth or publication scale for scientific terminology.
+
+See:
+
+- [`../Assessment/Repository_Assessment_Protocol.ja.md`](../Assessment/Repository_Assessment_Protocol.ja.md)
+- [`../Assessment/Repository_Assessment_Protocol.en.md`](../Assessment/Repository_Assessment_Protocol.en.md)
+- [`../Publication_and_Commensuration_Policy.md`](../Publication_and_Commensuration_Policy.md)
 
 ## 6. Relation to Term Collision Registry
 

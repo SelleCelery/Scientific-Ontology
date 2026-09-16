@@ -3,15 +3,15 @@
     "schema_version": "0.3",
     "source": {
       "manifest_path": "tools/docs_manifest.yml",
-      "manifest_sha256": "ebf9c7354c2af6b4536875f0db5941469bf3ef3fe2e9caa33ed7a792e8e40a08",
+      "manifest_sha256": "ed2213a883d63ae1a32c5b6e5ef8064fbfc6e04389f4b812a8c780bb7bc6481c",
       "graph_path": "tools/docs_graph.json",
-      "graph_sha256": "8194363500778fc2638f0bf3fd8010543dd7f53d83ef535ef48ca961b6f79e6a",
+      "graph_sha256": "f855bdaab91dfc2ba71ab596f61ec2778a12fd973201eaea4677094d2909cf00",
       "revision_proposals_path": "tools/docs_revision_proposals.yml",
       "revision_proposals_sha256": "e3854091b43f8f84de454861a30c69a6a10185d87652f6a905c5f3d166e3d564",
       "preview_contract": "manifest-backed Developer read model; browser writes no canonical YAML"
     },
     "summary": {
-      "provisional_documents": 126,
+      "provisional_documents": 127,
       "registered_documents": 30,
       "registered_revision_proposals": 28
     },
@@ -26,13 +26,13 @@
           "title_ja": "存在境界論｜主張強度・公開レイヤー対応表",
           "title_en": "Claim Strength and Publication-Layer Table for Scientific Ontology",
           "layer": "00_Overview",
-          "status": "Public control table",
-          "scope": "claim strength / epistemic risk / use and safety risk / publication layer / verification / rendering distance",
+          "status": "Table",
+          "scope": "legacy S/E/U/P/V/R migration reference; current responsibility routes to Assessment / Publication / Terminology governance",
           "public_profile": "P0-P1",
           "state": "public",
           "registration_state": "provisional",
-          "role_ja": "主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表",
-          "role_en": "Public control table separating claim strength, empirical support, use risk, publication layer, and verification stage",
+          "role_ja": "旧S/E/U/P/V/R統合分類を保持し、現行Assessment / Publication / Terminology責務へ案内するmigration reference",
+          "role_en": "Migration reference preserving the legacy S/E/U/P/V/R classifier while routing current responsibility to Assessment / Publication / Terminology governance",
           "language_relation": {
             "language": "en",
             "role": "commensuration",
@@ -64,14 +64,14 @@
             "reader_questions": {
               "ja": [
                 "主張強度とは何か",
-                "認識・批判リスクとは何か",
+                "旧E / Epistemic Riskと現行E / Connection Exposureはどう違うか",
                 "応用・安全リスクとは何か",
                 "公開レイヤーとは何か",
                 "主張強度と公開レイヤーはどう関係するか"
               ],
               "en": [
                 "What is claim strength?",
-                "What is epistemic risk?",
+                "How does legacy E / Epistemic Risk differ from current E / Connection Exposure?",
                 "What is use and safety risk?",
                 "What is a publication layer?",
                 "How does claim strength relate to publication layer?"
@@ -97,13 +97,13 @@
           "title_ja": "存在境界論｜主張強度・公開レイヤー対応表",
           "title_en": "Claim Strength and Publication-Layer Table for Scientific Ontology",
           "layer": "00_Overview",
-          "status": "Public control table",
-          "scope": "claim strength / epistemic risk / application risk / publication layer / verification / rendering distance",
+          "status": "Table",
+          "scope": "legacy S/E/U/P/V/R migration reference; current responsibility routes to Assessment / Publication / Terminology governance",
           "public_profile": "P0-P1",
           "state": "public",
           "registration_state": "provisional",
-          "role_ja": "主張強度、経験的支持、利用リスク、公開レイヤー、検証段階を区別する公開制御表",
-          "role_en": "Public control table separating claim strength, empirical support, use risk, publication layer, and verification stage",
+          "role_ja": "旧S/E/U/P/V/R統合分類を保持し、現行Assessment / Publication / Terminology責務へ案内するmigration reference",
+          "role_en": "Migration reference preserving the legacy S/E/U/P/V/R classifier while routing current responsibility to Assessment / Publication / Terminology governance",
           "language_relation": {
             "language": "ja",
             "role": "authoritative",
@@ -139,14 +139,14 @@
             "reader_questions": {
               "ja": [
                 "主張強度とは何か",
-                "認識・批判リスクとは何か",
+                "旧E / Epistemic Riskと現行E / Connection Exposureはどう違うか",
                 "応用・安全リスクとは何か",
                 "公開レイヤーとは何か",
                 "主張強度と公開レイヤーはどう関係するか"
               ],
               "en": [
                 "What is claim strength?",
-                "What is epistemic risk?",
+                "How does legacy E / Epistemic Risk differ from current E / Connection Exposure?",
                 "What is use and safety risk?",
                 "What is a publication layer?",
                 "How does claim strength relate to publication layer?"
@@ -7184,6 +7184,77 @@
         }
       },
       {
+        "path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md",
+        "doc_id": "90_repository_governance_assessment_repository_assessment_protocol_en",
+        "baseline": {
+          "path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md",
+          "doc_id": "90_repository_governance_assessment_repository_assessment_protocol_en",
+          "document_type": "assertion_document",
+          "title_ja": "リポジトリ監査原則",
+          "title_en": "Repository Assessment Protocol",
+          "layer": "90_Repository_Governance",
+          "status": "Policy Draft / Candidate",
+          "scope": "proposition attribution / reciprocal external connection / finding types / validity-regime preservation / engagement-capacity boundary / judgment transparency",
+          "public_profile": "",
+          "state": "public",
+          "registration_state": "provisional",
+          "role_ja": "命題帰属、相互外部接続、finding、妥当性体系、関与能力境界を分離するCandidate Assessment Contract",
+          "role_en": "Candidate Assessment Contract separating proposition attribution, reciprocal external contact, findings, validity regimes, and engagement-capacity boundaries",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md",
+            "coverage": "full",
+            "authoritative_path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md"
+          },
+          "document_role": "methodological_governance",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "primary_question": {
+              "ja": null,
+              "en": null
+            },
+            "topics": [
+              "boundary",
+              "commensuration",
+              "judgment",
+              "responsibility"
+            ],
+            "aliases": {
+              "ja": [
+                "Assessment Contract",
+                "リポジトリ監査原則"
+              ],
+              "en": [
+                "Assessment Contract",
+                "Repository Assessment Protocol"
+              ]
+            },
+            "reader_questions": {
+              "ja": [
+                "外部未確立と反証はどう区別するか",
+                "非導出と否定はどう区別するか",
+                "相互bridge係争をどう監査するか",
+                "関与不能を否定や敗北と混同しないためにはどうするか"
+              ],
+              "en": [
+                "How is external non-establishment distinguished from falsification?",
+                "How is non-derivability distinguished from negation?",
+                "How are reciprocal bridge disputes audited?",
+                "How is inability to engage kept separate from denial or defeat?"
+              ]
+            },
+            "searchable": true,
+            "visibility": "paired",
+            "entry_level": ""
+          }
+        }
+      },
+      {
         "path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md",
         "doc_id": "90_repository_governance_assessment_repository_assessment_protocol_ja",
         "baseline": {
@@ -7194,17 +7265,17 @@
           "title_en": "Repository Assessment Protocol",
           "layer": "90_Repository_Governance",
           "status": "Policy Draft / Candidate",
-          "scope": "",
+          "scope": "proposition attribution / reciprocal external connection / finding types / validity-regime preservation / engagement-capacity boundary / judgment transparency",
           "public_profile": "",
           "state": "public",
           "registration_state": "provisional",
-          "role_ja": "リポジトリ監査原則",
-          "role_en": "Repository Assessment Protocol",
+          "role_ja": "命題帰属、相互外部接続、finding、妥当性体系、関与能力境界を分離するCandidate Assessment Contract",
+          "role_en": "Candidate Assessment Contract separating proposition attribution, reciprocal external contact, findings, validity regimes, and engagement-capacity boundaries",
           "language_relation": {
             "language": "ja",
             "role": "authoritative",
-            "counterpart_path": null,
-            "coverage": "not_applicable",
+            "counterpart_path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md",
+            "coverage": "full",
             "authoritative_path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md"
           },
           "document_role": "methodological_governance",
@@ -7222,14 +7293,35 @@
               "ja": null,
               "en": null
             },
-            "topics": [],
+            "topics": [
+              "boundary",
+              "commensuration",
+              "judgment",
+              "responsibility"
+            ],
             "aliases": {
-              "ja": [],
-              "en": []
+              "ja": [
+                "Assessment Contract",
+                "リポジトリ監査原則"
+              ],
+              "en": [
+                "Assessment Contract",
+                "Repository Assessment Protocol"
+              ]
             },
             "reader_questions": {
-              "ja": [],
-              "en": []
+              "ja": [
+                "外部未確立と反証はどう区別するか",
+                "非導出と否定はどう区別するか",
+                "相互bridge係争をどう監査するか",
+                "関与不能を否定や敗北と混同しないためにはどうするか"
+              ],
+              "en": [
+                "How is external non-establishment distinguished from falsification?",
+                "How is non-derivability distinguished from negation?",
+                "How are reciprocal bridge disputes audited?",
+                "How is inability to engage kept separate from denial or defeat?"
+              ]
             },
             "searchable": true,
             "visibility": "canonical",
