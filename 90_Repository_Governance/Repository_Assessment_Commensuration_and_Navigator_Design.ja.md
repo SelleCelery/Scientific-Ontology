@@ -215,6 +215,30 @@ evaluation_record:
 
 したがって目標は「評価を客観的な一数値にすること」ではなく、評価を監査可能にすることである。
 
+### 3.6 Revision Trace はEvaluation Historyの後続面になり得る
+
+評価が実際の本文修正、scope制限、保留、撤回、または置換へ到達した場合、その変更理由をEvaluation Historyから切り離してしまうと、後から「なぜ現在の本文になったのか」を再構成しにくくなる。
+
+そのためv5.1.0では制度化せず、後続設計の観察候補として、評価記録からrevision traceへ少なくとも次を返せる構造を例示する。
+
+```yaml
+revision_trace:
+  trigger: finding_or_reopening_reason
+  previous_state: reference_to_prior_text_or_commit
+  reason: why_the_previous_state_could_not_be_retained
+  action: correction_or_reopen_action
+  disposition: current_operational_state
+  preserved: what_was_not_withdrawn
+  residuals: unresolved_differences
+  evidence: references_or_artifacts
+```
+
+ただし、これは現時点のschema定義ではない。`corrected`、`scope-restricted`、`suspended`、`withdrawn`、`superseded`等も、まだ正式なcontrolled vocabularyとして採用しない。実際の修正事例を先に観察し、互いに排他的な型なのか、複数軸へ分けるべきなのかを後から判断する。
+
+また、revision traceは旧本文を現行本文へ残し続ける要求ではない。旧bytesはGit等のversion historyへ置き、本文側では現在有効な記述を読みやすく保つことができる。必要なのは、evaluation record、commit、対象文書、残差のあいだに返路があることである。
+
+v5.1.0で自己監査の足場を得るための、物理・宇宙論Research Notesを使った非規範的な例は、[`05_Research_Notes/Physical_Cosmological_Notes/README.md`](../05_Research_Notes/Physical_Cosmological_Notes/README.md) に置く。これは制度化ではなく、後続設計が何を失ってはいけないかを見るための観察面である。
+
 ---
 
 ## 4. Verification Code を縮約しない理由

@@ -29,7 +29,7 @@
 | 自動運転された正しさを止めるために | [論考](自動運転された正しさを止めるために.ja.md) | [Essay](Stopping_Correctness_on_Autopilot.en.md) |
 | 付録A――相互照合と残差集積 | [監査記録](付録A_監査記録_自動運転された正しさを止めるために.ja.md) | [Audit record](Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md) |
 
-[正しさ・個性・無・切断の定義owner](../../01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md) / [English commensuration](../../01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md)へ戻れる。正本全文をこのフォルダへ複製しない。案内の対訳は[README.en.md](README.en.md)。
+[正しさ・個性・無・切断の現在の定義owner](../../01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md) / [English commensuration](../../01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md)へ戻れる。正本全文をこのフォルダへ複製しない。案内の対訳は[README.en.md](README.en.md)。
 
 論考から読んで付録へ進んでも、付録の残差から元型へ戻ってもよい。Q1–Q14は本文に残し、単一の合否や総合点へ圧縮しない。CorrectnessとAction Authorization、Action ClosureとClaim Closure、Actuate、Proxy / Successor Return、Irrecoverable Residualは、今回の接触で問われた区別・候補として保持する。
 
@@ -39,4 +39,4 @@ TeXはGitHubと現行Readerが共有して扱えるインライン数式と独�
 
 表記だけでは解決しない点を二つ残す。A.1.1の本文は「少なくとも含む」と述べながら、式は`Ω_t = {E_t, A_t, Π_t, H_t, Q_t, B_t}`という等号で記述している。今回、等号を勝手に包含へ変更せず、原記述として保持した。A.8のAction Authorization式は候補であり、未判定のまま退避するA.4との関係を含め、どの命題のCorrectnessを条件にするかは確定していない。
 
-この二点も含め、残差は[研究ノート](../../05_Research_Notes/README.md)、[応用](../../04_Applications/README.md)、または定義ownerへの再照合へ返す。今回は新しいowner登録や正本本文への追記をしない。関連する別の読み物は[問いを閉じず、境界を踏まないために](../Literary_Essays/Questions_Boundaries_and_Peace.ja.md)から読める。
+この二点も含め、残差は[研究ノート](../../05_Research_Notes/README.md)、[応用](../../04_Applications/README.md)、または定義ownerへの再照合へ返す。この接触batch自体では新しいowner登録や正本本文への追記を行わなかった。後続の正本改訂はcurrent owner側の履歴として扱い、本監査の残差が自動的に採用されたとはみなさない。関連する別の読み物は[問いを閉じず、境界を踏まないために](../Literary_Essays/Questions_Boundaries_and_Peace.ja.md)から読める。

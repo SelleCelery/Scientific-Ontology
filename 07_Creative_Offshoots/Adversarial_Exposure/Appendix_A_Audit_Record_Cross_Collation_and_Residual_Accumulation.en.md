@@ -5,11 +5,11 @@
 > Role: cross-application structural audit / residual accumulation
 > Language: English commensurated rendering; Japanese text is authoritative
 > Japanese authoritative source: [Japanese audit record](付録A_監査記録_自動運転された正しさを止めるために.ja.md)
-> Derivation: [Correctness, Individuality, Absence, and Cut -- the authoritative model](../../01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md)
+> Current definition owner: [Correctness, Individuality, Absence, and Cut -- the authoritative model](../../01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md)
 > Related application: [Stopping Correctness on Autopilot](Stopping_Correctness_on_Autopilot.en.md)
 > Scope: correctness / action closure / authority / return / actuation / individuality / provenance / proxy return / irreversible residual
 > Authority: A record of this encounter and its residuals, not a replacement definition of the foundational model.
-> Reading rule: This appendix does not rewrite the definitions in the authoritative text. It records residuals exposed by bringing that text into contact with three application questions, distinguishing what can be handled within the existing text from what calls for a further layer of theory.
+> Reading rule: This appendix does not rewrite the definitions in the authoritative text. It records residuals exposed by bringing that text into contact with three application questions, distinguishing what can be handled within the existing text from what calls for a further layer of theory. Section A.1 is an operational projection sufficient for this audit, not a complete restatement of the current authoritative text. Where definitions differ, the current definition owner governs.
 
 ---
 
@@ -42,6 +42,8 @@ The three questions concern different phenomena. This appendix does not reduce m
 ## A.1 Minimum understanding of the authoritative text required for this audit
 
 This section summarizes enough of the authoritative text for a reader who has not read it beforehand to reproduce a minimum audit using this appendix. It is not a complete substitute for that text, but sets out the symbols and conditions used here.
+
+What is reproduced here is the minimum projection needed to reproduce this audit. It is not a complete restatement or frozen duplicate of the current authoritative text. Read Q1–Q14 as findings retained by this audit record, separately from whether the current authoritative text has explicitly adopted any candidate concept. Use the current definition owner linked above for present definitions.
 
 ### A.1.1 The current logical space
 
@@ -84,7 +86,7 @@ $$
 I(S_t)
 $$
 
-Internal tenability includes not concealing known contradictions while leaving them unprocessed; not introducing unsupported joins; retaining paths back to grounds and formative history to the extent needed; not presenting unprocessed differences as resolved; and not extending conclusions beyond their scope of application.
+Internal tenability includes not concealing known contradictions while leaving them unprocessed; not introducing unsupported joins; retaining paths back to support paths and formation conditions to the extent needed; not presenting unprocessed differences as resolved; and not extending conclusions beyond their scope of application.
 
 In brief, the condition is:
 
@@ -156,7 +158,7 @@ $$
 
 Ingress means that differences capable of changing the current validity judgment can reach the audit structure.
 
-Traceback means that one can return, to the extent needed, from the current judgment to its support, formative history, input grounds, and scope of application.
+Traceback means that one can return, to the extent needed, from the current judgment to support, transformations, formation history, input sources and observation conditions, and scope of application. What is recoverable here is the traceable support structure that established the judgment, not possession of an ultimate metaphysical ground.
 
 Reopen means that when new differences arrive or support becomes invalid, the current provisional closure can be released and the state returned to re-examination.
 
@@ -178,7 +180,7 @@ $$
 
 This does not mean possessing truth in the general philosophical sense. It denotes the following engineering state:
 
-> Under the current resources, search operators, and formative history, internal tenability is maintained; an actual attempt has been made to break the current judgment; no defeater has been found after search saturation; and when a new difference arrives, it remains possible to return to the grounds and reopen the judgment.
+> Under the current resources, search operators, and formative history, internal tenability is maintained; an actual attempt has been made to break the current judgment; no defeater has been found after search saturation; and when a new difference arrives, it remains possible to return to support paths and formation conditions and reopen the judgment.
 
 ### A.1.7 Individuality
 
@@ -1175,7 +1177,7 @@ The integrated essay on the three questions has strong structural continuity wit
 
 It can be read as an application-facing surface of the authoritative text, particularly in the non-identity of compressed models and their objects, Cut, Return, Traceback, Reopen, provenance, individuality-dependent frontier differences, and the risk of false closure.
 
-At the same time, applying the authoritative text to these three questions has exposed at least four substantial unprocessed regions on the model's own side.
+At the same time, this audit records at least four substantial unprocessed regions exposed by applying the authoritative text to these three questions.
 
 First,
 
@@ -1203,7 +1205,7 @@ may require Actuate in social implementation.
 
 Fourth, there is Proxy / Successor Return when the original subject no longer exists.
 
-These should not be immediately integrated into the authoritative text. Each has a broad impact on definitions and extends beyond its engineering definition of "correct" toward theories of judgment, intervention, institutions, and inheritance.
+This appendix does not integrate these into the authoritative text; it retains them as residuals. Whether the current authoritative text adopts any of them is determined only by explicit statements in the current definition owner. Each has a broad impact on definitions and extends beyond the engineering definition of "correct" toward theories of judgment, intervention, institutions, and inheritance.
 
 This appendix therefore retains them in the following state:
 

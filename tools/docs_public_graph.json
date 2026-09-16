@@ -7312,6 +7312,30 @@
     {
       "from": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
       "relation": "links_to",
+      "to": "doc:05_research_notes_physical_cosmological_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md",
+          "locator": "L872"
+        }
+      ]
+    },
+    {
+      "from": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md",
+          "locator": "L872"
+        }
+      ]
+    },
+    {
+      "from": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "relation": "links_to",
       "to": "doc:correctness_individuality_absence_and_cut",
       "provenance": [
         {
@@ -13642,7 +13666,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L109"
+          "locator": "L164"
         },
         {
           "source_type": "markdown",
@@ -13654,12 +13678,24 @@
     {
       "from": "doc:05_research_notes_physical_cosmological_notes_readme",
       "relation": "links_to",
+      "to": "doc:01_sat_truth_correctness_individuality_absence_and_cut_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L169"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_physical_cosmological_notes_readme",
+      "relation": "links_to",
       "to": "doc:02_raj_beauty_history_field_topology",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L110"
+          "locator": "L165"
         },
         {
           "source_type": "markdown",
@@ -13676,7 +13712,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L111"
+          "locator": "L166"
         },
         {
           "source_type": "markdown",
@@ -13688,12 +13724,36 @@
     {
       "from": "doc:05_research_notes_physical_cosmological_notes_readme",
       "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L168"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_physical_cosmological_notes_readme",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L58"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_physical_cosmological_notes_readme",
+      "relation": "links_to",
       "to": "doc:chaos_theory_and_logical_depth_axis",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L103"
+          "locator": "L158"
         },
         {
           "source_type": "markdown",
@@ -13710,7 +13770,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L103"
+          "locator": "L158"
         },
         {
           "source_type": "markdown",
@@ -13727,7 +13787,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L112"
+          "locator": "L167"
         },
         {
           "source_type": "markdown",
@@ -13739,17 +13799,39 @@
     {
       "from": "doc:05_research_notes_physical_cosmological_notes_readme",
       "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L59"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_physical_cosmological_notes_readme",
+      "relation": "links_to",
       "to": "doc:cosmological_topological_dynamics",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L101"
+          "locator": "L156"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L189"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
           "locator": "L46"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L90"
         }
       ]
     },
@@ -13761,7 +13843,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L101"
+          "locator": "L156"
         },
         {
           "source_type": "markdown",
@@ -13778,12 +13860,22 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L154"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L185"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
           "locator": "L44"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L99"
+          "locator": "L75"
         }
       ]
     },
@@ -13795,12 +13887,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L44"
+          "locator": "L154"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L99"
+          "locator": "L44"
         }
       ]
     },
@@ -13812,7 +13904,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L100"
+          "locator": "L106"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L155"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L193"
         },
         {
           "source_type": "markdown",
@@ -13829,7 +13931,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L100"
+          "locator": "L155"
         },
         {
           "source_type": "markdown",
@@ -13846,12 +13948,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L42"
+          "locator": "L152"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L97"
+          "locator": "L42"
         }
       ]
     },
@@ -13863,7 +13965,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L102"
+          "locator": "L106"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L157"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
+          "locator": "L193"
         },
         {
           "source_type": "markdown",
@@ -13880,7 +13992,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Physical_Cosmological_Notes/README.md",
-          "locator": "L102"
+          "locator": "L157"
         },
         {
           "source_type": "markdown",
@@ -16640,7 +16752,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
-          "locator": "L1344"
+          "locator": "L1346"
         },
         {
           "source_type": "markdown",
@@ -16657,7 +16769,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
-          "locator": "L1344"
+          "locator": "L1346"
         }
       ]
     },
@@ -16669,7 +16781,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Adversarial_Exposure/Appendix_A_Audit_Record_Cross_Collation_and_Residual_Accumulation.en.md",
-          "locator": "L1344"
+          "locator": "L1346"
         },
         {
           "source_type": "markdown",
@@ -16715,7 +16827,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
-          "locator": "L1562"
+          "locator": "L1564"
         }
       ]
     },
@@ -16727,7 +16839,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
-          "locator": "L1562"
+          "locator": "L1564"
         }
       ]
     },
@@ -16739,7 +16851,7 @@
         {
           "source_type": "markdown",
           "source_path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
-          "locator": "L1562"
+          "locator": "L1564"
         },
         {
           "source_type": "markdown",
@@ -22243,7 +22355,31 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
-          "locator": "L1182"
+          "locator": "L1200"
+        }
+      ]
+    },
+    {
+      "from": "doc:correctness_individuality_absence_and_cut",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_physical_cosmological_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+          "locator": "L913"
+        }
+      ]
+    },
+    {
+      "from": "doc:correctness_individuality_absence_and_cut",
+      "relation": "links_to",
+      "to": "doc:90_repository_governance_assessment_repository_assessment_protocol_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+          "locator": "L913"
         }
       ]
     },
@@ -27768,12 +27904,12 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L299"
+          "locator": "L301"
         },
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L346"
+          "locator": "L350"
         }
       ]
     },
@@ -27833,7 +27969,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L300"
+          "locator": "L302"
         }
       ]
     },
@@ -27845,7 +27981,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L301"
+          "locator": "L303"
         }
       ]
     },
@@ -27881,7 +28017,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L340"
+          "locator": "L344"
         }
       ]
     },
@@ -27953,7 +28089,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L342"
+          "locator": "L346"
         }
       ]
     },
@@ -28025,7 +28161,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L339"
+          "locator": "L343"
         }
       ]
     },
@@ -28037,7 +28173,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L302"
+          "locator": "L304"
         }
       ]
     },
@@ -28049,7 +28185,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L298"
+          "locator": "L300"
         }
       ]
     },

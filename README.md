@@ -295,6 +295,8 @@ flowchart TD
 
 This is why the repository contains stable overview documents, application notes, exploratory research notes, policies, indexes, and operational tools side by side. They do different jobs and carry different claim strengths, but they remain part of one return-bearing research system.
 
+Current v5.1.0 preparation also treats revision itself as a return-bearing event. When an external definition is corrected, a claimed derivation can no longer be reconstructed, or a genuine conflict forces a claim to reopen, the aim is not simply to erase the former wording. Version history can retain the prior bytes, while the research record preserves why the claim changed, what scope was affected, what remained, and which residuals stay open. The current physics-adjacent Research Notes are being used as a non-normative test surface for this self-audit practice rather than as a basis for a new mandatory revision schema.
+
 - [`Scientific Ontology Concept Network`](00_Overview/Scientific_Ontology_Concept_Network.en.md)
 - [`Scientific Ontology System Map`](00_Overview/Scientific_Ontology_System_Map.md)
 - [`Research Notes Index`](05_Research_Notes/Research_Notes_Index.md)
@@ -314,6 +316,8 @@ This is why the repository contains stable overview documents, application notes
 だから、どちらの運動も「ここ」とつながっていなければなりません。新しい領域は、自分の成立条件を保ったまま理論へ抵抗できる必要がある。新しい抽象は、文書、実践、実装、批判、残差と照合できる結果を持って戻る必要がある。
 
 公開体系に、概説、応用文書、探索的研究ノート、方針、索引、運用ツールが並んでいるのはそのためです。役割も主張強度も違いますが、いずれも返路を持つ一つの研究系を構成します。
+
+現在のv5.1.0準備では、修正そのものも返りとして扱い始めています。外部定義の誤記を訂正したとき、導出したと書いた経路を再構成できなかったとき、あるいは真正な衝突によってclaimを再開したとき、以前の記述を単に消して終わらせない。旧bytesはversion historyへ残しつつ、なぜ変えたか、どのscopeが影響したか、何を残したか、どの残差が未解決かへ戻れる形を試しています。現在は物理近接Research Notesを非規範的な試験面として使い、revision schemaそのものを先に制度化しない方針です。
 
 ---
 

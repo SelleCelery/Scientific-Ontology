@@ -855,6 +855,24 @@ Likewise, Return / Reopening should not be represented by a single flag saying t
 
 > **A Correctness Certificate is a re-collation surface for returning to why the present state is being treated as “correct,” and to which executed search facts and return conditions that judgment depends on.**
 
+### 26.1 Revision Trace — Preserve the Trace after Reopening
+
+When Reopen leads to an actual revision, keeping only a clean present text while erasing why the former state could no longer be maintained would remove part of Traceback.
+
+For revisions that matter to the research history, it is therefore useful to retain at least the following distinctions:
+
+- what triggered reopening;
+- which fact, definition, derivation, defeater, or boundary conflict was encountered;
+- which scope was corrected, restricted, suspended, withdrawn, or superseded;
+- what was nevertheless retained;
+- what residuals and reopening conditions remain.
+
+This does not require obsolete or mistaken wording to remain inside the current body text. Exact historical bytes may instead be retained by version history such as Git. What matters is that the research can **trace back to why the current wording has its present form**.
+
+Nor does this section immediately freeze revision traces into a mandatory schema or controlled enum. At the present stage, the project observes actual revision cases while connecting them to the finding / response / return structure of the [`Repository Assessment Protocol`](../90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md). Non-normative examples for physics- and cosmology-adjacent Research Notes are kept in the [`Physical and Cosmological Notes README`](../05_Research_Notes/Physical_Cosmological_Notes/README.md).
+
+> **Revision is not an operation that makes the former state never have existed. It is a history-bearing return in which a difference entered, the current state reopened, and the research records what changed and what remained.**
+
 # Part VII — Rendering into the Everyday Language of Embodied Human Life
 
 ## 27. Bringing “Correct” Down to Everyday Bodily Intuition
