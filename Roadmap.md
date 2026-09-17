@@ -96,14 +96,16 @@ v4.3.0では、その境界への移動を引き継ぎ、境界認識の批判�
 
 ## 2. 現在地
 
-v4.3.0までにStage Cの公開基礎が形成され、v5.0.0でStage Dが開いた。現在は**v5.1準備段階**として、外部へ持ち出した理論が、判断・監査・実装・創作・計算通約から何を返してきたかを、公開構造へ再接続している。
+v4.3.0までにStage Cの公開基礎が形成され、v5.0.0でStage Dが開いた。現在は**v5.1.0 release candidate収束段階**として、外部へ持ち出した理論が、判断・監査・実装・創作・計算通約から何を返してきたかを、公開構造へ再接続している。
 
 - **v4.2.0**：境界実在性、境界認識批判、物理対応方針、主張強度管理を整備した。
 - **v4.3.0**：境界認識生成、境界認識運用、研究動態、組織・倫理・平和仕様への接続を整備した。
 - **v5.0.0**：Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、返りを受けるStage Dを開始した。
-- **v5.1準備**：SO再帰的哲学研究、Volume Iのhistorical attestation、判断透明性、公開／非公開source境界、文書contractとNavigator投影、`正しさ・個性・無・切断`、および`07_Creative_Offshoots`の外部曝露面を公開体系へ再配置している。01–03の元型、05の内在的批判・拡張、04のスピンアウト、06のレンダリング、07の外部曝露という機能差も公開構造として明示する。さらに、外部接触や自己監査によって訂正・scope制限・保留が必要になった場合に、何に接触し、なぜ再開し、何を変え何を残したかへ戻れるrevision traceを、物理近接Research Notesの非規範的な例から観察し始める。これはv5.1.0でrevision schemaを完成させることを意味しない。
+- **v5.1.0 release candidate**：SO再帰的哲学研究、Volume Iのhistorical attestation、判断透明性、公開／非公開source境界、文書contractとNavigator投影、`正しさ・個性・無・切断`、および`07_Creative_Offshoots`の外部曝露面を公開体系へ再配置している。01–03の元型、05の内在的批判・拡張、04のスピンアウト、06のレンダリング、07の外部曝露という機能差も公開構造として明示する。さらに、外部接触や自己監査によって訂正・scope制限・保留が必要になった場合に、何に接触し、なぜ再開し、何を変え何を残したかへ戻れるrevision traceを、物理近接Research Notesの非規範的な例から観察し始める。これはv5.1.0でrevision schemaを完成させることを意味しない。
 - **v5.1.1候補**：v5.1公開後の短い観測周期で、Navigatorの公開入口、Public / Developer間の表示・言語挙動、ローカル起動の摩擦、境界語matcherなど、公開面を実際に使って初めて見えるUX・保守残差を小さく修正する。新しい大規模理論展開は既定目的にしない。
 - **v5.x**：研究・実装・外部照合を順次追加し、各応用から返る残差によって上流概念を再照合する。
+
+v5.1.0の主題は、「正しさ」正本の拡張それ自体よりも、**境界に接触した後で何を持ち帰り、何を訂正し、何を未解決として残すかを、どう監査可能にするか**にある。異なる体系へ越境する側だけでなく、外部の基準・判断・要求を受ける側にも、scope、validity regime、権限、返路の問題が生じる。この射程は学問間に限られないが、v5.1.0では一般社会理論として確定せず、境界運用上の問題として示唆するに留める。
 
 v5系の開始線は、次である。
 
@@ -111,7 +113,7 @@ v5系の開始線は、次である。
 
 これは主観と客観を曖昧に混同する宣言ではない。外部条件と内部履歴が接触し、差分、意味、判断、作用、返りが生じる境界を、運用上の中心記述面として扱うという宣言である。
 
-v5.1準備では、公開後に生じた研究履歴そのものも返りとして扱う。SO再帰的哲学研究では、De-Registryから判断透明性へ至る実験史を、当時の実行記録と現在の受理判断を分離したhistorical recordとして保持する。historical checksumを現在値へ上書きせず、現在受理したbytesは別のattestationとして固定する。
+v5.1.0 release candidateでは、公開後に生じた研究履歴そのものも返りとして扱う。SO再帰的哲学研究では、De-Registryから判断透明性へ至る実験史を、当時の実行記録と現在の受理判断を分離したhistorical recordとして保持する。historical checksumを現在値へ上書きせず、現在受理したbytesは別のattestationとして固定する。
 
 また、公開sourceの同一性、filename、SHA-256、provenance、研究上の役割を公開しても、exact historical bytesまで公開Repositoryへ保持する必要はない。公開に必要な根拠経路と、非公開に保持すべきsource実体を分離する。
 
@@ -454,7 +456,7 @@ Stage Eへ進む条件は、概念が実装可能になったことだけでは�
 | v4.2.0 | Stage C1 | 境界実在性、境界認識批判、物理対応方針、主張強度管理 |
 | v4.3.0 | Stage C2-C4 | 認識生成、認識運用、研究動態、組織・倫理・平和仕様 |
 | v5.0.0 | Stage D opening | Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、代謝型の外部照合を開始 |
-| v5.1 preparation | Stage D / reflexive audit and external exposure | SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contract・Navigator、`正しさ・個性・無・切断`、04–07の機能境界、Creative Offshootsの外部曝露面を整合し、物理近接Research Notesで非規範的なrevision trace例を試して自己監査実装の足場を得る |
+| v5.1.0 release candidate | Stage D / reflexive audit and external exposure | SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contract・Navigator、`正しさ・個性・無・切断`、04–07の機能境界、Creative Offshootsの外部曝露面を整合し、物理近接Research Notesで非規範的なrevision trace例を試して自己監査実装の足場を得る |
 | v5.1.1 candidate | Stage D / short-cycle maintenance | v5.1公開後の観測から、Navigator入口、Public / Developer parity、ローカル起動摩擦、境界語matcher等のUX・保守残差を小さく修正 |
 | v5.x | Stage D-E | 実装・汎用化・外部照合・反証条件・アプリケーション・会計・AI比較を順次追加 |
 | v6 candidate | Structural transition | v5系の基礎記述面、概念所有、中核不変項、説明本拠地そのものの再編が必要になった場合に検討 |
@@ -553,16 +555,18 @@ v4.3.0 continues that movement by connecting critique, formation, and operation 
 
 ## 2. Current Position
 
-v4.3.0 established the public basis of Stage C, and v5.0.0 opened Stage D. The project is now in **v5.1 preparation**, reconnecting what returned from judgment, audit, implementation, creative contact, and computational commensuration to the public structure.
+v4.3.0 established the public basis of Stage C, and v5.0.0 opened Stage D. The project is now in **v5.1.0 release-candidate convergence**, reconnecting what returned from judgment, audit, implementation, creative contact, and computational commensuration to the public structure.
 
 - **v4.2.0:** Boundary Realism, Boundary Epistemological Critique, Physics Correspondence Policy, and claim-strength governance.
 - **v4.3.0:** boundary-cognition formation and operation, research dynamics, and organizational, ethical, and peace specifications.
 - **v5.0.0:** opening of Stage D through the Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, and the DSSI research surface.
-- **v5.1 preparation:** alignment of SO Reflexive Philosophical Research, Volume I historical attestation, judgment transparency, the public/private source boundary, document contracts and Navigator projection, *Correctness, Individuality, Absence, and Cut*, and the external-exposure surface of `07_Creative_Offshoots`. The public structure also makes explicit the functional distinction among the 01–03 archetype, internal critique and extension in 05, spinout in 04, rendering in 06, and external exposure in 07. It also begins observing, through non-normative examples in physics-adjacent Research Notes, what a revision trace must preserve when external contact or self-audit requires correction, scope restriction, or suspension. This does not claim a completed revision schema in v5.1.0.
+- **v5.1.0 release candidate:** alignment of SO Reflexive Philosophical Research, Volume I historical attestation, judgment transparency, the public/private source boundary, document contracts and Navigator projection, *Correctness, Individuality, Absence, and Cut*, and the external-exposure surface of `07_Creative_Offshoots`. The public structure also makes explicit the functional distinction among the 01–03 archetype, internal critique and extension in 05, spinout in 04, rendering in 06, and external exposure in 07. It also begins observing, through non-normative examples in physics-adjacent Research Notes, what a revision trace must preserve when external contact or self-audit requires correction, scope restriction, or suspension. This does not claim a completed revision schema in v5.1.0.
 - **v5.1.1 candidate:** a short post-v5.1 observation cycle for small UX and maintenance residuals that become visible only in actual use, such as Navigator entry points, Public / Developer language and presentation parity, local-launch friction, and boundary-term matching. Large theoretical expansion is not its default purpose.
 - **v5.x:** continued addition of research, implementation, external collation, and returns into upstream concepts.
 
-In v5.1 preparation, research history itself is treated as a return. SO Reflexive Philosophical Research retains the path from De-Registry to judgment transparency as a historical method record that separates contemporaneous execution records from present-day acceptance. Historical checksums are not rewritten to current bytes; current accepted bytes are bound separately by attestation.
+The central concern of v5.1.0 is less the expansion of the correctness text itself than **how a system can remain auditable after boundary contact: what it brings back, what it corrects, and what it leaves unresolved**. Questions of scope, validity regime, authority, and return arise not only for a system crossing into another domain, but also for a system receiving external criteria, judgments, or demands. The release leaves the broader social implication open rather than promoting it into a completed general theory.
+
+In the v5.1.0 release candidate, research history itself is treated as a return. SO Reflexive Philosophical Research retains the path from De-Registry to judgment transparency as a historical method record that separates contemporaneous execution records from present-day acceptance. Historical checksums are not rewritten to current bytes; current accepted bytes are bound separately by attestation.
 
 Likewise, public source identity, filename, SHA-256, provenance, and experimental role do not require exact historical source bytes to remain in the public repository. The public return path and the privately retained source body are kept distinct.
 
@@ -720,7 +724,7 @@ Stage E requires not only implementable concepts but functioning routes through 
 | v4.2.0 | Stage C1 | Boundary Realism, Boundary Epistemological Critique, Physics Correspondence Policy, and claim-strength governance |
 | v4.3.0 | Stage C2-C4 | Cognitive formation, cognitive operation, research dynamics, and organizational, ethical, and peace specifications |
 | v5.0.0 | Stage D opening | Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, DSSI research, and living-canonical return structures |
-| v5.1 preparation | Stage D / reflexive audit and external exposure | Aligns SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, *Correctness, Individuality, Absence, and Cut*, the 04–07 functional boundary, and the external-exposure role of Creative Offshoots; adds non-normative physics-note revision-trace examples as a foothold for later self-audit implementation |
+| v5.1.0 release candidate | Stage D / reflexive audit and external exposure | Aligns SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, *Correctness, Individuality, Absence, and Cut*, the 04–07 functional boundary, and the external-exposure role of Creative Offshoots; adds non-normative physics-note revision-trace examples as a foothold for later self-audit implementation |
 | v5.1.1 candidate | Stage D / short-cycle maintenance | Small UX and maintenance repairs observed after v5.1, including Navigator entry, Public / Developer parity, local-launch friction, and boundary-term matching |
 | v5.x | Stage D-E | Implementation, generalization, external collation, falsification conditions, applications, accounting, and AI comparison |
 | v6 candidate | Structural transition | Considered when the explanatory base, core invariants, or concept-ownership structure itself requires reorganization |

@@ -22,85 +22,81 @@ public_author:
   orcid_url: "https://orcid.org/0009-0001-5709-2669"
 
 release:
-  version: "5.0.0"
-  display_version: "v5.0.0"
+  version: "5.1.0"
+  display_version: "v5.1.0"
   series: "v5"
-  role: "opening_release"
-  status: "published"
-  publication_date: "2026-08-13"
-  title: "Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0"
-  completion_claim: "series_opening_not_series_completion"
+  role: "self_audit_and_boundary_operation_convergence"
+  status: "release_candidate"
+  publication_date: null
+  title: "Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.0"
+  completion_claim: "self_audit_foothold_not_method_completion"
 
   theme:
-    ja: "事象は境界で起きている。主観でも客観でもなく、それらが混ざり合うところで。"
-    ja_authority: "human"
-    en: "Events happen at boundaries. Neither simply subjective nor simply objective, but where different modes of description come into contact."
-    en_status: "fixed_public_interface"
+    ja: "境界に触れたあと、何を持ち帰り、何を直し、何を未解決として残すか。"
+    ja_authority: "human_direction_ai_draft"
+    en: "After contact at a boundary, what do we bring back, revise, and leave unresolved?"
+    en_status: "commensurated_release_theme_draft"
 
   purpose:
     ja: |-
-      v4系までに積み上げた境界・履歴・通信・返路の理論を体系内部から遊離させ、
-      言語、文学、会計、制度、AI、インターフェイスへ実装・汎用化し、
-      外部との接触から返る残差によって理論自身を再照合するv5系を開始する。
-      v5.0はv5系の完成版ではなく、以後のv5.xで研究・実装・外部照合の成果を追加するための開幕版である。
-    authority: "human"
+      v5.0.0は、存在境界論を言語、文学、制度、AI、インターフェイス等へ持ち出し、外部との接触から返る残差を受けるv5系を開いた。
+      v5.1.0では、その接触を理論自身へ返す方法を主題化する。AIを対象とした構造健全性・個性形成研究から再接続された有限探索、切断、返路、異なる探索frontierの問題を「正しさ」の工学的定義へ置き、SO再帰的哲学研究、07の異質対象への曝露、物理・宇宙論Research Notes、Assessment / commensuration、Navigatorと文書contractを通じて、何に接触し、何を根拠に判断し、どこでscopeを分け、何を訂正し、何を未解決として残すかを追跡する足場を整える。
+      これは自己監査方法、reciprocal assessment、revision schemaの完成を宣言するものではない。越境・被越境に伴う基準・権限・返路の問題は学問間だけに限られないという射程を示唆するが、v5.1.0では一般社会理論として確定しない。
+    authority: "human_direction_ai_draft"
 
   highlights:
-    # Human-approved factual release highlights only.
-    # RELEASE_NOTES.md may expand them, but must not invent new claims.
-    - id: "v5_opening"
-      en: "Open the v5 series as a living research series centered on implementation, generalization, external collation, and revision through return."
-      ja: "v5系を、実装・汎用化・外部照合・返りによる再更新を行う生きた研究系列として開始する。"
+    # Human-approved direction; wording remains subject to final release review.
+    - id: "correctness_model"
+      en: "Publish Correctness, Individuality, Absence, and Cut as the public definition owner for SO’s engineering treatment of finite inquiry, defeaters, cuts, individuality, return, and reopening."
+      ja: "有限探索、defeater、切断、個性、返路、再開を扱うSOの工学的な「正しさ」の公開定義ownerとして『正しさ・個性・無・切断』を導入する。"
       status: "included"
 
-    - id: "operational_outline"
-      en: "Publish the Scientific Ontology Operational Outline as a cross-series operational orientation articulated during preparation for v5."
-      ja: "v5系開始にあたって自覚された存在境界論の全体運用方針としてScientific Ontology Operational Outlineを公開する。"
+    - id: "reflexive_research"
+      en: "Add SO Reflexive Philosophical Research and Volume I as a public self-audit interface that preserves experimental history, judgment transparency, provenance, and historical attestation without rewriting prior records to current conclusions."
+      ja: "SO再帰的哲学研究とVolume Iを、実験史、判断透明性、provenance、historical attestationを保持し、過去記録を現在の結論へ書き換えない公開自己監査インターフェースとして導入する。"
       status: "included"
 
-    - id: "language_meaning_communication_phase"
-      en: "Introduce the nine Language, Meaning, and Communication Phase research documents as a living-canonical research line with explicit change and return handling."
-      ja: "言語・意味・通信位相研究の九本の公開正本候補を、代謝型のLiving Canonical研究線として導入する。"
+    - id: "external_exposure_07"
+      en: "Introduce 07_Creative_Offshoots as an external-exposure surface where SO can meet heterogeneous questions, vocabularies, values, criticism, and expression without assuming a shared SO grammar."
+      ja: "SOの共有文法を前提にしない問い・語彙・価値・批判・表現へ接触する外部曝露面として07_Creative_Offshootsを導入する。"
       status: "included"
 
-    - id: "dssi_research_note"
-      en: "Introduce the DSSI research note on observation, judgment, sovereignty, and responsibility return; the DSSI application itself is not included in v5.0."
-      ja: "DSSIの観測・判断・主権・責任返還に関する研究ノートを公開研究線へ導入する。DSSIアプリ本体はv5.0に含めない。"
+    - id: "assessment_commensuration_contract"
+      en: "Add a candidate Assessment / Commensuration contract that separates external non-establishment, non-derivability, fact conflict, SO-internal non-derivability and defeaters, external-reference misstatement, alternate interpretation, and reciprocal bridge dispute before response selection."
+      ja: "外部未確立、外部非導出、外部既知事実衝突、SO内部非導出・defeater、外部参照誤記、同一事実・異位相解釈、相互bridge係争を応答前に分離するCandidate Assessment / Commensuration contractを追加する。"
       status: "included"
 
-    - id: "consent_boundary"
-      en: "Introduce the research note on consent boundaries and sentence/bit asymmetry."
-      ja: "同意境界とセンテンス／ビット非対称の研究ノートを公開研究線へ導入する。"
+    - id: "fact_ground_and_revision_trace"
+      en: "Separate fact candidates, support paths, and ground hypotheses, and use physics-adjacent Research Notes as a non-normative surface for observing what a revision trace must preserve when correction, scope restriction, or suspension becomes necessary."
+      ja: "事実候補・支持経路・根拠仮説を分離し、訂正・scope制限・保留が必要になった場合にrevision traceが何を保持すべきかを、物理近接Research Notesの非規範的な例から観察する。"
       status: "included"
 
-    - id: "literature_worldmaking"
-      en: "Introduce Literature as Worldmaking as a public research note."
-      ja: "世界制作としての文学を公開研究ノートとして導入する。"
-      status: "included"
-
-    - id: "public_navigator"
-      en: "Introduce the manifest-backed Public Navigator for reading, search, typed relation traversal, and Japanese/English counterpart resolution across 128 public documents."
-      ja: "128公開文書を単一manifestから読み込み、読解・検索・型付き関係探索・日英対文書解決を行うPublic Navigatorを導入する。"
+    - id: "navigator_document_contract"
+      en: "Strengthen the manifest-backed document contract and Public / Developer Navigator boundary, expanding the managed public corpus from 128 to 157 documents with 49 Japanese-English pair families and explicit role, language, assessment, and relation ownership."
+      ja: "manifest-backed document contractとPublic / Developer Navigator境界を強化し、公開管理対象を128文書から157文書へ拡張する。49の日英pair familiesを含め、役割・言語関係・評価・relationの所有点を明示する。"
       status: "included"
 
   zenodo_description_en: >-
-    Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0 opens the v5 living research series.
-    It carries the framework outward from its internal vocabulary into language, literature, consent,
-    institutions, AI, interfaces, and other application surfaces, while treating criticism, failure,
-    residuals, and unexpected returns from those contacts as inputs for re-collation rather than as
-    post-publication noise. The release adds the Scientific Ontology Operational Outline; the nine
-    Language, Meaning, and Communication Phase research documents and their living-canonical return
-    structure; Consent Boundary and Sentence/Bit Asymmetry; Literature as Worldmaking; and the DSSI
-    research note on observation, judgment, sovereignty, and responsibility return. The DSSI application
-    itself is not part of v5.0. Scientific Ontology does not claim that cross-domain structural resemblance
-    establishes physical identity, nor that the framework replaces established empirical disciplines.
+    Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.0 turns the v5 living series back toward the operation of boundaries themselves. Building on v5.0.0’s outward expansion, it adds a public correctness model grounded in finite inquiry, defeaters, cuts, individuality, return, and reopening; a reflexive research program preserving judgment and audit history; an external-exposure layer for heterogeneous contact; a candidate Assessment / Commensuration contract; physics-adjacent revision-trace examples; and a more explicit manifest/Navigator document contract. The release treats correction, scope restriction, unresolved residuals, and return paths as inspectable parts of boundary operation rather than post-publication cleanup.
 
   zenodo_notes_en: >-
-    v5.0.0 is the opening release of the v5 series, not the completion of v5. The series is intended to
-    continue through v5.x while research, implementation, and external collation can be absorbed without
-    reorganizing the framework's basic descriptive surface or core structure. A transition to v6 would be
-    considered only if such a structural reorganization becomes necessary. The DSSI application is excluded
-    from this release; only its public research and implementation-boundary note is included.
+    v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now. The release also does not treat implementation success, external non-establishment, or difference of interpretive phase as automatic proof or refutation.
+
+  release_context_en: >-
+    v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now.
+
+  public_boundary:
+    en: >-
+      The Candidate Assessment Contract remains candidate governance rather than a final cross-domain adjudication system. Revision-trace examples in physics-adjacent Research Notes are non-normative, and v5.1.0 does not include a full physics/cosmology scientific audit, a formal reciprocal S/E model, or a completed bridge-overreach subtype schema. The detailed Human–AI formation history remains local/private rather than being imported into the SO public repository. DSSI/ConnectBits product code is not bundled into SO. Files explicitly held as local/internal and non-public core materials remain outside the Public Edition.
+    ja: >-
+      Assessment Contractは最終的な領域横断裁定系ではなくCandidate governanceとして保持する。物理近接Research Notesのrevision trace例は非規範であり、v5.1.0には物理・宇宙論の全面科学監査、formal reciprocal S/E model、bridge-overreach subtype schemaの完成を含めない。詳細なHuman–AI形成史はSO公開Repositoryへ取り込まずlocal/private側に保持する。DSSI / ConnectBitsの製品コードもSOへ同梱しない。明示的にlocal/internal保留された資料と非公開CoreはPublic Editionの公開対象外とする。
+
+series_anchor:
+  ja: "事象は境界で起きている。主観でも客観でもなく、それらが混ざり合うところで。"
+  ja_authority: "human"
+  en: "Events happen at boundaries. Neither simply subjective nor simply objective, but where different modes of description come into contact."
+  en_status: "fixed_public_interface"
+  role: "v5_opening_anchor"
 
 series_policy:
   model: "living_series"
@@ -151,14 +147,48 @@ public_scope:
       path: "05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md"
       status: "included"
       role: "public_research_note"
-      note: "DSSIの研究・実装境界を扱う。アプリケーション本体の公開を意味しない。"
+      note: "DSSIの研究・実装境界を扱う。製品コードをSOへ同梱することを意味しない。"
+
+    - id: "correctness_model"
+      path: "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md"
+      status: "included"
+      role: "public_correctness_definition_owner"
+      english_commensuration: "01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md"
+
+    - id: "so_reflexive_research"
+      path: "04_Applications/SO_Reflexive_Philosophical_Research/README.md"
+      status: "included"
+      role: "public_reflexive_research_interface"
+
+    - id: "external_exposure_07"
+      path: "07_Creative_Offshoots/README.md"
+      status: "included"
+      role: "public_external_exposure_interface"
+      english_commensuration: "07_Creative_Offshoots/README.en.md"
+
+    - id: "assessment_protocol"
+      path: "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md"
+      status: "included"
+      role: "candidate_assessment_contract"
+      english_commensuration: "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.en.md"
 
   deferred_or_excluded:
-    - id: "dssi_application"
-      status: "not_included"
-      earliest_target: "v5.1_or_later"
-      commitment: "not_committed"
-      reason: "v5.0では研究ノートのみを公開し、アプリケーション本体は公開条件が整った後に別途判断する。"
+    - id: "dssi_application_code"
+      status: "external_not_bundled"
+      commitment: "not_part_of_so_repository"
+      reason: "DSSI Core A系列には外部公開されたConnectBits Public Previewがあるが、製品コードはSO Repositoryへ同梱せず、実装成功をSOの証明として扱わない。"
+
+    - id: "detailed_human_ai_formation_history"
+      status: "local_private"
+      reason: "形成史として重要だが詳細すぎるため、v5.1.0ではSO公開Repositoryへ収録せずlocal/private研究資料側に保持する。"
+
+    - id: "reciprocal_se_formalization"
+      status: "deferred"
+      reason: "S_{A->B} / E_{A->B}のformal adoptionとmachine-readable reciprocal modelはv5.1.0の完成条件にしない。"
+
+    - id: "full_physics_science_audit"
+      status: "deferred"
+      reason: "v5.1.0では既知の具体的な外部参照誤記をrelease blockerとして扱うが、物理・宇宙論ノート全体の科学監査は後続研究へ送る。"
 
     - id: "000_prefixed_working_files"
       status: "excluded"
@@ -169,18 +199,18 @@ public_scope:
       reason: "Public Editionの非公開境界を維持する。"
 
 previous_release:
-  version: "4.3.0"
-  display_version: "v4.3.0"
-  doi: "10.5281/zenodo.21394190"
-  publication_date: "2026-07-16"
+  version: "5.0.0"
+  display_version: "v5.0.0"
+  doi: "10.5281/zenodo.21909382"
+  publication_date: "2026-08-13"
 
 zenodo:
   record_resource_type: "publication-other"
   version_family_doi: "10.5281/zenodo.20665197"
   version_doi:
-    status: "assigned" # pending | assigned
-    value: "10.5281/zenodo.21909382"
-    url: "https://doi.org/10.5281/zenodo.21909382"
+    status: "pending" # pending | assigned
+    value: null
+    url: null
   related_identifiers:
     previous_release_relation: "isNewVersionOf"
     repository_relation: "isSupplementedBy"
@@ -241,6 +271,14 @@ citation:
     - "Boundary Ethics"
     - "Claim Strength Management"
     - "Conceptual Framework"
+    - "Self-Audit"
+    - "Judgment Transparency"
+    - "External Exposure"
+    - "Revision Trace"
+    - "Assessment Contract"
+    - "Validity Regime"
+    - "Document Contract"
+    - "Navigator"
 
 release_artifacts:
   # Core update pack. README/Roadmap are human-owned documents;

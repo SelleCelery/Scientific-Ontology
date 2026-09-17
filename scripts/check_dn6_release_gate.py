@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""DN-6 release integration gate for Scientific Ontology v5.0.
+"""DN-6 release integration gate for Scientific Ontology.
 
 Default mode checks release-candidate readiness. Publication mode additionally invokes
 release_update.py --release-check and therefore requires real publication date / DOI facts.
@@ -207,7 +207,7 @@ def markdown_report(mode: str, overall: bool, command_results: list[dict[str, An
         "",
     ]
     if overall:
-        lines.append("v5.0 のこのモードに必要な機械検証は通過した。既知 warning は解決済みとは扱わず、設定された上限内の技術負債として保持する。")
+        lines.append(f"{cfg['gate']['target_release']} のこのモードに必要な機械検証は通過した。既知 warning は解決済みとは扱わず、設定された上限内の技術負債として保持する。")
     else:
         lines.append("少なくとも一つの release blocker が残っている。失敗した項目を解消するまで、このモードではリリース可能と判定しない。")
     lines += ["", "## 2. Required checks", ""]
@@ -230,7 +230,7 @@ def markdown_report(mode: str, overall: bool, command_results: list[dict[str, An
         lines.append(f"- `{code}`: {count} / ceiling {ceiling}")
     lines += [
         "",
-        "## 5. v5.1 以降へ持ち越す Developer 系",
+        "## 5. 今回のrelease blockerにしない Developer 系",
         "",
     ]
     for item in cfg.get("v5_1_deferred_developer_work", []):

@@ -98,6 +98,8 @@ The v5 series carries this orientation out of the theory’s internal vocabulary
 
 v5.0 is the opening release of that living series, not the completion of v5.
 
+The **v5.1.0 release candidate** turns that outward movement back toward boundary operation itself: how contact is classified, how facts, support paths, and hypotheses are kept distinct, how correction and unresolved residuals are recorded, and how return paths remain inspectable. It is a foothold for self-audit, not a declaration that a complete self-audit methodology has been finished.
+
 - [`Scientific Ontology Operational Outline`](00_Overview/Scientific_Ontology_Operational_Outline.en.md)
 - [`Language, Meaning, and Communication Phase Studies`](05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md)
 - [`Consent Boundary and Sentence/Bit Asymmetry`](05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md)
@@ -117,6 +119,8 @@ v4系までに積み上げてきた境界、接触、履歴、通信、返路を
 v5系では、この運動を理論内部に留めません。言語、文学、同意、会計、制度、AI、インターフェイスへ持ち出し、そこで見えたものだけでなく、壊れたもの、説明できなかったもの、返ってこなかった残差まで研究側へ戻します。
 
 したがってv5.0は完成版ではなく、**v5系を外部へ開く開幕版**です。v5.xでは研究・実装・外部照合を順次追加し、v5の枠そのものを組み替える必要が生じるまで発展させます。
+
+**v5.1.0 release candidate**では、その外向きの運動を境界運用そのものへ返します。接触をどう分類するか、事実・支持経路・仮説をどう分けるか、訂正と未解決残差をどう残すか、返路をどう監査可能にするかを公開構造上で扱います。これは自己監査方法の完成宣言ではなく、その足場を得るための収束です。
 
 DSSIについてv5.0に含まれるのは研究ノートと実装境界です。アプリケーション本体の公開は含まず、v5.1以降で条件が整った場合に別途判断します。
 
@@ -295,7 +299,7 @@ flowchart TD
 
 This is why the repository contains stable overview documents, application notes, exploratory research notes, policies, indexes, and operational tools side by side. They do different jobs and carry different claim strengths, but they remain part of one return-bearing research system.
 
-Current v5.1.0 preparation also treats revision itself as a return-bearing event. When an external definition is corrected, a claimed derivation can no longer be reconstructed, or a genuine conflict forces a claim to reopen, the aim is not simply to erase the former wording. Version history can retain the prior bytes, while the research record preserves why the claim changed, what scope was affected, what remained, and which residuals stay open. The current physics-adjacent Research Notes are being used as a non-normative test surface for this self-audit practice rather than as a basis for a new mandatory revision schema.
+The v5.1.0 release candidate also treats revision itself as a return-bearing event. When an external definition is corrected, a claimed derivation can no longer be reconstructed, or a genuine conflict forces a claim to reopen, the aim is not simply to erase the former wording. Version history can retain the prior bytes, while the research record preserves why the claim changed, what scope was affected, what remained, and which residuals stay open. The current physics-adjacent Research Notes are being used as a non-normative test surface for this self-audit practice rather than as a basis for a new mandatory revision schema.
 
 - [`Scientific Ontology Concept Network`](00_Overview/Scientific_Ontology_Concept_Network.en.md)
 - [`Scientific Ontology System Map`](00_Overview/Scientific_Ontology_System_Map.md)
@@ -317,7 +321,7 @@ Current v5.1.0 preparation also treats revision itself as a return-bearing event
 
 公開体系に、概説、応用文書、探索的研究ノート、方針、索引、運用ツールが並んでいるのはそのためです。役割も主張強度も違いますが、いずれも返路を持つ一つの研究系を構成します。
 
-現在のv5.1.0準備では、修正そのものも返りとして扱い始めています。外部定義の誤記を訂正したとき、導出したと書いた経路を再構成できなかったとき、あるいは真正な衝突によってclaimを再開したとき、以前の記述を単に消して終わらせない。旧bytesはversion historyへ残しつつ、なぜ変えたか、どのscopeが影響したか、何を残したか、どの残差が未解決かへ戻れる形を試しています。現在は物理近接Research Notesを非規範的な試験面として使い、revision schemaそのものを先に制度化しない方針です。
+v5.1.0 release candidateでは、修正そのものも返りとして扱い始めています。外部定義の誤記を訂正したとき、導出したと書いた経路を再構成できなかったとき、あるいは真正な衝突によってclaimを再開したとき、以前の記述を単に消して終わらせない。旧bytesはversion historyへ残しつつ、なぜ変えたか、どのscopeが影響したか、何を残したか、どの残差が未解決かへ戻れる形を試しています。現在は物理近接Research Notesを非規範的な試験面として使い、revision schemaそのものを先に制度化しない方針です。
 
 ---
 
@@ -338,6 +342,7 @@ This exception does **not** make the README a definition owner. Where wording af
 ## Current release, citation, and public boundary / 現行版・引用・公開境界
 
 - Current public version: **v5.0.0 — opening release of the v5 series**
+- Current release candidate: **v5.1.0 — self-audit and boundary-operation convergence**; version-specific DOI pending
 - Version-specific DOI for the current public release: [10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382)
 - All versions DOI: [10.5281/zenodo.20665197](https://doi.org/10.5281/zenodo.20665197)
 - [`RELEASE_NOTES.md`](RELEASE_NOTES.md)
@@ -352,6 +357,7 @@ For document placement and public exclusions, see the [`System Map`](00_Overview
 ### 日本語｜現行版・引用・公開境界
 
 - 現行公開版：**v5.0.0 — v5系開幕版**
+- 現在のリリース候補：**v5.1.0 — 自己監査と境界運用の収束**。版固有DOIは未発行
 - v5.0.0版固有DOI：[10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382)
 - 全版DOI：[10.5281/zenodo.20665197](https://doi.org/10.5281/zenodo.20665197)
 
@@ -366,6 +372,8 @@ The README is the editorial entrance. The [**Public Navigator**](https://sellece
 The Navigator begins with this root README as **START HERE**. If this README is already open inside the Navigator’s Reader, the link above returns to the operational reading surface. That recursion is intentional: the README establishes the question and the public boundary; the Navigator carries the reader into the corpus and back again.
 
 The v5.0 public inventory contains **128 catalog-backed documents**: 28 registered entries and 100 entries marked `registration_state: provisional`. `Provisional` describes metadata-review state; it is not a quality, truth, or confidence score. Japanese/English counterpart families follow the current interface language when a counterpart exists.
+
+The v5.1.0 release candidate expands the manifest-backed public corpus to **157 documents**, including **49 Japanese-English pair families**. This growth does not imply a single maturity or evidentiary level; role, language relation, assessment, and publication state remain separate metadata concerns.
 
 Developer Navigator and internal review data remain outside the default public entrance.
 

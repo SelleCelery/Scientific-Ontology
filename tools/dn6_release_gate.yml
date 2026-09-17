@@ -3,24 +3,24 @@ schema_version: "1.0"
 gate:
   id: "DN-6"
   name: "Release Integration / Release Gate"
-  target_release: "v5.0.0"
+  target_release: "v5.1.0"
   default_mode: "release_candidate"
   principle: >-
-    DN-6 closes the public navigation/release-integration line for v5.0. It blocks on
+    DN-6 closes the public navigation/release-integration line for v5.1.0. It blocks on
     broken generated artifacts, public/private boundary violations, search/graph/reader
     regressions, unknown or increased public-format warning debt, and release metadata
-    inconsistency. Developer-workbench completion is not a v5.0 release blocker.
+    inconsistency. Deferred developer-workbench completion is not a v5.1.0 release blocker.
 
 expected_public_state:
-  catalog_documents: 131
-  registered_documents: 31
-  provisional_documents: 100
-  language_pair_families: 39
-  logical_entries_per_ui_language: 92
-  graph_nodes: 314
-  graph_edges: 1923
+  catalog_documents: 157
+  registered_documents: 30
+  provisional_documents: 127
+  language_pair_families: 49
+  logical_entries_per_ui_language: 108
+  graph_nodes: 347
+  graph_edges: 2226
   observed_unregistered_documents: 0
-  exposed_markdown_files: 131
+  exposed_markdown_files: 157
   search_tests: 11
   browse_tests: 8
   graph_tests: 9
@@ -52,7 +52,7 @@ public_boundary:
     - delegates
 
 public_format_warning_ceiling:
-  # These warnings are explicitly carried as known v5.0 documentation debt.
+  # These ceilings bound known documentation debt carried into the v5.1.0 release candidate.
   # Counts may decrease. New warning codes or counts above these ceilings block DN-6.
   NON_CLAIM_BOUNDARY_SUGGESTED: 36
   MANIFEST_DOCUMENT_TYPE_MISMATCH: 17

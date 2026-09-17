@@ -16,6 +16,11 @@ import sys
 import tempfile
 from typing import Callable, Sequence
 
+try:
+    import yaml
+except ModuleNotFoundError as exc:  # pragma: no cover - operational dependency
+    raise SystemExit("PyYAML is required for release-state-aware read-model rebuilds") from exc
+
 ROOT = Path(__file__).resolve().parents[1]
 GENERATED_FILES = (
     'tools/docs_index.json',
@@ -61,12 +66,23 @@ def transactional_rebuild(root: Path, operation: Callable[[], None]) -> None:
             raise
 
 
-def commands(report_dir: Path) -> list[tuple[str, Sequence[str]]]:
+def read_model_visibility(root: Path) -> str:
+    state_path = root / '90_Repository_Governance' / 'Release_Update' / 'release_state.yml'
+    state = yaml.safe_load(state_path.read_text(encoding='utf-8'))
+    status = str(((state or {}).get('release') or {}).get('status') or '')
+    if status in {'preparation', 'release_candidate'}:
+        return 'preview'
+    if status in {'published', 'superseded'}:
+        return 'public'
+    raise RuntimeError('Unsupported release.status for read-model rebuild: '+repr(status))
+
+
+def commands(report_dir: Path, visibility: str) -> list[tuple[str, Sequence[str]]]:
     py = sys.executable
     return [
         ('Manifest and role contract', [py, 'scripts/validate_docs_manifest.py']),
-        ('Index', [py, 'scripts/build_docs_index.py', '--visibility', 'public']),
-        ('Graph', [py, 'scripts/build_docs_graph.py', '--visibility', 'public']),
+        ('Index', [py, 'scripts/build_docs_index.py', '--visibility', visibility]),
+        ('Graph', [py, 'scripts/build_docs_graph.py', '--visibility', visibility]),
         ('Public catalog', [py, 'scripts/build_public_catalog.py']),
         ('Public graph', [py, 'scripts/build_public_graph.py']),
         ('Registration preview', [py, 'scripts/build_registration_workbench_preview.py']),
@@ -94,8 +110,10 @@ def main() -> int:
         parser.error('Run the script belonging to the target repository; --root must match its root.')
     report_dir = Path(tempfile.mkdtemp(prefix='so-v51-document-check-'))
     env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PYTHONUTF8='1')
+    visibility = read_model_visibility(root)
+    print('Read-model visibility profile: '+visibility, flush=True)
     def operation() -> None:
-        for label, command in commands(report_dir):
+        for label, command in commands(report_dir, visibility):
             print('\n== '+label+' ==', flush=True)
             result = subprocess.run(command, cwd=root, env=env, check=False)
             if result.returncode:

@@ -473,7 +473,7 @@
   "catalog_contract_version": "0.4",
   "source": {
     "coverage": "role-aware-current-inventory",
-    "visibility_profile": "public",
+    "visibility_profile": "preview",
     "catalog_mode": "single_manifest_registered_plus_provisional",
     "registered_documents": 30,
     "provisional_documents": 127,

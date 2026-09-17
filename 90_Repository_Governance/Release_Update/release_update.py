@@ -89,6 +89,7 @@ def validate_state(state: dict[str, Any], strict_release: bool = False) -> list[
     zenodo = need(state, "zenodo", "state")
     citation = need(state, "citation", "state")
     scope = need(state, "public_scope", "state")
+    series_anchor = state.get("series_anchor")
 
     if not isinstance(project, dict) or not isinstance(author, dict) or not isinstance(release, dict):
         raise ValidationError("project, public_author, and release must be mappings")
@@ -176,6 +177,14 @@ def validate_state(state: dict[str, Any], strict_release: bool = False) -> list[
 
     if citation.get("orcid_policy") != "propagate_exactly":
         warnings.append("citation.orcid_policy is not propagate_exactly")
+
+    if series_anchor is not None:
+        if not isinstance(series_anchor, dict):
+            raise ValidationError("series_anchor must be a mapping when present")
+        as_text(need(series_anchor, "ja", "series_anchor"), "series_anchor.ja")
+        as_text(need(series_anchor, "ja_authority", "series_anchor"), "series_anchor.ja_authority")
+        as_text(need(series_anchor, "en", "series_anchor"), "series_anchor.en")
+        as_text(need(series_anchor, "en_status", "series_anchor"), "series_anchor.en_status")
 
     guaranteed = need(scope, "guaranteed_inclusions", "public_scope")
     if not isinstance(guaranteed, list):
@@ -267,7 +276,11 @@ def render_cff(state: dict[str, Any]) -> str:
     message = (
         "If you use or refer to this public edition, please cite the version-specific Zenodo DOI."
         if assigned
-        else "This file describes the v5.0.0 release candidate. The version-specific Zenodo DOI is pending; update release_state.yml after Zenodo assigns it and rerun the release update tool."
+        else (
+            f"This file describes the {release['display_version']} release candidate. "
+            "The version-specific Zenodo DOI is pending; update release_state.yml after Zenodo "
+            "assigns it and rerun the release update tool."
+        )
     )
 
     data: dict[str, Any] = {
@@ -356,12 +369,12 @@ def render_citation_md(state: dict[str, Any]) -> str:
 
     pending_note = ""
     if not assigned:
-        pending_note = """
+        pending_note = f"""
 ## Pre-publication DOI state / 公開前DOI状態
 
-The version-specific DOI for v5.0.0 has not yet been assigned. Do not reuse the v4.3.0 DOI or the version-family DOI as the v5.0.0 version DOI.
+The version-specific DOI for {release['display_version']} has not yet been assigned. Do not reuse the {previous['display_version']} DOI or the version-family DOI as the {release['display_version']} version DOI.
 
-v5.0.0の版固有DOIは、まだ発行されていません。v4.3.0のDOIまたは全版DOIを、v5.0.0の版固有DOIとして流用しないでください。
+{release['display_version']}の版固有DOIは、まだ発行されていません。{previous['display_version']}のDOIまたは全版DOIを、{release['display_version']}の版固有DOIとして流用しないでください。
 
 After Zenodo assigns the DOI, update only `release_state.yml` first and rerun the release update tool.
 
@@ -382,11 +395,11 @@ ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し�
         citation_guidance_en = (
             "If you use, discuss, or refer to a published public edition, cite its "
             "version-specific Zenodo DOI. For this release candidate, use the version "
-            "and repository URL until the v5.0.0 DOI is assigned."
+            f"and repository URL until the {release['display_version']} DOI is assigned."
         )
         citation_guidance_ja = (
             "公開済みPublic Editionを利用・参照・論評する場合は、版固有のZenodo DOIを"
-            "使用してください。このリリース候補については、v5.0.0のDOIが確定するまで"
+            f"使用してください。このリリース候補については、{release['display_version']}のDOIが確定するまで"
             "版番号とリポジトリURLを使用します。"
         )
     return f"""# Citation
@@ -434,7 +447,7 @@ Unicodeの著者名表記を維持します。本公開版ではローマ字表�
 
 - [`CITATION.cff`](./CITATION.cff)
 - [Zenodo version family](https://doi.org/{zenodo['version_family_doi']})
-{f"- [Zenodo version-specific record]({doi['url']})" if assigned else "- v5.0.0 version-specific Zenodo record: pending"}
+{f"- [Zenodo version-specific record]({doi['url']})" if assigned else f"- {release['display_version']} version-specific Zenodo record: pending"}
 
 ---
 
@@ -520,7 +533,10 @@ def render_release_notes(state: dict[str, Any]) -> str:
     doi_paragraph = (
         f"Version-specific DOI: <{doi['url']}>"
         if assigned
-        else "Version-specific DOI: **pending**. Do not reuse the v4.3.0 DOI or the version-family DOI as the v5.0.0 DOI."
+        else (
+            f"Version-specific DOI: **pending**. Do not reuse the {previous['display_version']} DOI "
+            f"or the version-family DOI as the {release['display_version']} DOI."
+        )
     )
 
     included_heading = (
@@ -533,6 +549,58 @@ def render_release_notes(state: dict[str, Any]) -> str:
         if release["status"] in {"published", "superseded"}
         else "今回の公開候補に含むもの"
     )
+
+    series_anchor = state.get("series_anchor")
+    series_anchor_block = ""
+    if isinstance(series_anchor, dict):
+        series_anchor_block = f"""## v5 series anchor / v5系の足場
+
+> **{series_anchor['ja']}**
+>
+> *{series_anchor['en']}*
+
+The Japanese line remains the human-authoritative opening anchor of the v5 series. The release theme below describes the movement of this release without replacing that anchor.
+
+---
+
+"""
+
+    release_context_en = release.get("release_context_en")
+    if not release_context_en:
+        if release["version"] == "5.0.0":
+            release_context_en = (
+                "v5.0.0 is the opening release of the v5 living series, not the completion of v5. "
+                "The release deliberately carries the framework into additional domains while preserving "
+                "the return path by which criticism, failed correspondence, implementation problems, and "
+                "residuals can revise later v5.x work."
+            )
+        else:
+            release_context_en = release["zenodo_notes_en"]
+
+    boundary = release.get("public_boundary", {})
+    if release["version"] == "5.0.0" and not boundary:
+        public_boundary_en = (
+            "The DSSI application itself is **not** included in v5.0.0. This release includes only the "
+            "DSSI public research and implementation-boundary note. Application publication is a later "
+            "v5.x decision and is not promised by this release.\n\n"
+            "Files whose basenames retain the local/internal `000` prefix and non-public core materials "
+            "remain outside the Public Edition."
+        )
+        public_boundary_ja = (
+            "DSSIについてv5.0.0に含めるのは、観測・判断・主権・責任返還を扱う研究ノートと実装境界です。"
+            "アプリケーション本体は含めません。アプリ版はv5.1以降で公開条件が整った場合に別途判断し、"
+            "このリリースでは公開を約束しません。\n\n"
+            "`000`接頭辞を保持するローカル／内部保留ファイルと、Public Editionの非公開Coreは公開対象外です。"
+        )
+    else:
+        public_boundary_en = boundary.get(
+            "en",
+            "Non-public core materials and files explicitly marked for local/internal hold remain outside the Public Edition.",
+        )
+        public_boundary_ja = boundary.get(
+            "ja",
+            "非公開Coreおよび明示的にlocal/internal保留とされた資料はPublic Editionの公開対象外です。",
+        )
 
     return f"""# Release Notes: Scientific Ontology (SO) / 存在境界論 Public Edition {release['display_version']}
 
@@ -561,13 +629,13 @@ Previous release: **{previous['display_version']}** — <https://doi.org/{previo
 
 ---
 
-## Release theme
+{series_anchor_block}## Release theme
 
 > **{release['theme']['en']}**
 
 {release['zenodo_description_en']}
 
-{release['display_version']} is the opening release of the v5 living series, not the completion of v5. The release deliberately carries the framework into additional domains while preserving the return path by which criticism, failed correspondence, implementation problems, and residuals can revise later v5.x work.
+{release_context_en}
 
 ### {included_heading}
 
@@ -575,9 +643,7 @@ Previous release: **{previous['display_version']}** — <https://doi.org/{previo
 
 ### Explicit public boundary
 
-The DSSI application itself is **not** included in {release['display_version']}. This release includes only the DSSI public research and implementation-boundary note. Application publication is a later v5.x decision and is not promised by this release.
-
-Files whose basenames retain the local/internal `000` prefix and non-public core materials remain outside the Public Edition.
+{public_boundary_en}
 
 ---
 
@@ -593,9 +659,7 @@ Files whose basenames retain the local/internal `000` prefix and non-public core
 
 ### 公開境界
 
-DSSIについて{release['display_version']}に含めるのは、観測・判断・主権・責任返還を扱う研究ノートと実装境界です。アプリケーション本体は含めません。アプリ版はv5.1以降で公開条件が整った場合に別途判断し、このリリースでは公開を約束しません。
-
-`000`接頭辞を保持するローカル／内部保留ファイルと、Public Editionの非公開Coreは公開対象外です。
+{public_boundary_ja}
 
 ---
 

@@ -1,18 +1,18 @@
-# Release Notes: Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0
+# Release Notes: Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.0
 
 
-> Status: Release notes / published
+> Status: Release notes / release_candidate
 > Scope: Public release metadata / research transition / repository change log
 > Language: English-first with Japanese release summary
-> Version-specific DOI: 10.5281/zenodo.21909382
+> Version-specific DOI: Pending
 
-Release date: 2026-08-13
+Release date: Pending
 
 ---
 
 ## Citation state
 
-Version-specific DOI: <https://doi.org/10.5281/zenodo.21909382>
+Version-specific DOI: **pending**. Do not reuse the v5.0.0 DOI or the version-family DOI as the v5.1.0 DOI.
 
 Public author: **万土華凜**
 ORCID: <https://orcid.org/0009-0001-5709-2669>
@@ -21,60 +21,63 @@ For machine-readable citation metadata, see [`CITATION.cff`](./CITATION.cff).
 For human-readable citation guidance, see [`CITATION.md`](./CITATION.md).
 
 Version-family DOI: <https://doi.org/10.5281/zenodo.20665197>
-Previous release: **v4.3.0** — <https://doi.org/10.5281/zenodo.21394190>
+Previous release: **v5.0.0** — <https://doi.org/10.5281/zenodo.21909382>
+
+---
+
+## v5 series anchor / v5系の足場
+
+> **事象は境界で起きている。主観でも客観でもなく、それらが混ざり合うところで。**
+>
+> *Events happen at boundaries. Neither simply subjective nor simply objective, but where different modes of description come into contact.*
+
+The Japanese line remains the human-authoritative opening anchor of the v5 series. The release theme below describes the movement of this release without replacing that anchor.
 
 ---
 
 ## Release theme
 
-> **Events happen at boundaries. Neither simply subjective nor simply objective, but where different modes of description come into contact.**
+> **After contact at a boundary, what do we bring back, revise, and leave unresolved?**
 
-Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0 opens the v5 living research series. It carries the framework outward from its internal vocabulary into language, literature, consent, institutions, AI, interfaces, and other application surfaces, while treating criticism, failure, residuals, and unexpected returns from those contacts as inputs for re-collation rather than as post-publication noise. The release adds the Scientific Ontology Operational Outline; the nine Language, Meaning, and Communication Phase research documents and their living-canonical return structure; Consent Boundary and Sentence/Bit Asymmetry; Literature as Worldmaking; and the DSSI research note on observation, judgment, sovereignty, and responsibility return. The DSSI application itself is not part of v5.0. Scientific Ontology does not claim that cross-domain structural resemblance establishes physical identity, nor that the framework replaces established empirical disciplines.
+Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.0 turns the v5 living series back toward the operation of boundaries themselves. Building on v5.0.0’s outward expansion, it adds a public correctness model grounded in finite inquiry, defeaters, cuts, individuality, return, and reopening; a reflexive research program preserving judgment and audit history; an external-exposure layer for heterogeneous contact; a candidate Assessment / Commensuration contract; physics-adjacent revision-trace examples; and a more explicit manifest/Navigator document contract. The release treats correction, scope restriction, unresolved residuals, and return paths as inspectable parts of boundary operation rather than post-publication cleanup.
 
-v5.0.0 is the opening release of the v5 living series, not the completion of v5. The release deliberately carries the framework into additional domains while preserving the return path by which criticism, failed correspondence, implementation problems, and residuals can revise later v5.x work.
+v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now.
 
-### Included in this release
+### Included in this release candidate
 
-- Open the v5 series as a living research series centered on implementation, generalization, external collation, and revision through return.
-- Publish the Scientific Ontology Operational Outline as a cross-series operational orientation articulated during preparation for v5.
-- Introduce the nine Language, Meaning, and Communication Phase research documents as a living-canonical research line with explicit change and return handling.
-- Introduce the DSSI research note on observation, judgment, sovereignty, and responsibility return; the DSSI application itself is not included in v5.0.
-- Introduce the research note on consent boundaries and sentence/bit asymmetry.
-- Introduce Literature as Worldmaking as a public research note.
-- Introduce the manifest-backed Public Navigator for reading, search, typed relation traversal, and Japanese/English counterpart resolution across 128 public documents.
+- Publish Correctness, Individuality, Absence, and Cut as the public definition owner for SO’s engineering treatment of finite inquiry, defeaters, cuts, individuality, return, and reopening.
+- Add SO Reflexive Philosophical Research and Volume I as a public self-audit interface that preserves experimental history, judgment transparency, provenance, and historical attestation without rewriting prior records to current conclusions.
+- Introduce 07_Creative_Offshoots as an external-exposure surface where SO can meet heterogeneous questions, vocabularies, values, criticism, and expression without assuming a shared SO grammar.
+- Add a candidate Assessment / Commensuration contract that separates external non-establishment, non-derivability, fact conflict, SO-internal non-derivability and defeaters, external-reference misstatement, alternate interpretation, and reciprocal bridge dispute before response selection.
+- Separate fact candidates, support paths, and ground hypotheses, and use physics-adjacent Research Notes as a non-normative surface for observing what a revision trace must preserve when correction, scope restriction, or suspension becomes necessary.
+- Strengthen the manifest-backed document contract and Public / Developer Navigator boundary, expanding the managed public corpus from 128 to 157 documents with 49 Japanese-English pair families and explicit role, language, assessment, and relation ownership.
 
 ### Explicit public boundary
 
-The DSSI application itself is **not** included in v5.0.0. This release includes only the DSSI public research and implementation-boundary note. Application publication is a later v5.x decision and is not promised by this release.
-
-Files whose basenames retain the local/internal `000` prefix and non-public core materials remain outside the Public Edition.
+The Candidate Assessment Contract remains candidate governance rather than a final cross-domain adjudication system. Revision-trace examples in physics-adjacent Research Notes are non-normative, and v5.1.0 does not include a full physics/cosmology scientific audit, a formal reciprocal S/E model, or a completed bridge-overreach subtype schema. The detailed Human–AI formation history remains local/private rather than being imported into the SO public repository. DSSI/ConnectBits product code is not bundled into SO. Files explicitly held as local/internal and non-public core materials remain outside the Public Edition.
 
 ---
 
 ## 日本語要旨
 
-> **事象は境界で起きている。主観でも客観でもなく、それらが混ざり合うところで。**
+> **境界に触れたあと、何を持ち帰り、何を直し、何を未解決として残すか。**
 
-v4系までに積み上げた境界・履歴・通信・返路の理論を体系内部から遊離させ、
-言語、文学、会計、制度、AI、インターフェイスへ実装・汎用化し、
-外部との接触から返る残差によって理論自身を再照合するv5系を開始する。
-v5.0はv5系の完成版ではなく、以後のv5.xで研究・実装・外部照合の成果を追加するための開幕版である。
+v5.0.0は、存在境界論を言語、文学、制度、AI、インターフェイス等へ持ち出し、外部との接触から返る残差を受けるv5系を開いた。
+v5.1.0では、その接触を理論自身へ返す方法を主題化する。AIを対象とした構造健全性・個性形成研究から再接続された有限探索、切断、返路、異なる探索frontierの問題を「正しさ」の工学的定義へ置き、SO再帰的哲学研究、07の異質対象への曝露、物理・宇宙論Research Notes、Assessment / commensuration、Navigatorと文書contractを通じて、何に接触し、何を根拠に判断し、どこでscopeを分け、何を訂正し、何を未解決として残すかを追跡する足場を整える。
+これは自己監査方法、reciprocal assessment、revision schemaの完成を宣言するものではない。越境・被越境に伴う基準・権限・返路の問題は学問間だけに限られないという射程を示唆するが、v5.1.0では一般社会理論として確定しない。
 
-### 今回の公開版に含むもの
+### 今回の公開候補に含むもの
 
-- v5系を、実装・汎用化・外部照合・返りによる再更新を行う生きた研究系列として開始する。
-- v5系開始にあたって自覚された存在境界論の全体運用方針としてScientific Ontology Operational Outlineを公開する。
-- 言語・意味・通信位相研究の九本の公開正本候補を、代謝型のLiving Canonical研究線として導入する。
-- DSSIの観測・判断・主権・責任返還に関する研究ノートを公開研究線へ導入する。DSSIアプリ本体はv5.0に含めない。
-- 同意境界とセンテンス／ビット非対称の研究ノートを公開研究線へ導入する。
-- 世界制作としての文学を公開研究ノートとして導入する。
-- 128公開文書を単一manifestから読み込み、読解・検索・型付き関係探索・日英対文書解決を行うPublic Navigatorを導入する。
+- 有限探索、defeater、切断、個性、返路、再開を扱うSOの工学的な「正しさ」の公開定義ownerとして『正しさ・個性・無・切断』を導入する。
+- SO再帰的哲学研究とVolume Iを、実験史、判断透明性、provenance、historical attestationを保持し、過去記録を現在の結論へ書き換えない公開自己監査インターフェースとして導入する。
+- SOの共有文法を前提にしない問い・語彙・価値・批判・表現へ接触する外部曝露面として07_Creative_Offshootsを導入する。
+- 外部未確立、外部非導出、外部既知事実衝突、SO内部非導出・defeater、外部参照誤記、同一事実・異位相解釈、相互bridge係争を応答前に分離するCandidate Assessment / Commensuration contractを追加する。
+- 事実候補・支持経路・根拠仮説を分離し、訂正・scope制限・保留が必要になった場合にrevision traceが何を保持すべきかを、物理近接Research Notesの非規範的な例から観察する。
+- manifest-backed document contractとPublic / Developer Navigator境界を強化し、公開管理対象を128文書から157文書へ拡張する。49の日英pair familiesを含め、役割・言語関係・評価・relationの所有点を明示する。
 
 ### 公開境界
 
-DSSIについてv5.0.0に含めるのは、観測・判断・主権・責任返還を扱う研究ノートと実装境界です。アプリケーション本体は含めません。アプリ版はv5.1以降で公開条件が整った場合に別途判断し、このリリースでは公開を約束しません。
-
-`000`接頭辞を保持するローカル／内部保留ファイルと、Public Editionの非公開Coreは公開対象外です。
+Assessment Contractは最終的な領域横断裁定系ではなくCandidate governanceとして保持する。物理近接Research Notesのrevision trace例は非規範であり、v5.1.0には物理・宇宙論の全面科学監査、formal reciprocal S/E model、bridge-overreach subtype schemaの完成を含めない。詳細なHuman–AI形成史はSO公開Repositoryへ取り込まずlocal/private側に保持する。DSSI / ConnectBitsの製品コードもSOへ同梱しない。明示的にlocal/internal保留された資料と非公開CoreはPublic Editionの公開対象外とする。
 
 ---
 

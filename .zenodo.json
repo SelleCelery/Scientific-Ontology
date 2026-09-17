@@ -1,8 +1,8 @@
 {
-  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0",
+  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.0",
   "upload_type": "publication",
   "publication_type": "other",
-  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v5.0.0 opens the v5 living research series. It carries the framework outward from its internal vocabulary into language, literature, consent, institutions, AI, interfaces, and other application surfaces, while treating criticism, failure, residuals, and unexpected returns from those contacts as inputs for re-collation rather than as post-publication noise. The release adds the Scientific Ontology Operational Outline; the nine Language, Meaning, and Communication Phase research documents and their living-canonical return structure; Consent Boundary and Sentence/Bit Asymmetry; Literature as Worldmaking; and the DSSI research note on observation, judgment, sovereignty, and responsibility return. The DSSI application itself is not part of v5.0. Scientific Ontology does not claim that cross-domain structural resemblance establishes physical identity, nor that the framework replaces established empirical disciplines.",
+  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.0 turns the v5 living series back toward the operation of boundaries themselves. Building on v5.0.0’s outward expansion, it adds a public correctness model grounded in finite inquiry, defeaters, cuts, individuality, return, and reopening; a reflexive research program preserving judgment and audit history; an external-exposure layer for heterogeneous contact; a candidate Assessment / Commensuration contract; physics-adjacent revision-trace examples; and a more explicit manifest/Navigator document contract. The release treats correction, scope restriction, unresolved residuals, and return paths as inspectable parts of boundary operation rather than post-publication cleanup.",
   "creators": [
     {
       "name": "万土, 華凜",
@@ -11,7 +11,7 @@
   ],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "keywords": [
     "Scientific Ontology",
     "存在境界論",
@@ -32,12 +32,20 @@
     "AI Governance",
     "Boundary Ethics",
     "Claim Strength Management",
-    "Conceptual Framework"
+    "Conceptual Framework",
+    "Self-Audit",
+    "Judgment Transparency",
+    "External Exposure",
+    "Revision Trace",
+    "Assessment Contract",
+    "Validity Regime",
+    "Document Contract",
+    "Navigator"
   ],
   "language": "eng",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.21394190",
+      "identifier": "10.5281/zenodo.21909382",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     },
@@ -47,6 +55,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "v5.0.0 is the opening release of the v5 series, not the completion of v5. The series is intended to continue through v5.x while research, implementation, and external collation can be absorbed without reorganizing the framework's basic descriptive surface or core structure. A transition to v6 would be considered only if such a structural reorganization becomes necessary. The DSSI application is excluded from this release; only its public research and implementation-boundary note is included.",
-  "publication_date": "2026-08-13"
+  "notes": "v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now. The release also does not treat implementation success, external non-establishment, or difference of interpretive phase as automatic proof or refutation."
 }

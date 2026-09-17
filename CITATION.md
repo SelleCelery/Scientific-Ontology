@@ -1,14 +1,14 @@
 # Citation
 
-> Status: Citation / published
+> Status: Citation / release_candidate
 > Scope: Human-readable citation guidance
 > Language: English and Japanese
-> Target version: v5.0.0
-> Version-specific DOI: 10.5281/zenodo.21909382
+> Target version: v5.1.0
+> Version-specific DOI: pending
 
-If you use, discuss, or refer to this published public edition, cite its version-specific Zenodo DOI: 10.5281/zenodo.21909382.
+If you use, discuss, or refer to a published public edition, cite its version-specific Zenodo DOI. For this release candidate, use the version and repository URL until the v5.1.0 DOI is assigned.
 
-この公開版を利用・参照・論評する場合は、版固有のZenodo DOI（10.5281/zenodo.21909382）を使用してください。
+公開済みPublic Editionを利用・参照・論評する場合は、版固有のZenodo DOIを使用してください。このリリース候補については、v5.1.0のDOIが確定するまで版番号とリポジトリURLを使用します。
 
 ---
 
@@ -27,21 +27,32 @@ Unicodeの著者名表記を維持します。本公開版ではローマ字表�
 
 ## Recommended citation
 
-万土華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0*. Zenodo, 2026. DOI: [10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382).
+万土華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.0*. Release candidate, 2026. Version-specific Zenodo DOI pending. Repository: <https://github.com/SelleCelery/Scientific-Ontology>.
 
 ---
 
+
+## Pre-publication DOI state / 公開前DOI状態
+
+The version-specific DOI for v5.1.0 has not yet been assigned. Do not reuse the v5.0.0 DOI or the version-family DOI as the v5.1.0 version DOI.
+
+v5.1.0の版固有DOIは、まだ発行されていません。v5.0.0のDOIまたは全版DOIを、v5.1.0の版固有DOIとして流用しないでください。
+
+After Zenodo assigns the DOI, update only `release_state.yml` first and rerun the release update tool.
+
+ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し、その後Release Updateを再実行します。
+
+---
 ## BibTeX
 
 ```bibtex
-@misc{scientific_ontology_v500_2026,
+@misc{scientific_ontology_v510_2026,
   author       = {万土, 華凜},
-  title        = {Scientific Ontology (SO) / 存在境界論: Public Edition v5.0.0},
+  title        = {Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.0},
   year         = {2026},
-  version      = {5.0.0},
+  version      = {5.1.0},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.21909382},
-  url          = {https://doi.org/10.5281/zenodo.21909382},
+  url          = {https://github.com/SelleCelery/Scientific-Ontology},
   note         = {Public conceptual research archive and documentation release for Scientific Ontology / 存在境界論}
 }
 ```
@@ -52,7 +63,7 @@ Unicodeの著者名表記を維持します。本公開版ではローマ字表�
 
 - [`CITATION.cff`](./CITATION.cff)
 - [Zenodo version family](https://doi.org/10.5281/zenodo.20665197)
-- [Zenodo version-specific record](https://doi.org/10.5281/zenodo.21909382)
+- v5.1.0 version-specific Zenodo record: pending
 
 ---
 
@@ -64,8 +75,8 @@ GitHub: <https://github.com/SelleCelery/Scientific-Ontology>
 
 ## Previous public release
 
-Previous version: **v4.3.0**
-Previous version DOI: [10.5281/zenodo.21394190](https://doi.org/10.5281/zenodo.21394190)
+Previous version: **v5.0.0**
+Previous version DOI: [10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382)
 
 ---
 
