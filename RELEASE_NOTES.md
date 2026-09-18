@@ -1,18 +1,18 @@
 # Release Notes: Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.0
 
 
-> Status: Release notes / release_candidate
+> Status: Release notes / published
 > Scope: Public release metadata / research transition / repository change log
 > Language: English-first with Japanese release summary
-> Version-specific DOI: Pending
+> Version-specific DOI: 10.5281/zenodo.22813851
 
-Release date: Pending
+Release date: 2026-09-18
 
 ---
 
 ## Citation state
 
-Version-specific DOI: **pending**. Do not reuse the v5.0.0 DOI or the version-family DOI as the v5.1.0 DOI.
+Version-specific DOI: <https://doi.org/10.5281/zenodo.22813851>
 
 Public author: **万土華凜**
 ORCID: <https://orcid.org/0009-0001-5709-2669>
@@ -41,9 +41,9 @@ The Japanese line remains the human-authoritative opening anchor of the v5 serie
 
 Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.0 turns the v5 living series back toward the operation of boundaries themselves. Building on v5.0.0’s outward expansion, it adds a public correctness model grounded in finite inquiry, defeaters, cuts, individuality, return, and reopening; a reflexive research program preserving judgment and audit history; an external-exposure layer for heterogeneous contact; a candidate Assessment / Commensuration contract; physics-adjacent revision-trace examples; and a more explicit manifest/Navigator document contract. The release treats correction, scope restriction, unresolved residuals, and return paths as inspectable parts of boundary operation rather than post-publication cleanup.
 
-v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now.
+v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now. Final audit also surfaced a working hypothesis: the correctness criterion may operate independently of the content of the governing axis, evaluating the finite system formed under that axis rather than certifying the axis itself. This remains a post-v5.1 verification question.
 
-### Included in this release candidate
+### Included in this release
 
 - Publish Correctness, Individuality, Absence, and Cut as the public definition owner for SO’s engineering treatment of finite inquiry, defeaters, cuts, individuality, return, and reopening.
 - Add SO Reflexive Philosophical Research and Volume I as a public self-audit interface that preserves experimental history, judgment transparency, provenance, and historical attestation without rewriting prior records to current conclusions.
@@ -65,8 +65,9 @@ The Candidate Assessment Contract remains candidate governance rather than a fin
 v5.0.0は、存在境界論を言語、文学、制度、AI、インターフェイス等へ持ち出し、外部との接触から返る残差を受けるv5系を開いた。
 v5.1.0では、その接触を理論自身へ返す方法を主題化する。AIを対象とした構造健全性・個性形成研究から再接続された有限探索、切断、返路、異なる探索frontierの問題を「正しさ」の工学的定義へ置き、SO再帰的哲学研究、07の異質対象への曝露、物理・宇宙論Research Notes、Assessment / commensuration、Navigatorと文書contractを通じて、何に接触し、何を根拠に判断し、どこでscopeを分け、何を訂正し、何を未解決として残すかを追跡する足場を整える。
 これは自己監査方法、reciprocal assessment、revision schemaの完成を宣言するものではない。越境・被越境に伴う基準・権限・返路の問題は学問間だけに限られないという射程を示唆するが、v5.1.0では一般社会理論として確定しない。
+最終監査では、「正しさ」の判定機構が軸そのものを裁くのではなく、軸の内容に依存せず、その軸のもとで形成された有限系の支持・探索・外部接触・再開可能性を判定している可能性がworking hypothesisとして露出した。v5.1.0では結論化せず、後続の検証課題として返す。
 
-### 今回の公開候補に含むもの
+### 今回の公開版に含むもの
 
 - 有限探索、defeater、切断、個性、返路、再開を扱うSOの工学的な「正しさ」の公開定義ownerとして『正しさ・個性・無・切断』を導入する。
 - SO再帰的哲学研究とVolume Iを、実験史、判断透明性、provenance、historical attestationを保持し、過去記録を現在の結論へ書き換えない公開自己監査インターフェースとして導入する。
@@ -105,7 +106,7 @@ release_state.yml
     -> commit
 ```
 
-When Zenodo assigns the version-specific DOI, update `release_state.yml` first and rerun the synchronizer. No provisional or inferred DOI is generated.
+The version-specific DOI is assigned in `release_state.yml` and synchronized from that source. Any later DOI change must begin there; no provisional or inferred DOI is generated.
 
 ---
 

@@ -5,7 +5,7 @@
       "manifest_path": "tools/docs_manifest.yml",
       "manifest_sha256": "ed2213a883d63ae1a32c5b6e5ef8064fbfc6e04389f4b812a8c780bb7bc6481c",
       "graph_path": "tools/docs_graph.json",
-      "graph_sha256": "3f95a30a324bc8f61ac23a08b7fb6859153c9ca1b06a7f18db425202a3c4ee5d",
+      "graph_sha256": "b67f72ead96a05fe7db959b59ac87bfd333ed1d4f5a5af6545cb7011c657acbb",
       "revision_proposals_path": "tools/docs_revision_proposals.yml",
       "revision_proposals_sha256": "e3854091b43f8f84de454861a30c69a6a10185d87652f6a905c5f3d166e3d564",
       "preview_contract": "manifest-backed Developer read model; browser writes no canonical YAML"

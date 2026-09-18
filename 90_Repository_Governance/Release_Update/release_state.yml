@@ -26,23 +26,25 @@ release:
   display_version: "v5.1.0"
   series: "v5"
   role: "self_audit_and_boundary_operation_convergence"
-  status: "release_candidate"
-  publication_date: null
+  status: "published"
+  publication_date: "2026-09-18"
+  planned_publication_date: "2026-09-18"
   title: "Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.0"
   completion_claim: "self_audit_foothold_not_method_completion"
 
   theme:
     ja: "境界に触れたあと、何を持ち帰り、何を直し、何を未解決として残すか。"
-    ja_authority: "human_direction_ai_draft"
+    ja_authority: "human"
     en: "After contact at a boundary, what do we bring back, revise, and leave unresolved?"
-    en_status: "commensurated_release_theme_draft"
+    en_status: "commensurated_release_theme"
 
   purpose:
     ja: |-
       v5.0.0は、存在境界論を言語、文学、制度、AI、インターフェイス等へ持ち出し、外部との接触から返る残差を受けるv5系を開いた。
       v5.1.0では、その接触を理論自身へ返す方法を主題化する。AIを対象とした構造健全性・個性形成研究から再接続された有限探索、切断、返路、異なる探索frontierの問題を「正しさ」の工学的定義へ置き、SO再帰的哲学研究、07の異質対象への曝露、物理・宇宙論Research Notes、Assessment / commensuration、Navigatorと文書contractを通じて、何に接触し、何を根拠に判断し、どこでscopeを分け、何を訂正し、何を未解決として残すかを追跡する足場を整える。
       これは自己監査方法、reciprocal assessment、revision schemaの完成を宣言するものではない。越境・被越境に伴う基準・権限・返路の問題は学問間だけに限られないという射程を示唆するが、v5.1.0では一般社会理論として確定しない。
-    authority: "human_direction_ai_draft"
+      最終監査では、「正しさ」の判定機構が軸そのものを裁くのではなく、軸の内容に依存せず、その軸のもとで形成された有限系の支持・探索・外部接触・再開可能性を判定している可能性がworking hypothesisとして露出した。v5.1.0では結論化せず、後続の検証課題として返す。
+    authority: "human"
 
   highlights:
     # Human-approved direction; wording remains subject to final release review.
@@ -80,10 +82,18 @@ release:
     Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.0 turns the v5 living series back toward the operation of boundaries themselves. Building on v5.0.0’s outward expansion, it adds a public correctness model grounded in finite inquiry, defeaters, cuts, individuality, return, and reopening; a reflexive research program preserving judgment and audit history; an external-exposure layer for heterogeneous contact; a candidate Assessment / Commensuration contract; physics-adjacent revision-trace examples; and a more explicit manifest/Navigator document contract. The release treats correction, scope restriction, unresolved residuals, and return paths as inspectable parts of boundary operation rather than post-publication cleanup.
 
   zenodo_notes_en: >-
-    v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now. The release also does not treat implementation success, external non-establishment, or difference of interpretive phase as automatic proof or refutation.
+    v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now. The release also does not treat implementation success, external non-establishment, or difference of interpretive phase as automatic proof or refutation. Final audit surfaced a working hypothesis that the correctness criterion may be invariant to the content of the governing axis; v5.1.0 records this only as a later verification question, not as an established result.
 
   release_context_en: >-
-    v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now.
+    v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now. Final audit also surfaced a working hypothesis: the correctness criterion may operate independently of the content of the governing axis, evaluating the finite system formed under that axis rather than certifying the axis itself. This remains a post-v5.1 verification question.
+
+  open_questions:
+    - id: "axis_invariant_correctness_criterion"
+      status: "working_hypothesis"
+      disposition: "post_v5_1_verification"
+      ja: "正しさの判定機構は軸そのものを裁くのではなく、軸の内容に依存せず、その軸のもとで形成された有限系の支持・探索・外部接触・再開可能性を判定している可能性がある。"
+      en: "The correctness criterion may operate independently of the content of the governing axis, evaluating support, inquiry, external contact, and reopenability of the finite system formed under that axis rather than certifying the axis itself."
+      boundary: "v5.1.0では結論化せず、後続検証課題として保持する。"
 
   public_boundary:
     en: >-
@@ -96,7 +106,6 @@ series_anchor:
   ja_authority: "human"
   en: "Events happen at boundaries. Neither simply subjective nor simply objective, but where different modes of description come into contact."
   en_status: "fixed_public_interface"
-  role: "v5_opening_anchor"
 
 series_policy:
   model: "living_series"
@@ -208,9 +217,9 @@ zenodo:
   record_resource_type: "publication-other"
   version_family_doi: "10.5281/zenodo.20665197"
   version_doi:
-    status: "pending" # pending | assigned
-    value: null
-    url: null
+    status: "assigned" # pending | assigned
+    value: "10.5281/zenodo.22813851"
+    url: "https://doi.org/10.5281/zenodo.22813851"
   related_identifiers:
     previous_release_relation: "isNewVersionOf"
     repository_relation: "isSupplementedBy"

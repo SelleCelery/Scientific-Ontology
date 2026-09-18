@@ -103,9 +103,12 @@ v4.3.0までにStage Cの公開基礎が形成され、v5.0.0でStage Dが開い
 - **v5.0.0**：Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、返りを受けるStage Dを開始した。
 - **v5.1.0 release candidate**：SO再帰的哲学研究、Volume Iのhistorical attestation、判断透明性、公開／非公開source境界、文書contractとNavigator投影、`正しさ・個性・無・切断`、および`07_Creative_Offshoots`の外部曝露面を公開体系へ再配置している。01–03の元型、05の内在的批判・拡張、04のスピンアウト、06のレンダリング、07の外部曝露という機能差も公開構造として明示する。さらに、外部接触や自己監査によって訂正・scope制限・保留が必要になった場合に、何に接触し、なぜ再開し、何を変え何を残したかへ戻れるrevision traceを、物理近接Research Notesの非規範的な例から観察し始める。これはv5.1.0でrevision schemaを完成させることを意味しない。
 - **v5.1.1候補**：v5.1公開後の短い観測周期で、Navigatorの公開入口、Public / Developer間の表示・言語挙動、ローカル起動の摩擦、境界語matcherなど、公開面を実際に使って初めて見えるUX・保守残差を小さく修正する。新しい大規模理論展開は既定目的にしない。
+- **Axis-invariant correctness criterion** / 軸内容不変の正しさ判定規則 Final v5.1.0 auditで、01のcorrectness criterionが **構成軸そのものを判定するのではなく、異なる構成軸のもとで形成された有限系に 共通して適用できる判定機構として読める可能性**が露出した。 これはv5.1.0で確立した命題ではなく、後続研究で検証するworking hypothesisとする。
 - **v5.x**：研究・実装・外部照合を順次追加し、各応用から返る残差によって上流概念を再照合する。
 
 v5.1.0の主題は、「正しさ」正本の拡張それ自体よりも、**境界に接触した後で何を持ち帰り、何を訂正し、何を未解決として残すかを、どう監査可能にするか**にある。異なる体系へ越境する側だけでなく、外部の基準・判断・要求を受ける側にも、scope、validity regime、権限、返路の問題が生じる。この射程は学問間に限られないが、v5.1.0では一般社会理論として確定せず、境界運用上の問題として示唆するに留める。
+
+最終監査では、`正しさ・個性・無・切断`の判定機構について、**軸そのものを正当化するのではなく、軸の内容に依存せず、その軸のもとで形成された有限系の成立・探索・外部接触・再開可能性を判定しているのではないか**というworking hypothesisが露出した。これはv5.1.0の確立命題ではなく、正本の現在記述が実際にこの読みへ耐えるかを後続研究で検証するreturn itemとする。特定の次版へ制度化を約束しない。
 
 v5系の開始線は、次である。
 
@@ -565,6 +568,8 @@ v4.3.0 established the public basis of Stage C, and v5.0.0 opened Stage D. The p
 - **v5.x:** continued addition of research, implementation, external collation, and returns into upstream concepts.
 
 The central concern of v5.1.0 is less the expansion of the correctness text itself than **how a system can remain auditable after boundary contact: what it brings back, what it corrects, and what it leaves unresolved**. Questions of scope, validity regime, authority, and return arise not only for a system crossing into another domain, but also for a system receiving external criteria, judgments, or demands. The release leaves the broader social implication open rather than promoting it into a completed general theory.
+
+Final audit also surfaced a working hypothesis about *Correctness, Individuality, Absence, and Cut*: **the criterion may not certify the governing axis itself, but may operate independently of the axis's content when evaluating the finite system formed under it—its support, inquiry, external contact, and reopenability**. v5.1.0 does not promote this into an established claim. It is returned as a post-v5.1 verification question, without assigning it to a specific next release.
 
 In the v5.1.0 release candidate, research history itself is treated as a return. SO Reflexive Philosophical Research retains the path from De-Registry to judgment transparency as a historical method record that separates contemporaneous execution records from present-day acceptance. Historical checksums are not rewritten to current bytes; current accepted bytes are bound separately by attestation.
 

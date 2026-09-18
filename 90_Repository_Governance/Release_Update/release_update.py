@@ -89,7 +89,6 @@ def validate_state(state: dict[str, Any], strict_release: bool = False) -> list[
     zenodo = need(state, "zenodo", "state")
     citation = need(state, "citation", "state")
     scope = need(state, "public_scope", "state")
-    series_anchor = state.get("series_anchor")
 
     if not isinstance(project, dict) or not isinstance(author, dict) or not isinstance(release, dict):
         raise ValidationError("project, public_author, and release must be mappings")
@@ -177,14 +176,6 @@ def validate_state(state: dict[str, Any], strict_release: bool = False) -> list[
 
     if citation.get("orcid_policy") != "propagate_exactly":
         warnings.append("citation.orcid_policy is not propagate_exactly")
-
-    if series_anchor is not None:
-        if not isinstance(series_anchor, dict):
-            raise ValidationError("series_anchor must be a mapping when present")
-        as_text(need(series_anchor, "ja", "series_anchor"), "series_anchor.ja")
-        as_text(need(series_anchor, "ja_authority", "series_anchor"), "series_anchor.ja_authority")
-        as_text(need(series_anchor, "en", "series_anchor"), "series_anchor.en")
-        as_text(need(series_anchor, "en_status", "series_anchor"), "series_anchor.en_status")
 
     guaranteed = need(scope, "guaranteed_inclusions", "public_scope")
     if not isinstance(guaranteed, list):
@@ -323,7 +314,12 @@ def citation_line(state: dict[str, Any]) -> str:
     year = state["citation"]["year"]
     doi = state["zenodo"]["version_doi"]
     if doi["status"] == "assigned":
-        return f"{author}. *{title}*. Zenodo, {year}. DOI: [{doi['value']}]({doi['url']})."
+        if state["release"]["status"] in {"published", "superseded"}:
+            return f"{author}. *{title}*. Zenodo, {year}. DOI: [{doi['value']}]({doi['url']})."
+        return (
+            f"{author}. *{title}*. Release candidate, {year}. "
+            f"Version-specific Zenodo DOI assigned: [{doi['value']}]({doi['url']})."
+        )
     return (
         f"{author}. *{title}*. Release candidate, {year}. "
         f"Version-specific Zenodo DOI pending. Repository: <{state['project']['repository_url']}>."
@@ -382,7 +378,7 @@ ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し�
 
 ---
 """
-    if assigned:
+    if assigned and release["status"] in {"published", "superseded"}:
         citation_guidance_en = (
             "If you use, discuss, or refer to this published public edition, "
             f"cite its version-specific Zenodo DOI: {doi['value']}."
@@ -390,6 +386,15 @@ ZenodoでDOIが確定した後は、まず`release_state.yml`だけを更新し�
         citation_guidance_ja = (
             "この公開版を利用・参照・論評する場合は、"
             f"版固有のZenodo DOI（{doi['value']}）を使用してください。"
+        )
+    elif assigned:
+        citation_guidance_en = (
+            f"A version-specific Zenodo DOI has been assigned for {release['display_version']}: {doi['value']}. "
+            "This repository state is still a release candidate; do not describe it as a published public edition until release.status becomes published."
+        )
+        citation_guidance_ja = (
+            f"{release['display_version']}の版固有Zenodo DOI（{doi['value']}）は割当済みです。"
+            "ただし現在のRepository状態はrelease candidateであり、release.statusがpublishedになるまでは公開済みPublic Editionとして扱いません。"
         )
     else:
         citation_guidance_en = (
@@ -517,13 +522,24 @@ def render_zenodo_json(state: dict[str, Any]) -> str:
 
 def render_release_notes(state: dict[str, Any]) -> str:
     release = state["release"]
+    series_anchor = state.get("series_anchor")
     author = state["public_author"]
     previous = state["previous_release"]
     zenodo = state["zenodo"]
     project = state["project"]
     doi = zenodo["version_doi"]
     assigned = doi["status"] == "assigned"
-    release_date = release.get("publication_date") or "Pending"
+    publication_date = release.get("publication_date")
+    planned_publication_date = release.get("planned_publication_date")
+    if release["status"] in {"published", "superseded"}:
+        release_date_label = "Release date"
+        release_date = publication_date or "Pending"
+    elif planned_publication_date:
+        release_date_label = "Planned release date"
+        release_date = planned_publication_date
+    else:
+        release_date_label = "Release date"
+        release_date = "Pending"
     doi_display = doi["value"] if assigned else "Pending"
 
     included = [h for h in release["highlights"] if h.get("status") == "included"]
@@ -549,21 +565,6 @@ def render_release_notes(state: dict[str, Any]) -> str:
         if release["status"] in {"published", "superseded"}
         else "今回の公開候補に含むもの"
     )
-
-    series_anchor = state.get("series_anchor")
-    series_anchor_block = ""
-    if isinstance(series_anchor, dict):
-        series_anchor_block = f"""## v5 series anchor / v5系の足場
-
-> **{series_anchor['ja']}**
->
-> *{series_anchor['en']}*
-
-The Japanese line remains the human-authoritative opening anchor of the v5 series. The release theme below describes the movement of this release without replacing that anchor.
-
----
-
-"""
 
     release_context_en = release.get("release_context_en")
     if not release_context_en:
@@ -602,6 +603,20 @@ The Japanese line remains the human-authoritative opening anchor of the v5 serie
             "非公開Coreおよび明示的にlocal/internal保留とされた資料はPublic Editionの公開対象外です。",
         )
 
+    series_anchor_block = ""
+    if series_anchor:
+        series_anchor_block = f"""## v5 series anchor / v5系の足場
+
+> **{series_anchor['ja']}**
+>
+> *{series_anchor['en']}*
+
+The Japanese line remains the human-authoritative opening anchor of the v5 series. The release theme below describes the movement of this release without replacing that anchor.
+
+---
+
+"""
+
     return f"""# Release Notes: Scientific Ontology (SO) / 存在境界論 Public Edition {release['display_version']}
 
 
@@ -610,7 +625,7 @@ The Japanese line remains the human-authoritative opening anchor of the v5 serie
 > Language: English-first with Japanese release summary
 > Version-specific DOI: {doi_display}
 
-Release date: {release_date}
+{release_date_label}: {release_date}
 
 ---
 
@@ -687,7 +702,7 @@ release_state.yml
     -> commit
 ```
 
-When Zenodo assigns the version-specific DOI, update `release_state.yml` first and rerun the synchronizer. No provisional or inferred DOI is generated.
+{("The version-specific DOI is assigned in `release_state.yml` and synchronized from that source. Any later DOI change must begin there; no provisional or inferred DOI is generated." if assigned else "When Zenodo assigns the version-specific DOI, update `release_state.yml` first and rerun the synchronizer. No provisional or inferred DOI is generated.")}
 
 ---
 

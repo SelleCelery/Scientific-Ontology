@@ -341,9 +341,8 @@ This exception does **not** make the README a definition owner. Where wording af
 
 ## Current release, citation, and public boundary / 現行版・引用・公開境界
 
-- Current public version: **v5.0.0 — opening release of the v5 series**
-- Current release candidate: **v5.1.0 — self-audit and boundary-operation convergence**; version-specific DOI pending
-- Version-specific DOI for the current public release: [10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382)
+- Current public version:  **v5.1.0 — self-audit and boundary-operation convergence**
+- Version-specific DOI:[10.5281/zenodo.22813851](https://doi.org/10.5281/zenodo.22813851)
 - All versions DOI: [10.5281/zenodo.20665197](https://doi.org/10.5281/zenodo.20665197)
 - [`RELEASE_NOTES.md`](RELEASE_NOTES.md)
 - [`CITATION.md`](CITATION.md)
@@ -356,9 +355,8 @@ For document placement and public exclusions, see the [`System Map`](00_Overview
 
 ### 日本語｜現行版・引用・公開境界
 
-- 現行公開版：**v5.0.0 — v5系開幕版**
-- 現在のリリース候補：**v5.1.0 — 自己監査と境界運用の収束**。版固有DOIは未発行
-- v5.0.0版固有DOI：[10.5281/zenodo.21909382](https://doi.org/10.5281/zenodo.21909382)
+- 現行公開版：**v5.1.0 — 自己監査と境界運用の収束**。
+- v5.1.0版固有DOI：[10.5281/zenodo.22813851](https://doi.org/10.5281/zenodo.22813851)
 - 全版DOI：[10.5281/zenodo.20665197](https://doi.org/10.5281/zenodo.20665197)
 
 このリポジトリは公開インターフェースです。AMP Core、ITS全体系、非公開公理原典、私的ランタイムや人格仕様は含みません。

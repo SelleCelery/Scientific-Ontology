@@ -55,5 +55,6 @@
       "scheme": "url"
     }
   ],
-  "notes": "v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now. The release also does not treat implementation success, external non-establishment, or difference of interpretive phase as automatic proof or refutation."
+  "notes": "v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now. The release also does not treat implementation success, external non-establishment, or difference of interpretive phase as automatic proof or refutation. Final audit surfaced a working hypothesis that the correctness criterion may be invariant to the content of the governing axis; v5.1.0 records this only as a later verification question, not as an established result.",
+  "publication_date": "2026-09-18"
 }
