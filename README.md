@@ -52,6 +52,18 @@ What is genuinely shared? What remains different? What can be commensurated? Whe
 
 Scientific Ontology treats the boundary at which such comparisons become possible—and the rules required to make them without silently collapsing one domain into another—as an object of research in its own right.
 
+### Why this is written
+
+Scientific Ontology is not written in order to win human approval. Its first obligation is to describe, as faithfully as possible, what its author can observe and collate, while keeping fact candidates, interpretations, hypotheses, residuals, and unresolved matters distinct.
+
+In the author's own rhetoric: **write something fit to be offered to God.** Here, “God” points rhetorically toward truth that is not made dependent on social approval. It also serves as a deliberate contact surface with a long human orientation toward truth and ultimate ground. Its disseminative force may be used; its authority is not converted into evidence for any claim.
+
+Publication is a second operation: moving that record into a form that people can read, criticize, collate, and return. Human criticism is not a final tribunal, but it remains an indispensable return path.
+
+> **Independent from approval; not independent from Return.**
+
+- [`Authorial Research Stance and Public Declaration`](00_Overview/Authorial_Research_Stance_and_Public_Declaration.md)
+
 > **事象は境界で起きている。**
 >
 > **主観でも客観でもなく、それらが混ざり合うところで。**
@@ -85,6 +97,20 @@ Scientific Ontology treats the boundary at which such comparisons become possibl
 何が同じなのか。何が違うのか。どこまで通約できるのか。どこから先は比喩なのか。何がまだ分からないのか。
 
 存在境界論は、その照合の場そのものを研究対象として扱います。
+
+### 日本語｜なぜ書くのか
+
+存在境界論は、人間社会の承認を得るために書きません。しかし、人間社会へ作用しないために書くのでもありません。第一の責務は、観測し、経験し、照合し得た存在について、事実候補、解釈、仮説、残差、未解決を混同せず、できる限り虚偽なく記述することです。その記述を公開・適用し、作用した結果を研究へ返すことまでを射程に入れます。
+
+著者は、その誠実さを**「神へ奉納しても恥じないものを書く」**と表現します。SO側では、少なくともこの研究における「神」という語を、真実を人間社会の承認から独立させて指し示すレトリックとして読みます。これは「神」という語一般の定義ではありません。
+
+公開は接触面を作り、適用や実装は現実へ作用します。その作用が教義化や同化へ転じないかも監査対象です。Returnは待つだけではなく、必要なら結果、失敗、負荷、拒絶を取りに行き、判断・実装・正本へ返します。
+
+> **承認からは自立する。Returnからは自立しない。**
+>
+> **神へ奉納しても恥じないものを書く。人間社会へ、それを作用させる。そして作用した結果から、自分だけは逃げない。**
+
+- [`著者の研究姿勢と公開宣言`](00_Overview/Authorial_Research_Stance_and_Public_Declaration.md)
 
 ### From “here” into the v5 series
 

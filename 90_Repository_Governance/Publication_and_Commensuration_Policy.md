@@ -16,6 +16,24 @@
 
 本文書は、個別概念の定義所有者ではない。個別概念の定義権限は、それぞれの正本文書にある。本文書は、正本文書と英語通約文書の関係を統治する。
 
+### 0.1 記述目的と公開目的を分ける
+
+存在境界論は、人間社会の承認を得ることを記述目的としない。
+
+正本の第一責務は、現在の観測・照合のもとで、事実候補、解釈、仮説、残差、未解決を混同せず、虚偽の閉鎖を避けて保持することである。
+
+公開は、その正本を、他者が読み、批判し、照合し、異議や訂正を返せる形へ移す境界操作として扱う。
+
+したがって、**承認とReturnを同一視しない。** 他者の賛同は正本の成立条件ではない。一方で、外部から返った差分が現在の記述を変更し得るなら、その返路を承認不要という理由で閉じてはならない。
+
+### 0.2 公開・適用・作用を分ける
+
+公開は、正本を他者が読める接触面へ移す工程である。適用、制度化、実装は、その記述を現実の判断、行為、制度、技術へ作用させる別工程である。
+
+したがって、公開しただけで作用結果まで監査したことにはならない。作用の強さが増すほど、作用を受けた側から異議が来るのを待つだけではなく、結果、失敗、負荷、拒絶、退出、予期しなかった差分を必要な範囲で観測・回収し、判断、実装、正本へ返す監査責務も増える。
+
+採用・導入・実装されたこと自体は、理論または方針の正当化完了を意味しない。作用を受けた側の異議、停止、退出、修正の経路を実質的に閉じ、その静けさを同意または成功として扱ってはならない。
+
 ---
 
 ## 1. 正本言語と優先順位
@@ -649,6 +667,24 @@ Japanese is the authoritative language of the project.
 An English document is not a word-for-word replacement of the Japanese source. It is an **English commensurated rendering** that connects the conceptual structure, claim strength, non-claim boundaries, open questions, and return paths of the Japanese authoritative text to English-language vocabularies and logical conventions.
 
 This policy does not own the definitions of individual concepts. Definition authority remains with each canonical concept-owner document. This policy governs the relationship between authoritative Japanese documents and their English commensurations.
+
+### 0.1 Separate the purpose of description from the purpose of publication
+
+Scientific Ontology is not written in order to obtain social approval.
+
+The first obligation of an authoritative text is to retain fact candidates, interpretations, hypotheses, residuals, and unresolved matters without collapsing them into one another or producing false closure.
+
+Publication is a boundary operation that moves the authoritative record into a form that others can read, criticize, collate, and return with objections or corrections.
+
+Accordingly, **approval and Return are not the same thing.** Agreement by others is not a condition of canonical validity. At the same time, when an externally returned difference can alter the current record, the return path may not be closed merely because approval is unnecessary.
+
+### 0.2 Distinguish publication, application, and action
+
+Publication moves an authoritative record onto a surface where others can read and inspect it. Application, institutionalization, and implementation are distinct operations that act on actual judgments, practices, institutions, and technologies.
+
+Publication alone therefore does not complete the audit of downstream effects. As the strength of an intervention increases, the audit responsibility also increases: where needed, outcomes, failures, burdens, refusals, exits, and unexpected differences should be actively observed or recovered and returned to judgment, implementation, and the authoritative record rather than merely waiting for objections to arrive.
+
+Adoption, deployment, or implementation does not by itself complete justification. A system may not close practical routes for objection, stopping, exit, or revision and then treat the resulting silence as consent or success.
 
 ---
 

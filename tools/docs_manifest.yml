@@ -1507,6 +1507,69 @@ documents:
       revision: 2026-08-23-b
   legacy_metadata:
     internal_profile_semantics: pre-document-contract labels; not approved assessment results
+- path: 00_Overview/Authorial_Research_Stance_and_Public_Declaration.md
+  doc_id: 00_overview_authorial_research_stance_public_declaration
+  document_type: common_fixed_explanation
+  title_ja: 著者の研究姿勢と公開宣言
+  title_en: Authorial Research Stance and Public Declaration
+  layer: 00_Overview
+  status: Public meta statement / authorial orientation
+  scope: research purpose, truth orientation, publication, human approval, human social action, active return, formation provenance
+  public_profile: P0-P1
+  state: public
+  registration_state: provisional
+  role_ja: 著者の記述目的、人間社会の承認との距離、神を用いた真実志向のレトリック、人間社会への作用、教義化との接触地帯、能動的Return、形成史の関係を示す公開メタ記述
+  role_en: Public meta statement on descriptive purpose, distance from social approval, God as rhetoric for truth-orientation, action on human society, possible doctrinal closure, active Return, and formation provenance
+  language_relation:
+    language: ja+en
+    role: integrated_japanese_authoritative
+    counterpart_path:
+    coverage: not_applicable
+    authoritative_path: 00_Overview/Authorial_Research_Stance_and_Public_Declaration.md
+  related:
+  - README.md
+  - 90_Repository_Governance/Publication_and_Commensuration_Policy.md
+  - 01_Sat_Truth/Boundary_Epistemological_Critique.ja.md
+  discovery:
+    topics:
+    - overview
+    - publication
+    - truth
+    - return
+    - formation
+    aliases:
+      ja:
+      - 公開宣言
+      - 著者前文
+      en:
+      - authorial declaration
+    reader_questions:
+      ja:
+      - 存在境界論は何のために書かれているか
+      - 人間社会の承認と研究目的はどう分けるか
+      - 神へ捧げるという表現は何を意味するか
+      - 公開とReturnはどう関係するか
+      en:
+      - Why is Scientific Ontology written?
+      - How is social approval separated from the purpose of research?
+      - What does offering the work to God mean here?
+      - How are publication and Return related?
+    entry_level: foundation
+    searchable: true
+    visibility: primary
+    primary_question:
+      ja: 存在境界論は何のために書かれ、なぜ人間へ公開されるのか
+      en: Why is Scientific Ontology written, and why is it published to humans?
+  document_role: methodological_governance
+  catalog_document: true
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+    protocol:
+      id: claim-classification-pilot
+      revision: 2026-08-23-b
+  legacy_metadata:
+    internal_profile_semantics: pre-document-contract labels; not approved assessment results
 - path: "00_Overview/Scientific_Ontology_Operational_Outline.ja.md"
   document_type: "assertion_document"
   title_ja: "存在境界論 運用アウトライン"
@@ -9270,6 +9333,191 @@ documents:
       en: []
     searchable: true
     visibility: canonical
+
+- path: "05_Research_Notes/Generative_Metaphysics_and_Falsification_Studies/存在境界論における監査理論.ja.md"
+  doc_id: 05_research_notes_generative_metaphysics_audit_theory_ja
+  document_type: "assertion_document"
+  title_ja: "存在境界論における監査理論"
+  title_en: "Audit Theory in Scientific Ontology"
+  layer: "05_Research_Notes/Generative_Metaphysics_and_Falsification_Studies"
+  status: "Foundational audit theory / research draft / pre-formalization"
+  scope: "audit necessity / phase-aware audit / asymmetry / contact / transmission / intrusion / action effect / effective return / externalization / manifestation boundary / generation boundary / transmission path / responsibility boundary / persistence / return"
+  public_profile: "P2"
+  internal_profile:
+    S: "S3-S4"
+    E: "E2-E3"
+    U: "U1-U2"
+    R: "R2-R5"
+    V: "V0-V4"
+  state: "public"
+  registration_state: "provisional"
+  role_ja: "監査の形而上学的基礎を扱い、発現境界・生成境界・伝播変換経路・責任境界を分離し、個人化による因果偽閉鎖、作用主体の自己監査、能動的Return、Returnの存在と実効性、接触・伝達と実効作用の区別を外部化監査へ接続する研究稿"
+  role_en: "Japanese-authoritative research draft on the metaphysical basis of audit, extended to separate manifestation, generation, transmission, and responsibility boundaries, distinguish contact from effective action, and audit interventions through effective and active Return"
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path:
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Generative_Metaphysics_and_Falsification_Studies/存在境界論における監査理論.ja.md"
+  related:
+  - "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md"
+  - "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md"
+  discovery:
+    topics:
+    - audit
+    - boundary
+    - externalization
+    - causality
+    - return
+    aliases:
+      ja:
+      - 監査理論
+      - 発現境界
+      - 生成境界
+      en:
+      - audit theory
+      - manifestation boundary
+      - generation boundary
+    reader_questions:
+      ja:
+      - なぜ監査が必要か
+      - 発現した場所と原因をどう分けるか
+      - 個人化による因果偽閉鎖とは何か
+      - 外部化と責任境界をどう監査するか
+      en:
+      - Why is audit necessary?
+      - How should manifestation be separated from generation?
+      - What is causal false closure through individualization?
+      - How are externalization and responsibility boundaries audited?
+    entry_level: advanced
+    searchable: true
+    visibility: secondary
+    primary_question:
+      ja: 発現した場所を原因点へ誤昇格させずに監査するにはどうすればよいか
+      en: How can audit avoid mistaking the site of manifestation for the site of generation?
+  document_role: research_note
+  catalog_document: true
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+    protocol:
+      id: claim-classification-pilot
+      revision: 2026-08-23-b
+  legacy_metadata:
+    internal_profile_semantics: pre-document-contract labels; not approved assessment results
+
+- path: 05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md
+  doc_id: intrinsic_time_sub_entanglement_communication_model_en
+  document_type: assertion_document
+  title_ja: 内在時間（亜エンタングル）通信モデル
+  title_en: Intrinsic-Time (Sub-Entanglement) Communication Model
+  layer: 05_Research_Notes/Physical_Cosmological_Notes
+  status: Research Note
+  scope: Physical / Cosmological Notes
+  public_profile: Research Note / P2-P2.5
+  state: public
+  registration_state: provisional
+  role_ja: 旧PINGER仮説を、粒子中心ではなく通信・内在時間・履歴・返路を中心とする物理近接研究モデルとして再整理し、亜エンタングル、履歴場、観測断面、通信経路の関係を扱う英語通約稿
+  role_en: English commensuration of a physical-adjacent research model reorganizing the legacy PINGER hypothesis around communication pathways, intrinsic time, history, return paths, sub-entanglement, and observational sections
+  language_relation:
+    language: en
+    role: commensuration
+    counterpart_path: 05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md
+    coverage: full
+    authoritative_path: 05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md
+  discovery:
+    topics:
+    - science
+    - communication
+    - network
+    - boundary
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja:
+      - 内在時間（亜エンタングル）通信モデルとは何か
+      - PINGER仮説を通信経路中心にどう再整理するか
+      - 亜エンタングルとは何か
+      - ファインマンダイアグラムをSOではどう扱うか
+      - 標準物理学との非同一性をどう保持するか
+      en:
+      - What is the Intrinsic-Time Sub-Entanglement Communication Model?
+      - How is the legacy PINGER hypothesis reorganized around communication pathways?
+      - What does sub-entanglement mean in this research note?
+      - How are Feynman diagrams used on the SO side?
+      - How is non-identity with standard physics preserved?
+    entry_level: advanced
+    searchable: true
+    visibility: paired
+    primary_question:
+      ja:
+      en:
+  document_role: research_note
+  catalog_document: true
+  assessment:
+    applicability: commensuration_only
+    review_state: unreviewed
+  legacy_metadata:
+    internal_profile_semantics: pre-document-contract labels; not approved assessment results
+
+- path: 05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md
+  doc_id: intrinsic_time_sub_entanglement_communication_model
+  document_type: assertion_document
+  title_ja: 内在時間（亜エンタングル）通信モデル
+  title_en: Intrinsic-Time (Sub-Entanglement) Communication Model
+  layer: 05_Research_Notes/Physical_Cosmological_Notes
+  status: Research Note
+  scope: Physical / Cosmological Notes
+  public_profile: Research Note / P2-P2.5
+  state: public
+  registration_state: provisional
+  role_ja: 旧PINGER仮説を、粒子中心ではなく通信・内在時間・履歴・返路を中心とする物理近接研究モデルとして再整理し、亜エンタングル、履歴場、観測断面、通信経路の関係を扱う日本語正本研究稿
+  role_en: Japanese-authoritative physical-adjacent research note reorganizing the legacy PINGER hypothesis around communication pathways, intrinsic time, history, return paths, sub-entanglement, and observational sections
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: 05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md
+    coverage: full
+    authoritative_path: 05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md
+  discovery:
+    topics:
+    - science
+    - communication
+    - network
+    - boundary
+    aliases:
+      ja: []
+      en: []
+    reader_questions:
+      ja:
+      - 内在時間（亜エンタングル）通信モデルとは何か
+      - PINGER仮説を通信経路中心にどう再整理するか
+      - 亜エンタングルとは何か
+      - ファインマンダイアグラムをSOではどう扱うか
+      - 標準物理学との非同一性をどう保持するか
+      en:
+      - What is the Intrinsic-Time Sub-Entanglement Communication Model?
+      - How is the legacy PINGER hypothesis reorganized around communication pathways?
+      - What does sub-entanglement mean in this research note?
+      - How are Feynman diagrams used on the SO side?
+      - How is non-identity with standard physics preserved?
+    entry_level: advanced
+    searchable: true
+    visibility: secondary
+    primary_question:
+      ja:
+      en:
+  document_role: research_note
+  catalog_document: true
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+    protocol:
+      id: claim-classification-pilot
+      revision: 2026-08-23-b
+  legacy_metadata:
+    internal_profile_semantics: pre-document-contract labels; not approved assessment results
 
 managed_assets:
 - asset_id:

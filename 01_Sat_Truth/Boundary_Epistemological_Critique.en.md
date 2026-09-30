@@ -556,6 +556,20 @@ For general translation and terminology policy, see [`../Translation_Note.md`](.
 
 14.17 Therefore, the runaway conditions of knowledge can be redescribed as failures in residual processing.
 
+14.18 Facts strongly constrain the current description under stated conditions and provenance.
+
+14.18.1 But the accumulation of facts does not by itself mean arrival at truth itself.
+
+14.19 More experience may increase the resolution available to a finite observer.
+
+14.19.1 But an increase in experience does not turn a finite observer into the owner of truth as a whole.
+
+14.20 If the currently reached set of facts is closed as the whole of truth, return paths from unknown observational axes, future defeaters, other histories, and residuals are closed with it.
+
+14.21 A declaration that knowledge is complete is therefore one of the strongest candidates for false closure.
+
+14.22 In the author's phrasing: **“If I were complete, I would by then have become a god on earth.”**
+
 ---
 
 ## 15. Conclusion
@@ -589,6 +603,8 @@ For general translation and terminology policy, see [`../Translation_Note.md`](.
 15.12 To know is not to possess the world.
 
 15.12.1 To know is to come into contact at a boundary, enter into operational correspondence, collate, retain residuals, and open the next capacity for judgment.
+
+15.13 For a finite observer, the present point of arrival is not completion but a provisional closure that must remain re-collatable.
 
 ---
 

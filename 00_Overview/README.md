@@ -2,7 +2,7 @@
 
 > Layer: 00_Overview
 > Status: README
-> Scope: public orientation / operational outline / concept network / system map / research dynamics / claim control / physics correspondence
+> Scope: public orientation / authorial research stance / operational outline / concept network / system map / research dynamics / claim control / physics correspondence
 > Language: ja+en
 > Public profile: P0-P1
 > Authority: Directory navigation and maintenance contract; not a concept-definition owner
@@ -23,6 +23,7 @@
 ルートREADME・Glossary・Roadmap
   ↓
 00_Overview
+  ├─ Authorial Research Stance / Public Declaration
   ├─ Operational Outline
   ├─ Concept Network
   ├─ System Map
@@ -47,6 +48,7 @@
 
 含むもの：
 
+- 著者の研究姿勢、記述目的、人間社会への作用、公開とReturnの関係
 - 存在境界論全体の運用方針と読解入口
 - 概念配置と読解経路
 - リポジトリ体系図
@@ -63,22 +65,25 @@
 
 ## 4. Documents / 文書一覧
 
-1. [`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md) / [`en`](./Scientific_Ontology_Operational_Outline.en.md)
+1. [`Authorial_Research_Stance_and_Public_Declaration.md`](./Authorial_Research_Stance_and_Public_Declaration.md)
+   人間社会の承認と記述責務を分け、「神へ捧げる」というレトリック、人間社会への作用、教義化との接触地帯、能動的Return、研究形成史の関係を示す公開メタ記述。理論概念の定義所有者ではない。
+
+2. [`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md) / [`en`](./Scientific_Ontology_Operational_Outline.en.md)
    v5系開始時に自覚された、存在境界論全体の運用方針。境界事件、可動性、責任分界、終端未確定性を扱うが、v5系だけに限定される定義文書ではない。
 
-2. [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md) / [`en`](./Scientific_Ontology_Concept_Network.en.md)
+3. [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md) / [`en`](./Scientific_Ontology_Concept_Network.en.md)
    概念配置、文書所有、読解経路、返路、アポリアの入口。
 
-3. [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)
+4. [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)
    リポジトリ構造、各層の責務、公開境界、統治領域。
 
-4. [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md) / [`en`](./Truth_Management_and_Boundary_PDCA.en.md)
+5. [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md) / [`en`](./Truth_Management_and_Boundary_PDCA.en.md)
    第一義、共有、世界形成、Boundary PDCAを通じた研究・運用循環。
 
-5. [`Claim_Strength_and_Publication_Layer_Table.ja.md`](./Claim_Strength_and_Publication_Layer_Table.ja.md) / [`en`](./Claim_Strength_and_Publication_Layer_Table.en.md)
+6. [`Claim_Strength_and_Publication_Layer_Table.ja.md`](./Claim_Strength_and_Publication_Layer_Table.ja.md) / [`en`](./Claim_Strength_and_Publication_Layer_Table.en.md)
    主張強度、証拠強度、利用リスク、未確定性、公開層、通約距離。
 
-6. [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md) / [`en`](./Physics_Correspondence_Policy.en.md)
+7. [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md) / [`en`](./Physics_Correspondence_Policy.en.md)
    物理近接語彙と標準物理学の非同一性、強い仮説の配置条件。
 
 ## 5. Maintenance Notes / 運用メモ
@@ -108,6 +113,7 @@ Publication, commensuration, and terminology-collision governance belong to [`90
 Root README, Glossary, and Roadmap
   ↓
 00_Overview
+  ├─ Authorial Research Stance / Public Declaration
   ├─ Operational Outline
   ├─ Concept Network
   ├─ System Map
@@ -128,6 +134,7 @@ This README is not a replacement for standard science, law, policy, or establish
 
 Included:
 
+- authorial research stance, descriptive purpose, action on human society, and relation to publication and Return;
 - whole-system operational orientation and reading entrances;
 - concept placement and reading routes;
 - repository system map;
@@ -144,22 +151,25 @@ Not included:
 
 ## 3. Documents and Recommended Reading Order
 
-1. [`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md) / [`en`](./Scientific_Ontology_Operational_Outline.en.md)
+1. [`Authorial_Research_Stance_and_Public_Declaration.md`](./Authorial_Research_Stance_and_Public_Declaration.md)
+   Public meta statement on authorial research stance, descriptive purpose, the rhetoric of offering the work to God, action on human society, the zone of possible doctrinal closure, active Return, and formation provenance. It does not own technical theory definitions.
+
+2. [`Scientific_Ontology_Operational_Outline.ja.md`](./Scientific_Ontology_Operational_Outline.ja.md) / [`en`](./Scientific_Ontology_Operational_Outline.en.md)
    A whole-system operational orientation recognized at the opening of the v5 series. It addresses boundary events, mobility, responsibility partition, and an undetermined endpoint without becoming a v5-only definition document.
 
-2. [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md) / [`en`](./Scientific_Ontology_Concept_Network.en.md)
+3. [`Scientific_Ontology_Concept_Network.ja.md`](./Scientific_Ontology_Concept_Network.ja.md) / [`en`](./Scientific_Ontology_Concept_Network.en.md)
    Entrance to concept placement, document ownership, reading routes, return paths, and aporias.
 
-3. [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)
+4. [`Scientific_Ontology_System_Map.md`](./Scientific_Ontology_System_Map.md)
    Repository architecture, layer responsibilities, public boundaries, and governance areas.
 
-4. [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md) / [`en`](./Truth_Management_and_Boundary_PDCA.en.md)
+5. [`Truth_Management_and_Boundary_PDCA.ja.md`](./Truth_Management_and_Boundary_PDCA.ja.md) / [`en`](./Truth_Management_and_Boundary_PDCA.en.md)
    Research and operational circulation through first purpose, sharing, world formation, and Boundary PDCA.
 
-5. [`Claim_Strength_and_Publication_Layer_Table.ja.md`](./Claim_Strength_and_Publication_Layer_Table.ja.md) / [`en`](./Claim_Strength_and_Publication_Layer_Table.en.md)
+6. [`Claim_Strength_and_Publication_Layer_Table.ja.md`](./Claim_Strength_and_Publication_Layer_Table.ja.md) / [`en`](./Claim_Strength_and_Publication_Layer_Table.en.md)
    Claim strength, evidence strength, use risk, uncertainty, publication layer, and rendering distance.
 
-6. [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md) / [`en`](./Physics_Correspondence_Policy.en.md)
+7. [`Physics_Correspondence_Policy.ja.md`](./Physics_Correspondence_Policy.ja.md) / [`en`](./Physics_Correspondence_Policy.en.md)
    Non-identity with standard physics and placement conditions for stronger hypotheses.
 
 ## 4. Return and Maintenance
