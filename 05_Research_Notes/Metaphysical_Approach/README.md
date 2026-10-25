@@ -121,7 +121,7 @@ Metaphysical Approach
 
   インテリジェンスの形成・安定・再開と監査可能性を接続する研究ノート。
 
-- [`全・無・切断・未選択可能性の関係試論.ja.md`](Engineering%20Research%20on%20Correctness/全・無・切断・未選択可能性の関係試論.ja.md) / [`EN`](Engineering%20Research%20on%20Correctness/Whole_Null_Cut_and_Unselected_Possibility.en.md)
+- [`全・無・切断・未選択可能性の関係試論.ja.md`](Engineering%20Research%20on%20Correctness/全・無・切断・未選択可能性の関係試論.ja.md) / [`EN`](Engineering%20Research%20on%20Correctness/Whole_Absence_Cut_and_Unselected_Possibility.en.md)
 
   AMPの未分化の全、無、切断、未選択可能性の関係を、無標識に同一化せず検討する。
 

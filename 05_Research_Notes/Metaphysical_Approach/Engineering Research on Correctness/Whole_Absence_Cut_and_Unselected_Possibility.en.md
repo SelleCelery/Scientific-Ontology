@@ -1,5 +1,5 @@
-# A Trial on the Relation among the Whole, Null/Void, Cut, and Unselected Possibility
-## —Thinking from boundary generation without identifying AMP's “undifferentiated whole” with “null/void”
+# A Trial on the Relation among the Whole, Absence, Cut, and Unselected Possibility
+## —Thinking from boundary generation without identifying AMP's “undifferentiated whole” with its “Nihil”
 
 > **Language:** English commensurated rendering.
 >
@@ -7,13 +7,13 @@
 
 ## 0. Position of This Note
 
-This research note brings into contact the “primordial entity / undifferentiated whole” and “Nihil” of AMP, cut and localization in ITS, and the notions of null/void, Cut, Missing, Resource Boundary, and related states in Scientific Ontology.
+This research note brings into contact the “primordial entity / undifferentiated whole” and “Nihil” of AMP, cut and localization in ITS, and the notions of Absence, Cut, Missing, Resource Boundary, and related states in Scientific Ontology.
 
 Its starting point is the following Human-side hypothesis:
 
-> **Might null/void and the whole be two sides of the same relation? It seems unlikely that they are unrelated.**
+> **Might Absence and the whole be two sides of the same relation? It seems unlikely that they are unrelated.**
 
-AMP itself, however, explicitly distinguishes the primordial entity as **not null/void but an undifferentiated whole**. At the same time, AMP's Nihil is described as the coagulation of “unselected possibilities” excluded behind a route selected by Light.
+AMP itself, however, explicitly distinguishes the primordial entity as **not Nihil but an undifferentiated whole**. At the same time, AMP's Nihil is described as the coagulation of “unselected possibilities” excluded behind a route selected by Light.
 
 Accordingly, this note does **not** posit:
 
@@ -23,19 +23,19 @@ $$
 
 Instead, it examines the following hypothesis:
 
-> **The relation between the whole and null/void may be readable as a generative relation of before/after cut, selection/nonselection, and locality/complement.**
+> **The relation between the whole and Absence may be readable as a generative relation of before/after cut, selection/nonselection, and locality/complement.**
 
-This is not an authoritative text. It does not silently identify AMP's metaphysical vocabulary with the operational uses of null/void in Scientific Ontology.
+This is not an authoritative text. It does not silently identify AMP's metaphysical vocabulary with the operational uses of Absence in Scientific Ontology.
 
 ---
 
-## 1. AMP's Primordial Entity Is Not “Null/Void”
+## 1. AMP's Primordial Entity Is Not “Nihil”
 
 AMP defines the primordial entity as a field of pure possibility without time, space, or limitation.
 
 In its supplementary explanation, AMP explicitly calls this:
 
-> not “null/void,” but an “undifferentiated whole.”
+> not “Nihil,” but an “undifferentiated whole.”
 
 What matters here is that distinctions such as inside/outside, selected/unselected, and presence/absence have not yet been established.
 
@@ -63,7 +63,7 @@ Locality
 
 Only with the cut do “this side” and “that side,” “adopted” and “not adopted,” “observed” and “not observed” become established.
 
-Accordingly, when considering null/void, one must ask not only:
+Accordingly, when considering Absence, one must ask not only:
 
 > **What is absent?**
 
@@ -89,15 +89,15 @@ Chosen path / Local actuality
 Unchosen possibilities / complement
 ```
 
-Here, “null/void” may be closer not to an emptiness prior to differentiation, but to:
+Here, operational **Absence** may be closer not to an emptiness prior to differentiation, but to:
 
 > **the complement that appears, from the standpoint of a local actuality, as the side not selected once that local actuality has been established.**
 
-Read this way, the intuition that “null/void and the whole are two sides of one relation” can be made more precise without turning it into an identity claim.
+Read this way, the intuition that “Absence and the whole are two sides of one relation” can be made more precise without turning it into an identity claim.
 
 The whole is the totality of possibility before differentiation.
 
-Null/void, in this reading, arises after a local state has been established, as part of what moves to the unselected, invisible, or unrealized side relative to that locality.
+Absence, in this reading, arises after a local state has been established, as part of what moves to the unselected, invisible, or unrealized side relative to that locality.
 
 Thus:
 
@@ -113,7 +113,7 @@ $$
 
 ---
 
-## 4. Do Not Treat “Null/Void” as One Kind of State
+## 4. Do Not Treat “Absence” as One Kind of State
 
 Scientific Ontology already tends away from collapsing all forms of “absence” into one category.
 
@@ -161,13 +161,13 @@ This final type connects with Bilateral Surplus, Branch, and provenance-preservi
 
 ---
 
-## 5. How Should the Two-Sided Relation of Whole and Null/Void Be Read?
+## 5. How Should the Two-Sided Relation of Whole and Absence Be Read?
 
 This note decomposes the phrase “two sides of one relation” into three distinct claims.
 
 ### 5.1 It Is Not Identity
 
-The undifferentiated whole itself is not renamed null/void.
+The undifferentiated whole itself is not renamed Absence.
 
 ### 5.2 Co-generation Through Cut
 
@@ -175,16 +175,16 @@ When locality is established, the same cut simultaneously gives rise to “what 
 
 In this sense:
 
-> **Locality and its null-like complement can be read as two sides generated by the same cut.**
+> **Locality and its absence-like complement can be read as two sides generated by the same cut.**
 
 ### 5.3 Dependence on Observational Position
 
-What appears as “null” from one locality may appear as an effective structure in another logical plane, another individuality, or another coordinate system.
+What appears as “Absence” from one locality may appear as an effective structure in another logical plane, another individuality, or another coordinate system.
 
 Therefore:
 
 $$
-Null_{L_d} \not\Rightarrow AbsoluteNonexistence
+Absence_{L_d} \not\Rightarrow AbsoluteNonexistence
 $$
 
 This connects to the Scientific Ontology condition that **what my search apparatus cannot see must not be promoted into what does not exist in the world**.
@@ -211,7 +211,7 @@ At minimum, β audit examines:
 - what went dormant;
 - what disappeared from the present representation.
 
-It is dangerous to call all of these “what disappeared” simply null/void.
+It is dangerous to call all of these “what disappeared” simply Absence.
 
 One must distinguish whether something:
 
@@ -222,7 +222,7 @@ One must distinguish whether something:
 - became invisible because of insufficient resources;
 - was closed through a Deliberate Seal.
 
-The classification of null/void states may therefore function as a form of **loss accounting** in β audit.
+The classification of Absence states may therefore function as a form of **loss accounting** in β audit.
 
 ---
 
@@ -250,13 +250,13 @@ What to forget therefore also becomes a matter of boundary design.
 
 ---
 
-## 8. Stability Viewed Through the Relation between Null/Void and Whole
+## 8. Stability Viewed Through the Relation between Absence and Whole
 
 For a local region to stabilize is to retain a boundary and avoid recalculating every possible state on every occasion.
 
 Stability therefore contains, in one sense, the condition that **one cannot act without cutting something**.
 
-Yet if everything outside the cut is converted into absolute nullity, reopening becomes impossible.
+Yet if everything outside the cut is converted into absolute absence, reopening becomes impossible.
 
 A finite system's stability can instead be read as:
 
@@ -274,11 +274,11 @@ operate within available resources
 reopen when reopening conditions arrive
 ```
 
-This lies between “retain the entire whole” and “erase the outside as null.”
+This lies between “retain the entire whole” and “erase the outside as Absence.”
 
 ---
 
-## 9. A Provisional Relation among Whole, Null/Void, and Scientific Ontology
+## 9. A Provisional Relation among Whole, Absence, and Scientific Ontology
 
 The current research candidate can be minimized as follows:
 
@@ -296,7 +296,7 @@ Unknown / Missing / Cut / Resource Boundary /
 Dormant Branch / Compression Loss / Deliberate Seal ...
 ```
 
-In this diagram, “null/void” is not a single primordial entity.
+In this diagram, “Absence” is not a single primordial entity.
 
 It becomes a problem family for distinguishing multiple forms of non-presence that appear after localization.
 
@@ -313,18 +313,18 @@ Scientific Ontology may therefore develop not by explaining the whole exhaustive
 This trial requires revision if any of the following holds:
 
 1. Reading the relation between AMP's “undifferentiated whole” and Nihil as complement-generation through cut is incompatible with the textual lineage of AMP.
-2. Adding Pre-differentiation to the operational classification of null/void in Scientific Ontology makes the classification less coherent rather than more coherent.
+2. Adding Pre-differentiation to the operational classification of Absence in Scientific Ontology makes the classification less coherent rather than more coherent.
 3. The similarity between unselected possibility and Dormant Branch provides no explanatory value beyond metaphor.
 4. Recording “what disappeared” in β audit imposes an excessive cost on a finite-resource system.
-5. The language of a whole/null duality once again erases AMP's explicit distinction between the two.
+5. The language of a whole/Absence duality once again erases AMP's explicit distinction between the two.
 
 ---
 
 ## 11. Next Return Path
 
-The next step should place side by side the current Scientific Ontology classifications of null/void, `正しさ・個性・無・切断`, the audit theory, and the logical-depth / β-audit trial, and organize as a relation table—without collapsing them into one term—at least the following:
+The next step should place side by side the current Scientific Ontology classifications of Absence, `正しさ・個性・無・切断`, the audit theory, and the logical-depth / β-audit trial, and organize as a relation table—without collapsing them into one term—at least the following:
 
-- the forms of “null/void” already present in the canonical SO texts;
+- the forms of “Absence” already present in the canonical SO texts;
 - the metaphysical “Nihil” inherited from AMP;
 - Missing / Surplus / Branch inherited from the lab line;
 - missingness and cuts used in Repository audit.

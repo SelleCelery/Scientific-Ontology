@@ -11,7 +11,7 @@
 > Formation provenance: The Human-side research hypotheses include treating “correct” as search saturation under finite resources, including individuality among its formation conditions, and allowing absence and cuts to induce search pressure. The mathematical formulations, communication model, and terminological organization include AI-side formalization. This formation provenance remains in force even after the text's movement from a private formation draft into the public canon.
 > Non-claim: This document is not an established general theory in standard logic, mathematics, physics, or AI. In particular, “pressure,” “absence,” and “cut” are not physical quantities unless an operational meaning is explicitly defined in the relevant section. “Correct” here is not automatically identified with philosophical truth, a mathematical truth value, or correctness in formal verification.
 > Reading rule: “Correct” here does not mean “possessing the final truth of the universe.” It is an engineering term for the conditions under which a finite system may continue to hold its present state as tenable.
-> Commensuration note: `correct / correctness` deliberately renders 正しい / 正しさ rather than `true / truth`. `absence` renders 無 in its operational sense here and is not intended to assert metaphysical nothingness. `individuality` renders 個性 and should not be read merely as personality style. `Cut` is retained as a technical term for 切断 where the text treats a broken or non-transmitting relation structurally. `undetermined` renders 未判定. `Ingress`, `Traceback`, and `Reopen` are retained as explicit subconditions of Return / Reopening.
+> Commensuration note: `correct / correctness` deliberately renders 正しい / 正しさ rather than `true / truth`. `absence` renders 無 in its operational sense here and is not intended to assert metaphysical nothingness. `individuality` renders 個性 and should not be read merely as personality style. `Cut` is retained as a technical term for 切断 where the text treats a broken or non-transmitting relation structurally. `undetermined` renders 未判定. `Ingress`, `Traceback`, and `Reopen` are retained as explicit subconditions of Return / Reopening. `topology` renders 位相 where the term denotes relational position and connectivity within adjudication, communication, logic, or reconstruction; it is kept distinct from `phase` for physical phases and from `stage` for sequential developmental steps.
 
 ---
 
@@ -69,6 +69,47 @@ Under this Scientific Ontology specification, “correct” is therefore treated
 
 This specification does not replace the core definition of “correct.” It is **Scientific Ontology's operational specification for re-collating correctness as a problem of boundary, contact, history, return path, and cut**.
 
+### 0.2 Separating Adjudication from Audit
+
+To make the boundary of responsibility with later research documents explicit, this document distinguishes **adjudication** from **audit**.
+
+Adjudication here does not mean a judicial procedure in law. For a proposition $p$, it is the operation of determining **how far the proposition can be locally justified** under its current topological position, support, scope, defeaters, and search resources.
+
+Conceptually,
+
+$$
+Adjudicate(p,\phi_t)
+$$
+
+Adjudication primarily asks:
+
+- Is this proposition compatible with the present factual constraints?
+- On which support paths does it depend?
+- Within what scope does it hold?
+- Have known defeaters been handled?
+- How far has falsification search actually been carried out with the present search resources?
+
+Audit, by contrast, is broader than a single proposition. It includes questions such as:
+
+- Is it appropriate to place this proposition in this document?
+- Are facts, theories, hypotheses, and residuals displayed without being conflated?
+- Does the strength of expression exceed its support?
+- Does the document structure cut off objections or return paths?
+- Has a research note been silently promoted into the canon?
+- Has a locally correct proposition been overextended into another scope?
+
+A proposition can therefore pass local adjudication without the document as a whole passing audit.
+
+$$
+Adjudicated(p,\phi_t)
+\not\Rightarrow
+Audited(D_t)
+$$
+
+Conversely, appropriate document placement does not automatically justify each proposition inside it.
+
+This document primarily owns the **local conditions of standing on the adjudication side**. Audit theory addresses the relations in which those propositions, expressions, structures, and placements are situated.
+
 ---
 
 # Part I — “Correct” as Logic
@@ -123,6 +164,52 @@ $$
 $$
 
 Non-derivability, unverified status, lack of establishment in an external field, and falsification are different states. If SO misstates a borrowed definition, measurement, or factual claim from an established field, that local error should be corrected. But the mere fact that a standard theory does not require an explicitly marked SO ground hypothesis does not automatically defeat that hypothesis.
+
+### 1.2 Facts, Theories, and Residuals Occupy Topological Positions
+
+Do not treat $E_t$, $A_t$, and $Q_t$ as fixed classifications without topology.
+
+Even the same object $x$ can play a different adjudicative role depending on where it currently sits in the inquiry process.
+
+For example, a description received from outside may transition as follows:
+
+```text
+external input
+  ↓
+confirmed as a fact candidate
+  ↓
+interpreted on the SO side
+  ↓
+adjudicated as a proposition
+  ↓
+reopened by objection
+  ↓
+retained as a residual or scope-limited proposition
+```
+
+The current adjudicative topological position of object $x$ can therefore be recorded provisionally as
+
+$$
+\Phi_t(x)=\phi_i.
+$$
+
+Topology here is not a license to alter facts arbitrarily. **Factual constraints remain constraints across topological positions.** What changes is how a fact is connected to an interpretation, proposition, residual, or reopening condition.
+
+Nor does topology mean one fixed linear sequence of stages. Depending on the object, observation, interpretation, proposition formation, rebuttal, reconstruction, suspension, and residualization may occur in different orders.
+
+What matters is:
+
+> **retain the topological position under which the present justification was established.**
+
+Accordingly, an adjudication result that held at one topological position $\phi_i$ is not automatically carried over when external contact or a new difference moves the object to $\phi_j$.
+
+$$
+Correct(p,\phi_i)
+\not\Rightarrow
+Correct(p,\phi_j)
+$$
+
+A topological transition may therefore trigger re-adjudication.
 
 ## 2. Internal Tenability
 
@@ -1112,6 +1199,35 @@ For now, it is safer to treat “correct” as a term for:
 
 ---
 
+## 39.1 If Lossless Compression into a Single Topology Is Possible, Is the Topological Structure Unnecessary?
+
+If this document introduces topological differences, those differences must be more than labels.
+
+For a given target class, suppose that a single model $M_1$ that does not distinguish topological positions can, compared with the topology-aware model $M_{\Phi}$,
+
+1. preserve the same factual constraints;
+2. return the same local adjudication results;
+3. discover the same defeaters and residuals;
+4. Traceback to the same support paths;
+5. make the same Reopen decisions; and
+6. operate with equal or fewer search resources.
+
+Then the topological distinction has no explanatory increment.
+
+Conceptually, if
+
+$$
+LosslessQuotient(M_{\Phi}\rightarrow M_1)=1,
+$$
+
+then, at least for that target class, the topological structure is redundant.
+
+The fact that a simple task can be handled within one topological position is not itself a falsifier. What matters for falsification is whether **the residuals, return paths, and capacity for re-adjudication that SO claims to preserve through topological differences are systematically preserved even after those differences are removed**.
+
+If this holds across SO's core target classes, the design of topology-aware adjudication must be reconsidered from the root level.
+
+---
+
 # 40. Final Compression
 
 Compress the core of this document onto one page.
@@ -1135,6 +1251,14 @@ Compress the core of this document onto one page.
 ### Pressure
 
 > **A search priority generated when absence, cuts, misconnection, or untreated residuals are aggregated through return paths toward an upstream structure. It is not a force that indicates truth, but a signal demanding reinspection.**
+
+### Adjudication
+
+> **The operation of deciding whether a proposition can be locally justified under its current topological position, support, scope, defeaters, and search resources. It does not automatically guarantee that the document as a whole is appropriately placed or has passed audit.**
+
+### Topology
+
+> **The adjudicative relational position showing where fact candidates, theories, propositions, residuals, and defeaters are situated within search, contact, and reconstruction. A topological transition can trigger re-adjudication of present correctness.**
 
 ### Multiple Individualities
 

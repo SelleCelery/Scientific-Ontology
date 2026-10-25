@@ -721,7 +721,7 @@ The output of α audit is not a declaration of truth. It is a **structural certi
 
 This document was constructed with reference at least to:
 
-- `正しさ・個性・無・切断_論理通信トポロジー.ja.md` — 01_Sat_Truth / engineering operational definition of “correct,” internal establishment, support paths, null/void and Cut, communication topology, reopening.
+- `正しさ・個性・無・切断_論理通信トポロジー.ja.md` — 01_Sat_Truth / engineering operational definition of “correct,” internal establishment, support paths, Absence and Cut, communication topology, reopening.
 - `論理平面・論理深度・次元変換から読むαβ監査試論.ja.md` — research note / earlier working definition of α as internal validity on a logical plane. The β portion remains under re-examination.
 - `存在境界論における監査理論.ja.md` — research draft / separation of adjudication and audit, responsibility boundary between detector and judgment, and pre-audit of audit itself.
 - `ALPHA_AUDIT_PILOT_REPORT.ja.md` — 2026-10-17 implementation pilot / separation between existing machine audit and α, failure caused by confusing object language with audit state, and excessive coarseness of document-level audit.

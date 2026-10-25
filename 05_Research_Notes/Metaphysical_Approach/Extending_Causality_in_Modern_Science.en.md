@@ -102,7 +102,7 @@ audit theory in Scientific Ontology
   whose persistence depends on whose non-persistence?
   externalization / Return / reproduction / mutual audit
         ->
-correctness / individuality / null / cut
+correctness / individuality / absence / cut
   how far may a finding be sustained?
   defeater / saturation / Return / reopening
         ->
@@ -938,9 +938,9 @@ The legitimate research question is narrower:
 
 ---
 
-# Part XI. Void, null, and Lock
+# Part XI. Void, Absence, and Lock
 
-## 38. Separate ontological void from detection of null
+## 38. Separate ontological void from detection of Absence
 
 At least two hypotheses are hidden under "void."
 
@@ -948,17 +948,17 @@ At least two hypotheses are hidden under "void."
 
 The room or separability in which difference can arise may itself play an ontological role.
 
-### 38.2 Epistemic null
+### 38.2 Epistemic Absence
 
 A connection, history, or response structurally expected by a system is not observed.
 
-The current correctness / individuality / null / cut line primarily operationalizes the second, for example:
+The current correctness / individuality / absence / cut line primarily operationalizes the second, for example:
 
 $$
 r(v)=Expected(v)-Observed(v).
 $$
 
-This note does not exclude the first, but the two must not be identified. Vacuum, space, null, non-connection, and expected absence are distinct states.
+This note does not exclude the first, but the two must not be identified. Vacuum, space, Absence, non-connection, and expected missingness are distinct states.
 
 ---
 
@@ -1479,7 +1479,7 @@ Strong layered-world imagery must move from A or B toward an actual future Retur
 
 ## 65. AMP Introduction
 
-`AMP_Introduction.md` provides public introduction to primordial entity, differentiation of mind/nature, observation, entanglement retention, null, time, and entropy.
+`AMP_Introduction.md` provides public introduction to primordial entity, differentiation of mind/nature, observation, entanglement retention, Nihil, time, and entropy.
 
 This note does not replace it. Final cause as persistence, the two explicit AMP hypotheses, and time/space stabilization hypotheses are stronger research propositions.
 
@@ -1503,7 +1503,7 @@ This note handles further upstream the question left open there: why should asym
 
 It does not absorb the ethical, institutional, and Return analysis of audit theory.
 
-## 68. Correctness, individuality, null, and cut
+## 68. Correctness, individuality, absence, and cut
 
 The correctness topology is a methodology for deciding under which conditions a current judgment may be maintained. The present hypotheses do not alter those correctness conditions.
 

@@ -2,8 +2,8 @@
 ## Irreversible history, reconstructable present, and a trial framework for historical inquiry
 
 > Layer: 05_Research_Notes / Generative Metaphysics and Falsification Studies candidate
-> Status: Foundational research note / phase-audit integrated draft / historical inquiry and sustainability expansion / pre-formalization
-> Scope: history / commit / Lock / logical intervention / active lineage / Return / Reopening / negentropy / reconstruction / search resource / adjudication / phase-aware audit / path exhaustion / rollback / rebase / cherry-pick / merge / simulation / correctness / historical inquiry / carrier-function separation / authority structure / logical depth / layered dependency / possibility preservation / competition unit / civilization-environment coupling / sustainability / pseudo-lock / reconstruction capacity / future-branch preservation / SDGs as external reference surface
+> Status: Foundational research note / topology-aware audit integrated draft / historical inquiry and sustainability expansion / pre-formalization
+> Scope: history / commit / Lock / logical intervention / active lineage / Return / Reopening / negentropy / reconstruction / search resource / adjudication / topology-aware audit / path exhaustion / rollback / rebase / cherry-pick / merge / simulation / correctness / historical inquiry / carrier-function separation / authority structure / logical depth / layered dependency / possibility preservation / competition unit / civilization-environment coupling / sustainability / pseudo-lock / reconstruction capacity / future-branch preservation / SDGs as external reference surface
 > Domain: cross-domain ontology / epistemic methodology / historical computation model / historical inquiry framework
 > Language: English commensurated rendering
 > Japanese authoritative source: `./%E5%AD%98%E5%9C%A8%E5%A2%83%E7%95%8C%E8%AB%96%E7%9A%84%E6%AD%B4%E5%8F%B2%E8%A8%88%E7%AE%97%E6%A7%8B%E9%80%A0.ja.md`
@@ -11,7 +11,7 @@
 > Publication layer: public research-note candidate / not canonical
 > Dependency role: AMP extension / bridge between generative causality, audit theory, correctness methodology, and simulation design
 > Authority: This note brings the concepts of history, time, Lock, Return, and Reopening in Scientific Ontology closer to a computable structure. It does not own the definitions of history, economics, physics, thermodynamics, information science, Git, or any other external system.
-> Formation provenance: The note develops the human-side hypotheses that a Lock can be read as a save point; that a commit as an event is irreversible while the logical dependency structure constituting the present can be reconstructed; that logical intervention can be applied to a history of commits by investing negentropy or reconstruction capacity; and that reorganizations analogous to rebase or cherry-pick may be possible when the required accounting conditions permit them. Later revisions add carrier-function separation, authority structure, logical depth, multilayer dependency, null and Cut, possibility-preservation competition, civilization-environment coupling, pseudo-lock, reconstruction-loss points, phase-aware adjudication and audit, separation of search resource $B_t$ from reconstruction capacity $N_t$, and use of the SDGs only as an external reference surface.
+> Formation provenance: The note develops the human-side hypotheses that a Lock can be read as a save point; that a commit as an event is irreversible while the logical dependency structure constituting the present can be reconstructed; that logical intervention can be applied to a history of commits by investing negentropy or reconstruction capacity; and that reorganizations analogous to rebase or cherry-pick may be possible when the required accounting conditions permit them. Later revisions add carrier-function separation, authority structure, logical depth, multilayer dependency, Absence and Cut, possibility-preservation competition, civilization-environment coupling, pseudo-lock, reconstruction-loss points, topology-aware adjudication and audit, separation of search resource $B_t$ from reconstruction capacity $N_t$, and use of the SDGs only as an external reference surface.
 > Non-claim: This note does not claim that one can physically return to the past, erase events, alter history by arbitrarily injecting thermodynamic negentropy, or restore a social institution to a former state unchanged. Unless explicitly stated otherwise, "rollback," "rebase," "cherry-pick," "merge," "save point," and "negentropy" are operational terms or analogies for structural understanding.
 > Reading rule: Do not confuse rewriting history with reconstructing which history the present depends upon. The former is rejected in principle here; the latter is the research target.
 > Revision rule: When this document is revised, additions, limitations, withdrawals, reasons, and residual open questions should be recorded in the revision trace. Major theoretical shifts should preserve an exact snapshot separately.
@@ -65,7 +65,7 @@ This note provisionally calls such an operation **logical intervention**.
 | R1 initial | 2026-09-22 | integrated irreversibility of commits, reconstruction of active lineage, Lock as stabilization + compression + restart point, logical intervention, reconstruction capacity, rollback / rebase / cherry-pick / merge, an institutional trial example, a simulation skeleton, connection to audit and Correctness, and falsification candidates | to make AMP time theory and Return / Reopening explicit as a computational structure in which the present can be rewound without deleting history | independent definition of Lock; measurement of reconstruction capacity; accounting symmetry; rules for selecting active lineage; boundary with physical irreversibility; boundary with historiography; limits of the Git analogy |
 | R2 historical inquiry expansion | 2026-09-22 | added a trial framework for historical inquiry: carrier / function / structure separation, a hypothesis reading kingship as an authority structure, surface alteration versus dependency change, logical depth, multilayer dependency, Cut / Unsupported Join, possibility-preservation competition, competition units, and a historical-inquiry protocol | to extend historical computation beyond a rollback model toward auditing dependency structures, reproduction structures, and preserved possibilities in historical understanding | operationalizing logical depth; independent detection of historical Locks; evaluation of possibility preservation; comparison with selection units; empirical round trips with specialist historical research |
 | R3 sustainability deep structure | 2026-09-22 | added civilization $C$ and natural environment $E$ as a coupled system, a hypothesis of environmental stabilization and reorganization, local Lock / pseudo-lock, reconstruction-loss point, future-branch preservation, and a framework for re-deriving sustainability conditions corresponding to the SDGs without axiomatizing them | to extend historical computation to civilizational sustainability, environmental dependency, and future forecasting, and test how far SDG-like goal families can be derived from internal conditions | operationalizing environmental resilience; pseudo-lock detection; relation between $N_t$ and environmental resources; future-branch evaluation; external collation with individual SDGs; uncertainty at transition points |
-| R4 phase-aware audit and search-resource extension | 2026-09-22 | separated adjudication of local proposition validity from audit of document / structure / placement; introduced phase map $\Phi_t$; separated search resource $B_t$ from reconstruction capacity $N_t$; modeled low-resolution probe -> external return -> high-resolution reconstruction -> path exhaustion -> rebuttal / residual / root revision as historical computation; added a single-phase comparison model; limited SO's direct scope over the SDGs | to unify the roles of three research lines, make SO's own theory updates traceable as historical computation, and compress civilizational audit around Lock Health, search-resource expenditure, and procurement of reconstruction resources rather than judging the 17 SDG axes | operationalizing phase maps; detecting search-resource sinks; judging path exhaustion; comparison with single-phase models; non-scalar Lock Health; Persistence Bias |
+| R4 topology-aware audit and search-resource extension | 2026-09-22 | separated adjudication of local proposition validity from audit of document / structure / placement; introduced topology map $\Phi_t$; separated search resource $B_t$ from reconstruction capacity $N_t$; modeled low-resolution probe -> external return -> high-resolution reconstruction -> path exhaustion -> rebuttal / residual / root revision as historical computation; added a single-topology comparison model; limited SO's direct scope over the SDGs | to unify the roles of three research lines, make SO's own theory updates traceable as historical computation, and compress civilizational audit around Lock Health, search-resource expenditure, and procurement of reconstruction resources rather than judging the 17 SDG axes | operationalizing topology maps; detecting search-resource sinks; judging path exhaustion; comparison with single-topology models; non-scalar Lock Health; Persistence Bias |
 
 Version markers above record formation history only; public filenames remain unversioned.
 
@@ -91,7 +91,7 @@ Historical Computation Structure in Scientific Ontology
 Audit Theory in Scientific Ontology
   which dependencies, burdens, and externalizations should be re-examined?
         ->
-correctness / individuality / null / cut
+correctness / individuality / absence / cut
   defeater / saturation / Return / Reopening
         ->
 simulation / detector / human review
@@ -748,7 +748,7 @@ $$
 - $B_t$: resources available for exploration and audit;
 - $N_t$: capacity for executing reconstruction;
 - $\Sigma_t$: constraints that must be preserved or accounted for;
-- $\Phi_t$: phase map recording the current adjudication or audit phase of nodes, claims, findings, and related objects.
+- $\Phi_t$: topology map recording the current adjudicative or audit topological position of nodes, claims, findings, and related objects.
 
 This state is not the world itself. It is a representation for auditing and simulating a target as historical computation.
 
@@ -770,13 +770,13 @@ $$
 
 can describe "capacity to rebuild exists but the system cannot adequately explore where to return."
 
-$\Phi_t$ should not be treated as a single global phase. A better provisional form is
+$\Phi_t$ should not be treated as assigning one global topological position. A better provisional form is
 
 $$
 \Phi_t:V_t\cup Claims_t\cup Findings_t\rightarrow\mathcal{P},
 $$
 
-mapping each object to its current phase.
+mapping each object to its current topological position.
 
 ---
 
@@ -911,9 +911,9 @@ Retain history and reconstruct from Locks.
 
 Maximize the present objective independently of history.
 
-### Model F: Single-phase adjudication model
+### Model F: Single-topology adjudication model
 
-Do not distinguish fact candidates, theories, residuals, objections, and reconstructions by phase; adjudicate and audit using one present state.
+Do not distinguish fact candidates, theories, residuals, objections, and reconstructions by topological position; adjudicate and audit using one present state.
 
 If Model F can reproduce the same residuals, rebuttals, Returns, and root-revision candidates at equal or lower resource cost, the explanatory increment of retaining $\Phi_t$ is weak.
 
@@ -938,7 +938,7 @@ Audit goes beyond the proposition itself. It asks:
 
 - where the proposition has been placed in a document;
 - whether the strength of expression is appropriate;
-- whether the phases of fact, theory, and residual are still visible;
+- whether the topological positions of fact, theory, and residual are still visible;
 - whether document structure blocks objection or Return;
 - what load that placement places on other branches or Locks.
 
@@ -998,11 +998,11 @@ This may allow the history to distinguish construction of a genuine rebuttal fro
 
 ---
 
-## 34.3 Observe phase transition itself as a commit
+## 34.3 Observe topological transition itself as a commit
 
 Fact candidates, theories, and residuals are not timeless boxes.
 
-If the phase of object $x$ changes from
+If the topological position of object $x$ changes from
 
 $$
 \Phi_t(x)=\phi_i
@@ -1023,7 +1023,7 @@ Examples include:
 - residual -> root-revision candidate;
 - proposition -> scope-limited proposition.
 
-Phase names may change later. The invariant requirement is that **the difference that changed how the object is treated remains traceable**.
+Topological position labels may change later. The invariant requirement is that **the difference that changed how the object is treated remains traceable**.
 
 ---
 
@@ -1409,7 +1409,7 @@ This still does not replace domain-specific factual judgment.
 
 ---
 
-## 49. Null and Cut: historical inquiry searches for lost connections
+## 49. Absence and Cut: historical inquiry searches for lost connections
 
 Historical computation attends not only to what remains but also to lost connections:
 
@@ -2155,13 +2155,13 @@ The new present must still allow return to the old lineages and their failures.
 
 ---
 
-## 76.1 If a single-phase model is sufficient
+## 76.1 If a single-topology model is sufficient
 
 This note adds $\Phi_t$.
 
-If Model F, which has no phase separation, can reproduce across the target set the same adjudication results, audit findings, residuals, path exhaustion, root-revision candidates, and Return / Reopen outcomes with equal or less search resource, the phase map is unnecessary.
+If Model F, which has no topological separation, can reproduce across the target set the same adjudication results, audit findings, residuals, path exhaustion, root-revision candidates, and Return / Reopen outcomes with equal or less search resource, the topology map is unnecessary.
 
-If this result appears systematically across core SO targets, the finding should return not only to the historical-computation phase structure but to SO's upstream assignment of theoretical importance to phase differences.
+If this result appears systematically across core SO targets, the finding should return not only to the historical-computation topological structure but to SO's upstream assignment of theoretical importance to topological differences.
 
 ---
 
@@ -2276,7 +2276,7 @@ First, do not conflate:
 - Logical Intervention;
 - Search Resource;
 - Reconstruction Capacity;
-- Phase Map;
+- Topology Map;
 - Adjudication / Audit.
 
 ---
@@ -2383,9 +2383,9 @@ Return to audit theory the findings about which Locks become pathological, which
 
 > **Adjudication addresses local justification of a proposition; audit addresses whether the proposition, expression, structure, and placement are appropriate within the document or system.**
 
-### Phase
+### Topology
 
-> **Do not collapse low-resolution proposal, external return, high-resolution reconstruction, rebuttal, residual, and root-revision candidate into one state. Preserve which difference caused a phase transition.**
+> **Do not collapse low-resolution proposal, external return, high-resolution reconstruction, rebuttal, residual, and root-revision candidate into one state. Preserve which difference caused a topological transition.**
 
 ### Search resource and reconstruction capacity
 
@@ -2455,17 +2455,17 @@ If work continues, the current priority list is:
 4. build ex ante conditions separating a search-resource sink from a merely difficult problem;
 5. design `Lock Health` as multi-axis findings over maintenance cost, residual, Return, branch preservation, externalization, and $B/N$ accounting instead of one score;
 6. describe accounting constraints $\Sigma_t$ separately for physical, institutional, and knowledge systems;
-7. implement $\Phi_t$ as a phase map rather than a fixed stage sequence and decide what must be recorded to Trace phase transitions;
-8. add Model F, single-phase adjudication, to a Git-style toy model and compare explanatory increment against the phase-aware model;
+7. implement $\Phi_t$ as a topology map rather than a fixed stage sequence and decide what must be recorded to Trace topological transitions;
+8. add Model F, single-topology adjudication, to a Git-style toy model and compare explanatory increment against the topology-aware model;
 9. construct a toy case of low-resolution probe -> external return -> high-resolution reconstruction -> path exhaustion;
 10. test whether adding a new route in response to an objection can be recorded separately as a new theory commit;
 11. build a toy multilayer dependency graph distinguishing surface alteration from deep dependency change;
 12. design possibility-preservation competition as a multi-objective comparison over Cut / false join / Return / branch preservation / externalized cost / preservation cost rather than one score;
 13. if moving to historical cases, create a template recording specialist research and SO structural hypotheses in separate columns;
-14. connect phase-aware AuditFinding to branch-invalidation and rebase candidates;
-15. specify which fields a Correctness Certificate passes to Lock metadata and adjudication phase;
+14. connect topology-aware AuditFinding to branch-invalidation and rebase candidates;
+15. specify which fields a Correctness Certificate passes to Lock metadata and adjudicative topological position;
 16. construct a minimal toy model of the coupled civilization $C$ / environment $E$ system covering Lock Health, $B_t$, $N_t$, residual, and Return;
 17. treat the SDGs and other external sustainability frameworks through interference logs between SO findings and high-resolution external research rather than re-adjudicating their 17 axes;
 18. audit SO's own Persistence Bias and treat preservation, termination, and pruning as a separate research problem.
 
-If simulation or external contact shows a reconstruction structure unlike the one expected here, that difference should not be hidden as an implementation exception. It should Return to the hypotheses of Lock, Return, Search Resource, Reconstruction Capacity, and Phase used in this note.
+If simulation or external contact shows a reconstruction structure unlike the one expected here, that difference should not be hidden as an implementation exception. It should Return to the hypotheses of Lock, Return, Search Resource, Reconstruction Capacity, and Topology used in this note.

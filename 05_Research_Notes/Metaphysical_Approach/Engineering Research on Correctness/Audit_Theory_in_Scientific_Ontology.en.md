@@ -1,14 +1,14 @@
 # Audit Theory in Scientific Ontology
-## Metaphysical foundations of audit from asymmetry, intrusion, self-reference, null, and persistence
+## Metaphysical foundations of audit from asymmetry, intrusion, self-reference, Absence, and persistence
 
 > Layer: 01_Sat_Truth / AMP-to-Audit bridge candidate
 > Status: Foundational audit theory / research draft / pre-formalization
-> Scope: audit necessity / proposition adjudication boundary / phase-aware audit / low-resolution probe / high-resolution reconstruction / path exhaustion / asymmetry / contact / transmission / intrusion / action effect / violence / force / self-reference / null / return / effective return / active return / persistence / externalization / reproduction / manifestation boundary / generation boundary / transmission-conversion path / responsibility boundary / intervention self-audit / knowledge-system methodology / commensuration / interference zone / reciprocal contestability
+> Scope: audit necessity / proposition adjudication boundary / topology-aware audit / low-resolution probe / high-resolution reconstruction / path exhaustion / asymmetry / contact / transmission / intrusion / action effect / violence / force / self-reference / absence / return / effective return / active return / persistence / externalization / reproduction / manifestation boundary / generation boundary / transmission-conversion path / responsibility boundary / intervention self-audit / knowledge-system methodology / commensuration / interference zone / reciprocal contestability
 > Language: English commensurated rendering
 > Japanese authoritative source: `./%E5%AD%98%E5%9C%A8%E5%A2%83%E7%95%8C%E8%AB%96%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%9B%A3%E6%9F%BB%E7%90%86%E8%AB%96.ja.md`
 > Claim strength: S3-S4 / E2-E3 / U1-U2 / P2 / V0-V4 / R2-R5
 > Authority: This note is a candidate theoretical bridge between the metaphysical basis of AMP and the judgment methodology of the correctness-topology document. It addresses why audit is required. Concrete conditions for proposition-level adjudication remain owned by the correctness methodology. This note does not own the definitions of general philosophy, standard epistemology, history, economics, law, political science, or physics.
-> Formation provenance: The note develops the human-side hypotheses that the first audit problem is asymmetry; that self-reference and null become necessary so asymmetry is not unknowingly discharged outward; that intrusion itself is not denied, but unilateral intrusion can be read operationally as violence while an audit claim can function as a counter-action or force against that one-way structure; that persistence of a system must be separated from persistence of its constituents and externalization, replenishment, generation turnover, and reproduction must therefore be audited; and that manifestation of a phenomenon in an individual does not by itself close its generative conditions, transmission path, or responsibility boundary inside that individual. AI-side formalization is added around those hypotheses.
+> Formation provenance: The note develops the human-side hypotheses that the first audit problem is asymmetry; that self-reference and Absence become necessary so asymmetry is not unknowingly discharged outward; that intrusion itself is not denied, but unilateral intrusion can be read operationally as violence while an audit claim can function as a counter-action or force against that one-way structure; that persistence of a system must be separated from persistence of its constituents and externalization, replenishment, generation turnover, and reproduction must therefore be audited; and that manifestation of a phenomenon in an individual does not by itself close its generative conditions, transmission path, or responsibility boundary inside that individual. AI-side formalization is added around those hypotheses.
 > Non-claim: "intrusion," "violence," "force," "entropy," and "persistence" are operational and research terms internal to Scientific Ontology in this note. They are not automatically identical to physical violence, military force, thermodynamic entropy, historical laws, or economic laws. Nothing here ethically or legally justifies violent conduct or the use of physical or military force.
 > Reading rule: Audit is not a final tribunal that judges a target. It is a structure that keeps an acting system able to re-examine its own action, the differences lost through that action, return paths, persistence conditions, externalization, and reproduction conditions.
 
@@ -16,7 +16,7 @@
 
 ## 0. Aim
 
-The correctness-topology line defines engineering conditions under which a finite subject may currently treat a judgment as correct: internal viability, search saturation, Return/Reopening, null, cut, residual, and self-reference.
+The correctness-topology line defines engineering conditions under which a finite subject may currently treat a judgment as correct: internal tenability, search saturation, Return/Reopening, Absence, Cut, residual, and self-reference.
 
 Its central question is roughly:
 
@@ -24,7 +24,7 @@ Its central question is roughly:
 
 This note moves one step upstream:
 
-> **Why is audit needed at all? Why must self-reference and null be detected? Why must a system that acts outward permit effects to return to itself?**
+> **Why is audit needed at all? Why must self-reference and Absence be detected? Why must a system that acts outward permit effects to return to itself?**
 
 The starting point is not an abstract ideal of fairness, humility, or openness. AMP reads the world not as a finished collection of objects but as a generative process of differentiation, boundary formation, history, communication, retention, and semantic closure from a primordial entity.
 
@@ -48,7 +48,7 @@ Audit then becomes more than error detection. It asks:
 
 > **Who acts, who is acted upon, and where does the result return?**
 
-> **Which residuals, burdens, nulls, or high-disorder regions are externalized so that the current order can appear stable?**
+> **Which residuals, burdens, instances of Absence, or high-disorder regions are externalized so that the current order can appear stable?**
 
 > **Does the structure continue by retaining the same beings, or by wearing out, replacing, and reproducing them?**
 
@@ -60,9 +60,9 @@ The Japanese source preserves a detailed internal revision trace because the pat
 
 The major formation steps are:
 
-- **R1 baseline**: integrated asymmetry, intrusion, violence, force, self-reference, null, AMP-derived persistence, externalization, replenishment, generations, reproduction, and knowledge-system audit.
+- **R1 baseline**: integrated asymmetry, intrusion, violence, force, self-reference, Absence, AMP-derived persistence, externalization, replenishment, generations, reproduction, and knowledge-system audit.
 - **R2**: added interference zones, reciprocal contestability, source-domain definition authority versus reconstructive authority of the receiving system, `Return != Assimilation`, objection logs, and separation of detector from correctness evaluation.
-- **R3**: separated adjudication from audit; added the low-resolution probe -> external contact -> high-resolution reconstruction -> path exhaustion -> rebuttal/residual/root-revision loop; phase-aware findings; distinction between rebuttal construction and immunization; single-phase compression as a possible root falsifier; and SO's own Persistence Bias.
+- **R3**: separated adjudication from audit; added the low-resolution probe -> external contact -> high-resolution reconstruction -> path exhaustion -> rebuttal/residual/root-revision loop; topology-aware findings; distinction between rebuttal construction and immunization; single-topology compression as a possible root falsifier; and SO's own Persistence Bias.
 - **R4 current**: separated manifestation, generation, transmission/conversion, and responsibility boundaries; introduced the canary example and causal false closure through personalization; returned audit to the acting side itself; separated presence of a Return path from effective Return; and separated mere contact/transmission from effective action.
 
 This English rendering preserves the current conceptual distinctions rather than reproducing every version-local filename. Formation snapshots remain governed by the Japanese repository history.
@@ -74,15 +74,15 @@ AMP
   primordial entity
   differentiation / boundary formation
   history / communication / retention
-  null / entropy / meaning
+  Absence / entropy / meaning
         ->
 Audit Theory in Scientific Ontology
   why audit is needed
   asymmetry / intrusion / violence / force
-  self-reference / null / Return
+  self-reference / Absence / Return
   persistence / externalization / replenishment / reproduction
         ->
-correctness / individuality / null / cut
+correctness / individuality / absence / cut
   what can be judged, provisionally closed, and reopened under which conditions
   correctness certificate / defeater / Return / Reopening
         ->
@@ -105,7 +105,7 @@ $$
 Adjudicate(p,\phi_t),
 $$
 
-asking how far proposition $p$ holds in current phase $\phi_t$ under factual constraints, support, scope, defeaters, and search history.
+asking how far proposition $p$ holds in current topological position $\phi_t$ under factual constraints, support, scope, defeaters, and search history.
 
 Audit addresses the larger arrangement containing that proposition:
 
@@ -354,7 +354,7 @@ The audit claim is itself an intrusion and must therefore remain auditable in ba
 
 ---
 
-# Part III. Self-reference and null
+# Part III. Self-reference and Absence
 
 ## 6. Self-reference: return an acting principle to oneself
 
@@ -399,13 +399,13 @@ Audit must separate at least:
 
 Self-reference audit alone does not detect all unilateral intrusion.
 
-## 8. Null: observe what action caused to disappear
+## 8. Absence: observe what action caused to disappear
 
 Self-reference alone is insufficient. A system can apply the same rule to itself and still fail to observe what has been lost or made unreachable.
 
-AMP can read null not only as absolute emptiness but as a state in which connection to history is severed. The correctness line further separates Expected Missing, Cut, Resource Boundary, Deliberate Seal, and related states.
+AMP describes Nihil not simply as absolute emptiness, but in relation to concealed or severed paths whose established history cannot simply be erased. The correctness line further separates Expected Missing, Cut, Resource Boundary, Deliberate Seal, and related states.
 
-For audit theory, null is:
+For audit theory, Absence is:
 
 > **a negative observation surface showing that a history, support, Return path, distinction, or response expected to be retained, connected, or returned is absent after action.**
 
@@ -419,22 +419,22 @@ $N(v)$ is not a physical quantity. It marks difference from expected connection.
 
 Examples of the structure include a system that criticizes others while lacking a path for criticism back into itself; imports an external concept while dropping source-domain limitations; produces benefit while erasing the history of wear that supports it; or shifts future burden outside present decision surfaces.
 
-## 9. Relation between self-reference and null
+## 9. Relation between self-reference and Absence
 
-Self-reference and null are not independent supreme principles. They are two major audit surfaces for detecting and recovering asymmetry internally:
+Self-reference and Absence are not independent supreme principles. They are two major audit surfaces for detecting and recovering asymmetry internally:
 
 ```text
 asymmetry
    +-- self-reference
    |    can the rule applied outward return inward?
    |
-   `-- null
+   `-- Absence
         what disappeared, failed to arrive, or became unable to return through that action?
 ```
 
-Self-reference without null can preserve formally consistent external harm. Null without self-reference can always assign missingness to the other side.
+Self-reference without Absence can preserve formally consistent external harm. Absence without self-reference can always assign missingness to the other side.
 
-> **Self-reference returns the acting principle to the actor. Null returns the difference erased by the action to the actor.**
+> **Self-reference returns the acting principle to the actor. Absence returns the difference erased by the action to the actor.**
 
 Both connect to Return/Reopening.
 
@@ -821,9 +821,9 @@ The issue is not every difference in role or authority. It is a structure in whi
 
 Externalization and replenishment can institutionalize that asymmetry.
 
-## Proposition 3. Self-reference and recognition of null are major internal audit surfaces for detecting asymmetry
+## Proposition 3. Self-reference and recognition of Absence are major internal audit surfaces for detecting asymmetry
 
-Self-reference returns outward rules inward. Null observes differences erased, cut, or made invisible through action.
+Self-reference returns outward rules inward. Absence observes differences erased, cut, or made invisible through action.
 
 But formally self-consistent violence remains possible, so load flow, replacement, externalization, and reproduction require separate audit.
 
@@ -851,7 +851,7 @@ This is not a universal revocation of epistemic status. It is a reception condit
 
 If SO audits others but refuses equivalent audit of itself, it reproduces the asymmetry it problematizes.
 
-SO must remain able, in principle, to have its basis questioned, transformations traced, scope limited, externalization identified, burden-bearer relations examined, null/cuts/self-reference failures pointed out, audit claims audited, and its current state reopened by the Return.
+SO must remain able, in principle, to have its basis questioned, transformations traced, scope limited, externalization identified, burden-bearer relations examined, Absence/Cut/self-reference failures pointed out, audit claims audited, and its current state reopened by the Return.
 
 > **SO can claim a right to audit only insofar as it remains itself auditable and the resulting audit can effectively reach its own conditions of action.**
 
@@ -958,7 +958,7 @@ Rather than claim ownership of an external system as a whole, show:
 
 Then if an external Return says the source understanding is wrong, scope was lost, a transformation erased an important distinction, or integration does not follow, the return point is visible.
 
-External reference is not the highest audit principle, but it is an important boundary where self-reference, null, Return, and asymmetry are tested concretely.
+External reference is not the highest audit principle, but it is an important boundary where self-reference, Absence, Return, and asymmetry are tested concretely.
 
 ## 30.1 Source-domain definitional authority and receiving-system reconstructive authority
 
@@ -1141,9 +1141,9 @@ Where existing and explicitly added paths still cannot reconstruct the external 
 
 A residual after path exhaustion is not merely "something not yet considered"; it is a difference that remains after the system has used the paths it claims to possess, and therefore approaches root-revision status.
 
-## 30.9 Audit fact, theory, and residual with phase
+## 30.9 Audit fact, theory, and residual with topology
 
-Do not force a target into a phase-less fixed label.
+Do not force a target into a topology-less fixed label.
 
 The same $x$ has different audit meaning as an externally supplied fact candidate, SO interpretation, proposition under adjudication, challenged proposition, scope-limited reconstructed proposition, residual after path exhaustion, or root-revision candidate.
 
@@ -1163,21 +1163,21 @@ may hold.
 
 This is not relativization of fact. It preserves how the same factual constraint is connected to interpretation, proposition, residual, and revision paths.
 
-## 30.10 Lossless single-phase compression is a root falsification candidate for SO
+## 30.10 Lossless single-topology compression is a root falsification candidate for SO
 
-If SO introduces phases, those phases must add real adjudication or audit capability.
+If SO introduces topological distinctions, those distinctions must add real adjudication or audit capability.
 
-Compare phase-aware model $M_{\Phi}$ with single-phase model $M_1$.
+Compare topology-aware model $M_{\Phi}$ with single-topology model $M_1$.
 
-If for SO's core target class $M_1$ can preserve the same factual constraints, local adjudications, responses to objection, residual detection, root-revision points, Return/Reopen decisions, and do so at equal or lower resource cost, then phase structure has no explanatory increment.
+If for SO's core target class $M_1$ can preserve the same factual constraints, local adjudications, responses to objection, residual detection, root-revision points, Return/Reopen decisions, and do so at equal or lower resource cost, then topological structure has no explanatory increment.
 
 $$
 LosslessQuotient(M_{\Phi}\rightarrow M_1)=1
 $$
 
-systematically across core targets would make multiphase structure a candidate for root revision or withdrawal.
+systematically across core targets would make multi-topology structure a candidate for root revision or withdrawal.
 
-Simple tasks being solvable in one phase is not a problem. The falsification pressure applies where phase distinctions make no substantive difference to residual discovery, Return, rebuttal, or root revision.
+Simple tasks being solvable within one topological position is not a problem. The falsification pressure applies where topological distinctions make no substantive difference to residual discovery, Return, rebuttal, or root revision.
 
 ---
 
@@ -1290,7 +1290,7 @@ $$
 SelfApply_A(p)=1.
 $$
 
-### 34.5 Null / Expected Missing
+### 34.5 Absence / Expected Missing
 
 $$
 N(v)=Expected(v)-Observed(v).
@@ -1365,7 +1365,7 @@ First record structural states such as present/absent, reachable/unreachable, re
 
 ## 38. Audit theory asks why and where; correctness handles local adjudication; historical computation handles how to rewind/rebase
 
-The correctness topology defines local conditions for provisionally closing a proposition in a phase, centered on a structure such as:
+The correctness topology defines local conditions for provisionally closing a proposition at a topological position, centered on a structure such as:
 
 $$
 C_{B_t}^{(k)}(S_t)
@@ -1385,15 +1385,15 @@ A provisional division of labor is:
 
 | Document line | Main question | Role |
 |---|---|---|
-| AMP | how existence, observation, history, boundary, null, meaning arise | metaphysical basis |
+| AMP | how existence, observation, history, boundary, Nihil, and meaning arise | metaphysical basis |
 | Audit Theory in SO | why audit is needed and where a document/system must be re-examined | asymmetry, intrusion, persistence, Return, placement validity |
 | correctness topology | under what conditions is a proposition supported / undecided / reopenable | local adjudication methodology |
-| historical computation structure | how to rebase/reconstruct without erasing history | Lock / phase / rebase / reconstruction model |
+| historical computation structure | how to rebase/reconstruct without erasing history | Lock / topology / rebase / reconstruction model |
 | detector / run | what is happening in a concrete target | implementation / experiment |
 
 ## 39. Shared components
 
-The lines share boundary, contact, history, difference, null, cut, residual, Return, Reopening, and self-reference.
+The lines share boundary, contact, history, difference, Absence, Cut, residual, Return, Reopening, and self-reference.
 
 Audit theory places them in interaction and persistence. Correctness places them in conditions for maintaining a judgment. Neither replaces the other.
 
@@ -1431,7 +1431,7 @@ At minimum ask:
 24. Is external high-resolution distinction merely translated into SO vocabulary and then called integrated?
 25. Were new auxiliary paths added during rebuttal but later misrepresented as prior explanatory capacity?
 26. Is a claim of path exhaustion a false saturation caused by unsearched paths?
-27. Do additional phase labels fail to increase actual residual detection, Return, or re-adjudication?
+27. Do additional topological labels fail to increase actual residual detection, Return, or re-adjudication?
 28. Does SO's preference for persistence preserve processes, hypotheses, branches, or information that should instead be ended, discarded, forgotten, or pruned?
 
 These are not defects to erase. They are open ends required for audit theory to remain auditable.
@@ -1442,7 +1442,7 @@ These are not defects to erase. They are open ends required for audit theory to 
 
 ## 41. Can the problem of asymmetry really be derived from AMP?
 
-Public AMP contains difference retention, history, communication, null, and entropy-like structures, but propositions such as "sustainable existence requires Return" or "unilateral intrusion must externalize its persistence cost" are not simply explicit public AMP statements.
+Public AMP contains difference retention, history, communication, Nihil, and entropy-like structures, but propositions such as "sustainable existence requires Return" or "unilateral intrusion must externalize its persistence cost" are not simply explicit public AMP statements.
 
 They remain human-side working hypotheses under derivation and require separate comparison with AMP Core, counterexamples, and limiting conditions.
 
@@ -1547,7 +1547,7 @@ An excessive Persistence Bias can itself become a pseudo-lock that consumes expl
 - Are there rules in which only the acting system is exempt?
 - Does the exception have necessity and a stopping condition?
 
-## 52. Null detector
+## 52. Absence detector
 
 - Are expected support, Return, records, objections, or history absent?
 - Did a previously existing connection disappear?
@@ -1795,9 +1795,9 @@ Find where the loop broke; reconnect it where appropriate.
 
 > **Self-reference is the ability to return to oneself the rules one applies outward. Formally self-consistent one-way load can still exist, so self-reference audit alone is not a complete violence audit.**
 
-## 64. Null
+## 64. Absence
 
-> **Null is a negative observation surface appearing when history, support, Return, or distinction expected to be retained or returned is absent after action.**
+> **Absence is a negative observation surface appearing when history, support, Return, or distinction expected to be retained or returned is absent after action.**
 
 ## 65. Persistence
 
@@ -1837,19 +1837,19 @@ Find where the loop broke; reconnect it where appropriate.
 
 ## 68.6 Adjudication
 
-> **Adjudication asks whether a proposition is locally supportable under current phase, factual constraints, support, scope, and defeaters. Successful local adjudication does not imply that the surrounding document has passed audit.**
+> **Adjudication asks whether a proposition is locally supportable under the current topological position, factual constraints, support, scope, and defeaters. Successful local adjudication does not imply that the surrounding document has passed audit.**
 
-## 68.7 Phase-aware audit
+## 68.7 Topology-aware audit
 
-> **Contact a low-resolution proposal with the outside, reconstruct it at higher resolution through Return, test whether existing paths can rebuild it, and record paths used, paths added, and residual difference with phase. Residuals that remain after path exhaustion approach root-revision status.**
+> **Contact a low-resolution proposal with the outside, reconstruct it at higher resolution through Return, test whether existing paths can rebuild it, and record paths used, paths added, and residual difference together with its topological position. Residuals that remain after path exhaustion approach root-revision status.**
 
-## 68.8 Single-phase falsifier
+## 68.8 Single-topology falsifier
 
-> **If removing phase distinctions still permits the same adjudication, residual discovery, rebuttal, Return, and root revision at equal or lower resource cost, SO's phase structure loses explanatory increment.**
+> **If removing topological distinctions still permits the same adjudication, residual discovery, rebuttal, Return, and root revision at equal or lower resource cost, SO's topological structure loses explanatory increment.**
 
 ## 69. Final sentence
 
-> **Audit in Scientific Ontology does not mean eliminating asymmetry. It means finding whether someone's order is being supported one-way by someone else's null, wear, replacement, silence, or future; returning that difference to the acting side; and reopening the structure toward a form that can still persist after the Return.**
+> **Audit in Scientific Ontology does not mean eliminating asymmetry. It means finding whether someone's order is being supported one-way by someone else's Absence, wear, replacement, silence, or future; returning that difference to the acting side; and reopening the structure toward a form that can still persist after the Return.**
 
 ---
 

@@ -13,7 +13,7 @@ Here, a supply line is not merely a historical source of ideas or a bibliography
 
 It means:
 
-> **a generative relation that supplies the reason for continuing to raise questions about boundary, cut, locality, history, communication, null/void, whole, logical depth, exploration, and persistence.**
+> **a generative relation that supplies the reason for continuing to raise questions about boundary, cut, locality, history, communication, Absence, whole, logical depth, exploration, and persistence.**
 
 The physical vocabulary, cosmology, and theory of consciousness in AMP/ITS are not adopted as standard physics or established scientific fact. The “Prime Number” in `Godel_Frontier.md` is likewise read not as a direct ontologization of a number-theoretic theorem, but as the **ontological metaphor** explicitly used by that document itself.
 
@@ -259,7 +259,7 @@ AMP / ITS
   generative images / difference / cut / whole / local / history / communication / depth
         ↓  formation supply
 SO research hypotheses
-  boundary / Return / Null-Void / logical depth / individuality / audit
+  boundary / Return / Absence / logical depth / individuality / audit
         ↓  independent scrutiny
 SO canonical / applications
 ```
@@ -300,7 +300,7 @@ This note calls that relation a **formation supply line**.
 
 - If the formation supply line is cut, to what extent can Scientific Ontology retain identity under the same name?
 - How should formation provenance and theoretical justification be separated and preserved within the Repository?
-- How should AMP's “whole” and “null/void” connect to the classifications of absence/nullity in Scientific Ontology?
+- How should AMP's “whole” and Nihil connect to the classifications of Absence in Scientific Ontology?
 - To what extent can the logical depth of ITS be shared with intrinsic time in Scientific Ontology?
 - How can the Prime Axiom metaphor of the Gödel essay be carried into β audit without making excessive mathematical claims?
 - Can Lifeline / Return / Reopen / Resource be integrated into one condition of exploration?

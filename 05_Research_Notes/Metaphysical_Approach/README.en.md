@@ -90,7 +90,7 @@ This directory does not pre-emptively establish the v6 Applied Metaphysics autho
 [`Engineering Research on Correctness/`](Engineering%20Research%20on%20Correctness/) is an internal research line that brings correctness, audit, and logical structure closer to implementable representation.
 
 - [`存在境界論における監査理論.ja.md`](Engineering%20Research%20on%20Correctness/存在境界論における監査理論.ja.md) / [`EN`](Engineering%20Research%20on%20Correctness/Audit_Theory_in_Scientific_Ontology.en.md)
-  - Examines why audit becomes necessary through asymmetry, intrusion, self-reference, null/void, persistence, and Return.
+  - Examines why audit becomes necessary through asymmetry, intrusion, self-reference, Absence, persistence, and Return.
 
 - [`論理平面・論理深度・次元変換から読むαβ監査試論.ja.md`](Engineering%20Research%20on%20Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md) / [`EN`](Engineering%20Research%20on%20Correctness/Alpha_Beta_Audit_through_Logical_Plane_Logical_Depth_and_Dimensional_Transformation.en.md)
   - Separates α/β research into validity within one logical plane and questions of plane generation, externalization, and logical depth.
@@ -104,8 +104,8 @@ This directory does not pre-emptively establish the v6 Applied Metaphysics autho
 - [`インテリジェンスの発達とその監査.ja.md`](Engineering%20Research%20on%20Correctness/インテリジェンスの発達とその監査.ja.md) / [`EN`](Engineering%20Research%20on%20Correctness/Development_of_Intelligence_and_Its_Audit.en.md)
   - Connects formation, stabilization, and reopening of intelligence with auditability.
 
-- [`全・無・切断・未選択可能性の関係試論.ja.md`](Engineering%20Research%20on%20Correctness/全・無・切断・未選択可能性の関係試論.ja.md) / [`EN`](Engineering%20Research%20on%20Correctness/Whole_Null_Cut_and_Unselected_Possibility.en.md)
-  - Examines AMP's undifferentiated whole, null/void, Cut, and unselected possibility without silently identifying them.
+- [`全・無・切断・未選択可能性の関係試論.ja.md`](Engineering%20Research%20on%20Correctness/全・無・切断・未選択可能性の関係試論.ja.md) / [`EN`](Engineering%20Research%20on%20Correctness/Whole_Absence_Cut_and_Unselected_Possibility.en.md)
+  - Examines AMP's undifferentiated whole, AMP's Nihil, SO operational Absence, Cut, and unselected possibility without silently identifying them.
 
 Documents beginning with `000*` are retained locally as formative or comparative material and are excluded from the public index, Manifest, and Release surface.
 
@@ -155,7 +155,7 @@ AMP/ITS/Gödel-line formative materials are formative sources for this directory
 
 ### 5.2 Return paths
 
-- Differences concerning correctness, null/void, Cut, and adjudication conditions return to `01_Sat_Truth`.
+- Differences concerning correctness, Absence, Cut, and adjudication conditions return to `01_Sat_Truth`.
 - Differences concerning cognitive axes and history fields return to `02_Raj_Beauty` and the relevant Research Notes.
 - The strength of physical correspondence and mismatches with standard science are retained through the Physics Correspondence Policy.
 - Audit implementation failures, extraction failures, false positives, and false negatives are returned to the research line while distinguishing theory falsification from implementation failure.

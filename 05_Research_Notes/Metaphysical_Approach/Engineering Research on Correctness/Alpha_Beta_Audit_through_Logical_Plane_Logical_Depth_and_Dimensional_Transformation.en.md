@@ -283,7 +283,7 @@ It must remain reopenable when a new difference arrives.
 
 ## 10. α and β Are Not Two Independent Checkers
 
-Under the current hypothesis, α and β are not simply two parallel inspection engines. They address different phases of logical formation.
+Under the current hypothesis, α and β are not simply two parallel inspection engines. They address different topological positions in logical formation.
 
 Conceptually:
 

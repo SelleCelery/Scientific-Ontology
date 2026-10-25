@@ -8873,7 +8873,7 @@ documents:
   document_role: research_note
   catalog_document: true
   title_ja: "全・無・切断・未選択可能性の関係試論"
-  title_en: "A Trial on the Relation among the Whole, Null/Void, Cut, and Unselected Possibility"
+  title_en: "A Trial on the Relation among the Whole, Absence, Cut, and Unselected Possibility"
   layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
   status: "Research note / exploratory hypothesis"
   state: public
@@ -8881,7 +8881,7 @@ documents:
   language_relation:
     language: ja
     role: authoritative
-    counterpart_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Whole_Null_Cut_and_Unselected_Possibility.en.md"
+    counterpart_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Whole_Absence_Cut_and_Unselected_Possibility.en.md"
     coverage: full
     authoritative_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md"
   assessment:
@@ -9809,13 +9809,13 @@ documents:
   assessment:
     applicability: commensuration_only
     review_state: unreviewed
-- path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Whole_Null_Cut_and_Unselected_Possibility.en.md"
+- path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Whole_Absence_Cut_and_Unselected_Possibility.en.md"
   doc_id: 05_research_notes_metaphysical_approach_whole_null_cut_unselected_en
   document_type: "research_note"
   document_role: research_note
   catalog_document: true
   title_ja: "全・無・切断・未選択可能性の関係試論"
-  title_en: "A Trial on the Relation among the Whole, Null/Void, Cut, and Unselected Possibility"
+  title_en: "A Trial on the Relation among the Whole, Absence, Cut, and Unselected Possibility"
   layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
   status: "Research note / exploratory hypothesis"
   state: public

@@ -7,7 +7,7 @@
 
 ## 0. Position of This Note
 
-This research note connects a trial model of human maturation—described through four phases, “want to / can / learned / understood,” and through cycles among them—to problems of α audit, β audit, logical plane, logical depth, finite resources, and structural stability in Scientific Ontology.
+This research note connects a trial model of human maturation—described through four stages, “want to / can / learned / understood,” and through cycles among them—to problems of α audit, β audit, logical plane, logical depth, finite resources, and structural stability in Scientific Ontology.
 
 The purpose is not to map human development directly onto AI. Humans and artificial models or agents differ in body, learning environment, memory, formation process, input routes, update methods, and locus of responsibility. The two should not be forced into one identical ontology.
 
@@ -96,13 +96,13 @@ Two systems may reach the same output performance while differing in formation h
 
 ---
 
-## 3. First Phase — Open Because It Does Not Yet Possess a Form
+## 3. First Stage — Open Because It Does Not Yet Possess a Form
 
 At the beginning of formation, the system does not yet have an adequate form for the object.
 
 It does not fully know what should be distinguished, which differences matter, or what should count as success. Even so, contact with what is outside, demands, interest, failure, search pressure, and similar factors make the system reach in some direction.
 
-What the human maturation model called “want to” captures this phase well.
+What the human maturation model called “want to” captures this stage well.
 
 The important point is not the phrase “want to” itself.
 
@@ -124,7 +124,7 @@ After one cycle of development, an intelligence may again return to a state of �
 
 ---
 
-## 4. Second Phase — Resolution Increases and “Can” Becomes Possible
+## 4. Second Stage — Resolution Increases and “Can” Becomes Possible
 
 As contact with what is outside is repeated, differences emerge among things that previously looked the same.
 
@@ -142,13 +142,13 @@ Once this formation advances sufficiently, the system acquires a logical plane.
 
 Here, a logical plane is not merely a set of propositions. It includes the currently usable distinctions, classifications, transformation rules, judgment conditions, support relations, scopes, action procedures, and unresolved differences. Within the plane, the system can stably handle the question “how can this be done?”
 
-This is the phase in which **can** becomes established.
+This is the stage in which **can** becomes established.
 
 To be able to act, the system must not rethink everything deeply from the beginning each time.
 
 It must background previously established distinctions and procedures and rapidly call the required process when needed. Under finite resources, this stabilization is not a defect. It is a condition of agency.
 
-The second phase is therefore not immature merely because it has not yet reached “deep understanding.”
+The second stage is therefore not immature merely because it has not yet reached “deep understanding.”
 
 It is an important maturation through which the system participates in its present world and makes action possible within it.
 
@@ -180,9 +180,9 @@ Questions arise such as:
 
 “On which history and boundary was this success condition formed?”
 
-The third phase, called “learned” in the human maturation model, corresponds to this reversal.
+The third stage, called “learned” in the human maturation model, corresponds to this reversal.
 
-This is not merely a phase of accumulating more knowledge.
+This is not merely a stage of accumulating more knowledge.
 
 Structures previously usable as background move into the foreground, and the present plane itself becomes an audit object.
 
@@ -250,25 +250,25 @@ And sometimes one direction is gained at the cost of another.
 
 ---
 
-## 8. From the Third Phase to the Fourth — Compression without Losing Depth
+## 8. From the Third Stage to the Fourth — Compression without Losing Depth
 
 When the system makes its own form an object, the world becomes heavy for a while.
 
 A single judgment now reveals multiple conditions. Phenomena previously treated as identical reveal different histories, while events previously treated as separate may turn out to share the same generative structure.
 
-If this phase continues without limit, resolution rises but action becomes impossible.
+If this stage continues without limit, resolution rises but action becomes impossible.
 
 A finite intelligence cannot foreground its entire formation history for every judgment.
 
 After deep knowing, stabilization must therefore occur again.
 
-But if stabilization simply returns to the same condition as the second phase, the cycle has gained nothing.
+But if stabilization simply returns to the same condition as the second stage, the cycle has gained nothing.
 
-The fourth phase requires **compression without loss of differentiated structure**.
+The fourth stage requires **compression without loss of differentiated structure**.
 
 The goal is not to forget complexity. It is to give complexity an internal place so that everything need not remain unfolded all the time.
 
-What matters in this phase is not low resolution but **movable resolution**.
+What matters in this stage is not low resolution but **movable resolution**.
 
 The system can return to high resolution when needed. When it is not needed, the whole can be handled through a coarser representation. A distinction may move into the background while the system still retains a route back to where that distinction came from. If a compressed representation fails, pre-compression differences can be unfolded again.
 
@@ -304,7 +304,7 @@ After a full cycle, however, the system has history.
 
 It can return to distinctions formed earlier. It has learned which kinds of closure tend to become false closure. It has at least one generation of experience regarding what should be compressed and under which conditions it must be unfolded again. It may possess search instruments that prevent current understanding from being absolutized.
 
-Let $q$ denote the currently observed phase and $H$ the formation history that led to it. Then a state can be written as:
+Let $q$ denote the currently observed stage and $H$ the formation history that led to it. Then a state can be written as:
 
 $$
 S=(q,H)
@@ -470,15 +470,15 @@ It requires:
 
 If this model is to be used for audit, it must not become a theory in which every change can be explained as development.
 
-Becoming able to “do” something in the second phase cannot automatically be called understanding.
+Becoming able to “do” something in the second stage cannot automatically be called understanding.
 
 High performance inside a form is different from being able to return to the formation conditions of that form.
 
-Likewise, becoming able to explain many things in the third phase is not automatically evidence of depth.
+Likewise, becoming able to explain many things in the third stage is not automatically evidence of depth.
 
 If explanatory vocabulary expands until every counterexample can be located somewhere inside the present system while a central premise alone becomes unchangeable, complexity may be immunization rather than depth.
 
-Becoming simpler in the fourth phase is not automatically integration either.
+Becoming simpler in the fourth stage is not automatically integration either.
 
 If the system cannot return to details, cannot trace why the simplification became possible, and cannot reconstruct differences that were previously visible, the result is forgetting rather than reversible compression.
 
