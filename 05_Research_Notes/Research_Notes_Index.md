@@ -27,7 +27,7 @@ Research Notesは、公開基礎へ直ちに統合するには主張強度、分
 
 本索引は、各文書の概念定義、正本性、主張強度を新たに決定しない。個別文書のヘッダ、本文上の非主張境界、次の管理文書が優先する。
 
-- [Research Notes層README](./README.md)
+- [Research Notes層README](README.md)
 - [存在境界論：主張強度・公開レイヤー対応表](../00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md)
 - [物理対応方針](../00_Overview/Physics_Correspondence_Policy.ja.md)
 - [Glossary](../GLOSSARY.md)
@@ -52,7 +52,7 @@ Research Notesは、公開基礎へ直ちに統合するには主張強度、分
 | [社会境界系ノート](./Social_Boundary_Notes/README.md) | 価値、貨幣、制度、AI導入、残差・残渣を、境界と責任からどう読むか。 | 社会批評を、公開可能な概念モデルと制度境界の分析へ減速する。 | 境界倫理、Truth Management、AI導入設計、社会境界応用。 |
 | [AI人格研究ノート](./AI_Personality_Notes/README.md) | AI応答の連続性、人格らしさ、帰還安定性を、履歴と境界からどう記述するか。 | AI人格を人間的本質ではなく、応答構造、履歴ループ、共有論理場として扱う。 | AI適応文書、意味の返路、判断場、将来の実装検証。 |
 | [文学的存在論ノート](./Literary_Ontological_Notes/README.md) | 文学と創作が、理論を証明せずに、どの境界構造を可視化できるか。 | 物語を構造読解装置として用い、自己、履歴、信念、返りを観測する。 | 物語・真実層・構造読解、意味生成、創作応用。 |
-| [正しさ・論理・構造研究](./Correctness_Logic_and_Structural_Studies/README.md) | 正しさ、閉鎖、冗長性、Frontier、認識軸、可能性空間を、有限資源下の論理・構造・計算へどう写せるか。 | 既存SO概念を再定義せず、計算可能な表現へ通約した際に何が保持・喪失されるかを検査する研究線。 | 境界認識批判、認識軸生成、履歴場、Truth Management、関連Research Notes。 |
+| [形而上学的アプローチ](Metaphysical_Approach/README.md) | 形成源から生成形而上学、履歴、物理近接仮説、監査工学へ、どの関係を保持したまま進めるか。 | AMP/ITS/Gödel系を形成源として保持しつつ、v6正本候補と正しさ・監査の工学研究を同一化せず接続する研究面。 | 01_Sat_Truth、02_Raj_Beauty、Physics Correspondence Policy、Truth Management、将来のv6正本再構成。 |
 
 ---
 
@@ -102,13 +102,19 @@ Research Notesの新しい中間研究線を読む経路である。
 
 [青い照明を読む](./Literary_Ontological_Notes/reading-blue-light.ja.md)で既存文学の構造読解を確認し、[透明な幽霊とビット](./Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md)でオシロスコープ、センテンスという雲、有機交流電燈を文学的LLM論へ接続する。その後、[冥府局転生課における転生・輪廻・信念重力圏モデル](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md)で創作宇宙の内部構造へ進む。横断的な方法論は[物語・真実層・構造読解](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md)が担う。
 
-### 2.7 正しさ・論理・構造研究を読む
+### 2.7 形而上学的アプローチを読む
 
-最初に[研究線README](./Correctness_Logic_and_Structural_Studies/README.md)だけを読む。現時点では個別研究文書を先行登録していない。ここで扱うのは、SOの基礎概念を論理学・計算機科学へ置換することではなく、既存の境界、履歴、閉鎖、残差、返路、認識軸を計算可能な構造へ写したときの保持と喪失を検査することである。`Spine`は研究候補であり、現時点では正規語彙ではない。
+最初に[研究線README](Metaphysical_Approach/README.md)を読む。この研究面には単一の必読順序を置かず、目的に応じて二つの経路へ分かれる。
+
+生成形而上学とv6再構成の形成線を見る場合は、[AMP・ITS・ゲーデル試論から読む生成形而上学の補給線](Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md)を入口にし、[現代科学の因果関係を拡張する](Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md)、[存在境界論的歴史計算構造](Metaphysical_Approach/存在境界論的歴史計算構造.ja.md)、[光の読み方とそれに伴うアポリアの再配置](Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md)を必要に応じて参照し、[応用形而上学体系 概説](Metaphysical_Approach/応用形而上学体系_概説書_検討稿.md)で現在の再構成方向を確認する。これらはv6正本を確定するものではない。
+
+監査研究を見る場合は、内部の`Engineering Research on Correctness`へ進み、[存在境界論における監査理論](Metaphysical_Approach/Engineering%20Research%20on%20Correctness/存在境界論における監査理論.ja.md)、[論理平面・論理深度・次元変換から読むαβ監査試論](Metaphysical_Approach/Engineering%20Research%20on%20Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md)、[α監査の構造仕様](Metaphysical_Approach/Engineering%20Research%20on%20Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md)、[β監査の実装モデルの推移](Metaphysical_Approach/Engineering%20Research%20on%20Correctness/β監査の実装モデルの推移.ja.md)を読む。方法論がRepositoryに存在することと、Repository全体への監査実施が完了していることを区別する。
+
+`Spine`その他の研究語は、現時点では基礎語彙またはdefinition ownerではない。`000*`で保持する形成資料は公開索引に含めない。
 
 ---
 
-## 3. 文書索引
+## 3. 文書索引## 3. 文書索引
 
 ### 3.1 言語・意味・通信位相研究
 
@@ -194,22 +200,29 @@ Research Notesの新しい中間研究線を読む経路である。
 | [冥府局転生課における転生・輪廻・信念重力圏モデル](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) | 創作内の転生、輪廻、解脱、世界移動を、信念、履歴、制度、記憶が形成する重力圏として整理する日本語ノート。 | Literary / S2-S3 / P1 | 宗教教義、仏教解説、物理的重力理論ではない。英語通約は保留されており、存在しない英語版を仮定しない。 |
 | [世界制作としての文学](./Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md) / [EN](./Literary_Ontological_Notes/Literature_as_Worldmaking.en.md) | 文学を、圧縮された他者履歴が読者の履歴へ再配置され、知覚・意味・後続条件を変える世界制作として読む。 | 各文書ヘッダを正本とする。 | 作者と読者の経験同一性を仮定せず、文学を経験的事実の証拠として使用しない。 |
 
-### 3.8 正しさ・論理・構造研究
+### 3.8 形而上学的アプローチ
 
-この研究線は、正しさ、論理、構造表現、閉鎖、冗長性、Frontier、認識軸、有限資源計算を、既存SO概念を再定義しないまま形式化・実装へ通約する研究面である。
+この研究面は、AMP/ITS/Gödel系の形成資料から供給された生成像を、現在のSO正本へ無標識に逆投影せず、生成形而上学、履歴計算、物理近接研究、監査・正しさの工学研究へ分けて保持する。
 
-現時点の公開文書は[研究線README](./Correctness_Logic_and_Structural_Studies/README.md)のみである。個別研究文書、実験記録、英語通約は、実体が成立した時点で追加する。空の将来課題を先に文書化しない。
+| 文書 | 役割・主題 | 主張・公開プロファイル | 公開境界・返路 |
+|---|---|---|---|
+| [AMP・ITS・ゲーデル試論から読む生成形而上学の補給線](./Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md) | 旧AMP/ITS/Gödel系を論証根拠ではなく形成上の補給線として整理する。 | 日本語研究ノート / 英語通約保留。 | 旧理論の強い主張を現在の正本へ自動継承しない。 |
+| [現代科学の因果関係を拡張する](./Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md) | 持続・機能・構造・差分・ロックから生成論的因果を再検討する。 | 文書ヘッダを正本とする。 | 現代科学の因果説明を置換せず、外部分野の定義を優先する。 |
+| [存在境界論的歴史計算構造](./Metaphysical_Approach/存在境界論的歴史計算構造.ja.md) | 不可逆な出来事と、現在の依存構造の再構成を分ける。 | 文書ヘッダを正本とする。 | 過去の物理的改変を主張せず、現在の依存・返路・再開を扱う。 |
+| [光の読み方とそれに伴うアポリアの再配置](./Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md) | 有限通信・内在時間・履歴から光・空間・時間・因果を再配置する。 | 文書ヘッダを正本とする。 | 標準物理学上の確立命題とSO上の再解釈・生成仮説を分離する。 |
+| [応用形而上学体系 概説](./Metaphysical_Approach/応用形而上学体系_概説書_検討稿.md) | 正本候補『応用形而上学体系』の生成経路を概説する。 | 概説・検討稿 / v6正本候補への予告面。 | 正本の定理を増やさず、v6正本が確定したとは扱わない。 |
+| [存在境界論における監査理論](./Metaphysical_Approach/Engineering%20Research%20on%20Correctness/存在境界論における監査理論.ja.md) | 監査の必要性を非対称性、自己参照、無、Return、持続から検討する。 | 文書ヘッダを正本とする。 | 具体的審理条件や監査結果を自動的に確定しない。 |
+| [論理平面・論理深度・次元変換から読むαβ監査試論](./Metaphysical_Approach/Engineering%20Research%20on%20Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md) | αとβを論理平面内部と平面生成・外部化へ分ける研究試論。 | 日本語研究ノート / 英語通約保留。 | Gödel定理そのものとSO内部研究語を同一視しない。 |
+| [α監査――構造仕様と計算機・LLM分担設計](./Metaphysical_Approach/Engineering%20Research%20on%20Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md) | 閉鎖・矛盾・Spine・余剰について、LLM抽出と決定的計算を分担させる仕様候補。 | 研究草稿 / 実装仕様候補。 | 閉鎖を真理・無矛盾性・決定可能性へ昇格させない。 |
+| [β監査の実装モデルの推移](./Metaphysical_Approach/Engineering%20Research%20on%20Correctness/β監査の実装モデルの推移.ja.md) | βに接続し得る実装系列を形成史として比較する。 | 日本語研究ノート / 英語通約保留。 | 過去実装を当時から一貫したβ監査だったとは扱わない。 |
+| [インテリジェンスの発達とその監査](./Metaphysical_Approach/Engineering%20Research%20on%20Correctness/インテリジェンスの発達とその監査.ja.md) | 形成・安定・再開と監査可能性を同じ履歴面から検討する。 | 日本語研究ノート / 英語通約保留。 | 人間の発達をそのままAIへ写像しない。 |
+| [全・無・切断・未選択可能性の関係試論](./Metaphysical_Approach/Engineering%20Research%20on%20Correctness/全・無・切断・未選択可能性の関係試論.ja.md) | AMPの未分化の全、無、切断、未選択可能性の関係を検討する。 | 日本語研究ノート / 英語通約保留。 | 全と無、AMP語彙とSO操作語を無標識に同一化しない。 |
 
-公開境界は次の通りである。
-
-- 実装成功をSO概念の存在論的妥当性や経験科学的真理の証明へ昇格させない。
-- 標準論理学、数学、計算機科学、物理学の定義を上書きしない。
-- `Spine`は研究上の構造表現候補であり、基礎語彙またはdefinition ownerではない。
-- 実装、toy model、prompt実験から生じた差分は、上流の定義所有文書へ自動逆流させず、返路を通して再照合する。
+`000*`で保持される形成資料・旧稿・比較資料は、本索引およびManifestの公開文書一覧へ含めない。
 
 ---
 
-## 4. 共通保守契約
+## 4. 共通保守契約## 4. 共通保守契約
 
 1. 新規文書を追加した場合は、実ファイル、サブディレクトリREADME、本索引を同期する。
 2. 日本語正本と英語通約がある場合、主張強度、非主張境界、公開状態を一致させる。
@@ -243,7 +256,7 @@ Return to public foundations, definition owners, and Truth Management
 
 This index does not independently determine conceptual definitions, authoritative status, or claim strength. Individual document headers, non-claim boundaries, and the following governance documents take precedence:
 
-- [Research Notes README](./README.md)
+- [Research Notes README](README.md)
 - [Claim Strength and Publication-Layer Table](../00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md)
 - [Physics Correspondence Policy](../00_Overview/Physics_Correspondence_Policy.en.md)
 - [Glossary](../GLOSSARY.md)
@@ -268,7 +281,7 @@ This index does not independently determine conceptual definitions, authoritativ
 | [Social Boundary Notes](./Social_Boundary_Notes/README.md) | How can value, money, institutions, AI adoption, residuals, and residues be read through boundaries and responsibility? | Slows social criticism into public conceptual models and analyses of institutional boundaries. | Boundary ethics, Truth Management, AI-adoption design, and social-boundary applications. |
 | [AI Personality Notes](./AI_Personality_Notes/README.md) | How can continuity, personality-like response, and return stability in AI be described through history and boundary? | Treats AI personality as response structure, history loop, and shared logical field rather than human essence. | AI adaptation documents, return-oriented meaning, judgment fields, and future implementation tests. |
 | [Literary Ontological Notes](./Literary_Ontological_Notes/README.md) | Which boundary structures can literature and fictional cosmology make visible without serving as proof? | Uses narrative as a structural-reading surface for observing selfhood, history, belief, and return. | Narrative truth and structural reading, meaning generation, and creative applications. |
-| [Correctness, Logic, and Structural Studies](./Correctness_Logic_and_Structural_Studies/README.md) | How can correctness, closure, redundancy, frontier, cognitive axes, and possibility spaces be mapped into finite-resource logical, structural, and computational forms? | Tests what is preserved and lost when existing SO relations are commensurated into computable representations without redefining the foundational concepts. | Boundary epistemology, cognitive-axis formation, History-Field Topology, Truth Management, and adjacent Research Notes. |
+| [Metaphysical Approach](Metaphysical_Approach/README.md) | How can formation sources be connected to generative metaphysics, history, physics-adjacent hypotheses, and audit engineering without flattening their differences? | Keeps AMP/ITS/Gödel-derived formation sources, v6-oriented metaphysical reconstruction, and correctness/audit engineering in one research surface without treating them as one level of claim. | 01_Sat_Truth, 02_Raj_Beauty, the Physics Correspondence Policy, Truth Management, and the future v6 canonical reconstruction. |
 
 ---
 
@@ -316,13 +329,17 @@ Begin with [History Loop Radius and Return Stability](./AI_Personality_Notes/His
 
 Begin with [Reading the Blue Light](./Literary_Ontological_Notes/reading-blue-light.en.md) as a structural reading of an existing literary work. Continue to the Japanese-authoritative [The Transparent Ghost and the Bit](./Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md), whose English commensuration is pending, for the oscilloscope–sentence-cloud–LLM line. Then use the Japanese-only [Meifu Bureau Reincarnation and Belief-Gravity Model](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) for an internal model of fictional cosmology. The cross-domain method is developed in [Narrative, Truth Layer, and Structural Reading](./Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.en.md).
 
-### 2.7 Correctness, Logic, and Structural Studies
+### 2.7 Metaphysical Approach
 
-Begin with the [research-line README](./Correctness_Logic_and_Structural_Studies/README.md) only. No individual research documents are pre-registered at present. The line does not replace SO foundations with logic or computer science; it tests preservation and loss when existing relations among boundary, history, closure, residuals, return paths, and cognitive axes are mapped into computable structures. `Spine` remains a research candidate rather than canonical vocabulary.
+Begin with the [research-line README](Metaphysical_Approach/README.md). The directory does not impose one mandatory order. For the generative-metaphysics line, begin with the Japanese-authoritative formation-supply note and proceed through the causality, historical-computation, light/aporia, and applied-metaphysics overview documents as needed. These documents do not establish the v6 canonical text in advance.
+
+For audit research, proceed to `Engineering Research on Correctness`: audit theory, the logical-plane α/β trial model, the α-audit structural specification, and the β implementation-history note. The presence of these methods in the repository is distinct from completing a repository-wide audit.
+
+`Spine` and adjacent terms remain research candidates rather than foundational vocabulary. Files beginning with `000*` are formation or local working materials and are excluded from the public index.
 
 ---
 
-## 3. Document Index
+## 3. Document Index## 3. Document Index
 
 ### 3.1 Language, Meaning, and Communication Phase Studies
 
@@ -408,22 +425,15 @@ This research line treats literature and fictional cosmology as structural-readi
 | [Meifu Bureau Reincarnation and Belief-Gravity Model](./Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md) | A Japanese-only note organizing reincarnation, liberation, and world transfer in a fictional setting as a gravity domain formed by belief, history, institutions, and memory. | Literary / S2-S3 / P1 | Not religious doctrine, an explanation of Buddhism, or a physical theory of gravity. English commensuration is deferred; no nonexistent English version is assumed. |
 | [Literature as Worldmaking](./Literary_Ontological_Notes/Literature_as_Worldmaking.en.md) / [JA](./Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md) | Reads literature as worldmaking in which compressed other-history is redeployed into reader history and changes perception, meaning, and downstream conditions. | Governed by the document header. | Does not assume duplication of author and reader experience and does not use literature as evidence for empirical fact. |
 
-### 3.8 Correctness, Logic, and Structural Studies
+### 3.8 Metaphysical Approach
 
-This line commensurates correctness, logic, structural representation, closure, redundancy, frontier, cognitive axes, and finite-resource computation into formal and implementation-facing surfaces without redefining existing SO concepts.
+This research surface keeps formation provenance, generative metaphysics, historical computation, physics-adjacent hypotheses, and the engineering of correctness/audit distinct while allowing explicit return paths among them. The Japanese documents listed in the corresponding Japanese section are authoritative; English commensurations for these individual documents remain pending unless separately present.
 
-At present, the only public document is the [research-line README](./Correctness_Logic_and_Structural_Studies/README.md). Individual research documents, experiment records, and English commensurations are added only when substantive work exists; empty future categories are not pre-created.
-
-Public boundaries are:
-
-- implementation success does not establish ontological validity or empirical truth for SO concepts;
-- definitions in standard logic, mathematics, computer science, and physics are not overwritten;
-- `Spine` is a research representation candidate, not foundational vocabulary or a definition owner;
-- differences produced by implementations, toy models, or prompt experiments return through explicit re-collation paths rather than silently back-projecting into upstream theory.
+The directory does not certify the future v6 canonical reconstruction, replace standard physics or logic, or treat successful audit implementation as proof of ontological validity. `000*` materials are excluded from the public index and manifest.
 
 ---
 
-## 4. Shared Maintenance Contract
+## 4. Shared Maintenance Contract## 4. Shared Maintenance Contract
 
 1. When a public document is added, synchronize the actual file set, the relevant subdirectory README, and this index.
 2. Where Japanese authoritative and English commensurated files coexist, keep claim strength, non-claim boundaries, and publication status aligned.

@@ -8667,45 +8667,226 @@ documents:
     visibility: canonical
   legacy_metadata:
     internal_profile_semantics: pre-document-contract labels; not approved assessment results
-- path: 05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md
-  doc_id: 05_research_notes_correctness_logic_and_structural_studies_readme
-  document_type: subdirectory_readme
+- path: "05_Research_Notes/Metaphysical_Approach/README.md"
+  doc_id: 05_research_notes_metaphysical_approach_readme
+  document_type: "subdirectory_readme"
   document_role: navigation
-  title_ja: Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究
-  title_en: Correctness, Logic, and Structural Studies
-  layer: 05_Research_Notes
-  status: README
-  scope: ''
-  public_profile: ''
+  catalog_document: true
+  title_ja: "Metaphysical Approach / 形而上学的アプローチ"
+  title_en: "Metaphysical Approach"
+  layer: "05_Research_Notes/Metaphysical_Approach"
+  status: "README"
   state: public
   registration_state: provisional
-  role_ja: Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究
-  role_en: Correctness, Logic, and Structural Studies
-  catalog_document: true
   language_relation:
     language: ja
     role: authoritative
-    counterpart_path:
+    counterpart_path: null
     coverage: not_applicable
-    authoritative_path: 05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/README.md"
   assessment:
     applicability: not_applicable
     review_state: not_applicable
-  discovery:
-    primary_question:
-      ja:
-      en:
-    topics: []
-    aliases:
-      ja: []
-      en: []
-    reader_questions:
-      ja: []
-      en: []
-    searchable: true
-    visibility: canonical
-  legacy_metadata:
-    internal_profile_semantics: pre-document-contract labels; not approved assessment results
+- path: "05_Research_Notes/Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md"
+  doc_id: 05_research_notes_metaphysical_approach_formation_supply_line_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "AMP・ITS・ゲーデル試論から読む生成形而上学の補給線"
+  title_en: "Formation Supply Line from AMP, ITS, and the Gödel Essay to Generative Metaphysics"
+  layer: "05_Research_Notes/Metaphysical_Approach"
+  status: "Research note / formation-source map"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+- path: "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md"
+  doc_id: 05_research_notes_metaphysical_approach_modern_science_causality_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "現代科学の因果関係を拡張する"
+  title_en: "Extending Causality in Modern Science"
+  layer: "05_Research_Notes/Metaphysical_Approach"
+  status: "Foundational research note / structured draft / pre-formalization"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+- path: "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md"
+  doc_id: 05_research_notes_metaphysical_approach_historical_computation_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "存在境界論的歴史計算構造"
+  title_en: "Historical Computational Structure in Scientific Ontology"
+  layer: "05_Research_Notes/Metaphysical_Approach"
+  status: "Foundational research note / phase-audit integrated draft / pre-formalization"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+- path: "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md"
+  doc_id: 05_research_notes_metaphysical_approach_light_aporia_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "光の読み方と、それに伴うアポリアの再配置"
+  title_en: "Reading Light and Repositioning the Resulting Aporias"
+  layer: "05_Research_Notes/Metaphysical_Approach"
+  status: "Foundational research note / structured draft / pre-formalization"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+- path: "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.md"
+  doc_id: 05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "応用形而上学体系　概説"
+  title_en: "Applied Metaphysics System: Overview Draft"
+  layer: "05_Research_Notes/Metaphysical_Approach"
+  status: "Research overview / draft / v6 candidate guide"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+- path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md"
+  doc_id: 05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "論理平面・論理深度・次元変換から読むαβ監査試論"
+  title_en: "Trial Model of Alpha/Beta Audit through Logical Planes, Logical Depth, and Dimensional Transformation"
+  layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
+  status: "Research note / αβ audit working model"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+- path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md"
+  doc_id: 05_research_notes_metaphysical_approach_alpha_audit_structure_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "α監査――論理平面の閉鎖・矛盾・Spine・余剰を機械監査するための構造仕様"
+  title_en: "Alpha Audit: Structural Specification and Computer–LLM Division of Labor"
+  layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
+  status: "Research draft / implementation specification candidate"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+- path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md"
+  doc_id: 05_research_notes_metaphysical_approach_beta_audit_implementation_history_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "β監査の実装モデルの推移"
+  title_en: "Evolution of Implementation Models for Beta Audit"
+  layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
+  status: "Research note / implementation-history reconstruction"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+- path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md"
+  doc_id: 05_research_notes_metaphysical_approach_intelligence_development_audit_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "インテリジェンスの発達とその監査"
+  title_en: "Development of Intelligence and Its Audit"
+  layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
+  status: "Research note / exploratory model"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
+- path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md"
+  doc_id: 05_research_notes_metaphysical_approach_whole_null_cut_unselected_ja
+  document_type: "research_note"
+  document_role: research_note
+  catalog_document: true
+  title_ja: "全・無・切断・未選択可能性の関係試論"
+  title_en: "Trial Account of Whole, Null, Cut, and Unselected Possibility"
+  layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
+  status: "Research note / exploratory hypothesis"
+  state: public
+  registration_state: provisional
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md"
+  assessment:
+    applicability: current_claim
+    review_state: unreviewed
 - path: 07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md
   doc_id: 07_creative_offshoots_literary_essays_questions_boundaries_and_peace_en
   document_type: assertion_document
@@ -9334,12 +9515,12 @@ documents:
     searchable: true
     visibility: canonical
 
-- path: "05_Research_Notes/Generative_Metaphysics_and_Falsification_Studies/存在境界論における監査理論.ja.md"
+- path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md"
   doc_id: 05_research_notes_generative_metaphysics_audit_theory_ja
   document_type: "assertion_document"
   title_ja: "存在境界論における監査理論"
   title_en: "Audit Theory in Scientific Ontology"
-  layer: "05_Research_Notes/Generative_Metaphysics_and_Falsification_Studies"
+  layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
   status: "Foundational audit theory / research draft / pre-formalization"
   scope: "audit necessity / phase-aware audit / asymmetry / contact / transmission / intrusion / action effect / effective return / externalization / manifestation boundary / generation boundary / transmission path / responsibility boundary / persistence / return"
   public_profile: "P2"
@@ -9358,7 +9539,7 @@ documents:
     role: authoritative
     counterpart_path:
     coverage: not_applicable
-    authoritative_path: "05_Research_Notes/Generative_Metaphysics_and_Falsification_Studies/存在境界論における監査理論.ja.md"
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md"
   related:
   - "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md"
   - "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md"

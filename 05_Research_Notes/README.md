@@ -48,7 +48,7 @@ Research Notesは基礎層を暗黙に更新しない。昇格には、定義所
 ネゲントロピー経済は経験的経済理論ではなく、熱力学的証明ではなく、政策提案ではない。
 - AI人格と帰還安定性
 - 文学的存在論読解
-- 正しさ、閉鎖、冗長性、Frontier、認識軸、有限資源計算を論理・構造・計算へ通約する研究
+- 生成形而上学、形成源、履歴計算、物理近接仮説、および正しさ・監査を論理・構造・計算へ通約する研究
 
 含まないもの：
 
@@ -60,16 +60,16 @@ Research Notesは基礎層を暗黙に更新しない。昇格には、定義所
 
 ## 4. Documents / 文書一覧
 
-最初に[`Research_Notes_Index.md`](./Research_Notes_Index.md)を参照する。
+最初に[`Research_Notes_Index.md`](Research_Notes_Index.md)を参照する。
 
-- [`Language_Meaning_and_Communication_Phase_Studies/README.md`](./Language_Meaning_and_Communication_Phase_Studies/README.md)：文法、意味、発話、通約、意味ネットワーク、AI言語生成、返路
-- [`Cognitive_Dynamics_Communication_Studies/README.md`](./Cognitive_Dynamics_Communication_Studies/README.md)：シームレスな認識通信、存在相圧縮、ポート、組織境界
-- [`Cross_Domain_Ontological_Notes/README.md`](./Cross_Domain_Ontological_Notes/README.md)：非対称性、再照合、返りの倫理、物語的真理
-- [`Physical_Cosmological_Notes/README.md`](./Physical_Cosmological_Notes/README.md)：内在時間、宇宙史、PINGER、カオス、論理-深度軸
-- [`Social_Boundary_Notes/README.md`](./Social_Boundary_Notes/README.md)：AI導入、社会境界、ネゲントロピー経済
-- [`AI_Personality_Notes/README.md`](./AI_Personality_Notes/README.md)：論理サンドボックス、履歴ループ、帰還安定性
-- [`Literary_Ontological_Notes/README.md`](./Literary_Ontological_Notes/README.md)：文学作品と創作宇宙の構造読解
-- [`Correctness_Logic_and_Structural_Studies/README.md`](./Correctness_Logic_and_Structural_Studies/README.md)：正しさ、閉鎖、冗長性、Frontier、認識軸、可能性空間、計算資源を論理・構造・計算へ通約する研究線。現時点ではREADMEのみを公開境界とし、`Spine`等を基礎語彙へ昇格させない。
+- [`Language_Meaning_and_Communication_Phase_Studies/README.md`](Language_Meaning_and_Communication_Phase_Studies/README.md)：文法、意味、発話、通約、意味ネットワーク、AI言語生成、返路
+- [`Cognitive_Dynamics_Communication_Studies/README.md`](Cognitive_Dynamics_Communication_Studies/README.md)：シームレスな認識通信、存在相圧縮、ポート、組織境界
+- [`Cross_Domain_Ontological_Notes/README.md`](Cross_Domain_Ontological_Notes/README.md)：非対称性、再照合、返りの倫理、物語的真理
+- [`Physical_Cosmological_Notes/README.md`](Physical_Cosmological_Notes/README.md)：内在時間、宇宙史、PINGER、カオス、論理-深度軸
+- [`Social_Boundary_Notes/README.md`](Social_Boundary_Notes/README.md)：AI導入、社会境界、ネゲントロピー経済
+- [`AI_Personality_Notes/README.md`](AI_Personality_Notes/README.md)：論理サンドボックス、履歴ループ、帰還安定性
+- [`Literary_Ontological_Notes/README.md`](Literary_Ontological_Notes/README.md)：文学作品と創作宇宙の構造読解
+- [`Metaphysical_Approach/README.md`](Metaphysical_Approach/README.md)：AMP/ITS/Gödel系の形成源、生成形而上学、歴史計算、物理近接研究と、その内部の正しさ・監査工学を扱う研究面。v6正本を先取りして確定せず、監査方法と監査実施も分離する。
 
 ## 5. Maintenance Notes / 運用メモ
 
@@ -125,7 +125,7 @@ Included:
 Negentropy Economy is not an empirical economic theory, not a thermodynamic proof, and not a policy proposal.
 - AI personality and return stability;
 - literary ontological readings;
-- logical, structural, and computational commensuration of correctness, closure, redundancy, frontier, cognitive axes, and finite-resource computation.
+- research on generative metaphysics, formation provenance, historical computation, physics-adjacent hypotheses, and the logical/structural/computational commensuration of correctness and audit.
 
 Not included:
 
@@ -137,16 +137,16 @@ Not included:
 
 ## 3. Index and Subdirectories
 
-Begin with [`Research_Notes_Index.md`](./Research_Notes_Index.md).
+Begin with [`Research_Notes_Index.md`](Research_Notes_Index.md).
 
-- [`Language_Meaning_and_Communication_Phase_Studies/README.md`](./Language_Meaning_and_Communication_Phase_Studies/README.md): grammar, meaning, speech, commensuration, semantic networks, AI language generation, and return paths
-- [`Cognitive_Dynamics_Communication_Studies/README.md`](./Cognitive_Dynamics_Communication_Studies/README.md): seamless cognition, existence-phase compression, ports, and organizational boundaries
-- [`Cross_Domain_Ontological_Notes/README.md`](./Cross_Domain_Ontological_Notes/README.md): asymmetry, re-collation, return ethics, and narrative truth
-- [`Physical_Cosmological_Notes/README.md`](./Physical_Cosmological_Notes/README.md): intrinsic time, cosmic history, PINGER, chaos, and logical depth
-- [`Social_Boundary_Notes/README.md`](./Social_Boundary_Notes/README.md): AI adoption, social boundaries, and Negentropy Economy
-- [`AI_Personality_Notes/README.md`](./AI_Personality_Notes/README.md): logical sandboxes, history loops, and return stability
-- [`Literary_Ontological_Notes/README.md`](./Literary_Ontological_Notes/README.md): structural reading of literature and fictional cosmologies
-- [`Correctness_Logic_and_Structural_Studies/README.md`](./Correctness_Logic_and_Structural_Studies/README.md): a research line for commensurating correctness, closure, redundancy, frontier, cognitive axes, possibility spaces, and computational resources into logical, structural, and computational forms. At present the README alone defines the public boundary; terms such as `Spine` are not promoted into foundational vocabulary.
+- [`Language_Meaning_and_Communication_Phase_Studies/README.md`](Language_Meaning_and_Communication_Phase_Studies/README.md): grammar, meaning, speech, commensuration, semantic networks, AI language generation, and return paths
+- [`Cognitive_Dynamics_Communication_Studies/README.md`](Cognitive_Dynamics_Communication_Studies/README.md): seamless cognition, existence-phase compression, ports, and organizational boundaries
+- [`Cross_Domain_Ontological_Notes/README.md`](Cross_Domain_Ontological_Notes/README.md): asymmetry, re-collation, return ethics, and narrative truth
+- [`Physical_Cosmological_Notes/README.md`](Physical_Cosmological_Notes/README.md): intrinsic time, cosmic history, PINGER, chaos, and logical depth
+- [`Social_Boundary_Notes/README.md`](Social_Boundary_Notes/README.md): AI adoption, social boundaries, and Negentropy Economy
+- [`AI_Personality_Notes/README.md`](AI_Personality_Notes/README.md): logical sandboxes, history loops, and return stability
+- [`Literary_Ontological_Notes/README.md`](Literary_Ontological_Notes/README.md): structural reading of literature and fictional cosmologies
+- [`Metaphysical_Approach/README.md`](Metaphysical_Approach/README.md): a research surface connecting formation sources, generative metaphysics, historical computation, physics-adjacent studies, and an internal engineering line for correctness and audit. It does not pre-empt the v6 canonical reconstruction and keeps audit methods distinct from repository-wide audit execution.
 
 ## 4. Return and Maintenance
 
