@@ -1,8 +1,8 @@
 {
-  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.1-rc003",
+  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.1",
   "upload_type": "publication",
   "publication_type": "other",
-  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.1-rc003 is a release candidate that retains the v5.1.0 question of what to bring back, revise, and leave unresolved after boundary contact. Its v5.1.1 subtheme is to approach correctness from both sides: deduction from metaphysics and engineering under concrete finite conditions. It separates authorial stance from concept ownership; distinguishes proposition-level adjudication from document/system-level audit; re-examines AMP/ITS/Gödel-derived formation material as formation provenance rather than higher authority; reorganizes generative metaphysics, historical computation, physics-adjacent hypotheses, and Engineering Research on Correctness under a Metaphysical Approach research surface; expands English commensuration; and introduces an experimental deterministic repository machine-audit lane whose findings have no automatic canonical effect.",
+  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.1 retains the v5.1.0 question of what to bring back, revise, and leave unresolved after boundary contact. Its v5.1.1 subtheme is to approach correctness from both sides: deduction from metaphysics and engineering under concrete finite conditions. It separates authorial stance from concept ownership; distinguishes proposition-level adjudication from document/system-level audit; re-examines AMP/ITS/Gödel-derived formation material as formation provenance rather than higher authority; reorganizes generative metaphysics, historical computation, physics-adjacent hypotheses, and Engineering Research on Correctness under a Metaphysical Approach research surface; expands English commensuration; and introduces an experimental deterministic repository machine-audit lane whose findings have no automatic canonical effect.",
   "creators": [
     {
       "name": "万土, 華凜",
@@ -11,7 +11,7 @@
   ],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "5.1.1-rc003",
+  "version": "5.1.1",
   "keywords": [
     "Scientific Ontology",
     "存在境界論",
@@ -55,5 +55,6 @@
       "scheme": "url"
     }
   ],
-  "notes": "This is a release candidate, not a published Public Edition. The current published version remains v5.1.0. Formation sources are not promoted into evidentiary or canonical authority, machine-audit findings are not verdicts, and successful tooling does not establish the truth of Scientific Ontology. The deterministic machine-audit lane is a lower-layer precursor to broader Repository-wide alpha/beta audit execution; no Repository-wide alpha/beta audit has yet been executed. Candidate document-index/public-catalog regeneration is restored. The rc003 preview read model validates at 183 public documents and 62 Japanese-English pair families; these are candidate-state validation values, not a retroactive replacement of the published v5.1.0 catalog facts. Full physics/cosmology scientific audit, private-core publication, and DSSI/ConnectBits product-code bundling remain outside this candidate."
+  "notes": "Formation sources are not promoted into evidentiary or canonical authority, machine-audit findings are not verdicts, and successful tooling does not establish the truth of Scientific Ontology. The deterministic machine-audit lane is a lower-layer precursor to broader Repository-wide alpha/beta audit execution; no Repository-wide alpha/beta audit has yet been executed. The v5.1.1 document-index/public-catalog pipeline validates at 183 public documents and 62 Japanese-English pair families. Full physics/cosmology scientific audit, private-core publication, and DSSI/ConnectBits product-code bundling remain outside this release.",
+  "publication_date": "2026-10-26"
 }

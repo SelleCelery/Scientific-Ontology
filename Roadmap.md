@@ -96,19 +96,19 @@ v4.3.0では、その境界への移動を引き継ぎ、境界認識の批判�
 
 ## 2. 現在地
 
-v4.3.0までにStage Cの公開基礎が形成され、v5.0.0でStage Dが開いた。**v5.1.0は2026-09-18に公開済み**であり、自己監査と境界運用の足場をPublic Editionへ固定した。現在のRepository作業線は **v5.1.1-rc003** である。
+v4.3.0までにStage Cの公開基礎が形成され、v5.0.0でStage Dが開いた。**v5.1.0は2026-09-18に公開済み**であり、自己監査と境界運用の足場をPublic Editionへ固定した。現在のRepository作業線は **v5.1.1** の公開前release candidateである。版固有Zenodo DOI **10.5281/zenodo.23658812** は予約済みである。
 
 - **v5.0.0**：Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、返りを受けるStage Dを開始した。
 - **v5.1.0**：SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contractとNavigator、`正しさ・個性・無・切断`、04–07の機能境界、07の外部曝露面を整合し、修正・scope制限・未解決残差を返路付きで保持する自己監査の足場を成立させた。
-- **v5.1.1-rc003**：v5.1.0の主題「境界に触れたあと、何を持ち帰り、何を直し、何を未解決として残すか」を据え置き、サブテーマとして「正しさを、形而上からの演繹と形而下からの工学で挟み込む」を置く。著者の研究姿勢と能動的Returnを公開メタ記述へ分離し、「正しさ」で審理と監査、位相と再審理条件を分ける。05では`Metaphysical_Approach`へ生成形而上学・形成源・歴史計算・物理近接研究・Engineering Research on Correctnessを再配置し、日英対の『応用形而上学体系 概説』をnon-canonicalなv6 transition previewとして置き、英語通約を拡張する。Repository側ではchecker観測面を分離した決定論的machine-audit laneを実験導入する。
-- **Axis-invariant correctness criterion** / 軸内容不変の正しさ判定規則：v5.1.0最終監査で露出したworking hypothesisは引き続き未確定である。v5.1.1-rc003の位相付き審理・監査分離は、この仮説を自動的に証明も棄却もしない。
+- **v5.1.1**：v5.1.0の主題「境界に触れたあと、何を持ち帰り、何を直し、何を未解決として残すか」を据え置き、サブテーマとして「正しさを、形而上からの演繹と形而下からの工学で挟み込む」を置く。著者の研究姿勢と能動的Returnを公開メタ記述へ分離し、「正しさ」で審理と監査、位相と再審理条件を分ける。05では`Metaphysical_Approach`へ生成形而上学・形成源・歴史計算・物理近接研究・Engineering Research on Correctnessを再配置し、日英対の『応用形而上学体系 概説』をnon-canonicalなv6 transition previewとして置き、英語通約を拡張する。Repository側ではchecker観測面を分離した決定論的machine-audit laneを実験導入する。
+- **Axis-invariant correctness criterion** / 軸内容不変の正しさ判定規則：v5.1.0最終監査で露出したworking hypothesisは引き続き未確定である。v5.1.1の位相付き審理・監査分離は、この仮説を自動的に証明も棄却もしない。
 - **v5.x**：研究・実装・外部照合を順次追加し、各応用から返る残差によって上流概念を再照合する。
 
-v5.1.1-rc003で重要なのは、**正しさを形而上からの演繹と形而下からの工学の両側から照合すること**である。AMP・ITS・Gödel系形成資料の再検討は、現在の正本を証明する上位権限へ戻すためではなく、完全性と不完全性、無・切断、論理形成、自己参照が「正しさ」に何を要請するかを演繹側から検討するために行う。有限資源下の探索、審理、監査、実装は、その要請を形而下側で操作・検査可能な条件へ降ろす工学側を担う。両者を同一視せず、形成源・正本・研究仮説・監査理論・実装結果の権限を混同しない。`Metaphysical_Approach`はv6正本を先取りして確定する場所ではなく、何を将来の正本候補へ返せるかを検討する研究面である。
+v5.1.1で重要なのは、**正しさを形而上からの演繹と形而下からの工学の両側から照合すること**である。AMP・ITS・Gödel系形成資料の再検討は、現在の正本を証明する上位権限へ戻すためではなく、完全性と不完全性、無・切断、論理形成、自己参照が「正しさ」に何を要請するかを演繹側から検討するために行う。有限資源下の探索、審理、監査、実装は、その要請を形而下側で操作・検査可能な条件へ降ろす工学側を担う。両者を同一視せず、形成源・正本・研究仮説・監査理論・実装結果の権限を混同しない。`Metaphysical_Approach`はv6正本を先取りして確定する場所ではなく、何を将来の正本候補へ返せるかを検討する研究面である。
 
-同様に、machine auditは理論の正しさを機械的に判定する仕組みではない。既存checkerのissueをpublic format、repository structure、semantic review、operational integrityへ分け、監査対象として宣言した面だけをAuditFinding候補へ変換する。**Finding != Verdict** を固定し、正本文書・概念owner・意味判断への自動writebackは行わない。detectorがunsupportedである領域は、そのまま未対応として残す。このmachine-audit laneはRepository全体のα／β監査に先行する下層実装であり、α／β監査そのものではない。Repository全体へのα／β監査はrc003時点では未実施である。
+同様に、machine auditは理論の正しさを機械的に判定する仕組みではない。既存checkerのissueをpublic format、repository structure、semantic review、operational integrityへ分け、監査対象として宣言した面だけをAuditFinding候補へ変換する。**Finding != Verdict** を固定し、正本文書・概念owner・意味判断への自動writebackは行わない。detectorがunsupportedである領域は、そのまま未対応として残す。このmachine-audit laneはRepository全体のα／β監査に先行する下層実装であり、α／β監査そのものではない。Repository全体へのα／β監査はv5.1.1公開前時点では未実施である。
 
-rc003は公開候補であって公開済み版ではない。現行公開版はv5.1.0である。候補版のmanifest / read-model同期は再び成立し、preview状態ではpublic 183文書・日英62 pair familiesを検証できる。これは候補状態の検証値であり、公開済みv5.1.0の157文書・49 pair familiesという確定事実を置き換えない。
+v5.1.1は公開前release candidateであり、版固有Zenodo DOI 10.5281/zenodo.23658812 は予約済みだが、Zenodo recordはまだ公開していない。manifest / read-model同期は成立し、公開前状態ではpublic 183文書・日英62 pair familiesを検証できる。公開完了まではpre-publication validation valuesとして扱い、公開済みv5.1.0の157文書・49 pair familiesという確定事実を置き換えない。
 
 v5系の開始線は、次である。
 
@@ -456,7 +456,7 @@ Stage Eへ進む条件は、概念が実装可能になったことだけでは�
 | v4.3.0 | Stage C2-C4 | 認識生成、認識運用、研究動態、組織・倫理・平和仕様 |
 | v5.0.0 | Stage D opening | Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、代謝型の外部照合を開始 |
 | v5.1.0 | Stage D / reflexive audit and external exposure | SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contract・Navigator、`正しさ・個性・無・切断`、04–07の機能境界、Creative Offshootsの外部曝露面を整合し、自己監査と境界運用の公開足場を成立 |
-| v5.1.1-rc003 candidate | Stage D / metaphysical research and audit convergence | 著者研究姿勢と能動的Return、審理／監査分離、位相付き正しさ、Metaphysical Approachへの研究線再配置、英語通約拡張、Finding != Verdictを固定した実験的Repository machine auditを収束中 |
+| v5.1.1 pre-publication candidate | Stage D / metaphysical research and audit convergence | 著者研究姿勢と能動的Return、審理／監査分離、位相付き正しさ、Metaphysical Approachへの研究線再配置、英語通約拡張、Finding != Verdictを固定した実験的Repository machine auditを公開前状態まで収束 |
 | v5.x | Stage D-E | 実装・汎用化・外部照合・反証条件・アプリケーション・会計・AI比較を順次追加 |
 | v6 candidate | Structural transition | v5系の基礎記述面、概念所有、中核不変項、説明本拠地そのものの再編が必要になった場合に検討 |
 
@@ -554,19 +554,19 @@ v4.3.0 continues that movement by connecting critique, formation, and operation 
 
 ## 2. Current Position
 
-v4.3.0 established the public basis of Stage C, and v5.0.0 opened Stage D. **v5.1.0 was published on 2026-09-18**, fixing a public foothold for self-audit and boundary operation. The active repository line is now **v5.1.1-rc003**.
+v4.3.0 established the public basis of Stage C, and v5.0.0 opened Stage D. **v5.1.0 was published on 2026-09-18**, fixing a public foothold for self-audit and boundary operation. The active repository line is now **v5.1.1** as a pre-publication release candidate. Its version-specific Zenodo DOI, **10.5281/zenodo.23658812**, has been reserved.
 
 - **v5.0.0:** opened Stage D through the Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, and the DSSI research surface.
 - **v5.1.0:** aligned SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, *Correctness, Individuality, Absence, and Cut*, the functional boundary of 04–07, and the external-exposure role of 07; it established a public foothold for preserving correction, scope restriction, and unresolved residuals with return paths.
-- **v5.1.1-rc003:** retains the v5.1.0 question of what to bring back, revise, and leave unresolved after boundary contact, and adds a subtheme: approach correctness from both sides, through deduction from metaphysics and engineering under concrete finite conditions. It separates authorial stance and active Return as a public meta statement; distinguishes adjudication from audit and adds topology-aware re-adjudication conditions to the correctness model; consolidates formation sources, generative metaphysics, historical computation, physics-adjacent research, and Engineering Research on Correctness under `Metaphysical_Approach`; exposes the paired Applied Metaphysics System Overview only as a non-canonical v6 transition preview; expands English commensuration; and introduces an experimental deterministic repository machine-audit lane.
-- **Axis-invariant correctness criterion:** the working hypothesis surfaced during the v5.1.0 final audit remains unresolved. The topology/adjudication/audit work in rc003 neither proves nor refutes it automatically.
+- **v5.1.1:** retains the v5.1.0 question of what to bring back, revise, and leave unresolved after boundary contact, and adds a subtheme: approach correctness from both sides, through deduction from metaphysics and engineering under concrete finite conditions. It separates authorial stance and active Return as a public meta statement; distinguishes adjudication from audit and adds topology-aware re-adjudication conditions to the correctness model; consolidates formation sources, generative metaphysics, historical computation, physics-adjacent research, and Engineering Research on Correctness under `Metaphysical_Approach`; exposes the paired Applied Metaphysics System Overview only as a non-canonical v6 transition preview; expands English commensuration; and introduces an experimental deterministic repository machine-audit lane.
+- **Axis-invariant correctness criterion:** the working hypothesis surfaced during the v5.1.0 final audit remains unresolved. The topology/adjudication/audit work in v5.1.1 neither proves nor refutes it automatically.
 - **v5.x:** continues to add research, implementation, external collation, and returns into upstream concepts.
 
-The key movement in v5.1.1-rc003 is to **approach correctness from both the metaphysical and engineering directions**. AMP/ITS/Gödel formation materials are re-examined not as superior evidence for current public owners, but as formation provenance for asking what completeness, incompleteness, Absence, Cut, logical formation, and self-reference require of correctness. Finite-resource inquiry, adjudication, audit, and implementation provide the engineering direction by turning those requirements into operational and inspectable conditions. These directions are collated without collapsing the authority of formation sources, canonical owners, research hypotheses, audit theory, or implementation results. `Metaphysical_Approach` is a Research Notes surface for testing what may later return to canonical reconstruction; it does not pre-establish a v6 canon.
+The key movement in v5.1.1 is to **approach correctness from both the metaphysical and engineering directions**. AMP/ITS/Gödel formation materials are re-examined not as superior evidence for current public owners, but as formation provenance for asking what completeness, incompleteness, Absence, Cut, logical formation, and self-reference require of correctness. Finite-resource inquiry, adjudication, audit, and implementation provide the engineering direction by turning those requirements into operational and inspectable conditions. These directions are collated without collapsing the authority of formation sources, canonical owners, research hypotheses, audit theory, or implementation results. `Metaphysical_Approach` is a Research Notes surface for testing what may later return to canonical reconstruction; it does not pre-establish a v6 canon.
 
 The machine-audit lane is likewise not a machine truth judge. It classifies existing checker observations into public format, repository structure, semantic review, and operational integrity, then maps only declared audit-eligible surfaces into candidate findings. **Finding != Verdict** is fixed as a boundary, there is no automatic canonical writeback, and unsupported detectors remain explicitly unsupported. This lane is a lower-layer implementation preceding broader Repository-wide alpha/beta audit execution; it is not itself the alpha/beta audit, and no Repository-wide alpha/beta audit has yet been executed.
 
-rc003 is a release candidate, not the published Public Edition. v5.1.0 remains the current public release. The candidate manifest/read-model pipeline now regenerates cleanly in preview mode and validates **183 public documents / 62 Japanese-English pair families**. These are candidate-state validation values, not retroactive replacements for the published v5.1.0 catalog facts of 157 / 49.
+v5.1.1 is a pre-publication release candidate. Its version-specific Zenodo DOI, 10.5281/zenodo.23658812, has been reserved, but the Zenodo record has not yet been published; v5.1.0 therefore remains the current public release. The manifest/read-model pipeline regenerates cleanly in preview mode and validates **183 public documents / 62 Japanese-English pair families**. Until publication completes, these remain pre-publication validation values rather than retroactive replacements for the published v5.1.0 catalog facts of 157 / 49.
 
 The v5 series anchor remains:
 
@@ -727,7 +727,7 @@ Stage E requires not only implementable concepts but functioning routes through 
 | v4.3.0 | Stage C2-C4 | Cognitive formation, cognitive operation, research dynamics, and organizational, ethical, and peace specifications |
 | v5.0.0 | Stage D opening | Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, DSSI research, and living-canonical return structures |
 | v5.1.0 | Stage D / reflexive audit and external exposure | Aligns SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, *Correctness, Individuality, Absence, and Cut*, the 04–07 functional boundary, and the external-exposure role of Creative Offshoots; establishes the public foothold for self-audit and boundary operation |
-| v5.1.1-rc003 candidate | Stage D / metaphysical research and audit convergence | Converges authorial stance and active Return, adjudication/audit separation, topology-aware correctness, the Metaphysical Approach research reorganization, expanded English commensuration, and an experimental Repository machine-audit lane with Finding != Verdict |
+| v5.1.1 pre-publication candidate | Stage D / metaphysical research and audit convergence | Converges authorial stance and active Return, adjudication/audit separation, topology-aware correctness, the Metaphysical Approach research reorganization, expanded English commensuration, and an experimental Repository machine-audit lane with Finding != Verdict |
 | v5.x | Stage D-E | Implementation, generalization, external collation, falsification conditions, applications, accounting, and AI comparison |
 | v6 candidate | Structural transition | Considered when the explanatory base, core invariants, or concept-ownership structure itself requires reorganization |
 

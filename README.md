@@ -126,7 +126,7 @@ v5.0 is the opening release of that living series, not the completion of v5.
 
 **v5.1.0** turned that outward movement back toward boundary operation itself: how contact is classified, how facts, support paths, and hypotheses are kept distinct, how correction and unresolved residuals are recorded, and how return paths remain inspectable. It established a public foothold for self-audit without declaring a completed self-audit methodology.
 
-The active repository line is now **v5.1.1-rc003**. It retains the v5.1.0 question: **after contact at a boundary, what do we bring back, revise, and leave unresolved?** Its v5.1.1 subtheme is to **approach correctness from both sides: deduction from metaphysics and engineering under concrete finite conditions**. Formation sources are re-examined for the metaphysical side, not restored as higher authority; finite-resource inquiry, adjudication, audit, commensuration, and implementation develop the engineering side. rc003 also separates authorial stance from concept authority, consolidates generative-metaphysics and correctness/audit research under [`Metaphysical Approach`](05_Research_Notes/Metaphysical_Approach/README.en.md), exposes the paired [`Applied Metaphysics System Overview`](05_Research_Notes/Metaphysical_Approach/Applied_Metaphysics_System_Overview.en.md) only as a non-canonical v6 transition preview, expands English commensuration, and introduces an experimental deterministic repository machine-audit lane. That lane is a lower-layer implementation preceding broader Repository-wide alpha/beta audit execution; no Repository-wide alpha/beta audit has yet been executed. rc003 is a candidate state, not the current published Public Edition.
+The active repository line is now **v5.1.1** as a pre-publication release candidate with reserved Zenodo DOI **10.5281/zenodo.23658812**. It retains the v5.1.0 question: **after contact at a boundary, what do we bring back, revise, and leave unresolved?** Its v5.1.1 subtheme is to **approach correctness from both sides: deduction from metaphysics and engineering under concrete finite conditions**. Formation sources are re-examined for the metaphysical side, not restored as higher authority; finite-resource inquiry, adjudication, audit, commensuration, and implementation develop the engineering side. v5.1.1 also separates authorial stance from concept authority, consolidates generative-metaphysics and correctness/audit research under [`Metaphysical Approach`](05_Research_Notes/Metaphysical_Approach/README.en.md), exposes the paired [`Applied Metaphysics System Overview`](05_Research_Notes/Metaphysical_Approach/Applied_Metaphysics_System_Overview.en.md) only as a non-canonical v6 transition preview, expands English commensuration, and introduces an experimental deterministic repository machine-audit lane. That lane is a lower-layer implementation preceding broader Repository-wide alpha/beta audit execution; no Repository-wide alpha/beta audit has yet been executed. v5.1.1 is still in pre-publication state; the current published Public Edition remains v5.1.0 until publication is completed.
 
 - [`Scientific Ontology Operational Outline`](00_Overview/Scientific_Ontology_Operational_Outline.en.md)
 - [`Language, Meaning, and Communication Phase Studies`](05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/README.md)
@@ -150,7 +150,7 @@ v5系では、この運動を理論内部に留めません。言語、文学、
 
 **v5.1.0**では、その外向きの運動を境界運用そのものへ返しました。接触をどう分類するか、事実・支持経路・仮説をどう分けるか、訂正と未解決残差をどう残すか、返路をどう監査可能にするかを公開構造上で扱い、自己監査の足場を成立させました。
 
-現在のRepository作業線は **v5.1.1-rc003** です。v5.1.0の主題である **「境界に触れたあと、何を持ち帰り、何を直し、何を未解決として残すか。」** は据え置きます。そのうえでv5.1.1では、**「正しさを、形而上からの演繹と形而下からの工学で挟み込む。」** をサブテーマとして置きます。形成源の再検討は、形成源そのものを現在正本へ戻すためではなく、完全性と不完全性、無・切断、論理形成、自己参照が正しさに何を要請するかを形而上側から問い、有限資源下の探索・審理・監査・実装という形而下側の工学と照合するためのものです。rc003ではさらに、著者の研究姿勢を概念定義権限から分離し、命題レベルの審理と文書・体系レベルの監査を分け、生成形而上学と正しさ／監査研究を[`Metaphysical Approach`](05_Research_Notes/Metaphysical_Approach/README.md)へ再配置し、日英対の[`応用形而上学体系 概説`](05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md)をnon-canonicalなv6 transition previewとして置き、英語通約を拡張しています。さらに、Repository checkerの観測面を分離した決定論的machine-audit laneを実験導入しています。このlaneはRepository全体のα／β監査そのものではなく、その実行に先行する下層実装です。Repository全体へのα／β監査はrc003時点ではまだ実施していません。rc003は公開済みPublic Editionではありません。
+現在のRepository作業線は **v5.1.1** です。公開前release candidateとして、版固有Zenodo DOI **10.5281/zenodo.23658812** は予約済みです。v5.1.0の主題である **「境界に触れたあと、何を持ち帰り、何を直し、何を未解決として残すか。」** は据え置きます。そのうえでv5.1.1では、**「正しさを、形而上からの演繹と形而下からの工学で挟み込む。」** をサブテーマとして置きます。形成源の再検討は、形成源そのものを現在正本へ戻すためではなく、完全性と不完全性、無・切断、論理形成、自己参照が正しさに何を要請するかを形而上側から問い、有限資源下の探索・審理・監査・実装という形而下側の工学と照合するためのものです。v5.1.1ではさらに、著者の研究姿勢を概念定義権限から分離し、命題レベルの審理と文書・体系レベルの監査を分け、生成形而上学と正しさ／監査研究を[`Metaphysical Approach`](05_Research_Notes/Metaphysical_Approach/README.md)へ再配置し、日英対の[`応用形而上学体系 概説`](05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md)をnon-canonicalなv6 transition previewとして置き、英語通約を拡張しています。さらに、Repository checkerの観測面を分離した決定論的machine-audit laneを実験導入しています。このlaneはRepository全体のα／β監査そのものではなく、その実行に先行する下層実装です。Repository全体へのα／β監査はv5.1.1公開前時点ではまだ実施していません。Zenodoでの公開完了までは、現行公開Public Editionはv5.1.0です。
 
 DSSIについてここに含まれるのは、研究上の位置づけと実装境界の記録です。アプリケーション本体はこのRepositoryには同梱しません。DSSI Core A系列では外部実装として `ConnectBits v0.5.0 Public Preview` が公開済みであり、存在境界論側ではその成果への返路を保持します。ただし、実装の成立を理論の証明へ昇格させません。
 
@@ -331,7 +331,7 @@ This is why the repository contains stable overview documents, application notes
 
 v5.1.0 also established revision itself as a return-bearing event. When an external definition is corrected, a claimed derivation can no longer be reconstructed, or a genuine conflict forces a claim to reopen, the aim is not simply to erase the former wording. Version history can retain the prior bytes, while the research record preserves why the claim changed, what scope was affected, what remained, and which residuals stay open.
 
-v5.1.1-rc003 extends that return in two directions. The research side now distinguishes formation supply lines, proposition-level adjudication, document/system audit, and candidate canonical reconstruction instead of treating them as one authority surface. The repository side adds an experimental deterministic machine-audit lane that preserves a strict boundary: **Finding is not Verdict**, and machine output does not write back into canonical theory by itself.
+v5.1.1 extends that return in two directions. The research side now distinguishes formation supply lines, proposition-level adjudication, document/system audit, and candidate canonical reconstruction instead of treating them as one authority surface. The repository side adds an experimental deterministic machine-audit lane that preserves a strict boundary: **Finding is not Verdict**, and machine output does not write back into canonical theory by itself.
 
 - [`Scientific Ontology Concept Network`](00_Overview/Scientific_Ontology_Concept_Network.en.md)
 - [`Scientific Ontology System Map`](00_Overview/Scientific_Ontology_System_Map.md)
@@ -355,7 +355,7 @@ v5.1.1-rc003 extends that return in two directions. The research side now distin
 
 v5.1.0では、修正そのものも返りとして扱う足場を置きました。外部定義の誤記を訂正したとき、導出したと書いた経路を再構成できなかったとき、あるいは真正な衝突によってclaimを再開したとき、以前の記述を単に消して終わらせない。旧bytesはversion historyへ残しつつ、なぜ変えたか、どのscopeが影響したか、何を残したか、どの残差が未解決かへ戻れる形を保持します。
 
-v5.1.1-rc003では、その返りを二方向へ進めています。研究側では、形成上の補給線、命題レベルの審理、文書・体系レベルの監査、将来の正本再構成候補を一つの権限面へ潰さず分離します。Repository側では、**FindingはVerdictではない**という境界を固定した決定論的machine-audit laneを実験導入し、機械出力から正本へ自動writebackしません。
+v5.1.1では、その返りを二方向へ進めています。研究側では、形成上の補給線、命題レベルの審理、文書・体系レベルの監査、将来の正本再構成候補を一つの権限面へ潰さず分離します。Repository側では、**FindingはVerdictではない**という境界を固定した決定論的machine-audit laneを実験導入し、機械出力から正本へ自動writebackしません。
 
 ---
 
@@ -376,7 +376,7 @@ This exception does **not** make the README a definition owner. Where wording af
 ## Current release, citation, and public boundary / 現行版・引用・公開境界
 
 - Current public version: **v5.1.0 — self-audit and boundary-operation convergence**
-- Active repository candidate: **v5.1.1-rc003 — not yet published; version DOI pending**
+- Active repository candidate: **v5.1.1 — not yet published; version DOI reserved: [10.5281/zenodo.23658812](https://doi.org/10.5281/zenodo.23658812)**
 - v5.1.0 version-specific DOI: [10.5281/zenodo.22813851](https://doi.org/10.5281/zenodo.22813851)
 - All versions DOI: [10.5281/zenodo.20665197](https://doi.org/10.5281/zenodo.20665197)
 - [`RELEASE_NOTES.md`](RELEASE_NOTES.md)
@@ -391,7 +391,7 @@ For document placement and public exclusions, see the [`System Map`](00_Overview
 ### 日本語｜現行版・引用・公開境界
 
 - 現行公開版：**v5.1.0 — 自己監査と境界運用の収束**。
-- Repository上の作業候補：**v5.1.1-rc003 — 未公開・版固有DOI未発行**。
+- Repository上の作業候補：**v5.1.1 — 未公開・版固有DOI予約済み：[10.5281/zenodo.23658812](https://doi.org/10.5281/zenodo.23658812)**。
 - v5.1.0版固有DOI：[10.5281/zenodo.22813851](https://doi.org/10.5281/zenodo.22813851)
 - 全版DOI：[10.5281/zenodo.20665197](https://doi.org/10.5281/zenodo.20665197)
 
@@ -409,7 +409,7 @@ The v5.0 public inventory contains **128 catalog-backed documents**: 28 register
 
 The published v5.1.0 public catalog contains **157 documents**, including **49 Japanese-English pair families**. This does not imply a single maturity or evidentiary level; role, language relation, assessment, and publication state remain separate metadata concerns.
 
-The v5.1.1-rc003 preview read model now regenerates and validates at **183 public documents**, including **62 Japanese-English pair families**. These are candidate-state validation values; they do not rewrite the published v5.1.0 catalog facts.
+The v5.1.1 pre-publication read model now regenerates and validates at **183 public documents**, including **62 Japanese-English pair families**. Until publication completes, these remain pre-publication validation values and do not rewrite the published v5.1.0 catalog facts.
 
 Developer Navigator and internal review data remain outside the default public entrance.
 
@@ -419,6 +419,6 @@ Navigatorの先頭には、このルートREADMEが**START HERE**として置か
 
 v5.0の公開目録は、登録済み28文書と`registration_state: provisional`の100文書、計**128文書**で構成されます。`provisional`はメタデータ監査の状態であり、内容の品質、真偽、確信度の評価ではありません。日本語・英語の対文書がある場合は、現在の表示言語に合わせて解決されます。
 
-公開済みv5.1.0のPublic catalogは**157文書**、日英**49 pair families**です。v5.1.1-rc003のpreview read modelは再生成・検証でき、**public 183文書・日英62 pair families**を候補状態の検証値として確認します。これは公開済みv5.1.0の157文書・49 pair familiesという確定事実を遡及的に書き換えるものではありません。
+公開済みv5.1.0のPublic catalogは**157文書**、日英**49 pair families**です。v5.1.1の公開前read modelは再生成・検証でき、**public 183文書・日英62 pair families**を確認します。Zenodoでの公開完了までは公開前検証値として扱い、公開済みv5.1.0の157文書・49 pair familiesという確定事実を遡及的に書き換えません。
 
 Developer Navigatorとレビュー内部情報は、既定の公開入口から分離されています。
