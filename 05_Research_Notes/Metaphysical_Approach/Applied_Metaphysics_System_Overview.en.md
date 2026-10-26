@@ -4,6 +4,8 @@
 
 > **Document position:** This overview is composed from the candidate authoritative text *Applied Metaphysics System* (*Generative Record, Second Draft*). It does not add theorems to that candidate text. Its purpose is to follow, in ordinary language, the generative route traced there. The concrete examples and philosophical readings below are explanatory aids for this overview; they do not mean that the candidate authoritative text has empirically demonstrated the individual phenomena mentioned.
 >
+> **Publication position:** v6 transition preview / research overview / non-canonical. This document does not revise or establish the Applied Metaphysics canon in v5.1.1. It exposes the direction of a possible later canonical reconstruction while leaving adoption, theorem order, and terminology to a later process.
+>
 > **Language:** English commensurated rendering.
 >
 > **Japanese authoritative source:** `応用形而上学体系_概説書_検討稿.ja.md`

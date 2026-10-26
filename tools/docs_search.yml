@@ -72,6 +72,27 @@ search:
             - What is Scientific Ontology trying to do?
             - Where should I start reading?
             - How are the main documents connected?
+    publication:
+      ja: 公開
+      en: Publication
+    truth:
+      ja: 真実
+      en: Truth
+    return:
+      ja: 返り
+      en: Return
+    formation:
+      ja: 形成
+      en: Formation
+    audit:
+      ja: 監査
+      en: Audit
+    causality:
+      ja: 因果
+      en: Causality
+    externalization:
+      ja: 外部化
+      en: Externalization
     boundary:
       ja: 境界
       en: Boundary

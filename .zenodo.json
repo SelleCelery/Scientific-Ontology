@@ -1,8 +1,8 @@
 {
-  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.0",
+  "title": "Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.1-rc003",
   "upload_type": "publication",
   "publication_type": "other",
-  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.0 turns the v5 living series back toward the operation of boundaries themselves. Building on v5.0.0’s outward expansion, it adds a public correctness model grounded in finite inquiry, defeaters, cuts, individuality, return, and reopening; a reflexive research program preserving judgment and audit history; an external-exposure layer for heterogeneous contact; a candidate Assessment / Commensuration contract; physics-adjacent revision-trace examples; and a more explicit manifest/Navigator document contract. The release treats correction, scope restriction, unresolved residuals, and return paths as inspectable parts of boundary operation rather than post-publication cleanup.",
+  "description": "Scientific Ontology (SO) / 存在境界論 Public Edition v5.1.1-rc003 is a release candidate that retains the v5.1.0 question of what to bring back, revise, and leave unresolved after boundary contact. Its v5.1.1 subtheme is to approach correctness from both sides: deduction from metaphysics and engineering under concrete finite conditions. It separates authorial stance from concept ownership; distinguishes proposition-level adjudication from document/system-level audit; re-examines AMP/ITS/Gödel-derived formation material as formation provenance rather than higher authority; reorganizes generative metaphysics, historical computation, physics-adjacent hypotheses, and Engineering Research on Correctness under a Metaphysical Approach research surface; expands English commensuration; and introduces an experimental deterministic repository machine-audit lane whose findings have no automatic canonical effect.",
   "creators": [
     {
       "name": "万土, 華凜",
@@ -11,7 +11,7 @@
   ],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "5.1.0",
+  "version": "5.1.1-rc003",
   "keywords": [
     "Scientific Ontology",
     "存在境界論",
@@ -45,7 +45,7 @@
   "language": "eng",
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.21909382",
+      "identifier": "10.5281/zenodo.22813851",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     },
@@ -55,6 +55,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "v5.1.0 is a convergence release within the v5 living series. It establishes a foothold for self-audit and boundary operation, not a completed self-audit methodology, reciprocal assessment model, revision schema, or full scientific audit. The detailed Human–AI formation history remains outside the SO public repository for now. The release also does not treat implementation success, external non-establishment, or difference of interpretive phase as automatic proof or refutation. Final audit surfaced a working hypothesis that the correctness criterion may be invariant to the content of the governing axis; v5.1.0 records this only as a later verification question, not as an established result.",
-  "publication_date": "2026-09-18"
+  "notes": "This is a release candidate, not a published Public Edition. The current published version remains v5.1.0. Formation sources are not promoted into evidentiary or canonical authority, machine-audit findings are not verdicts, and successful tooling does not establish the truth of Scientific Ontology. The deterministic machine-audit lane is a lower-layer precursor to broader Repository-wide alpha/beta audit execution; no Repository-wide alpha/beta audit has yet been executed. Candidate document-index/public-catalog regeneration is restored. The rc003 preview read model validates at 183 public documents and 62 Japanese-English pair families; these are candidate-state validation values, not a retroactive replacement of the published v5.1.0 catalog facts. Full physics/cosmology scientific audit, private-core publication, and DSSI/ConnectBits product-code bundling remain outside this candidate."
 }

@@ -498,6 +498,23 @@
       "canonical_owner": "doc:optional_axiom_modules_cognitive_bridge"
     },
     {
+      "id": "doc:00_overview_authorial_research_stance_public_declaration",
+      "type": "document",
+      "key": "00_overview_authorial_research_stance_public_declaration",
+      "path": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+      "title": {
+        "ja": "著者の研究姿勢と公開宣言",
+        "en": "Authorial Research Stance and Public Declaration"
+      },
+      "layer": "00_Overview",
+      "state": "public",
+      "role": {
+        "ja": "著者の記述目的、人間社会の承認との距離、神を用いた真実志向のレトリック、人間社会への作用、教義化との接触地帯、能動的Return、形成史の関係を示す公開メタ記述",
+        "en": "Public meta statement on descriptive purpose, distance from social approval, God as rhetoric for truth-orientation, action on human society, possible doctrinal closure, active Return, and formation provenance"
+      },
+      "identity_source": "explicit"
+    },
+    {
       "id": "doc:00_overview_readme",
       "type": "document",
       "key": "00_overview_readme",
@@ -1212,23 +1229,6 @@
       "identity_source": "explicit"
     },
     {
-      "id": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "type": "document",
-      "key": "05_research_notes_correctness_logic_and_structural_studies_readme",
-      "path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-      "title": {
-        "ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
-        "en": "Correctness, Logic, and Structural Studies"
-      },
-      "layer": "05_Research_Notes",
-      "state": "public",
-      "role": {
-        "ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
-        "en": "Correctness, Logic, and Structural Studies"
-      },
-      "identity_source": "explicit"
-    },
-    {
       "id": "doc:05_research_notes_cross_domain_ontological_notes_readme",
       "type": "document",
       "key": "05_research_notes_cross_domain_ontological_notes_readme",
@@ -1242,6 +1242,40 @@
       "role": {
         "ja": "単一分野へ閉じない存在論的構造を、倫理、文化、文明、経済、文学、権力、責任へ横断的に展開する",
         "en": "This subdirectory extends ontological structures across ethics, culture, civilization, economy, literature, power, and responsibility without closing them inside a single discipline"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_generative_metaphysics_audit_theory_en",
+      "type": "document",
+      "key": "05_research_notes_generative_metaphysics_audit_theory_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Audit_Theory_in_Scientific_Ontology.en.md",
+      "title": {
+        "ja": "存在境界論における監査理論",
+        "en": "Audit Theory in Scientific Ontology"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
+      "type": "document",
+      "key": "05_research_notes_generative_metaphysics_audit_theory_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md",
+      "title": {
+        "ja": "存在境界論における監査理論",
+        "en": "Audit Theory in Scientific Ontology"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "監査の形而上学的基礎を扱い、発現境界・生成境界・伝播変換経路・責任境界を分離し、個人化による因果偽閉鎖、作用主体の自己監査、能動的Return、Returnの存在と実効性、接触・伝達と実効作用の区別を外部化監査へ接続する研究稿",
+        "en": "Japanese-authoritative research draft on the metaphysical basis of audit, extended to separate manifestation, generation, transmission, and responsibility boundaries, distinguish contact from effective action, and audit interventions through effective and active Return"
       },
       "identity_source": "explicit"
     },
@@ -1327,6 +1361,380 @@
       "role": {
         "ja": "文学作品と創作宇宙を、境界、履歴、自己、光、信念、意味、返りの構造として読む",
         "en": "This subdirectory reads literary works and fictional cosmologies through structures of boundary, history, self, light, belief, meaning, and return"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_alpha_audit_structure_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Alpha_Audit_Structural_Specification_and_Computer_LLM_Division_of_Labor.en.md",
+      "title": {
+        "ja": "α監査――論理平面の閉鎖・矛盾・Spine・余剰を機械監査するための構造仕様",
+        "en": "α Audit — Structural Specification for Machine-Auditing Closure, Contradiction, Spine, and Surplus on a Logical Plane"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_alpha_audit_structure_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md",
+      "title": {
+        "ja": "α監査――論理平面の閉鎖・矛盾・Spine・余剰を機械監査するための構造仕様",
+        "en": "α Audit — Structural Specification for Machine-Auditing Closure, Contradiction, Spine, and Surplus on a Logical Plane"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_applied_metaphysics_overview_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Applied_Metaphysics_System_Overview.en.md",
+      "title": {
+        "ja": "応用形而上学体系　概説",
+        "en": "Overview of the Applied Metaphysics System"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md",
+      "title": {
+        "ja": "応用形而上学体系　概説",
+        "en": "Overview of the Applied Metaphysics System"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_beta_audit_implementation_history_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Evolution_of_Beta_Audit_Implementation_Models.en.md",
+      "title": {
+        "ja": "β監査の実装モデルの推移",
+        "en": "Evolution of Beta Audit Implementation Models"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_beta_audit_implementation_history_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md",
+      "title": {
+        "ja": "β監査の実装モデルの推移",
+        "en": "Evolution of Beta Audit Implementation Models"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_formation_supply_line_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_formation_supply_line_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Formation_Supply_Line_from_AMP_ITS_and_Godel_to_Generative_Metaphysics.en.md",
+      "title": {
+        "ja": "AMP・ITS・ゲーデル試論から読む生成形而上学の補給線",
+        "en": "Formation Supply Line from AMP, ITS, and the Gödel Essay to Generative Metaphysics"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_formation_supply_line_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_formation_supply_line_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md",
+      "title": {
+        "ja": "AMP・ITS・ゲーデル試論から読む生成形而上学の補給線",
+        "en": "Formation Supply Line from AMP, ITS, and the Gödel Essay to Generative Metaphysics"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_historical_computation_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_historical_computation_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Historical_Computation_Structure_in_Scientific_Ontology.en.md",
+      "title": {
+        "ja": "存在境界論的歴史計算構造",
+        "en": "Historical Computation Structure in Scientific Ontology"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_historical_computation_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_historical_computation_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md",
+      "title": {
+        "ja": "存在境界論的歴史計算構造",
+        "en": "Historical Computation Structure in Scientific Ontology"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_intelligence_development_audit_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Development_of_Intelligence_and_Its_Audit.en.md",
+      "title": {
+        "ja": "インテリジェンスの発達とその監査",
+        "en": "Development of Intelligence and Its Audit"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_intelligence_development_audit_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md",
+      "title": {
+        "ja": "インテリジェンスの発達とその監査",
+        "en": "Development of Intelligence and Its Audit"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_light_aporia_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_light_aporia_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Reading_Light_and_Relocating_Its_Aporias.en.md",
+      "title": {
+        "ja": "光の読み方と、それに伴うアポリアの再配置",
+        "en": "Reading Light and Relocating Its Aporias"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_light_aporia_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_light_aporia_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+      "title": {
+        "ja": "光の読み方と、それに伴うアポリアの再配置",
+        "en": "Reading Light and Relocating Its Aporias"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Alpha_Beta_Audit_through_Logical_Plane_Logical_Depth_and_Dimensional_Transformation.en.md",
+      "title": {
+        "ja": "論理平面・論理深度・次元変換から読むαβ監査試論",
+        "en": "A Trial Reading of α/β Audit through Logical Plane, Logical Depth, and Dimensional Transformation"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md",
+      "title": {
+        "ja": "論理平面・論理深度・次元変換から読むαβ監査試論",
+        "en": "A Trial Reading of α/β Audit through Logical Plane, Logical Depth, and Dimensional Transformation"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_modern_science_causality_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_modern_science_causality_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Extending_Causality_in_Modern_Science.en.md",
+      "title": {
+        "ja": "現代科学の因果関係を拡張する",
+        "en": "Extending Causality in Modern Science"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_modern_science_causality_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_modern_science_causality_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md",
+      "title": {
+        "ja": "現代科学の因果関係を拡張する",
+        "en": "Extending Causality in Modern Science"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_readme",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_readme",
+      "path": "05_Research_Notes/Metaphysical_Approach/README.md",
+      "title": {
+        "ja": "Metaphysical Approach / 形而上学的アプローチ",
+        "en": "Metaphysical Approach"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_readme_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+      "title": {
+        "ja": "Metaphysical Approach / 形而上学的アプローチ",
+        "en": "Metaphysical Approach"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_en",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_whole_null_cut_unselected_en",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Whole_Absence_Cut_and_Unselected_Possibility.en.md",
+      "title": {
+        "ja": "全・無・切断・未選択可能性の関係試論",
+        "en": "A Trial on the Relation among the Whole, Absence, Cut, and Unselected Possibility"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_ja",
+      "type": "document",
+      "key": "05_research_notes_metaphysical_approach_whole_null_cut_unselected_ja",
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md",
+      "title": {
+        "ja": "全・無・切断・未選択可能性の関係試論",
+        "en": "A Trial on the Relation among the Whole, Absence, Cut, and Unselected Possibility"
+      },
+      "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+      "state": "public",
+      "role": {
+        "ja": "",
+        "en": ""
       },
       "identity_source": "explicit"
     },
@@ -2364,6 +2772,40 @@
       "role": {
         "ja": "内在時間概念と標準模型の粒子・相互作用語彙の対応可能性と非同一性を整理する研究表",
         "en": "Research table organizing possible correspondences and non-identity between intrinsic time and Standard Model particle and interaction vocabulary"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:intrinsic_time_sub_entanglement_communication_model",
+      "type": "document",
+      "key": "intrinsic_time_sub_entanglement_communication_model",
+      "path": "05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md",
+      "title": {
+        "ja": "内在時間（亜エンタングル）通信モデル",
+        "en": "Intrinsic-Time (Sub-Entanglement) Communication Model"
+      },
+      "layer": "05_Research_Notes/Physical_Cosmological_Notes",
+      "state": "public",
+      "role": {
+        "ja": "旧PINGER仮説を、粒子中心ではなく通信・内在時間・履歴・返路を中心とする物理近接研究モデルとして再整理し、亜エンタングル、履歴場、観測断面、通信経路の関係を扱う日本語正本研究稿",
+        "en": "Japanese-authoritative physical-adjacent research note reorganizing the legacy PINGER hypothesis around communication pathways, intrinsic time, history, return paths, sub-entanglement, and observational sections"
+      },
+      "identity_source": "explicit"
+    },
+    {
+      "id": "doc:intrinsic_time_sub_entanglement_communication_model_en",
+      "type": "document",
+      "key": "intrinsic_time_sub_entanglement_communication_model_en",
+      "path": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md",
+      "title": {
+        "ja": "内在時間（亜エンタングル）通信モデル",
+        "en": "Intrinsic-Time (Sub-Entanglement) Communication Model"
+      },
+      "layer": "05_Research_Notes/Physical_Cosmological_Notes",
+      "state": "public",
+      "role": {
+        "ja": "旧PINGER仮説を、粒子中心ではなく通信・内在時間・履歴・返路を中心とする物理近接研究モデルとして再整理し、亜エンタングル、履歴場、観測断面、通信経路の関係を扱う英語通約稿",
+        "en": "English commensuration of a physical-adjacent research model reorganizing the legacy PINGER hypothesis around communication pathways, intrinsic time, history, return paths, sub-entanglement, and observational sections"
       },
       "identity_source": "explicit"
     },
@@ -4287,6 +4729,15 @@
       }
     },
     {
+      "id": "topic:audit",
+      "type": "topic",
+      "key": "audit",
+      "label": {
+        "ja": "監査",
+        "en": "Audit"
+      }
+    },
+    {
       "id": "topic:boundary",
       "type": "topic",
       "key": "boundary",
@@ -4317,6 +4768,15 @@
             "How far does cognition reach the thing itself?"
           ]
         }
+      }
+    },
+    {
+      "id": "topic:causality",
+      "type": "topic",
+      "key": "causality",
+      "label": {
+        "ja": "因果",
+        "en": "Causality"
       }
     },
     {
@@ -4395,6 +4855,24 @@
             "How can room for consent and refusal be preserved?"
           ]
         }
+      }
+    },
+    {
+      "id": "topic:externalization",
+      "type": "topic",
+      "key": "externalization",
+      "label": {
+        "ja": "外部化",
+        "en": "Externalization"
+      }
+    },
+    {
+      "id": "topic:formation",
+      "type": "topic",
+      "key": "formation",
+      "label": {
+        "ja": "形成",
+        "en": "Formation"
       }
     },
     {
@@ -4566,12 +5044,30 @@
       }
     },
     {
+      "id": "topic:publication",
+      "type": "topic",
+      "key": "publication",
+      "label": {
+        "ja": "公開",
+        "en": "Publication"
+      }
+    },
+    {
       "id": "topic:responsibility",
       "type": "topic",
       "key": "responsibility",
       "label": {
         "ja": "責任",
         "en": "Responsibility"
+      }
+    },
+    {
+      "id": "topic:return",
+      "type": "topic",
+      "key": "return",
+      "label": {
+        "ja": "返り",
+        "en": "Return"
       }
     },
     {
@@ -4605,6 +5101,15 @@
             "What must remain distinct when physical terminology is used?"
           ]
         }
+      }
+    },
+    {
+      "id": "topic:truth",
+      "type": "topic",
+      "key": "truth",
+      "label": {
+        "ja": "真実",
+        "en": "Truth"
       }
     }
   ],
@@ -5714,7 +6219,7 @@
     {
       "from": "artifact:system_map",
       "relation": "map_reference",
-      "to": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "to": "doc:05_research_notes_metaphysical_approach_readme",
       "provenance": [
         {
           "source_type": "system_map",
@@ -6044,6 +6549,78 @@
       ]
     },
     {
+      "from": "doc:00_overview_authorial_research_stance_public_declaration",
+      "relation": "belongs_to_topic",
+      "to": "topic:formation",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=00_Overview/Authorial_Research_Stance_and_Public_Declaration.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_authorial_research_stance_public_declaration",
+      "relation": "belongs_to_topic",
+      "to": "topic:overview",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=00_Overview/Authorial_Research_Stance_and_Public_Declaration.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_authorial_research_stance_public_declaration",
+      "relation": "belongs_to_topic",
+      "to": "topic:publication",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=00_Overview/Authorial_Research_Stance_and_Public_Declaration.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_authorial_research_stance_public_declaration",
+      "relation": "belongs_to_topic",
+      "to": "topic:return",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=00_Overview/Authorial_Research_Stance_and_Public_Declaration.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_authorial_research_stance_public_declaration",
+      "relation": "belongs_to_topic",
+      "to": "topic:truth",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=00_Overview/Authorial_Research_Stance_and_Public_Declaration.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_authorial_research_stance_public_declaration",
+      "relation": "placed_in",
+      "to": "layer:overview",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:00_overview_readme",
       "relation": "belongs_to_topic",
       "to": "topic:network",
@@ -6082,17 +6659,34 @@
     {
       "from": "doc:00_overview_readme",
       "relation": "links_to",
+      "to": "doc:00_overview_authorial_research_stance_public_declaration",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/README.md",
+          "locator": "L154"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/README.md",
+          "locator": "L68"
+        }
+      ]
+    },
+    {
+      "from": "doc:00_overview_readme",
+      "relation": "links_to",
       "to": "doc:00_overview_scientific_ontology_operational_outline_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L147"
+          "locator": "L157"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L66"
+          "locator": "L71"
         }
       ]
     },
@@ -6104,12 +6698,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L153"
+          "locator": "L163"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L72"
+          "locator": "L77"
         }
       ]
     },
@@ -6121,12 +6715,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L156"
+          "locator": "L166"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L75"
+          "locator": "L80"
         }
       ]
     },
@@ -6138,7 +6732,7 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L103"
+          "locator": "L108"
         },
         {
           "source_type": "markdown",
@@ -6155,12 +6749,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L159"
+          "locator": "L169"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L78"
+          "locator": "L83"
         }
       ]
     },
@@ -6172,12 +6766,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L159"
+          "locator": "L169"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L78"
+          "locator": "L83"
         }
       ]
     },
@@ -6189,12 +6783,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L162"
+          "locator": "L172"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L81"
+          "locator": "L86"
         }
       ]
     },
@@ -6206,12 +6800,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L162"
+          "locator": "L172"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L81"
+          "locator": "L86"
         }
       ]
     },
@@ -6223,12 +6817,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L150"
+          "locator": "L160"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L69"
+          "locator": "L74"
         }
       ]
     },
@@ -6240,12 +6834,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L150"
+          "locator": "L160"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L69"
+          "locator": "L74"
         }
       ]
     },
@@ -6257,12 +6851,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L147"
+          "locator": "L157"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L66"
+          "locator": "L71"
         }
       ]
     },
@@ -6274,12 +6868,12 @@
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L156"
+          "locator": "L166"
         },
         {
           "source_type": "markdown",
           "source_path": "00_Overview/README.md",
-          "locator": "L75"
+          "locator": "L80"
         }
       ]
     },
@@ -6404,7 +6998,7 @@
     {
       "from": "doc:00_overview_scientific_ontology_system_map",
       "relation": "links_to",
-      "to": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "to": "doc:05_research_notes_metaphysical_approach_readme",
       "provenance": [
         {
           "source_type": "markdown",
@@ -7317,7 +7911,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md",
-          "locator": "L872"
+          "locator": "L959"
         }
       ]
     },
@@ -7329,7 +7923,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/Correctness_Individuality_Absence_and_Cut.en.md",
-          "locator": "L872"
+          "locator": "L959"
         }
       ]
     },
@@ -12512,114 +13106,6 @@
       ]
     },
     {
-      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "relation": "links_to",
-      "to": "doc:00_overview_truth_management_and_boundary_pdca_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-          "locator": "L112"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "relation": "links_to",
-      "to": "doc:01_sat_truth_boundary_realism_principle",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-          "locator": "L103"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "relation": "links_to",
-      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-          "locator": "L106"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "relation": "links_to",
-      "to": "doc:02_raj_beauty_history_field_topology",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-          "locator": "L109"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_cognitive_dynamics_communication_studies_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-          "locator": "L121"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_intension_extension_and_false_extension_ja",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-          "locator": "L118"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "relation": "links_to",
-      "to": "doc:boundary_epistemological_critique",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-          "locator": "L100"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "relation": "links_to",
-      "to": "doc:meaning_collation_return_path",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-          "locator": "L115"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "relation": "placed_in",
-      "to": "layer:research_notes",
-      "provenance": [
-        {
-          "source_type": "manifest",
-          "source_path": "tools/docs_manifest.yml",
-          "locator": "layer placement"
-        }
-      ]
-    },
-    {
       "from": "doc:05_research_notes_cross_domain_ontological_notes_readme",
       "relation": "belongs_to_topic",
       "to": "topic:boundary",
@@ -12897,6 +13383,90 @@
     },
     {
       "from": "doc:05_research_notes_cross_domain_ontological_notes_readme",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_generative_metaphysics_audit_theory_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:audit",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:boundary",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:causality",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:externalization",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
+      "relation": "belongs_to_topic",
+      "to": "topic:return",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -13587,6 +14157,1026 @@
       ]
     },
     {
+      "from": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_formation_supply_line_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_formation_supply_line_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_historical_computation_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_historical_computation_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_en",
+      "relation": "links_to",
+      "to": "doc:claim_strength_and_publication_layer_table_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/Reading_Light_and_Relocating_Its_Aporias.en.md",
+          "locator": "L822"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_en",
+      "relation": "links_to",
+      "to": "doc:intrinsic_time_standard_model_correspondence_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/Reading_Light_and_Relocating_Its_Aporias.en.md",
+          "locator": "L823"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_en",
+      "relation": "links_to",
+      "to": "doc:physics_correspondence_policy_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/Reading_Light_and_Relocating_Its_Aporias.en.md",
+          "locator": "L821"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_en",
+      "relation": "links_to",
+      "to": "doc:pinger_hypothesis_and_history_field_topology_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/Reading_Light_and_Relocating_Its_Aporias.en.md",
+          "locator": "L824"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_ja",
+      "relation": "links_to",
+      "to": "doc:claim_strength_and_publication_layer_table",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+          "locator": "L948"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_ja",
+      "relation": "links_to",
+      "to": "doc:intrinsic_time_standard_model_correspondence",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+          "locator": "L949"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_ja",
+      "relation": "links_to",
+      "to": "doc:physics_correspondence_policy",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+          "locator": "L947"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_ja",
+      "relation": "links_to",
+      "to": "doc:pinger_hypothesis_and_history_field_topology",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+          "locator": "L950"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_light_aporia_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_modern_science_causality_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_modern_science_causality_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:00_overview_truth_management_and_boundary_pdca_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L170"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L168"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_generative_metaphysics_audit_theory_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L104"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L104"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L112"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L112"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L96"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L96"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L116"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L116"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_formation_supply_line_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L80"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_formation_supply_line_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L80"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_historical_computation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L88"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_historical_computation_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L88"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L120"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L120"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_light_aporia_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L92"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_light_aporia_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L92"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L108"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L108"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_modern_science_causality_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L84"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_modern_science_causality_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L84"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L14"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L124"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L124"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:boundary_epistemological_critique",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L166"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L167"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "links_to",
+      "to": "doc:physics_correspondence_policy",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "locator": "L169"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:00_overview_truth_management_and_boundary_pdca_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L152"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:02_raj_beauty_entropy_attributed_difference_and_cognitive_axis_formation_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L150"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_generative_metaphysics_audit_theory_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L92"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L92"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L98"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L98"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L85"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L85"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L101"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L101"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_formation_supply_line_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L73"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_formation_supply_line_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L73"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_historical_computation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L79"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_historical_computation_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L79"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L104"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L104"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_light_aporia_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L82"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_light_aporia_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L82"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L95"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L95"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_modern_science_causality_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L76"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_modern_science_causality_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L76"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L107"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L107"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:boundary_epistemological_critique",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L148"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:correctness_individuality_absence_and_cut",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L149"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "links_to",
+      "to": "doc:physics_correspondence_policy",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "locator": "L151"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_ja",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
       "from": "doc:05_research_notes_physical_cosmological_notes_readme",
       "relation": "belongs_to_topic",
       "to": "topic:boundary",
@@ -14067,23 +15657,6 @@
     {
       "from": "doc:05_research_notes_readme",
       "relation": "links_to",
-      "to": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L149"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/README.md",
-          "locator": "L72"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_readme",
-      "relation": "links_to",
       "to": "doc:05_research_notes_cross_domain_ontological_notes_readme",
       "provenance": [
         {
@@ -14112,6 +15685,23 @@
           "source_type": "markdown",
           "source_path": "05_Research_Notes/README.md",
           "locator": "L71"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L149"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/README.md",
+          "locator": "L72"
         }
       ]
     },
@@ -14302,17 +15892,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L183"
+          "locator": "L189"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L313"
+          "locator": "L326"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L397"
+          "locator": "L414"
         },
         {
           "source_type": "markdown",
@@ -14329,17 +15919,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L184"
+          "locator": "L190"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L313"
+          "locator": "L326"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L398"
+          "locator": "L415"
         },
         {
           "source_type": "markdown",
@@ -14356,7 +15946,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L269"
+          "locator": "L282"
         },
         {
           "source_type": "markdown",
@@ -14373,12 +15963,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L140"
+          "locator": "L146"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L354"
+          "locator": "L371"
         },
         {
           "source_type": "markdown",
@@ -14395,12 +15985,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L138"
+          "locator": "L144"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L352"
+          "locator": "L369"
         },
         {
           "source_type": "markdown",
@@ -14417,12 +16007,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L139"
+          "locator": "L145"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L353"
+          "locator": "L370"
         },
         {
           "source_type": "markdown",
@@ -14439,12 +16029,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L141"
+          "locator": "L147"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L355"
+          "locator": "L372"
         },
         {
           "source_type": "markdown",
@@ -14461,7 +16051,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L265"
+          "locator": "L278"
         },
         {
           "source_type": "markdown",
@@ -14473,49 +16063,12 @@
     {
       "from": "doc:05_research_notes_research_notes_index",
       "relation": "links_to",
-      "to": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L107"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L201"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L271"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L321"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L415"
-        },
-        {
-          "source_type": "markdown",
-          "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L55"
-        }
-      ]
-    },
-    {
-      "from": "doc:05_research_notes_research_notes_index",
-      "relation": "links_to",
       "to": "doc:05_research_notes_cross_domain_ontological_notes_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L266"
+          "locator": "L279"
         },
         {
           "source_type": "markdown",
@@ -14527,17 +16080,56 @@
     {
       "from": "doc:05_research_notes_research_notes_index",
       "relation": "links_to",
+      "to": "doc:05_research_notes_generative_metaphysics_audit_theory_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L214"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L439"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_generative_metaphysics_audit_theory_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L111"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L214"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L439"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
       "to": "doc:05_research_notes_language_meaning_and_communication_phase_studies_compressed_experience_qualia_and_literature_ja",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L121"
+          "locator": "L127"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L335"
+          "locator": "L352"
         }
       ]
     },
@@ -14549,12 +16141,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L125"
+          "locator": "L131"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L339"
+          "locator": "L356"
         }
       ]
     },
@@ -14566,12 +16158,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L128"
+          "locator": "L134"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L342"
+          "locator": "L359"
         }
       ]
     },
@@ -14583,12 +16175,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L124"
+          "locator": "L130"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L338"
+          "locator": "L355"
         },
         {
           "source_type": "markdown",
@@ -14605,7 +16197,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L270"
+          "locator": "L283"
         },
         {
           "source_type": "markdown",
@@ -14617,12 +16209,419 @@
     {
       "from": "doc:05_research_notes_research_notes_index",
       "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L216"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L441"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_alpha_audit_structure_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L111"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L216"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L441"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L213"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L438"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L109"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L213"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L438"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L217"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L442"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_beta_audit_implementation_history_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L111"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L217"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L442"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_formation_supply_line_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L209"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L434"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_formation_supply_line_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L109"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L209"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L434"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_historical_computation_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L211"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L436"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_historical_computation_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L109"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L211"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L436"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L218"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L443"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_intelligence_development_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L218"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L443"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_light_aporia_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L212"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L437"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_light_aporia_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L109"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L212"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L437"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L215"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L440"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L111"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L215"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L440"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_modern_science_causality_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L210"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L435"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_modern_science_causality_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L109"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L210"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L435"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L107"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L284"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L334"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L55"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L219"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L444"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_whole_null_cut_unselected_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L219"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Research_Notes_Index.md",
+          "locator": "L444"
+        }
+      ]
+    },
+    {
+      "from": "doc:05_research_notes_research_notes_index",
+      "relation": "links_to",
       "to": "doc:05_research_notes_physical_cosmological_notes_readme",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L267"
+          "locator": "L280"
         },
         {
           "source_type": "markdown",
@@ -14639,7 +16638,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L246"
+          "locator": "L259"
         },
         {
           "source_type": "markdown",
@@ -14656,12 +16655,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L174"
+          "locator": "L180"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L388"
+          "locator": "L405"
         }
       ]
     },
@@ -14673,7 +16672,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L268"
+          "locator": "L281"
         },
         {
           "source_type": "markdown",
@@ -14690,12 +16689,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L122"
+          "locator": "L128"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L336"
+          "locator": "L353"
         }
       ]
     },
@@ -14707,12 +16706,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L122"
+          "locator": "L128"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L336"
+          "locator": "L353"
         }
       ]
     },
@@ -14724,12 +16723,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L149"
+          "locator": "L155"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L363"
+          "locator": "L380"
         },
         {
           "source_type": "markdown",
@@ -14746,17 +16745,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L149"
+          "locator": "L155"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L309"
+          "locator": "L322"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L363"
+          "locator": "L380"
         }
       ]
     },
@@ -14768,17 +16767,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L140"
+          "locator": "L146"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L299"
+          "locator": "L312"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L354"
+          "locator": "L371"
         }
       ]
     },
@@ -14790,12 +16789,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L164"
+          "locator": "L170"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L378"
+          "locator": "L395"
         }
       ]
     },
@@ -14807,12 +16806,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L164"
+          "locator": "L170"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L378"
+          "locator": "L395"
         }
       ]
     },
@@ -14836,7 +16835,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L247"
+          "locator": "L260"
         }
       ]
     },
@@ -14848,17 +16847,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L138"
+          "locator": "L144"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L297"
+          "locator": "L310"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L352"
+          "locator": "L369"
         }
       ]
     },
@@ -14870,12 +16869,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L127"
+          "locator": "L133"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L341"
+          "locator": "L358"
         },
         {
           "source_type": "markdown",
@@ -14892,17 +16891,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L127"
+          "locator": "L133"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L286"
+          "locator": "L299"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L341"
+          "locator": "L358"
         }
       ]
     },
@@ -14914,12 +16913,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L121"
+          "locator": "L127"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L335"
+          "locator": "L352"
         }
       ]
     },
@@ -14931,17 +16930,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L139"
+          "locator": "L145"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L298"
+          "locator": "L311"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L353"
+          "locator": "L370"
         }
       ]
     },
@@ -14953,12 +16952,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L152"
+          "locator": "L158"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L366"
+          "locator": "L383"
         }
       ]
     },
@@ -14970,12 +16969,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L152"
+          "locator": "L158"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L366"
+          "locator": "L383"
         }
       ]
     },
@@ -14987,12 +16986,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L162"
+          "locator": "L168"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L376"
+          "locator": "L393"
         }
       ]
     },
@@ -15004,12 +17003,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L162"
+          "locator": "L168"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L376"
+          "locator": "L393"
         }
       ]
     },
@@ -15021,12 +17020,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L175"
+          "locator": "L181"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L389"
+          "locator": "L406"
         }
       ]
     },
@@ -15038,12 +17037,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L175"
+          "locator": "L181"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L389"
+          "locator": "L406"
         }
       ]
     },
@@ -15055,7 +17054,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L294"
+          "locator": "L307"
         }
       ]
     },
@@ -15067,7 +17066,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L249"
+          "locator": "L262"
         },
         {
           "source_type": "markdown",
@@ -15084,12 +17083,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L119"
+          "locator": "L125"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L333"
+          "locator": "L350"
         },
         {
           "source_type": "markdown",
@@ -15106,17 +17105,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L119"
+          "locator": "L125"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L282"
+          "locator": "L295"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L333"
+          "locator": "L350"
         }
       ]
     },
@@ -15128,12 +17127,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L125"
+          "locator": "L131"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L339"
+          "locator": "L356"
         }
       ]
     },
@@ -15145,12 +17144,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L160"
+          "locator": "L166"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L374"
+          "locator": "L391"
         }
       ]
     },
@@ -15162,12 +17161,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L160"
+          "locator": "L166"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L374"
+          "locator": "L391"
         }
       ]
     },
@@ -15179,12 +17178,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L264"
+          "locator": "L277"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L281"
+          "locator": "L294"
         },
         {
           "source_type": "markdown",
@@ -15206,12 +17205,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L128"
+          "locator": "L134"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L342"
+          "locator": "L359"
         }
       ]
     },
@@ -15223,12 +17222,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L195"
+          "locator": "L201"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L409"
+          "locator": "L426"
         }
       ]
     },
@@ -15240,12 +17239,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L195"
+          "locator": "L201"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L409"
+          "locator": "L426"
         }
       ]
     },
@@ -15257,12 +17256,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L120"
+          "locator": "L126"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L334"
+          "locator": "L351"
         },
         {
           "source_type": "markdown",
@@ -15279,17 +17278,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L120"
+          "locator": "L126"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L283"
+          "locator": "L296"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L334"
+          "locator": "L351"
         }
       ]
     },
@@ -15306,17 +17305,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L194"
+          "locator": "L200"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L317"
+          "locator": "L330"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L408"
+          "locator": "L425"
         }
       ]
     },
@@ -15333,12 +17332,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L151"
+          "locator": "L157"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L365"
+          "locator": "L382"
         }
       ]
     },
@@ -15350,17 +17349,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L151"
+          "locator": "L157"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L317"
+          "locator": "L330"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L365"
+          "locator": "L382"
         }
       ]
     },
@@ -15372,12 +17371,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L172"
+          "locator": "L178"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L386"
+          "locator": "L403"
         }
       ]
     },
@@ -15389,12 +17388,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L172"
+          "locator": "L178"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L386"
+          "locator": "L403"
         }
       ]
     },
@@ -15406,12 +17405,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L173"
+          "locator": "L179"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L387"
+          "locator": "L404"
         }
       ]
     },
@@ -15423,12 +17422,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L173"
+          "locator": "L179"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L387"
+          "locator": "L404"
         }
       ]
     },
@@ -15440,12 +17439,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L161"
+          "locator": "L167"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L375"
+          "locator": "L392"
         }
       ]
     },
@@ -15457,12 +17456,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L161"
+          "locator": "L167"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L375"
+          "locator": "L392"
         }
       ]
     },
@@ -15486,7 +17485,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L295"
+          "locator": "L308"
         }
       ]
     },
@@ -15498,17 +17497,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L141"
+          "locator": "L147"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L300"
+          "locator": "L313"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L355"
+          "locator": "L372"
         }
       ]
     },
@@ -15520,7 +17519,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L219"
+          "locator": "L232"
         },
         {
           "source_type": "markdown",
@@ -15542,17 +17541,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L248"
+          "locator": "L261"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L305"
+          "locator": "L318"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L433"
+          "locator": "L457"
         }
       ]
     },
@@ -15564,12 +17563,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L163"
+          "locator": "L169"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L377"
+          "locator": "L394"
         }
       ]
     },
@@ -15581,12 +17580,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L163"
+          "locator": "L169"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L377"
+          "locator": "L394"
         }
       ]
     },
@@ -15603,12 +17602,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L192"
+          "locator": "L198"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L406"
+          "locator": "L423"
         }
       ]
     },
@@ -15620,17 +17619,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L192"
+          "locator": "L198"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L317"
+          "locator": "L330"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L406"
+          "locator": "L423"
         }
       ]
     },
@@ -15642,12 +17641,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L150"
+          "locator": "L156"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L364"
+          "locator": "L381"
         },
         {
           "source_type": "markdown",
@@ -15664,17 +17663,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L150"
+          "locator": "L156"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L309"
+          "locator": "L322"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L364"
+          "locator": "L381"
         }
       ]
     },
@@ -15686,12 +17685,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L130"
+          "locator": "L136"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L344"
+          "locator": "L361"
         }
       ]
     },
@@ -15703,12 +17702,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L130"
+          "locator": "L136"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L344"
+          "locator": "L361"
         }
       ]
     },
@@ -15720,12 +17719,12 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L126"
+          "locator": "L132"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L340"
+          "locator": "L357"
         },
         {
           "source_type": "markdown",
@@ -15742,17 +17741,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L126"
+          "locator": "L132"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L285"
+          "locator": "L298"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L340"
+          "locator": "L357"
         }
       ]
     },
@@ -15764,17 +17763,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L123"
+          "locator": "L129"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L287"
+          "locator": "L300"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L337"
+          "locator": "L354"
         },
         {
           "source_type": "markdown",
@@ -15803,7 +17802,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L301"
+          "locator": "L314"
         }
       ]
     },
@@ -15815,17 +17814,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L124"
+          "locator": "L130"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L284"
+          "locator": "L297"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L338"
+          "locator": "L355"
         }
       ]
     },
@@ -15842,17 +17841,17 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L193"
+          "locator": "L199"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L317"
+          "locator": "L330"
         },
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L407"
+          "locator": "L424"
         }
       ]
     },
@@ -15864,7 +17863,7 @@
         {
           "source_type": "markdown",
           "source_path": "05_Research_Notes/Research_Notes_Index.md",
-          "locator": "L296"
+          "locator": "L309"
         }
       ]
     },
@@ -18262,12 +20261,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1074"
+          "locator": "L1110"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L455"
+          "locator": "L473"
         }
       ]
     },
@@ -18279,12 +20278,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1073"
+          "locator": "L1109"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L454"
+          "locator": "L472"
         }
       ]
     },
@@ -18296,12 +20295,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1117"
+          "locator": "L1153"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L499"
+          "locator": "L517"
         }
       ]
     },
@@ -18313,12 +20312,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L334"
+          "locator": "L352"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L461"
+          "locator": "L479"
         }
       ]
     },
@@ -18330,7 +20329,7 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1080"
+          "locator": "L1116"
         }
       ]
     },
@@ -18342,17 +20341,17 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1108"
+          "locator": "L1144"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L333"
+          "locator": "L351"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L490"
+          "locator": "L508"
         }
       ]
     },
@@ -18364,7 +20363,7 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L465"
+          "locator": "L483"
         }
       ]
     },
@@ -18376,12 +20375,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1084"
+          "locator": "L1120"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L466"
+          "locator": "L484"
         }
       ]
     },
@@ -18393,17 +20392,17 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1112"
+          "locator": "L1148"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L335"
+          "locator": "L353"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L494"
+          "locator": "L512"
         }
       ]
     },
@@ -18415,12 +20414,12 @@
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L1113"
+          "locator": "L1149"
         },
         {
           "source_type": "markdown",
           "source_path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
-          "locator": "L495"
+          "locator": "L513"
         }
       ]
     },
@@ -19957,7 +21956,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
-          "locator": "L750"
+          "locator": "L766"
         }
       ]
     },
@@ -20269,7 +22268,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/Boundary_Epistemological_Critique.en.md",
-          "locator": "L750"
+          "locator": "L766"
         }
       ]
     },
@@ -20581,7 +22580,7 @@
         {
           "source_type": "markdown",
           "source_path": "CITATION.md",
-          "locator": "L76"
+          "locator": "L87"
         }
       ]
     },
@@ -22355,7 +24354,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
-          "locator": "L1200"
+          "locator": "L1343"
         }
       ]
     },
@@ -22367,7 +24366,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
-          "locator": "L913"
+          "locator": "L1013"
         }
       ]
     },
@@ -22379,7 +24378,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
-          "locator": "L913"
+          "locator": "L1013"
         }
       ]
     },
@@ -24299,6 +26298,174 @@
     },
     {
       "from": "doc:intrinsic_time_standard_model_correspondence_en",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model",
+      "relation": "belongs_to_topic",
+      "to": "topic:boundary",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model",
+      "relation": "belongs_to_topic",
+      "to": "topic:communication",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model",
+      "relation": "belongs_to_topic",
+      "to": "topic:network",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model",
+      "relation": "belongs_to_topic",
+      "to": "topic:science",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model",
+      "relation": "links_to",
+      "to": "doc:physics_correspondence_policy_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md",
+          "locator": "L44"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model",
+      "relation": "links_to",
+      "to": "doc:pinger_hypothesis_and_history_field_topology_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md",
+          "locator": "L853"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model",
+      "relation": "placed_in",
+      "to": "layer:research_notes",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "layer placement"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:boundary",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:communication",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:network",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model_en",
+      "relation": "belongs_to_topic",
+      "to": "topic:science",
+      "provenance": [
+        {
+          "source_type": "manifest",
+          "source_path": "tools/docs_manifest.yml",
+          "locator": "documents[path=05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md].discovery.topics"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model_en",
+      "relation": "links_to",
+      "to": "doc:physics_correspondence_policy_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md",
+          "locator": "L45"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model_en",
+      "relation": "links_to",
+      "to": "doc:pinger_hypothesis_and_history_field_topology",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md",
+          "locator": "L784"
+        }
+      ]
+    },
+    {
+      "from": "doc:intrinsic_time_sub_entanglement_communication_model_en",
       "relation": "placed_in",
       "to": "layer:research_notes",
       "provenance": [
@@ -27887,12 +30054,29 @@
     {
       "from": "doc:readme",
       "relation": "links_to",
+      "to": "doc:00_overview_authorial_research_stance_public_declaration",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "README.md",
+          "locator": "L113"
+        },
+        {
+          "source_type": "markdown",
+          "source_path": "README.md",
+          "locator": "L65"
+        }
+      ]
+    },
+    {
+      "from": "doc:readme",
+      "relation": "links_to",
       "to": "doc:00_overview_scientific_ontology_operational_outline_en",
       "provenance": [
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L103"
+          "locator": "L131"
         }
       ]
     },
@@ -27904,12 +30088,12 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L305"
+          "locator": "L337"
         },
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L355"
+          "locator": "L389"
         }
       ]
     },
@@ -27921,7 +30105,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L252"
+          "locator": "L282"
         }
       ]
     },
@@ -27933,7 +30117,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L255"
+          "locator": "L285"
         }
       ]
     },
@@ -27945,7 +30129,55 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L256"
+          "locator": "L286"
+        }
+      ]
+    },
+    {
+      "from": "doc:readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "README.md",
+          "locator": "L129"
+        }
+      ]
+    },
+    {
+      "from": "doc:readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "README.md",
+          "locator": "L153"
+        }
+      ]
+    },
+    {
+      "from": "doc:readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "README.md",
+          "locator": "L153"
+        }
+      ]
+    },
+    {
+      "from": "doc:readme",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_readme_en",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "README.md",
+          "locator": "L129"
         }
       ]
     },
@@ -27957,7 +30189,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L150"
+          "locator": "L180"
         }
       ]
     },
@@ -27969,7 +30201,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L306"
+          "locator": "L338"
         }
       ]
     },
@@ -27981,7 +30213,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L307"
+          "locator": "L339"
         }
       ]
     },
@@ -27993,7 +30225,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L253"
+          "locator": "L283"
         }
       ]
     },
@@ -28005,7 +30237,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L212"
+          "locator": "L242"
         }
       ]
     },
@@ -28017,7 +30249,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L349"
+          "locator": "L383"
         }
       ]
     },
@@ -28029,7 +30261,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L105"
+          "locator": "L133"
         }
       ]
     },
@@ -28041,7 +30273,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L257"
+          "locator": "L287"
         }
       ]
     },
@@ -28053,7 +30285,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L107"
+          "locator": "L135"
         }
       ]
     },
@@ -28065,7 +30297,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L213"
+          "locator": "L243"
         }
       ]
     },
@@ -28077,7 +30309,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L104"
+          "locator": "L132"
         }
       ]
     },
@@ -28089,7 +30321,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L351"
+          "locator": "L385"
         }
       ]
     },
@@ -28101,7 +30333,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L106"
+          "locator": "L134"
         }
       ]
     },
@@ -28113,7 +30345,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L258"
+          "locator": "L288"
         }
       ]
     },
@@ -28125,7 +30357,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L215"
+          "locator": "L245"
         }
       ]
     },
@@ -28137,7 +30369,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L214"
+          "locator": "L244"
         }
       ]
     },
@@ -28149,7 +30381,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L149"
+          "locator": "L179"
         }
       ]
     },
@@ -28161,7 +30393,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L348"
+          "locator": "L382"
         }
       ]
     },
@@ -28173,7 +30405,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L308"
+          "locator": "L340"
         }
       ]
     },
@@ -28185,7 +30417,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L304"
+          "locator": "L336"
         }
       ]
     },
@@ -28197,7 +30429,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L254"
+          "locator": "L284"
         }
       ]
     },
@@ -28821,7 +31053,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L297"
+          "locator": "L294"
         }
       ]
     },
@@ -28833,7 +31065,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L223"
+          "locator": "L220"
         }
       ]
     },
@@ -28845,7 +31077,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L190"
+          "locator": "L187"
         }
       ]
     },
@@ -28857,7 +31089,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L246"
+          "locator": "L243"
         }
       ]
     },
@@ -28869,7 +31101,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L192"
+          "locator": "L189"
         }
       ]
     },
@@ -28881,7 +31113,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L193"
+          "locator": "L190"
         }
       ]
     },
@@ -28893,7 +31125,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L194"
+          "locator": "L191"
         }
       ]
     },
@@ -28905,7 +31137,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L301"
+          "locator": "L298"
         }
       ]
     },
@@ -28917,7 +31149,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L299"
+          "locator": "L296"
         }
       ]
     },
@@ -28929,7 +31161,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L300"
+          "locator": "L297"
         }
       ]
     },
@@ -28941,7 +31173,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L302"
+          "locator": "L299"
         }
       ]
     },
@@ -28953,7 +31185,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L151"
+          "locator": "L148"
         }
       ]
     },
@@ -28965,7 +31197,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L224"
+          "locator": "L221"
         }
       ]
     },
@@ -28977,7 +31209,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L226"
+          "locator": "L223"
         }
       ]
     },
@@ -28989,7 +31221,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L225"
+          "locator": "L222"
         }
       ]
     },
@@ -29001,7 +31233,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L155"
+          "locator": "L152"
         }
       ]
     },
@@ -29037,7 +31269,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L247"
+          "locator": "L244"
         }
       ]
     },
@@ -29049,7 +31281,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L152"
+          "locator": "L149"
         }
       ]
     },
@@ -29085,7 +31317,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L191"
+          "locator": "L188"
         }
       ]
     },
@@ -29097,7 +31329,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L267"
+          "locator": "L264"
         }
       ]
     },
@@ -29109,7 +31341,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L268"
+          "locator": "L265"
         }
       ]
     },
@@ -29121,7 +31353,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L227"
+          "locator": "L224"
         }
       ]
     },
@@ -29133,7 +31365,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L333"
+          "locator": "L330"
         },
         {
           "source_type": "markdown",
@@ -29150,7 +31382,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L303"
+          "locator": "L300"
         }
       ]
     },
@@ -29162,7 +31394,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L153"
+          "locator": "L150"
         }
       ]
     },
@@ -29174,7 +31406,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L154"
+          "locator": "L151"
         }
       ]
     },
@@ -29186,7 +31418,7 @@
         {
           "source_type": "markdown",
           "source_path": "Roadmap.md",
-          "locator": "L298"
+          "locator": "L295"
         }
       ]
     },
@@ -29554,7 +31786,19 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "concept_network_reference",
-      "to": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "to": "doc:05_research_notes_literary_ontological_notes_readme",
+      "provenance": [
+        {
+          "source_type": "concept_network",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L805"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "concept_network_reference",
+      "to": "doc:05_research_notes_metaphysical_approach_readme",
       "provenance": [
         {
           "source_type": "concept_network",
@@ -29565,18 +31809,6 @@
           "source_type": "concept_network",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
           "locator": "L952"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "concept_network_reference",
-      "to": "doc:05_research_notes_literary_ontological_notes_readme",
-      "provenance": [
-        {
-          "source_type": "concept_network",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L805"
         }
       ]
     },
@@ -30435,7 +32667,19 @@
     {
       "from": "doc:scientific_ontology_concept_network",
       "relation": "links_to",
-      "to": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "to": "doc:05_research_notes_literary_ontological_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+          "locator": "L805"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_readme",
       "provenance": [
         {
           "source_type": "markdown",
@@ -30446,18 +32690,6 @@
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
           "locator": "L952"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_literary_ontological_notes_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
-          "locator": "L805"
         }
       ]
     },
@@ -31298,7 +33530,19 @@
     {
       "from": "doc:scientific_ontology_concept_network_en",
       "relation": "links_to",
-      "to": "doc:05_research_notes_correctness_logic_and_structural_studies_readme",
+      "to": "doc:05_research_notes_literary_ontological_notes_readme",
+      "provenance": [
+        {
+          "source_type": "markdown",
+          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
+          "locator": "L804"
+        }
+      ]
+    },
+    {
+      "from": "doc:scientific_ontology_concept_network_en",
+      "relation": "links_to",
+      "to": "doc:05_research_notes_metaphysical_approach_readme",
       "provenance": [
         {
           "source_type": "markdown",
@@ -31309,18 +33553,6 @@
           "source_type": "markdown",
           "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
           "locator": "L948"
-        }
-      ]
-    },
-    {
-      "from": "doc:scientific_ontology_concept_network_en",
-      "relation": "links_to",
-      "to": "doc:05_research_notes_literary_ontological_notes_readme",
-      "provenance": [
-        {
-          "source_type": "markdown",
-          "source_path": "00_Overview/Scientific_Ontology_Concept_Network.en.md",
-          "locator": "L804"
         }
       ]
     },

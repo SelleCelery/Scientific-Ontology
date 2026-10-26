@@ -3,19 +3,94 @@
     "schema_version": "0.3",
     "source": {
       "manifest_path": "tools/docs_manifest.yml",
-      "manifest_sha256": "ed2213a883d63ae1a32c5b6e5ef8064fbfc6e04389f4b812a8c780bb7bc6481c",
+      "manifest_sha256": "9eefd10e38f14033984afd37ad20106f07957a469016a68fc2bc3f7133917f19",
       "graph_path": "tools/docs_graph.json",
-      "graph_sha256": "b67f72ead96a05fe7db959b59ac87bfd333ed1d4f5a5af6545cb7011c657acbb",
+      "graph_sha256": "fc12a8b10724d3301b7f0c205f0fce18341dc8c9f1562f099ccdf0e26f1eb14d",
       "revision_proposals_path": "tools/docs_revision_proposals.yml",
       "revision_proposals_sha256": "e3854091b43f8f84de454861a30c69a6a10185d87652f6a905c5f3d166e3d564",
       "preview_contract": "manifest-backed Developer read model; browser writes no canonical YAML"
     },
     "summary": {
-      "provisional_documents": 127,
+      "provisional_documents": 153,
       "registered_documents": 30,
       "registered_revision_proposals": 28
     },
     "provisional_documents": [
+      {
+        "path": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "doc_id": "00_overview_authorial_research_stance_public_declaration",
+        "baseline": {
+          "path": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+          "doc_id": "00_overview_authorial_research_stance_public_declaration",
+          "document_type": "common_fixed_explanation",
+          "title_ja": "著者の研究姿勢と公開宣言",
+          "title_en": "Authorial Research Stance and Public Declaration",
+          "layer": "00_Overview",
+          "status": "Public meta statement / authorial orientation",
+          "scope": "research purpose, truth orientation, publication, human approval, human social action, active return, formation provenance",
+          "public_profile": "P0-P1",
+          "state": "public",
+          "registration_state": "provisional",
+          "role_ja": "著者の記述目的、人間社会の承認との距離、神を用いた真実志向のレトリック、人間社会への作用、教義化との接触地帯、能動的Return、形成史の関係を示す公開メタ記述",
+          "role_en": "Public meta statement on descriptive purpose, distance from social approval, God as rhetoric for truth-orientation, action on human society, possible doctrinal closure, active Return, and formation provenance",
+          "language_relation": {
+            "language": "ja+en",
+            "role": "integrated_japanese_authoritative",
+            "counterpart_path": null,
+            "coverage": "not_applicable",
+            "authoritative_path": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md"
+          },
+          "document_role": "methodological_governance",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed",
+            "protocol": {
+              "id": "claim-classification-pilot",
+              "revision": "2026-08-23-b"
+            }
+          },
+          "discovery": {
+            "topics": [
+              "overview",
+              "publication",
+              "truth",
+              "return",
+              "formation"
+            ],
+            "aliases": {
+              "ja": [
+                "公開宣言",
+                "著者前文"
+              ],
+              "en": [
+                "authorial declaration"
+              ]
+            },
+            "reader_questions": {
+              "ja": [
+                "存在境界論は何のために書かれているか",
+                "人間社会の承認と研究目的はどう分けるか",
+                "神へ捧げるという表現は何を意味するか",
+                "公開とReturnはどう関係するか"
+              ],
+              "en": [
+                "Why is Scientific Ontology written?",
+                "How is social approval separated from the purpose of research?",
+                "What does offering the work to God mean here?",
+                "How are publication and Return related?"
+              ]
+            },
+            "entry_level": "foundation",
+            "searchable": true,
+            "visibility": "primary",
+            "primary_question": {
+              "ja": "存在境界論は何のために書かれ、なぜ人間へ公開されるのか",
+              "en": "Why is Scientific Ontology written, and why is it published to humans?"
+            }
+          }
+        }
+      },
       {
         "path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.en.md",
         "doc_id": "claim_strength_and_publication_layer_table_en",
@@ -3315,56 +3390,6 @@
         }
       },
       {
-        "path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-        "doc_id": "05_research_notes_correctness_logic_and_structural_studies_readme",
-        "baseline": {
-          "path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md",
-          "doc_id": "05_research_notes_correctness_logic_and_structural_studies_readme",
-          "document_type": "subdirectory_readme",
-          "title_ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
-          "title_en": "Correctness, Logic, and Structural Studies",
-          "layer": "05_Research_Notes",
-          "status": "README",
-          "scope": "",
-          "public_profile": "",
-          "state": "public",
-          "registration_state": "provisional",
-          "role_ja": "Correctness, Logic, and Structural Studies / 正しさ・論理・構造研究",
-          "role_en": "Correctness, Logic, and Structural Studies",
-          "language_relation": {
-            "language": "ja",
-            "role": "authoritative",
-            "counterpart_path": null,
-            "coverage": "not_applicable",
-            "authoritative_path": "05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md"
-          },
-          "document_role": "navigation",
-          "catalog_document": true,
-          "assessment": {
-            "applicability": "not_applicable",
-            "review_state": "not_applicable"
-          },
-          "discovery": {
-            "primary_question": {
-              "ja": null,
-              "en": null
-            },
-            "topics": [],
-            "aliases": {
-              "ja": [],
-              "en": []
-            },
-            "reader_questions": {
-              "ja": [],
-              "en": []
-            },
-            "searchable": true,
-            "visibility": "canonical",
-            "entry_level": ""
-          }
-        }
-      },
-      {
         "path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.en.md",
         "doc_id": "asymmetry_stabilization_and_recollation_en",
         "baseline": {
@@ -5048,6 +5073,1006 @@
         }
       },
       {
+        "path": "05_Research_Notes/Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_formation_supply_line_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_formation_supply_line_ja",
+          "document_type": "research_note",
+          "title_ja": "AMP・ITS・ゲーデル試論から読む生成形而上学の補給線",
+          "title_en": "Formation Supply Line from AMP, ITS, and the Gödel Essay to Generative Metaphysics",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Research note / formation-source map",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Formation_Supply_Line_from_AMP_ITS_and_Godel_to_Generative_Metaphysics.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Applied_Metaphysics_System_Overview.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_applied_metaphysics_overview_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Applied_Metaphysics_System_Overview.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_applied_metaphysics_overview_en",
+          "document_type": "research_note",
+          "title_ja": "応用形而上学体系　概説",
+          "title_en": "Overview of the Applied Metaphysics System",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Research overview / draft / v6 transition preview / non-canonical",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Alpha_Audit_Structural_Specification_and_Computer_LLM_Division_of_Labor.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_alpha_audit_structure_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Alpha_Audit_Structural_Specification_and_Computer_LLM_Division_of_Labor.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_alpha_audit_structure_en",
+          "document_type": "research_note",
+          "title_ja": "α監査――論理平面の閉鎖・矛盾・Spine・余剰を機械監査するための構造仕様",
+          "title_en": "α Audit — Structural Specification for Machine-Auditing Closure, Contradiction, Spine, and Surplus on a Logical Plane",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research draft / implementation specification candidate",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Alpha_Beta_Audit_through_Logical_Plane_Logical_Depth_and_Dimensional_Transformation.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Alpha_Beta_Audit_through_Logical_Plane_Logical_Depth_and_Dimensional_Transformation.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_en",
+          "document_type": "research_note",
+          "title_ja": "論理平面・論理深度・次元変換から読むαβ監査試論",
+          "title_en": "A Trial Reading of α/β Audit through Logical Plane, Logical Depth, and Dimensional Transformation",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research note / αβ audit working model",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Audit_Theory_in_Scientific_Ontology.en.md",
+        "doc_id": "05_research_notes_generative_metaphysics_audit_theory_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Audit_Theory_in_Scientific_Ontology.en.md",
+          "doc_id": "05_research_notes_generative_metaphysics_audit_theory_en",
+          "document_type": "assertion_document",
+          "title_ja": "存在境界論における監査理論",
+          "title_en": "Audit Theory in Scientific Ontology",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Foundational audit theory / research draft / pre-formalization",
+          "scope": "audit necessity / topology-aware audit / asymmetry / contact / transmission / intrusion / action effect / effective return / externalization / manifestation boundary / generation boundary / transmission path / responsibility boundary / persistence / return",
+          "public_profile": "P2",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Development_of_Intelligence_and_Its_Audit.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_intelligence_development_audit_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Development_of_Intelligence_and_Its_Audit.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_intelligence_development_audit_en",
+          "document_type": "research_note",
+          "title_ja": "インテリジェンスの発達とその監査",
+          "title_en": "Development of Intelligence and Its Audit",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research note / exploratory model",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Evolution_of_Beta_Audit_Implementation_Models.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_beta_audit_implementation_history_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Evolution_of_Beta_Audit_Implementation_Models.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_beta_audit_implementation_history_en",
+          "document_type": "research_note",
+          "title_ja": "β監査の実装モデルの推移",
+          "title_en": "Evolution of Beta Audit Implementation Models",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research note / implementation-history reconstruction",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Whole_Absence_Cut_and_Unselected_Possibility.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_whole_null_cut_unselected_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Whole_Absence_Cut_and_Unselected_Possibility.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_whole_null_cut_unselected_en",
+          "document_type": "research_note",
+          "title_ja": "全・無・切断・未選択可能性の関係試論",
+          "title_en": "A Trial on the Relation among the Whole, Absence, Cut, and Unselected Possibility",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research note / exploratory hypothesis",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_alpha_audit_structure_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_alpha_audit_structure_ja",
+          "document_type": "research_note",
+          "title_ja": "α監査――論理平面の閉鎖・矛盾・Spine・余剰を機械監査するための構造仕様",
+          "title_en": "α Audit — Structural Specification for Machine-Auditing Closure, Contradiction, Spine, and Surplus on a Logical Plane",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research draft / implementation specification candidate",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Alpha_Audit_Structural_Specification_and_Computer_LLM_Division_of_Labor.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_beta_audit_implementation_history_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_beta_audit_implementation_history_ja",
+          "document_type": "research_note",
+          "title_ja": "β監査の実装モデルの推移",
+          "title_en": "Evolution of Beta Audit Implementation Models",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research note / implementation-history reconstruction",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Evolution_of_Beta_Audit_Implementation_Models.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_intelligence_development_audit_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_intelligence_development_audit_ja",
+          "document_type": "research_note",
+          "title_ja": "インテリジェンスの発達とその監査",
+          "title_en": "Development of Intelligence and Its Audit",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research note / exploratory model",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Development_of_Intelligence_and_Its_Audit.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_whole_null_cut_unselected_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_whole_null_cut_unselected_ja",
+          "document_type": "research_note",
+          "title_ja": "全・無・切断・未選択可能性の関係試論",
+          "title_en": "A Trial on the Relation among the Whole, Absence, Cut, and Unselected Possibility",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research note / exploratory hypothesis",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Whole_Absence_Cut_and_Unselected_Possibility.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md",
+        "doc_id": "05_research_notes_generative_metaphysics_audit_theory_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md",
+          "doc_id": "05_research_notes_generative_metaphysics_audit_theory_ja",
+          "document_type": "assertion_document",
+          "title_ja": "存在境界論における監査理論",
+          "title_en": "Audit Theory in Scientific Ontology",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Foundational audit theory / research draft / pre-formalization",
+          "scope": "audit necessity / topology-aware audit / asymmetry / contact / transmission / intrusion / action effect / effective return / externalization / manifestation boundary / generation boundary / transmission path / responsibility boundary / persistence / return",
+          "public_profile": "P2",
+          "state": "public",
+          "registration_state": "provisional",
+          "role_ja": "監査の形而上学的基礎を扱い、発現境界・生成境界・伝播変換経路・責任境界を分離し、個人化による因果偽閉鎖、作用主体の自己監査、能動的Return、Returnの存在と実効性、接触・伝達と実効作用の区別を外部化監査へ接続する研究稿",
+          "role_en": "Japanese-authoritative research draft on the metaphysical basis of audit, extended to separate manifestation, generation, transmission, and responsibility boundaries, distinguish contact from effective action, and audit interventions through effective and active Return",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Audit_Theory_in_Scientific_Ontology.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed",
+            "protocol": {
+              "id": "claim-classification-pilot",
+              "revision": "2026-08-23-b"
+            }
+          },
+          "discovery": {
+            "topics": [
+              "audit",
+              "boundary",
+              "externalization",
+              "causality",
+              "return"
+            ],
+            "aliases": {
+              "ja": [
+                "監査理論",
+                "発現境界",
+                "生成境界"
+              ],
+              "en": [
+                "audit theory",
+                "manifestation boundary",
+                "generation boundary"
+              ]
+            },
+            "reader_questions": {
+              "ja": [
+                "なぜ監査が必要か",
+                "発現した場所と原因をどう分けるか",
+                "個人化による因果偽閉鎖とは何か",
+                "外部化と責任境界をどう監査するか"
+              ],
+              "en": [
+                "Why is audit necessary?",
+                "How should manifestation be separated from generation?",
+                "What is causal false closure through individualization?",
+                "How are externalization and responsibility boundaries audited?"
+              ]
+            },
+            "entry_level": "advanced",
+            "searchable": true,
+            "visibility": "secondary",
+            "primary_question": {
+              "ja": "発現した場所を原因点へ誤昇格させずに監査するにはどうすればよいか",
+              "en": "How can audit avoid mistaking the site of manifestation for the site of generation?"
+            }
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_logic_planes_alpha_beta_audit_ja",
+          "document_type": "research_note",
+          "title_ja": "論理平面・論理深度・次元変換から読むαβ監査試論",
+          "title_en": "A Trial Reading of α/β Audit through Logical Plane, Logical Depth, and Dimensional Transformation",
+          "layer": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness",
+          "status": "Research note / αβ audit working model",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Alpha_Beta_Audit_through_Logical_Plane_Logical_Depth_and_Dimensional_Transformation.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Extending_Causality_in_Modern_Science.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_modern_science_causality_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Extending_Causality_in_Modern_Science.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_modern_science_causality_en",
+          "document_type": "research_note",
+          "title_ja": "現代科学の因果関係を拡張する",
+          "title_en": "Extending Causality in Modern Science",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Foundational research note / structured draft / pre-formalization",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Formation_Supply_Line_from_AMP_ITS_and_Godel_to_Generative_Metaphysics.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_formation_supply_line_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Formation_Supply_Line_from_AMP_ITS_and_Godel_to_Generative_Metaphysics.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_formation_supply_line_en",
+          "document_type": "research_note",
+          "title_ja": "AMP・ITS・ゲーデル試論から読む生成形而上学の補給線",
+          "title_en": "Formation Supply Line from AMP, ITS, and the Gödel Essay to Generative Metaphysics",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Research note / formation-source map",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Historical_Computation_Structure_in_Scientific_Ontology.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_historical_computation_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Historical_Computation_Structure_in_Scientific_Ontology.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_historical_computation_en",
+          "document_type": "research_note",
+          "title_ja": "存在境界論的歴史計算構造",
+          "title_en": "Historical Computation Structure in Scientific Ontology",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Foundational research note / phase-audit integrated draft / pre-formalization",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_readme_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_readme_en",
+          "document_type": "subdirectory_readme",
+          "title_ja": "Metaphysical Approach / 形而上学的アプローチ",
+          "title_en": "Metaphysical Approach",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "README",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/README.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/README.md"
+          },
+          "document_role": "navigation",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/README.md",
+        "doc_id": "05_research_notes_metaphysical_approach_readme",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/README.md",
+          "doc_id": "05_research_notes_metaphysical_approach_readme",
+          "document_type": "subdirectory_readme",
+          "title_ja": "Metaphysical Approach / 形而上学的アプローチ",
+          "title_en": "Metaphysical Approach",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "README",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/README.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/README.md"
+          },
+          "document_role": "navigation",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "not_applicable",
+            "review_state": "not_applicable"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/Reading_Light_and_Relocating_Its_Aporias.en.md",
+        "doc_id": "05_research_notes_metaphysical_approach_light_aporia_en",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/Reading_Light_and_Relocating_Its_Aporias.en.md",
+          "doc_id": "05_research_notes_metaphysical_approach_light_aporia_en",
+          "document_type": "research_note",
+          "title_ja": "光の読み方と、それに伴うアポリアの再配置",
+          "title_en": "Reading Light and Relocating Its Aporias",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Foundational research note / structured draft / pre-formalization",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_light_aporia_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_light_aporia_ja",
+          "document_type": "research_note",
+          "title_ja": "光の読み方と、それに伴うアポリアの再配置",
+          "title_en": "Reading Light and Relocating Its Aporias",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Foundational research note / structured draft / pre-formalization",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Reading_Light_and_Relocating_Its_Aporias.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_historical_computation_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_historical_computation_ja",
+          "document_type": "research_note",
+          "title_ja": "存在境界論的歴史計算構造",
+          "title_en": "Historical Computation Structure in Scientific Ontology",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Foundational research note / phase-audit integrated draft / pre-formalization",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Historical_Computation_Structure_in_Scientific_Ontology.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_applied_metaphysics_overview_ja",
+          "document_type": "research_note",
+          "title_ja": "応用形而上学体系　概説",
+          "title_en": "Overview of the Applied Metaphysics System",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Research overview / draft / v6 transition preview / non-canonical",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Applied_Metaphysics_System_Overview.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md",
+        "doc_id": "05_research_notes_metaphysical_approach_modern_science_causality_ja",
+        "baseline": {
+          "path": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md",
+          "doc_id": "05_research_notes_metaphysical_approach_modern_science_causality_ja",
+          "document_type": "research_note",
+          "title_ja": "現代科学の因果関係を拡張する",
+          "title_en": "Extending Causality in Modern Science",
+          "layer": "05_Research_Notes/Metaphysical_Approach",
+          "status": "Foundational research note / structured draft / pre-formalization",
+          "state": "public",
+          "registration_state": "provisional",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Metaphysical_Approach/Extending_Causality_in_Modern_Science.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [],
+              "en": []
+            },
+            "entry_level": ""
+          }
+        }
+      },
+      {
         "path": "05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.en.md",
         "doc_id": "chaos_theory_and_logical_depth_axis_en",
         "baseline": {
@@ -5316,6 +6341,73 @@
             "entry_level": "advanced",
             "searchable": true,
             "visibility": "secondary",
+            "primary_question": {
+              "ja": null,
+              "en": null
+            }
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md",
+        "doc_id": "intrinsic_time_sub_entanglement_communication_model_en",
+        "baseline": {
+          "path": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md",
+          "doc_id": "intrinsic_time_sub_entanglement_communication_model_en",
+          "document_type": "assertion_document",
+          "title_ja": "内在時間（亜エンタングル）通信モデル",
+          "title_en": "Intrinsic-Time (Sub-Entanglement) Communication Model",
+          "layer": "05_Research_Notes/Physical_Cosmological_Notes",
+          "status": "Research Note",
+          "scope": "Physical / Cosmological Notes",
+          "public_profile": "Research Note / P2-P2.5",
+          "state": "public",
+          "registration_state": "provisional",
+          "role_ja": "旧PINGER仮説を、粒子中心ではなく通信・内在時間・履歴・返路を中心とする物理近接研究モデルとして再整理し、亜エンタングル、履歴場、観測断面、通信経路の関係を扱う英語通約稿",
+          "role_en": "English commensuration of a physical-adjacent research model reorganizing the legacy PINGER hypothesis around communication pathways, intrinsic time, history, return paths, sub-entanglement, and observational sections",
+          "language_relation": {
+            "language": "en",
+            "role": "commensuration",
+            "counterpart_path": "05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "commensuration_only",
+            "review_state": "unreviewed"
+          },
+          "discovery": {
+            "topics": [
+              "science",
+              "communication",
+              "network",
+              "boundary"
+            ],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [
+                "内在時間（亜エンタングル）通信モデルとは何か",
+                "PINGER仮説を通信経路中心にどう再整理するか",
+                "亜エンタングルとは何か",
+                "ファインマンダイアグラムをSOではどう扱うか",
+                "標準物理学との非同一性をどう保持するか"
+              ],
+              "en": [
+                "What is the Intrinsic-Time Sub-Entanglement Communication Model?",
+                "How is the legacy PINGER hypothesis reorganized around communication pathways?",
+                "What does sub-entanglement mean in this research note?",
+                "How are Feynman diagrams used on the SO side?",
+                "How is non-identity with standard physics preserved?"
+              ]
+            },
+            "entry_level": "advanced",
+            "searchable": true,
+            "visibility": "paired",
             "primary_question": {
               "ja": null,
               "en": null
@@ -5789,6 +6881,77 @@
             "entry_level": "foundation",
             "searchable": true,
             "visibility": "primary",
+            "primary_question": {
+              "ja": null,
+              "en": null
+            }
+          }
+        }
+      },
+      {
+        "path": "05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md",
+        "doc_id": "intrinsic_time_sub_entanglement_communication_model",
+        "baseline": {
+          "path": "05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md",
+          "doc_id": "intrinsic_time_sub_entanglement_communication_model",
+          "document_type": "assertion_document",
+          "title_ja": "内在時間（亜エンタングル）通信モデル",
+          "title_en": "Intrinsic-Time (Sub-Entanglement) Communication Model",
+          "layer": "05_Research_Notes/Physical_Cosmological_Notes",
+          "status": "Research Note",
+          "scope": "Physical / Cosmological Notes",
+          "public_profile": "Research Note / P2-P2.5",
+          "state": "public",
+          "registration_state": "provisional",
+          "role_ja": "旧PINGER仮説を、粒子中心ではなく通信・内在時間・履歴・返路を中心とする物理近接研究モデルとして再整理し、亜エンタングル、履歴場、観測断面、通信経路の関係を扱う日本語正本研究稿",
+          "role_en": "Japanese-authoritative physical-adjacent research note reorganizing the legacy PINGER hypothesis around communication pathways, intrinsic time, history, return paths, sub-entanglement, and observational sections",
+          "language_relation": {
+            "language": "ja",
+            "role": "authoritative",
+            "counterpart_path": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic-Time_Sub-Entanglement_Communication_Model.en.md",
+            "coverage": "full",
+            "authoritative_path": "05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md"
+          },
+          "document_role": "research_note",
+          "catalog_document": true,
+          "assessment": {
+            "applicability": "current_claim",
+            "review_state": "unreviewed",
+            "protocol": {
+              "id": "claim-classification-pilot",
+              "revision": "2026-08-23-b"
+            }
+          },
+          "discovery": {
+            "topics": [
+              "science",
+              "communication",
+              "network",
+              "boundary"
+            ],
+            "aliases": {
+              "ja": [],
+              "en": []
+            },
+            "reader_questions": {
+              "ja": [
+                "内在時間（亜エンタングル）通信モデルとは何か",
+                "PINGER仮説を通信経路中心にどう再整理するか",
+                "亜エンタングルとは何か",
+                "ファインマンダイアグラムをSOではどう扱うか",
+                "標準物理学との非同一性をどう保持するか"
+              ],
+              "en": [
+                "What is the Intrinsic-Time Sub-Entanglement Communication Model?",
+                "How is the legacy PINGER hypothesis reorganized around communication pathways?",
+                "What does sub-entanglement mean in this research note?",
+                "How are Feynman diagrams used on the SO side?",
+                "How is non-identity with standard physics preserved?"
+              ]
+            },
+            "entry_level": "advanced",
+            "searchable": true,
+            "visibility": "secondary",
             "primary_question": {
               "ja": null,
               "en": null

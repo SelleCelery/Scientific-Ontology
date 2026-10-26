@@ -1526,10 +1526,6 @@ documents:
     counterpart_path:
     coverage: not_applicable
     authoritative_path: 00_Overview/Authorial_Research_Stance_and_Public_Declaration.md
-  related:
-  - README.md
-  - 90_Repository_Governance/Publication_and_Commensuration_Policy.md
-  - 01_Sat_Truth/Boundary_Epistemological_Critique.ja.md
   discovery:
     topics:
     - overview
@@ -8775,7 +8771,7 @@ documents:
   title_ja: "応用形而上学体系　概説"
   title_en: "Overview of the Applied Metaphysics System"
   layer: "05_Research_Notes/Metaphysical_Approach"
-  status: "Research overview / draft / v6 candidate guide"
+  status: "Research overview / draft / v6 transition preview / non-canonical"
   state: public
   registration_state: provisional
   language_relation:
@@ -9522,7 +9518,7 @@ documents:
   title_en: "Audit Theory in Scientific Ontology"
   layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
   status: "Foundational audit theory / research draft / pre-formalization"
-  scope: "audit necessity / phase-aware audit / asymmetry / contact / transmission / intrusion / action effect / effective return / externalization / manifestation boundary / generation boundary / transmission path / responsibility boundary / persistence / return"
+  scope: "audit necessity / topology-aware audit / asymmetry / contact / transmission / intrusion / action effect / effective return / externalization / manifestation boundary / generation boundary / transmission path / responsibility boundary / persistence / return"
   public_profile: "P2"
   internal_profile:
     S: "S3-S4"
@@ -9540,9 +9536,6 @@ documents:
     counterpart_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Audit_Theory_in_Scientific_Ontology.en.md"
     coverage: full
     authoritative_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md"
-  related:
-  - "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md"
-  - "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md"
   discovery:
     topics:
     - audit
@@ -9695,7 +9688,7 @@ documents:
   title_ja: "応用形而上学体系　概説"
   title_en: "Overview of the Applied Metaphysics System"
   layer: "05_Research_Notes/Metaphysical_Approach"
-  status: "Research overview / draft / v6 candidate guide"
+  status: "Research overview / draft / v6 transition preview / non-canonical"
   state: public
   registration_state: provisional
   language_relation:
@@ -9716,7 +9709,7 @@ documents:
   title_en: "Audit Theory in Scientific Ontology"
   layer: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness"
   status: "Foundational audit theory / research draft / pre-formalization"
-  scope: "audit necessity / phase-aware audit / asymmetry / contact / transmission / intrusion / action effect / effective return / externalization / manifestation boundary / generation boundary / transmission path / responsibility boundary / persistence / return"
+  scope: "audit necessity / topology-aware audit / asymmetry / contact / transmission / intrusion / action effect / effective return / externalization / manifestation boundary / generation boundary / transmission path / responsibility boundary / persistence / return"
   public_profile: "P2"
   state: public
   registration_state: provisional

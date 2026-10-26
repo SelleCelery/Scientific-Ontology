@@ -47,7 +47,7 @@ v5.0で明示的に公開側へ導入するものには、次が含まれる。
 - [`Literature as Worldmaking`](./05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md)
 - [`DSSI: Observation, Judgment, Sovereignty, and Responsibility Return`](./05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md)
 
-DSSIについてv5.0に含まれるのは研究ノートと実装境界であり、アプリケーション本体ではない。アプリ版はv5.1以降で公開条件が整った場合に別途判断する。
+v5.0時点でDSSIとして含めたのは研究ノートと実装境界であり、アプリケーション本体ではなかった。その後、DSSI Core A系列では外部実装として `ConnectBits v0.5.0 Public Preview` が公開された。SO Repositoryへ製品コードは同梱せず、研究面から成果物への返路を保持する。
 
 ---
 
@@ -96,29 +96,25 @@ v4.3.0では、その境界への移動を引き継ぎ、境界認識の批判�
 
 ## 2. 現在地
 
-v4.3.0までにStage Cの公開基礎が形成され、v5.0.0でStage Dが開いた。現在は**v5.1.0 release candidate収束段階**として、外部へ持ち出した理論が、判断・監査・実装・創作・計算通約から何を返してきたかを、公開構造へ再接続している。
+v4.3.0までにStage Cの公開基礎が形成され、v5.0.0でStage Dが開いた。**v5.1.0は2026-09-18に公開済み**であり、自己監査と境界運用の足場をPublic Editionへ固定した。現在のRepository作業線は **v5.1.1-rc003** である。
 
-- **v4.2.0**：境界実在性、境界認識批判、物理対応方針、主張強度管理を整備した。
-- **v4.3.0**：境界認識生成、境界認識運用、研究動態、組織・倫理・平和仕様への接続を整備した。
 - **v5.0.0**：Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、返りを受けるStage Dを開始した。
-- **v5.1.0 release candidate**：SO再帰的哲学研究、Volume Iのhistorical attestation、判断透明性、公開／非公開source境界、文書contractとNavigator投影、`正しさ・個性・無・切断`、および`07_Creative_Offshoots`の外部曝露面を公開体系へ再配置している。01–03の元型、05の内在的批判・拡張、04のスピンアウト、06のレンダリング、07の外部曝露という機能差も公開構造として明示する。さらに、外部接触や自己監査によって訂正・scope制限・保留が必要になった場合に、何に接触し、なぜ再開し、何を変え何を残したかへ戻れるrevision traceを、物理近接Research Notesの非規範的な例から観察し始める。これはv5.1.0でrevision schemaを完成させることを意味しない。
-- **v5.1.1候補**：v5.1公開後の短い観測周期で、Navigatorの公開入口、Public / Developer間の表示・言語挙動、ローカル起動の摩擦、境界語matcherなど、公開面を実際に使って初めて見えるUX・保守残差を小さく修正する。新しい大規模理論展開は既定目的にしない。
-- **Axis-invariant correctness criterion** / 軸内容不変の正しさ判定規則 Final v5.1.0 auditで、01のcorrectness criterionが **構成軸そのものを判定するのではなく、異なる構成軸のもとで形成された有限系に 共通して適用できる判定機構として読める可能性**が露出した。 これはv5.1.0で確立した命題ではなく、後続研究で検証するworking hypothesisとする。
+- **v5.1.0**：SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contractとNavigator、`正しさ・個性・無・切断`、04–07の機能境界、07の外部曝露面を整合し、修正・scope制限・未解決残差を返路付きで保持する自己監査の足場を成立させた。
+- **v5.1.1-rc003**：v5.1.0の主題「境界に触れたあと、何を持ち帰り、何を直し、何を未解決として残すか」を据え置き、サブテーマとして「正しさを、形而上からの演繹と形而下からの工学で挟み込む」を置く。著者の研究姿勢と能動的Returnを公開メタ記述へ分離し、「正しさ」で審理と監査、位相と再審理条件を分ける。05では`Metaphysical_Approach`へ生成形而上学・形成源・歴史計算・物理近接研究・Engineering Research on Correctnessを再配置し、日英対の『応用形而上学体系 概説』をnon-canonicalなv6 transition previewとして置き、英語通約を拡張する。Repository側ではchecker観測面を分離した決定論的machine-audit laneを実験導入する。
+- **Axis-invariant correctness criterion** / 軸内容不変の正しさ判定規則：v5.1.0最終監査で露出したworking hypothesisは引き続き未確定である。v5.1.1-rc003の位相付き審理・監査分離は、この仮説を自動的に証明も棄却もしない。
 - **v5.x**：研究・実装・外部照合を順次追加し、各応用から返る残差によって上流概念を再照合する。
 
-v5.1.0の主題は、「正しさ」正本の拡張それ自体よりも、**境界に接触した後で何を持ち帰り、何を訂正し、何を未解決として残すかを、どう監査可能にするか**にある。異なる体系へ越境する側だけでなく、外部の基準・判断・要求を受ける側にも、scope、validity regime、権限、返路の問題が生じる。この射程は学問間に限られないが、v5.1.0では一般社会理論として確定せず、境界運用上の問題として示唆するに留める。
+v5.1.1-rc003で重要なのは、**正しさを形而上からの演繹と形而下からの工学の両側から照合すること**である。AMP・ITS・Gödel系形成資料の再検討は、現在の正本を証明する上位権限へ戻すためではなく、完全性と不完全性、無・切断、論理形成、自己参照が「正しさ」に何を要請するかを演繹側から検討するために行う。有限資源下の探索、審理、監査、実装は、その要請を形而下側で操作・検査可能な条件へ降ろす工学側を担う。両者を同一視せず、形成源・正本・研究仮説・監査理論・実装結果の権限を混同しない。`Metaphysical_Approach`はv6正本を先取りして確定する場所ではなく、何を将来の正本候補へ返せるかを検討する研究面である。
 
-最終監査では、`正しさ・個性・無・切断`の判定機構について、**軸そのものを正当化するのではなく、軸の内容に依存せず、その軸のもとで形成された有限系の成立・探索・外部接触・再開可能性を判定しているのではないか**というworking hypothesisが露出した。これはv5.1.0の確立命題ではなく、正本の現在記述が実際にこの読みへ耐えるかを後続研究で検証するreturn itemとする。特定の次版へ制度化を約束しない。
+同様に、machine auditは理論の正しさを機械的に判定する仕組みではない。既存checkerのissueをpublic format、repository structure、semantic review、operational integrityへ分け、監査対象として宣言した面だけをAuditFinding候補へ変換する。**Finding != Verdict** を固定し、正本文書・概念owner・意味判断への自動writebackは行わない。detectorがunsupportedである領域は、そのまま未対応として残す。このmachine-audit laneはRepository全体のα／β監査に先行する下層実装であり、α／β監査そのものではない。Repository全体へのα／β監査はrc003時点では未実施である。
+
+rc003は公開候補であって公開済み版ではない。現行公開版はv5.1.0である。候補版のmanifest / read-model同期は再び成立し、preview状態ではpublic 183文書・日英62 pair familiesを検証できる。これは候補状態の検証値であり、公開済みv5.1.0の157文書・49 pair familiesという確定事実を置き換えない。
 
 v5系の開始線は、次である。
 
 > **事象は境界で起きている。主観でも客観でもなく、それらが混ざり合うところで。**
 
 これは主観と客観を曖昧に混同する宣言ではない。外部条件と内部履歴が接触し、差分、意味、判断、作用、返りが生じる境界を、運用上の中心記述面として扱うという宣言である。
-
-v5.1.0 release candidateでは、公開後に生じた研究履歴そのものも返りとして扱う。SO再帰的哲学研究では、De-Registryから判断透明性へ至る実験史を、当時の実行記録と現在の受理判断を分離したhistorical recordとして保持する。historical checksumを現在値へ上書きせず、現在受理したbytesは別のattestationとして固定する。
-
-また、公開sourceの同一性、filename、SHA-256、provenance、研究上の役割を公開しても、exact historical bytesまで公開Repositoryへ保持する必要はない。公開に必要な根拠経路と、非公開に保持すべきsource実体を分離する。
 
 DSSIについては、SO内では観測・判断・主権・責任返還を扱う研究面と実装境界を保持する。その後、DSSI Core A系列の`ConnectBits v0.5.0 Public Preview`がSO外部で公開された。SOはその返路を保持するが、製品コードをRepositoryへ取り込まず、実装成功を理論の証明として扱わない。
 
@@ -459,8 +455,8 @@ Stage Eへ進む条件は、概念が実装可能になったことだけでは�
 | v4.2.0 | Stage C1 | 境界実在性、境界認識批判、物理対応方針、主張強度管理 |
 | v4.3.0 | Stage C2-C4 | 認識生成、認識運用、研究動態、組織・倫理・平和仕様 |
 | v5.0.0 | Stage D opening | Operational Outline、言語・意味・通信位相研究、文学、同意境界、DSSI研究面を公開し、代謝型の外部照合を開始 |
-| v5.1.0 release candidate | Stage D / reflexive audit and external exposure | SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contract・Navigator、`正しさ・個性・無・切断`、04–07の機能境界、Creative Offshootsの外部曝露面を整合し、物理近接Research Notesで非規範的なrevision trace例を試して自己監査実装の足場を得る |
-| v5.1.1 candidate | Stage D / short-cycle maintenance | v5.1公開後の観測から、Navigator入口、Public / Developer parity、ローカル起動摩擦、境界語matcher等のUX・保守残差を小さく修正 |
+| v5.1.0 | Stage D / reflexive audit and external exposure | SO再帰的哲学研究、historical attestation、判断透明性、公開／非公開source境界、文書contract・Navigator、`正しさ・個性・無・切断`、04–07の機能境界、Creative Offshootsの外部曝露面を整合し、自己監査と境界運用の公開足場を成立 |
+| v5.1.1-rc003 candidate | Stage D / metaphysical research and audit convergence | 著者研究姿勢と能動的Return、審理／監査分離、位相付き正しさ、Metaphysical Approachへの研究線再配置、英語通約拡張、Finding != Verdictを固定した実験的Repository machine auditを収束中 |
 | v5.x | Stage D-E | 実装・汎用化・外部照合・反証条件・アプリケーション・会計・AI比較を順次追加 |
 | v6 candidate | Structural transition | v5系の基礎記述面、概念所有、中核不変項、説明本拠地そのものの再編が必要になった場合に検討 |
 
@@ -558,24 +554,25 @@ v4.3.0 continues that movement by connecting critique, formation, and operation 
 
 ## 2. Current Position
 
-v4.3.0 established the public basis of Stage C, and v5.0.0 opened Stage D. The project is now in **v5.1.0 release-candidate convergence**, reconnecting what returned from judgment, audit, implementation, creative contact, and computational commensuration to the public structure.
+v4.3.0 established the public basis of Stage C, and v5.0.0 opened Stage D. **v5.1.0 was published on 2026-09-18**, fixing a public foothold for self-audit and boundary operation. The active repository line is now **v5.1.1-rc003**.
 
-- **v4.2.0:** Boundary Realism, Boundary Epistemological Critique, Physics Correspondence Policy, and claim-strength governance.
-- **v4.3.0:** boundary-cognition formation and operation, research dynamics, and organizational, ethical, and peace specifications.
-- **v5.0.0:** opening of Stage D through the Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, and the DSSI research surface.
-- **v5.1.0 release candidate:** alignment of SO Reflexive Philosophical Research, Volume I historical attestation, judgment transparency, the public/private source boundary, document contracts and Navigator projection, *Correctness, Individuality, Absence, and Cut*, and the external-exposure surface of `07_Creative_Offshoots`. The public structure also makes explicit the functional distinction among the 01–03 archetype, internal critique and extension in 05, spinout in 04, rendering in 06, and external exposure in 07. It also begins observing, through non-normative examples in physics-adjacent Research Notes, what a revision trace must preserve when external contact or self-audit requires correction, scope restriction, or suspension. This does not claim a completed revision schema in v5.1.0.
-- **v5.1.1 candidate:** a short post-v5.1 observation cycle for small UX and maintenance residuals that become visible only in actual use, such as Navigator entry points, Public / Developer language and presentation parity, local-launch friction, and boundary-term matching. Large theoretical expansion is not its default purpose.
-- **v5.x:** continued addition of research, implementation, external collation, and returns into upstream concepts.
+- **v5.0.0:** opened Stage D through the Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, and the DSSI research surface.
+- **v5.1.0:** aligned SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, *Correctness, Individuality, Absence, and Cut*, the functional boundary of 04–07, and the external-exposure role of 07; it established a public foothold for preserving correction, scope restriction, and unresolved residuals with return paths.
+- **v5.1.1-rc003:** retains the v5.1.0 question of what to bring back, revise, and leave unresolved after boundary contact, and adds a subtheme: approach correctness from both sides, through deduction from metaphysics and engineering under concrete finite conditions. It separates authorial stance and active Return as a public meta statement; distinguishes adjudication from audit and adds topology-aware re-adjudication conditions to the correctness model; consolidates formation sources, generative metaphysics, historical computation, physics-adjacent research, and Engineering Research on Correctness under `Metaphysical_Approach`; exposes the paired Applied Metaphysics System Overview only as a non-canonical v6 transition preview; expands English commensuration; and introduces an experimental deterministic repository machine-audit lane.
+- **Axis-invariant correctness criterion:** the working hypothesis surfaced during the v5.1.0 final audit remains unresolved. The topology/adjudication/audit work in rc003 neither proves nor refutes it automatically.
+- **v5.x:** continues to add research, implementation, external collation, and returns into upstream concepts.
 
-The central concern of v5.1.0 is less the expansion of the correctness text itself than **how a system can remain auditable after boundary contact: what it brings back, what it corrects, and what it leaves unresolved**. Questions of scope, validity regime, authority, and return arise not only for a system crossing into another domain, but also for a system receiving external criteria, judgments, or demands. The release leaves the broader social implication open rather than promoting it into a completed general theory.
+The key movement in v5.1.1-rc003 is to **approach correctness from both the metaphysical and engineering directions**. AMP/ITS/Gödel formation materials are re-examined not as superior evidence for current public owners, but as formation provenance for asking what completeness, incompleteness, Absence, Cut, logical formation, and self-reference require of correctness. Finite-resource inquiry, adjudication, audit, and implementation provide the engineering direction by turning those requirements into operational and inspectable conditions. These directions are collated without collapsing the authority of formation sources, canonical owners, research hypotheses, audit theory, or implementation results. `Metaphysical_Approach` is a Research Notes surface for testing what may later return to canonical reconstruction; it does not pre-establish a v6 canon.
 
-Final audit also surfaced a working hypothesis about *Correctness, Individuality, Absence, and Cut*: **the criterion may not certify the governing axis itself, but may operate independently of the axis's content when evaluating the finite system formed under it—its support, inquiry, external contact, and reopenability**. v5.1.0 does not promote this into an established claim. It is returned as a post-v5.1 verification question, without assigning it to a specific next release.
+The machine-audit lane is likewise not a machine truth judge. It classifies existing checker observations into public format, repository structure, semantic review, and operational integrity, then maps only declared audit-eligible surfaces into candidate findings. **Finding != Verdict** is fixed as a boundary, there is no automatic canonical writeback, and unsupported detectors remain explicitly unsupported. This lane is a lower-layer implementation preceding broader Repository-wide alpha/beta audit execution; it is not itself the alpha/beta audit, and no Repository-wide alpha/beta audit has yet been executed.
 
-In the v5.1.0 release candidate, research history itself is treated as a return. SO Reflexive Philosophical Research retains the path from De-Registry to judgment transparency as a historical method record that separates contemporaneous execution records from present-day acceptance. Historical checksums are not rewritten to current bytes; current accepted bytes are bound separately by attestation.
+rc003 is a release candidate, not the published Public Edition. v5.1.0 remains the current public release. The candidate manifest/read-model pipeline now regenerates cleanly in preview mode and validates **183 public documents / 62 Japanese-English pair families**. These are candidate-state validation values, not retroactive replacements for the published v5.1.0 catalog facts of 157 / 49.
 
-Likewise, public source identity, filename, SHA-256, provenance, and experimental role do not require exact historical source bytes to remain in the public repository. The public return path and the privately retained source body are kept distinct.
+The v5 series anchor remains:
 
-On the DSSI side, SO retains the research surface and implementation boundary for observation, judgment, sovereignty, and responsibility return. The DSSI Core A lineage has since produced the externally released `ConnectBits v0.5.0 Public Preview`. SO preserves a return path to that artifact without bundling product code or treating implementation success as proof of the theory.
+> **Events happen at boundaries. Neither simply subjective nor simply objective, but where different modes of description come into contact.**
+
+The DSSI application is not bundled into the SO repository. The DSSI Core A lineage has an externally released `ConnectBits v0.5.0 Public Preview`, and SO keeps a return path from its research note and implementation boundary to that artifact. Implementation results may return as evidence about observation limits, privacy, reversibility, display viscosity, and responsibility return, but they do not automatically become empirical proof of SO.
 
 ## 3. Stage A — Public Foundation
 
@@ -729,8 +726,8 @@ Stage E requires not only implementable concepts but functioning routes through 
 | v4.2.0 | Stage C1 | Boundary Realism, Boundary Epistemological Critique, Physics Correspondence Policy, and claim-strength governance |
 | v4.3.0 | Stage C2-C4 | Cognitive formation, cognitive operation, research dynamics, and organizational, ethical, and peace specifications |
 | v5.0.0 | Stage D opening | Operational Outline, Language/Meaning/Communication Phase Studies, literature, consent boundary, DSSI research, and living-canonical return structures |
-| v5.1.0 release candidate | Stage D / reflexive audit and external exposure | Aligns SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, *Correctness, Individuality, Absence, and Cut*, the 04–07 functional boundary, and the external-exposure role of Creative Offshoots; adds non-normative physics-note revision-trace examples as a foothold for later self-audit implementation |
-| v5.1.1 candidate | Stage D / short-cycle maintenance | Small UX and maintenance repairs observed after v5.1, including Navigator entry, Public / Developer parity, local-launch friction, and boundary-term matching |
+| v5.1.0 | Stage D / reflexive audit and external exposure | Aligns SO Reflexive Philosophical Research, historical attestation, judgment transparency, public/private source boundaries, document contracts and Navigator, *Correctness, Individuality, Absence, and Cut*, the 04–07 functional boundary, and the external-exposure role of Creative Offshoots; establishes the public foothold for self-audit and boundary operation |
+| v5.1.1-rc003 candidate | Stage D / metaphysical research and audit convergence | Converges authorial stance and active Return, adjudication/audit separation, topology-aware correctness, the Metaphysical Approach research reorganization, expanded English commensuration, and an experimental Repository machine-audit lane with Finding != Verdict |
 | v5.x | Stage D-E | Implementation, generalization, external collation, falsification conditions, applications, accounting, and AI comparison |
 | v6 candidate | Structural transition | Considered when the explanatory base, core invariants, or concept-ownership structure itself requires reorganization |
 
