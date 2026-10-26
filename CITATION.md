@@ -1,14 +1,14 @@
 # Citation
 
-> Status: Citation / release_candidate
+> Status: Citation / published
 > Scope: Human-readable citation guidance
 > Language: English and Japanese
 > Target version: v5.1.1
 > Version-specific DOI: 10.5281/zenodo.23658812
 
-A version-specific Zenodo DOI has been assigned for v5.1.1: 10.5281/zenodo.23658812. This repository state is still a release candidate; do not describe it as a published public edition until release.status becomes published.
+If you use, discuss, or refer to this published public edition, cite its version-specific Zenodo DOI: 10.5281/zenodo.23658812.
 
-v5.1.1の版固有Zenodo DOI（10.5281/zenodo.23658812）は割当済みです。ただし現在のRepository状態はrelease candidateであり、release.statusがpublishedになるまでは公開済みPublic Editionとして扱いません。
+この公開版を利用・参照・論評する場合は、版固有のZenodo DOI（10.5281/zenodo.23658812）を使用してください。
 
 ---
 
@@ -27,7 +27,7 @@ Unicodeの著者名表記を維持します。本公開版ではローマ字表�
 
 ## Recommended citation
 
-万土華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.1*. Release candidate, 2026. Version-specific Zenodo DOI assigned: [10.5281/zenodo.23658812](https://doi.org/10.5281/zenodo.23658812).
+万土華凜. *Scientific Ontology (SO) / 存在境界論: Public Edition v5.1.1*. Zenodo, 2026. DOI: [10.5281/zenodo.23658812](https://doi.org/10.5281/zenodo.23658812).
 
 ---
 

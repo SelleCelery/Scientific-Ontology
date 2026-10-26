@@ -369,7 +369,7 @@ v5.1では役割境界を明示するが、既存文書の全面的な再配置�
 - 認識と意味：Boundary Epistemological Critique → Cognitive Axis Formation → Optional Axiom Modules → Truth Management
 - 倫理・組織・平和：Cognitive Dynamics → Port Allocation → Organizational Boundary → Specification for Peace
 - 判断・自己監査：[`SO_Reflexive_Philosophical_Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md) → Judgment Transparency Topology → Historical Attestation
-- 正しさ・形式化：[`Correctness_Logic_and_Structural_Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+- 正しさ・形式化：[`Correctness_Logic_and_Structural_Studies`](../05_Research_Notes/Metaphysical_Approach/README.md)
 - 外部接触・異質系への曝露：[`07_Creative_Offshoots`](../07_Creative_Offshoots/README.md) → [`自動運転された正しさを止めるために`](../07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md) / [`問いを閉じず、境界を踏まないために`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md)
 - 物理近接研究：Physics Correspondence Policy → Physical Cosmological Notes
 - 公開・通約規則：Glossary → Publication and Commensuration Policy → Term Collision Registries
@@ -754,7 +754,7 @@ Purpose-specific entrances are as follows.
 - Cognition and meaning: Boundary Epistemological Critique → Cognitive Axis Formation → Optional Axiom Modules → Truth Management
 - Ethics, organization, and peace: Cognitive Dynamics → Port Allocation → Organizational Boundary → Specification for Peace
 - Judgment and reflexive audit: [`SO_Reflexive_Philosophical_Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md) → Judgment Transparency Topology → Historical Attestation
-- Correctness and formalization: [`Correctness_Logic_and_Structural_Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+- Correctness and formalization: [`Correctness_Logic_and_Structural_Studies`](../05_Research_Notes/Metaphysical_Approach/README.md)
 - External contact and heterogeneous exposure: [`07_Creative_Offshoots`](../07_Creative_Offshoots/README.en.md) → [`Stopping Correctness on Autopilot`](../07_Creative_Offshoots/Adversarial_Exposure/Stopping_Correctness_on_Autopilot.en.md) / [`Questions, Boundaries, and Peace`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md)
 - Physics-adjacent research: Physics Correspondence Policy → Physical Cosmological Notes
 - Publication and commensuration rules: Glossary → Publication and Commensuration Policy → Term Collision Registries

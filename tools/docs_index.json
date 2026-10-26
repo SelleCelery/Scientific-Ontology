@@ -5,7 +5,7 @@
     "manifest_sha256": "9eefd10e38f14033984afd37ad20106f07957a469016a68fc2bc3f7133917f19",
     "search_config_sha256": "2744701fb444b52f640f581c17c985be4974e8db5e07db809bc6f5813d4aafb1",
     "coverage": "role-aware-current-inventory",
-    "visibility_profile": "preview"
+    "visibility_profile": "public"
   },
   "search_profile": {
     "normalization": {

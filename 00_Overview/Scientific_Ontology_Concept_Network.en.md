@@ -808,7 +808,7 @@ The shortest reading route is:
 
 - [`SO Reflexive Philosophical Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md)
 - [`Judgment Transparency Topology`](../04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md)
-- [`Correctness, Logic, and Structural Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+- [`Correctness, Logic, and Structural Studies`](../05_Research_Notes/Metaphysical_Approach/README.md)
 
 ### Entering Through Expressive and Creative Contact
 
@@ -945,6 +945,6 @@ What Scientific Ontology manages is not a completed world.
 - [`Organizational_Boundary_and_Port_Model.ja.md`](../05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md)
 - [`Physics_Correspondence_Policy.en.md`](./Physics_Correspondence_Policy.en.md)
 - [`SO Reflexive Philosophical Research`](../04_Applications/SO_Reflexive_Philosophical_Research/README.md)
-- [`Correctness, Logic, and Structural Studies`](../05_Research_Notes/Correctness_Logic_and_Structural_Studies/README.md)
+- [`Correctness, Logic, and Structural Studies`](../05_Research_Notes/Metaphysical_Approach/README.md)
 - [`Questions, Boundaries, and Peace`](../07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.en.md)
 - [`Publication_and_Commensuration_Policy.md`](../90_Repository_Governance/Publication_and_Commensuration_Policy.md)

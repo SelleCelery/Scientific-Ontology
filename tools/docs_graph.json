@@ -4,7 +4,7 @@
     "manifest_sha256": "9eefd10e38f14033984afd37ad20106f07957a469016a68fc2bc3f7133917f19",
     "search_config_sha256": "2744701fb444b52f640f581c17c985be4974e8db5e07db809bc6f5813d4aafb1",
     "graph_config_sha256": "e714e8fa7c87f8b108367d0ee280758fb3bd984f4964b9867c2685a47ebeec78",
-    "visibility_profile": "preview",
+    "visibility_profile": "public",
     "glossary_sha256": "edfc8f833784c2dd1af7f0a6a8446974f51e32cd10cf1eb4ec35ad6fd75eaf2e",
     "system_map_sha256": "e1a91403b43dedf06de8201904edabd9c7ba93d326e420946926c0fa73e32c2e",
     "concept_network_sha256": "a2746ea5a6aff318aa7de1690c44f76c44089505610a95a84a3d2030723894d8"
@@ -22588,7 +22588,7 @@
         {
           "source_type": "markdown",
           "source_path": "CITATION.md",
-          "locator": "L87"
+          "locator": "L76"
         }
       ]
     },
@@ -30101,7 +30101,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L389"
+          "locator": "L388"
         }
       ]
     },
@@ -30257,7 +30257,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L383"
+          "locator": "L382"
         }
       ]
     },
@@ -30329,7 +30329,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L385"
+          "locator": "L384"
         }
       ]
     },
@@ -30401,7 +30401,7 @@
         {
           "source_type": "markdown",
           "source_path": "README.md",
-          "locator": "L382"
+          "locator": "L381"
         }
       ]
     },
