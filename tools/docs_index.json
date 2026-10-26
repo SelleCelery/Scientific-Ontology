@@ -2,7 +2,7 @@
   "schema_version": "0.2",
   "search_spec_version": "0.2",
   "source": {
-    "manifest_sha256": "9eefd10e38f14033984afd37ad20106f07957a469016a68fc2bc3f7133917f19",
+    "manifest_sha256": "871f560369a6c3b8f7a3d62f71493e7588c94e15970369a19a6a1ec07a69af18",
     "search_config_sha256": "2744701fb444b52f640f581c17c985be4974e8db5e07db809bc6f5813d4aafb1",
     "coverage": "role-aware-current-inventory",
     "visibility_profile": "public"

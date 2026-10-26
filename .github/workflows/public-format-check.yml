@@ -80,6 +80,7 @@ jobs:
               Path("tools/Public_Format_Registry.yml"),
               Path("tools/docs_manifest.yml"),
               Path("tools/maintenance_rules.yml"),
+              Path("tools/historical_attestation_policy.yml"),
               Path("90_Repository_Governance/Release_Update/release_state.yml"),
           ]
           for path in paths:
@@ -88,7 +89,18 @@ jobs:
           PY
 
       - name: Validate document-role and source contract
-        run: python scripts/validate_docs_manifest.py
+        run: |
+          python scripts/validate_docs_manifest.py \
+            --historical-md-log _build/reports/historical_attestation_report.md \
+            --historical-json-log _build/reports/historical_attestation_report.json \
+            --github-annotations
+
+      - name: Add historical attestation report to job summary
+        if: always()
+        run: |
+          if [ -f _build/reports/historical_attestation_report.md ]; then
+            cat _build/reports/historical_attestation_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Check release metadata synchronization
         run: |
@@ -131,6 +143,8 @@ jobs:
             public_format_report.json
             concept_contract_report.md
             concept_contract_report.json
+            _build/reports/historical_attestation_report.md
+            _build/reports/historical_attestation_report.json
 
   release-gate:
     name: Release contract gate
@@ -155,7 +169,19 @@ jobs:
           python -m pip install -r requirements-public-check.txt
 
       - name: Validate publication provenance boundary
-        run: python scripts/validate_docs_manifest.py --release-gate
+        run: |
+          python scripts/validate_docs_manifest.py \
+            --release-gate \
+            --historical-md-log _build/reports/release_historical_attestation_report.md \
+            --historical-json-log _build/reports/release_historical_attestation_report.json \
+            --github-annotations
+
+      - name: Add release historical attestation report to job summary
+        if: always()
+        run: |
+          if [ -f _build/reports/release_historical_attestation_report.md ]; then
+            cat _build/reports/release_historical_attestation_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Check release metadata synchronization
         run: |
@@ -200,3 +226,5 @@ jobs:
             release_public_format_report.json
             release_concept_contract_report.md
             release_concept_contract_report.json
+            _build/reports/release_historical_attestation_report.md
+            _build/reports/release_historical_attestation_report.json

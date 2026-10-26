@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "source": {
-    "manifest_sha256": "9eefd10e38f14033984afd37ad20106f07957a469016a68fc2bc3f7133917f19",
+    "manifest_sha256": "871f560369a6c3b8f7a3d62f71493e7588c94e15970369a19a6a1ec07a69af18",
     "search_config_sha256": "2744701fb444b52f640f581c17c985be4974e8db5e07db809bc6f5813d4aafb1",
     "graph_config_sha256": "e714e8fa7c87f8b108367d0ee280758fb3bd984f4964b9867c2685a47ebeec78",
     "visibility_profile": "public",
@@ -24362,7 +24362,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
-          "locator": "L1343"
+          "locator": "L1338"
         }
       ]
     },
@@ -24374,7 +24374,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
-          "locator": "L1013"
+          "locator": "L1008"
         }
       ]
     },
@@ -24386,7 +24386,7 @@
         {
           "source_type": "markdown",
           "source_path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
-          "locator": "L1013"
+          "locator": "L1008"
         }
       ]
     },

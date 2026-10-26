@@ -15,6 +15,7 @@ from jsonschema import Draft202012Validator
 
 from document_contract import (load_manifest, validate_manifest, public_assessment, resolve_repo_path, sha256, asset_bytes_match,
                                historical_manifest_status, historical_attestation_errors)
+from historical_attestation import observe_historical_attestation, load_policy, evaluate_policy
 from assessment_registration import summaries_from_review
 from rebuild_document_read_models import transactional_rebuild, GENERATED_FILES, BUILD_DIRECTORY
 
@@ -65,11 +66,12 @@ class ContractTests(unittest.TestCase):
         a['integrity']={'sha256':'0'*64,'basis':'synthetic_contract_test'}
         m['managed_assets'].append(a)
         self.assertTrue(self.errors(m))
-    def test_current_historical_attestation_resolves_exact_declared_state(self):
+    def test_current_historical_attestation_is_observed_not_count_bound(self):
         spec=next(x for x in self.manifest['provenance_sets'] if x['id']=='volume_01_historical_manifest')
         status=historical_manifest_status(ROOT,spec)
-        self.assertEqual({k:status[k] for k in ('matched','mismatched','missing','invalid')},
-                         {'matched':19,'mismatched':26,'missing':0,'invalid':0})
+        self.assertEqual(status['missing'],0)
+        self.assertEqual(status['invalid'],0)
+        self.assertEqual(status['matched']+status['mismatched'],len(status['paths']))
         records={str(e['path']):e for e in [*self.manifest['documents'],*self.manifest['managed_assets']]}
         self.assertEqual(historical_attestation_errors(ROOT,spec,status,records=records),[])
 
@@ -91,8 +93,7 @@ class ContractTests(unittest.TestCase):
                     'status':'accepted_as_historical_method_record','attested_at':'2026-09-13',
                     'acceptance_scope':'synthetic_test','attestation_path':'volume/ATTESTATION.md',
                     'current_snapshot_path':'volume/CURRENT.sha256',
-                    'expected_historical_relation':{'matched':0,'mismatched':1,'missing':0,'invalid':0},
-                    'mismatch_classification':{'formatting_level':1,'later_wrapper_or_provenance_evolution':0},
+                    'policy_profile':'accepted_as_historical_method_record',
                 },
             }
             records={
@@ -100,11 +101,51 @@ class ContractTests(unittest.TestCase):
                 'volume/CURRENT.sha256':{'document_role':'provenance_asset'},
             }
             status=historical_manifest_status(root,spec)
-            self.assertEqual(historical_attestation_errors(root,spec,status,records=records),[])
+            self.assertEqual(historical_attestation_errors(root,spec,status,records=records,policy=load_policy(ROOT)),[])
             current.write_bytes(b'drifted\n')
             status=historical_manifest_status(root,spec)
-            errors=historical_attestation_errors(root,spec,status,records=records)
-            self.assertTrue(any('snapshot drift detected' in e for e in errors))
+            errors=historical_attestation_errors(root,spec,status,records=records,policy=load_policy(ROOT))
+            self.assertTrue(any('attested_snapshot_content_drift' in e for e in errors))
+    def test_declared_eol_only_snapshot_difference_is_observed_not_blocked(self):
+        import hashlib
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);base=root/'volume';base.mkdir()
+            raw=b'a,b\r\n1,2\r\n';lf=raw.replace(b'\r\n',b'\n')
+            current=base/'record.csv';current.write_bytes(lf)
+            raw_digest=hashlib.sha256(raw).hexdigest();lf_digest=hashlib.sha256(lf).hexdigest()
+            (base/'MANIFEST.sha256').write_text(f'{raw_digest}  record.csv\n',encoding='utf-8')
+            (base/'CURRENT.sha256').write_text(f'{raw_digest}  record.csv\n',encoding='utf-8')
+            (base/'ATTESTATION.md').write_text('# synthetic attestation\n',encoding='utf-8')
+            spec={
+                'id':'synthetic_eol_set','root':'volume','path':'volume/MANIFEST.sha256',
+                'integrity_claim':'attested_historical_manifest_with_current_divergence',
+                'release_review_required':False,
+                'attestation':{
+                    'status':'accepted_as_historical_method_record','attested_at':'2026-09-13',
+                    'acceptance_scope':'synthetic_test','attestation_path':'volume/ATTESTATION.md',
+                    'current_snapshot_path':'volume/CURRENT.sha256',
+                    'policy_profile':'accepted_as_historical_method_record',
+                },
+            }
+            records={
+                'volume/ATTESTATION.md':{'document_role':'historical_support'},
+                'volume/CURRENT.sha256':{'document_role':'provenance_asset'},
+                'volume/record.csv':{
+                    'document_role':'provenance_asset',
+                    'integrity':{
+                        'sha256':raw_digest,
+                        'basis':'rc004_snapshot_not_historical_certification',
+                        'git_lf_sha256':lf_digest,
+                        'git_lf_basis':'rc004_HEAD_blob_CRLF_only_difference',
+                    },
+                },
+            }
+            observation=observe_historical_attestation(root,spec,records=records)
+            self.assertEqual(observation['historical_relation']['counts']['equivalent'],1)
+            self.assertEqual(observation['attested_current_relation']['counts']['equivalent'],1)
+            findings=evaluate_policy(observation,load_policy(ROOT),release_gate=True)
+            self.assertFalse(any(f['action']=='block' for f in findings))
+
     def test_unapproved_scores_rejected(self):
         m=copy.deepcopy(self.manifest);m['documents'][0]['assessment']['representative']={'strength':'S5','exposure':'E3'};self.assertTrue(self.errors(m))
     def test_nonclaim_role_not_forced_into_scoring(self):

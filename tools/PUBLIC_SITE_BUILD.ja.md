@@ -108,9 +108,15 @@ python scripts/build_public_site.py --check
 
 ## 8. GitHub Actions での利用
 
-GitHub Actions でも同じ builder / checker を呼ぶ。
+GitHub Actions でも同じ builder / checker を呼ぶ。通常経路では、`main` pushで起動した `Public Format Check` が成功すると、その検査済みcommit SHAを使って `Public Navigator Pages` が自動起動する。`workflow_dispatch` は手動再実行・復旧用として残す。
 
 ```text
+push main
+  ↓
+Public Format Check
+  ↓ policy gate PASS
+Public Navigator Pages (tested head_sha)
+  ↓
 DN-6 gate
   ↓
 build_public_site.py
@@ -122,7 +128,7 @@ upload-pages-artifact
 deploy-pages
 ```
 
-ローカル用と CI 用で別の build logic を作らない。
+ローカル用と CI 用で別の build logic を作らない。検査失敗時はdeployしないが、観測件数や非blocking findingの多さだけでは停止しない。
 
 ## v5.1 role-aware build and update boundary
 
@@ -134,4 +140,4 @@ For incoming updates, the verification hook runs `scripts/rebuild_document_read_
 
 When migrating the hook itself, use the externally extracted, approved package policy via the manager's global `--policy` argument for inspect/register/plan/apply. Otherwise an already running manager keeps the old policy it loaded before applying files. Do not use skip-check or dirty-tree flags to bypass the old stale-public-document failure.
 
-Historical MANIFEST mismatches remain visible. Local editing/build verification reports them; `validate_docs_manifest.py --release-gate` blocks publication until independently resolved. Recomputing a historical manifest to fit later editorial wrappers is not a repair.
+Historical MANIFEST mismatches remain visible as generated observations. `validate_docs_manifest.py` writes the mismatch list and classification report; `tools/historical_attestation_policy.yml` separately decides whether each class is observation-only, warning, or blocking. A declared EOL-only representation is nonblocking. Missing evidence, unsafe paths, unregistered path-set drift, or substantive drift from the attested-current snapshot remain blocking. Recomputing a historical manifest to fit later editorial wrappers is not a repair, and aggregate matched/mismatched counts are not release contracts.

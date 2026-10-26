@@ -8,12 +8,17 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 from pathlib import Path, PurePosixPath
 from typing import Any, Mapping
 
 import yaml
 from jsonschema import Draft202012Validator
+
+from historical_attestation import (
+    evaluate_policy as evaluate_historical_attestation_policy,
+    load_policy as load_historical_attestation_policy,
+    observe_historical_attestation,
+)
 
 CONTRACT_VERSION = 'document-contract/1.0'
 ROLES = ('theory_model', 'research_note', 'application_protocol', 'methodological_governance',
@@ -94,168 +99,48 @@ def schema_errors(root: Path, manifest: Mapping[str, Any]) -> list[str]:
             sorted(Draft202012Validator(schema).iter_errors(manifest), key=lambda e: str(e.absolute_path))]
 
 
-def _checksum_manifest_entries(path: Path) -> tuple[list[tuple[str, str]], int, list[str]]:
-    entries: list[tuple[str, str]] = []
-    invalid = 0
-    duplicates: list[str] = []
-    seen: set[str] = set()
-    for line in path.read_text(encoding='utf-8-sig').splitlines():
-        if not line.strip() or line.lstrip().startswith('#'):
-            continue
-        match = re.match(r'^([0-9a-fA-F]{64})\s+\*?(.+?)\s*$', line)
-        if not match:
-            invalid += 1
-            continue
-        rel = match[2]
-        if rel in seen:
-            invalid += 1
-            duplicates.append(rel)
-            continue
-        seen.add(rel)
-        entries.append((match[1].lower(), rel))
-    return entries, invalid, duplicates
-
-
 def historical_manifest_status(root: Path, spec: Mapping[str, Any]) -> dict[str, Any]:
-    base = resolve_repo_path(root, str(spec['root']))
-    path = resolve_repo_path(root, str(spec['path']))
-    entries, invalid, duplicates = _checksum_manifest_entries(path)
-    result: dict[str, Any] = {
-        'id': spec['id'], 'matched': 0, 'mismatched': 0, 'missing': 0, 'invalid': invalid,
-        'paths': [], 'matched_paths': [], 'mismatched_paths': [], 'missing_paths': [],
-        'duplicates': duplicates,
+    """Compatibility projection of the generated historical observation.
+
+    Declared EOL-equivalent representations count as effective matches. The
+    returned aggregate is derived at runtime and is not an acceptance contract.
+    """
+    observation = observe_historical_attestation(root, spec)
+    relation = observation.get('historical_relation') or {}
+    exact = relation.get('exact_paths', [])
+    equivalent = relation.get('equivalent_paths', [])
+    divergent = relation.get('divergent_paths', [])
+    missing = relation.get('missing_paths', [])
+    unsafe = relation.get('unsafe_paths', [])
+    invalid = relation.get('parse_issues', [])
+    return {
+        'id': observation.get('id'),
+        'matched': len(exact) + len(equivalent),
+        'mismatched': len(divergent),
+        'missing': len(missing),
+        'invalid': len(unsafe) + len(invalid),
+        'paths': [x['path'] for x in relation.get('path_digests', [])],
+        'matched_paths': [x['path'] for x in [*exact, *equivalent]],
+        'mismatched_paths': [x['path'] for x in divergent],
+        'missing_paths': list(missing),
+        'equivalent_paths': [x['path'] for x in equivalent],
+        'duplicates': [str(x.get('path', '')) for x in invalid if x.get('code') == 'duplicate_checksum_path'],
     }
-    for expected, rel in entries:
-        target = (base / rel).resolve()
-        if not target.is_relative_to(base.resolve()):
-            result['invalid'] += 1
-            continue
-        result['paths'].append(rel)
-        if not target.is_file():
-            result['missing'] += 1
-            result['missing_paths'].append(rel)
-        elif sha256(target) == expected:
-            result['matched'] += 1
-            result['matched_paths'].append(rel)
-        else:
-            result['mismatched'] += 1
-            result['mismatched_paths'].append(rel)
-    return result
 
 
 def historical_attestation_errors(
     root: Path,
     spec: Mapping[str, Any],
-    status: Mapping[str, Any],
+    status: Mapping[str, Any] | None = None,
     *,
     records: Mapping[str, Mapping[str, Any]] | None = None,
+    policy: Mapping[str, Any] | None = None,
 ) -> list[str]:
-    """Validate an explicit present-day acceptance of known historical divergence.
-
-    The historical checksum manifest remains immutable. The attested current snapshot
-    binds the exact bytes reviewed at attestation time, so later drift reopens review
-    even when historical matched/mismatched counts happen to stay unchanged.
-    """
-    errors: list[str] = []
-    att = spec.get('attestation')
-    if not isinstance(att, Mapping):
-        return [f"Historical attestation is missing for {spec.get('id', '<unknown>')}"]
-    if att.get('status') != 'accepted_as_historical_method_record':
-        errors.append(f"Historical attestation status is not accepted_as_historical_method_record: {spec['id']}")
-    if not re.match(r'^\d{4}-\d{2}-\d{2}$', str(att.get('attested_at', ''))):
-        errors.append(f"Historical attestation date is invalid: {spec['id']}")
-    if not str(att.get('acceptance_scope', '')).strip():
-        errors.append(f"Historical attestation acceptance_scope is missing: {spec['id']}")
-    if spec.get('release_review_required') is not False:
-        errors.append(f"Attested provenance set must set release_review_required: false: {spec['id']}")
-
-    expected = att.get('expected_historical_relation')
-    if not isinstance(expected, Mapping):
-        errors.append(f"Historical attestation expected relation is missing: {spec['id']}")
-    else:
-        for key in ('matched', 'mismatched', 'missing', 'invalid'):
-            value = expected.get(key)
-            if not isinstance(value, int) or value < 0:
-                errors.append(f"Historical attestation expected relation has invalid {key}: {spec['id']}")
-            elif value != status.get(key):
-                errors.append(
-                    f"Historical attestation relation drift for {spec['id']}: {key} expected={value} actual={status.get(key)}"
-                )
-
-    classes = att.get('mismatch_classification')
-    if not isinstance(classes, Mapping):
-        errors.append(f"Historical attestation mismatch classification is missing: {spec['id']}")
-    else:
-        formatting = classes.get('formatting_level')
-        wrapper = classes.get('later_wrapper_or_provenance_evolution')
-        if not isinstance(formatting, int) or formatting < 0 or not isinstance(wrapper, int) or wrapper < 0:
-            errors.append(f"Historical attestation mismatch classification counts are invalid: {spec['id']}")
-        elif formatting + wrapper != status.get('mismatched'):
-            errors.append(
-                f"Historical attestation mismatch classification total differs from actual mismatches: {spec['id']}"
-            )
-
-    attestation_path_value = str(att.get('attestation_path', ''))
-    snapshot_path_value = str(att.get('current_snapshot_path', ''))
-    try:
-        attestation_path = resolve_repo_path(root, attestation_path_value)
-        snapshot_path = resolve_repo_path(root, snapshot_path_value)
-    except ValueError as exc:
-        errors.append(str(exc))
-        return errors
-    if not attestation_path.is_file():
-        errors.append(f"Historical attestation record is missing: {attestation_path_value}")
-    if not snapshot_path.is_file():
-        errors.append(f"Historical attested-current snapshot is missing: {snapshot_path_value}")
-        return errors
-
-    if records is not None:
-        att_entry = records.get(attestation_path_value)
-        snap_entry = records.get(snapshot_path_value)
-        if not att_entry or att_entry.get('document_role') != 'historical_support':
-            errors.append(f"Historical attestation record is not registered as historical_support: {attestation_path_value}")
-        if not snap_entry or snap_entry.get('document_role') != 'provenance_asset':
-            errors.append(f"Historical current snapshot is not registered as provenance_asset: {snapshot_path_value}")
-
-    base = resolve_repo_path(root, str(spec['root']))
-    snapshot_entries, snapshot_invalid, snapshot_duplicates = _checksum_manifest_entries(snapshot_path)
-    if snapshot_invalid:
-        errors.append(
-            f"Historical attested-current snapshot has invalid or duplicate entries: {snapshot_path_value} invalid={snapshot_invalid}"
-        )
-    if snapshot_duplicates:
-        errors.append(f"Historical attested-current snapshot duplicates paths: {', '.join(snapshot_duplicates)}")
-
-    historical_paths = set(status.get('paths', []))
-    snapshot_paths = {rel for _, rel in snapshot_entries}
-    if snapshot_paths != historical_paths:
-        missing_from_snapshot = sorted(historical_paths - snapshot_paths)
-        extra_in_snapshot = sorted(snapshot_paths - historical_paths)
-        errors.append(
-            f"Historical attested-current snapshot path set differs from historical manifest: {spec['id']} "
-            f"missing={missing_from_snapshot} extra={extra_in_snapshot}"
-        )
-
-    drifted: list[str] = []
-    unsafe: list[str] = []
-    missing_current: list[str] = []
-    for expected_digest, rel in snapshot_entries:
-        target = (base / rel).resolve()
-        if not target.is_relative_to(base.resolve()):
-            unsafe.append(rel)
-            continue
-        if not target.is_file():
-            missing_current.append(rel)
-        elif sha256(target) != expected_digest:
-            drifted.append(rel)
-    if unsafe:
-        errors.append(f"Historical attested-current snapshot contains unsafe paths: {unsafe}")
-    if missing_current:
-        errors.append(f"Historical attested-current snapshot paths are now missing: {missing_current}")
-    if drifted:
-        errors.append(f"Historical attested-current snapshot drift detected: {drifted}")
-    return errors
-
+    """Compatibility wrapper returning only policy-blocking findings."""
+    observation = observe_historical_attestation(root, spec, records=records)
+    effective_policy = policy or load_historical_attestation_policy(root)
+    findings = evaluate_historical_attestation_policy(observation, effective_policy, release_gate=True)
+    return [f"{f['code']}: {f['message']}" for f in findings if f.get('action') == 'block']
 
 
 def asset_bytes_match(entry: Mapping[str, Any], data: bytes) -> bool:
@@ -271,7 +156,15 @@ def asset_bytes_match(entry: Mapping[str, Any], data: bytes) -> bool:
             and b'\r' not in data
             and digest == integrity.get('git_lf_sha256'))
 
-def validate_manifest(root: Path, manifest: Mapping[str, Any], *, coverage: bool = True) -> tuple[list[str], list[str]]:
+def validate_manifest(
+    root: Path,
+    manifest: Mapping[str, Any],
+    *,
+    coverage: bool = True,
+    release_gate: bool = False,
+    historical_policy: Mapping[str, Any] | None = None,
+    historical_observations: list[dict[str, Any]] | None = None,
+) -> tuple[list[str], list[str]]:
     errors = schema_errors(root, manifest)
     warnings: list[str] = []
     if errors: return errors, warnings
@@ -330,13 +223,31 @@ def validate_manifest(root: Path, manifest: Mapping[str, Any], *, coverage: bool
         for rel in [*e.get('artifact_relations',[]), *e.get('relationships',[])]:
             if rel['type'] not in relation_types: errors.append(f'Unknown external relation: {rel}')
             if rel['target_artifact'] not in artifact_ids: errors.append(f'Unknown external target: {rel}')
+    policy = historical_policy or load_historical_attestation_policy(root)
     for spec in manifest.get('provenance_sets',[]):
-        try: status=historical_manifest_status(root,spec)
-        except (ValueError,OSError) as exc: errors.append(str(exc));continue
-        if spec.get('integrity_claim') == 'attested_historical_manifest_with_current_divergence':
-            errors.extend(historical_attestation_errors(root,spec,status,records=bypath))
-        elif any(status[k] for k in ('mismatched','missing','invalid')):
-            warnings.append(f"Historical integrity remains unresolved: {status['id']} matched={status['matched']} mismatched={status['mismatched']} missing={status['missing']} invalid={status['invalid']}. Snapshot binding is not historical certification.")
+        try:
+            observation = observe_historical_attestation(root, spec, records=bypath)
+            findings = evaluate_historical_attestation_policy(
+                observation,
+                policy,
+                release_gate=release_gate,
+            )
+        except (ValueError, OSError) as exc:
+            errors.append(str(exc))
+            continue
+        if historical_observations is not None:
+            historical_observations.append({
+                'observation': observation,
+                'policy_findings': findings,
+            })
+        for finding in findings:
+            message = f"{finding['code']}: {finding['message']}"
+            if finding.get('paths'):
+                message += f" paths={finding['paths']}"
+            if finding['action'] == 'block':
+                errors.append(message)
+            elif finding['action'] == 'warn':
+                warnings.append(message)
     if coverage:
         for p in root.rglob('*.md'):
             rel=p.relative_to(root).as_posix();parts=PurePosixPath(rel).parts

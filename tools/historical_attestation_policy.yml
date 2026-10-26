@@ -1,0 +1,44 @@
+schema_version: "historical-attestation-policy/1.0"
+default_profile: strict
+
+profiles:
+  strict:
+    default_action: block
+    rules:
+      historical_content_divergence: warn
+      historical_eol_equivalent: observe
+      attested_snapshot_eol_equivalent: observe
+
+  accepted_as_historical_method_record:
+    default_action: block
+    rules:
+      # Historical divergence is the subject of the attestation, not a new defect.
+      historical_content_divergence: observe
+      historical_eol_equivalent: observe
+
+      # A second, explicitly bound digest may represent the same CSV text after
+      # Git checkout normalization. It remains visible but does not block.
+      attested_snapshot_eol_equivalent: observe
+
+      # Current snapshot content/path drift is materially different and blocks.
+      attested_snapshot_content_drift: block
+      attested_snapshot_path_set_drift: block
+      attested_snapshot_path_missing: block
+      attested_snapshot_path_unsafe: block
+      attested_snapshot_invalid: block
+
+      # Historical evidence structure must remain readable and traceable.
+      historical_manifest_invalid: block
+      historical_path_missing: block
+      historical_path_unsafe: block
+      attestation_missing: block
+      attestation_status_invalid: block
+      attestation_date_invalid: block
+      acceptance_scope_missing: block
+      release_review_flag_invalid: block
+      unsafe_contract_path: block
+      historical_manifest_missing: block
+      attestation_record_missing: block
+      attested_snapshot_missing: block
+      attestation_record_role_invalid: block
+      attested_snapshot_role_invalid: block

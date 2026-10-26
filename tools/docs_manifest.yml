@@ -10792,11 +10792,4 @@ provenance_sets:
       04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/HISTORICAL_ATTESTATION_2026-09-13.ja.md
     current_snapshot_path:
       04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/ATTESTED_CURRENT_2026-09-13.sha256
-    expected_historical_relation:
-      matched: 19
-      mismatched: 26
-      missing: 0
-      invalid: 0
-    mismatch_classification:
-      formatting_level: 24
-      later_wrapper_or_provenance_evolution: 2
+    policy_profile: accepted_as_historical_method_record
