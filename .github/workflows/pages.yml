@@ -1,6 +1,13 @@
 name: Public Navigator Pages
 
 on:
+  workflow_run:
+    workflows:
+      - Public Format Check
+    types:
+      - completed
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -8,15 +15,27 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     name: Build and verify public site
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'push' &&
+       github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout tested main commit
+        if: github.event_name == 'workflow_run'
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+
+      - name: Checkout selected ref
+        if: github.event_name == 'workflow_dispatch'
         uses: actions/checkout@v6
 
       - name: Set up Python
@@ -41,7 +60,19 @@ jobs:
           git diff --exit-code -- navigator/dist
 
       - name: Validate publication provenance boundary
-        run: python scripts/validate_docs_manifest.py --release-gate
+        run: |
+          python scripts/validate_docs_manifest.py \
+            --release-gate \
+            --historical-md-log _build/reports/pages_historical_attestation_report.md \
+            --historical-json-log _build/reports/pages_historical_attestation_report.json \
+            --github-annotations
+
+      - name: Add historical attestation report to summary
+        if: always()
+        run: |
+          if [ -f _build/reports/pages_historical_attestation_report.md ]; then
+            cat _build/reports/pages_historical_attestation_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Run DN-6 release gate
         run: |
@@ -58,6 +89,16 @@ jobs:
       - name: Check deterministic public build
         run: |
           python scripts/build_public_site.py --check
+
+      - name: Upload Pages validation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-validation-report
+          if-no-files-found: warn
+          path: |
+            _build/reports/pages_historical_attestation_report.md
+            _build/reports/pages_historical_attestation_report.json
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
