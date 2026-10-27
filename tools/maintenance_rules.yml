@@ -123,6 +123,7 @@ maintenance_rules:
         note: "量子論上のエンタングルメントと同一視しない。"
         expected_boundary_markers:
           - "同一視しない"
+          - "同一視することはできない"
           - "置き換えない"
           - "代替ではない"
           - "not identical with quantum entanglement"
@@ -143,6 +144,7 @@ maintenance_rules:
           - "標準"
           - "同一ではない"
           - "概念語"
+          - "物理量へ昇格させない"
           - "standard thermodynamics"
           - "information theory"
       - term: "ネゲントロピー経済"
