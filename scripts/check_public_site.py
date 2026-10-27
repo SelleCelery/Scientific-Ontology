@@ -13,6 +13,7 @@ from typing import Any
 
 from public_site_common import (
     EXTERNAL_SCHEME_RE,
+    fixed_release_metadata,
     MARKDOWN_LINK_RE,
     TEXT_EXTENSIONS,
     find_forbidden_keys,
@@ -133,6 +134,8 @@ def main() -> int:
     if not config_path.is_absolute():
         config_path = root / config_path
     cfg = load_yaml(config_path)
+    release_state = load_yaml(root / cfg["sources"]["release_state"])
+    fixed_release = fixed_release_metadata(release_state)
     site = Path(args.site_dir) if args.site_dir else Path(str(cfg["site"]["output_dir"]))
     if not site.is_absolute():
         site = root / site
@@ -208,6 +211,10 @@ def main() -> int:
         fail_if("navigator/" not in root_html, "root index does not lead to Navigator")
         public_html = strict_utf8(site / "navigator/index.html")
         fail_if('data-interface="public"' not in public_html, "Navigator public shell marker is missing")
+        fail_if("{{FIXED_RELEASE_VERSION}}" in public_html or "{{FIXED_RELEASE_URL}}" in public_html, "Navigator fixed-release template token leaked into Pages artifact")
+        fail_if(fixed_release["version"] not in public_html, f"Navigator fixed release version mismatch: expected {fixed_release['version']}")
+        fail_if(fixed_release["url"] not in public_html, f"Navigator fixed release URL mismatch: expected {fixed_release['url']}")
+        fail_if(manifest.get("source", {}).get("fixed_release") != fixed_release, "artifact manifest fixed release differs from release_state.yml")
         fail_if("dev.html" in public_html or "候補レビュー" in public_html, "developer UI marker leaked into public HTML")
         fail_if((site / "navigator/dev.html").exists(), "developer shell is present in Pages artifact")
         fail_if((site / "navigator/src").exists(), "TypeScript source directory is present in Pages artifact")

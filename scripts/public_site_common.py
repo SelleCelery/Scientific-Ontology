@@ -41,6 +41,40 @@ def load_yaml(path: Path) -> dict[str, Any]:
     return data or {}
 
 
+def fixed_release_metadata(release_state: dict[str, Any]) -> dict[str, str]:
+    """Resolve the fixed public release shown by the Living Preview banner.
+
+    A published current release is its own fixed release. During a later
+    working/release-candidate cycle, previous_release remains the fixed release
+    until the new release is published.
+    """
+    release = release_state.get("release") or {}
+    status = str(release.get("status") or "").strip()
+    if status == "published":
+        version = str(release.get("display_version") or "").strip()
+        zenodo = release_state.get("zenodo") or {}
+        version_doi = zenodo.get("version_doi") or {}
+        url = str(version_doi.get("url") or "").strip()
+        if not url:
+            doi = str(version_doi.get("value") or "").strip()
+            url = f"https://doi.org/{doi}" if doi else ""
+        source = "current_release"
+    else:
+        previous = release_state.get("previous_release") or {}
+        version = str(previous.get("display_version") or "").strip()
+        doi = str(previous.get("doi") or "").strip()
+        url = str(previous.get("url") or "").strip()
+        if not url and doi:
+            url = f"https://doi.org/{doi}"
+        source = "previous_release"
+
+    if not version:
+        raise ValueError(f"fixed release version is unavailable for release status {status!r}")
+    if not url:
+        raise ValueError(f"fixed release DOI URL is unavailable for {version}")
+    return {"version": version, "url": url, "source": source}
+
+
 def load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 

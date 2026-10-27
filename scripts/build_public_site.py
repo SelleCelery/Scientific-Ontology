@@ -12,6 +12,7 @@ from typing import Any
 
 from public_site_common import (
     MARKDOWN_LINK_RE,
+    fixed_release_metadata,
     github_blob_url,
     load_json,
     load_yaml,
@@ -26,6 +27,9 @@ from public_site_common import (
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "tools" / "public_site.yml"
 
+FIXED_RELEASE_VERSION_TOKEN = "{{FIXED_RELEASE_VERSION}}"
+FIXED_RELEASE_URL_TOKEN = "{{FIXED_RELEASE_URL}}"
+
 
 class BuildError(RuntimeError):
     pass
@@ -34,6 +38,19 @@ class BuildError(RuntimeError):
 def copy_bytes(source: Path, destination: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_bytes(source.read_bytes())
+
+
+def render_navigator_index(source: Path, destination: Path, release_state: dict[str, Any]) -> None:
+    text = source.read_text(encoding="utf-8")
+    if FIXED_RELEASE_VERSION_TOKEN not in text or FIXED_RELEASE_URL_TOKEN not in text:
+        raise BuildError("navigator/index.html is missing fixed-release template tokens")
+    fixed = fixed_release_metadata(release_state)
+    rendered = text.replace(FIXED_RELEASE_VERSION_TOKEN, fixed["version"])
+    rendered = rendered.replace(FIXED_RELEASE_URL_TOKEN, fixed["url"])
+    if FIXED_RELEASE_VERSION_TOKEN in rendered or FIXED_RELEASE_URL_TOKEN in rendered:
+        raise BuildError("navigator fixed-release template tokens remain after rendering")
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    destination.write_text(rendered, encoding="utf-8", newline="\n")
 
 
 def root_index(target: str) -> str:
@@ -153,7 +170,10 @@ def build_site(root: Path, output: Path, config_path: Path, source_ref_override:
         source = root / rel
         if not source.is_file():
             raise BuildError(f"navigator public file is missing: {rel}")
-        copy_bytes(source, output / rel)
+        if rel == "navigator/index.html":
+            render_navigator_index(source, output / rel, release_state)
+        else:
+            copy_bytes(source, output / rel)
         copied_navigator.append(rel)
 
     for pattern in cfg["sources"].get("navigator_public_globs", []):
@@ -209,6 +229,7 @@ def build_site(root: Path, output: Path, config_path: Path, source_ref_override:
         "source_ref": source_ref,
         "release_version": release_state.get("release", {}).get("version"),
         "release_status": release_state.get("release", {}).get("status"),
+        "fixed_release": fixed_release_metadata(release_state),
         "public_catalog_sha256": sha256_file(catalog_path),
         "public_graph_sha256": sha256_file(graph_path),
     }
