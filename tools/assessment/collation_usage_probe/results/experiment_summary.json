@@ -1,0 +1,54 @@
+{
+  "compound_only_sentences": 18,
+  "cooccurring_lexicon_terms": 39,
+  "definition_cycle_back_to_root": [
+    "照合 > 残差 > 照合"
+  ],
+  "definition_reference_edges": 15,
+  "direct_root_sentences": 43,
+  "exact_feature_combinations_checked": 962598,
+  "exact_representatives": [
+    "SAT:0.3:C4",
+    "SAT:0.3.3:C6",
+    "SAT:8.1:C4",
+    "SAT:8.2:C4",
+    "SAT:11.3.4:C7"
+  ],
+  "exact_surface_feature_max": 0.759036,
+  "full_corpus_greedy_coverage": 0.698795,
+  "limits": [
+    "Lexicon and longest string matching, not parsing or semantic equivalence.",
+    "A same-sentence edge is not logical implication or required dependency.",
+    "Only pre-specified surface role cues; no syntax scope resolution.",
+    "Surface-feature coverage is NOT entropy, negentropy, MDL in bits, or alpha/beta audit.",
+    "Exact optimization covers only the fixed surface-feature model, not semantic correctness.",
+    "No LLM latent training-data distance or external corpus probability is measured.",
+    "All source evidence is retained; representative changes are reversible.",
+    "The complete-source definition reference graph is retrospective and is not used in online selection."
+  ],
+  "literal_root_surface_sentences": 61,
+  "max_depth": 2,
+  "orders_compared": 10,
+  "reached_depths": {
+    "一致": 1,
+    "不一致": 1,
+    "内部ヒューリスティック": 2,
+    "再照合": 2,
+    "分類": 2,
+    "同期": 1,
+    "外部ヒューリスティック": 2,
+    "意味": 1,
+    "操作": 1,
+    "未解決": 2,
+    "残差": 1,
+    "照合": 0,
+    "観測": 2,
+    "過程": 2
+  },
+  "reached_terms": 14,
+  "representative_budget": 5,
+  "root": "照合",
+  "sentences": 346,
+  "source": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+  "source_sha256": "2f902285215ffac36f850cc118034787244f1c882f9274549da468960059d534"
+}

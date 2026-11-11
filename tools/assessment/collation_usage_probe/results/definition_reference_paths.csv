@@ -1,0 +1,16 @@
+depth,source_term,target_term,source_sentence,source_line,source_text,path,relation,target_has_definition
+1,照合,一致,SAT:8.1:C4,283,照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,照合 > 一致,definition_sentence_literal_reference_not_entailment,0
+1,照合,不一致,SAT:8.1:C4,283,照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,照合 > 不一致,definition_sentence_literal_reference_not_entailment,0
+1,照合,同期,SAT:8.1:C4,283,照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,照合 > 同期,definition_sentence_literal_reference_not_entailment,1
+1,照合,意味,SAT:8.1:C4,283,照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,照合 > 意味,definition_sentence_literal_reference_not_entailment,0
+1,照合,操作,SAT:8.1:C4,283,照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,照合 > 操作,definition_sentence_literal_reference_not_entailment,0
+1,照合,残差,SAT:8.1:C4,283,照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,照合 > 残差,definition_sentence_literal_reference_not_entailment,1
+2,同期,内部ヒューリスティック,SAT:7.3:C4,255,同期とは、内部ヒューリスティックと外部ヒューリスティックが、運用上安定して対応することである。,照合 > 同期 > 内部ヒューリスティック,definition_sentence_literal_reference_not_entailment,1
+2,同期,外部ヒューリスティック,SAT:7.3:C4,255,同期とは、内部ヒューリスティックと外部ヒューリスティックが、運用上安定して対応することである。,照合 > 同期 > 外部ヒューリスティック,definition_sentence_literal_reference_not_entailment,1
+2,残差,未解決,SAT:9.5:C4,327,残差とは、単なる未解決問題ではない。,照合 > 残差 > 未解決,definition_sentence_literal_reference_not_entailment,1
+2,残差,再照合,SAT:9.5.1:C6,329,残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,照合 > 残差 > 再照合,definition_sentence_literal_reference_not_entailment,0
+2,残差,分類,SAT:9.5.1:C6,329,残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,照合 > 残差 > 分類,definition_sentence_literal_reference_not_entailment,1
+2,残差,同期,SAT:9.5.1:C6,329,残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,照合 > 残差 > 同期,definition_sentence_literal_reference_not_entailment,1
+2,残差,照合,SAT:9.5.1:C6,329,残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,照合 > 残差 > 照合,definition_sentence_literal_reference_not_entailment,1
+2,残差,観測,SAT:9.5.1:C6,329,残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,照合 > 残差 > 観測,definition_sentence_literal_reference_not_entailment,0
+2,残差,過程,SAT:9.5.1:C6,329,残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,照合 > 残差 > 過程,definition_sentence_literal_reference_not_entailment,0

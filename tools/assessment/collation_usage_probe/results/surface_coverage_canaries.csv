@@ -1,0 +1,8 @@
+number,sentence_id,text,exact_feature_representative,unrepresented_feature_cues,semantic_necessity,review_reason
+7.4,SAT:7.4:C4,したがって、同期には照合が必要である。,0,role:cue_necessary,not_audited,Protection against mistaking feature coverage for logical spine
+8.1,SAT:8.1:C4,照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,1,,not_audited,Protection against mistaking feature coverage for logical spine
+8.2,SAT:8.2:C4,照合は、単なる比較ではない。,1,,not_audited,Protection against mistaking feature coverage for logical spine
+8.3,SAT:8.3:C4,照合は、どの履歴場において、どの外部ヒューリスティックと、どの条件で一致しているのかを問う。,0,neighbor:条件,not_audited,Protection against mistaking feature coverage for logical spine
+8.6,SAT:8.6:C4,照合は、残差を意味の資源として保持する。,0,,not_audited,Protection against mistaking feature coverage for logical spine
+8.8,SAT:8.8:C4,照合の過剰は、残差保持ではなく、残差の意味強制になる。,0,neighbor:残差保持,not_audited,Protection against mistaking feature coverage for logical spine
+9.5.1,SAT:9.5.1:C6,残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,0,neighbor:再照合,not_audited,Protection against mistaking feature coverage for logical spine

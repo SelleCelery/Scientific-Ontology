@@ -1,0 +1,62 @@
+sentence_id,number,line,root_match,text,other_terms,surface_role_cues,alpha_status,interpretation_status
+SAT:L9:C0,,9,direct,本稿は、知の成立条件を、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持・再照合可能性から再定義するための基幹命題列である。,内部ヒューリスティック;再照合可能性;同期;境界;外部ヒューリスティック;履歴;条件;残差保持;知,cue_preserve;qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:L11:C14,,11,direct,既存思想との接続は、権威づけではなく照合のために注解ファイルへ置く。,,negation_scope_unknown,unassessed_logic,candidate_only
+SAT:0.2:C4,0.2,21,direct,知とは、履歴を持つ存在が、外部からの入力を受け取り、内部で処理し、外部と同期し、その一致・不一致・残差を照合し、なお閉じきれないものを保持しながら、次の判断可能性を維持することで成立する。,一致;不一致;保持;判断可能性;同期;履歴;残差;知,cue_preserve;negation_scope_unknown;other_term_defined,unassessed_logic,candidate_only
+SAT:0.3:C4,0.3,27,direct,認識とは、境界において、内部ヒューリスティックと外部ヒューリスティックが接触し、同期し、照合され、残差を残しながら更新される過程である。,内部ヒューリスティック;同期;境界;外部ヒューリスティック;接触;更新;残差;認識;過程,cue_update;other_term_defined,unassessed_logic,candidate_only
+SAT:0.3.3:C6,0.3.3,35,direct,境界認識批判は、有限観測系において、観測・分類・同期・照合から漏れるものを、どのように残差として保持し、再照合可能性を維持するかを問う。,保持;再照合可能性;分類;同期;境界;批判;残差;観測;認識,cue_preserve;cue_question,unassessed_logic,candidate_only
+SAT:5.8.2:C6,5.8.2,203,direct,理性の暴走とは、内部ループの閉鎖欲が、外部同期と照合を失った状態である。,同期;理性の暴走;閉鎖,other_term_defined,unassessed_logic,candidate_only
+SAT:7.4:C4,7.4,273,direct,したがって、同期には照合が必要である。,同期,cue_necessary,unassessed_logic,candidate_only
+SAT:8.1:C4,8.1,283,direct,照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,一致;不一致;同期;意味;操作;残差,explicit_definition_surface;qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:8.2:C4,8.2,285,direct,照合は、単なる比較ではない。,比較,cue_compare;negation_scope_unknown;surface_topic,unassessed_logic,candidate_only
+SAT:8.3:C4,8.3,287,direct,照合は、どの履歴場において、どの外部ヒューリスティックと、どの条件で一致しているのかを問う。,一致;外部ヒューリスティック;履歴場;条件,cue_question;qualification_scope_unknown;surface_topic,unassessed_logic,candidate_only
+SAT:8.4:C4,8.4,289,direct,照合は、不一致を単純な誤りとして即時に捨てない。,不一致,negation_scope_unknown;surface_topic,unassessed_logic,candidate_only
+SAT:8.6:C4,8.6,307,direct,照合は、残差を意味の資源として保持する。,保持;意味;残差,cue_preserve;surface_topic,unassessed_logic,candidate_only
+SAT:8.7:C4,8.7,309,direct,照合だけを絶対化すると、すべての残差を何らかの意味として閉じようとする。,意味;残差,qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:8.8:C4,8.8,311,direct,照合の過剰は、残差保持ではなく、残差の意味強制になる。,意味;残差;残差保持,cue_preserve;negation_scope_unknown,unassessed_logic,candidate_only
+SAT:9.1:C4,9.1,317,direct,知は、同期と照合だけでは閉じない。,同期;知,negation_scope_unknown;qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:9.3:C4,9.3,321,direct,照合は、その一致・不一致・残差に意味を与える。,一致;不一致;意味;残差,surface_topic,unassessed_logic,candidate_only
+SAT:9.4:C4,9.4,323,direct,しかし、照合されたもののすべてが閉じられるわけではない。,,negation_scope_unknown;qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:9.5.1:C6,9.5.1,329,direct,残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,再照合;分類;同期;残差;観測;過程,other_term_defined;qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:9.6.5:C6,9.6.5,347,compound_only,残差は、現在の同期体系では照合不能な意味張力である場合がある。,同期;意味;残差;照合不能,unclassified_surface,unassessed_logic,candidate_only
+SAT:9.11:C5,9.11,357,compound_only,新しいヒューリスティックは、しばしば残差保持と再照合の結果として発生する。,ヒューリスティック;再照合;残差保持,cue_preserve,unassessed_logic,candidate_only
+SAT:9.11.1:C7,9.11.1,359,compound_only,創発とは、無からの出現ではなく、既存の分類体系で閉じられなかった残差が、再照合によって新しい分類形式を要求することである。,再照合;分類;創発;残差,negation_scope_unknown;other_term_defined,unassessed_logic,candidate_only
+SAT:9.12.1:C7,9.12.1,363,direct,嘘とは、照合経路を切断し、残差へのアクセスを塞ぐ操作である。,嘘;操作;残差,other_term_defined,unassessed_logic,candidate_only
+SAT:10.5.1:C7,10.5.1,401,direct,真とは、ある命題が、特定の履歴場において、特定の外部ヒューリスティックと照合され、判断可能性を保つ状態である。,判断可能性;外部ヒューリスティック;履歴場;真,other_term_defined;qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:10.6.1:C7,10.6.1,405,compound_only,偽とは、同期不能、照合不能、適用範囲逸脱、分類失敗、または偽閉鎖として現れる。,偽;偽閉鎖;分類;同期;照合不能,other_term_defined,unassessed_logic,candidate_only
+SAT:10.7.1:C7,10.7.1,409,direct,未解決とは、照合が閉じていない状態である。,未解決,negation_scope_unknown;other_term_defined,unassessed_logic,candidate_only
+SAT:11.2.1.1:C9,11.2.1.1,425,direct,学問は、同期の一致・不一致・残差を照合する。,一致;不一致;同期;学問;残差,unclassified_surface,unassessed_logic,candidate_only
+SAT:11.2.1.2:C9,11.2.1.2,427,compound_only,学問は、その照合手順を言語化する。,学問;照合手順,unclassified_surface,unassessed_logic,candidate_only
+SAT:11.2.1.3:C9,11.2.1.3,429,compound_only,学問は、その照合手順を記号化する。,学問;照合手順,unclassified_surface,unassessed_logic,candidate_only
+SAT:11.2.1.4:C9,11.2.1.4,431,compound_only,学問は、その照合手順を方法化する。,学問;照合手順,unclassified_surface,unassessed_logic,candidate_only
+SAT:11.2.1.5:C9,11.2.1.5,433,compound_only,学問は、その照合手順を他者が再照合できる形へ保存する。,再照合;学問;照合手順,cue_preserve,unassessed_logic,candidate_only
+SAT:11.3:C5,11.3,435,direct,したがって、学問とは、同期と照合の継承可能な形式である。,したがって、学問;同期,other_term_defined,unassessed_logic,candidate_only
+SAT:11.3.1:C7,11.3.1,437,compound_only,科学は、外部同期と再照合の強度が高い学問形式である。,再照合;同期;学問,unclassified_surface,unassessed_logic,candidate_only
+SAT:11.3.2:C7,11.3.2,439,direct,哲学は、同期と照合の成立条件そのものを問う学問形式である。,同期;学問;条件,cue_question;qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:11.3.4:C7,11.3.4,443,direct,人文学は、履歴場における意味・解釈・言語ゲーム・価値の照合を扱う学問形式である。,学問;履歴場;意味;解釈;言語ゲーム,unclassified_surface,unassessed_logic,candidate_only
+SAT:11.4:C5,11.4,445,direct,AI時代の学問は、外部記憶を内部理解へ同期し、その照合過程を人間が保持できるかを問われる。,保持;同期;学問;過程,cue_preserve;cue_question,unassessed_logic,candidate_only
+SAT:11.5.1:C7,11.5.1,449,compound_only,学問は、残差を再照合可能な形で保存し、未来の問いへ渡すための制度である。,再照合;学問;残差,cue_preserve,unassessed_logic,candidate_only
+SAT:12.6:C5,12.6,465,compound_only,言語ゲームとは、共同体内で安定化した照合規則である。,照合規則;言語ゲーム,other_term_defined,unassessed_logic,candidate_only
+SAT:12.8.1:C7,12.8.1,471,compound_only,誤解は、照合規則の不一致として発生する。,不一致;照合規則,unclassified_surface,unassessed_logic,candidate_only
+SAT:12.9:C5,12.9,473,direct,通約とは、異なる言語ゲームの間に照合可能な対応面を作ることである。,言語ゲーム;通約,other_term_defined,unassessed_logic,candidate_only
+SAT:12.9.3:C7,12.9.3,479,direct,通約とは、差異を消すことではなく、照合可能な境界面を作ることである。,境界;通約,negation_scope_unknown;other_term_defined,unassessed_logic,candidate_only
+SAT:12.10:C6,12.10,481,compound_only,言語ゲームの失敗は、残差を非常識・非合理・非存在として処分し、照合可能性を失わせることである。,残差;言語ゲーム,unclassified_surface,unassessed_logic,candidate_only
+SAT:12.10.1:C8,12.10.1,483,direct,残差をユーモアとして処理する、または誤解や誤謬として扱う場合には、照合の可能性が残される。,残差,unclassified_surface,unassessed_logic,candidate_only
+SAT:13.7:C5,13.7,501,direct,AIを外部ヒューリスティックとして使い、内部理解と照合するなら、判断可能性は増える。,判断可能性;外部ヒューリスティック,unclassified_surface,unassessed_logic,candidate_only
+SAT:13.10.1:C8,13.10.1,513,direct,AI時代の批判哲学は、AIによって増幅された外部ヒューリスティックを、内部理解とどう同期し、どう照合するかを問うことである。,同期;外部ヒューリスティック;批判,cue_question,unassessed_logic,candidate_only
+SAT:14.14:C6,14.14,551,direct,照合だけを絶対化する態度は、残差を無理に閉じる。,残差,qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:14.15:C6,14.15,553,direct,同期も照合も捨てる態度は、残差を氾濫させる。,同期;残差,unclassified_surface,unassessed_logic,candidate_only
+SAT:15.2:C5,15.2,581,direct,知は、その同期の一致・不一致・残差を照合することで意味を持つ。,一致;不一致;同期;意味;残差;知,unclassified_surface,unassessed_logic,candidate_only
+SAT:15.3:C5,15.3,583,compound_only,知は、残差を保持し、再照合可能性を維持することで更新可能性を持つ。,保持;再照合可能性;更新;残差;知,cue_preserve;cue_update,unassessed_logic,candidate_only
+SAT:15.9:C5,15.9,595,direct,学問は、同期と照合を再照合可能な形へ保存する営みである。,再照合;同期;学問,cue_preserve,unassessed_logic,candidate_only
+SAT:15.10:C6,15.10,597,compound_only,言語ゲームは、共同体における照合規則である。,照合規則;言語ゲーム,unclassified_surface,unassessed_logic,candidate_only
+SAT:15.12.1:C8,15.12.1,605,direct,知るとは、境界で接触し、同期し、照合し、残差を保持しながら、次の判断可能性を開くことである。,保持;判断可能性;同期;境界;接触;残差;知る,cue_preserve;other_term_defined,unassessed_logic,candidate_only
+SAT:15.13:C6,15.13,607,compound_only,有限な観測者にとって、現在の到達は完成ではなく、再照合可能な仮閉鎖である。,再照合;観測;閉鎖,negation_scope_unknown,unassessed_logic,candidate_only
+SAT:L615:C0,,615,direct,A.2　本稿は、知の成立条件を、境界・履歴・同期・照合・残差保持から再定義する試みである。,同期;境界;履歴;条件;残差保持;知,cue_preserve;qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:L617:C0,,617,direct,A.3　既存思想との接続は、本稿の権威づけではなく、未踏領域を主張しないための照合である。,,negation_scope_unknown,unassessed_logic,candidate_only
+SAT:L623:C0,,623,direct,A.6　本文の骨格は、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持である。,内部ヒューリスティック;同期;境界;外部ヒューリスティック;履歴;残差保持,cue_preserve,unassessed_logic,candidate_only
+SAT:L662:C0,,662,direct,注意: 残差は、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,再照合;分類;同期;残差;観測;過程,qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:L699:C35,,699,compound_only,履歴を原料として、受容・分類・判断・閉鎖・再照合を可能にする構造である。,再照合;分類;履歴;閉鎖,unclassified_surface,unassessed_logic,candidate_only
+SAT:L729:C0,,729,compound_only,補足: 意味圧とは、未閉鎖の gap や残差が、既存の closure に似た構造を要求し、解釈・分類・補完・再照合を促す圧である。,再照合;分類;残差;補足: 意味圧;解釈;閉鎖,other_term_defined,unassessed_logic,candidate_only
+SAT:L749:C44,,749,direct,異なる言語ゲーム、パラダイム、履歴場の間に、照合可能な対応面を作ることである。,履歴場;言語ゲーム,unclassified_surface,unassessed_logic,candidate_only
+SAT:L762:C0,,762,direct,補足: 再照合可能性とは、一度閉じた命題・判断・分類・制度的処理を、残差や残渣へのアクセス経路を保ったまま、再び照合可能にする条件である。,分類;条件;残差;残渣;補足: 再照合可能性,other_term_defined;qualification_scope_unknown,unassessed_logic,candidate_only
+SAT:L766:C50,,766,direct,意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。,不一致;意味,unclassified_surface,unassessed_logic,candidate_only
