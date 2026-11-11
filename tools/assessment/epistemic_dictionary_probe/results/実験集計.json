@@ -1,0 +1,106 @@
+{
+  "source": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+  "source_sha256": "2f902285215ffac36f850cc118034787244f1c882f9274549da468960059d534",
+  "numbers": 265,
+  "lexicon_terms": 59,
+  "defined_headwords": 38,
+  "definition_rows": 51,
+  "baseline_reference_arcs": 111,
+  "baseline_cyclic_groups": 1,
+  "baseline_cycles": [
+    {
+      "循環群": 1,
+      "語数": 5,
+      "語集合": "偽 | 偽閉鎖 | 未解決 | 残差 | 照合",
+      "性格": "定義文の字面参照が相互到達（意味の同値・論理循環ではない）"
+    }
+  ],
+  "lexical_slots": 6,
+  "qualifier_slots": 6,
+  "lexical_cases": 729,
+  "all_factorial_cases": 46656,
+  "distinct_reference_graphs": 486,
+  "reference_arc_union": 120,
+  "reference_arc_intersection": 105,
+  "reference_arcs_sensitive_in_variable_scenarios": 15,
+  "baseline_arcs_sensitive_in_variable_scenarios": 6,
+  "local_modifier_deletions_with_no_graph_change": 6,
+  "local_lexical_substitutions_with_arc_change": 12,
+  "paths": [
+    {
+      "照会": "知る→照合",
+      "基準距離": 1,
+      "語置換729通りで到達": 729,
+      "語置換729通りで経路長の種類": 1,
+      "基準辺素な経路数": 2,
+      "経路数の最小": 2,
+      "経路数の最大": 3
+    },
+    {
+      "照会": "知る→履歴",
+      "基準距離": 3,
+      "語置換729通りで到達": 729,
+      "語置換729通りで経路長の種類": 3,
+      "基準辺素な経路数": 1,
+      "経路数の最小": 1,
+      "経路数の最大": 2
+    },
+    {
+      "照会": "知る→分類",
+      "基準距離": 2,
+      "語置換729通りで到達": 729,
+      "語置換729通りで経路長の種類": 2,
+      "基準辺素な経路数": 3,
+      "経路数の最小": 2,
+      "経路数の最大": 3
+    },
+    {
+      "照会": "照合→履歴",
+      "基準距離": 3,
+      "語置換729通りで到達": 729,
+      "語置換729通りで経路長の種類": 2,
+      "基準辺素な経路数": 1,
+      "経路数の最小": 1,
+      "経路数の最大": 2
+    },
+    {
+      "照会": "残差→同期",
+      "基準距離": 1,
+      "語置換729通りで到達": 729,
+      "語置換729通りで経路長の種類": 1,
+      "基準辺素な経路数": 3,
+      "経路数の最小": 2,
+      "経路数の最大": 3
+    },
+    {
+      "照会": "通約→学問",
+      "基準距離": null,
+      "語置換729通りで到達": 243,
+      "語置換729通りで経路長の種類": 2,
+      "基準辺素な経路数": 0,
+      "経路数の最小": 0,
+      "経路数の最大": 1
+    },
+    {
+      "照会": "認識→分類",
+      "基準距離": 2,
+      "語置換729通りで到達": 729,
+      "語置換729通りで経路長の種類": 2,
+      "基準辺素な経路数": 3,
+      "経路数の最小": 2,
+      "経路数の最大": 4
+    },
+    {
+      "照会": "同期→言語ゲーム",
+      "基準距離": null,
+      "語置換729通りで到達": 243,
+      "語置換729通りで経路長の種類": 2,
+      "基準辺素な経路数": 0,
+      "経路数の最小": 0,
+      "経路数の最大": 1
+    }
+  ],
+  "global_alpha_rename_preserves_graph": true,
+  "ontology": "literal headword-reference and usage graph; not a logical proof graph",
+  "major_limitation": "Only chosen word lexicon and exact string matching; all lexical substitutions are counterfactual, not approved meanings; modifier deletions are not encoded."
+}

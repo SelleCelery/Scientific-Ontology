@@ -1,0 +1,132 @@
+{
+  "source_relative_path": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+  "source_sha256": "2f902285215ffac36f850cc118034787244f1c882f9274549da468960059d534",
+  "words_extra": [
+    "境界",
+    "観測",
+    "判断可能性",
+    "意味",
+    "経験",
+    "条件",
+    "外部入力",
+    "接触",
+    "再照合",
+    "一致",
+    "不一致",
+    "分類不能性",
+    "更新",
+    "差分",
+    "記録",
+    "有限観測系",
+    "形式空間",
+    "外部",
+    "内部",
+    "残差処理",
+    "理解"
+  ],
+  "substitutions": [
+    {
+      "id": 0,
+      "proposition": "0.3",
+      "old": "境界",
+      "candidates": [
+        "境界",
+        "履歴",
+        "分類"
+      ]
+    },
+    {
+      "id": 1,
+      "proposition": "7.3",
+      "old": "外部ヒューリスティック",
+      "candidates": [
+        "外部ヒューリスティック",
+        "内部ヒューリスティック",
+        "言語ゲーム"
+      ]
+    },
+    {
+      "id": 2,
+      "proposition": "8.1",
+      "old": "残差",
+      "candidates": [
+        "残差",
+        "履歴",
+        "分類"
+      ]
+    },
+    {
+      "id": 3,
+      "proposition": "9.5.1",
+      "old": "照合",
+      "candidates": [
+        "照合",
+        "同期",
+        "分類"
+      ]
+    },
+    {
+      "id": 4,
+      "proposition": "12.9",
+      "old": "言語ゲーム",
+      "candidates": [
+        "言語ゲーム",
+        "学問",
+        "理性"
+      ]
+    },
+    {
+      "id": 5,
+      "proposition": "15.12.1",
+      "old": "同期",
+      "candidates": [
+        "同期",
+        "分類",
+        "理性"
+      ]
+    }
+  ],
+  "modifier_deletions": [
+    {
+      "id": 0,
+      "proposition": "1.2.1",
+      "substring": "単なる",
+      "hypothesized_role": "限定・対比"
+    },
+    {
+      "id": 1,
+      "proposition": "7.3",
+      "substring": "運用上",
+      "hypothesized_role": "適用条件"
+    },
+    {
+      "id": 2,
+      "proposition": "8.1",
+      "substring": "だけでなく",
+      "hypothesized_role": "対比・包含"
+    },
+    {
+      "id": 3,
+      "proposition": "9.5.1",
+      "substring": "まだ",
+      "hypothesized_role": "未確定性"
+    },
+    {
+      "id": 4,
+      "proposition": "10.5.1",
+      "substring": "特定の",
+      "hypothesized_role": "範囲制限"
+    },
+    {
+      "id": 5,
+      "proposition": "15.12.1",
+      "substring": "次の",
+      "hypothesized_role": "時間・継続"
+    }
+  ],
+  "disclaimers": [
+    "Every output is research-only: no approved changes to the source",
+    "Definition mention is NOT logical implication or canonical support",
+    "No exhaustive enumeration of all possible Japanese meanings is claimed"
+  ]
+}
