@@ -1,0 +1,7 @@
+unit,marker,status,before_ops,after_ops,before_qualifiers,after_qualifiers,operator_signature_changed,qualifier_signature_changed
+SAT:9.5.1,まだ,observed,DEFINE|PREDICATE,DEFINE|PREDICATE,まだ,,False,True
+SAT:10.7,ではない,observed,DEFINE|NEGATE,DEFINE,,,True,False
+SAT:8.1,だけでなく,observed,DEFINE|PREDICATE,DEFINE|PREDICATE,だけでなく,,False,True
+SAT:1.2.1,単なる,observed,DEFINE|NEGATE|PREDICATE,DEFINE|NEGATE|PREDICATE,単なる|次の,次の,False,True
+SAT:7.3,運用上,observed,DEFINE|PREDICATE,DEFINE|PREDICATE,運用上,,False,True
+SAT:15.12.1,次の,observed,DEFINE|CONTACT|COLLATE|RETAIN|PREDICATE,DEFINE|CONTACT|COLLATE|RETAIN|PREDICATE,次の,,False,True

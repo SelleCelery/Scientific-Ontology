@@ -1,0 +1,17 @@
+family,removed_occurrences,baseline_largest,ablated_largest,largest_drop,baseline_pairs,ablated_pairs,pair_incidence_drop,status
+CAUSE,8,416,413,3,18575,18559,16,candidate co-use only; NOT a proved Spine
+COLLATE,20,416,412,4,18575,18501,74,candidate co-use only; NOT a proved Spine
+CONDITION,35,416,407,9,18575,18370,205,candidate co-use only; NOT a proved Spine
+CONNECT,16,416,407,9,18575,18537,38,candidate co-use only; NOT a proved Spine
+CONTACT,15,416,413,3,18575,18540,35,candidate co-use only; NOT a proved Spine
+CUT,21,416,398,18,18575,18497,78,candidate co-use only; NOT a proved Spine
+DEFINE,82,416,406,10,18575,15643,2932,candidate co-use only; NOT a proved Spine
+ESTABLISH,9,416,410,6,18575,18562,13,candidate co-use only; NOT a proved Spine
+NEGATE,160,416,307,109,18575,14748,3827,candidate co-use only; NOT a proved Spine
+POSSIBLE,29,416,401,15,18575,18274,301,candidate co-use only; NOT a proved Spine
+PREDICATE,175,416,332,84,18575,7819,10756,candidate co-use only; NOT a proved Spine
+REQUIRE,6,416,414,2,18575,18568,7,candidate co-use only; NOT a proved Spine
+RETAIN,51,416,397,19,18575,18296,279,candidate co-use only; NOT a proved Spine
+SELECT,6,416,413,3,18575,18571,4,candidate co-use only; NOT a proved Spine
+SUPPORT,2,416,416,0,18575,18575,0,candidate co-use only; NOT a proved Spine
+TRANSFORM,14,416,414,2,18575,18565,10,candidate co-use only; NOT a proved Spine

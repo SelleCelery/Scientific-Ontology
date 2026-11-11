@@ -1,0 +1,10 @@
+phases,identity_hypothesis,statements,occurrences,families,groups,candidate_pair_incidence,component_count,largest_component,connected_claims
+SAT,family,265,295,15,15,8131,85,180,182
+SAT,surface,265,295,15,37,6076,90,174,178
+SAT,phase,265,295,15,15,8131,85,180,182
+SAT+RAJ,family,524,468,16,16,18172,223,302,302
+SAT+RAJ,surface,524,468,16,58,11852,235,280,296
+SAT+RAJ,phase,524,468,16,29,10297,225,180,302
+SAT+RAJ+TAM,family,790,649,16,16,32451,353,437,439
+SAT+RAJ+TAM,surface,790,649,16,65,18575,366,416,430
+SAT+RAJ+TAM,phase,790,649,16,45,12495,359,180,437

@@ -1,0 +1,238 @@
+{
+  "baseline_surface_candidate_component": {
+    "candidate_pair_incidence": 18575,
+    "component_count": 366,
+    "connected_claims": 430,
+    "groups": 65,
+    "largest_component": 416
+  },
+  "candidate_operator_families": 16,
+  "candidate_pair_incidence_range": [
+    12174,
+    31944
+  ],
+  "claims_not_established": [
+    "operator semantics",
+    "logical entailment",
+    "alpha closure",
+    "beta exploratory exergy",
+    "information entropy",
+    "physical impedance",
+    "linguistic grammar completeness"
+  ],
+  "controlled_identity_families": [
+    "PREDICATE",
+    "NEGATE",
+    "DEFINE",
+    "RETAIN",
+    "CONDITION",
+    "POSSIBLE"
+  ],
+  "distinct_identity_graph_statistics": 729,
+  "group_count_range": [
+    41,
+    65
+  ],
+  "identity_alternatives": [
+    "family",
+    "surface",
+    "phase"
+  ],
+  "identity_cases_run": 729,
+  "identity_exhaustive_in_selected_space": true,
+  "identity_total_possible": 729,
+  "included_phases": [
+    "SAT",
+    "RAJ",
+    "TAM"
+  ],
+  "invariant_fixed_occurrence_layer": "by construction, not an observed semantic invariance",
+  "kind": "candidate operator occurrence and reuse graph, NOT logical entailment",
+  "largest_component_range": [
+    416,
+    428
+  ],
+  "numbered_sat_units": 265,
+  "operator_occurrences": 649,
+  "operatorless_units": 351,
+  "phase_gates": [
+    {
+      "decision": "included",
+      "estimated_ops_work": 215055,
+      "operator_occurrences": 295,
+      "phase": "SAT",
+      "statement_candidates": 265
+    },
+    {
+      "decision": "included",
+      "estimated_ops_work": 126117,
+      "operator_occurrences": 173,
+      "phase": "RAJ",
+      "statement_candidates": 259
+    },
+    {
+      "decision": "included",
+      "estimated_ops_work": 131949,
+      "operator_occurrences": 181,
+      "phase": "TAM",
+      "statement_candidates": 266
+    }
+  ],
+  "prose_candidates_by_phase": {
+    "RAJ": 259,
+    "SAT": 265,
+    "TAM": 266
+  },
+  "qualifier_deletion_controls": [
+    {
+      "after_ops": "DEFINE|PREDICATE",
+      "after_qualifiers": "",
+      "before_ops": "DEFINE|PREDICATE",
+      "before_qualifiers": "まだ",
+      "marker": "まだ",
+      "operator_signature_changed": false,
+      "qualifier_signature_changed": true,
+      "status": "observed",
+      "unit": "SAT:9.5.1"
+    },
+    {
+      "after_ops": "DEFINE",
+      "after_qualifiers": "",
+      "before_ops": "DEFINE|NEGATE",
+      "before_qualifiers": "",
+      "marker": "ではない",
+      "operator_signature_changed": true,
+      "qualifier_signature_changed": false,
+      "status": "observed",
+      "unit": "SAT:10.7"
+    },
+    {
+      "after_ops": "DEFINE|PREDICATE",
+      "after_qualifiers": "",
+      "before_ops": "DEFINE|PREDICATE",
+      "before_qualifiers": "だけでなく",
+      "marker": "だけでなく",
+      "operator_signature_changed": false,
+      "qualifier_signature_changed": true,
+      "status": "observed",
+      "unit": "SAT:8.1"
+    },
+    {
+      "after_ops": "DEFINE|NEGATE|PREDICATE",
+      "after_qualifiers": "次の",
+      "before_ops": "DEFINE|NEGATE|PREDICATE",
+      "before_qualifiers": "単なる|次の",
+      "marker": "単なる",
+      "operator_signature_changed": false,
+      "qualifier_signature_changed": true,
+      "status": "observed",
+      "unit": "SAT:1.2.1"
+    },
+    {
+      "after_ops": "DEFINE|PREDICATE",
+      "after_qualifiers": "",
+      "before_ops": "DEFINE|PREDICATE",
+      "before_qualifiers": "運用上",
+      "marker": "運用上",
+      "operator_signature_changed": false,
+      "qualifier_signature_changed": true,
+      "status": "observed",
+      "unit": "SAT:7.3"
+    },
+    {
+      "after_ops": "DEFINE|CONTACT|COLLATE|RETAIN|PREDICATE",
+      "after_qualifiers": "",
+      "before_ops": "DEFINE|CONTACT|COLLATE|RETAIN|PREDICATE",
+      "before_qualifiers": "次の",
+      "marker": "次の",
+      "operator_signature_changed": false,
+      "qualifier_signature_changed": true,
+      "status": "observed",
+      "unit": "SAT:15.12.1"
+    }
+  ],
+  "qualifier_occurrences": 179,
+  "scope_requested": "all",
+  "source_status": "snapshot; not confirmation of Human repository",
+  "sources": [
+    {
+      "bytes": 35814,
+      "phase": "SAT",
+      "sha256": "2f902285215ffac36f850cc118034787244f1c882f9274549da468960059d534",
+      "source": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md"
+    },
+    {
+      "bytes": 26355,
+      "phase": "RAJ",
+      "sha256": "3e47b7d42cfcbd26205dcceedb8bb6809b0b38ffb3b833b0e84a60117fcd94e5",
+      "source": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md"
+    },
+    {
+      "bytes": 39566,
+      "phase": "TAM",
+      "sha256": "ca5cb13cc353f101d813552205b6582c56cf05ea57e755bb407e6ca17a8dee52",
+      "source": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md"
+    }
+  ],
+  "statement_units": 790,
+  "term_occurrences": 1470,
+  "top_family_ablation_by_largest_drop": [
+    {
+      "ablated_largest": 307,
+      "ablated_pairs": 14748,
+      "baseline_largest": 416,
+      "baseline_pairs": 18575,
+      "family": "NEGATE",
+      "largest_drop": 109,
+      "pair_incidence_drop": 3827,
+      "removed_occurrences": 160,
+      "status": "candidate co-use only; NOT a proved Spine"
+    },
+    {
+      "ablated_largest": 332,
+      "ablated_pairs": 7819,
+      "baseline_largest": 416,
+      "baseline_pairs": 18575,
+      "family": "PREDICATE",
+      "largest_drop": 84,
+      "pair_incidence_drop": 10756,
+      "removed_occurrences": 175,
+      "status": "candidate co-use only; NOT a proved Spine"
+    },
+    {
+      "ablated_largest": 397,
+      "ablated_pairs": 18296,
+      "baseline_largest": 416,
+      "baseline_pairs": 18575,
+      "family": "RETAIN",
+      "largest_drop": 19,
+      "pair_incidence_drop": 279,
+      "removed_occurrences": 51,
+      "status": "candidate co-use only; NOT a proved Spine"
+    },
+    {
+      "ablated_largest": 398,
+      "ablated_pairs": 18497,
+      "baseline_largest": 416,
+      "baseline_pairs": 18575,
+      "family": "CUT",
+      "largest_drop": 18,
+      "pair_incidence_drop": 78,
+      "removed_occurrences": 21,
+      "status": "candidate co-use only; NOT a proved Spine"
+    },
+    {
+      "ablated_largest": 401,
+      "ablated_pairs": 18274,
+      "baseline_largest": 416,
+      "baseline_pairs": 18575,
+      "family": "POSSIBLE",
+      "largest_drop": 15,
+      "pair_incidence_drop": 301,
+      "removed_occurrences": 29,
+      "status": "candidate co-use only; NOT a proved Spine"
+    }
+  ],
+  "work_budget": 3000000,
+  "work_proxy_remaining": 2526879
+}

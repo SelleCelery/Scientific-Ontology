@@ -1,0 +1,17 @@
+family,forms,occurrences,SAT,RAJ,TAM,status
+CAUSE,生じる:2|起こる:6,8,4,2,2,surface_grouping_hypothesis_not_semantics
+COLLATE,再照合する:2|照合され:4|照合し:2|照合する:12,20,9,6,5,surface_grouping_hypothesis_not_semantics
+CONDITION,とき:10|なら:4|場合:18|場合には:1|場合は:2,35,18,4,13,surface_grouping_hypothesis_not_semantics
+CONNECT,接続し:6|接続する:8|翻訳し:1|通約する:1,16,0,7,9,surface_grouping_hypothesis_not_semantics
+CONTACT,接触し:8|接触した:2|接触して:1|接触する:4,15,4,10,1,surface_grouping_hypothesis_not_semantics
+CUT,切断し:2|切断する:5|捨象し:12|捨象する:2,21,2,8,11,surface_grouping_hypothesis_not_semantics
+DEFINE,とは:77|と呼ぶ:4|を指す:1,82,57,15,10,surface_grouping_hypothesis_not_semantics
+ESTABLISH,成立して:1|成立しない:5|成立する:3,9,4,2,3,surface_grouping_hypothesis_not_semantics
+NEGATE,しない:28|できない:12|ではない:78|ではなく:26|ではなくなる:1|とは限らない:5|ならない:10,160,63,47,50,surface_grouping_hypothesis_not_semantics
+POSSIBLE,しうる:1|できる:26|可能になる:2,29,8,7,14,surface_grouping_hypothesis_not_semantics
+PREDICATE,である:147|として扱う:15|として読む:1|とする:12,175,96,41,38,surface_grouping_hypothesis_not_semantics
+REQUIRE,必要がある:4|必要である:2,6,2,2,2,surface_grouping_hypothesis_not_semantics
+RETAIN,保存する:3|保持される:2|保持し:16|保持する:17|残し:4|残す:3|維持し:1|維持する:5,51,21,15,15,surface_grouping_hypothesis_not_semantics
+SELECT,判断する:2|採用する:1|選ぶ:3,6,1,0,5,surface_grouping_hypothesis_not_semantics
+SUPPORT,依存する:1|前提とする:1,2,1,0,1,surface_grouping_hypothesis_not_semantics
+TRANSFORM,変化し:1|変形する:1|変換し:1|変換する:2|形成される:3|形成し:3|更新される:3,14,5,7,2,surface_grouping_hypothesis_not_semantics

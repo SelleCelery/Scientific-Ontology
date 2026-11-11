@@ -1,0 +1,791 @@
+id,phase,source,line,section,kind,original,normalized,operator_count,term_occurrences
+SAT:0.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,19,0,numbered_proposition,本稿は、知を、主体内部の認識形式にも、外部事実への単純対応にも還元しない。,本稿は、知を、主体内部の認識形式にも、外部事実への単純対応にも還元⟦NEGATE⟧。,1,4
+SAT:0.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,21,0,numbered_proposition,知とは、履歴を持つ存在が、外部からの入力を受け取り、内部で処理し、外部と同期し、その一致・不一致・残差を照合し、なお閉じきれないものを保持しながら、次の判断可能性を維持することで成立する。,知⟦DEFINE⟧、履歴を持つ存在が、外部からの入力を受け取り、内部で処理し、外部と同期し、その一致・不一致・残差を⟦COLLATE⟧、なお閉じきれないものを⟦RETAIN⟧ながら、次の判断可能性を⟦RETAIN⟧ことで⟦ESTABLISH⟧。,5,11
+SAT:0.2.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,23,0,numbered_proposition,したがって、認識とは「世界をそのまま写すこと」ではない。,したがって、認識⟦DEFINE⟧「世界をそのまま写すこと」⟦NEGATE⟧。,2,1
+SAT:0.2.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,25,0,numbered_proposition,また、認識とは「主体が勝手に構成すること」でもない。,また、認識⟦DEFINE⟧「主体が勝手に構成すること」でもない。,1,1
+SAT:0.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,27,0,numbered_proposition,認識とは、境界において、内部ヒューリスティックと外部ヒューリスティックが接触し、同期し、照合され、残差を残しながら更新される過程である。,認識⟦DEFINE⟧、境界において、内部ヒューリスティックと外部ヒューリスティックが⟦CONTACT⟧、同期し、⟦COLLATE⟧、残差を⟦RETAIN⟧ながら⟦TRANSFORM⟧過程⟦PREDICATE⟧。,6,7
+SAT:0.3.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,29,0,numbered_proposition,本稿は、この過程の成立条件・適用範囲・失敗条件を問う。,本稿は、この過程の成立条件・適用範囲・失敗条件を問う。,0,1
+SAT:0.3.1.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,31,0,numbered_proposition,この意味で、本稿は境界認識批判である。,この意味で、本稿は境界認識批判⟦PREDICATE⟧。,1,4
+SAT:0.3.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,33,0,numbered_proposition,境界認識批判は、すべてを観測可能にするための観測理論ではない。,境界認識批判は、すべてを観測可能にするための観測理論⟦NEGATE⟧。,1,5
+SAT:0.3.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,35,0,numbered_proposition,境界認識批判は、有限観測系において、観測・分類・同期・照合から漏れるものを、どのように残差として保持し、再照合可能性を維持するかを問う。,境界認識批判は、有限観測系において、観測・分類・同期・照合から漏れるものを、どのように残差として⟦RETAIN⟧、再照合可能性を⟦RETAIN⟧かを問う。,2,11
+SAT:1.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,41,1,numbered_proposition,存在は、単なる物ではない。,存在は、単なる物⟦NEGATE⟧。,1,0
+SAT:1.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,43,1,numbered_proposition,存在は、履歴を持つ。,存在は、履歴を持つ。,0,1
+SAT:1.2.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,45,1,numbered_proposition,履歴とは、単なる過去ではなく、次の受け取り方・反応・判断・意味づけを変えるものである。,履歴⟦DEFINE⟧、単なる過去⟦NEGATE⟧、次の受け取り方・反応・判断・意味づけを変えるもの⟦PREDICATE⟧。,3,3
+SAT:1.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,47,1,numbered_proposition,存在は、履歴を持つ場として、外部と接触する。,存在は、履歴を持つ場として、外部と⟦CONTACT⟧。,1,2
+SAT:1.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,49,1,numbered_proposition,接触は、境界において起こる。,接触は、境界において⟦CAUSE⟧。,1,1
+SAT:1.4.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,51,1,numbered_proposition,境界は、防壁ではない。,境界は、防壁⟦NEGATE⟧。,1,1
+SAT:1.4.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,53,1,numbered_proposition,境界は、外部入力と内部履歴が接触し、通過・保留・遮断・再符号化・反射・更新される面である。,境界は、外部入力と内部履歴が⟦CONTACT⟧、通過・保留・遮断・再符号化・反射・⟦TRANSFORM⟧面⟦PREDICATE⟧。,3,7
+SAT:1.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,55,1,numbered_proposition,したがって、認識は境界なしには成立しない。,したがって、認識は境界なしには⟦ESTABLISH⟧。,1,3
+SAT:1.5.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,57,1,numbered_proposition,境界のない認識は、外部に呑まれる。,境界のない認識は、外部に呑まれる。,0,3
+SAT:1.5.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,59,1,numbered_proposition,境界の弱すぎる認識は、外部入力と内部履歴を区別できない。,境界の弱すぎる認識は、外部入力と内部履歴を区別⟦NEGATE⟧。,1,5
+SAT:1.5.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,61,1,numbered_proposition,境界の強すぎる認識は、外部からの更新を拒み、内部ヒューリスティックを教義化する。,境界の強すぎる認識は、外部からの更新を拒み、内部ヒューリスティックを教義化する。,0,4
+SAT:1.5.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,63,1,numbered_proposition,境界の硬すぎる認識は、内部に閉じる。,境界の硬すぎる認識は、内部に閉じる。,0,3
+SAT:1.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,65,1,numbered_proposition,境界認識批判は、境界を消すのではなく、境界の位置・硬さ・開閉・残差保持条件を問う。,境界認識批判は、境界を消すの⟦NEGATE⟧、境界の位置・硬さ・開閉・残差保持条件を問う。,1,6
+SAT:2.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,71,2,numbered_proposition,感性とは、外部入力が履歴場に到達したとき、何が信号として立ち上がるかを決める受容構造である。,感性⟦DEFINE⟧、外部入力が履歴場に到達した⟦CONDITION⟧、何が信号として立ち上がるかを決める受容構造⟦PREDICATE⟧。,3,4
+SAT:2.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,73,2,numbered_proposition,何が見えるかは、履歴によって変わる。,何が見えるかは、履歴によって変わる。,0,1
+SAT:2.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,75,2,numbered_proposition,何が聞こえるかも、履歴によって変わる。,何が聞こえるかも、履歴によって変わる。,0,1
+SAT:2.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,77,2,numbered_proposition,何が違和感として残るかも、履歴によって変わる。,何が違和感として残るかも、履歴によって変わる。,0,1
+SAT:2.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,79,2,numbered_proposition,したがって、感性は単なる受動的な器ではない。,したがって、感性は単なる受動的な器⟦NEGATE⟧。,1,1
+SAT:2.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,81,2,numbered_proposition,感性は、履歴に準拠した受容ヒューリスティックである。,感性は、履歴に準拠した受容ヒューリスティック⟦PREDICATE⟧。,1,3
+SAT:2.6.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,83,2,numbered_proposition,感性は、外部入力をそのまま受け取るのではなく、内部履歴に応じて受け取り可能な形へ切り出す。,感性は、外部入力をそのまま受け取るの⟦NEGATE⟧、内部履歴に応じて受け取り可能な形へ切り出す。,1,4
+SAT:2.6.1.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,85,2,numbered_proposition,ここで切り出されたものが、経験の素材となる。,ここで切り出されたものが、経験の素材となる。,0,0
+SAT:2.6.1.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,87,2,numbered_proposition,しかし、切り出されなかったものは消えたわけではない。,しかし、切り出されなかったものは消えたわけ⟦NEGATE⟧。,1,0
+SAT:2.6.1.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,89,2,numbered_proposition,それはノイズ、違和感、残差、未処理履歴として残ることがある。,それはノイズ、違和感、残差、未処理履歴として残ることがある。,0,2
+SAT:2.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,91,2,numbered_proposition,感性の研究は、何が現れるかだけでは足りない。,感性の研究は、何が現れるかだけでは足りない。,0,1
+SAT:2.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,93,2,numbered_proposition,感性の研究は、何が現れないまま作用するかを問わなければならない。,感性の研究は、何が現れないまま作用するかを問わなければ⟦NEGATE⟧。,1,1
+SAT:2.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,95,2,numbered_proposition,感性の失敗は、受け取れないものを存在しないものと誤認することである。,感性の失敗は、受け取れないものを存在⟦NEGATE⟧ものと誤認すること⟦PREDICATE⟧。,2,1
+SAT:2.10,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,97,2,numbered_proposition,感性の過剰は、すべてのノイズを意味として受け取り、境界を過熱させることである。,感性の過剰は、すべてのノイズを意味として受け取り、境界を過熱させること⟦PREDICATE⟧。,1,3
+SAT:3.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,103,3,numbered_proposition,悟性とは、入力を判断可能な対象へ変換する分類構造である。,悟性⟦DEFINE⟧、入力を判断可能な対象へ⟦TRANSFORM⟧分類構造⟦PREDICATE⟧。,3,5
+SAT:3.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,105,3,numbered_proposition,分類とは、単なる名前づけではない。,分類⟦DEFINE⟧、単なる名前づけ⟦NEGATE⟧。,2,1
+SAT:3.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,107,3,numbered_proposition,分類は、何を対象とし、何を背景とし、何を関係とし、何を原因とし、何を責任とし、何を価値とするかを決める。,分類は、何を対象とし、何を背景とし、何を関係とし、何を原因とし、何を責任とし、何を価値⟦PREDICATE⟧かを決める。,1,3
+SAT:3.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,109,3,numbered_proposition,分類の仕方は、履歴構造に依存する。,分類の仕方は、履歴構造に⟦SUPPORT⟧。,1,3
+SAT:3.4.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,111,3,numbered_proposition,同じ入力でも、異なる履歴場では異なる対象として成立する。,同じ入力でも、異なる履歴場では異なる対象として⟦ESTABLISH⟧。,1,2
+SAT:3.4.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,113,3,numbered_proposition,したがって、カテゴリーは固定された表ではなく、履歴場が外部同期のために用いる分類演算子として再構成される。,したがって、カテゴリーは固定された表⟦NEGATE⟧、履歴場が外部同期のために用いる分類演算子として再構成される。,1,4
+SAT:3.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,115,3,numbered_proposition,悟性は、感性によって切り出された入力を、判断可能な構造へ変換する。,悟性は、感性によって切り出された入力を、判断可能な構造へ⟦TRANSFORM⟧。,1,5
+SAT:3.5.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,117,3,numbered_proposition,ただし、悟性は万能ではない。,ただし、悟性は万能⟦NEGATE⟧。,1,1
+SAT:3.5.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,119,3,numbered_proposition,分類できないものを無理に分類すると、誤認が起こる。,分類⟦NEGATE⟧ものを無理に分類すると、誤認が⟦CAUSE⟧。,2,2
+SAT:3.5.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,121,3,numbered_proposition,分類できないものを存在しないものとして扱うと、履歴切断が起こる。,分類⟦NEGATE⟧ものを存在⟦NEGATE⟧もの⟦PREDICATE⟧と、履歴切断が⟦CAUSE⟧。,4,2
+SAT:3.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,123,3,numbered_proposition,悟性の研究は、分類の成功だけでは足りない。,悟性の研究は、分類の成功だけでは足りない。,0,2
+SAT:3.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,125,3,numbered_proposition,悟性の研究は、分類不能性がどのような残差を発生させるかを問う。,悟性の研究は、分類不能性がどのような残差を発生させるかを問う。,0,3
+SAT:3.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,127,3,numbered_proposition,分類不能性は、失敗である場合がある。,分類不能性は、失敗⟦PREDICATE⟧⟦CONDITION⟧がある。,2,1
+SAT:3.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,129,3,numbered_proposition,分類不能性は、新しい分類形式を要求する場合がある。,分類不能性は、新しい分類形式を要求する⟦CONDITION⟧がある。,1,2
+SAT:3.10,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,131,3,numbered_proposition,悟性の暴走は、分類できるものだけを存在と誤認することである。,悟性の暴走は、分類⟦POSSIBLE⟧ものだけを存在と誤認すること⟦PREDICATE⟧。,2,2
+SAT:4.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,137,4,numbered_proposition,感性と悟性は、単なる心理能力ではない。,感性と悟性は、単なる心理能力⟦NEGATE⟧。,1,2
+SAT:4.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,139,4,numbered_proposition,感性は、外部入力がどの形式空間において信号として立ち上がるかを問う。,感性は、外部入力がどの形式空間において信号として立ち上がるかを問う。,0,2
+SAT:4.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,141,4,numbered_proposition,悟性は、立ち上がった信号がどの形式空間において対象・関係・因果・量・質・意味として分類されるかを問う。,悟性は、立ち上がった信号がどの形式空間において対象・関係・因果・量・質・意味として分類されるかを問う。,0,3
+SAT:4.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,143,4,numbered_proposition,したがって、感性論と悟性論は、形式空間論を要求する。,したがって、感性論と悟性論は、形式空間論を要求する。,0,2
+SAT:4.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,145,4,numbered_proposition,ここでいう形式空間には、ヒルベルト空間、rigged Hilbert 空間、エントロピー空間、およびそれらに対応する観測・分類・意味生成の空間が含まれる。,ここでいう形式空間には、ヒルベルト空間、rigged Hilbert 空間、エントロピー空間、およびそれらに対応する観測・分類・意味生成の空間が含まれる。,0,3
+SAT:4.5.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,147,4,numbered_proposition,ヒルベルト空間は、状態・射影・観測断面を考えるための形式空間である。,ヒルベルト空間は、状態・射影・観測断面を考えるための形式空間⟦PREDICATE⟧。,1,1
+SAT:4.5.1.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,149,4,numbered_proposition,境界認識批判におけるヒルベルト空間への関心は、物理状態の再計算ではなく、何が状態化され、何が射影から漏れるかにある。,境界認識批判におけるヒルベルト空間への関心は、物理状態の再計算⟦NEGATE⟧、何が状態化され、何が射影から漏れるかにある。,1,4
+SAT:4.5.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,151,4,numbered_proposition,rigged Hilbert 空間は、通常の状態空間では閉じにくい一般化状態・境界状態・連続的対象を扱うための拡張空間である。,rigged Hilbert 空間は、通常の状態空間では閉じにくい一般化状態・境界状態・連続的対象を扱うための拡張空間⟦PREDICATE⟧。,1,1
+SAT:4.5.2.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,153,4,numbered_proposition,境界認識批判におけるrigged Hilbert 空間への関心は、正規化された状態として閉じにくいもの、または観測断面に安定的に収まりきらないものをどう扱うかにある。,境界認識批判におけるrigged Hilbert 空間への関心は、正規化された状態として閉じにくいもの、または観測断面に安定的に収まりきらないものをどう扱うかにある。,0,5
+SAT:4.5.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,155,4,numbered_proposition,エントロピー空間は、分布・散逸・圧縮・ノイズ・未統合残差を扱うための空間である。,エントロピー空間は、分布・散逸・圧縮・ノイズ・未統合残差を扱うための空間⟦PREDICATE⟧。,1,1
+SAT:4.5.3.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,157,4,numbered_proposition,境界認識批判におけるエントロピー空間への関心は、ノイズを消すことではなく、ノイズがどの境界不整合を示すかを読むことにある。,境界認識批判におけるエントロピー空間への関心は、ノイズを消すこと⟦NEGATE⟧、ノイズがどの境界不整合を示すかを読むことにある。,1,5
+SAT:4.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,159,4,numbered_proposition,境界認識批判にとって重要なのは、これらの空間がエネルギーをどう扱うかではない。,境界認識批判にとって重要なのは、これらの空間がエネルギーをどう扱うか⟦NEGATE⟧。,1,3
+SAT:4.6.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,161,4,numbered_proposition,それは物理学の仕事である。,それは物理学の仕事⟦PREDICATE⟧。,1,0
+SAT:4.6.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,163,4,numbered_proposition,境界認識批判が追うべきなのは、各形式空間が何を状態化し、何を観測可能にし、何を分類不能にし、何をノイズ・残差・意味圧として漏出させるかである。,境界認識批判が追うべきなのは、各形式空間が何を状態化し、何を観測可能にし、何を分類不能にし、何をノイズ・残差・意味圧として漏出させるか⟦PREDICATE⟧。,1,7
+SAT:4.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,165,4,numbered_proposition,したがって、存在境界論は時空だけを扱わない。,したがって、存在境界論は時空だけを扱わない。,0,1
+SAT:4.7.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,167,4,numbered_proposition,存在境界論は、外的時空に加えて、内在時間、エントロピー時間、論理-深度軸を扱う。,存在境界論は、外的時空に加えて、内在時間、エントロピー時間、論理-深度軸を扱う。,0,5
+SAT:4.7.1.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,169,4,numbered_proposition,外的時空とは、物理的・社会的に共有される時間空間順序である。,外的時空⟦DEFINE⟧、物理的・社会的に共有される時間空間順序⟦PREDICATE⟧。,2,1
+SAT:4.7.1.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,171,4,numbered_proposition,内在時間とは、履歴場内部において、意味・反応・残差が更新される順序である。,内在時間⟦DEFINE⟧、履歴場内部において、意味・反応・残差が⟦TRANSFORM⟧順序⟦PREDICATE⟧。,3,5
+SAT:4.7.1.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,173,4,numbered_proposition,エントロピー時間とは、差異・ノイズ・未統合残差が、閉鎖・保留・再符号化・切断へ向かう処理方向である。,エントロピー時間⟦DEFINE⟧、差異・ノイズ・未統合残差が、閉鎖・保留・再符号化・切断へ向かう処理方向⟦PREDICATE⟧。,2,3
+SAT:4.7.1.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,175,4,numbered_proposition,論理-深度軸とは、外的時間の前後ではなく、未解決・矛盾・分岐・残差・意味圧をどれだけ保持し、再構成できるかを示す深度方向である。,論理-深度軸⟦DEFINE⟧、外的時間の前後⟦NEGATE⟧、未解決・矛盾・分岐・残差・意味圧をどれだけ⟦RETAIN⟧、再構成⟦POSSIBLE⟧かを示す深度方向⟦PREDICATE⟧。,5,5
+SAT:4.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,177,4,numbered_proposition,存在境界論の主たる探究対象は、この形式空間と時間軸の交差において、認識・意味・観測・ノイズ・残差がどのように立ち上がるかである。,存在境界論の主たる探究対象は、この形式空間と時間軸の交差において、認識・意味・観測・ノイズ・残差がどのように立ち上がるか⟦PREDICATE⟧。,1,5
+SAT:4.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,179,4,numbered_proposition,この章は、境界認識批判から分岐する詳細研究領域であり、空間論・時間論・境界ノイズ論として別稿化される。,この章は、境界認識批判から分岐する詳細研究領域であり、空間論・時間論・境界ノイズ論として別稿化される。,0,4
+SAT:5.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,185,5,numbered_proposition,理性とは、未閉鎖の入力・分類・判断を、より大きな内部ループへ統合しようとする力である。,理性⟦DEFINE⟧、未閉鎖の入力・分類・判断を、より大きな内部ループへ統合しよう⟦PREDICATE⟧力⟦PREDICATE⟧。,3,4
+SAT:5.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,187,5,numbered_proposition,理性は、一貫した説明を求める。,理性は、一貫した説明を求める。,0,1
+SAT:5.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,189,5,numbered_proposition,理性は、根拠を求める。,理性は、根拠を求める。,0,1
+SAT:5.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,191,5,numbered_proposition,理性は、世界像を求める。,理性は、世界像を求める。,0,1
+SAT:5.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,193,5,numbered_proposition,理性は、未解決を閉じたがる。,理性は、未解決を閉じたがる。,0,2
+SAT:5.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,195,5,numbered_proposition,したがって、理性は有用である。,したがって、理性は有用⟦PREDICATE⟧。,1,1
+SAT:5.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,197,5,numbered_proposition,しかし、理性は危険でもある。,しかし、理性は危険でもある。,0,1
+SAT:5.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,199,5,numbered_proposition,理性が外部同期可能な範囲を越えて内部ループを閉じようとすると、偽閉鎖が起こる。,理性が外部同期可能な範囲を越えて内部ループを閉じよう⟦PREDICATE⟧と、偽閉鎖が⟦CAUSE⟧。,2,5
+SAT:5.8.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,201,5,numbered_proposition,偽閉鎖とは、未解決であるものを、解決済みのように扱うことである。,偽閉鎖⟦DEFINE⟧、未解決⟦PREDICATE⟧ものを、解決済みのように扱うこと⟦PREDICATE⟧。,3,2
+SAT:5.8.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,203,5,numbered_proposition,理性の暴走とは、内部ループの閉鎖欲が、外部同期と照合を失った状態である。,理性の暴走⟦DEFINE⟧、内部ループの閉鎖欲が、外部同期と照合を失った状態⟦PREDICATE⟧。,2,5
+SAT:5.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,205,5,numbered_proposition,批判とは、理性を否定することではない。,批判⟦DEFINE⟧、理性を否定すること⟦NEGATE⟧。,2,2
+SAT:5.10,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,207,5,numbered_proposition,批判とは、理性が正当に閉じられる範囲と、閉じてはならない範囲を区別することである。,批判⟦DEFINE⟧、理性が正当に閉じられる範囲と、閉じては⟦NEGATE⟧範囲を区別すること⟦PREDICATE⟧。,3,2
+SAT:5.11,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,209,5,numbered_proposition,理性の成熟とは、閉じる力を持ちながら、閉じてはならない残差を保持できることである。,理性の成熟⟦DEFINE⟧、閉じる力を持ちながら、閉じては⟦NEGATE⟧残差を保持⟦POSSIBLE⟧こと⟦PREDICATE⟧。,4,3
+SAT:5.12,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,211,5,numbered_proposition,理性の未成熟とは、未閉鎖を嫌い、残差を偽閉鎖することである。,理性の未成熟⟦DEFINE⟧、未閉鎖を嫌い、残差を偽閉鎖すること⟦PREDICATE⟧。,2,3
+SAT:6.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,217,6,numbered_proposition,法則とは、外部から与えられた絶対命令ではない。,法則⟦DEFINE⟧、外部から与えられた絶対命令⟦NEGATE⟧。,2,2
+SAT:6.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,219,6,numbered_proposition,法則とは、単なる主観的な思い込みでもない。,法則⟦DEFINE⟧、単なる主観的な思い込みでもない。,1,1
+SAT:6.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,221,6,numbered_proposition,法則とは、外部経験との同期可能性を持つ、高安定のヒューリスティック体系である。,法則⟦DEFINE⟧、外部経験との同期可能性を持つ、高安定のヒューリスティック体系⟦PREDICATE⟧。,2,4
+SAT:6.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,223,6,numbered_proposition,ヒューリスティックとは、経験を圧縮し、次の判断に使える形へ閉じた理解である。,ヒューリスティック⟦DEFINE⟧、経験を圧縮し、次の判断に使える形へ閉じた理解⟦PREDICATE⟧。,2,2
+SAT:6.4.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,225,6,numbered_proposition,私的ヒューリスティックは、個人の経験に閉じる。,私的ヒューリスティックは、個人の経験に閉じる。,0,1
+SAT:6.4.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,227,6,numbered_proposition,共同体的ヒューリスティックは、共同体内で安定する。,共同体的ヒューリスティックは、共同体内で安定する。,0,1
+SAT:6.4.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,229,6,numbered_proposition,科学的ヒューリスティックは、観測・測定・再現・反証・更新を通じて、外部との同期可能性を高める。,科学的ヒューリスティックは、観測・測定・再現・反証・更新を通じて、外部との同期可能性を高める。,0,4
+SAT:6.4.3.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,231,6,numbered_proposition,物理法則は、その中でも、外的時空内で極めて高い同期精度を持つ法則体系である。,物理法則は、その中でも、外的時空内で極めて高い同期精度を持つ法則体系⟦PREDICATE⟧。,1,4
+SAT:6.4.3.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,233,6,numbered_proposition,したがって、科学を否定する必要はない。,したがって、科学を否定する必要はない。,0,0
+SAT:6.4.3.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,235,6,numbered_proposition,しかし、科学を神にする必要もない。,しかし、科学を神にする必要もない。,0,0
+SAT:6.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,237,6,numbered_proposition,法則は、適用範囲を持つ。,法則は、適用範囲を持つ。,0,1
+SAT:6.5.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,239,6,numbered_proposition,適用範囲を失った法則は、教義になる。,適用範囲を失った法則は、教義になる。,0,1
+SAT:6.5.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,241,6,numbered_proposition,法則体系の批判とは、法則の成立条件・同期条件・適用範囲・更新条件を問うことである。,法則体系の批判⟦DEFINE⟧、法則の成立条件・同期条件・適用範囲・更新条件を問うこと⟦PREDICATE⟧。,2,4
+SAT:6.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,243,6,numbered_proposition,境界認識批判は、法則を弱めない。,境界認識批判は、法則を弱めない。,0,4
+SAT:6.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,245,6,numbered_proposition,境界認識批判は、法則が正当に働く範囲と、法則が残差を不可視化する範囲を区別する。,境界認識批判は、法則が正当に働く範囲と、法則が残差を不可視化する範囲を区別する。,0,6
+SAT:7.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,251,7,numbered_proposition,内部ヒューリスティックとは、履歴場が外部を受け取り、分類し、判断するための内部構造である。,内部ヒューリスティック⟦DEFINE⟧、履歴場が外部を受け取り、分類し、⟦SELECT⟧ための内部構造⟦PREDICATE⟧。,3,7
+SAT:7.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,253,7,numbered_proposition,外部ヒューリスティックとは、観測、実験、言語、数式、制度、文献、AI、共同体検証などとして外部化された判断構造である。,外部ヒューリスティック⟦DEFINE⟧、観測、実験、言語、数式、制度、文献、AI、共同体検証などとして外部化された判断構造⟦PREDICATE⟧。,2,5
+SAT:7.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,255,7,numbered_proposition,同期とは、内部ヒューリスティックと外部ヒューリスティックが、運用上安定して対応することである。,同期⟦DEFINE⟧、内部ヒューリスティックと外部ヒューリスティックが、運用上安定して対応すること⟦PREDICATE⟧。,2,3
+SAT:7.3.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,257,7,numbered_proposition,同期は、機能の条件である。,同期は、機能の条件⟦PREDICATE⟧。,1,2
+SAT:7.3.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,259,7,numbered_proposition,同期しているものは、使える。,同期しているものは、使える。,0,1
+SAT:7.3.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,261,7,numbered_proposition,同期しているものは、予測できる。,同期しているものは、予測⟦POSSIBLE⟧。,1,1
+SAT:7.3.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,263,7,numbered_proposition,同期しているものは、他者と共有しやすい。,同期しているものは、他者と共有しやすい。,0,1
+SAT:7.3.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,265,7,numbered_proposition,しかし、同期だけでは知は完結しない。,しかし、同期だけでは知は完結⟦NEGATE⟧。,1,2
+SAT:7.3.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,267,7,numbered_proposition,同期は、一致の意味を説明しない。,同期は、一致の意味を説明⟦NEGATE⟧。,1,2
+SAT:7.3.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,269,7,numbered_proposition,同期は、不一致の意味を説明しない。,同期は、不一致の意味を説明⟦NEGATE⟧。,1,2
+SAT:7.3.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,271,7,numbered_proposition,同期は、残差が何を示しているかを説明しない。,同期は、残差が何を示しているかを説明⟦NEGATE⟧。,1,2
+SAT:7.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,273,7,numbered_proposition,したがって、同期には照合が必要である。,したがって、同期には照合が⟦REQUIRE⟧。,1,2
+SAT:7.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,275,7,numbered_proposition,同期だけを重視すると、機能するものだけが真であるかのように見える。,同期だけを重視すると、機能するものだけが真⟦PREDICATE⟧かのように見える。,1,3
+SAT:7.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,277,7,numbered_proposition,同期だけを重視すると、機能していないもの、まだ機能形式に乗っていないもの、機能の外部へ押し出されたものが残差として捨てられる。,同期だけを重視すると、機能していないもの、まだ機能形式に乗っていないもの、機能の外部へ押し出されたものが残差として捨てられる。,0,6
+SAT:8.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,283,8,numbered_proposition,照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,照合⟦DEFINE⟧、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作⟦PREDICATE⟧。,2,4
+SAT:8.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,285,8,numbered_proposition,照合は、単なる比較ではない。,照合は、単なる比較⟦NEGATE⟧。,1,1
+SAT:8.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,287,8,numbered_proposition,照合は、どの履歴場において、どの外部ヒューリスティックと、どの条件で一致しているのかを問う。,照合は、どの履歴場において、どの外部ヒューリスティックと、どの条件で一致しているのかを問う。,0,3
+SAT:8.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,289,8,numbered_proposition,照合は、不一致を単純な誤りとして即時に捨てない。,照合は、不一致を単純な誤りとして即時に捨てない。,0,1
+SAT:8.4.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,291,8,numbered_proposition,不一致は、誤りである場合がある。,不一致は、誤り⟦PREDICATE⟧⟦CONDITION⟧がある。,2,0
+SAT:8.4.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,293,8,numbered_proposition,不一致は、適用範囲の外を示す場合がある。,不一致は、適用範囲の外を示す⟦CONDITION⟧がある。,1,0
+SAT:8.4.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,295,8,numbered_proposition,不一致は、新しい分類を要求する場合がある。,不一致は、新しい分類を要求する⟦CONDITION⟧がある。,1,1
+SAT:8.4.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,297,8,numbered_proposition,不一致は、内部ヒューリスティックの更新を要求する場合がある。,不一致は、内部ヒューリスティックの更新を要求する⟦CONDITION⟧がある。,1,1
+SAT:8.4.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,299,8,numbered_proposition,不一致は、外部ヒューリスティックの限界を示す場合がある。,不一致は、外部ヒューリスティックの限界を示す⟦CONDITION⟧がある。,1,1
+SAT:8.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,301,8,numbered_proposition,残差は、失敗ではない。,残差は、失敗⟦NEGATE⟧。,1,1
+SAT:8.5.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,303,8,numbered_proposition,残差は、未処理の意味である。,残差は、未処理の意味⟦PREDICATE⟧。,1,2
+SAT:8.5.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,305,8,numbered_proposition,残差は、次の問いの発生源である。,残差は、次の問いの発生源⟦PREDICATE⟧。,1,1
+SAT:8.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,307,8,numbered_proposition,照合は、残差を意味の資源として保持する。,照合は、残差を意味の資源として⟦RETAIN⟧。,1,4
+SAT:8.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,309,8,numbered_proposition,照合だけを絶対化すると、すべての残差を何らかの意味として閉じようとする。,照合だけを絶対化すると、すべての残差を何らかの意味として閉じよう⟦PREDICATE⟧。,1,3
+SAT:8.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,311,8,numbered_proposition,照合の過剰は、残差保持ではなく、残差の意味強制になる。,照合の過剰は、残差保持⟦NEGATE⟧、残差の意味強制になる。,1,4
+SAT:9.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,317,9,numbered_proposition,知は、同期と照合だけでは閉じない。,知は、同期と照合だけでは閉じない。,0,3
+SAT:9.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,319,9,numbered_proposition,同期は、内部ヒューリスティックと外部ヒューリスティックの運用的一致を与える。,同期は、内部ヒューリスティックと外部ヒューリスティックの運用的一致を与える。,0,3
+SAT:9.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,321,9,numbered_proposition,照合は、その一致・不一致・残差に意味を与える。,照合は、その一致・不一致・残差に意味を与える。,0,3
+SAT:9.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,323,9,numbered_proposition,しかし、照合されたもののすべてが閉じられるわけではない。,しかし、⟦COLLATE⟧たもののすべてが閉じられるわけ⟦NEGATE⟧。,2,1
+SAT:9.4.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,325,9,numbered_proposition,閉じられなかったものは、残差として残る。,閉じられなかったものは、残差として残る。,0,1
+SAT:9.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,327,9,numbered_proposition,残差とは、単なる未解決問題ではない。,残差⟦DEFINE⟧、単なる未解決問題⟦NEGATE⟧。,2,2
+SAT:9.5.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,329,9,numbered_proposition,残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,残差⟦DEFINE⟧、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分⟦PREDICATE⟧。,2,7
+SAT:9.5.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,331,9,numbered_proposition,残渣とは、処理・分類・制度化・交換・説明のあとに残り、しばしば不可視化されながらも、なお場に作用し続ける履歴的沈殿である。,残渣⟦DEFINE⟧、処理・分類・制度化・交換・説明のあとに残り、しばしば不可視化されながらも、なお場に作用し続ける履歴的沈殿⟦PREDICATE⟧。,2,3
+SAT:9.5.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,333,9,numbered_proposition,残差は、問いとして保持される。,残差は、問いとして⟦RETAIN⟧。,1,2
+SAT:9.5.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,335,9,numbered_proposition,残渣は、負債・違和感・汚染・歪み・意味圧として蓄積する。,残渣は、負債・違和感・汚染・歪み・意味圧として蓄積する。,0,2
+SAT:9.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,337,9,numbered_proposition,残差は、観測・意味化・分類・制度化・記録・交換・説明の過程で、処理されず、または処理されたことにされながら、なお場に作用し続けることがある。,残差は、観測・意味化・分類・制度化・記録・交換・説明の過程で、処理されず、または処理されたことにされながら、なお場に作用し続けることがある。,0,4
+SAT:9.6.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,339,9,numbered_proposition,残差は、見落としである場合がある。,残差は、見落とし⟦PREDICATE⟧⟦CONDITION⟧がある。,2,1
+SAT:9.6.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,341,9,numbered_proposition,残差は、抑圧である場合がある。,残差は、抑圧⟦PREDICATE⟧⟦CONDITION⟧がある。,2,1
+SAT:9.6.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,343,9,numbered_proposition,残差は、外部化された負債である場合がある。,残差は、外部化された負債⟦PREDICATE⟧⟦CONDITION⟧がある。,2,2
+SAT:9.6.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,345,9,numbered_proposition,残差は、未来の問いの発生源である場合がある。,残差は、未来の問いの発生源⟦PREDICATE⟧⟦CONDITION⟧がある。,2,1
+SAT:9.6.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,347,9,numbered_proposition,残差は、現在の同期体系では照合不能な意味張力である場合がある。,残差は、現在の同期体系では照合不能な意味張力⟦PREDICATE⟧⟦CONDITION⟧がある。,2,4
+SAT:9.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,349,9,numbered_proposition,したがって、残差を即座に廃棄してはならない。,したがって、残差を即座に廃棄しては⟦NEGATE⟧。,1,1
+SAT:9.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,351,9,numbered_proposition,しかし、残差をすべて保持してもならない。,しかし、残差をすべて⟦RETAIN⟧ても⟦NEGATE⟧。,2,2
+SAT:9.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,353,9,numbered_proposition,すべての残差を保持することは、認識をカオスへ戻す。,すべての残差を⟦RETAIN⟧こ⟦DEFINE⟧、認識をカオスへ戻す。,2,2
+SAT:9.10,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,355,9,numbered_proposition,残差保持とは、残差を閉じず、捨てず、かつ無制限に氾濫させないための境界操作である。,残差保持⟦DEFINE⟧、残差を閉じず、捨てず、かつ無制限に氾濫させないための境界操作⟦PREDICATE⟧。,2,3
+SAT:9.11,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,357,9,numbered_proposition,新しいヒューリスティックは、しばしば残差保持と再照合の結果として発生する。,新しいヒューリスティックは、しばしば残差保持と再照合の結果として発生する。,0,3
+SAT:9.11.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,359,9,numbered_proposition,創発とは、無からの出現ではなく、既存の分類体系で閉じられなかった残差が、再照合によって新しい分類形式を要求することである。,創発⟦DEFINE⟧、無からの出現⟦NEGATE⟧、既存の分類体系で閉じられなかった残差が、再照合によって新しい分類形式を要求すること⟦PREDICATE⟧。,3,5
+SAT:9.12,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,361,9,numbered_proposition,嘘とは、単なる偽命題ではない。,嘘⟦DEFINE⟧、単なる偽命題⟦NEGATE⟧。,2,1
+SAT:9.12.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,363,9,numbered_proposition,嘘とは、照合経路を切断し、残差へのアクセスを塞ぐ操作である。,嘘⟦DEFINE⟧、照合経路を⟦CUT⟧、残差へのアクセスを塞ぐ操作⟦PREDICATE⟧。,3,3
+SAT:9.13,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,365,9,numbered_proposition,搾取とは、制度上の同期を維持しながら、負荷・責任・痛み・未来機会を残差として外部化する操作である。,搾取⟦DEFINE⟧、制度上の同期を⟦RETAIN⟧ながら、負荷・責任・痛み・未来機会を残差として外部化する操作⟦PREDICATE⟧。,3,5
+SAT:9.14,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,367,9,numbered_proposition,環境問題とは、経済的同期から排除された自然・身体・未来世代の残渣が、場の反応として戻ってくる問題である。,環境問題⟦DEFINE⟧、経済的同期から排除された自然・身体・未来世代の残渣が、場の反応として戻ってくる問題⟦PREDICATE⟧。,2,3
+SAT:9.15,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,369,9,numbered_proposition,AIの偽閉鎖とは、未解決残差を回答形式で閉じたように見せることである。,AIの偽閉鎖⟦DEFINE⟧、未解決残差を回答形式で閉じたように見せること⟦PREDICATE⟧。,2,3
+SAT:9.15.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,371,9,numbered_proposition,有用なAIは、残差を消すのではなく、残差へのアクセス経路を保つ。,有用なAIは、残差を消すの⟦NEGATE⟧、残差へのアクセス経路を保つ。,1,2
+SAT:9.16,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,373,9,numbered_proposition,境界認識批判の中心は、すべてを観測することではない。,境界認識批判の中心は、すべてを観測すること⟦NEGATE⟧。,1,4
+SAT:9.16.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,375,9,numbered_proposition,境界認識批判の中心は、観測できないもの、観測されなかったもの、観測した瞬間に変質するもの、観測体系から漏れるものを、残差として扱う条件を問うことである。,境界認識批判の中心は、観測⟦NEGATE⟧もの、観測されなかったもの、観測した瞬間に変質するもの、観測体系から漏れるものを、残差⟦PREDICATE⟧条件を問うこと⟦PREDICATE⟧。,3,8
+SAT:9.17,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,377,9,numbered_proposition,知るとは、残差を消し切ることではない。,知る⟦DEFINE⟧、残差を消し切ること⟦NEGATE⟧。,2,2
+SAT:9.17.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,379,9,numbered_proposition,知るとは、残差を保持したまま、判断可能性を維持することである。,知る⟦DEFINE⟧、残差を⟦RETAIN⟧たまま、判断可能性を⟦RETAIN⟧こと⟦PREDICATE⟧。,4,4
+SAT:10.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,385,10,numbered_proposition,命題は、単に真か偽かでは終わらない。,命題は、単に真か偽かでは終わらない。,0,2
+SAT:10.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,387,10,numbered_proposition,命題は、どの場で真なのかを持つ。,命題は、どの場で真なのかを持つ。,0,1
+SAT:10.2.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,389,10,numbered_proposition,命題は、どの条件で真なのかを持つ。,命題は、どの条件で真なのかを持つ。,0,1
+SAT:10.2.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,391,10,numbered_proposition,命題は、どの外部ヒューリスティックと同期しているのかを持つ。,命題は、どの外部ヒューリスティックと同期しているのかを持つ。,0,2
+SAT:10.2.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,393,10,numbered_proposition,命題は、どの内部ヒューリスティックを起動しているのかを持つ。,命題は、どの内部ヒューリスティックを起動しているのかを持つ。,0,1
+SAT:10.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,395,10,numbered_proposition,命題は、何を残差として残しているのかを持つ。,命題は、何を残差として⟦RETAIN⟧ているのかを持つ。,1,1
+SAT:10.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,397,10,numbered_proposition,したがって、真偽命題は意味論を持つ。,したがって、真偽命題は意味論を持つ。,0,1
+SAT:10.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,399,10,numbered_proposition,真とは、命題が事実に単純対応することだけではない。,真⟦DEFINE⟧、命題が事実に単純対応することだけ⟦NEGATE⟧。,2,1
+SAT:10.5.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,401,10,numbered_proposition,真とは、ある命題が、特定の履歴場において、特定の外部ヒューリスティックと照合され、判断可能性を保つ状態である。,真⟦DEFINE⟧、ある命題が、特定の履歴場において、特定の外部ヒューリスティックと⟦COLLATE⟧、判断可能性を保つ状態⟦PREDICATE⟧。,3,5
+SAT:10.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,403,10,numbered_proposition,偽とは、単なる不一致ではない。,偽⟦DEFINE⟧、単なる不一致⟦NEGATE⟧。,2,1
+SAT:10.6.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,405,10,numbered_proposition,偽とは、同期不能、照合不能、適用範囲逸脱、分類失敗、または偽閉鎖として現れる。,偽⟦DEFINE⟧、同期不能、照合不能、適用範囲逸脱、分類失敗、または偽閉鎖として現れる。,1,5
+SAT:10.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,407,10,numbered_proposition,未解決とは、偽ではない。,未解決⟦DEFINE⟧、偽⟦NEGATE⟧。,2,2
+SAT:10.7.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,409,10,numbered_proposition,未解決とは、照合が閉じていない状態である。,未解決⟦DEFINE⟧、照合が閉じていない状態⟦PREDICATE⟧。,2,2
+SAT:10.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,411,10,numbered_proposition,知にとって重要なのは、真偽だけでなく、真偽・意味・残差・更新可能性の配置である。,知にとって重要なのは、真偽だけでなく、真偽・意味・残差・更新可能性の配置⟦PREDICATE⟧。,1,3
+SAT:10.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,413,10,numbered_proposition,真偽判定から残差へのアクセス経路を切断すると、命題は制度的には機能しても、意味論的には劣化する。,真偽判定から残差へのアクセス経路を⟦CUT⟧と、命題は制度的には機能しても、意味論的には劣化する。,1,3
+SAT:11.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,419,11,numbered_proposition,学問とは、知識の保管庫ではない。,学問⟦DEFINE⟧、知識の保管庫⟦NEGATE⟧。,2,1
+SAT:11.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,421,11,numbered_proposition,学問とは、内部ヒューリスティックと外部ヒューリスティックの同期を試みる営みである。,学問⟦DEFINE⟧、内部ヒューリスティックと外部ヒューリスティックの同期を試みる営み⟦PREDICATE⟧。,2,4
+SAT:11.2.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,423,11,numbered_proposition,ただし、同期だけでは学問にならない。,ただし、同期だけでは学問に⟦NEGATE⟧。,1,2
+SAT:11.2.1.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,425,11,numbered_proposition,学問は、同期の一致・不一致・残差を照合する。,学問は、同期の一致・不一致・残差を⟦COLLATE⟧。,1,4
+SAT:11.2.1.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,427,11,numbered_proposition,学問は、その照合手順を言語化する。,学問は、その照合手順を言語化する。,0,2
+SAT:11.2.1.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,429,11,numbered_proposition,学問は、その照合手順を記号化する。,学問は、その照合手順を記号化する。,0,2
+SAT:11.2.1.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,431,11,numbered_proposition,学問は、その照合手順を方法化する。,学問は、その照合手順を方法化する。,0,2
+SAT:11.2.1.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,433,11,numbered_proposition,学問は、その照合手順を他者が再照合できる形へ保存する。,学問は、その照合手順を他者が再照合⟦POSSIBLE⟧形へ⟦RETAIN⟧。,2,3
+SAT:11.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,435,11,numbered_proposition,したがって、学問とは、同期と照合の継承可能な形式である。,したがって、学問⟦DEFINE⟧、同期と照合の継承可能な形式⟦PREDICATE⟧。,2,3
+SAT:11.3.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,437,11,numbered_proposition,科学は、外部同期と再照合の強度が高い学問形式である。,科学は、外部同期と再照合の強度が高い学問形式⟦PREDICATE⟧。,1,4
+SAT:11.3.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,439,11,numbered_proposition,哲学は、同期と照合の成立条件そのものを問う学問形式である。,哲学は、同期と照合の成立条件そのものを問う学問形式⟦PREDICATE⟧。,1,4
+SAT:11.3.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,441,11,numbered_proposition,形而上学は、入力・対象・意味・判断・存在が立ち上がる以前の条件を問う学問形式である。,形而上学は、入力・対象・意味・判断・存在が立ち上がる以前の条件を問う学問形式⟦PREDICATE⟧。,1,3
+SAT:11.3.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,443,11,numbered_proposition,人文学は、履歴場における意味・解釈・言語ゲーム・価値の照合を扱う学問形式である。,人文学は、履歴場における意味・解釈・言語ゲーム・価値の照合を扱う学問形式⟦PREDICATE⟧。,1,6
+SAT:11.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,445,11,numbered_proposition,AI時代の学問は、外部記憶を内部理解へ同期し、その照合過程を人間が保持できるかを問われる。,AI時代の学問は、外部記憶を内部理解へ同期し、その照合過程を人間が保持⟦POSSIBLE⟧かを問われる。,1,6
+SAT:11.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,447,11,numbered_proposition,学問は、残差を消し切るための制度ではない。,学問は、残差を消し切るための制度⟦NEGATE⟧。,1,2
+SAT:11.5.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,449,11,numbered_proposition,学問は、残差を再照合可能な形で保存し、未来の問いへ渡すための制度である。,学問は、残差を再照合可能な形で保存し、未来の問いへ渡すための制度⟦PREDICATE⟧。,1,3
+SAT:12.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,455,12,numbered_proposition,言語は、意味を運ぶだけではない。,言語は、意味を運ぶだけ⟦NEGATE⟧。,1,1
+SAT:12.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,457,12,numbered_proposition,言語は、分類を同期させる。,言語は、分類を同期させる。,0,2
+SAT:12.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,459,12,numbered_proposition,言語は、反応を同期させる。,言語は、反応を同期させる。,0,1
+SAT:12.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,461,12,numbered_proposition,言語は、責任を同期させる。,言語は、責任を同期させる。,0,2
+SAT:12.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,463,12,numbered_proposition,言語は、何を問題と呼び、何を説明と呼び、何を証明と呼び、何を冗談と呼び、何を失礼と呼ぶかを同期させる。,言語は、何を問題と呼び、何を説明と呼び、何を証明と呼び、何を冗談と呼び、何を失礼⟦DEFINE⟧かを同期させる。,1,1
+SAT:12.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,465,12,numbered_proposition,言語ゲームとは、共同体内で安定化した照合規則である。,言語ゲーム⟦DEFINE⟧、共同体内で安定化した照合規則⟦PREDICATE⟧。,2,3
+SAT:12.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,467,12,numbered_proposition,言語ゲームが違えば、同じ命題でも異なる内部ヒューリスティックを起動する。,言語ゲームが違えば、同じ命題でも異なる内部ヒューリスティックを起動する。,0,2
+SAT:12.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,469,12,numbered_proposition,したがって、誤解は単なる情報不足ではない。,したがって、誤解は単なる情報不足⟦NEGATE⟧。,1,0
+SAT:12.8.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,471,12,numbered_proposition,誤解は、照合規則の不一致として発生する。,誤解は、照合規則の不一致として発生する。,0,2
+SAT:12.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,473,12,numbered_proposition,通約とは、異なる言語ゲームの間に照合可能な対応面を作ることである。,通約⟦DEFINE⟧、異なる言語ゲームの間に照合可能な対応面を作ること⟦PREDICATE⟧。,2,3
+SAT:12.9.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,475,12,numbered_proposition,完全翻訳は不要である。,完全翻訳は不要⟦PREDICATE⟧。,1,1
+SAT:12.9.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,477,12,numbered_proposition,必要なのは、保存すべき核、変換可能な層、未決定の残差を分けることである。,必要なのは、保存すべき核、変換可能な層、未決定の残差を分けること⟦PREDICATE⟧。,1,2
+SAT:12.9.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,479,12,numbered_proposition,通約とは、差異を消すことではなく、照合可能な境界面を作ることである。,通約⟦DEFINE⟧、差異を消すこと⟦NEGATE⟧、照合可能な境界面を作ること⟦PREDICATE⟧。,3,3
+SAT:12.10,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,481,12,numbered_proposition,言語ゲームの失敗は、残差を非常識・非合理・非存在として処分し、照合可能性を失わせることである。,言語ゲームの失敗は、残差を非常識・非合理・非存在として処分し、照合可能性を失わせること⟦PREDICATE⟧。,1,3
+SAT:12.10.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,483,12,numbered_proposition,残差をユーモアとして処理する、または誤解や誤謬として扱う場合には、照合の可能性が残される。,残差をユーモアとして処理する、または誤解や誤謬⟦PREDICATE⟧⟦CONDITION⟧、照合の可能性が残される。,2,2
+SAT:13.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,489,13,numbered_proposition,AIは、外部記憶を高速化する。,AIは、外部記憶を高速化する。,0,1
+SAT:13.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,491,13,numbered_proposition,AIは、候補を増やす。,AIは、候補を増やす。,0,0
+SAT:13.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,493,13,numbered_proposition,AIは、要約し、分類し、比較し、生成する。,AIは、要約し、分類し、比較し、生成する。,0,1
+SAT:13.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,495,13,numbered_proposition,AIは、内部理解そのものではない。,AIは、内部理解そのもの⟦NEGATE⟧。,1,1
+SAT:13.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,497,13,numbered_proposition,AIは、外部ヒューリスティックの増幅装置である。,AIは、外部ヒューリスティックの増幅装置⟦PREDICATE⟧。,1,1
+SAT:13.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,499,13,numbered_proposition,AIを内部理解の代替にすると、判断主体は痩せる。,AIを内部理解の代替にすると、判断主体は痩せる。,0,2
+SAT:13.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,501,13,numbered_proposition,AIを外部ヒューリスティックとして使い、内部理解と照合するなら、判断可能性は増える。,AIを外部ヒューリスティックとして使い、内部理解と⟦COLLATE⟧⟦CONDITION⟧、判断可能性は増える。,2,4
+SAT:13.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,503,13,numbered_proposition,AIの危険は、間違えることだけではない。,AIの危険は、間違えることだけ⟦NEGATE⟧。,1,0
+SAT:13.8.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,505,13,numbered_proposition,AIの危険は、未解決を閉じたように見せることである。,AIの危険は、未解決を閉じたように見せること⟦PREDICATE⟧。,1,1
+SAT:13.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,507,13,numbered_proposition,AIの有用性は、答えを出すことだけではない。,AIの有用性は、答えを出すことだけ⟦NEGATE⟧。,1,0
+SAT:13.9.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,509,13,numbered_proposition,AIの有用性は、判断可能性を保つことである。,AIの有用性は、判断可能性を保つこと⟦PREDICATE⟧。,1,1
+SAT:13.10,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,511,13,numbered_proposition,AI時代の批判哲学は、AIを拒絶することではない。,AI時代の批判哲学は、AIを拒絶すること⟦NEGATE⟧。,1,1
+SAT:13.10.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,513,13,numbered_proposition,AI時代の批判哲学は、AIによって増幅された外部ヒューリスティックを、内部理解とどう同期し、どう照合するかを問うことである。,AI時代の批判哲学は、AIによって増幅された外部ヒューリスティックを、内部理解とどう同期し、どう⟦COLLATE⟧かを問うこと⟦PREDICATE⟧。,2,5
+SAT:13.11,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,515,13,numbered_proposition,AIは、残差を保持する補助にもなりうる。,AIは、残差を⟦RETAIN⟧補助にもなりうる。,1,2
+SAT:13.11.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,517,13,numbered_proposition,AIは、残差を偽閉鎖する装置にもなりうる。,AIは、残差を偽閉鎖する装置にもなりうる。,0,2
+SAT:13.11.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,519,13,numbered_proposition,有用なAIは、残差を消すAIではなく、残差へのアクセス経路を保つAIである。,有用なAIは、残差を消すAI⟦NEGATE⟧、残差へのアクセス経路を保つAI⟦PREDICATE⟧。,2,2
+SAT:14.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,525,14,numbered_proposition,知は暴走する。,知は暴走する。,0,1
+SAT:14.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,527,14,numbered_proposition,感性は、受け取れるものだけを世界と誤認する。,感性は、受け取れるものだけを世界と誤認する。,0,1
+SAT:14.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,529,14,numbered_proposition,悟性は、分類できるものだけを対象と誤認する。,悟性は、分類⟦POSSIBLE⟧ものだけを対象と誤認する。,1,2
+SAT:14.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,531,14,numbered_proposition,理性は、閉じられるものだけを真理と誤認する。,理性は、閉じられるものだけを真理と誤認する。,0,1
+SAT:14.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,533,14,numbered_proposition,科学は、測定可能なものだけを現実と誤認することがある。,科学は、測定可能なものだけを現実と誤認することがある。,0,0
+SAT:14.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,535,14,numbered_proposition,制度は、記録可能なものだけを責任と誤認することがある。,制度は、記録可能なものだけを責任と誤認することがある。,0,1
+SAT:14.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,537,14,numbered_proposition,経済は、価格化可能なものだけを価値と誤認することがある。,経済は、価格化可能なものだけを価値と誤認することがある。,0,1
+SAT:14.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,539,14,numbered_proposition,AIは、出力可能なものだけを回答と誤認することがある。,AIは、出力可能なものだけを回答と誤認することがある。,0,0
+SAT:14.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,541,14,numbered_proposition,これらはすべて、境界の失敗である。,これらはすべて、境界の失敗⟦PREDICATE⟧。,1,1
+SAT:14.10,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,543,14,numbered_proposition,境界認識批判は、何を受け取り、何を分類し、何を閉じ、何を残差として保持するかを問う。,境界認識批判は、何を受け取り、何を分類し、何を閉じ、何を残差として⟦RETAIN⟧かを問う。,1,6
+SAT:14.11,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,545,14,numbered_proposition,境界認識批判は、知を弱めるためのものではない。,境界認識批判は、知を弱めるためのもの⟦NEGATE⟧。,1,4
+SAT:14.12,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,547,14,numbered_proposition,境界認識批判は、知が正当に働く条件を固定するためのものである。,境界認識批判は、知が正当に働く条件を固定するためのもの⟦PREDICATE⟧。,1,4
+SAT:14.13,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,549,14,numbered_proposition,同期だけでよいとする態度は、残差を捨てる。,同期だけでよい⟦PREDICATE⟧態度は、残差を捨てる。,1,2
+SAT:14.14,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,551,14,numbered_proposition,照合だけを絶対化する態度は、残差を無理に閉じる。,照合だけを絶対化する態度は、残差を無理に閉じる。,0,2
+SAT:14.15,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,553,14,numbered_proposition,同期も照合も捨てる態度は、残差を氾濫させる。,同期も照合も捨てる態度は、残差を氾濫させる。,0,3
+SAT:14.16,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,555,14,numbered_proposition,履歴と切れたカオスは、残差が接続先を失った状態である。,履歴と切れたカオスは、残差が接続先を失った状態⟦PREDICATE⟧。,1,3
+SAT:14.17,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,557,14,numbered_proposition,したがって、知の暴走条件は、残差処理の失敗として再記述できる。,したがって、知の暴走条件は、残差処理の失敗として再記述⟦POSSIBLE⟧。,1,2
+SAT:14.18,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,559,14,numbered_proposition,事実は、条件と出典のもとで、現在の記述を強く拘束する。,事実は、条件と出典のもとで、現在の記述を強く拘束する。,0,0
+SAT:14.18.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,561,14,numbered_proposition,しかし、事実の集積それ自体は、真実そのものへの到達を意味しない。,しかし、事実の集積それ自体は、真実そのものへの到達を意味⟦NEGATE⟧。,1,1
+SAT:14.19,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,563,14,numbered_proposition,経験を増やすことは、有限な観測者の解像度を上げうる。,経験を増やすこ⟦DEFINE⟧、有限な観測者の解像度を上げうる。,1,2
+SAT:14.19.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,565,14,numbered_proposition,しかし、経験量の増大は、有限な観測者を真実全体の所有者へ変えない。,しかし、経験量の増大は、有限な観測者を真実全体の所有者へ変えない。,0,1
+SAT:14.20,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,567,14,numbered_proposition,現在到達した事実集合を真実全体として閉じるなら、未知の観測軸、将来の反証、別の履歴、残差への返路を閉じる。,現在到達した事実集合を真実全体として閉じる⟦CONDITION⟧、未知の観測軸、将来の反証、別の履歴、残差への返路を閉じる。,1,3
+SAT:14.21,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,569,14,numbered_proposition,したがって、知の完成宣言は、最も強い偽閉鎖候補の一つである。,したがって、知の完成宣言は、最も強い偽閉鎖候補の一つ⟦PREDICATE⟧。,1,2
+SAT:14.22,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,571,14,numbered_proposition,著者の表現で言えば、**「完成するなら、そのとき私は地上の神となっているだろう。」**,著者の表現で言えば、**「完成する⟦CONDITION⟧、その⟦CONDITION⟧私は地上の神となっているだろう。」**,2,0
+SAT:15.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,577,15,numbered_proposition,知は、内部と外部のどちらか一方だけでは成立しない。,知は、内部と外部のどちらか一方だけでは⟦ESTABLISH⟧。,1,4
+SAT:15.1.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,579,15,numbered_proposition,知は、内部ヒューリスティックと外部ヒューリスティックの同期によって機能する。,知は、内部ヒューリスティックと外部ヒューリスティックの同期によって機能する。,0,5
+SAT:15.2,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,581,15,numbered_proposition,知は、その同期の一致・不一致・残差を照合することで意味を持つ。,知は、その同期の一致・不一致・残差を⟦COLLATE⟧ことで意味を持つ。,1,5
+SAT:15.3,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,583,15,numbered_proposition,知は、残差を保持し、再照合可能性を維持することで更新可能性を持つ。,知は、残差を⟦RETAIN⟧、再照合可能性を⟦RETAIN⟧ことで更新可能性を持つ。,2,4
+SAT:15.4,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,585,15,numbered_proposition,経験は、境界で構成される。,経験は、境界で構成される。,0,1
+SAT:15.5,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,587,15,numbered_proposition,感性と悟性は、履歴場の受容・分類ヒューリスティックである。,感性と悟性は、履歴場の受容・分類ヒューリスティック⟦PREDICATE⟧。,1,5
+SAT:15.6,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,589,15,numbered_proposition,感性と悟性の詳細研究は、形式空間論・時間論・境界ノイズ論として展開される。,感性と悟性の詳細研究は、形式空間論・時間論・境界ノイズ論として展開される。,0,3
+SAT:15.7,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,591,15,numbered_proposition,法則は、外部同期可能な高安定ヒューリスティックである。,法則は、外部同期可能な高安定ヒューリスティック⟦PREDICATE⟧。,1,4
+SAT:15.8,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,593,15,numbered_proposition,真偽命題は、意味論を持つ。,真偽命題は、意味論を持つ。,0,1
+SAT:15.9,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,595,15,numbered_proposition,学問は、同期と照合を再照合可能な形へ保存する営みである。,学問は、同期と照合を再照合可能な形へ⟦RETAIN⟧営み⟦PREDICATE⟧。,2,4
+SAT:15.10,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,597,15,numbered_proposition,言語ゲームは、共同体における照合規則である。,言語ゲームは、共同体における照合規則⟦PREDICATE⟧。,1,3
+SAT:15.11,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,599,15,numbered_proposition,AIは、外部ヒューリスティックを増幅する。,AIは、外部ヒューリスティックを増幅する。,0,1
+SAT:15.11.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,601,15,numbered_proposition,したがって、AI時代には、境界認識批判が必要である。,したがって、AI時代には、境界認識批判が⟦REQUIRE⟧。,1,3
+SAT:15.12,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,603,15,numbered_proposition,知るとは、世界を所有することではない。,知る⟦DEFINE⟧、世界を所有すること⟦NEGATE⟧。,2,1
+SAT:15.12.1,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,605,15,numbered_proposition,知るとは、境界で接触し、同期し、照合し、残差を保持しながら、次の判断可能性を開くことである。,知る⟦DEFINE⟧、境界で⟦CONTACT⟧、同期し、⟦COLLATE⟧、残差を⟦RETAIN⟧ながら、次の判断可能性を開くこと⟦PREDICATE⟧。,5,7
+SAT:15.13,SAT,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,607,15,numbered_proposition,有限な観測者にとって、現在の到達は完成ではなく、再照合可能な仮閉鎖である。,有限な観測者にとって、現在の到達は完成⟦NEGATE⟧、再照合可能な仮閉鎖⟦PREDICATE⟧。,2,2
+RAJ:L14:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,14,0. 位置づけ,sentence_candidate,本文書は、存在境界論において、認識軸がどのように生成され、安定し、変形するかを扱う基幹ノートである。,本文書は、存在境界論において、認識軸がどのように生成され、安定し、⟦TRANSFORM⟧かを扱う基幹ノート⟦PREDICATE⟧。,2,2
+RAJ:L16:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,16,0. 位置づけ,sentence_candidate,本稿が所有する問いは、次の一つである。,本稿が所有する問いは、次の一つ⟦PREDICATE⟧。,1,0
+RAJ:L18:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,18,0. 位置づけ,blockquote_candidate,履歴を持つ観測者に差分が接触したとき、何が感じられ、何が理解可能になり、何が見えなくなるという方向性は、どのように形成されるのか。,履歴を持つ観測者に差分が⟦CONTACT⟧⟦CONDITION⟧、何が感じられ、何が理解可能になり、何が見えなくなるという方向性は、どのように⟦TRANSFORM⟧のか。,3,4
+RAJ:L20:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,20,0. 位置づけ,sentence_candidate,本稿は、知の正当化条件そのものを定義しない。,本稿は、知の正当化条件そのものを定義⟦NEGATE⟧。,1,1
+RAJ:L20:S2,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,20,0. 位置づけ,sentence_candidate,同期、照合、偽閉鎖、再照合可能性といった知の成立条件は、[`Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md) が主に扱う。,同期、照合、偽閉鎖、再照合可能性といった知の成立条件は、[`Boundary_Epistemological_Critique.ja.md`](../01_Sat_Truth/Boundary_Epistemological_Critique.ja.md) が主に扱う。,0,6
+RAJ:L22:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,22,0. 位置づけ,sentence_candidate,本稿は、情報が意味になる条件そのものも定義しない。,本稿は、情報が意味になる条件そのものも定義⟦NEGATE⟧。,1,1
+RAJ:L22:S2,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,22,0. 位置づけ,sentence_candidate,意味ループ、履歴、クオリア、内在時間の関係は、[`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md) が主に扱う。,意味ループ、履歴、クオリア、内在時間の関係は、[`Meaning_Generation_Model.md`](../01_Sat_Truth/Meaning_Generation_Model.md) が主に扱う。,0,3
+RAJ:L24:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,24,0. 位置づけ,sentence_candidate,本稿が扱うのは、それらの条件のもとで、局所的な観測者の感性と悟性が、履歴、関心、捨象、価値、コスト、残差、反復によって、特定の方向へ編成されていく過程である。,本稿が扱うのは、それらの条件のもとで、局所的な観測者の感性と悟性が、履歴、関心、捨象、価値、コスト、残差、反復によって、特定の方向へ編成されていく過程⟦PREDICATE⟧。,1,9
+RAJ:L26:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,26,0. 位置づけ,sentence_candidate,この意味で、本稿は認識の成立条件を扱う批判論ではなく、認識方向の生成を扱う動態論である。,この意味で、本稿は認識の成立条件を扱う批判論⟦NEGATE⟧、認識方向の生成を扱う動態論⟦PREDICATE⟧。,2,5
+RAJ:L30:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,30,0.1 Raj / Beauty に置く理由,sentence_candidate,本稿を Raj / Beauty に置くのは、認識を固定された鏡としてではなく、差分が関係を作り、選択され、背景化され、形を得ていく運動として扱うためである。,本稿を Raj / Beauty に置くのは、認識を固定された鏡として⟦NEGATE⟧、差分が関係を作り、選択され、背景化され、形を得ていく運動⟦PREDICATE⟧ため⟦PREDICATE⟧。,3,3
+RAJ:L32:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,32,0.1 Raj / Beauty に置く理由,sentence_candidate,ここでいう Beauty は、装飾的な美しさだけを意味しない。,ここでいう Beauty は、装飾的な美しさだけを意味⟦NEGATE⟧。,1,1
+RAJ:L34:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,34,0.1 Raj / Beauty に置く理由,sentence_candidate,それは、異なるものが接触し、あるものが前景となり、別のものが背景となり、世界が一つの認識可能な形を得る生成運動である。,それは、異なるものが⟦CONTACT⟧、あるものが前景となり、別のものが背景となり、世界が一つの認識可能な形を得る生成運動⟦PREDICATE⟧。,2,1
+RAJ:L36:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,36,0.1 Raj / Beauty に置く理由,sentence_candidate,認識軸とは、この生成運動が履歴の中で安定した方向である。,認識軸⟦DEFINE⟧、この生成運動が履歴の中で安定した方向⟦PREDICATE⟧。,2,2
+RAJ:L59:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,59,0.2 本稿の入出力,sentence_candidate,本稿の出力は、人間を分類する型ではない。,本稿の出力は、人間を分類する型⟦NEGATE⟧。,1,1
+RAJ:L61:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,61,0.2 本稿の入出力,sentence_candidate,それは、ある観測者、組織、共同体、制度が、どの差分を拾い、どの差分を落とし、どの方向から世界を読むようになったかを再照合するための記述である。,それは、ある観測者、組織、共同体、制度が、どの差分を拾い、どの差分を落とし、どの方向から世界を読むようになったかを⟦COLLATE⟧ための記述⟦PREDICATE⟧。,2,4
+RAJ:L67:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,67,1. 問題設定,sentence_candidate,人は同じ世界を見ているようで、同じ世界を見ていない。,人は同じ世界を見ているようで、同じ世界を見ていない。,0,0
+RAJ:L69:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,69,1. 問題設定,sentence_candidate,同じ出来事を前にしても、ある人は損得を見る。,同じ出来事を前にしても、ある人は損得を見る。,0,0
+RAJ:L70:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,70,1. 問題設定,sentence_candidate,ある人は責任を見る。,ある人は責任を見る。,0,1
+RAJ:L71:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,71,1. 問題設定,sentence_candidate,ある人は美しさを見る。,ある人は美しさを見る。,0,0
+RAJ:L72:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,72,1. 問題設定,sentence_candidate,ある人は危険を見る。,ある人は危険を見る。,0,0
+RAJ:L73:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,73,1. 問題設定,sentence_candidate,ある人は支配構造を見る。,ある人は支配構造を見る。,0,1
+RAJ:L74:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,74,1. 問題設定,sentence_candidate,ある人は疲弊を見る。,ある人は疲弊を見る。,0,0
+RAJ:L75:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,75,1. 問題設定,sentence_candidate,ある人は意味の切断を見る。,ある人は意味の切断を見る。,0,1
+RAJ:L76:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,76,1. 問題設定,sentence_candidate,ある人はまだ残っている返路を見る。,ある人はまだ残っている返路を見る。,0,0
+RAJ:L78:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,78,1. 問題設定,sentence_candidate,この違いは、単なる意見の違いではない。,この違いは、単なる意見の違い⟦NEGATE⟧。,1,0
+RAJ:L80:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,80,1. 問題設定,sentence_candidate,意見が形成される以前に、何が現実として感じられるかが異なっている。,意見が⟦TRANSFORM⟧以前に、何が現実として感じられるかが異なっている。,1,1
+RAJ:L82:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,82,1. 問題設定,sentence_candidate,さらに、感じられたものが、何として整理されるかも異なっている。,さらに、感じられたものが、何として整理されるかも異なっている。,0,0
+RAJ:L84:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,84,1. 問題設定,sentence_candidate,同じ遅延が、ある人には怠慢として見え、別の人には制度不全として見える。,同じ遅延が、ある人には怠慢として見え、別の人には制度不全として見える。,0,0
+RAJ:L85:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,85,1. 問題設定,sentence_candidate,同じ沈黙が、ある人には無関心として見え、別の人には保留や防御として見える。,同じ沈黙が、ある人には無関心として見え、別の人には保留や防御として見える。,0,2
+RAJ:L86:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,86,1. 問題設定,sentence_candidate,同じ規則が、ある人には秩序として見え、別の人には履歴切断として見える。,同じ規則が、ある人には秩序として見え、別の人には履歴切断として見える。,0,2
+RAJ:L88:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,88,1. 問題設定,sentence_candidate,ここで変わっているのは、結論だけではない。,ここで変わっているのは、結論だけ⟦NEGATE⟧。,1,0
+RAJ:L90:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,90,1. 問題設定,sentence_candidate,何が信号として立ち上がるか。,何が信号として立ち上がるか。,0,0
+RAJ:L91:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,91,1. 問題設定,sentence_candidate,何が対象になるか。,何が対象になるか。,0,0
+RAJ:L92:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,92,1. 問題設定,sentence_candidate,何が因果になるか。,何が因果になるか。,0,0
+RAJ:L93:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,93,1. 問題設定,sentence_candidate,何が責任になるか。,何が責任になるか。,0,1
+RAJ:L94:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,94,1. 問題設定,sentence_candidate,何が価値として保持されるか。,何が価値として⟦RETAIN⟧か。,1,2
+RAJ:L95:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,95,1. 問題設定,sentence_candidate,何がコストとして背景へ送られるか。,何がコストとして背景へ送られるか。,0,1
+RAJ:L97:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,97,1. 問題設定,sentence_candidate,認識の差は、この形成過程の差として現れる。,認識の差は、この形成過程の差として現れる。,0,2
+RAJ:L103:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,103,2. 基本命題,sentence_candidate,本稿の基本命題は、次の通りである。,本稿の基本命題は、次の通り⟦PREDICATE⟧。,1,0
+RAJ:L105:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,105,2. 基本命題,blockquote_candidate,認識軸とは、エントロピー属性を帯びた差分が観測者の境界に接触し、関心と捨象を通じて感性と悟性の編成を変化させ、価値とコストの重みづけ、残差、反復を経て、安定した観測方向として形成されるものである。,認識軸⟦DEFINE⟧、エントロピー属性を帯びた差分が観測者の境界に⟦CONTACT⟧、関心と捨象を通じて感性と悟性の編成を変化させ、価値とコストの重みづけ、残差、反復を経て、安定した観測方向として⟦TRANSFORM⟧もの⟦PREDICATE⟧。,4,13
+RAJ:L107:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,107,2. 基本命題,sentence_candidate,最小モデルは、次のように表せる。,最小モデルは、次のように表せる。,0,0
+RAJ:L129:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,129,2. 基本命題,sentence_candidate,認識軸は、性格、思想、人格、能力と同一ではない。,認識軸は、性格、思想、人格、能力と同一⟦NEGATE⟧。,1,1
+RAJ:L131:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,131,2. 基本命題,sentence_candidate,認識軸とは、観測者が世界を読む際に、ある差分を前景化し、別の差分を背景化し、一定の形式で対象・因果・責任・価値を組み立てやすくなる方向である。,認識軸⟦DEFINE⟧、観測者が世界を読む際に、ある差分を前景化し、別の差分を背景化し、一定の形式で対象・因果・責任・価値を組み立てやすくなる方向⟦PREDICATE⟧。,2,8
+RAJ:L133:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,133,2. 基本命題,sentence_candidate,それは固定された本質ではない。,それは固定された本質⟦NEGATE⟧。,1,0
+RAJ:L135:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,135,2. 基本命題,sentence_candidate,履歴を持ち、安定し、硬直し、漂移し、分岐し、再接続されうる。,履歴を持ち、安定し、硬直し、漂移し、分岐し、再接続されうる。,0,2
+RAJ:L141:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,141,3. 境界へ接触する差分,sentence_candidate,本稿でいう差分とは、観測者の境界に接触し、何らかの反応、違和感、関心、切断、意味圧、残差を生じさせるものを指す。,本稿でいう差分⟦DEFINE⟧、観測者の境界に⟦CONTACT⟧、何らかの反応、違和感、関心、切断、意味圧、残差を生じさせるもの⟦DEFINE⟧。,3,6
+RAJ:L143:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,143,3. 境界へ接触する差分,sentence_candidate,差分は、中立な情報としてだけ現れるわけではない。,差分は、中立な情報としてだけ現れるわけ⟦NEGATE⟧。,1,1
+RAJ:L145:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,145,3. 境界へ接触する差分,sentence_candidate,同じ出来事でも、ある観測者には一時的なノイズとして散り、別の観測者には長く残る問いとして凝集する。,同じ出来事でも、ある観測者には一時的なノイズとして散り、別の観測者には長く残る問いとして凝集する。,0,2
+RAJ:L146:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,146,3. 境界へ接触する差分,sentence_candidate,同じ言葉でも、ある履歴には接続し、別の履歴には接続しない。,同じ言葉でも、ある履歴には⟦CONNECT⟧、別の履歴には⟦CONNECT⟧ない。,2,4
+RAJ:L147:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,147,3. 境界へ接触する差分,sentence_candidate,同じ制度でも、ある位置からは秩序として見え、別の位置からは処理不能な負荷として現れる。,同じ制度でも、ある位置からは秩序として見え、別の位置からは処理不能な負荷として現れる。,0,0
+RAJ:L149:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,149,3. 境界へ接触する差分,sentence_candidate,本稿では、差分が境界で示す次のような性質を、エントロピー属性と呼ぶ。,本稿では、差分が境界で示す次のような性質を、エントロピー属性⟦DEFINE⟧。,1,2
+RAJ:L155:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,155,3. 境界へ接触する差分,list_candidate,他の履歴を活性化しやすさ,他の履歴を活性化しやすさ,0,1
+RAJ:L156:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,156,3. 境界へ接触する差分,list_candidate,価値へ変換されやすさ,価値へ変換されやすさ,0,2
+RAJ:L157:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,157,3. 境界へ接触する差分,list_candidate,コストとして背景化・外部化されやすさ,コストとして背景化・外部化されやすさ,0,3
+RAJ:L158:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,158,3. 境界へ接触する差分,list_candidate,返路を形成しやすさ,返路を⟦TRANSFORM⟧やすさ,1,1
+RAJ:L159:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,159,3. 境界へ接触する差分,list_candidate,残差または残渣として沈殿しやすさ,残差または残渣として沈殿しやすさ,0,2
+RAJ:L161:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,161,3. 境界へ接触する差分,sentence_candidate,エントロピー属性は、入力だけに属する固定的性質ではない。,エントロピー属性は、入力だけに属する固定的性質⟦NEGATE⟧。,1,0
+RAJ:L163:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,163,3. 境界へ接触する差分,sentence_candidate,それは、入力と観測者の履歴が接触する境界で生じる関係的性質である。,それは、入力と観測者の履歴が⟦CONTACT⟧境界で⟦CAUSE⟧関係的性質⟦PREDICATE⟧。,3,3
+RAJ:L165:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,165,3. 境界へ接触する差分,sentence_candidate,したがって、本稿の「エントロピー」は、標準熱力学上のエントロピー量を置き換えるものではない。,したがって、本稿の「エントロピー」は、標準熱力学上のエントロピー量を置き換えるもの⟦NEGATE⟧。,1,0
+RAJ:L167:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,167,3. 境界へ接触する差分,sentence_candidate,ここで扱うのは、差分がどのように散り、集まり、保持され、切断され、次の認識条件を変えるかという存在境界論上の属性である。,ここで扱うのは、差分がどのように散り、集まり、保持され、切断され、次の認識条件を変えるかという存在境界論上の属性⟦PREDICATE⟧。,1,4
+RAJ:L173:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,173,4. 関心,sentence_candidate,関心とは、差分を保持し、追跡し、解像度を与えようとする方向である。,関心⟦DEFINE⟧、差分を⟦RETAIN⟧、追跡し、解像度を与えよう⟦PREDICATE⟧方向⟦PREDICATE⟧。,4,3
+RAJ:L175:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,175,4. 関心,sentence_candidate,関心は、単に好きなものを見ることではない。,関心は、単に好きなものを見ること⟦NEGATE⟧。,1,1
+RAJ:L177:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,177,4. 関心,sentence_candidate,関心が立つことで、それまでは背景だったものが、感覚可能・記述可能・追跡可能なものとして前景化する。,関心が立つことで、それまでは背景だったものが、感覚可能・記述可能・追跡可能なものとして前景化する。,0,2
+RAJ:L179:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,179,4. 関心,sentence_candidate,同じ発言でも、関心が正しさへ向いていれば、論理の整合性が見える。,同じ発言でも、関心が正しさへ向いていれば、論理の整合性が見える。,0,1
+RAJ:L180:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,180,4. 関心,sentence_candidate,関心が責任へ向いていれば、発話者が返りを受け取る位置にいるかが見える。,関心が責任へ向いていれば、発話者が返りを受け取る位置にいるかが見える。,0,2
+RAJ:L181:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,181,4. 関心,sentence_candidate,関心が流通へ向いていれば、その言葉がどの場を通り、どこで増幅され、どこで消費されるかが見える。,関心が流通へ向いていれば、その言葉がどの場を通り、どこで増幅され、どこで消費されるかが見える。,0,1
+RAJ:L182:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,182,4. 関心,sentence_candidate,関心が境界へ向いていれば、誰のどの履歴に接触し、何を壊し、何を残したかが見える。,関心が境界へ向いていれば、誰のどの履歴に⟦CONTACT⟧、何を壊し、何を⟦RETAIN⟧たかが見える。,2,3
+RAJ:L184:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,184,4. 関心,sentence_candidate,関心は、差分を現実として立ち上げる。,関心は、差分を現実として立ち上げる。,0,2
+RAJ:L186:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,186,4. 関心,sentence_candidate,ただし、関心は万能ではない。,ただし、関心は万能⟦NEGATE⟧。,1,1
+RAJ:L188:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,188,4. 関心,sentence_candidate,ある差分へ強く関心を向けることは、別の差分を捨象する条件にもなる。,ある差分へ強く関心を向けるこ⟦DEFINE⟧、別の差分を⟦CUT⟧条件にもなる。,2,4
+RAJ:L190:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,190,4. 関心,sentence_candidate,関心は開口であると同時に、視野の配分でもある。,関心は開口⟦PREDICATE⟧と同時に、視野の配分でもある。,1,1
+RAJ:L196:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,196,5. 捨象,sentence_candidate,捨象とは、差分を保持しない、背景化する、切断する、保留する、または別の処理へ送る方向である。,捨象⟦DEFINE⟧、差分を⟦RETAIN⟧ない、背景化する、⟦CUT⟧、保留する、または別の処理へ送る方向⟦PREDICATE⟧。,4,5
+RAJ:L198:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,198,5. 捨象,sentence_candidate,捨象は、単なる無知ではない。,捨象は、単なる無知⟦NEGATE⟧。,1,1
+RAJ:L200:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,200,5. 捨象,sentence_candidate,すべてを見ることはできない。,すべてを見るこ⟦DEFINE⟧⟦NEGATE⟧。,2,0
+RAJ:L201:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,201,5. 捨象,sentence_candidate,すべてを感じることもできない。,すべてを感じることも⟦NEGATE⟧。,1,0
+RAJ:L202:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,202,5. 捨象,sentence_candidate,すべてを同時に考え続けることもできない。,すべてを同時に考え続けることも⟦NEGATE⟧。,1,0
+RAJ:L204:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,204,5. 捨象,sentence_candidate,認識は、何かを捨象することで初めて一定の形を得る。,認識は、何かを⟦CUT⟧ことで初めて一定の形を得る。,1,2
+RAJ:L206:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,206,5. 捨象,sentence_candidate,しかし、捨象が反復されると、見えない領域が安定する。,しかし、捨象が反復されると、見えない領域が安定する。,0,1
+RAJ:L208:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,208,5. 捨象,sentence_candidate,ある差分を見ないことに慣れると、その差分は「無関係」「些細」「ノイズ」「面倒」「例外」「考えすぎ」として処理されやすくなる。,ある差分を見ないことに慣れると、その差分は「無関係」「些細」「ノイズ」「面倒」「例外」「考えすぎ」として処理されやすくなる。,0,2
+RAJ:L210:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,210,5. 捨象,sentence_candidate,捨象は、単に情報量を減らす操作ではない。,捨象は、単に情報量を減らす操作⟦NEGATE⟧。,1,1
+RAJ:L212:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,212,5. 捨象,sentence_candidate,何を対象として立てるか。,何を対象として立てるか。,0,0
+RAJ:L213:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,213,5. 捨象,sentence_candidate,何を背景とするか。,何を背景⟦PREDICATE⟧か。,1,0
+RAJ:L214:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,214,5. 捨象,sentence_candidate,何を因果から外すか。,何を因果から外すか。,0,0
+RAJ:L215:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,215,5. 捨象,sentence_candidate,何を責任から外すか。,何を責任から外すか。,0,1
+RAJ:L216:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,216,5. 捨象,sentence_candidate,何を測定可能な範囲の外へ送るか。,何を測定可能な範囲の外へ送るか。,0,0
+RAJ:L218:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,218,5. 捨象,sentence_candidate,捨象は、理解形式を編成する。,捨象は、理解形式を編成する。,0,1
+RAJ:L220:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,220,5. 捨象,sentence_candidate,したがって、認識軸を照合するときには、何を見ているかだけでなく、何を見ないことでその世界像が成立しているかを問う必要がある。,したがって、認識軸を⟦COLLATE⟧⟦CONDITION⟧には、何を見ているかだけでなく、何を見ないことでその世界像が⟦ESTABLISH⟧いるかを問う⟦REQUIRE⟧。,4,3
+RAJ:L226:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,226,6. 感性の編成,sentence_candidate,本稿では、感性を「何が感じられるかの開口」として扱う。,本稿では、感性を「何が感じられるかの開口」⟦PREDICATE⟧。,1,1
+RAJ:L228:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,228,6. 感性の編成,sentence_candidate,これは、カント哲学における感性の厳密な解説または再定義ではない。,これは、カント哲学における感性の厳密な解説または再定義⟦NEGATE⟧。,1,1
+RAJ:L230:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,230,6. 感性の編成,sentence_candidate,関心と捨象が変わると、何が感じられるかが変わる。,関心と捨象が変わると、何が感じられるかが変わる。,0,2
+RAJ:L232:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,232,6. 感性の編成,sentence_candidate,それまで何も感じなかった制度が、急に暴力として感じられることがある。,それまで何も感じなかった制度が、急に暴力として感じられることがある。,0,0
+RAJ:L233:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,233,6. 感性の編成,sentence_candidate,意味がないと思っていた沈黙が、急に重いものとして現れることがある。,意味がないと思っていた沈黙が、急に重いものとして現れることがある。,0,1
+RAJ:L234:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,234,6. 感性の編成,sentence_candidate,見慣れた風景が、ある履歴との接触によって、喪失や美として立ち上がることがある。,見慣れた風景が、ある履歴との接触によって、喪失や美として立ち上がることがある。,0,1
+RAJ:L235:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,235,6. 感性の編成,sentence_candidate,正常だと思っていた運用が、誰かの疲弊を知った後には、正常として感じられなくなることがある。,正常だと思っていた運用が、誰かの疲弊を知った後には、正常として感じられなくなることがある。,0,1
+RAJ:L237:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,237,6. 感性の編成,sentence_candidate,これは、知識が増えたからだけではない。,これは、知識が増えたからだけ⟦NEGATE⟧。,1,0
+RAJ:L239:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,239,6. 感性の編成,sentence_candidate,差分を受け取る開口が変わったため、感じられる世界が変化したのである。,差分を受け取る開口が変わったため、感じられる世界が⟦TRANSFORM⟧たの⟦PREDICATE⟧。,2,1
+RAJ:L241:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,241,6. 感性の編成,sentence_candidate,感性は固定された受信器ではない。,感性は固定された受信器⟦NEGATE⟧。,1,1
+RAJ:L243:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,243,6. 感性の編成,sentence_candidate,感性は、履歴、関心、捨象、価値、コスト、残差の反復によって編成される。,感性は、履歴、関心、捨象、価値、コスト、残差の反復によって編成される。,0,7
+RAJ:L249:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,249,7. 悟性の編成,sentence_candidate,本稿では、悟性を「感じられたものが、どのような形式で対象・関係・因果・責任として整理されるかの編成」として扱う。,本稿では、悟性を「感じられたものが、どのような形式で対象・関係・因果・責任として整理されるかの編成」⟦PREDICATE⟧。,1,2
+RAJ:L251:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,251,7. 悟性の編成,sentence_candidate,これも、カント哲学における悟性の厳密な解説または再定義ではない。,これも、カント哲学における悟性の厳密な解説または再定義⟦NEGATE⟧。,1,1
+RAJ:L253:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,253,7. 悟性の編成,sentence_candidate,同じ出来事でも、ある人は個人の失敗として整理する。,同じ出来事でも、ある人は個人の失敗として整理する。,0,0
+RAJ:L254:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,254,7. 悟性の編成,sentence_candidate,ある人は制度の不具合として整理する。,ある人は制度の不具合として整理する。,0,0
+RAJ:L255:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,255,7. 悟性の編成,sentence_candidate,ある人は歴史的残差として整理する。,ある人は歴史的残差として整理する。,0,1
+RAJ:L256:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,256,7. 悟性の編成,sentence_candidate,ある人は倫理的返りとして整理する。,ある人は倫理的返りとして整理する。,0,0
+RAJ:L257:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,257,7. 悟性の編成,sentence_candidate,ある人は偶然として整理する。,ある人は偶然として整理する。,0,0
+RAJ:L258:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,258,7. 悟性の編成,sentence_candidate,ある人は構造的な必然として整理する。,ある人は構造的な必然として整理する。,0,1
+RAJ:L260:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,260,7. 悟性の編成,sentence_candidate,ここで変わっているのは結論だけではない。,ここで変わっているのは結論だけ⟦NEGATE⟧。,1,0
+RAJ:L262:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,262,7. 悟性の編成,sentence_candidate,出来事を、何の事例として受け取るかが変わっている。,出来事を、何の事例として受け取るかが変わっている。,0,0
+RAJ:L264:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,264,7. 悟性の編成,sentence_candidate,悟性は、差分を分類し、関係づけ、判断可能な形式へ配置する。,悟性は、差分を分類し、関係づけ、判断可能な形式へ配置する。,0,4
+RAJ:L266:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,266,7. 悟性の編成,sentence_candidate,そのため、捨象の仕方が変わると、世界の理解形式が変わる。,そのため、捨象の仕方が変わると、世界の理解形式が変わる。,0,1
+RAJ:L268:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,268,7. 悟性の編成,sentence_candidate,悟性の暴走は、分類できるものだけを存在すると誤認することである。,悟性の暴走は、分類⟦POSSIBLE⟧ものだけを存在すると誤認すること⟦PREDICATE⟧。,2,2
+RAJ:L270:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,270,7. 悟性の編成,sentence_candidate,悟性の成熟は、分類不能なものを直ちに無とせず、残差として保持し、新しい分類形式または別の照合経路を待てることである。,悟性の成熟は、分類不能なものを直ちに無とせず、残差として⟦RETAIN⟧、新しい分類形式または別の照合経路を待てること⟦PREDICATE⟧。,2,6
+RAJ:L276:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,276,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,本稿における価値とコストは、完成した倫理判断だけを意味しない。,本稿における価値とコストは、完成した倫理判断だけを意味⟦NEGATE⟧。,1,4
+RAJ:L278:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,278,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,価値とは、保持するに値すると前もって重みづけられた差分である。,価値⟦DEFINE⟧、⟦RETAIN⟧に値すると前もって重みづけられた差分⟦PREDICATE⟧。,3,3
+RAJ:L280:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,280,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,コストとは、その価値を保持するために、負荷、遅延、例外、ノイズ、犠牲、処理対象として配分される差分である。,コスト⟦DEFINE⟧、その価値を⟦RETAIN⟧ために、負荷、遅延、例外、ノイズ、犠牲、処理対象として配分される差分⟦PREDICATE⟧。,3,4
+RAJ:L282:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,282,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,価値があると思えるものは、見えやすくなる。,価値があると思えるものは、見えやすくなる。,0,1
+RAJ:L283:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,283,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,コストが高すぎるものは、見えないことにされやすくなる。,コストが高すぎるものは、見えないことにされやすくなる。,0,1
+RAJ:L285:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,285,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,ある社会が効率を価値として強く保持すれば、遅さ、余白、迷い、保留、照合はコストとして見えやすくなる。,ある社会が効率を価値として強く保持すれば、遅さ、余白、迷い、保留、照合はコストとして見えやすくなる。,0,5
+RAJ:L286:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,286,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,秩序を価値として強く保持すれば、例外、逸脱、苦痛、未処理の声はコストとして見えやすくなる。,秩序を価値として強く保持すれば、例外、逸脱、苦痛、未処理の声はコストとして見えやすくなる。,0,3
+RAJ:L287:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,287,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,正しさを価値として強く保持すれば、関係の痛みや返路の切断を捨象しやすくなる。,正しさを価値として強く保持すれば、関係の痛みや返路の切断を⟦CUT⟧やすくなる。,1,3
+RAJ:L288:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,288,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,共感を価値として強く保持すれば、構造上の責任や制度的残差を捨象しやすくなる。,共感を価値として強く保持すれば、構造上の責任や制度的残差を⟦CUT⟧やすくなる。,1,6
+RAJ:L290:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,290,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,この段階の価値とコストは、まだ明示的な世界観ではない。,この段階の価値とコストは、まだ明示的な世界観⟦NEGATE⟧。,1,2
+RAJ:L292:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,292,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,それは、何を見るか、何を見ないかを左右する前反省的な重みづけである。,それは、何を見るか、何を見ないかを左右する前反省的な重みづけ⟦PREDICATE⟧。,1,0
+RAJ:L294:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,294,8. 価値とコスト――認識以前の重みづけ,sentence_candidate,この重みづけが明示され、思想、制度、方法、倫理、技術選択として比較可能になった段階を、`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md` が扱う。,この重みづけが明示され、思想、制度、方法、倫理、技術選択として比較可能になった段階を、`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md` が扱う。,0,0
+RAJ:L300:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,300,9. 残差、残渣、反復,sentence_candidate,認識は、一回の入力で完成しない。,認識は、一回の入力で完成⟦NEGATE⟧。,1,1
+RAJ:L302:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,302,9. 残差、残渣、反復,sentence_candidate,差分の一部は処理される。,差分の一部は処理される。,0,1
+RAJ:L303:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,303,9. 残差、残渣、反復,sentence_candidate,一部は意味になる。,一部は意味になる。,0,1
+RAJ:L304:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,304,9. 残差、残渣、反復,sentence_candidate,一部は保留される。,一部は保留される。,0,1
+RAJ:L305:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,305,9. 残差、残渣、反復,sentence_candidate,一部は切断される。,一部は切断される。,0,0
+RAJ:L306:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,306,9. 残差、残渣、反復,sentence_candidate,一部は分類不能のまま残る。,一部は分類不能のまま残る。,0,1
+RAJ:L308:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,308,9. 残差、残渣、反復,sentence_candidate,`Boundary_Epistemological_Critique.ja.md` の区別を受け、本稿では次のように扱う。,`Boundary_Epistemological_Critique.ja.md` の区別を受け、本稿では次のように扱う。,0,0
+RAJ:L310:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,310,9. 残差、残渣、反復,list_candidate,残差：同期、照合、分類、観測の過程で現れる、まだ再照合可能な差分。,残差：同期、照合、分類、観測の過程で現れる、まだ再照合可能な差分。,0,7
+RAJ:L311:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,311,9. 残差、残渣、反復,list_candidate,残渣：処理、分類、制度化、交換、説明の後に残り、不可視化されながらも場に作用し続ける履歴的沈殿。,残渣：処理、分類、制度化、交換、説明の後に残り、不可視化されながらも場に作用し続ける履歴的沈殿。,0,3
+RAJ:L313:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,313,9. 残差、残渣、反復,sentence_candidate,残差は、次の認識を開く可能性を持つ。,残差は、次の認識を開く可能性を持つ。,0,2
+RAJ:L315:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,315,9. 残差、残渣、反復,sentence_candidate,残渣は、見えないまま次の感性と悟性を偏らせることがある。,残渣は、見えないまま次の感性と悟性を偏らせることがある。,0,3
+RAJ:L317:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,317,9. 残差、残渣、反復,sentence_candidate,たとえば、説明されなかった失敗は、次の危険感覚を過敏にすることがある。,たとえば、説明されなかった失敗は、次の危険感覚を過敏にすることがある。,0,0
+RAJ:L318:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,318,9. 残差、残渣、反復,sentence_candidate,処理済みとされた不利益は、制度への不信として残ることがある。,処理済みとされた不利益は、制度への不信として残ることがある。,0,0
+RAJ:L319:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,319,9. 残差、残渣、反復,sentence_candidate,言語化できなかった違和感は、後の出来事と接触して初めて意味を持つことがある。,言語化できなかった違和感は、後の出来事と⟦CONTACT⟧初めて意味を持つことがある。,1,1
+RAJ:L321:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,321,9. 残差、残渣、反復,sentence_candidate,反復は、単なる同じ処理の繰り返しではない。,反復は、単なる同じ処理の繰り返し⟦NEGATE⟧。,1,0
+RAJ:L323:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,323,9. 残差、残渣、反復,sentence_candidate,反復のたびに、残差と残渣が次の入力条件へ加わる。,反復のたびに、残差と残渣が次の入力条件へ加わる。,0,2
+RAJ:L325:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,325,9. 残差、残渣、反復,sentence_candidate,そのため、認識軸は履歴を持つ。,そのため、認識軸は履歴を持つ。,0,2
+RAJ:L331:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,331,10. 認識軸の安定化,sentence_candidate,認識軸は、次の反復によって安定する。,認識軸は、次の反復によって安定する。,0,1
+RAJ:L333:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,333,10. 認識軸の安定化,sentence_candidate,1. 差分が境界に接触する。,1. 差分が境界に⟦CONTACT⟧。,1,2
+RAJ:L334:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,334,10. 認識軸の安定化,sentence_candidate,2. 差分が、観測者の履歴との関係でエントロピー属性を帯びて現れる。,2. 差分が、観測者の履歴との関係でエントロピー属性を帯びて現れる。,0,3
+RAJ:L335:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,335,10. 認識軸の安定化,sentence_candidate,3. 関心が一部の差分を保持し、解像度を与える。,3. 関心が一部の差分を⟦RETAIN⟧、解像度を与える。,1,3
+RAJ:L336:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,336,10. 認識軸の安定化,sentence_candidate,4. 捨象が別の差分を背景化、保留、切断する。,4. 捨象が別の差分を背景化、保留、⟦CUT⟧。,1,4
+RAJ:L337:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,337,10. 認識軸の安定化,sentence_candidate,5. 感性が編成され、何が感じられるかが変わる。,5. 感性が編成され、何が感じられるかが変わる。,0,1
+RAJ:L338:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,338,10. 認識軸の安定化,sentence_candidate,6. 悟性が編成され、何が対象・因果・責任として理解可能かが変わる。,6. 悟性が編成され、何が対象・因果・責任として理解可能かが変わる。,0,2
+RAJ:L339:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,339,10. 認識軸の安定化,sentence_candidate,7. 価値とコストの重みづけが行われる。,7. 価値とコストの重みづけが行われる。,0,2
+RAJ:L340:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,340,10. 認識軸の安定化,sentence_candidate,8. 処理されなかったものが残差または残渣として残る。,8. 処理されなかったものが残差または残渣として残る。,0,2
+RAJ:L341:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,341,10. 認識軸の安定化,sentence_candidate,9. 残差と残渣が、次の関心、捨象、感性、悟性へ影響する。,9. 残差と残渣が、次の関心、捨象、感性、悟性へ影響する。,0,6
+RAJ:L342:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,342,10. 認識軸の安定化,sentence_candidate,10. 反復によって、特定の観測方向が安定する。,10. 反復によって、特定の観測方向が安定する。,0,1
+RAJ:L344:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,344,10. 認識軸の安定化,sentence_candidate,この安定した観測方向を、認識軸と呼ぶ。,この安定した観測方向を、認識軸⟦DEFINE⟧。,1,2
+RAJ:L346:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,346,10. 認識軸の安定化,sentence_candidate,認識軸はランダムではない。,認識軸はランダム⟦NEGATE⟧。,1,1
+RAJ:L348:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,348,10. 認識軸の安定化,sentence_candidate,なぜその人がそこを見るのか。,なぜその人がそこを見るのか。,0,0
+RAJ:L349:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,349,10. 認識軸の安定化,sentence_candidate,なぜそこを見ないのか。,なぜそこを見ないのか。,0,0
+RAJ:L350:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,350,10. 認識軸の安定化,sentence_candidate,なぜそこに痛みを感じるのか。,なぜそこに痛みを感じるのか。,0,0
+RAJ:L351:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,351,10. 認識軸の安定化,sentence_candidate,なぜそこを普通だと思うのか。,なぜそこを普通だと思うのか。,0,0
+RAJ:L352:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,352,10. 認識軸の安定化,sentence_candidate,なぜそこに価値を感じるのか。,なぜそこに価値を感じるのか。,0,1
+RAJ:L353:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,353,10. 認識軸の安定化,sentence_candidate,なぜそこをコストとして切るのか。,なぜそこをコストとして切るのか。,0,1
+RAJ:L355:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,355,10. 認識軸の安定化,sentence_candidate,その背後には、反復された関心と捨象、価値とコスト、残差と残渣の履歴がある。,その背後には、反復された関心と捨象、価値とコスト、残差と残渣の履歴がある。,0,7
+RAJ:L361:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,361,11. 認識軸の変形,sentence_candidate,認識軸は、安定しても固定されない。,認識軸は、安定しても固定されない。,0,1
+RAJ:L365:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,365,11.1 硬直,sentence_candidate,同じ関心と捨象が反復され、異なる差分がすべて既存の分類へ押し込まれると、認識軸は硬直する。,同じ関心と捨象が反復され、異なる差分がすべて既存の分類へ押し込まれると、認識軸は硬直する。,0,5
+RAJ:L367:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,367,11.1 硬直,sentence_candidate,硬直した認識軸は、更新を拒むだけではない。,硬直した認識軸は、更新を拒むだけ⟦NEGATE⟧。,1,1
+RAJ:L369:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,369,11.1 硬直,sentence_candidate,更新要求そのものを、無関係、敵意、例外、ノイズとして処理しやすくなる。,更新要求そのものを、無関係、敵意、例外、ノイズとして処理しやすくなる。,0,0
+RAJ:L373:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,373,11.2 漂移,sentence_candidate,新しい差分が反復して接触し、既存の価値とコストの配分では処理できなくなると、認識軸は徐々に漂移する。,新しい差分が反復して⟦CONTACT⟧、既存の価値とコストの配分では処理できなくなると、認識軸は徐々に漂移する。,1,4
+RAJ:L375:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,375,11.2 漂移,sentence_candidate,漂移は、明示的な思想転換より前に起こる。,漂移は、明示的な思想転換より前に⟦CAUSE⟧。,1,0
+RAJ:L377:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,377,11.2 漂移,sentence_candidate,以前は感じられなかったことが感じられ、以前の説明がしっくりこなくなるところから始まる。,以前は感じられなかったことが感じられ、以前の説明がしっくりこなくなるところから始まる。,0,0
+RAJ:L381:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,381,11.3 分岐,sentence_candidate,同じ観測者の内部に、異なる認識軸が並存することがある。,同じ観測者の内部に、異なる認識軸が並存することがある。,0,3
+RAJ:L383:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,383,11.3 分岐,sentence_candidate,仕事では効率を中心に読み、家庭では関係を中心に読む。,仕事では効率を中心に読み、家庭では関係を中心に読む。,0,0
+RAJ:L384:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,384,11.3 分岐,sentence_candidate,科学的判断では測定可能性を重視し、創作では象徴や物語を重視する。,科学的判断では測定可能性を重視し、創作では象徴や物語を重視する。,0,1
+RAJ:L386:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,386,11.3 分岐,sentence_candidate,複数軸の存在は、直ちに矛盾または偽善を意味しない。,複数軸の存在は、直ちに矛盾または偽善を意味⟦NEGATE⟧。,1,1
+RAJ:L388:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,388,11.3 分岐,sentence_candidate,問題は、どの条件で軸を切り替えているかを観測できるか、その切り替えによって誰にコストが移るかを照合できるかである。,問題は、どの条件で軸を切り替えているかを観測⟦POSSIBLE⟧か、その切り替えによって誰にコストが移るかを照合⟦POSSIBLE⟧か⟦PREDICATE⟧。,3,3
+RAJ:L392:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,392,11.4 再照合と再接続,sentence_candidate,残差が保持され、別の履歴または外部入力と接触すると、既存の認識軸は再照合される。,残差が保持され、別の履歴または外部入力と⟦CONTACT⟧と、既存の認識軸は再⟦COLLATE⟧る。,2,6
+RAJ:L394:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,394,11.4 再照合と再接続,sentence_candidate,再照合は、過去の認識を単に否定することではない。,再照合は、過去の認識を単に否定すること⟦NEGATE⟧。,1,2
+RAJ:L396:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,396,11.4 再照合と再接続,sentence_candidate,なぜその軸が必要だったのか。,なぜその軸が必要だったのか。,0,0
+RAJ:L397:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,397,11.4 再照合と再接続,sentence_candidate,何を守っていたのか。,何を守っていたのか。,0,0
+RAJ:L398:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,398,11.4 再照合と再接続,sentence_candidate,何を捨象していたのか。,何を⟦CUT⟧ていたのか。,1,1
+RAJ:L399:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,399,11.4 再照合と再接続,sentence_candidate,その捨象が現在も必要なのか。,その捨象が現在も必要なのか。,0,1
+RAJ:L401:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,401,11.4 再照合と再接続,sentence_candidate,これらを確認し、必要なら関心、捨象、価値、コストの配分を組み替えることである。,これらを確認し、必要⟦CONDITION⟧関心、捨象、価値、コストの配分を組み替えること⟦PREDICATE⟧。,2,4
+RAJ:L403:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,403,11.4 再照合と再接続,sentence_candidate,認識軸の変形は、外部からの命令だけでは成立しない。,認識軸の変形は、外部からの命令だけでは⟦ESTABLISH⟧。,1,3
+RAJ:L405:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,405,11.4 再照合と再接続,sentence_candidate,観測者自身が、既存軸では処理できない差分と残差を、再び受け取れる境界を持つ必要がある。,観測者自身が、既存軸では処理⟦NEGATE⟧差分と残差を、再び受け取れる境界を持つ⟦REQUIRE⟧。,2,4
+RAJ:L411:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,411,12. 個人、組織、社会における認識軸,sentence_candidate,認識軸は個人だけに現れるとは限らない。,認識軸は個人だけに現れる⟦NEGATE⟧。,1,1
+RAJ:L413:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,413,12. 個人、組織、社会における認識軸,sentence_candidate,組織も、何を問題として受け取り、何をノイズとして落とし、何を成果として計上し、何を外部コストとして扱うかという安定した観測方向を持つ。,組織も、何を問題として受け取り、何をノイズとして落とし、何を成果として計上し、何を外部コスト⟦PREDICATE⟧かという安定した観測方向を持つ。,1,3
+RAJ:L415:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,415,12. 個人、組織、社会における認識軸,sentence_candidate,制度も、何を申請可能な事実とし、何を証拠とし、何を例外として処理するかという認識軸を持つ。,制度も、何を申請可能な事実とし、何を証拠とし、何を例外として処理するかという認識軸を持つ。,0,1
+RAJ:L417:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,417,12. 個人、組織、社会における認識軸,sentence_candidate,社会も、報道、教育、統計、法、慣習、技術基盤を通じて、何が見えやすく、何が見えにくいかを反復する。,社会も、報道、教育、統計、法、慣習、技術基盤を通じて、何が見えやすく、何が見えにくいかを反復する。,0,0
+RAJ:L419:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,419,12. 個人、組織、社会における認識軸,sentence_candidate,ただし、個人、組織、制度、社会を同一の主体として扱ってはならない。,ただし、個人、組織、制度、社会を同一の主体として扱っては⟦NEGATE⟧。,1,0
+RAJ:L421:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,421,12. 個人、組織、社会における認識軸,sentence_candidate,それぞれの境界、履歴、権限、責任、更新速度は異なる。,それぞれの境界、履歴、権限、責任、更新速度は異なる。,0,3
+RAJ:L423:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,423,12. 個人、組織、社会における認識軸,sentence_candidate,本稿が行うのは、それらを同一化することではなく、差分、関心、捨象、感性、悟性、価値、コスト、残差、反復という共通の観点から比較可能にすることである。,本稿が行うのは、それらを同一化すること⟦NEGATE⟧、差分、関心、捨象、感性、悟性、価値、コスト、残差、反復という共通の観点から比較可能にすること⟦PREDICATE⟧。,2,8
+RAJ:L429:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,429,13. Meaning Generation Model との接続,sentence_candidate,何かが見えることと、それが意味になることは同じではない。,何かが見えることと、それが意味になるこ⟦DEFINE⟧同じ⟦NEGATE⟧。,2,1
+RAJ:L431:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,431,13. Meaning Generation Model との接続,sentence_candidate,認識軸は、何が感じられ、何が理解可能な形式を持つかを方向づける。,認識軸は、何が感じられ、何が理解可能な形式を持つかを方向づける。,0,1
+RAJ:L433:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,433,13. Meaning Generation Model との接続,sentence_candidate,しかし、差分が履歴へ統合され、返路を持ち、次の受け取り方を変える意味として閉じる条件は、意味生成モデルの主題である。,しかし、差分が履歴へ統合され、返路を持ち、次の受け取り方を変える意味として閉じる条件は、意味生成モデルの主題⟦PREDICATE⟧。,1,4
+RAJ:L435:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,435,13. Meaning Generation Model との接続,sentence_candidate,したがって、次の区別を維持する。,したがって、次の区別を⟦RETAIN⟧。,1,0
+RAJ:L446:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,446,13. Meaning Generation Model との接続,sentence_candidate,見えているが、意味になっていないものがある。,見えているが、意味になっていないものがある。,0,1
+RAJ:L447:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,447,13. Meaning Generation Model との接続,sentence_candidate,意味を持っているが、命題として説明できないものがある。,意味を持っているが、命題として説明⟦NEGATE⟧ものがある。,1,1
+RAJ:L448:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,448,13. Meaning Generation Model との接続,sentence_candidate,一度意味になったものが、後の履歴によって別の意味へ再編されることもある。,一度意味になったものが、後の履歴によって別の意味へ再編されることもある。,0,3
+RAJ:L450:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,450,13. Meaning Generation Model との接続,sentence_candidate,本稿は意味ループを再定義しない。,本稿は意味ループを再定義⟦NEGATE⟧。,1,1
+RAJ:L452:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,452,13. Meaning Generation Model との接続,sentence_candidate,認識軸が意味生成の入口をどのように選び、意味生成の履歴が次の認識軸をどう変えるかという相互作用だけを扱う。,認識軸が意味生成の入口をどのように選び、意味生成の履歴が次の認識軸をどう変えるかという相互作用だけを扱う。,0,5
+RAJ:L458:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,458,14. 選択公理モジュールへの出力,sentence_candidate,認識軸が反復によって安定すると、その方向は世界観、方法、倫理、制度、技術選択として明示されうる。,認識軸が反復によって安定すると、その方向は世界観、方法、倫理、制度、技術選択として明示されうる。,0,1
+RAJ:L460:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,460,14. 選択公理モジュールへの出力,sentence_candidate,`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md` は、この明示化された認識パターンを、異なる分野や世界観の間で比較・通約する。,`Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md` は、この明示化された認識パターンを、異なる分野や世界観の間で比較・⟦CONNECT⟧。,1,2
+RAJ:L462:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,462,14. 選択公理モジュールへの出力,sentence_candidate,本稿から選択公理モジュールへ渡す最小出力は、次の通りである。,本稿から選択公理モジュールへ渡す最小出力は、次の通り⟦PREDICATE⟧。,1,1
+RAJ:L464:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,464,14. 選択公理モジュールへの出力,list_candidate,何に関心を向けるか,何に関心を向けるか,0,1
+RAJ:L466:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,466,14. 選択公理モジュールへの出力,list_candidate,何を価値として前景化するか,何を価値として前景化するか,0,2
+RAJ:L467:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,467,14. 選択公理モジュールへの出力,list_candidate,何をコストとして背景化または外部化するか,何をコストとして背景化または外部化するか,0,3
+RAJ:L468:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,468,14. 選択公理モジュールへの出力,list_candidate,どの差分を残差として保持するか,どの差分を残差として⟦RETAIN⟧か,1,3
+RAJ:L469:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,469,14. 選択公理モジュールへの出力,list_candidate,どの差分を残渣化しやすいか,どの差分を残渣化しやすいか,0,2
+RAJ:L470:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,470,14. 選択公理モジュールへの出力,list_candidate,どの反復によって軸が安定したか,どの反復によって軸が安定したか,0,0
+RAJ:L471:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,471,14. 選択公理モジュールへの出力,list_candidate,どの条件で軸が硬直、漂移、分岐、再接続するか,どの条件で軸が硬直、漂移、分岐、再⟦CONNECT⟧か,1,1
+RAJ:L473:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,473,14. 選択公理モジュールへの出力,sentence_candidate,選択公理モジュールは、これらを人間の型へ変換しない。,選択公理モジュールは、これらを人間の型へ⟦TRANSFORM⟧ない。,1,2
+RAJ:L475:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,475,14. 選択公理モジュールへの出力,sentence_candidate,それらを、世界観、思想、制度、方法、技術設計に現れる安定パターンとして比較する。,それらを、世界観、思想、制度、方法、技術設計に現れる安定パターンとして比較する。,0,0
+RAJ:L481:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,481,15. 身体性の扱い,sentence_candidate,認識は、身体を基盤とする観測者に現れる。,認識は、身体を基盤⟦PREDICATE⟧観測者に現れる。,1,2
+RAJ:L483:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,483,15. 身体性の扱い,sentence_candidate,認識の変化は、しばしば身体化された質感として経験される。,認識の変化は、しばしば身体化された質感として経験される。,0,1
+RAJ:L485:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,485,15. 身体性の扱い,sentence_candidate,胸が重いように感じる。,胸が重いように感じる。,0,0
+RAJ:L486:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,486,15. 身体性の扱い,sentence_candidate,腹に落ちないように感じる。,腹に落ちないように感じる。,0,0
+RAJ:L487:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,487,15. 身体性の扱い,sentence_candidate,喉に詰まるように感じる。,喉に詰まるように感じる。,0,0
+RAJ:L488:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,488,15. 身体性の扱い,sentence_candidate,手を動かしたくなる。,手を動かしたくなる。,0,0
+RAJ:L489:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,489,15. 身体性の扱い,sentence_candidate,皮膚が拒むように感じる。,皮膚が拒むように感じる。,0,0
+RAJ:L490:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,490,15. 身体性の扱い,sentence_candidate,視界が開けるように感じる。,視界が開けるように感じる。,0,0
+RAJ:L492:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,492,15. 身体性の扱い,sentence_candidate,これらの表現は、認識変化が自己にどう現れているかを記述する補助線として有効である。,これらの表現は、認識変化が自己にどう現れているかを記述する補助線として有効⟦PREDICATE⟧。,1,1
+RAJ:L494:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,494,15. 身体性の扱い,sentence_candidate,しかし、それは診断ではない。,しかし、それは診断⟦NEGATE⟧。,1,0
+RAJ:L496:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,496,15. 身体性の扱い,sentence_candidate,本稿は、身体部位、神経、体液、食物、感覚器官、内臓、体質、病理、治療法を認識軸へ対応づけない。,本稿は、身体部位、神経、体液、食物、感覚器官、内臓、体質、病理、治療法を認識軸へ対応づけない。,0,1
+RAJ:L498:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,498,15. 身体性の扱い,sentence_candidate,身体性は、認識軸生成の単一原因ではなく、認識変化が局所的観測者に現れる一つの様態として扱う。,身体性は、認識軸生成の単一原因⟦NEGATE⟧、認識変化が局所的観測者に現れる一つの様態⟦PREDICATE⟧。,2,3
+RAJ:L504:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,504,16. 論理-深度への接続,sentence_candidate,本稿の公開中核は、差分、関心、捨象、感性、悟性、価値、コスト、残差、反復による認識軸生成である。,本稿の公開中核は、差分、関心、捨象、感性、悟性、価値、コスト、残差、反復による認識軸生成⟦PREDICATE⟧。,1,10
+RAJ:L506:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,506,16. 論理-深度への接続,sentence_candidate,ただし、存在境界論の高強度仮説へ接続すると、認識軸は時間と履歴の構造としても読める。,ただし、存在境界論の高強度仮説へ⟦CONNECT⟧と、認識軸は時間と履歴の構造としても読める。,1,5
+RAJ:L508:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,508,16. 論理-深度への接続,sentence_candidate,暫定的には、次を区別する。,暫定的には、次を区別する。,0,0
+RAJ:L510:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,510,16. 論理-深度への接続,list_candidate,外的時計時間：外部世界で共有される順序として測られる時間。,外的時計時間：外部世界で共有される順序として測られる時間。,0,1
+RAJ:L511:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,511,16. 論理-深度への接続,list_candidate,内的計数時間：外的出来事、更新、接続、遅延を、系内部でどのように数えるか。,内的計数時間：外的出来事、更新、接続、遅延を、系内部でどのように数えるか。,0,2
+RAJ:L512:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,512,16. 論理-深度への接続,list_candidate,内在時間：差分を受け取り、保留し、切断し、返し、後続条件へ接続する意味ループのコミットによって進む、局所的存在に固有の時間。,内在時間：差分を受け取り、保留し、⟦CUT⟧、返し、後続条件へ⟦CONNECT⟧意味ループのコミットによって進む、局所的存在に固有の時間。,2,5
+RAJ:L513:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,513,16. 論理-深度への接続,list_candidate,論理-深度軸：外的時間の前後ではなく、未解決、矛盾、分岐、残差、意味圧をどれだけ保持し、再構成できるかを示す深度方向。,論理-深度軸：外的時間の前後⟦NEGATE⟧、未解決、矛盾、分岐、残差、意味圧をどれだけ⟦RETAIN⟧、再構成⟦POSSIBLE⟧かを示す深度方向。,3,5
+RAJ:L515:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,515,16. 論理-深度への接続,sentence_candidate,この接続に従えば、認識軸は単なる注意の癖ではない。,この接続に従えば、認識軸は単なる注意の癖⟦NEGATE⟧。,1,2
+RAJ:L517:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,517,16. 論理-深度への接続,sentence_candidate,それは、どの差分へコミットし、どの意味ループを閉じ、どの残差を保持し、どの残渣を引き受けてきたかという履歴構造でもある。,それは、どの差分へコミットし、どの意味ループを閉じ、どの残差を⟦RETAIN⟧、どの残渣を引き受けてきたかという履歴構造でもある。,1,7
+RAJ:L519:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,519,16. 論理-深度への接続,sentence_candidate,ただし、この節は高強度の研究接続である。,ただし、この節は高強度の研究接続⟦PREDICATE⟧。,1,1
+RAJ:L521:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,521,16. 論理-深度への接続,sentence_candidate,本稿は、内在時間、エントロピー、意味ループ、論理-深度軸を、標準物理学、神経科学、医学上の機構として提出しない。,本稿は、内在時間、エントロピー、意味ループ、論理-深度軸を、標準物理学、神経科学、医学上の機構として提出⟦NEGATE⟧。,1,3
+RAJ:L523:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,523,16. 論理-深度への接続,sentence_candidate,この節の役割は、平面論理上で安定した認識軸が、どの深度履歴へ接続しているかを示すポートを残すことにある。,この節の役割は、平面論理上で安定した認識軸が、どの深度履歴へ⟦CONNECT⟧ているかを示すポートを⟦RETAIN⟧ことにある。,2,3
+RAJ:L529:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,529,17. 非主張境界,sentence_candidate,本稿は、次を主張しない。,本稿は、次を主張⟦NEGATE⟧。,1,0
+RAJ:L531:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,531,17. 非主張境界,list_candidate,標準物理学におけるエネルギーまたはエントロピー概念を置換する。,標準物理学におけるエネルギーまたはエントロピー概念を置換する。,0,0
+RAJ:L532:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,532,17. 非主張境界,list_candidate,心理学、認知科学、神経科学、精神医学、医学の代替理論を提示する。,心理学、認知科学、神経科学、精神医学、医学の代替理論を提示する。,0,0
+RAJ:L533:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,533,17. 非主張境界,list_candidate,認識軸によって個人の人格、思想、能力、病理、身体傾向を診断できる。,認識軸によって個人の人格、思想、能力、病理、身体傾向を診断⟦POSSIBLE⟧。,1,1
+RAJ:L534:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,534,17. 非主張境界,list_candidate,認識軸を教育、採用、労務、治療、宗教指導、説得、介入、統治のための分類道具として使ってよい。,認識軸を教育、採用、労務、治療、宗教指導、説得、介入、統治のための分類道具として使ってよい。,0,2
+RAJ:L535:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,535,17. 非主張境界,list_candidate,関心や捨象を操作すれば、他者を任意の世界観へ誘導できる。,関心や捨象を操作すれば、他者を任意の世界観へ誘導⟦POSSIBLE⟧。,1,2
+RAJ:L536:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,536,17. 非主張境界,list_candidate,感性と悟性を、カント哲学の歴史的定義に代わるものとして再定義する。,感性と悟性を、カント哲学の歴史的定義に代わるものとして再定義する。,0,2
+RAJ:L538:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,538,17. 非主張境界,sentence_candidate,本稿が提示するのは、世界がどのように見え始め、何が見えなくなり、その方向がどのように履歴化されるかを照合するための概念モデルである。,本稿が提示するのは、世界がどのように見え始め、何が見えなくなり、その方向がどのように履歴化されるかを⟦COLLATE⟧ための概念モデル⟦PREDICATE⟧。,2,2
+RAJ:L544:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,544,18. 結論,sentence_candidate,認識は固定されていない。,認識は固定されていない。,0,1
+RAJ:L546:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,546,18. 結論,sentence_candidate,感性も固定されていない。,感性も固定されていない。,0,1
+RAJ:L547:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,547,18. 結論,sentence_candidate,悟性も固定されていない。,悟性も固定されていない。,0,1
+RAJ:L549:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,549,18. 結論,sentence_candidate,何に関心を向けるか。,何に関心を向けるか。,0,1
+RAJ:L551:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,551,18. 結論,sentence_candidate,何を価値として保持するか。,何を価値として⟦RETAIN⟧か。,1,2
+RAJ:L552:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,552,18. 結論,sentence_candidate,何をコストとして処理するか。,何をコストとして処理するか。,0,1
+RAJ:L553:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,553,18. 結論,sentence_candidate,何を残差として残すか。,何を残差として⟦RETAIN⟧か。,1,1
+RAJ:L554:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,554,18. 結論,sentence_candidate,何を残渣として沈殿させるか。,何を残渣として沈殿させるか。,0,1
+RAJ:L555:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,555,18. 結論,sentence_candidate,どの処理を反復するか。,どの処理を反復するか。,0,0
+RAJ:L557:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,557,18. 結論,sentence_candidate,それによって、世界の感じられ方と理解形式は変わる。,それによって、世界の感じられ方と理解形式は変わる。,0,0
+RAJ:L559:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,559,18. 結論,sentence_candidate,認識軸とは、この反復によって安定した観測方向である。,認識軸⟦DEFINE⟧、この反復によって安定した観測方向⟦PREDICATE⟧。,2,2
+RAJ:L561:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,561,18. 結論,sentence_candidate,認識軸は、観測者の本質を固定するためのラベルではない。,認識軸は、観測者の本質を固定するためのラベル⟦NEGATE⟧。,1,2
+RAJ:L563:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,563,18. 結論,sentence_candidate,それは、なぜこの世界がこのように見え、別の世界が見えにくくなっているのかを再照合するための履歴的な座標である。,それは、なぜこの世界がこのように見え、別の世界が見えにくくなっているのかを⟦COLLATE⟧ための履歴的な座標⟦PREDICATE⟧。,2,2
+RAJ:L565:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,565,18. 結論,sentence_candidate,この座標が明示されることで、異なる世界観は直ちに優劣へ還元されず、何を見て、何を捨て、何を守り、誰へコストを返しているかという形で比較可能になる。,この座標が明示されることで、異なる世界観は直ちに優劣へ還元されず、何を見て、何を捨て、何を守り、誰へコストを返しているかという形で比較⟦POSSIBLE⟧。,1,1
+RAJ:L567:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,567,18. 結論,sentence_candidate,その次の仕事を、認識ブリッジとしての選択公理モジュールが引き受ける。,その次の仕事を、認識ブリッジとしての選択公理モジュールが引き受ける。,0,2
+RAJ:L583:S1,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,583,19. 関連文書,sentence_candidate,[英語通約](./Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)。,[英語通約](./Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.en.md)。,0,1
+RAJ:L583:S2,RAJ,02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md,583,19. 関連文書,sentence_candidate,意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。,意味に不一致がある⟦CONDITION⟧、日本語正本と定義所有文書へ戻って⟦COLLATE⟧。,2,2
+TAM:L14:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,14,研究原資料との区別,sentence_candidate,SO再帰的哲学研究でDe-Registry等の固定fixtureとして使用した旧Optional Axiom atlasは、[`04_Applications/SO_Reflexive_Philosophical_Research/sources/](../04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md) にsource identity、SHA-256、研究利用関係を記録する。,SO再帰的哲学研究でDe-Registry等の固定fixtureとして使用した旧Optional Axiom atlasは、[`04_Applications/SO_Reflexive_Philosophical_Research/sources/](../04_Applications/SO_Reflexive_Philosophical_Research/sources/README.md) にsource identity、SHA-256、研究利用関係を記録する。,0,1
+TAM:L14:S2,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,14,研究原資料との区別,sentence_candidate,private lineageを含むhistorical sourceのexact bytesは公開Repositoryには収録しない。,private lineageを含むhistorical sourceのexact bytesは公開Repositoryには収録⟦NEGATE⟧。,1,0
+TAM:L14:S3,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,14,研究原資料との区別,sentence_candidate,旧atlasは本稿の現行正本ではなく、本稿も旧atlas全体を現在のSOの主張として再承認するものではない。,旧atlasは本稿の現行正本⟦NEGATE⟧、本稿も旧atlas全体を現在のSOの主張として再承認するもの⟦NEGATE⟧。,2,0
+TAM:L18:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,18,0. 位置づけ,sentence_candidate,本文書は、異なる思想、世界観、学問、制度、技術設計、神話的体系を、関心、捨象、価値、コストの安定パターンとして比較し、通約可能性と翻訳不能残差を照合するための境界プロトコルである。,本文書は、異なる思想、世界観、学問、制度、技術設計、神話的体系を、関心、捨象、価値、コストの安定パターンとして比較し、通約可能性と翻訳不能残差を⟦COLLATE⟧ための境界プロトコル⟦PREDICATE⟧。,2,10
+TAM:L20:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,20,0. 位置づけ,sentence_candidate,本稿は、どの思想が正しいかを順位づける表ではない。,本稿は、どの思想が正しいかを順位づける表⟦NEGATE⟧。,1,0
+TAM:L22:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,22,0. 位置づけ,sentence_candidate,人間を思想タイプへ分類する診断表でもない。,人間を思想タイプへ分類する診断表でもない。,0,1
+TAM:L24:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,24,0. 位置づけ,sentence_candidate,本稿が所有する問いは、次の一つである。,本稿が所有する問いは、次の一つ⟦PREDICATE⟧。,1,0
+TAM:L26:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,26,0. 位置づけ,blockquote_candidate,異なる認識形式が接触したとき、それぞれの中核を壊さず、何を翻訳し、何を保留し、何を接続し、何を残差として保持すべきか。,異なる認識形式が⟦CONTACT⟧⟦CONDITION⟧、それぞれの中核を壊さず、何を⟦CONNECT⟧、何を保留し、何を⟦CONNECT⟧、何を残差として保持すべきか。,4,7
+TAM:L28:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,28,0. 位置づけ,sentence_candidate,本稿は、認識軸そのものを生成しない。,本稿は、認識軸そのものを生成⟦NEGATE⟧。,1,1
+TAM:L30:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,30,0. 位置づけ,sentence_candidate,認識軸の生成、安定、硬直、漂移、分岐、再接続は、[`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md) が主に扱う。,認識軸の生成、安定、硬直、漂移、分岐、再接続は、[`Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md`](../02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md) が主に扱う。,0,2
+TAM:L32:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,32,0. 位置づけ,sentence_candidate,本稿は、目的を決定しない。,本稿は、目的を決定⟦NEGATE⟧。,1,0
+TAM:L34:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,34,0. 位置づけ,sentence_candidate,何を第一義として目的化し、その共有がどのような世界を形成したかを境界で検査する仕事は、[`Truth_Management_and_Boundary_PDCA.ja.md`](../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md) が主に扱う。,何を第一義として目的化し、その共有がどのような世界を⟦TRANSFORM⟧たかを境界で検査する仕事は、[`Truth_Management_and_Boundary_PDCA.ja.md`](../00_Overview/Truth_Management_and_Boundary_PDCA.ja.md) が主に扱う。,1,2
+TAM:L36:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,36,0. 位置づけ,sentence_candidate,本稿は、その中間に位置する。,本稿は、その中間に位置する。,0,0
+TAM:L38:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,38,0. 位置づけ,sentence_candidate,認識軸生成論から、明示可能な関心、捨象、価値、コスト、残差処理のパターンを受け取り、それを分野間で比較可能なモジュールとして整え、真理の経営学へ候補目的、隠れたコスト、境界条件、未通約残差を渡す。,認識軸生成論から、明示可能な関心、捨象、価値、コスト、残差処理のパターンを受け取り、それを分野間で比較可能なモジュールとして整え、真理の経営学へ候補目的、隠れたコスト、境界条件、未通約残差を渡す。,0,10
+TAM:L56:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,56,0.1 Tam / Goodness に置く理由,sentence_candidate,本稿を Tam / Goodness に置くのは、善い思想を選ぶためではない。,本稿を Tam / Goodness に置くのは、善い思想を⟦SELECT⟧ため⟦NEGATE⟧。,2,0
+TAM:L58:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,58,0.1 Tam / Goodness に置く理由,sentence_candidate,認識形式を採用すると、必ず何かが前景化し、何かが捨象され、何かが価値として保存され、何かがコストとして処理される。,認識形式を⟦SELECT⟧と、必ず何かが前景化し、何かが捨象され、何かが価値として保存され、何かがコストとして処理される。,1,5
+TAM:L60:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,60,0.1 Tam / Goodness に置く理由,sentence_candidate,そのコストは、観測者の内部だけに留まるとは限らない。,そのコストは、観測者の内部だけに留まる⟦NEGATE⟧。,1,3
+TAM:L62:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,62,0.1 Tam / Goodness に置く理由,sentence_candidate,他者、組織、社会、自然、未来世代、未表象の存在へ外部化されることがある。,他者、組織、社会、自然、未来世代、未表象の存在へ外部化されることがある。,0,1
+TAM:L64:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,64,0.1 Tam / Goodness に置く理由,sentence_candidate,Goodness が引き受けるのは、思想の道徳的ランキングではなく、選択の反動と責任である。,Goodness が引き受けるのは、思想の道徳的ランキング⟦NEGATE⟧、選択の反動と責任⟦PREDICATE⟧。,2,1
+TAM:L66:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,66,0.1 Tam / Goodness に置く理由,blockquote_candidate,その認識形式によって、何が見えるようになり、何が見えなくなり、誰がコストを受け、どの返路が残されるのか。,その認識形式によって、何が見えるようになり、何が見えなくなり、誰がコストを受け、どの返路が残されるのか。,0,2
+TAM:L68:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,68,0.1 Tam / Goodness に置く理由,sentence_candidate,本稿は、この問いを各モジュールへ要求する。,本稿は、この問いを各モジュールへ要求する。,0,0
+TAM:L74:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,74,1. なぜ「選択公理」なのか,sentence_candidate,本稿における公理は、数学または形式論理における厳密な公理ではない。,本稿における公理は、数学または形式論理における厳密な公理⟦NEGATE⟧。,1,0
+TAM:L76:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,76,1. なぜ「選択公理」なのか,sentence_candidate,完全性、無矛盾性、独立性を保証する基礎命題でもない。,完全性、無矛盾性、独立性を保証する基礎命題でもない。,0,0
+TAM:L78:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,78,1. なぜ「選択公理」なのか,sentence_candidate,ここでいう選択公理とは、世界を読むときに、何を第一に置き、何を証拠とし、何を実在的に扱い、何を背景へ送り、どの価値を守るかを決める認識上の選択点である。,ここでいう選択公理⟦DEFINE⟧、世界を読む⟦CONDITION⟧に、何を第一に置き、何を証拠とし、何を実在的に扱い、何を背景へ送り、どの価値を守るかを決める認識上の選択点⟦PREDICATE⟧。,3,2
+TAM:L80:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,80,1. なぜ「選択公理」なのか,sentence_candidate,たとえば、物質的構造を第一に置くこと。,たとえば、物質的構造を第一に置くこと。,0,1
+TAM:L81:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,81,1. なぜ「選択公理」なのか,sentence_candidate,主観的経験を第一に置くこと。,主観的経験を第一に置くこと。,0,0
+TAM:L82:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,82,1. なぜ「選択公理」なのか,sentence_candidate,関係や出来事を第一に置くこと。,関係や出来事を第一に置くこと。,0,0
+TAM:L83:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,83,1. なぜ「選択公理」なのか,sentence_candidate,測定可能性を知識の中心に置くこと。,測定可能性を知識の中心に置くこと。,0,0
+TAM:L84:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,84,1. なぜ「選択公理」なのか,sentence_candidate,責任、自由、効用、美、共同体、救済を価値の中心に置くこと。,責任、自由、効用、美、共同体、救済を価値の中心に置くこと。,0,3
+TAM:L86:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,86,1. なぜ「選択公理」なのか,sentence_candidate,これらは、世界のすべてを一度に決める単独の命題ではない。,これらは、世界のすべてを一度に決める単独の命題⟦NEGATE⟧。,1,0
+TAM:L88:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,88,1. なぜ「選択公理」なのか,sentence_candidate,複数の選択点が組み合わされ、一定の履歴と制度の中で安定すると、一つの世界観、方法、倫理、組織原理として働く。,複数の選択点が組み合わされ、一定の履歴と制度の中で安定すると、一つの世界観、方法、倫理、組織原理として働く。,0,1
+TAM:L90:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,90,1. なぜ「選択公理」なのか,sentence_candidate,本稿で「モジュール」と呼ぶのは、そのためである。,本稿で「モジュール」⟦DEFINE⟧のは、そのため⟦PREDICATE⟧。,2,0
+TAM:L92:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,92,1. なぜ「選択公理」なのか,sentence_candidate,モジュールは、条件つきで接続・分離できる。,モジュールは、条件つきで接続・分離⟦POSSIBLE⟧。,1,1
+TAM:L93:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,93,1. なぜ「選択公理」なのか,sentence_candidate,一つの観測者または組織が、複数のモジュールを異なる場面で用いることもある。,一つの観測者または組織が、複数のモジュールを異なる場面で用いることもある。,0,1
+TAM:L94:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,94,1. なぜ「選択公理」なのか,sentence_candidate,ただし、中核を失えば、同じ名前を用いていても別の体系になる。,ただし、中核を失えば、同じ名前を用いていても別の体系になる。,0,1
+TAM:L96:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,96,1. なぜ「選択公理」なのか,sentence_candidate,選択公理モジュールは、絶対的な信念の宣言ではない。,選択公理モジュールは、絶対的な信念の宣言⟦NEGATE⟧。,1,1
+TAM:L98:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,98,1. なぜ「選択公理」なのか,sentence_candidate,それは、認識を構成する選択点を、比較・通約・批判可能な形へ明示するための単位である。,それは、認識を構成する選択点を、比較・通約・批判可能な形へ明示するための単位⟦PREDICATE⟧。,1,3
+TAM:L104:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,104,2. 境界プロトコルとしての役割,sentence_candidate,異なる思想体系は、同じ語を使っていても同じものを見ているとは限らない。,異なる思想体系は、同じ語を使っていても同じものを見ている⟦NEGATE⟧。,1,0
+TAM:L106:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,106,2. 境界プロトコルとしての役割,sentence_candidate,「真理」「自由」「自然」「情報」「責任」「無」「意味」「人間」「安全」という語は、体系ごとに異なる関心と捨象を持つ。,「真理」「自由」「自然」「情報」「責任」「無」「意味」「人間」「安全」という語は、体系ごとに異なる関心と捨象を持つ。,0,5
+TAM:L108:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,108,2. 境界プロトコルとしての役割,sentence_candidate,逆に、異なる語を使いながら、近い認識構造を持つ体系もある。,逆に、異なる語を使いながら、近い認識構造を持つ体系もある。,0,2
+TAM:L110:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,110,2. 境界プロトコルとしての役割,sentence_candidate,したがって、語彙の一致だけで接続すると、偽の通約が起こる。,したがって、語彙の一致だけで⟦CONNECT⟧と、偽の通約が⟦CAUSE⟧。,2,3
+TAM:L112:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,112,2. 境界プロトコルとしての役割,sentence_candidate,語彙の不一致だけで切断すると、接続可能な構造まで失われる。,語彙の不一致だけで⟦CUT⟧と、接続可能な構造まで失われる。,1,2
+TAM:L114:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,114,2. 境界プロトコルとしての役割,sentence_candidate,本稿は、思想間通信を次の境界操作として扱う。,本稿は、思想間通信を次の境界操作⟦PREDICATE⟧。,1,1
+TAM:L116:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,116,2. 境界プロトコルとしての役割,list_candidate,通過：意味の中核を大きく損なわずに翻訳できる。,通過：意味の中核を大きく損なわずに翻訳⟦POSSIBLE⟧。,1,3
+TAM:L117:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,117,2. 境界プロトコルとしての役割,list_candidate,変換：別の語彙または形式へ写す必要がある。,変換：別の語彙または形式へ写す⟦REQUIRE⟧。,1,1
+TAM:L118:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,118,2. 境界プロトコルとしての役割,list_candidate,保留：現時点では翻訳条件が不足している。,保留：現時点では翻訳条件が不足している。,0,2
+TAM:L119:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,119,2. 境界プロトコルとしての役割,list_candidate,遮断：接続すると中核または責任境界が破壊される。,遮断：⟦CONNECT⟧と中核または責任境界が破壊される。,1,5
+TAM:L120:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,120,2. 境界プロトコルとしての役割,list_candidate,反射：相手の体系内では受信条件が成立しない。,反射：相手の体系内では受信条件が⟦ESTABLISH⟧。,1,2
+TAM:L121:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,121,2. 境界プロトコルとしての役割,list_candidate,残差保持：翻訳できない差分を、無意味として削除しない。,残差保持：翻訳⟦NEGATE⟧差分を、無意味として削除⟦NEGATE⟧。,2,4
+TAM:L122:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,122,2. 境界プロトコルとしての役割,list_candidate,再照合：別の履歴、事例、形式化によって接続条件を再検査する。,再照合：別の履歴、事例、形式化によって接続条件を再検査する。,0,3
+TAM:L124:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,124,2. 境界プロトコルとしての役割,sentence_candidate,この意味で、選択公理モジュールは思想一覧ではなく、認識境界における通信プロトコルである。,この意味で、選択公理モジュールは思想一覧⟦NEGATE⟧、認識境界における通信プロトコル⟦PREDICATE⟧。,2,4
+TAM:L132:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,132,3.1 入力,sentence_candidate,本稿が認識軸生成論から受け取る最小入力は、次の通りである。,本稿が認識軸生成論から受け取る最小入力は、次の通り⟦PREDICATE⟧。,1,1
+TAM:L134:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,134,3.1 入力,list_candidate,何に関心を向けるか,何に関心を向けるか,0,1
+TAM:L136:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,136,3.1 入力,list_candidate,何を価値として前景化するか,何を価値として前景化するか,0,2
+TAM:L137:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,137,3.1 入力,list_candidate,何をコストとして背景化または外部化するか,何をコストとして背景化または外部化するか,0,3
+TAM:L138:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,138,3.1 入力,list_candidate,何を残差として保持するか,何を残差として⟦RETAIN⟧か,1,2
+TAM:L139:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,139,3.1 入力,list_candidate,何を残渣化しやすいか,何を残渣化しやすいか,0,1
+TAM:L140:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,140,3.1 入力,list_candidate,どの反復によってその方向が安定したか,どの反復によってその方向が安定したか,0,0
+TAM:L141:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,141,3.1 入力,list_candidate,どの条件で硬直、漂移、分岐、再接続するか,どの条件で硬直、漂移、分岐、再⟦CONNECT⟧か,1,1
+TAM:L145:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,145,3.2 出力,sentence_candidate,本稿が真理の経営学、組織論、AI設計、社会設計へ渡す最小出力は、次の通りである。,本稿が真理の経営学、組織論、AI設計、社会設計へ渡す最小出力は、次の通り⟦PREDICATE⟧。,1,0
+TAM:L148:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,148,3.2 出力,list_candidate,その目的が前提とする世界像,その目的が⟦SUPPORT⟧世界像,1,0
+TAM:L149:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,149,3.2 出力,list_candidate,共有時に不可視化されやすい境界,共有時に不可視化されやすい境界,0,1
+TAM:L150:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,150,3.2 出力,list_candidate,価値を保持するために発生するコスト,価値を⟦RETAIN⟧ために発生するコスト,1,3
+TAM:L151:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,151,3.2 出力,list_candidate,コストを受ける主体または領域,コストを受ける主体または領域,0,1
+TAM:L152:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,152,3.2 出力,list_candidate,採用可能な照合手続き,採用可能な照合手続き,0,1
+TAM:L153:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,153,3.2 出力,list_candidate,接続可能な他モジュール,接続可能な他モジュール,0,1
+TAM:L154:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,154,3.2 出力,list_candidate,翻訳不能または未解決の残差,翻訳不能または未解決の残差,0,3
+TAM:L155:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,155,3.2 出力,list_candidate,運用を中止または再照合すべき境界条件,運用を中止または再照合すべき境界条件,0,2
+TAM:L157:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,157,3.2 出力,sentence_candidate,選択公理モジュールは、目的を選ぶ権限を持たない。,選択公理モジュールは、目的を⟦SELECT⟧権限を持たない。,1,1
+TAM:L159:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,159,3.2 出力,sentence_candidate,それは、選択の前提と反動を可視化する。,それは、選択の前提と反動を可視化する。,0,0
+TAM:L165:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,165,4. 基本読解軸,sentence_candidate,各モジュールは、最低限、関心、捨象、価値、コストの四軸から読む。,各モジュールは、最低限、関心、捨象、価値、コストの四軸から読む。,0,4
+TAM:L169:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,169,4.1 関心,sentence_candidate,関心とは、その体系が何を現実として強く見るかである。,関心⟦DEFINE⟧、その体系が何を現実として強く見るか⟦PREDICATE⟧。,2,1
+TAM:L183:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,183,4.1 関心,sentence_candidate,関心は、単なる好みではない。,関心は、単なる好み⟦NEGATE⟧。,1,1
+TAM:L185:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,185,4.1 関心,sentence_candidate,それは、差分へ解像度を与え、その体系で何が問題、証拠、価値、対象として立ち上がるかを決める。,それは、差分へ解像度を与え、その体系で何が問題、証拠、価値、対象として立ち上がるかを決める。,0,2
+TAM:L189:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,189,4.2 捨象,sentence_candidate,捨象とは、その体系が扱わないもの、背景化するもの、切断するもの、別の処理へ送るものである。,捨象⟦DEFINE⟧、その体系が扱わないもの、背景化するもの、⟦CUT⟧もの、別の処理へ送るもの⟦PREDICATE⟧。,3,2
+TAM:L191:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,191,4.2 捨象,sentence_candidate,捨象は欠陥とは限らない。,捨象は欠陥⟦NEGATE⟧。,1,1
+TAM:L193:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,193,4.2 捨象,sentence_candidate,認識は、何かを捨象しなければ成立しない。,認識は、何かを⟦CUT⟧なければ⟦ESTABLISH⟧。,2,3
+TAM:L195:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,195,4.2 捨象,sentence_candidate,ただし、捨象はその体系の死角を作る。,ただし、捨象はその体系の死角を作る。,0,1
+TAM:L197:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,197,4.2 捨象,sentence_candidate,物質だけを見る体系は、クオリアや意味を捨象しやすい。,物質だけを見る体系は、クオリアや意味を⟦CUT⟧やすい。,1,2
+TAM:L198:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,198,4.2 捨象,sentence_candidate,内面だけを見る体系は、制度や外部責任を捨象しやすい。,内面だけを見る体系は、制度や外部責任を⟦CUT⟧やすい。,1,3
+TAM:L199:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,199,4.2 捨象,sentence_candidate,秩序だけを見る体系は、例外や苦痛を捨象しやすい。,秩序だけを見る体系は、例外や苦痛を⟦CUT⟧やすい。,1,1
+TAM:L200:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,200,4.2 捨象,sentence_candidate,救済だけを見る体系は、現実の手続きや検証を捨象しやすい。,救済だけを見る体系は、現実の手続きや検証を⟦CUT⟧やすい。,1,1
+TAM:L204:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,204,4.3 価値,sentence_candidate,価値とは、その体系が保持すべきものとして明示する差分である。,価値⟦DEFINE⟧、その体系が保持すべきものとして明示する差分⟦PREDICATE⟧。,2,3
+TAM:L222:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,222,4.3 価値,sentence_candidate,認識軸生成論における価値は、認識以前の重みづけとして働く。,認識軸生成論における価値は、認識以前の重みづけとして働く。,0,3
+TAM:L224:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,224,4.3 価値,sentence_candidate,本稿では、その重みづけが思想、方法、制度、技術設計として明示された状態を扱う。,本稿では、その重みづけが思想、方法、制度、技術設計として明示された状態を扱う。,0,0
+TAM:L228:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,228,4.4 コスト,sentence_candidate,コストとは、その価値を保持するために負荷として処理される差分である。,コスト⟦DEFINE⟧、その価値を⟦RETAIN⟧ために負荷として処理される差分⟦PREDICATE⟧。,3,4
+TAM:L230:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,230,4.4 コスト,sentence_candidate,自由を守るために、秩序の不安定を引き受ける。,自由を守るために、秩序の不安定を引き受ける。,0,1
+TAM:L231:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,231,4.4 コスト,sentence_candidate,秩序を守るために、例外や個別性を切る。,秩序を守るために、例外や個別性を切る。,0,0
+TAM:L232:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,232,4.4 コスト,sentence_candidate,客観性を守るために、第一人称の質感を留保する。,客観性を守るために、第一人称の質感を留保する。,0,0
+TAM:L233:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,233,4.4 コスト,sentence_candidate,救済を守るために、現実世界への執着をコストとして扱う。,救済を守るために、現実世界への執着をコスト⟦PREDICATE⟧。,1,1
+TAM:L234:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,234,4.4 コスト,sentence_candidate,効率を守るために、余白、保留、冗長性を削る。,効率を守るために、余白、保留、冗長性を削る。,0,1
+TAM:L236:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,236,4.4 コスト,sentence_candidate,コストは、単なる欠点ではない。,コストは、単なる欠点⟦NEGATE⟧。,1,1
+TAM:L238:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,238,4.4 コスト,sentence_candidate,その体系が何を守るために、何を負担として配分しているかを示す。,その体系が何を守るために、何を負担として配分しているかを示す。,0,0
+TAM:L240:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,240,4.4 コスト,sentence_candidate,したがって、コスト分析では、量だけでなく、誰が、どこで、いつ受けるかを問う。,したがって、コスト分析では、量だけでなく、誰が、どこで、いつ受けるかを問う。,0,1
+TAM:L246:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,246,5. 変調軸,sentence_candidate,関心、捨象、価値、コストが同じでも、その体系の運動特性は異なりうる。,関心、捨象、価値、コストが同じでも、その体系の運動特性は異なりうる。,0,4
+TAM:L248:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,248,5. 変調軸,sentence_candidate,本稿では、補助的に次の四軸を用いる。,本稿では、補助的に次の四軸を用いる。,0,0
+TAM:L257:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,257,5. 変調軸,sentence_candidate,この数値は客観的測定値ではない。,この数値は客観的測定値⟦NEGATE⟧。,1,0
+TAM:L259:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,259,5. 変調軸,sentence_candidate,思想や制度を心理検査のように採点するものでもない。,思想や制度を心理検査のように採点するものでもない。,0,0
+TAM:L261:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,261,5. 変調軸,sentence_candidate,複数の読み手が、どこで評価を違えたかを照合するための暫定注記である。,複数の読み手が、どこで評価を違えたかを⟦COLLATE⟧ための暫定注記⟦PREDICATE⟧。,2,1
+TAM:L265:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,265,5.1 揺れ幅,sentence_candidate,運用が歴史、文化、個人、制度によってどの程度変形しうるかを示す。,運用が歴史、文化、個人、制度によってどの程度変形⟦POSSIBLE⟧かを示す。,1,0
+TAM:L269:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,269,5.2 硬度,sentence_candidate,中核命題をどの程度固定し、例外や異説をどの程度受け入れるかを示す。,中核命題をどの程度固定し、例外や異説をどの程度受け入れるかを示す。,0,1
+TAM:L271:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,271,5.2 硬度,sentence_candidate,硬い体系は制度化と教育に強いが、残差を切りやすい。,硬い体系は制度化と教育に強いが、残差を切りやすい。,0,1
+TAM:L272:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,272,5.2 硬度,sentence_candidate,柔らかい体系は翻訳と創造に強いが、中核を失いやすい。,柔らかい体系は翻訳と創造に強いが、中核を失いやすい。,0,2
+TAM:L276:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,276,5.3 凝集度,sentence_candidate,多様な差分を、どの程度一つの中心へまとめるかを示す。,多様な差分を、どの程度一つの中心へまとめるかを示す。,0,1
+TAM:L278:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,278,5.3 凝集度,sentence_candidate,凝集は世界像を強くする。,凝集は世界像を強くする。,0,0
+TAM:L279:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,279,5.3 凝集度,sentence_candidate,散逸は多方向の可能性を開く。,散逸は多方向の可能性を開く。,0,0
+TAM:L283:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,283,5.4 接続性,sentence_candidate,他の体系と共通インターフェースを作りやすいかを示す。,他の体系と共通インターフェースを作りやすいかを示す。,0,0
+TAM:L285:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,285,5.4 接続性,sentence_candidate,接続性が高いことは、正しさまたは優越を意味しない。,接続性が高いこ⟦DEFINE⟧、正しさまたは優越を意味⟦NEGATE⟧。,2,2
+TAM:L287:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,287,5.4 接続性,sentence_candidate,接続しやすい体系は、中核を曖昧にしている場合もある。,⟦CONNECT⟧やすい体系は、中核を曖昧にしている⟦CONDITION⟧もある。,2,2
+TAM:L288:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,288,5.4 接続性,sentence_candidate,接続しにくい体系は、重要な差分を強く保持している場合もある。,⟦CONNECT⟧にくい体系は、重要な差分を強く⟦RETAIN⟧ている⟦CONDITION⟧もある。,3,3
+TAM:L294:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,294,6. Core Invariant と Operational Drift,sentence_candidate,思想または世界観を、すべて流動的なものとして扱うと、何でも同じに見える。,思想または世界観を、すべて流動的なもの⟦PREDICATE⟧と、何でも同じに見える。,1,0
+TAM:L296:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,296,6. Core Invariant と Operational Drift,sentence_candidate,逆に、すべてを固定的に扱うと、歴史的変形、文化差、制度差、個人差が見えなくなる。,逆に、すべてを固定的に扱うと、歴史的変形、文化差、制度差、個人差が見えなくなる。,0,0
+TAM:L298:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,298,6. Core Invariant と Operational Drift,sentence_candidate,本稿では、各モジュールを次の二層に分ける。,本稿では、各モジュールを次の二層に分ける。,0,0
+TAM:L300:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,300,6. Core Invariant と Operational Drift,list_candidate,Core Invariant：失うと、その体系ではなくなる中核。,Core Invariant：失うと、その体系⟦NEGATE⟧中核。,1,2
+TAM:L301:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,301,6. Core Invariant と Operational Drift,list_candidate,Operational Drift：時代、文化、制度、媒体、実践によって変動する運用層。,Operational Drift：時代、文化、制度、媒体、実践によって変動する運用層。,0,1
+TAM:L303:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,303,6. Core Invariant と Operational Drift,sentence_candidate,たとえば、ある思想の名称が維持されていても、その中核的な関心、捨象、価値、コストが反転していれば、同じ体系とは限らない。,たとえば、ある思想の名称が維持されていても、その中核的な関心、捨象、価値、コストが反転していれば、同じ体系⟦NEGATE⟧。,1,5
+TAM:L305:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,305,6. Core Invariant と Operational Drift,sentence_candidate,逆に、語彙が変わっていても、中核的な認識構造が保持されていれば、通約可能性がある。,逆に、語彙が変わっていても、中核的な認識構造が保持されていれば、通約可能性がある。,0,5
+TAM:L307:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,307,6. Core Invariant と Operational Drift,sentence_candidate,Core Invariant は、教義を絶対化するための語ではない。,Core Invariant は、教義を絶対化するための語⟦NEGATE⟧。,1,1
+TAM:L309:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,309,6. Core Invariant と Operational Drift,sentence_candidate,翻訳の過程で、何を失うと別の体系になるかを確認するための責任境界である。,翻訳の過程で、何を失うと別の体系になるかを確認するための責任境界⟦PREDICATE⟧。,1,3
+TAM:L311:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,311,6. Core Invariant と Operational Drift,sentence_candidate,Operational Drift は、逸脱を責めるための語ではない。,Operational Drift は、逸脱を責めるための語⟦NEGATE⟧。,1,1
+TAM:L313:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,313,6. Core Invariant と Operational Drift,sentence_candidate,運用条件が変わったとき、どこまで変形しても中核を保持できるかを見るための履歴層である。,運用条件が変わった⟦CONDITION⟧、どこまで変形しても中核を保持⟦POSSIBLE⟧かを見るための履歴層⟦PREDICATE⟧。,3,3
+TAM:L319:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,319,7. 論理空間 L0-L6,sentence_candidate,本稿は、モジュールを七つの論理レイヤーへ暫定配置する。,本稿は、モジュールを七つの論理レイヤーへ暫定配置する。,0,0
+TAM:L321:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,321,7. 論理空間 L0-L6,sentence_candidate,これは価値の上下関係ではない。,これは価値の上下関係⟦NEGATE⟧。,1,1
+TAM:L323:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,323,7. 論理空間 L0-L6,sentence_candidate,上位レイヤーが下位レイヤーより優れているわけでもない。,上位レイヤーが下位レイヤーより優れているわけでもない。,0,0
+TAM:L325:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,325,7. 論理空間 L0-L6,sentence_candidate,異なる問いを同じ平面に置いて偽の対立を作らないための配置である。,異なる問いを同じ平面に置いて偽の対立を作らないための配置⟦PREDICATE⟧。,1,1
+TAM:L337:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,337,7. 論理空間 L0-L6,sentence_candidate,同じ体系が複数レイヤーに現れることはある。,同じ体系が複数レイヤーに現れるこ⟦DEFINE⟧ある。,1,0
+TAM:L339:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,339,7. 論理空間 L0-L6,sentence_candidate,たとえば、カントはL0の物自体、L1の現象と物自体、L2の認識形式、L3の義務論へ接続する。,たとえば、カントはL0の物自体、L1の現象と物自体、L2の認識形式、L3の義務論へ⟦CONNECT⟧。,1,2
+TAM:L341:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,341,7. 論理空間 L0-L6,sentence_candidate,その場合、同じ名称を一つの箱へ押し込めるのではなく、どの問いに対するモジュールとして用いているかを明示する。,その⟦CONDITION⟧、同じ名称を一つの箱へ押し込めるの⟦NEGATE⟧、どの問いに対するモジュールとして用いているかを明示する。,2,0
+TAM:L347:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,347,8. モジュール記録形式,sentence_candidate,各モジュールは、最低限、次の項目を持つ。,各モジュールは、最低限、次の項目を持つ。,0,0
+TAM:L387:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,387,8. モジュール記録形式,sentence_candidate,本文では、すべての項目を長く表示する必要はない。,本文では、すべての項目を長く表示する必要はない。,0,0
+TAM:L389:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,389,8. モジュール記録形式,sentence_candidate,ただし、内部YAMLまたは管理表では、少なくとも中核、運用差、残差処理、照合手続き、境界条件を保持する。,ただし、内部YAMLまたは管理表では、少なくとも中核、運用差、残差処理、照合手続き、境界条件を⟦RETAIN⟧。,1,6
+TAM:L391:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,391,8. モジュール記録形式,sentence_candidate,これにより、AIはモジュール名の近さではなく、型付きの関係によって文書を接続できる。,これにより、AIはモジュール名の近さ⟦NEGATE⟧、型付きの関係によって文書を接続⟦POSSIBLE⟧。,2,1
+TAM:L397:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,397,9. 通約プロトコル,sentence_candidate,異なるモジュールを接続するときは、次の順序を用いる。,異なるモジュールを⟦CONNECT⟧⟦CONDITION⟧は、次の順序を用いる。,2,1
+TAM:L401:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,401,Step 1. レイヤーと適用範囲を確認する,sentence_candidate,存在論と倫理学、経験科学と形而上学、制度論と個人実践を、同じ種類の主張として直接衝突させない。,存在論と倫理学、経験科学と形而上学、制度論と個人実践を、同じ種類の主張として直接衝突させない。,0,0
+TAM:L403:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,403,Step 1. レイヤーと適用範囲を確認する,sentence_candidate,まず、それぞれが何を説明しようとしているかを確認する。,まず、それぞれが何を説明しようとしているかを確認する。,0,0
+TAM:L407:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,407,Step 2. Core Invariant を同定する,sentence_candidate,その体系が、何を失えば別の体系になるかを確認する。,その体系が、何を失えば別の体系になるかを確認する。,0,0
+TAM:L409:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,409,Step 2. Core Invariant を同定する,sentence_candidate,語彙ではなく、関心、捨象、価値、コストの組み合わせを見る。,語彙⟦NEGATE⟧、関心、捨象、価値、コストの組み合わせを見る。,1,4
+TAM:L413:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,413,Step 3. 関心と捨象を比較する,sentence_candidate,両者が同じ対象を見ているのか。,両者が同じ対象を見ているのか。,0,0
+TAM:L414:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,414,Step 3. 関心と捨象を比較する,sentence_candidate,一方が見ているものを、他方が意図的に捨象しているのか。,一方が見ているものを、他方が意図的に⟦CUT⟧ているのか。,1,1
+TAM:L415:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,415,Step 3. 関心と捨象を比較する,sentence_candidate,それとも、別レイヤーのため最初から対象が異なるのか。,それとも、別レイヤーのため最初から対象が異なるのか。,0,0
+TAM:L419:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,419,Step 4. 価値とコストを比較する,sentence_candidate,何を守るために、何を負荷として処理しているかを確認する。,何を守るために、何を負荷として処理しているかを確認する。,0,0
+TAM:L421:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,421,Step 4. 価値とコストを比較する,sentence_candidate,特に、コストを誰が受けるかを明示する。,特に、コストを誰が受けるかを明示する。,0,1
+TAM:L425:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,425,Step 5. 照合手続きを比較する,sentence_candidate,何を証拠とするか。,何を証拠⟦PREDICATE⟧か。,1,0
+TAM:L426:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,426,Step 5. 照合手続きを比較する,sentence_candidate,何を反証とするか。,何を反証⟦PREDICATE⟧か。,1,0
+TAM:L427:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,427,Step 5. 照合手続きを比較する,sentence_candidate,何を体験、伝統、論理、測定、物語、制度履歴、ログとして扱うか。,何を体験、伝統、論理、測定、物語、制度履歴、ログ⟦PREDICATE⟧か。,1,1
+TAM:L429:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,429,Step 5. 照合手続きを比較する,sentence_candidate,照合手続きが異なる場合、結論だけを直接比較しない。,照合手続きが異なる⟦CONDITION⟧、結論だけを直接比較⟦NEGATE⟧。,2,1
+TAM:L433:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,433,Step 6. 共通インターフェースを作る,sentence_candidate,両者が共有できる最小語彙、事例、形式、境界条件を探す。,両者が共有⟦POSSIBLE⟧最小語彙、事例、形式、境界条件を探す。,1,1
+TAM:L435:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,435,Step 6. 共通インターフェースを作る,sentence_candidate,共通インターフェースは、両者を同一化するためではない。,共通インターフェースは、両者を同一化するため⟦NEGATE⟧。,1,0
+TAM:L437:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,437,Step 6. 共通インターフェースを作る,sentence_candidate,通信可能性を作るための限定的なポートである。,通信可能性を作るための限定的なポート⟦PREDICATE⟧。,1,0
+TAM:L441:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,441,Step 7. 翻訳不能残差を保持する,sentence_candidate,翻訳できない部分を、誤りまたは無意味として直ちに削除しない。,翻訳⟦NEGATE⟧部分を、誤りまたは無意味として直ちに削除⟦NEGATE⟧。,2,2
+TAM:L443:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,443,Step 7. 翻訳不能残差を保持する,sentence_candidate,何が不足しているため翻訳できないのかを記録する。,何が不足しているため翻訳⟦NEGATE⟧のかを記録する。,1,1
+TAM:L447:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,447,Step 8. 接続型を決定する,sentence_candidate,直接翻訳、条件つき翻訳、補完、緊張、直交、非互換、安全上の遮断のどれに当たるかを判断する。,直接翻訳、条件つき翻訳、補完、緊張、直交、非互換、安全上の遮断のどれに当たるかを⟦SELECT⟧。,1,4
+TAM:L451:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,451,Step 9. 履歴と返路を残す,sentence_candidate,どの変換を行い、何が失われ、何が保留されたかを記録する。,どの変換を行い、何が失われ、何が保留されたかを記録する。,0,2
+TAM:L453:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,453,Step 9. 履歴と返路を残す,sentence_candidate,後から原体系へ戻れる返路を残す。,後から原体系へ戻れる返路を⟦RETAIN⟧。,1,0
+TAM:L461:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,461,10.1 直接翻訳,sentence_candidate,中核、対象、照合手続きが近く、語彙変換による損失が小さい。,中核、対象、照合手続きが近く、語彙変換による損失が小さい。,0,3
+TAM:L465:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,465,10.2 条件つき翻訳,sentence_candidate,一定の適用範囲または非主張境界を置けば接続できる。,一定の適用範囲または非主張境界を置けば接続⟦POSSIBLE⟧。,1,2
+TAM:L467:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,467,10.2 条件つき翻訳,sentence_candidate,物理学上の場と、存在境界論上の履歴場の関係などは、通常この型に属する。,物理学上の場と、存在境界論上の履歴場の関係などは、通常この型に属する。,0,2
+TAM:L471:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,471,10.3 補完,sentence_candidate,同じ問題の異なる死角を照らす。,同じ問題の異なる死角を照らす。,0,0
+TAM:L473:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,473,10.3 補完,sentence_candidate,統合するのではなく、複数視点を保持することで解像度が上がる。,統合するの⟦NEGATE⟧、複数視点を⟦RETAIN⟧ことで解像度が上がる。,2,1
+TAM:L477:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,477,10.4 緊張,sentence_candidate,価値、コスト、証拠、責任の配分が競合する。,価値、コスト、証拠、責任の配分が競合する。,0,3
+TAM:L479:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,479,10.4 緊張,sentence_candidate,緊張は直ちに解消せず、どの境界で選択が必要かを示す。,緊張は直ちに解消せず、どの境界で選択が必要かを示す。,0,1
+TAM:L483:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,483,10.5 直交,sentence_candidate,問いまたはレイヤーが異なり、競合しているように見えても直接対立しない。,問いまたはレイヤーが異なり、競合しているように見えても直接対立⟦NEGATE⟧。,1,0
+TAM:L487:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,487,10.6 非互換,sentence_candidate,同じ範囲で、両立しない中核命題を持つ。,同じ範囲で、両立⟦NEGATE⟧中核命題を持つ。,1,1
+TAM:L489:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,489,10.6 非互換,sentence_candidate,非互換であっても、相手が何を見せるかを照合することはできる。,非互換であっても、相手が何を見せるかを⟦COLLATE⟧こ⟦DEFINE⟧⟦POSSIBLE⟧。,3,1
+TAM:L493:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,493,10.7 安全上の遮断,sentence_candidate,接続または実装によって、他者の判断場、身体、権利、責任境界を破壊する危険が高い。,接続または実装によって、他者の判断場、身体、権利、責任境界を破壊する危険が高い。,0,4
+TAM:L495:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,495,10.7 安全上の遮断,sentence_candidate,この場合、理解可能性を保持しながら、運用ポートは閉じることがある。,この⟦CONDITION⟧、理解可能性を⟦RETAIN⟧ながら、運用ポートは閉じることがある。,2,1
+TAM:L501:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,501,11. 衝突類型,sentence_candidate,異なる体系の衝突は、少なくとも次のように分けられる。,異なる体系の衝突は、少なくとも次のように分けられる。,0,0
+TAM:L505:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,505,11.1 同じ語、異なる中核,sentence_candidate,「自由」「自然」「情報」「真理」など、同じ語を使いながら、Core Invariant が異なる。,「自由」「自然」「情報」「真理」など、同じ語を使いながら、Core Invariant が異なる。,0,2
+TAM:L509:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,509,11.2 同じ中核、異なる運用,sentence_candidate,守ろうとする価値は近いが、制度、儀礼、証拠、手続きが異なる。,守ろう⟦PREDICATE⟧価値は近いが、制度、儀礼、証拠、手続きが異なる。,1,1
+TAM:L513:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,513,11.3 同じ価値、異なるコスト配分,sentence_candidate,同じ目的を掲げても、誰に負荷を返すかが異なる。,同じ目的を掲げても、誰に負荷を返すかが異なる。,0,0
+TAM:L517:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,517,11.4 同じ関心、異なる照合手続き,sentence_candidate,同じ現象を扱っていても、測定、論証、体験、伝承、象徴、物語のどれを根拠とするかが異なる。,同じ現象を扱っていても、測定、論証、体験、伝承、象徴、物語のどれを根拠⟦PREDICATE⟧かが異なる。,1,0
+TAM:L521:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,521,11.5 レイヤー錯誤,sentence_candidate,形而上学的仮説を経験科学の結論として扱う。,形而上学的仮説を経験科学の結論⟦PREDICATE⟧。,1,0
+TAM:L522:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,522,11.5 レイヤー錯誤,sentence_candidate,経験科学のモデルを倫理的命令として扱う。,経験科学のモデルを倫理的命令⟦PREDICATE⟧。,1,0
+TAM:L523:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,523,11.5 レイヤー錯誤,sentence_candidate,制度上の便宜を存在論的真理として扱う。,制度上の便宜を存在論的真理⟦PREDICATE⟧。,1,0
+TAM:L525:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,525,11.5 レイヤー錯誤,sentence_candidate,この型の衝突は、配置を分けることで軽減できる。,この型の衝突は、配置を分けることで軽減⟦POSSIBLE⟧。,1,0
+TAM:L529:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,529,11.6 翻訳による中核破壊,sentence_candidate,相手へ伝わりやすくするために、中核を削りすぎる。,相手へ伝わりやすくするために、中核を削りすぎる。,0,1
+TAM:L531:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,531,11.6 翻訳による中核破壊,sentence_candidate,通約が成功したように見えても、元の体系が失われていれば偽の接続である。,通約が成功したように見えても、元の体系が失われていれば偽の接続⟦PREDICATE⟧。,1,3
+TAM:L537:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,537,12. 代表モジュール配置,sentence_candidate,以下は、認識ブリッジの動作を示すための代表配置である。,以下は、認識ブリッジの動作を示すための代表配置⟦PREDICATE⟧。,1,1
+TAM:L539:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,539,12. 代表モジュール配置,sentence_candidate,哲学史、宗教史、科学史の完全な分類ではない。,哲学史、宗教史、科学史の完全な分類⟦NEGATE⟧。,1,1
+TAM:L540:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,540,12. 代表モジュール配置,sentence_candidate,各体系の内部差を一つに固定するものでもない。,各体系の内部差を一つに固定するものでもない。,0,1
+TAM:L541:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,541,12. 代表モジュール配置,sentence_candidate,数値は暫定的な比較注記であり、順位ではない。,数値は暫定的な比較注記であり、順位⟦NEGATE⟧。,1,0
+TAM:L623:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,623,13. 無と残差の横断処理,sentence_candidate,「無」は、すべてのモジュールで同じ意味を持たない。,「無」は、すべてのモジュールで同じ意味を持たない。,0,1
+TAM:L625:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,625,13. 無と残差の横断処理,list_candidate,物理主義では、過程の終了または不在として扱われることがある。,物理主義では、過程の終了または不在として扱われることがある。,0,0
+TAM:L626:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,626,13. 無と残差の横断処理,list_candidate,カント的立場では、肯定的に語れないものとして留保される。,カント的立場では、肯定的に語れないものとして留保される。,0,0
+TAM:L627:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,627,13. 無と残差の横断処理,list_candidate,空の思想では、固定的自性の否定として扱われる。,空の思想では、固定的自性の否定として扱われる。,0,0
+TAM:L628:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,628,13. 無と残差の横断処理,list_candidate,関係基礎の存在論では、関係切断または返路喪失として現れる。,関係基礎の存在論では、関係切断または返路喪失として現れる。,0,0
+TAM:L629:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,629,13. 無と残差の横断処理,list_candidate,闘争的二元論では、敵、悪、闇へ固定される危険がある。,闘争的二元論では、敵、悪、闇へ固定される危険がある。,0,0
+TAM:L630:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,630,13. 無と残差の横断処理,list_candidate,象徴的体系では、未命名、未配置、潜在可能性として扱われることがある。,象徴的体系では、未命名、未配置、潜在可能性として扱われることがある。,0,0
+TAM:L632:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,632,13. 無と残差の横断処理,sentence_candidate,したがって、本稿は「無」を独立した単一カテゴリとして各体系へ押しつけない。,したがって、本稿は「無」を独立した単一カテゴリとして各体系へ押しつけない。,0,0
+TAM:L634:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,634,13. 無と残差の横断処理,sentence_candidate,各モジュールが、未接続、未処理、未観測、不可知、切断、消滅、潜在性をどのように処理するかを、`residual_handling`として記録する。,各モジュールが、未接続、未処理、未観測、不可知、切断、消滅、潜在性をどのように処理するかを、`residual_handling`として記録する。,0,2
+TAM:L636:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,636,13. 無と残差の横断処理,sentence_candidate,残差処理は、モジュールの倫理的性質を強く示す。,残差処理は、モジュールの倫理的性質を強く示す。,0,1
+TAM:L638:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,638,13. 無と残差の横断処理,sentence_candidate,扱えないものを留保するのか。,扱えないものを留保するのか。,0,0
+TAM:L639:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,639,13. 無と残差の横断処理,sentence_candidate,別のポートへ送るのか。,別のポートへ送るのか。,0,0
+TAM:L640:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,640,13. 無と残差の横断処理,sentence_candidate,敵として排除するのか。,敵として排除するのか。,0,0
+TAM:L641:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,641,13. 無と残差の横断処理,sentence_candidate,無意味として削除するのか。,無意味として削除するのか。,0,1
+TAM:L642:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,642,13. 無と残差の横断処理,sentence_candidate,新しい分類を待つのか。,新しい分類を待つのか。,0,1
+TAM:L644:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,644,13. 無と残差の横断処理,sentence_candidate,通約では、結論より先に、この処理差を確認する必要がある。,通約では、結論より先に、この処理差を確認する⟦REQUIRE⟧。,1,1
+TAM:L650:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,650,14. 標準科学と通常扱われにくい体系,sentence_candidate,本稿は、科学、哲学、宗教、神話、魔術、制度、創作世界を、同じ経験的真理値の体系として並べない。,本稿は、科学、哲学、宗教、神話、魔術、制度、創作世界を、同じ経験的真理値の体系として並べない。,0,0
+TAM:L652:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,652,14. 標準科学と通常扱われにくい体系,sentence_candidate,標準科学には、測定、再現、反証、数学的形式化、専門共同体による検査という固有の照合手続きがある。,標準科学には、測定、再現、反証、数学的形式化、専門共同体による検査という固有の照合手続きがある。,0,1
+TAM:L654:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,654,14. 標準科学と通常扱われにくい体系,sentence_candidate,その定義と成果は尊重される。,その定義と成果は尊重される。,0,0
+TAM:L656:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,656,14. 標準科学と通常扱われにくい体系,sentence_candidate,量子力学、相対性理論、熱力学などを選択公理モジュールへ置く場合、それらを単なる世界観へ縮退させない。,量子力学、相対性理論、熱力学などを選択公理モジュールへ置く⟦CONDITION⟧、それらを単なる世界観へ縮退させない。,1,1
+TAM:L658:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,658,14. 標準科学と通常扱われにくい体系,sentence_candidate,何を観測可能にし、何を形式化し、どの境界で標準定義が成立するかという認識上の働きを比較対象にする。,何を観測可能にし、何を形式化し、どの境界で標準定義が⟦ESTABLISH⟧かという認識上の働きを比較対象にする。,1,4
+TAM:L660:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,660,14. 標準科学と通常扱われにくい体系,sentence_candidate,一方、神話、魔術、儀礼、占術、象徴体系、創作宇宙論も、必要に応じて扱う。,一方、神話、魔術、儀礼、占術、象徴体系、創作宇宙論も、必要に応じて扱う。,0,0
+TAM:L662:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,662,14. 標準科学と通常扱われにくい体系,sentence_candidate,ただし、それらを経験的事実として承認するためではない。,ただし、それらを経験的事実として承認するため⟦NEGATE⟧。,1,0
+TAM:L664:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,664,14. 標準科学と通常扱われにくい体系,sentence_candidate,それらが、通常の科学や哲学が捨象しやすい名づけ、象徴、対応、儀礼、配置、身体感覚、共同体履歴をどのように前景化するかを照合する。,それらが、通常の科学や哲学が⟦CUT⟧やすい名づけ、象徴、対応、儀礼、配置、身体感覚、共同体履歴をどのように前景化するかを⟦COLLATE⟧。,2,4
+TAM:L666:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,666,14. 標準科学と通常扱われにくい体系,sentence_candidate,ここで重要なのは、採用ではなく、照合である。,ここで重要なのは、採用⟦NEGATE⟧、照合⟦PREDICATE⟧。,2,1
+TAM:L668:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,668,14. 標準科学と通常扱われにくい体系,sentence_candidate,その体系は何を見せるのか。,その体系は何を見せるのか。,0,0
+TAM:L669:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,669,14. 標準科学と通常扱われにくい体系,sentence_candidate,何を見えなくするのか。,何を見えなくするのか。,0,0
+TAM:L670:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,670,14. 標準科学と通常扱われにくい体系,sentence_candidate,どの価値を保存するのか。,どの価値を⟦RETAIN⟧のか。,1,1
+TAM:L671:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,671,14. 標準科学と通常扱われにくい体系,sentence_candidate,どのコストを外部化するのか。,どのコストを外部化するのか。,0,2
+TAM:L672:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,672,14. 標準科学と通常扱われにくい体系,sentence_candidate,どの境界を開き、どの境界を壊しやすいのか。,どの境界を開き、どの境界を壊しやすいのか。,0,2
+TAM:L674:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,674,14. 標準科学と通常扱われにくい体系,sentence_candidate,これに答えられる限り、通常扱われにくい体系も認識ブリッジの対象になりうる。,これに答えられる限り、通常扱われにくい体系も認識ブリッジの対象になりうる。,0,1
+TAM:L680:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,680,15. 真理の経営学への接続,sentence_candidate,選択公理モジュールは、真理の第一義を決定しない。,選択公理モジュールは、真理の第一義を決定⟦NEGATE⟧。,1,1
+TAM:L682:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,682,15. 真理の経営学への接続,sentence_candidate,それは、第一義の候補が、どの認識形式から立ち上がっているかを示す。,それは、第一義の候補が、どの認識形式から立ち上がっているかを示す。,0,1
+TAM:L695:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,695,15. 真理の経営学への接続,sentence_candidate,真理の経営学へ渡すときには、目的名だけでなく、次を添える。,真理の経営学へ渡す⟦CONDITION⟧には、目的名だけでなく、次を添える。,1,0
+TAM:L697:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,697,15. 真理の経営学への接続,list_candidate,その目的が依拠するCore Invariant,その目的が依拠するCore Invariant,0,1
+TAM:L698:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,698,15. 真理の経営学への接続,list_candidate,その目的が前景化する差分,その目的が前景化する差分,0,2
+TAM:L699:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,699,15. 真理の経営学への接続,list_candidate,その目的が捨象しやすい差分,その目的が⟦CUT⟧やすい差分,1,2
+TAM:L700:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,700,15. 真理の経営学への接続,list_candidate,価値を保持するためのコスト,価値を⟦RETAIN⟧ためのコスト,1,3
+TAM:L702:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,702,15. 真理の経営学への接続,list_candidate,共有時に生じるOperational Drift,共有時に⟦CAUSE⟧Operational Drift,1,1
+TAM:L703:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,703,15. 真理の経営学への接続,list_candidate,境界CAで確認すべき残差と残渣,境界CAで確認すべき残差と残渣,0,3
+TAM:L704:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,704,15. 真理の経営学への接続,list_candidate,第一義を停止または修正すべき条件,第一義を停止または修正すべき条件,0,0
+TAM:L706:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,706,15. 真理の経営学への接続,sentence_candidate,これにより、目的は美しい言葉だけで運用されない。,これにより、目的は美しい言葉だけで運用されない。,0,0
+TAM:L708:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,708,15. 真理の経営学への接続,sentence_candidate,その目的が作る世界と、外部へ返す負荷まで含めて検査可能になる。,その目的が作る世界と、外部へ返す負荷まで含めて検査⟦POSSIBLE⟧。,1,1
+TAM:L714:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,714,16. 利用例,sentence_candidate,本稿は、次のような用途へ接続できる。,本稿は、次のような用途へ接続⟦POSSIBLE⟧。,1,1
+TAM:L718:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,718,16.1 分野間通約,sentence_candidate,哲学、科学、倫理、経済、組織論、技術設計の間で、同じ語がどの認識軸から使われているかを比較する。,哲学、科学、倫理、経済、組織論、技術設計の間で、同じ語がどの認識軸から使われているかを比較する。,0,1
+TAM:L722:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,722,16.2 組織内対立の照合,sentence_candidate,営業、研究、法務、安全、経営、現場が、それぞれ何を価値とし、何をコストとして処理しているかを明示する。,営業、研究、法務、安全、経営、現場が、それぞれ何を価値とし、何をコストとして処理しているかを明示する。,0,2
+TAM:L726:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,726,16.3 AI設計,sentence_candidate,AIに何を最適化させるかだけでなく、どの差分を捨象させ、どのコストを利用者または社会へ返すかを検査する。,AIに何を最適化させるかだけでなく、どの差分を捨象させ、どのコストを利用者または社会へ返すかを検査する。,0,3
+TAM:L730:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,730,16.4 政策・制度批評,sentence_candidate,自由、安全、成長、包摂、効率といった目的を、価値名だけでなく、捨象とコストの配分として読む。,自由、安全、成長、包摂、効率といった目的を、価値名だけでなく、捨象とコストの配分⟦PREDICATE⟧。,1,4
+TAM:L734:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,734,16.5 歴史読解,sentence_candidate,ある時代が何を第一に見て、何を見えないものとし、その選択がどの制度と残渣を生んだかを読む。,ある時代が何を第一に見て、何を見えないものとし、その選択がどの制度と残渣を生んだかを読む。,0,1
+TAM:L738:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,738,16.6 創作と世界設計,sentence_candidate,物語世界の根源公理、認識方法、倫理、制度、象徴操作を分けて配置し、設定上の衝突と未解決点を保持する。,物語世界の根源公理、認識方法、倫理、制度、象徴操作を分けて配置し、設定上の衝突と未解決点を⟦RETAIN⟧。,1,3
+TAM:L744:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,744,17. 非主張境界と禁止する運用,sentence_candidate,本稿は、次を主張しない。,本稿は、次を主張⟦NEGATE⟧。,1,0
+TAM:L746:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,746,17. 非主張境界と禁止する運用,list_candidate,ある思想体系が他より優れている。,ある思想体系が他より優れている。,0,0
+TAM:L747:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,747,17. 非主張境界と禁止する運用,list_candidate,モジュール配置によって、人間の人格、能力、思想、病理、身体傾向を診断できる。,モジュール配置によって、人間の人格、能力、思想、病理、身体傾向を診断⟦POSSIBLE⟧。,1,0
+TAM:L748:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,748,17. 非主張境界と禁止する運用,list_candidate,一つの思想名称が、歴史上の全解釈を代表する。,一つの思想名称が、歴史上の全解釈を代表する。,0,0
+TAM:L749:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,749,17. 非主張境界と禁止する運用,list_candidate,哲学史、宗教学、科学史、政治思想史の標準的概説を置き換える。,哲学史、宗教学、科学史、政治思想史の標準的概説を置き換える。,0,0
+TAM:L750:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,750,17. 非主張境界と禁止する運用,list_candidate,魔術、神話、宗教、オカルト的体系を経験的事実として証明する。,魔術、神話、宗教、オカルト的体系を経験的事実として証明する。,0,0
+TAM:L751:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,751,17. 非主張境界と禁止する運用,list_candidate,科学的検証を不要にする。,科学的検証を不要にする。,0,0
+TAM:L752:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,752,17. 非主張境界と禁止する運用,list_candidate,関心、捨象、価値、コストを操作すれば、他者を任意の思想へ誘導できる。,関心、捨象、価値、コストを操作すれば、他者を任意の思想へ誘導⟦POSSIBLE⟧。,1,4
+TAM:L754:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,754,17. 非主張境界と禁止する運用,sentence_candidate,本稿を、次の用途へ用いてはならない。,本稿を、次の用途へ用いては⟦NEGATE⟧。,1,0
+TAM:L756:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,756,17. 非主張境界と禁止する運用,list_candidate,採用、労務評価、教育選別,採用、労務評価、教育選別,0,0
+TAM:L757:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,757,17. 非主張境界と禁止する運用,list_candidate,医療、心理診断、治療、矯正,医療、心理診断、治療、矯正,0,0
+TAM:L758:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,758,17. 非主張境界と禁止する運用,list_candidate,宗教指導、勧誘、説得操作,宗教指導、勧誘、説得操作,0,0
+TAM:L759:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,759,17. 非主張境界と禁止する運用,list_candidate,統治、監視、思想審査,統治、監視、思想審査,0,0
+TAM:L760:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,760,17. 非主張境界と禁止する運用,list_candidate,人格または集団への固定ラベル付け,人格または集団への固定ラベル付け,0,0
+TAM:L762:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,762,17. 非主張境界と禁止する運用,sentence_candidate,本稿の目的は、認識形式の違いを消すことではない。,本稿の目的は、認識形式の違いを消すこと⟦NEGATE⟧。,1,1
+TAM:L764:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,764,17. 非主張境界と禁止する運用,sentence_candidate,相手を分類して管理することでもない。,相手を分類して管理することでもない。,0,1
+TAM:L766:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,766,17. 非主張境界と禁止する運用,sentence_candidate,何が通約でき、何が通約できず、何を残差として保持すべきかを明示し、異なる境界のまま通信可能性を作ることである。,何が通約でき、何が通約できず、何を残差として保持すべきかを明示し、異なる境界のまま通信可能性を作ること⟦PREDICATE⟧。,1,5
+TAM:L772:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,772,18. 拡張読解アトラスの扱い,sentence_candidate,哲学、宗教、神話、科学、政治思想、魔術的体系についての長文解説は、本稿の本文理解に必須ではない。,哲学、宗教、神話、科学、政治思想、魔術的体系についての長文解説は、本稿の本文理解に必須⟦NEGATE⟧。,1,0
+TAM:L774:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,774,18. 拡張読解アトラスの扱い,sentence_candidate,それらは、各モジュールが歴史的・物語的にどのような世界を形成しうるかを見るための拡張読解アトラスとして、別文書または付録層で管理する。,それらは、各モジュールが歴史的・物語的にどのような世界を⟦TRANSFORM⟧うるかを見るための拡張読解アトラスとして、別文書または付録層で管理する。,1,1
+TAM:L776:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,776,18. 拡張読解アトラスの扱い,sentence_candidate,正本である本稿は、次を保持する。,正本⟦PREDICATE⟧本稿は、次を⟦RETAIN⟧。,2,1
+TAM:L787:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,787,18. 拡張読解アトラスの扱い,sentence_candidate,拡張アトラスは、次を担う。,拡張アトラスは、次を担う。,0,0
+TAM:L792:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,792,18. 拡張読解アトラスの扱い,list_candidate,個別思想の長文読解,個別思想の長文読解,0,0
+TAM:L795:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,795,18. 拡張読解アトラスの扱い,sentence_candidate,この分離により、本稿は境界プロトコルとして自立し、アトラスは認識上の豊かさを失わずに保持できる。,この分離により、本稿は境界プロトコルとして自立し、アトラスは認識上の豊かさを失わずに保持⟦POSSIBLE⟧。,1,3
+TAM:L801:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,801,19. 結論,sentence_candidate,選択公理モジュールは、思想の優劣表ではない。,選択公理モジュールは、思想の優劣表⟦NEGATE⟧。,1,1
+TAM:L803:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,803,19. 結論,sentence_candidate,それは、認識軸が世界観、方法、倫理、制度、技術設計として明示されたとき、異なる体系の間に通信ポートを作るための境界プロトコルである。,それは、認識軸が世界観、方法、倫理、制度、技術設計として明示された⟦CONDITION⟧、異なる体系の間に通信ポートを作るための境界プロトコル⟦PREDICATE⟧。,2,2
+TAM:L805:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,805,19. 結論,sentence_candidate,各モジュールは、何に関心を向け、何を捨象し、何を価値として保持し、何をコストとして処理するかを持つ。,各モジュールは、何に関心を向け、何を⟦CUT⟧、何を価値として⟦RETAIN⟧、何をコストとして処理するかを持つ。,2,5
+TAM:L807:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,807,19. 結論,sentence_candidate,さらに、失ってはならない中核と、歴史的に変動する運用層を持つ。,さらに、失っては⟦NEGATE⟧中核と、歴史的に変動する運用層を持つ。,1,1
+TAM:L809:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,809,19. 結論,sentence_candidate,通約とは、すべてを一つに統合することではない。,通約⟦DEFINE⟧、すべてを一つに統合すること⟦NEGATE⟧。,2,1
+TAM:L811:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,811,19. 結論,sentence_candidate,中核を確認し、照合手続きを比較し、共有可能なインターフェースを作り、翻訳不能残差を残し、原体系へ戻る返路を保持することである。,中核を確認し、照合手続きを比較し、共有可能なインターフェースを作り、翻訳不能残差を⟦RETAIN⟧、原体系へ戻る返路を⟦RETAIN⟧こと⟦PREDICATE⟧。,3,5
+TAM:L813:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,813,19. 結論,sentence_candidate,認識形式を選ぶことには、責任が伴う。,認識形式を⟦SELECT⟧ことには、責任が伴う。,1,2
+TAM:L815:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,815,19. 結論,sentence_candidate,何が見えるようになるかだけでなく、何が見えなくなり、そのコストが誰へ返るかを引き受けなければならない。,何が見えるようになるかだけでなく、何が見えなくなり、そのコストが誰へ返るかを引き受けなければ⟦NEGATE⟧。,1,1
+TAM:L817:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,817,19. 結論,sentence_candidate,その責任を明示した上で、候補となる目的と世界像を真理の経営学へ渡す。,その責任を明示した上で、候補となる目的と世界像を真理の経営学へ渡す。,0,1
+TAM:L819:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,819,19. 結論,sentence_candidate,これが、認識ブリッジとしての選択公理モジュールの役割である。,これが、認識ブリッジとしての選択公理モジュールの役割⟦PREDICATE⟧。,1,2
+TAM:L836:S1,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,836,20. 関連文書,sentence_candidate,[英語通約](./Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)。,[英語通約](./Optional_Axiom_Modules_as_Cognitive_Bridge.en.md)。,0,1
+TAM:L836:S2,TAM,03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md,836,20. 関連文書,sentence_candidate,意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。,意味に不一致がある⟦CONDITION⟧、日本語正本と定義所有文書へ戻って⟦COLLATE⟧。,2,2
