@@ -1,0 +1,72 @@
+{
+  "all_register": {
+    "admitted": 242,
+    "deferred": 0,
+    "zero_overlap_when_added": 24,
+    "zero_overlap_with_later_term_contact": 17
+  },
+  "alpha_flag_counts": {
+    "否定作用域未解析": 77,
+    "定義形式候補": 56,
+    "条件作用域未解析": 21,
+    "終止表面あり": 319,
+    "話題・枠組み設定候補": 4,
+    "限定・対比作用域未解析": 36,
+    "非終止・文脈依存候補": 27
+  },
+  "alpha_limit": "flags for form, negation, scope, topic, question; no truth/validity/consistency proof",
+  "beta_limit": "held-out surface-feature reuse; not verified meaning, dictionary fitness, entropy or exergy",
+  "definition_head_candidate_count": 56,
+  "early_filter": {
+    "admitted": 216,
+    "deferred": 26
+  },
+  "early_filter_deferred_with_future_lexical_contact": 17,
+  "early_filter_deferred_with_test_contact": 16,
+  "expression_candidates_count": 24,
+  "feature_weights": {
+    "expressions": 0.15,
+    "frames": 0.25,
+    "pairs": 0.25,
+    "terms": 0.35
+  },
+  "nonterminal_fragment_count": 27,
+  "not_implemented": [
+    "grammatical roles",
+    "logical entailment",
+    "operator identity across contexts",
+    "true semantic analysis",
+    "optimal-order proof",
+    "physical entropy"
+  ],
+  "numbered_sentence_count": 265,
+  "reference_graph": "only surface word/expression use; no logical inference edges",
+  "research_status": "research pilot / no authoritative revisions",
+  "rounds": 32,
+  "seed": 20261111,
+  "selected_metrics": {
+    "early_deferred": 26,
+    "early_filter_test_auc": 0.42381991,
+    "early_filter_test_final": 0.55319889,
+    "full_isolated_while_registering": 24,
+    "strategy": "selected_on_tune",
+    "test_auc": 0.445743,
+    "test_final": 0.56319575,
+    "tune_auc": 0.49393022
+  },
+  "selected_order_origin": "swap_improvement_066",
+  "selection_basis": "best observed tune-area; heuristic search, not global optimum",
+  "sentence_count": 346,
+  "source": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+  "source_sha256": "2f902285215ffac36f850cc118034787244f1c882f9274549da468960059d534",
+  "split_rule": "random seed fixed before any order selection; tune for selection, test only for final check",
+  "splits": {
+    "register": 242,
+    "test": 53,
+    "tune": 51
+  },
+  "swaps": 70,
+  "term_candidates_count": 609,
+  "unnumbered_sentence_count": 81,
+  "warmup": 8
+}

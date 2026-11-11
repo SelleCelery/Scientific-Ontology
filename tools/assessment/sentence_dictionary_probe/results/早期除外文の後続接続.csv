@@ -1,0 +1,27 @@
+sentence_id,line,text,at_step,later_overlap_terms,test_overlap_terms,future_contact,test_usage_contact
+SAT:4.6.2:C6,163,境界認識批判が追うべきなのは、各形式空間が何を状態化し、何を観測可能にし、何を分類不能にし、何をノイズ・残差・意味圧として漏出させるかである。,9,ノイズ; 境界認識批判; 意味圧; 残差; 状態化; 観測可能,境界認識批判; 残差,True,True
+SAT:L757:C0,757,定義語: **capacity for re-collation**,11,capacity; for; re-collation; 定義語,capacity; for; 定義語,True,True
+SAT:2.6.1.2:C8,87,しかし、切り出されなかったものは消えたわけではない。,12,,,False,False
+SAT:15.4:C5,585,経験は、境界で構成される。,18,境界; 構成; 経験,境界; 経験,True,True
+SAT:4.5.3:C6,155,エントロピー空間は、分布・散逸・圧縮・ノイズ・未統合残差を扱うための空間である。,19,エントロピー; ノイズ; 圧縮; 未統合残差; 空間,エントロピー; 空間,True,True
+SAT:L749:C0,749,注意: クーン的な通約可能性の問題と接続する。,22,クーン; 接続; 注意,問題; 注意,True,True
+SAT:L735:C0,735,定義語: **logical-depth axis**,29,定義語,axis; 定義語,True,True
+SAT:15.12:C6,603,知るとは、世界を所有することではない。,31,世界; 知,知,True,True
+SAT:L668:C0,668,定義語: **residue**,33,residue; 定義語,定義語,True,True
+SAT:L727:C28,727,物理的な圧力ではないことを明記する。,43,明記; 物理的,,True,False
+SAT:4.7:C4,165,したがって、存在境界論は時空だけを扱わない。,50,存在境界論,存在境界論,True,True
+SAT:L632:C0,632,短縮候補: **Boundary Critique**,55,Boundary; Critique,,True,False
+SAT:L689:C0,689,説明句: **history-bearing field**,57,field; history-bearing; 説明句,説明句,True,True
+SAT:L619:C0,619,A.4　オッカム、ヒューム、カント、スピノザ、シェリング、ヘーゲル、ゲーデル、フッサール、ソシュール、ウィトゲンシュタイン、エーコ、ポパー、クワイン、クーン、ジェームズ、パース、デューイ、ユング、メルロ＝ポンティなどは、本文の命題列に対する注解として扱う。,63,本文; 注解,,True,False
+SAT:L680:C0,680,強調候補: **accumulated history / history-bearing**,87,history; history-bearing,,True,False
+SAT:L749:C23,749,ただし、ここでいう通約は完全翻訳ではない。,123,完全翻訳,通約,True,True
+SAT:L708:C0,708,文脈候補: **room for judgment / conditions for judgment**,129,conditions; for; judgment; room,for; judgment,True,True
+SAT:L621:C0,621,A.5　哲学者名は、本文の骨格ではない。,136,本文; 骨格,,True,False
+SAT:12.9.1:C7,475,完全翻訳は不要である。,137,,,False,False
+SAT:L653:C103,653,`verification` と訳すと、検証・確認に寄りすぎるため避ける。,150,,,False,False
+SAT:12.8:C5,469,したがって、誤解は単なる情報不足ではない。,160,,誤解,False,True
+SAT:9.12:C5,361,嘘とは、単なる偽命題ではない。,163,,,False,False
+SAT:6.4.3.1:C8,231,物理法則は、その中でも、外的時空内で極めて高い同期精度を持つ法則体系である。,173,,法則体系,False,True
+SAT:4.7.1.1:C8,169,外的時空とは、物理的・社会的に共有される時間空間順序である。,184,,外的時空,False,True
+SAT:10.4:C5,397,したがって、真偽命題は意味論を持つ。,211,,,False,False
+SAT:L642:C0,642,併記候補: **synchronization**,231,,synchronization,False,True
