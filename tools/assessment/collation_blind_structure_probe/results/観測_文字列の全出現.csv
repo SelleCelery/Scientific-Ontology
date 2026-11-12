@@ -1,0 +1,76 @@
+id,part,line,column,source,original_line,substring,left_context_22,right_context_22,left_character,right_character
+SAT:L2:C7,train,2,7,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,## 同期・照合・残差保持による知の成立条件,照合,## 同期・,・残差保持による知の成立条件,・,・
+SAT:L9:C46,tune,9,46,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,本稿は、知の成立条件を、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持・再照合可能性から再定義するための基幹命題列である。,照合,リスティック・外部ヒューリスティック・同期・,・残差保持・再照合可能性から再定義するための,・,・
+SAT:L9:C55,tune,9,55,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,本稿は、知の成立条件を、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持・再照合可能性から再定義するための基幹命題列である。,照合,ヒューリスティック・同期・照合・残差保持・再,可能性から再定義するための基幹命題列である。,再,可
+SAT:L11:C33,train,11,33,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,本稿は哲学史の総合ではない。既存思想との接続は、権威づけではなく照合のために注解ファイルへ置く。,照合,はない。既存思想との接続は、権威づけではなく,のために注解ファイルへ置く。,く,の
+SAT:L21:C57,train,21,57,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,0.2　知とは、履歴を持つ存在が、外部からの入力を受け取り、内部で処理し、外部と同期し、その一致・不一致・残差を照合し、なお閉じきれないものを保持しながら、次の判断可能性を維持することで成立する。,照合,理し、外部と同期し、その一致・不一致・残差を,し、なお閉じきれないものを保持しながら、次の,を,し
+SAT:L27:C49,train,27,49,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,0.3　認識とは、境界において、内部ヒューリスティックと外部ヒューリスティックが接触し、同期し、照合され、残差を残しながら更新される過程である。,照合,クと外部ヒューリスティックが接触し、同期し、,され、残差を残しながら更新される過程である。,、,さ
+SAT:L35:C34,train,35,34,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,0.3.3　境界認識批判は、有限観測系において、観測・分類・同期・照合から漏れるものを、どのように残差として保持し、再照合可能性を維持するかを問う。,照合,判は、有限観測系において、観測・分類・同期・,から漏れるものを、どのように残差として保持し,・,か
+SAT:L35:C60,train,35,60,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,0.3.3　境界認識批判は、有限観測系において、観測・分類・同期・照合から漏れるものを、どのように残差として保持し、再照合可能性を維持するかを問う。,照合,漏れるものを、どのように残差として保持し、再,可能性を維持するかを問う。,再,可
+SAT:L203:C31,train,203,31,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,5.8.2　理性の暴走とは、内部ループの閉鎖欲が、外部同期と照合を失った状態である。,照合,の暴走とは、内部ループの閉鎖欲が、外部同期と,を失った状態である。,と,を
+SAT:L273:C15,test,273,15,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,7.4　したがって、同期には照合が必要である。,照合,7.4　したがって、同期には,が必要である。,は,が
+SAT:L281:C7,train,281,7,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,## 8. 照合は、一致・不一致・残差に意味を与える操作である,照合,## 8. ,は、一致・不一致・残差に意味を与える操作であ, ,は
+SAT:L283:C5,train,283,5,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,8.1　照合とは、同期の成否だけでなく、一致・不一致・残差が何を意味するかを読む操作である。,照合,8.1　,とは、同期の成否だけでなく、一致・不一致・残,　,と
+SAT:L285:C5,train,285,5,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,8.2　照合は、単なる比較ではない。,照合,8.2　,は、単なる比較ではない。,　,は
+SAT:L287:C5,tune,287,5,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,8.3　照合は、どの履歴場において、どの外部ヒューリスティックと、どの条件で一致しているのかを問う。,照合,8.3　,は、どの履歴場において、どの外部ヒューリステ,　,は
+SAT:L289:C5,train,289,5,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,8.4　照合は、不一致を単純な誤りとして即時に捨てない。,照合,8.4　,は、不一致を単純な誤りとして即時に捨てない。,　,は
+SAT:L307:C5,tune,307,5,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,8.6　照合は、残差を意味の資源として保持する。,照合,8.6　,は、残差を意味の資源として保持する。,　,は
+SAT:L309:C5,tune,309,5,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,8.7　照合だけを絶対化すると、すべての残差を何らかの意味として閉じようとする。,照合,8.7　,だけを絶対化すると、すべての残差を何らかの意,　,だ
+SAT:L311:C5,test,311,5,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,8.8　照合の過剰は、残差保持ではなく、残差の意味強制になる。,照合,8.8　,の過剰は、残差保持ではなく、残差の意味強制に,　,の
+SAT:L317:C11,train,317,11,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,9.1　知は、同期と照合だけでは閉じない。,照合,9.1　知は、同期と,だけでは閉じない。,と,だ
+SAT:L321:C5,train,321,5,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,9.3　照合は、その一致・不一致・残差に意味を与える。,照合,9.3　,は、その一致・不一致・残差に意味を与える。,　,は
+SAT:L323:C9,train,323,9,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,9.4　しかし、照合されたもののすべてが閉じられるわけではない。,照合,9.4　しかし、,されたもののすべてが閉じられるわけではない。,、,さ
+SAT:L329:C15,tune,329,15,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,9.5.1　残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,照合,9.5.1　残差とは、同期・,・分類・観測の過程で現れる、まだ再照合可能な,・,・
+SAT:L329:C34,tune,329,34,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,9.5.1　残差とは、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。,照合,同期・照合・分類・観測の過程で現れる、まだ再,可能な差分である。,再,可
+SAT:L347:C20,train,347,20,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,9.6.5　残差は、現在の同期体系では照合不能な意味張力である場合がある。,照合,9.6.5　残差は、現在の同期体系では,不能な意味張力である場合がある。,は,不
+SAT:L357:C30,train,357,30,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,9.11　新しいヒューリスティックは、しばしば残差保持と再照合の結果として発生する。,照合,いヒューリスティックは、しばしば残差保持と再,の結果として発生する。,再,の
+SAT:L359:C45,tune,359,45,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,9.11.1　創発とは、無からの出現ではなく、既存の分類体系で閉じられなかった残差が、再照合によって新しい分類形式を要求することである。,照合,、既存の分類体系で閉じられなかった残差が、再,によって新しい分類形式を要求することである。,再,に
+SAT:L363:C12,train,363,12,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,9.12.1　嘘とは、照合経路を切断し、残差へのアクセスを塞ぐ操作である。,照合,9.12.1　嘘とは、,経路を切断し、残差へのアクセスを塞ぐ操作であ,、,経
+SAT:L401:C44,train,401,44,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,10.5.1　真とは、ある命題が、特定の履歴場において、特定の外部ヒューリスティックと照合され、判断可能性を保つ状態である。,照合,歴場において、特定の外部ヒューリスティックと,され、判断可能性を保つ状態である。,と,さ
+SAT:L405:C17,train,405,17,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,10.6.1　偽とは、同期不能、照合不能、適用範囲逸脱、分類失敗、または偽閉鎖として現れる。,照合,10.6.1　偽とは、同期不能、,不能、適用範囲逸脱、分類失敗、または偽閉鎖と,、,不
+SAT:L409:C14,test,409,14,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,10.7.1　未解決とは、照合が閉じていない状態である。,照合,10.7.1　未解決とは、,が閉じていない状態である。,、,が
+SAT:L417:C15,test,417,15,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,## 11. 学問は、同期と照合を言語化し、再照合可能にする営みである,照合,## 11. 学問は、同期と,を言語化し、再照合可能にする営みである,と,を
+SAT:L417:C24,test,417,24,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,## 11. 学問は、同期と照合を言語化し、再照合可能にする営みである,照合,# 11. 学問は、同期と照合を言語化し、再,可能にする営みである,再,可
+SAT:L425:C27,train,425,27,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.2.1.1　学問は、同期の一致・不一致・残差を照合する。,照合,.1.1　学問は、同期の一致・不一致・残差を,する。,を,す
+SAT:L427:C16,train,427,16,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.2.1.2　学問は、その照合手順を言語化する。,照合,11.2.1.2　学問は、その,手順を言語化する。,の,手
+SAT:L429:C16,tune,429,16,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.2.1.3　学問は、その照合手順を記号化する。,照合,11.2.1.3　学問は、その,手順を記号化する。,の,手
+SAT:L431:C16,tune,431,16,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.2.1.4　学問は、その照合手順を方法化する。,照合,11.2.1.4　学問は、その,手順を方法化する。,の,手
+SAT:L433:C16,train,433,16,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.2.1.5　学問は、その照合手順を他者が再照合できる形へ保存する。,照合,11.2.1.5　学問は、その,手順を他者が再照合できる形へ保存する。,の,手
+SAT:L433:C25,train,433,25,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.2.1.5　学問は、その照合手順を他者が再照合できる形へ保存する。,照合,.2.1.5　学問は、その照合手順を他者が再,できる形へ保存する。,再,で
+SAT:L435:C20,tune,435,20,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.3　したがって、学問とは、同期と照合の継承可能な形式である。,照合,11.3　したがって、学問とは、同期と,の継承可能な形式である。,と,の
+SAT:L437:C18,tune,437,18,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.3.1　科学は、外部同期と再照合の強度が高い学問形式である。,照合,11.3.1　科学は、外部同期と再,の強度が高い学問形式である。,再,の
+SAT:L439:C15,train,439,15,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.3.2　哲学は、同期と照合の成立条件そのものを問う学問形式である。,照合,11.3.2　哲学は、同期と,の成立条件そのものを問う学問形式である。,と,の
+SAT:L443:C35,train,443,35,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.3.4　人文学は、履歴場における意味・解釈・言語ゲーム・価値の照合を扱う学問形式である。,照合,履歴場における意味・解釈・言語ゲーム・価値の,を扱う学問形式である。,の,を
+SAT:L445:C31,train,445,31,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.4　AI時代の学問は、外部記憶を内部理解へ同期し、その照合過程を人間が保持できるかを問われる。,照合,代の学問は、外部記憶を内部理解へ同期し、その,過程を人間が保持できるかを問われる。,の,過
+SAT:L449:C16,test,449,16,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,11.5.1　学問は、残差を再照合可能な形で保存し、未来の問いへ渡すための制度である。,照合,11.5.1　学問は、残差を再,可能な形で保存し、未来の問いへ渡すための制度,再,可
+SAT:L453:C22,train,453,22,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,## 12. 言語ゲームは、共同体における照合規則の安定化である,照合,## 12. 言語ゲームは、共同体における,規則の安定化である,る,規
+SAT:L465:C24,train,465,24,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,12.6　言語ゲームとは、共同体内で安定化した照合規則である。,照合,2.6　言語ゲームとは、共同体内で安定化した,規則である。,た,規
+SAT:L471:C12,train,471,12,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,12.8.1　誤解は、照合規則の不一致として発生する。,照合,12.8.1　誤解は、,規則の不一致として発生する。,、,規
+SAT:L473:C22,train,473,22,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,12.9　通約とは、異なる言語ゲームの間に照合可能な対応面を作ることである。,照合,12.9　通約とは、異なる言語ゲームの間に,可能な対応面を作ることである。,に,可
+SAT:L479:C25,train,479,25,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,12.9.3　通約とは、差異を消すことではなく、照合可能な境界面を作ることである。,照合,.9.3　通約とは、差異を消すことではなく、,可能な境界面を作ることである。,、,可
+SAT:L481:C38,tune,481,38,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,12.10　言語ゲームの失敗は、残差を非常識・非合理・非存在として処分し、照合可能性を失わせることである。,照合,、残差を非常識・非合理・非存在として処分し、,可能性を失わせることである。,、,可
+SAT:L483:C42,train,483,42,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,12.10.1　残差をユーモアとして処理する、または誤解や誤謬として扱う場合には、照合の可能性が残される。,照合,理する、または誤解や誤謬として扱う場合には、,の可能性が残される。,、,の
+SAT:L501:C31,test,501,31,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,13.7　AIを外部ヒューリスティックとして使い、内部理解と照合するなら、判断可能性は増える。,照合,外部ヒューリスティックとして使い、内部理解と,するなら、判断可能性は増える。,と,す
+SAT:L513:C57,train,513,57,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,13.10.1　AI時代の批判哲学は、AIによって増幅された外部ヒューリスティックを、内部理解とどう同期し、どう照合するかを問うことである。,照合,ーリスティックを、内部理解とどう同期し、どう,するかを問うことである。,う,す
+SAT:L551:C7,test,551,7,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,14.14　照合だけを絶対化する態度は、残差を無理に閉じる。,照合,14.14　,だけを絶対化する態度は、残差を無理に閉じる。,　,だ
+SAT:L553:C10,train,553,10,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,14.15　同期も照合も捨てる態度は、残差を氾濫させる。,照合,14.15　同期も,も捨てる態度は、残差を氾濫させる。,も,も
+SAT:L581:C24,tune,581,24,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,15.2　知は、その同期の一致・不一致・残差を照合することで意味を持つ。,照合,5.2　知は、その同期の一致・不一致・残差を,することで意味を持つ。,を,す
+SAT:L583:C17,train,583,17,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,15.3　知は、残差を保持し、再照合可能性を維持することで更新可能性を持つ。,照合,15.3　知は、残差を保持し、再,可能性を維持することで更新可能性を持つ。,再,可
+SAT:L595:C13,test,595,13,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,15.9　学問は、同期と照合を再照合可能な形へ保存する営みである。,照合,15.9　学問は、同期と,を再照合可能な形へ保存する営みである。,と,を
+SAT:L595:C17,test,595,17,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,15.9　学問は、同期と照合を再照合可能な形へ保存する営みである。,照合,15.9　学問は、同期と照合を再,可能な形へ保存する営みである。,再,可
+SAT:L597:C21,tune,597,21,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,15.10　言語ゲームは、共同体における照合規則である。,照合,15.10　言語ゲームは、共同体における,規則である。,る,規
+SAT:L605:C25,train,605,25,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,15.12.1　知るとは、境界で接触し、同期し、照合し、残差を保持しながら、次の判断可能性を開くことである。,照合,.12.1　知るとは、境界で接触し、同期し、,し、残差を保持しながら、次の判断可能性を開く,、,し
+SAT:L607:C32,train,607,32,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,15.13　有限な観測者にとって、現在の到達は完成ではなく、再照合可能な仮閉鎖である。,照合,観測者にとって、現在の到達は完成ではなく、再,可能な仮閉鎖である。,再,可
+SAT:L615:C26,test,615,26,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,A.2　本稿は、知の成立条件を、境界・履歴・同期・照合・残差保持から再定義する試みである。,照合,　本稿は、知の成立条件を、境界・履歴・同期・,・残差保持から再定義する試みである。,・,・
+SAT:L617:C40,train,617,40,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,A.3　既存思想との接続は、本稿の権威づけではなく、未踏領域を主張しないための照合である。,照合,権威づけではなく、未踏領域を主張しないための,である。,の,で
+SAT:L623:C45,train,623,45,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,A.6　本文の骨格は、境界・履歴・内部ヒューリスティック・外部ヒューリスティック・同期・照合・残差保持である。,照合,リスティック・外部ヒューリスティック・同期・,・残差保持である。,・,・
+SAT:L648:C9,test,648,9,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,### B.3　照合,照合,### B.3　,,　,<BORDER>
+SAT:L662:C12,test,662,12,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,注意: 残差は、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。操作対象として扱える差分を指す場合は `residual` がよい。,照合,注意: 残差は、同期・,・分類・観測の過程で現れる、まだ再照合可能な,・,・
+SAT:L662:C31,test,662,31,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,注意: 残差は、同期・照合・分類・観測の過程で現れる、まだ再照合可能な差分である。操作対象として扱える差分を指す場合は `residual` がよい。,照合,同期・照合・分類・観測の過程で現れる、まだ再,可能な差分である。操作対象として扱える差分を,再,可
+SAT:L699:C58,train,699,58,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,注意: ここでいう `heuristic` は、単なる経験則ではない。履歴を原料として、受容・分類・判断・閉鎖・再照合を可能にする構造である。,照合,履歴を原料として、受容・分類・判断・閉鎖・再,を可能にする構造である。,再,を
+SAT:L729:C57,train,729,57,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,補足: 意味圧とは、未閉鎖の gap や残差が、既存の closure に似た構造を要求し、解釈・分類・補完・再照合を促す圧である。history-field を無視してこの圧を処理すると、false closure が発生しやすい。,照合,e に似た構造を要求し、解釈・分類・補完・再,を促す圧である。history-field ,再,を
+SAT:L749:C67,test,749,67,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,注意: クーン的な通約可能性の問題と接続する。ただし、ここでいう通約は完全翻訳ではない。異なる言語ゲーム、パラダイム、履歴場の間に、照合可能な対応面を作ることである。,照合,異なる言語ゲーム、パラダイム、履歴場の間に、,可能な対応面を作ることである。,、,可
+SAT:L755:C11,test,755,11,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,### B.14　再照合可能性,照合,### B.14　再,可能性,再,可
+SAT:L762:C6,train,762,6,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,補足: 再照合可能性とは、一度閉じた命題・判断・分類・制度的処理を、残差や残渣へのアクセス経路を保ったまま、再び照合可能にする条件である。,照合,補足: 再,可能性とは、一度閉じた命題・判断・分類・制度,再,可
+SAT:L762:C57,train,762,57,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,補足: 再照合可能性とは、一度閉じた命題・判断・分類・制度的処理を、残差や残渣へのアクセス経路を保ったまま、再び照合可能にする条件である。,照合,残差や残渣へのアクセス経路を保ったまま、再び,可能にする条件である。,び,可
+SAT:L766:C80,test,766,80,01_Sat_Truth/Boundary_Epistemological_Critique.ja.md,[英語通約](./Boundary_Epistemological_Critique.en.md)。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。,照合,ある場合は、日本語正本と定義所有文書へ戻って,する。,て,す

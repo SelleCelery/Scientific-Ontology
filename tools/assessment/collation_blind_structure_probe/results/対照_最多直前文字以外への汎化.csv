@@ -1,0 +1,3 @@
+group,dominant_train_character,n,baseline_bits,conditional_bits,gain_bits,gain_per_example
+most_frequent_preceding_character,、,2,10.870553597,12.967736628,-2.097183031,-1.048591516
+all_other_preceding_characters,、,15,63.164120953,53.682340211,9.481780742,0.632118716

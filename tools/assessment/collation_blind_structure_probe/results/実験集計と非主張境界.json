@@ -1,0 +1,114 @@
+{
+  "anchor_literal": "照合",
+  "boundary_and_residual": [
+    "The search literal is an investigator-chosen anchor only, not a pre-defined concept.",
+    "All raw occurrences, including headings and compound forms, are retained without role labels.",
+    "A fixed-width character context is not syntax, a word segmentation, or semantic identity.",
+    "The predictive target is one next character only. Semantic distinctions are not tested.",
+    "Window n-grams are literal substrings, never preassigned words or conceptual edges.",
+    "The code length excludes storing the trained dictionary and is not full MDL.",
+    "Line-disjoint splits prevent identical-line leakage but not paraphrase/section leakage.",
+    "The negative control destroys left/right pairing; exchangeability is a model assumption.",
+    "The one-sided rank fraction is exploratory, not a published significance claim.",
+    "No labels such as definition, necessity, relation type, scope or truth were applied to evidence.",
+    "It is unresolved whether discovered formal differences correspond to differences in meaning.",
+    "Source provenance and all dictionary state measurements are retained; no canonical changes."
+  ],
+  "control": {
+    "control_at_least_real": 0,
+    "empirical_one_sided_rank_fraction": 0.0078125,
+    "rounds": 127,
+    "shuffled_test_gain_bits_max": 1.56987322,
+    "shuffled_test_gain_bits_mean": -11.57154725566929,
+    "shuffled_test_gain_bits_min": -22.870675853
+  },
+  "distinct_lines": 67,
+  "dominant_train_preceding_character": "、",
+  "identical_measured_signature_groups": 13,
+  "left_right_pair_count_support_ge_2": 46,
+  "model": {
+    "alpha": 3.0,
+    "alphabet_train_size": 19,
+    "baseline_model": "empirical unconditional categorical",
+    "candidate_k": [
+      1,
+      2,
+      3
+    ],
+    "complexity_of_dictionary_not_encoded": true,
+    "conditioning": "last k code points immediately left of literal",
+    "escape_character": "<UNSEEN>",
+    "joint_model": "interpolated empirical categorical conditional",
+    "lambda": 3.0,
+    "pad_character": "␀",
+    "response": "one code point immediately right of literal",
+    "selected_k_on_tune": 1
+  },
+  "motif_count_support_ge_2": 87,
+  "occurrence_count": 75,
+  "orders": {
+    "final_state_same_across_orders": true,
+    "prequential_gain_bits_max": 0.616192665,
+    "prequential_gain_bits_min": -2.981935578,
+    "trials": 34
+  },
+  "scope": "unlabeled exploratory literal-context structure; no meaning labels in input/scoring",
+  "source": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+  "source_sha256": "2f902285215ffac36f850cc118034787244f1c882f9274549da468960059d534",
+  "splits": {
+    "test": {
+      "lines": 14,
+      "occurrences": 17
+    },
+    "train": {
+      "lines": 40,
+      "occurrences": 43
+    },
+    "tune": {
+      "lines": 13,
+      "occurrences": 15
+    }
+  },
+  "test_dominant_character_ablation": [
+    {
+      "baseline_bits": 10.870553597,
+      "conditional_bits": 12.967736628,
+      "dominant_train_character": "、",
+      "gain_bits": -2.097183031,
+      "gain_per_example": -1.048591516,
+      "group": "most_frequent_preceding_character",
+      "n": 2
+    },
+    {
+      "baseline_bits": 63.164120953,
+      "conditional_bits": 53.682340211,
+      "dominant_train_character": "、",
+      "gain_bits": 9.481780742,
+      "gain_per_example": 0.632118716,
+      "group": "all_other_preceding_characters",
+      "n": 15
+    }
+  ],
+  "test_once": {
+    "baseline_bits": 74.03467455020373,
+    "conditional_bits": 66.65007683952528,
+    "gain_bits": 7.384597710678449,
+    "gain_per_example": 0.43438810062814404,
+    "n": 17
+  },
+  "train_source_order_preq": {
+    "baseline_bits": 210.34310764067197,
+    "conditional_bits": 212.1394062729903,
+    "gain_bits": -1.7962986323183259,
+    "gain_per_example": -0.0417743867981006,
+    "n": 43
+  },
+  "tune": {
+    "baseline_bits": 61.35578578799216,
+    "conditional_bits": 40.51143834667135,
+    "gain_bits": 20.844347441320814,
+    "gain_per_example": 1.3896231627547209,
+    "n": 15
+  },
+  "window_substrings_support_ge_2": 966
+}
