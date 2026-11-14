@@ -1,0 +1,22 @@
+{
+  "method": "sequential_text_intake_then_recorded_AI_editorial_passes",
+  "creation_passes": [
+    "literal_text_accumulation",
+    "core_reading",
+    "cross_usage_revision",
+    "basic_terms_and_functions",
+    "explicit_term_review"
+  ],
+  "semantic_generation_is_fully_automated": false,
+  "replay_uses_saved_editorial_updates": true,
+  "model_calls_inside_scripts": 0,
+  "reference_file_opened_only_after_dictionary_freeze": true,
+  "assistant_prior_knowledge_erased": false,
+  "metadata_used_for_corpus_scope_not_term_weighting": true,
+  "source_pointers_are_in_separate_sidecars": true,
+  "convergence": "observed revisions only; no proof of semantic convergence or stability across registration orders",
+  "authoritative_status": "research_dictionary_candidate_not_canonical",
+  "resource_audit": "no alpha/beta, entropy, exergy or impedance scores produced",
+  "vocabulary_coverage": "all candidates under the declared Unicode-run/compound/function/quotation extractor, not exhaustive Japanese morphemes",
+  "scope": "86 selected Japanese prose documents from rc008; excludes existing glossary, English commensurations, historical duplicates, operational/generated files"
+}

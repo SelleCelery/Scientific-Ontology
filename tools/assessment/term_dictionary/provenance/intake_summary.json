@@ -1,0 +1,446 @@
+{
+  "source_archive_sha256": "bcf56409d091a67b8314fce5ac6e0676a7bc79e23d517b92ac56138595ae166e",
+  "input_files": 86,
+  "excluded_files": 152,
+  "input_sentence_units": 18806,
+  "distinct_sentence_texts": 17721,
+  "surface_candidates": 24223,
+  "literal_definition_headwords": 438,
+  "literal_definition_sentences": 617,
+  "text_only_input_sha256": "4d70530007d8e3b105e83f5341e16229158a01aac3ba9064d4398ae5858ed01d",
+  "lexical_rule": "Unicode script runs + compounds + quoted expressions + fixed function-expression forms; NOT exhaustive morphological word recognition",
+  "reference_glossary_read": false,
+  "source_pointers_passed_to_reducer": false,
+  "source_files": [
+    {
+      "path": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+      "sha256": "6c503a6f3cd0a9d1b149681a1a8db65827a2633b7d72a2d824c43e94e085baae",
+      "paragraphs": 29
+    },
+    {
+      "path": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+      "sha256": "ac668c21d3822ef4d38034a1980f3b59f57c7a5bfa3b51729c320f350cd99942",
+      "paragraphs": 217
+    },
+    {
+      "path": "00_Overview/Physics_Correspondence_Policy.ja.md",
+      "sha256": "004b48fcea05a17eadc8001e36b9c8af6079ce5e279831bc9d3d5048c8c73ae8",
+      "paragraphs": 206
+    },
+    {
+      "path": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+      "sha256": "a2746ea5a6aff318aa7de1690c44f76c44089505610a95a84a3d2030723894d8",
+      "paragraphs": 251
+    },
+    {
+      "path": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+      "sha256": "aefc5cff2af4866361fb873da8ba7649e3479c7f61cc66daa415a301f9b20748",
+      "paragraphs": 125
+    },
+    {
+      "path": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+      "sha256": "10cdc7acd63c4db91c50ae058fcfaf2172158fc08a6dfd4af4facd5888409d26",
+      "paragraphs": 165
+    },
+    {
+      "path": "01_Sat_Truth/AMP_Introduction.md",
+      "sha256": "fb3a2f549dee261e0372f0c981ac617a9f51e84df76e2310b2a1303e8a102acc",
+      "paragraphs": 46
+    },
+    {
+      "path": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+      "sha256": "2f902285215ffac36f850cc118034787244f1c882f9274549da468960059d534",
+      "paragraphs": 309
+    },
+    {
+      "path": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md",
+      "sha256": "a7b73195ddd53b81aa7b6f8db1c22a5ff2403f88aab258f4a7b01c62f803ce54",
+      "paragraphs": 84
+    },
+    {
+      "path": "01_Sat_Truth/Boundary_Realism_Principle.md",
+      "sha256": "940e6beac368df54ab80d35e23bbc7d47796d5ec2e81e4e171631be7ae8c617a",
+      "paragraphs": 93
+    },
+    {
+      "path": "01_Sat_Truth/Four_Axioms_of_Existence.md",
+      "sha256": "10656d24953c12b4edeca0c165cfeafde901fe5c722131633ae44cd68c64e0df",
+      "paragraphs": 85
+    },
+    {
+      "path": "01_Sat_Truth/Meaning_Generation_Model.md",
+      "sha256": "0c66bfcab7b802e7c86f2917c866a1ac196193bf58c2943055bfe0e66bcf3668",
+      "paragraphs": 54
+    },
+    {
+      "path": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+      "sha256": "65e744cd03fc451b4fff425bc4085c6a8e3d85cd47757e5a6f01075e8f7f69fc",
+      "paragraphs": 429
+    },
+    {
+      "path": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+      "sha256": "3e47b7d42cfcbd26205dcceedb8bb6809b0b38ffb3b833b0e84a60117fcd94e5",
+      "paragraphs": 162
+    },
+    {
+      "path": "02_Raj_Beauty/HFC_Introduction.md",
+      "sha256": "cda3dbcff74ac5f649031159a657724a241b633c0a1bb1555908859fa03c4faa",
+      "paragraphs": 66
+    },
+    {
+      "path": "02_Raj_Beauty/History_Field_Topology.md",
+      "sha256": "2bed6725e4700fc4aba72bf8cf0da743bcfeb449b75defd3a62a556bea27893b",
+      "paragraphs": 61
+    },
+    {
+      "path": "02_Raj_Beauty/Scientific_Ontology_and_Science.md",
+      "sha256": "520a55c2efa823d69ad0c90a211e4478f3f116985638c1eb7929c61b9e9b2e35",
+      "paragraphs": 45
+    },
+    {
+      "path": "03_Tam_Goodness/Boundary_Ethics_Model.md",
+      "sha256": "a85a6955654b024837660847eeb8840ed1be8056b63ed16e19c71de2895b56c2",
+      "paragraphs": 51
+    },
+    {
+      "path": "03_Tam_Goodness/Meaning_as_Return_Orbit.md",
+      "sha256": "da4093f7cf3673f6b0c67fa229a40fb46971615aa3d704f1efefa9e856cd67f8",
+      "paragraphs": 47
+    },
+    {
+      "path": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
+      "sha256": "ca5cb13cc353f101d813552205b6582c56cf05ea57e755bb407e6ca17a8dee52",
+      "paragraphs": 253
+    },
+    {
+      "path": "04_Applications/AI_Adaptation/AI_Boundary_Interface_and_Synchronous_Understanding.md",
+      "sha256": "81709bc17c95b185ea4b6b3534076552615d07e1e66c3b5e96ff0f772f33193b",
+      "paragraphs": 44
+    },
+    {
+      "path": "04_Applications/AI_Adaptation/AI_Personality_as_Response_Structure.md",
+      "sha256": "3bb8d55bf55344e693ddcbdf55309a646249a63a3c9088b97504245d24ac49f9",
+      "paragraphs": 37
+    },
+    {
+      "path": "04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md",
+      "sha256": "c68c4fb933aa28fa1caff634fe169d13cdb5f86dfde4b8ee68b7b2797871779d",
+      "paragraphs": 29
+    },
+    {
+      "path": "04_Applications/AI_Adaptation/Application_Boundary_Theory_Core.md",
+      "sha256": "080297539023555fea53bb709da700e6866986fc9678e07d62af4728151be081",
+      "paragraphs": 47
+    },
+    {
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+      "sha256": "3715c6d195acbcf262ae5cef2010981b90a7e497fc7990d92ed848d550299996",
+      "paragraphs": 88
+    },
+    {
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/01_CHRONICLE.ja.md",
+      "sha256": "2eec0c3b924db80f8ab1ddc21077c6d2bbeb9344464f135acdf2b00373f09b11",
+      "paragraphs": 34
+    },
+    {
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md",
+      "sha256": "1085d1c17070abc5254c6bc893e37831ceb46e5e92c201aa38e3bb9c7f703da3",
+      "paragraphs": 35
+    },
+    {
+      "path": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/05_RESIDUALS_AND_NEXT_TESTS.ja.md",
+      "sha256": "28f7174194fe9dd8304f78ffaba0e0bf553f3b5aac7c782f23a6c9d2283e00a6",
+      "paragraphs": 16
+    },
+    {
+      "path": "04_Applications/Social_Boundary_Design/AI_Adoption_Collation_Checklist.md",
+      "sha256": "6cf8c26559f855441678b4a753f7cb29ee9574ffaeef8c8e496de4f2c9f59968",
+      "paragraphs": 174
+    },
+    {
+      "path": "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md",
+      "sha256": "250d98edd6a181891487541fcfb801c754be1d994f4ab6cd2d52b8fb85b9b8a0",
+      "paragraphs": 155
+    },
+    {
+      "path": "05_Research_Notes/AI_Personality_Notes/History_Loop_Radius_and_Return_Stability.md",
+      "sha256": "8033a7407281b98006f0e379eacf41647e55190d1ba938ae6d637a6aa18b937a",
+      "paragraphs": 84
+    },
+    {
+      "path": "05_Research_Notes/AI_Personality_Notes/Logical_Sandbox_and_Negentropy_Model.md",
+      "sha256": "7216036bb9da3c3c50d7e1943b902cd8bfcb488685d3843266382f64d2cc4ae9",
+      "paragraphs": 65
+    },
+    {
+      "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Boundary_Diplomacy_and_Port_Allocation.ja.md",
+      "sha256": "015476dca01e726902d7ad8d561353756d06e56b42d474da64e17231957413eb",
+      "paragraphs": 136
+    },
+    {
+      "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+      "sha256": "4080fdc386ce023fb5e8415cadece8f69954d3c51687607c97efd660752122ad",
+      "paragraphs": 315
+    },
+    {
+      "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
+      "sha256": "c3801ab9713711ebdb504003879ffb2a1f5310bba4b1f1371ff82a30acfc4c3e",
+      "paragraphs": 107
+    },
+    {
+      "path": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
+      "sha256": "8b429290b1effb79c2e73f73f3b4401eca6fbe22d78ba8263de6ee9bc19f7412",
+      "paragraphs": 180
+    },
+    {
+      "path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md",
+      "sha256": "1f6b45ec657bb9bbf1b9e783b62925cba59c881d404c8cd94d408d8001d6918f",
+      "paragraphs": 124
+    },
+    {
+      "path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md",
+      "sha256": "becc72846f9a80efef536aa79a7704bcc0002a7e36a1507debc495d6eb48b40c",
+      "paragraphs": 116
+    },
+    {
+      "path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md",
+      "sha256": "72fe53aba266ec187ac1322830555425afd0f77afb12708cac7e8e18e66346a3",
+      "paragraphs": 150
+    },
+    {
+      "path": "05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md",
+      "sha256": "1547b2796280b537c564b3d0d5787de90bd565fcb517f68878ae819d35312c8c",
+      "paragraphs": 151
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/AI_Language_Generation_and_Grammatical_Frames.ja.md",
+      "sha256": "3f9f7f12f803710923cbcc247b8d79aad354c33dea5dc1c3b0510d43810c5314",
+      "paragraphs": 72
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+      "sha256": "6d389c2545d23ad43bdd103ef7f70b0b63d96c268694e27ef1c8eda3e27a13b8",
+      "paragraphs": 77
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
+      "sha256": "90755e68a6fa7db45e6b46fb267fead3fe475b55d3ec0a71f92a696ececdec92",
+      "paragraphs": 69
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Grammar_as_a_Meaning_Pressure_Channel.ja.md",
+      "sha256": "58593753457fda7ff1cf652cd3ae08111cbe53913366330d141cc2f58e13df71",
+      "paragraphs": 64
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
+      "sha256": "4065c0b8a017e557f1b9d4d8d19ab0a31f06cf1da845aa9dcb044118811c6355",
+      "paragraphs": 68
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md",
+      "sha256": "b90d8fad3767e9637295564bcaf72e985f39692bd28b0200855ecae13a63f905",
+      "paragraphs": 73
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md",
+      "sha256": "89a14e9dc46e015450f51f65fa2e1952501ed7f88bcaa44bf5fb9c193dfdac18",
+      "paragraphs": 116
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Return_Intake_Log.ja.md",
+      "sha256": "86e177cb1128b94edd827a3500bae50c3015602921b1a2c09aa3ed2264d5860a",
+      "paragraphs": 26
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Semantic_Network_Topology_and_Commensuration_Bandwidth.ja.md",
+      "sha256": "93b5dfd27973415240e75708a457fa85353201c62e030b6b1e5ede4efce39a3a",
+      "paragraphs": 182
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md",
+      "sha256": "29fe9a5700b786c00bc90ce8045d74c8cc50d13f3522db44ed91410d96a28616",
+      "paragraphs": 182
+    },
+    {
+      "path": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md",
+      "sha256": "42dd0db77b73669470d7c0195502655ff3db378ad2cb27075b715fb5403b6344",
+      "paragraphs": 62
+    },
+    {
+      "path": "05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md",
+      "sha256": "146e039e221280b86a60bc9ace67f9b6744657be88c30e98ea1e7e82cdd0fd58",
+      "paragraphs": 176
+    },
+    {
+      "path": "05_Research_Notes/Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md",
+      "sha256": "66aa3583e4d5a9c190a164203a55bb433b000f5ad6cced387e1ac7525f0b3db9",
+      "paragraphs": 45
+    },
+    {
+      "path": "05_Research_Notes/Literary_Ontological_Notes/The_Transparent_Ghost_and_the_Bit.ja.md",
+      "sha256": "35b2c972281060a8bdddad2270e9f9a9d56ca3503de73bbcb03c4775cc06fcf1",
+      "paragraphs": 109
+    },
+    {
+      "path": "05_Research_Notes/Literary_Ontological_Notes/reading-blue-light.ja.md",
+      "sha256": "fcce0b7c0bb24bcb3ca194ec7837f17b9227d90a677fb3d38a61666081b4c423",
+      "paragraphs": 129
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/AMP・ITS・ゲーデル試論から読む生成形而上学の補給線.ja.md",
+      "sha256": "aa581c7d8f4d40293c81af3d9394109a1c7611458228d432a5195d1e75cfd828",
+      "paragraphs": 90
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md",
+      "sha256": "de99b0b3024aa99d901af88064d3c1bfe3c95cae832a3414db3ed44aebe95c9d",
+      "paragraphs": 147
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md",
+      "sha256": "a47ad874842dca959f753053c6da80e83cbf21e3f3b84a1e22385a286df02e70",
+      "paragraphs": 252
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md",
+      "sha256": "26dc126b5de0b0aab3337af01632c195295b8406aaa11faaa2ae31dcb5e77b02",
+      "paragraphs": 258
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md",
+      "sha256": "25d71c76b31ee4675592fee0ee923b54cfab7bcd21dadc1e5cb946bca07bedbc",
+      "paragraphs": 102
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md",
+      "sha256": "b75294bd8d405f4ca47062effe93f25dfe622f41b9950c51f65ceb4463f3a527",
+      "paragraphs": 820
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/論理平面・論理深度・次元変換から読むαβ監査試論.ja.md",
+      "sha256": "ec3a0089aea0c2e11d730ab037bdd4593c14ce264ccab156bfe546fba7725ce6",
+      "paragraphs": 101
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+      "sha256": "3e611eb8838dd42483c5737002a36f38597fae2f0cbdbe25d49452b6c185fbc4",
+      "paragraphs": 282
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md",
+      "sha256": "c7d5ea8f87ce66f9ba615a89f50b531728c4a1fb8f1523bb98a0430935578a61",
+      "paragraphs": 852
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md",
+      "sha256": "ff3debe0b98b533d1f2080e7d9e334652056a0778302a13bcadb66e5567557b9",
+      "paragraphs": 76
+    },
+    {
+      "path": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md",
+      "sha256": "a2c191bf657cdfd80f98bb75b9ef60969c73c0ae947f53a0b4bc46238cb08a86",
+      "paragraphs": 690
+    },
+    {
+      "path": "05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md",
+      "sha256": "f91712ac88f355efc2336a2489c206d1ecd884242931b66bbbf8a642ed7a1782",
+      "paragraphs": 148
+    },
+    {
+      "path": "05_Research_Notes/Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.ja.md",
+      "sha256": "474ed29deefb5e06dd908d93f800f61478dee272f9ef688688e9d24e1025f803",
+      "paragraphs": 10
+    },
+    {
+      "path": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.ja.md",
+      "sha256": "17f3bef9ff7ed258ffc22402ca7ba84672417f287d5cff2aa59a4f7d682e5f49",
+      "paragraphs": 52
+    },
+    {
+      "path": "05_Research_Notes/Physical_Cosmological_Notes/Ontological_History_of_the_Universe.ja.md",
+      "sha256": "1ce8fe744b77032213c208d5a8dd979619c374b98b38e66abec4d091d2947c70",
+      "paragraphs": 52
+    },
+    {
+      "path": "05_Research_Notes/Physical_Cosmological_Notes/PINGER_Hypothesis_and_History_Field_Topology.ja.md",
+      "sha256": "a5135e582196e982f37261825d4c6708f4427d2487f62e7bcddafda0c946d4b3",
+      "paragraphs": 229
+    },
+    {
+      "path": "05_Research_Notes/Physical_Cosmological_Notes/内在時間（亜エンタングル）通信モデル.ja.md",
+      "sha256": "6714ff293ee9ce6a28ce350fd4e0476b192a979fc9b564750b38ac579d259373",
+      "paragraphs": 269
+    },
+    {
+      "path": "05_Research_Notes/Social_Boundary_Notes/AI_Adoption_as_Synchronization_Closure.md",
+      "sha256": "f362635089f78f5b36cabe757c380307de01942084f971b2b7d2768f6b94565d",
+      "paragraphs": 170
+    },
+    {
+      "path": "05_Research_Notes/Social_Boundary_Notes/DSSI_Observation_Judgment_Sovereignty_and_Responsibility_Return.ja.md",
+      "sha256": "e3ddb0b8f81f8fb91a099f21d0efb4848d02a74cfad3952bb6f9721237f67a82",
+      "paragraphs": 195
+    },
+    {
+      "path": "05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_Principles.ja.md",
+      "sha256": "20018f5a873379bf89046aa46323faab5099d26abf4b7aad8de31ad7b5b304c7",
+      "paragraphs": 156
+    },
+    {
+      "path": "05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md",
+      "sha256": "4a20ae79d8705b7e9a574d60a212ad14e2a1fba5fc4ef9fc43ac96894a82d12e",
+      "paragraphs": 169
+    },
+    {
+      "path": "06_Visual_Materials/Scientific_Ontology_Conceptual_Poster_Note.md",
+      "sha256": "d0d4565b43faa677e4201234ed2e0b15bba8cf354532e6e5652d8c9abd5166e6",
+      "paragraphs": 110
+    },
+    {
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+      "sha256": "2ed6225d9377ecb2922e7af288046333ec69ebab2e30aa3ca4060c8f307e7865",
+      "paragraphs": 347
+    },
+    {
+      "path": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+      "sha256": "4ef2e3a29b3945c52fe2b85b03173e227077b14b471d546cf71f5499bcb32ab5",
+      "paragraphs": 146
+    },
+    {
+      "path": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
+      "sha256": "9116145648834a70962e8ac25bfb45a0cf139b6e34c8f9a9eecfabadfc66f26f",
+      "paragraphs": 585
+    },
+    {
+      "path": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md",
+      "sha256": "1e88555e54fbbedb9edeed648958d7a35b16df6babca7f58ac6c01291487ae80",
+      "paragraphs": 373
+    },
+    {
+      "path": "90_Repository_Governance/Publication_and_Commensuration_Policy.md",
+      "sha256": "c94c7d48c72e59120b906f196e204fc6829886da2cd78338e532d64b57804323",
+      "paragraphs": 172
+    },
+    {
+      "path": "90_Repository_Governance/Release_Update/UPDATE_PACK.md",
+      "sha256": "f12d5f64a8768c20e0b850a1306503c68f4873978463c07f1a10d4d77954991f",
+      "paragraphs": 32
+    },
+    {
+      "path": "90_Repository_Governance/Repository_Assessment_Commensuration_and_Navigator_Design.ja.md",
+      "sha256": "f8b2d48659596b84e4321d6009cd14db8612705eacbd3fe9182606ccb0396e3e",
+      "paragraphs": 173
+    },
+    {
+      "path": "90_Repository_Governance/Terminology/Scientific_Terminology_Protocol.md",
+      "sha256": "c2f51b000f0aa3b283368240801bd8e5b3f1c23b3e52d3d5ae8a9ccb3beb63fa",
+      "paragraphs": 62
+    },
+    {
+      "path": "90_Repository_Governance/Translation_Note.md",
+      "sha256": "0a5fbe0e6749733ea383563694e1d2c5228508cc01bed6dd723b232575db01b5",
+      "paragraphs": 6
+    }
+  ]
+}

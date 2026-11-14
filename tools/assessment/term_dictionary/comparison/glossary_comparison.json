@@ -1,0 +1,911 @@
+{
+  "reference_sha256": "edfc8f833784c2dd1af7f0a6a8446974f51e32cd10cf1eb4ec35ad6fd75eaf2e",
+  "dictionary_sha256": "648ecbf9c3ed949093a448be8d983b57790d9e6a0fb9cf03afe10552351a8844",
+  "phase": "post_freeze_comparison_only",
+  "reference_sections": 95,
+  "sections_with_exact_label_match": 74,
+  "comparisons": [
+    {
+      "reference_heading": "0. 用語集の役割 / Role of This Glossary",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "1. 記載形式 / Entry Format",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "1.1 中核語",
+      "exact_label_matches": [
+        "中核語"
+      ],
+      "created_statuses": {
+        "中核語": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "1.2 補助語",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "1.3 定義の優先順位",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Scientific Ontology / 存在境界論",
+      "exact_label_matches": [
+        "存在境界論"
+      ],
+      "created_statuses": {
+        "存在境界論": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Boundary / 境界",
+      "exact_label_matches": [
+        "Boundary",
+        "境界"
+      ],
+      "created_statuses": {
+        "Boundary": "usage_only",
+        "境界": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Contact / 接触",
+      "exact_label_matches": [
+        "Contact",
+        "接触"
+      ],
+      "created_statuses": {
+        "Contact": "usage_only",
+        "接触": "literal_candidates"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "History / 履歴",
+      "exact_label_matches": [
+        "History",
+        "履歴"
+      ],
+      "created_statuses": {
+        "History": "usage_only",
+        "履歴": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Return / 返り",
+      "exact_label_matches": [
+        "Return",
+        "返り"
+      ],
+      "created_statuses": {
+        "Return": "editorial_candidate",
+        "返り": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Return Path / 返路",
+      "exact_label_matches": [
+        "返路"
+      ],
+      "created_statuses": {
+        "返路": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Downstream Condition / 後続条件",
+      "exact_label_matches": [
+        "後続条件"
+      ],
+      "created_statuses": {
+        "後続条件": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Residual / 残差",
+      "exact_label_matches": [
+        "Residual",
+        "残差"
+      ],
+      "created_statuses": {
+        "Residual": "usage_only",
+        "残差": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Residue / 残渣",
+      "exact_label_matches": [
+        "Residue",
+        "残渣"
+      ],
+      "created_statuses": {
+        "Residue": "usage_only",
+        "残渣": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Collation / 照合",
+      "exact_label_matches": [
+        "Collation",
+        "照合"
+      ],
+      "created_statuses": {
+        "Collation": "usage_only",
+        "照合": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Re-collatability / 再照合可能性",
+      "exact_label_matches": [
+        "再照合可能性"
+      ],
+      "created_statuses": {
+        "再照合可能性": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Provisional Closure / 仮閉鎖",
+      "exact_label_matches": [
+        "仮閉鎖"
+      ],
+      "created_statuses": {
+        "仮閉鎖": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "False Closure / 偽閉鎖",
+      "exact_label_matches": [
+        "偽閉鎖"
+      ],
+      "created_statuses": {
+        "偽閉鎖": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Meaning Loop / 意味ループ",
+      "exact_label_matches": [
+        "意味ループ"
+      ],
+      "created_statuses": {
+        "意味ループ": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Qualia / クオリア",
+      "exact_label_matches": [
+        "Qualia",
+        "クオリア"
+      ],
+      "created_statuses": {
+        "Qualia": "usage_only",
+        "クオリア": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Entropy-Attributed Difference / エントロピー属性つき差分",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Cognitive Axis / 認識軸",
+      "exact_label_matches": [
+        "認識軸"
+      ],
+      "created_statuses": {
+        "認識軸": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Cognitive Field / 認識場",
+      "exact_label_matches": [
+        "認識場"
+      ],
+      "created_statuses": {
+        "認識場": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Cognitive Phase / 認識相",
+      "exact_label_matches": [
+        "認識相"
+      ],
+      "created_statuses": {
+        "認識相": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Communication Phase / 通信位相",
+      "exact_label_matches": [
+        "通信位相"
+      ],
+      "created_statuses": {
+        "通信位相": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Operational Discretization / 操作的離散化",
+      "exact_label_matches": [
+        "操作的離散化"
+      ],
+      "created_statuses": {
+        "操作的離散化": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Existence Phase / 存在相",
+      "exact_label_matches": [
+        "存在相"
+      ],
+      "created_statuses": {
+        "存在相": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Existence-Phase Compression / 存在相圧縮",
+      "exact_label_matches": [
+        "存在相圧縮"
+      ],
+      "created_statuses": {
+        "存在相圧縮": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Optional Axiom Module / 選択公理モジュール",
+      "exact_label_matches": [
+        "選択公理モジュール"
+      ],
+      "created_statuses": {
+        "選択公理モジュール": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Core Invariant / 中核不変項",
+      "exact_label_matches": [
+        "Core Invariant"
+      ],
+      "created_statuses": {
+        "Core Invariant": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Operational Drift / 運用ドリフト",
+      "exact_label_matches": [
+        "Operational Drift"
+      ],
+      "created_statuses": {
+        "Operational Drift": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Translation Residual / 通約残差",
+      "exact_label_matches": [
+        "通約残差"
+      ],
+      "created_statuses": {
+        "通約残差": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Conditional Connection / 条件付き接続",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Commensuration / 通約",
+      "exact_label_matches": [
+        "Commensuration",
+        "通約"
+      ],
+      "created_statuses": {
+        "Commensuration": "usage_only",
+        "通約": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Rendering Distance / 通約距離",
+      "exact_label_matches": [
+        "通約距離"
+      ],
+      "created_statuses": {
+        "通約距離": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "First Purpose / 第一義",
+      "exact_label_matches": [
+        "第一義"
+      ],
+      "created_statuses": {
+        "第一義": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Truth Management / 真理の経営学",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Boundary CA / 境界CA",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Organizational Boundary / 組織境界",
+      "exact_label_matches": [
+        "組織境界"
+      ],
+      "created_statuses": {
+        "組織境界": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Responsibility Boundary / 責任境界",
+      "exact_label_matches": [
+        "責任境界"
+      ],
+      "created_statuses": {
+        "責任境界": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Port / ポート",
+      "exact_label_matches": [
+        "Port",
+        "ポート"
+      ],
+      "created_statuses": {
+        "Port": "usage_only",
+        "ポート": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Organizational Port / 組織ポート",
+      "exact_label_matches": [
+        "組織ポート"
+      ],
+      "created_statuses": {
+        "組織ポート": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Port Allocation / ポート配分",
+      "exact_label_matches": [
+        "ポート配分"
+      ],
+      "created_statuses": {
+        "ポート配分": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Multi-Port Potentiality / 複数ポート潜在性",
+      "exact_label_matches": [
+        "複数ポート潜在性"
+      ],
+      "created_statuses": {
+        "複数ポート潜在性": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Scoped Port Operation / 限定ポート運用",
+      "exact_label_matches": [
+        "限定ポート運用"
+      ],
+      "created_statuses": {
+        "限定ポート運用": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Boundary Diplomacy / 境界外交",
+      "exact_label_matches": [
+        "境界外交"
+      ],
+      "created_statuses": {
+        "境界外交": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Boundary Update / 境界更新",
+      "exact_label_matches": [
+        "境界更新"
+      ],
+      "created_statuses": {
+        "境界更新": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Gateway Capture / ゲートウェイ捕捉",
+      "exact_label_matches": [
+        "ゲートウェイ捕捉"
+      ],
+      "created_statuses": {
+        "ゲートウェイ捕捉": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Single-Metric Compression / 単一指標圧縮",
+      "exact_label_matches": [
+        "単一指標圧縮"
+      ],
+      "created_statuses": {
+        "単一指標圧縮": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Protocol / プロトコル",
+      "exact_label_matches": [
+        "Protocol",
+        "プロトコル"
+      ],
+      "created_statuses": {
+        "Protocol": "usage_only",
+        "プロトコル": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Depth Port / 深度ポート",
+      "exact_label_matches": [
+        "深度ポート"
+      ],
+      "created_statuses": {
+        "深度ポート": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Open Marker",
+      "exact_label_matches": [
+        "Open Marker"
+      ],
+      "created_statuses": {
+        "Open Marker": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Audit of Audit / 監査の監査",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Judgment Field / 判断場",
+      "exact_label_matches": [
+        "判断場"
+      ],
+      "created_statuses": {
+        "判断場": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Judgment Transparency / 判断透明性",
+      "exact_label_matches": [
+        "判断透明性"
+      ],
+      "created_statuses": {
+        "判断透明性": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "AI Usefulness as Boundary Function / 境界機能としてのAI有用性",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Boundary Ethics / 境界倫理",
+      "exact_label_matches": [
+        "境界倫理"
+      ],
+      "created_statuses": {
+        "境界倫理": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Non-destructive Distance / 非破壊的距離",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Asymmetry Stabilization / 非対称性安定化",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Return Ethics / 返りの倫理",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Meaning-Experience Field / 意味・経験場",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Meaning Capacity / 意味容量",
+      "exact_label_matches": [
+        "意味容量"
+      ],
+      "created_statuses": {
+        "意味容量": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Meaning-Experience Capacitor / 意味経験キャパシタ",
+      "exact_label_matches": [
+        "意味経験キャパシタ"
+      ],
+      "created_statuses": {
+        "意味経験キャパシタ": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Existence Strength / 存在強度",
+      "exact_label_matches": [
+        "存在強度"
+      ],
+      "created_statuses": {
+        "存在強度": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Negentropy Economy / ネゲントロピー経済",
+      "exact_label_matches": [
+        "ネゲントロピー経済"
+      ],
+      "created_statuses": {
+        "ネゲントロピー経済": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Meaning-Bearing Negentropy / 意味を帯びたネゲントロピー",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Exchange Medium / 交換媒質",
+      "exact_label_matches": [
+        "交換媒質"
+      ],
+      "created_statuses": {
+        "交換媒質": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Exchange Heat / 交換熱",
+      "exact_label_matches": [
+        "交換熱"
+      ],
+      "created_statuses": {
+        "交換熱": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Logical-Depth Axis / 論理-深度軸",
+      "exact_label_matches": [
+        "論理-深度軸"
+      ],
+      "created_statuses": {
+        "論理-深度軸": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Intrinsic Time / 内在時間",
+      "exact_label_matches": [
+        "内在時間"
+      ],
+      "created_statuses": {
+        "内在時間": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "History-Field Topology / 履歴場トポロジー",
+      "exact_label_matches": [
+        "履歴場トポロジー"
+      ],
+      "created_statuses": {
+        "履歴場トポロジー": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "HFC / 履歴場通信論",
+      "exact_label_matches": [
+        "HFC",
+        "履歴場通信論"
+      ],
+      "created_statuses": {
+        "HFC": "usage_only",
+        "履歴場通信論": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Entropy Communication / エントロピー通信",
+      "exact_label_matches": [
+        "エントロピー通信"
+      ],
+      "created_statuses": {
+        "エントロピー通信": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Entangle / エンタングル",
+      "exact_label_matches": [
+        "エンタングル"
+      ],
+      "created_statuses": {
+        "エンタングル": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "History Mass Density / 履歴質量密度",
+      "exact_label_matches": [
+        "履歴質量密度"
+      ],
+      "created_statuses": {
+        "履歴質量密度": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Null / Void / 無",
+      "exact_label_matches": [
+        "Null",
+        "Void",
+        "無"
+      ],
+      "created_statuses": {
+        "Null": "usage_only",
+        "Void": "usage_only",
+        "無": "editorial_candidate"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "AMP",
+      "exact_label_matches": [
+        "AMP"
+      ],
+      "created_statuses": {
+        "AMP": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "ITS",
+      "exact_label_matches": [
+        "ITS"
+      ],
+      "created_statuses": {
+        "ITS": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "iMass",
+      "exact_label_matches": [
+        "iMass"
+      ],
+      "created_statuses": {
+        "iMass": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "rMass",
+      "exact_label_matches": [
+        "rMass"
+      ],
+      "created_statuses": {
+        "rMass": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Sat / Truth / 純・真",
+      "exact_label_matches": [
+        "Sat",
+        "Truth"
+      ],
+      "created_statuses": {
+        "Sat": "usage_only",
+        "Truth": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Raj / Beauty / 激・美",
+      "exact_label_matches": [
+        "Beauty",
+        "Raj"
+      ],
+      "created_statuses": {
+        "Raj": "usage_only",
+        "Beauty": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Tam / Goodness / 暗・善",
+      "exact_label_matches": [
+        "Goodness",
+        "Tam"
+      ],
+      "created_statuses": {
+        "Tam": "usage_only",
+        "Goodness": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Applications / 応用",
+      "exact_label_matches": [
+        "Applications",
+        "応用"
+      ],
+      "created_statuses": {
+        "Applications": "usage_only",
+        "応用": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Research Notes / 研究ノート",
+      "exact_label_matches": [
+        "研究ノート"
+      ],
+      "created_statuses": {
+        "研究ノート": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Visual Materials / 視覚資料",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Creative Offshoots / 外部との接触・表現・再照合",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Concept Owner / 概念所有者",
+      "exact_label_matches": [
+        "概念所有者"
+      ],
+      "created_statuses": {
+        "概念所有者": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Public Profile / 公開プロファイル",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Claim Strength / 主張強度",
+      "exact_label_matches": [
+        "主張強度"
+      ],
+      "created_statuses": {
+        "主張強度": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Non-Claim Boundary / 非主張境界",
+      "exact_label_matches": [
+        "非主張境界"
+      ],
+      "created_statuses": {
+        "非主張境界": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Aporia Registry / アポリア登録",
+      "exact_label_matches": [
+        "アポリア登録"
+      ],
+      "created_statuses": {
+        "アポリア登録": "usage_only"
+      },
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "Deprecated Term / 旧語・非推奨語",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "2. Maintenance Rule / 運用上の注意",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    },
+    {
+      "reference_heading": "v5開始時点でGlossaryへ昇格しない運用語",
+      "exact_label_matches": [],
+      "created_statuses": {},
+      "semantic_equivalence": "not_adjudicated"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source_archive_sha256": "bcf56409d091a67b8314fce5ac6e0676a7bc79e23d517b92ac56138595ae166e",
+  "input_files": 86,
+  "excluded_files": 152,
+  "input_sentence_units": 18806,
+  "distinct_sentence_texts": 17721,
+  "surface_candidates": 24223,
+  "literal_definition_headwords": 438,
+  "literal_definition_sentences": 617,
+  "text_only_input_sha256": "4d70530007d8e3b105e83f5341e16229158a01aac3ba9064d4398ae5858ed01d",
+  "lexical_rule": "Unicode script runs + compounds + quoted expressions + fixed function-expression forms; NOT exhaustive morphological word recognition",
+  "reference_glossary_read": false,
+  "source_pointers_passed_to_reducer": false,
+  "dictionary_entries": 24228,
+  "editorial_entries": 354,
+  "literal_only_entries": 133,
+  "usage_only_entries": 23741,
+  "editorial_revisions": 367,
+  "definition_convergence_claim": "not established; update history and unresolved alternatives are retained",
+  "dictionary_sha256": "648ecbf9c3ed949093a448be8d983b57790d9e6a0fb9cf03afe10552351a8844",
+  "editorial_updates_sha256": "6ba999f5b16c8574a2f32e1417c0df1d644ed73ab824f5391963e3c6f44e9c83",
+  "reference_used_to_select_or_edit_definitions": false
+}
