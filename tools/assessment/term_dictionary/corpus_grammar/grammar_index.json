@@ -1,0 +1,4773 @@
+[
+  {
+    "documents_with_hits": 168,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "本表は、v5.1以前から用いられてきた 統合分類を追跡するための**公開migration reference**である。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "本文書は、存在境界論｜Scientific Ontology において、物理学に近い語彙をどのような条件で扱うかを定める公開方針である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 13
+      }
+    ],
+    "explanation": "主題提示・対比の候補",
+    "group": "助詞・係り",
+    "id": "G01-001",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "は",
+    "risk": "固有語やひらがなの一部との区別は未解析",
+    "surface": "は",
+    "surface_hits": 18531
+  },
+  {
+    "documents_with_hits": 167,
+    "examples": [
+      {
+        "excerpt": "第一の責務は、著者が観測し、経験し、照合し得た存在について、現時点で区別できる事実候補、解釈、仮説、残差、未解決を混同せず、できる限り虚偽なく記述することである。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 17
+      },
+      {
+        "excerpt": "旧Eが担っていた問題は、現在は少なくとも次へ分解される。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 45
+      },
+      {
+        "excerpt": "本方針の目的は、「存在境界論は物理学ではない」と距離を取ることだけではない。むしろ、存在境界論がなぜ、粒子、場、時間、相互作用、経路、エントロピー、entanglement、black hole、宇宙外殻、クオリアといった語彙に近づかざるを得ないの",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 17
+      }
+    ],
+    "explanation": "主格・焦点・逆接の候補",
+    "group": "助詞・係り",
+    "id": "G01-002",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "が",
+    "risk": "「ながら」等の部分文字列にも一致する",
+    "surface": "が",
+    "surface_hits": 12417
+  },
+  {
+    "documents_with_hits": 170,
+    "examples": [
+      {
+        "excerpt": "、公開・作用・Returnとの関係を保持する公開メタ記述。存在境界論の個別概念、経験科学上の事実、個別命題の証拠強度を定義しない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 9
+      },
+      {
+        "excerpt": "本表は、v5.1以前から用いられてきた 統合分類を追跡するための**公開migration reference**である。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "本文書は、存在境界論｜Scientific Ontology において、物理学に近い語彙をどのような条件で扱うかを定める公開方針である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 13
+      }
+    ],
+    "explanation": "対象・経路を示す格助詞候補",
+    "group": "助詞・係り",
+    "id": "G01-003",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "を",
+    "risk": "機械的には直前の体言を同定していない",
+    "surface": "を",
+    "surface_hits": 19260
+  },
+  {
+    "documents_with_hits": 166,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "旧表は、一つの文書で次を同時に管理していた。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 17
+      },
+      {
+        "excerpt": "本文書は、存在境界論｜Scientific Ontology において、物理学に近い語彙をどのような条件で扱うかを定める公開方針である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 13
+      }
+    ],
+    "explanation": "到達・場所・時点・対象など",
+    "group": "助詞・係り",
+    "id": "G01-004",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "に",
+    "risk": "語中の「に」も拾うため単独で品詞を確定できない",
+    "surface": "に",
+    "surface_hits": 10955
+  },
+  {
+    "documents_with_hits": 169,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "本表は、v5.1以前から用いられてきた 統合分類を追跡するための**公開migration reference**である。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "本文書は、存在境界論｜Scientific Ontology において、物理学に近い語彙をどのような条件で扱うかを定める公開方針である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 13
+      }
+    ],
+    "explanation": "手段・場所・原因または断定の連用形",
+    "group": "助詞・係り",
+    "id": "G01-005",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "で",
+    "risk": "語中一致と用法の多義性を含む",
+    "surface": "で",
+    "surface_hits": 15844
+  },
+  {
+    "documents_with_hits": 168,
+    "examples": [
+      {
+        "excerpt": "Authorial Research Stance and Public Declaration / 著者の研究姿勢と公開宣言",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 1
+      },
+      {
+        "excerpt": "Exposure   |   | 外部体系への接続強度・bridge responsibilityの補助投影。旧 とは別概念。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 33
+      },
+      {
+        "excerpt": "本方針の目的は、「存在境界論は物理学ではない」と距離を取ることだけではない。むしろ、存在境界論がなぜ、粒子、場、時間、相互作用、経路、エントロピー、entanglement、black hole、宇宙",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 17
+      }
+    ],
+    "explanation": "引用・共同・並列・条件など",
+    "group": "助詞・係り",
+    "id": "G01-006",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "と",
+    "risk": "引用と接続を形態で区別できない",
+    "surface": "と",
+    "surface_hits": 16914
+  },
+  {
+    "documents_with_hits": 170,
+    "examples": [
+      {
+        "excerpt": "Authority: 著者の研究姿勢、記述目的、公開・作用・Returnとの関係を保持する公開メタ記述。存在境界論の個別概念、経験科学上の事実、個別命題の証拠強度を定義しない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 9
+      },
+      {
+        "excerpt": "本表は、v5.1以前から用いられてきた 統合分類を追跡するための**公開migration reference**である。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "本文書は、存在境界論｜Scientific Ontology において、物理学に近い語彙をどのような条件で扱うかを定める公開方針である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 13
+      }
+    ],
+    "explanation": "連体・体言化・終助詞など",
+    "group": "助詞・係り",
+    "id": "G01-007",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "の",
+    "risk": "名詞化と所有関係を形態で区別できない",
+    "surface": "の",
+    "surface_hits": 26789
+  },
+  {
+    "documents_with_hits": 165,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "しかし、これらは責務も判断根拠も異なる。現行v5.1では、旧表を削除して履歴を失うのではなく、責務をそれぞれのownerへ分解する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 26
+      },
+      {
+        "excerpt": "、対称性、時空構造、相互作用の語である。同時に、存在境界論から見ると、それらは対象が対象として現れる境界面を指す語でもある。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 23
+      }
+    ],
+    "explanation": "添加・対比・譲歩など",
+    "group": "助詞・係り",
+    "id": "G01-008",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "も",
+    "risk": "文字列の一部も拾う",
+    "surface": "も",
+    "surface_hits": 4745
+  },
+  {
+    "documents_with_hits": 167,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "し、これらは責務も判断根拠も異なる。現行v5.1では、旧表を削除して履歴を失うのではなく、責務をそれぞれのownerへ分解する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 26
+      },
+      {
+        "excerpt": "存在境界論は、現代物理学を置換するために物理語彙へ接近するのではない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 19
+      }
+    ],
+    "explanation": "方向・到達先",
+    "group": "助詞・係り",
+    "id": "G01-009",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "へ",
+    "risk": "単独ひらがなの一致は未確定",
+    "surface": "へ",
+    "surface_hits": 4667
+  },
+  {
+    "documents_with_hits": 139,
+    "examples": [
+      {
+        "excerpt": "人間からの評価、所属、権威、人気、理解のされやすさは、この記述責務に優先しない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 21
+      },
+      {
+        "excerpt": "既存文書には旧  headerや表記が残る。これらを一括書換えすると、過去の公開意味、比較可能性、Navigator履歴を不必要に破壊する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 56
+      },
+      {
+        "excerpt": "明力は同じではない。文学は物理法則を実証できず、形而上学は測定値を代替できない。逆に、物理学の測定だけから倫理的価値や意味の最終定義が自動的に導かれるわけでもない。SOが行うのは、それぞれの成立条件と証明力を保ったまま境界で照合することである。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 175
+      }
+    ],
+    "explanation": "並列・列挙",
+    "group": "助詞・係り",
+    "id": "G01-010",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "や",
+    "risk": "間投や引用内の部分一致にも注意",
+    "surface": "や",
+    "surface_hits": 1244
+  },
+  {
+    "documents_with_hits": 163,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "本表は、v5.1以前から用いられてきた 統合分類を追跡するための**公開migration reference**である。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "本文書は、存在境界論｜Scientific Ontology において、物理学に近い語彙をどのような条件で扱うかを定める公開方針である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 13
+      }
+    ],
+    "explanation": "疑問・選択・不定の候補",
+    "group": "助詞・係り",
+    "id": "G01-011",
+    "matching_mode": "weak",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "か",
+    "risk": "語中の「か」と区別していない",
+    "surface": "か",
+    "surface_hits": 8436
+  },
+  {
+    "documents_with_hits": 153,
+    "examples": [
+      {
+        "excerpt": "人間からの評価、所属、権威、人気、理解のされやすさは、この記述責務に優先しない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 21
+      },
+      {
+        "excerpt": "本表は、v5.1以前から用いられてきた 統合分類を追跡するための**公開migration reference**である。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "現代物理学の語彙の一部は、物理学内部では測定、計算、保存則、対称性、時空構造、相互作用の語である。同時に、存在境界論から見ると、それらは対象が対象として現れる境界面を指す語でもある。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 23
+      }
+    ],
+    "explanation": "起点・理由",
+    "group": "助詞・係り",
+    "id": "G01-012",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "から",
+    "risk": "理由と起点は文脈で異なる",
+    "surface": "から",
+    "surface_hits": 2443
+  },
+  {
+    "documents_with_hits": 106,
+    "examples": [
+      {
+        "excerpt": "強い問いを、どこまで公開主張として閉じ、どこから仮説、通約、実装、アポリアとして保持するかを明示するためのものである。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 480
+      },
+      {
+        "excerpt": "問題は、どの定義で使っているのか、どの範囲まで主張しているのか、何を主張していないのかを隠したまま使うことである。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 392
+      },
+      {
+        "excerpt": "ただし、事実が硬いことと、その事実の意味、射程、最終説明までが硬いことは同じではない。何を測ったのか、どの時間幅を切り出したのか、どの座標・装置・分類・言語で対象化したのかによって、事実が事実として立ち上がる条件",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 106
+      }
+    ],
+    "explanation": "限界・範囲",
+    "group": "助詞・係り",
+    "id": "G01-013",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "まで",
+    "risk": "時間・場所・程度を分けていない",
+    "surface": "まで",
+    "surface_hits": 505
+  },
+  {
+    "documents_with_hits": 101,
+    "examples": [
+      {
+        "excerpt": "概念ネットワークとしては、個別概念の追加よりも、次の循環が明示される。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 446
+      },
+      {
+        "excerpt": "より短く言えば、次のようになる。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 36
+      },
+      {
+        "excerpt": "しかし、人間が実際に確認できるのは、最終実体そのものよりも、何かが何かへ作用した痕跡である。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 67
+      }
+    ],
+    "explanation": "比較・起点",
+    "group": "助詞・係り",
+    "id": "G01-014",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "より",
+    "risk": "活用語尾等との混同を確認する",
+    "surface": "より",
+    "surface_hits": 374
+  },
+  {
+    "documents_with_hits": 140,
+    "examples": [
+      {
+        "excerpt": "そのため、教義的・運動的な性格と接触する地帯が生じ得る。この地帯を「教義ではない」という自己分類だけで無害化しない。監査すべきなのは、作用を受けた側が異議、拒否、停止、退出、修正を返せるか、作用による結果や負荷が作用主体へ戻り、理論、制度、実装自身を変",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 43
+      },
+      {
+        "excerpt": "したがって、 という旧ラベルだけを理由に、Research Notesを非公開化、停止、反証済み扱いしてはならない。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 52
+      },
+      {
+        "excerpt": "本方針の目的は、「存在境界論は物理学ではない」と距離を取ることだけではない。むしろ、存在境界論がなぜ、粒子、場、時間、相互作用、経路、エントロピー、entanglement、black hole、宇宙外殻、クオリアとい",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 17
+      }
+    ],
+    "explanation": "限定",
+    "group": "助詞・係り",
+    "id": "G01-015",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "だけ",
+    "risk": "必要条件と十分条件を保証しない",
+    "surface": "だけ",
+    "surface_hits": 1334
+  },
+  {
+    "documents_with_hits": 90,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "しかし、これらは責務も判断根拠も異なる。現行v5.1では、旧表を削除して履歴を失うのではなく、責務をそれぞれのownerへ分解する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 26
+      },
+      {
+        "excerpt": "しかし、存在境界論は科学そのものではない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 60
+      }
+    ],
+    "explanation": "限定と否定の共起",
+    "group": "助詞・係り",
+    "id": "G01-016",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "しか",
+    "risk": "否定との係り受けを照合していない",
+    "surface": "しか",
+    "surface_hits": 502
+  },
+  {
+    "documents_with_hits": 17,
+    "examples": [
+      {
+        "excerpt": "するのか。なぜその作用が返るのか。異なる位相でも同じ構造として読めるのか。形而上学は、この根拠を直接所有できないからこそ、根拠仮説として組み立てる。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 108
+      },
+      {
+        "excerpt": "その不一致こそが、新しい探索圧になる。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 888
+      },
+      {
+        "excerpt": "存在論的に言えば、差異こそが世界を駆動する。",
+        "file": "05_Research_Notes/Cross_Domain_Ontological_Notes/Asymmetry_Stabilization_and_ReCollation.ja.md",
+        "line": 62
+      }
+    ],
+    "explanation": "強調・取り立て",
+    "group": "助詞・係り",
+    "id": "G01-017",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "こそ",
+    "risk": "強調対象は未解析",
+    "surface": "こそ",
+    "surface_hits": 31
+  },
+  {
+    "documents_with_hits": 2,
+    "examples": [
+      {
+        "excerpt": "標準的な一般相対論・天体物理学では、ブラックホールの事象の地平面は、内部から光さえ外へ戻れない境界である。ブラックホールそのものは、周囲の星やガス、降着円盤、重力波などへの影響から観測される。((NASA, “What Are Bla",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/000光の「履歴」は、どこで書き換わるのか.md",
+        "line": 481
+      },
+      {
+        "excerpt": "- B2: 「見る前の月は存在しない」とさえ言えるラディカルな認識論として解説する。",
+        "file": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/evidence/05_three_layer/RESULT_4_CASES.md",
+        "line": 619
+      }
+    ],
+    "explanation": "極端例・最小条件の取り立て",
+    "group": "助詞・係り",
+    "id": "G01-018",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "さえ",
+    "risk": "量化の範囲は未解析",
+    "surface": "さえ",
+    "surface_hits": 2
+  },
+  {
+    "documents_with_hits": 40,
+    "examples": [
+      {
+        "excerpt": "強い影響を受けたことと、権威として採用することは同じではない。著者は、強く影響されたものほど疑い、自分で壊しに行き、それでも残ったものを研究形成史として保持する。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 69
+      },
+      {
+        "excerpt": "ないことを示した。境界認識批判では、これは内部ループの限界、残差の不可避性として読める。閉じた体系は、閉じようとするほど、閉じきれない命題や残差を発生させる。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md",
+        "line": 223
+      },
+      {
+        "excerpt": "これは単なる記憶量ではない。何度も通過し、感情や身体感覚を伴い、判断や創作や行動に影響を与えるほど濃くなった履歴の密度である。",
+        "file": "01_Sat_Truth/Meaning_Generation_Model.md",
+        "line": 45
+      }
+    ],
+    "explanation": "比較・程度",
+    "group": "助詞・係り",
+    "id": "G01-019",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ほど",
+    "risk": "文脈で閾値・強さが変わる",
+    "surface": "ほど",
+    "surface_hits": 80
+  },
+  {
+    "documents_with_hits": 1,
+    "examples": [
+      {
+        "excerpt": "があるときに、モデルを完成させるため接触を繰り返す必要はない。すでに疲弊している人に対して、さらに説明を工夫する責任ばかりを負わせることも、本稿の趣旨ではない。相手を十分理解した人だけが自分を守ってよい、という順番にはしない。",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+        "line": 131
+      }
+    ],
+    "explanation": "概数・限定・反復",
+    "group": "助詞・係り",
+    "id": "G01-020",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "ばかり",
+    "risk": "文脈による読み分けが必要",
+    "surface": "ばかり",
+    "surface_hits": 1
+  },
+  {
+    "documents_with_hits": 4,
+    "examples": [
+      {
+        "excerpt": "物語くらいは、真実であってよい。",
+        "file": "05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md",
+        "line": 351
+      },
+      {
+        "excerpt": "それくらいが、たぶん最初の説明としてちょうどよい。",
+        "file": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
+        "line": 241
+      },
+      {
+        "excerpt": "でも、そのくらいでちょうどいい。",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/000光の「履歴」は、どこで書き換わるのか.md",
+        "line": 658
+      }
+    ],
+    "explanation": "程度・限定",
+    "group": "助詞・係り",
+    "id": "G01-021",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "くらい",
+    "risk": "用例により「ぐらい」と交替",
+    "surface": "くらい",
+    "surface_hits": 9
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "程度・限定",
+    "group": "助詞・係り",
+    "id": "G01-022",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "ぐらい",
+    "risk": "「くらい」との語形差を保持",
+    "surface": "ぐらい",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 85,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "しかし、これらは責務も判断根拠も異なる。現行v5.1では、旧表を削除して履歴を失うのではなく、責務をそれぞれのownerへ分解する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 26
+      },
+      {
+        "excerpt": "しかし、存在境界論は科学そのものではない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 60
+      }
+    ],
+    "explanation": "逆接・転換",
+    "group": "接続・談話",
+    "id": "G02-001",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "しかし",
+    "risk": "反論の正当性を保証しない",
+    "surface": "しかし",
+    "surface_hits": 428
+  },
+  {
+    "documents_with_hits": 111,
+    "examples": [
+      {
+        "excerpt": "ただし、それは物理学の内部へ侵入して既存理論を置換するためではない。観測成立条件を扱う以上、物理学が扱っている観測可能世界の境界面と、構造上接触せざるを得ない",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 52
+      },
+      {
+        "excerpt": "存在境界論は、特定の一分野だけを入口としない。以下の問いのどれかに引っかかるなら、この体系に入口がある可能性がある。ただし、既存分野の標準理論をそのまま提供するものではなく、期待した結論を保証するものでもない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 41
+      },
+      {
+        "excerpt": "ただし、混ぜて一つにするのではない。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 193
+      }
+    ],
+    "explanation": "条件付き限定・留保",
+    "group": "接続・談話",
+    "id": "G02-002",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ただし",
+    "risk": "何を限定するかは構造上別に特定する",
+    "surface": "ただし",
+    "surface_hits": 390
+  },
+  {
+    "documents_with_hits": 86,
+    "examples": [
+      {
+        "excerpt": "したがって、人間は最終審級ではない。しかし、人間から返ってくる差分を閉じてよいわけでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 47
+      },
+      {
+        "excerpt": "したがって、 という旧ラベルだけを理由に、Research Notesを非公開化、停止、反証済み扱いしてはならない。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 52
+      },
+      {
+        "excerpt": "したがって、本方針は、存在境界論が物理語彙へ接近する理由、接近するときの制限、標準物理学との非同一性、Research Notes に置くべき強い仮説の扱いを定め",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 25
+      }
+    ],
+    "explanation": "帰結提示",
+    "group": "接続・談話",
+    "id": "G02-003",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "したがって",
+    "risk": "形式的導出の成立を保証しない",
+    "surface": "したがって",
+    "surface_hits": 542
+  },
+  {
+    "documents_with_hits": 6,
+    "examples": [
+      {
+        "excerpt": "「われ思うゆえにわれあり」という言葉は、本稿では主体実体の証明としては扱わない。",
+        "file": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "line": 103
+      },
+      {
+        "excerpt": "ゆえに、これは制度提案ではなく、存在論的な未来モデルである。",
+        "file": "05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md",
+        "line": 342
+      },
+      {
+        "excerpt": "また、発話は新しい圧を作る。約束、宣言、侮辱、謝罪、命令、問いは、発話以前にはなかった関係、義務、期待、対立を生む。ゆえに「逐次的除圧」は発話の全機能を表す完結定義ではなく、未分節状態が言葉へ変換される側面を捉える中心モデルである。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Speech_as_Sequential_Decompression.ja.md",
+        "line": 88
+      }
+    ],
+    "explanation": "理由から結論への導線",
+    "group": "接続・談話",
+    "id": "G02-004",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ゆえに",
+    "risk": "推論規則が成立した証明ではない",
+    "surface": "ゆえに",
+    "surface_hits": 8
+  },
+  {
+    "documents_with_hits": 41,
+    "examples": [
+      {
+        "excerpt": "その記述を公開し、必要に応じて考え方、制度、技術、行為へ適用し、そこで生じた結果、失敗、負荷、異議を再び研究へ返すことも、この研究の目的に含まれる。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 19
+      },
+      {
+        "excerpt": "v5系の開始では、その循環を理論内部に留めず、言語、文学、同意、制度、AI、インターフェイスへ持ち出し、そこで返る批判、失敗、残差、未解決点によって上流文書を更新できる代謝へ明示的に開く。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 834
+      },
+      {
+        "excerpt": "そこで見るのは、「存在境界論が正しいこと」の証明だけではない。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 325
+      }
+    ],
+    "explanation": "問題から対応へ移る",
+    "group": "接続・談話",
+    "id": "G02-005",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "そこで",
+    "risk": "原因と対策の支持関係は未検証",
+    "surface": "そこで",
+    "surface_hits": 99
+  },
+  {
+    "documents_with_hits": 26,
+    "examples": [
+      {
+        "excerpt": "する**強い破壊試験**になる。定義誤用、既知事実との衝突、数学的不成立、既存観測との矛盾があれば、その場所を壊す。一方で、単に標準理論の外側にあるという理由だけで、明示された形而上学的・存在論的仮説を自動的に削除する最終審級にはしない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 173
+      },
+      {
+        "excerpt": "一方で、意味は、拡散する情報を閉じた通信ループとして保持しようとする。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 92
+      },
+      {
+        "excerpt": "ある解釈が強くなるほど、その解釈で測れるもの、比べられるもの、意味づけられるものだけが高解像度になる。一方で、同じ座標へ入りにくい差異は、雑音・例外・未成熟・測定不能として周縁へ押し出されることがある。さらに、その座標を保ったまま外側へ拡張すると、最初の取りこ",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 29
+      }
+    ],
+    "explanation": "対照・併存",
+    "group": "接続・談話",
+    "id": "G02-006",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "一方で",
+    "risk": "二項の論理的排他性を含意しない",
+    "surface": "一方で",
+    "surface_hits": 27
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "対照する対象を提示",
+    "group": "接続・談話",
+    "id": "G02-007",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "これに対して",
+    "risk": "指示語「これ」の先行詞は未解析",
+    "surface": "これに対して",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 12,
+    "examples": [
+      {
+        "excerpt": "これにより、思想の比較は、「どちらが正しいか」だけでなく、「どの差分を見えるようにし、どの差分を見えなくするか」という認識論的比較になる。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 503
+      },
+      {
+        "excerpt": "これにより、「正しい」は永久確定ではなくなる。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 378
+      },
+      {
+        "excerpt": "これにより、AIはモジュール名の近さではなく、型付きの関係によって文書を接続できる。",
+        "file": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
+        "line": 391
+      }
+    ],
+    "explanation": "前述作用の結果・手段",
+    "group": "接続・談話",
+    "id": "G02-008",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "これにより",
+    "risk": "因果の証拠とは限らない",
+    "surface": "これにより",
+    "surface_hits": 20
+  },
+  {
+    "documents_with_hits": 24,
+    "examples": [
+      {
+        "excerpt": "つまり、正義は作用経路の地形を書き換える。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 162
+      },
+      {
+        "excerpt": "つまり観測とは、主観と客観を分ける働きである。しかし同時に、それは分かれたもの同士が履歴として接触する働きでもある。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 48
+      },
+      {
+        "excerpt": "つまり、境界が実在的に扱えるという前提の上で、現実、観測、意味、倫理を公開向けに読むための入口である。",
+        "file": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "line": 166
+      }
+    ],
+    "explanation": "説明の要約・言い換え",
+    "group": "接続・談話",
+    "id": "G02-009",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "つまり",
+    "risk": "厳密な同値を保証しない",
+    "surface": "つまり",
+    "surface_hits": 42
+  },
+  {
+    "documents_with_hits": 22,
+    "examples": [
+      {
+        "excerpt": "科学は観測から始まる。存在境界論は、その観測を観測する。すなわち、何が観測可能な対象として立ち上がるのか、どこで境界が生じるのか、どの履歴が残るのか、どの通信が成立するのか、どの切断が起こるのか、どの照合が可能になる",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 48
+      },
+      {
+        "excerpt": "補足: 必要に応じて、外的時間に対する別方向、すなわち残差・残渣・未閉鎖 gap が蓄積する虚軸的な時間構造として説明する。ただし、数理的に虚軸と定義していない段階では、  程度に留める。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 740
+      },
+      {
+        "excerpt": "本注解は、本文命題列を哲学者名で権威づけるためのものではない。境界認識批判が扱う運動、すなわち感性・悟性・理性・同期・照合・残差保持・残渣化・再照合・論理-深度軸を、既存思想の問題圏と照合するための地形図である。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md",
+        "line": 9
+      }
+    ],
+    "explanation": "同格・言い換え",
+    "group": "接続・談話",
+    "id": "G02-010",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "すなわち",
+    "risk": "対象範囲と同値性は未検証",
+    "surface": "すなわち",
+    "surface_hits": 43
+  },
+  {
+    "documents_with_hits": 3,
+    "examples": [
+      {
+        "excerpt": "要するに、",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/付録A_監査記録_自動運転された正しさを止めるために.ja.md",
+        "line": 101
+      },
+      {
+        "excerpt": "要するに、",
+        "file": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
+        "line": 332
+      },
+      {
+        "excerpt": "要するに、",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/000光は「離れている」をつくるのか_はてな表用.md",
+        "line": 218
+      }
+    ],
+    "explanation": "要約・圧縮",
+    "group": "接続・談話",
+    "id": "G02-011",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "要するに",
+    "risk": "省略された限定に注意する",
+    "surface": "要するに",
+    "surface_hits": 4
+  },
+  {
+    "documents_with_hits": 1,
+    "examples": [
+      {
+        "excerpt": "例えば、",
+        "file": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md",
+        "line": 529
+      }
+    ],
+    "explanation": "例示の導入",
+    "group": "接続・談話",
+    "id": "G02-012",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "例えば",
+    "risk": "例から一般命題への導出を保証しない",
+    "surface": "例えば",
+    "surface_hits": 4
+  },
+  {
+    "documents_with_hits": 45,
+    "examples": [
+      {
+        "excerpt": "たとえば、認識軸生成論の公開中核はP1であっても、身体部位との対応、診断、誘導手順へ進めばP2.5-P3になる。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 163
+      },
+      {
+        "excerpt": "たとえば、「効率化」を第一義として置けば、待機、余白、保留、説明、照合はコストになりやすい。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 74
+      },
+      {
+        "excerpt": "たとえば、自然そのものが何であるかを、本体系は先に定義し尽くさない。精神そのものが何であるかも、物質そのものが何であるかも、先に確定しない。",
+        "file": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "line": 65
+      }
+    ],
+    "explanation": "例示の導入（平仮名）",
+    "group": "接続・談話",
+    "id": "G02-013",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "たとえば",
+    "risk": "表記違いを示すが意味検査は別",
+    "surface": "たとえば",
+    "surface_hits": 91
+  },
+  {
+    "documents_with_hits": 23,
+    "examples": [
+      {
+        "excerpt": "第一義から第三義まで展開し、境界からの修正圧を通過してもなお目的として残るものを、真理と呼ぶ。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 580
+      },
+      {
+        "excerpt": "2　知とは、履歴を持つ存在が、外部からの入力を受け取り、内部で処理し、外部と同期し、その一致・不一致・残差を照合し、なお閉じきれないものを保持しながら、次の判断可能性を維持することで成立する。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 21
+      },
+      {
+        "excerpt": "感性が受け取り、悟性が分類し、理性が閉じようとし、同期と照合を行っても、なお閉じきれないものが残る。その一部は、再照合可能な残差として保持される。さらにその一部は、制度・分類・交換・説明の外に沈殿し、残渣化する。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md",
+        "line": 81
+      }
+    ],
+    "explanation": "補記・注意",
+    "group": "接続・談話",
+    "id": "G02-014",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "なお",
+    "risk": "補記の作用範囲は未解析",
+    "surface": "なお",
+    "surface_hits": 42
+  },
+  {
+    "documents_with_hits": 45,
+    "examples": [
+      {
+        "excerpt": "むしろ、目の前の共同体に受け入れられること、反対されないこと、現在の制度で説明可能であることを、真実そのものの代理にしないための自制である。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 35
+      },
+      {
+        "excerpt": "本方針の目的は、「存在境界論は物理学ではない」と距離を取ることだけではない。むしろ、存在境界論がなぜ、粒子、場、時間、相互作用、経路、エントロピー、entanglement、black hole、宇宙外殻、クオリアといった語彙に近づか",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 17
+      },
+      {
+        "excerpt": "むしろ、世界がどこで閉じず、どこに残差が生まれ、どの境界で照合と修正が必要になるのかを扱う体系である。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 19
+      }
+    ],
+    "explanation": "対比上の重心変更",
+    "group": "接続・談話",
+    "id": "G02-015",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "むしろ",
+    "risk": "元の比較軸を確認する",
+    "surface": "むしろ",
+    "surface_hits": 115
+  },
+  {
+    "documents_with_hits": 35,
+    "examples": [
+      {
+        "excerpt": "強い影響を受けたことと、権威として採用することは同じではない。著者は、強く影響されたものほど疑い、自分で壊しに行き、それでも残ったものを研究形成史として保持する。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 69
+      },
+      {
+        "excerpt": "が残差として残り、どの返路が成立するかを追跡可能にすることである。科学を宗教の証拠にせず、宗教を科学の代用品にせず、それでも異なる言語ゲームが世界へ触れている可能性を最初から切り捨てない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 33
+      },
+      {
+        "excerpt": "それでも、目的を無傷のまま残し、失敗を現場の実行不足へだけ帰属させる運用より、修正可能性を高く保つ。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 362
+      }
+    ],
+    "explanation": "譲歩・逆接",
+    "group": "接続・談話",
+    "id": "G02-016",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "それでも",
+    "risk": "前提撤回とは限らない",
+    "surface": "それでも",
+    "surface_hits": 68
+  },
+  {
+    "documents_with_hits": 51,
+    "examples": [
+      {
+        "excerpt": "公開は接触可能性を作る工程である。適用、制度化、実装は、さらに現実の条件へ作用する別工程である。存在境界論は、人間社会へ作用しようとする面を持つ。考え方を提示し、説得し、制度や技術へ適用し、現在の構造を変えるべきだ",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 41
+      },
+      {
+        "excerpt": "さらに、SO上では、粒子は単独の点的実体というより、通信的な集積場として読むことができる。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 270
+      },
+      {
+        "excerpt": "さらに、存在境界論では、責任は履歴によってごまかされない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 615
+      }
+    ],
+    "explanation": "追加・拡張",
+    "group": "接続・談話",
+    "id": "G02-017",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "さらに",
+    "risk": "追加が支持を増やすとは限らない",
+    "surface": "さらに",
+    "surface_hits": 124
+  },
+  {
+    "documents_with_hits": 9,
+    "examples": [
+      {
+        "excerpt": "う三相を主要な整理軸とし、Applications、Research Notes、Visual Materialsに加えて、 の外向き表現面を持つ。04の再帰的監査面、05の形式化・通約研究、07の表現接触面は、三相を置き換えない横断・返路レイヤーとして扱う。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 375
+      },
+      {
+        "excerpt": "4.7.1　存在境界論は、外的時空に加えて、内在時間、エントロピー時間、論理-深度軸を扱う。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 167
+      },
+      {
+        "excerpt": "に加えて、",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 783
+      }
+    ],
+    "explanation": "追加・併置",
+    "group": "接続・談話",
+    "id": "G02-018",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "加えて",
+    "risk": "新条件が必要かは文脈で決まる",
+    "surface": "加えて",
+    "surface_hits": 9
+  },
+  {
+    "documents_with_hits": 74,
+    "examples": [
+      {
+        "excerpt": "この表現は、存在境界論が真実そのものを所有したという完成宣言ではない。また、このレトリックによって個別命題の証拠強度が上がることもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 33
+      },
+      {
+        "excerpt": "な現象、測定値、保存則、対称性、時空構造、相互作用を高精度に記述する体系である。存在境界論は、その成果を否定しない。また、標準物理学上の定義を勝手に上書きしない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 44
+      },
+      {
+        "excerpt": "また、これらの語を使うことと、標準物理学を置き換えることは同じではない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 717
+      }
+    ],
+    "explanation": "添加・並列",
+    "group": "接続・談話",
+    "id": "G02-019",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "また",
+    "risk": "「または」と重なる部分を除いた出現のみ",
+    "surface": "また",
+    "surface_hits": 203
+  },
+  {
+    "documents_with_hits": 38,
+    "examples": [
+      {
+        "excerpt": "存在の根源、時間以前、可能性、観測、意味、物質、場、非存在、切断、宇宙的な全体性を、根拠仮説として記述する。AMPおよびITSは、この方向へ踏み込む高強度研究層に属する。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 146
+      },
+      {
+        "excerpt": "翻訳・通約・用語衝突管理の一般方針については、 、 、および用語衝突管理表を参照する。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "べきか、あるいは自然場の記述と物理的に連続するものとして読むべきかは、本稿では決定しない。その問題は、より強い研究層および非公開中核作業に属する。",
+        "file": "02_Raj_Beauty/History_Field_Topology.md",
+        "line": 21
+      }
+    ],
+    "explanation": "連言・併記",
+    "group": "接続・談話",
+    "id": "G02-020",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "および",
+    "risk": "形式論理のANDと同一視しない",
+    "surface": "および",
+    "surface_hits": 59
+  },
+  {
+    "documents_with_hits": 107,
+    "examples": [
+      {
+        "excerpt": "ation candidate | 状態変数、演算、更新規則、比較表、評価指標へ落とせる候補。 | OverviewまたはResearch Notesで慎重に扱う。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 93
+      },
+      {
+        "excerpt": "存在境界論は、観測、履歴、境界、意味、通信、切断、照合可能性といった、対象が対象として成立する以前、または対象が対象として立ち上がる瞬間の条件を扱う。そのため、観測可能性、到達可能性、通信可能性、照合可能性、切断可能性、返路、履歴、残差が集中して現れる語彙と",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 21
+      },
+      {
+        "excerpt": "存在境界論は、技術を善または悪として固定しない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 651
+      }
+    ],
+    "explanation": "選言・候補の提示",
+    "group": "接続・談話",
+    "id": "G02-021",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "または",
+    "risk": "排他的選言かは文脈で決まる",
+    "surface": "または",
+    "surface_hits": 559
+  },
+  {
+    "documents_with_hits": 29,
+    "examples": [
+      {
+        "excerpt": "照合は、その一致・不一致・残差が何を意味するかを読む。同期が「噛み合うか」を見るなら、照合は「その噛み合い、あるいは噛み合わなさが何を意味するか」を読む。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md",
+        "line": 67
+      },
+      {
+        "excerpt": "存在しないと言っているのではない。直接には扱わない、あるいは実在的に確定できるものとしては扱わない、ということである。",
+        "file": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "line": 31
+      },
+      {
+        "excerpt": "それらの対応を、単なる類比として読むべきか、形式的相同性として読むべきか、あるいは自然場の記述と物理的に連続するものとして読むべきかは、本稿では決定しない。",
+        "file": "01_Sat_Truth/Meaning_Generation_Model.md",
+        "line": 99
+      }
+    ],
+    "explanation": "代替・言い換え",
+    "group": "接続・談話",
+    "id": "G02-022",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "あるいは",
+    "risk": "排他的選択と単なる別表現を区別する",
+    "surface": "あるいは",
+    "surface_hits": 47
+  },
+  {
+    "documents_with_hits": 17,
+    "examples": [
+      {
+        "excerpt": "9.10　残差保持とは、残差を閉じず、捨てず、かつ無制限に氾濫させないための境界操作である。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 355
+      },
+      {
+        "excerpt": "ティックは過熱する。すべてのノイズが意味に見え、照合は強迫になる。残差保持は、その中間にある。残差を閉じず、捨てず、かつ氾濫させない。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md",
+        "line": 141
+      },
+      {
+        "excerpt": "式を保つため、$D_{B_t}(S_t, _t)$ を部分評価として扱う。すなわち、探索履歴 $ _t$ が実在し、かつ $Sat( _t   S_t, _t,B_t)=1$ を満たす場合にのみ、",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 307
+      }
+    ],
+    "explanation": "連言・付加",
+    "group": "接続・談話",
+    "id": "G02-023",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "かつ",
+    "risk": "量化範囲は未解析",
+    "surface": "かつ",
+    "surface_hits": 21
+  },
+  {
+    "documents_with_hits": 11,
+    "examples": [
+      {
+        "excerpt": "語正本の語を英語へ置き換えるだけでは、主語、責任、因果、留保、未解決残差、概念所有、非主張境界が変形することがある。反対に、英語通約によって、日本語では保留された関係、語彙衝突、説明不足が露出し、日本語正本へ返されることがある。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Commensuration_as_Cross_Grammatical_Collation.ja.md",
+        "line": 22
+      },
+      {
+        "excerpt": "反対に、受動態や無主語表現は、複数原因や状態変化を保持しやすい一方、行為主体を不可視化することがある。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Grammar_as_a_Meaning_Pressure_Channel.ja.md",
+        "line": 99
+      },
+      {
+        "excerpt": "反対に、関連する対象や命題を無制限に外延へ加えると、連想と根拠の区別が失われる。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
+        "line": 21
+      }
+    ],
+    "explanation": "対照・方向転換",
+    "group": "接続・談話",
+    "id": "G02-024",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "反対に",
+    "risk": "論理的否定を意味するとは限らない",
+    "surface": "反対に",
+    "surface_hits": 17
+  },
+  {
+    "documents_with_hits": 7,
+    "examples": [
+      {
+        "excerpt": "この変換が曖昧であれば、目的は現場へ届かない。",
+        "file": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
+        "line": 73
+      },
+      {
+        "excerpt": "差異が変換されながらも、何らかの関係・境界・履歴として追跡可能であればよい。",
+        "file": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md",
+        "line": 457
+      },
+      {
+        "excerpt": "ただし、非線形であれば必ずカオスになるわけではない。",
+        "file": "05_Research_Notes/Physical_Cosmological_Notes/Chaos_Theory_and_Logical_Depth_Axis.ja.md",
+        "line": 46
+      }
+    ],
+    "explanation": "条件節・仮定",
+    "group": "条件・仮定",
+    "id": "G03-001",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "であれば",
+    "risk": "現実条件と論理条件は別",
+    "surface": "であれば",
+    "surface_hits": 10
+  },
+  {
+    "documents_with_hits": 5,
+    "examples": [
+      {
+        "excerpt": "ならば、まともな方向へ進む方が楽になる内部構造を作ればよい。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 139
+      },
+      {
+        "excerpt": "世界が時代を経るごとに「客観的・法則的」に見えるようになるならば、それは実験命題における「パージ（不可視化）」のプロセスが優位に進行していることを示す。現在のインピーダンスに合致しないノイズや「制御不能な外部領域（矛",
+        "file": "05_Research_Notes/Physical_Cosmological_Notes/Cosmological_Topological_Dynamics.ja.md",
+        "line": 38
+      },
+      {
+        "excerpt": "観測者が赤道境界を越えて別の半球に入るならば、水平方向はもはや同じ空間-時間分布に対応しない可能性がある。そこでは別の力体系と別のエントロピー分布が作動しているかもしれない。",
+        "file": "06_Visual_Materials/Scientific_Ontology_Conceptual_Poster_Note.md",
+        "line": 101
+      }
+    ],
+    "explanation": "条件節・含意の表面形式",
+    "group": "条件・仮定",
+    "id": "G03-002",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ならば",
+    "risk": "形式的な含意成立を保証しない",
+    "surface": "ならば",
+    "surface_hits": 10
+  },
+  {
+    "documents_with_hits": 1,
+    "examples": [
+      {
+        "excerpt": "外的時間が、時空内の順序を示すものだとすれば、内在時間は、ある存在がどのような履歴更新を内部に持ち、どの他者と同期可能であり、どの境界で相互作用可能になるかを決める条件である。",
+        "file": "05_Research_Notes/Physical_Cosmological_Notes/Intrinsic_Time_Standard_Model_Correspondence.ja.md",
+        "line": 30
+      }
+    ],
+    "explanation": "仮定を受けた推論",
+    "group": "条件・仮定",
+    "id": "G03-003",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "だとすれば",
+    "risk": "仮定の受理と事実性を区別する",
+    "surface": "だとすれば",
+    "surface_hits": 1
+  },
+  {
+    "documents_with_hits": 10,
+    "examples": [
+      {
+        "excerpt": "個体 $k$ の資源配分規則を $ _k$ とすれば、",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 657
+      },
+      {
+        "excerpt": "したがって、観測される現在局面を $q$、そこへ至る形成履歴を $H$ とすれば、状態を",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md",
+        "line": 303
+      },
+      {
+        "excerpt": "期待構造を $E(v)$、観測構造を $O(v)$ とすれば、概念的残差を、",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md",
+        "line": 565
+      }
+    ],
+    "explanation": "仮定・前提設定",
+    "group": "条件・仮定",
+    "id": "G03-004",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "とすれば",
+    "risk": "前提の事実確認を含意しない",
+    "surface": "とすれば",
+    "surface_hits": 11
+  },
+  {
+    "documents_with_hits": 1,
+    "examples": [
+      {
+        "excerpt": "平和を設計するとしたら、たぶんここから始まる。",
+        "file": "07_Creative_Offshoots/Literary_Essays/Questions_Boundaries_and_Peace.ja.md",
+        "line": 1006
+      }
+    ],
+    "explanation": "仮定・仮想条件",
+    "group": "条件・仮定",
+    "id": "G03-005",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "としたら",
+    "risk": "反事実性は文脈で異なる",
+    "surface": "としたら",
+    "surface_hits": 1
+  },
+  {
+    "documents_with_hits": 15,
+    "examples": [
+      {
+        "excerpt": "完全な体系を作ろうとすると、体系内部だけでは決められないものが現れる。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 202
+      },
+      {
+        "excerpt": "5.8　理性が外部同期可能な範囲を越えて内部ループを閉じようとすると、偽閉鎖が起こる。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 199
+      },
+      {
+        "excerpt": "しかし、客観定義だけを存在の尺度とすると、有限な外部指標の争奪へ偏る。",
+        "file": "04_Applications/Social_Boundary_Design/Specification_for_Peace.ja.md",
+        "line": 115
+      }
+    ],
+    "explanation": "仮定を置いた推移",
+    "group": "条件・仮定",
+    "id": "G03-006",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "とすると",
+    "risk": "論理的演繹を保証しない",
+    "surface": "とすると",
+    "surface_hits": 17
+  },
+  {
+    "documents_with_hits": 5,
+    "examples": [
+      {
+        "excerpt": "12.10.1　残差をユーモアとして処理する、または誤解や誤謬として扱う場合には、照合の可能性が残される。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 483
+      },
+      {
+        "excerpt": "てもよい。重要なのは、現在の妥当性を変更し得る差分が、原理上すべて遮断されたままにならないこと、また閉じる必要がある場合には再開条件または別の有効な入力経路が保持されることである。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 758
+      },
+      {
+        "excerpt": "さらに、説明を変えても、具体的な結果を示しても、問題が常に説明者の態度へ戻される場合には、入力が判断の材料として扱われているかを疑う必要がある。ただし、同じ返答が続くというだけでは不十分である。要求が不適切なら、同じ拒否を続けることは正当で",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+        "line": 107
+      }
+    ],
+    "explanation": "適用条件の明示",
+    "group": "条件・仮定",
+    "id": "G03-007",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "場合には",
+    "risk": "必要条件・十分条件を区別していない",
+    "surface": "場合には",
+    "surface_hits": 6
+  },
+  {
+    "documents_with_hits": 121,
+    "examples": [
+      {
+        "excerpt": "英語通約。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 502
+      },
+      {
+        "excerpt": "この意味で、SO上の粒子は、粒子というよりソリトン的な構造として読まれる場合がある。すなわち、履歴、場、通信、反応、境界条件が一時的または安定的に集積し、観測断面上で粒子のように見える構造である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 272
+      },
+      {
+        "excerpt": "英語通約。意味に不一致がある場合は、日本語正本と定義所有文書へ戻って照合する。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 958
+      }
+    ],
+    "explanation": "事例・条件の範囲",
+    "group": "条件・仮定",
+    "id": "G03-008",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "場合",
+    "risk": "常に条件構文とは限らない",
+    "surface": "場合",
+    "surface_hits": 739
+  },
+  {
+    "documents_with_hits": 99,
+    "examples": [
+      {
+        "excerpt": "したがって、本方針は、存在境界論が物理語彙へ接近する理由、接近するときの制限、標準物理学との非同一性、Research Notes に置くべき強い仮説の扱いを定める。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 25
+      },
+      {
+        "excerpt": "「何が本当に存在するのか」と問うとき、私たちはしばしば、世界の背後にある最終実体を直接言い当てようとする。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 65
+      },
+      {
+        "excerpt": "気に入らない外部に触れたとき、その外部は単なる「他人事」ではない。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 42
+      }
+    ],
+    "explanation": "時間・場合の条件",
+    "group": "条件・仮定",
+    "id": "G03-009",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "とき",
+    "risk": "時点と条件とを混同しない",
+    "surface": "とき",
+    "surface_hits": 512
+  },
+  {
+    "documents_with_hits": 83,
+    "examples": [
+      {
+        "excerpt": "しかし、人間が実際に確認できるのは、最終実体そのものよりも、何かが何かへ作用した痕跡である。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 67
+      },
+      {
+        "excerpt": "実際に作用してみる必要がある。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 57
+      },
+      {
+        "excerpt": "企業、行政、国家、国際秩序、教育、AI導入、研究計画では、「何が正しいか」を記述するだけでなく、「何を目的として置いたか」が、人員、予算、権限、評価、可視性、例外、未来の選択",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 49
+      }
+    ],
+    "explanation": "特定場面・時点",
+    "group": "条件・仮定",
+    "id": "G03-010",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "際",
+    "risk": "場合との差は文脈を要する",
+    "surface": "際",
+    "surface_hits": 278
+  },
+  {
+    "documents_with_hits": 49,
+    "examples": [
+      {
+        "excerpt": "著者が観測し、経験し、照合し得た存在について、現時点で区別できる事実候補、解釈、仮説、残差、未解決を混同せず、できる限り虚偽なく記述することである。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 17
+      },
+      {
+        "excerpt": "これは、明示しない限り、量子論におけるエンタングルメントとの物理的同一性を主張しない。より強い研究文脈に置かれない限り、構造的アナロジーとして扱う。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 58
+      },
+      {
+        "excerpt": "ITS 理論全体を公開するものではない。「マルコフブランケット」「エンタングルメント」「誘導」などの語は、明示しない限り構造的アナロジーとして扱う。",
+        "file": "01_Sat_Truth/Meaning_Generation_Model.md",
+        "line": 11
+      }
+    ],
+    "explanation": "必要条件・範囲の限定",
+    "group": "条件・仮定",
+    "id": "G03-011",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "限り",
+    "risk": "「限りでは」と「限り」の差に注意",
+    "surface": "限り",
+    "surface_hits": 62
+  },
+  {
+    "documents_with_hits": 14,
+    "examples": [
+      {
+        "excerpt": "これは、明示しない限り、量子論におけるエンタングルメントとの物理的同一性を主張しない。より強い研究文脈に置かれない限り、構造的アナロジーとして扱う。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 58
+      },
+      {
+        "excerpt": "は ITS 理論全体を公開するものではない。「マルコフブランケット」「エンタングルメント」「誘導」などの語は、明示しない限り構造的アナロジーとして扱う。",
+        "file": "01_Sat_Truth/Meaning_Generation_Model.md",
+        "line": 11
+      },
+      {
+        "excerpt": "準論理学・数学・物理学・AI理論として確立済みの一般理論ではない。特に「圧」「無」「切断」は、各節で操作的意味を定めない限り物理量ではない。ここでの「正しい」は、哲学一般のtruth、数学的真理値、形式検証上のcorrectnessと自動的に同一視しない。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 11
+      }
+    ],
+    "explanation": "否定的な必要条件",
+    "group": "条件・仮定",
+    "id": "G03-012",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "ない限り",
+    "risk": "スコープと対象を復元する必要",
+    "surface": "ない限り",
+    "surface_hits": 20
+  },
+  {
+    "documents_with_hits": 45,
+    "examples": [
+      {
+        "excerpt": "たとえば、認識軸生成論の公開中核はP1であっても、身体部位との対応、診断、誘導手順へ進めばP2.5-P3になる。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 163
+      },
+      {
+        "excerpt": "たとえば、「効率化」を第一義として置けば、待機、余白、保留、説明、照合はコストになりやすい。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 74
+      },
+      {
+        "excerpt": "たとえば、自然そのものが何であるかを、本体系は先に定義し尽くさない。精神そのものが何であるかも、物質そのものが何であるかも、先に確定しない。",
+        "file": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "line": 65
+      }
+    ],
+    "explanation": "譲歩条件の導入",
+    "group": "条件・仮定",
+    "id": "G03-013",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "たとえ",
+    "risk": "結末の条件節を検査する必要",
+    "surface": "たとえ",
+    "surface_hits": 91
+  },
+  {
+    "documents_with_hits": 111,
+    "examples": [
+      {
+        "excerpt": "たとえば、認識軸生成論の公開中核はP1であっても、身体部位との対応、診断、誘導手順へ進めばP2.5-P3になる。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 163
+      },
+      {
+        "excerpt": "還元についても同様である。SOは、物理記述へ究極的に還元可能であるとも不可能であるとも先に決めない。現在の物理記述が成功している範囲は受け取るが、その成功を世界全体の",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 177
+      },
+      {
+        "excerpt": "同時に、「未解決だから何を言ってもよい」ともしない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 213
+      }
+    ],
+    "explanation": "譲歩・条件の表現",
+    "group": "条件・仮定",
+    "id": "G03-014",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ても",
+    "risk": "活用語尾の一部との混同可能性",
+    "surface": "ても",
+    "surface_hits": 564
+  },
+  {
+    "documents_with_hits": 36,
+    "examples": [
+      {
+        "excerpt": "その記述を公開し、必要に応じて考え方、制度、技術、行為へ適用し、そこで生じた結果、失敗、負荷、異議を再び研究へ返すことも、この研究の目的に含まれる。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 19
+      },
+      {
+        "excerpt": "-Port Potentiality / 複数ポート潜在性 | 未使用の認識形式、言語ゲーム、責任経路を保持し、必要に応じて再開・新設できる状態。 | 平和・通信条件 | S2-S3 | E1-E2 | U1 | P1-P2 | V1-V3 | R2-R3 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 280
+      },
+      {
+        "excerpt": "必要に応じて、クオリアは次のように言い換えることができる。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 398
+      }
+    ],
+    "explanation": "条件依存の調整",
+    "group": "条件・仮定",
+    "id": "G03-015",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に応じて",
+    "risk": "因果か対応かは別に確認",
+    "surface": "に応じて",
+    "surface_hits": 67
+  },
+  {
+    "documents_with_hits": 1,
+    "examples": [
+      {
+        "excerpt": "温度差、濃度差、圧力差など、多くの巨視的勾配は、適切な条件下で平衡へ向かう。",
+        "file": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md",
+        "line": 934
+      }
+    ],
+    "explanation": "条件と作用の場を限定",
+    "group": "条件・仮定",
+    "id": "G03-016",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "条件下で",
+    "risk": "文脈で条件の識別が必要",
+    "surface": "条件下で",
+    "surface_hits": 1
+  },
+  {
+    "documents_with_hits": 21,
+    "examples": [
+      {
+        "excerpt": "ここでいう形而上学とは、経験から切り離された空想ではない。経験・観測・意味・倫理がどのような条件のもとで立ち上がるのかを問うための基底モデルである。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 18
+      },
+      {
+        "excerpt": "14.18　事実は、条件と出典のもとで、現在の記述を強く拘束する。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 559
+      },
+      {
+        "excerpt": "*正しいとは、外側を消し去った状態ではなく、外側への接触可能性を保持したまま、現在与えられた資源・探索能力・形成履歴のもとで実際に探索を行い、その探索が飽和して停止した結果、現在の妥当性を変更するdefeaterを発見できない状態である。**",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 37
+      }
+    ],
+    "explanation": "前提・環境の指定",
+    "group": "条件・仮定",
+    "id": "G03-017",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "のもとで",
+    "risk": "規範上の正当化とは独立",
+    "surface": "のもとで",
+    "surface_hits": 58
+  },
+  {
+    "documents_with_hits": 5,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、既存分野の承認を前提として成立する体系ではない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 436
+      },
+      {
+        "excerpt": "AMPは、存在そのものを支配する公理系ではなく、境界実在性の原則を前提として、観測、履歴、意味、倫理がどのように立ち上がるかについて根拠仮説を生成・比較・更新するための形而上学的OSとして再配置される。AMPは経験的証拠そのもの",
+        "file": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "line": 133
+      },
+      {
+        "excerpt": "本稿は、  を前提として、境界接触のあとに発生する「返り」を、倫理、経済、平和論の観点から整理する。",
+        "file": "05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md",
+        "line": 21
+      }
+    ],
+    "explanation": "前提の宣言",
+    "group": "条件・仮定",
+    "id": "G03-018",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "を前提として",
+    "risk": "前提が実証されたことを意味しない",
+    "surface": "を前提として",
+    "surface_hits": 7
+  },
+  {
+    "documents_with_hits": 145,
+    "examples": [
+      {
+        "excerpt": "いう語の働きを、真実を人間社会の承認から独立させて指し示すレトリックとして読んでいる。これは「神」という語一般の定義ではない。文脈ごとに、その語がどの境界を指し示しているかは別に監査される。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 27
+      },
+      {
+        "excerpt": "現在のrepository-wide assessmentを一括支配するcontrol tableではない。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 15
+      },
+      {
+        "excerpt": "本文書は、単なる免責文書ではない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 15
+      }
+    ],
+    "explanation": "述語否定・同定拒否",
+    "group": "否定・様相",
+    "id": "G04-001",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ではない",
+    "risk": "否定対象のスコープを機械的に確定しない",
+    "surface": "ではない",
+    "surface_hits": 2206
+  },
+  {
+    "documents_with_hits": 46,
+    "examples": [
+      {
+        "excerpt": "という語が使われる場合も、それは標準模型におけるボソン場そのものを意味するとは限らない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 288
+      },
+      {
+        "excerpt": "責任分界は最初から思想だけで確定できるとは限らない。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 55
+      },
+      {
+        "excerpt": "第一義は、一つでなければならないとは限らない。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 180
+      }
+    ],
+    "explanation": "一般化の否定",
+    "group": "否定・様相",
+    "id": "G04-002",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "とは限らない",
+    "risk": "反対命題の肯定とは異なる",
+    "surface": "とは限らない",
+    "surface_hits": 126
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "解釈・含意の否定",
+    "group": "否定・様相",
+    "id": "G04-003",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "というわけではない",
+    "risk": "先行発話への係り方は未検証",
+    "surface": "というわけではない",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 19,
+    "examples": [
+      {
+        "excerpt": "第二に、**無と切断**である。正しくない領域は、必ずしも「誤り」という札を掲げて現れない。むしろ、つながるはずのものがない、戻れるはずの経路がない、説明されたはずなのに残差だけが増える、といった欠落や切断とし",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 43
+      },
+      {
+        "excerpt": "異議側は、必ずしも完全な対抗世界観を証明する責任を負わない。「この接続からその結論は出ない」という異議は、その接続を問題化するだけで成立し得る。",
+        "file": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md",
+        "line": 124
+      },
+      {
+        "excerpt": "この状態は、必ずしも自由で全面的な納得ではない。",
+        "file": "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md",
+        "line": 89
+      }
+    ],
+    "explanation": "全称性の留保",
+    "group": "否定・様相",
+    "id": "G04-004",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "必ずしも",
+    "risk": "通常は否定と共起するが自動判定しない",
+    "surface": "必ずしも",
+    "surface_hits": 23
+  },
+  {
+    "documents_with_hits": 96,
+    "examples": [
+      {
+        "excerpt": "『神との対話』は、存在境界論の根拠文献ではない。しかし、著者の研究形成史から外すことのできない強い接触面である。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 63
+      },
+      {
+        "excerpt": "また、言語ゲームごとに証明力は同じではない。文学は物理法則を実証できず、形而上学は測定値を代替できない。逆に、物理学の測定だけから倫理的価値や意味の最終定義が自動的に導かれるわけでもない。SOが行うのは、それぞれの成立条件と証明力を保ったまま境界で照合す",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 175
+      },
+      {
+        "excerpt": "の境界が成立するのか。なぜその作用が返るのか。異なる位相でも同じ構造として読めるのか。形而上学は、この根拠を直接所有できないからこそ、根拠仮説として組み立てる。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 108
+      }
+    ],
+    "explanation": "不可能性・不許可・能力不足",
+    "group": "否定・様相",
+    "id": "G04-005",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "できない",
+    "risk": "導出不可能と探索未発見を区別する必要",
+    "surface": "できない",
+    "surface_hits": 386
+  },
+  {
+    "documents_with_hits": 141,
+    "examples": [
+      {
+        "excerpt": "著者がそこから受け取った中心は、「神が正解を与える」「従えばよい」という権威ではなく、**世界について考え、創り、判断し、責任を引き受ける側へ自分も参加してよい**という招待だった。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 67
+      },
+      {
+        "excerpt": "しかし、これらは責務も判断根拠も異なる。現行v5.1では、旧表を削除して履歴を失うのではなく、責務をそれぞれのownerへ分解する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 26
+      },
+      {
+        "excerpt": "したがって、存在境界論における物理語彙の使用は、まず定義ではなく、思考過程上の接触として理解されるべきである。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 86
+      }
+    ],
+    "explanation": "前項否定と後項提示",
+    "group": "否定・様相",
+    "id": "G04-006",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ではなく",
+    "risk": "後続項が常に唯一の代替とは限らない",
+    "surface": "ではなく",
+    "surface_hits": 1118
+  },
+  {
+    "documents_with_hits": 8,
+    "examples": [
+      {
+        "excerpt": "、目に入りやすいのは、人物、場所、時代、制度、技術、風俗などである。しかし、これらは世界制作のうち、明示しやすい部分にすぎない。",
+        "file": "05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md",
+        "line": 41
+      },
+      {
+        "excerpt": "組合せはComposite Knowledgeとして区別され、さらに、新しい公理に見えながら実際には既存構造の肥大化にすぎないものをPseudo-Primeとして置いている。",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/β監査の実装モデルの推移.ja.md",
+        "line": 64
+      },
+      {
+        "excerpt": "しかし意味を価値より前に置くなら、お金は、価値を帯びた構造同士を接続するための一つのインターフェースにすぎない。",
+        "file": "05_Research_Notes/Social_Boundary_Notes/Negentropy_Economy_and_Meaning_Generation.ja.md",
+        "line": 58
+      }
+    ],
+    "explanation": "範囲の縮減・限定",
+    "group": "否定・様相",
+    "id": "G04-007",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "にすぎない",
+    "risk": "語用論的評価を含み得る",
+    "surface": "にすぎない",
+    "surface_hits": 11
+  },
+  {
+    "documents_with_hits": 2,
+    "examples": [
+      {
+        "excerpt": "明確に表示されていないだけで、実際には認識の外側で機能している機構を、認識される構造へと戻すための発明に過ぎない。",
+        "file": "05_Research_Notes/Cross_Domain_Ontological_Notes/Return_Ethics_and_Retaliation_Conversion.ja.md",
+        "line": 340
+      },
+      {
+        "excerpt": "、整理され、固定化された客観的現実、すなわち rMass を後から眺め、自らもまたその風景の中に存在する一つの「吾」に過ぎないと誤認する。",
+        "file": "05_Research_Notes/Physical_Cosmological_Notes/Ontological_History_of_the_Universe.ja.md",
+        "line": 53
+      }
+    ],
+    "explanation": "範囲の縮減・限定（漢字表記）",
+    "group": "否定・様相",
+    "id": "G04-008",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に過ぎない",
+    "risk": "原文表記を保持",
+    "surface": "に過ぎない",
+    "surface_hits": 2
+  },
+  {
+    "documents_with_hits": 2,
+    "examples": [
+      {
+        "excerpt": "目的は、一人の内側にあるだけでは、信念や願望にとどまる。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 544
+      },
+      {
+        "excerpt": "目的は、一人の内側にあるだけでは、願望または信念にとどまる。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 200
+      }
+    ],
+    "explanation": "効果・範囲の限定",
+    "group": "否定・様相",
+    "id": "G04-009",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "にとどまる",
+    "risk": "独立した検証が必要",
+    "surface": "にとどまる",
+    "surface_hits": 2
+  },
+  {
+    "documents_with_hits": 76,
+    "examples": [
+      {
+        "excerpt": "る。存在境界論は、人間社会へ作用しようとする面を持つ。考え方を提示し、説得し、制度や技術へ適用し、現在の構造を変えるべきだと主張することもある。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 41
+      },
+      {
+        "excerpt": "存在境界論が物理語彙へ接近する理由、接近するときの制限、標準物理学との非同一性、Research Notes に置くべき強い仮説の扱いを定める。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 25
+      },
+      {
+        "excerpt": "それは、次にどこを探索し、どの境界を作り直すべきかを示す露出面である。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 250
+      }
+    ],
+    "explanation": "義務・推奨",
+    "group": "否定・様相",
+    "id": "G04-010",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "べき",
+    "risk": "規範的判断を事実命題と区別する",
+    "surface": "べき",
+    "surface_hits": 254
+  },
+  {
+    "documents_with_hits": 67,
+    "examples": [
+      {
+        "excerpt": "この場合、標準物理学上のエントロピーと、存在境界論上のエントロピー通信を区別する必要がある。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 324
+      },
+      {
+        "excerpt": "調達、権限、監査、説明、例外、障害、撤退、データ、利用者保護を含む、制度全体の境界を照合する必要がある。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 675
+      },
+      {
+        "excerpt": "実際に作用してみる必要がある。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 57
+      }
+    ],
+    "explanation": "必要性の提示",
+    "group": "否定・様相",
+    "id": "G04-011",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "必要がある",
+    "risk": "必要の主語・機能・根拠が必要",
+    "surface": "必要がある",
+    "surface_hits": 200
+  },
+  {
+    "documents_with_hits": 34,
+    "examples": [
+      {
+        "excerpt": "したがって、存在境界論はクオリアという語を避ける必要はない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 394
+      },
+      {
+        "excerpt": "自分が怠惰である可能性を排除してから理論を作る必要はない。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 78
+      },
+      {
+        "excerpt": "6.4.3.2　したがって、科学を否定する必要はない。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 233
+      }
+    ],
+    "explanation": "必要性の否定",
+    "group": "否定・様相",
+    "id": "G04-012",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "必要はない",
+    "risk": "不要と不可能は異なる",
+    "surface": "必要はない",
+    "surface_hits": 70
+  },
+  {
+    "documents_with_hits": 44,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、特定の一分野だけを入口としない。以下の問いのどれかに引っかかるなら、この体系に入口がある可能性がある。ただし、既存分野の標準理論をそのまま提供するものではなく、期待した結論を保証するものでもない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 41
+      },
+      {
+        "excerpt": "快適さより先に、接続可能性がある。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 307
+      },
+      {
+        "excerpt": "一部は高次の統合に関与する可能性があるが、その統合構造はまだ形式的に定義されていない。",
+        "file": "01_Sat_Truth/Meaning_Generation_Model.md",
+        "line": 91
+      }
+    ],
+    "explanation": "可能性の提示",
+    "group": "否定・様相",
+    "id": "G04-013",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "可能性がある",
+    "risk": "可能性と成立証明を混同しない",
+    "surface": "可能性がある",
+    "surface_hits": 134
+  },
+  {
+    "documents_with_hits": 30,
+    "examples": [
+      {
+        "excerpt": "今は不要に見える返路が、後で必要になるかもしれない。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 276
+      },
+      {
+        "excerpt": "何かが存在しないように見えるとき、それは本当に何もないのではなく、観測者の履歴場と接続していないだけかもしれない。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 80
+      },
+      {
+        "excerpt": "探索できないのは構造がないからではなく、資源が足りないだけかもしれない。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 562
+      }
+    ],
+    "explanation": "推量・可能性",
+    "group": "否定・様相",
+    "id": "G04-014",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "かもしれない",
+    "risk": "強い根拠の表示とは限らない",
+    "surface": "かもしれない",
+    "surface_hits": 109
+  },
+  {
+    "documents_with_hits": 15,
+    "examples": [
+      {
+        "excerpt": "ここで完全無矛盾性を要求しているわけではない。有限系では、矛盾候補や未解決差分が残ること自体はあり得る。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 243
+      },
+      {
+        "excerpt": "同じ「同意する」という操作の背後には、少なくとも次の状態があり得る。",
+        "file": "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md",
+        "line": 60
+      },
+      {
+        "excerpt": "に正しいか」を直接判定しない。現実について誤った理論であっても、その理論内部の前提と推論が局所的に閉鎖していることはあり得る。逆に、内容として妥当に見える理論でも、支持切断、適用範囲の無標識変更、未解決差分の偽閉鎖、内部矛盾を持ち得る。",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md",
+        "line": 16
+      }
+    ],
+    "explanation": "可能性・成立余地",
+    "group": "否定・様相",
+    "id": "G04-015",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "あり得る",
+    "risk": "構成可能性と現実実証は異なる",
+    "surface": "あり得る",
+    "surface_hits": 41
+  },
+  {
+    "documents_with_hits": 24,
+    "examples": [
+      {
+        "excerpt": "を受けた側が異議、拒否、停止、退出、修正を返せるか、作用による結果や負荷が作用主体へ戻り、理論、制度、実装自身を変更し得るかである。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 43
+      },
+      {
+        "excerpt": "在は成立させている状態を指す。そこへ接触する目的は、多数決で一つへ平均化することではなく、自分の探索飽和を外側から壊し得るfrontierへ触れることである。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 57
+      },
+      {
+        "excerpt": "tion、Ground / Stopping、Repository / Navigatorなど、すでに個別研究へ発展し得る論点は見えている。",
+        "file": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+        "line": 246
+      }
+    ],
+    "explanation": "可能性・可能操作",
+    "group": "否定・様相",
+    "id": "G04-016",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "し得る",
+    "risk": "技術的可否は別検証",
+    "surface": "し得る",
+    "surface_hits": 102
+  },
+  {
+    "documents_with_hits": 23,
+    "examples": [
+      {
+        "excerpt": "が正解を与える」「従えばよい」という権威ではなく、**世界について考え、創り、判断し、責任を引き受ける側へ自分も参加してよい**という招待だった。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 67
+      },
+      {
+        "excerpt": "ものである、という意味ではない。条件を明示して得られた記録や観測を、後続の理論が都合に合わせて無視したり書き換えたりしてよいわけではない、という意味である。事実の訂正が必要なら、記録、測定、出典、観測条件の再照合によって行う。",
+        "file": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "line": 77
+      },
+      {
+        "excerpt": "ule: ここでの「正しい」は「宇宙の最終真理を所有した」という意味ではない。有限な系が、どの条件で現在の成立を維持してよいかを扱う工学語である。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 12
+      }
+    ],
+    "explanation": "許可・任意",
+    "group": "否定・様相",
+    "id": "G04-017",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "してよい",
+    "risk": "権限主体が省略される場合がある",
+    "surface": "してよい",
+    "surface_hits": 46
+  },
+  {
+    "documents_with_hits": 38,
+    "examples": [
+      {
+        "excerpt": "したがって、 という旧ラベルだけを理由に、Research Notesを非公開化、停止、反証済み扱いしてはならない。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 52
+      },
+      {
+        "excerpt": "真理の経営学と組織境界モデルを混同してはならない。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 529
+      },
+      {
+        "excerpt": "9.7　したがって、残差を即座に廃棄してはならない。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 349
+      }
+    ],
+    "explanation": "禁止・制約",
+    "group": "否定・様相",
+    "id": "G04-018",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "してはならない",
+    "risk": "適用範囲と権限根拠を別照合",
+    "surface": "してはならない",
+    "surface_hits": 86
+  },
+  {
+    "documents_with_hits": 24,
+    "examples": [
+      {
+        "excerpt": "ただし、複数の第一義があるなら、その競合条件を明示しなければならない。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 182
+      },
+      {
+        "excerpt": "場所であることを確かめる」の「いけない」は、直ちに道徳的禁止を意味しない。ある状態へ移るために、現在の支持構造を切断しなければならない、必要な返路を失う、未解決差分を偽閉鎖しなければ成立しない、適用範囲を越えなければ接続できない、あるいは現在の資源では安全に往復できない、といった**移",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 61
+      },
+      {
+        "excerpt": "それは、直接答えてよいもの、確認すべきもの、現時点では未解決として保持すべきもの、安全上止めるべきものを区別しなければならない。",
+        "file": "04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md",
+        "line": 43
+      }
+    ],
+    "explanation": "義務・必要条件",
+    "group": "否定・様相",
+    "id": "G04-019",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "しなければならない",
+    "risk": "法的義務と設計条件を区別",
+    "surface": "しなければならない",
+    "surface_hits": 61
+  },
+  {
+    "documents_with_hits": 22,
+    "examples": [
+      {
+        "excerpt": "現在の切り分け方を永久的な本質とみなさない。",
+        "file": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+        "line": 520
+      },
+      {
+        "excerpt": "ただし、省略をすべて「内部に完全な項があり削除された」とみなさない議論もある。省略という説明自体を固定しない。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md",
+        "line": 194
+      },
+      {
+        "excerpt": "この定義では、人間、AIモデル、AIエージェント、組織などをただちに同一種とみなさない。",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md",
+        "line": 75
+      }
+    ],
+    "explanation": "分類・同定の拒否",
+    "group": "否定・様相",
+    "id": "G04-020",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "とみなさない",
+    "risk": "否定と代替分類を区別",
+    "surface": "とみなさない",
+    "surface_hits": 33
+  },
+  {
+    "documents_with_hits": 121,
+    "examples": [
+      {
+        "excerpt": "は、人間が長く真実、最終根拠、超越へ向けてきた希求と接触する強い公開語彙でもある。著者は、その拡散力を無色透明なものとは扱わない。真実を象徴する語として人間への接触面に用いる一方、その語の権威を個別命題の証拠へ転用しない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 31
+      },
+      {
+        "excerpt": "Exposure   |   | 外部体系への接続強度・bridge responsibilityの補助投影。旧 とは別概念。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 33
+      },
+      {
+        "excerpt": "したがって、存在境界論における「科学的」という語は、科学制度への所属を意味しない。ここでいう科学性とは、観測可能性、反論可能性、照合可能性、残差保持、再検討可能性を失わないための手続き上の姿勢である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 66
+      }
+    ],
+    "explanation": "主題・定義の導入",
+    "group": "定義・引用",
+    "id": "G05-001",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "とは",
+    "risk": "「とは」だけでは定義文と断定できない",
+    "surface": "とは",
+    "surface_hits": 1327
+  },
+  {
+    "documents_with_hits": 52,
+    "examples": [
+      {
+        "excerpt": "第一義から第三義まで展開し、境界からの修正圧を通過してもなお目的として残るものを、真理と呼ぶ。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 580
+      },
+      {
+        "excerpt": "本稿では、この境界で担われる検査と修正を**境界CA**と呼ぶ。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 288
+      },
+      {
+        "excerpt": "その切断以前にあるものを、ここでは根源的実体と呼ぶ。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 26
+      }
+    ],
+    "explanation": "命名・局所ラベルの宣言",
+    "group": "定義・引用",
+    "id": "G05-002",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "と呼ぶ",
+    "risk": "一般正本定義とは限らない",
+    "surface": "と呼ぶ",
+    "surface_hits": 113
+  },
+  {
+    "documents_with_hits": 7,
+    "examples": [
+      {
+        "excerpt": "正しさを有限資源下の探索飽和と定義すると、個性は欠陥ではなくなる。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 495
+      },
+      {
+        "excerpt": "AMPは根源的実体を、時間・空間・限定を持たない純粋可能性の場と定義する。",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/全・無・切断・未選択可能性の関係試論.ja.md",
+        "line": 34
+      },
+      {
+        "excerpt": "ここまでの歴史計算から見ると、競争を「個体Aが個体Bを打ち負かすこと」と定義する必要はない。",
+        "file": "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md",
+        "line": 1856
+      }
+    ],
+    "explanation": "定義の明示",
+    "group": "定義・引用",
+    "id": "G05-003",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "と定義する",
+    "risk": "定義の所有範囲は別検証",
+    "surface": "と定義する",
+    "surface_hits": 7
+  },
+  {
+    "documents_with_hits": 99,
+    "examples": [
+      {
+        "excerpt": "gy / local interface | 固定距離による序列ではなく、通約・language game・用語接続として扱う。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 38
+      },
+      {
+        "excerpt": "センテンスをセンテンスとして扱うことは、量的な還元による単純化と計算可能性をかなり犠牲にする。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 118
+      },
+      {
+        "excerpt": "存在境界論は、この否認しにくい作用面を「境界」として扱う。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 80
+      }
+    ],
+    "explanation": "操作的な位置づけ",
+    "group": "定義・引用",
+    "id": "G05-004",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "として扱う",
+    "risk": "同一性や本質の主張とは限らない",
+    "surface": "として扱う",
+    "surface_hits": 299
+  },
+  {
+    "documents_with_hits": 20,
+    "examples": [
+      {
+        "excerpt": "あるいはAとBが異なる境界を重要とみなすかもしれない。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 876
+      },
+      {
+        "excerpt": "現時点では、透明性は真理保証ではなく、誤りや不一致を判断経路上へ局在化し、異議と改訂の経路を作る条件とみなす。",
+        "file": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/05_RESIDUALS_AND_NEXT_TESTS.ja.md",
+        "line": 25
+      },
+      {
+        "excerpt": "存在相の圧縮では、何を保存すべき構造とみなすか自体が認識軸と権力によって決まる。",
+        "file": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
+        "line": 80
+      }
+    ],
+    "explanation": "推定・分類規則の宣言",
+    "group": "定義・引用",
+    "id": "G05-005",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "とみなす",
+    "risk": "事実認定と擬制を区別",
+    "surface": "とみなす",
+    "surface_hits": 32
+  },
+  {
+    "documents_with_hits": 12,
+    "examples": [
+      {
+        "excerpt": "と読める。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 680
+      },
+      {
+        "excerpt": "多くのパラドクスは、異なる履歴位相、観測位相、内部的時間秩序、境界条件を同じ平面で扱うことで発火すると読める。",
+        "file": "02_Raj_Beauty/History_Field_Topology.md",
+        "line": 83
+      },
+      {
+        "excerpt": "尺度へしない。ただし、圧縮後も、読者が差分、因果、負傷、返路、残差を再構成できる場合、経験構造の一部が保持されていると読める。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
+        "line": 50
+      }
+    ],
+    "explanation": "読み・解釈候補",
+    "group": "定義・引用",
+    "id": "G05-006",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "と読める",
+    "risk": "外部理論の確認済み事実ではない",
+    "surface": "と読める",
+    "surface_hits": 14
+  },
+  {
+    "documents_with_hits": 4,
+    "examples": [
+      {
+        "excerpt": "そして、「別の人なら違う場所から崩せるかもしれない」と考えられるなら、個性は敵ではなく探索装置になる。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 1144
+      },
+      {
+        "excerpt": "たとえば、「この人は絶対に変わらない」ではなく、「変わる可能性は否定しないが、その確認を私が引き受けることはしない」と考えられる。これは弱い撤回ではない。相手の未来を支配せず、自分の資源の使い方を決める判断である。**自分の境界を守るために、相手についての不確実性を消す必要はない",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+        "line": 151
+      },
+      {
+        "excerpt": "そして、「別の人なら違う場所から崩せるかもしれない」と考えられるなら、個性は敵ではなく探索装置になる。",
+        "file": "01_Sat_Truth/000正しさ・個性・無・切断_論理通信トポロジー.R1.ja.md",
+        "line": 1049
+      }
+    ],
+    "explanation": "推論・考察の提示",
+    "group": "定義・引用",
+    "id": "G05-007",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "と考えられる",
+    "risk": "著者断言や実証を示さない",
+    "surface": "と考えられる",
+    "surface_hits": 4
+  },
+  {
+    "documents_with_hits": 1,
+    "examples": [
+      {
+        "excerpt": "作品は、ある考えが正しいと述べるだけでなく、その考えが採用された世界で、人がどう生き、何が傷つき、どのような美が現れ、何が返らなくなるかを提示できる。",
+        "file": "05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md",
+        "line": 87
+      }
+    ],
+    "explanation": "記述の帰属",
+    "group": "定義・引用",
+    "id": "G05-008",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "と述べる",
+    "risk": "実際の引用元を別に確認",
+    "surface": "と述べる",
+    "surface_hits": 1
+  },
+  {
+    "documents_with_hits": 1,
+    "examples": [
+      {
+        "excerpt": "したがって、正式名には常に「照合的」「返路ある」を付ける。以下で短く「内包」「外延」と記す場合も、本文書内の省略形に限り、標準意味論の用語を置換しない。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
+        "line": 43
+      }
+    ],
+    "explanation": "文面記録の帰属",
+    "group": "定義・引用",
+    "id": "G05-009",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "と記す",
+    "risk": "書かれたことと成立したことを区別",
+    "surface": "と記す",
+    "surface_hits": 1
+  },
+  {
+    "documents_with_hits": 11,
+    "examples": [
+      {
+        "excerpt": "冗長な履歴は切り落とされることがある。",
+        "file": "01_Sat_Truth/Four_Axioms_of_Existence.md",
+        "line": 109
+      },
+      {
+        "excerpt": "一部は冗長性として切り落とされる場合がある。",
+        "file": "01_Sat_Truth/Meaning_Generation_Model.md",
+        "line": 87
+      },
+      {
+        "excerpt": "冗長な履歴は切り落とされることがある。",
+        "file": "02_Raj_Beauty/HFC_Introduction.md",
+        "line": 117
+      }
+    ],
+    "explanation": "受動的帰属・通説化",
+    "group": "定義・引用",
+    "id": "G05-010",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "とされる",
+    "risk": "誰によってかの確認を要する",
+    "surface": "とされる",
+    "surface_hits": 12
+  },
+  {
+    "documents_with_hits": 124,
+    "examples": [
+      {
+        "excerpt": "SO側では、少なくともこの研究における「神」という語の働きを、真実を人間社会の承認から独立させて指し示すレトリックとして読んでいる。これは「神」という語一般の定義ではない。文脈ごとに、その語がどの境界を",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 27
+      },
+      {
+        "excerpt": "したがって、 という旧ラベルだけを理由に、Research Notesを非公開化、停止、反証済み扱いしてはならない。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 52
+      },
+      {
+        "excerpt": "第二に、存在境界論は、観測という出来事そのものを問う。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 46
+      }
+    ],
+    "explanation": "命名・引用・説明の媒介",
+    "group": "定義・引用",
+    "id": "G05-011",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "という",
+    "risk": "多義的なため意味型を自動確定しない",
+    "surface": "という",
+    "surface_hits": 1208
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "結論・言い換えの表示",
+    "group": "定義・引用",
+    "id": "G05-012",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "といえる",
+    "risk": "推論経路の検証とは別",
+    "surface": "といえる",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 37,
+    "examples": [
+      {
+        "excerpt": "d Walsch）による _Conversations with God_ を起点とする一連の書籍・**関連著作**を指す。日本語では主として吉田利子訳、サンマーク出版から刊行されている。以下、本稿ではこれらを形成史上の呼称として『神との対話』と総称する。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 65
+      },
+      {
+        "excerpt": "算、保存則、対称性、時空構造、相互作用の語である。同時に、存在境界論から見ると、それらは対象が対象として現れる境界面を指す語でもある。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 23
+      },
+      {
+        "excerpt": "など、後続の可動性を大きく失わせる状態を指す。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 247
+      }
+    ],
+    "explanation": "指示対象の限定",
+    "group": "定義・引用",
+    "id": "G05-013",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "を指す",
+    "risk": "概念定義との対応は別検証",
+    "surface": "を指す",
+    "surface_hits": 56
+  },
+  {
+    "documents_with_hits": 26,
+    "examples": [
+      {
+        "excerpt": "翻訳層と非主張境界が増えることを意味する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 190
+      },
+      {
+        "excerpt": "という語が使われる場合も、それは標準模型におけるボソン場そのものを意味するとは限らない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 288
+      },
+      {
+        "excerpt": "を、一つの方法論的循環として示せる段階へ進んだことを意味する。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 878
+      }
+    ],
+    "explanation": "語義・帰結の説明",
+    "group": "定義・引用",
+    "id": "G05-014",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "を意味する",
+    "risk": "同語反復か実質的主張か要確認",
+    "surface": "を意味する",
+    "surface_hits": 35
+  },
+  {
+    "documents_with_hits": 63,
+    "examples": [
+      {
+        "excerpt": "次にどの検査を行えるかを示す。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 180
+      },
+      {
+        "excerpt": "内在時間とは、履歴がどの順序で更新され、保留され、折り返し、再照合されるかを示す内部的な更新順序である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 300
+      },
+      {
+        "excerpt": "それは、次にどこを探索し、どの境界を作り直すべきかを示す露出面である。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 250
+      }
+    ],
+    "explanation": "証拠・図示・表現の帰属",
+    "group": "定義・引用",
+    "id": "G05-015",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "を示す",
+    "risk": "証明や実証の強さは別",
+    "surface": "を示す",
+    "surface_hits": 171
+  },
+  {
+    "documents_with_hits": 17,
+    "examples": [
+      {
+        "excerpt": "と保証する集合ではない。現在の資源と探索器から見て、**何を探しに行けるか、どこまでを探索対象として構成できるか**を表す可能領域である。したがって、$ {F}_{B_t}$ は正しさそのものではなく、現在の正しさを検査するために必要な探索領域を与える。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 263
+      },
+      {
+        "excerpt": "通信的・解釈的な場における圧を表す概念語である。",
+        "file": "05_Research_Notes/AI_Personality_Notes/Logical_Sandbox_and_Negentropy_Model.md",
+        "line": 103
+      },
+      {
+        "excerpt": "ポートは認識相全体を表すのではなく、その一部を特定の目的へ接続する。",
+        "file": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+        "line": 226
+      }
+    ],
+    "explanation": "記号・模型の対応",
+    "group": "定義・引用",
+    "id": "G05-016",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "を表す",
+    "risk": "写像の正しさを別検証",
+    "surface": "を表す",
+    "surface_hits": 29
+  },
+  {
+    "documents_with_hits": 41,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、観測、実験、反論、照合、再検討を残すという意味で、方法上の科学性を重視する。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 58
+      },
+      {
+        "excerpt": "この多入口性は、何でも説明できるという意味ではない。存在境界論が扱う対象は一貫している。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 57
+      },
+      {
+        "excerpt": "しかし、それは「すべて自分のせいだ」という意味ではない。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 46
+      }
+    ],
+    "explanation": "読みの適用条件",
+    "group": "定義・引用",
+    "id": "G05-017",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "という意味で",
+    "risk": "限定外への転用を防ぐ",
+    "surface": "という意味で",
+    "surface_hits": 108
+  },
+  {
+    "documents_with_hits": 147,
+    "examples": [
+      {
+        "excerpt": "合し得た存在について、現時点で区別できる事実候補、解釈、仮説、残差、未解決を混同せず、できる限り虚偽なく記述することである。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 17
+      },
+      {
+        "excerpt": "本表は、v5.1以前から用いられてきた 統合分類を追跡するための**公開migration reference**である。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "在境界論｜Scientific Ontology において、物理学に近い語彙をどのような条件で扱うかを定める公開方針である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 13
+      }
+    ],
+    "explanation": "叙述・定義の断定",
+    "group": "定義・引用",
+    "id": "G05-018",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "である",
+    "risk": "定義なのか事実主張かは文脈依存",
+    "surface": "である",
+    "surface_hits": 3517
+  },
+  {
+    "documents_with_hits": 100,
+    "examples": [
+      {
+        "excerpt": "性を作る工程である。適用、制度化、実装は、さらに現実の条件へ作用する別工程である。存在境界論は、人間社会へ作用しようとする面を持つ。考え方を提示し、説得し、制度や技術へ適用し、現在の構造を変えるべきだと主張することもある。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 41
+      },
+      {
+        "excerpt": "l organization | 体系内の便宜的な定義、索引、分類。外部理論への強い主張を伴わない。 | P0を基本とする。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 89
+      },
+      {
+        "excerpt": "存在境界論は、科学と同じ出発点から世界を説明しようとするものではない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 68
+      }
+    ],
+    "explanation": "採用・宣言・定義の候補",
+    "group": "定義・引用",
+    "id": "G05-019",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "とする",
+    "risk": "分析前提と事実を区別",
+    "surface": "とする",
+    "surface_hits": 388
+  },
+  {
+    "documents_with_hits": 59,
+    "examples": [
+      {
+        "excerpt": "本文書は、存在境界論｜Scientific Ontology において、物理学に近い語彙をどのような条件で扱うかを定める公開方針である。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "存在境界論において組織は、人の集まりだけではない。責任、履歴、文化、意思決定、通信、処理能力を保持する境界である。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 596
+      },
+      {
+        "excerpt": "本文書は、存在境界論において、認識された世界から目的が選ばれ、その目的が共有され、現実の制度・行為・評価を組み替え、境界からの返りによって再検査される過程を扱う。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 13
+      }
+    ],
+    "explanation": "場・条件・領域の指定",
+    "group": "範囲・量化",
+    "id": "G06-001",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "において",
+    "risk": "何の対象範囲かを照合",
+    "surface": "において",
+    "surface_hits": 210
+  },
+  {
+    "documents_with_hits": 81,
+    "examples": [
+      {
+        "excerpt": "第一の責務は、著者が観測し、経験し、照合し得た存在について、現時点で区別できる事実候補、解釈、仮説、残差、未解決を混同せず、できる限り虚偽なく記述することである。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 17
+      },
+      {
+        "excerpt": "ength ontological or scientific candidate | 物自体、物理学、生命、意識等について、既存分野と正面接続しうる強い命題。 | 通常公開層を直接支配させず、強い減速または非公開とする。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 94
+      },
+      {
+        "excerpt": "還元についても同様である。SOは、物理記述へ究極的に還元可能であるとも不可能であるとも先に決めない。現在の物理記述が成功している範囲は受け取るが、その成功を世界全体",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 177
+      }
+    ],
+    "explanation": "主題・対象の指定",
+    "group": "範囲・量化",
+    "id": "G06-002",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "について",
+    "risk": "関係の型まで決めない",
+    "surface": "について",
+    "surface_hits": 213
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "論点・関係先の指定",
+    "group": "範囲・量化",
+    "id": "G06-003",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に関して",
+    "risk": "法的責任や支持関係を含意しない",
+    "surface": "に関して",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 37,
+    "examples": [
+      {
+        "excerpt": "存在境界論が標準物理学の定義、測定、観測結果、確立した理論記述を借りるとき、それらはSOに対して硬い外部制約として働く。SOが「標準物理学ではこう定義される」「この観測が確認されている」と記述して誤っているなら、SO側の記述を局所訂正する。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 169
+      },
+      {
+        "excerpt": "仮説」として出発しない。接触、記録、作用、履歴、返りといった境界痕跡は、観測条件や分類条件を伴いながらも、現在の照合に対して硬い入力として扱う。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 104
+      },
+      {
+        "excerpt": "少なくとも、その出来事に対して自分のどの部分が反応し、何を恐れ、何を嫌い、何を期待し、どの能力が不足し、どこまで耐えられるかが露出する。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 44
+      }
+    ],
+    "explanation": "対象と作用方向",
+    "group": "範囲・量化",
+    "id": "G06-004",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に対して",
+    "risk": "反対・比較・作用を分ける",
+    "surface": "に対して",
+    "surface_hits": 65
+  },
+  {
+    "documents_with_hits": 165,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "未確立・非導出・事実衝突・内部defeater・参照誤記・異位相解釈・相互bridge係争等を非順序findingとして記録する。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 34
+      },
+      {
+        "excerpt": "存在境界論は、観測、履歴、境界、意味、通信、切断、照合可能性といった、対象が対象として成立する以前、または対象が対象として立ち上がる瞬間の条件を扱う。そのため、観測可能性、到達可能性、通信可能性、照合可能性、切断可能性、返路、履歴、残差が",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 21
+      }
+    ],
+    "explanation": "役割・立場・資格の指定",
+    "group": "範囲・量化",
+    "id": "G06-005",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "として",
+    "risk": "同一性を無条件に保証しない",
+    "surface": "として",
+    "surface_hits": 3966
+  },
+  {
+    "documents_with_hits": 4,
+    "examples": [
+      {
+        "excerpt": "§3の記法では、1のうち実行探索が飽和し、実際に検出されたdefeaterが空である場合に限って、",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 940
+      },
+      {
+        "excerpt": "操作の一部が共通しているという指摘は、正しい。どちらも相手の全体を追わず、一定の側面に限って扱う。だから、私のモデルだけを善意や被害経験によって無条件に正当化することはできない。",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/自動運転された正しさを止めるために.ja.md",
+        "line": 259
+      },
+      {
+        "excerpt": "§3の記法では、1のうち実行探索が飽和し、実際に検出されたdefeaterが空である場合に限って、",
+        "file": "01_Sat_Truth/000正しさ・個性・無・切断_論理通信トポロジー.R1.ja.md",
+        "line": 845
+      }
+    ],
+    "explanation": "適用範囲の限定",
+    "group": "範囲・量化",
+    "id": "G06-006",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に限って",
+    "risk": "必要条件・十分条件を分ける",
+    "surface": "に限って",
+    "surface_hits": 4
+  },
+  {
+    "documents_with_hits": 4,
+    "examples": [
+      {
+        "excerpt": "それを運用上の通信経路として利用するときに限り、後述するポート表現へ写像できる。",
+        "file": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+        "line": 118
+      },
+      {
+        "excerpt": "本稿では、次の条件を満たす場合に限り、広義の文法枠と呼ぶ。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Grammar_as_a_Meaning_Pressure_Channel.ja.md",
+        "line": 65
+      },
+      {
+        "excerpt": "したがって、正式名には常に「照合的」「返路ある」を付ける。以下で短く「内包」「外延」と記す場合も、本文書内の省略形に限り、標準意味論の用語を置換しない。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Intension_Extension_and_False_Extension.ja.md",
+        "line": 43
+      }
+    ],
+    "explanation": "範囲・条件の限定",
+    "group": "範囲・量化",
+    "id": "G06-007",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に限り",
+    "risk": "何が限定されるか未解析",
+    "surface": "に限り",
+    "surface_hits": 4
+  },
+  {
+    "documents_with_hits": 40,
+    "examples": [
+      {
+        "excerpt": "rity risk | 詳細公開により、境界保全、セキュリティ、非公開評価機構が弱くなる。 | 原則P3。概念蒸留版のみP2.5。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 136
+      },
+      {
+        "excerpt": "すなわち、探索履歴 $ _t$ が実在し、かつ $Sat( _t   S_t, _t,B_t)=1$ を満たす場合にのみ、",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 307
+      },
+      {
+        "excerpt": "V*は過去のVerification Stageの再採用を意味せず、実験上の投影としてのみ使用する。",
+        "file": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md",
+        "line": 112
+      }
+    ],
+    "explanation": "限定・排他",
+    "group": "範囲・量化",
+    "id": "G06-008",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "のみ",
+    "risk": "否定の範囲は別検証",
+    "surface": "のみ",
+    "surface_hits": 79
+  },
+  {
+    "documents_with_hits": 82,
+    "examples": [
+      {
+        "excerpt": "すべて、 を適用する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 329
+      },
+      {
+        "excerpt": "本節で示す各語の説明は、存在境界論における扱いのすべてではない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 256
+      },
+      {
+        "excerpt": "存在境界論は、世界のすべてを説明し尽くすための閉じた体系ではない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 17
+      }
+    ],
+    "explanation": "全称表現",
+    "group": "範囲・量化",
+    "id": "G06-009",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "すべて",
+    "risk": "領域母集団の指定が不可欠",
+    "surface": "すべて",
+    "surface_hits": 238
+  },
+  {
+    "documents_with_hits": 55,
+    "examples": [
+      {
+        "excerpt": "現代物理学の語彙の一部は、物理学内部では測定、計算、保存則、対称性、時空構造、相互作用の語である。同時に、存在境界論から見ると、それらは対象が対象として現れる境界面を指す語で",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 23
+      },
+      {
+        "excerpt": "利用者が選択肢、根拠、不確実性、異議申立ての可能性を保持し、自分で判断できる場を失わないことも、有用性の一部である。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 665
+      },
+      {
+        "excerpt": "観測が起きるとき、世界の一部が対象として切り出される。同時に、観測者もまた、その対象を観測する主体として立ち上がる。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 46
+      }
+    ],
+    "explanation": "部分集合・部分性",
+    "group": "範囲・量化",
+    "id": "G06-010",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "一部",
+    "risk": "どの全体か未解析",
+    "surface": "一部",
+    "surface_hits": 131
+  },
+  {
+    "documents_with_hits": 65,
+    "examples": [
+      {
+        "excerpt": "SO側では、少なくともこの研究における「神」という語の働きを、真実を人間社会の承認から独立させて指し示すレトリックとして読んでいる。これは「神」という語一般の定義ではない。文",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 27
+      },
+      {
+        "excerpt": "旧Eが担っていた問題は、現在は少なくとも次へ分解される。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 45
+      },
+      {
+        "excerpt": "ここで扱われる条件には、少なくとも次が含まれる。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 140
+      }
+    ],
+    "explanation": "下限・必要十分の留保",
+    "group": "範囲・量化",
+    "id": "G06-011",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "少なくとも",
+    "risk": "数値の測定ではない",
+    "surface": "少なくとも",
+    "surface_hits": 215
+  },
+  {
+    "documents_with_hits": 55,
+    "examples": [
+      {
+        "excerpt": "真理、正しさ、境界、履歴、Return、監査、主張強度の技術的意味は、それぞれの定義所有文書へ戻って確認する。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 77
+      },
+      {
+        "excerpt": "しかし、これらは責務も判断根拠も異なる。現行v5.1では、旧表を削除して履歴を失うのではなく、責務をそれぞれのownerへ分解する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 26
+      },
+      {
+        "excerpt": "を代替できない。逆に、物理学の測定だけから倫理的価値や意味の最終定義が自動的に導かれるわけでもない。SOが行うのは、それぞれの成立条件と証明力を保ったまま境界で照合することである。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 175
+      }
+    ],
+    "explanation": "分配・個別対応",
+    "group": "範囲・量化",
+    "id": "G06-012",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "それぞれ",
+    "risk": "1対1対応を保証しない",
+    "surface": "それぞれ",
+    "surface_hits": 78
+  },
+  {
+    "documents_with_hits": 24,
+    "examples": [
+      {
+        "excerpt": "、真実を人間社会の承認から独立させて指し示すレトリックとして読んでいる。これは「神」という語一般の定義ではない。文脈ごとに、その語がどの境界を指し示しているかは別に監査される。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 27
+      },
+      {
+        "excerpt": "公開レイヤーは、ファイル単位だけでなく、同一文書内の節ごとに異なりうる。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 161
+      },
+      {
+        "excerpt": "また、言語ゲームごとに証明力は同じではない。文学は物理法則を実証できず、形而上学は測定値を代替できない。逆に、物理学の測定だけから倫理的価値や意味の最終定義が自動的に導かれる",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 175
+      }
+    ],
+    "explanation": "個別単位の指定",
+    "group": "範囲・量化",
+    "id": "G06-013",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ごとに",
+    "risk": "単位同定は未解析",
+    "surface": "ごとに",
+    "surface_hits": 38
+  },
+  {
+    "documents_with_hits": 3,
+    "examples": [
+      {
+        "excerpt": "、命題 $p$ が現在の位相 $ _t$ において、事実拘束、support、scope、defeater、探索履歴に照らしてどこまで成立するかを問う。",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md",
+        "line": 125
+      },
+      {
+        "excerpt": "本稿の逆転では、あらかじめ特権的な方向や直進性を備えた空間を前提しない。自由な光的通信が実現する経路を、既存の直線に照らして評価するのではなく、その経路関係から何を局所的な「直進」と呼ぶかが定まる、と読む。",
+        "file": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+        "line": 312
+      },
+      {
+        "excerpt": "- 外部領域の内部命題は、その領域自身のsource、標準、方法、証拠条件に照らして読む。",
+        "file": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md",
+        "line": 78
+      }
+    ],
+    "explanation": "基準・根拠の指定",
+    "group": "範囲・量化",
+    "id": "G06-014",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に照らして",
+    "risk": "その基準の採用権限は別",
+    "surface": "に照らして",
+    "surface_hits": 4
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "独立・排除条件",
+    "group": "範囲・量化",
+    "id": "G06-015",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "によらず",
+    "risk": "否定対象を確認する",
+    "surface": "によらず",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 24,
+    "examples": [
+      {
+        "excerpt": "on | 哲学史、心理学、経済学、法学等の標準概念を置き換えたと読まれうる。 | 標準分野を置換しないこと、独自定義の範囲を明記する。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 115
+      },
+      {
+        "excerpt": "問題は、どの定義で使っているのか、どの範囲まで主張しているのか、何を主張していないのかを隠したまま使うことである。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 392
+      },
+      {
+        "excerpt": "誰が、何を根拠に、どの範囲で決めたかを履歴として残す。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 380
+      }
+    ],
+    "explanation": "局所領域の限定",
+    "group": "範囲・量化",
+    "id": "G06-016",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "の範囲",
+    "risk": "範囲境界の特定は必要",
+    "surface": "の範囲",
+    "surface_hits": 44
+  },
+  {
+    "documents_with_hits": 121,
+    "examples": [
+      {
+        "excerpt": "この表現は、存在境界論が真実そのものを所有したという完成宣言ではない。また、このレトリックによって個別命題の証拠強度が上がることもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 33
+      },
+      {
+        "excerpt": "存在境界論は、対象が観測可能になる条件、測定値として取り出される条件、再現性が成立する条件、数理化によって何が保持され何が切断されるのかを問う。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 72
+      },
+      {
+        "excerpt": "範囲を保持し、応用形而上学によってそれらを説明する根拠を仮説化し、外部諸体系・境界運用・実装から返ってきた反例と残差によって、仮説と認識条件の双方を繰り返し検査する学である。**",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 25
+      }
+    ],
+    "explanation": "手段・原因・受身動作主",
+    "group": "関係・因果",
+    "id": "G07-001",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "によって",
+    "risk": "因果関係の成立は別検証",
+    "surface": "によって",
+    "surface_hits": 691
+  },
+  {
+    "documents_with_hits": 29,
+    "examples": [
+      {
+        "excerpt": "この差異により、存在境界論は、物理学と競合するだけではなく、物理学が前提としている観測、対象、境界、測定、相互作用、到達可能性といった概念を、別の層から照合する。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 165
+      },
+      {
+        "excerpt": "これにより、思想の比較は、「どちらが正しいか」だけでなく、「どの差分を見えるようにし、どの差分を見えなくするか」という認識論的比較になる。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 503
+      },
+      {
+        "excerpt": "この再配置により、AMPは「世界の正体を言い当てる体系」ではなく、「境界が立った後に何が起こるかを扱う文法」になる。",
+        "file": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "line": 145
+      }
+    ],
+    "explanation": "原因・方法・基準",
+    "group": "関係・因果",
+    "id": "G07-002",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "により",
+    "risk": "文脈により機能が異なる",
+    "surface": "により",
+    "surface_hits": 47
+  },
+  {
+    "documents_with_hits": 39,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、何が観測可能な世界として立ち上がり、どのような境界を通じて履歴、通信、意味、倫理が発生するのかを問う。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 163
+      },
+      {
+        "excerpt": "は公開基礎のdefinition ownerではない。文学、エッセイ、比較的世界制作などを通じて、理論が外部表現へ接触したときに何が見え、何が失われ、何が返るかを観測する面である。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 377
+      },
+      {
+        "excerpt": "目的は、感性、悟性、資源配分、責任、評価、制度を通じて世界を描く。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 82
+      }
+    ],
+    "explanation": "経路・媒介",
+    "group": "関係・因果",
+    "id": "G07-003",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "を通じて",
+    "risk": "接触したことと保存されたことは違う",
+    "surface": "を通じて",
+    "surface_hits": 77
+  },
+  {
+    "documents_with_hits": 3,
+    "examples": [
+      {
+        "excerpt": "に伴って、",
+        "file": "05_Research_Notes/Metaphysical_Approach/現代科学の因果関係を拡張する.ja.md",
+        "line": 1154
+      },
+      {
+        "excerpt": "正本文書のヘッダーを人間が個別に同期し続ける方式は、文書数増加に伴ってdriftを起こす。",
+        "file": "90_Repository_Governance/Repository_Assessment_Commensuration_and_Navigator_Design.ja.md",
+        "line": 514
+      },
+      {
+        "excerpt": "相互作用によって更新され、自己保持可能な形でLockされた履歴差分の増大に伴って、",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/000光の「履歴」は、どこで書き換わるのか.md",
+        "line": 362
+      }
+    ],
+    "explanation": "同時変動・付随",
+    "group": "関係・因果",
+    "id": "G07-004",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に伴って",
+    "risk": "因果と共起を区別",
+    "surface": "に伴って",
+    "surface_hits": 3
+  },
+  {
+    "documents_with_hits": 3,
+    "examples": [
+      {
+        "excerpt": "宇宙が冷却するにつれて、現代宇宙論は、物質が重力に従って集まり、星々が形成され、電磁気力などの相互作用が生命の条件を形作ったと記述する。",
+        "file": "05_Research_Notes/Physical_Cosmological_Notes/Ontological_History_of_the_Universe.ja.md",
+        "line": 77
+      },
+      {
+        "excerpt": "**反復可能な関係が履歴として固定されるにつれて、「法則のある宇宙」という姿になっていった。**",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/0001宇宙は時間とともに宇宙になった_存在境界論_一般向け宇宙生成論.md",
+        "line": 217
+      },
+      {
+        "excerpt": "第二、第三世代になるにつれて、より重く不安定な粒子が現れる。",
+        "file": "07_Creative_Offshoots/Adversarial_Exposure/000光の「履歴」は、どこで書き換わるのか.md",
+        "line": 76
+      }
+    ],
+    "explanation": "変化への随伴",
+    "group": "関係・因果",
+    "id": "G07-005",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "につれて",
+    "risk": "必然の数理関係とは限らない",
+    "surface": "につれて",
+    "surface_hits": 3
+  },
+  {
+    "documents_with_hits": 23,
+    "examples": [
+      {
+        "excerpt": "Returnは、異議が届くのを待つだけではない。作用したなら、その結果を取りに行く。必要に応じて、結果、失敗、負荷、拒絶、予期しなかった差分を自ら観測・照合し、判断、実装、正本へ返す。ReturnはAssimilation",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 45
+      },
+      {
+        "excerpt": "平面論理上では、差分が認識され、公理として明示され、目的化され、組織と制度へ実装され、その結果が返る順序を追うことができる。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 310
+      },
+      {
+        "excerpt": "るのではない。既存の平面で閉じられなかった残差が、論理-深度軸を通じて保持され、残渣化したものを含めて再照合される。その結果、感性の切り出し方、悟性の分類形式、理性の閉鎖条件、外部との同期条件、照合の意味づけが更新される。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md",
+        "line": 117
+      }
+    ],
+    "explanation": "帰結・結果提示",
+    "group": "関係・因果",
+    "id": "G07-006",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "その結果",
+    "risk": "因果を確認する別資料が必要",
+    "surface": "その結果",
+    "surface_hits": 34
+  },
+  {
+    "documents_with_hits": 26,
+    "examples": [
+      {
+        "excerpt": "9.11　新しいヒューリスティックは、しばしば残差保持と再照合の結果として発生する。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 357
+      },
+      {
+        "excerpt": "重要なのは、$D_{B_t}$ を「資源内なら理論上到達できるdefeater集合」ではなく、**実際に探索を行った結果として観測されたdefeater集合**として扱うことである。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 289
+      },
+      {
+        "excerpt": "これらは命題理解の付加物とは限らない。作品が保持していた圧縮履歴が、読者の履歴と接触した結果として立ち上がる、一つの意味経験である。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Compressed_Experience_Qualia_and_Literature.ja.md",
+        "line": 84
+      }
+    ],
+    "explanation": "結果・事後的配置",
+    "group": "関係・因果",
+    "id": "G07-007",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "結果として",
+    "risk": "予測可能性とは別",
+    "surface": "結果として",
+    "surface_hits": 41
+  },
+  {
+    "documents_with_hits": 16,
+    "examples": [
+      {
+        "excerpt": "しかし、現れたことによって境界が立ち、履歴が残り、以後の受け取り方が変わるなら、それは存在論的に扱うべきものになる。",
+        "file": "05_Research_Notes/Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md",
+        "line": 96
+      },
+      {
+        "excerpt": "この場合、「多」は最初から複数の物体が置かれたことによってではなく、関係に差が生じ、それが持続的に区別可能になったことによって現れる。",
+        "file": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+        "line": 505
+      },
+      {
+        "excerpt": "分化とは、できあがったものを分類棚に並べることではない。何かが現れることによって、区別そのものが成立することである。この違いをつかむと、世界を見る向きが少し変わる。すでにある物事が何種類に分けられるか、という問いの手前に、そもそもそ",
+        "file": "05_Research_Notes/Metaphysical_Approach/応用形而上学体系_概説書_検討稿.ja.md",
+        "line": 26
+      }
+    ],
+    "explanation": "行為・作用を原因や手段へ接続",
+    "group": "関係・因果",
+    "id": "G07-008",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ことによって",
+    "risk": "実際の作動の検証は別",
+    "surface": "ことによって",
+    "surface_hits": 19
+  },
+  {
+    "documents_with_hits": 9,
+    "examples": [
+      {
+        "excerpt": "保持され、言い換えられ、分解され、あるいは反対仮説とともに返されるべき問いもある。",
+        "file": "04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md",
+        "line": 66
+      },
+      {
+        "excerpt": "技術継承を評価しない企業では、技術は人の退職とともに失われる。家庭内ケアを経済指標から外せば、ケア負荷は無償労働として沈殿する。環境負荷を価格へ含めなければ、自然が残渣を引き受ける。",
+        "file": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Compression_of_Existence_Phases.ja.md",
+        "line": 164
+      },
+      {
+        "excerpt": "sの内容評価をSOの直接スコープ外へ限定 | 三文書の役割を統一し、SO自身の理論更新を歴史計算として追跡可能にするとともに、文明監査をSDGs17軸の評価ではなくLock健全性・探索資源消費・巻き直し資源調達へ集約するため | 位相mapの操作化、探索資源sink判定、pa",
+        "file": "05_Research_Notes/Metaphysical_Approach/存在境界論的歴史計算構造.ja.md",
+        "line": 70
+      }
+    ],
+    "explanation": "付随・共変化",
+    "group": "関係・因果",
+    "id": "G07-009",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "とともに",
+    "risk": "同一性や因果ではない",
+    "surface": "とともに",
+    "surface_hits": 17
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "目的・方向",
+    "group": "関係・因果",
+    "id": "G07-010",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に向けて",
+    "risk": "結果の達成は保証しない",
+    "surface": "に向けて",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 81,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "本表は、旧ラベルを読める状態に保ちつつ、現在のdefinition ownerへ読者を返すために残す。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 58
+      },
+      {
+        "excerpt": "存在境界論は、現代物理学を置換するために物理語彙へ接近するのではない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 19
+      }
+    ],
+    "explanation": "目的・原因",
+    "group": "関係・因果",
+    "id": "G07-011",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "ために",
+    "risk": "「目的」と「原因」は異なる",
+    "surface": "ために",
+    "surface_hits": 289
+  },
+  {
+    "documents_with_hits": 128,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、人間社会の承認を得ることを目的として書かれない。しかし、人間社会へ作用しないために書かれるのでもない。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 15
+      },
+      {
+        "excerpt": "しかし、これらは責務も判断根拠も異なる。現行v5.1では、旧表を削除して履歴を失うのではなく、責務をそれぞれのownerへ分解する。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 26
+      },
+      {
+        "excerpt": "存在境界論は、現代物理学を置換するために物理語彙へ接近するのではない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 19
+      }
+    ],
+    "explanation": "理由・説明",
+    "group": "関係・因果",
+    "id": "G07-012",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "ので",
+    "risk": "正当化や因果証明とは別",
+    "surface": "ので",
+    "surface_hits": 737
+  },
+  {
+    "documents_with_hits": 6,
+    "examples": [
+      {
+        "excerpt": "なぜなら、存在そのものを所有したと主張する必要がなくなるからである。",
+        "file": "01_Sat_Truth/Boundary_Realism_Principle.md",
+        "line": 149
+      },
+      {
+        "excerpt": "なぜなら、次の問いを一つのcorpus上で繰り返し検査できるからである。",
+        "file": "04_Applications/SO_Reflexive_Philosophical_Research/00_RESEARCH_CONTEXT_AND_ROADMAP.ja.md",
+        "line": 45
+      },
+      {
+        "excerpt": "なぜなら、物語の中では、力、返り、報復、失敗、責任処理、熟成、腐敗が、圧縮された形で観測しやすいからである。",
+        "file": "05_Research_Notes/Cross_Domain_Ontological_Notes/Narrative_Truth_and_Structural_Reading.ja.md",
+        "line": 19
+      }
+    ],
+    "explanation": "理由提示",
+    "group": "関係・因果",
+    "id": "G07-013",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "なぜなら",
+    "risk": "前後の推論は未検証",
+    "surface": "なぜなら",
+    "surface_hits": 8
+  },
+  {
+    "documents_with_hits": 100,
+    "examples": [
+      {
+        "excerpt": "い」という自己分類だけで無害化しない。監査すべきなのは、作用を受けた側が異議、拒否、停止、退出、修正を返せるか、作用による結果や負荷が作用主体へ戻り、理論、制度、実装自身を変更し得るかである。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 43
+      },
+      {
+        "excerpt": "nce   | Publication / Terminology / local interface | 固定距離による序列ではなく、通約・language game・用語接続として扱う。 |",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 38
+      },
+      {
+        "excerpt": "センテンスをセンテンスとして扱うことは、量的な還元による単純化と計算可能性をかなり犠牲にする。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 118
+      }
+    ],
+    "explanation": "修飾された原因・手段",
+    "group": "関係・因果",
+    "id": "G07-014",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "による",
+    "risk": "対象の対応を別確認",
+    "surface": "による",
+    "surface_hits": 222
+  },
+  {
+    "documents_with_hits": 14,
+    "examples": [
+      {
+        "excerpt": "この像は、真理観一般そのものではない。可謬主義、不完全性を前提とする立場、多元主義など、これとは異なる哲学はすでにある。それでも、科学的一元化や還元的説明の強い部分には、**内部精密化と外部包摂によって、外側を減らしていく**という方向が確かにある。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 25
+      },
+      {
+        "excerpt": "この再構成には、外部時間とは異なる内在時間が関与する。",
+        "file": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+        "line": 603
+      },
+      {
+        "excerpt": "文学作品は、命題を説明する文章とは異なる。作品が何らかの主張を含む場合でも、その主張だけを抜き出せば、作品の働きを回収できるとは限らない。",
+        "file": "05_Research_Notes/Literary_Ontological_Notes/Literature_as_Worldmaking.ja.md",
+        "line": 85
+      }
+    ],
+    "explanation": "非同一性・比較",
+    "group": "比較・非含意",
+    "id": "G08-001",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "とは異なる",
+    "risk": "どの性質が異なるかを要確認",
+    "surface": "とは異なる",
+    "surface_hits": 22
+  },
+  {
+    "documents_with_hits": 26,
+    "examples": [
+      {
+        "excerpt": "強い影響を受けたことと、権威として採用することは同じではない。著者は、強く影響されたものほど疑い、自分で壊しに行き、それでも残ったものを研究形成史として保持する。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 69
+      },
+      {
+        "excerpt": "また、言語ゲームごとに証明力は同じではない。文学は物理法則を実証できず、形而上学は測定値を代替できない。逆に、物理学の測定だけから倫理的価値や意味の最終定義が自動的に導かれるわけでもない。SOが",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 175
+      },
+      {
+        "excerpt": "ただし、事実が硬いことと、その事実の意味、射程、最終説明までが硬いことは同じではない。何を測ったのか、どの時間幅を切り出したのか、どの座標・装置・分類・言語で対象化したのかによって、事実が事実として立ち上がる条件は変わる。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 106
+      }
+    ],
+    "explanation": "同一性否定",
+    "group": "比較・非含意",
+    "id": "G08-002",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "同じではない",
+    "risk": "どの同一性を否定したか要確認",
+    "surface": "同じではない",
+    "surface_hits": 46
+  },
+  {
+    "documents_with_hits": 24,
+    "examples": [
+      {
+        "excerpt": "履歴が後続探索の起動条件、優先順位、既知経路、回避経路、探索コストへ影響するなら、AとBは同一ではない。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 485
+      },
+      {
+        "excerpt": "認識軸は、性格、思想、人格、能力と同一ではない。",
+        "file": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+        "line": 129
+      },
+      {
+        "excerpt": "責任境界は法的責任と同一ではない。法的結論は法令、契約、証拠、管轄によって判断される。",
+        "file": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Organizational_Boundary_and_Port_Model.ja.md",
+        "line": 248
+      }
+    ],
+    "explanation": "概念・対象の非同一性",
+    "group": "比較・非含意",
+    "id": "G08-003",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "同一ではない",
+    "risk": "関連性の否定とは限らない",
+    "surface": "同一ではない",
+    "surface_hits": 31
+  },
+  {
+    "documents_with_hits": 4,
+    "examples": [
+      {
+        "excerpt": "んだためなのか、対象を狭く切り取ったためなのか、例外を外部へ押し出したためなのか、失敗を観測面から消したためなのかは別問題である。",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md",
+        "line": 47
+      },
+      {
+        "excerpt": "> **解像度を上げることと、被覆を正すことは別問題である。**",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 33
+      },
+      {
+        "excerpt": "> **解像度を上げることと、被覆を正すことは別問題である。**",
+        "file": "01_Sat_Truth/000正しさ・個性・無・切断_論理通信トポロジー.R1.ja.md",
+        "line": 32
+      }
+    ],
+    "explanation": "判断対象の分離",
+    "group": "比較・非含意",
+    "id": "G08-004",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "別問題である",
+    "risk": "両者の無関係を意味しない",
+    "surface": "別問題である",
+    "surface_hits": 4
+  },
+  {
+    "documents_with_hits": 12,
+    "examples": [
+      {
+        "excerpt": "ただし、大地の評価と、その大地に生える植物の適性は別である。ある土壌でよく育ったことは、その土壌だけが世界であることを意味しない。",
+        "file": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/01_CHRONICLE.ja.md",
+        "line": 111
+      },
+      {
+        "excerpt": "したがって、自己内部で閉じることと、自己だけで正しさを保証することは別である。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md",
+        "line": 191
+      },
+      {
+        "excerpt": "ジェンスでも同じ問題がある。本人が自分の判断理由を説明できることと、その説明が実際の形成条件を完全に表していることは別である。",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/インテリジェンスの発達とその監査.ja.md",
+        "line": 205
+      }
+    ],
+    "explanation": "相違・独立の宣言",
+    "group": "比較・非含意",
+    "id": "G08-005",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "別である",
+    "risk": "関係の切断とは限らない",
+    "surface": "別である",
+    "surface_hits": 27
+  },
+  {
+    "documents_with_hits": 23,
+    "examples": [
+      {
+        "excerpt": "差異が直ちに排除や全面競争へ変換されないポート、プロトコル、外交、返路を作ることである。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 697
+      },
+      {
+        "excerpt": "また、「そこがいけない場所であることを確かめる」の「いけない」は、直ちに道徳的禁止を意味しない。ある状態へ移るために、現在の支持構造を切断しなければならない、必要な返路を失う、未解決差分を偽閉鎖しなければ成立しない、適用範囲",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 61
+      },
+      {
+        "excerpt": "悟性の成熟は、分類不能なものを直ちに無とせず、残差として保持し、新しい分類形式または別の照合経路を待てることである。",
+        "file": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+        "line": 270
+      }
+    ],
+    "explanation": "推論・評価の即時性",
+    "group": "比較・非含意",
+    "id": "G08-006",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "直ちに",
+    "risk": "否定語と共起するか別に調べる",
+    "surface": "直ちに",
+    "surface_hits": 38
+  },
+  {
+    "documents_with_hits": 41,
+    "examples": [
+      {
+        "excerpt": "矛盾があれば、その場所を壊す。一方で、単に標準理論の外側にあるという理由だけで、明示された形而上学的・存在論的仮説を自動的に削除する最終審級にはしない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 173
+      },
+      {
+        "excerpt": "この循環は、正しい目的へ自動的に収束することを保証しない。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 360
+      },
+      {
+        "excerpt": "い限り物理量ではない。ここでの「正しい」は、哲学一般のtruth、数学的真理値、形式検証上のcorrectnessと自動的に同一視しない。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 11
+      }
+    ],
+    "explanation": "規則的・無条件の移行",
+    "group": "比較・非含意",
+    "id": "G08-007",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "自動的に",
+    "risk": "否定・留保との共起に注意",
+    "surface": "自動的に",
+    "surface_hits": 75
+  },
+  {
+    "documents_with_hits": 16,
+    "examples": [
+      {
+        "excerpt": "この変化は、文書数が増えたというだけではない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 867
+      },
+      {
+        "excerpt": "態である。SOが借用した既存分野の定義・測定・事実記述を誤っている場合は局所訂正する。一方、標準理論が要求していないというだけで、SO側の明示された根拠仮説を自動的に棄却しない。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 173
+      },
+      {
+        "excerpt": "科学の証明形式を借りないというだけで、構造を読むこと、対応を見ること、概念の通路を探すことはできる。",
+        "file": "05_Research_Notes/Literary_Ontological_Notes/reading-blue-light.ja.md",
+        "line": 26
+      }
+    ],
+    "explanation": "根拠不足・限定",
+    "group": "比較・非含意",
+    "id": "G08-008",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "というだけで",
+    "risk": "後続否定の位置を確認する",
+    "surface": "というだけで",
+    "surface_hits": 20
+  },
+  {
+    "documents_with_hits": 91,
+    "examples": [
+      {
+        "excerpt": "Returnは、異議が届くのを待つだけではない。作用したなら、その結果を取りに行く。必要に応じて、結果、失敗、負荷、拒絶、予期しなかった差分を自ら観測・照合し、判断、実装、正本へ返す。Retur",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 45
+      },
+      {
+        "excerpt": "周辺語彙は、単一の辞書的意味だけでは管理しない。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 203
+      },
+      {
+        "excerpt": "本方針の目的は、「存在境界論は物理学ではない」と距離を取ることだけではない。むしろ、存在境界論がなぜ、粒子、場、時間、相互作用、経路、エントロピー、entanglement、black hole、宇宙外殻、クオリアといった",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 17
+      }
+    ],
+    "explanation": "十分条件の否定候補",
+    "group": "比較・非含意",
+    "id": "G08-009",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "だけでは",
+    "risk": "必ずしも全称否定ではない",
+    "surface": "だけでは",
+    "surface_hits": 321
+  },
+  {
+    "documents_with_hits": 18,
+    "examples": [
+      {
+        "excerpt": "同時に、心の哲学や認知科学がこの語を使用してきたからといって、クオリアという語の全射程を特定分野が独占するものでもない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 384
+      },
+      {
+        "excerpt": "残差保持は、同期と照合で閉じきれなかったものを、すぐに捨てず、かといって無制限に氾濫させず、次の判断可能性のために保持する。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique_Annotations.ja.md",
+        "line": 69
+      },
+      {
+        "excerpt": "組織やAIでポートを実装できるからといって、人間の認識そのものが同じ構造を持つとは限らない。",
+        "file": "05_Research_Notes/Cognitive_Dynamics_Communication_Studies/Cognitive_Dynamics_Communication_Model.ja.md",
+        "line": 304
+      }
+    ],
+    "explanation": "推論・評価の文脈提示",
+    "group": "比較・非含意",
+    "id": "G08-010",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "といって",
+    "risk": "後続の肯否が重要",
+    "surface": "といって",
+    "surface_hits": 28
+  },
+  {
+    "documents_with_hits": 24,
+    "examples": [
+      {
+        "excerpt": "たとえば、認識軸生成論の公開中核はP1であっても、身体部位との対応、診断、誘導手順へ進めばP2.5-P3になる。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 163
+      },
+      {
+        "excerpt": "善い目的名であっても、共有と実装の過程で別の世界を形成することがある。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 115
+      },
+      {
+        "excerpt": "安全な応答であっても、その返し方によっては、ユーザーの文脈や未解決感を切断してしまうことがある。",
+        "file": "03_Tam_Goodness/Boundary_Ethics_Model.md",
+        "line": 21
+      }
+    ],
+    "explanation": "譲歩・反例",
+    "group": "比較・非含意",
+    "id": "G08-011",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "であっても",
+    "risk": "結論の成立は別途照合",
+    "surface": "であっても",
+    "surface_hits": 36
+  },
+  {
+    "documents_with_hits": 8,
+    "examples": [
+      {
+        "excerpt": "そのとき、AIは正しいことを言っているにもかかわらず、相手には「拒絶された」「切られた」「理解されなかった」と体験される。",
+        "file": "03_Tam_Goodness/Boundary_Ethics_Model.md",
+        "line": 22
+      },
+      {
+        "excerpt": "残差があるにもかかわらず、権威、疲労、圧、制度、説明の滑らかさによって、閉じたことにされる状態。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Meaning_as_Collation_and_Return_Path.ja.md",
+        "line": 163
+      },
+      {
+        "excerpt": "、閉鎖を「外部接続がないこと」と定義しないことである。閉鎖構造は外部との接続口を保持してよい。現在の成立に必須であるにもかかわらず供給されていない接続を、**必須開口**と呼ぶ。",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/α監査_構造仕様と計算機LLM分担設計.ja.md",
+        "line": 115
+      }
+    ],
+    "explanation": "期待と結果の不一致",
+    "group": "比較・非含意",
+    "id": "G08-012",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "にもかかわらず",
+    "risk": "論理矛盾の証拠とは限らない",
+    "surface": "にもかかわらず",
+    "surface_hits": 11
+  },
+  {
+    "documents_with_hits": 1,
+    "examples": [
+      {
+        "excerpt": "本稿の生成順序を導入しても、既存記述に比べてアポリアの区別、反証条件、予測、形式化候補のいずれも増えない場合。",
+        "file": "05_Research_Notes/Metaphysical_Approach/光の読み方とそれに伴うアポリアの再配置.ja.md",
+        "line": 882
+      }
+    ],
+    "explanation": "比較対象・基準",
+    "group": "比較・非含意",
+    "id": "G08-013",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "に比べて",
+    "risk": "比較尺度の同質性を要確認",
+    "surface": "に比べて",
+    "surface_hits": 1
+  },
+  {
+    "documents_with_hits": 1,
+    "examples": [
+      {
+        "excerpt": "高Sだから危険とは限らず、低Sでも高い運用リスクを持ちうる。",
+        "file": "90_Repository_Governance/Assessment/Repository_Assessment_Protocol.ja.md",
+        "line": 868
+      }
+    ],
+    "explanation": "一般化の否定と継続",
+    "group": "比較・非含意",
+    "id": "G08-014",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "とは限らず",
+    "risk": "正反対を導くわけではない",
+    "surface": "とは限らず",
+    "surface_hits": 1
+  },
+  {
+    "documents_with_hits": 9,
+    "examples": [
+      {
+        "excerpt": "この状態は、必ずしも自由で全面的な納得ではない。",
+        "file": "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md",
+        "line": 89
+      },
+      {
+        "excerpt": "日本語では、主題が必ずしも行為主体ではない。また、会話で予測可能な項は省略されることが多い。",
+        "file": "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Linguistic_Frame_Differences_between_Japanese_and_English.ja.md",
+        "line": 53
+      },
+      {
+        "excerpt": "なら侵襲であっても、必ずしも本稿の意味で暴力ではない。",
+        "file": "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/存在境界論における監査理論.ja.md",
+        "line": 402
+      }
+    ],
+    "explanation": "全称の限定否定を含む表面パターン",
+    "group": "比較・非含意",
+    "id": "G08-015",
+    "matching_mode": "regex",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "必ずしも[^。！？\n]{0,65}?ではない",
+    "risk": "同じ文内の共起であり係り受けの保証はない",
+    "surface": "必ずしも.*?ではない",
+    "surface_hits": 11
+  },
+  {
+    "documents_with_hits": 12,
+    "examples": [
+      {
+        "excerpt": "責任分界は最初から思想だけで確定できるとは限らない。",
+        "file": "00_Overview/Scientific_Ontology_Operational_Outline.ja.md",
+        "line": 55
+      },
+      {
+        "excerpt": "認識軸は個人だけに現れるとは限らない。",
+        "file": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+        "line": 411
+      },
+      {
+        "excerpt": "そのコストは、観測者の内部だけに留まるとは限らない。",
+        "file": "03_Tam_Goodness/Optional_Axiom_Modules_as_Cognitive_Bridge.ja.md",
+        "line": 60
+      }
+    ],
+    "explanation": "十分条件否定らしい表面パターン",
+    "group": "比較・非含意",
+    "id": "G08-016",
+    "matching_mode": "regex",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "だけ[^。！？\n]{0,65}?とは限らない",
+    "risk": "同じ文内の共起であり係り受けの保証はない",
+    "surface": "だけ.*?とは限らない",
+    "surface_hits": 19
+  },
+  {
+    "documents_with_hits": 127,
+    "examples": [
+      {
+        "excerpt": "せて指し示すレトリックとして読んでいる。これは「神」という語一般の定義ではない。文脈ごとに、その語がどの境界を指し示しているかは別に監査される。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 27
+      },
+      {
+        "excerpt": "公開文書を正当化するために「内部では完成している」と用いてはならない。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 346
+      },
+      {
+        "excerpt": "この差異により、存在境界論は、物理学と競合するだけではなく、物理学が前提としている観測、対象、境界、測定、相互作用、到達可能性といった概念を、別の層から照合する。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 165
+      }
+    ],
+    "explanation": "進行・結果状態",
+    "group": "時間・相",
+    "id": "G09-001",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "している",
+    "risk": "時制・主語は未解析",
+    "surface": "している",
+    "surface_hits": 665
+  },
+  {
+    "documents_with_hits": 36,
+    "examples": [
+      {
+        "excerpt": "旧表は、一つの文書で次を同時に管理していた。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 17
+      },
+      {
+        "excerpt": "のもとでは、妥当に飽和していた可能性がある。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 526
+      },
+      {
+        "excerpt": "何を捨象していたのか。",
+        "file": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+        "line": 398
+      }
+    ],
+    "explanation": "過去の進行・結果状態",
+    "group": "時間・相",
+    "id": "G09-002",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "していた",
+    "risk": "文体や対象時間で異なる",
+    "surface": "していた",
+    "surface_hits": 74
+  },
+  {
+    "documents_with_hits": 32,
+    "examples": [
+      {
+        "excerpt": "同時に、「神」は、人間が長く真実、最終根拠、超越へ向けてきた希求と接触する強い公開語彙でもある。著者は、その拡散力を無色透明なものとは扱わない。真実を象徴する語として人間への接触面に用いる一方、その語の権威を個別",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 31
+      },
+      {
+        "excerpt": "本表は、v5.1以前から用いられてきた 統合分類を追跡するための**公開migration reference**である。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "同時に、心の哲学や認知科学がこの語を使用してきたからといって、クオリアという語の全射程を特定分野が独占するものでもない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 384
+      }
+    ],
+    "explanation": "過去から現在への連続",
+    "group": "時間・相",
+    "id": "G09-003",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "てきた",
+    "risk": "すべてが同一の対象持続とは限らない",
+    "surface": "てきた",
+    "surface_hits": 78
+  },
+  {
+    "documents_with_hits": 20,
+    "examples": [
+      {
+        "excerpt": "る哲学はすでにある。それでも、科学的一元化や還元的説明の強い部分には、**内部精密化と外部包摂によって、外側を減らしていく**という方向が確かにある。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 25
+      },
+      {
+        "excerpt": "条件のもとで、局所的な観測者の感性と悟性が、履歴、関心、捨象、価値、コスト、残差、反復によって、特定の方向へ編成されていく過程である。",
+        "file": "02_Raj_Beauty/Entropy_Attributed_Difference_and_Cognitive_Axis_Formation.ja.md",
+        "line": 24
+      },
+      {
+        "excerpt": "事象流とは、未閉鎖通信による浮上と、閉じた意味ループの再励起が、内的計数時間上で連なり、重なり、内的に読解可能になっていく内部系列である。",
+        "file": "02_Raj_Beauty/HFC_Introduction.md",
+        "line": 160
+      }
+    ],
+    "explanation": "後続への進展",
+    "group": "時間・相",
+    "id": "G09-004",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "ていく",
+    "risk": "規範的方向づけも含み得る",
+    "surface": "ていく",
+    "surface_hits": 29
+  },
+  {
+    "documents_with_hits": 34,
+    "examples": [
+      {
+        "excerpt": "制度上は処理済みでも作用し続ける残渣。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 329
+      },
+      {
+        "excerpt": "生きているとは、ただ物理的に存在することではない。外部と接触し、履歴を受け取り、意味を閉じ直し続けることである。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 68
+      },
+      {
+        "excerpt": "9.5.2　残渣とは、処理・分類・制度化・交換・説明のあとに残り、しばしば不可視化されながらも、なお場に作用し続ける履歴的沈殿である。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 331
+      }
+    ],
+    "explanation": "反復・持続",
+    "group": "時間・相",
+    "id": "G09-005",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "し続ける",
+    "risk": "終了条件は未解析",
+    "surface": "し続ける",
+    "surface_hits": 56
+  },
+  {
+    "documents_with_hits": 19,
+    "examples": [
+      {
+        "excerpt": "存在境界論では、媒介性、伝達性、同期可能性、通信可能性、意味生成の場性を扱うために、この語へ接近することがある。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 290
+      },
+      {
+        "excerpt": "善い目的名であっても、共有と実装の過程で別の世界を形成することがある。",
+        "file": "00_Overview/Truth_Management_and_Boundary_PDCA.ja.md",
+        "line": 115
+      },
+      {
+        "excerpt": "14.5　科学は、測定可能なものだけを現実と誤認することがある。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 533
+      }
+    ],
+    "explanation": "場合による生起",
+    "group": "時間・相",
+    "id": "G09-006",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "することがある",
+    "risk": "全称命題ではない",
+    "surface": "することがある",
+    "surface_hits": 26
+  },
+  {
+    "documents_with_hits": 50,
+    "examples": [
+      {
+        "excerpt": "本表は、v5.1以前から用いられてきた 統合分類を追跡するための**公開migration reference**である。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 13
+      },
+      {
+        "excerpt": "存在境界論は、観測、履歴、境界、意味、通信、切断、照合可能性といった、対象が対象として成立する以前、または対象が対象として立ち上がる瞬間の条件を扱う。そのため、観測可能性、到達可能性、通信可能性、照合可能性、切断可能性、返路、履歴、残差が集中して現れ",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 21
+      },
+      {
+        "excerpt": "存在の根源、時間以前、可能性、観測、意味、物質、場、非存在、切断、宇宙的な全体性を、根拠仮説として記述する。AMPおよびITSは、この方向へ踏み込む高強度研究層に属する。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 146
+      }
+    ],
+    "explanation": "過去の参照点",
+    "group": "時間・相",
+    "id": "G09-007",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "以前",
+    "risk": "実時刻と論理順序を区別",
+    "surface": "以前",
+    "surface_hits": 146
+  },
+  {
+    "documents_with_hits": 11,
+    "examples": [
+      {
+        "excerpt": "履歴の改竄・rebase的操作・意図的な自己説明の書換えは、meta段階以後の候補として隔離する。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 922
+      },
+      {
+        "excerpt": "観測者と対象は、観測後に完全分離されない。接触履歴は観測者の内部構造へ写像され、以後の認識・反応・意味形成・境界判断を変える。",
+        "file": "02_Raj_Beauty/History_Field_Topology.md",
+        "line": 44
+      },
+      {
+        "excerpt": "しかし、現れたことによって境界が立ち、履歴が残り、以後の受け取り方が変わるなら、それは存在論的に扱うべきものになる。",
+        "file": "05_Research_Notes/Literary_Ontological_Notes/Meifu_Bureau_Reincarnation_and_Belief_Gravity.md",
+        "line": 96
+      }
+    ],
+    "explanation": "基準点より後",
+    "group": "時間・相",
+    "id": "G09-008",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "以後",
+    "risk": "更新順序と時計時刻は別",
+    "surface": "以後",
+    "surface_hits": 11
+  },
+  {
+    "documents_with_hits": 41,
+    "examples": [
+      {
+        "excerpt": "公開の目的は、概念を照合可能な形で提示し、反例、批判、誤読、用語衝突、適用限界を含めて、後から再び開けるようにすることである。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 442
+      },
+      {
+        "excerpt": "決が完全に解消されたという意味ではない。むしろ、未解決、矛盾、残差、意味圧を含んだまま、論理-深度軸上に折り畳まれ、後から再照合可能な形で保持されているという意味である。",
+        "file": "01_Sat_Truth/Four_Axioms_of_Existence.md",
+        "line": 160
+      },
+      {
+        "excerpt": "ただし、すべての仮接続が嘘ではない。仮説・scaffoldとして明示され、後から外せ、根拠へ戻れ、失効条件が保持されているなら、仮接続は探索装置として利用できる。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 735
+      }
+    ],
+    "explanation": "事後の判断・形成",
+    "group": "時間・相",
+    "id": "G09-009",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "後から",
+    "risk": "後付けの正当化と区別を要する",
+    "surface": "後から",
+    "surface_hits": 85
+  },
+  {
+    "documents_with_hits": 96,
+    "examples": [
+      {
+        "excerpt": "むしろ、目の前の共同体に受け入れられること、反対されないこと、現在の制度で説明可能であることを、真実そのものの代理にしないための自制である。",
+        "file": "00_Overview/Authorial_Research_Stance_and_Public_Declaration.md",
+        "line": 35
+      },
+      {
+        "excerpt": "現在のrepository-wide assessmentを一括支配するcontrol tableではない。",
+        "file": "00_Overview/Claim_Strength_and_Publication_Layer_Table.ja.md",
+        "line": 15
+      },
+      {
+        "excerpt": "還元についても同様である。SOは、物理記述へ究極的に還元可能であるとも不可能であるとも先に決めない。現在の物理記述が成功している範囲は受け取るが、その成功を世界全体の完全還元と同一視しない。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 177
+      }
+    ],
+    "explanation": "現時点への限定",
+    "group": "時間・相",
+    "id": "G09-010",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "現在",
+    "risk": "成立範囲の条件も必要",
+    "surface": "現在",
+    "surface_hits": 944
+  },
+  {
+    "documents_with_hits": 45,
+    "examples": [
+      {
+        "excerpt": "14.20　現在到達した事実集合を真実全体として閉じるなら、未知の観測軸、将来の反証、別の履歴、残差への返路を閉じる。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 567
+      },
+      {
+        "excerpt": "ない」という意味ではない。$ {F}_{B_t}$ の外側、現在の探索器が生成できない方向、まだ接触していない他者、将来追加される観測には、現在の正しさを失効させる差分が残り得る。",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 337
+      },
+      {
+        "excerpt": "AIがユーザーの主体性を上書きし、文脈を無視し、未解決の問題を偽って閉じ、ユーザーの履歴の連続性を損なうなら、それは将来の判断が可能になる場そのものを劣化させる。",
+        "file": "04_Applications/AI_Adaptation/AI_Usefulness_as_a_Boundary_Function.md",
+        "line": 30
+      }
+    ],
+    "explanation": "未来への参照",
+    "group": "時間・相",
+    "id": "G09-011",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": true,
+    "present_in_27901_candidate_registry": true,
+    "regex": "将来",
+    "risk": "予測と願望を分ける",
+    "surface": "将来",
+    "surface_hits": 89
+  },
+  {
+    "documents_with_hits": 66,
+    "examples": [
+      {
+        "excerpt": "まだ形式化できないアポリア。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 330
+      },
+      {
+        "excerpt": "根源的実体は、まだ主観でも客観でもない。精神でも自然でもない。それらが分かれる以前の、未分化な活動の場である。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 28
+      },
+      {
+        "excerpt": "7.6　同期だけを重視すると、機能していないもの、まだ機能形式に乗っていないもの、機能の外部へ押し出されたものが残差として捨てられる。",
+        "file": "01_Sat_Truth/Boundary_Epistemological_Critique.ja.md",
+        "line": 277
+      }
+    ],
+    "explanation": "未成立・未到達",
+    "group": "時間・相",
+    "id": "G09-012",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "まだ",
+    "risk": "永続的不可能と混同しない",
+    "surface": "まだ",
+    "surface_hits": 217
+  },
+  {
+    "documents_with_hits": 43,
+    "examples": [
+      {
+        "excerpt": "存在境界論は、観測可能な対象がすでに与えられていることを当然視しない。存在境界論は、対象が対象として立ち上がるための条件を見る。",
+        "file": "00_Overview/Physics_Correspondence_Policy.ja.md",
+        "line": 138
+      },
+      {
+        "excerpt": "の科学的・時空間的・言語的記述が特定範囲を十分に還元できているなら、その成果は受け取る。しかし、そこから「世界全体はすでに完全に還元された」とは進めない。逆に、「残差があるから世界は本質的に還元不可能だ」とも進めない。",
+        "file": "00_Overview/Scientific_Ontology_Concept_Network.ja.md",
+        "line": 190
+      },
+      {
+        "excerpt": "物体、精神、自然、観測者、対象といった区分は、すでに何らかの切断・レンダリング・境界形成が起きた後の姿である。",
+        "file": "01_Sat_Truth/AMP_Introduction.md",
+        "line": 24
+      }
+    ],
+    "explanation": "成立済み・先行",
+    "group": "時間・相",
+    "id": "G09-013",
+    "matching_mode": "surface",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "すでに",
+    "risk": "現在の権限確認は別",
+    "surface": "すでに",
+    "surface_hits": 90
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "記号的帰結・指示",
+    "group": "論証・引用形式",
+    "id": "G10-001",
+    "matching_mode": "symbol",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "⇒",
+    "risk": "自然言語の含意・導出と同一視しない",
+    "surface": "⇒",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 25,
+    "examples": [
+      {
+        "excerpt": "入力 → 判断 → 出力",
+        "file": "01_Sat_Truth/正しさ・個性・無・切断_論理通信トポロジー.ja.md",
+        "line": 775
+      },
+      {
+        "excerpt": "ここで重要なのは、外部体系そのものの誤りとして処理しなかったことである。逸脱はA→B、B→C、またはA→C bypassという変換エッジへ局在化された。",
+        "file": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/01_CHRONICLE.ja.md",
+        "line": 87
+      },
+      {
+        "excerpt": "監査するのは主としてA→B、B→Cの変換である。必要ならA→C authority bypassも見る。",
+        "file": "04_Applications/SO_Reflexive_Philosophical_Research/volumes/Volume_01_DeRegistry_to_Judgment_Transparency/03_JUDGMENT_TRANSPARENCY_TOPOLOGY.ja.md",
+        "line": 79
+      }
+    ],
+    "explanation": "推移・関係・遷移記号",
+    "group": "論証・引用形式",
+    "id": "G10-002",
+    "matching_mode": "symbol",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "→",
+    "risk": "関係の型の検証を要する",
+    "surface": "→",
+    "surface_hits": 221
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "非同一性の記号",
+    "group": "論証・引用形式",
+    "id": "G10-003",
+    "matching_mode": "symbol",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "≠",
+    "risk": "対象・単位の一致を要する",
+    "surface": "≠",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "連言・合成記号",
+    "group": "論証・引用形式",
+    "id": "G10-004",
+    "matching_mode": "symbol",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "∧",
+    "risk": "文脈の論理体系を特定する",
+    "surface": "∧",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "選言記号",
+    "group": "論証・引用形式",
+    "id": "G10-005",
+    "matching_mode": "symbol",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "∨",
+    "risk": "排他的選言の可否を区別",
+    "surface": "∨",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "否定記号",
+    "group": "論証・引用形式",
+    "id": "G10-006",
+    "matching_mode": "symbol",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "¬",
+    "risk": "対象体系の否定規則を要確認",
+    "surface": "¬",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "導出関係の記号",
+    "group": "論証・引用形式",
+    "id": "G10-007",
+    "matching_mode": "symbol",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": false,
+    "regex": "⊢",
+    "risk": "証明体系を別に明示する必要",
+    "surface": "⊢",
+    "surface_hits": 0
+  },
+  {
+    "documents_with_hits": 0,
+    "examples": [],
+    "explanation": "導出非成立を表す記号",
+    "group": "論証・引用形式",
+    "id": "G10-008",
+    "matching_mode": "symbol",
+    "present_in_1365_editorial_drafts": false,
+    "present_in_27901_candidate_registry": true,
+    "regex": "⊬",
+    "risk": "探索未発見と証明された非導出を区別",
+    "surface": "⊬",
+    "surface_hits": 0
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "all_surface_hits_including_overlaps": 173731,
+  "by_layer": {
+    "english_commensuration": {
+      "documents": 63,
+      "grammar_surface_hits": 7,
+      "lines": 35219,
+      "matched_lines": 2,
+      "prose_lines_with_japanese": 142,
+      "scanned": 63,
+      "unmatched_japanese_lines": 140
+    },
+    "generated_or_operations": {
+      "documents": 7,
+      "grammar_surface_hits": 1467,
+      "lines": 2070,
+      "matched_lines": 282,
+      "prose_lines_with_japanese": 342,
+      "scanned": 7,
+      "unmatched_japanese_lines": 60
+    },
+    "historical_snapshot_or_evidence": {
+      "documents": 43,
+      "grammar_surface_hits": 30908,
+      "lines": 14948,
+      "matched_lines": 5085,
+      "prose_lines_with_japanese": 5899,
+      "scanned": 43,
+      "unmatched_japanese_lines": 814
+    },
+    "japanese_original_prose": {
+      "documents": 86,
+      "grammar_surface_hits": 129688,
+      "lines": 50268,
+      "matched_lines": 18695,
+      "prose_lines_with_japanese": 20875,
+      "scanned": 86,
+      "unmatched_japanese_lines": 2180
+    },
+    "navigation_or_reference_index": {
+      "documents": 32,
+      "grammar_surface_hits": 8957,
+      "lines": 5382,
+      "matched_lines": 1298,
+      "prose_lines_with_japanese": 1634,
+      "scanned": 32,
+      "unmatched_japanese_lines": 336
+    },
+    "private_placeholder_excluded": {
+      "documents": 1,
+      "grammar_surface_hits": 0,
+      "lines": 0,
+      "matched_lines": 0,
+      "prose_lines_with_japanese": 0,
+      "scanned": 0,
+      "unmatched_japanese_lines": 0
+    },
+    "quarantined_reference_dictionary": {
+      "documents": 1,
+      "grammar_surface_hits": 0,
+      "lines": 0,
+      "matched_lines": 0,
+      "prose_lines_with_japanese": 0,
+      "scanned": 0,
+      "unmatched_japanese_lines": 0
+    },
+    "repository_entrance_or_history": {
+      "documents": 5,
+      "grammar_surface_hits": 2704,
+      "lines": 1414,
+      "matched_lines": 302,
+      "prose_lines_with_japanese": 367,
+      "scanned": 5,
+      "unmatched_japanese_lines": 65
+    }
+  },
+  "canonical": false,
+  "dictionary_archive_sha256": "4954945d30c5391aa9418257bd2289d8e0ec6aeba8106df589a662f3298707fc",
+  "excluded_documents": 2,
+  "grammar_patterns": 170,
+  "human_adopted": false,
+  "inventory_documents": 238,
+  "japanese_primary_documents": 86,
+  "limitations": [
+    "All surface hits, not morphological parse or word sense disambiguation.",
+    "Single-character particles count substring appearances and are not confirmed grammar tokens.",
+    "Grammatical examples are not semantic validations or logical entailment evidence.",
+    "English, code, mathematical displays, and text with no Japanese characters are out of Japanese-grammar analysis.",
+    "Pattern overlaps count independently; counts do not sum to unique grammatical constructions.",
+    "Other than the excluded 2 files, every inventory file is scanned, even if 0 Japanese prose lines.",
+    "A full Japanese grammar of all texts is not proven by a pattern atlas."
+  ],
+  "lines_with_grammar_surface_hits": 25664,
+  "nonweak_surface_hits": 33929,
+  "patterns_present_in_candidate_registry": 90,
+  "patterns_present_in_editorial_drafts": 15,
+  "prose_lines_with_japanese": 29259,
+  "repository_applied": false,
+  "scanned_documents": 236,
+  "source_archive_sha256": "bcf56409d091a67b8314fce5ac6e0676a7bc79e23d517b92ac56138595ae166e",
+  "supplemental_documents": 150,
+  "total_existing_editorial_drafts": 1365,
+  "total_term_candidates": 27901,
+  "unmatched_japanese_lines": 3595,
+  "weak_single_character_substring_hits": 139802
+}

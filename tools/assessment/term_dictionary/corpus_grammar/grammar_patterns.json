@@ -1,0 +1,1532 @@
+[
+  {
+    "explanation": "主題提示・対比の候補",
+    "group": "助詞・係り",
+    "id": "G01-001",
+    "label": "は",
+    "mode": "weak",
+    "pattern": "は",
+    "risk": "固有語やひらがなの一部との区別は未解析"
+  },
+  {
+    "explanation": "主格・焦点・逆接の候補",
+    "group": "助詞・係り",
+    "id": "G01-002",
+    "label": "が",
+    "mode": "weak",
+    "pattern": "が",
+    "risk": "「ながら」等の部分文字列にも一致する"
+  },
+  {
+    "explanation": "対象・経路を示す格助詞候補",
+    "group": "助詞・係り",
+    "id": "G01-003",
+    "label": "を",
+    "mode": "weak",
+    "pattern": "を",
+    "risk": "機械的には直前の体言を同定していない"
+  },
+  {
+    "explanation": "到達・場所・時点・対象など",
+    "group": "助詞・係り",
+    "id": "G01-004",
+    "label": "に",
+    "mode": "weak",
+    "pattern": "に",
+    "risk": "語中の「に」も拾うため単独で品詞を確定できない"
+  },
+  {
+    "explanation": "手段・場所・原因または断定の連用形",
+    "group": "助詞・係り",
+    "id": "G01-005",
+    "label": "で",
+    "mode": "weak",
+    "pattern": "で",
+    "risk": "語中一致と用法の多義性を含む"
+  },
+  {
+    "explanation": "引用・共同・並列・条件など",
+    "group": "助詞・係り",
+    "id": "G01-006",
+    "label": "と",
+    "mode": "weak",
+    "pattern": "と",
+    "risk": "引用と接続を形態で区別できない"
+  },
+  {
+    "explanation": "連体・体言化・終助詞など",
+    "group": "助詞・係り",
+    "id": "G01-007",
+    "label": "の",
+    "mode": "weak",
+    "pattern": "の",
+    "risk": "名詞化と所有関係を形態で区別できない"
+  },
+  {
+    "explanation": "添加・対比・譲歩など",
+    "group": "助詞・係り",
+    "id": "G01-008",
+    "label": "も",
+    "mode": "weak",
+    "pattern": "も",
+    "risk": "文字列の一部も拾う"
+  },
+  {
+    "explanation": "方向・到達先",
+    "group": "助詞・係り",
+    "id": "G01-009",
+    "label": "へ",
+    "mode": "weak",
+    "pattern": "へ",
+    "risk": "単独ひらがなの一致は未確定"
+  },
+  {
+    "explanation": "並列・列挙",
+    "group": "助詞・係り",
+    "id": "G01-010",
+    "label": "や",
+    "mode": "weak",
+    "pattern": "や",
+    "risk": "間投や引用内の部分一致にも注意"
+  },
+  {
+    "explanation": "疑問・選択・不定の候補",
+    "group": "助詞・係り",
+    "id": "G01-011",
+    "label": "か",
+    "mode": "weak",
+    "pattern": "か",
+    "risk": "語中の「か」と区別していない"
+  },
+  {
+    "explanation": "起点・理由",
+    "group": "助詞・係り",
+    "id": "G01-012",
+    "label": "から",
+    "mode": "surface",
+    "pattern": "から",
+    "risk": "理由と起点は文脈で異なる"
+  },
+  {
+    "explanation": "限界・範囲",
+    "group": "助詞・係り",
+    "id": "G01-013",
+    "label": "まで",
+    "mode": "surface",
+    "pattern": "まで",
+    "risk": "時間・場所・程度を分けていない"
+  },
+  {
+    "explanation": "比較・起点",
+    "group": "助詞・係り",
+    "id": "G01-014",
+    "label": "より",
+    "mode": "surface",
+    "pattern": "より",
+    "risk": "活用語尾等との混同を確認する"
+  },
+  {
+    "explanation": "限定",
+    "group": "助詞・係り",
+    "id": "G01-015",
+    "label": "だけ",
+    "mode": "surface",
+    "pattern": "だけ",
+    "risk": "必要条件と十分条件を保証しない"
+  },
+  {
+    "explanation": "限定と否定の共起",
+    "group": "助詞・係り",
+    "id": "G01-016",
+    "label": "しか",
+    "mode": "surface",
+    "pattern": "しか",
+    "risk": "否定との係り受けを照合していない"
+  },
+  {
+    "explanation": "強調・取り立て",
+    "group": "助詞・係り",
+    "id": "G01-017",
+    "label": "こそ",
+    "mode": "surface",
+    "pattern": "こそ",
+    "risk": "強調対象は未解析"
+  },
+  {
+    "explanation": "極端例・最小条件の取り立て",
+    "group": "助詞・係り",
+    "id": "G01-018",
+    "label": "さえ",
+    "mode": "surface",
+    "pattern": "さえ",
+    "risk": "量化の範囲は未解析"
+  },
+  {
+    "explanation": "比較・程度",
+    "group": "助詞・係り",
+    "id": "G01-019",
+    "label": "ほど",
+    "mode": "surface",
+    "pattern": "ほど",
+    "risk": "文脈で閾値・強さが変わる"
+  },
+  {
+    "explanation": "概数・限定・反復",
+    "group": "助詞・係り",
+    "id": "G01-020",
+    "label": "ばかり",
+    "mode": "surface",
+    "pattern": "ばかり",
+    "risk": "文脈による読み分けが必要"
+  },
+  {
+    "explanation": "程度・限定",
+    "group": "助詞・係り",
+    "id": "G01-021",
+    "label": "くらい",
+    "mode": "surface",
+    "pattern": "くらい",
+    "risk": "用例により「ぐらい」と交替"
+  },
+  {
+    "explanation": "程度・限定",
+    "group": "助詞・係り",
+    "id": "G01-022",
+    "label": "ぐらい",
+    "mode": "surface",
+    "pattern": "ぐらい",
+    "risk": "「くらい」との語形差を保持"
+  },
+  {
+    "explanation": "逆接・転換",
+    "group": "接続・談話",
+    "id": "G02-001",
+    "label": "しかし",
+    "mode": "surface",
+    "pattern": "しかし",
+    "risk": "反論の正当性を保証しない"
+  },
+  {
+    "explanation": "条件付き限定・留保",
+    "group": "接続・談話",
+    "id": "G02-002",
+    "label": "ただし",
+    "mode": "surface",
+    "pattern": "ただし",
+    "risk": "何を限定するかは構造上別に特定する"
+  },
+  {
+    "explanation": "帰結提示",
+    "group": "接続・談話",
+    "id": "G02-003",
+    "label": "したがって",
+    "mode": "surface",
+    "pattern": "したがって",
+    "risk": "形式的導出の成立を保証しない"
+  },
+  {
+    "explanation": "理由から結論への導線",
+    "group": "接続・談話",
+    "id": "G02-004",
+    "label": "ゆえに",
+    "mode": "surface",
+    "pattern": "ゆえに",
+    "risk": "推論規則が成立した証明ではない"
+  },
+  {
+    "explanation": "問題から対応へ移る",
+    "group": "接続・談話",
+    "id": "G02-005",
+    "label": "そこで",
+    "mode": "surface",
+    "pattern": "そこで",
+    "risk": "原因と対策の支持関係は未検証"
+  },
+  {
+    "explanation": "対照・併存",
+    "group": "接続・談話",
+    "id": "G02-006",
+    "label": "一方で",
+    "mode": "surface",
+    "pattern": "一方で",
+    "risk": "二項の論理的排他性を含意しない"
+  },
+  {
+    "explanation": "対照する対象を提示",
+    "group": "接続・談話",
+    "id": "G02-007",
+    "label": "これに対して",
+    "mode": "surface",
+    "pattern": "これに対して",
+    "risk": "指示語「これ」の先行詞は未解析"
+  },
+  {
+    "explanation": "前述作用の結果・手段",
+    "group": "接続・談話",
+    "id": "G02-008",
+    "label": "これにより",
+    "mode": "surface",
+    "pattern": "これにより",
+    "risk": "因果の証拠とは限らない"
+  },
+  {
+    "explanation": "説明の要約・言い換え",
+    "group": "接続・談話",
+    "id": "G02-009",
+    "label": "つまり",
+    "mode": "surface",
+    "pattern": "つまり",
+    "risk": "厳密な同値を保証しない"
+  },
+  {
+    "explanation": "同格・言い換え",
+    "group": "接続・談話",
+    "id": "G02-010",
+    "label": "すなわち",
+    "mode": "surface",
+    "pattern": "すなわち",
+    "risk": "対象範囲と同値性は未検証"
+  },
+  {
+    "explanation": "要約・圧縮",
+    "group": "接続・談話",
+    "id": "G02-011",
+    "label": "要するに",
+    "mode": "surface",
+    "pattern": "要するに",
+    "risk": "省略された限定に注意する"
+  },
+  {
+    "explanation": "例示の導入",
+    "group": "接続・談話",
+    "id": "G02-012",
+    "label": "例えば",
+    "mode": "surface",
+    "pattern": "例えば",
+    "risk": "例から一般命題への導出を保証しない"
+  },
+  {
+    "explanation": "例示の導入（平仮名）",
+    "group": "接続・談話",
+    "id": "G02-013",
+    "label": "たとえば",
+    "mode": "surface",
+    "pattern": "たとえば",
+    "risk": "表記違いを示すが意味検査は別"
+  },
+  {
+    "explanation": "補記・注意",
+    "group": "接続・談話",
+    "id": "G02-014",
+    "label": "なお",
+    "mode": "surface",
+    "pattern": "なお",
+    "risk": "補記の作用範囲は未解析"
+  },
+  {
+    "explanation": "対比上の重心変更",
+    "group": "接続・談話",
+    "id": "G02-015",
+    "label": "むしろ",
+    "mode": "surface",
+    "pattern": "むしろ",
+    "risk": "元の比較軸を確認する"
+  },
+  {
+    "explanation": "譲歩・逆接",
+    "group": "接続・談話",
+    "id": "G02-016",
+    "label": "それでも",
+    "mode": "surface",
+    "pattern": "それでも",
+    "risk": "前提撤回とは限らない"
+  },
+  {
+    "explanation": "追加・拡張",
+    "group": "接続・談話",
+    "id": "G02-017",
+    "label": "さらに",
+    "mode": "surface",
+    "pattern": "さらに",
+    "risk": "追加が支持を増やすとは限らない"
+  },
+  {
+    "explanation": "追加・併置",
+    "group": "接続・談話",
+    "id": "G02-018",
+    "label": "加えて",
+    "mode": "surface",
+    "pattern": "加えて",
+    "risk": "新条件が必要かは文脈で決まる"
+  },
+  {
+    "explanation": "添加・並列",
+    "group": "接続・談話",
+    "id": "G02-019",
+    "label": "また",
+    "mode": "surface",
+    "pattern": "また",
+    "risk": "「または」と重なる部分を除いた出現のみ"
+  },
+  {
+    "explanation": "連言・併記",
+    "group": "接続・談話",
+    "id": "G02-020",
+    "label": "および",
+    "mode": "surface",
+    "pattern": "および",
+    "risk": "形式論理のANDと同一視しない"
+  },
+  {
+    "explanation": "選言・候補の提示",
+    "group": "接続・談話",
+    "id": "G02-021",
+    "label": "または",
+    "mode": "surface",
+    "pattern": "または",
+    "risk": "排他的選言かは文脈で決まる"
+  },
+  {
+    "explanation": "代替・言い換え",
+    "group": "接続・談話",
+    "id": "G02-022",
+    "label": "あるいは",
+    "mode": "surface",
+    "pattern": "あるいは",
+    "risk": "排他的選択と単なる別表現を区別する"
+  },
+  {
+    "explanation": "連言・付加",
+    "group": "接続・談話",
+    "id": "G02-023",
+    "label": "かつ",
+    "mode": "surface",
+    "pattern": "かつ",
+    "risk": "量化範囲は未解析"
+  },
+  {
+    "explanation": "対照・方向転換",
+    "group": "接続・談話",
+    "id": "G02-024",
+    "label": "反対に",
+    "mode": "surface",
+    "pattern": "反対に",
+    "risk": "論理的否定を意味するとは限らない"
+  },
+  {
+    "explanation": "条件節・仮定",
+    "group": "条件・仮定",
+    "id": "G03-001",
+    "label": "であれば",
+    "mode": "surface",
+    "pattern": "であれば",
+    "risk": "現実条件と論理条件は別"
+  },
+  {
+    "explanation": "条件節・含意の表面形式",
+    "group": "条件・仮定",
+    "id": "G03-002",
+    "label": "ならば",
+    "mode": "surface",
+    "pattern": "ならば",
+    "risk": "形式的な含意成立を保証しない"
+  },
+  {
+    "explanation": "仮定を受けた推論",
+    "group": "条件・仮定",
+    "id": "G03-003",
+    "label": "だとすれば",
+    "mode": "surface",
+    "pattern": "だとすれば",
+    "risk": "仮定の受理と事実性を区別する"
+  },
+  {
+    "explanation": "仮定・前提設定",
+    "group": "条件・仮定",
+    "id": "G03-004",
+    "label": "とすれば",
+    "mode": "surface",
+    "pattern": "とすれば",
+    "risk": "前提の事実確認を含意しない"
+  },
+  {
+    "explanation": "仮定・仮想条件",
+    "group": "条件・仮定",
+    "id": "G03-005",
+    "label": "としたら",
+    "mode": "surface",
+    "pattern": "としたら",
+    "risk": "反事実性は文脈で異なる"
+  },
+  {
+    "explanation": "仮定を置いた推移",
+    "group": "条件・仮定",
+    "id": "G03-006",
+    "label": "とすると",
+    "mode": "surface",
+    "pattern": "とすると",
+    "risk": "論理的演繹を保証しない"
+  },
+  {
+    "explanation": "適用条件の明示",
+    "group": "条件・仮定",
+    "id": "G03-007",
+    "label": "場合には",
+    "mode": "surface",
+    "pattern": "場合には",
+    "risk": "必要条件・十分条件を区別していない"
+  },
+  {
+    "explanation": "事例・条件の範囲",
+    "group": "条件・仮定",
+    "id": "G03-008",
+    "label": "場合",
+    "mode": "surface",
+    "pattern": "場合",
+    "risk": "常に条件構文とは限らない"
+  },
+  {
+    "explanation": "時間・場合の条件",
+    "group": "条件・仮定",
+    "id": "G03-009",
+    "label": "とき",
+    "mode": "surface",
+    "pattern": "とき",
+    "risk": "時点と条件とを混同しない"
+  },
+  {
+    "explanation": "特定場面・時点",
+    "group": "条件・仮定",
+    "id": "G03-010",
+    "label": "際",
+    "mode": "surface",
+    "pattern": "際",
+    "risk": "場合との差は文脈を要する"
+  },
+  {
+    "explanation": "必要条件・範囲の限定",
+    "group": "条件・仮定",
+    "id": "G03-011",
+    "label": "限り",
+    "mode": "surface",
+    "pattern": "限り",
+    "risk": "「限りでは」と「限り」の差に注意"
+  },
+  {
+    "explanation": "否定的な必要条件",
+    "group": "条件・仮定",
+    "id": "G03-012",
+    "label": "ない限り",
+    "mode": "surface",
+    "pattern": "ない限り",
+    "risk": "スコープと対象を復元する必要"
+  },
+  {
+    "explanation": "譲歩条件の導入",
+    "group": "条件・仮定",
+    "id": "G03-013",
+    "label": "たとえ",
+    "mode": "surface",
+    "pattern": "たとえ",
+    "risk": "結末の条件節を検査する必要"
+  },
+  {
+    "explanation": "譲歩・条件の表現",
+    "group": "条件・仮定",
+    "id": "G03-014",
+    "label": "ても",
+    "mode": "surface",
+    "pattern": "ても",
+    "risk": "活用語尾の一部との混同可能性"
+  },
+  {
+    "explanation": "条件依存の調整",
+    "group": "条件・仮定",
+    "id": "G03-015",
+    "label": "に応じて",
+    "mode": "surface",
+    "pattern": "に応じて",
+    "risk": "因果か対応かは別に確認"
+  },
+  {
+    "explanation": "条件と作用の場を限定",
+    "group": "条件・仮定",
+    "id": "G03-016",
+    "label": "条件下で",
+    "mode": "surface",
+    "pattern": "条件下で",
+    "risk": "文脈で条件の識別が必要"
+  },
+  {
+    "explanation": "前提・環境の指定",
+    "group": "条件・仮定",
+    "id": "G03-017",
+    "label": "のもとで",
+    "mode": "surface",
+    "pattern": "のもとで",
+    "risk": "規範上の正当化とは独立"
+  },
+  {
+    "explanation": "前提の宣言",
+    "group": "条件・仮定",
+    "id": "G03-018",
+    "label": "を前提として",
+    "mode": "surface",
+    "pattern": "を前提として",
+    "risk": "前提が実証されたことを意味しない"
+  },
+  {
+    "explanation": "述語否定・同定拒否",
+    "group": "否定・様相",
+    "id": "G04-001",
+    "label": "ではない",
+    "mode": "surface",
+    "pattern": "ではない",
+    "risk": "否定対象のスコープを機械的に確定しない"
+  },
+  {
+    "explanation": "一般化の否定",
+    "group": "否定・様相",
+    "id": "G04-002",
+    "label": "とは限らない",
+    "mode": "surface",
+    "pattern": "とは限らない",
+    "risk": "反対命題の肯定とは異なる"
+  },
+  {
+    "explanation": "解釈・含意の否定",
+    "group": "否定・様相",
+    "id": "G04-003",
+    "label": "というわけではない",
+    "mode": "surface",
+    "pattern": "というわけではない",
+    "risk": "先行発話への係り方は未検証"
+  },
+  {
+    "explanation": "全称性の留保",
+    "group": "否定・様相",
+    "id": "G04-004",
+    "label": "必ずしも",
+    "mode": "surface",
+    "pattern": "必ずしも",
+    "risk": "通常は否定と共起するが自動判定しない"
+  },
+  {
+    "explanation": "不可能性・不許可・能力不足",
+    "group": "否定・様相",
+    "id": "G04-005",
+    "label": "できない",
+    "mode": "surface",
+    "pattern": "できない",
+    "risk": "導出不可能と探索未発見を区別する必要"
+  },
+  {
+    "explanation": "前項否定と後項提示",
+    "group": "否定・様相",
+    "id": "G04-006",
+    "label": "ではなく",
+    "mode": "surface",
+    "pattern": "ではなく",
+    "risk": "後続項が常に唯一の代替とは限らない"
+  },
+  {
+    "explanation": "範囲の縮減・限定",
+    "group": "否定・様相",
+    "id": "G04-007",
+    "label": "にすぎない",
+    "mode": "surface",
+    "pattern": "にすぎない",
+    "risk": "語用論的評価を含み得る"
+  },
+  {
+    "explanation": "範囲の縮減・限定（漢字表記）",
+    "group": "否定・様相",
+    "id": "G04-008",
+    "label": "に過ぎない",
+    "mode": "surface",
+    "pattern": "に過ぎない",
+    "risk": "原文表記を保持"
+  },
+  {
+    "explanation": "効果・範囲の限定",
+    "group": "否定・様相",
+    "id": "G04-009",
+    "label": "にとどまる",
+    "mode": "surface",
+    "pattern": "にとどまる",
+    "risk": "独立した検証が必要"
+  },
+  {
+    "explanation": "義務・推奨",
+    "group": "否定・様相",
+    "id": "G04-010",
+    "label": "べき",
+    "mode": "surface",
+    "pattern": "べき",
+    "risk": "規範的判断を事実命題と区別する"
+  },
+  {
+    "explanation": "必要性の提示",
+    "group": "否定・様相",
+    "id": "G04-011",
+    "label": "必要がある",
+    "mode": "surface",
+    "pattern": "必要がある",
+    "risk": "必要の主語・機能・根拠が必要"
+  },
+  {
+    "explanation": "必要性の否定",
+    "group": "否定・様相",
+    "id": "G04-012",
+    "label": "必要はない",
+    "mode": "surface",
+    "pattern": "必要はない",
+    "risk": "不要と不可能は異なる"
+  },
+  {
+    "explanation": "可能性の提示",
+    "group": "否定・様相",
+    "id": "G04-013",
+    "label": "可能性がある",
+    "mode": "surface",
+    "pattern": "可能性がある",
+    "risk": "可能性と成立証明を混同しない"
+  },
+  {
+    "explanation": "推量・可能性",
+    "group": "否定・様相",
+    "id": "G04-014",
+    "label": "かもしれない",
+    "mode": "surface",
+    "pattern": "かもしれない",
+    "risk": "強い根拠の表示とは限らない"
+  },
+  {
+    "explanation": "可能性・成立余地",
+    "group": "否定・様相",
+    "id": "G04-015",
+    "label": "あり得る",
+    "mode": "surface",
+    "pattern": "あり得る",
+    "risk": "構成可能性と現実実証は異なる"
+  },
+  {
+    "explanation": "可能性・可能操作",
+    "group": "否定・様相",
+    "id": "G04-016",
+    "label": "し得る",
+    "mode": "surface",
+    "pattern": "し得る",
+    "risk": "技術的可否は別検証"
+  },
+  {
+    "explanation": "許可・任意",
+    "group": "否定・様相",
+    "id": "G04-017",
+    "label": "してよい",
+    "mode": "surface",
+    "pattern": "してよい",
+    "risk": "権限主体が省略される場合がある"
+  },
+  {
+    "explanation": "禁止・制約",
+    "group": "否定・様相",
+    "id": "G04-018",
+    "label": "してはならない",
+    "mode": "surface",
+    "pattern": "してはならない",
+    "risk": "適用範囲と権限根拠を別照合"
+  },
+  {
+    "explanation": "義務・必要条件",
+    "group": "否定・様相",
+    "id": "G04-019",
+    "label": "しなければならない",
+    "mode": "surface",
+    "pattern": "しなければならない",
+    "risk": "法的義務と設計条件を区別"
+  },
+  {
+    "explanation": "分類・同定の拒否",
+    "group": "否定・様相",
+    "id": "G04-020",
+    "label": "とみなさない",
+    "mode": "surface",
+    "pattern": "とみなさない",
+    "risk": "否定と代替分類を区別"
+  },
+  {
+    "explanation": "主題・定義の導入",
+    "group": "定義・引用",
+    "id": "G05-001",
+    "label": "とは",
+    "mode": "surface",
+    "pattern": "とは",
+    "risk": "「とは」だけでは定義文と断定できない"
+  },
+  {
+    "explanation": "命名・局所ラベルの宣言",
+    "group": "定義・引用",
+    "id": "G05-002",
+    "label": "と呼ぶ",
+    "mode": "surface",
+    "pattern": "と呼ぶ",
+    "risk": "一般正本定義とは限らない"
+  },
+  {
+    "explanation": "定義の明示",
+    "group": "定義・引用",
+    "id": "G05-003",
+    "label": "と定義する",
+    "mode": "surface",
+    "pattern": "と定義する",
+    "risk": "定義の所有範囲は別検証"
+  },
+  {
+    "explanation": "操作的な位置づけ",
+    "group": "定義・引用",
+    "id": "G05-004",
+    "label": "として扱う",
+    "mode": "surface",
+    "pattern": "として扱う",
+    "risk": "同一性や本質の主張とは限らない"
+  },
+  {
+    "explanation": "推定・分類規則の宣言",
+    "group": "定義・引用",
+    "id": "G05-005",
+    "label": "とみなす",
+    "mode": "surface",
+    "pattern": "とみなす",
+    "risk": "事実認定と擬制を区別"
+  },
+  {
+    "explanation": "読み・解釈候補",
+    "group": "定義・引用",
+    "id": "G05-006",
+    "label": "と読める",
+    "mode": "surface",
+    "pattern": "と読める",
+    "risk": "外部理論の確認済み事実ではない"
+  },
+  {
+    "explanation": "推論・考察の提示",
+    "group": "定義・引用",
+    "id": "G05-007",
+    "label": "と考えられる",
+    "mode": "surface",
+    "pattern": "と考えられる",
+    "risk": "著者断言や実証を示さない"
+  },
+  {
+    "explanation": "記述の帰属",
+    "group": "定義・引用",
+    "id": "G05-008",
+    "label": "と述べる",
+    "mode": "surface",
+    "pattern": "と述べる",
+    "risk": "実際の引用元を別に確認"
+  },
+  {
+    "explanation": "文面記録の帰属",
+    "group": "定義・引用",
+    "id": "G05-009",
+    "label": "と記す",
+    "mode": "surface",
+    "pattern": "と記す",
+    "risk": "書かれたことと成立したことを区別"
+  },
+  {
+    "explanation": "受動的帰属・通説化",
+    "group": "定義・引用",
+    "id": "G05-010",
+    "label": "とされる",
+    "mode": "surface",
+    "pattern": "とされる",
+    "risk": "誰によってかの確認を要する"
+  },
+  {
+    "explanation": "命名・引用・説明の媒介",
+    "group": "定義・引用",
+    "id": "G05-011",
+    "label": "という",
+    "mode": "surface",
+    "pattern": "という",
+    "risk": "多義的なため意味型を自動確定しない"
+  },
+  {
+    "explanation": "結論・言い換えの表示",
+    "group": "定義・引用",
+    "id": "G05-012",
+    "label": "といえる",
+    "mode": "surface",
+    "pattern": "といえる",
+    "risk": "推論経路の検証とは別"
+  },
+  {
+    "explanation": "指示対象の限定",
+    "group": "定義・引用",
+    "id": "G05-013",
+    "label": "を指す",
+    "mode": "surface",
+    "pattern": "を指す",
+    "risk": "概念定義との対応は別検証"
+  },
+  {
+    "explanation": "語義・帰結の説明",
+    "group": "定義・引用",
+    "id": "G05-014",
+    "label": "を意味する",
+    "mode": "surface",
+    "pattern": "を意味する",
+    "risk": "同語反復か実質的主張か要確認"
+  },
+  {
+    "explanation": "証拠・図示・表現の帰属",
+    "group": "定義・引用",
+    "id": "G05-015",
+    "label": "を示す",
+    "mode": "surface",
+    "pattern": "を示す",
+    "risk": "証明や実証の強さは別"
+  },
+  {
+    "explanation": "記号・模型の対応",
+    "group": "定義・引用",
+    "id": "G05-016",
+    "label": "を表す",
+    "mode": "surface",
+    "pattern": "を表す",
+    "risk": "写像の正しさを別検証"
+  },
+  {
+    "explanation": "読みの適用条件",
+    "group": "定義・引用",
+    "id": "G05-017",
+    "label": "という意味で",
+    "mode": "surface",
+    "pattern": "という意味で",
+    "risk": "限定外への転用を防ぐ"
+  },
+  {
+    "explanation": "叙述・定義の断定",
+    "group": "定義・引用",
+    "id": "G05-018",
+    "label": "である",
+    "mode": "surface",
+    "pattern": "である",
+    "risk": "定義なのか事実主張かは文脈依存"
+  },
+  {
+    "explanation": "採用・宣言・定義の候補",
+    "group": "定義・引用",
+    "id": "G05-019",
+    "label": "とする",
+    "mode": "surface",
+    "pattern": "とする",
+    "risk": "分析前提と事実を区別"
+  },
+  {
+    "explanation": "場・条件・領域の指定",
+    "group": "範囲・量化",
+    "id": "G06-001",
+    "label": "において",
+    "mode": "surface",
+    "pattern": "において",
+    "risk": "何の対象範囲かを照合"
+  },
+  {
+    "explanation": "主題・対象の指定",
+    "group": "範囲・量化",
+    "id": "G06-002",
+    "label": "について",
+    "mode": "surface",
+    "pattern": "について",
+    "risk": "関係の型まで決めない"
+  },
+  {
+    "explanation": "論点・関係先の指定",
+    "group": "範囲・量化",
+    "id": "G06-003",
+    "label": "に関して",
+    "mode": "surface",
+    "pattern": "に関して",
+    "risk": "法的責任や支持関係を含意しない"
+  },
+  {
+    "explanation": "対象と作用方向",
+    "group": "範囲・量化",
+    "id": "G06-004",
+    "label": "に対して",
+    "mode": "surface",
+    "pattern": "に対して",
+    "risk": "反対・比較・作用を分ける"
+  },
+  {
+    "explanation": "役割・立場・資格の指定",
+    "group": "範囲・量化",
+    "id": "G06-005",
+    "label": "として",
+    "mode": "surface",
+    "pattern": "として",
+    "risk": "同一性を無条件に保証しない"
+  },
+  {
+    "explanation": "適用範囲の限定",
+    "group": "範囲・量化",
+    "id": "G06-006",
+    "label": "に限って",
+    "mode": "surface",
+    "pattern": "に限って",
+    "risk": "必要条件・十分条件を分ける"
+  },
+  {
+    "explanation": "範囲・条件の限定",
+    "group": "範囲・量化",
+    "id": "G06-007",
+    "label": "に限り",
+    "mode": "surface",
+    "pattern": "に限り",
+    "risk": "何が限定されるか未解析"
+  },
+  {
+    "explanation": "限定・排他",
+    "group": "範囲・量化",
+    "id": "G06-008",
+    "label": "のみ",
+    "mode": "surface",
+    "pattern": "のみ",
+    "risk": "否定の範囲は別検証"
+  },
+  {
+    "explanation": "全称表現",
+    "group": "範囲・量化",
+    "id": "G06-009",
+    "label": "すべて",
+    "mode": "surface",
+    "pattern": "すべて",
+    "risk": "領域母集団の指定が不可欠"
+  },
+  {
+    "explanation": "部分集合・部分性",
+    "group": "範囲・量化",
+    "id": "G06-010",
+    "label": "一部",
+    "mode": "surface",
+    "pattern": "一部",
+    "risk": "どの全体か未解析"
+  },
+  {
+    "explanation": "下限・必要十分の留保",
+    "group": "範囲・量化",
+    "id": "G06-011",
+    "label": "少なくとも",
+    "mode": "surface",
+    "pattern": "少なくとも",
+    "risk": "数値の測定ではない"
+  },
+  {
+    "explanation": "分配・個別対応",
+    "group": "範囲・量化",
+    "id": "G06-012",
+    "label": "それぞれ",
+    "mode": "surface",
+    "pattern": "それぞれ",
+    "risk": "1対1対応を保証しない"
+  },
+  {
+    "explanation": "個別単位の指定",
+    "group": "範囲・量化",
+    "id": "G06-013",
+    "label": "ごとに",
+    "mode": "surface",
+    "pattern": "ごとに",
+    "risk": "単位同定は未解析"
+  },
+  {
+    "explanation": "基準・根拠の指定",
+    "group": "範囲・量化",
+    "id": "G06-014",
+    "label": "に照らして",
+    "mode": "surface",
+    "pattern": "に照らして",
+    "risk": "その基準の採用権限は別"
+  },
+  {
+    "explanation": "独立・排除条件",
+    "group": "範囲・量化",
+    "id": "G06-015",
+    "label": "によらず",
+    "mode": "surface",
+    "pattern": "によらず",
+    "risk": "否定対象を確認する"
+  },
+  {
+    "explanation": "局所領域の限定",
+    "group": "範囲・量化",
+    "id": "G06-016",
+    "label": "の範囲",
+    "mode": "surface",
+    "pattern": "の範囲",
+    "risk": "範囲境界の特定は必要"
+  },
+  {
+    "explanation": "手段・原因・受身動作主",
+    "group": "関係・因果",
+    "id": "G07-001",
+    "label": "によって",
+    "mode": "surface",
+    "pattern": "によって",
+    "risk": "因果関係の成立は別検証"
+  },
+  {
+    "explanation": "原因・方法・基準",
+    "group": "関係・因果",
+    "id": "G07-002",
+    "label": "により",
+    "mode": "surface",
+    "pattern": "により",
+    "risk": "文脈により機能が異なる"
+  },
+  {
+    "explanation": "経路・媒介",
+    "group": "関係・因果",
+    "id": "G07-003",
+    "label": "を通じて",
+    "mode": "surface",
+    "pattern": "を通じて",
+    "risk": "接触したことと保存されたことは違う"
+  },
+  {
+    "explanation": "同時変動・付随",
+    "group": "関係・因果",
+    "id": "G07-004",
+    "label": "に伴って",
+    "mode": "surface",
+    "pattern": "に伴って",
+    "risk": "因果と共起を区別"
+  },
+  {
+    "explanation": "変化への随伴",
+    "group": "関係・因果",
+    "id": "G07-005",
+    "label": "につれて",
+    "mode": "surface",
+    "pattern": "につれて",
+    "risk": "必然の数理関係とは限らない"
+  },
+  {
+    "explanation": "帰結・結果提示",
+    "group": "関係・因果",
+    "id": "G07-006",
+    "label": "その結果",
+    "mode": "surface",
+    "pattern": "その結果",
+    "risk": "因果を確認する別資料が必要"
+  },
+  {
+    "explanation": "結果・事後的配置",
+    "group": "関係・因果",
+    "id": "G07-007",
+    "label": "結果として",
+    "mode": "surface",
+    "pattern": "結果として",
+    "risk": "予測可能性とは別"
+  },
+  {
+    "explanation": "行為・作用を原因や手段へ接続",
+    "group": "関係・因果",
+    "id": "G07-008",
+    "label": "ことによって",
+    "mode": "surface",
+    "pattern": "ことによって",
+    "risk": "実際の作動の検証は別"
+  },
+  {
+    "explanation": "付随・共変化",
+    "group": "関係・因果",
+    "id": "G07-009",
+    "label": "とともに",
+    "mode": "surface",
+    "pattern": "とともに",
+    "risk": "同一性や因果ではない"
+  },
+  {
+    "explanation": "目的・方向",
+    "group": "関係・因果",
+    "id": "G07-010",
+    "label": "に向けて",
+    "mode": "surface",
+    "pattern": "に向けて",
+    "risk": "結果の達成は保証しない"
+  },
+  {
+    "explanation": "目的・原因",
+    "group": "関係・因果",
+    "id": "G07-011",
+    "label": "ために",
+    "mode": "surface",
+    "pattern": "ために",
+    "risk": "「目的」と「原因」は異なる"
+  },
+  {
+    "explanation": "理由・説明",
+    "group": "関係・因果",
+    "id": "G07-012",
+    "label": "ので",
+    "mode": "surface",
+    "pattern": "ので",
+    "risk": "正当化や因果証明とは別"
+  },
+  {
+    "explanation": "理由提示",
+    "group": "関係・因果",
+    "id": "G07-013",
+    "label": "なぜなら",
+    "mode": "surface",
+    "pattern": "なぜなら",
+    "risk": "前後の推論は未検証"
+  },
+  {
+    "explanation": "修飾された原因・手段",
+    "group": "関係・因果",
+    "id": "G07-014",
+    "label": "による",
+    "mode": "surface",
+    "pattern": "による",
+    "risk": "対象の対応を別確認"
+  },
+  {
+    "explanation": "非同一性・比較",
+    "group": "比較・非含意",
+    "id": "G08-001",
+    "label": "とは異なる",
+    "mode": "surface",
+    "pattern": "とは異なる",
+    "risk": "どの性質が異なるかを要確認"
+  },
+  {
+    "explanation": "同一性否定",
+    "group": "比較・非含意",
+    "id": "G08-002",
+    "label": "同じではない",
+    "mode": "surface",
+    "pattern": "同じではない",
+    "risk": "どの同一性を否定したか要確認"
+  },
+  {
+    "explanation": "概念・対象の非同一性",
+    "group": "比較・非含意",
+    "id": "G08-003",
+    "label": "同一ではない",
+    "mode": "surface",
+    "pattern": "同一ではない",
+    "risk": "関連性の否定とは限らない"
+  },
+  {
+    "explanation": "判断対象の分離",
+    "group": "比較・非含意",
+    "id": "G08-004",
+    "label": "別問題である",
+    "mode": "surface",
+    "pattern": "別問題である",
+    "risk": "両者の無関係を意味しない"
+  },
+  {
+    "explanation": "相違・独立の宣言",
+    "group": "比較・非含意",
+    "id": "G08-005",
+    "label": "別である",
+    "mode": "surface",
+    "pattern": "別である",
+    "risk": "関係の切断とは限らない"
+  },
+  {
+    "explanation": "推論・評価の即時性",
+    "group": "比較・非含意",
+    "id": "G08-006",
+    "label": "直ちに",
+    "mode": "surface",
+    "pattern": "直ちに",
+    "risk": "否定語と共起するか別に調べる"
+  },
+  {
+    "explanation": "規則的・無条件の移行",
+    "group": "比較・非含意",
+    "id": "G08-007",
+    "label": "自動的に",
+    "mode": "surface",
+    "pattern": "自動的に",
+    "risk": "否定・留保との共起に注意"
+  },
+  {
+    "explanation": "根拠不足・限定",
+    "group": "比較・非含意",
+    "id": "G08-008",
+    "label": "というだけで",
+    "mode": "surface",
+    "pattern": "というだけで",
+    "risk": "後続否定の位置を確認する"
+  },
+  {
+    "explanation": "十分条件の否定候補",
+    "group": "比較・非含意",
+    "id": "G08-009",
+    "label": "だけでは",
+    "mode": "surface",
+    "pattern": "だけでは",
+    "risk": "必ずしも全称否定ではない"
+  },
+  {
+    "explanation": "推論・評価の文脈提示",
+    "group": "比較・非含意",
+    "id": "G08-010",
+    "label": "といって",
+    "mode": "surface",
+    "pattern": "といって",
+    "risk": "後続の肯否が重要"
+  },
+  {
+    "explanation": "譲歩・反例",
+    "group": "比較・非含意",
+    "id": "G08-011",
+    "label": "であっても",
+    "mode": "surface",
+    "pattern": "であっても",
+    "risk": "結論の成立は別途照合"
+  },
+  {
+    "explanation": "期待と結果の不一致",
+    "group": "比較・非含意",
+    "id": "G08-012",
+    "label": "にもかかわらず",
+    "mode": "surface",
+    "pattern": "にもかかわらず",
+    "risk": "論理矛盾の証拠とは限らない"
+  },
+  {
+    "explanation": "比較対象・基準",
+    "group": "比較・非含意",
+    "id": "G08-013",
+    "label": "に比べて",
+    "mode": "surface",
+    "pattern": "に比べて",
+    "risk": "比較尺度の同質性を要確認"
+  },
+  {
+    "explanation": "一般化の否定と継続",
+    "group": "比較・非含意",
+    "id": "G08-014",
+    "label": "とは限らず",
+    "mode": "surface",
+    "pattern": "とは限らず",
+    "risk": "正反対を導くわけではない"
+  },
+  {
+    "explanation": "全称の限定否定を含む表面パターン",
+    "group": "比較・非含意",
+    "id": "G08-015",
+    "label": "必ずしも.*?ではない",
+    "mode": "regex",
+    "pattern": "必ずしも[^。！？\n]{0,65}?ではない",
+    "risk": "同じ文内の共起であり係り受けの保証はない"
+  },
+  {
+    "explanation": "十分条件否定らしい表面パターン",
+    "group": "比較・非含意",
+    "id": "G08-016",
+    "label": "だけ.*?とは限らない",
+    "mode": "regex",
+    "pattern": "だけ[^。！？\n]{0,65}?とは限らない",
+    "risk": "同じ文内の共起であり係り受けの保証はない"
+  },
+  {
+    "explanation": "進行・結果状態",
+    "group": "時間・相",
+    "id": "G09-001",
+    "label": "している",
+    "mode": "surface",
+    "pattern": "している",
+    "risk": "時制・主語は未解析"
+  },
+  {
+    "explanation": "過去の進行・結果状態",
+    "group": "時間・相",
+    "id": "G09-002",
+    "label": "していた",
+    "mode": "surface",
+    "pattern": "していた",
+    "risk": "文体や対象時間で異なる"
+  },
+  {
+    "explanation": "過去から現在への連続",
+    "group": "時間・相",
+    "id": "G09-003",
+    "label": "てきた",
+    "mode": "surface",
+    "pattern": "てきた",
+    "risk": "すべてが同一の対象持続とは限らない"
+  },
+  {
+    "explanation": "後続への進展",
+    "group": "時間・相",
+    "id": "G09-004",
+    "label": "ていく",
+    "mode": "surface",
+    "pattern": "ていく",
+    "risk": "規範的方向づけも含み得る"
+  },
+  {
+    "explanation": "反復・持続",
+    "group": "時間・相",
+    "id": "G09-005",
+    "label": "し続ける",
+    "mode": "surface",
+    "pattern": "し続ける",
+    "risk": "終了条件は未解析"
+  },
+  {
+    "explanation": "場合による生起",
+    "group": "時間・相",
+    "id": "G09-006",
+    "label": "することがある",
+    "mode": "surface",
+    "pattern": "することがある",
+    "risk": "全称命題ではない"
+  },
+  {
+    "explanation": "過去の参照点",
+    "group": "時間・相",
+    "id": "G09-007",
+    "label": "以前",
+    "mode": "surface",
+    "pattern": "以前",
+    "risk": "実時刻と論理順序を区別"
+  },
+  {
+    "explanation": "基準点より後",
+    "group": "時間・相",
+    "id": "G09-008",
+    "label": "以後",
+    "mode": "surface",
+    "pattern": "以後",
+    "risk": "更新順序と時計時刻は別"
+  },
+  {
+    "explanation": "事後の判断・形成",
+    "group": "時間・相",
+    "id": "G09-009",
+    "label": "後から",
+    "mode": "surface",
+    "pattern": "後から",
+    "risk": "後付けの正当化と区別を要する"
+  },
+  {
+    "explanation": "現時点への限定",
+    "group": "時間・相",
+    "id": "G09-010",
+    "label": "現在",
+    "mode": "surface",
+    "pattern": "現在",
+    "risk": "成立範囲の条件も必要"
+  },
+  {
+    "explanation": "未来への参照",
+    "group": "時間・相",
+    "id": "G09-011",
+    "label": "将来",
+    "mode": "surface",
+    "pattern": "将来",
+    "risk": "予測と願望を分ける"
+  },
+  {
+    "explanation": "未成立・未到達",
+    "group": "時間・相",
+    "id": "G09-012",
+    "label": "まだ",
+    "mode": "surface",
+    "pattern": "まだ",
+    "risk": "永続的不可能と混同しない"
+  },
+  {
+    "explanation": "成立済み・先行",
+    "group": "時間・相",
+    "id": "G09-013",
+    "label": "すでに",
+    "mode": "surface",
+    "pattern": "すでに",
+    "risk": "現在の権限確認は別"
+  },
+  {
+    "explanation": "記号的帰結・指示",
+    "group": "論証・引用形式",
+    "id": "G10-001",
+    "label": "⇒",
+    "mode": "symbol",
+    "pattern": "⇒",
+    "risk": "自然言語の含意・導出と同一視しない"
+  },
+  {
+    "explanation": "推移・関係・遷移記号",
+    "group": "論証・引用形式",
+    "id": "G10-002",
+    "label": "→",
+    "mode": "symbol",
+    "pattern": "→",
+    "risk": "関係の型の検証を要する"
+  },
+  {
+    "explanation": "非同一性の記号",
+    "group": "論証・引用形式",
+    "id": "G10-003",
+    "label": "≠",
+    "mode": "symbol",
+    "pattern": "≠",
+    "risk": "対象・単位の一致を要する"
+  },
+  {
+    "explanation": "連言・合成記号",
+    "group": "論証・引用形式",
+    "id": "G10-004",
+    "label": "∧",
+    "mode": "symbol",
+    "pattern": "∧",
+    "risk": "文脈の論理体系を特定する"
+  },
+  {
+    "explanation": "選言記号",
+    "group": "論証・引用形式",
+    "id": "G10-005",
+    "label": "∨",
+    "mode": "symbol",
+    "pattern": "∨",
+    "risk": "排他的選言の可否を区別"
+  },
+  {
+    "explanation": "否定記号",
+    "group": "論証・引用形式",
+    "id": "G10-006",
+    "label": "¬",
+    "mode": "symbol",
+    "pattern": "¬",
+    "risk": "対象体系の否定規則を要確認"
+  },
+  {
+    "explanation": "導出関係の記号",
+    "group": "論証・引用形式",
+    "id": "G10-007",
+    "label": "⊢",
+    "mode": "symbol",
+    "pattern": "⊢",
+    "risk": "証明体系を別に明示する必要"
+  },
+  {
+    "explanation": "導出非成立を表す記号",
+    "group": "論証・引用形式",
+    "id": "G10-008",
+    "label": "⊬",
+    "mode": "symbol",
+    "pattern": "⊬",
+    "risk": "探索未発見と証明された非導出を区別"
+  }
+]

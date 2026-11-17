@@ -1,0 +1,23 @@
+{
+  "candidate_surface_hits": 173731,
+  "chatgpt_model_inference_cost": "not observable in this environment",
+  "cpu_time_seconds": 6.3837,
+  "dictionary_sha256": "4954945d30c5391aa9418257bd2289d8e0ec6aeba8106df589a662f3298707fc",
+  "dictionary_zip_size_bytes": 2446108,
+  "input_assistant_editorial_drafts": 1365,
+  "input_japanese_surface_candidates": 27901,
+  "jsonl_evidence_rows": 205465,
+  "peak_rss_platform_units": 564748,
+  "peak_rss_units_note": "KiB on Linux; bytes on macOS; unavailable on Windows",
+  "phase_time_seconds": {
+    "input_load_seconds": 0.58076,
+    "output_render_seconds": 4.20035,
+    "source_scan_seconds": 1.73458
+  },
+  "script_calls_to_external_llm_api": 0,
+  "selected_grammar_patterns": 170,
+  "source_markdown_bytes_scanned": 5245975,
+  "source_sha256": "bcf56409d091a67b8314fce5ac6e0676a7bc79e23d517b92ac56138595ae166e",
+  "source_zip_size_bytes": 42303635,
+  "wall_clock_seconds": 6.5157
+}
