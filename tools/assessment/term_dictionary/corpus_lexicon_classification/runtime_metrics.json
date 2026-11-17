@@ -1,0 +1,9 @@
+{
+  "external_llm_api_calls": 0,
+  "note": "Deterministic Python routing and substring attestation. Conversational model editorial effort and inference tokens unavailable.",
+  "original_zip_bytes": 44749743,
+  "output_bytes": 45395523,
+  "peak_rss_mib": 198.3,
+  "process_cpu_seconds": 5.804,
+  "wall_seconds": 4.315
+}

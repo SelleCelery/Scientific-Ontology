@@ -1,0 +1,80 @@
+{
+  "additional_editorial_seed_count": 43,
+  "additional_editorial_seed_not_in_registry": [
+    "HTML",
+    "一階述語",
+    "行政負担",
+    "量化",
+    "量子もつれ"
+  ],
+  "all_27901_semantically_read_one_by_one": false,
+  "all_provisional_dictionary_entries": 1387,
+  "all_source_surfaces_accounted_for": true,
+  "automated_japanese_morphological_analysis": false,
+  "candidate_review_priority_counts": {
+    "01_existing_draft": 1352,
+    "02_curated_seed": 96,
+    "03_literal_definition_candidate": 64,
+    "04_compound_candidate": 1035,
+    "05_supplemental_candidate": 3653,
+    "06_surface_shape_only": 11799,
+    "09_hold_or_exclude": 9902
+  },
+  "candidate_status_counts": {
+    "grammar_not_dictionary": 51,
+    "headword_candidate": 16551,
+    "headword_seed": 96,
+    "hold_clause_or_example": 305,
+    "hold_fragment": 733,
+    "hold_grammar_or_fragment": 6529,
+    "hold_identifier_or_compound": 1825,
+    "hold_quoted_context": 130,
+    "hold_segmentation": 272,
+    "nonheadword_notation": 57,
+    "provisional_defined": 1352
+  },
+  "dictionary_source_sha256": "4954945d30c5391aa9418257bd2289d8e0ec6aeba8106df589a662f3298707fc",
+  "excluded_generation_inputs": [
+    "GLOSSARY.md",
+    "99_Private_Core_Not_Included/README.md"
+  ],
+  "external_field_definitions_verified_against_external_sources": false,
+  "headword_candidate_total": 17999,
+  "headword_group_counts": {
+    "general": 16962,
+    "so": 658,
+    "technical": 379
+  },
+  "headword_grouping_is_not_imported_term_equivalence": true,
+  "human_approval_of_entries": false,
+  "new_definitions_included": 35,
+  "previous_assistant_definitions": 1365,
+  "previous_definitions_not_canonically_adopted": true,
+  "rc008_source_sha256": "bcf56409d091a67b8314fce5ac6e0676a7bc79e23d517b92ac56138595ae166e",
+  "scan": {
+    "headwords_with_any_literal_source_examples": 17994,
+    "headwords_with_at_least_one_whole_term_like_character_context": 17855,
+    "matching_trie_nodes": 35319,
+    "max_distinct_matching_candidates_in_line": 135,
+    "scanned_docs": 236,
+    "scanned_lines": 109301,
+    "scanned_utf8_bytes": 5245975
+  },
+  "seed_count_so": 315,
+  "seed_count_technical": 211,
+  "source_evidence_is_substring_not_semantic_validation": true,
+  "source_pointers_in_dictionary_body": false,
+  "source_registry_unique": 27901,
+  "source_surface_kinds": {
+    "compound_run": 1108,
+    "definition_headword": 438,
+    "function_expression": 30,
+    "quoted_expression": 689,
+    "supplemental_jp": 3670,
+    "surface_run": 22241
+  },
+  "status": "AI exploratory; human semantic review and canonical adoption not done",
+  "technical_nearby_among_candidate_headwords": 421,
+  "technical_nearby_in_all_surfaces": 489,
+  "unreviewed_literal_definition_candidates_count": 67
+}
