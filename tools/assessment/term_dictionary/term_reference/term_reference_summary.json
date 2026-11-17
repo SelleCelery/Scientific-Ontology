@@ -1,0 +1,23 @@
+{
+  "attestation_checks": {
+    "verified_surface_on_line": 4067
+  },
+  "attested_registered_document_count": 115,
+  "attested_term_to_source_edges": 4067,
+  "attested_unregistered_source_count": 20,
+  "definition_lexical_edges": 10416,
+  "definition_self_lexical_edges": 200,
+  "dictionary_entry_count": 1500,
+  "dictionary_groups": {
+    "general": 901,
+    "so": 395,
+    "technical": 204
+  },
+  "form_collision_count": 0,
+  "graph_edge_count": 14483,
+  "graph_node_count": 1635,
+  "original_source_attestations": 4067,
+  "schema_version": "0.1.0",
+  "source_limit": "scope is the supplied dictionary attestations and definition strings, not every term occurrence in repository",
+  "unresolved_meaning_decisions": "all, unless independently reviewed; lexical links are not logical support"
+}

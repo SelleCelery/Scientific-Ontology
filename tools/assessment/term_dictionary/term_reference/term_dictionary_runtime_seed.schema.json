@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SO Portable Dictionary Runtime Seed (not an approved canonical dictionary)",
+  "type": "object",
+  "required": ["schema_version", "kind", "status", "dictionary_sha256", "matching_contract", "entries"],
+  "properties": {
+    "schema_version": {"const": "0.1.0"},
+    "kind": {"const": "so.term_dictionary_runtime_seed"},
+    "status": {"const": "unreviewed_draft_no_canonical_sense_split"},
+    "display_order_for_future_senses": {"type": "array", "items": {"type": "string"}},
+    "term_id_namespace": {"type": "string"},
+    "dictionary_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "matching_contract": {"type": "object"},
+    "entries": {"type": "array", "items": {"type": "object", "required": ["id", "label", "forms", "senses", "group"],
+      "properties": {
+        "id": {"type": "string"}, "label": {"type": "string", "minLength": 1},
+        "forms": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "senses": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["sense_id", "scope", "definition", "authority", "status"]}},
+        "group": {"enum": ["general", "so", "technical"]},
+        "technical_adjacency": {"type": "boolean"}, "reading": {"type": ["string", "null"]}
+      }, "additionalProperties": true}}
+  }, "additionalProperties": false
+}

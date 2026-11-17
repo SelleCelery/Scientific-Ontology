@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SO Term Reference Overlay (internal research version)",
+  "type": "object",
+  "required": ["schema_version", "kind", "layer", "sources", "relation_types", "nodes", "edges", "diagnostics"],
+  "properties": {
+    "schema_version": {"const": "0.1.0"},
+    "kind": {"const": "so.term_reference_overlay"},
+    "layer": {"const": "internal_research_draft_not_public_runtime"},
+    "sources": {
+      "type": "object",
+      "required": ["dictionary_sha256", "document_graph_sha256", "evidence_verification"],
+      "properties": {
+        "dictionary_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "document_graph_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "corpus_snapshot_sha256": {"type": ["string", "null"]},
+        "evidence_verification": {"type": "string"}
+      }, "additionalProperties": false
+    },
+    "relation_types": {"type": "object", "required": ["surface_attested_in", "definition_lexically_mentions"]},
+    "nodes": {"type": "array", "items": {"type": "object", "required": ["id", "type"],
+      "properties": {"id": {"type": "string"}, "type": {"enum": ["dictionary_term", "registered_document_reference", "unregistered_source_reference"]}},
+      "additionalProperties": true}},
+    "edges": {"type": "array", "items": {"type": "object",
+      "required": ["from", "to", "relation", "evidence_kind", "provenance"],
+      "properties": {"from": {"type": "string"}, "to": {"type": "string"},
+        "relation": {"enum": ["surface_attested_in", "definition_lexically_mentions"]},
+        "evidence_kind": {"type": "string"}, "provenance": {"type": "array", "minItems": 1}},
+      "additionalProperties": false}},
+    "diagnostics": {"type": "object", "required": ["unverified_attestations", "ambiguous_forms", "unregistered_source_paths"]}
+  },
+  "additionalProperties": false
+}
