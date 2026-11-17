@@ -1,0 +1,21 @@
+{
+  "confirmed_external_definitions": 0,
+  "duplicate_headwords": 0,
+  "entries_with_source_surface_examples": 1500,
+  "entries_without_source_surface_examples": 0,
+  "groups": {
+    "general": 901,
+    "so": 395,
+    "technical": 204
+  },
+  "human_reviewed_definitions": 0,
+  "inherited_entry_count": 1387,
+  "new_definition_count": 113,
+  "nonempty_definitions": 1500,
+  "right_click_demo": "standalone HTML only; v6 integration not performed",
+  "source_attestation_caveat": "character/surface hints; term sense and definition not independently verified",
+  "technical_adjacency_count": 262,
+  "total_entries": 1500,
+  "unique_id_count": 1500,
+  "v6_schema_adoption": "not_decided"
+}
