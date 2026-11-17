@@ -1,0 +1,2 @@
+{"normalization_key":"事実候補","terms":["事実候補","事実候補 / fact candidate"],"definitions":["観測・記録・測定・入力として、条件と由来を伴って利用可能なもの。訂正可能性を残すが、後続仮説の都合で書き換えてよい入力ではない。","観測・測定・記録や入力として、条件と由来を明示して検討できるもの。未検証の事実と混同しない。"],"relationship":"candidate_only_not_semantically_adjudicated"}
+{"normalization_key":"根拠仮説","terms":["根拠仮説","根拠仮説 / ground hypothesis"],"definitions":["事実や構造がなぜ成立するかを説明するモデル。事実そのものや、支持経路を追跡する操作とは区別する。","ある事実や構造がなぜ成立するかについて提示する説明モデル。観測された事実とは区別する。"],"relationship":"candidate_only_not_semantically_adjudicated"}

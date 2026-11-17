@@ -1,0 +1,40 @@
+{
+  "source_zip_sha256": "4954945d30c5391aa9418257bd2289d8e0ec6aeba8106df589a662f3298707fc",
+  "source_archive_sha256_attested_in_prior_coverage": "bcf56409d091a67b8314fce5ac6e0676a7bc79e23d517b92ac56138595ae166e",
+  "source_archive_present_in_this_run": false,
+  "total_candidate_surfaces": 27901,
+  "existing_editorial_drafts_unchanged": 1365,
+  "literal_candidates_manually_triaged": 67,
+  "manual_review_actions": {
+    "local_label_or_claim_not_general_term": 21,
+    "negative_limit_not_positive_definition": 18,
+    "rhetoric_or_fragment_not_dictionary_headword": 5,
+    "scoped_provisional_entry_candidate": 23
+  },
+  "separate_scoped_definition_candidates": 23,
+  "mechanical_hint_counts": {
+    "compound_surface_needs_segmentation": 1073,
+    "existing_editorial_draft": 1365,
+    "literal_explanation_candidate": 67,
+    "quoted_expression_needs_context": 680,
+    "single_hiragana_needs_context": 43,
+    "supplemental_surface_check_scope": 3670,
+    "symbol_or_numeric_candidate": 52,
+    "unclassified_surface_needs_context": 20951
+  },
+  "incoming_status_counts": {
+    "additional_surface_candidate_unreviewed": 3670,
+    "assistant_editorial_current": 1011,
+    "assistant_editorial_previous": 354,
+    "literal_source_candidate": 67,
+    "surface_only_not_semantically_reviewed": 22799
+  },
+  "normalization_collision_groups_for_existing_1365": 2,
+  "semantic_review_of_27901_completed": false,
+  "definitions_verified_against_complete_rc008": false,
+  "dictionary_is_canonical": false,
+  "repository_applied": false,
+  "human_review_done": false,
+  "mechanical_hints_are_not_term_segmentation_or_semantic_judgments": true,
+  "main_dictionary_contains_source_pointers": false
+}
