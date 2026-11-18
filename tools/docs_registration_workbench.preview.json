@@ -3,9 +3,9 @@
     "schema_version": "0.3",
     "source": {
       "manifest_path": "tools/docs_manifest.yml",
-      "manifest_sha256": "871f560369a6c3b8f7a3d62f71493e7588c94e15970369a19a6a1ec07a69af18",
+      "manifest_sha256": "f613d8efe826ea66a482671869facd11a6b1f676a492094486a3ce2215be0b50",
       "graph_path": "tools/docs_graph.json",
-      "graph_sha256": "346920ceed1531b9e2dbc11673b2551b05d90e716653dcaf085302e096795f8d",
+      "graph_sha256": "e30a629113fbe8cfb3b6c04ce45c5c80895913927469ccd4e6c4eb6312b912ac",
       "revision_proposals_path": "tools/docs_revision_proposals.yml",
       "revision_proposals_sha256": "e3854091b43f8f84de454861a30c69a6a10185d87652f6a905c5f3d166e3d564",
       "preview_contract": "manifest-backed Developer read model; browser writes no canonical YAML"
