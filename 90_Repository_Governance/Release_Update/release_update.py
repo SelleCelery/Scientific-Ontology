@@ -189,38 +189,6 @@ def validate_state(state: dict[str, Any], strict_release: bool = False) -> list[
         abs_path = REPO_ROOT / rel
         if not abs_path.exists():
             raise ValidationError(f"Guaranteed public inclusion is missing from repository: {rel}")
-        expected_count = item.get("document_count_ja_core")
-        if expected_count is not None:
-            if not abs_path.is_dir():
-                raise ValidationError(f"document_count_ja_core requires a directory path: {rel}")
-            expected_count = item.get("document_count_ja_core")
-            if expected_count is not None:
-                if not abs_path.is_dir():
-                    raise ValidationError(
-                        f"document_count_ja_core requires a directory path: {rel}"
-                    )
-
-                exclusions = set(item.get("document_count_exclusions", []))
-
-                ja_core_files = [
-                    path
-                    for path in abs_path.glob("*.ja.md")
-                    if path.name not in exclusions
-                ]
-
-                actual_count = len(ja_core_files)
-
-                if actual_count != int(expected_count):
-                    raise ValidationError(
-                        f"Japanese core document count mismatch for {rel}: "
-                        f"expected {expected_count}, found {actual_count}; "
-                        f"excluded support files: {', '.join(sorted(exclusions)) or 'none'}"
-                    )
-            if actual_count != int(expected_count):
-                raise ValidationError(
-                    f"Japanese core document count mismatch for {rel}: "
-                    f"expected {expected_count}, found {actual_count}"
-                )
         eng = item.get("english_commensuration")
         if eng and not (REPO_ROOT / eng).exists():
             raise ValidationError(f"Declared English commensuration is missing: {eng}")

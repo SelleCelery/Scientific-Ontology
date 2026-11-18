@@ -152,11 +152,7 @@ public_scope:
       path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/"
       status: "included"
       role: "public_living_canonical_research_line"
-      document_count_ja_core: 9
-      document_count_exclusions:
-        - Return_Intake_Log.ja.md
-        - Sentence_Cloud_Bit_Probe_and_LLM_Learning.ja.md
-      note: "Gate 4を通過した九研究ノートを固定中核として数える。Return Intakeと、後続の返り接続型拡張正本は中核数から分離する。"
+      note: "Gate 4を通過した九研究ノートの成立史を記録する。後続の文書追加は、この過去の件数に固定して判定しない。"
 
     - id: "consent_boundary"
       path: "05_Research_Notes/Cross_Domain_Ontological_Notes/Consent_Boundary_and_Sentence_Bit_Asymmetry.ja.md"

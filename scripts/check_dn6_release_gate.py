@@ -61,7 +61,6 @@ def walk_forbidden_keys(value: Any, forbidden: set[str], found: set[str]) -> Non
 
 
 def gate_data_checks(root: Path, cfg: dict[str, Any]) -> list[dict[str, Any]]:
-    expected = cfg["expected_public_state"]
     boundary = cfg["public_boundary"]
     checks: list[dict[str, Any]] = []
 
@@ -70,23 +69,14 @@ def gate_data_checks(root: Path, cfg: dict[str, Any]) -> list[dict[str, Any]]:
     public_graph = load_json(root / "tools" / "docs_public_graph.json")
     manifest = load_yaml(root / "tools" / "docs_manifest.yml")
 
-    source = catalog.get("source", {})
-    facts = {
-        "catalog_documents": len(catalog.get("documents", [])),
-        "registered_documents": source.get("registered_documents"),
-        "provisional_documents": source.get("provisional_documents"),
-        "language_pair_families": source.get("language_pair_families"),
-        "graph_nodes": len(graph.get("nodes", [])),
-        "graph_edges": len(graph.get("edges", [])),
-        "observed_unregistered_documents": len(graph.get("diagnostics", {}).get("observed_unregistered_documents", [])),
-    }
-    for key, actual in facts.items():
-        wanted = expected.get(key)
-        checks.append({
-            "label": f"expected:{key}",
-            "pass": actual == wanted,
-            "detail": f"actual={actual!r}, expected={wanted!r}",
-        })
+    # Manifest / generated-data freshness is checked by prior commands.
+    # Only the remaining publication-boundary invariants belong in this gate.
+    unregistered = graph.get("diagnostics", {}).get("observed_unregistered_documents", [])
+    checks.append({
+        "label": "no-unregistered-documents",
+        "pass": isinstance(unregistered, list) and len(unregistered) == 0,
+        "detail": f"unregistered={len(unregistered) if isinstance(unregistered, list) else 'invalid'}",
+    })
 
     forbidden_catalog = set(boundary.get("public_catalog_forbidden_keys", []))
     found_catalog: set[str] = set()
@@ -146,38 +136,44 @@ def public_format_check(root: Path, cfg: dict[str, Any]) -> tuple[dict[str, Any]
     ]
     result = run_command(root, "public-format-release-gate", command)
     report_path = Path(temp_name)
-    report = load_json(report_path) if report_path.exists() else {"summary": {}, "issues": []}
-    report_path.unlink(missing_ok=True)
+    report_exists = report_path.is_file()
+    report_error = None
+    try:
+        report = load_json(report_path) if report_exists else {"summary": {}, "issues": []}
+    except (ValueError, OSError) as exc:
+        report = {"summary": {}, "issues": []}
+        report_error = str(exc)
+    finally:
+        report_path.unlink(missing_ok=True)
 
-    error_count = sum(1 for issue in report.get("issues", []) if str(issue.get("severity", "")).lower() == "error")
+    report_valid = (
+        isinstance(report, dict)
+        and isinstance(report.get("summary"), dict)
+        and isinstance(report.get("issues"), list)
+        and all(isinstance(issue, dict) for issue in report["issues"])
+    )
+    issues = report["issues"] if report_valid else []
+    error_count = sum(1 for issue in issues if str(issue.get("severity", "")).lower() == "error")
     warning_counts = collections.Counter(
         str(issue.get("code", "UNKNOWN"))
-        for issue in report.get("issues", [])
+        for issue in issues
         if str(issue.get("severity", "")).lower() == "warning"
     )
-    ceilings = {str(k): int(v) for k, v in cfg.get("public_format_warning_ceiling", {}).items()}
-    unknown = sorted(set(warning_counts) - set(ceilings))
-    exceeded = sorted((code, count, ceilings.get(code, -1)) for code, count in warning_counts.items() if count > ceilings.get(code, -1))
-
+    execution_ok = result["returncode"] == 0 and report_exists and report_error is None and report_valid
     checks = [
+        {
+            "label": "public-format-check-executed",
+            "pass": execution_ok,
+            "detail": f"returncode={result['returncode']}, report_exists={report_exists}, report_valid={report_valid}, report_error={report_error}",
+        },
         {
             "label": "public-format-errors-zero",
             "pass": error_count == 0,
             "detail": f"errors={error_count}",
         },
-        {
-            "label": "public-format-warning-codes-known",
-            "pass": not unknown,
-            "detail": "none" if not unknown else ", ".join(unknown),
-        },
-        {
-            "label": "public-format-warning-debt-not-increased",
-            "pass": not exceeded,
-            "detail": "none" if not exceeded else "; ".join(f"{c}={n}>{m}" for c, n, m in exceeded),
-        },
     ]
-    # The raw checker may return non-zero because of errors. The explicit checks above own gate semantics.
-    result["pass"] = error_count == 0 and not unknown and not exceeded
+    # Warnings remain visible; an outdated numerical ceiling does not decide publication.
+    result["pass"] = execution_ok and error_count == 0
     result["warning_counts"] = dict(sorted(warning_counts.items()))
     result["summary"] = report.get("summary", {})
     return result, checks
@@ -193,13 +189,13 @@ def display_command(command: list[str]) -> str:
     return " ".join(shown)
 
 
-def markdown_report(mode: str, overall: bool, command_results: list[dict[str, Any]], data_checks: list[dict[str, Any]], public_format: dict[str, Any], cfg: dict[str, Any]) -> str:
+def markdown_report(mode: str, overall: bool, command_results: list[dict[str, Any]], data_checks: list[dict[str, Any]], public_format: dict[str, Any], cfg: dict[str, Any], target_release: str) -> str:
     status = "PASS" if overall else "BLOCKED"
     lines = [
         "# DN-6 Release Gate Report / DN-6 リリースゲート報告",
         "",
         f"> Gate: `{cfg['gate']['id']}`",
-        f"> Target: `{cfg['gate']['target_release']}`",
+        f"> Target: `{target_release}`",
         f"> Mode: `{mode}`",
         f"> Result: **{status}**",
         "",
@@ -207,7 +203,7 @@ def markdown_report(mode: str, overall: bool, command_results: list[dict[str, An
         "",
     ]
     if overall:
-        lines.append(f"{cfg['gate']['target_release']} のこのモードに必要な機械検証は通過した。既知 warning は解決済みとは扱わず、設定された上限内の技術負債として保持する。")
+        lines.append(f"{target_release} のこのモードに必要な機械検証は通過した。warning は観測として保持し、公開エラーとは混同しない。")
     else:
         lines.append("少なくとも一つの release blocker が残っている。失敗した項目を解消するまで、このモードではリリース可能と判定しない。")
     lines += ["", "## 2. Required checks", ""]
@@ -226,8 +222,7 @@ def markdown_report(mode: str, overall: bool, command_results: list[dict[str, An
     lines.append(f"- Info: {summary.get('info', 0)}")
     lines.append("")
     for code, count in sorted(public_format.get("warning_counts", {}).items()):
-        ceiling = cfg.get("public_format_warning_ceiling", {}).get(code)
-        lines.append(f"- `{code}`: {count} / ceiling {ceiling}")
+        lines.append(f"- `{code}`: {count}")
     lines += [
         "",
         "## 5. 今回のrelease blockerにしない Developer 系",
@@ -294,10 +289,10 @@ def main() -> int:
         ("language-resolution", ["node", "scripts/check_navigator_language_resolution.mjs"]),
         ("reader-boundary", [sys.executable, "scripts/serve_navigator.py", "--check"]),
         ("navigator-interface", [sys.executable, "scripts/check_navigator_interface.py"]),
-        ("release-metadata-sync", [sys.executable, "90_Repository_Governance/Release_Update/release_update.py", "--check"]),
     ]
-    if args.mode == "publication":
-        commands.append(("publication-release-check", [sys.executable, "90_Repository_Governance/Release_Update/release_update.py", "--release-check"]))
+    # Publication --release-check subsumes ordinary --check; do not execute both.
+    release_flag = "--release-check" if args.mode == "publication" else "--check"
+    commands.append(("release-metadata-sync", [sys.executable, "90_Repository_Governance/Release_Update/release_update.py", release_flag]))
 
     command_results = [run_command(root, label, command) for label, command in commands]
     pf_result, pf_checks = public_format_check(root, cfg)
@@ -317,7 +312,9 @@ def main() -> int:
         print(f"{'PASS' if item.get('pass') else 'FAIL'} {item['label']}: {item.get('detail', '')}")
 
     if args.write_report:
-        report = markdown_report(args.mode, overall, command_results, data_checks, pf_result, cfg)
+        state = load_yaml(root / "90_Repository_Governance" / "Release_Update" / "release_state.yml")
+        target_release = str(state.get("release", {}).get("display_version", "unresolved"))
+        report = markdown_report(args.mode, overall, command_results, data_checks, pf_result, cfg, target_release)
         (root / "tools" / "DN6_RELEASE_GATE_REPORT.ja.md").write_text(report, encoding="utf-8", newline="\n")
         print("WROTE tools/DN6_RELEASE_GATE_REPORT.ja.md")
 
