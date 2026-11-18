@@ -13,6 +13,8 @@ sources:
     - "navigator/index.html"
     - "navigator/styles.css"
     - "navigator/public-content.json"
+    - "navigator/euclid-book1-48-reference.html"
+    - "navigator/reading-bundles/SO_Grammar_Dictionary_Proposition_Spine_Reading_Bundle.zip"
   navigator_public_globs:
     - "navigator/dist/*.js"
     - "navigator/vendor/katex/*"

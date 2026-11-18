@@ -9936,6 +9936,28 @@ documents:
     internal_profile_semantics: pre-document-contract labels; not approved assessment results
 
 managed_assets:
+- asset_id: euclid_book1_48_reference_spine_research_ja
+  path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Euclid_BookI_48_ReferenceSpine_Study.ja.md"
+  document_role: historical_support
+  catalog_document: false
+  access: repository
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Metaphysical_Approach/Engineering Research on Correctness/Euclid_BookI_48_ReferenceSpine_Study.ja.md"
+- asset_id: language_to_spine_grammar_dictionary_proposition_study_ja
+  path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Language_to_Spine_Grammar_Dictionary_Proposition_Study.ja.md"
+  document_role: historical_support
+  catalog_document: false
+  access: repository
+  language_relation:
+    language: ja
+    role: authoritative
+    counterpart_path: null
+    coverage: not_applicable
+    authoritative_path: "05_Research_Notes/Language_Meaning_and_Communication_Phase_Studies/Language_to_Spine_Grammar_Dictionary_Proposition_Study.ja.md"
 - asset_id:
     04_applications_so_reflexive_philosophical_research_volumes_volume_01_deregistry_to_judgment_transparency_00_timeline
   path:
