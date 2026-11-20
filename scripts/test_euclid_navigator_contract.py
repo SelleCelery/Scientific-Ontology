@@ -4,11 +4,15 @@
 Checks graph arithmetic and displayed dataset integrity. This DOES NOT validate
 mathematical derivations, language semantics, or a physical gamma equation.
 """
+import csv
 import json
 import re
 import unittest
 from collections import defaultdict, deque
 from pathlib import Path
+
+from euclid_terminal_future_experiment import (MODELS, X_VALUES, OUTPUT,
+    examine_graph, compute_rows, read_embedded_data, cut_stats)
 
 NAV = Path(__file__).resolve().parent.parent / 'navigator/euclid-13books-alpha-beta-gamma-navigator.html'
 
@@ -100,7 +104,8 @@ class NavigatorContract(unittest.TestCase):
                        'id="gammaGraph"', 'id="gammaAuto"',
                        'id="gammaZero"', 'id="gammaInfinite"',
                        'id="comparePick"', 'id="comparisonBody"',
-                       'id="futureX"', 'id="bookGrid"'):
+                       'id="futureModel"', 'data-x="25"',
+                       'id="matrixBody"', 'id="bookGrid"'):
             self.assertIn(marker, self.html)
 
     def test_trial_gamma_formula_and_impedance_boundaries(self):
@@ -109,6 +114,79 @@ class NavigatorContract(unittest.TestCase):
                         'function gammaIsAbsent(', 'n===0?Infinity',
                         'n===Infinity?0'):
             self.assertIn(snippet, self.html)
+
+    def test_c1_c2_boundary_counts_and_expansion(self):
+        graph=examine_graph(self.db)
+        self.assertEqual(len(graph['terminals']),146)
+        self.assertEqual(graph['c1_slope'],8498)
+        self.assertEqual({x:19220+8498*x for x in X_VALUES},
+                         {0:19220,1:27718,10:104200,25:231670})
+        self.assertEqual({x:19220+465*x for x in X_VALUES},
+                         {0:19220,1:19685,10:23870,25:30845})
+
+    def test_experiment_csv_is_reproducible(self):
+        self.assertTrue(OUTPUT.is_file(),'Run euclid_terminal_future_experiment.py first')
+        rows=compute_rows(self.db)
+        self.assertEqual(len(rows),465*len(MODELS)*len(X_VALUES))
+        with OUTPUT.open(encoding='utf-8',newline='') as file:
+            saved=list(csv.DictReader(file))
+        self.assertEqual(len(saved),len(rows))
+        for i,(source,old) in enumerate(zip(rows,saved)):
+            self.assertEqual(source.keys(),old.keys(),i)
+            for key,val in source.items():
+                self.assertEqual(str(val),old[key],f'row={i} key={key}')
+
+    def test_x0_c1_c2_identical_and_rank_scope(self):
+        rows=compute_rows(self.db)
+        by={(r['proposition_id'],r['model'],r['x']):r for r in rows}
+        for id_ in self.props:
+            c1=by[(id_,'C1',0)]
+            c2=by[(id_,'C2',0)]
+            self.assertEqual(c1['X_extended'],self.props[id_]['x'])
+            for key in ('sigma_X_before','sigma_X_after','loss_sigma_X',
+                        'loss_rank_of_465','alpha_lost'):
+                self.assertEqual(c1[key],c2[key],(id_,key))
+        self.assertEqual(by[('I.47','C1',25)]['loss_sigma_X'],90927)
+        self.assertEqual(by[('I.47','C2',25)]['loss_sigma_X'],9077)
+        self.assertEqual(by[('XIII.18','C1',25)]['loss_sigma_X'],4653)
+        self.assertEqual(by[('XIII.18','C2',25)]['loss_sigma_X'],753)
+        self.assertEqual(by[('I.47','C1',25)]['X_extended'],895)
+        self.assertEqual(by[('I.47','C2',25)]['X_extended'],95)
+
+    def test_deleted_terminal_ports_are_not_reassigned(self):
+        graph=examine_graph(self.db)
+        for p in ('I.47','VI.31','XIII.18','I.4'):
+            c=cut_stats(self.db,graph,p)
+            dead=c['dead']
+            survivors=set(graph['ids'])-dead
+            self.assertTrue(len(graph['terminals']-dead)>0)
+            # Reconstruct the C1/C2 virtual graph explicitly at x=1.
+            for mode in ('C1','C2'):
+                extras={}
+                for t in graph['terminals']:
+                    extras[t]=[f'ext:{t}' if mode=='C1' else 'ext:shared']
+                recomputed={}
+                for u in reversed(graph['order']):
+                    if u in dead:continue
+                    targets=set()
+                    for child in graph['children'][u]:
+                        if child in survivors:
+                            targets.add(child)
+                            targets.update(recomputed[child])
+                    for dest in extras.get(u,[]):targets.add(dest)
+                    recomputed[u]=targets
+                explicit=sum(len(v) for v in recomputed.values())
+                slope=(c['after_c1_slope'] if mode=='C1' else c['after_c2_slope'])
+                self.assertEqual(explicit,c['after_x']+slope,(p,mode))
+
+    def test_external_comparison_controls_and_no_gamma_semantic_claim(self):
+        for marker in ('id="futureModel"','data-x="0"','data-x="1"',
+                       'data-x="10"','data-x="25"','id="matrixBody"',
+                       'function extensionResult(', 'function renderMatrix(',
+                       'const TERMINALS=', '切断後の新生終端へ仮想後続は付け直しません',
+                       '同じノード予算の比較ではありません'):
+            self.assertIn(marker,self.html)
+        self.assertNotIn('id="futureX"',self.html)
 
     def test_no_runtime_external_dependency(self):
         self.assertNotIn('<script src="https://', self.html)
