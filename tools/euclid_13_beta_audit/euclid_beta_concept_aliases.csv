@@ -1,0 +1,161 @@
+﻿concept_id,count_unit,regex,valid_from_book,valid_to_book
+I.Definition1,I.Definition1,\bpoints?\b,I,XIII
+I.Definition2,I.Definition2,\blines?\b,I,XIII
+I.Definition3,I.Definition3,\bextremit(?:y|ies) of (?:a |the )?lines?\b,I,XIII
+I.Definition4,I.Definition4,\bstraight lines?\b,I,XIII
+I.Definition5,I.Definition5,\bsurfaces?\b,I,XIII
+I.Definition6,I.Definition6,\bextremit(?:y|ies) of (?:a |the )?surfaces?\b,I,XIII
+I.Definition7,I.Definition7,\bplane surfaces?\b,I,XIII
+I.Definition8,I.Definition8,\bplane angles?\b,I,XIII
+I.Definition9,I.Definition9,\brectilineal angles?\b,I,XIII
+I.Definition10,I.Definition10,\bright angles?\b,I,XIII
+I.Definition10,I.Definition10,\bperpendiculars?\b,I,XIII
+I.Definition11,I.Definition11,\bobtuse angles?\b,I,XIII
+I.Definition12,I.Definition12,\bacute angles?\b,I,XIII
+I.Definition13,I.Definition13,\bboundar(?:y|ies)\b,I,XIII
+I.Definition14,I.Definition14,\bfigures?\b,I,XIII
+I.Definition15,I.Definition15,\bcircles?\b,I,XIII
+I.Definition16,I.Definition16,\bcent(?:er|re)s? of (?:the |a )?circles?\b,I,XIII
+I.Definition16,I.Definition16,\bcent(?:er|re)s?\b,I,XIII
+I.Definition17,I.Definition17,\bdiameters? of (?:the |a )?circles?\b,I,XIII
+I.Definition18,I.Definition18,\bsemicircles?\b,I,XIII
+I.Definition19,I.Definition19,\brectilineal figures?\b,I,XIII
+I.Definition19,I.Definition19,\btrilateral figures?\b,I,XIII
+I.Definition19,I.Definition19,\bquadrilateral figures?\b,I,XIII
+I.Definition19,I.Definition19,\bmultilateral figures?\b,I,XIII
+I.Definition20,I.Definition20,\bequilateral triangles?\b,I,XIII
+I.Definition20,I.Definition20,\bisosceles triangles?\b,I,XIII
+I.Definition20,I.Definition20,\bscalene triangles?\b,I,XIII
+I.Definition21,I.Definition21,\bright[- ]angled triangles?\b,I,XIII
+I.Definition21,I.Definition21,\bobtuse[- ]angled triangles?\b,I,XIII
+I.Definition21,I.Definition21,\bacute[- ]angled triangles?\b,I,XIII
+I.Definition22,I.Definition22,\bsquares?\b,I,XIII
+I.Definition22,I.Definition22,\boblongs?\b,I,XIII
+I.Definition22,I.Definition22,\brhombi?\b,I,XIII
+I.Definition22,I.Definition22,\brhomboids?\b,I,XIII
+I.Definition22,I.Definition22,\btrapezia\b,I,XIII
+I.Definition23,I.Definition23,\bparallel straight lines?\b,I,XIII
+I.Definition23,I.Definition23,\bparallel lines?\b,I,XIII
+II.Definition1,II.Definition1,\brectangular parallelograms?\b,II,XIII
+II.Definition1,II.Definition1,\brectangle(?:s)? contained by\b,II,XIII
+II.Definition2,II.Definition2,\bgnomons?\b,II,XIII
+III.Definition1,III.Definition1,\bequal circles?\b,III,XIII
+III.Definition2,III.Definition2,\btangent to (?:a |the )?circles?\b,III,XIII
+III.Definition2,III.Definition2,\btouch(?:es|ing|ed)? (?:a |the )?circles?\b,III,XIII
+III.Definition3,III.Definition3,\bcircles? touch(?:ing|es)? (?:one another|each other)\b,III,XIII
+III.Definition4,III.Definition4,\bequally distant from (?:the |a )?cent(?:er|re)\b,III,XIII
+III.Definition5,III.Definition5,\bat a greater distance from (?:the |a )?cent(?:er|re)\b,III,XIII
+III.Definition6,III.Definition6,\bsegments? of (?:a |the )?circles?\b,III,XIII
+III.Definition7,III.Definition7,\bangles? of (?:a |the )?segments?\b,III,XIII
+III.Definition8,III.Definition8,\bangles? in (?:a |the )?segments?\b,III,XIII
+III.Definition9,III.Definition9,\bangles? (?:stand|stands|standing) upon\b,III,XIII
+III.Definition10,III.Definition10,\bsectors? of (?:a |the )?circles?\b,III,XIII
+III.Definition11,III.Definition11,\bsimilar segments?\b,III,XIII
+IV.Definition1,IV.Definition1,\binscribed in (?:a |the )?rectilineal figure\b,IV,XIII
+IV.Definition2,IV.Definition2,\bcircumscribed about (?:a |the )?rectilineal figure\b,IV,XIII
+IV.Definition3,IV.Definition3,\binscribed in (?:a |the )?circle\b,IV,XIII
+IV.Definition3,IV.Definition3,"\binscribe\b.{0,60}\bin (?:a |the )?circle\b",IV,XIII
+IV.Definition4,IV.Definition4,\bcircumscribed about (?:a |the )?circle\b,IV,XIII
+IV.Definition5,IV.Definition5,"\bcircle.{0,20}\binscribed in (?:a |the )?figure\b",IV,XIII
+IV.Definition6,IV.Definition6,"\bcircle.{0,20}\bcircumscribed about (?:a |the )?figure\b",IV,XIII
+IV.Definition7,IV.Definition7,\bfitted into (?:a |the )?circle\b,IV,XIII
+V.Definition1,V.Definition1,\bmagnitudes?\b,V,XIII
+V.Definition2,V.Definition2,\bmultiples? of (?:a |the )?magnitude\b,V,XIII
+V.Definition3,V.Definition3,\bratios?\b,V,XIII
+V.Definition4,V.Definition4,\bmagnitudes? (?:which )?have a ratio\b,V,XIII
+V.Definition5,V.Definition5,\bsame ratio\b,V,XIII
+V.Definition5,V.Definition5,\bequimultiples?\b,V,XIII
+V.Definition6,V.Definition6,\bproportional\b,V,VI
+V.Definition7,V.Definition7,\bgreater ratio\b,V,XIII
+V.Definition8,V.Definition8,\bproportion in three terms\b,V,XIII
+V.Definition9,V.Definition9,\bduplicate ratio\b,V,XIII
+V.Definition10,V.Definition10,\btriplicate ratio\b,V,XIII
+V.Definition11,V.Definition11,\bcorresponding magnitudes?\b,V,XIII
+V.Definition12,V.Definition12,\balternate ratio\b,V,XIII
+V.Definition12,V.Definition12,\balternately\b,V,XIII
+V.Definition13,V.Definition13,\binverse ratio\b,V,XIII
+V.Definition13,V.Definition13,\binversely\b,V,XIII
+V.Definition14,V.Definition14,\bcomposition of (?:a |the )?ratio\b,V,XIII
+V.Definition14,V.Definition14,\bcomponendo\b,V,XIII
+V.Definition15,V.Definition15,\bseparation of (?:a |the )?ratio\b,V,XIII
+V.Definition15,V.Definition15,\bdividendo\b,V,XIII
+V.Definition16,V.Definition16,\bconversion of (?:a |the )?ratio\b,V,XIII
+V.Definition16,V.Definition16,\bconvertendo\b,V,XIII
+V.Definition17,V.Definition17,\bex aequali\b,V,XIII
+V.Definition18,V.Definition18,\bperturbed proportion\b,V,XIII
+VI.Definition1,VI.Definition1,\bsimilar rectilineal figures?\b,VI,XIII
+VI.Definition1,VI.Definition1,\bsimilar figures?\b,VI,XIII
+VI.Definition2,VI.Definition2,\breciprocally related\b,VI,XIII
+VI.Definition3,VI.Definition3,\bextreme and mean ratio\b,VI,XIII
+VI.Definition4,VI.Definition4,\bheight of (?:a |the |any )?figure\b,VI,XIII
+VI.Definition5,VI.Definition5,\bcompounded of ratios?\b,VI,XIII
+VII.Definition1,VII.Definition1,\bunits?\b,VII,IX
+VII.Definition2,VII.Definition2,\bnumbers?\b,VII,IX
+VII.Definition3,VII.Definition3,\bpart of (?:a |the )?number\b,VII,IX
+VII.Definition4,VII.Definition4,\bparts of (?:a |the )?number\b,VII,IX
+VII.Definition5,VII.Definition5,\bmultiple of (?:a |the )?number\b,VII,IX
+VII.Definition6,VII.Definition6,\beven numbers?\b,VII,IX
+VII.Definition7,VII.Definition7,\bodd numbers?\b,VII,IX
+VII.Definition8,VII.Definition8,\beven[- ]times[- ]even numbers?\b,VII,IX
+VII.Definition9,VII.Definition9,\beven[- ]times[- ]odd numbers?\b,VII,IX
+VII.Definition10,VII.Definition10,\bodd[- ]times[- ]odd numbers?\b,VII,IX
+VII.Definition11,VII.Definition11,\bprime numbers?\b,VII,IX
+VII.Definition12,VII.Definition12,\b(?:numbers? )?prime to one another\b,VII,IX
+VII.Definition13,VII.Definition13,\bcomposite numbers?\b,VII,IX
+VII.Definition14,VII.Definition14,\b(?:numbers? )?composite to one another\b,VII,IX
+VII.Definition15,VII.Definition15,\bnumbers? (?:which )?(?:multiply|multiplies) (?:a |the )?number\b,VII,IX
+VII.Definition16,VII.Definition16,\bplane numbers?\b,VII,IX
+VII.Definition17,VII.Definition17,\bsolid numbers?\b,VII,IX
+VII.Definition18,VII.Definition18,\bsquare numbers?\b,VII,IX
+VII.Definition19,VII.Definition19,\bcube numbers?\b,VII,IX
+VII.Definition20,VII.Definition20,\b(?:numbers? (?:are|be) )?proportional\b,VII,IX
+VII.Definition21,VII.Definition21,\bsimilar (?:plane|solid) numbers?\b,VII,IX
+VII.Definition22,VII.Definition22,\bperfect numbers?\b,VII,IX
+X.Definition1.1,X.Definitions_I,\b(?:in)?commensurable (?:magnitudes?|quantities)\b,X,X
+X.Definition1.1,X.Definitions_I,\b(?:in)?commensurab(?:le|ility)\b,X,X
+X.Definition1.2,X.Definitions_I,\b(?:in)?commensurable in square\b,X,X
+X.Definition1.3,X.Definitions_I,\brational straight lines?\b,X,X
+X.Definition1.3,X.Definitions_I,\birrational straight lines?\b,X,X
+X.Definition1.4,X.Definitions_I,\brational (?:areas?|squares?)\b,X,X
+X.Definition1.4,X.Definitions_I,\birrational (?:areas?|squares?)\b,X,X
+X.Definition2.1,X.Definition2.1,\bfirst binomial(?: straight line)?\b,X,X
+X.Definition3.1,X.Definition3.1,\bfirst apotome\b,X,X
+X.Definition2.2,X.Definition2.2,\bsecond binomial(?: straight line)?\b,X,X
+X.Definition3.2,X.Definition3.2,\bsecond apotome\b,X,X
+X.Definition2.3,X.Definition2.3,\bthird binomial(?: straight line)?\b,X,X
+X.Definition3.3,X.Definition3.3,\bthird apotome\b,X,X
+X.Definition2.4,X.Definition2.4,\bfourth binomial(?: straight line)?\b,X,X
+X.Definition3.4,X.Definition3.4,\bfourth apotome\b,X,X
+X.Definition2.5,X.Definition2.5,\bfifth binomial(?: straight line)?\b,X,X
+X.Definition3.5,X.Definition3.5,\bfifth apotome\b,X,X
+X.Definition2.6,X.Definition2.6,\bsixth binomial(?: straight line)?\b,X,X
+X.Definition3.6,X.Definition3.6,\bsixth apotome\b,X,X
+XI.Definition1,XI.Definition1,\bsolid figures?\b,XI,XIII
+XI.Definition1,XI.Definition1,\bsolids?\b,XI,XIII
+XI.Definition2,XI.Definition2,\bextremit(?:y|ies) of (?:a |the )?solid\b,XI,XIII
+XI.Definition3,XI.Definition3,\bstraight lines? (?:are|is) at right angles to (?:a |the )?plane\b,XI,XIII
+XI.Definition4,XI.Definition4,\bplane (?:is|are) at right angles to (?:a |the )?plane\b,XI,XIII
+XI.Definition5,XI.Definition5,\binclination of (?:a |the )?straight line to (?:a |the )?plane\b,XI,XIII
+XI.Definition6,XI.Definition6,\binclination of (?:a |the )?plane to (?:a |the )?plane\b,XI,XIII
+XI.Definition7,XI.Definition7,\bsimilarly inclined\b,XI,XIII
+XI.Definition8,XI.Definition8,\bparallel planes?\b,XI,XIII
+XI.Definition9,XI.Definition9,\bsimilar solid figures?\b,XI,XIII
+XI.Definition10,XI.Definition10,\bequal and similar solid figures?\b,XI,XIII
+XI.Definition11,XI.Definition11,\bsolid angles?\b,XI,XIII
+XI.Definition12,XI.Definition12,\bpyramids?\b,XI,XIII
+XI.Definition13,XI.Definition13,\bprisms?\b,XI,XIII
+XI.Definition14,XI.Definition14,\bspheres?\b,XI,XIII
+XI.Definition15,XI.Definition15,\baxes? of (?:a |the )?spheres?\b,XI,XIII
+XI.Definition16,XI.Definition16,\bcent(?:er|re) of (?:a |the )?sphere\b,XI,XIII
+XI.Definition17,XI.Definition17,\bdiameters? of (?:a |the )?spheres?\b,XI,XIII
+XI.Definition18,XI.Definition18,\bcones?\b,XI,XIII
+XI.Definition19,XI.Definition19,\baxes? of (?:a |the )?cones?\b,XI,XIII
+XI.Definition20,XI.Definition20,\bbases? of (?:a |the )?cones?\b,XI,XIII
+XI.Definition21,XI.Definition21,\bcylinders?\b,XI,XIII
+XI.Definition22,XI.Definition22,\baxes? of (?:a |the )?cylinders?\b,XI,XIII
+XI.Definition23,XI.Definition23,\bbases? of (?:a |the )?cylinders?\b,XI,XIII
+XI.Definition24,XI.Definition24,\bsimilar cones? and cylinders?\b,XI,XIII
+XI.Definition25,XI.Definition25,\bcubes?\b,XI,XIII
+XI.Definition26,XI.Definition26,\boctahedr(?:on|a)\b,XI,XIII
+XI.Definition27,XI.Definition27,\bicosahedr(?:on|a)\b,XI,XIII
+XI.Definition28,XI.Definition28,\bdodecahedr(?:on|a)\b,XI,XIII

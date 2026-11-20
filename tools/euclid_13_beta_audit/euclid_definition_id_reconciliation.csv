@@ -1,0 +1,17 @@
+proposition,source_slot,raw_reference,reconciled_definition,parent_group,proof_evidence,evidence_type,count_unit,note
+VIII.4,6,VIII.Definition20,VII.Definition20,VII.Definition20,"[VII. Def. 20, VII. 13]",source_proof_annotation_confirmed,VII.Definition20,Wrong book in reference slot; proof repeatedly cites VII.Def.20.
+X.15,1,X.Definition1,X.Definition1.1,X.Definitions_I,[X. Def. 1],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.16,1,X.Definition1,X.Definition1.1,X.Definitions_I,[X. Def. 1],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.19,2,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.20,2,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.21,2,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.22,3,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.23,2,X.Definition1,X.Definition1.3,X.Definitions_I,[X. Def. 3],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.26,2,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.29,4,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.36,2,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.37,2,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.38,4,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.39,1,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.40,1,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."
+X.41,3,X.Definition1,X.Definition1.4,X.Definitions_I,[X. Def. 4],source_proof_annotation_confirmed,X.Definitions_I,"One thematic group, four distinct definition meanings; never claim conceptual identity of members."

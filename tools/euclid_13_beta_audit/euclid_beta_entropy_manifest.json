@@ -1,0 +1,152 @@
+{
+  "status": "PROVISIONAL_BETA_ENTROPY_465_COMPUTED_WIDE_POLICY",
+  "scope_statement": "Numbers model admitted evidence/lexical concepts; not fully exhaustive meaning and not proof validity or mathematical upper bounds.",
+  "source_sha256": "901c9af2e18e45b2bc8f6951757561352cc8abba2978684574fafb4a6cdbd848",
+  "source_url": "https://www.wolframcloud.com/obj/4577bf25-6f1c-4b29-98ca-12877d908956",
+  "later_annotation_sources": {
+    "Lardner_1855_I6": "https://www.maths.tcd.ie/~dwilkins/Courses/MA232A/Euclid_ETexts/EuclidBookI_Lardner1855/EuclidBookIProp06_Lardner1855.php",
+    "Joyce_I6": "https://www.euclids-elements.org/elements/books/bookI/propositions/propI6/"
+  },
+  "user_decision": "Within interpretations of the SAME problem choose the largest supported path count. Do NOT merge semantically different concepts just to inflate a number.",
+  "scope": {
+    "theorems": 465,
+    "definitions": 132,
+    "postulates": 5,
+    "common_notions": 5,
+    "count_units": 129,
+    "theorem_graph_recorded_edges": 1639,
+    "exergy_ordered_pairs_recorded": 19220,
+    "entropy_reference_edges": 1889,
+    "entropy_wide_edges": 3810,
+    "counted_proof_or_lexical_edge_channels": {
+      "source_references": 1872,
+      "proof_bracket_definition": 205,
+      "concept_lexical_wide": 2033,
+      "proof_bracket_citation": 1612,
+      "source_special_proof_confirmed": 2,
+      "source_id_reconciled": 16,
+      "later_edition_Lardner1855": 2,
+      "later_editor_Joyce": 2
+    },
+    "explicit_16_definition_id_crosswalk": 16,
+    "lexical_alias_entries": 160,
+    "distinct_definitions_matched_by_lexicon": 99,
+    "numbers_with_at_least_one_lexical_concept": 458,
+    "source_free_recorded_theorems": 16,
+    "source_free_wide_theorems": 0,
+    "theorems_whose_source_free_class_changes": 16
+  },
+  "models": {
+    "recorded": "References and aux aliases only. It is NOT a proven lower bound on all mathematical derivations.",
+    "wide": "References plus proof annotations, explicit contextual definition wording, selected named later-edition I.6 premises, and conservative context-bounded lexical concept matches. Comparable alternative direct references deduplicated by count unit; does not claim all meanings captured."
+  },
+  "example_counts": {
+    "I.1": {
+      "entropy_recorded": 4,
+      "entropy_wide": 10,
+      "exergy_recorded": 308
+    },
+    "I.4": {
+      "entropy_recorded": 1,
+      "entropy_wide": 3,
+      "exergy_recorded": 306
+    },
+    "I.6": {
+      "entropy_recorded": 1,
+      "entropy_wide": 34,
+      "exergy_recorded": 60
+    },
+    "I.47": {
+      "entropy_recorded": 1092,
+      "entropy_wide": 2773,
+      "exergy_recorded": 70
+    },
+    "VI.31": {
+      "entropy_recorded": 9883,
+      "entropy_wide": 25087,
+      "exergy_recorded": 0
+    },
+    "X.15": {
+      "entropy_recorded": 1,
+      "entropy_wide": 2,
+      "exergy_recorded": 86
+    },
+    "XIII.18": {
+      "entropy_recorded": 234797,
+      "entropy_wide": 601945,
+      "exergy_recorded": 0
+    }
+  },
+  "source_free_class_changed_ids": [
+    "I.6",
+    "III.6",
+    "III.11",
+    "IV.1",
+    "V.1",
+    "V.2",
+    "V.11",
+    "VII.5",
+    "VII.29",
+    "VII.31",
+    "VII.35",
+    "X.2",
+    "X.43",
+    "XI.1",
+    "XI.3",
+    "XIII.3"
+  ],
+  "top_10_entropy": [
+    {
+      "proposition": "XII.14",
+      "entropy": 1733548
+    },
+    {
+      "proposition": "XII.15",
+      "entropy": 1338084
+    },
+    {
+      "proposition": "X.71",
+      "entropy": 676877
+    },
+    {
+      "proposition": "XII.13",
+      "entropy": 669037
+    },
+    {
+      "proposition": "XII.11",
+      "entropy": 669030
+    },
+    {
+      "proposition": "XII.12",
+      "entropy": 603161
+    },
+    {
+      "proposition": "XIII.18",
+      "entropy": 601945
+    },
+    {
+      "proposition": "X.110",
+      "entropy": 600967
+    },
+    {
+      "proposition": "X.72",
+      "entropy": 424369
+    },
+    {
+      "proposition": "X.84",
+      "entropy": 410737
+    }
+  ],
+  "boundary_cases": [
+    "Only semantically compatible alternatives can be maximized; no blanket match of ambiguous labels (e.g. X rational lines versus areas).",
+    "X.Definitions I subdefinitions 1.1-1.4 count as one parent origin per target, but their distinct conceptual identity is recorded.",
+    "Broad name matching across all 132 definitions is neither certified exhaustive nor equivalent to semantic entailment.",
+    "I.6 receives named later-edition premise candidates, not a fictional Euclid direct citation.",
+    "No independent source H=1 automatically adds to a derived proposition H unless it is truly source-free.",
+    "Recorded alpha necessity is unresolved. Exergy counts recorded descendants, not all possible derivations.",
+    "Some plausibly implicit proof premises remain uncatalogued; current wide model is not a global maximum.",
+    "Observed zero-reference theorem records become concept-supported in the wide model; this is a qualitative change of source-free classification, not proof of logical dependency.",
+    "A future-pointing source label X.11 -> X.10 is retained because it is in the reference field and does not make a cycle; this historical/source anomaly is not repaired."
+  ],
+  "user_repository_applied": false
+}
